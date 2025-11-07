@@ -21,7 +21,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
   // Navigation items with active state based on currentPage prop
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Pricing", href: "/pricing" },
+    // { label: "Pricing", href: "/pricing" },
     { label: "Roadmap", href: "/roadmap" },
     { label: "Feedback", href: "/feedback" },
     { label: "About", href: "/about" },

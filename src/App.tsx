@@ -6,7 +6,7 @@ import { TooltipProvider } from "./components/ui/tooltip";
 import NotFound from "./pages/not-found";
 
 import { HomeDesktop } from "./pages/HomeDesktop";
-import { Pricing } from "./pages/Pricing";
+// import { Pricing } from "./pages/Pricing";
 import { Roadmap } from "./pages/Roadmap";
 import { Feedback } from "./pages/Feedback";
 import { About } from "./pages/About";
@@ -17,7 +17,7 @@ function Router() {
     <Switch>
       {/* Add pages below */}
       <Route path="/" component={HomeDesktop} />
-      <Route path="/pricing" component={Pricing} />
+      {/* <Route path="/pricing" component={Pricing} /> */}
       <Route path="/roadmap" component={Roadmap} />
       <Route path="/feedback" component={Feedback} />
       <Route path="/about" component={About} />
