@@ -20,6 +20,7 @@ import {
   Globe,
   MessageCircle,
 } from "lucide-react";
+import Frame3 from "../../assets/Frame3.png"; // Import the image
 
 const featureItems = [
   {
@@ -160,11 +161,54 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
         </p>
       </div>
 
+      {/* Image Showcase Section - NEW */}
+      <div
+        className={`w-full max-w-6xl transition-all duration-1000 delay-300 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        <div className="group relative rounded-3xl overflow-hidden border border-solid border-[#ffffff1a] bg-gradient-to-br from-purple-500/10 to-blue-500/5 backdrop-blur-sm hover:border-purple-400/40 transition-all duration-500">
+          <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden">
+            {/* Main Image */}
+            <img
+              src={Frame3}
+              alt="Funlingo product artwork showcasing language learning experience"
+              className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+            />
+            
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-backgroundbackdrop/80 via-backgroundbackdrop/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
+            
+            {/* Shine Effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            
+            {/* Floating Elements */}
+            <div className="absolute top-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 transform translate-y-4 group-hover:translate-y-0">
+              <div className="bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg border border-white/20">
+                <span className="font-body-normal-medium text-sm">Dual Subtitles</span>
+              </div>
+            </div>
+            
+            <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 transform translate-y-4 group-hover:translate-y-0">
+              <div className="bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] text-white px-4 py-2 rounded-lg shadow-lg">
+                <span className="font-body-normal-medium text-sm">AI-Powered</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Decorative Corner Accents */}
+          <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-purple-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-blue-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200" />
+          <div className="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-purple-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300" />
+          <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-blue-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-400" />
+        </div>
+      </div>
+
       {/* Bento Grid Layout */}
       <div className="w-full max-w-7xl relative z-10">
         {/* Main Bento Grid */}
         <div
-          className={`grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-2 gap-4 lg:gap-6 transition-all duration-1000 delay-300 ${
+          className={`grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-2 gap-4 lg:gap-6 transition-all duration-1000 delay-500 ${
             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`}
         >
@@ -253,7 +297,7 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
 
         {/* Bottom Feature Row */}
         <div
-          className={`grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mt-4 lg:mt-6 transition-all duration-1000 delay-500 ${
+          className={`grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mt-4 lg:mt-6 transition-all duration-1000 delay-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -292,7 +336,7 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
 
         {/* Trust & Community Section */}
         <div
-          className={`flex flex-col lg:flex-row items-center justify-between gap-8 mt-12 lg:mt-16 p-8 lg:p-10 rounded-3xl border border-solid border-[#ffffff1a] bg-gradient-to-r from-purple-500/10 to-blue-500/5 backdrop-blur-sm transition-all duration-1000 delay-700 ${
+          className={`flex flex-col lg:flex-row items-center justify-between gap-8 mt-12 lg:mt-16 p-8 lg:p-10 rounded-3xl border border-solid border-[#ffffff1a] bg-gradient-to-r from-purple-500/10 to-blue-500/5 backdrop-blur-sm transition-all duration-1000 delay-900 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
