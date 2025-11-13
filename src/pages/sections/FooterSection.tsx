@@ -12,7 +12,7 @@ const quickLinks = [
 const informationLinks = [
   { label: "How It Works", href: "/#features" },
   { label: "Feedback", href: "/feedback" },
-  { label: "Download Extension", href: "#download" },
+  { label: "Download Extension", href: "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" },
 ];
 
 const followLinks = [

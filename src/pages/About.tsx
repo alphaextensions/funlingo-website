@@ -12,7 +12,7 @@ import {
   Lightbulb,
 } from "lucide-react";
 import Navbar from "./sections/navbar";
-import Frame4 from "../assets/Frame4.png"; // Import the image
+// import Frame4 from "../assets/Frame4.png"; // Import the image
 
 export const About = (): React.JSX.Element => {
   const [isVisible, setIsVisible] = useState(false);
@@ -227,7 +227,7 @@ export const About = (): React.JSX.Element => {
                   
                   {/* Main Image */}
                   <img
-                    src={Frame4}
+                    src="./figmaAssets/heroImg2.png"
                     alt="Funlingo in action showing dual subtitles on Netflix with Avengers"
                     className="w-full h-auto rounded-xl shadow-2xl transition-transform duration-700 group-hover:scale-105"
                   />
@@ -364,13 +364,20 @@ export const About = (): React.JSX.Element => {
               className="flex flex-col sm:flex-row gap-4 animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group/btn overflow-hidden relative">
-                <Rocket className="w-4 h-4 mr-2 relative z-10 group-hover/btn:scale-110 transition-transform" />
-                <span className="relative z-10 font-body-normal-medium text-textwhite group-hover/btn:scale-105 transition-transform duration-300">
-                  Download Extension
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
-              </Button>
+              <a
+  href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group/btn overflow-hidden relative">
+    <Rocket className="w-4 h-4 mr-2 relative z-10 group-hover/btn:scale-110 transition-transform" />
+    <span className="relative z-10 font-body-normal-medium text-textwhite group-hover/btn:scale-105 transition-transform duration-300">
+      Download Extension
+    </span>
+    <div className="absolute inset-0 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+  </Button>
+</a>
+
 
               <Button className="bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.2)] text-textwhite font-body-normal-medium h-12 px-8 py-3 rounded-lg border border-[#ffffff1a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 group">
                 <Heart className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
