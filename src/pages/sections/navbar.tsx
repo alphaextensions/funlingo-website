@@ -45,7 +45,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
           <h1 className="relative flex items-center justify-center w-fit bg-[linear-gradient(135deg,rgba(2120,2120,2120,0)_0%,#C642FC_40%,#7A1CAC_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-heading-h5 font-[number:var(--heading-h5-font-weight)] text-transparent text-[length:var(--heading-h5-font-size)] tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] whitespace-nowrap [font-style:var(--heading-h5-font-style)]">
             <img
               src={logo}
-              width={120}
+              width={140}
               alt="Funlingo Logo"
               className="drop-shadow-lg hover:drop-shadow-2xl transition-all duration-300"
             />
