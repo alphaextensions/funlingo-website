@@ -3,28 +3,42 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import Navbar from "./sections/navbar";
-// import logo from "../assets/logo.png";
+
+// Define types for our form data
+interface FeedbackFormData {
+  name: string;
+  email: string;
+  category: string;
+  message: string;
+  uninstallReason: string;
+  missingFeatures: string[];
+  notWorkingProperly: boolean;
+  otherReason: string;
+  desiredFeature: string;
+  satisfaction: number;
+  recommend: string;
+}
 
 export const Feedback = (): React.JSX.Element => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FeedbackFormData>({
     name: "",
     email: "",
     category: "feature",
     message: "",
+    uninstallReason: "",
+    missingFeatures: [],
+    notWorkingProperly: false,
+    otherReason: "",
+    desiredFeature: "",
+    satisfaction: 5,
+    recommend: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  // const [isScrolled, setIsScrolled] = useState(false);
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    // const handleScroll = () => {
-    //   setIsScrolled(window.scrollY > 50);
-    // };
-    // window.addEventListener("scroll", handleScroll);
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -39,7 +53,6 @@ export const Feedback = (): React.JSX.Element => {
     }
 
     return () => {
-      // window.removeEventListener("scroll", handleScroll);
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
@@ -50,7 +63,36 @@ export const Feedback = (): React.JSX.Element => {
     e.preventDefault();
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
-    setFormData({ name: "", email: "", category: "feature", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      category: "feature",
+      message: "",
+      uninstallReason: "",
+      missingFeatures: [],
+      notWorkingProperly: false,
+      otherReason: "",
+      desiredFeature: "",
+      satisfaction: 5,
+      recommend: "",
+    });
+  };
+
+  const handleCheckboxChange = (feature: string) => {
+    setFormData(prev => ({
+      ...prev,
+      missingFeatures: prev.missingFeatures.includes(feature)
+        ? prev.missingFeatures.filter(f => f !== feature)
+        : [...prev.missingFeatures, feature]
+    }));
+  };
+
+  const satisfactionLabels: { [key: number]: string } = {
+    1: "Very Dissatisfied",
+    2: "Dissatisfied",
+    3: "Neutral",
+    4: "Satisfied",
+    5: "Very Satisfied"
   };
 
   return (
@@ -79,8 +121,7 @@ export const Feedback = (): React.JSX.Element => {
               className="font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl lg:text-[length:var(--body-large-regular-font-size)] tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
-              Your input helps us build a better language learning experience
-              for everyone
+              Your input helps us build a better language learning experience for everyone
             </p>
           </div>
 
@@ -108,36 +149,39 @@ export const Feedback = (): React.JSX.Element => {
             } border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.08)] group hover:shadow-2xl hover:shadow-purple-500/10 animate-fade-in-up`}
             style={{ animationDelay: "400ms" }}
           >
-            <div className="flex flex-col gap-2">
-              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
-                Name
-              </label>
-              <Input
-                type="text"
-                value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
-                required
-                className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
-                placeholder="Your name"
-              />
-            </div>
+            {/* Basic Information */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-2">
+                <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                  Name
+                </label>
+                <Input
+                  type="text"
+                  value={formData.name}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
+                  required
+                  className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                  placeholder="Your name"
+                />
+              </div>
 
-            <div className="flex flex-col gap-2">
-              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
-                Email
-              </label>
-              <Input
-                type="email"
-                value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
-                required
-                className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
-                placeholder="your.email@example.com"
-              />
+              <div className="flex flex-col gap-2">
+                <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                  Email
+                </label>
+                <Input
+                  type="email"
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
+                  required
+                  className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                  placeholder="your.email@example.com"
+                />
+              </div>
             </div>
 
             <div className="flex flex-col gap-2">
@@ -154,13 +198,138 @@ export const Feedback = (): React.JSX.Element => {
                 <option value="feature">Feature Request</option>
                 <option value="bug">Bug Report</option>
                 <option value="improvement">Improvement Suggestion</option>
+                <option value="uninstall">Reason for Uninstalling</option>
                 <option value="other">Other</option>
               </select>
             </div>
 
+            {/* Satisfaction Rating */}
+            <div className="flex flex-col gap-3">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                Overall Satisfaction
+              </label>
+              <div className="flex flex-col gap-2">
+                <input
+                  type="range"
+                  min="1"
+                  max="5"
+                  value={formData.satisfaction}
+                  onChange={(e) => setFormData({ ...formData, satisfaction: parseInt(e.target.value) })}
+                  className="w-full h-2 bg-[rgba(255,255,255,0.1)] rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-gradient-to-r [&::-webkit-slider-thumb]:from-[#C642FC] [&::-webkit-slider-thumb]:to-[#7A1CAC]"
+                />
+                <div className="flex justify-between text-xs text-textbody">
+                  <span>1 - Very Dissatisfied</span>
+                  <span className="text-textwhite font-medium">
+                    {formData.satisfaction} - {satisfactionLabels[formData.satisfaction]}
+                  </span>
+                  <span>5 - Very Satisfied</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Uninstall Reasons - Conditionally Shown */}
+            {formData.category === 'uninstall' && (
+              <div className="space-y-4 p-4 rounded-lg bg-[rgba(0,0,0,0.2)] border border-[#ffffff1a] animate-fade-in-up">
+                <h4 className="font-body-normal-medium text-textwhite mb-3">
+                  Why are you considering uninstalling?
+                </h4>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="checkbox"
+                      id="missing-features"
+                      checked={formData.missingFeatures.includes('features')}
+                      onChange={() => handleCheckboxChange('features')}
+                      className="w-4 h-4 rounded border-[#ffffff1a] bg-[rgba(0,0,0,0.3)] text-[#C642FC] focus:ring-[#C642FC] focus:ring-2"
+                    />
+                    <label htmlFor="missing-features" className="font-body-normal-regular text-textwhite cursor-pointer">
+                      Missing features I need
+                    </label>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="checkbox"
+                      id="not-working"
+                      checked={formData.notWorkingProperly}
+                      onChange={(e) => setFormData({ ...formData, notWorkingProperly: e.target.checked })}
+                      className="w-4 h-4 rounded border-[#ffffff1a] bg-[rgba(0,0,0,0.3)] text-[#C642FC] focus:ring-[#C642FC] focus:ring-2"
+                    />
+                    <label htmlFor="not-working" className="font-body-normal-regular text-textwhite cursor-pointer">
+                      Not working properly
+                    </label>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="checkbox"
+                      id="other-reason"
+                      checked={formData.missingFeatures.includes('other')}
+                      onChange={() => handleCheckboxChange('other')}
+                      className="w-4 h-4 rounded border-[#ffffff1a] bg-[rgba(0,0,0,0.3)] text-[#C642FC] focus:ring-[#C642FC] focus:ring-2"
+                    />
+                    <label htmlFor="other-reason" className="font-body-normal-regular text-textwhite cursor-pointer">
+                      Other reasons
+                    </label>
+                  </div>
+
+                  {formData.missingFeatures.includes('other') && (
+                    <div className="mt-2 animate-fade-in-up">
+                      <Input
+                        type="text"
+                        value={formData.otherReason}
+                        onChange={(e) => setFormData({ ...formData, otherReason: e.target.value })}
+                        className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                        placeholder="Please specify other reasons..."
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Feature Request Section */}
             <div className="flex flex-col gap-2">
               <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
-                Your Feedback
+                {formData.category === 'feature' ? 'Feature Details' : 'Any Feature You\'d Like Us to Build?'}
+              </label>
+              <Input
+                type="text"
+                value={formData.desiredFeature}
+                onChange={(e) => setFormData({ ...formData, desiredFeature: e.target.value })}
+                className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                placeholder={
+                  formData.category === 'feature' 
+                    ? "Describe the feature you'd like to see..."
+                    : "What feature would make you reconsider?"
+                }
+              />
+            </div>
+
+            {/* Recommendation */}
+            <div className="flex flex-col gap-2">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                Would you recommend FunLingo to others?
+              </label>
+              <select
+                value={formData.recommend}
+                onChange={(e) => setFormData({ ...formData, recommend: e.target.value })}
+                className="h-10 px-3 py-2 rounded-lg bg-[rgba(0,0,0,0.3)] border border-[#ffffff1a] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+              >
+                <option value="">Select an option</option>
+                <option value="definitely">Definitely yes</option>
+                <option value="probably">Probably yes</option>
+                <option value="unsure">Not sure</option>
+                <option value="probably-not">Probably not</option>
+                <option value="definitely-not">Definitely not</option>
+              </select>
+            </div>
+
+            {/* Main Message */}
+            <div className="flex flex-col gap-2">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                Additional Comments
               </label>
               <Textarea
                 value={formData.message}
@@ -168,8 +337,8 @@ export const Feedback = (): React.JSX.Element => {
                   setFormData({ ...formData, message: e.target.value })
                 }
                 required
-                className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300 min-h-[200px] resize-vertical"
-                placeholder="Tell us what's on your mind..."
+                className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300 min-h-[120px] resize-vertical"
+                placeholder="Share any additional thoughts, suggestions, or details..."
               />
             </div>
 
