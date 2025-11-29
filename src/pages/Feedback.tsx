@@ -374,37 +374,41 @@ export const Feedback = (): React.JSX.Element => {
                 title: "Email Us",
                 description: "getfunlingo@gmail.com",
                 delay: "700ms",
+                link: "mailto:getfunlingo@gmail.com"
               },
               {
                 icon: (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                  />
+                  <>
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </>
                 ),
-                title: "Discord",
-                description: "Join our community",
+                title: "Instagram",
+                description: "@getfunlingo",
                 delay: "800ms",
+                link: "https://www.instagram.com/getfunlingo?igsh=MWVkcWQ5Nmh0YmZqdA=="
               },
               {
                 icon: (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
+                  <>
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </>
                 ),
-                title: "Vote on Features",
-                description: "Check our roadmap",
+                title: "LinkedIn",
+                description: "Follow our page",
                 delay: "900ms",
+                link: "https://www.linkedin.com/company/getfunlingo/"
               },
             ].map((item, index) => (
-              <div
+              <a
                 key={index}
-                className="flex flex-col items-center gap-3 p-6 rounded-xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm text-center group hover:bg-[rgba(255,255,255,0.08)] hover:border-[#ffffff40] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 animate-fade-in-up"
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-3 p-6 rounded-xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm text-center group hover:bg-[rgba(255,255,255,0.08)] hover:border-[#ffffff40] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 animate-fade-in-up no-underline"
                 style={{ animationDelay: item.delay }}
               >
                 <div className="w-12 h-12 bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -423,7 +427,7 @@ export const Feedback = (): React.JSX.Element => {
                 <p className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
                   {item.description}
                 </p>
-              </div>
+              </a>
             ))}
           </div>
         </div>

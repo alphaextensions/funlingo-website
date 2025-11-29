@@ -373,3 +373,19 @@ Button{
 button {
   cursor: pointer;
 }
+
+@font-face {
+  font-family: main-heading; /* set name */
+  src: url(./fonts/Poppins-Bold.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: normal-heading; /* set name */
+  src: url(./fonts/Poppins-SemiBold.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: main-decription; /* set name */
+  src: url(./fonts/Poppins-Regular.ttf); /* url of the font */
+}
+
