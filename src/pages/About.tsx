@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
@@ -12,6 +13,7 @@ import {
   Lightbulb,
 } from "lucide-react";
 import Navbar from "./sections/navbar";
+import SEO from "@/components/SEO";
 // import Frame4 from "../assets/Frame4.png"; // Import the image
 
 export const About = (): React.JSX.Element => {
@@ -95,6 +97,13 @@ export const About = (): React.JSX.Element => {
 
   return (
     <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
+      <SEO 
+        title="About Funlingo - Our Mission in Language Learning"
+        description="Learn about Funlingo's mission to make language learning accessible and fun through dual subtitles technology. Join our community of language learners."
+        keywords="about funlingo, language learning mission, dual subtitles technology, language education"
+        canonical="/about"
+      />
+      
       {/* Navigation Header */}
       <Navbar currentPage="/about" />
 

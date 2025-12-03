@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -5,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { useState, useEffect, useRef } from "react";
 import { Check, Clock, Star, Rocket, Target, Zap } from "lucide-react";
 import Navbar from "./sections/navbar";
+import SEO from "@/components/SEO";
 
 const roadmapItems = [
   {
@@ -192,6 +194,13 @@ export const Roadmap = (): React.JSX.Element => {
 
   return (
     <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
+      <SEO 
+        title="Funlingo Product Roadmap - Future of Language Learning"
+        description="Explore the future of Funlingo. See our planned features including mobile apps, more streaming platforms support, and advanced learning tools."
+        keywords="funlingo roadmap, language learning features, future updates, language tools development"
+        canonical="/roadmap"
+      />
+      
       {/* Navigation Header */}
       <Navbar currentPage="/roadmap" />
 

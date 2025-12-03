@@ -1,3 +1,4 @@
+
 import * as React from "react";
 
 import { FunlingoFeaturesSection } from "./sections/FunlingoFeaturesSection";
@@ -6,6 +7,7 @@ import { HeroSection } from "./sections/HeroSection";
 import { FunlingoProductSection } from "./sections/FunlingoProductSection";
 import { FunlingoTestimonialsSection } from "./sections/FunlingoTestimonialsSection";
 import { WhyChooseFunlingoSection } from "./sections/WhyChooseFunlingoSection";
+import SEO from "@/components/SEO";
 
 // import { useState, useEffect } from "react";
 import Navbar from "./sections/navbar";
@@ -48,6 +50,12 @@ const featureBadges = [
 export const HomeDesktop = (): React.JSX.Element => {
   return (
     <div className="flex flex-col items-start relative bg-[#000000]">
+      <SEO 
+        title="Funlingo - Language Learning with Dual Subtitles Extension"
+        description="Master new languages with Funlingo. Our Chrome extension provides dual subtitles for YouTube and Netflix, making language learning immersive and fun."
+        keywords="language learning, funlingo, dual subtitle, dual subtitles extension, learn languages netflix, learn languages youtube, chrome extension"
+        canonical="/"
+      />
       {/* Navigation Header */}
       <Navbar currentPage="/" />
 
