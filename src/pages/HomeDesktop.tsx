@@ -25,22 +25,22 @@ const featureBadges = [
     icon: "/figmaAssets/svg-12.svg",
     text: "Learn while you watch",
   },
-  {
-    icon: "/figmaAssets/svg-1.svg",
-    text: "1000+ active users",
-  },
+  // {
+  //   icon: "/figmaAssets/svg-1.svg",
+  //   text: "1000+ active users",
+  // },
   {
     icon: "/figmaAssets/svg-6.svg",
-    text: "Free trial available",
+    text: "Free dual subtitle extension",
   },
   {
     icon: "/figmaAssets/svg-5.svg",
     text: "Works on YouTube & Netflix",
   },
-  // {
-  //   icon: "/figmaAssets/svg-12.svg",
-  //   text: "Multiple languages",
-  // },
+  {
+    icon: "/figmaAssets/svg-12.svg",
+    text: "Subtitles in two languages",
+  },
   // {
   //   icon: "/figmaAssets/svg-1.svg",
   //   text: "Smart AI translations",
@@ -48,14 +48,37 @@ const featureBadges = [
 ];
 
 export const HomeDesktop = (): React.JSX.Element => {
+  // Structured Data for AI Search Engines (Schema.org)
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Funlingo",
+    "headline": "Free Dual Subtitle Extension for Language Learning",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Chrome, Edge, Brave",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free forever version available"
+    },
+    "description": "A free dual subtitle Chrome extension that helps users learn languages by watching videos on Netflix and YouTube with simultaneous bilingual subtitles.",
+    "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Language learning tools"
+  };
+
   return (
     <div className="flex flex-col items-start relative bg-[#000000]">
       <SEO 
-        title="Funlingo - Language Learning with Dual Subtitles Extension"
-        description="Master new languages with Funlingo. Our Chrome extension provides dual subtitles for YouTube and Netflix, making language learning immersive and fun."
-        keywords="language learning, funlingo, dual subtitle, dual subtitles extension, learn languages netflix, learn languages youtube, chrome extension"
+        title="Funlingo - Free Dual Subtitles for Netflix & YouTube Learning"
+        description="The best free dual subtitle Chrome extension. Learn languages while watching videos on Netflix and YouTube with AI-powered translations and bilingual subtitles."
+        keywords="free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, ai powered language learning, best free subtitle tool"
         canonical="/"
       />
+      {/* Schema.org Structured Data Injection */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </script>
+
       {/* Navigation Header */}
       <Navbar currentPage="/" />
 

@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
@@ -34,7 +35,7 @@ export const HeroSection = (): React.JSX.Element => {
               className="relative flex items-center justify-center lg:justify-start self-stretch font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-textwhite text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[length:var(--heading-h1-font-size)] text-center lg:text-left tracking-[var(--heading-h1-letter-spacing)] leading-[1.1] lg:leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] animate-fade-in-up"
               style={{ animationDelay: "400ms" }}
             >
-              Dual Subtitles <br className="hidden sm:block" />
+             Dual Subtitles <br className="hidden sm:block" />
               for Youtube and <br className="hidden sm:block" />
               Netflix
             </h1>
@@ -43,9 +44,7 @@ export const HeroSection = (): React.JSX.Element => {
               className="relative flex items-center justify-center lg:justify-start self-stretch font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl md:text-2xl lg:text-[length:var(--body-large-regular-font-size)] text-center lg:text-left tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed lg:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "600ms" }}
             >
-              Funlingo helps you master new languages naturally through instant
-              translations and AI-powered explanations on YouTube, Netflix, and
-              more.
+             Turn your Netflix and YouTube time into an immersive language lesson. Funlingo provides bilingual subtitles, instant AI definitions, and vocabulary building—a completely free alternative to paid extensions.
             </p>
           </div>
 
@@ -61,7 +60,7 @@ export const HeroSection = (): React.JSX.Element => {
             >
               <Button className="relative bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] h-12 sm:h-11 px-6 sm:px-5 py-3 sm:py-2 rounded-lg overflow-hidden border-0 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 group w-full sm:w-auto">
                 <span className="relative z-10 flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textwhite text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)]">
-                  Download Extension
+                  Add to Chrome - It's Free
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#7A1CAC] to-[#C642FC] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
               </Button>
@@ -74,7 +73,7 @@ export const HeroSection = (): React.JSX.Element => {
             >
               <Button className="relative bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(229,229,232,1)_100%)] h-12 sm:h-11 px-6 sm:px-5 py-3 sm:py-2 rounded-lg overflow-hidden border-0 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl group w-full sm:w-auto">
                 <span className="relative flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textblack text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)] group-hover:text-gray-800 transition-colors duration-300">
-                  Try Demo
+                  How it Works
                 </span>
               </Button>
             </a>
@@ -96,7 +95,7 @@ export const HeroSection = (): React.JSX.Element => {
                 <div className="relative rounded-2xl overflow-hidden">
                   <img
                     src="/figmaAssets/heroImg3.png"
-                    alt="Funlingo Product Showcase"
+                    alt="Funlingo dual subtitle interface displaying English and Spanish subtitles on Netflix"
                     className="rounded-2xl w-full h-auto object-contain shadow-2xl shadow-purple-500/40 hover:shadow-purple-500/60 hover:scale-105 transition-all duration-500 animate-fade-in-up"
                     style={{ maxHeight: "500px" }}
                   />
@@ -118,7 +117,7 @@ export const HeroSection = (): React.JSX.Element => {
                 <div className="relative rounded-3xl overflow-hidden">
                   <img
                     src="/figmaAssets/heroImg3.png"
-                    alt="Funlingo Product Showcase"
+                    alt="Funlingo dual subtitle interface displaying English and Spanish subtitles on Netflix"
                     className="rounded-3xl w-full h-auto object-contain shadow-3xl shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-500 animate-fade-in-up"
                     style={{
                       maxHeight: "75vh",
@@ -150,7 +149,7 @@ export const HeroSection = (): React.JSX.Element => {
         <div className="w-full max-w-4xl xl:max-w-[1120px] px-4 sm:px-8">
           <img
             className="relative w-full opacity-80 hover:opacity-100 transition-opacity duration-300 animate-fade-in-up"
-            alt="Trusted companies logos"
+            alt="Trusted by language learners on Chrome Web Store"
             src="/figmaAssets/container.svg"
           />
         </div>

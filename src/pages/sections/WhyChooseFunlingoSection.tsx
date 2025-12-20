@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,25 +10,21 @@ import {
   Languages,
   BarChart3,
   Users,
-  Sparkles,
-  Target,
-  Zap,
-  Clock,
-  Award,
   Shield,
   Star,
   TrendingUp,
   Globe,
   MessageCircle,
+  HelpCircle,
 } from "lucide-react";
 import Frame3 from "../../assets/Frame3.png"; // Import the image
 
-const featureItems = [
+const qaItems = [
   {
     icon: Brain,
-    title: "Contextual Learning",
+    title: "Does it help vocabulary?",
     description:
-      "Learn words and phrases in the context of real conversations and authentic content.",
+      "Yes. Learning words in the context of real conversations improves retention by 50% compared to rote memorization.",
     color: "text-purple-300",
     bgColor: "bg-purple-500/20",
     borderColor: "border-purple-400/30",
@@ -35,9 +32,9 @@ const featureItems = [
   },
   {
     icon: PlayCircle,
-    title: "Fun & Engaging",
+    title: "Is it really free?",
     description:
-      "Transform your favorite videos into interactive language lessons.",
+      "Funlingo is a completely free alternative to paid subtitle extensions. You get full dual subtitle functionality at no cost.",
     color: "text-blue-300",
     bgColor: "bg-blue-500/20",
     borderColor: "border-blue-400/30",
@@ -45,9 +42,9 @@ const featureItems = [
   },
   {
     icon: Bot,
-    title: "AI-Powered Insights",
+    title: "How does AI help?",
     description:
-      "Get instant explanations and personalized feedback from our AI.",
+      "The integrated AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over.",
     color: "text-green-300",
     bgColor: "bg-green-500/20",
     borderColor: "border-green-400/30",
@@ -55,8 +52,8 @@ const featureItems = [
   },
   {
     icon: Languages,
-    title: "Real-time Translations",
-    description: "Seamless translations while you watch, read, or listen.",
+    title: "Which sites are supported?",
+    description: "Funlingo currently supports dual subtitles on both Netflix and YouTube, covering millions of videos.",
     color: "text-cyan-300",
     bgColor: "bg-cyan-500/20",
     borderColor: "border-cyan-400/30",
@@ -64,8 +61,8 @@ const featureItems = [
   },
   {
     icon: BarChart3,
-    title: "Progress Tracking",
-    description: "Monitor your journey with detailed analytics and milestones.",
+    title: "Can I save words?",
+    description: "Yes, you can save words to your personal vocabulary list to review later, tracking your progress over time.",
     color: "text-orange-300",
     bgColor: "bg-orange-500/20",
     borderColor: "border-orange-400/30",
@@ -73,25 +70,13 @@ const featureItems = [
   },
   {
     icon: Users,
-    title: "Community Learning",
-    description: "Join a global community and practice with native speakers.",
+    title: "Is it good for beginners?",
+    description: "Absolutely. Dual subtitles allow beginners to follow the story in their native language while associating spoken audio with target language text.",
     color: "text-pink-300",
     bgColor: "bg-pink-500/20",
     borderColor: "border-pink-400/30",
     gradient: "from-pink-500/20 to-rose-600/10",
   },
-];
-
-const stats = [
-  {
-    icon: Target,
-    value: "95%",
-    label: "Learning Efficiency",
-    color: "text-white",
-  },
-  { icon: Zap, value: "2.5x", label: "Faster Progress", color: "text-white" },
-  { icon: Clock, value: "24/7", label: "AI Availability", color: "text-white" },
-  { icon: Award, value: "10+", label: "Languages", color: "text-white" },
 ];
 
 export const WhyChooseFunlingoSection = (): React.JSX.Element => {
@@ -141,23 +126,22 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
         }`}
       >
         <Badge className="inline-flex items-center justify-center px-4 py-1.5 rounded-[99px] border border-solid border-[#ffffff1a] shadow-[inset_0px_-1px_4px_#00000040,inset_0px_0px_0px_#e5e5e8] bg-[linear-gradient(118deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)] h-auto hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 animate-fade-in-up backdrop-blur-sm">
-          <Sparkles className="w-4 h-4 mr-2 text-textwhite" />
+          <HelpCircle className="w-4 h-4 mr-2 text-textwhite" />
           <span className="font-body-xs-medium font-[number:var(--body-xs-medium-font-weight)] text-textwhite text-[length:var(--body-xs-medium-font-size)] tracking-[var(--body-xs-medium-letter-spacing)] leading-[var(--body-xs-medium-line-height)] [font-style:var(--body-xs-medium-font-style)]">
-            Why Choose Funlingo
+            Common Questions
           </span>
         </Badge>
 
         <h2 className="font-heading-h3 font-[number:var(--heading-h3-font-weight)] text-textwhite text-center text-2xl sm:text-3xl lg:text-4xl xl:text-[length:var(--heading-h3-font-size)] tracking-[var(--heading-h3-letter-spacing)] leading-tight sm:leading-[var(--heading-h3-line-height)] [font-style:var(--heading-h3-font-style)]">
-          Revolutionize Your
+          Why Choose
           <span className="bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] bg-clip-text text-transparent">
             {" "}
-            Language Journey
+            Funlingo?
           </span>
         </h2>
 
         <p className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-base sm:text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)] max-w-3xl">
-          Break free from traditional methods with our AI-powered platform that
-          makes language learning intuitive, engaging, and remarkably effective.
+          Everything you need to know about the best free alternative for dual subtitles.
         </p>
       </div>
 
@@ -223,12 +207,10 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-heading-h6 font-[number:var(--heading-h6-font-weight)] text-textwhite text-[length:var(--heading-h6-font-size)] tracking-[var(--heading-h6-letter-spacing)] leading-[var(--heading-h6-line-height)] [font-style:var(--heading-h6-font-style)] mb-3 group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-blue-300 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                    Smart Contextual Learning
+                    What is Dual Subtitle Learning?
                   </h3>
                   <p className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)] group-hover:text-textwhite/90 transition-colors duration-300">
-                    Learn naturally through real conversations and authentic
-                    content, not memorization. Our AI understands context and
-                    helps you speak like a native.
+                    Dual subtitle learning is a method where you display two sets of subtitles simultaneously: one in the audio's original language (e.g., Spanish) and one in your native language (e.g., English). This allows for instant comparison and comprehension without stopping the video.
                   </p>
                 </div>
               </div>
@@ -238,22 +220,22 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
             </CardContent>
           </Card>
 
-          {/* Stats Cards - Top Right */}
+          {/* Q&A Cards - Top Right - Replaced Stats */}
           <div className="lg:col-span-3 lg:row-span-1 grid grid-cols-2 gap-4 lg:gap-6">
-            {stats.map((stat, index) => (
+            {qaItems.slice(1, 3).map((item, index) => (
               <Card
                 key={index}
                 className="group relative rounded-2xl overflow-hidden border border-solid border-[#ffffff1a] bg-gradient-to-br from-white/5 to-white/2 hover:border-white/30 transition-all duration-500 backdrop-blur-sm hover:transform hover:scale-105"
               >
                 <CardContent className="relative z-10 flex flex-col items-center justify-center h-full p-6 text-center">
-                  <stat.icon
-                    className={`w-8 h-8 ${stat.color} mb-3 group-hover:scale-110 transition-transform duration-300`}
+                  <item.icon
+                    className={`w-8 h-8 ${item.color} mb-3 group-hover:scale-110 transition-transform duration-300`}
                   />
-                  <div className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-white text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] font-bold mb-1">
-                    {stat.value}
+                  <div className="font-heading-h6 font-[number:var(--heading-h4-font-weight)] text-white text-[length:var(--heading-h6-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] font-bold mb-2">
+                    {item.title}
                   </div>
-                  <div className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
-                    {stat.label}
+                  <div className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-sm tracking-[var(--body-normal-regular-letter-spacing)] leading-tight [font-style:var(--body-normal-regular-font-style)]">
+                    {item.description}
                   </div>
 
                   {/* Animated background on hover */}
@@ -264,7 +246,38 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
           </div>
 
           {/* Medium Feature Cards - Bottom Row */}
-          {featureItems.slice(1, 4).map((item, index) => {
+          {qaItems.slice(3, 5).map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <Card
+                key={index}
+                className="lg:col-span-2 group relative rounded-2xl overflow-hidden border border-solid border-[#ffffff1a] bg-gradient-to-br from-white/5 to-white/2 hover:border-white/30 transition-all duration-500 backdrop-blur-sm hover:transform hover:-translate-y-1"
+              >
+                <CardContent className="relative z-10 flex flex-col h-full p-6 lg:p-8">
+                  <div
+                    className={`w-12 h-12 rounded-xl ${item.bgColor} border ${item.borderColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-all duration-300`}
+                  >
+                    <IconComponent className={`w-6 h-6 ${item.color}`} />
+                  </div>
+
+                  <h3 className="font-heading-h6 font-[number:var(--heading-h6-font-weight)] text-textwhite text-[length:var(--heading-h6-font-size)] tracking-[var(--heading-h6-letter-spacing)] leading-[var(--heading-h6-line-height)] [font-style:var(--heading-h6-font-style)] mb-3 group-hover:text-white transition-colors duration-300">
+                    {item.title}
+                  </h3>
+                  <p className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)] group-hover:text-textwhite/90 transition-colors duration-300 flex-1">
+                    {item.description}
+                  </p>
+
+                  {/* Hover gradient overlay */}
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}
+                  ></div>
+                </CardContent>
+              </Card>
+            );
+          })}
+          
+           {/* Last Feature Card - Bottom Right */}
+            {qaItems.slice(5).map((item, index) => {
             const IconComponent = item.icon;
             return (
               <Card
@@ -295,44 +308,6 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
           })}
         </div>
 
-        {/* Bottom Feature Row */}
-        <div
-          className={`grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mt-4 lg:mt-6 transition-all duration-1000 delay-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          {featureItems.slice(4).map((item, index) => {
-            const IconComponent = item.icon;
-            return (
-              <Card
-                key={index}
-                className="group relative rounded-2xl overflow-hidden border border-solid border-[#ffffff1a] bg-gradient-to-br from-white/5 to-white/2 hover:border-white/30 transition-all duration-500 backdrop-blur-sm hover:transform hover:-translate-y-1"
-              >
-                <CardContent className="relative z-10 flex flex-row items-start h-full p-6 lg:p-8 gap-4">
-                  <div
-                    className={`flex-shrink-0 w-12 h-12 rounded-xl ${item.bgColor} border ${item.borderColor} flex items-center justify-center group-hover:scale-110 transition-all duration-300`}
-                  >
-                    <IconComponent className={`w-6 h-6 ${item.color}`} />
-                  </div>
-
-                  <div className="flex-1">
-                    <h3 className="font-heading-h6 font-[number:var(--heading-h6-font-weight)] text-textwhite text-[length:var(--heading-h6-font-size)] tracking-[var(--heading-h6-letter-spacing)] leading-[var(--heading-h6-line-height)] [font-style:var(--heading-h6-font-style)] mb-2 group-hover:text-white transition-colors duration-300">
-                      {item.title}
-                    </h3>
-                    <p className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)] group-hover:text-textwhite/90 transition-colors duration-300">
-                      {item.description}
-                    </p>
-                  </div>
-
-                  {/* Hover gradient overlay */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}
-                  ></div>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
 
         {/* Trust & Community Section */}
         <div

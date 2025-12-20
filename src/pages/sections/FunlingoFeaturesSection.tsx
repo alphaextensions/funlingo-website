@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { Badge } from "@/components/ui/badge";
 import { CardContent } from "@/components/ui/card";
@@ -94,17 +95,16 @@ export const FunlingoFeaturesSection = (): React.JSX.Element => {
             className="font-heading-h3 font-[number:var(--heading-h3-font-weight)] text-textwhite text-2xl sm:text-3xl lg:text-4xl xl:text-[length:var(--heading-h3-font-size)] text-center tracking-[var(--heading-h3-letter-spacing)] leading-tight sm:leading-[var(--heading-h3-line-height)] [font-style:var(--heading-h3-font-style)] animate-fade-in-up"
             style={{ animationDelay: "200ms" }}
           >
-            Maximize Your Learning with
+            Powerful AI Features for
             <br />
-            Powerful Features
+            Language Mastery
           </h2>
 
           <p
             className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-base sm:text-[length:var(--body-normal-regular-font-size)] text-center tracking-[var(--body-normal-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)] max-w-2xl animate-fade-in-up"
             style={{ animationDelay: "400ms" }}
           >
-            Everything you need to learn a language naturally through the
-            content you already love watching.
+            From vocabulary building to pronunciation, get premium features without the subscription cost. Everything you need to learn a language naturally through the content you love.
           </p>
         </div>
       </header>

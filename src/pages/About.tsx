@@ -98,9 +98,9 @@ export const About = (): React.JSX.Element => {
   return (
     <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
       <SEO 
-        title="About Funlingo - Our Mission in Language Learning"
-        description="Learn about Funlingo's mission to make language learning accessible and fun through dual subtitles technology. Join our community of language learners."
-        keywords="about funlingo, language learning mission, dual subtitles technology, language education"
+        title="About Funlingo - Our Mission in Free Language Learning"
+        description="Learn about Funlingo's mission to provide a free dual subtitle alternative for language learners. We make immersive learning accessible to everyone."
+        keywords="about funlingo, free language learning mission, dual subtitles technology, language education, free alternative"
         canonical="/about"
       />
       
@@ -134,8 +134,7 @@ export const About = (): React.JSX.Element => {
               className="font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl lg:text-[length:var(--body-large-regular-font-size)] tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-3xl animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
-              Making language learning natural, effortless, and fun through the
-              content you already love
+              Making language learning natural, effortless, and free through the content you already love.
             </p>
           </div>
 
@@ -157,9 +156,7 @@ export const About = (): React.JSX.Element => {
                 <div className="space-y-4 font-body-normal-regular text-textbody text-[length:var(--body-normal-regular-font-size)] leading-relaxed">
                   <p>
                     Funlingo was born from a simple idea: language learning
-                    shouldn't feel like studying. By integrating seamlessly with
-                    the videos you already watch, we transform passive
-                    entertainment into active learning opportunities.
+                    shouldn't feel like studying, and it shouldn't be expensive. By integrating seamlessly with the videos you already watch, we transform passive entertainment into active learning opportunities.
                   </p>
 
                   <p>
@@ -170,9 +167,9 @@ export const About = (): React.JSX.Element => {
                   </p>
 
                   <p>
-                    That's why we've built a tool that meets you where you
+                    That's why we've built a free tool that meets you where you
                     are—watching your favorite content—and helps you learn
-                    without disrupting your experience.
+                    without disrupting your experience. We aim to be the best free alternative for dual subtitles available.
                   </p>
                 </div>
               </div>
