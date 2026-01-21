@@ -14,6 +14,9 @@ import { Feedback } from "./pages/Feedback";
 import { About } from "./pages/About";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Support } from "./pages/Support";
+import { BlogPost } from "./pages/BlogPost";
+import { BlogIndex } from "./pages/BlogIndex";
+import { ComparePage } from "./pages/ComparePage";
 
 function Router() {
   return (
@@ -26,6 +29,9 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/support" component = {Support}/>
+      <Route path="/blog" component={BlogIndex} />
+      <Route path="/blog/best-ai-language-learning-tools-2026" component={BlogPost} />
+      <Route path="/compare/funlingo-vs-trancy-vs-fluentai" component={ComparePage} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

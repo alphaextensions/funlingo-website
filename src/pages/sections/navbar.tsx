@@ -1,3 +1,4 @@
+
 import logo from "../../assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
@@ -23,11 +24,12 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
     { label: "Home", href: "/" },
     // { label: "Pricing", href: "/pricing" },
     { label: "Roadmap", href: "/roadmap" },
+    { label: "Blog", href: "/blog" },
     { label: "Feedback", href: "/feedback" },
     { label: "About", href: "/about" },
   ].map(item => ({
     ...item,
-    active: currentPage === item.href
+    active: currentPage === item.href || (item.href === "/blog" && currentPage.startsWith("/blog"))
   }));
 
   return (

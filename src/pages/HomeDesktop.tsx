@@ -7,6 +7,7 @@ import { HeroSection } from "./sections/HeroSection";
 import { FunlingoProductSection } from "./sections/FunlingoProductSection";
 import { FunlingoTestimonialsSection } from "./sections/FunlingoTestimonialsSection";
 import { WhyChooseFunlingoSection } from "./sections/WhyChooseFunlingoSection";
+import { ComparisonTableSection } from "./sections/ComparisonTableSection";
 import SEO from "@/components/SEO";
 
 // import { useState, useEffect } from "react";
@@ -110,6 +111,7 @@ export const HomeDesktop = (): React.JSX.Element => {
       <HeroSection />
       <WhyChooseFunlingoSection />
       <FunlingoProductSection />
+      <ComparisonTableSection />
       <FunlingoFeaturesSection />
       <FunlingoTestimonialsSection />
       <FooterSection />
