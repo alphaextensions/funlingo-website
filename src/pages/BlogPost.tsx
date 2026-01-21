@@ -191,7 +191,7 @@ export const BlogPost = (): React.JSX.Element => {
                 <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between FunLingo, Trancy, and FluentAI">
                   <thead className="sticky top-0 z-20 bg-[#0a0a0a] shadow-sm">
                     <tr className="border-b border-white/10">
-                      <th className="p-6 text-gray-400 font-medium w-1/4">Feature (SEO Optimized)</th>
+                      <th className="p-6 text-gray-400 font-medium w-1/4">Feature</th>
                       <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">
                         FunLingo
                       </th>
@@ -335,25 +335,7 @@ export const BlogPost = (): React.JSX.Element => {
              </div>
           </div>
 
-          {/* Deep Dives */}
-          <h2 className="text-3xl font-bold text-white mt-16 mb-8">SEO-optimized feature deep dives</h2>
-          
-          <div className="space-y-12">
-             <section>
-               <h3 className="text-2xl font-semibold text-white mb-3">Dual Subtitles: why bilingual in-player subtitles speed comprehension</h3>
-               <p>FunLingo automatically syncs subtitles. You can simply <code className="text-[#C642FC] bg-white/5 px-1.5 py-0.5 rounded border border-white/10">Toggle: [Dual Subtitles] — Primary / Secondary</code> to see both languages at once. This reduces the cognitive load of constantly translating in your head.</p>
-             </section>
-             
-             <section>
-               <h3 className="text-2xl font-semibold text-white mb-3">Multi-translation word lookup (unique UX)</h3>
-               <p>Hover or click a word to see an overlay. Select <code className="text-[#C642FC] bg-white/5 px-1.5 py-0.5 rounded border border-white/10">Chips: [1][2][3][All]</code> to see various meanings. This unique UX choice prevents partial understanding and reduces the need to leave the video to search elsewhere.</p>
-             </section>
-             
-             <section>
-               <h3 className="text-2xl font-semibold text-white mb-3">Pronunciation & active practice</h3>
-               <p>Don't just read it, hear it. Use the controls: <code className="text-[#C642FC] bg-white/5 px-1.5 py-0.5 rounded border border-white/10">Play • Slow • Save</code> to master the accent and intonation immediately.</p>
-             </section>
-          </div>
+  
 
           {/* FAQ */}
           <h2 className="text-3xl font-bold text-white mt-16 mb-8">FAQ</h2>
