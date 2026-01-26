@@ -210,32 +210,8 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
         </div>
       </div>
 
-      {/* Stats Bar */}
-      <div
-        className={`flex flex-wrap items-center justify-center gap-6 sm:gap-10 mt-8 transition-all duration-1000 delay-700 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
-      >
-        {[
-          { number: "4.9/5", label: "User Rating" },
-          { number: "1,000+", label: "Active Learners" },
-          { number: "50+", label: "Languages" },
-          { number: "99%", label: "Satisfaction" },
-        ].map((stat, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center animate-fade-in-up"
-            style={{ animationDelay: `${800 + index * 100}ms` }}
-          >
-            <div className="font-heading-h4 text-textwhite text-xl sm:text-2xl font-bold">
-              {stat.number}
-            </div>
-            <div className="font-body-small-regular text-textbody text-sm sm:text-base">
-              {stat.label}
-            </div>
-          </div>
-        ))}
-      </div>
+      
+      
 
       <style>{`
         @keyframes fade-in-up {

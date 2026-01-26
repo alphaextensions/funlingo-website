@@ -36,15 +36,15 @@ export const HeroSection = (): React.JSX.Element => {
               style={{ animationDelay: "400ms" }}
             >
              Dual Subtitles <br className="hidden sm:block" />
-              for Youtube and <br className="hidden sm:block" />
-              Netflix
+              for Youtube, <br className="hidden sm:block" />
+              Netflix and Prime
             </h1>
 
             <p
               className="relative flex items-center justify-center lg:justify-start self-stretch font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl md:text-2xl lg:text-[length:var(--body-large-regular-font-size)] text-center lg:text-left tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed lg:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "600ms" }}
             >
-             Turn your Netflix and YouTube time into an immersive language lesson. Funlingo provides bilingual subtitles, instant AI definitions, and vocabulary building—a completely free alternative to paid extensions.
+             Turn your YouTube, Netflix and Prime time into an immersive language lesson. Funlingo provides bilingual subtitles, instant AI definitions, and vocabulary building—a completely free alternative to paid extensions.
             </p>
           </div>
 
@@ -146,13 +146,7 @@ export const HeroSection = (): React.JSX.Element => {
         }`}
         style={{ animationDelay: "1000ms" }}
       >
-        <div className="w-full max-w-4xl xl:max-w-[1120px] px-4 sm:px-8">
-          <img
-            className="relative w-full opacity-80 hover:opacity-100 transition-opacity duration-300 animate-fade-in-up"
-            alt="Trusted by language learners on Chrome Web Store"
-            src="/figmaAssets/container.svg"
-          />
-        </div>
+        
       </div>
 
       <style>{`

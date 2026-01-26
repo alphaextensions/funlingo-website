@@ -6,19 +6,19 @@ import { useState, useEffect, useRef } from "react";
 
 const steps = [
   "1. Install the extension on Chrome",
-  "2. Open a video on Netflix or YouTube",
+  "2. Open a video on Youtube, Netflix, or Prime",
   "3. Activate dual subtitles in your target language",
 ];
 
 const stats = [
   {
-    number: "50+",
+    number: "100+",
     title: "Languages Supported",
     description:
       "Learn Spanish, French, Korean, Japanese, and more with our extensive language database.",
   },
   {
-    number: "1000+",
+    number: "200+",
     title: "Active Learners",
     description:
       "Join a community of self-learners mastering languages through immersive video content.",

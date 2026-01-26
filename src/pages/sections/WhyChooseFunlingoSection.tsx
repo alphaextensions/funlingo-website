@@ -53,7 +53,7 @@ const qaItems = [
   {
     icon: Languages,
     title: "Which sites are supported?",
-    description: "Funlingo currently supports dual subtitles on both Netflix and YouTube, covering millions of videos.",
+    description: "Funlingo currently supports dual subtitles on Youtube, Netflix and Prime covering millions of videos.",
     color: "text-cyan-300",
     bgColor: "bg-cyan-500/20",
     borderColor: "border-cyan-400/30",
@@ -320,7 +320,7 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
               <Shield className="w-8 h-8 text-brandlime-green" />
               <div>
                 <div className="font-heading-h6 font-[number:var(--heading-h6-font-weight)] text-textwhite text-[length:var(--heading-h6-font-size)] tracking-[var(--heading-h6-letter-spacing)] leading-[var(--heading-h6-line-height)] [font-style:var(--heading-h6-font-style)]">
-                  Trusted by 50,000+ Learners
+                  Trusted by 200+ Active Learners
                 </div>
                 <div className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
                   Join our global community
@@ -331,15 +331,12 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
             <div className="hidden lg:flex items-center gap-4">
               <Globe className="w-6 h-6 text-blue-400" />
               <div className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
-                120+ Countries
+                100+ Languages
               </div>
             </div>
 
             <div className="hidden lg:flex items-center gap-4">
-              <MessageCircle className="w-6 h-6 text-green-400" />
-              <div className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
-                1M+ Conversations
-              </div>
+              
             </div>
           </div>
 

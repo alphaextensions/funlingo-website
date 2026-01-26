@@ -43,23 +43,23 @@ export const About = (): React.JSX.Element => {
 
   const stats = [
     {
-      number: "1,000+",
+      number: "200+",
       label: "Active Users",
       description: "Language learners worldwide trust Funlingo",
       icon: <Users className="w-6 h-6" />,
       delay: "600ms",
     },
     {
-      number: "50+",
+      number: "100+",
       label: "Languages",
       description: "Supported language pairs and growing",
       icon: <Languages className="w-6 h-6" />,
       delay: "800ms",
     },
     {
-      number: "10M+",
-      label: "Translations",
-      description: "Words and phrases translated to date",
+      number: "4.9/5",
+      label: "Rating",
+      description: "Rating till date on Chrome Web Store",
       icon: <Zap className="w-6 h-6" />,
       delay: "1000ms",
     },
@@ -383,12 +383,17 @@ export const About = (): React.JSX.Element => {
     <div className="absolute inset-0 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
   </Button>
 </a>
-
+              <a
+  href="/feedback"
+  target="_blank"
+  rel="noopener noreferrer"
+>
 
               <Button className="bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.2)] text-textwhite font-body-normal-medium h-12 px-8 py-3 rounded-lg border border-[#ffffff1a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 group">
                 <Heart className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                 Share Feedback
               </Button>
+              </a>
             </div>
 
             {/* Social Proof */}
@@ -405,7 +410,7 @@ export const About = (): React.JSX.Element => {
                     ></div>
                   ))}
                 </div>
-                <span>Join 1,000+ learners</span>
+                <span>Join 200+ learners</span>
               </div>
 
               <div className="flex items-center gap-2">

@@ -4,13 +4,13 @@ import logo from "../../assets/logo.png";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "Pricing", href: "/pricing" },
   { label: "Roadmap", href: "/roadmap" },
+  { label: "Blog", href: "/blog" },
+  { label: "Feedback", href: "/feedback" },
   { label: "About", href: "/about" },
 ];
 
 const informationLinks = [
-  { label: "How It Works", href: "/#features" },
   { label: "Feedback", href: "/feedback" },
   { label: "Download Extension", href: "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" },
 ];
@@ -183,28 +183,7 @@ export const FooterSection = (): React.JSX.Element => {
         </div>
       </div>
 
-      {/* Newsletter Signup for Desktop */}
-      <div
-        className={`hidden lg:flex w-full max-w-2xl items-center justify-center transition-all duration-1000 delay-500 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
-      >
-        <div className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[#ffffff1a] backdrop-blur-sm w-full max-w-md">
-          <h3 className="font-body-small-medium text-textwhite text-center">
-            Stay Updated with Funlingo
-          </h3>
-          <div className="flex gap-2 w-full">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-2 rounded-lg bg-[rgba(255,255,255,0.1)] border border-[#ffffff1a] text-textwhite placeholder-textbody focus:outline-none focus:border-[#C642FC] transition-colors duration-300"
-            />
-            <button className="px-4 py-2 rounded-lg bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] text-textwhite font-body-normal-medium hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Bottom Section */}
       <div
@@ -213,7 +192,7 @@ export const FooterSection = (): React.JSX.Element => {
         }`}
       >
         <p className="flex items-center justify-center w-fit font-body-small-medium font-[number:var(--body-small-medium-font-weight)] text-textwhite text-[length:var(--body-small-medium-font-size)] tracking-[var(--body-small-medium-letter-spacing)] leading-[var(--body-small-medium-line-height)] whitespace-nowrap [font-style:var(--body-small-medium-font-style)] hover:scale-105 transition-transform duration-300 cursor-default">
-          ©2025 Funlingo. All rights reserved.
+          ©2026 Funlingo. All rights reserved.
         </p>
 
         {/* Additional Links */}
@@ -221,7 +200,7 @@ export const FooterSection = (): React.JSX.Element => {
           {[
             { label: "Privacy Policy", href: "/privacy-policy" },
             { label: "Support", href: "/support" },
-            { label: "Cookie Policy", href: "/cookies" },
+            // { label: "Cookie Policy", href: "/cookies" },
           ].map((link, index) => (
             <a
               key={index}
