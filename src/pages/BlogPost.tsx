@@ -92,7 +92,7 @@ export const BlogPost = (): React.JSX.Element => {
           </Badge>
           
           <h1 className="font-heading-h1 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Best AI Language Learning Tools (2026): Learn faster with AI & real content
+            FunLingo Best Leaning Language Tool (2026): Learn Faster with Binge watching real content
           </h1>
           
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
@@ -179,7 +179,7 @@ export const BlogPost = (): React.JSX.Element => {
           </ul>
 
           {/* Comparison */}
-          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How FunLingo compares to Trancy and FluentAI</h2>
+          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How FunLingo compares to Trancy and Immersive Translate</h2>
           <p>
             The comparison focuses on user outcomes: speed to comprehension, speaking readiness, and friction to use.
           </p>
@@ -188,7 +188,7 @@ export const BlogPost = (): React.JSX.Element => {
             {/* Manually embedded table structure as requested */}
             <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.03)] backdrop-blur-sm">
               <div className="max-h-[600px] overflow-y-auto overflow-x-auto custom-scrollbar">
-                <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between FunLingo, Trancy, and FluentAI">
+                <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between FunLingo, Trancy, and Immersive Translate">
                   <thead className="sticky top-0 z-20 bg-[#0a0a0a] shadow-sm">
                     <tr className="border-b border-white/10">
                       <th className="p-6 text-gray-400 font-medium w-1/4">Feature</th>
@@ -196,74 +196,53 @@ export const BlogPost = (): React.JSX.Element => {
                         FunLingo
                       </th>
                       <th className="p-6 text-gray-300 font-semibold w-1/4">Trancy</th>
-                      <th className="p-6 text-gray-300 font-semibold w-1/4">FluentAI</th>
+                      <th className="p-6 text-gray-300 font-semibold w-1/4">Immersive Translate</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/5">
                     {/* Rows */}
                     {[
                       {
-                        feature: "In-player Dual Subtitles",
-                        sub: "(Bilingual subtitles)",
-                        fun: { text: "Built-in and free; in-player overlay for Netflix, YouTube, Prime Video.", check: true },
-                        trancy: { text: "Focused on YouTube/Netflix bilingual subtitles and reading modes.", check: true },
-                        fluent: { text: "Market focus on dual subtitles; advanced options documented.", check: true }
+                        feature: "Word-level Popup",
+                        sub: "Native Meaning + \"View Example\" (Unique)",
+                        fun: { text: "Popup includes native meaning + View Example (unique UX).", check: true },
+                        trancy: { text: "No View Example inside popup.", check: false },
+                        immersive: { text: "Not available.", check: false }
                       },
                       {
-                        feature: "Instant Word-Level Lookup",
-                        sub: "& Multiple Translations",
-                        fun: { text: "Instant hover/word-lookup; UI for choosing multiple translations per word.", check: true },
-                        trancy: { text: "AI word lookup & word translation; strong lookup features.", check: true },
-                        fluent: { text: "Word lookup supported; focus is on subtitle generation.", check: false }
+                        feature: "Inline Native Meaning",
+                        sub: "Bracketed for Hard Words (Unique)",
+                        fun: { text: "Inline bracketed native meaning for selected/difficult words.", check: true },
+                        trancy: { text: "Not available.", check: false },
+                        immersive: { text: "Not available.", check: false }
                       },
                       {
-                        feature: "AI Contextual Explanations",
-                        sub: "(Phrase & grammar insights)",
-                        fun: { text: "Contextual AI explanations integrated as 'click-for-explain' help.", check: true },
-                        trancy: { text: "Offers AI grammar analysis, sentence segmentation, POS tagging.", check: true },
-                        fluent: { text: "Provides contextual translation features; roadmap emphasizes AI improvements.", check: false }
+                        feature: "Per-Word Pronunciation",
+                        sub: "(spelled + audio)",
+                        fun: { text: "Pronunciation per word (spelled-out cue + audio + slow play).", check: true },
+                        trancy: { text: "Limited / TTS features exist; per-word spelled-out UI not clearly documented.", check: false },
+                        immersive: { text: "Limited TTS; per-word spelled UI not documented.", check: false }
                       },
                       {
-                        feature: "Pronunciation Guides",
-                        sub: "& Native Audio",
-                        fun: { text: "Pronunciation guides and audio playback integrated (playback controls).", check: true },
-                        trancy: { text: "Offers lifelike TTS & speech recognition features.", check: false },
-                        fluent: { text: "TTS/voice features vary by extension; limited public detail.", check: false }
+                        feature: "Click-for-Context AI",
+                        sub: "Explanations (phrase & usage notes)",
+                        fun: { text: "Integrated click-for-explain AI blocks (phrase-level context).", check: true },
+                        trancy: { text: "Offers grammar/analysis tools; contextual explanation flow present.", check: true },
+                        immersive: { text: "Some contextual translation features; not identical in-player experience.", check: false }
                       },
                       {
-                        feature: "Vocab Builder",
-                        sub: "& Save / Review",
-                        fun: { text: "Save-to-vocab functionality and review lists directly from subtitles.", check: true },
-                        trancy: { text: "Save/bookmark words and create learning decks.", check: true },
-                        fluent: { text: "Some roadmap items mention vocabulary features.", check: false }
+                        feature: "Save-to-Vocab & Review",
+                        sub: "Deck",
+                        fun: { text: "Save-to-vocab + review list / export; built-in review UX.", check: true },
+                        trancy: { text: "Save/bookmark exists but full review deck features limited or study-mode oriented.", check: false },
+                        immersive: { text: "Not publicly documented as an integrated review deck.", check: false }
                       },
                       {
-                        feature: "Reading Modes",
-                        sub: "(subtitle-as-text / study mode)",
-                        fun: { text: "Reading / study modes implied (word highlighting + hover-to-pause).", check: false },
-                        trancy: { text: "Dedicated 'Subtitle Reading Mode' and reading-first tools.", check: true },
-                        fluent: { text: "Has reading and export features in guides.", check: false }
-                      },
-                      {
-                        feature: "Custom Translation Engine",
-                        sub: "",
-                        fun: { text: "Not prominently listed as user-facing (uses integrated APIs).", check: false },
-                        trancy: { text: "Custom engine selection supported (DeepL/OpenAI, etc).", check: true },
-                        fluent: { text: "Not clearly advertised.", check: false }
-                      },
-                      {
-                        feature: "Cross-platform Compatibility",
-                        sub: "",
-                        fun: { text: "Works on Netflix, YouTube, Prime Video; promising more platforms.", check: true },
-                        trancy: { text: "Broad platform support (YouTube, Netflix, HBO Max, etc).", check: true },
-                        fluent: { text: "Built for major streaming & web platforms.", check: true }
-                      },
-                      {
-                        feature: "Privacy & Safety",
-                        sub: "",
-                        fun: { text: "Recently listed; check extension permissions.", check: false },
-                        trancy: { text: "Public docs & privacy pages available.", check: false },
-                        fluent: { text: "Varies by provider.", check: false }
+                        feature: "Privacy & Extension",
+                        sub: "Safety Signals",
+                        fun: { text: "Explicit permissions & privacy guidance; lightweight extension model.", check: true },
+                        trancy: { text: "Privacy info available; enterprise features may differ.", check: false },
+                        immersive: { text: "Varies; public documentation limited.", check: false }
                       }
                     ].map((row, i) => (
                       <tr key={i} className="group hover:bg-white/5 transition-colors">
@@ -285,8 +264,8 @@ export const BlogPost = (): React.JSX.Element => {
                         </td>
                         <td className="p-6">
                           <div className="flex items-start gap-2">
-                            {row.fluent.check ? <Check className="w-5 h-5 text-gray-500 mt-1 shrink-0" /> : <Minus className="w-5 h-5 text-gray-600 mt-1 shrink-0" />}
-                            <span className="text-sm text-gray-400">{row.fluent.text}</span>
+                            {row.immersive.check ? <Check className="w-5 h-5 text-gray-500 mt-1 shrink-0" /> : <Minus className="w-5 h-5 text-gray-600 mt-1 shrink-0" />}
+                            <span className="text-sm text-gray-400">{row.immersive.text}</span>
                           </div>
                         </td>
                       </tr>
@@ -326,8 +305,8 @@ export const BlogPost = (): React.JSX.Element => {
                 Emphasizes deep reading modes, custom engine selection, and powerful grammar analysis — excellent for study-first workflows.
              </div>
              <div className="p-4 border border-white/10 rounded-lg">
-                <strong className="text-white block mb-2">FluentAI</strong>
-                Built for comprehensive dual subtitle flows and developer-focused roadmap improvements.
+                <strong className="text-white block mb-2">Immersive Translate</strong>
+                Known for broad translation capabilities across web and media, though specific language learning features may vary.
              </div>
              <div className="p-4 border border-[#C642FC]/30 bg-[#C642FC]/5 rounded-lg">
                 <strong className="text-[#C642FC] block mb-2">FunLingo</strong>

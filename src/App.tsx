@@ -31,7 +31,7 @@ function Router() {
       <Route path="/support" component = {Support}/>
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/best-ai-language-learning-tools-2026" component={BlogPost} />
-      <Route path="/compare/funlingo-vs-trancy-vs-fluentai" component={ComparePage} />
+      <Route path="/compare/funlingo-vs-trancy-vs-immersive-translate" component={ComparePage} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

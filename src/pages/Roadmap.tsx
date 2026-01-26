@@ -23,12 +23,12 @@ const roadmapItems = [
       },
       {
         title: "Basic Translation Features",
-        description: "Word and phrase translations in 10 languages",
+        description: "Word and phrase translations in 100+ languages",
         completed: true,
       },
       {
-        title: "User Authentication",
-        description: "Secure login and progress tracking",
+        title: "Text-to-Speech Integration",
+        description: "Audio playback for translated text",
         completed: true,
       },
     ],
@@ -46,8 +46,26 @@ const roadmapItems = [
         highlight: true,
       },
       {
-        title: "AI-Powered Explanations",
-        description: "Context-aware grammar and usage tips",
+        title: "Amazon Prime Video Support",
+        description: "Initial support for Amazon Prime Video",
+        completed: true,
+      },
+      {
+        title: "Transliteration Feature",
+        description: "Show Transliteration for Learinng Language",
+        completed: true,
+      },
+    ],
+  },
+  {
+    quarter: "Q3 2026",
+    status: "In Progress",
+    icon: <Zap className="w-5 h-5" />,
+    theme: "active",
+    items: [
+      {
+        title: "Reading Mode Integration",
+        description: "Seamless reading experience with translations",
         completed: true,
       },
       {
@@ -55,40 +73,21 @@ const roadmapItems = [
         description: "Audio pronunciation for all translations",
         completed: true,
       },
-    ],
-  },
-  {
-    quarter: "Q3 2025",
-    status: "In Progress",
-    icon: <Zap className="w-5 h-5" />,
-    theme: "active",
-    items: [
       {
-        title: "Firefox Extension",
-        description: "Cross-browser support for Firefox users",
-        completed: true,
-      },
-      {
-        title: "Mobile Apps (iOS & Android)",
-        description: "Native mobile experience",
-        completed: false,
-        highlight: true,
-      },
-      {
-        title: "Advanced Vocabulary Builder",
-        description: "Spaced repetition learning system",
+        title: "Translations for Websites",
+        description: "Extend support to web content",
         completed: false,
       },
     ],
   },
   {
-    quarter: "Q4 2025",
+    quarter: "Q4 2026",
     status: "Planned",
     icon: <Target className="w-5 h-5" />,
     theme: "planned",
     items: [
       {
-        title: "Amazon Prime Video Support",
+        title: "Jio Hotstar Video Support",
         description: "Expand to more streaming platforms",
         completed: false,
         highlight: true,
@@ -106,7 +105,7 @@ const roadmapItems = [
     ],
   },
   {
-    quarter: "Q1 2025",
+    quarter: "Q5 2026",
     status: "Planned",
     icon: <Rocket className="w-5 h-5" />,
     theme: "future",
@@ -343,17 +342,15 @@ export const Roadmap = (): React.JSX.Element => {
                 you'd love to see next!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group overflow-hidden relative">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv2e6cdee5tguj0Fh1iS7QWcAmAp8dHTDkx0rqvyfVAq-MKw/viewform" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group overflow-hidden relative">
                   <span className="relative z-10 font-body-normal-medium text-textwhite">
                     Submit Feature Request
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Button>
-                <Button className="bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.2)] h-12 px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 border border-[#ffffff1a]">
-                  <span className="font-body-normal-medium text-textwhite">
-                    Join Beta Testing
-                  </span>
-                </Button>
+                </a>
+               
               </div>
             </div>
           </div>

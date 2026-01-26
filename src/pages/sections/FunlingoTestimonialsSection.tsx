@@ -1,77 +1,73 @@
+
 import * as React from "react";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect, useRef } from "react";
 import { Star, Quote } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
-// Define types for our data
 interface Testimonial {
   id: number;
   quote: string;
   name: string;
-  role: string;
+  date: string;
   avatar: string;
-  size: "small" | "large";
-}
-
-interface TestimonialCardProps {
-  testimonial: Testimonial;
-  index: number;
-  isActive: boolean;
 }
 
 const testimonialsData: Testimonial[] = [
   {
     id: 1,
+    name: "Shubham Routray",
+    date: "Nov 15, 2025",
     quote:
-      "Funlingo has transformed how I learn Japanese. I can finally understand anime without subtitles, and I'm learning naturally through content I actually enjoy!",
-    name: "Sarah Chen",
-    role: "Japanese Learner",
+      "Funlingo has made lerning a new language part of my everyday entertainment. The dual subtitles help me catch new words instantly, and the built in meanings make everything so easy to understand.",
     avatar: "/figmaAssets/avatar.png",
-    size: "small",
   },
   {
     id: 2,
+    name: "Daniel",
+    date: "Nov 11, 2025",
     quote:
-      "As a language teacher, I recommend Funlingo to all my students. It's the perfect complement to traditional learning methods. The AI explanations are incredibly accurate and contextual, helping students understand not just what words mean, but how they're used in real conversations. My students' comprehension has improved dramatically.",
-    name: "Michael Rodriguez",
-    role: "Spanish Teacher",
+      "I’ve been using this extension for a while now, and it’s amazing how much my language skills have improved just by watching videos. It feels effortless and fun, and I love how it fits into my daily routine. I can learn language very easily.",
     avatar: "/figmaAssets/avatar-1.png",
-    size: "large",
   },
   {
     id: 3,
+    name: "Aastha Pandey",
+    date: "Nov 10, 2025",
     quote:
-      "I've been using Funlingo for French learning and it's amazing! The pronunciation guides are so helpful, and I love how it works seamlessly with Netflix.",
-    name: "Emma Thompson",
-    role: "French Learner",
-    avatar: "/figmaAssets/avatar-2.png",
-    size: "small",
+      "Funlingo has completely transformed the way I learn languages! Watching Netflix or YouTube while picking up new words feels effortless now. The dual subtitles and instant word meanings make understanding so smooth and fun. It’s intuitive, perfectly integrated with the player, and adds so much value to every show I watch. Learning while watching has never been this enjoyable",
+    avatar: "/figmaAssets/background.png",
   },
   {
     id: 4,
+    name: "Sarthak Shinde",
+    date: "Nov 10, 2025",
     quote:
-      "Learning Korean has never been easier. Funlingo makes it so natural - I just watch my favorite K-dramas and learn along the way. Highly recommend!",
-    name: "David Park",
-    role: "Korean Learner",
+      "Funlingo is an awesome tool for learning languages while watching Netflix or YouTube. I love the dual subtitles and instant word meanings — it makes understanding so easy. It’s smooth, simple, and blends perfectly with the player. Learning while watching has never been this fun! 🎬✨",
     avatar: "/figmaAssets/avatar-3.png",
-    size: "small",
   },
   {
     id: 5,
-    quote:
-      "I bought the lifetime plan and it's worth every penny. The vocabulary builder feature is brilliant for reviewing words I've learned while watching shows.",
-    name: "Lisa Mueller",
-    role: "German Learner",
+    name: "indera craft",
+    date: "Nov 19, 2025",
+    quote: "fun to use !",
     avatar: "/figmaAssets/avatar-4.png",
-    size: "small",
   },
 ];
 
 export const FunlingoTestimonialsSection = (): React.JSX.Element => {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -95,16 +91,28 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
     };
   }, []);
 
-  // Auto-rotate testimonials
   useEffect(() => {
-    if (!isVisible) return;
+    if (!api) {
+      return;
+    }
 
-    const interval = setInterval(() => {
-      setActiveTestimonial((prev) => (prev + 1) % testimonialsData.length);
-    }, 5000);
+    setCurrent(api.selectedScrollSnap() + 1);
 
-    return () => clearInterval(interval);
-  }, [isVisible]);
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  // Auto-play effect
+  useEffect(() => {
+    if (!api) return;
+
+    const intervalId = setInterval(() => {
+      api.scrollNext();
+    }, 6000);
+
+    return () => clearInterval(intervalId);
+  }, [api]);
 
   return (
     <section
@@ -121,7 +129,7 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
 
       {/* Header Section */}
       <header
-        className={`inline-flex flex-col max-w-full sm:max-w-screen-sm items-center justify-center gap-4 sm:gap-5 relative flex-[0_0_auto] transition-all duration-1000 ${
+        className={`inline-flex flex-col max-w-full sm:max-w-screen-sm items-center justify-center gap-4 sm:gap-5 relative flex-[0_0_auto] z-10 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -139,79 +147,49 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
         </h2>
       </header>
 
-      {/* Mobile Carousel */}
-      <div className="lg:hidden w-full max-w-2xl relative">
-        <div className="relative overflow-hidden rounded-2xl">
-          <div
-            className="flex transition-transform duration-500 ease-out"
-            style={{ transform: `translateX(-${activeTestimonial * 100}%)` }}
-          >
+      {/* Carousel Section */}
+      <div 
+        className={`w-full max-w-4xl relative z-10 px-8 transition-all duration-1000 delay-300 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        <Carousel
+          setApi={setApi}
+          opts={{
+            align: "center",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
             {testimonialsData.map((testimonial, index) => (
-              <div key={testimonial.id} className="w-full flex-shrink-0 px-2">
-                <TestimonialCard
-                  testimonial={testimonial}
-                  index={index}
-                  isActive={index === activeTestimonial}
-                />
-              </div>
+              <CarouselItem key={testimonial.id} className="basis-full">
+                <div className="p-1 flex justify-center">
+                  <TestimonialCard testimonial={testimonial} index={index} />
+                </div>
+              </CarouselItem>
             ))}
-          </div>
-        </div>
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex -left-12 bg-white/10 hover:bg-white/20 border-white/20 text-white" />
+          <CarouselNext className="hidden md:flex -right-12 bg-white/10 hover:bg-white/20 border-white/20 text-white" />
+        </Carousel>
 
-        {/* Mobile Navigation */}
-        <div className="flex items-center justify-center gap-3 mt-6">
+        {/* Custom Dots Indicator */}
+        <div className="flex justify-center gap-2 mt-8">
           {testimonialsData.map((_, index) => (
             <button
               key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === activeTestimonial
-                  ? "bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] scale-125"
-                  : "bg-textbody hover:bg-textwhite"
+              onClick={() => api?.scrollTo(index)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                current === index + 1
+                  ? "w-8 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC]"
+                  : "w-2 bg-white/20 hover:bg-white/40"
               }`}
-              onClick={() => setActiveTestimonial(index)}
-              aria-label={`Show testimonial ${index + 1}`}
+              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
       </div>
-
-      {/* Desktop Grid Layout */}
-      <div className="hidden lg:inline-flex flex-col items-center justify-center gap-6 relative flex-[0_0_auto] w-full max-w-6xl">
-        {/* First Row */}
-        <div
-          className={`inline-flex gap-6 flex-[0_0_auto] items-start relative transition-all duration-1000 delay-300 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          {testimonialsData.slice(0, 2).map((testimonial, index) => (
-            <TestimonialCard
-              key={testimonial.id}
-              testimonial={testimonial}
-              index={index}
-              isActive={true}
-            />
-          ))}
-        </div>
-
-        {/* Second Row */}
-        <div
-          className={`inline-flex gap-6 flex-[0_0_auto] items-start relative transition-all duration-1000 delay-500 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          {testimonialsData.slice(2, 5).map((testimonial, index) => (
-            <TestimonialCard
-              key={testimonial.id}
-              testimonial={testimonial}
-              index={index + 2}
-              isActive={true}
-            />
-          ))}
-        </div>
-      </div>
-
-      
-      
 
       <style>{`
         @keyframes fade-in-up {
@@ -245,45 +223,36 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
   );
 };
 
-// Separate Testimonial Card Component for better reusability
-const TestimonialCard: React.FC<TestimonialCardProps> = ({
+// Updated Testimonial Card Component
+const TestimonialCard: React.FC<{ testimonial: Testimonial; index: number }> = ({
   testimonial,
-  index,
-  isActive,
+  
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <Card
-      className={`flex flex-col items-start gap-4 sm:gap-6 p-6 sm:p-8 bg-[rgba(0,0,0,0.8)] backdrop-blur-sm rounded-xl overflow-hidden border border-[#ffffff1a] transition-all duration-500 group hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-105 relative ${
-        testimonial.size === "small"
-          ? "w-full max-w-sm"
-          : "w-full max-w-2xl lg:max-w-[664px]"
-      } ${isActive ? "opacity-100" : "opacity-0 absolute"} animate-fade-in-up`}
-      style={{
-        animationDelay: `${index * 100 + 300}ms`,
-        zIndex: isActive ? 10 : 0,
-      }}
+      className="flex flex-col items-center text-center gap-6 p-8 sm:p-10 bg-[rgba(0,0,0,0.6)] backdrop-blur-md rounded-2xl overflow-hidden border border-[#ffffff1a] transition-all duration-500 group hover:shadow-2xl hover:shadow-purple-500/20 w-full relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Hover Gradient Border Effect - Fixed to not affect content */}
-      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm group-hover:blur-md"></div>
-      <div className="absolute inset-[1px] rounded-xl bg-[rgba(0,0,0,0.9)] -z-10 backdrop-blur-sm"></div>
+      {/* Hover Gradient Border Effect */}
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm group-hover:blur-md"></div>
+      <div className="absolute inset-[1px] rounded-2xl bg-[#0a0a0a] -z-10"></div>
 
-      <CardContent className="p-0 flex flex-col gap-4 sm:gap-6 w-full relative z-10">
+      <CardContent className="p-0 flex flex-col items-center gap-6 w-full relative z-10">
         {/* Quote Icon */}
-        <div className="absolute -top-2 -right-2 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
-          <Quote className="w-16 h-16 text-[#C642FC] transform rotate-12" />
+        <div className="opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+          <Quote className="w-12 h-12 text-[#C642FC] fill-current" />
         </div>
 
         {/* Quote Text */}
         <p
-          className={`relative flex items-center justify-center self-stretch mt-[-1.00px] font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textwhite text-sm sm:text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-relaxed sm:leading-[var(--body-normal-medium-line-height)] [font-style:var(--body-normal-medium-font-style)] group-hover:text-white transition-colors duration-300 ${
-            isHovered ? "transform translate-x-1" : ""
+          className={`font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textwhite text-lg sm:text-xl md:text-2xl leading-relaxed tracking-wide italic transition-all duration-300 ${
+            isHovered ? "scale-[1.01]" : ""
           }`}
         >
-          {testimonial.quote}
+          "{testimonial.quote}"
         </p>
 
         {/* Star Rating */}
@@ -291,17 +260,17 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           {[1, 2, 3, 4, 5].map((star) => (
             <Star
               key={star}
-              className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400"
+              className="w-5 h-5 fill-yellow-400 text-yellow-400"
             />
           ))}
-          <span className="ml-2 font-body-small-medium text-textwhite text-sm">
-            5.0
-          </span>
         </div>
 
+        {/* Divider */}
+        <div className="w-16 h-1 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] rounded-full opacity-50"></div>
+
         {/* Author Info */}
-        <div className="flex items-start gap-3 relative self-stretch w-full flex-[0_0_auto] group-hover:transform group-hover:translate-x-1 transition-transform duration-300">
-          <Avatar className="relative w-10 h-10 rounded-[28px] group-hover:scale-110 transition-transform duration-300 border-2 border-transparent group-hover:border-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)]">
+        <div className="flex flex-col items-center gap-2">
+          <Avatar className="w-14 h-14 rounded-full border-2 border-[#C642FC] shadow-lg mb-2">
             <AvatarImage
               src={testimonial.avatar}
               alt={testimonial.name}
@@ -309,13 +278,13 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             />
           </Avatar>
 
-          <div className="flex flex-col items-start relative flex-1 grow">
-            <p className="relative flex items-center justify-center self-stretch mt-[-1.00px] font-body-small-medium text-textwhite text-[length:var(--body-small-medium-font-size)] leading-[var(--body-small-medium-line-height)] font-[number:var(--body-small-medium-font-weight)] tracking-[var(--body-small-medium-letter-spacing)] [font-style:var(--body-small-medium-font-style)] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+          <div className="flex flex-col items-center">
+            <p className="font-heading-h6 text-textwhite text-lg font-semibold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
               {testimonial.name}
             </p>
 
-            <p className="relative flex items-center justify-center self-stretch font-body-small-regular font-[number:var(--body-small-regular-font-weight)] text-textbody text-[length:var(--body-small-regular-font-size)] tracking-[var(--body-small-regular-letter-spacing)] leading-[var(--body-small-regular-line-height)] [font-style:var(--body-small-regular-font-style)] group-hover:text-textwhite transition-colors duration-300">
-              {testimonial.role}
+            <p className="font-body-small-regular text-textbody text-sm">
+              {testimonial.date}
             </p>
           </div>
         </div>
