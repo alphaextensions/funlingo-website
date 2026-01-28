@@ -17,6 +17,7 @@ import { Support } from "./pages/Support";
 import { BlogPost } from "./pages/BlogPost";
 import { BlogIndex } from "./pages/BlogIndex";
 import { ComparePage } from "./pages/ComparePage";
+import { BestAIToolsPost } from "./Blogs/BestAIToolsPost";
 
 function Router() {
   return (
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/best-ai-language-learning-tools-2026" component={BlogPost} />
       <Route path="/compare/funlingo-vs-trancy-vs-immersive-translate" component={ComparePage} />
+      <Route path="/blog/language-learning-tips-and-ai-insights" component={BestAIToolsPost} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

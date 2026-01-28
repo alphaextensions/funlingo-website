@@ -315,12 +315,7 @@ export const Roadmap = (): React.JSX.Element => {
                   ))}
                 </div>
 
-                {/* Timeline Connector (for mobile) */}
-                {index < roadmapItems.length - 1 && (
-                  <div className="lg:hidden flex justify-center mt-4">
-                    <div className="w-1 h-8 bg-gradient-to-b from-[#C642FC] to-[#7A1CAC] rounded-full"></div>
-                  </div>
-                )}
+               
               </div>
             ))}
           </div>

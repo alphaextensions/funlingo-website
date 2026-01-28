@@ -218,20 +218,7 @@ export const FunlingoProductSection = (): React.JSX.Element => {
         </div>
       </div>
 
-      {/* Additional Call to Action for Mobile */}
-      <div
-        className="lg:hidden flex flex-col items-center gap-4 mt-8 animate-fade-in-up"
-        style={{ animationDelay: "1400ms" }}
-      >
-        <p className="font-body-normal-regular text-textbody text-center max-w-md">
-          Ready to transform your language learning journey?
-        </p>
-        <button className="bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] h-12 px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30">
-          <span className="font-body-normal-medium text-textwhite">
-            Get Started Now
-          </span>
-        </button>
-      </div>
+     
 
       <style>{`
         @keyframes fade-in-up {

@@ -9,8 +9,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
 
@@ -149,29 +147,27 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
 
       {/* Carousel Section */}
       <div 
-        className={`w-full max-w-4xl relative z-10 px-8 transition-all duration-1000 delay-300 ${
+        className={`w-full max-w-7xl relative z-10 px-4 transition-all duration-1000 delay-300 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
         <Carousel
           setApi={setApi}
           opts={{
-            align: "center",
+            align: "start",
             loop: true,
           }}
           className="w-full"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-4">
             {testimonialsData.map((testimonial, index) => (
-              <CarouselItem key={testimonial.id} className="basis-full">
-                <div className="p-1 flex justify-center">
+              <CarouselItem key={testimonial.id} className="pl-4 md:basis-1/2 h-auto">
+                <div className="p-1 h-full">
                   <TestimonialCard testimonial={testimonial} index={index} />
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-12 bg-white/10 hover:bg-white/20 border-white/20 text-white" />
-          <CarouselNext className="hidden md:flex -right-12 bg-white/10 hover:bg-white/20 border-white/20 text-white" />
         </Carousel>
 
         {/* Custom Dots Indicator */}
@@ -232,7 +228,7 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial; index: number }> = (
 
   return (
     <Card
-      className="flex flex-col items-center text-center gap-6 p-8 sm:p-10 bg-[rgba(0,0,0,0.6)] backdrop-blur-md rounded-2xl overflow-hidden border border-[#ffffff1a] transition-all duration-500 group hover:shadow-2xl hover:shadow-purple-500/20 w-full relative"
+      className="flex flex-col items-center text-center gap-4 p-6 sm:p-8 bg-[rgba(0,0,0,0.6)] backdrop-blur-md rounded-2xl overflow-hidden border border-[#ffffff1a] transition-all duration-500 group hover:shadow-2xl hover:shadow-purple-500/20 w-full h-full relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -240,37 +236,39 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial; index: number }> = (
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm group-hover:blur-md"></div>
       <div className="absolute inset-[1px] rounded-2xl bg-[#0a0a0a] -z-10"></div>
 
-      <CardContent className="p-0 flex flex-col items-center gap-6 w-full relative z-10">
+      <CardContent className="p-0 flex flex-col items-center gap-4 w-full h-full relative z-10">
         {/* Quote Icon */}
         <div className="opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-          <Quote className="w-12 h-12 text-[#C642FC] fill-current" />
+          <Quote className="w-8 h-8 text-[#C642FC] fill-current" />
         </div>
 
         {/* Quote Text */}
-        <p
-          className={`font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textwhite text-lg sm:text-xl md:text-2xl leading-relaxed tracking-wide italic transition-all duration-300 ${
-            isHovered ? "scale-[1.01]" : ""
-          }`}
-        >
-          "{testimonial.quote}"
-        </p>
+        <div className="flex-grow flex items-center justify-center">
+          <p
+            className={`font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textwhite text-base sm:text-lg leading-relaxed tracking-wide italic transition-all duration-300 ${
+              isHovered ? "scale-[1.01]" : ""
+            }`}
+          >
+            "{testimonial.quote}"
+          </p>
+        </div>
 
         {/* Star Rating */}
-        <div className="flex items-center gap-1 group-hover:scale-110 transition-transform duration-300">
+        <div className="flex items-center gap-1 group-hover:scale-110 transition-transform duration-300 mt-auto pt-2">
           {[1, 2, 3, 4, 5].map((star) => (
             <Star
               key={star}
-              className="w-5 h-5 fill-yellow-400 text-yellow-400"
+              className="w-4 h-4 fill-yellow-400 text-yellow-400"
             />
           ))}
         </div>
 
         {/* Divider */}
-        <div className="w-16 h-1 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] rounded-full opacity-50"></div>
+        <div className="w-12 h-1 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] rounded-full opacity-50"></div>
 
         {/* Author Info */}
         <div className="flex flex-col items-center gap-2">
-          <Avatar className="w-14 h-14 rounded-full border-2 border-[#C642FC] shadow-lg mb-2">
+          <Avatar className="w-12 h-12 rounded-full border-2 border-[#C642FC] shadow-lg mb-1">
             <AvatarImage
               src={testimonial.avatar}
               alt={testimonial.name}
@@ -279,11 +277,11 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial; index: number }> = (
           </Avatar>
 
           <div className="flex flex-col items-center">
-            <p className="font-heading-h6 text-textwhite text-lg font-semibold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+            <p className="font-heading-h6 text-textwhite text-base font-semibold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
               {testimonial.name}
             </p>
 
-            <p className="font-body-small-regular text-textbody text-sm">
+            <p className="font-body-small-regular text-textbody text-xs">
               {testimonial.date}
             </p>
           </div>

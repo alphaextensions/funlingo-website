@@ -14,7 +14,6 @@ import {
   Star,
   TrendingUp,
   Globe,
-  MessageCircle,
   HelpCircle,
 } from "lucide-react";
 import Frame3 from "../../assets/Frame3.png"; // Import the image
