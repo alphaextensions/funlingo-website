@@ -146,7 +146,31 @@ export const HeroSection = (): React.JSX.Element => {
         }`}
         style={{ animationDelay: "1000ms" }}
       >
-        
+        <div className="flex flex-wrap justify-center items-center gap-6 opacity-90 hover:opacity-100 transition-opacity duration-300">
+          <a href="https://launchigniter.com/product/funlingo?ref=badge-funlingo" target="_blank" rel="noopener noreferrer">
+            <img src="https://launchigniter.com/api/badge/funlingo?theme=dark" alt="Featured on LaunchIgniter" width="212" height="55" />
+          </a>
+
+          <a href="https://www.producthunt.com/products/funlingo/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-funlingo" target="_blank" rel="noopener noreferrer">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1126955&theme=dark" alt="Funlingo - Dual Subtitles for Netflix, Youtube & More! | Product Hunt" style={{ width: "250px", height: "54px" }} width="250" height="54" />
+          </a>
+
+          <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer">
+            <img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" />
+          </a>
+
+          <a href="https://wired.business" target="_blank" rel="noopener noreferrer">
+            <img src="https://wired.business/badge0-light.svg" alt="Featured on Wired Business" width="200" height="54" />
+          </a>
+
+          <a href="https://toolfame.com/item/funlingo" target="_blank" rel="noopener noreferrer">
+            <img src="https://toolfame.com/badge-light.svg" alt="Featured on toolfame.com" style={{ height: "54px", width: "auto" }} />
+          </a>
+
+          <a href="https://fazier.com/launches/getfunlingo.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" alt="Fazier badge" />
+          </a>
+        </div>
       </div>
 
       <style>{`
