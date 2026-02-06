@@ -13,8 +13,17 @@ export const BlogIndex = (): React.JSX.Element => {
   const [, setLocation] = useLocation();
 
   const posts = [
-     {
+    {
       id: 1,
+      title: "Reading Mode: Learn Naturally — Read Captions Side-by-Side While You Watch",
+      excerpt: "Turn your watch time into a language lesson. Funlingo’s Reading Mode shows synchronized bilingual captions with instant synonyms & examples.",
+      date: "February 05, 2026",
+      author: "Rushab Kasat",
+      category: "Feature",
+      slug: "/blog/reading-mode-bilingual-captions"
+    },
+     {
+      id: 2,
       title: "FunLingo: AI-native, low-friction learning",
       excerpt: "FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow.",
       date: "January 28, 2026",
@@ -23,7 +32,7 @@ export const BlogIndex = (): React.JSX.Element => {
       slug: "/blog/language-learning-tips-and-ai-insights"
     },
     {
-      id: 2,
+      id: 3,
       title: "Best AI Language Learning Tools (2026): Learn faster with AI & real content",
       excerpt: "Compare the top AI language learning tools and discover how FunLingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
       date: "January 21, 2026",
@@ -31,6 +40,7 @@ export const BlogIndex = (): React.JSX.Element => {
       category: "Guide",
       slug: "/blog/best-ai-language-learning-tools-2026"
     },
+    
   
   ];
 

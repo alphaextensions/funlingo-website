@@ -6,7 +6,7 @@ import { Toaster } from "./components/ui/toaster";
 import { TooltipProvider } from "./components/ui/tooltip";
 import { HelmetProvider } from "react-helmet-async";
 import NotFound from "./pages/not-found";
-
+import { ReadingModeBlogPost } from "./Blogs/ReadingModeBlogPost";
 import { HomeDesktop } from "./pages/HomeDesktop";
 // import { Pricing } from "./pages/Pricing";
 import { Roadmap } from "./pages/Roadmap";
@@ -34,6 +34,7 @@ function Router() {
       <Route path="/blog/best-ai-language-learning-tools-2026" component={BlogPost} />
       <Route path="/compare/funlingo-vs-trancy-vs-immersive-translate" component={ComparePage} />
       <Route path="/blog/language-learning-tips-and-ai-insights" component={BestAIToolsPost} />
+       <Route path="/blog/reading-mode-bilingual-captions" component={ReadingModeBlogPost} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

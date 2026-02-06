@@ -35,9 +35,10 @@ export const Feedback = (): React.JSX.Element => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -59,24 +60,70 @@ export const Feedback = (): React.JSX.Element => {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-    setFormData({
-      name: "",
-      email: "",
-      category: "feature",
-      message: "",
-      uninstallReason: "",
-      missingFeatures: [],
-      notWorkingProperly: false,
-      otherReason: "",
-      desiredFeature: "",
-      satisfaction: 5,
-      recommend: "",
-    });
+  const validateForm = () => {
+    if (!formData.name.trim()) return "Please enter your name.";
+    if (!formData.email.trim()) return "Please enter your email.";
+    if (!formData.message.trim()) return "Please enter your feedback.";
+
+    if (
+      formData.category === "uninstall" &&
+      formData.missingFeatures.length === 0 &&
+      !formData.notWorkingProperly &&
+      !formData.otherReason.trim()
+    ) {
+      return "Please select at least one uninstall reason.";
+    }
+    return null;
   };
+
+ const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (loading) return;
+
+    setError(null);
+    const validationError = validateForm();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbzbir-gTrH4MPvKXoSGJ3gH3DRVZQz1Ja-A5LY4EDhkhja-JD40OOKH8qpNyoqn-9jf/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          body: JSON.stringify(formData),
+        }
+      );
+
+      // ✅ Success
+      setSubmitted(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        category: "feature",
+        message: "",
+        uninstallReason: "",
+        missingFeatures: [],
+        notWorkingProperly: false,
+        otherReason: "",
+        desiredFeature: "",
+        satisfaction: 5,
+        recommend: "",
+      });
+
+      setTimeout(() => setSubmitted(false), 3000);
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
 
   const handleCheckboxChange = (feature: string) => {
     setFormData(prev => ({
@@ -124,6 +171,15 @@ export const Feedback = (): React.JSX.Element => {
               Your input helps us build a better language learning experience for everyone
             </p>
           </div>
+
+           {/* ❌ ERROR MESSAGE */}
+          {error && (
+            <div className="w-full max-w-2xl p-3 rounded-lg bg-red-500/20 border border-red-500 backdrop-blur-sm animate-fade-in-up">
+              <p className="font-body-normal-medium text-red-200 text-center">
+                {error}
+              </p>
+            </div>
+          )}
 
           {/* Success Message */}
           {submitted && (
@@ -342,14 +398,18 @@ export const Feedback = (): React.JSX.Element => {
               />
             </div>
 
-            <Button
+           <Button
               type="submit"
-              className="w-full bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group/btn overflow-hidden relative mt-2"
+              disabled={loading}
+              className={`w-full h-12 px-6 py-3 rounded-lg transition-all duration-300 mt-2 ${
+                loading
+                  ? "bg-gray-500 cursor-not-allowed"
+                  : "bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] hover:opacity-90 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
+              }`}
             >
-              <span className="relative z-10 font-body-normal-medium text-textwhite group-hover/btn:scale-105 transition-transform duration-300">
-                Submit Feedback
+              <span className="relative z-10 font-body-normal-medium text-textwhite">
+                {loading ? "Submitting..." : "Submit Feedback"}
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
             </Button>
           </form>
 
