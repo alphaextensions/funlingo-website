@@ -171,7 +171,7 @@ export const ReadingModeBlogPost = (): React.JSX.Element => {
             <blockquote className="border-l-4 border-[#C642FC] pl-4 italic text-gray-200 mb-4">
               “I used Reading Mode with a Korean travel vlog for 20 minutes a day. After two weeks I recognized common travel phrases and could follow 40–50% of simple sentences without pausing.”
             </blockquote>
-            <p className="text-gray-400 text-sm text-right">— Mira, Funlingo user</p>
+            <p className="text-gray-400 text-sm text-right">Team Funlingo</p>
           </div>
 
           {/* Conclusion */}
@@ -193,11 +193,9 @@ export const ReadingModeBlogPost = (): React.JSX.Element => {
              <div>
                 <h3 className="text-lg font-bold text-white mt-0 mb-2">About the author</h3>
                 <p className="text-gray-300 text-sm mb-2">
-                   <strong className="text-white">Rushab Kasat</strong> — Founder of Funlingo. 
+                   Team Funlingo
                 </p>
-                <a href="https://www.linkedin.com/company/getfunlingo" target="_blank" rel="noreferrer" className="text-[#C642FC] text-sm hover:underline">
-                   Connect on LinkedIn
-                </a>
+                
              </div>
           </div>
 

@@ -18,6 +18,7 @@ import { BlogPost } from "./pages/BlogPost";
 import { BlogIndex } from "./pages/BlogIndex";
 import { ComparePage } from "./pages/ComparePage";
 import { BestAIToolsPost } from "./Blogs/BestAIToolsPost";
+import { ReadingModeBlog2 } from "./Blogs/ReadingModeBlog2";
 
 function Router() {
   return (
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/compare/funlingo-vs-trancy-vs-immersive-translate" component={ComparePage} />
       <Route path="/blog/language-learning-tips-and-ai-insights" component={BestAIToolsPost} />
        <Route path="/blog/reading-mode-bilingual-captions" component={ReadingModeBlogPost} />
+       <Route path="/blog/how-to-learn-languages-with-reading-mode" component={ReadingModeBlog2} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
