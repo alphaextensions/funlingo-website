@@ -19,6 +19,7 @@ import { BlogIndex } from "./pages/BlogIndex";
 import { ComparePage } from "./pages/ComparePage";
 import { BestAIToolsPost } from "./Blogs/BestAIToolsPost";
 import { ReadingModeBlog2 } from "./Blogs/ReadingModeBlog2";
+import { LearnLanguageByWatchingPost } from "./Blogs/LearnLanguageByWatchingPost";
 
 function Router() {
   return (
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/blog/language-learning-tips-and-ai-insights" component={BestAIToolsPost} />
        <Route path="/blog/reading-mode-bilingual-captions" component={ReadingModeBlogPost} />
        <Route path="/blog/how-to-learn-languages-with-reading-mode" component={ReadingModeBlog2} />
+       <Route path="/blog/how-to-learn-a-language-by-watching" component={LearnLanguageByWatchingPost} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

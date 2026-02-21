@@ -188,7 +188,7 @@ export const ReadingModeBlogPost = (): React.JSX.Element => {
           {/* Author */}
           <div className="flex items-start gap-6 bg-white/5 p-6 rounded-xl border border-white/10">
              <div className="w-16 h-16 rounded-full bg-[#C642FC]/20 flex items-center justify-center text-[#C642FC] text-2xl font-bold">
-                AP
+                F
              </div>
              <div>
                 <h3 className="text-lg font-bold text-white mt-0 mb-2">About the author</h3>

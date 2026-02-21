@@ -15,6 +15,15 @@ export const BlogIndex = (): React.JSX.Element => {
   const posts = [
     {
       id: 1,
+      title: "How to Learn a Language by Watching (Without Wasting Your Time)",
+      excerpt: "Learn how to effectively learn a language by watching using structured methods, contextual learning, and subtitle strategies that actually improve retention.",
+      date: "February 21, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/how-to-learn-a-language-by-watching"
+    },
+    {
+      id: 2,
       title: "Reading Mode: How to Learn Languages While You Watch",
       excerpt: "Bilingual captions that actually work. Discover 5 concrete routines to turn passive viewing into repeatable vocabulary gains with Reading Mode.",
       date: "February 16, 2026",
@@ -23,7 +32,7 @@ export const BlogIndex = (): React.JSX.Element => {
       slug: "/blog/how-to-learn-languages-with-reading-mode"
     },
     {
-      id: 2,
+      id: 3,
       title: "Reading Mode: Learn Naturally — Read Captions Side-by-Side While You Watch",
       excerpt: "Turn your watch time into a language lesson. Funlingo’s Reading Mode shows synchronized bilingual captions with instant synonyms & examples.",
       date: "February 05, 2026",
@@ -32,7 +41,7 @@ export const BlogIndex = (): React.JSX.Element => {
       slug: "/blog/reading-mode-bilingual-captions"
     },
      {
-      id: 3,
+      id: 4,
       title: "FunLingo: AI-native, low-friction learning",
       excerpt: "FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow.",
       date: "January 28, 2026",
@@ -41,7 +50,7 @@ export const BlogIndex = (): React.JSX.Element => {
       slug: "/blog/language-learning-tips-and-ai-insights"
     },
     {
-      id: 4,
+      id: 5,
       title: "Best AI Language Learning Tools (2026): Learn faster with AI & real content",
       excerpt: "Compare the top AI language learning tools and discover how FunLingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
       date: "January 21, 2026",
