@@ -20,6 +20,7 @@ import { ComparePage } from "./pages/ComparePage";
 import { BestAIToolsPost } from "./Blogs/BestAIToolsPost";
 import { ReadingModeBlog2 } from "./Blogs/ReadingModeBlog2";
 import { LearnLanguageByWatchingPost } from "./Blogs/LearnLanguageByWatchingPost";
+import { WebsiteTranslationPost } from "./Blogs/WebsiteTranslationPost";
 
 function Router() {
   return (
@@ -31,14 +32,15 @@ function Router() {
       <Route path="/feedback" component={Feedback} />
       <Route path="/about" component={About} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
-      <Route path="/support" component = {Support}/>
+      <Route path="/support" component={Support} />
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/best-ai-language-learning-tools-2026" component={BlogPost} />
       <Route path="/compare/funlingo-vs-trancy-vs-immersive-translate" component={ComparePage} />
       <Route path="/blog/language-learning-tips-and-ai-insights" component={BestAIToolsPost} />
-       <Route path="/blog/reading-mode-bilingual-captions" component={ReadingModeBlogPost} />
-       <Route path="/blog/how-to-learn-languages-with-reading-mode" component={ReadingModeBlog2} />
-       <Route path="/blog/how-to-learn-a-language-by-watching" component={LearnLanguageByWatchingPost} />
+      <Route path="/blog/reading-mode-bilingual-captions" component={ReadingModeBlogPost} />
+      <Route path="/blog/how-to-learn-languages-with-reading-mode" component={ReadingModeBlog2} />
+      <Route path="/blog/how-to-learn-a-language-by-watching" component={LearnLanguageByWatchingPost} />
+      <Route path="/blog/website-translation-language-learning" component={WebsiteTranslationPost} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
