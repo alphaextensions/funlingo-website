@@ -14,6 +14,15 @@ export const BlogIndex = (): React.JSX.Element => {
 
   const posts = [
     {
+      id: 0,
+      title: "Website Translation for Language Learning: Read Any Website in Two Languages",
+      excerpt: "Discover how FunLingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
+      date: "March 07, 2026",
+      author: "Funlingo Team",
+      category: "Feature",
+      slug: "/blog/website-translation-language-learning"
+    },
+    {
       id: 1,
       title: "How to Learn a Language by Watching (Without Wasting Your Time)",
       excerpt: "Learn how to effectively learn a language by watching using structured methods, contextual learning, and subtitle strategies that actually improve retention.",
@@ -40,7 +49,7 @@ export const BlogIndex = (): React.JSX.Element => {
       category: "Feature",
       slug: "/blog/reading-mode-bilingual-captions"
     },
-     {
+    {
       id: 4,
       title: "FunLingo: AI-native, low-friction learning",
       excerpt: "FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow.",
@@ -58,8 +67,8 @@ export const BlogIndex = (): React.JSX.Element => {
       category: "Guide",
       slug: "/blog/best-ai-language-learning-tools-2026"
     },
-    
-  
+
+
   ];
 
   return (
@@ -86,9 +95,9 @@ export const BlogIndex = (): React.JSX.Element => {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
-            <Card 
-              key={post.id} 
-              className="bg-white/5 border-white/10 overflow-hidden hover:border-[#C642FC]/50 transition-all duration-300 group cursor-pointer hover:shadow-lg hover:shadow-[#C642FC]/10" 
+            <Card
+              key={post.id}
+              className="bg-white/5 border-white/10 overflow-hidden hover:border-[#C642FC]/50 transition-all duration-300 group cursor-pointer hover:shadow-lg hover:shadow-[#C642FC]/10"
               onClick={() => setLocation(post.slug)}
             >
               <CardHeader>
