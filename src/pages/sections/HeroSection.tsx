@@ -179,6 +179,10 @@ export const HeroSection = (): React.JSX.Element => {
           <a href="https://seojuice.com" target="_blank" rel="noopener noreferrer">
             <img src="https://seojuiced.b-cdn.net/seojuice/static/images/backlink-badge.svg" alt="SEOJuice" height="20" />
           </a>
+
+          <a href="https://tinylaunch.com" target="_blank" rel="noopener">
+            <img src="https://tinylaunch.com/tinylaunch_badge_1.svg" alt="TinyLaunch Badge" style={{ width: "202px", height: "auto" }} />
+          </a>
         </div>
       </div>
 
