@@ -1,4 +1,3 @@
-
 User-agent: *
 Allow: /
 Sitemap: https://getfunlingo.com/sitemap.xml
