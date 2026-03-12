@@ -63,21 +63,118 @@ export const HomeDesktop = (): React.JSX.Element => {
       "priceCurrency": "USD",
       "description": "Free forever version available"
     },
-    "description": "A free dual subtitle Chrome extension that helps users learn languages by watching videos on Netflix and YouTube with simultaneous bilingual subtitles.",
-    "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Language learning tools"
+    "description": "A free dual subtitle Chrome extension that helps users learn languages by watching videos on Netflix, YouTube, and Prime Video with simultaneous bilingual subtitles. Supports 100+ languages with AI-powered translations.",
+    "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Prime Video support, Vocabulary builder, 100+ languages, Language learning tools",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.92",
+      "ratingCount": "12",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
+  // FAQPage Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Dual Subtitle Learning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dual subtitle learning is a method where you display two sets of subtitles simultaneously: one in the audio's original language (e.g., Spanish) and one in your native language (e.g., English). This allows for instant comparison and comprehension without stopping the video."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Funlingo really free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Funlingo is a completely free alternative to paid subtitle extensions. You get full dual subtitle functionality at no cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does AI help with language learning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The integrated AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which sites are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Funlingo currently supports dual subtitles on YouTube, Netflix, and Prime Video, covering millions of videos across 100+ languages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I save words?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can save words to your personal vocabulary list to review later, tracking your progress over time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it good for beginners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Dual subtitles allow beginners to follow the story in their native language while associating spoken audio with target language text."
+        }
+      }
+    ]
+  };
+
+  // Organization Schema
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Funlingo",
+    "url": "https://getfunlingo.com",
+    "logo": "https://getfunlingo.com/figmaAssets/logo.png",
+    "description": "Funlingo builds free AI-powered language learning tools. Our Chrome extension provides dual subtitles for Netflix, YouTube, and Prime Video, helping users learn 100+ languages through immersive video content.",
+    "sameAs": []
+  };
+
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://getfunlingo.com"
+      }
+    ]
   };
 
   return (
     <div className="flex flex-col items-start relative bg-[#000000]">
       <SEO 
         title="Funlingo - Free Dual Subtitles for Netflix & YouTube Learning"
-        description="The best free dual subtitle Chrome extension. Learn languages while watching videos on Netflix and YouTube with AI-powered translations and bilingual subtitles."
+        description="Free dual subtitle Chrome extension for Netflix, YouTube & Prime. AI-powered bilingual subtitles, vocabulary building, and instant translations."
         keywords="free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, ai powered language learning, best free subtitle tool"
         canonical="/"
       />
       {/* Schema.org Structured Data Injection */}
       <script type="application/ld+json">
         {JSON.stringify(schemaData)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(organizationSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
       </script>
 
       {/* Navigation Header */}
