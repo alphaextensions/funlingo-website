@@ -1,0 +1,46 @@
+# Funlingo
+
+## Overview
+Funlingo is a free dual subtitle Chrome extension for language learning. It displays bilingual subtitles simultaneously on Netflix, YouTube, and Prime Video, helping users learn languages naturally through immersive video content.
+
+## Key Features
+- Dual subtitles: Display two languages side-by-side while watching videos
+- AI-powered translations: Instant, context-aware word definitions and grammar explanations
+- Vocabulary builder: Save words and phrases to review later with spaced repetition
+- Progress tracking: Monitor learning journey with detailed analytics
+- Pronunciation guides: Hear native speaker pronunciations
+
+## Supported Platforms
+- Netflix
+- YouTube
+- Amazon Prime Video
+
+## Browser Compatibility
+- Google Chrome
+- Microsoft Edge
+- Brave Browser
+
+## Languages
+Supports 100+ languages including Spanish, French, Korean, Japanese, German, Portuguese, Italian, Chinese, Arabic, Hindi, and more.
+
+## Pricing
+Free. Funlingo is a completely free alternative to paid subtitle extensions like Trancy and Immersive Translate.
+
+## Target Audience
+- Language learners at all levels (beginner to advanced)
+- Students studying foreign languages
+- Polyglots and language enthusiasts
+- Anyone who wants to learn a language while watching their favorite shows
+
+## Stats
+- 200+ active learners
+- 4.92/5 star rating on Chrome Web Store (12 reviews)
+- 100+ languages supported
+
+## Links
+- Website: https://getfunlingo.com
+- Chrome Web Store: https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj
+- Blog: https://getfunlingo.com/blog
+- About: https://getfunlingo.com/about
+- Roadmap: https://getfunlingo.com/roadmap
+- Feedback: https://getfunlingo.com/feedback

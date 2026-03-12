@@ -93,7 +93,7 @@ export const FunlingoProductSection = (): React.JSX.Element => {
               className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-base sm:text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)] animate-fade-in-up"
               style={{ animationDelay: "400ms" }}
             >
-              Using Funlingo is simple. The extension automatically syncs translated subtitles with the original audio, allowing you to absorb new vocabulary in context without pausing to look up words.
+              Using Funlingo is simple. Install in under 30 seconds, then the extension automatically syncs translated subtitles with the original audio across 100+ languages, allowing you to absorb new vocabulary in context without pausing to look up words.
             </p>
           </div>
 

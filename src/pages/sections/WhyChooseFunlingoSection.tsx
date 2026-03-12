@@ -23,7 +23,7 @@ const qaItems = [
     icon: Brain,
     title: "Does it help vocabulary?",
     description:
-      "Yes. Learning words in the context of real conversations improves retention by 50% compared to rote memorization.",
+      "Yes. Learning words in the context of real conversations improves retention by up to 50% compared to rote memorization. Save unlimited words to your personal vocabulary list.",
     color: "text-purple-300",
     bgColor: "bg-purple-500/20",
     borderColor: "border-purple-400/30",
@@ -52,7 +52,7 @@ const qaItems = [
   {
     icon: Languages,
     title: "Which sites are supported?",
-    description: "Funlingo currently supports dual subtitles on Youtube, Netflix and Prime covering millions of videos.",
+    description: "Funlingo supports dual subtitles on YouTube, Netflix, and Prime Video — 3 major platforms covering millions of videos in 100+ languages.",
     color: "text-cyan-300",
     bgColor: "bg-cyan-500/20",
     borderColor: "border-cyan-400/30",

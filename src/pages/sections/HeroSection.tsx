@@ -43,7 +43,7 @@ export const HeroSection = (): React.JSX.Element => {
               className="relative flex items-center justify-center lg:justify-start self-stretch font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl md:text-2xl lg:text-[length:var(--body-large-regular-font-size)] text-center lg:text-left tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed lg:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "600ms" }}
             >
-              Turn your YouTube, Netflix and Prime time into an immersive language lesson. Funlingo provides bilingual subtitles, instant AI definitions, and vocabulary building—a completely free alternative to paid extensions.
+              Turn your YouTube, Netflix, and Prime time into an immersive language lesson. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.92/5 stars by learners.
             </p>
           </div>
 
@@ -92,10 +92,13 @@ export const HeroSection = (): React.JSX.Element => {
                 <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-[#410c46] via-[#b037e5] to-[#410c46] bg-[length:200%_200%] opacity-80 -z-10"></div>
                 <div className="relative rounded-2xl overflow-hidden">
                   <img
-                    src="/figmaAssets/heroImg3.png"
+                    src="/figmaAssets/heroImg3.webp"
                     alt="Funlingo dual subtitle interface displaying English and Spanish subtitles on Netflix"
                     className="rounded-2xl w-full h-auto object-contain shadow-2xl shadow-purple-500/40 hover:shadow-purple-500/60 hover:scale-105 transition-all duration-500 animate-fade-in-up"
                     style={{ maxHeight: "500px" }}
+                    width={800}
+                    height={500}
+                    fetchPriority="high"
                   />
                 </div>
               </div>
@@ -114,7 +117,7 @@ export const HeroSection = (): React.JSX.Element => {
                 {/* Main Image */}
                 <div className="relative rounded-3xl overflow-hidden">
                   <img
-                    src="/figmaAssets/heroImg3.png"
+                    src="/figmaAssets/heroImg3.webp"
                     alt="Funlingo dual subtitle interface displaying English and Spanish subtitles on Netflix"
                     className="rounded-3xl w-full h-auto object-contain shadow-3xl shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-500 animate-fade-in-up"
                     style={{
@@ -122,6 +125,9 @@ export const HeroSection = (): React.JSX.Element => {
                       minHeight: "355px",
                       width: "100%",
                     }}
+                    width={1200}
+                    height={750}
+                    fetchPriority="high"
                   />
                 </div>
 
@@ -145,43 +151,43 @@ export const HeroSection = (): React.JSX.Element => {
       >
         <div className="flex flex-wrap justify-center items-center gap-6 opacity-90 hover:opacity-100 transition-opacity duration-300">
           <a href="https://launchigniter.com/product/funlingo?ref=badge-funlingo" target="_blank">
-            <img src="https://launchigniter.com/api/badge/funlingo?theme=dark" alt="Featured on LaunchIgniter" width="212" height="55" />
+            <img src="https://launchigniter.com/api/badge/funlingo?theme=dark" alt="Featured on LaunchIgniter" width="212" height="55" loading="lazy" />
           </a>
 
           <a href="https://www.producthunt.com/products/funlingo/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-funlingo" target="_blank" rel="noopener noreferrer">
-            <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1126955&theme=dark" alt="Funlingo - Dual Subtitles for Netflix, Youtube & More! | Product Hunt" style={{ width: "250px", height: "54px" }} width="250" height="54" />
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1126955&theme=dark" alt="Funlingo - Dual Subtitles for Netflix, Youtube & More! | Product Hunt" style={{ width: "250px", height: "54px" }} width="250" height="54" loading="lazy" />
           </a>
 
           <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer">
-            <img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" />
+            <img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" loading="lazy" />
           </a>
 
           <a href="https://wired.business" target="_blank">
-            <img src="https://wired.business/badge0-dark.svg" alt="Featured on Wired Business" width="200" height="54" />
+            <img src="https://wired.business/badge0-dark.svg" alt="Featured on Wired Business" width="200" height="54" loading="lazy" />
           </a>
 
           <a href="https://toolfame.com/item/funlingo" target="_blank" rel="noopener noreferrer">
-            <img src="https://toolfame.com/badge-dark.svg" alt="Featured on toolfame.com" style={{ height: "54px", width: "auto" }} />
+            <img src="https://toolfame.com/badge-dark.svg" alt="Featured on toolfame.com" width="200" height="54" style={{ height: "54px", width: "auto" }} loading="lazy" />
           </a>
 
           <a href="https://fazier.com/launches/getfunlingo.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" alt="Fazier badge" />
+            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" height="54" alt="Fazier badge" loading="lazy" />
           </a>
 
           <a href="https://frogdr.com/getfunlingo.com?utm_source=getfunlingo.com" target="_blank">
-            <img src="https://frogdr.com/getfunlingo.com/badge-white.svg" alt="Monitor your Domain Rating with FrogDR" width="250" height="54" />
+            <img src="https://frogdr.com/getfunlingo.com/badge-white.svg" alt="Monitor your Domain Rating with FrogDR" width="250" height="54" loading="lazy" />
           </a>
 
           <a href="https://www.foundrlist.com/product/funlingo" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.foundrlist.com/api/badge/funlingo" alt="Funlingo - Live on FoundrList" width="160" height="64" />
+            <img src="https://www.foundrlist.com/api/badge/funlingo" alt="Funlingo - Live on FoundrList" width="160" height="64" loading="lazy" />
           </a>
 
           <a href="https://seojuice.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://seojuiced.b-cdn.net/seojuice/static/images/backlink-badge.svg" alt="SEOJuice" height="20" />
+            <img src="https://seojuiced.b-cdn.net/seojuice/static/images/backlink-badge.svg" alt="SEOJuice" width="100" height="20" loading="lazy" />
           </a>
 
           <a href="https://tinylaunch.com" target="_blank" rel="noopener">
-            <img src="https://tinylaunch.com/tinylaunch_badge_1.svg" alt="TinyLaunch Badge" style={{ width: "202px", height: "auto" }} />
+            <img src="https://tinylaunch.com/tinylaunch_badge_1.svg" alt="TinyLaunch Badge" width="202" height="54" style={{ width: "202px", height: "auto" }} loading="lazy" />
           </a>
         </div>
       </div>
