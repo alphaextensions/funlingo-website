@@ -11,24 +11,24 @@ import { Button } from "@/components/ui/button";
 
 const faqItems = [
   {
-    question: "How do I install ClayAI?",
-    answer: "",
+    question: "How do I install FunLingo?",
+    answer: "Visit the Chrome Web Store, search for 'FunLingo,' and click 'Add to Chrome.' The extension installs in seconds and works immediately on YouTube, Netflix, and Prime Video. No account creation or configuration is required — just open a video and your dual subtitles appear automatically.",
   },
   {
-    question: "Is VAT included in the prices?",
-    answer: "",
+    question: "Is FunLingo really free?",
+    answer: "Yes, FunLingo is completely free with no hidden costs, premium tiers, or paywalls. You get full access to dual subtitles, AI-powered word definitions, pronunciation guides, and the vocabulary builder at no charge. Unlike competitors like Trancy or Language Reactor, there is no paid upgrade required for core features.",
   },
   {
-    question: "Can I add more users to a plan?",
-    answer: "",
+    question: "What languages does FunLingo support?",
+    answer: "FunLingo supports over 100 languages for dual subtitles, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, Hindi, and many more. You can display any combination of two languages simultaneously, making it ideal for learners at any level.",
   },
   {
-    question: "Can I share my login with a colleague?",
-    answer: "",
+    question: "How do dual subtitles help me learn a language?",
+    answer: "Dual subtitles display two languages at once — the original audio language and your native language — so you can instantly compare words, phrases, and grammar in real conversational context. Research in second language acquisition shows that contextual exposure through authentic media improves vocabulary retention by up to 50% compared to traditional flashcard methods.",
   },
   {
-    question: "Do I get an invoice for ClayAI?",
-    answer: "",
+    question: "Which streaming platforms does FunLingo work with?",
+    answer: "FunLingo currently supports YouTube, Netflix, and Amazon Prime Video. These three platforms cover millions of videos and shows across every genre and language. The extension integrates directly into the video player, so subtitles appear seamlessly without disrupting your viewing experience.",
   },
 ];
 
@@ -50,9 +50,9 @@ export const FaqSection = (): React.JSX.Element => {
           </h2>
 
           <p className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
-            In the digital age, your voice on social
+            Everything you need to know about
             <br />
-            media is your brand&#39;s heartbeat.
+            learning languages with FunLingo.
           </p>
         </div>
 

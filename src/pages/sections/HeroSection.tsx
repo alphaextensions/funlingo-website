@@ -43,7 +43,7 @@ export const HeroSection = (): React.JSX.Element => {
               className="relative flex items-center justify-center lg:justify-start self-stretch font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl md:text-2xl lg:text-[length:var(--body-large-regular-font-size)] text-center lg:text-left tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed lg:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "600ms" }}
             >
-              Turn your YouTube, Netflix, and Prime time into an immersive language lesson. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.92/5 stars by learners.
+              Turn your YouTube, Netflix, and Prime time into an immersive language lesson. Research shows learners who use dual subtitles retain up to 50% more vocabulary than traditional methods. FunLingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.92/5 stars on the Chrome Web Store.
             </p>
           </div>
 

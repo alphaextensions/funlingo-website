@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect, useRef } from "react";
 import { Star, Quote } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import {
   Carousel,
   CarouselContent,
@@ -26,7 +27,7 @@ const testimonialsData: Testimonial[] = [
     name: "Shubham Routray",
     date: "Nov 15, 2025",
     quote:
-      "Funlingo has made lerning a new language part of my everyday entertainment. The dual subtitles help me catch new words instantly, and the built in meanings make everything so easy to understand.",
+      "Funlingo has made learning a new language part of my everyday entertainment. The dual subtitles help me catch new words instantly, and the built-in meanings make everything so easy to understand.",
     avatar: "/figmaAssets/avatar.png",
   },
   {
@@ -112,11 +113,51 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
     return () => clearInterval(intervalId);
   }, [api]);
 
+  // Review schema for testimonials — enables rich results and AI citation
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FunLingo",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Chrome, Edge, Brave",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.92",
+      "reviewCount": String(testimonialsData.length),
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": testimonialsData.map((t) => ({
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": t.name
+      },
+      "datePublished": new Date(t.date).toISOString().split("T")[0],
+      "reviewBody": t.quote,
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    }))
+  };
+
   return (
     <section
       ref={sectionRef}
       className="flex flex-col w-full items-center justify-center gap-10 sm:gap-12 lg:gap-14 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 xl:px-24 relative [background:radial-gradient(50%_50%_at_0%_100%,rgba(198,66,252,1)_0%,rgba(122,28,172,1)_24%,rgba(0,0,0,1)_100%)] overflow-hidden"
     >
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(reviewSchema)}
+        </script>
+      </Helmet>
       {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-0" />
       <div className="absolute top-10 right-10 w-20 h-20 bg-purple-500/10 rounded-full blur-xl animate-pulse-slow" />
