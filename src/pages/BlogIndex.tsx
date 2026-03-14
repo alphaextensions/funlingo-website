@@ -14,6 +14,51 @@ export const BlogIndex = (): React.JSX.Element => {
 
   const posts = [
     {
+      id: -6,
+      title: "7 Best Dual Subtitle Extensions for Language Learning (2026)",
+      excerpt: "Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free.",
+      date: "March 14, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/best-dual-subtitle-extension"
+    },
+    {
+      id: -5,
+      title: "How to Get Dual Subtitles on Netflix (2026 Guide)",
+      excerpt: "Want dual subtitles on Netflix? Learn how to display two languages at once with FunLingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
+      date: "March 14, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/how-to-get-dual-subtitles-on-netflix"
+    },
+    {
+      id: -4,
+      title: "How to Learn Korean by Watching YouTube: A Complete 2026 Guide",
+      excerpt: "Want to learn Korean watching YouTube? Get the best channels, a 15-minute daily routine, and free dual subtitle tools to turn every video into a lesson.",
+      date: "March 14, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/learn-korean-watching-youtube"
+    },
+    {
+      id: -3,
+      title: "How to Learn Spanish Watching Netflix (Your Complete 2026 Guide)",
+      excerpt: "Discover the best Netflix shows by level, a proven dual subtitle method, and a free 15-minute daily routine to learn Spanish. Start tonight.",
+      date: "March 14, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/learn-spanish-watching-netflix"
+    },
+    {
+      id: -2,
+      title: "How to Build Vocabulary While Watching Shows (A Science-Backed Method)",
+      excerpt: "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching — backed by language science.",
+      date: "March 14, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/vocabulary-building-watching-shows"
+    },
+    {
       id: -1,
       title: "How to Build Vocabulary While Watching: 5 Proven Strategies That Actually Work",
       excerpt: "Discover 5 proven strategies to build vocabulary while watching movies and TV shows. Learn how contextual vocabulary learning and spaced repetition transform screen time into real language growth.",

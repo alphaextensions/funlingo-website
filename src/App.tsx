@@ -22,6 +22,11 @@ import { ReadingModeBlog2 } from "./Blogs/ReadingModeBlog2";
 import { LearnLanguageByWatchingPost } from "./Blogs/LearnLanguageByWatchingPost";
 import { WebsiteTranslationPost } from "./Blogs/WebsiteTranslationPost";
 import { VocabularyBuildingPost } from "./Blogs/VocabularyBuildingPost";
+import { DualSubtitleExtensionPost } from "./Blogs/DualSubtitleExtensionPost";
+import { DualSubtitlesNetflixPost } from "./Blogs/DualSubtitlesNetflixPost";
+import { LearnKoreanYouTubePost } from "./Blogs/LearnKoreanYouTubePost";
+import { LearnSpanishNetflixPost } from "./Blogs/LearnSpanishNetflixPost";
+import { VocabularyBuildingWatchingPost } from "./Blogs/VocabularyBuildingWatchingPost";
 
 function Router() {
   return (
@@ -43,6 +48,11 @@ function Router() {
       <Route path="/blog/how-to-learn-a-language-by-watching" component={LearnLanguageByWatchingPost} />
       <Route path="/blog/website-translation-language-learning" component={WebsiteTranslationPost} />
       <Route path="/blog/build-vocabulary-watching-shows" component={VocabularyBuildingPost} />
+      <Route path="/blog/best-dual-subtitle-extension" component={DualSubtitleExtensionPost} />
+      <Route path="/blog/how-to-get-dual-subtitles-on-netflix" component={DualSubtitlesNetflixPost} />
+      <Route path="/blog/learn-korean-watching-youtube" component={LearnKoreanYouTubePost} />
+      <Route path="/blog/learn-spanish-watching-netflix" component={LearnSpanishNetflixPost} />
+      <Route path="/blog/vocabulary-building-watching-shows" component={VocabularyBuildingWatchingPost} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
