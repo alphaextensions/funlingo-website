@@ -7,6 +7,7 @@ import { HeroSection } from "./sections/HeroSection";
 import { FunlingoProductSection } from "./sections/FunlingoProductSection";
 import { FunlingoTestimonialsSection } from "./sections/FunlingoTestimonialsSection";
 import { WhyChooseFunlingoSection } from "./sections/WhyChooseFunlingoSection";
+import { EvidenceSection } from "./sections/EvidenceSection";
 import { ComparisonTableSection } from "./sections/ComparisonTableSection";
 import SEO from "@/components/SEO";
 import { Helmet } from "react-helmet-async";
@@ -75,57 +76,65 @@ export const HomeDesktop = (): React.JSX.Element => {
     }
   };
 
-  // FAQPage Schema
+  // FAQPage Schema — expanded answers for GEO (50-100 words each for AI citation)
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is Dual Subtitle Learning?",
+        "name": "What is dual subtitle learning?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dual subtitle learning is a method where you display two sets of subtitles simultaneously: one in the audio's original language (e.g., Spanish) and one in your native language (e.g., English). This allows for instant comparison and comprehension without stopping the video."
+          "text": "Dual subtitle learning is a language acquisition method where two subtitle tracks are displayed simultaneously — one in the target language and one in your native language. This lets learners instantly compare vocabulary, grammar, and sentence structure in real conversational context without pausing the video. Research in second language acquisition suggests that contextual exposure through authentic media improves vocabulary retention by up to 50% compared to traditional flashcard-based methods, making dual subtitles one of the most effective passive learning techniques available."
         }
       },
       {
         "@type": "Question",
-        "name": "Is Funlingo really free?",
+        "name": "Is FunLingo really free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Funlingo is a completely free alternative to paid subtitle extensions. You get full dual subtitle functionality at no cost."
+          "text": "Yes, FunLingo is completely free with no hidden costs, premium tiers, or paywalls. You get full access to dual subtitles, AI-powered word definitions, pronunciation guides, and the vocabulary builder at no charge. Unlike competitors like Trancy or Language Reactor that require paid subscriptions for advanced features, FunLingo provides its entire feature set for free. The extension is available on the Chrome Web Store and works immediately after installation — no account creation required."
         }
       },
       {
         "@type": "Question",
-        "name": "How does AI help with language learning?",
+        "name": "How does AI help with language learning in FunLingo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The integrated AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over."
+          "text": "FunLingo's integrated AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over. Unlike basic dictionary lookups, the AI considers the full sentence context to deliver accurate meanings, usage notes, and example phrases. You can select 1, 2, 3, or all available translations per word for deeper comprehension. The AI also powers pronunciation guides with spelled-out phonetic cues and audio playback, helping learners connect written words with their spoken forms."
         }
       },
       {
         "@type": "Question",
-        "name": "Which sites are supported?",
+        "name": "Which streaming platforms does FunLingo support?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Funlingo currently supports dual subtitles on YouTube, Netflix, and Prime Video, covering millions of videos across 100+ languages."
+          "text": "FunLingo currently supports dual subtitles on YouTube, Netflix, and Amazon Prime Video — three of the world's largest streaming platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I save words?",
+        "name": "Can I save vocabulary while watching?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, you can save words to your personal vocabulary list to review later, tracking your progress over time."
+          "text": "Yes. FunLingo includes a built-in vocabulary builder that lets you save any word or phrase with a single click while watching. Saved items include the original word, its translation, and the sentence context where you encountered it. You can review your vocabulary list later, track how many words you've learned over time, and export your list for use with other study tools. This contextual saving approach means every word comes with a real usage example."
         }
       },
       {
         "@type": "Question",
-        "name": "Is it good for beginners?",
+        "name": "Is FunLingo good for beginners?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. Dual subtitles allow beginners to follow the story in their native language while associating spoken audio with target language text."
+          "text": "Absolutely. Dual subtitles are especially effective for beginners because they can follow the story in their native language while simultaneously seeing and hearing the target language. This builds familiarity with pronunciation, common phrases, and sentence structure without the frustration of not understanding the content. FunLingo's hover-for-definition feature means beginners never need to leave the video to look up a word, keeping the learning experience seamless and enjoyable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is FunLingo different from Trancy and Language Reactor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FunLingo differentiates itself in three key ways. First, it is completely free — no premium tier or paywall for any feature. Second, it offers unique UX features like inline bracketed native meanings for difficult words and a multi-translation selector (choose 1, 2, 3, or all translations per word). Third, it includes per-word pronunciation with spelled-out phonetic cues and audio playback, which most competitors either lack or lock behind paid plans. FunLingo is rated 4.92/5 stars on the Chrome Web Store."
         }
       }
     ]
@@ -215,6 +224,7 @@ export const HomeDesktop = (): React.JSX.Element => {
       {/* Rest of your sections */}
       <HeroSection />
       <WhyChooseFunlingoSection />
+      <EvidenceSection />
       <FunlingoProductSection />
       <ComparisonTableSection />
       <FunlingoFeaturesSection />

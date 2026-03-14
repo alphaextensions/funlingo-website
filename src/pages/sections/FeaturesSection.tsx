@@ -4,21 +4,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const features = [
   {
-    title: "Savings Goals & Automation",
+    title: "Dual Subtitles on Netflix, YouTube & Prime",
     description:
-      "Our extensive data security measures ensure that your sensitive information is safeguarded against unauthorized access, whether for a rainy day.",
+      "Display two subtitle tracks simultaneously while watching your favorite shows. See the original language and your native language side by side for instant comprehension and vocabulary building.",
     isActive: true,
   },
   {
-    title: "Financial Reports & Insights",
+    title: "AI-Powered Word Definitions & Pronunciation",
     description:
-      "Simplify your workforce's time management with our intuitive HR Management SaaS, streamlining. Automatically track every transaction.",
+      "Hover over any word in the subtitles to get instant AI-generated definitions, grammar notes, and pronunciation guides. Hear how words are spoken by native speakers with audio playback.",
     isActive: false,
   },
   {
-    title: "Income & Expense Tracking",
+    title: "Vocabulary Builder & Progress Tracking",
     description:
-      "Our platform automates transfers to your savings to make reaching those goals easier. We provide recommendations. Create and stick to personalized budgets.",
+      "Save words and phrases to your personal vocabulary list as you watch. Review them later with spaced repetition and track your learning progress over time.",
     isActive: false,
   },
 ];
@@ -40,20 +40,20 @@ export const FeaturesSection = (): React.JSX.Element => {
       <header className="flex flex-col max-w-[1008px] items-center justify-center gap-5">
         <Badge className="inline-flex items-center justify-center px-4 py-1.5 rounded-[99px] border border-solid border-[#ffffff1a] shadow-[inset_0px_-1px_4px_#00000040,inset_0px_0px_0px_#e5e5e8] bg-[linear-gradient(118deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)] h-auto">
           <span className="font-body-xs-medium font-[number:var(--body-xs-medium-font-weight)] text-textwhite text-[length:var(--body-xs-medium-font-size)] tracking-[var(--body-xs-medium-letter-spacing)] leading-[var(--body-xs-medium-line-height)]">
-            Claypro Features
+            FunLingo Features
           </span>
         </Badge>
 
         <div className="flex flex-col max-w-[800px] items-center gap-4">
           <h2 className="font-heading-h3 font-[number:var(--heading-h3-font-weight)] text-textwhite text-[length:var(--heading-h3-font-size)] text-center tracking-[var(--heading-h3-letter-spacing)] leading-[var(--heading-h3-line-height)] [font-style:var(--heading-h3-font-style)]">
-            Maximize efficiency with Our
+            Learn Any Language Through
             <br />
-            best features
+            Content You Love
           </h2>
 
           <p className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] text-center tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
-            Spending trends with detailed reports. No more juggling multiple
-            apps or manual tracking.
+            Turn your Netflix, YouTube, and Prime Video sessions into immersive
+            language lessons with AI-powered tools.
           </p>
         </div>
       </header>
