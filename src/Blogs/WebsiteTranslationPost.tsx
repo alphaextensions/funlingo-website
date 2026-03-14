@@ -30,6 +30,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                 description="Discover how FunLingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally."
                 keywords="website translation for language learning, bilingual website reading, FunLingo, AI language learning extension"
                 canonical="/blog/website-translation-language-learning"
+                type="article"
             />
             <Helmet>
                 <script type="application/ld+json">

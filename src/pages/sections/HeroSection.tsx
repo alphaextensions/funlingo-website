@@ -150,7 +150,7 @@ export const HeroSection = (): React.JSX.Element => {
         style={{ animationDelay: "1000ms" }}
       >
         <div className="flex flex-wrap justify-center items-center gap-6 opacity-90 hover:opacity-100 transition-opacity duration-300">
-          <a href="https://launchigniter.com/product/funlingo?ref=badge-funlingo" target="_blank">
+          <a href="https://launchigniter.com/product/funlingo?ref=badge-funlingo" target="_blank" rel="noopener noreferrer">
             <img src="https://launchigniter.com/api/badge/funlingo?theme=dark" alt="Featured on LaunchIgniter" width="212" height="55" loading="lazy" />
           </a>
 
@@ -162,7 +162,7 @@ export const HeroSection = (): React.JSX.Element => {
             <img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="200" height="54" loading="lazy" />
           </a>
 
-          <a href="https://wired.business" target="_blank">
+          <a href="https://wired.business" target="_blank" rel="noopener noreferrer">
             <img src="https://wired.business/badge0-dark.svg" alt="Featured on Wired Business" width="200" height="54" loading="lazy" />
           </a>
 
@@ -174,7 +174,7 @@ export const HeroSection = (): React.JSX.Element => {
             <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" height="54" alt="Fazier badge" loading="lazy" />
           </a>
 
-          <a href="https://frogdr.com/getfunlingo.com?utm_source=getfunlingo.com" target="_blank">
+          <a href="https://frogdr.com/getfunlingo.com?utm_source=getfunlingo.com" target="_blank" rel="noopener noreferrer">
             <img src="https://frogdr.com/getfunlingo.com/badge-white.svg" alt="Monitor your Domain Rating with FrogDR" width="250" height="54" loading="lazy" />
           </a>
 

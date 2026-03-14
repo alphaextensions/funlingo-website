@@ -70,6 +70,7 @@ export const BlogPost = (): React.JSX.Element => {
         description="Compare the top AI language learning tools and discover how FunLingo turns your streaming time into fast, context-rich learning with in-player dual subtitles."
         keywords="best AI language learning app, AI language learning, learn languages faster using AI, dual subtitles, word lookup"
         canonical="/blog/best-ai-language-learning-tools-2026"
+        type="article"
       />
       <Helmet>
         <script type="application/ld+json">

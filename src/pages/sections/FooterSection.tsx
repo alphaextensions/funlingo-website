@@ -59,7 +59,7 @@ export const FooterSection = (): React.JSX.Element => {
         {/* Brand Section */}
         <div className="flex flex-col items-start gap-3 flex-1 max-w-sm animate-fade-in-up">
           <div className="flex items-center justify-center w-fit mt-[-1.00px] bg-[linear-gradient(135deg,rgba(255,255,255,0)_0%,#C642FC_40%,#7A1CAC_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-heading-h5 font-[number:var(--heading-h5-font-weight)] text-transparent text-2xl sm:text-3xl lg:text-[length:var(--heading-h5-font-size)] tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] whitespace-nowrap [font-style:var(--heading-h5-font-style)] hover:scale-105 transition-transform duration-300 cursor-default">
-            <img src={logo} alt="" width={170} />
+            <img src={logo} alt="FunLingo - Free Dual Subtitles for Language Learning" width={170} />
           </div>
 
           {/* Social Icons for Mobile */}

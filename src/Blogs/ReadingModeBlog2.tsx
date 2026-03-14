@@ -75,6 +75,7 @@ export const ReadingModeBlog2 = (): React.JSX.Element => {
         description="Turn your watch time into a language lesson. Funlingo’s Reading Mode displays synchronized bilingual captions with hover synonyms & examples for contextual learning."
         keywords="Reading Mode, bilingual captions, dual subtitles, learn languages while watching, AI language learning, contextual learning"
         canonical="/blog/how-to-learn-languages-with-reading-mode"
+        type="article"
       />
       <Helmet>
         <script type="application/ld+json">

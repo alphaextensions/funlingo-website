@@ -24,8 +24,8 @@ export const ComparePage = (): React.JSX.Element => {
     "description": "Compare Funlingo vs Trancy vs Immersive Translate. Funlingo offers free dual subtitles and AI learning tools for Netflix and YouTube.",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1000"
+      "ratingValue": "4.92",
+      "ratingCount": "12"
     }
   };
 
