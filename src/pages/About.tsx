@@ -2,6 +2,7 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
+import { FooterSection } from "./sections/FooterSection";
 import {
   Rocket,
   Users,
@@ -458,6 +459,8 @@ export const About = (): React.JSX.Element => {
           opacity: 0;
         }
       `}</style>
+
+      <FooterSection />
     </div>
   );
 };

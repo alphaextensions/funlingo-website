@@ -39,6 +39,7 @@ export const LearnLanguageByWatchingPost = (): React.JSX.Element => {
         description="Learn how to effectively learn a language by watching using structured methods, contextual learning, and subtitle strategies that actually improve retention."
         keywords="learn language by watching, language learning Netflix, dual subtitles, active watching, language immersion, Funlingo"
         canonical="/blog/how-to-learn-a-language-by-watching"
+        type="article"
       />
       <Helmet>
         <script type="application/ld+json">

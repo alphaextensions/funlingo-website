@@ -31,6 +31,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
         description="FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow."
         keywords="FunLingo, AI language learning, dual subtitles, contextual learning, vocabulary builder"
         canonical="/blog/best-ai-language-learning-tools-2026"
+        type="article"
       />
       <Helmet>
         <script type="application/ld+json">

@@ -9,6 +9,7 @@ import { FunlingoTestimonialsSection } from "./sections/FunlingoTestimonialsSect
 import { WhyChooseFunlingoSection } from "./sections/WhyChooseFunlingoSection";
 import { ComparisonTableSection } from "./sections/ComparisonTableSection";
 import SEO from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
 
 // import { useState, useEffect } from "react";
 import Navbar from "./sections/navbar";
@@ -138,7 +139,12 @@ export const HomeDesktop = (): React.JSX.Element => {
     "url": "https://getfunlingo.com",
     "logo": "https://getfunlingo.com/figmaAssets/logo.png",
     "description": "Funlingo builds free AI-powered language learning tools. Our Chrome extension provides dual subtitles for Netflix, YouTube, and Prime Video, helping users learn 100+ languages through immersive video content.",
-    "sameAs": []
+    "sameAs": [
+      "https://www.linkedin.com/company/getfunlingo/",
+      "https://www.instagram.com/getfunlingo",
+      "https://www.producthunt.com/products/funlingo",
+      "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj"
+    ]
   };
 
   // BreadcrumbList Schema
@@ -164,18 +170,20 @@ export const HomeDesktop = (): React.JSX.Element => {
         canonical="/"
       />
       {/* Schema.org Structured Data Injection */}
-      <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify(faqSchema)}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify(breadcrumbSchema)}
-      </script>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
 
       {/* Navigation Header */}
       <Navbar currentPage="/" />

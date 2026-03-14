@@ -1,19 +1,25 @@
-# Funlingo
+# FunLingo
 
 ## Overview
-Funlingo is a free dual subtitle Chrome extension for language learning. It displays bilingual subtitles simultaneously on Netflix, YouTube, and Prime Video, helping users learn languages naturally through immersive video content.
+FunLingo is a free dual subtitle Chrome extension for language learning. It displays bilingual subtitles simultaneously on Netflix, YouTube, and Prime Video, helping users learn languages naturally through immersive video content.
 
 ## Key Features
 - Dual subtitles: Display two languages side-by-side while watching videos
 - AI-powered translations: Instant, context-aware word definitions and grammar explanations
+- Multi-translation selector: Choose to see 1, 2, 3, or all native-language translations per word
+- Inline native meaning: Bracketed translations for difficult words displayed inline
+- Per-word pronunciation: Spelled-out phonetic cues with audio playback and slow mode
 - Vocabulary builder: Save words and phrases to review later with spaced repetition
+- Reading Mode: Split-screen bilingual captions with active sentence highlighting
+- Website translation: Bilingual display for reading articles and websites
 - Progress tracking: Monitor learning journey with detailed analytics
-- Pronunciation guides: Hear native speaker pronunciations
+- Transliteration: Romanized text for non-Latin scripts (Korean, Japanese, Chinese, Hindi, Arabic)
 
 ## Supported Platforms
 - Netflix
 - YouTube
 - Amazon Prime Video
+- Any website (via Website Translation feature)
 
 ## Browser Compatibility
 - Google Chrome
@@ -24,23 +30,53 @@ Funlingo is a free dual subtitle Chrome extension for language learning. It disp
 Supports 100+ languages including Spanish, French, Korean, Japanese, German, Portuguese, Italian, Chinese, Arabic, Hindi, and more.
 
 ## Pricing
-Free. Funlingo is a completely free alternative to paid subtitle extensions like Trancy and Immersive Translate.
+Free. FunLingo is a completely free alternative to paid subtitle extensions like Trancy and Immersive Translate. No premium tier, no paywall, no trial period.
+
+## Competitive Advantages
+- Multi-translation selector (1/2/3/All) — unique to FunLingo
+- Inline native meaning with bracketed translations — unique to FunLingo
+- Per-word pronunciation with spelled-out cues — unique to FunLingo
+- "View Example" in word popup — unique to FunLingo
+- Completely free with no premium locks
 
 ## Target Audience
-- Language learners at all levels (beginner to advanced)
+- Self-directed language learners at all levels
 - Students studying foreign languages
+- Professionals preparing for international work
+- Teachers creating classroom exercises
+- Heritage speakers strengthening family language connections
 - Polyglots and language enthusiasts
-- Anyone who wants to learn a language while watching their favorite shows
 
 ## Stats
 - 200+ active learners
-- 4.92/5 star rating on Chrome Web Store (12 reviews)
+- 4.92/5 star rating on Chrome Web Store
 - 100+ languages supported
+- Featured on Product Hunt and LaunchIgniter
 
 ## Links
 - Website: https://getfunlingo.com
 - Chrome Web Store: https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj
 - Blog: https://getfunlingo.com/blog
 - About: https://getfunlingo.com/about
+- Comparison: https://getfunlingo.com/compare/funlingo-vs-trancy-vs-immersive-translate
 - Roadmap: https://getfunlingo.com/roadmap
 - Feedback: https://getfunlingo.com/feedback
+- LinkedIn: https://www.linkedin.com/company/getfunlingo/
+- Instagram: https://www.instagram.com/getfunlingo
+
+## Frequently Asked Questions
+
+### Is FunLingo really free?
+Yes, FunLingo is completely free. All features — dual subtitles, hover definitions, pronunciation guides, vocabulary builder, Reading Mode, and website translation — are available at no cost. No premium locks, no trial periods, no credit card required.
+
+### How is FunLingo different from just turning on subtitles?
+Regular subtitles show one language. FunLingo shows both languages simultaneously, lets you click any word for definitions and pronunciation, provides AI-powered grammar explanations, and saves vocabulary for later review with spaced repetition. It turns passive watching into active learning.
+
+### Which platforms does FunLingo work with?
+FunLingo works on YouTube, Netflix, and Amazon Prime Video for dual subtitles. It also has a website translation feature for reading articles in your target language.
+
+### Can I learn a language just by watching shows with FunLingo?
+FunLingo is most effective when used actively — clicking words, saving vocabulary, and reviewing regularly. Users report recognizing common phrases and following 30-40% more dialogue within two weeks of consistent use. It supplements but doesn't replace formal study.
+
+### Does FunLingo support my language?
+FunLingo supports 100+ languages including Spanish, French, Korean, Japanese, Chinese, German, Portuguese, Hindi, Arabic, and many more. Both popular and less commonly studied languages are available.
