@@ -4,7 +4,7 @@ import { FooterSection } from "@/pages/sections/FooterSection";
 import SEO from "@/components/SEO";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, User, Clock, Eye, Ear, BookOpen, Brain } from "lucide-react";
+import { ArrowRight, Calendar, User, Clock, Ear, BookOpen, Brain } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
