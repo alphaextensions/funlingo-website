@@ -12,6 +12,24 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -8,
+      title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide",
+      excerpt: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition to turn every episode into a real lesson.",
+      date: "March 18, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/learn-japanese-with-anime"
+    },
+    {
+      id: -7,
+      title: "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)",
+      excerpt: "Struggling to stay consistent with language learning? Discover 5 simple daily habits that fit into your existing routine and make real progress without extra study time.",
+      date: "March 18, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/daily-language-learning-habits"
+    },
+    {
       id: -6,
       title: "7 Best Dual Subtitle Extensions for Language Learning (2026)",
       excerpt: "Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free.",
