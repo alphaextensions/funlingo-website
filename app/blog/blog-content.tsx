@@ -12,6 +12,114 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -16,
+      title: "How to Download Subtitles from YouTube (3 Free Methods)",
+      excerpt: "Learn 3 free methods to download subtitles from any YouTube video in SRT, VTT, or TXT format. Step-by-step guides for each method.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/download-subtitles-from-youtube"
+    },
+    {
+      id: -15,
+      title: "Why Can't I Change Playback Speed on YouTube? (Fixed)",
+      excerpt: "YouTube playback speed not working? Here are the most common causes and step-by-step fixes for desktop, mobile, and embedded videos.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/why-cant-change-playback-speed-youtube"
+    },
+    {
+      id: -14,
+      title: "Netflix Language Learning: The Complete Guide for 2026",
+      excerpt: "Everything you need to learn a language with Netflix. Best shows by language, the dual subtitle method, a 15-minute daily routine, and free tools.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/netflix-language-learning"
+    },
+    {
+      id: -13,
+      title: "Best YouTube Subtitle Downloaders — Top 10 Tools Compared",
+      excerpt: "Compare the 10 best YouTube subtitle downloaders. Download subtitles in SRT, VTT, and TXT formats. Free and paid options with pros and cons.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/best-youtube-subtitle-downloaders"
+    },
+    {
+      id: -12,
+      title: "How to Get Dual Subtitles on Netflix (Step-by-Step)",
+      excerpt: "Get dual subtitles on Netflix in under 30 seconds. Step-by-step setup guide, troubleshooting tips, and the best extensions compared.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/netflix-dual-subtitles"
+    },
+    {
+      id: -11,
+      title: "YouTube Bilingual Subtitles: Watch Videos in Two Languages",
+      excerpt: "Learn how to get bilingual subtitles on YouTube. Watch any video with two languages displayed simultaneously using free browser extensions.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/youtube-bilingual-subtitles"
+    },
+    {
+      id: -10,
+      title: "What Is Shadowing in Language Learning? (+ AI Tools)",
+      excerpt: "Discover the shadowing technique for language learning. Learn the science, get a step-by-step guide, and find the best AI tools to practice with.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/shadowing-language-learning"
+    },
+    {
+      id: -9,
+      title: "Netflix Language Learning Extensions: Top 5 for 2026",
+      excerpt: "Compare the 5 best Chrome extensions for learning languages on Netflix. Features, pricing, and pros/cons for FunLingo, Language Reactor, Trancy, and more.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/netflix-language-learning-extensions"
+    },
+    {
+      id: -8,
+      title: "How to Download YouTube Videos (Specific Parts Only)",
+      excerpt: "Learn 4 methods to download specific parts of YouTube videos. Online tools, screen recording, yt-dlp commands, and browser-based editors compared.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/download-youtube-video-parts"
+    },
+    {
+      id: -7,
+      title: "SRT Files Explained: How to Download & Use Subtitle Files",
+      excerpt: "Everything about SRT subtitle files. Learn what they are, where to download them, how to use them in media players, and how to create your own.",
+      date: "March 19, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/srt-files-subtitle-download"
+    },
+    {
+      id: -18,
+      title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide",
+      excerpt: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition to turn every episode into a real lesson.",
+      date: "March 18, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/learn-japanese-with-anime"
+    },
+    {
+      id: -17,
+      title: "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)",
+      excerpt: "Struggling to stay consistent with language learning? Discover 5 simple daily habits that fit into your existing routine and make real progress without extra study time.",
+      date: "March 18, 2026",
+      author: "FunLingo Team",
+      category: "Guide",
+      slug: "/blog/daily-language-learning-habits"
+    },
+    {
       id: -6,
       title: "7 Best Dual Subtitle Extensions for Language Learning (2026)",
       excerpt: "Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free.",
