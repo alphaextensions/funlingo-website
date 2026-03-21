@@ -41,7 +41,7 @@ export default function WordsWithAIContent() {
               <Calendar className="w-4 h-4" /> March 20, 2026
             </span>
             <span className="flex items-center gap-1.5">
-              <User className="w-4 h-4" /> FunLingo Team
+              <User className="w-4 h-4" /> Funlingo Team
             </span>
             <span className="flex items-center gap-1.5">
               <Clock className="w-4 h-4" /> 8 min read
@@ -279,20 +279,20 @@ export default function WordsWithAIContent() {
           </p>
         </section>
 
-        {/* 10 — FunLingo Integration */}
+        {/* 10 — Funlingo Integration */}
         <section className="mb-14">
           <h2 className="text-2xl font-bold mb-4">
-            Learn &quot;AI&quot; Words in Context with FunLingo
+            Learn &quot;AI&quot; Words in Context with Funlingo
           </h2>
           <p className="text-gray-300 leading-relaxed mb-4">
             Word lists are a great reference, but the fastest route to real fluency
             is seeing vocabulary <em>in context</em> — inside the shows, movies,
             and videos you already love. That is exactly what{" "}
-            <span className="text-[#C642FC] font-semibold">FunLingo</span> is
+            <span className="text-[#C642FC] font-semibold">Funlingo</span> is
             built for.
           </p>
           <p className="text-gray-300 leading-relaxed mb-4">
-            FunLingo overlays <strong>dual subtitles</strong> on platforms like
+            Funlingo overlays <strong>dual subtitles</strong> on platforms like
             Netflix, YouTube, and Disney+, showing your native language alongside
             English (or any target language). When a character says &quot;The train
             was delayed by the heavy rain,&quot; you see both the original line and
@@ -344,7 +344,7 @@ export default function WordsWithAIContent() {
                 Group them by word family (-ail, -ain, -air, -ait) and practise
                 each group together. Then reinforce what you have learned by
                 encountering the words in real content — watching shows with dual
-                subtitles via FunLingo is one of the most effective and enjoyable
+                subtitles via Funlingo is one of the most effective and enjoyable
                 methods.
               </p>
             </div>
@@ -358,7 +358,7 @@ export default function WordsWithAIContent() {
               See These Words Come Alive in Your Favourite&nbsp;Shows
             </h2>
             <p className="text-gray-300 mb-8 max-w-xl mx-auto">
-              Install FunLingo and start learning vocabulary like <em>brain</em>,{" "}
+              Install Funlingo and start learning vocabulary like <em>brain</em>,{" "}
               <em>mountain</em>, and <em>explain</em> through dual subtitles on
               Netflix, YouTube, and more — completely free.
             </p>
@@ -374,7 +374,7 @@ export default function WordsWithAIContent() {
                     "linear-gradient(135deg, #7A1CAC 0%, #C642FC 100%)",
                 }}
               >
-                Add FunLingo to Chrome — It&apos;s Free
+                Add Funlingo to Chrome — It&apos;s Free
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </a>

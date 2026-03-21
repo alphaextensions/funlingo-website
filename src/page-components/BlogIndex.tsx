@@ -18,16 +18,16 @@ export const BlogIndex = (): React.JSX.Element => {
       title: "7 Best Dual Subtitle Extensions for Language Learning (2026)",
       excerpt: "Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-dual-subtitle-extension"
     },
     {
       id: -5,
       title: "How to Get Dual Subtitles on Netflix (2026 Guide)",
-      excerpt: "Want dual subtitles on Netflix? Learn how to display two languages at once with FunLingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
+      excerpt: "Want dual subtitles on Netflix? Learn how to display two languages at once with Funlingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/how-to-get-dual-subtitles-on-netflix"
     },
@@ -36,7 +36,7 @@ export const BlogIndex = (): React.JSX.Element => {
       title: "How to Learn Korean by Watching YouTube: A Complete 2026 Guide",
       excerpt: "Want to learn Korean watching YouTube? Get the best channels, a 15-minute daily routine, and free dual subtitle tools to turn every video into a lesson.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/learn-korean-watching-youtube"
     },
@@ -45,7 +45,7 @@ export const BlogIndex = (): React.JSX.Element => {
       title: "How to Learn Spanish Watching Netflix (Your Complete 2026 Guide)",
       excerpt: "Discover the best Netflix shows by level, a proven dual subtitle method, and a free 15-minute daily routine to learn Spanish. Start tonight.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/learn-spanish-watching-netflix"
     },
@@ -54,7 +54,7 @@ export const BlogIndex = (): React.JSX.Element => {
       title: "How to Build Vocabulary While Watching Shows (A Science-Backed Method)",
       excerpt: "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching — backed by language science.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/vocabulary-building-watching-shows"
     },
@@ -63,14 +63,14 @@ export const BlogIndex = (): React.JSX.Element => {
       title: "How to Build Vocabulary While Watching: 5 Proven Strategies That Actually Work",
       excerpt: "Discover 5 proven strategies to build vocabulary while watching movies and TV shows. Learn how contextual vocabulary learning and spaced repetition transform screen time into real language growth.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/build-vocabulary-watching-shows"
     },
     {
       id: 0,
       title: "Website Translation for Language Learning: Read Any Website in Two Languages",
-      excerpt: "Discover how FunLingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
+      excerpt: "Discover how Funlingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
       date: "March 07, 2026",
       author: "Funlingo Team",
       category: "Feature",
@@ -105,19 +105,19 @@ export const BlogIndex = (): React.JSX.Element => {
     },
     {
       id: 4,
-      title: "FunLingo: AI-native, low-friction learning",
-      excerpt: "FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow.",
+      title: "Funlingo: AI-native, low-friction learning",
+      excerpt: "Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow.",
       date: "January 28, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/language-learning-tips-and-ai-insights"
     },
     {
       id: 5,
       title: "Best AI Language Learning Tools (2026): Learn faster with AI & real content",
-      excerpt: "Compare the top AI language learning tools and discover how FunLingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
+      excerpt: "Compare the top AI language learning tools and discover how Funlingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
       date: "January 21, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-ai-language-learning-tools-2026"
     },
@@ -128,8 +128,8 @@ export const BlogIndex = (): React.JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-black">
       <SEO
-        title="FunLingo Blog - Language Learning Tips & AI Insights"
-        description="Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with FunLingo."
+        title="Funlingo Blog - Language Learning Tips & AI Insights"
+        description="Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with Funlingo."
         canonical="/blog"
       />
       <Navbar currentPage="/blog" />

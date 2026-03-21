@@ -21,7 +21,7 @@ export default function TurkishToEnglishTranslationContent() {
           </h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 20, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</div>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function TurkishToEnglishTranslationContent() {
             <p className="text-lg text-gray-200 mb-6">Learn Turkish naturally with dual subtitles on Netflix &amp; YouTube. Free forever.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
-                Try FunLingo Free <ArrowRight className="ml-2 w-4 h-4" />
+                Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
           </div>
@@ -83,8 +83,8 @@ export default function TurkishToEnglishTranslationContent() {
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <Tv className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">FunLingo</h3>
-              <p className="text-sm text-gray-400">The best tool for contextual learning through media. FunLingo adds dual subtitles (Turkish + English) to Netflix and YouTube, letting you learn Turkish naturally from TV shows and videos. Click any word for instant translation and save it to your vocabulary list.</p>
+              <h3 className="text-xl font-bold text-white mb-2">Funlingo</h3>
+              <p className="text-sm text-gray-400">The best tool for contextual learning through media. Funlingo adds dual subtitles (Turkish + English) to Netflix and YouTube, letting you learn Turkish naturally from TV shows and videos. Click any word for instant translation and save it to your vocabulary list.</p>
             </div>
           </div>
 
@@ -267,7 +267,7 @@ export default function TurkishToEnglishTranslationContent() {
           </div>
 
           <p className="text-gray-300 mb-6">
-            With FunLingo, you can watch all these shows with Turkish and English subtitles displayed at the same time. Click any word in the Turkish subtitles to see its translation instantly, and save words to build your personal vocabulary list. This bridges the gap between translation tools and actual language acquisition.
+            With Funlingo, you can watch all these shows with Turkish and English subtitles displayed at the same time. Click any word in the Turkish subtitles to see its translation instantly, and save words to build your personal vocabulary list. This bridges the gap between translation tools and actual language acquisition.
           </p>
 
           <hr className="border-white/10 my-12" />
@@ -281,7 +281,7 @@ export default function TurkishToEnglishTranslationContent() {
               </div>
               <div>
                 <strong className="text-white block mb-1">What&apos;s the best Turkish to English translator?</strong>
-                <p className="text-gray-400 text-sm">It depends on your needs. For quick translations, Google Translate is the most accessible. For natural-sounding text, DeepL is improving rapidly. For detailed dictionary lookups, Tureng is unmatched. For learning Turkish through media, FunLingo provides dual subtitles that let you absorb Turkish naturally while watching shows.</p>
+                <p className="text-gray-400 text-sm">It depends on your needs. For quick translations, Google Translate is the most accessible. For natural-sounding text, DeepL is improving rapidly. For detailed dictionary lookups, Tureng is unmatched. For learning Turkish through media, Funlingo provides dual subtitles that let you absorb Turkish naturally while watching shows.</p>
               </div>
               <div>
                 <strong className="text-white block mb-1">How similar is Turkish to other languages?</strong>
@@ -293,11 +293,11 @@ export default function TurkishToEnglishTranslationContent() {
           <div className="mt-8 text-center py-10 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <h2 className="text-2xl font-bold text-white mb-4">Go Beyond Translation. Learn Turkish Naturally.</h2>
             <p className="text-lg text-gray-200 mb-6">
-              Watch Turkish shows with dual subtitles, click words to translate them instantly, and build your vocabulary over time. FunLingo is free and works on Netflix and YouTube.
+              Watch Turkish shows with dual subtitles, click words to translate them instantly, and build your vocabulary over time. Funlingo is free and works on Netflix and YouTube.
             </p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
-                Install FunLingo Free <ArrowRight className="ml-2 w-4 h-4" />
+                Install Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
           </div>

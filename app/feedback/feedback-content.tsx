@@ -367,7 +367,7 @@ export default function FeedbackContent() {
             {/* Recommendation */}
             <div className="flex flex-col gap-2">
               <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
-                Would you recommend FunLingo to others?
+                Would you recommend Funlingo to others?
               </label>
               <select
                 value={formData.recommend}

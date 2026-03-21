@@ -91,26 +91,26 @@ export const HomeDesktop = (): React.JSX.Element => {
       },
       {
         "@type": "Question",
-        "name": "Is FunLingo really free?",
+        "name": "Is Funlingo really free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, FunLingo is completely free with no hidden costs, premium tiers, or paywalls. You get full access to dual subtitles, AI-powered word definitions, pronunciation guides, and the vocabulary builder at no charge. Unlike competitors like Trancy or Language Reactor that require paid subscriptions for advanced features, FunLingo provides its entire feature set for free. The extension is available on the Chrome Web Store and works immediately after installation — no account creation required."
+          "text": "Yes, Funlingo is completely free with no hidden costs, premium tiers, or paywalls. You get full access to dual subtitles, AI-powered word definitions, pronunciation guides, and the vocabulary builder at no charge. Unlike competitors like Trancy or Language Reactor that require paid subscriptions for advanced features, Funlingo provides its entire feature set for free. The extension is available on the Chrome Web Store and works immediately after installation — no account creation required."
         }
       },
       {
         "@type": "Question",
-        "name": "How does AI help with language learning in FunLingo?",
+        "name": "How does AI help with language learning in Funlingo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "FunLingo's integrated AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over. Unlike basic dictionary lookups, the AI considers the full sentence context to deliver accurate meanings, usage notes, and example phrases. You can select 1, 2, 3, or all available translations per word for deeper comprehension. The AI also powers pronunciation guides with spelled-out phonetic cues and audio playback, helping learners connect written words with their spoken forms."
+          "text": "Funlingo's integrated AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over. Unlike basic dictionary lookups, the AI considers the full sentence context to deliver accurate meanings, usage notes, and example phrases. You can select 1, 2, 3, or all available translations per word for deeper comprehension. The AI also powers pronunciation guides with spelled-out phonetic cues and audio playback, helping learners connect written words with their spoken forms."
         }
       },
       {
         "@type": "Question",
-        "name": "Which streaming platforms does FunLingo support?",
+        "name": "Which streaming platforms does Funlingo support?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "FunLingo currently supports dual subtitles on YouTube, Netflix, and Amazon Prime Video — three of the world's largest streaming platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
+          "text": "Funlingo currently supports dual subtitles on YouTube, Netflix, and Amazon Prime Video — three of the world's largest streaming platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
         }
       },
       {
@@ -118,23 +118,23 @@ export const HomeDesktop = (): React.JSX.Element => {
         "name": "Can I save vocabulary while watching?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. FunLingo includes a built-in vocabulary builder that lets you save any word or phrase with a single click while watching. Saved items include the original word, its translation, and the sentence context where you encountered it. You can review your vocabulary list later, track how many words you've learned over time, and export your list for use with other study tools. This contextual saving approach means every word comes with a real usage example."
+          "text": "Yes. Funlingo includes a built-in vocabulary builder that lets you save any word or phrase with a single click while watching. Saved items include the original word, its translation, and the sentence context where you encountered it. You can review your vocabulary list later, track how many words you've learned over time, and export your list for use with other study tools. This contextual saving approach means every word comes with a real usage example."
         }
       },
       {
         "@type": "Question",
-        "name": "Is FunLingo good for beginners?",
+        "name": "Is Funlingo good for beginners?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. Dual subtitles are especially effective for beginners because they can follow the story in their native language while simultaneously seeing and hearing the target language. This builds familiarity with pronunciation, common phrases, and sentence structure without the frustration of not understanding the content. FunLingo's hover-for-definition feature means beginners never need to leave the video to look up a word, keeping the learning experience seamless and enjoyable."
+          "text": "Absolutely. Dual subtitles are especially effective for beginners because they can follow the story in their native language while simultaneously seeing and hearing the target language. This builds familiarity with pronunciation, common phrases, and sentence structure without the frustration of not understanding the content. Funlingo's hover-for-definition feature means beginners never need to leave the video to look up a word, keeping the learning experience seamless and enjoyable."
         }
       },
       {
         "@type": "Question",
-        "name": "How is FunLingo different from Trancy and Language Reactor?",
+        "name": "How is Funlingo different from Trancy and Language Reactor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "FunLingo differentiates itself in three key ways. First, it is completely free — no premium tier or paywall for any feature. Second, it offers unique UX features like inline bracketed native meanings for difficult words and a multi-translation selector (choose 1, 2, 3, or all translations per word). Third, it includes per-word pronunciation with spelled-out phonetic cues and audio playback, which most competitors either lack or lock behind paid plans. FunLingo is rated 4.92/5 stars on the Chrome Web Store."
+          "text": "Funlingo differentiates itself in three key ways. First, it is completely free — no premium tier or paywall for any feature. Second, it offers unique UX features like inline bracketed native meanings for difficult words and a multi-translation selector (choose 1, 2, 3, or all translations per word). Third, it includes per-word pronunciation with spelled-out phonetic cues and audio playback, which most competitors either lack or lock behind paid plans. Funlingo is rated 4.92/5 stars on the Chrome Web Store."
         }
       }
     ]

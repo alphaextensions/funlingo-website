@@ -16,10 +16,10 @@ export const BlogPost = (): React.JSX.Element => {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How is FunLingo different from other subtitle tools?",
+        "name": "How is Funlingo different from other subtitle tools?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "FunLingo focuses on in-player dual subtitles plus instant word-level multi-translation lookup, pronunciation playback, and save-to-vocab — designed for passive learning while watching content."
+          "text": "Funlingo focuses on in-player dual subtitles plus instant word-level multi-translation lookup, pronunciation playback, and save-to-vocab — designed for passive learning while watching content."
         }
       },
       {
@@ -27,20 +27,20 @@ export const BlogPost = (): React.JSX.Element => {
         "name": "Can I choose how many translations I see per word?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes — FunLingo’s UI lets you select 1, 2, 3, or “All” translations for deeper comprehension, reducing the need to search elsewhere."
+          "text": "Yes — Funlingo’s UI lets you select 1, 2, 3, or “All” translations for deeper comprehension, reducing the need to search elsewhere."
         }
       },
       {
         "@type": "Question",
-        "name": "Which platforms does FunLingo work with?",
+        "name": "Which platforms does Funlingo work with?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "FunLingo supports YouTube, Netflix, Prime Video and aims to expand to more platforms."
+          "text": "Funlingo supports YouTube, Netflix, Prime Video and aims to expand to more platforms."
         }
       },
       {
         "@type": "Question",
-        "name": "Is FunLingo free?",
+        "name": "Is Funlingo free?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "The extension distributes a free tier / no-cost option."
@@ -53,10 +53,10 @@ export const BlogPost = (): React.JSX.Element => {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Best AI Language Learning Tools (2026): Learn faster with AI & real content",
-    "description": "Compare the top AI language learning tools and discover how FunLingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
+    "description": "Compare the top AI language learning tools and discover how Funlingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
     "author": {
       "@type": "Organization",
-      "name": "FunLingo"
+      "name": "Funlingo"
     },
     "datePublished": "2024-03-01",
     "dateModified": "2024-03-01",
@@ -66,8 +66,8 @@ export const BlogPost = (): React.JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-black">
       <SEO
-        title="Best AI Language Learning Apps 2026 — Why FunLingo Wins for Passive Learning"
-        description="Compare the top AI language learning tools and discover how FunLingo turns your streaming time into fast, context-rich learning with in-player dual subtitles."
+        title="Best AI Language Learning Apps 2026 — Why Funlingo Wins for Passive Learning"
+        description="Compare the top AI language learning tools and discover how Funlingo turns your streaming time into fast, context-rich learning with in-player dual subtitles."
         keywords="best AI language learning app, AI language learning, learn languages faster using AI, dual subtitles, word lookup"
         canonical="/blog/best-ai-language-learning-tools-2026"
         type="article"
@@ -98,7 +98,7 @@ export const BlogPost = (): React.JSX.Element => {
           
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
              <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> January 21, 2026</div>
-             <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+             <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
              <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 8 min read</div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export const BlogPost = (): React.JSX.Element => {
           <div className="bg-white/5 border-l-4 border-[#C642FC] p-6 rounded-r-lg my-6">
             <p className="m-0 text-gray-200">
               <strong className="text-white">Best free AI language learning tool in 2026:</strong>{" "}
-              FunLingo is a free Chrome extension that displays dual subtitles on Netflix, YouTube, and Prime Video, enabling learners to acquire vocabulary in real conversational context. It includes AI-powered word definitions, a multi-translation selector (1/2/3/All), per-word pronunciation with audio playback, and a built-in vocabulary builder. Rated 4.92/5 stars on the Chrome Web Store, FunLingo is the only tool offering all these features at no cost.
+              Funlingo is a free Chrome extension that displays dual subtitles on Netflix, YouTube, and Prime Video, enabling learners to acquire vocabulary in real conversational context. It includes AI-powered word definitions, a multi-translation selector (1/2/3/All), per-word pronunciation with audio playback, and a built-in vocabulary builder. Rated 4.92/5 stars on the Chrome Web Store, Funlingo is the only tool offering all these features at no cost.
             </p>
           </div>
 
@@ -163,11 +163,11 @@ export const BlogPost = (): React.JSX.Element => {
              ))}
           </div>
 
-          {/* FunLingo Overview */}
-          <h2 className="text-3xl font-bold text-white mt-16 mb-6">FunLingo: a solution-first overview</h2>
+          {/* Funlingo Overview */}
+          <h2 className="text-3xl font-bold text-white mt-16 mb-6">Funlingo: a solution-first overview</h2>
           <div className="bg-[#C642FC]/5 border-l-4 border-[#C642FC] p-6 rounded-r-lg my-6">
             <p className="m-0 italic text-gray-200">
-              <strong>Short TL;DR:</strong> FunLingo overlays dual subtitles in-player, allows immediate word-level lookup with multiple translation choices, provides pronunciation playback, and saves items for review. These features remove friction between seeing a phrase and being able to use it in speech.
+              <strong>Short TL;DR:</strong> Funlingo overlays dual subtitles in-player, allows immediate word-level lookup with multiple translation choices, provides pronunciation playback, and saves items for review. These features remove friction between seeing a phrase and being able to use it in speech.
             </p>
           </div>
 
@@ -188,7 +188,7 @@ export const BlogPost = (): React.JSX.Element => {
           </ul>
 
           {/* Comparison */}
-          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How FunLingo compares to Trancy and Immersive Translate</h2>
+          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How Funlingo compares to Trancy and Immersive Translate</h2>
           <p>
             The comparison focuses on user outcomes: speed to comprehension, speaking readiness, and friction to use.
           </p>
@@ -197,12 +197,12 @@ export const BlogPost = (): React.JSX.Element => {
             {/* Manually embedded table structure as requested */}
             <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.03)] backdrop-blur-sm">
               <div className="max-h-[600px] overflow-y-auto overflow-x-auto custom-scrollbar">
-                <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between FunLingo, Trancy, and Immersive Translate">
+                <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between Funlingo, Trancy, and Immersive Translate">
                   <thead className="sticky top-0 z-20 bg-[#0a0a0a] shadow-sm">
                     <tr className="border-b border-white/10">
                       <th className="p-6 text-gray-400 font-medium w-1/4">Feature</th>
                       <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">
-                        FunLingo
+                        Funlingo
                       </th>
                       <th className="p-6 text-gray-300 font-semibold w-1/4">Trancy</th>
                       <th className="p-6 text-gray-300 font-semibold w-1/4">Immersive Translate</th>
@@ -318,7 +318,7 @@ export const BlogPost = (): React.JSX.Element => {
                 Known for broad translation capabilities across web and media, though specific language learning features may vary.
              </div>
              <div className="p-4 border border-[#C642FC]/30 bg-[#C642FC]/5 rounded-lg">
-                <strong className="text-[#C642FC] block mb-2">FunLingo</strong>
+                <strong className="text-[#C642FC] block mb-2">Funlingo</strong>
                 Focuses on low-friction, passive-integration (watch-and-learn) with unique UX allowing the user to select multiple translations per word.
              </div>
           </div>
@@ -332,7 +332,7 @@ export const BlogPost = (): React.JSX.Element => {
               <li className="text-gray-400 text-sm">67% of language learners prefer video-based methods over traditional approaches (Preply Language Learning Report, 2024)</li>
               <li className="text-gray-400 text-sm">95% of participants report improved listening comprehension with dual-language captions (Vanderplank, Language Learning & Technology, 2016)</li>
             </ul>
-            <p className="text-gray-300 m-0">This is why FunLingo displays bilingual subtitles directly in the video player — turning passive watching into active, research-backed language learning.</p>
+            <p className="text-gray-300 m-0">This is why Funlingo displays bilingual subtitles directly in the video player — turning passive watching into active, research-backed language learning.</p>
           </div>
 
   
@@ -341,10 +341,10 @@ export const BlogPost = (): React.JSX.Element => {
           <h2 className="text-3xl font-bold text-white mt-16 mb-8">FAQ</h2>
           <div className="space-y-6">
              {[
-               { q: "How is FunLingo different from other subtitle tools?", a: "FunLingo focuses on in-player dual subtitles plus instant word-level multi-translation lookup, pronunciation playback, and save-to-vocab — designed for passive learning while watching content." },
-               { q: "Can I choose how many translations I see per word?", a: "Yes — FunLingo’s UI lets you select 1, 2, 3, or “All” translations for deeper comprehension, reducing the need to search elsewhere." },
-               { q: "Which platforms does FunLingo work with?", a: "FunLingo supports YouTube, Netflix, Prime Video and aims to expand to more platforms (see download page)." },
-               { q: "Is FunLingo free?", a: "The extension distributes a free tier / no-cost option; check the Chrome listing for latest pricing." }
+               { q: "How is Funlingo different from other subtitle tools?", a: "Funlingo focuses on in-player dual subtitles plus instant word-level multi-translation lookup, pronunciation playback, and save-to-vocab — designed for passive learning while watching content." },
+               { q: "Can I choose how many translations I see per word?", a: "Yes — Funlingo’s UI lets you select 1, 2, 3, or “All” translations for deeper comprehension, reducing the need to search elsewhere." },
+               { q: "Which platforms does Funlingo work with?", a: "Funlingo supports YouTube, Netflix, Prime Video and aims to expand to more platforms (see download page)." },
+               { q: "Is Funlingo free?", a: "The extension distributes a free tier / no-cost option; check the Chrome listing for latest pricing." }
              ].map((faq, i) => (
                 <div key={i} className="border-b border-white/5 pb-6 last:border-0">
                    <h4 className="font-bold text-white text-lg mb-2">Q: {faq.q}</h4>
@@ -376,7 +376,7 @@ export const BlogPost = (): React.JSX.Element => {
           <div className="mt-16 text-center">
              <h2 className="text-3xl font-bold text-white mb-4">Start Learning Naturally</h2>
              <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-               FunLingo shortens the path from exposure to usable speech by combining dual subtitles, multi-translation lookup, and pronunciation tools.
+               Funlingo shortens the path from exposure to usable speech by combining dual subtitles, multi-translation lookup, and pronunciation tools.
              </p>
              <a
               href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
