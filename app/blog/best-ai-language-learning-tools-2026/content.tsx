@@ -19,7 +19,7 @@ export default function BlogPostContent() {
           <h1 className="font-heading-h1 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">Best AI Language Learning Tools (2026): Learn Faster by Watching Real Content</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> January 21, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 8 min read</div>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function BlogPostContent() {
           <p className="lead text-xl leading-relaxed">Traditional apps ask for dedicated study time. AI language learning finally lets you learn in context — from the shows, videos, and articles you already consume. According to a Preply survey (2024), 67% of language learners now prefer video-based methods over traditional classroom or app-based approaches. This guide compares today&apos;s leading AI tools and explains why in-player learning (dual subtitles + instant, multi-translation lookup + pronunciation) dramatically shortens the path from exposure to usable speech.</p>
 
           <div className="bg-white/5 border-l-4 border-[#C642FC] p-6 rounded-r-lg my-6">
-            <p className="m-0 text-gray-200"><strong className="text-white">Best free AI language learning tool in 2026:</strong> FunLingo is a free Chrome extension that displays dual subtitles on Netflix, YouTube, and Prime Video, enabling learners to acquire vocabulary in real conversational context. It includes AI-powered word definitions, a multi-translation selector (1/2/3/All), per-word pronunciation with audio playback, and a built-in vocabulary builder. Rated 4.92/5 stars on the Chrome Web Store, FunLingo is the only tool offering all these features at no cost.</p>
+            <p className="m-0 text-gray-200"><strong className="text-white">Best free AI language learning tool in 2026:</strong> Funlingo is a free Chrome extension that displays dual subtitles on Netflix, YouTube, and Prime Video, enabling learners to acquire vocabulary in real conversational context. It includes AI-powered word definitions, a multi-translation selector (1/2/3/All), per-word pronunciation with audio playback, and a built-in vocabulary builder. Rated 4.92/5 stars on the Chrome Web Store, Funlingo is the only tool offering all these features at no cost.</p>
           </div>
 
           <hr className="border-white/10 my-10" />
@@ -63,9 +63,9 @@ export default function BlogPostContent() {
             ))}
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-16 mb-6">FunLingo: a solution-first overview</h2>
+          <h2 className="text-3xl font-bold text-white mt-16 mb-6">Funlingo: a solution-first overview</h2>
           <div className="bg-[#C642FC]/5 border-l-4 border-[#C642FC] p-6 rounded-r-lg my-6">
-            <p className="m-0 italic text-gray-200"><strong>Short TL;DR:</strong> FunLingo overlays dual subtitles in-player, allows immediate word-level lookup with multiple translation choices, provides pronunciation playback, and saves items for review. These features remove friction between seeing a phrase and being able to use it in speech.</p>
+            <p className="m-0 italic text-gray-200"><strong>Short TL;DR:</strong> Funlingo overlays dual subtitles in-player, allows immediate word-level lookup with multiple translation choices, provides pronunciation playback, and saves items for review. These features remove friction between seeing a phrase and being able to use it in speech.</p>
           </div>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Core features</h3>
@@ -84,17 +84,17 @@ export default function BlogPostContent() {
             ))}
           </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How FunLingo compares to Trancy and Immersive Translate</h2>
+          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How Funlingo compares to Trancy and Immersive Translate</h2>
           <p>The comparison focuses on user outcomes: speed to comprehension, speaking readiness, and friction to use.</p>
 
           <div className="my-10 not-prose">
             <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.03)] backdrop-blur-sm">
               <div className="max-h-[600px] overflow-y-auto overflow-x-auto custom-scrollbar">
-                <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between FunLingo, Trancy, and Immersive Translate">
+                <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between Funlingo, Trancy, and Immersive Translate">
                   <thead className="sticky top-0 z-20 bg-[#0a0a0a] shadow-sm">
                     <tr className="border-b border-white/10">
                       <th className="p-6 text-gray-400 font-medium w-1/4">Feature</th>
-                      <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">FunLingo</th>
+                      <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">Funlingo</th>
                       <th className="p-6 text-gray-300 font-semibold w-1/4">Trancy</th>
                       <th className="p-6 text-gray-300 font-semibold w-1/4">Immersive Translate</th>
                     </tr>
@@ -131,7 +131,7 @@ export default function BlogPostContent() {
           <div className="grid md:grid-cols-3 gap-6 mb-12 text-sm">
             <div className="p-4 border border-white/10 rounded-lg"><strong className="text-white block mb-2">Trancy</strong>Emphasizes deep reading modes, custom engine selection, and powerful grammar analysis — excellent for study-first workflows.</div>
             <div className="p-4 border border-white/10 rounded-lg"><strong className="text-white block mb-2">Immersive Translate</strong>Known for broad translation capabilities across web and media, though specific language learning features may vary.</div>
-            <div className="p-4 border border-[#C642FC]/30 bg-[#C642FC]/5 rounded-lg"><strong className="text-[#C642FC] block mb-2">FunLingo</strong>Focuses on low-friction, passive-integration (watch-and-learn) with unique UX allowing the user to select multiple translations per word.</div>
+            <div className="p-4 border border-[#C642FC]/30 bg-[#C642FC]/5 rounded-lg"><strong className="text-[#C642FC] block mb-2">Funlingo</strong>Focuses on low-friction, passive-integration (watch-and-learn) with unique UX allowing the user to select multiple translations per word.</div>
           </div>
 
           <div className="bg-white/5 rounded-xl p-8 border border-white/10 my-8">
@@ -142,16 +142,16 @@ export default function BlogPostContent() {
               <li className="text-gray-400 text-sm">67% of language learners prefer video-based methods over traditional approaches (Preply Language Learning Report, 2024)</li>
               <li className="text-gray-400 text-sm">95% of participants report improved listening comprehension with dual-language captions (Vanderplank, Language Learning & Technology, 2016)</li>
             </ul>
-            <p className="text-gray-300 m-0">This is why FunLingo displays bilingual subtitles directly in the video player — turning passive watching into active, research-backed language learning.</p>
+            <p className="text-gray-300 m-0">This is why Funlingo displays bilingual subtitles directly in the video player — turning passive watching into active, research-backed language learning.</p>
           </div>
 
           <h2 className="text-3xl font-bold text-white mt-16 mb-8">FAQ</h2>
           <div className="space-y-6">
             {[
-              { q: "How is FunLingo different from other subtitle tools?", a: "FunLingo focuses on in-player dual subtitles plus instant word-level multi-translation lookup, pronunciation playback, and save-to-vocab — designed for passive learning while watching content." },
-              { q: "Can I choose how many translations I see per word?", a: "Yes — FunLingo's UI lets you select 1, 2, 3, or \"All\" translations for deeper comprehension, reducing the need to search elsewhere." },
-              { q: "Which platforms does FunLingo work with?", a: "FunLingo supports YouTube, Netflix, Prime Video and aims to expand to more platforms (see download page)." },
-              { q: "Is FunLingo free?", a: "The extension distributes a free tier / no-cost option; check the Chrome listing for latest pricing." }
+              { q: "How is Funlingo different from other subtitle tools?", a: "Funlingo focuses on in-player dual subtitles plus instant word-level multi-translation lookup, pronunciation playback, and save-to-vocab — designed for passive learning while watching content." },
+              { q: "Can I choose how many translations I see per word?", a: "Yes — Funlingo's UI lets you select 1, 2, 3, or \"All\" translations for deeper comprehension, reducing the need to search elsewhere." },
+              { q: "Which platforms does Funlingo work with?", a: "Funlingo supports YouTube, Netflix, Prime Video and aims to expand to more platforms (see download page)." },
+              { q: "Is Funlingo free?", a: "The extension distributes a free tier / no-cost option; check the Chrome listing for latest pricing." }
             ].map((faq, i) => (
               <div key={i} className="border-b border-white/5 pb-6 last:border-0">
                 <h4 className="font-bold text-white text-lg mb-2">Q: {faq.q}</h4>
@@ -171,7 +171,7 @@ export default function BlogPostContent() {
 
           <div className="mt-16 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Start Learning Naturally</h2>
-            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">FunLingo shortens the path from exposure to usable speech by combining dual subtitles, multi-translation lookup, and pronunciation tools.</p>
+            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">Funlingo shortens the path from exposure to usable speech by combining dual subtitles, multi-translation lookup, and pronunciation tools.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Try the Extension Now <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>

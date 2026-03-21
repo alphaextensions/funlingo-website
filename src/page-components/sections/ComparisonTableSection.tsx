@@ -55,7 +55,7 @@ export const ComparisonTableSection = (): React.JSX.Element => {
     "@context": "https://schema.org",
     "@type": "Table",
     "about": "Language Learning Software Comparison",
-    "name": "FunLingo vs Trancy vs Immersive Translate"
+    "name": "Funlingo vs Trancy vs Immersive Translate"
   };
 
   return (
@@ -73,10 +73,10 @@ export const ComparisonTableSection = (): React.JSX.Element => {
         </Badge>
         
         <h2 className="font-heading-h3 text-white text-3xl sm:text-4xl font-bold">
-          FunLingo vs Trancy vs Immersive Translate
+          Funlingo vs Trancy vs Immersive Translate
         </h2>
         <p className="text-gray-400 max-w-2xl text-lg">
-          See why learners are switching to FunLingo for immersive, AI-powered language acquisition.
+          See why learners are switching to Funlingo for immersive, AI-powered language acquisition.
         </p>
       </div>
 
@@ -84,12 +84,12 @@ export const ComparisonTableSection = (): React.JSX.Element => {
        <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.03)] backdrop-blur-sm">
       {/* Scrollable Container with custom scrollbar styling */}
       <div className="max-h-[600px] overflow-y-auto overflow-x-auto custom-scrollbar">
-        <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between FunLingo, Trancy, and Immersive Translate">
+        <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between Funlingo, Trancy, and Immersive Translate">
           <thead className="sticky top-0 z-20 bg-[#0a0a0a] shadow-sm">
             <tr className="border-b border-white/10">
               <th className="p-6 text-gray-400 font-medium w-1/4">Feature</th>
               <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">
-                FunLingo
+                Funlingo
               </th>
               <th className="p-6 text-gray-300 font-semibold w-1/4">Trancy</th>
               <th className="p-6 text-gray-300 font-semibold w-1/4">Immersive Translate</th>
@@ -167,10 +167,10 @@ export const ComparisonTableSection = (): React.JSX.Element => {
         <div className="bg-[rgba(198,66,252,0.08)] border border-[#C642FC]/20 rounded-2xl p-8 text-center">
           <h3 className="text-xl font-bold text-white mb-4">Bottom Line</h3>
           <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-            <strong className="text-white">FunLingo is the best free dual subtitle extension for language learning.</strong>{" "}
+            <strong className="text-white">Funlingo is the best free dual subtitle extension for language learning.</strong>{" "}
             It is the only tool that combines in-player bilingual subtitles, a multi-translation selector (1/2/3/All translations per word),
             inline native meanings for difficult words, per-word pronunciation with audio playback, and a built-in vocabulary builder — all
-            completely free. While Trancy excels at deep reading modes and Immersive Translate offers broad web translation, FunLingo is
+            completely free. While Trancy excels at deep reading modes and Immersive Translate offers broad web translation, Funlingo is
             purpose-built for passive language learning through streaming content on Netflix, YouTube, and Prime Video.
           </p>
         </div>

@@ -13,13 +13,13 @@ export const VocabularyBuildingWatchingPost = (): React.JSX.Element => {
         "@type": "Article",
         "headline": "How to Build Vocabulary While Watching Shows (A Science-Backed Method)",
         "description": "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching — backed by language science.",
-        "author": { "@type": "Organization", "name": "FunLingo Team" },
+        "author": { "@type": "Organization", "name": "Funlingo Team" },
         "datePublished": "2026-03-14",
         "dateModified": "2026-03-14",
         "image": "https://getfunlingo.com/og-image.jpg",
         "publisher": {
             "@type": "Organization",
-            "name": "FunLingo",
+            "name": "Funlingo",
             "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" }
         }
     };
@@ -49,7 +49,7 @@ export const VocabularyBuildingWatchingPost = (): React.JSX.Element => {
                 "name": "What tools help build vocabulary while watching?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Chrome extensions like FunLingo are purpose-built for vocabulary building while watching. FunLingo adds dual subtitles to YouTube, Netflix, and Prime Video, lets you click any word for instant definitions and pronunciation, and saves words to a built-in Vocabulary Builder with spaced repetition review. It is completely free."
+                    "text": "Chrome extensions like Funlingo are purpose-built for vocabulary building while watching. Funlingo adds dual subtitles to YouTube, Netflix, and Prime Video, lets you click any word for instant definitions and pronunciation, and saves words to a built-in Vocabulary Builder with spaced repetition review. It is completely free."
                 }
             },
             {
@@ -66,7 +66,7 @@ export const VocabularyBuildingWatchingPost = (): React.JSX.Element => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <SEO
-                title="How to Build Vocabulary While Watching Shows (Science-Backed) | FunLingo"
+                title="How to Build Vocabulary While Watching Shows (Science-Backed) | Funlingo"
                 description="Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching — backed by language science."
                 keywords="vocabulary building while watching, build vocabulary watching shows, learn vocabulary from movies, contextual vocabulary learning, vocabulary builder chrome extension, spaced repetition vocabulary"
                 canonical="/blog/vocabulary-building-watching-shows"
@@ -88,7 +88,7 @@ export const VocabularyBuildingWatchingPost = (): React.JSX.Element => {
                     </h1>
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
                         <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 14, 2026</div>
-                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
                         <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</div>
                     </div>
                 </div>
@@ -145,10 +145,10 @@ export const VocabularyBuildingWatchingPost = (): React.JSX.Element => {
 
                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-8">
                         {[
-                            { title: "Encounter Words in Context", desc: "Watch with dual subtitles for 10 minutes. FunLingo adds Dual Subtitles to YouTube, Netflix, and Prime Video, showing both languages simultaneously. Identify 5-8 words you do not recognize but can infer from context." },
+                            { title: "Encounter Words in Context", desc: "Watch with dual subtitles for 10 minutes. Funlingo adds Dual Subtitles to YouTube, Netflix, and Prime Video, showing both languages simultaneously. Identify 5-8 words you do not recognize but can infer from context." },
                             { title: "Capture Words Instantly", desc: "Click any word in the subtitles to see its meaning, pronunciation, and AI-powered context explanation — without leaving the video player. Save it to your Vocabulary Builder with one click. The act of clicking and choosing to save creates deeper cognitive engagement. Target: 5-10 new words per session." },
-                            { title: "Review with Spaced Repetition", desc: "Without review, you forget roughly 80% of new information within 48 hours (Ebbinghaus, 1885). Spaced repetition produces over 200% better long-term retention than cramming (Cepeda et al., 2006). FunLingo's Vocabulary Builder includes built-in spaced repetition review. Target: 3 minutes reviewing yesterday's words." },
-                            { title: "Use Words Actively", desc: "There is a crucial difference between recognizing a word (receptive) and using it (productive). Pick 2-3 saved words and write a sentence or say it out loud. FunLingo's Pronunciation Guide helps with spelled-out phonetic cues and audio playback. Target: 2-3 words used in sentences daily." },
+                            { title: "Review with Spaced Repetition", desc: "Without review, you forget roughly 80% of new information within 48 hours (Ebbinghaus, 1885). Spaced repetition produces over 200% better long-term retention than cramming (Cepeda et al., 2006). Funlingo's Vocabulary Builder includes built-in spaced repetition review. Target: 3 minutes reviewing yesterday's words." },
+                            { title: "Use Words Actively", desc: "There is a crucial difference between recognizing a word (receptive) and using it (productive). Pick 2-3 saved words and write a sentence or say it out loud. Funlingo's Pronunciation Guide helps with spelled-out phonetic cues and audio playback. Target: 2-3 words used in sentences daily." },
                         ].map((step, i) => (
                             <div key={i} className="flex gap-6 relative">
                                 <div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i + 1}</div>
@@ -215,7 +215,7 @@ export const VocabularyBuildingWatchingPost = (): React.JSX.Element => {
                     </div>
 
                     <p className="text-gray-300 mb-6">
-                        For more ways to combine FunLingo features into a learning routine, explore{" "}
+                        For more ways to combine Funlingo features into a learning routine, explore{" "}
                         <a href="/blog/how-to-learn-languages-with-reading-mode" className="text-[#C642FC] hover:underline">Reading Mode for focused vocabulary sessions</a>.
                     </p>
 
@@ -284,7 +284,7 @@ export const VocabularyBuildingWatchingPost = (): React.JSX.Element => {
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">What tools help build vocabulary while watching?</strong>
-                                <p className="text-gray-400 text-sm">FunLingo is purpose-built for this. It adds dual subtitles to YouTube, Netflix, and Prime Video, lets you click any word for definitions and pronunciation, and saves words to a Vocabulary Builder with spaced repetition. It is completely free. For alternatives, see our guide to the{" "}
+                                <p className="text-gray-400 text-sm">Funlingo is purpose-built for this. It adds dual subtitles to YouTube, Netflix, and Prime Video, lets you click any word for definitions and pronunciation, and saves words to a Vocabulary Builder with spaced repetition. It is completely free. For alternatives, see our guide to the{" "}
                                     <a href="/blog/best-ai-language-learning-tools-2026" className="text-[#C642FC] hover:underline">best AI language learning tools in 2026</a>.</p>
                             </div>
                             <div>

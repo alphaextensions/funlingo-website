@@ -21,7 +21,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Words That Have 'AI' in Them — Complete List & Meanings",
   "description": "Explore a comprehensive list of English words containing 'ai' — from common words like rain and train to unusual ones. Includes pronunciation tips, meanings, and example sentences.",
-  "author": { "@type": "Organization", "name": "FunLingo Team" },
+  "author": { "@type": "Organization", "name": "Funlingo Team" },
   "datePublished": "2026-03-20",
   "dateModified": "2026-03-20",
   "image": "https://getfunlingo.com/og-image.jpg",

@@ -33,7 +33,7 @@ export default function VocabularyBuildingWatchingContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Turn every show into a vocabulary lesson with free dual subtitles.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
 
@@ -53,9 +53,9 @@ export default function VocabularyBuildingWatchingContent() {
 
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
             {[
-              { title: "Step 1: Watch with Dual Subtitles", desc: "Enable dual subtitles using FunLingo so you see both your target language and native language on screen. This makes the input comprehensible and lets you follow the story while being exposed to new vocabulary in written form. Do not pause or look things up at this stage. Just watch naturally." },
+              { title: "Step 1: Watch with Dual Subtitles", desc: "Enable dual subtitles using Funlingo so you see both your target language and native language on screen. This makes the input comprehensible and lets you follow the story while being exposed to new vocabulary in written form. Do not pause or look things up at this stage. Just watch naturally." },
               { title: "Step 2: Notice and Save New Words", desc: "As you watch, your brain will naturally flag unfamiliar words that appear repeatedly or in emotionally engaging scenes. When you notice a word you want to learn, click it in the subtitles to save it to your vocabulary list. Aim for 5 to 15 words per episode. Do not try to save every unknown word. Focus on words that seem useful or that you have seen more than once." },
-              { title: "Step 3: Review with Spaced Repetition", desc: "After your watching session, spend 2 to 5 minutes reviewing your saved words. The key is spaced repetition: review new words after 1 day, then 3 days, then 7 days, then 14 days. Each review strengthens the neural pathway. FunLingo's built-in spaced repetition handles the scheduling automatically." },
+              { title: "Step 3: Review with Spaced Repetition", desc: "After your watching session, spend 2 to 5 minutes reviewing your saved words. The key is spaced repetition: review new words after 1 day, then 3 days, then 7 days, then 14 days. Each review strengthens the neural pathway. Funlingo's built-in spaced repetition handles the scheduling automatically." },
               { title: "Step 4: Re-encounter Words Naturally", desc: "As you continue watching more episodes, you will naturally encounter your saved words again in new contexts. Each natural re-encounter reinforces the word further. This is where the method becomes self-sustaining: the more you watch, the more you reinforce previously saved vocabulary." },
             ].map((s, i) => (
               <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i + 1}</div><div className="pt-2 text-gray-300"><strong className="text-white block mb-1">{s.title}</strong>{s.desc}</div></div>
@@ -78,7 +78,7 @@ export default function VocabularyBuildingWatchingContent() {
               </div>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-[#C642FC]/30">
-              <h3 className="text-lg font-bold text-white mb-3">4-Step Method + FunLingo</h3>
+              <h3 className="text-lg font-bold text-white mb-3">4-Step Method + Funlingo</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2 text-green-400"><CheckCircle className="w-4 h-4" /> Words learned in rich context</div>
                 <div className="flex items-center gap-2 text-green-400"><CheckCircle className="w-4 h-4" /> Built-in spaced repetition</div>
@@ -100,7 +100,7 @@ export default function VocabularyBuildingWatchingContent() {
             </div>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How FunLingo Makes This Method Easy</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How Funlingo Makes This Method Easy</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Layers className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Dual Subtitles</h3><p className="text-sm text-gray-400">See both languages simultaneously on Netflix, YouTube, and Prime Video. No manual setup for each video, it works automatically.</p></div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Target className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">One-Click Word Saving</h3><p className="text-sm text-gray-400">Click any word in the subtitles to see its translation and save it to your vocabulary list. No disruption to your watching flow.</p></div>
@@ -117,7 +117,7 @@ export default function VocabularyBuildingWatchingContent() {
               <div><strong className="text-white block mb-1">Is watching shows better than flashcards for vocabulary?</strong><p className="text-gray-400 text-sm">Watching shows provides contextual learning that flashcards cannot match. The ideal approach combines both: learn words from shows and reinforce them with spaced repetition.</p></div>
               <div><strong className="text-white block mb-1">What is the science behind learning vocabulary from TV?</strong><p className="text-gray-400 text-sm">Three principles support this: comprehensible input theory (Krashen), dual coding theory (Paivio), and the spacing effect (Ebbinghaus). Together they show that contextual audiovisual learning with spaced review leads to durable acquisition.</p></div>
               <div><strong className="text-white block mb-1">Do I need dual subtitles for this method to work?</strong><p className="text-gray-400 text-sm">Dual subtitles significantly enhance the method by providing instant comprehension. While you can learn with single subtitles, dual subtitles make the process faster and more enjoyable.</p></div>
-              <div><strong className="text-white block mb-1">How does FunLingo&apos;s word-saving feature work?</strong><p className="text-gray-400 text-sm">Click any word in the subtitles to see its translation and save it. Saved words can then be reviewed with spaced repetition for long-term retention.</p></div>
+              <div><strong className="text-white block mb-1">How does Funlingo&apos;s word-saving feature work?</strong><p className="text-gray-400 text-sm">Click any word in the subtitles to see its translation and save it. Saved words can then be reviewed with spaced repetition for long-term retention.</p></div>
             </div>
           </div>
 
@@ -125,7 +125,7 @@ export default function VocabularyBuildingWatchingContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Start Building Vocabulary While You Watch</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Dual subtitles. One-click word saving. Spaced repetition. The complete science-backed vocabulary building toolkit, completely free.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

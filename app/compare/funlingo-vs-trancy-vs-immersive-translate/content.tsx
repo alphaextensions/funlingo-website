@@ -30,11 +30,11 @@ export default function CompareContent() {
         <div className="w-full max-w-7xl mb-20">
           <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.03)] backdrop-blur-sm">
             <div className="max-h-[600px] overflow-y-auto overflow-x-auto custom-scrollbar">
-              <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between FunLingo, Trancy, and Immersive Translate">
+              <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between Funlingo, Trancy, and Immersive Translate">
                 <thead className="sticky top-0 z-20 bg-[#0a0a0a] shadow-sm">
                   <tr className="border-b border-white/10">
                     <th className="p-6 text-gray-400 font-medium w-1/4">Feature</th>
-                    <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">FunLingo</th>
+                    <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">Funlingo</th>
                     <th className="p-6 text-gray-300 font-semibold w-1/4">Trancy</th>
                     <th className="p-6 text-gray-300 font-semibold w-1/4">Immersive Translate</th>
                   </tr>

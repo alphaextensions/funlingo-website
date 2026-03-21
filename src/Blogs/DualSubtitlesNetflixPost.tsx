@@ -12,14 +12,14 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "How to Get Dual Subtitles on Netflix (2026 Guide)",
-        "description": "Want dual subtitles on Netflix? Learn how to display two languages at once with FunLingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
-        "author": { "@type": "Organization", "name": "FunLingo Team" },
+        "description": "Want dual subtitles on Netflix? Learn how to display two languages at once with Funlingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
+        "author": { "@type": "Organization", "name": "Funlingo Team" },
         "datePublished": "2026-03-14",
         "dateModified": "2026-03-14",
         "image": "https://getfunlingo.com/og-image.jpg",
         "publisher": {
             "@type": "Organization",
-            "name": "FunLingo",
+            "name": "Funlingo",
             "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" }
         }
     };
@@ -33,7 +33,7 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                 "name": "How do I get dual subtitles on Netflix?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Install a free Chrome extension like FunLingo from the Chrome Web Store. Open any Netflix show, click the FunLingo icon, select your target and native languages, and dual subtitles will appear on screen instantly. The entire setup takes less than 30 seconds."
+                    "text": "Install a free Chrome extension like Funlingo from the Chrome Web Store. Open any Netflix show, click the Funlingo icon, select your target and native languages, and dual subtitles will appear on screen instantly. The entire setup takes less than 30 seconds."
                 }
             },
             {
@@ -41,15 +41,15 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                 "name": "Does Netflix natively support dual subtitles?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. Netflix only allows you to display one subtitle language at a time. To watch with two languages simultaneously, you need a Chrome extension like FunLingo that overlays a second subtitle track on the Netflix player."
+                    "text": "No. Netflix only allows you to display one subtitle language at a time. To watch with two languages simultaneously, you need a Chrome extension like Funlingo that overlays a second subtitle track on the Netflix player."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is FunLingo really free?",
+                "name": "Is Funlingo really free?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. FunLingo is 100% free with no premium tier, no trial period, and no credit card required. All features — Dual Subtitles, Hover Definitions, Pronunciation Guides, AI Explanations, Vocabulary Builder, and Reading Mode — are included at no cost."
+                    "text": "Yes. Funlingo is 100% free with no premium tier, no trial period, and no credit card required. All features — Dual Subtitles, Hover Definitions, Pronunciation Guides, AI Explanations, Vocabulary Builder, and Reading Mode — are included at no cost."
                 }
             },
             {
@@ -57,7 +57,7 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                 "name": "Can I use dual subtitles on YouTube and Prime Video too?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Absolutely. FunLingo works on Netflix, YouTube, and Amazon Prime Video. The same dual subtitle features, word-level definitions, and vocabulary tools are available across all three platforms."
+                    "text": "Absolutely. Funlingo works on Netflix, YouTube, and Amazon Prime Video. The same dual subtitle features, word-level definitions, and vocabulary tools are available across all three platforms."
                 }
             }
         ]
@@ -66,8 +66,8 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <SEO
-                title="How to Get Dual Subtitles on Netflix (2026 Guide) | FunLingo"
-                description="Want dual subtitles on Netflix? Learn how to display two languages at once with FunLingo's free Chrome extension. Step-by-step setup in under 30 seconds."
+                title="How to Get Dual Subtitles on Netflix (2026 Guide) | Funlingo"
+                description="Want dual subtitles on Netflix? Learn how to display two languages at once with Funlingo's free Chrome extension. Step-by-step setup in under 30 seconds."
                 keywords="how to get dual subtitles on netflix, dual subtitles netflix, netflix two subtitles, bilingual subtitles netflix, netflix language learning, learn languages netflix"
                 canonical="/blog/how-to-get-dual-subtitles-on-netflix"
             />
@@ -90,7 +90,7 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                     </h1>
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
                         <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 14, 2026</div>
-                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
                         <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                     </p>
                     <p className="text-gray-300 mb-6">
                         That is where dual subtitles come in. If you have ever wondered <strong className="text-white">how to get dual subtitles on Netflix</strong>, you are not alone. Thousands of language learners search for this every month, and the solution is surprisingly straightforward. With a free Chrome extension called{" "}
-                        <a href="https://funlingo.ai" className="text-[#C642FC] hover:underline">FunLingo</a>, you can display two subtitle languages simultaneously — and turn every Netflix session into a language lesson.
+                        <a href="https://funlingo.ai" className="text-[#C642FC] hover:underline">Funlingo</a>, you can display two subtitle languages simultaneously — and turn every Netflix session into a language lesson.
                     </p>
 
                     <hr className="border-white/10 my-12" />
@@ -125,16 +125,16 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                     <hr className="border-white/10 my-12" />
 
                     {/* Step-by-Step Guide */}
-                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Step-by-Step: How to Get Dual Subtitles on Netflix with FunLingo</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Step-by-Step: How to Get Dual Subtitles on Netflix with Funlingo</h2>
                     <p className="text-gray-300 mb-6">Setting up dual subtitles on Netflix takes less than 30 seconds. Here is exactly how to do it.</p>
 
                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
                         {[
-                            { title: "Install FunLingo from the Chrome Web Store", desc: "Open Google Chrome (or any Chromium-based browser like Edge or Brave) and head to the Chrome Web Store. Search for \"FunLingo\" or go directly to the listing. Click Add to Chrome and confirm. The entire process takes about 10 seconds. FunLingo is completely free — no premium tier, no trial period, no credit card required." },
+                            { title: "Install Funlingo from the Chrome Web Store", desc: "Open Google Chrome (or any Chromium-based browser like Edge or Brave) and head to the Chrome Web Store. Search for \"Funlingo\" or go directly to the listing. Click Add to Chrome and confirm. The entire process takes about 10 seconds. Funlingo is completely free — no premium tier, no trial period, no credit card required." },
                             { title: "Open Netflix and Pick a Show", desc: "Navigate to netflix.com and choose something you want to watch. A quick tip: start with a show you have already seen in your native language. When you already know the plot, you can focus more on the language." },
-                            { title: "Enable Dual Subtitles", desc: "Once the video starts playing, click the FunLingo icon in your browser toolbar. Select your target language (the language you are learning) and your native language. FunLingo overlays both subtitle tracks directly on the Netflix player." },
+                            { title: "Enable Dual Subtitles", desc: "Once the video starts playing, click the Funlingo icon in your browser toolbar. Select your target language (the language you are learning) and your native language. Funlingo overlays both subtitle tracks directly on the Netflix player." },
                             { title: "Start Learning While You Watch", desc: "Click any word in the subtitles to see its definition, pronunciation, and AI-powered context explanation. Hover over unfamiliar words for quick translations. Save words to your Vocabulary Builder with one click for later review." },
-                            { title: "Review What You Learned", desc: "After your watching session, open FunLingo's Vocabulary Builder to review the words you saved. The built-in spaced repetition system surfaces words at the right intervals for long-term retention." },
+                            { title: "Review What You Learned", desc: "After your watching session, open Funlingo's Vocabulary Builder to review the words you saved. The built-in spaced repetition system surfaces words at the right intervals for long-term retention." },
                         ].map((step, i) => (
                             <div key={i} className="flex gap-6 relative">
                                 <div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">
@@ -186,7 +186,7 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                     </div>
 
                     <p className="text-gray-300 mb-6">
-                        FunLingo takes contextual learning further with its{" "}
+                        Funlingo takes contextual learning further with its{" "}
                         <a href="/blog/language-learning-tips-and-ai-insights" className="text-[#C642FC] hover:underline">AI-powered contextual explanations</a>. When you click a word, you don't get a basic dictionary definition — you get grammar notes, usage examples, and context-specific meaning.
                     </p>
 
@@ -202,7 +202,7 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
 
                     <h3 className="text-xl font-bold text-white mb-3 mt-8">Use Reading Mode for Focused Study</h3>
                     <p className="text-gray-300 mb-6">
-                        When you want a more intensive learning experience, switch to FunLingo's{" "}
+                        When you want a more intensive learning experience, switch to Funlingo's{" "}
                         <a href="/blog/reading-mode-bilingual-captions" className="text-[#C642FC] hover:underline">Reading Mode</a>. This splits your screen with the video on the left and synchronized bilingual captions on the right. The active sentence highlights as it plays, so you can read at your own pace.
                     </p>
 
@@ -239,13 +239,13 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
 
                     <h3 className="text-xl font-bold text-white mb-3 mt-8">Language Reactor</h3>
                     <p className="text-gray-300 mb-6">
-                        Formerly known as "Language Learning with Netflix," Language Reactor was one of the first tools in this space. It offers dual subtitles and some word lookup features. However, its more advanced features require a Pro subscription. FunLingo provides word-level hover definitions, pronunciation guides, AI explanations, and a vocabulary builder — all for free.
+                        Formerly known as "Language Learning with Netflix," Language Reactor was one of the first tools in this space. It offers dual subtitles and some word lookup features. However, its more advanced features require a Pro subscription. Funlingo provides word-level hover definitions, pronunciation guides, AI explanations, and a vocabulary builder — all for free.
                     </p>
 
                     <h3 className="text-xl font-bold text-white mb-3 mt-8">Trancy</h3>
                     <p className="text-gray-300 mb-6">
                         Trancy is another Chrome extension that offers dual subtitles and AI-powered learning features. It uses a freemium model, locking some features behind a paid plan. For a detailed side-by-side comparison, check out our{" "}
-                        <a href="/compare/funlingo-vs-trancy-vs-immersive-translate" className="text-[#C642FC] hover:underline">FunLingo vs Trancy vs Immersive Translate comparison</a>.
+                        <a href="/compare/funlingo-vs-trancy-vs-immersive-translate" className="text-[#C642FC] hover:underline">Funlingo vs Trancy vs Immersive Translate comparison</a>.
                     </p>
 
                     <h3 className="text-xl font-bold text-white mb-3 mt-8">Manual Workarounds</h3>
@@ -259,19 +259,19 @@ export const DualSubtitlesNetflixPost = (): React.JSX.Element => {
                         <div className="space-y-4">
                             <div>
                                 <strong className="text-white block mb-1">How do I get dual subtitles on Netflix?</strong>
-                                <p className="text-gray-400 text-sm">Install a free Chrome extension like FunLingo from the Chrome Web Store. Open any Netflix show, click the FunLingo icon, select your target and native languages, and dual subtitles will appear on screen instantly. The entire setup takes less than 30 seconds.</p>
+                                <p className="text-gray-400 text-sm">Install a free Chrome extension like Funlingo from the Chrome Web Store. Open any Netflix show, click the Funlingo icon, select your target and native languages, and dual subtitles will appear on screen instantly. The entire setup takes less than 30 seconds.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Does Netflix natively support dual subtitles?</strong>
-                                <p className="text-gray-400 text-sm">No. Netflix only allows you to display one subtitle language at a time. To watch with two languages simultaneously, you need a Chrome extension like FunLingo that overlays a second subtitle track on the Netflix player.</p>
+                                <p className="text-gray-400 text-sm">No. Netflix only allows you to display one subtitle language at a time. To watch with two languages simultaneously, you need a Chrome extension like Funlingo that overlays a second subtitle track on the Netflix player.</p>
                             </div>
                             <div>
-                                <strong className="text-white block mb-1">Is FunLingo really free?</strong>
-                                <p className="text-gray-400 text-sm">Yes. FunLingo is 100% free with no premium tier, no trial period, and no credit card required. All features — Dual Subtitles, Hover Definitions, Pronunciation Guides, AI Explanations, Vocabulary Builder, and Reading Mode — are included at no cost.</p>
+                                <strong className="text-white block mb-1">Is Funlingo really free?</strong>
+                                <p className="text-gray-400 text-sm">Yes. Funlingo is 100% free with no premium tier, no trial period, and no credit card required. All features — Dual Subtitles, Hover Definitions, Pronunciation Guides, AI Explanations, Vocabulary Builder, and Reading Mode — are included at no cost.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Can I use dual subtitles on YouTube and Prime Video too?</strong>
-                                <p className="text-gray-400 text-sm">Absolutely. FunLingo works on Netflix, YouTube, and Amazon Prime Video. The same dual subtitle features, word-level definitions, and vocabulary tools are available across all three platforms. Learn more in our guide to{" "}
+                                <p className="text-gray-400 text-sm">Absolutely. Funlingo works on Netflix, YouTube, and Amazon Prime Video. The same dual subtitle features, word-level definitions, and vocabulary tools are available across all three platforms. Learn more in our guide to{" "}
                                     <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">how to learn a language by watching</a>.</p>
                             </div>
                         </div>

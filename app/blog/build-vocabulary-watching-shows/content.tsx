@@ -32,7 +32,7 @@ export default function VocabularyBuildingContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Ready to turn every show into a vocabulary lesson?</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
           <hr className="border-white/10 my-12" />
@@ -74,14 +74,14 @@ export default function VocabularyBuildingContent() {
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Build Your Vocabulary One Episode at a Time</h2>
           <p className="text-gray-300 mb-6">Vocabulary building while watching is not about passively hoping that words will stick. It is about using proven strategies.</p>
-          <p className="text-gray-300 mb-6">Ready to get started? Browse more strategies on our <a href="/blog" className="text-[#C642FC] hover:underline">blog</a> or install FunLingo today.</p>
+          <p className="text-gray-300 mb-6">Ready to get started? Browse more strategies on our <a href="/blog" className="text-[#C642FC] hover:underline">blog</a> or install Funlingo today.</p>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>
             <div className="space-y-4">
               <div><strong className="text-white block mb-1">Can you really build vocabulary by watching TV shows and movies?</strong><p className="text-gray-400 text-sm">Yes. Research on comprehensible input shows that encountering new words in meaningful contexts leads to effective vocabulary acquisition.</p></div>
               <div><strong className="text-white block mb-1">How many new words can I learn from watching one episode?</strong><p className="text-gray-400 text-sm">Most learners can realistically absorb 5 to 15 new words per episode when using active strategies.</p></div>
               <div><strong className="text-white block mb-1">Should I use subtitles in my native language or my target language?</strong><p className="text-gray-400 text-sm">Dual subtitles are the most effective option.</p></div>
-              <div><strong className="text-white block mb-1">What is the best Chrome extension for building vocabulary while watching?</strong><p className="text-gray-400 text-sm">FunLingo is a vocabulary builder Chrome extension designed for language learners.</p></div>
+              <div><strong className="text-white block mb-1">What is the best Chrome extension for building vocabulary while watching?</strong><p className="text-gray-400 text-sm">Funlingo is a vocabulary builder Chrome extension designed for language learners.</p></div>
               <div><strong className="text-white block mb-1">How does spaced repetition help with vocabulary from shows?</strong><p className="text-gray-400 text-sm">Spaced repetition shows you saved words at increasing intervals, strengthening long-term retention.</p></div>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function VocabularyBuildingContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Start Building Your Vocabulary While Watching Today</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Dual subtitles. Vocabulary Builder. Spaced repetition. Everything you need to turn screen time into language growth.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

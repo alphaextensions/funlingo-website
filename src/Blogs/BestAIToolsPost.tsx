@@ -13,8 +13,8 @@ export const BestAIToolsPost = (): React.JSX.Element => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "FunLingo: AI-native, low-friction learning",
-    "description": "FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.",
+    "headline": "Funlingo: AI-native, low-friction learning",
+    "description": "Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.",
     "author": {
       "@type": "Organization",
       "name": "Funlingo Team"
@@ -27,9 +27,9 @@ export const BestAIToolsPost = (): React.JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-black">
       <SEO
-        title="FunLingo: AI-native, low-friction learning"
-        description="FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow."
-        keywords="FunLingo, AI language learning, dual subtitles, contextual learning, vocabulary builder"
+        title="Funlingo: AI-native, low-friction learning"
+        description="Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow."
+        keywords="Funlingo, AI language learning, dual subtitles, contextual learning, vocabulary builder"
         canonical="/blog/best-ai-language-learning-tools-2026"
         type="article"
       />
@@ -51,7 +51,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
           </Badge>
           
           <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            FunLingo: AI-native, low-friction learning
+            Funlingo: AI-native, low-friction learning
           </h1>
           
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
@@ -67,7 +67,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
           
           {/* Intro */}
           <p className="lead text-xl leading-relaxed text-gray-200">
-            FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.
+            Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.
           </p>
 
           <hr className="border-white/10 my-12" />
@@ -85,7 +85,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
                <li className="flex gap-4">
                  <div className="mt-1 text-[#C642FC] shrink-0"><MousePointerClick className="w-5 h-5" /></div>
                  <div>
-                   <strong className="text-white">Word-Level Multi-Translation Selector (choose depth)</strong> — <span className="text-gray-400">pick how many meanings to show per word to avoid overload or to get deeper nuance. (Unique FunLingo UX)</span>
+                   <strong className="text-white">Word-Level Multi-Translation Selector (choose depth)</strong> — <span className="text-gray-400">pick how many meanings to show per word to avoid overload or to get deeper nuance. (Unique Funlingo UX)</span>
                  </div>
                </li>
                <li className="flex gap-4">
@@ -113,7 +113,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">How it works (step-by-step user flow)</h2>
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-16">
             {[
-              "Install the FunLingo browser extension.",
+              "Install the Funlingo browser extension.",
               "Play a video or open an article with dual subtitles.",
               <span>Hover or click any word in the learning subtitle. A small overlay appears with chips: <span className="text-[#C642FC] font-mono text-sm">[1][2][3][All]</span>.</span>,
               <span>Select the number of translations to view. See phonetics, a short context sentence, and Play (<Volume2 className="w-3 h-3 inline align-middle" />) for native audio.</span>,
@@ -140,7 +140,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
 
           {/* Comparison */}
           <div className="bg-gradient-to-br from-[#C642FC]/20 to-transparent p-8 rounded-xl border border-[#C642FC]/20">
-            <h2 className="text-2xl font-bold text-white mb-6 mt-0">Comparison summary: Why FunLingo stands out</h2>
+            <h2 className="text-2xl font-bold text-white mb-6 mt-0">Comparison summary: Why Funlingo stands out</h2>
             <ul className="space-y-4 list-none pl-0 mb-0">
               <li className="flex gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
@@ -159,7 +159,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
 
           {/* CTA */}
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
-             <h2 className="text-3xl font-bold text-white mb-4">Ready to try FunLingo?</h2>
+             <h2 className="text-3xl font-bold text-white mb-4">Ready to try Funlingo?</h2>
              <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">
                Turn your next movie night into a language breakthrough.
              </p>
@@ -170,7 +170,7 @@ export const BestAIToolsPost = (): React.JSX.Element => {
               className="no-underline"
             >
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">
-                 Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" />
+                 Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </a>
           </div>

@@ -19,7 +19,7 @@ export default function LanguageReactorVsTrancyContent() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">Language Reactor vs Trancy: Which Is Better in 2026?</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 20, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</div>
           </div>
         </div>
@@ -207,14 +207,14 @@ export default function LanguageReactorVsTrancyContent() {
 
           <hr className="border-white/10 my-10" />
 
-          {/* FunLingo Alternative */}
-          <h2 className="text-3xl font-bold text-white">The Free Alternative: FunLingo</h2>
+          {/* Funlingo Alternative */}
+          <h2 className="text-3xl font-bold text-white">The Free Alternative: Funlingo</h2>
           <div className="bg-[rgba(198,66,252,0.05)] rounded-xl p-8 border border-[#C642FC]/20 my-8">
             <div className="flex items-center gap-2 mb-4">
               <Zap className="w-5 h-5 text-[#C642FC]" />
               <span className="text-[#C642FC] font-bold text-lg">Why pay when you do not have to?</span>
             </div>
-            <p className="text-gray-300 mb-4">FunLingo offers everything you need for language learning through video &mdash; completely free. Unlike Language Reactor and Trancy, you do not need to choose between a limited free tier and a monthly subscription.</p>
+            <p className="text-gray-300 mb-4">Funlingo offers everything you need for language learning through video &mdash; completely free. Unlike Language Reactor and Trancy, you do not need to choose between a limited free tier and a monthly subscription.</p>
             <ul className="space-y-2 list-none pl-0 mb-6">
               {[
                 "Dual subtitles on Netflix, YouTube, and Prime Video",
@@ -227,7 +227,7 @@ export default function LanguageReactorVsTrancyContent() {
                 <li key={i} className="flex items-start gap-3 text-sm"><Check className="w-4 h-4 text-green-400 mt-1 shrink-0" /><span className="text-gray-200">{f}</span></li>
               ))}
             </ul>
-            <p className="text-gray-300 mb-0">FunLingo covers all three major streaming platforms &mdash; including Prime Video, which neither Language Reactor nor Trancy supports. With a 4.92/5 rating on the Chrome Web Store, it is the highest-rated tool in the category.</p>
+            <p className="text-gray-300 mb-0">Funlingo covers all three major streaming platforms &mdash; including Prime Video, which neither Language Reactor nor Trancy supports. With a 4.92/5 rating on the Chrome Web Store, it is the highest-rated tool in the category.</p>
           </div>
 
           <hr className="border-white/10 my-10" />
@@ -248,7 +248,7 @@ export default function LanguageReactorVsTrancyContent() {
 
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
               <h3 className="text-lg font-bold text-white mt-0 mb-2">What is the best free alternative to Language Reactor and Trancy?</h3>
-              <p className="text-gray-300 m-0">FunLingo is the best free alternative. It provides dual subtitles, word-level translations, pronunciation audio, AI grammar explanations, and vocabulary saving across Netflix, YouTube, and Prime Video &mdash; all at no cost. Unlike the free tiers of Language Reactor and Trancy, FunLingo does not restrict any features behind a paywall.</p>
+              <p className="text-gray-300 m-0">Funlingo is the best free alternative. It provides dual subtitles, word-level translations, pronunciation audio, AI grammar explanations, and vocabulary saving across Netflix, YouTube, and Prime Video &mdash; all at no cost. Unlike the free tiers of Language Reactor and Trancy, Funlingo does not restrict any features behind a paywall.</p>
             </div>
           </div>
 
@@ -257,10 +257,10 @@ export default function LanguageReactorVsTrancyContent() {
           {/* Final CTA */}
           <div className="bg-[rgba(198,66,252,0.05)] rounded-xl p-8 border border-[#C642FC]/20 text-center my-8">
             <h2 className="text-2xl font-bold text-white mt-0 mb-3">Skip the Monthly Fees</h2>
-            <p className="text-gray-300 mb-6">Get dual subtitles, AI translations, pronunciation audio, and vocabulary tools on Netflix, YouTube, and Prime Video &mdash; 100% free with FunLingo.</p>
+            <p className="text-gray-300 mb-6">Get dual subtitles, AI translations, pronunciation audio, and vocabulary tools on Netflix, YouTube, and Prime Video &mdash; 100% free with Funlingo.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] text-white px-8 py-4 text-lg rounded-full hover:opacity-90 transition-opacity">
-                Add FunLingo to Chrome &mdash; It&apos;s Free <ArrowRight className="w-5 h-5 ml-2" />
+                Add Funlingo to Chrome &mdash; It&apos;s Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>

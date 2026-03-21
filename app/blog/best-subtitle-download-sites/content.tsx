@@ -18,7 +18,7 @@ export default function BestSubtitleDownloadSitesContent() {
           <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Best Subtitle Download Sites &mdash; Top 15 for Any Language</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 20, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</div>
           </div>
         </div>
@@ -214,10 +214,10 @@ export default function BestSubtitleDownloadSitesContent() {
             </div>
           </div>
 
-          {/* 15. FunLingo */}
+          {/* 15. Funlingo */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
-            <h3 className="text-xl font-semibold text-white mb-3">15. FunLingo (No Download Needed)</h3>
-            <p className="text-gray-300 mb-3">FunLingo takes a fundamentally different approach. Instead of downloading subtitle files, FunLingo is a Chrome extension that displays dual subtitles directly inside Netflix, YouTube, Amazon Prime Video, and other platforms. You never need to find, download, or sync a subtitle file. FunLingo pulls subtitles automatically from the platform and lets you view two languages at once, click any word for a translation, and save vocabulary.</p>
+            <h3 className="text-xl font-semibold text-white mb-3">15. Funlingo (No Download Needed)</h3>
+            <p className="text-gray-300 mb-3">Funlingo takes a fundamentally different approach. Instead of downloading subtitle files, Funlingo is a Chrome extension that displays dual subtitles directly inside Netflix, YouTube, Amazon Prime Video, and other platforms. You never need to find, download, or sync a subtitle file. Funlingo pulls subtitles automatically from the platform and lets you view two languages at once, click any word for a translation, and save vocabulary.</p>
             <p className="text-gray-400 text-sm mb-3"><strong className="text-white">Formats:</strong> N/A (works in-browser) &nbsp;|&nbsp; <strong className="text-white">Languages:</strong> All platform-supported languages</p>
             <div className="flex flex-col gap-2 text-sm">
               <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> No downloading, no file management, no sync issues</div>
@@ -282,7 +282,7 @@ export default function BestSubtitleDownloadSitesContent() {
               <li><strong className="text-white">No vocabulary tracking.</strong> Downloaded subtitles have no way to save words you want to review later.</li>
             </ul>
           </div>
-          <p className="text-gray-300 mb-6">This is exactly the gap that tools like FunLingo fill. By working directly inside streaming platforms, FunLingo provides dual subtitles, click-to-translate, and vocabulary saving without any file downloads. Learn more about effective language learning with media in our guides on <a href="/blog/download-subtitles-from-youtube" className="text-[#C642FC] hover:underline">downloading subtitles from YouTube</a> and <a href="/blog/srt-files-subtitle-download" className="text-[#C642FC] hover:underline">SRT files explained</a>.</p>
+          <p className="text-gray-300 mb-6">This is exactly the gap that tools like Funlingo fill. By working directly inside streaming platforms, Funlingo provides dual subtitles, click-to-translate, and vocabulary saving without any file downloads. Learn more about effective language learning with media in our guides on <a href="/blog/download-subtitles-from-youtube" className="text-[#C642FC] hover:underline">downloading subtitles from YouTube</a> and <a href="/blog/srt-files-subtitle-download" className="text-[#C642FC] hover:underline">SRT files explained</a>.</p>
 
           <hr className="border-white/10 my-12" />
 
@@ -307,10 +307,10 @@ export default function BestSubtitleDownloadSitesContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-2 font-semibold">Skip the downloads. Learn languages the modern way.</p>
-            <p className="text-gray-400 mb-6">FunLingo gives you dual subtitles, instant word translations, and vocabulary saving right inside Netflix, YouTube, and Prime Video. No files to download, no syncing headaches. Completely free.</p>
+            <p className="text-gray-400 mb-6">Funlingo gives you dual subtitles, instant word translations, and vocabulary saving right inside Netflix, YouTube, and Prime Video. No files to download, no syncing headaches. Completely free.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
-                Try FunLingo Free <ArrowRight className="ml-2 w-4 h-4" />
+                Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
           </div>

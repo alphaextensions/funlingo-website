@@ -57,7 +57,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                 "name": "Should I use subtitles in my native language or my target language?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Dual subtitles are the most effective option. Seeing both your native language and target language simultaneously lets you understand meaning from context while training your reading skills in the new language. Tools like FunLingo display dual subtitles on Netflix, YouTube, and other platforms so you can match spoken words to written text in both languages."
+                    "text": "Dual subtitles are the most effective option. Seeing both your native language and target language simultaneously lets you understand meaning from context while training your reading skills in the new language. Tools like Funlingo display dual subtitles on Netflix, YouTube, and other platforms so you can match spoken words to written text in both languages."
                 }
             },
             {
@@ -65,7 +65,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                 "name": "What is the best Chrome extension for building vocabulary while watching?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "FunLingo is a vocabulary builder Chrome extension designed specifically for language learners who watch videos. It provides dual subtitles, a built-in Vocabulary Builder for saving and reviewing words, Reading Mode for bilingual captions, and spaced repetition review to help words move into long-term memory."
+                    "text": "Funlingo is a vocabulary builder Chrome extension designed specifically for language learners who watch videos. It provides dual subtitles, a built-in Vocabulary Builder for saving and reviewing words, Reading Mode for bilingual captions, and spaced repetition review to help words move into long-term memory."
                 }
             },
             {
@@ -82,7 +82,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <SEO
-                title="How to Build Vocabulary While Watching Shows & Movies | FunLingo"
+                title="How to Build Vocabulary While Watching Shows & Movies | Funlingo"
                 description="Discover 5 proven strategies to build vocabulary while watching movies and TV shows. Learn how contextual vocabulary learning, spaced repetition, and active listening transform screen time into real language growth."
                 keywords="vocabulary building while watching, build vocabulary watching shows, learn vocabulary from movies, contextual vocabulary learning, save words while watching, vocabulary builder chrome extension"
                 canonical="/blog/build-vocabulary-watching-shows"
@@ -152,7 +152,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                             className="no-underline"
                         >
                             <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
-                                Try FunLingo Free
+                                Try Funlingo Free
                             </Button>
                         </a>
                     </div>
@@ -177,7 +177,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                         <li><strong className="text-white">Reduced cognitive overload:</strong> Having the translation available lets you focus on learning specific words without struggling to understand the overall meaning.</li>
                     </ul>
                     <p className="text-gray-300 mb-12">
-                        FunLingo's Dual Subtitles feature displays both languages on Netflix, YouTube, Disney+, and other platforms. You can customize font size, position, and which language appears on top, making it easy to prioritize your target language while keeping the safety net of your native language below.
+                        Funlingo's Dual Subtitles feature displays both languages on Netflix, YouTube, Disney+, and other platforms. You can customize font size, position, and which language appears on top, making it easy to prioritize your target language while keeping the safety net of your native language below.
                     </p>
 
                     {/* Strategy 2 */}
@@ -192,9 +192,9 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
                         {[
                             { title: "Spot a New Word", desc: "While watching with dual subtitles, notice a word you want to learn. Do not pause the show for every unknown word. Focus on words that seem useful or that you have seen before." },
-                            { title: "Save It Instantly", desc: "Click the word in the subtitle to save it to your personal vocabulary list. FunLingo's Vocabulary Builder captures the word along with its translation and the sentence context." },
+                            { title: "Save It Instantly", desc: "Click the word in the subtitle to save it to your personal vocabulary list. Funlingo's Vocabulary Builder captures the word along with its translation and the sentence context." },
                             { title: "Finish Your Episode", desc: "Keep watching and enjoying the show. Save 5 to 15 words per episode. This keeps the experience enjoyable without turning it into a chore." },
-                            { title: "Review with Spaced Repetition", desc: "After your session, review your saved words. FunLingo uses spaced repetition to show words at increasing intervals, helping them move from short-term to long-term memory." },
+                            { title: "Review with Spaced Repetition", desc: "After your session, review your saved words. Funlingo uses spaced repetition to show words at increasing intervals, helping them move from short-term to long-term memory." },
                             { title: "Encounter Them Again Naturally", desc: "As you continue watching, you will start recognizing your saved words in new episodes. This natural reinforcement strengthens retention dramatically." }
                         ].map((step, i) => (
                             <div key={i} className="flex gap-6 relative">
@@ -230,7 +230,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                         You do not need to do this for every scene. Pick 2 to 3 scenes per episode that contain your saved vocabulary words. Replaying these short segments builds your listening comprehension alongside your reading vocabulary, creating a more complete understanding of each new word.
                     </p>
                     <p className="text-gray-300 mb-12">
-                        FunLingo's Reading Mode can help with this process. It presents{" "}
+                        Funlingo's Reading Mode can help with this process. It presents{" "}
                         <a href="/blog/reading-mode-bilingual-captions" className="text-[#C642FC] hover:underline">
                             bilingual captions in a clean reading format
                         </a>
@@ -248,7 +248,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                             className="no-underline"
                         >
                             <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
-                                Explore FunLingo's Vocabulary Builder
+                                Explore Funlingo's Vocabulary Builder
                             </Button>
                         </a>
                     </div>
@@ -337,12 +337,12 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                     </div>
 
                     <p className="text-gray-300 mb-6">
-                        The key insight is this: you do not need to study for hours every day. Short, consistent sessions with a vocabulary builder Chrome extension like FunLingo are far more effective than occasional marathon study sessions. Spaced repetition makes every review session count by targeting the words you are most likely to forget.
+                        The key insight is this: you do not need to study for hours every day. Short, consistent sessions with a vocabulary builder Chrome extension like Funlingo are far more effective than occasional marathon study sessions. Spaced repetition makes every review session count by targeting the words you are most likely to forget.
                     </p>
                     <p className="text-gray-300 mb-12">
-                        Want to see how FunLingo stacks up against other tools for vocabulary building while watching? Check out our detailed{" "}
+                        Want to see how Funlingo stacks up against other tools for vocabulary building while watching? Check out our detailed{" "}
                         <a href="/compare/funlingo-vs-trancy-vs-immersive-translate" className="text-[#C642FC] hover:underline">
-                            comparison of FunLingo vs Trancy vs Immersive Translate
+                            comparison of Funlingo vs Trancy vs Immersive Translate
                         </a>{" "}
                         to find the best fit for your learning style.
                     </p>
@@ -377,7 +377,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                     </div>
 
                     <p className="text-gray-300 mb-6">
-                        The best approach combines both methods. Use shows for initial exposure and contextual understanding, then use spaced repetition review to ensure long-term retention. FunLingo bridges this gap by letting you save words while watching and review them later with built-in spaced repetition, all within a single vocabulary builder Chrome extension.
+                        The best approach combines both methods. Use shows for initial exposure and contextual understanding, then use spaced repetition review to ensure long-term retention. Funlingo bridges this gap by letting you save words while watching and review them later with built-in spaced repetition, all within a single vocabulary builder Chrome extension.
                     </p>
                     <p className="text-gray-300 mb-12">
                         For more tips on using bilingual captions effectively, explore our guide on{" "}
@@ -393,7 +393,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                         Vocabulary building while watching is not about passively hoping that words will stick. It is about using proven strategies, including dual subtitles for contextual vocabulary learning, saving words while watching for later review, practicing active listening, choosing content at the right level, and maintaining a consistent routine.
                     </p>
                     <p className="text-gray-300 mb-6">
-                        When you combine these five strategies with a tool like FunLingo, your screen time becomes one of the most productive parts of your language learning journey. You are not choosing between entertainment and study. You are doing both at once, building your vocabulary with every episode, every scene, and every saved word.
+                        When you combine these five strategies with a tool like Funlingo, your screen time becomes one of the most productive parts of your language learning journey. You are not choosing between entertainment and study. You are doing both at once, building your vocabulary with every episode, every scene, and every saved word.
                     </p>
                     <p className="text-gray-300 mb-6">
                         Will you achieve perfect fluency from watching shows alone? Honestly, no. But you will build a strong, practical vocabulary rooted in real-world usage, and you will understand spoken language far better than someone who only studies from textbooks. Combined with speaking practice and other learning methods, vocabulary building while watching becomes a cornerstone of effective language acquisition.
@@ -403,7 +403,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                         <a href="/blog" className="text-[#C642FC] hover:underline">
                             blog
                         </a>{" "}
-                        or install FunLingo today and start saving your first words.
+                        or install Funlingo today and start saving your first words.
                     </p>
 
                     {/* FAQ Section */}
@@ -420,11 +420,11 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Should I use subtitles in my native language or my target language?</strong>
-                                <p className="text-gray-400 text-sm">Dual subtitles are the most effective option. Seeing both languages simultaneously lets you understand meaning from context while training your reading skills. FunLingo displays dual subtitles on Netflix, YouTube, and other platforms.</p>
+                                <p className="text-gray-400 text-sm">Dual subtitles are the most effective option. Seeing both languages simultaneously lets you understand meaning from context while training your reading skills. Funlingo displays dual subtitles on Netflix, YouTube, and other platforms.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">What is the best Chrome extension for building vocabulary while watching?</strong>
-                                <p className="text-gray-400 text-sm">FunLingo is a vocabulary builder Chrome extension designed for language learners. It provides dual subtitles, a built-in Vocabulary Builder, Reading Mode for bilingual captions, and spaced repetition review to help words move into long-term memory.</p>
+                                <p className="text-gray-400 text-sm">Funlingo is a vocabulary builder Chrome extension designed for language learners. It provides dual subtitles, a built-in Vocabulary Builder, Reading Mode for bilingual captions, and spaced repetition review to help words move into long-term memory.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">How does spaced repetition help with vocabulary from shows?</strong>
@@ -446,7 +446,7 @@ export const VocabularyBuildingPost = (): React.JSX.Element => {
                             className="no-underline"
                         >
                             <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">
-                                Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" />
+                                Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                         </a>
                     </div>

@@ -19,7 +19,7 @@ export default function TranslatePageInSafariContent() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">How to Translate a Web Page in Safari (Mac, iPhone, iPad)</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 20, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 8 min read</div>
           </div>
         </div>
@@ -244,12 +244,12 @@ export default function TranslatePageInSafariContent() {
 
           <hr className="border-white/10 my-10" />
 
-          {/* FunLingo Alternative */}
-          <h2 className="text-3xl font-bold text-white">FunLingo: A Better Option for Language Learners</h2>
+          {/* Funlingo Alternative */}
+          <h2 className="text-3xl font-bold text-white">Funlingo: A Better Option for Language Learners</h2>
           <div className="bg-[rgba(198,66,252,0.05)] rounded-xl p-8 border border-[#C642FC]/20 my-8">
-            <p className="text-gray-300 mb-4">If your goal is not just to understand a page but to actually learn the language, a standard translator falls short. FunLingo takes a different approach &mdash; instead of replacing text, it helps you learn from the content you are already watching and reading online.</p>
+            <p className="text-gray-300 mb-4">If your goal is not just to understand a page but to actually learn the language, a standard translator falls short. Funlingo takes a different approach &mdash; instead of replacing text, it helps you learn from the content you are already watching and reading online.</p>
 
-            <p className="text-gray-300 mb-4">FunLingo&apos;s website translation feature shows bilingual text side by side, lets you click individual words for instant definitions and pronunciation, and saves vocabulary for later review. Combined with dual subtitles on Netflix, YouTube, and Prime Video, it turns your entire browsing and streaming experience into a language lesson.</p>
+            <p className="text-gray-300 mb-4">Funlingo&apos;s website translation feature shows bilingual text side by side, lets you click individual words for instant definitions and pronunciation, and saves vocabulary for later review. Combined with dual subtitles on Netflix, YouTube, and Prime Video, it turns your entire browsing and streaming experience into a language lesson.</p>
 
             <ul className="space-y-2 list-none pl-0 mb-4">
               {[
@@ -292,10 +292,10 @@ export default function TranslatePageInSafariContent() {
           {/* Final CTA */}
           <div className="bg-[rgba(198,66,252,0.05)] rounded-xl p-8 border border-[#C642FC]/20 text-center my-8">
             <h2 className="text-2xl font-bold text-white mt-0 mb-3">Go Beyond Simple Translation</h2>
-            <p className="text-gray-300 mb-6">Safari translates pages, but FunLingo helps you actually learn. Get dual subtitles, word-level translations, pronunciation audio, and vocabulary tools &mdash; all free.</p>
+            <p className="text-gray-300 mb-6">Safari translates pages, but Funlingo helps you actually learn. Get dual subtitles, word-level translations, pronunciation audio, and vocabulary tools &mdash; all free.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] text-white px-8 py-4 text-lg rounded-full hover:opacity-90 transition-opacity">
-                Add FunLingo to Chrome &mdash; It&apos;s Free <ArrowRight className="w-5 h-5 ml-2" />
+                Add Funlingo to Chrome &mdash; It&apos;s Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>

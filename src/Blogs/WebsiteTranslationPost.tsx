@@ -12,8 +12,8 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Website Translation for Language Learning: Read Any Website in Two Languages with FunLingo",
-        "description": "Discover how FunLingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
+        "headline": "Website Translation for Language Learning: Read Any Website in Two Languages with Funlingo",
+        "description": "Discover how Funlingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
         "author": {
             "@type": "Organization",
             "name": "Funlingo Team"
@@ -26,9 +26,9 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <SEO
-                title="AI Website Translation for Language Learning | FunLingo Bilingual Browsing"
-                description="Discover how FunLingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally."
-                keywords="website translation for language learning, bilingual website reading, FunLingo, AI language learning extension"
+                title="AI Website Translation for Language Learning | Funlingo Bilingual Browsing"
+                description="Discover how Funlingo’s website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally."
+                keywords="website translation for language learning, bilingual website reading, Funlingo, AI language learning extension"
                 canonical="/blog/website-translation-language-learning"
                 type="article"
             />
@@ -70,7 +70,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                         Language learning often requires switching between multiple tools. You read an article. You copy a sentence. You paste it into a translator. Then you return to the page. This constant switching interrupts learning and makes the process slow.
                     </p>
                     <p className="lead text-xl leading-relaxed text-gray-200">
-                        FunLingo’s Website Translation feature changes this experience completely. Instead of leaving the page, you can now read any website in both the original language and your learning language at the same time.
+                        Funlingo’s Website Translation feature changes this experience completely. Instead of leaving the page, you can now read any website in both the original language and your learning language at the same time.
                     </p>
 
                     <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
@@ -84,7 +84,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                             className="no-underline"
                         >
                             <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
-                                Try FunLingo Free
+                                Try Funlingo Free
                             </Button>
                         </a>
                     </div>
@@ -92,16 +92,16 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                     <hr className="border-white/10 my-12" />
 
                     {/* Section 1 */}
-                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">What is the FunLingo Website Translation Feature?</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">What is the Funlingo Website Translation Feature?</h2>
                     <p className="text-gray-300 mb-6">
-                        The Website Translation feature is part of the FunLingo AI language learning extension. It allows users to open any website and instantly view the content in two languages:
+                        The Website Translation feature is part of the Funlingo AI language learning extension. It allows users to open any website and instantly view the content in two languages:
                     </p>
                     <ul className="space-y-2 list-disc pl-5 text-gray-300 mb-6">
                         <li>The original language of the website</li>
                         <li>Your learning language</li>
                     </ul>
                     <p className="text-gray-300 mb-12">
-                        This bilingual website reading approach helps you understand content while gradually improving your language skills. Unlike traditional translators that replace the entire page, FunLingo enables a dual-language reading experience, allowing you to compare and learn from both versions simultaneously.
+                        This bilingual website reading approach helps you understand content while gradually improving your language skills. Unlike traditional translators that replace the entire page, Funlingo enables a dual-language reading experience, allowing you to compare and learn from both versions simultaneously.
                     </p>
 
                     <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Why Website Translation Helps Language Learners</h2>
@@ -114,7 +114,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                         <li>Real-world topics and discussions</li>
                     </ul>
                     <p className="text-gray-300 mb-12">
-                        However, reading in a new language can be challenging. That’s where website translation for language learning becomes valuable. With FunLingo, you don’t have to stop reading when you encounter unfamiliar words. Instead, you can understand the meaning instantly while staying immersed in the content.
+                        However, reading in a new language can be challenging. That’s where website translation for language learning becomes valuable. With Funlingo, you don’t have to stop reading when you encounter unfamiliar words. Instead, you can understand the meaning instantly while staying immersed in the content.
                     </p>
 
                     {/* How it works */}
@@ -123,7 +123,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-16">
                         {[
                             { title: "Open Any Website", desc: "Visit any article, blog, or webpage in your browser." },
-                            { title: "Enable Website Translation", desc: "Turn on the Page Translation feature inside the FunLingo extension." },
+                            { title: "Enable Website Translation", desc: "Turn on the Page Translation feature inside the Funlingo extension." },
                             { title: "Activate Bilingual Display", desc: "Enable the Bilingual Display option to see both languages together." },
                             { title: "Learn Words in Context", desc: "Hover over words to understand word meanings, synonyms, and example usage." }
                         ].map((step, i) => (
@@ -181,8 +181,8 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
 
                     {/* Comparison */}
                     <div className="bg-gradient-to-br from-[#C642FC]/20 to-transparent p-8 rounded-xl border border-[#C642FC]/20 mb-16">
-                        <h2 className="text-2xl font-bold text-white mb-6 mt-0">How FunLingo is Different from Translation Tools</h2>
-                        <p className="text-gray-300 mb-6">Traditional translation tools are designed primarily for quick comprehension. FunLingo focuses on language learning.</p>
+                        <h2 className="text-2xl font-bold text-white mb-6 mt-0">How Funlingo is Different from Translation Tools</h2>
+                        <p className="text-gray-300 mb-6">Traditional translation tools are designed primarily for quick comprehension. Funlingo focuses on language learning.</p>
 
                         <div className="space-y-4">
                             <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4">
@@ -191,7 +191,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                                     <span className="text-white">Replace original text completely</span>
                                 </div>
                                 <div className="flex-1">
-                                    <span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">FunLingo Extension</span>
+                                    <span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Funlingo Extension</span>
                                     <span className="text-white font-medium">Display both languages together</span>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                             </div>
                         </div>
 
-                        <p className="text-gray-300 mt-6 italic">By keeping the original language visible, FunLingo helps learners build a stronger connection between the two languages.</p>
+                        <p className="text-gray-300 mt-6 italic">By keeping the original language visible, Funlingo helps learners build a stronger connection between the two languages.</p>
                     </div>
 
                     <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Real-World Use Cases</h2>
@@ -237,10 +237,10 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
 
                     <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Conclusion</h2>
                     <p className="text-gray-300 mb-6">
-                        Learning a language becomes easier when it fits into your daily routine. FunLingo’s Website Translation feature transforms any website into a bilingual reading experience, helping users learn naturally while browsing.
+                        Learning a language becomes easier when it fits into your daily routine. Funlingo’s Website Translation feature transforms any website into a bilingual reading experience, helping users learn naturally while browsing.
                     </p>
                     <p className="text-gray-300 mb-6">
-                        By combining AI translation with contextual vocabulary learning, FunLingo provides a smarter way to develop language skills without disrupting your workflow. Whether you’re reading blogs, research papers, or news articles, every webpage can now become part of your language learning journey.
+                        By combining AI translation with contextual vocabulary learning, Funlingo provides a smarter way to develop language skills without disrupting your workflow. Whether you’re reading blogs, research papers, or news articles, every webpage can now become part of your language learning journey.
                     </p>
 
                     <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
@@ -256,7 +256,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Can I learn languages while browsing websites?</strong>
-                                <p className="text-gray-400 text-sm">Yes. Tools like FunLingo allow users to practice language skills while reading real websites.</p>
+                                <p className="text-gray-400 text-sm">Yes. Tools like Funlingo allow users to practice language skills while reading real websites.</p>
                             </div>
                         </div>
                     </div>
@@ -274,7 +274,7 @@ export const WebsiteTranslationPost = (): React.JSX.Element => {
                             className="no-underline"
                         >
                             <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">
-                                Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" />
+                                Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                         </a>
                     </div>

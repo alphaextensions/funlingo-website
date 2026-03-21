@@ -13,13 +13,13 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
         "@type": "Article",
         "headline": "7 Best Dual Subtitle Extensions for Language Learning (2026)",
         "description": "Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free.",
-        "author": { "@type": "Organization", "name": "FunLingo Team" },
+        "author": { "@type": "Organization", "name": "Funlingo Team" },
         "datePublished": "2026-03-14",
         "dateModified": "2026-03-14",
         "image": "https://getfunlingo.com/og-image.jpg",
         "publisher": {
             "@type": "Organization",
-            "name": "FunLingo",
+            "name": "Funlingo",
             "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" }
         }
     };
@@ -41,7 +41,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                 "name": "Are there any completely free dual subtitle extensions?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. FunLingo is completely free with all features unlocked — no premium tier, no trial period, and no paywall. Most other dual subtitle extensions offer a limited free version with advanced features locked behind a paid subscription."
+                    "text": "Yes. Funlingo is completely free with all features unlocked — no premium tier, no trial period, and no paywall. Most other dual subtitle extensions offer a limited free version with advanced features locked behind a paid subscription."
                 }
             },
             {
@@ -57,7 +57,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                 "name": "Do dual subtitle extensions slow down my browser?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Modern dual subtitle extensions are lightweight and should not noticeably slow down your browser or streaming playback. FunLingo uses a privacy-first design that renders subtitles locally, minimizing data transfer."
+                    "text": "Modern dual subtitle extensions are lightweight and should not noticeably slow down your browser or streaming playback. Funlingo uses a privacy-first design that renders subtitles locally, minimizing data transfer."
                 }
             },
             {
@@ -65,7 +65,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                 "name": "Which dual subtitle extension works on Netflix, YouTube, and Prime Video?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "FunLingo is the only free dual subtitle extension that fully supports all three major streaming platforms — Netflix, YouTube, and Amazon Prime Video — plus websites."
+                    "text": "Funlingo is the only free dual subtitle extension that fully supports all three major streaming platforms — Netflix, YouTube, and Amazon Prime Video — plus websites."
                 }
             }
         ]
@@ -74,7 +74,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <SEO
-                title="7 Best Dual Subtitle Extensions for Language Learning (2026) | FunLingo"
+                title="7 Best Dual Subtitle Extensions for Language Learning (2026) | Funlingo"
                 description="Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free."
                 keywords="best dual subtitle extension, dual subtitle chrome extension, bilingual subtitles extension, dual subtitles netflix, dual subtitles youtube, language learning chrome extension"
                 canonical="/blog/best-dual-subtitle-extension"
@@ -98,7 +98,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                     </h1>
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
                         <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 14, 2026</div>
-                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
                         <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</div>
                     </div>
                 </div>
@@ -143,22 +143,22 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                     {/* The 7 Best */}
                     <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The 7 Best Dual Subtitle Extensions Compared</h2>
 
-                    {/* 1. FunLingo */}
+                    {/* 1. Funlingo */}
                     <div className="bg-gradient-to-br from-[#C642FC]/20 to-transparent p-8 rounded-xl border border-[#C642FC]/20 mb-8">
-                        <h3 className="text-xl font-bold text-white mb-2 mt-0">1. FunLingo — Best Free Dual Subtitle Extension</h3>
+                        <h3 className="text-xl font-bold text-white mb-2 mt-0">1. Funlingo — Best Free Dual Subtitle Extension</h3>
                         <div className="flex flex-wrap gap-3 mb-4 text-sm">
                             <span className="bg-white/10 px-3 py-1 rounded-full">YouTube, Netflix, Prime Video, Websites</span>
                             <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full">Completely Free</span>
                             <span className="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full">4.92/5 ★</span>
                         </div>
                         <p className="text-gray-300 mb-4">
-                            FunLingo is the only dual subtitle extension that gives you a full-featured language learning toolkit at zero cost. There is no premium tier, no subscription, and no feature gating. Everything is unlocked from the moment you install it.
+                            Funlingo is the only dual subtitle extension that gives you a full-featured language learning toolkit at zero cost. There is no premium tier, no subscription, and no feature gating. Everything is unlocked from the moment you install it.
                         </p>
                         <p className="text-gray-300 mb-4">
-                            What sets FunLingo apart is the depth of its learning features. <strong className="text-white">Dual Subtitles</strong> display two languages simultaneously while you watch, and clicking any word opens a popup with the multi-translation selector — choose to see one, two, three, or all translations for that word. The <strong className="text-white">Pronunciation Guide</strong> provides spelled-out phonetic cues alongside audio playback and a slow-play option. <strong className="text-white">AI Explanations</strong> go beyond basic translation to give you contextual grammar notes and usage examples.
+                            What sets Funlingo apart is the depth of its learning features. <strong className="text-white">Dual Subtitles</strong> display two languages simultaneously while you watch, and clicking any word opens a popup with the multi-translation selector — choose to see one, two, three, or all translations for that word. The <strong className="text-white">Pronunciation Guide</strong> provides spelled-out phonetic cues alongside audio playback and a slow-play option. <strong className="text-white">AI Explanations</strong> go beyond basic translation to give you contextual grammar notes and usage examples.
                         </p>
                         <p className="text-gray-300 mb-4">
-                            FunLingo also includes a <strong className="text-white">Vocabulary Builder</strong> for saving words with one click and reviewing them with spaced repetition, and <strong className="text-white">Reading Mode</strong> offers a split-screen interface with synchronized bilingual captions.
+                            Funlingo also includes a <strong className="text-white">Vocabulary Builder</strong> for saving words with one click and reviewing them with spaced repetition, and <strong className="text-white">Reading Mode</strong> offers a split-screen interface with synchronized bilingual captions.
                         </p>
                         <p className="text-sm text-gray-400"><strong className="text-white">Best for:</strong> Language learners who want a complete, full-featured tool without paying anything.</p>
                     </div>
@@ -194,7 +194,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                             <thead className="bg-white/5 text-white text-xs uppercase">
                                 <tr>
                                     <th className="px-4 py-3">Feature</th>
-                                    <th className="px-4 py-3">FunLingo</th>
+                                    <th className="px-4 py-3">Funlingo</th>
                                     <th className="px-4 py-3">Trancy</th>
                                     <th className="px-4 py-3">Language Reactor</th>
                                     <th className="px-4 py-3">Immersive Translate</th>
@@ -220,7 +220,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
 
                     <h3 className="text-xl font-bold text-white mb-3 mt-8">If You Want Everything Free</h3>
                     <p className="text-gray-300 mb-6">
-                        Go with <strong className="text-white">FunLingo</strong>. It is the only extension that provides AI explanations, pronunciation guides, a Vocabulary Builder, Reading Mode, and multi-platform support without any paywall. You can explore a{" "}
+                        Go with <strong className="text-white">Funlingo</strong>. It is the only extension that provides AI explanations, pronunciation guides, a Vocabulary Builder, Reading Mode, and multi-platform support without any paywall. You can explore a{" "}
                         <a href="/compare/funlingo-vs-trancy-vs-immersive-translate" className="text-[#C642FC] hover:underline">detailed feature comparison</a> to see exactly how the tools differ.
                     </p>
 
@@ -231,7 +231,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
 
                     <h3 className="text-xl font-bold text-white mb-3 mt-8">If You Mostly Read Webpages</h3>
                     <p className="text-gray-300 mb-6">
-                        <strong className="text-white">Immersive Translate</strong> is the strongest choice for bilingual webpage translation. FunLingo also offers{" "}
+                        <strong className="text-white">Immersive Translate</strong> is the strongest choice for bilingual webpage translation. Funlingo also offers{" "}
                         <a href="/blog/website-translation-language-learning" className="text-[#C642FC] hover:underline">website translation for language learning</a>, so it is worth trying both.
                     </p>
 
@@ -244,7 +244,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                     <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How to Get Started with Dual Subtitles in Five Minutes</h2>
                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
                         {[
-                            { title: "Choose your extension", desc: "We recommend starting with FunLingo since it is free and full-featured — you can always try others later." },
+                            { title: "Choose your extension", desc: "We recommend starting with Funlingo since it is free and full-featured — you can always try others later." },
                             { title: "Install from Chrome Web Store", desc: "It takes about 30 seconds. Click \"Add to Chrome\" and you are done." },
                             { title: "Open Netflix, YouTube, or Prime Video", desc: "Pick a show or video in your target language. Starting with something you have already seen helps — you already know the plot." },
                             { title: "Enable Dual Subtitles", desc: "The extension overlay appears automatically. Select your native language and target language." },
@@ -273,25 +273,25 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                         <div className="space-y-4">
                             <div>
                                 <strong className="text-white block mb-1">What is a dual subtitle extension?</strong>
-                                <p className="text-gray-400 text-sm">A dual subtitle extension is a Chrome browser extension that displays subtitles in two languages simultaneously while you watch videos on platforms like Netflix, YouTube, and Prime Video. Extensions like FunLingo add learning tools on top — hover definitions, pronunciation, and vocabulary saving.</p>
+                                <p className="text-gray-400 text-sm">A dual subtitle extension is a Chrome browser extension that displays subtitles in two languages simultaneously while you watch videos on platforms like Netflix, YouTube, and Prime Video. Extensions like Funlingo add learning tools on top — hover definitions, pronunciation, and vocabulary saving.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Are there any completely free dual subtitle extensions?</strong>
-                                <p className="text-gray-400 text-sm">Yes. FunLingo is completely free with all features unlocked — no premium tier, no trial period, and no paywall. Most other extensions lock advanced features behind a paid subscription. Check out our roundup of the{" "}
+                                <p className="text-gray-400 text-sm">Yes. Funlingo is completely free with all features unlocked — no premium tier, no trial period, and no paywall. Most other extensions lock advanced features behind a paid subscription. Check out our roundup of the{" "}
                                     <a href="/blog/best-ai-language-learning-tools-2026" className="text-[#C642FC] hover:underline">best AI language learning tools in 2026</a> for more free options.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Can dual subtitles actually help you learn a language?</strong>
-                                <p className="text-gray-400 text-sm">Yes — when used actively. Clicking on words, saving vocabulary, and reviewing with spaced repetition turns entertainment into measurable learning. The key is consistency: 15-20 minutes daily produces better results than occasional long sessions. FunLingo's{" "}
+                                <p className="text-gray-400 text-sm">Yes — when used actively. Clicking on words, saving vocabulary, and reviewing with spaced repetition turns entertainment into measurable learning. The key is consistency: 15-20 minutes daily produces better results than occasional long sessions. Funlingo's{" "}
                                     <a href="/blog/reading-mode-bilingual-captions" className="text-[#C642FC] hover:underline">Reading Mode with bilingual captions</a> is designed specifically for focused study sessions.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Do dual subtitle extensions slow down my browser?</strong>
-                                <p className="text-gray-400 text-sm">Modern dual subtitle extensions are lightweight and should not noticeably slow down your browser or streaming playback. FunLingo uses a privacy-first design that renders subtitles locally, minimizing data transfer.</p>
+                                <p className="text-gray-400 text-sm">Modern dual subtitle extensions are lightweight and should not noticeably slow down your browser or streaming playback. Funlingo uses a privacy-first design that renders subtitles locally, minimizing data transfer.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">Which dual subtitle extension works on Netflix, YouTube, and Prime Video?</strong>
-                                <p className="text-gray-400 text-sm">FunLingo is the only free dual subtitle extension that fully supports all three major streaming platforms — Netflix, YouTube, and Amazon Prime Video — plus websites. Most competitors support only one or two platforms.</p>
+                                <p className="text-gray-400 text-sm">Funlingo is the only free dual subtitle extension that fully supports all three major streaming platforms — Netflix, YouTube, and Amazon Prime Video — plus websites. Most competitors support only one or two platforms.</p>
                             </div>
                         </div>
                     </div>
@@ -300,7 +300,7 @@ export const DualSubtitleExtensionPost = (): React.JSX.Element => {
                     <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
                         <h2 className="text-3xl font-bold text-white mb-4">Find Your Best Dual Subtitle Extension</h2>
                         <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">
-                            If you want the most complete free option — with Dual Subtitles across Netflix, YouTube, Prime Video, and websites — FunLingo is the clear winner.
+                            If you want the most complete free option — with Dual Subtitles across Netflix, YouTube, Prime Video, and websites — Funlingo is the clear winner.
                         </p>
                         <a
                             href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"

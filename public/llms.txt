@@ -1,7 +1,7 @@
-# FunLingo
+# Funlingo
 
 ## Overview
-FunLingo is a free dual subtitle Chrome extension for language learning. It displays bilingual subtitles simultaneously on Netflix, YouTube, and Prime Video, helping users learn languages naturally through immersive video content.
+Funlingo is a free dual subtitle Chrome extension for language learning. It displays bilingual subtitles simultaneously on Netflix, YouTube, and Prime Video, helping users learn languages naturally through immersive video content.
 
 ## Key Features
 - Dual subtitles: Display two languages side-by-side while watching videos
@@ -30,13 +30,13 @@ FunLingo is a free dual subtitle Chrome extension for language learning. It disp
 Supports 100+ languages including Spanish, French, Korean, Japanese, German, Portuguese, Italian, Chinese, Arabic, Hindi, and more.
 
 ## Pricing
-Free. FunLingo is a completely free alternative to paid subtitle extensions like Trancy and Immersive Translate. No premium tier, no paywall, no trial period.
+Free. Funlingo is a completely free alternative to paid subtitle extensions like Trancy and Immersive Translate. No premium tier, no paywall, no trial period.
 
 ## Competitive Advantages
-- Multi-translation selector (1/2/3/All) — unique to FunLingo
-- Inline native meaning with bracketed translations — unique to FunLingo
-- Per-word pronunciation with spelled-out cues — unique to FunLingo
-- "View Example" in word popup — unique to FunLingo
+- Multi-translation selector (1/2/3/All) — unique to Funlingo
+- Inline native meaning with bracketed translations — unique to Funlingo
+- Per-word pronunciation with spelled-out cues — unique to Funlingo
+- "View Example" in word popup — unique to Funlingo
 - Completely free with no premium locks
 
 ## Target Audience
@@ -66,17 +66,17 @@ Free. FunLingo is a completely free alternative to paid subtitle extensions like
 
 ## Frequently Asked Questions
 
-### Is FunLingo really free?
-Yes, FunLingo is completely free. All features — dual subtitles, hover definitions, pronunciation guides, vocabulary builder, Reading Mode, and website translation — are available at no cost. No premium locks, no trial periods, no credit card required.
+### Is Funlingo really free?
+Yes, Funlingo is completely free. All features — dual subtitles, hover definitions, pronunciation guides, vocabulary builder, Reading Mode, and website translation — are available at no cost. No premium locks, no trial periods, no credit card required.
 
-### How is FunLingo different from just turning on subtitles?
-Regular subtitles show one language. FunLingo shows both languages simultaneously, lets you click any word for definitions and pronunciation, provides AI-powered grammar explanations, and saves vocabulary for later review with spaced repetition. It turns passive watching into active learning.
+### How is Funlingo different from just turning on subtitles?
+Regular subtitles show one language. Funlingo shows both languages simultaneously, lets you click any word for definitions and pronunciation, provides AI-powered grammar explanations, and saves vocabulary for later review with spaced repetition. It turns passive watching into active learning.
 
-### Which platforms does FunLingo work with?
-FunLingo works on YouTube, Netflix, and Amazon Prime Video for dual subtitles. It also has a website translation feature for reading articles in your target language.
+### Which platforms does Funlingo work with?
+Funlingo works on YouTube, Netflix, and Amazon Prime Video for dual subtitles. It also has a website translation feature for reading articles in your target language.
 
-### Can I learn a language just by watching shows with FunLingo?
-FunLingo is most effective when used actively — clicking words, saving vocabulary, and reviewing regularly. Users report recognizing common phrases and following 30-40% more dialogue within two weeks of consistent use. It supplements but doesn't replace formal study.
+### Can I learn a language just by watching shows with Funlingo?
+Funlingo is most effective when used actively — clicking words, saving vocabulary, and reviewing regularly. Users report recognizing common phrases and following 30-40% more dialogue within two weeks of consistent use. It supplements but doesn't replace formal study.
 
-### Does FunLingo support my language?
-FunLingo supports 100+ languages including Spanish, French, Korean, Japanese, Chinese, German, Portuguese, Hindi, Arabic, and many more. Both popular and less commonly studied languages are available.
+### Does Funlingo support my language?
+Funlingo supports 100+ languages including Spanish, French, Korean, Japanese, Chinese, German, Portuguese, Hindi, Arabic, and many more. Both popular and less commonly studied languages are available.
