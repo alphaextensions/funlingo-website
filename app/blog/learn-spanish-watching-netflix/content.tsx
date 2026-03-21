@@ -33,7 +33,7 @@ export default function LearnSpanishNetflixContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Watch Spanish Netflix with dual subtitles tonight. Free setup in 30 seconds.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
 
@@ -83,7 +83,7 @@ export default function LearnSpanishNetflixContent() {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Brain className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Contextual Learning</h3><p className="text-sm text-gray-400">You learn words in the context of real conversations, emotional scenes, and cultural situations, not isolated on flashcards.</p></div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Headphones className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Listening + Reading</h3><p className="text-sm text-gray-400">You simultaneously hear Spanish pronunciation while reading the text, training both skills in parallel.</p></div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Repeat className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Natural Repetition</h3><p className="text-sm text-gray-400">Characters use the same phrases repeatedly across episodes, giving you natural spaced exposure to key vocabulary.</p></div>
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Bookmark className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Save and Review</h3><p className="text-sm text-gray-400">With FunLingo, click any word in the subtitles to save it. Review your saved words later with spaced repetition.</p></div>
+            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Bookmark className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Save and Review</h3><p className="text-sm text-gray-400">With Funlingo, click any word in the subtitles to save it. Review your saved words later with spaced repetition.</p></div>
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Your 15-Minute Daily Spanish Netflix Routine</h2>
@@ -91,7 +91,7 @@ export default function LearnSpanishNetflixContent() {
             <h3 className="text-2xl font-bold text-white mb-6 mt-0">Daily Spanish Learning Routine</h3>
             <div className="space-y-4">
               <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 1-2: Vocabulary Review</span><span className="text-white font-medium">Review yesterday&apos;s saved words using spaced repetition. Quickly go through 10 to 15 words to reinforce memory.</span></div></div>
-              <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 3-12: Watch with Dual Subtitles</span><span className="text-white font-medium">Watch 10 minutes of a Spanish show with FunLingo dual subtitles. Save 5 to 10 new words by clicking them in the subtitles.</span></div></div>
+              <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 3-12: Watch with Dual Subtitles</span><span className="text-white font-medium">Watch 10 minutes of a Spanish show with Funlingo dual subtitles. Save 5 to 10 new words by clicking them in the subtitles.</span></div></div>
               <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 13-14: Shadow a Scene</span><span className="text-white font-medium">Replay a 30-second scene and repeat the dialogue out loud, mimicking the actors&apos; pronunciation and intonation.</span></div></div>
               <div className="flex flex-col md:flex-row gap-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minute 15: Quick Journal</span><span className="text-white font-medium">Write one sentence in Spanish summarizing what happened in the episode. Use at least one new word you saved today.</span></div></div>
             </div>
@@ -107,7 +107,7 @@ export default function LearnSpanishNetflixContent() {
             <div className="space-y-4">
               <div><strong className="text-white block mb-1">Can I really learn Spanish by watching Netflix?</strong><p className="text-gray-400 text-sm">Yes. Watching Netflix with dual subtitles provides comprehensible input, which research shows is one of the most effective ways to acquire a language naturally.</p></div>
               <div><strong className="text-white block mb-1">What are the best Netflix shows for learning Spanish?</strong><p className="text-gray-400 text-sm">For beginners, try Extra en Espanol. Intermediate learners enjoy La Casa de Papel and Elite. Advanced learners can tackle Narcos or Vis a Vis.</p></div>
-              <div><strong className="text-white block mb-1">Should I watch with Spanish or English subtitles?</strong><p className="text-gray-400 text-sm">Use dual subtitles with FunLingo to see both simultaneously. This trains reading and listening in Spanish while maintaining full comprehension.</p></div>
+              <div><strong className="text-white block mb-1">Should I watch with Spanish or English subtitles?</strong><p className="text-gray-400 text-sm">Use dual subtitles with Funlingo to see both simultaneously. This trains reading and listening in Spanish while maintaining full comprehension.</p></div>
               <div><strong className="text-white block mb-1">How many hours of Netflix do I need to learn Spanish?</strong><p className="text-gray-400 text-sm">Consistency matters more than hours. Watching 15 to 30 minutes daily with active strategies is more effective than occasional long sessions.</p></div>
               <div><strong className="text-white block mb-1">What is the difference between Spain Spanish and Latin American Spanish on Netflix?</strong><p className="text-gray-400 text-sm">They differ in pronunciation, vocabulary, and some grammar. Netflix labels them separately. Choose based on your goals, but both are mutually intelligible.</p></div>
             </div>
@@ -117,7 +117,7 @@ export default function LearnSpanishNetflixContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Start Learning Spanish on Netflix Tonight</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Free dual subtitles. Built-in vocabulary builder. Works on every Spanish title on Netflix. Set up in 30 seconds.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

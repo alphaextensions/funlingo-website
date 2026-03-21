@@ -27,19 +27,19 @@ export default function WebsiteTranslationContent() {
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
           <h2 className="text-2xl font-bold text-white mb-4">Learn Languages While Browsing the Web</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Language learning often requires switching between multiple tools. This constant switching interrupts learning and makes the process slow.</p>
-          <p className="lead text-xl leading-relaxed text-gray-200">FunLingo&apos;s Website Translation feature changes this experience completely. Instead of leaving the page, you can now read any website in both the original language and your learning language at the same time.</p>
+          <p className="lead text-xl leading-relaxed text-gray-200">Funlingo&apos;s Website Translation feature changes this experience completely. Instead of leaving the page, you can now read any website in both the original language and your learning language at the same time.</p>
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Experience seamless bilingual browsing today.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
           <hr className="border-white/10 my-12" />
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">What is the FunLingo Website Translation Feature?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">What is the Funlingo Website Translation Feature?</h2>
           <p className="text-gray-300 mb-6">The Website Translation feature allows users to open any website and instantly view the content in two languages: the original language and your learning language.</p>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">How the Feature Works</h2>
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-16">
-            {[{title:"Open Any Website",desc:"Visit any article, blog, or webpage."},{title:"Enable Website Translation",desc:"Turn on Page Translation in FunLingo."},{title:"Activate Bilingual Display",desc:"Enable the Bilingual Display option."},{title:"Learn Words in Context",desc:"Hover over words to understand meanings and usage."}].map((s,i)=>(
+            {[{title:"Open Any Website",desc:"Visit any article, blog, or webpage."},{title:"Enable Website Translation",desc:"Turn on Page Translation in Funlingo."},{title:"Activate Bilingual Display",desc:"Enable the Bilingual Display option."},{title:"Learn Words in Context",desc:"Hover over words to understand meanings and usage."}].map((s,i)=>(
               <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i+1}</div><div className="pt-2 text-gray-300"><strong className="text-white block mb-1">{s.title}</strong>{s.desc}</div></div>
             ))}
           </div>
@@ -51,12 +51,12 @@ export default function WebsiteTranslationContent() {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Layers className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Turn Any Website into a Resource</h3><p className="text-sm text-gray-400">Articles, blogs, and documentation pages become learning materials.</p></div>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Conclusion</h2>
-          <p className="text-gray-300 mb-6">Learning a language becomes easier when it fits into your daily routine. FunLingo&apos;s Website Translation feature transforms any website into a bilingual reading experience.</p>
+          <p className="text-gray-300 mb-6">Learning a language becomes easier when it fits into your daily routine. Funlingo&apos;s Website Translation feature transforms any website into a bilingual reading experience.</p>
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <h2 className="text-3xl font-bold text-white mb-4">Experience Bilingual Browsing Today</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Turn any webpage into a language learning resource.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

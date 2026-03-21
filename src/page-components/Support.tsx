@@ -166,7 +166,7 @@ export const Support = (): React.JSX.Element => {
               className="font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl lg:text-[length:var(--body-large-regular-font-size)] tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
-              Our team is here to help you succeed with FunLingo. Reach out anytime.
+              Our team is here to help you succeed with Funlingo. Reach out anytime.
             </p>
           </div>
 

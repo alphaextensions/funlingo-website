@@ -89,7 +89,7 @@ export const EvidenceSection = (): React.JSX.Element => {
               </div>
             </div>
             <p className="text-textbody text-base mt-4 leading-relaxed">
-              FunLingo directly applies this principle: dual subtitles make authentic video content comprehensible
+              Funlingo directly applies this principle: dual subtitles make authentic video content comprehensible
               by providing native language support while exposing learners to the target language in real conversational context.
             </p>
           </CardContent>
@@ -161,7 +161,7 @@ export const EvidenceSection = (): React.JSX.Element => {
         {/* Evidence conclusion */}
         <div className="mt-8 text-center">
           <p className="text-textbody text-base max-w-3xl mx-auto leading-relaxed">
-            This is why FunLingo displays bilingual subtitles directly in the video player — turning passive watching
+            This is why Funlingo displays bilingual subtitles directly in the video player — turning passive watching
             into active learning. Every word can be looked up, pronounced, and saved without leaving the video.
           </p>
         </div>

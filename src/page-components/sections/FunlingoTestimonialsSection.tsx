@@ -117,7 +117,7 @@ export const FunlingoTestimonialsSection = (): React.JSX.Element => {
   const reviewSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "FunLingo",
+    "name": "Funlingo",
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Chrome, Edge, Brave",
     "offers": {
