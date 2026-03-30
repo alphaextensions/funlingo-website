@@ -12,6 +12,15 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -37,
+      title: "How to Translate Hamster Website",
+      excerpt: "Learn how to translate the Hamster website into any language using Funlingo. Bilingual display, word-level lookups, pronunciation audio, and vocabulary saving — all free.",
+      date: "March 30, 2026",
+      author: "Funlingo Team",
+      category: "Trending",
+      slug: "/blog/how-to-translate-hamster-website"
+    },
+    {
       id: -36,
       title: "油管视频下载 — 高清无水印保存方法 (2026)",
       excerpt: "最新油管(YouTube)视频下载方法，支持高清1080P/4K无水印保存。包括在线工具、浏览器扩展和命令行方案。",
