@@ -13,13 +13,13 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
         "@type": "Article",
         "headline": "How to Learn Korean by Watching YouTube: A Complete 2026 Guide",
         "description": "Want to learn Korean watching YouTube? Get the best channels, a 15-minute daily routine, and free dual subtitle tools to turn every video into a lesson.",
-        "author": { "@type": "Organization", "name": "FunLingo Team" },
+        "author": { "@type": "Organization", "name": "Funlingo Team" },
         "datePublished": "2026-03-14",
         "dateModified": "2026-03-14",
         "image": "https://getfunlingo.com/og-image.jpg",
         "publisher": {
             "@type": "Organization",
-            "name": "FunLingo",
+            "name": "Funlingo",
             "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" }
         }
     };
@@ -66,7 +66,7 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <SEO
-                title="How to Learn Korean Watching YouTube (2026 Guide) | FunLingo"
+                title="How to Learn Korean Watching YouTube (2026 Guide) | Funlingo"
                 description="Want to learn Korean watching YouTube? Get the best channels, a 15-minute daily routine, and free dual subtitle tools to turn every video into a lesson."
                 keywords="learn korean watching youtube, learn korean youtube, korean youtube channels, learn korean free, korean language youtube, learn hangul"
                 canonical="/blog/learn-korean-watching-youtube"
@@ -88,7 +88,7 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
                     </h1>
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
                         <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 14, 2026</div>
-                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
                         <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 14 min read</div>
                     </div>
                 </div>
@@ -203,9 +203,9 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
                         ))}
                     </div>
 
-                    <h3 className="text-xl font-bold text-white mb-4 mt-8">How FunLingo Makes This Effortless on YouTube</h3>
+                    <h3 className="text-xl font-bold text-white mb-4 mt-8">How Funlingo Makes This Effortless on YouTube</h3>
                     <p className="text-gray-300 mb-6">
-                        <a href="https://funlingo.ai" className="text-[#C642FC] hover:underline">FunLingo</a> is a free Chrome extension designed specifically for active video learning. It adds <strong className="text-white">Dual Subtitles</strong> to any YouTube video, lets you click any Korean word to see its definition and hear its pronunciation, includes transliteration for learners still learning Hangul, and saves words to a built-in <strong className="text-white">Vocabulary Builder</strong> with spaced repetition. It also offers{" "}
+                        <a href="https://funlingo.ai" className="text-[#C642FC] hover:underline">Funlingo</a> is a free Chrome extension designed specifically for active video learning. It adds <strong className="text-white">Dual Subtitles</strong> to any YouTube video, lets you click any Korean word to see its definition and hear its pronunciation, includes transliteration for learners still learning Hangul, and saves words to a built-in <strong className="text-white">Vocabulary Builder</strong> with spaced repetition. It also offers{" "}
                         <a href="/blog/reading-mode-bilingual-captions" className="text-[#C642FC] hover:underline">Reading Mode</a> for focused study sessions. Unlike paid alternatives, every feature is completely free.
                     </p>
 
@@ -285,7 +285,7 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
                         Once you can read Hangul, Korean subtitles on YouTube transform from mysterious symbols into readable text. You start noticing word boundaries, recognizing repeated words, and matching written Korean to spoken Korean.
                     </p>
                     <p className="text-gray-300 mb-12">
-                        If you are not ready to learn Hangul yet, FunLingo's transliteration feature shows romanized Korean text alongside the Hangul script. This bridges the gap while you build your reading skills.
+                        If you are not ready to learn Hangul yet, Funlingo's transliteration feature shows romanized Korean text alongside the Hangul script. This bridges the gap while you build your reading skills.
                     </p>
 
                     <hr className="border-white/10 my-12" />
@@ -298,7 +298,7 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
                             { title: "Choosing Content That Is Too Hard", desc: "If you are a beginner watching an unscripted variety show, you will understand almost nothing. Match content to your level." },
                             { title: "Never Reviewing What You Learned", desc: "Without review, new vocabulary fades within days. The five-minute vocabulary review at the end of each session matters." },
                             { title: "Passive Watching Without Interaction", desc: "Click words. Save them. Replay scenes. Shadow pronunciation. Active watching is what produces progress." },
-                            { title: "Skipping Pronunciation Practice", desc: "Korean has sounds that do not exist in English. Use FunLingo's pronunciation guides with audio playback, then repeat them." },
+                            { title: "Skipping Pronunciation Practice", desc: "Korean has sounds that do not exist in English. Use Funlingo's pronunciation guides with audio playback, then repeat them." },
                         ].map((mistake, i) => (
                             <div key={i} className="bg-white/5 p-5 rounded-xl border border-white/10 flex gap-4">
                                 <AlertTriangle className="w-5 h-5 text-yellow-400 shrink-0 mt-1" />
@@ -316,7 +316,7 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
                         <div className="space-y-4">
                             <div>
                                 <strong className="text-white block mb-1">Can you learn Korean by watching YouTube?</strong>
-                                <p className="text-gray-400 text-sm">Yes, but only with active engagement. Combine YouTube with dual subtitles, vocabulary saving, spaced repetition review, and pronunciation practice. Tools like FunLingo turn passive watching into active learning by making every word clickable, saveable, and reviewable.</p>
+                                <p className="text-gray-400 text-sm">Yes, but only with active engagement. Combine YouTube with dual subtitles, vocabulary saving, spaced repetition review, and pronunciation practice. Tools like Funlingo turn passive watching into active learning by making every word clickable, saveable, and reviewable.</p>
                             </div>
                             <div>
                                 <strong className="text-white block mb-1">What are the best YouTube channels to learn Korean for free?</strong>
@@ -337,7 +337,7 @@ export const LearnKoreanYouTubePost = (): React.JSX.Element => {
                     <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
                         <h2 className="text-3xl font-bold text-white mb-4">Start Learning Korean from YouTube Today</h2>
                         <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">
-                            FunLingo makes every Korean YouTube video a language lesson — with dual subtitles, AI-powered definitions, pronunciation guides, and a Vocabulary Builder. Completely free.
+                            Funlingo makes every Korean YouTube video a language lesson — with dual subtitles, AI-powered definitions, pronunciation guides, and a Vocabulary Builder. Completely free.
                         </p>
                         <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
                             <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">

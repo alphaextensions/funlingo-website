@@ -13,13 +13,13 @@ export const LearnSpanishNetflixPost = (): React.JSX.Element => {
         "@type": "Article",
         "headline": "How to Learn Spanish Watching Netflix (Your Complete 2026 Guide)",
         "description": "Want to learn Spanish watching Netflix? Discover the best shows by level, a proven dual subtitle method, and a free 15-minute daily routine. Start tonight.",
-        "author": { "@type": "Organization", "name": "FunLingo Team" },
+        "author": { "@type": "Organization", "name": "Funlingo Team" },
         "datePublished": "2026-03-14",
         "dateModified": "2026-03-14",
         "image": "https://getfunlingo.com/og-image.jpg",
         "publisher": {
             "@type": "Organization",
-            "name": "FunLingo",
+            "name": "Funlingo",
             "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" }
         }
     };
@@ -41,7 +41,7 @@ export const LearnSpanishNetflixPost = (): React.JSX.Element => {
                 "name": "Should I watch Spanish shows with Spanish or English subtitles?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The most effective approach is dual subtitles — displaying both Spanish and English simultaneously. Start with dual subtitles as a beginner, then gradually shift to Spanish-only subtitles as your comprehension improves. Tools like FunLingo add dual subtitles to Netflix for free."
+                    "text": "The most effective approach is dual subtitles — displaying both Spanish and English simultaneously. Start with dual subtitles as a beginner, then gradually shift to Spanish-only subtitles as your comprehension improves. Tools like Funlingo add dual subtitles to Netflix for free."
                 }
             },
             {
@@ -66,7 +66,7 @@ export const LearnSpanishNetflixPost = (): React.JSX.Element => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <SEO
-                title="Learn Spanish Watching Netflix: Your Complete 2026 Guide | FunLingo"
+                title="Learn Spanish Watching Netflix: Your Complete 2026 Guide | Funlingo"
                 description="Want to learn Spanish watching Netflix? Discover the best shows by level, a proven dual subtitle method, and a free 15-minute daily routine. Start tonight."
                 keywords="learn spanish watching netflix, learn spanish netflix, spanish netflix shows, netflix language learning spanish, learn spanish free, spanish dual subtitles"
                 canonical="/blog/learn-spanish-watching-netflix"
@@ -88,7 +88,7 @@ export const LearnSpanishNetflixPost = (): React.JSX.Element => {
                     </h1>
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
                         <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 14, 2026</div>
-                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+                        <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
                         <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 14 min read</div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ export const LearnSpanishNetflixPost = (): React.JSX.Element => {
                         Dual subtitles solve both problems. You see the Spanish text on screen while your native language appears as a safety net below it. You hear <em>"No puedo creerlo"</em> in the audio, read the Spanish text, and see "I can't believe it" in the translation. Your brain makes the connection instantly, in context, attached to emotion and story.
                     </p>
                     <p className="text-gray-300 mb-6">
-                        <a href="https://funlingo.ai" className="text-[#C642FC] hover:underline">FunLingo</a>, a free Chrome extension, makes this seamless. Install it in 30 seconds, open Netflix, and you get dual subtitles on any Spanish show. Plus you can click any word for definitions, hear pronunciation, save words to your Vocabulary Builder, and get AI explanations for grammar and context. Learn more in our{" "}
+                        <a href="https://funlingo.ai" className="text-[#C642FC] hover:underline">Funlingo</a>, a free Chrome extension, makes this seamless. Install it in 30 seconds, open Netflix, and you get dual subtitles on any Spanish show. Plus you can click any word for definitions, hear pronunciation, save words to your Vocabulary Builder, and get AI explanations for grammar and context. Learn more in our{" "}
                         <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">complete guide to learning languages by watching</a>.
                     </p>
 
@@ -251,7 +251,7 @@ export const LearnSpanishNetflixPost = (): React.JSX.Element => {
                         <div className="space-y-4">
                             <div className="border-b border-white/10 pb-4">
                                 <span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">0:00 - 0:30</span>
-                                <span className="text-white font-medium">Open Netflix, pick your show, activate FunLingo Dual Subtitles</span>
+                                <span className="text-white font-medium">Open Netflix, pick your show, activate Funlingo Dual Subtitles</span>
                             </div>
                             <div className="border-b border-white/10 pb-4">
                                 <span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">0:30 - 10:00</span>
@@ -289,13 +289,13 @@ export const LearnSpanishNetflixPost = (): React.JSX.Element => {
                     </div>
 
                     <p className="text-gray-300 mb-6">
-                        For focused study sessions, try FunLingo's{" "}
+                        For focused study sessions, try Funlingo's{" "}
                         <a href="/blog/how-to-learn-languages-with-reading-mode" className="text-[#C642FC] hover:underline">Reading Mode</a> when you want to slow down and work through a scene carefully. And explore more{" "}
-                        <a href="/blog/language-learning-tips-and-ai-insights" className="text-[#C642FC] hover:underline">AI-powered language learning tips</a> on the FunLingo blog.
+                        <a href="/blog/language-learning-tips-and-ai-insights" className="text-[#C642FC] hover:underline">AI-powered language learning tips</a> on the Funlingo blog.
                     </p>
 
                     <p className="text-gray-300 mb-6">
-                        Curious how FunLingo compares to other tools?{" "}
+                        Curious how Funlingo compares to other tools?{" "}
                         <a href="/compare/funlingo-vs-trancy-vs-immersive-translate" className="text-[#C642FC] hover:underline">See the full comparison</a>. Or check out the{" "}
                         <a href="/blog/best-ai-language-learning-tools-2026" className="text-[#C642FC] hover:underline">best AI language learning tools in 2026</a>.
                     </p>

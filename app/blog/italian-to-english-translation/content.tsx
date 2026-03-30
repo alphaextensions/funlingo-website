@@ -18,7 +18,7 @@ export default function ItalianToEnglishTranslationContent() {
           <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Italian to English Translation: Best Tools &amp; Tips</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 20, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</div>
           </div>
         </div>
@@ -31,9 +31,9 @@ export default function ItalianToEnglishTranslationContent() {
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">The challenge is that Italian is not a word-for-word language. Gendered nouns, flexible word order, and idiomatic expressions mean that a literal translation often misses the actual meaning. This guide covers the best tools for accurate Italian to English translation, essential phrases you should know, grammar pitfalls to watch for, and how immersion through Italian media can transform your understanding.</p>
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
-            <p className="text-lg text-gray-200 mb-6">Learn Italian naturally with dual subtitles on YouTube — free with FunLingo.</p>
+            <p className="text-lg text-gray-200 mb-6">Learn Italian naturally with dual subtitles on YouTube — free with Funlingo.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
 
@@ -71,8 +71,8 @@ export default function ItalianToEnglishTranslationContent() {
           </div>
 
           <div className="bg-white/5 p-6 rounded-xl border border-[#C642FC]/30 mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">FunLingo (Contextual Video Translation)</h3>
-            <p className="text-gray-300 mb-3">FunLingo takes a different approach: instead of translating text you paste in, it shows you Italian and English subtitles side by side while you watch Italian videos on YouTube. You hear the Italian spoken naturally, see the original text, and read the English translation simultaneously. This is contextual translation — you learn how words and phrases are actually used in conversation.</p>
+            <h3 className="text-xl font-bold text-white mb-3">Funlingo (Contextual Video Translation)</h3>
+            <p className="text-gray-300 mb-3">Funlingo takes a different approach: instead of translating text you paste in, it shows you Italian and English subtitles side by side while you watch Italian videos on YouTube. You hear the Italian spoken naturally, see the original text, and read the English translation simultaneously. This is contextual translation — you learn how words and phrases are actually used in conversation.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Best for:</strong> Learning Italian through immersion, understanding spoken Italian, building vocabulary in context, watching Italian content with dual subtitles.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Price:</strong> Free. No subscription required.</p>
           </div>
@@ -202,7 +202,7 @@ export default function ItalianToEnglishTranslationContent() {
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>
             <div className="space-y-4">
-              <div><strong className="text-white block mb-1">What is the most accurate Italian to English translator?</strong><p className="text-gray-400 text-sm">DeepL is widely considered the most accurate general-purpose Italian to English translator for text. For contextual translations while watching Italian shows or videos, FunLingo provides real-time dual subtitles that preserve natural meaning. WordReference is best for detailed word lookups with example sentences and forum discussions.</p></div>
+              <div><strong className="text-white block mb-1">What is the most accurate Italian to English translator?</strong><p className="text-gray-400 text-sm">DeepL is widely considered the most accurate general-purpose Italian to English translator for text. For contextual translations while watching Italian shows or videos, Funlingo provides real-time dual subtitles that preserve natural meaning. WordReference is best for detailed word lookups with example sentences and forum discussions.</p></div>
               <div><strong className="text-white block mb-1">Is Italian hard to learn for English speakers?</strong><p className="text-gray-400 text-sm">Italian is one of the easiest languages for English speakers to learn. The US Foreign Service Institute classifies it as a Category I language, requiring roughly 600 to 750 hours to achieve professional proficiency. Italian shares many cognates with English, has mostly phonetic spelling, and follows predictable pronunciation rules.</p></div>
               <div><strong className="text-white block mb-1">How do you say common phrases in Italian?</strong><p className="text-gray-400 text-sm">Essential phrases include: Buongiorno (Good morning), Grazie (Thank you), Per favore (Please), Mi scusi (Excuse me), Quanto costa? (How much does it cost?), Parla inglese? (Do you speak English?), and Dove si trova...? (Where is...?). See the full phrase list above for greetings, travel, food, and business expressions.</p></div>
             </div>
@@ -212,7 +212,7 @@ export default function ItalianToEnglishTranslationContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Learn Italian Naturally with Dual Subtitles</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Watch Italian videos on YouTube with Italian and English subtitles side by side. Click any word for instant translation. Completely free.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

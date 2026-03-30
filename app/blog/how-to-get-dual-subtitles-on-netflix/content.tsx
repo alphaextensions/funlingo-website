@@ -33,7 +33,7 @@ export default function HowToGetDualSubtitlesContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Get dual subtitles on Netflix in under 30 seconds. Completely free.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
 
@@ -45,9 +45,9 @@ export default function HowToGetDualSubtitlesContent() {
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
             {[
               { icon: Monitor, title: "Open Netflix in Chrome", desc: "Navigate to netflix.com in your Chrome browser on a desktop or laptop computer. Dual subtitle extensions do not work on the Netflix app or other browsers." },
-              { icon: Download, title: "Install FunLingo", desc: "Visit the Chrome Web Store and search for FunLingo, or click the direct link below. Click 'Add to Chrome' and confirm the installation. It takes about 10 seconds." },
-              { icon: Settings, title: "Select Your Languages", desc: "Click the FunLingo icon in your Chrome toolbar. Choose your native language and your target language. FunLingo supports all languages that Netflix provides subtitles for." },
-              { icon: Play, title: "Play Any Show or Movie", desc: "Start watching any Netflix title. FunLingo automatically detects when you are on Netflix and adds the second subtitle track below the original subtitles." },
+              { icon: Download, title: "Install Funlingo", desc: "Visit the Chrome Web Store and search for Funlingo, or click the direct link below. Click 'Add to Chrome' and confirm the installation. It takes about 10 seconds." },
+              { icon: Settings, title: "Select Your Languages", desc: "Click the Funlingo icon in your Chrome toolbar. Choose your native language and your target language. Funlingo supports all languages that Netflix provides subtitles for." },
+              { icon: Play, title: "Play Any Show or Movie", desc: "Start watching any Netflix title. Funlingo automatically detects when you are on Netflix and adds the second subtitle track below the original subtitles." },
               { icon: CheckCircle, title: "Start Learning", desc: "Both subtitle languages now appear on screen. You can click on individual words to see translations and save them to your vocabulary list." },
             ].map((s, i) => (
               <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i + 1}</div><div className="pt-2 text-gray-300"><strong className="text-white block mb-1">{s.title}</strong>{s.desc}</div></div>
@@ -81,11 +81,11 @@ export default function HowToGetDualSubtitlesContent() {
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>
             <div className="space-y-4">
-              <div><strong className="text-white block mb-1">Can Netflix show two subtitles at once?</strong><p className="text-gray-400 text-sm">Netflix does not natively support dual subtitles. You need a Chrome extension like FunLingo to display two subtitle languages simultaneously.</p></div>
-              <div><strong className="text-white block mb-1">Is FunLingo free for Netflix dual subtitles?</strong><p className="text-gray-400 text-sm">Yes, FunLingo is completely free with no premium tier or trial period. All features are available at no cost.</p></div>
+              <div><strong className="text-white block mb-1">Can Netflix show two subtitles at once?</strong><p className="text-gray-400 text-sm">Netflix does not natively support dual subtitles. You need a Chrome extension like Funlingo to display two subtitle languages simultaneously.</p></div>
+              <div><strong className="text-white block mb-1">Is Funlingo free for Netflix dual subtitles?</strong><p className="text-gray-400 text-sm">Yes, Funlingo is completely free with no premium tier or trial period. All features are available at no cost.</p></div>
               <div><strong className="text-white block mb-1">Does this work on the Netflix app?</strong><p className="text-gray-400 text-sm">No, dual subtitle extensions only work in the Chrome browser on desktop or laptop. They do not work on the Netflix mobile or TV app.</p></div>
-              <div><strong className="text-white block mb-1">Which languages does FunLingo support on Netflix?</strong><p className="text-gray-400 text-sm">FunLingo supports all subtitle languages available on Netflix. You can pair any two languages as your dual subtitles.</p></div>
-              <div><strong className="text-white block mb-1">Will dual subtitles slow down my Netflix streaming?</strong><p className="text-gray-400 text-sm">No. FunLingo is lightweight and does not affect video playback performance or streaming quality.</p></div>
+              <div><strong className="text-white block mb-1">Which languages does Funlingo support on Netflix?</strong><p className="text-gray-400 text-sm">Funlingo supports all subtitle languages available on Netflix. You can pair any two languages as your dual subtitles.</p></div>
+              <div><strong className="text-white block mb-1">Will dual subtitles slow down my Netflix streaming?</strong><p className="text-gray-400 text-sm">No. Funlingo is lightweight and does not affect video playback performance or streaming quality.</p></div>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export default function HowToGetDualSubtitlesContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Get Dual Subtitles on Netflix Today</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Free Chrome extension. 30-second setup. Dual subtitles on every Netflix title. Start learning tonight.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

@@ -18,7 +18,7 @@ export default function LearnJapaneseWithAnimeContent() {
           <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">How to Learn Japanese with Anime: A Beginner&apos;s 2026 Guide</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 18, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</div>
           </div>
         </div>
@@ -31,9 +31,9 @@ export default function LearnJapaneseWithAnimeContent() {
           <p className="text-gray-300 mb-6">If you are new to learning through media, start with our overview on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">how to learn a language by watching</a> for the general principles.</p>
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
-            <p className="text-lg text-gray-200 mb-6">Watch anime with dual subtitles for free using FunLingo on YouTube.</p>
+            <p className="text-lg text-gray-200 mb-6">Watch anime with dual subtitles for free using Funlingo on YouTube.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
 
@@ -66,15 +66,15 @@ export default function LearnJapaneseWithAnimeContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Step 2: Set Up Dual Subtitles</h2>
           <p className="text-gray-300 mb-6">The foundation of this method is watching with two sets of subtitles: Japanese and your native language displayed simultaneously. This lets you read the original Japanese text while immediately checking meaning below it — no pausing, no tab-switching, no dictionary apps.</p>
-          <p className="text-gray-300 mb-6">FunLingo adds dual subtitles to YouTube for free. Many anime episodes, clips, and full series are available on YouTube with Japanese subtitles. Install the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C642FC] hover:underline">FunLingo Chrome extension</a>, open a video, and select your target and native languages.</p>
+          <p className="text-gray-300 mb-6">Funlingo adds dual subtitles to YouTube for free. Many anime episodes, clips, and full series are available on YouTube with Japanese subtitles. Install the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C642FC] hover:underline">Funlingo Chrome extension</a>, open a video, and select your target and native languages.</p>
           <p className="text-gray-300 mb-6">For a deeper look at dual subtitle tools, see our comparison of the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">7 best dual subtitle extensions</a>.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-[#C642FC]/30 mb-8">
             <h3 className="text-lg font-bold text-white mb-3">Quick Setup</h3>
             <ol className="space-y-2 text-gray-300 list-decimal list-inside">
-              <li>Install FunLingo from the Chrome Web Store</li>
+              <li>Install Funlingo from the Chrome Web Store</li>
               <li>Open any anime video on YouTube</li>
-              <li>Click the FunLingo icon and select Japanese + your native language</li>
+              <li>Click the Funlingo icon and select Japanese + your native language</li>
               <li>Both subtitle tracks appear on screen as the video plays</li>
             </ol>
           </div>
@@ -93,7 +93,7 @@ export default function LearnJapaneseWithAnimeContent() {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <div className="text-3xl font-bold text-[#C642FC] mb-2">2</div>
               <h3 className="text-lg font-bold text-white mb-2">Study the Language</h3>
-              <p className="text-sm text-gray-400">Second pass: pause at new words. Click words in FunLingo to see definitions. Save 5 to 10 words to your vocabulary list. Read the Japanese subtitle before checking the translation.</p>
+              <p className="text-sm text-gray-400">Second pass: pause at new words. Click words in Funlingo to see definitions. Save 5 to 10 words to your vocabulary list. Read the Japanese subtitle before checking the translation.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <div className="text-3xl font-bold text-[#C642FC] mb-2">3</div>
@@ -128,7 +128,7 @@ export default function LearnJapaneseWithAnimeContent() {
             <h3 className="text-xl font-bold text-white mb-4"><MessageCircle className="w-5 h-5 inline mr-2 text-[#C642FC]" />Vocabulary Strategy</h3>
             <ul className="space-y-3 text-gray-300">
               <li><strong className="text-white">Save 5 to 10 words per episode.</strong> More than that and you will not retain them. Quality over quantity.</li>
-              <li><strong className="text-white">Use FunLingo&apos;s word-saving feature.</strong> Click any word in the dual subtitles to see its meaning and save it for later review.</li>
+              <li><strong className="text-white">Use Funlingo&apos;s word-saving feature.</strong> Click any word in the dual subtitles to see its meaning and save it for later review.</li>
               <li><strong className="text-white">Review saved words the next day.</strong> Spaced repetition means reviewing before you forget, not after. Next-day review locks words into long-term memory.</li>
               <li><strong className="text-white">Note the sentence, not just the word.</strong> Context is what makes a word stick. Save the whole line where you heard it.</li>
             </ul>
@@ -145,7 +145,7 @@ export default function LearnJapaneseWithAnimeContent() {
             <div className="space-y-4">
               <div className="flex gap-4 items-start">
                 <div className="text-[#C642FC] font-bold text-sm whitespace-nowrap mt-1">0 – 5 min</div>
-                <div><strong className="text-white">Review yesterday&apos;s words.</strong> <span className="text-gray-400">Open your saved vocabulary in FunLingo. Read each word, try to recall the meaning, then check.</span></div>
+                <div><strong className="text-white">Review yesterday&apos;s words.</strong> <span className="text-gray-400">Open your saved vocabulary in Funlingo. Read each word, try to recall the meaning, then check.</span></div>
               </div>
               <div className="flex gap-4 items-start">
                 <div className="text-[#C642FC] font-bold text-sm whitespace-nowrap mt-1">5 – 15 min</div>
@@ -195,7 +195,7 @@ export default function LearnJapaneseWithAnimeContent() {
               <div><strong className="text-white block mb-1">What anime should I start with as a beginner?</strong><p className="text-gray-400 text-sm">Start with slice-of-life anime like Shirokuma Cafe, Teasing Master Takagi-san, or Chi&apos;s Sweet Home. These use everyday vocabulary and slower, clearer speech.</p></div>
               <div><strong className="text-white block mb-1">Is anime Japanese different from real Japanese?</strong><p className="text-gray-400 text-sm">Some anime uses exaggerated or archaic speech patterns. Slice-of-life and drama genres are closest to everyday conversational Japanese.</p></div>
               <div><strong className="text-white block mb-1">How long does it take to understand anime without subtitles?</strong><p className="text-gray-400 text-sm">With consistent daily practice, most learners start catching common phrases within 2 to 3 months and can follow simple slice-of-life dialogue within 6 to 12 months.</p></div>
-              <div><strong className="text-white block mb-1">Should I use English or romaji subtitles?</strong><p className="text-gray-400 text-sm">Use dual subtitles with Japanese and your native language side by side. FunLingo provides this for free on YouTube.</p></div>
+              <div><strong className="text-white block mb-1">Should I use English or romaji subtitles?</strong><p className="text-gray-400 text-sm">Use dual subtitles with Japanese and your native language side by side. Funlingo provides this for free on YouTube.</p></div>
             </div>
           </div>
 
@@ -203,7 +203,7 @@ export default function LearnJapaneseWithAnimeContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Start Learning Japanese with Anime Today</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Free dual subtitles on YouTube. Built-in vocabulary builder. Click any word for instant definitions. No subscription required.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

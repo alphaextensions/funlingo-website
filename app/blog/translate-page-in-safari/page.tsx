@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TranslatePageInSafariContent from "./content";
 
 export const metadata: Metadata = {
-  title: "How to Translate a Web Page in Safari (Mac, iPhone, iPad) | FunLingo",
+  title: "How to Translate a Web Page in Safari (Mac, iPhone, iPad) | Funlingo",
   description: "Step-by-step guide to translating web pages in Safari on Mac, iPhone, and iPad. Learn about Safari's built-in translation, supported languages, limitations, and the best third-party alternatives for 2026.",
   keywords: "how to translate a page in safari, safari translate web page, translate website safari mac, safari translation iphone, safari translate not showing, translate page safari ipad",
   alternates: {
@@ -21,7 +21,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "How to Translate a Web Page in Safari (Mac, iPhone, iPad)",
   "description": "Step-by-step guide to translating web pages in Safari on Mac, iPhone, and iPad. Learn about Safari's built-in translation, supported languages, limitations, and the best third-party alternatives for 2026.",
-  "author": { "@type": "Organization", "name": "FunLingo Team" },
+  "author": { "@type": "Organization", "name": "Funlingo Team" },
   "datePublished": "2026-03-20",
   "dateModified": "2026-03-20",
   "image": "https://getfunlingo.com/og-image.jpg",

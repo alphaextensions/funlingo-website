@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import BlogContent from "./blog-content";
 
 export const metadata: Metadata = {
-  title: "FunLingo Blog - Language Learning Tips & AI Insights",
-  description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with FunLingo.",
+  title: "Funlingo Blog - Language Learning Tips & AI Insights",
+  description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with Funlingo.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "FunLingo Blog - Language Learning Tips & AI Insights",
-    description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with FunLingo.",
+    title: "Funlingo Blog - Language Learning Tips & AI Insights",
+    description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with Funlingo.",
     url: "/blog",
   },
   twitter: {
-    title: "FunLingo Blog - Language Learning Tips & AI Insights",
-    description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with FunLingo.",
+    title: "Funlingo Blog - Language Learning Tips & AI Insights",
+    description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with Funlingo.",
   },
 };
 

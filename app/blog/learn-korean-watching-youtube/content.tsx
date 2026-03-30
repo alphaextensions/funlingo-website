@@ -33,7 +33,7 @@ export default function LearnKoreanYouTubeContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Watch Korean YouTube with dual subtitles. Completely free.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
 
@@ -58,7 +58,7 @@ export default function LearnKoreanYouTubeContent() {
             <h3 className="text-2xl font-bold text-white mb-6 mt-0">Daily 15-Minute Korean YouTube Routine</h3>
             <div className="space-y-4">
               <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 1-2: Warm Up</span><span className="text-white font-medium">Review 10 saved vocabulary words from yesterday using spaced repetition. This primes your brain for Korean.</span></div></div>
-              <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 3-12: Watch with Dual Subtitles</span><span className="text-white font-medium">Watch a 10-minute Korean video with FunLingo dual subtitles. Save 5 to 10 new words by clicking them in the subtitles. Focus on words you see repeatedly.</span></div></div>
+              <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 3-12: Watch with Dual Subtitles</span><span className="text-white font-medium">Watch a 10-minute Korean video with Funlingo dual subtitles. Save 5 to 10 new words by clicking them in the subtitles. Focus on words you see repeatedly.</span></div></div>
               <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Minutes 13-15: Active Review</span><span className="text-white font-medium">Replay one 30-second clip without looking at subtitles. Try to understand it from listening alone. Then replay with subtitles to check.</span></div></div>
             </div>
             <p className="text-gray-300 mt-6 italic">Following this routine consistently, you can learn 150 to 300 new Korean words per month and dramatically improve your listening skills.</p>
@@ -69,10 +69,10 @@ export default function LearnKoreanYouTubeContent() {
 
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
             {[
-              { title: "Install FunLingo", desc: "Add the free FunLingo Chrome extension from the Chrome Web Store. It takes about 10 seconds to install." },
-              { title: "Choose Korean + Your Language", desc: "Set Korean as your target language and your native language as the translation language in FunLingo's settings." },
+              { title: "Install Funlingo", desc: "Add the free Funlingo Chrome extension from the Chrome Web Store. It takes about 10 seconds to install." },
+              { title: "Choose Korean + Your Language", desc: "Set Korean as your target language and your native language as the translation language in Funlingo's settings." },
               { title: "Find a Korean Video", desc: "Search for Korean content that interests you. Make sure the video has Korean subtitles or auto-generated captions." },
-              { title: "Watch with Both Languages", desc: "FunLingo displays Korean and your native language subtitles simultaneously. Click any Korean word to see its meaning and save it." },
+              { title: "Watch with Both Languages", desc: "Funlingo displays Korean and your native language subtitles simultaneously. Click any Korean word to see its meaning and save it." },
               { title: "Build Your Vocabulary", desc: "Saved words go into your personal vocabulary list. Review them daily with spaced repetition to move them into long-term memory." },
             ].map((s, i) => (
               <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i + 1}</div><div className="pt-2 text-gray-300"><strong className="text-white block mb-1">{s.title}</strong>{s.desc}</div></div>
@@ -96,7 +96,7 @@ export default function LearnKoreanYouTubeContent() {
               <div><strong className="text-white block mb-1">How long does it take to learn Korean from YouTube?</strong><p className="text-gray-400 text-sm">With a consistent 15-minute daily routine using dual subtitles, most learners notice significant improvement in listening comprehension within 2 to 3 months.</p></div>
               <div><strong className="text-white block mb-1">What are the best Korean YouTube channels for beginners?</strong><p className="text-gray-400 text-sm">Talk To Me In Korean, Korean Unnie, and GO! Billy Korean offer structured lessons. For immersion, start with Korean cooking channels that use simple everyday language.</p></div>
               <div><strong className="text-white block mb-1">Do I need to learn Hangul before watching Korean YouTube?</strong><p className="text-gray-400 text-sm">Learning Hangul first is recommended and takes only a few hours. It allows you to read Korean subtitles, which significantly accelerates learning.</p></div>
-              <div><strong className="text-white block mb-1">How do I get Korean dual subtitles on YouTube?</strong><p className="text-gray-400 text-sm">Install the free FunLingo Chrome extension. It adds dual subtitles to YouTube, displaying Korean and your native language simultaneously.</p></div>
+              <div><strong className="text-white block mb-1">How do I get Korean dual subtitles on YouTube?</strong><p className="text-gray-400 text-sm">Install the free Funlingo Chrome extension. It adds dual subtitles to YouTube, displaying Korean and your native language simultaneously.</p></div>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ export default function LearnKoreanYouTubeContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Start Learning Korean on YouTube Today</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Free dual subtitles on every Korean YouTube video. Built-in vocabulary builder. No subscription needed.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

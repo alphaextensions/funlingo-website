@@ -31,9 +31,9 @@ export default function BestDualSubtitleExtensionContent() {
           <p className="text-gray-300 mb-6">If you want to understand the broader methodology behind learning with media, read our guide on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">how to learn a language by watching</a>.</p>
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
-            <p className="text-lg text-gray-200 mb-6">Want the best free dual subtitle extension? Try FunLingo today.</p>
+            <p className="text-lg text-gray-200 mb-6">Want the best free dual subtitle extension? Try Funlingo today.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try FunLingo Free</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
 
@@ -42,10 +42,10 @@ export default function BestDualSubtitleExtensionContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The 7 Best Dual Subtitle Extensions Compared</h2>
           <p className="text-gray-300 mb-8">We tested every major dual subtitle extension in 2026. Here is how they compare across price, platform support, features, and usability.</p>
 
-          <h3 className="text-xl font-bold text-white mb-4">1. FunLingo — Best Free Dual Subtitle Extension</h3>
+          <h3 className="text-xl font-bold text-white mb-4">1. Funlingo — Best Free Dual Subtitle Extension</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-[#C642FC]/30 mb-8">
             <div className="flex items-center gap-2 mb-3"><Star className="w-5 h-5 text-yellow-400" /><Star className="w-5 h-5 text-yellow-400" /><Star className="w-5 h-5 text-yellow-400" /><Star className="w-5 h-5 text-yellow-400" /><Star className="w-5 h-5 text-yellow-400" /></div>
-            <p className="text-gray-300 mb-4">FunLingo is a completely free Chrome extension that adds dual subtitles to Netflix, YouTube, and Amazon Prime Video. Unlike many competitors, there is no premium tier or feature paywall. You get full access to dual subtitles, a built-in vocabulary builder, and word-saving functionality at no cost.</p>
+            <p className="text-gray-300 mb-4">Funlingo is a completely free Chrome extension that adds dual subtitles to Netflix, YouTube, and Amazon Prime Video. Unlike many competitors, there is no premium tier or feature paywall. You get full access to dual subtitles, a built-in vocabulary builder, and word-saving functionality at no cost.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
               <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Netflix, YouTube, Prime Video</div>
               <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> 100% free</div>
@@ -111,7 +111,7 @@ export default function BestDualSubtitleExtensionContent() {
 
           <h3 className="text-xl font-bold text-white mb-4">7. Immersive Translate — Best for General Translation</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
-            <p className="text-gray-300 mb-4">Immersive Translate is primarily a web page translation tool that also supports dual subtitles on YouTube. It provides bilingual translations for articles, PDFs, and ebooks. Video subtitle support is more limited compared to dedicated tools like FunLingo or Language Reactor.</p>
+            <p className="text-gray-300 mb-4">Immersive Translate is primarily a web page translation tool that also supports dual subtitles on YouTube. It provides bilingual translations for articles, PDFs, and ebooks. Video subtitle support is more limited compared to dedicated tools like Funlingo or Language Reactor.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
               <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> YouTube subtitles</div>
               <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Web page translation</div>
@@ -126,9 +126,9 @@ export default function BestDualSubtitleExtensionContent() {
           <p className="text-gray-300 mb-6">With seven options to consider, here is a simple framework for choosing the right dual subtitle extension for your needs.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><DollarSign className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">On a Budget?</h3><p className="text-sm text-gray-400">Choose FunLingo. It is the only fully free option with no feature restrictions across Netflix, YouTube, and Prime Video.</p></div>
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Globe className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Need Multiple Platforms?</h3><p className="text-sm text-gray-400">FunLingo covers Netflix, YouTube, and Prime Video. Most competitors only support two of these three.</p></div>
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Shield className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Want Vocabulary Building?</h3><p className="text-sm text-gray-400">Look for built-in word saving and spaced repetition. FunLingo and Language Reactor both offer this, but FunLingo does it for free.</p></div>
+            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><DollarSign className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">On a Budget?</h3><p className="text-sm text-gray-400">Choose Funlingo. It is the only fully free option with no feature restrictions across Netflix, YouTube, and Prime Video.</p></div>
+            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Globe className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Need Multiple Platforms?</h3><p className="text-sm text-gray-400">Funlingo covers Netflix, YouTube, and Prime Video. Most competitors only support two of these three.</p></div>
+            <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Shield className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Want Vocabulary Building?</h3><p className="text-sm text-gray-400">Look for built-in word saving and spaced repetition. Funlingo and Language Reactor both offer this, but Funlingo does it for free.</p></div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Zap className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Want AI Features?</h3><p className="text-sm text-gray-400">Trancy offers AI-powered grammar analysis, but at a premium price point of $8 per month.</p></div>
           </div>
 
@@ -139,9 +139,9 @@ export default function BestDualSubtitleExtensionContent() {
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>
             <div className="space-y-4">
-              <div><strong className="text-white block mb-1">What is the best free dual subtitle extension?</strong><p className="text-gray-400 text-sm">FunLingo is the best free dual subtitle extension. It supports Netflix, YouTube, and Prime Video with no premium paywall or feature restrictions.</p></div>
-              <div><strong className="text-white block mb-1">Do dual subtitle extensions work on all streaming platforms?</strong><p className="text-gray-400 text-sm">Most extensions support Netflix and YouTube. FunLingo also supports Amazon Prime Video, making it one of the most versatile options.</p></div>
-              <div><strong className="text-white block mb-1">Are dual subtitle extensions safe to use?</strong><p className="text-gray-400 text-sm">Yes, reputable extensions like FunLingo are safe. Always install from the official Chrome Web Store and check reviews.</p></div>
+              <div><strong className="text-white block mb-1">What is the best free dual subtitle extension?</strong><p className="text-gray-400 text-sm">Funlingo is the best free dual subtitle extension. It supports Netflix, YouTube, and Prime Video with no premium paywall or feature restrictions.</p></div>
+              <div><strong className="text-white block mb-1">Do dual subtitle extensions work on all streaming platforms?</strong><p className="text-gray-400 text-sm">Most extensions support Netflix and YouTube. Funlingo also supports Amazon Prime Video, making it one of the most versatile options.</p></div>
+              <div><strong className="text-white block mb-1">Are dual subtitle extensions safe to use?</strong><p className="text-gray-400 text-sm">Yes, reputable extensions like Funlingo are safe. Always install from the official Chrome Web Store and check reviews.</p></div>
               <div><strong className="text-white block mb-1">Can I use dual subtitles on mobile devices?</strong><p className="text-gray-400 text-sm">Dual subtitle extensions are Chrome-only and work on desktop browsers. Mobile streaming apps do not support Chrome extensions.</p></div>
               <div><strong className="text-white block mb-1">What is the difference between dual subtitles and closed captions?</strong><p className="text-gray-400 text-sm">Closed captions show text in one language. Dual subtitles display two languages simultaneously, letting you read the translation alongside the original dialogue.</p></div>
             </div>
@@ -151,7 +151,7 @@ export default function BestDualSubtitleExtensionContent() {
             <h2 className="text-3xl font-bold text-white mb-4">Try the Best Free Dual Subtitle Extension</h2>
             <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Dual subtitles on Netflix, YouTube, and Prime Video. Built-in vocabulary builder. Completely free, forever.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get FunLingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

@@ -18,7 +18,7 @@ export default function ImmersiveTranslateGuideZhContent() {
           <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">沈浸式翻譯完整教學：安裝、設定與使用技巧</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> 2026年3月20日</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo 團隊</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo 團隊</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 分鐘閱讀</div>
           </div>
         </div>
@@ -147,9 +147,9 @@ export default function ImmersiveTranslateGuideZhContent() {
           </div>
 
           <div className="text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20 mb-12">
-            <p className="text-lg text-gray-200 mb-6">想要免費的影片雙語字幕？試試 FunLingo — 支援 Netflix、YouTube 和 Prime Video。</p>
+            <p className="text-lg text-gray-200 mb-6">想要免費的影片雙語字幕？試試 Funlingo — 支援 Netflix、YouTube 和 Prime Video。</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">免費試用 FunLingo</Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">免費試用 Funlingo</Button>
             </a>
           </div>
 
@@ -184,8 +184,8 @@ export default function ImmersiveTranslateGuideZhContent() {
 
           <div className="space-y-4 mb-8">
             <div className="bg-white/5 p-6 rounded-xl border border-[#C642FC]/30">
-              <div className="flex items-center gap-2 mb-3"><Star className="w-5 h-5 text-yellow-400" /><strong className="text-white text-lg">FunLingo（推薦）</strong><Badge className="bg-green-500/10 text-green-400 border-green-500/20 ml-2">免費</Badge></div>
-              <p className="text-gray-300 mb-4 text-sm">FunLingo 是一款完全免費的雙語字幕擴充功能，專為語言學習者設計。如果你主要需要在觀看影片時顯示雙語字幕，FunLingo 是最佳選擇。</p>
+              <div className="flex items-center gap-2 mb-3"><Star className="w-5 h-5 text-yellow-400" /><strong className="text-white text-lg">Funlingo（推薦）</strong><Badge className="bg-green-500/10 text-green-400 border-green-500/20 ml-2">免費</Badge></div>
+              <p className="text-gray-300 mb-4 text-sm">Funlingo 是一款完全免費的雙語字幕擴充功能，專為語言學習者設計。如果你主要需要在觀看影片時顯示雙語字幕，Funlingo 是最佳選擇。</p>
               <div className="grid grid-cols-2 gap-2 text-sm">
                 <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Netflix、YouTube、Prime Video</div>
                 <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> 完全免費</div>
@@ -235,7 +235,7 @@ export default function ImmersiveTranslateGuideZhContent() {
             <div className="space-y-6">
               <div>
                 <strong className="text-white block mb-2">沈浸式翻譯是免費的嗎？</strong>
-                <p className="text-sm text-gray-400 mb-0">沈浸式翻譯提供免費版本，包含基本的網頁翻譯功能。進階功能如PDF翻譯和更多翻譯引擎需要訂閱Pro方案。如果你主要需要影片雙語字幕，FunLingo是完全免費的替代選擇。</p>
+                <p className="text-sm text-gray-400 mb-0">沈浸式翻譯提供免費版本，包含基本的網頁翻譯功能。進階功能如PDF翻譯和更多翻譯引擎需要訂閱Pro方案。如果你主要需要影片雙語字幕，Funlingo是完全免費的替代選擇。</p>
               </div>
               <div>
                 <strong className="text-white block mb-2">沈浸式翻譯支援哪些瀏覽器？</strong>
@@ -243,16 +243,16 @@ export default function ImmersiveTranslateGuideZhContent() {
               </div>
               <div>
                 <strong className="text-white block mb-2">有什麼替代工具推薦？</strong>
-                <p className="text-sm text-gray-400 mb-0">如果你需要影片雙語字幕功能，推薦使用 <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">FunLingo</a>——它完全免費，支援Netflix、YouTube和Prime Video的雙語字幕。如果需要網頁翻譯，Google翻譯擴充功能也是不錯的免費選擇。</p>
+                <p className="text-sm text-gray-400 mb-0">如果你需要影片雙語字幕功能，推薦使用 <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">Funlingo</a>——它完全免費，支援Netflix、YouTube和Prime Video的雙語字幕。如果需要網頁翻譯，Google翻譯擴充功能也是不錯的免費選擇。</p>
               </div>
             </div>
           </div>
 
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <h2 className="text-3xl font-bold text-white mb-4">免費取得影片雙語字幕</h2>
-            <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">FunLingo 提供 Netflix、YouTube 和 Prime Video 的免費雙語字幕，內建詞彙本功能，完全免費使用。</p>
+            <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Funlingo 提供 Netflix、YouTube 和 Prime Video 的免費雙語字幕，內建詞彙本功能，完全免費使用。</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">免費安裝 FunLingo <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">免費安裝 Funlingo <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
 

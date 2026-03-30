@@ -23,7 +23,7 @@ const qaItems = [
     icon: Brain,
     title: "Does it help vocabulary?",
     description:
-      "Yes. According to research published in the Modern Language Journal, learners who encounter vocabulary in authentic video context retain up to 50% more words after 30 days compared to flashcard-only methods. FunLingo lets you save unlimited words to your personal vocabulary list with the sentence context where you found them.",
+      "Yes. According to research published in the Modern Language Journal, learners who encounter vocabulary in authentic video context retain up to 50% more words after 30 days compared to flashcard-only methods. Funlingo lets you save unlimited words to your personal vocabulary list with the sentence context where you found them.",
     color: "text-purple-300",
     bgColor: "bg-purple-500/20",
     borderColor: "border-purple-400/30",
@@ -33,7 +33,7 @@ const qaItems = [
     icon: PlayCircle,
     title: "Is it really free?",
     description:
-      "FunLingo is completely free — no premium tier, no paywall, no hidden costs. Unlike Trancy and Language Reactor which charge $5-12/month for advanced features, FunLingo gives you full dual subtitle functionality, AI definitions, pronunciation guides, and vocabulary building at zero cost.",
+      "Funlingo is completely free — no premium tier, no paywall, no hidden costs. Unlike Trancy and Language Reactor which charge $5-12/month for advanced features, Funlingo gives you full dual subtitle functionality, AI definitions, pronunciation guides, and vocabulary building at zero cost.",
     color: "text-blue-300",
     bgColor: "bg-blue-500/20",
     borderColor: "border-blue-400/30",
@@ -43,7 +43,7 @@ const qaItems = [
     icon: Bot,
     title: "How does AI help?",
     description:
-      "FunLingo's AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over. You can select 1, 2, 3, or all translations per word — a unique feature that eliminates the need to open a separate dictionary or translator app.",
+      "Funlingo's AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over. You can select 1, 2, 3, or all translations per word — a unique feature that eliminates the need to open a separate dictionary or translator app.",
     color: "text-green-300",
     bgColor: "bg-green-500/20",
     borderColor: "border-green-400/30",
@@ -52,7 +52,7 @@ const qaItems = [
   {
     icon: Languages,
     title: "Which sites are supported?",
-    description: "FunLingo supports dual subtitles on YouTube, Netflix, and Amazon Prime Video — three platforms with over 1 billion combined monthly users and millions of videos in 100+ languages. The extension integrates directly into the video player for a seamless experience.",
+    description: "Funlingo supports dual subtitles on YouTube, Netflix, and Amazon Prime Video — three platforms with over 1 billion combined monthly users and millions of videos in 100+ languages. The extension integrates directly into the video player for a seamless experience.",
     color: "text-cyan-300",
     bgColor: "bg-cyan-500/20",
     borderColor: "border-cyan-400/30",

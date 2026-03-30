@@ -12,20 +12,110 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
-      id: -27,
+      id: -37,
       title: "How to Translate Hamster Website",
-      excerpt: "Learn how to translate the Hamster website into any language using FunLingo. Bilingual display, word-level lookups, pronunciation audio, and vocabulary saving — all free.",
+      excerpt: "Learn how to translate the Hamster website into any language using Funlingo. Bilingual display, word-level lookups, pronunciation audio, and vocabulary saving — all free.",
       date: "March 30, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Trending",
       slug: "/blog/how-to-translate-hamster-website"
+    },
+    {
+      id: -36,
+      title: "油管视频下载 — 高清无水印保存方法 (2026)",
+      excerpt: "最新油管(YouTube)视频下载方法，支持高清1080P/4K无水印保存。包括在线工具、浏览器扩展和命令行方案。",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Chinese Content",
+      slug: "/blog/youtube-video-download-zh"
+    },
+    {
+      id: -35,
+      title: "Best English-Vietnamese Dictionary Apps & Sites (2026)",
+      excerpt: "Compare the best English-Vietnamese dictionary apps and websites. VDICT, Laban Dictionary, Tra Tu, and more with features, pros/cons, and essential Vietnamese phrases.",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Dictionary",
+      slug: "/blog/english-vietnamese-dictionary"
+    },
+    {
+      id: -34,
+      title: "Phrase Translator — Best Tools for Idioms & Expressions (2026)",
+      excerpt: "Regular translators butcher idioms and phrases. Find the best phrase translators that understand context, slang, and expressions across languages.",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Translation",
+      slug: "/blog/phrase-translator"
+    },
+    {
+      id: -33,
+      title: "YouTube字幕下载 — SRT一键导出指南 (2026)",
+      excerpt: "一键下载YouTube字幕为SRT格式。多种YouTube字幕下载方法，包括在线工具、浏览器扩展和命令行方案。",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Chinese Content",
+      slug: "/blog/youtube-subtitle-download-zh"
+    },
+    {
+      id: -32,
+      title: "推特视频下载 — 3种免费保存方法 (2026)",
+      excerpt: "如何免费下载推特(X)视频？3种最简单的推特视频下载方法，支持高清无水印保存。",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Chinese Content",
+      slug: "/blog/twitter-video-download-zh"
+    },
+    {
+      id: -31,
+      title: "AI for Translation — How AI Is Changing Language Translation (2026)",
+      excerpt: "How AI is revolutionizing translation in 2026. From neural machine translation to LLMs, explore the technology behind modern AI translators.",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "AI Translation",
+      slug: "/blog/ai-for-translation"
+    },
+    {
+      id: -30,
+      title: "'Unless' — Meaning, Grammar Rules & Examples",
+      excerpt: "Master the word 'unless' in English. Complete guide with meaning, grammar rules, conditional sentence patterns, common mistakes, and 30+ example sentences.",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Dictionary",
+      slug: "/blog/unless-meaning"
+    },
+    {
+      id: -29,
+      title: "Download YouTube Videos with Chinese Subtitles (2026 Guide)",
+      excerpt: "Step-by-step guide to downloading YouTube videos with Chinese subtitles. 3 free methods for saving videos with Chinese captions for offline language learning.",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Chinese Content",
+      slug: "/blog/download-youtube-videos-chinese-subtitles"
+    },
+    {
+      id: -28,
+      title: "AiTalk Review — AI Language Practice Tool (2026)",
+      excerpt: "Is AiTalk worth it for language practice? Full review of AiTalk's AI conversation features, pricing, pros and cons, and how it compares to alternatives.",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "AI Translation",
+      slug: "/blog/aitalk-review"
+    },
+    {
+      id: -27,
+      title: "Portuguese to English Translator — Best Tools 2026",
+      excerpt: "Find the most accurate Portuguese to English translator. Compare Google Translate, DeepL, ChatGPT, and more with Brazilian vs European Portuguese tips.",
+      date: "March 21, 2026",
+      author: "Funlingo Team",
+      category: "Translation",
+      slug: "/blog/portuguese-to-english-translator"
     },
     {
       id: -26,
       title: "Language Reactor vs Trancy: Which Is Better in 2026?",
       excerpt: "Detailed comparison of Language Reactor and Trancy for language learning. Features, pricing, platform support, and which one is right for you.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/language-reactor-vs-trancy"
     },
@@ -34,7 +124,7 @@ export default function BlogContent() {
       title: "How to Translate a Web Page in Safari (Mac, iPhone, iPad)",
       excerpt: "Step-by-step guide to translating web pages in Safari on Mac, iPhone, and iPad. Built-in features, limitations, and third-party alternatives.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/translate-page-in-safari"
     },
@@ -43,7 +133,7 @@ export default function BlogContent() {
       title: "What Does 'Bilingual' Mean? Definition, Types & Examples",
       excerpt: "Everything about bilingualism: definition, types (simultaneous, sequential, compound, coordinate), benefits, and how to become bilingual as an adult.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/bilingual-meaning"
     },
@@ -52,7 +142,7 @@ export default function BlogContent() {
       title: "Words That Have 'AI' in Them — Complete List & Meanings",
       excerpt: "Complete list of English words containing 'ai' organized by pattern. Includes pronunciation guide, example sentences, and vocabulary building tips.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/words-with-ai"
     },
@@ -61,7 +151,7 @@ export default function BlogContent() {
       title: "Best Subtitle Download Sites — Top 15 for Any Language",
       excerpt: "Compare the 15 best subtitle download sites for movies and TV shows. OpenSubtitles, Subscene, YIFY, and more — with safety tips and format guides.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-subtitle-download-sites"
     },
@@ -70,7 +160,7 @@ export default function BlogContent() {
       title: "AI Translator Tools: 10 Best Options Compared for 2026",
       excerpt: "Compare the 10 best AI translator tools including Google Translate, DeepL, ChatGPT, and more. Features, accuracy, pricing, and use cases compared.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-ai-translator-tools"
     },
@@ -79,7 +169,7 @@ export default function BlogContent() {
       title: "Italian to English Translation: Best Tools & Tips",
       excerpt: "Best tools for Italian to English translation, common Italian phrases with translations, grammar tips, and how to learn Italian with dual subtitles.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/italian-to-english-translation"
     },
@@ -88,7 +178,7 @@ export default function BlogContent() {
       title: "Immersive Translate: What It Is & Best Alternatives",
       excerpt: "Complete guide to Immersive Translate — features, pricing, limitations, and the 6 best alternatives including free options for video subtitles.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/immersive-translate-alternatives"
     },
@@ -97,7 +187,7 @@ export default function BlogContent() {
       title: "Turkish to English Translation: Tools, Tips & Common Phrases",
       excerpt: "Best tools for Turkish to English translation, 20+ common Turkish phrases, grammar tips for English speakers, and Turkish shows to watch.",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/turkish-to-english-translation"
     },
@@ -106,7 +196,7 @@ export default function BlogContent() {
       title: "沈浸式翻譯完整教學：安裝、設定與使用技巧",
       excerpt: "沈浸式翻譯完整指南：從安裝到進階設定，學習如何使用沈浸式翻譯工具來翻譯網頁、字幕和PDF。包含替代工具比較和使用技巧。",
       date: "March 20, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/immersive-translate-guide-zh"
     },
@@ -115,7 +205,7 @@ export default function BlogContent() {
       title: "How to Download Subtitles from YouTube (3 Free Methods)",
       excerpt: "Learn 3 free methods to download subtitles from any YouTube video in SRT, VTT, or TXT format. Step-by-step guides for each method.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/download-subtitles-from-youtube"
     },
@@ -124,7 +214,7 @@ export default function BlogContent() {
       title: "Why Can't I Change Playback Speed on YouTube? (Fixed)",
       excerpt: "YouTube playback speed not working? Here are the most common causes and step-by-step fixes for desktop, mobile, and embedded videos.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/why-cant-change-playback-speed-youtube"
     },
@@ -133,7 +223,7 @@ export default function BlogContent() {
       title: "Netflix Language Learning: The Complete Guide for 2026",
       excerpt: "Everything you need to learn a language with Netflix. Best shows by language, the dual subtitle method, a 15-minute daily routine, and free tools.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/netflix-language-learning"
     },
@@ -142,7 +232,7 @@ export default function BlogContent() {
       title: "Best YouTube Subtitle Downloaders — Top 10 Tools Compared",
       excerpt: "Compare the 10 best YouTube subtitle downloaders. Download subtitles in SRT, VTT, and TXT formats. Free and paid options with pros and cons.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-youtube-subtitle-downloaders"
     },
@@ -151,7 +241,7 @@ export default function BlogContent() {
       title: "How to Get Dual Subtitles on Netflix (Step-by-Step)",
       excerpt: "Get dual subtitles on Netflix in under 30 seconds. Step-by-step setup guide, troubleshooting tips, and the best extensions compared.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/netflix-dual-subtitles"
     },
@@ -160,7 +250,7 @@ export default function BlogContent() {
       title: "YouTube Bilingual Subtitles: Watch Videos in Two Languages",
       excerpt: "Learn how to get bilingual subtitles on YouTube. Watch any video with two languages displayed simultaneously using free browser extensions.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/youtube-bilingual-subtitles"
     },
@@ -169,16 +259,16 @@ export default function BlogContent() {
       title: "What Is Shadowing in Language Learning? (+ AI Tools)",
       excerpt: "Discover the shadowing technique for language learning. Learn the science, get a step-by-step guide, and find the best AI tools to practice with.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/shadowing-language-learning"
     },
     {
       id: -9,
       title: "Netflix Language Learning Extensions: Top 5 for 2026",
-      excerpt: "Compare the 5 best Chrome extensions for learning languages on Netflix. Features, pricing, and pros/cons for FunLingo, Language Reactor, Trancy, and more.",
+      excerpt: "Compare the 5 best Chrome extensions for learning languages on Netflix. Features, pricing, and pros/cons for Funlingo, Language Reactor, Trancy, and more.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/netflix-language-learning-extensions"
     },
@@ -187,7 +277,7 @@ export default function BlogContent() {
       title: "How to Download YouTube Videos (Specific Parts Only)",
       excerpt: "Learn 4 methods to download specific parts of YouTube videos. Online tools, screen recording, yt-dlp commands, and browser-based editors compared.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/download-youtube-video-parts"
     },
@@ -196,7 +286,7 @@ export default function BlogContent() {
       title: "SRT Files Explained: How to Download & Use Subtitle Files",
       excerpt: "Everything about SRT subtitle files. Learn what they are, where to download them, how to use them in media players, and how to create your own.",
       date: "March 19, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/srt-files-subtitle-download"
     },
@@ -205,7 +295,7 @@ export default function BlogContent() {
       title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide",
       excerpt: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition to turn every episode into a real lesson.",
       date: "March 18, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/learn-japanese-with-anime"
     },
@@ -214,7 +304,7 @@ export default function BlogContent() {
       title: "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)",
       excerpt: "Struggling to stay consistent with language learning? Discover 5 simple daily habits that fit into your existing routine and make real progress without extra study time.",
       date: "March 18, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/daily-language-learning-habits"
     },
@@ -223,7 +313,7 @@ export default function BlogContent() {
       title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide",
       excerpt: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition to turn every episode into a real lesson.",
       date: "March 18, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/learn-japanese-with-anime"
     },
@@ -232,7 +322,7 @@ export default function BlogContent() {
       title: "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)",
       excerpt: "Struggling to stay consistent with language learning? Discover 5 simple daily habits that fit into your existing routine and make real progress without extra study time.",
       date: "March 18, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/daily-language-learning-habits"
     },
@@ -241,16 +331,16 @@ export default function BlogContent() {
       title: "7 Best Dual Subtitle Extensions for Language Learning (2026)",
       excerpt: "Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-dual-subtitle-extension"
     },
     {
       id: -5,
       title: "How to Get Dual Subtitles on Netflix (2026 Guide)",
-      excerpt: "Want dual subtitles on Netflix? Learn how to display two languages at once with FunLingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
+      excerpt: "Want dual subtitles on Netflix? Learn how to display two languages at once with Funlingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/how-to-get-dual-subtitles-on-netflix"
     },
@@ -259,7 +349,7 @@ export default function BlogContent() {
       title: "How to Learn Korean by Watching YouTube: A Complete 2026 Guide",
       excerpt: "Want to learn Korean watching YouTube? Get the best channels, a 15-minute daily routine, and free dual subtitle tools to turn every video into a lesson.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/learn-korean-watching-youtube"
     },
@@ -268,7 +358,7 @@ export default function BlogContent() {
       title: "How to Learn Spanish Watching Netflix (Your Complete 2026 Guide)",
       excerpt: "Discover the best Netflix shows by level, a proven dual subtitle method, and a free 15-minute daily routine to learn Spanish. Start tonight.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/learn-spanish-watching-netflix"
     },
@@ -277,7 +367,7 @@ export default function BlogContent() {
       title: "How to Build Vocabulary While Watching Shows (A Science-Backed Method)",
       excerpt: "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching — backed by language science.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/vocabulary-building-watching-shows"
     },
@@ -286,14 +376,14 @@ export default function BlogContent() {
       title: "How to Build Vocabulary While Watching: 5 Proven Strategies That Actually Work",
       excerpt: "Discover 5 proven strategies to build vocabulary while watching movies and TV shows. Learn how contextual vocabulary learning and spaced repetition transform screen time into real language growth.",
       date: "March 14, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/build-vocabulary-watching-shows"
     },
     {
       id: 0,
       title: "Website Translation for Language Learning: Read Any Website in Two Languages",
-      excerpt: "Discover how FunLingo's website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
+      excerpt: "Discover how Funlingo's website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
       date: "March 07, 2026",
       author: "Funlingo Team",
       category: "Feature",
@@ -328,19 +418,19 @@ export default function BlogContent() {
     },
     {
       id: 4,
-      title: "FunLingo: AI-native, low-friction learning",
-      excerpt: "FunLingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow.",
+      title: "Funlingo: AI-native, low-friction learning",
+      excerpt: "Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow.",
       date: "January 28, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/language-learning-tips-and-ai-insights"
     },
     {
       id: 5,
       title: "Best AI Language Learning Tools (2026): Learn faster with AI & real content",
-      excerpt: "Compare the top AI language learning tools and discover how FunLingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
+      excerpt: "Compare the top AI language learning tools and discover how Funlingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
       date: "January 21, 2026",
-      author: "FunLingo Team",
+      author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-ai-language-learning-tools-2026"
     },

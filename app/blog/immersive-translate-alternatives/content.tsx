@@ -29,7 +29,7 @@ export default function ImmersiveTranslateAlternativesContent() {
             </span>
             <span className="flex items-center gap-2">
               <User className="w-4 h-4" />
-              FunLingo Team
+              Funlingo Team
             </span>
             <span className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
@@ -180,7 +180,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                 Looking for dual subtitles on Netflix, YouTube & Prime Video?
               </h3>
               <p className="text-gray-400 mb-6">
-                FunLingo gives you free dual subtitles, vocabulary saving, and word-by-word
+                Funlingo gives you free dual subtitles, vocabulary saving, and word-by-word
                 translations across all major streaming platforms.
               </p>
               <a
@@ -189,7 +189,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                 rel="noopener noreferrer"
               >
                 <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
-                  Try FunLingo Free <ArrowRight className="ml-2 w-5 h-5" />
+                  Try Funlingo Free <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </a>
             </div>
@@ -201,25 +201,25 @@ export default function ImmersiveTranslateAlternativesContent() {
               Best Alternatives to Immersive Translate
             </h2>
 
-            {/* FunLingo */}
+            {/* Funlingo */}
             <div className="bg-white/5 border border-[#C642FC]/30 rounded-2xl p-8 mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <Star className="w-6 h-6 text-[#C642FC]" />
-                <h3 className="text-2xl font-bold text-white m-0">FunLingo</h3>
+                <h3 className="text-2xl font-bold text-white m-0">Funlingo</h3>
                 <Badge className="bg-[#C642FC]/20 text-[#C642FC] border-[#C642FC]/30">
                   Best Pick
                 </Badge>
               </div>
               <p className="text-gray-300 mb-4">
-                FunLingo is the best free alternative to Immersive Translate for video-based
+                Funlingo is the best free alternative to Immersive Translate for video-based
                 language learning. It provides dual subtitles on Netflix, YouTube, and Amazon
                 Prime Video, along with a built-in vocabulary builder that lets you save words
-                and phrases for later review. Unlike Immersive Translate, FunLingo is completely
+                and phrases for later review. Unlike Immersive Translate, Funlingo is completely
                 free and specifically optimized for learning languages through video content.
               </p>
               <p className="text-gray-300 mb-6">
                 With word-by-word translations, instant click-to-translate on any subtitle word,
-                and support for dozens of languages, FunLingo turns your entertainment time into
+                and support for dozens of languages, Funlingo turns your entertainment time into
                 an effective language learning session.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
@@ -478,7 +478,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                 <p className="text-gray-400 text-base">
                   If you learn primarily through Netflix, YouTube, or Prime Video, choose{" "}
                   <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">
-                    FunLingo
+                    Funlingo
                   </a>{" "}
                   for the best free dual subtitle experience with vocabulary building.
                 </p>
@@ -497,8 +497,8 @@ export default function ImmersiveTranslateAlternativesContent() {
               <div className="bg-white/5 border border-white/10 rounded-xl p-6">
                 <h4 className="text-lg font-semibold text-white mb-2">On a Budget</h4>
                 <p className="text-gray-400 text-base">
-                  FunLingo, Google Translate Extension, and Microsoft Translator are all completely
-                  free. FunLingo is the clear winner if video content is part of your routine.
+                  Funlingo, Google Translate Extension, and Microsoft Translator are all completely
+                  free. Funlingo is the clear winner if video content is part of your routine.
                 </p>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-xl p-6">
@@ -535,8 +535,8 @@ export default function ImmersiveTranslateAlternativesContent() {
                 </h4>
                 <p className="text-gray-400 text-base">
                   Immersive Translate has very limited support for Netflix. If you need reliable
-                  dual subtitles on Netflix, FunLingo or Language Reactor are much better options.
-                  FunLingo is free and also supports YouTube and Amazon Prime Video.
+                  dual subtitles on Netflix, Funlingo or Language Reactor are much better options.
+                  Funlingo is free and also supports YouTube and Amazon Prime Video.
                 </p>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-xl p-6">
@@ -544,7 +544,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                   What is the best free alternative to Immersive Translate?
                 </h4>
                 <p className="text-gray-400 text-base">
-                  For video-based language learning, FunLingo is the best free alternative. It
+                  For video-based language learning, Funlingo is the best free alternative. It
                   provides dual subtitles on Netflix, YouTube, and Prime Video, plus a vocabulary
                   builder and word-saving features at no cost. For web page translation, Google
                   Translate Extension is a solid free choice.
@@ -560,7 +560,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                 Ready to Learn Languages for Free?
               </h3>
               <p className="text-gray-400 mb-8 text-lg">
-                Join thousands of learners using FunLingo to watch Netflix, YouTube, and Prime
+                Join thousands of learners using Funlingo to watch Netflix, YouTube, and Prime
                 Video with dual subtitles. Save vocabulary, translate words instantly, and make
                 real progress &mdash; all completely free.
               </p>
@@ -570,7 +570,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                 rel="noopener noreferrer"
               >
                 <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] text-white px-10 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
-                  Add FunLingo to Chrome &mdash; It&apos;s Free <ArrowRight className="ml-2 w-5 h-5" />
+                  Add Funlingo to Chrome &mdash; It&apos;s Free <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </a>
             </div>

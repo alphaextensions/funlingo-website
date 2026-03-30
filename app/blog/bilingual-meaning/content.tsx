@@ -21,7 +21,7 @@ export default function BilingualMeaningContent() {
           </h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 20, 2026</div>
-            <div className="flex items-center gap-1"><User className="w-4 h-4" /> FunLingo Team</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</div>
           </div>
         </div>
@@ -195,13 +195,13 @@ export default function BilingualMeaningContent() {
 
           <hr className="border-white/10 my-10" />
 
-          {/* SECTION: FunLingo and immersion */}
-          <h2 className="text-3xl font-bold text-white mb-6">The Role of Immersion Tools: How FunLingo Helps Build Bilingual Comprehension</h2>
+          {/* SECTION: Funlingo and immersion */}
+          <h2 className="text-3xl font-bold text-white mb-6">The Role of Immersion Tools: How Funlingo Helps Build Bilingual Comprehension</h2>
           <p>
             One of the biggest barriers to becoming bilingual is access to quality immersion. Not everyone can move to another country or attend an immersion school. This is where technology bridges the gap.
           </p>
           <p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C642FC] hover:underline">FunLingo</a> is a free Chrome extension that transforms your everyday streaming into a bilingual immersion experience. Here&apos;s how it supports the journey to bilingualism:
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C642FC] hover:underline">Funlingo</a> is a free Chrome extension that transforms your everyday streaming into a bilingual immersion experience. Here&apos;s how it supports the journey to bilingualism:
           </p>
 
           <div className="space-y-4 my-8">
@@ -231,7 +231,7 @@ export default function BilingualMeaningContent() {
           <div className="space-y-6 my-8">
             {[
               { q: "Is bilingual the same as fluent?", a: "Not exactly. Fluency refers to the smoothness and ease with which you use a language — speaking without frequent pauses, hesitations, or errors. Bilingualism simply means you can function in two languages. A bilingual person might be fluent in their dominant language but still developing fluency in their second. The two concepts overlap but are not synonymous." },
-              { q: "Can you become bilingual as an adult?", a: "Absolutely. While children have certain advantages in language acquisition (particularly pronunciation), adults can and do become bilingual. The keys are consistent exposure, meaningful practice, and patience. Immersion tools like FunLingo, language exchange partners, and regular consumption of target-language media all contribute to building adult bilingualism." },
+              { q: "Can you become bilingual as an adult?", a: "Absolutely. While children have certain advantages in language acquisition (particularly pronunciation), adults can and do become bilingual. The keys are consistent exposure, meaningful practice, and patience. Immersion tools like Funlingo, language exchange partners, and regular consumption of target-language media all contribute to building adult bilingualism." },
               { q: "What percentage of the world is bilingual?", a: "Estimates vary, but most linguists agree that between 60% and 75% of the world's population speaks two or more languages. Bilingualism is the norm in most of Africa, Asia, and Europe. Monolingualism is actually the exception, most common in countries like the United States, the United Kingdom, and Australia — though even these countries have large bilingual communities." }
             ].map((item, i) => (
               <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-6">
@@ -248,11 +248,11 @@ export default function BilingualMeaningContent() {
             <Lightbulb className="w-10 h-10 text-[#C642FC] mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-white mb-3">Start Your Bilingual Journey Today</h2>
             <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-              Becoming bilingual doesn&apos;t require moving abroad or spending years in a classroom. With FunLingo&apos;s dual subtitles, AI-powered word lookup, and pronunciation tools, you can build bilingual comprehension naturally &mdash; just by watching the shows you love.
+              Becoming bilingual doesn&apos;t require moving abroad or spending years in a classroom. With Funlingo&apos;s dual subtitles, AI-powered word lookup, and pronunciation tools, you can build bilingual comprehension naturally &mdash; just by watching the shows you love.
             </p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] text-white px-8 py-3 text-lg rounded-full hover:opacity-90 transition-opacity">
-                Try FunLingo Free <ArrowRight className="w-5 h-5 ml-2" />
+                Try Funlingo Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>
