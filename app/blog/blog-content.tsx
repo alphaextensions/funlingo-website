@@ -12,6 +12,15 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -27,
+      title: "How to Translate Hamster Website",
+      excerpt: "Learn how to translate the Hamster website into any language using FunLingo. Bilingual display, word-level lookups, pronunciation audio, and vocabulary saving — all free.",
+      date: "March 30, 2026",
+      author: "FunLingo Team",
+      category: "Trending",
+      slug: "/blog/how-to-translate-hamster-website"
+    },
+    {
       id: -26,
       title: "Language Reactor vs Trancy: Which Is Better in 2026?",
       excerpt: "Detailed comparison of Language Reactor and Trancy for language learning. Features, pricing, platform support, and which one is right for you.",
