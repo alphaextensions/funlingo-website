@@ -12,6 +12,24 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -39,
+      title: "Best Free Language Learning Tools in 2026 — No Subscriptions Required",
+      excerpt: "A complete zero-cost language learning stack. Dual subtitles, flashcards, grammar, speaking practice — every free tool worth using, compared honestly.",
+      date: "April 10, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/best-free-language-learning-tools-2026"
+    },
+    {
+      id: -38,
+      title: "How to Learn French by Watching Netflix & YouTube (2026 Guide)",
+      excerpt: "The complete guide to learning French with Netflix and YouTube. Best French shows by level, the dual subtitle method, daily routine, and why French listening is uniquely hard.",
+      date: "April 10, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/learn-french-watching-netflix"
+    },
+    {
       id: -37,
       title: "How to Translate Hamster Website",
       excerpt: "Learn how to translate the Hamster website into any language using Funlingo. Bilingual display, word-level lookups, pronunciation audio, and vocabulary saving — all free.",
