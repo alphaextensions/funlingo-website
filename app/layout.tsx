@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -25,6 +26,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <Toaster />
+        {/* Freshworks Customer Support Chat Widget */}
+        <Script
+          src="//in.fw-cdn.com/32727940/1543054.js"
+          chat="true"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
