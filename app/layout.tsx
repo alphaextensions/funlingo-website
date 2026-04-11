@@ -25,6 +25,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <Toaster />
+        {/* Freshworks Customer Support Chat Widget */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var s = document.createElement('script');
+              s.src = '//in.fw-cdn.com/32727940/1543054.js';
+              s.setAttribute('chat', 'true');
+              document.body.appendChild(s);
+            `,
+          }}
+        />
       </body>
     </html>
   );

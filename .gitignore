@@ -1,4 +1,14 @@
 node_modules
-dist*.old
+dist/
+*.old
 out/
 .next/
+.claude/
+
+# Articles & documents (not part of the website)
+article-*.md
+medium-blog-*.md
+hashnode-blog-*.md
+linkedin-blog-*.md
+Reddit_Thread_Intelligence_Report.xlsx
+funlingo-open-publishing-platforms.xlsx
