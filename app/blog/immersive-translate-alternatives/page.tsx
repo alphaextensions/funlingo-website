@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import ImmersiveTranslateAlternativesContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Immersive Translate: What It Is & Best Alternatives",
-  description: "Learn what Immersive Translate is, its features and limitations, and discover the best free alternatives including Funlingo, Google Translate, DeepL, Trancy, and Language Reactor.",
+  title: "6 Best Immersive Translate Alternatives (2026) — Free Options Included",
+  description: "Looking for an Immersive Translate alternative? Compare 6 options including Funlingo (free dual subtitles on Netflix/YouTube/Prime), DeepL, Google Translate, Trancy, Language Reactor, and Microsoft Translator. Feature-by-feature comparison.",
   keywords: "immersive translate, immersive translate alternative, bilingual translation extension, dual subtitle extension, immersive translate free, immersive translate netflix",
   alternates: {
     canonical: "/blog/immersive-translate-alternatives",
   },
   openGraph: {
-    title: "Immersive Translate: What It Is & Best Alternatives",
-    description: "Learn what Immersive Translate is, its features and limitations, and discover the best free alternatives including Funlingo, Google Translate, DeepL, Trancy, and Language Reactor.",
+    title: "6 Best Immersive Translate Alternatives (2026) — Free Options Included",
+    description: "Looking for an Immersive Translate alternative? Compare 6 options including Funlingo (free dual subtitles on Netflix/YouTube/Prime), DeepL, Google Translate, Trancy, Language Reactor, and Microsoft Translator. Feature-by-feature comparison.",
     type: "article",
     url: "/blog/immersive-translate-alternatives",
   },
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Immersive Translate: What It Is & Best Alternatives",
-  "description": "Learn what Immersive Translate is, its features and limitations, and discover the best free alternatives including Funlingo, Google Translate, DeepL, Trancy, and Language Reactor.",
+  "headline": "Best Immersive Translate Alternatives (2026): 6 Free & Paid Options Compared",
+  "description": "Looking for an Immersive Translate alternative? Compare 6 options including Funlingo (free dual subtitles on Netflix/YouTube/Prime), DeepL, Google Translate, Trancy, Language Reactor, and Microsoft Translator. Feature-by-feature comparison.",
   "author": { "@type": "Organization", "name": "Funlingo Team" },
   "datePublished": "2026-03-20",
   "dateModified": "2026-03-20",

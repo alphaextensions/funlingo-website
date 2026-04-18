@@ -15,7 +15,7 @@ export default function NetflixDualSubtitlesContent() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/40 via-black to-black z-0 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-6 text-center lg:text-left">
           <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(198,66,252,0.1)] text-[#C642FC] border-[#C642FC]/20 px-3 py-1">Guide</Badge>
-          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">How to Get Dual Subtitles on Netflix (Step-by-Step)</h1>
+          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">How to Get Dual Subtitles on Netflix (Free, 30-Second Setup)</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 19, 2026</div>
             <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
@@ -161,6 +161,14 @@ export default function NetflixDualSubtitlesContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Does Netflix Have Dual Subtitles?</h2>
+          <p className="text-gray-300 mb-6">Netflix does not have a built-in dual subtitle feature. The Netflix player only allows one subtitle language at a time. To display two subtitle languages simultaneously, you need a free Chrome extension like Funlingo that overlays a second subtitle track on top of the Netflix player. This works on any Netflix title that offers subtitles in your chosen languages.</p>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Netflix Dual Subtitles on Chrome — Why Chrome Is Required</h2>
+          <p className="text-gray-300 mb-6">Dual subtitle extensions work exclusively in the Chrome desktop browser. This is because Chrome extensions can inject an overlay into the Netflix video player — something that isn&apos;t possible on the Netflix mobile app, smart TV apps, or other browsers like Safari or Firefox. If you primarily watch on a TV, you can cast from your Chrome browser using a Chromecast or HDMI cable to get dual subtitles on a bigger screen.</p>
+
+          <hr className="border-white/10 my-12" />
+
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Tips for Getting the Most Out of Netflix Dual Subtitles</h2>
           <p className="text-gray-300 mb-6">Simply turning on dual subtitles is a great start, but there are strategies that can significantly accelerate your progress.</p>
 
@@ -185,6 +193,10 @@ export default function NetflixDualSubtitlesContent() {
               <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
               <p className="text-gray-300"><strong className="text-white">Choose content at your level.</strong> If you are a beginner, animated shows and children&apos;s content use simpler language. Intermediate learners should try dramas and comedies with everyday dialogue.</p>
             </div>
+            <div className="flex items-start gap-3">
+              <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+              <p className="text-gray-300"><strong className="text-white">Try learning Spanish on Netflix.</strong> Spanish content is one of the most popular choices for dual subtitle learning. See our guide on <a href="/blog/learn-spanish-watching-netflix" className="text-[#C642FC] hover:underline">how to learn Spanish on Netflix</a> for show recommendations by level.</p>
+            </div>
           </div>
 
           <p className="text-gray-300 mb-6">For more strategies on building vocabulary while watching, check out our detailed guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary through shows</a>.</p>
@@ -197,7 +209,7 @@ export default function NetflixDualSubtitlesContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-white/5 p-5 rounded-xl border border-white/10">
               <h3 className="text-lg font-bold text-white mb-2">Language Reactor</h3>
-              <p className="text-gray-400 text-sm mb-3">Formerly known as Language Learning with Netflix. Offers dual subtitles and a pop-up dictionary. The free version covers basic dual subtitles, but vocabulary saving and advanced features require a paid plan at around $6 per month.</p>
+              <p className="text-gray-400 text-sm mb-3">Formerly known as Language Learning with Netflix. Offers dual subtitles and a pop-up dictionary. The free version covers basic dual subtitles, but vocabulary saving and advanced features require a paid plan at around $6 per month. For a detailed comparison, see our <a href="/blog/language-reactor-vs-trancy" className="text-[#C642FC] hover:underline">Language Reactor vs Trancy</a> guide.</p>
               <div className="flex flex-wrap gap-2 text-sm">
                 <span className="flex items-center gap-1 text-green-400"><Check className="w-4 h-4" /> Dual subtitles</span>
                 <span className="flex items-center gap-1 text-yellow-400"><Settings className="w-4 h-4" /> Freemium</span>
@@ -206,7 +218,7 @@ export default function NetflixDualSubtitlesContent() {
             </div>
             <div className="bg-white/5 p-5 rounded-xl border border-white/10">
               <h3 className="text-lg font-bold text-white mb-2">Trancy</h3>
-              <p className="text-gray-400 text-sm mb-3">An AI-powered option with sentence analysis and grammar breakdowns. Supports Netflix and YouTube but not Prime Video. The full feature set requires a subscription at approximately $8 per month.</p>
+              <p className="text-gray-400 text-sm mb-3">An AI-powered option with sentence analysis and grammar breakdowns. Supports Netflix and YouTube but not Prime Video. The full feature set requires a subscription at approximately $8 per month. For a detailed look at Trancy&apos;s AI conversation feature, see our <a href="/blog/aitalk-review" className="text-[#C642FC] hover:underline">AiTalk review</a>.</p>
               <div className="flex flex-wrap gap-2 text-sm">
                 <span className="flex items-center gap-1 text-green-400"><Check className="w-4 h-4" /> AI features</span>
                 <span className="flex items-center gap-1 text-yellow-400"><Settings className="w-4 h-4" /> $8/month</span>
@@ -225,6 +237,8 @@ export default function NetflixDualSubtitlesContent() {
           </div>
 
           <p className="text-gray-300 mb-6">For a comprehensive comparison, see our full guide on the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extensions</a>.</p>
+
+          <p className="text-gray-300 mb-6">For a full comparison of all the extensions mentioned above, read our complete guide to <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>.</p>
 
           <hr className="border-white/10 my-12" />
 

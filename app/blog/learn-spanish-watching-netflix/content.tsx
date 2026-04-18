@@ -78,6 +78,7 @@ export default function LearnSpanishNetflixContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Dual Subtitle Method for Spanish</h2>
           <p className="text-gray-300 mb-6">The most effective way to learn Spanish from Netflix is the dual subtitle method. Instead of choosing between Spanish subtitles (which you might not fully understand) or English subtitles (which do not expose you to written Spanish), you use both at the same time.</p>
           <p className="text-gray-300 mb-6">Learn how to set this up in our step-by-step guide: <a href="/blog/how-to-get-dual-subtitles-on-netflix" className="text-[#C642FC] hover:underline">How to Get Dual Subtitles on Netflix</a>.</p>
+          <p className="text-gray-300 mb-6">To set up dual subtitles for any of these shows, follow our step-by-step <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">Netflix dual subtitle guide</a>.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Brain className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Contextual Learning</h3><p className="text-sm text-gray-400">You learn words in the context of real conversations, emotional scenes, and cultural situations, not isolated on flashcards.</p></div>
