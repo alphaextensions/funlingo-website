@@ -237,7 +237,8 @@ export default function NetflixLanguageLearningContent() {
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Best Tools for Netflix Language Learning</h2>
-          <p className="text-gray-300 mb-6">Several Chrome extensions can enhance your Netflix learning experience. Here are the top options. For a detailed comparison, read our <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions guide</a>.</p>
+          <p className="text-gray-300 mb-6">The most important tool for Netflix language learning is a dual subtitle extension — see our <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">top 5 picks for 2026</a>.</p>
+          <p className="text-gray-300 mb-6">Several Chrome extensions can enhance your Netflix learning experience. Here are the top options.</p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-white/5 p-5 rounded-xl border border-[#C642FC]/30">

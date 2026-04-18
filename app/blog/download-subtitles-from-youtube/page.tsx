@@ -81,6 +81,38 @@ const faqSchema = {
   ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Download Subtitles from YouTube",
+  description:
+    "Download subtitles from any YouTube video in SRT, VTT, or TXT format using free methods.",
+  totalTime: "PT5M",
+  estimatedCost: {
+    "@type": "MonetaryAmount",
+    currency: "USD",
+    value: "0",
+  },
+  tool: [{ "@type": "HowToTool", name: "Web browser" }],
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Find the YouTube Video",
+      text: "Navigate to the YouTube video you want to download subtitles from and copy its URL.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Choose a Download Method",
+      text: "Select one of three free methods: an online subtitle downloader tool, a browser extension, or the yt-dlp command line tool.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Download the Subtitles",
+      text: "Paste the video URL into your chosen tool, select the language and format (SRT, VTT, or TXT), and download the subtitle file.",
+    },
+  ],
+};
+
 export default function Page() {
   return (
     <>
@@ -91,6 +123,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <DownloadSubtitlesFromYoutubeContent />
     </>

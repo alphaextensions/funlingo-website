@@ -4,6 +4,7 @@ import YoutubeSubtitleDownloadZhContent from "./content";
 export const metadata: Metadata = {
   title: "YouTube字幕下载 — SRT一键导出指南 (2026)",
   description: "一键下载YouTube字幕为SRT格式。本文介绍多种YouTube字幕下载方法，包括在线工具、浏览器扩展和命令行方案，支持中英文双语字幕导出。",
+  robots: { index: false, follow: true },
   keywords: "youtube字幕下载, youtube 字幕下载, youtube字幕导出srt, youtube字幕下载工具, 下载youtube字幕, youtube subtitle download, youtube cc下载, youtube字幕提取, funlingo双语字幕",
   alternates: { canonical: "/blog/youtube-subtitle-download-zh" },
   openGraph: { title: "YouTube字幕下载 — SRT一键导出指南 (2026)", description: "多种YouTube字幕下载方法，支持SRT格式和双语字幕导出。", type: "article", url: "/blog/youtube-subtitle-download-zh" },

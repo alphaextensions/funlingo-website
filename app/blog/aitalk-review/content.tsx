@@ -27,7 +27,7 @@ export default function AitalkReviewContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
-          <p className="lead text-xl leading-relaxed">AiTalk has been generating buzz among language learners looking for AI-powered conversation practice. Built as a feature within the Trancy ecosystem, AiTalk promises to simulate real-world conversations with an AI tutor that corrects your pronunciation and grammar in real time. But is it worth the price of a Trancy Pro subscription, or are there better ways to practice? We spent several weeks testing AiTalk across multiple languages to bring you this comprehensive review.</p>
+          <p className="lead text-xl leading-relaxed">AiTalk has been generating buzz among language learners looking for AI-powered conversation practice. Built as a feature within the Trancy ecosystem, AiTalk promises to simulate real-world conversations with an AI tutor that corrects your pronunciation and grammar in real time. But is it worth the price of a Trancy Pro subscription, or are there better ways to practice? We spent several weeks testing AiTalk across multiple languages to bring you this comprehensive review. In this AiTalk review, we cover everything you need to know before subscribing.</p>
 
           <p>If you are exploring the broader landscape of AI language tools, you may also want to check out our guide to the <a href="/blog/best-ai-language-learning-tools-2026" className="text-[#C642FC] hover:underline">best AI language learning tools in 2026</a> or our comparison of <a href="/blog/language-reactor-vs-trancy" className="text-[#C642FC] hover:underline">Language Reactor vs Trancy</a>.</p>
 
@@ -35,7 +35,7 @@ export default function AitalkReviewContent() {
 
           {/* What Is AiTalk */}
           <h2 className="text-3xl font-bold text-white">What Is AiTalk?</h2>
-          <p>AiTalk is an AI conversation practice feature built into <strong className="text-white">Trancy</strong>, a popular Chrome extension known primarily for its dual subtitle and reading mode capabilities. Rather than being a standalone app, AiTalk lives within the Trancy interface and is designed to complement the subtitle-based learning that Trancy already provides.</p>
+          <p>AiTalk is not a standalone app — it&apos;s a feature within the Trancy browser extension. Specifically, AiTalk is an AI conversation practice feature built into <strong className="text-white">Trancy</strong>, a popular Chrome extension known primarily for its dual subtitle and reading mode capabilities. AiTalk lives within the Trancy interface and is designed to complement the subtitle-based learning that Trancy already provides.</p>
 
           <p>The core idea is straightforward: after you watch a video with dual subtitles on Netflix or YouTube, you can open AiTalk to practice speaking about what you just watched. The AI generates conversation scenarios based on real-world situations &mdash; ordering food at a restaurant, navigating a job interview, discussing a movie plot &mdash; and responds to your spoken input with corrections and suggestions.</p>
 
@@ -277,6 +277,12 @@ export default function AitalkReviewContent() {
             </ul>
             <p className="text-gray-300 mb-0">Funlingo supports all three major streaming platforms &mdash; including Amazon Prime Video, which neither Trancy nor AiTalk supports. With a 4.92/5 rating on the Chrome Web Store, it is the highest-rated dual subtitle extension available.</p>
           </div>
+
+          <hr className="border-white/10 my-12" />
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Is AiTalk Worth It?</h2>
+          <p className="text-gray-300 mb-6">Whether AiTalk is worth it depends on your learning priorities. If you already pay for Trancy Pro and want to add structured speaking practice to your subtitle-based learning, AiTalk adds genuine value — particularly for its grammar corrections, which are best-in-class. But if you&apos;re paying $11.99/month solely for AiTalk&apos;s conversation features, better alternatives exist.</p>
+          <p className="text-gray-300 mb-6">ChatGPT Voice offers more natural conversations (albeit at $20/month), and Speak provides more structured pronunciation courses at $13.99/month. For most learners, we recommend building a strong input foundation first with free tools like <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Funlingo</a>, and adding conversation practice tools like AiTalk only after you&apos;ve developed solid comprehension.</p>
 
           <hr className="border-white/10 my-10" />
 

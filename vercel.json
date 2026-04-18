@@ -1,3 +1,6 @@
 {
+  "redirects": [
+    { "source": "/blog/how-to-get-dual-subtitles-on-netflix", "destination": "/blog/netflix-dual-subtitles", "permanent": true }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }

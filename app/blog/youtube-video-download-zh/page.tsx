@@ -4,6 +4,7 @@ import YoutubeVideoDownloadZhContent from "./content";
 export const metadata: Metadata = {
   title: "油管视频下载 — 高清无水印保存方法 (2026)",
   description: "最新油管(YouTube)视频下载方法，支持高清1080P/4K无水印保存。包括在线工具、浏览器扩展和命令行方案，电脑和手机都能用。",
+  robots: { index: false, follow: true },
   keywords: "油管视频下载, youtube视频下载, 油管下载, youtube下载工具, 油管视频保存, 高清视频下载, youtube下载器, 免费下载油管视频, 油管视频下载方法, funlingo",
   alternates: { canonical: "/blog/youtube-video-download-zh" },
   openGraph: { title: "油管视频下载 — 高清无水印保存方法 (2026)", description: "最新油管视频下载方法，支持高清无水印保存。", type: "article", url: "/blog/youtube-video-download-zh" },

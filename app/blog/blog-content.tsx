@@ -12,6 +12,33 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -42,
+      title: "Learn Spanish Watching TV: Best Shows, Tools & Daily Routine (2026)",
+      excerpt: "Learn Spanish by watching TV shows on Netflix, Amazon Prime, and YouTube. Best Spanish shows by level, how to use dual subtitles, and a 15-minute daily routine.",
+      date: "April 18, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/learn-spanish-watching-tv"
+    },
+    {
+      id: -41,
+      title: "Does Netflix Have Dual Subtitles? (2026 Answer + Free Fix)",
+      excerpt: "Netflix doesn't support dual subtitles natively — but you can add them for free in 30 seconds with a Chrome extension. Here's how.",
+      date: "April 18, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/does-netflix-have-dual-subtitles"
+    },
+    {
+      id: -40,
+      title: "7 Best Language Reactor Alternatives (2026) — Free & Paid Options",
+      excerpt: "Language Reactor not meeting your needs? Compare 7 alternatives including Funlingo (free, supports Prime Video), Trancy, Immersive Translate, eJOY, and more.",
+      date: "April 18, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/language-reactor-alternatives"
+    },
+    {
       id: -39,
       title: "Best Free Language Learning Tools in 2026 — No Subscriptions Required",
       excerpt: "A complete zero-cost language learning stack. Dual subtitles, flashcards, grammar, speaking practice — every free tool worth using, compared honestly.",
@@ -327,24 +354,6 @@ export default function BlogContent() {
       slug: "/blog/daily-language-learning-habits"
     },
     {
-      id: -19.5,
-      title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide",
-      excerpt: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition to turn every episode into a real lesson.",
-      date: "March 18, 2026",
-      author: "Funlingo Team",
-      category: "Guide",
-      slug: "/blog/learn-japanese-with-anime"
-    },
-    {
-      id: -19.6,
-      title: "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)",
-      excerpt: "Struggling to stay consistent with language learning? Discover 5 simple daily habits that fit into your existing routine and make real progress without extra study time.",
-      date: "March 18, 2026",
-      author: "Funlingo Team",
-      category: "Guide",
-      slug: "/blog/daily-language-learning-habits"
-    },
-    {
       id: -6,
       title: "7 Best Dual Subtitle Extensions for Language Learning (2026)",
       excerpt: "Looking for the best dual subtitle extension? We compare 7 top Chrome extensions for Netflix, YouTube, and Prime Video — including one that's completely free.",
@@ -352,15 +361,6 @@ export default function BlogContent() {
       author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/best-dual-subtitle-extension"
-    },
-    {
-      id: -5,
-      title: "How to Get Dual Subtitles on Netflix (2026 Guide)",
-      excerpt: "Want dual subtitles on Netflix? Learn how to display two languages at once with Funlingo's free Chrome extension. Step-by-step setup in under 30 seconds.",
-      date: "March 14, 2026",
-      author: "Funlingo Team",
-      category: "Guide",
-      slug: "/blog/how-to-get-dual-subtitles-on-netflix"
     },
     {
       id: -4,

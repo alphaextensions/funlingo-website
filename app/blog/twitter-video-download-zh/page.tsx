@@ -4,6 +4,7 @@ import TwitterVideoDownloadZhContent from "./content";
 export const metadata: Metadata = {
   title: "推特视频下载 — 3种免费保存方法 (2026)",
   description: "如何免费下载推特(X)视频？本文介绍3种最简单的推特视频下载方法，包括在线工具、浏览器扩展和手机端方案，支持高清无水印保存。",
+  robots: { index: false, follow: true },
   keywords: "推特视频下载, twitter视频下载, x视频下载, 推特视频保存, 推特视频下载器, 免费下载推特视频, twitter video download, 推特下载工具, 推特视频在线下载, funlingo",
   alternates: { canonical: "/blog/twitter-video-download-zh" },
   openGraph: { title: "推特视频下载 — 3种免费保存方法 (2026)", description: "3种最简单的推特视频下载方法，支持高清无水印保存。", type: "article", url: "/blog/twitter-video-download-zh" },

@@ -29,7 +29,7 @@ export default function LanguageReactorVsTrancyContent() {
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
           <p className="lead text-xl leading-relaxed">If you learn languages by watching movies and TV shows, you have probably come across Language Reactor and Trancy. Both are popular Chrome extensions that add dual subtitles, vocabulary tools, and translation features to streaming platforms. But which one actually deserves a spot in your browser? We put them head to head across pricing, platform support, features, ease of use, and language coverage to help you decide.</p>
 
-          <p>If you want a broader overview of all the tools available, check out our guide to the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extensions</a> or our deep dive into <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>.</p>
+          <p>If you want a broader overview of all the tools available, check out our guide to the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extensions</a> or our deep dive into <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>. Looking for more options beyond these two? Check our roundup of <a href="/blog/language-reactor-alternatives" className="text-[#C642FC] hover:underline">Language Reactor alternatives</a>.</p>
 
           <hr className="border-white/10 my-10" />
 
@@ -136,7 +136,7 @@ export default function LanguageReactorVsTrancyContent() {
           <h2 className="text-3xl font-bold text-white">Ease of Use</h2>
           <p><strong className="text-white">Language Reactor</strong> has a mature, well-polished interface. When you open Netflix or YouTube, the extension automatically activates and displays dual subtitles below the video. The sidebar catalogue mode lets you browse content and filter by language and difficulty. The learning curve is gentle &mdash; most users figure it out within a few minutes.</p>
 
-          <p><strong className="text-white">Trancy</strong> has a slightly busier interface with more options visible at once. The AI grammar panel opens alongside the subtitles, which can feel overwhelming at first. However, once you get used to the layout, it becomes intuitive. Trancy also includes an onboarding tutorial that walks new users through each feature.</p>
+          <p><strong className="text-white">Trancy</strong> has a slightly busier interface with more options visible at once. The AI grammar panel opens alongside the subtitles, which can feel overwhelming at first. However, once you get used to the layout, it becomes intuitive. Trancy also includes an onboarding tutorial that walks new users through each feature. Trancy also includes AiTalk for AI conversation practice — read our full <a href="/blog/aitalk-review" className="text-[#C642FC] hover:underline">AiTalk review</a>.</p>
 
           <p>Both extensions install in under a minute from the Chrome Web Store and require no complex setup.</p>
 

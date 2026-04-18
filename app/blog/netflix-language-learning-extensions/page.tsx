@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import NetflixLanguageLearningExtensionsContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Netflix Language Learning Extensions: Top 5 for 2026 | Funlingo",
-  description: "Compare the best Netflix language learning Chrome extensions for 2026. Detailed reviews of Funlingo, Language Reactor, Trancy, Immersive Translate, and eJOY with pricing, features, and pros/cons.",
+  title: "5 Best Netflix Language Learning Extensions (2026) — Free & Paid Compared",
+  description: "Which Netflix language learning extension is actually worth it? We tested all 5 — Funlingo (free), Language Reactor ($7.99/mo), Trancy ($9.90/mo), Immersive Translate, and eJOY. Full comparison with features, pricing, and verdict.",
   keywords: "netflix language learning extension, netflix dual subtitles extension, learn language netflix chrome, language reactor alternative, best netflix language tool 2026",
   alternates: {
     canonical: "/blog/netflix-language-learning-extensions",
   },
   openGraph: {
-    title: "Netflix Language Learning Extensions: Top 5 for 2026",
-    description: "Compare the best Netflix language learning Chrome extensions for 2026. Detailed reviews of Funlingo, Language Reactor, Trancy, Immersive Translate, and eJOY with pricing, features, and pros/cons.",
+    title: "5 Best Netflix Language Learning Extensions (2026) — Free & Paid Compared",
+    description: "Which Netflix language learning extension is actually worth it? We tested all 5 — Funlingo (free), Language Reactor ($7.99/mo), Trancy ($9.90/mo), Immersive Translate, and eJOY. Full comparison with features, pricing, and verdict.",
     type: "article",
     url: "/blog/netflix-language-learning-extensions",
   },
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Netflix Language Learning Extensions: Top 5 for 2026",
-  "description": "Compare the best Netflix language learning Chrome extensions for 2026. Detailed reviews of Funlingo, Language Reactor, Trancy, Immersive Translate, and eJOY with pricing, features, and pros/cons.",
+  "headline": "Best Netflix Language Learning Extensions (2026): 5 Tools Tested & Compared",
+  "description": "Which Netflix language learning extension is actually worth it? We tested all 5 — Funlingo (free), Language Reactor ($7.99/mo), Trancy ($9.90/mo), Immersive Translate, and eJOY. Full comparison with features, pricing, and verdict.",
   "author": { "@type": "Organization", "name": "Funlingo Team" },
   "datePublished": "2026-03-19",
   "dateModified": "2026-03-19",

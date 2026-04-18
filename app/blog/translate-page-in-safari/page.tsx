@@ -38,11 +38,27 @@ const faqSchema = {
   ]
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Translate a Web Page in Safari",
+  "description": "Translate any web page in Safari on Mac, iPhone, or iPad using built-in translation features.",
+  "totalTime": "PT1M",
+  "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+  "tool": [{ "@type": "HowToTool", "name": "Safari browser" }],
+  "step": [
+    { "@type": "HowToStep", "name": "Open the Web Page in Safari", "text": "Navigate to the web page you want to translate in Safari on your Mac, iPhone, or iPad." },
+    { "@type": "HowToStep", "name": "Access the Translation Feature", "text": "On Mac, click the translate icon in the address bar. On iPhone/iPad, tap the aA button in the address bar." },
+    { "@type": "HowToStep", "name": "Select Your Language", "text": "Choose your preferred language from the list to translate the entire page." }
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <TranslatePageInSafariContent />
     </>
   );

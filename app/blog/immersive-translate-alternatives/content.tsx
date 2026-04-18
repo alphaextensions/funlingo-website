@@ -20,7 +20,7 @@ export default function ImmersiveTranslateAlternativesContent() {
             Guide
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70">
-            Immersive Translate: What It Is & Best Alternatives
+            Best Immersive Translate Alternatives (2026): 6 Free & Paid Options Compared
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400 mt-8">
             <span className="flex items-center gap-2">
@@ -43,163 +43,36 @@ export default function ImmersiveTranslateAlternativesContent() {
       <main className="max-w-3xl mx-auto px-6 pb-24">
         <article className="prose prose-invert prose-lg max-w-none">
 
-          {/* What Is Immersive Translate? */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-white">What Is Immersive Translate?</h2>
-            <p className="text-gray-300 leading-relaxed">
-              Immersive Translate is a popular browser extension designed to help users read
-              foreign-language web content by providing bilingual translations directly on the page.
-              Rather than replacing the original text entirely, it displays translations side by side
-              with the source language, making it a valuable tool for language learners and anyone
-              who frequently browses multilingual content.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              The extension supports a wide range of websites and can translate entire web pages,
-              PDF documents, and even YouTube subtitles into your target language. It leverages
-              multiple translation engines including Google Translate, DeepL, and OpenAI to deliver
-              flexible translation quality depending on your needs.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Since its launch, Immersive Translate has gained a strong following among language
-              learners who want to consume native content without constantly switching between
-              tabs or apps. But is it really the best option available? Let&apos;s take a closer look
-              at its features, pricing, limitations, and the top alternatives you should consider.
-            </p>
-          </section>
-
-          {/* Immersive Translate Features */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-white">Immersive Translate Features</h2>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-white">Web Page Translation</span>
-                    <p className="text-gray-400 text-base mt-1">
-                      Translates entire web pages in a bilingual format, preserving the original layout
-                      while showing translations alongside the source text.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Zap className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-white">YouTube Subtitle Translation</span>
-                    <p className="text-gray-400 text-base mt-1">
-                      Displays dual subtitles on YouTube videos, showing both the original language
-                      and your translation simultaneously.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Shield className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-white">PDF Document Translation</span>
-                    <p className="text-gray-400 text-base mt-1">
-                      Translates PDF files directly in the browser, useful for academic papers,
-                      reports, and documentation in foreign languages.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-white">Ebook & EPUB Support</span>
-                    <p className="text-gray-400 text-base mt-1">
-                      Read ebooks in foreign languages with bilingual support, making it easier to
-                      enjoy literature while learning.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Zap className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-white">Multiple Translation Engines</span>
-                    <p className="text-gray-400 text-base mt-1">
-                      Choose from Google Translate, DeepL, Microsoft Translator, OpenAI, and more
-                      to find the best translation quality for your language pair.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Pricing */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-white">Immersive Translate Pricing</h2>
-            <p className="text-gray-300 leading-relaxed">
-              Immersive Translate offers a free tier that covers basic web page translation and
-              limited subtitle translation. However, many of its most useful features are locked
-              behind the Pro plan, which costs approximately $9.99 per month or $69.99 per year.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              The free version restricts the number of translations per day and limits access
-              to premium translation engines like DeepL and OpenAI. If you rely on the tool
-              heavily for daily language learning or work, you will likely need to upgrade to
-              Pro to avoid hitting translation caps.
-            </p>
-          </section>
-
-          {/* Limitations */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-white">Limitations of Immersive Translate</h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />
-                <p className="text-gray-300">
-                  <span className="font-semibold text-white">Limited Netflix Support:</span>{" "}
-                  Immersive Translate has very limited or no support for Netflix dual subtitles,
-                  making it unsuitable for learners who rely on Netflix as their primary content source.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />
-                <p className="text-gray-300">
-                  <span className="font-semibold text-white">No Vocabulary Building:</span>{" "}
-                  The extension focuses purely on translation and does not offer built-in vocabulary
-                  saving, flashcard creation, or spaced repetition features to reinforce learning.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />
-                <p className="text-gray-300">
-                  <span className="font-semibold text-white">Translation Quality Varies:</span>{" "}
-                  Depending on the engine selected and the language pair, translation quality can
-                  be inconsistent. Some less common language pairs produce awkward or inaccurate results.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Mid CTA */}
-          <section className="mb-16">
-            <div className="bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20 rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-bold text-white mb-3">
-                Looking for dual subtitles on Netflix, YouTube & Prime Video?
-              </h3>
-              <p className="text-gray-400 mb-6">
-                Funlingo gives you free dual subtitles, vocabulary saving, and word-by-word
-                translations across all major streaming platforms.
-              </p>
-              <a
-                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
-                  Try Funlingo Free <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </a>
-            </div>
-          </section>
-
           {/* Best Alternatives */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-white">
               Best Alternatives to Immersive Translate
             </h2>
+
+            {/* Comparison Table */}
+            <div className="overflow-x-auto mb-12">
+              <table className="w-full text-sm text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-white/10">
+                    <th className="py-3 px-4 text-white font-bold">Tool</th>
+                    <th className="py-3 px-4 text-white font-bold">Price</th>
+                    <th className="py-3 px-4 text-white font-bold">Web Translation</th>
+                    <th className="py-3 px-4 text-white font-bold">Netflix Subtitles</th>
+                    <th className="py-3 px-4 text-white font-bold">YouTube Subtitles</th>
+                    <th className="py-3 px-4 text-white font-bold">Prime Video</th>
+                    <th className="py-3 px-4 text-white font-bold">Vocab Saving</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-400">
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Funlingo</td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Google Translate Ext.</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">DeepL Extension</td><td className="py-3 px-4">Free/Pro</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Trancy</td><td className="py-3 px-4">$8/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Language Reactor</td><td className="py-3 px-4">$6/mo</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Microsoft Translator</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                </tbody>
+              </table>
+            </div>
 
             {/* Funlingo */}
             <div className="bg-white/5 border border-[#C642FC]/30 rounded-2xl p-8 mb-8">
@@ -466,6 +339,158 @@ export default function ImmersiveTranslateAlternativesContent() {
                   </ul>
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* What Is Immersive Translate? */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-white">What Is Immersive Translate?</h2>
+            <p className="text-gray-300 leading-relaxed">
+              Immersive Translate is a popular browser extension designed to help users read
+              foreign-language web content by providing bilingual translations directly on the page.
+              Rather than replacing the original text entirely, it displays translations side by side
+              with the source language, making it a valuable tool for language learners and anyone
+              who frequently browses multilingual content.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              The extension supports a wide range of websites and can translate entire web pages,
+              PDF documents, and even YouTube subtitles into your target language. It leverages
+              multiple translation engines including Google Translate, DeepL, and OpenAI to deliver
+              flexible translation quality depending on your needs.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Since its launch, Immersive Translate has gained a strong following among language
+              learners who want to consume native content without constantly switching between
+              tabs or apps. But is it really the best option available? Let&apos;s take a closer look
+              at its features, pricing, limitations, and the top alternatives you should consider.
+            </p>
+          </section>
+
+          {/* Immersive Translate Features */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-white">Immersive Translate Features</h2>
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Globe className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-white">Web Page Translation</span>
+                    <p className="text-gray-400 text-base mt-1">
+                      Translates entire web pages in a bilingual format, preserving the original layout
+                      while showing translations alongside the source text.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Zap className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-white">YouTube Subtitle Translation</span>
+                    <p className="text-gray-400 text-base mt-1">
+                      Displays dual subtitles on YouTube videos, showing both the original language
+                      and your translation simultaneously.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Shield className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-white">PDF Document Translation</span>
+                    <p className="text-gray-400 text-base mt-1">
+                      Translates PDF files directly in the browser, useful for academic papers,
+                      reports, and documentation in foreign languages.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Globe className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-white">Ebook & EPUB Support</span>
+                    <p className="text-gray-400 text-base mt-1">
+                      Read ebooks in foreign languages with bilingual support, making it easier to
+                      enjoy literature while learning.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Zap className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-white">Multiple Translation Engines</span>
+                    <p className="text-gray-400 text-base mt-1">
+                      Choose from Google Translate, DeepL, Microsoft Translator, OpenAI, and more
+                      to find the best translation quality for your language pair.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Pricing */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-white">Immersive Translate Pricing</h2>
+            <p className="text-gray-300 leading-relaxed">
+              Immersive Translate offers a free tier that covers basic web page translation and
+              limited subtitle translation. However, many of its most useful features are locked
+              behind the Pro plan, which costs approximately $9.99 per month or $69.99 per year.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              The free version restricts the number of translations per day and limits access
+              to premium translation engines like DeepL and OpenAI. If you rely on the tool
+              heavily for daily language learning or work, you will likely need to upgrade to
+              Pro to avoid hitting translation caps.
+            </p>
+          </section>
+
+          {/* Limitations */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-white">Limitations of Immersive Translate</h2>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />
+                <p className="text-gray-300">
+                  <span className="font-semibold text-white">Limited Netflix Support:</span>{" "}
+                  Immersive Translate has very limited or no support for Netflix dual subtitles,
+                  making it unsuitable for learners who rely on Netflix as their primary content source.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />
+                <p className="text-gray-300">
+                  <span className="font-semibold text-white">No Vocabulary Building:</span>{" "}
+                  The extension focuses purely on translation and does not offer built-in vocabulary
+                  saving, flashcard creation, or spaced repetition features to reinforce learning.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />
+                <p className="text-gray-300">
+                  <span className="font-semibold text-white">Translation Quality Varies:</span>{" "}
+                  Depending on the engine selected and the language pair, translation quality can
+                  be inconsistent. Some less common language pairs produce awkward or inaccurate results.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Mid CTA */}
+          <section className="mb-16">
+            <div className="bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20 rounded-2xl p-8 text-center">
+              <h3 className="text-2xl font-bold text-white mb-3">
+                Looking for dual subtitles on Netflix, YouTube & Prime Video?
+              </h3>
+              <p className="text-gray-400 mb-6">
+                Funlingo gives you free dual subtitles, vocabulary saving, and word-by-word
+                translations across all major streaming platforms.
+              </p>
+              <a
+                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
+                  Try Funlingo Free <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </a>
             </div>
           </section>
 
