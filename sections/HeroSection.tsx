@@ -37,7 +37,7 @@ export const HeroSection = (): React.JSX.Element => {
             >
               Dual Subtitles <br className="hidden sm:block" />
               for Netflix, YouTube, <br className="hidden sm:block" />
-              Prime &amp; 5+ more
+              Prime &amp; 5 more
             </h1>
 
             <p

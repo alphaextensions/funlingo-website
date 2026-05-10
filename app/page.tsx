@@ -4,7 +4,7 @@ import HomeContent from "./home-content";
 export const metadata: Metadata = {
   title: "Funlingo - Free Dual Subtitles for Netflix, YouTube, Prime, Hotstar & More",
   description: "Free dual subtitle Chrome extension for Netflix, YouTube, Prime, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy & Coursera. AI-powered bilingual subtitles, vocabulary building, and instant translations.",
-  keywords: "free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, dual subtitles hotstar, dual subtitles apple tv, dual subtitles crunchyroll, dual subtitles udemy, dual subtitles coursera, ai powered language learning, best free subtitle tool",
+  keywords: "free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, dual subtitles hotstar, dual subtitles apple tv, dual subtitles crunchyroll, dual subtitles udemy, dual subtitles coursera, ai powered language learning, best free subtitle tool, papaoutai afro soul song translation, lion king song translation",
   alternates: {
     canonical: "/",
   },

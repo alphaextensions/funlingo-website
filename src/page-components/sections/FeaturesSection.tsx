@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const features = [
   {
-    title: "Dual Subtitles on 8+ Streaming & Learning Platforms",
+    title: "Dual Subtitles on Netflix, YouTube & Prime",
     description:
-      "Display two subtitle tracks simultaneously across Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera. See the original language and your native language side by side for instant comprehension and vocabulary building.",
+      "Display two subtitle tracks simultaneously while watching your favorite shows. See the original language and your native language side by side for instant comprehension and vocabulary building.",
     isActive: true,
   },
   {
@@ -52,9 +52,8 @@ export const FeaturesSection = (): React.JSX.Element => {
           </h2>
 
           <p className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] text-center tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
-            Turn your Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV,
-            Crunchyroll, Udemy &amp; Coursera sessions into immersive language
-            lessons with AI-powered tools.
+            Turn your Netflix, YouTube, and Prime Video sessions into immersive
+            language lessons with AI-powered tools.
           </p>
         </div>
       </header>
