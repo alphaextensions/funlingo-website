@@ -1,7 +1,7 @@
 # Funlingo
 
 ## Overview
-Funlingo is a free dual subtitle Chrome extension for language learning. It displays bilingual subtitles simultaneously on Netflix, YouTube, and Prime Video, helping users learn languages naturally through immersive video content.
+Funlingo is a free dual subtitle Chrome extension for language learning. It displays bilingual subtitles simultaneously on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera, helping users learn languages naturally through immersive video and learning content.
 
 ## Key Features
 - Dual subtitles: Display two languages side-by-side while watching videos
@@ -19,6 +19,11 @@ Funlingo is a free dual subtitle Chrome extension for language learning. It disp
 - Netflix
 - YouTube
 - Amazon Prime Video
+- Disney+ Hotstar
+- Apple TV
+- Crunchyroll
+- Udemy
+- Coursera
 - Any website (via Website Translation feature)
 
 ## Browser Compatibility
@@ -73,7 +78,7 @@ Yes, Funlingo is completely free. All features — dual subtitles, hover definit
 Regular subtitles show one language. Funlingo shows both languages simultaneously, lets you click any word for definitions and pronunciation, provides AI-powered grammar explanations, and saves vocabulary for later review with spaced repetition. It turns passive watching into active learning.
 
 ### Which platforms does Funlingo work with?
-Funlingo works on YouTube, Netflix, and Amazon Prime Video for dual subtitles. It also has a website translation feature for reading articles in your target language.
+Funlingo works on Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera for dual subtitles. It also has a website translation feature for reading articles in your target language.
 
 ### Can I learn a language just by watching shows with Funlingo?
 Funlingo is most effective when used actively — clicking words, saving vocabulary, and reviewing regularly. Users report recognizing common phrases and following 30-40% more dialogue within two weeks of consistent use. It supplements but doesn't replace formal study.

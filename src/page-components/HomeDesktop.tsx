@@ -38,7 +38,7 @@ const featureBadges = [
   },
   {
     icon: "/figmaAssets/svg-5.svg",
-    text: "Works on YouTube, Netflix and Prime",
+    text: "Works on Netflix, YouTube, Prime, Hotstar, Apple TV, Crunchyroll, Udemy & Coursera",
   },
   {
     icon: "/figmaAssets/svg-12.svg",
@@ -65,8 +65,8 @@ export const HomeDesktop = (): React.JSX.Element => {
       "priceCurrency": "USD",
       "description": "Free forever version available"
     },
-    "description": "A free dual subtitle Chrome extension that helps users learn languages by watching videos on Netflix, YouTube, and Prime Video with simultaneous bilingual subtitles. Supports 100+ languages with AI-powered translations.",
-    "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Prime Video support, Vocabulary builder, 100+ languages, Language learning tools",
+    "description": "A free dual subtitle Chrome extension that helps users learn languages by watching videos on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera with simultaneous bilingual subtitles. Supports 100+ languages with AI-powered translations.",
+    "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Prime Video support, Disney+ Hotstar support, Apple TV support, Crunchyroll support, Udemy support, Coursera support, Vocabulary builder, 100+ languages, Language learning tools",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.92",
@@ -110,7 +110,7 @@ export const HomeDesktop = (): React.JSX.Element => {
         "name": "Which streaming platforms does Funlingo support?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Funlingo currently supports dual subtitles on YouTube, Netflix, and Amazon Prime Video — three of the world's largest streaming platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
+          "text": "Funlingo supports dual subtitles across 8 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera — covering the world's largest streaming services and top online learning platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
         }
       },
       {
@@ -147,7 +147,7 @@ export const HomeDesktop = (): React.JSX.Element => {
     "name": "Funlingo",
     "url": "https://getfunlingo.com",
     "logo": "https://getfunlingo.com/figmaAssets/logo.png",
-    "description": "Funlingo builds free AI-powered language learning tools. Our Chrome extension provides dual subtitles for Netflix, YouTube, and Prime Video, helping users learn 100+ languages through immersive video content.",
+    "description": "Funlingo builds free AI-powered language learning tools. Our Chrome extension provides dual subtitles for Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera, helping users learn 100+ languages through immersive video content.",
     "sameAs": [
       "https://www.linkedin.com/company/getfunlingo/",
       "https://www.instagram.com/getfunlingo",
@@ -172,10 +172,10 @@ export const HomeDesktop = (): React.JSX.Element => {
 
   return (
     <div className="flex flex-col items-start relative bg-[#000000]">
-      <SEO 
-        title="Funlingo - Free Dual Subtitles for Netflix & YouTube Learning"
-        description="Free dual subtitle Chrome extension for Netflix, YouTube & Prime. AI-powered bilingual subtitles, vocabulary building, and instant translations."
-        keywords="free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, ai powered language learning, best free subtitle tool"
+      <SEO
+        title="Funlingo - Free Dual Subtitles for Netflix, YouTube, Prime, Hotstar & More"
+        description="Free dual subtitle Chrome extension for Netflix, YouTube, Prime, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy & Coursera. AI-powered bilingual subtitles, vocabulary building, and instant translations."
+        keywords="free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, dual subtitles hotstar, dual subtitles apple tv, dual subtitles crunchyroll, dual subtitles udemy, dual subtitles coursera, ai powered language learning, best free subtitle tool"
         canonical="/"
       />
       {/* Schema.org Structured Data Injection */}

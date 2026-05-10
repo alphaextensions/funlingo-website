@@ -36,15 +36,15 @@ export const HeroSection = (): React.JSX.Element => {
               style={{ animationDelay: "400ms" }}
             >
               Dual Subtitles <br className="hidden sm:block" />
-              for Youtube, <br className="hidden sm:block" />
-              Netflix and Prime
+              for Netflix, YouTube, <br className="hidden sm:block" />
+              Prime &amp; 5+ more
             </h1>
 
             <p
               className="relative flex items-center justify-center lg:justify-start self-stretch font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl md:text-2xl lg:text-[length:var(--body-large-regular-font-size)] text-center lg:text-left tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed lg:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "600ms" }}
             >
-              Turn your YouTube, Netflix, and Prime time into an immersive language lesson. Research shows learners who use dual subtitles retain up to 50% more vocabulary than traditional methods. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.92/5 stars on the Chrome Web Store.
+              Turn Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera into an immersive language lesson. Research shows learners who use dual subtitles retain up to 50% more vocabulary than traditional methods. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.92/5 stars on the Chrome Web Store.
             </p>
           </div>
 
@@ -141,6 +141,40 @@ export const HeroSection = (): React.JSX.Element => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Supported Platforms Section */}
+      <div
+        className={`flex flex-col w-full max-w-6xl items-center justify-center gap-4 md:gap-6 relative z-10 mt-4 lg:mt-8 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        style={{ animationDelay: "900ms" }}
+      >
+        <h2 className="text-textwhite text-sm sm:text-base md:text-lg font-semibold tracking-wider uppercase opacity-90 text-center">
+          Works on your favorite platforms
+        </h2>
+        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+          {[
+            { name: "Apple TV", icon: "https://www.google.com/s2/favicons?domain=tv.apple.com&sz=128" },
+            { name: "Disney+ Hotstar", icon: "https://www.google.com/s2/favicons?domain=hotstar.com&sz=128" },
+            { name: "YouTube", icon: "https://www.google.com/s2/favicons?domain=youtube.com&sz=128" },
+            { name: "Crunchyroll", icon: "https://www.google.com/s2/favicons?domain=crunchyroll.com&sz=128" },
+            { name: "Udemy", icon: "https://www.google.com/s2/favicons?domain=udemy.com&sz=128" },
+            { name: "Coursera", icon: "https://www.google.com/s2/favicons?domain=coursera.org&sz=128" },
+            { name: "Prime Video", icon: "https://www.google.com/s2/favicons?domain=primevideo.com&sz=128" },
+            { name: "Netflix", icon: "https://www.google.com/s2/favicons?domain=netflix.com&sz=128" },
+          ].map((p) => (
+            <img
+              key={p.name}
+              src={p.icon}
+              alt={`${p.name} logo`}
+              title={p.name}
+              width={48}
+              height={48}
+              loading="lazy"
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain hover:scale-110 transition-transform duration-300 drop-shadow-lg"
+            />
+          ))}
         </div>
       </div>
 
