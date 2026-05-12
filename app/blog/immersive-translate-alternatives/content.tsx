@@ -20,7 +20,7 @@ export default function ImmersiveTranslateAlternativesContent() {
             Guide
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70">
-            Immersive Translate: What It Is & Best Alternatives
+            Best Immersive Translate Alternatives (2026): 6 Free &amp; Paid Options Compared
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400 mt-8">
             <span className="flex items-center gap-2">
@@ -42,6 +42,47 @@ export default function ImmersiveTranslateAlternativesContent() {
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pb-24">
         <article className="prose prose-invert prose-lg max-w-none">
+
+          {/* Quick Comparison Table */}
+          <section className="mb-16">
+            <p className="text-gray-300 leading-relaxed mb-6">Looking for an Immersive Translate alternative? Here&apos;s a quick side-by-side of the six options we cover in this guide. Funlingo is the only fully free option that supports dual subtitles on Netflix, YouTube, and Amazon Prime Video.</p>
+            <div className="overflow-x-auto rounded-xl border border-white/10 bg-white/5 my-8 not-prose">
+              <table className="w-full text-sm text-left text-gray-300">
+                <thead className="text-xs uppercase tracking-wider bg-white/5 text-gray-400">
+                  <tr>
+                    <th className="px-4 py-3">Tool</th>
+                    <th className="px-4 py-3">Price</th>
+                    <th className="px-4 py-3">Web</th>
+                    <th className="px-4 py-3">Netflix</th>
+                    <th className="px-4 py-3">YouTube</th>
+                    <th className="px-4 py-3">Prime Video</th>
+                    <th className="px-4 py-3">Vocab</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5">
+                  {[
+                    { tool: "Funlingo", price: "Free", web: "—", netflix: "✓", youtube: "✓", prime: "✓", vocab: "✓", highlight: true },
+                    { tool: "Google Translate Ext.", price: "Free", web: "✓", netflix: "—", youtube: "—", prime: "—", vocab: "—" },
+                    { tool: "DeepL Extension", price: "Free / Pro", web: "✓", netflix: "—", youtube: "—", prime: "—", vocab: "—" },
+                    { tool: "Trancy", price: "$8/mo", web: "✓", netflix: "✓", youtube: "✓", prime: "—", vocab: "Pro only" },
+                    { tool: "Language Reactor", price: "$6/mo", web: "—", netflix: "✓", youtube: "✓", prime: "—", vocab: "Pro only" },
+                    { tool: "Microsoft Translator", price: "Free", web: "✓", netflix: "—", youtube: "—", prime: "—", vocab: "—" },
+                  ].map((row, i) => (
+                    <tr key={i} className={row.highlight ? "bg-[rgba(198,66,252,0.08)]" : ""}>
+                      <td className={`px-4 py-3 ${row.highlight ? "font-bold text-white" : "text-gray-200"}`}>{row.tool}{row.highlight ? <span className="ml-2 text-xs text-[#C642FC]">★ Best free</span> : null}</td>
+                      <td className="px-4 py-3">{row.price}</td>
+                      <td className="px-4 py-3">{row.web}</td>
+                      <td className="px-4 py-3">{row.netflix}</td>
+                      <td className="px-4 py-3">{row.youtube}</td>
+                      <td className="px-4 py-3">{row.prime}</td>
+                      <td className="px-4 py-3">{row.vocab}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-400 text-sm italic">Jump to the full breakdown of each tool below, or read on for context on Immersive Translate itself.</p>
+          </section>
 
           {/* What Is Immersive Translate? */}
           <section className="mb-16">

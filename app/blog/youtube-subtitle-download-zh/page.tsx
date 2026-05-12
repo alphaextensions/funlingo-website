@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   keywords: "youtube字幕下载, youtube 字幕下载, youtube字幕导出srt, youtube字幕下载工具, 下载youtube字幕, youtube subtitle download, youtube cc下载, youtube字幕提取, funlingo双语字幕",
   alternates: { canonical: "/blog/youtube-subtitle-download-zh" },
   openGraph: { title: "YouTube字幕下载 — SRT一键导出指南 (2026)", description: "多种YouTube字幕下载方法，支持SRT格式和双语字幕导出。", type: "article", url: "/blog/youtube-subtitle-download-zh" },
+  robots: { index: false, follow: true },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "YouTube字幕下载 — SRT一键导出指南 (2026)", "description": "多种YouTube字幕下载方法，支持SRT格式导出。", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-21", "dateModified": "2026-03-21", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

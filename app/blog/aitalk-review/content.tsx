@@ -16,7 +16,7 @@ export default function AitalkReviewContent() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/40 via-black to-black z-0 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-6 text-center lg:text-left">
           <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(198,66,252,0.1)] text-[#C642FC] border-[#C642FC]/20 px-3 py-1">AI Translation</Badge>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">AiTalk Review &mdash; AI Language Practice Tool (2026)</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">AiTalk Review (2026): Is It Worth $11.99/Month? Honest Test Results</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 21, 2026</div>
             <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
@@ -27,7 +27,7 @@ export default function AitalkReviewContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
-          <p className="lead text-xl leading-relaxed">AiTalk has been generating buzz among language learners looking for AI-powered conversation practice. Built as a feature within the Trancy ecosystem, AiTalk promises to simulate real-world conversations with an AI tutor that corrects your pronunciation and grammar in real time. But is it worth the price of a Trancy Pro subscription, or are there better ways to practice? We spent several weeks testing AiTalk across multiple languages to bring you this comprehensive review.</p>
+          <p className="lead text-xl leading-relaxed">In this AiTalk review, we cover everything you need to know before subscribing. AiTalk has been generating buzz among language learners looking for AI-powered conversation practice. AiTalk is not a standalone app &mdash; it&apos;s a feature within the Trancy browser extension, and it promises to simulate real-world conversations with an AI tutor that corrects your pronunciation and grammar in real time. But is it worth the price of a Trancy Pro subscription, or are there better ways to practice? We spent several weeks testing AiTalk across multiple languages to bring you this comprehensive review.</p>
 
           <p>If you are exploring the broader landscape of AI language tools, you may also want to check out our guide to the <a href="/blog/best-ai-language-learning-tools-2026" className="text-[#C642FC] hover:underline">best AI language learning tools in 2026</a> or our comparison of <a href="/blog/language-reactor-vs-trancy" className="text-[#C642FC] hover:underline">Language Reactor vs Trancy</a>.</p>
 
@@ -311,6 +311,10 @@ export default function AitalkReviewContent() {
           </div>
 
           <hr className="border-white/10 my-10" />
+
+          {/* Is AiTalk Worth It? */}
+          <h2 className="text-3xl font-bold text-white">Is AiTalk Worth It?</h2>
+          <p>Whether AiTalk is worth it depends on your learning priorities. If you already pay for Trancy Pro and want to add structured speaking practice to your subtitle-based learning, AiTalk adds genuine value &mdash; particularly for its grammar corrections, which are best-in-class. But if you&apos;re paying $11.99/month solely for AiTalk&apos;s conversation features, better alternatives exist. ChatGPT Voice offers more natural conversations (albeit at $20/month), and Speak provides more structured pronunciation courses at $13.99/month. For most learners, we recommend building a strong input foundation first with free tools like Funlingo, and adding conversation practice tools like AiTalk only after you&apos;ve developed solid comprehension.</p>
 
           {/* Final Verdict */}
           <h2 className="text-3xl font-bold text-white">Final Verdict</h2>

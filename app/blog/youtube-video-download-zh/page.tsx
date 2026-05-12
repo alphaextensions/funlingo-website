@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   keywords: "油管视频下载, youtube视频下载, 油管下载, youtube下载工具, 油管视频保存, 高清视频下载, youtube下载器, 免费下载油管视频, 油管视频下载方法, funlingo",
   alternates: { canonical: "/blog/youtube-video-download-zh" },
   openGraph: { title: "油管视频下载 — 高清无水印保存方法 (2026)", description: "最新油管视频下载方法，支持高清无水印保存。", type: "article", url: "/blog/youtube-video-download-zh" },
+  robots: { index: false, follow: true },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "油管视频下载 — 高清无水印保存方法 (2026)", "description": "最新油管视频下载方法，支持高清无水印保存。", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-21", "dateModified": "2026-03-21", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };
