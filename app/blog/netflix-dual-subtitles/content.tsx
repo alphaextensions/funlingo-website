@@ -15,7 +15,7 @@ export default function NetflixDualSubtitlesContent() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/40 via-black to-black z-0 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-6 text-center lg:text-left">
           <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(198,66,252,0.1)] text-[#C642FC] border-[#C642FC]/20 px-3 py-1">Guide</Badge>
-          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">How to Get Dual Subtitles on Netflix (Step-by-Step)</h1>
+          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">How to Get Dual Subtitles on Netflix (Free, 30-Second Setup)</h1>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 19, 2026</div>
             <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
@@ -25,6 +25,14 @@ export default function NetflixDualSubtitlesContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Does Netflix Have Dual Subtitles?</h2>
+          <p className="leading-relaxed text-gray-300 mb-6">No &mdash; Netflix does not include a built-in dual subtitle feature. The native Netflix player only lets you pick one subtitle language at a time, with no option to layer a second track on top. To show two subtitle languages at once, you need a free Chrome extension such as Funlingo, which overlays a second subtitle line directly on the Netflix player. The overlay syncs automatically with the original Netflix subtitles, so both languages stay in time with the dialogue. This works on any Netflix title that ships with subtitles in the two languages you want to display.</p>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 mt-10">Netflix Dual Subtitles on Chrome &mdash; Why Chrome Is Required</h2>
+          <p className="leading-relaxed text-gray-300 mb-6">Dual subtitle extensions run only inside the Chrome desktop browser. The reason is technical: a Chrome extension can inject custom UI into Netflix&apos;s web player, while the Netflix mobile app, smart TV app, and other browsers (Safari, Firefox) don&apos;t allow the same kind of in-player overlay. If your habit is to watch on a TV, you can keep dual subtitles by casting from your laptop &mdash; either via a Chromecast or an HDMI cable &mdash; so the overlay still renders even though the picture is on a bigger screen.</p>
+
+          <hr className="border-white/10 my-12" />
+
           <h2 className="text-2xl font-bold text-white mb-4">What Are Netflix Dual Subtitles?</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Netflix dual subtitles let you display two subtitle tracks at the same time while watching any show or movie. Your native language appears alongside your target language, so you can follow the dialogue in both languages without pausing or switching back and forth.</p>
           <p className="leading-relaxed text-gray-300 mb-6">Netflix itself only allows one subtitle track at a time. To get dual subtitles, you need a browser extension that overlays a second subtitle line on top of the Netflix player. The entire setup takes less than two minutes, and in this guide we will walk you through every step.</p>
@@ -224,7 +232,7 @@ export default function NetflixDualSubtitlesContent() {
             </div>
           </div>
 
-          <p className="text-gray-300 mb-6">For a comprehensive comparison, see our full guide on the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extensions</a>.</p>
+          <p className="text-gray-300 mb-6">For a comprehensive comparison, see our full guide on the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extensions</a>. For a deeper, Netflix-specific breakdown, read our complete guide to <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>.</p>
 
           <hr className="border-white/10 my-12" />
 

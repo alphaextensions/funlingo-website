@@ -29,6 +29,8 @@ export default function NetflixLanguageLearningExtensionsContent() {
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
           <p className="lead text-xl leading-relaxed">Netflix has become one of the most popular platforms for language learning, and for good reason: thousands of shows and movies in dozens of languages, professional subtitles, and content you actually want to watch. But Netflix&apos;s built-in subtitle system only shows one language at a time. That is where Chrome extensions come in &mdash; they unlock dual subtitles, word lookups, and vocabulary tools that transform passive watching into active learning. If you&apos;ve been searching for a language learning with Netflix Chrome extension, you&apos;re not alone &mdash; it&apos;s one of the most popular ways to combine entertainment with real language progress.</p>
 
+          <p>Before we dive into the extensions, make sure you understand how to <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">set up dual subtitles on Netflix</a> &mdash; it takes under 30 seconds.</p>
+
           <p>We tested and compared the five most popular Netflix language learning extensions available in 2026. Below you will find detailed reviews, a side-by-side comparison table, and guidance on choosing the right tool for your learning style. If you are also interested in how <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">dual subtitle extensions</a> work across platforms, or want broader tips on <a href="/blog/netflix-language-learning" className="text-[#C642FC] hover:underline">learning languages with Netflix</a>, check out our dedicated guides.</p>
 
           <hr className="border-white/10 my-10" />

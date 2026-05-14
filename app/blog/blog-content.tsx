@@ -12,6 +12,33 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -42,
+      title: "Learn Spanish Watching TV: The Practical Guide That Actually Works (2026)",
+      excerpt: "Which Spanish shows to start with by level, how to set up dual subtitles, a 15-minute daily routine, and the four beginner mistakes that stall progress.",
+      date: "May 15, 2026",
+      author: "Funlingo Team",
+      category: "Spanish Learning",
+      slug: "/blog/learn-spanish-watching-tv"
+    },
+    {
+      id: -41,
+      title: "7 Best Language Reactor Alternatives (2026) — Free & Paid Options",
+      excerpt: "Language Reactor not meeting your needs? Compare 7 alternatives including Funlingo (free, supports Prime Video), Trancy, Immersive Translate, eJOY, and more.",
+      date: "May 15, 2026",
+      author: "Funlingo Team",
+      category: "Comparison",
+      slug: "/blog/language-reactor-alternatives"
+    },
+    {
+      id: -40,
+      title: "Does Netflix Have Dual Subtitles? (2026 Quick Answer)",
+      excerpt: "Short answer: no. Netflix doesn't support dual subtitles natively — but a free Chrome extension adds them in 30 seconds. Here's the full explanation.",
+      date: "May 13, 2026",
+      author: "Funlingo Team",
+      category: "Quick Answer",
+      slug: "/blog/does-netflix-have-dual-subtitles"
+    },
+    {
       id: -39,
       title: "Best Free Language Learning Tools in 2026 — No Subscriptions Required",
       excerpt: "A complete zero-cost language learning stack. Dual subtitles, flashcards, grammar, speaking practice — every free tool worth using, compared honestly.",
