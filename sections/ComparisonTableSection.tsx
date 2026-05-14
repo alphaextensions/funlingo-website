@@ -155,7 +155,7 @@ export const ComparisonTableSection = (): React.JSX.Element => {
             It is the only tool that combines in-player bilingual subtitles, a multi-translation selector (1/2/3/All translations per word),
             inline native meanings for difficult words, per-word pronunciation with audio playback, and a built-in vocabulary builder — all
             completely free. While Trancy excels at deep reading modes and Immersive Translate offers broad web translation, Funlingo is
-            purpose-built for passive language learning through streaming content on Netflix, YouTube, and Prime Video.
+            purpose-built for passive language learning through streaming and learning content on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera.
           </p>
         </div>
       </div>

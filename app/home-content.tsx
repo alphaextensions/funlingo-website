@@ -22,7 +22,7 @@ const featureBadges = [
   },
   {
     icon: "/figmaAssets/svg-5.svg",
-    text: "Works on YouTube, Netflix and Prime",
+    text: "Works on Netflix, YouTube, Prime, Hotstar, Apple TV, Crunchyroll, Udemy & Coursera",
   },
   {
     icon: "/figmaAssets/svg-12.svg",
