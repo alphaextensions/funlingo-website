@@ -22,7 +22,7 @@ const featureBadges = [
   },
   {
     icon: "/figmaAssets/svg-5.svg",
-    text: "Works on YouTube, Netflix and Prime",
+    text: "Works on Netflix, YouTube, Prime & 5 more",
   },
   {
     icon: "/figmaAssets/svg-12.svg",
