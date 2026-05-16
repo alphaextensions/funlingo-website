@@ -53,7 +53,7 @@ const qaItems = [
   {
     icon: Languages,
     title: "Which sites are supported?",
-    description: "Funlingo supports dual subtitles on YouTube, Netflix, and Amazon Prime Video — three platforms with over 1 billion combined monthly users and millions of videos in 100+ languages. The extension integrates directly into the video player for a seamless experience.",
+    description: "Funlingo supports dual subtitles on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera — 8 platforms covering the world's biggest streaming services and top online learning platforms, with billions of combined users and millions of videos in 100+ languages. The extension integrates directly into the video player for a seamless experience.",
     color: "text-cyan-300",
     bgColor: "bg-cyan-500/20",
     borderColor: "border-cyan-400/30",

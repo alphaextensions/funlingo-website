@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Funlingo - Free Dual Subtitles for Language Learning",
     template: "%s | Funlingo",
   },
-  description: "Free dual subtitle Chrome extension for Netflix, YouTube & Prime. AI-powered bilingual subtitles, vocabulary building, and instant translations.",
+  description: "Free dual subtitle Chrome extension for Netflix, YouTube, Prime, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy & Coursera. AI-powered bilingual subtitles, vocabulary building, and instant translations.",
   openGraph: {
     siteName: "Funlingo",
     images: ["/og-image.jpg"],

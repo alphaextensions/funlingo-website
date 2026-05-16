@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from "react";
 
 const steps = [
   "1. Install the extension on Chrome",
-  "2. Open a video on Youtube, Netflix, or Prime",
+  "2. Open a video on Netflix, YouTube, Prime, Hotstar, Apple TV, Crunchyroll, Udemy or Coursera",
   "3. Activate dual subtitles in your target language",
 ];
 
