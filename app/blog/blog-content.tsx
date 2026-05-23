@@ -12,6 +12,51 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -47,
+      title: "Google Meet Attendance: The Complete 2026 Guide (Free)",
+      excerpt: "Everything you need to know about Google Meet attendance — what Google ships natively, what's missing, and how to add full automatic tracking for free in 30 seconds.",
+      date: "May 23, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/google-meet-attendance"
+    },
+    {
+      id: -46,
+      title: "How to Take Attendance on Google Meet (Free, 30-Second Setup)",
+      excerpt: "The fastest way to take attendance on Google Meet — free, no signup, no IT ticket. Step-by-step guide with screenshots, plus tips for late arrivals and exports.",
+      date: "May 23, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/how-to-take-attendance-on-google-meet"
+    },
+    {
+      id: -45,
+      title: "5 Best Google Meet Attendance Extensions (2026) — Free & Paid Compared",
+      excerpt: "Which Google Meet attendance extension is actually worth it? We tested 5 — Trackr (free), Meet Attendance, Vexa, Fellow, and Read.ai. Honest comparison with pricing and verdict.",
+      date: "May 23, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/best-google-meet-attendance-extensions"
+    },
+    {
+      id: -44,
+      title: "Does Google Meet Have Attendance? (2026 Answer + Free Workaround)",
+      excerpt: "Free Google Meet does not have attendance tracking — only paid Workspace Education plans do. But you can add full automatic attendance for free in 30 seconds. Here's how.",
+      date: "May 23, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/does-google-meet-have-attendance"
+    },
+    {
+      id: -43,
+      title: "Google Meet Attendance for Teachers: A No-Nonsense Guide (Free)",
+      excerpt: "A practical guide to taking attendance on Google Meet without disrupting class. Built for K-12 and higher-ed teachers — free Chrome extension, no IT ticket.",
+      date: "May 23, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/google-meet-attendance-for-teachers"
+    },
+    {
       id: -42,
       title: "Learn Spanish Watching TV: Best Shows, Tools & Daily Routine (2026)",
       excerpt: "Learn Spanish by watching TV shows on Netflix, Amazon Prime, and YouTube. Best Spanish shows by level, how to use dual subtitles, and a 15-minute daily routine.",
