@@ -12,6 +12,24 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -49,
+      title: "HIPAA-Friendly Therapy Session Attendance Tracker (Free, Local-Only)",
+      excerpt: "Group therapy and telehealth need an attendance tracker that doesn't store your roster in someone else's cloud. Trackr is a free Chrome extension for Google Meet — local-only data, no BAA required, no signup.",
+      date: "May 26, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/therapy-session-attendance-tracker"
+    },
+    {
+      id: -48,
+      title: "Best Attendance Tracker for Online Classes (2026) — Free, No Signup",
+      excerpt: "Online classes need a different kind of attendance tracker. Compare free and paid options for instructors on Google Meet, Zoom, and Teams — with feature breakdown and the one free extension that actually works.",
+      date: "May 26, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/attendance-tracker-for-online-classes"
+    },
+    {
       id: -47,
       title: "Google Meet Attendance: The Complete 2026 Guide (Free)",
       excerpt: "Everything you need to know about Google Meet attendance — what Google ships natively, what's missing, and how to add full automatic tracking for free in 30 seconds.",
