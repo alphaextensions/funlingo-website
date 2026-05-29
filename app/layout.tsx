@@ -25,14 +25,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <Toaster />
-        {/* Freshworks Customer Support Chat Widget */}
+        {/* Crisp Customer Support Chat Widget */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              var s = document.createElement('script');
-              s.src = '//in.fw-cdn.com/32727940/1543054.js';
-              s.setAttribute('chat', 'true');
-              document.body.appendChild(s);
+              window.$crisp=[];window.CRISP_WEBSITE_ID="1aa3f434-80cf-4d5e-b1f4-28cf8936dbea";
+              (function(){var d=document;var s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
             `,
           }}
         />
