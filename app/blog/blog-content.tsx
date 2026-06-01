@@ -12,6 +12,42 @@ import Link from "next/link";
 export default function BlogContent() {
   const posts = [
     {
+      id: -51,
+      title: "How to Export Google Meet Attendance to Google Sheets (Free, 2026)",
+      excerpt: "Free Google Meet has no built-in attendance export. Here's how to get your Meet roster into Google Sheets — the manual way, the paid Workspace way, and the free one-click way with Trackr.",
+      date: "May 31, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/export-google-meet-attendance-to-sheets"
+    },
+    {
+      id: -50,
+      title: "Meeting Attendance Tracker for Remote Teams (Free, No Bot Required)",
+      excerpt: "Track Google Meet attendance for remote-team standups and syncs without a creepy bot in the call. Free Chrome extension, no recording, data stays on your laptop, and it tracks patterns across recurring meetings.",
+      date: "May 31, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/meeting-attendance-tracker-remote-teams"
+    },
+    {
+      id: -49,
+      title: "HIPAA-Friendly Therapy Session Attendance Tracker (Free, Local-Only)",
+      excerpt: "Group therapy and telehealth need an attendance tracker that doesn't store your roster in someone else's cloud. Trackr is a free Chrome extension for Google Meet — local-only data, no BAA required, no signup.",
+      date: "May 26, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/therapy-session-attendance-tracker"
+    },
+    {
+      id: -48,
+      title: "Best Attendance Tracker for Online Classes (2026) — Free, No Signup",
+      excerpt: "Online classes need a different kind of attendance tracker. Compare free and paid options for instructors on Google Meet, Zoom, and Teams — with feature breakdown and the one free extension that actually works.",
+      date: "May 26, 2026",
+      author: "Funlingo Team",
+      category: "Meet Attendance",
+      slug: "/blog/attendance-tracker-for-online-classes"
+    },
+    {
       id: -47,
       title: "Google Meet Attendance: The Complete 2026 Guide (Free)",
       excerpt: "Everything you need to know about Google Meet attendance — what Google ships natively, what's missing, and how to add full automatic tracking for free in 30 seconds.",
