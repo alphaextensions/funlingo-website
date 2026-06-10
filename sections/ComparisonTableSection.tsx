@@ -62,6 +62,14 @@ export const ComparisonTableSection = (): React.JSX.Element => {
         <p className="text-gray-400 max-w-2xl text-lg">
           See why learners are switching to Funlingo for immersive, AI-powered language acquisition.
         </p>
+        <p className="text-gray-500 text-sm max-w-2xl">
+          Looking for an{" "}
+          <a href="/blog/immersive-translate-alternatives" className="text-[#C642FC] hover:underline">immersive translate alternative</a>
+          ? Read our full{" "}
+          <a href="/blog/best-ai-translator-tools" className="text-[#C642FC] hover:underline">AI translator tools comparison</a>{" "}
+          or get the{" "}
+          <a href="/chrome-extension" className="text-[#C642FC] hover:underline">free Chrome extension</a>.
+        </p>
       </div>
 
       {/* Table Container */}

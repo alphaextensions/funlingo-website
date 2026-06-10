@@ -9,7 +9,7 @@
     { "source": "/blog/how-to-take-attendance-on-google-meet", "destination": "/blog", "permanent": true },
     { "source": "/blog/best-google-meet-attendance-extensions", "destination": "/blog", "permanent": true },
     { "source": "/blog/does-google-meet-have-attendance", "destination": "/blog", "permanent": true },
-    { "source": "/blog/google-meet-attendance-for-teachers", "destination": "/blog", "permanent": true }
-  ],
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/" }]
+    { "source": "/blog/google-meet-attendance-for-teachers", "destination": "/blog", "permanent": true },
+    { "source": "/ai-translator-tools", "destination": "/blog/best-ai-translator-tools", "permanent": true }
+  ]
 }

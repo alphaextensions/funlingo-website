@@ -27,6 +27,15 @@ export const accBar = (c: string) => CATEGORY_COLORS[c]?.bar ?? CATEGORY_COLORS.
 
 export const posts: BlogPost[] = [
     {
+      id: 6,
+      title: "Immersive Translate Free: What You Get Without Paying (2026)",
+      excerpt: "What Immersive Translate's free tier really includes, what Pro unlocks, and the best completely-free alternative for translating video subtitles on Netflix, YouTube & Prime.",
+      date: "June 10, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/immersive-translate-free"
+    },
+    {
       id: -42,
       title: "Learn Spanish Watching TV: Best Shows, Tools & Daily Routine (2026)",
       excerpt: "Learn Spanish by watching TV shows on Netflix, Amazon Prime, and YouTube. Best Spanish shows by level, how to use dual subtitles, and a 15-minute daily routine.",
