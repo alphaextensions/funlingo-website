@@ -26,6 +26,13 @@ export default function LearnKoreanYouTubeContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/learn-korean-watching-youtube-hero.jpg"
+            alt="A YouTube video with Korean Hangul and English dual subtitles for learning Korean"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={[
             "YouTube offers free, real Korean across every level, from structured lessons to vlogs, variety shows, K-pop, and gaming.",
             "Learn Hangul first (it takes only a few hours) so you can read Korean subtitles instead of relying on romanization.",
@@ -58,6 +65,13 @@ export default function LearnKoreanYouTubeContent() {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><MessageSquare className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Podcasts and Talk Shows</h3><p className="text-sm text-gray-400">Korean podcast-style channels and interview shows. These provide extended listening practice with natural conversational flow between speakers.</p></div>
           </div>
 
+          <img
+            src="/blog-images/learn-korean-watching-youtube-inline.jpg"
+            alt="Studying Korean on a phone and laptop with Hangul subtitles and a daily routine"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Your 15-Minute Daily Korean Routine</h2>
           <p className="text-gray-300 mb-6">Consistency matters more than intensity. This daily routine takes just 15 minutes and uses YouTube as your primary learning tool.</p>
 
