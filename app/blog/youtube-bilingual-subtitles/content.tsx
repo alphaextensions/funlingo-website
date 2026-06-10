@@ -26,6 +26,13 @@ export default function YoutubeBilingualSubtitlesContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/youtube-bilingual-subtitles-hero.jpg"
+            alt="A YouTube video player showing two subtitle lines in different languages at once"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={["Bilingual subtitles show your target and native language on screen at the same time", "YouTube natively displays only one subtitle track at a time, so you need an extension", "Funlingo adds free bilingual subtitles to YouTube, Netflix, and Prime Video", "It works with both manually uploaded and auto-generated captions across 100+ languages", "News, vlogs, educational channels, and interviews are the best content for learning"]} />
           <h2 className="text-2xl font-bold text-white mb-4">What Are Bilingual Subtitles on YouTube?</h2>
           <DualSubtitleDemo targetLang="Spanish" target="El tren llegó tarde por la lluvia" highlight="lluvia" native="The train arrived late because of the rain" />
@@ -35,6 +42,13 @@ export default function YoutubeBilingualSubtitlesContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/youtube-bilingual-subtitles-inline.jpg"
+            alt="Close-up of bilingual captions with a highlighted word and a definition popup"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Why YouTube Does Not Offer Bilingual Subtitles Natively</h2>
           <p className="text-gray-300 mb-6">Despite having auto-generated captions in dozens of languages and a translation feature, YouTube only lets you display one subtitle track at a time. You can turn on English captions or Spanish captions, but not both simultaneously.</p>
           <p className="text-gray-300 mb-6">YouTube&apos;s auto-translate feature generates a machine translation of existing captions, but it replaces the original text instead of showing both. This means you lose access to the original language subtitles when you enable translation.</p>

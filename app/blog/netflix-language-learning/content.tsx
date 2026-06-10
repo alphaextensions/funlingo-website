@@ -27,7 +27,13 @@ export default function NetflixLanguageLearningContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
-
+          <img
+            src="/blog-images/netflix-language-learning-hero.jpg"
+            alt="A TV with dual subtitles surrounded by a world map and floating languages"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={["Netflix works for language learning because it delivers comprehensible input: authentic native dialogue with visual context that builds vocabulary and listening naturally.", "Set up a dedicated profile, switch audio to your target language, and add a dual subtitle extension like Funlingo for the best results.", "The dual subtitle method shows your target language and native language together, so you read the original first and glance at the translation only when needed.", "Match content to your level: beginners should start with shows like Extra (Spanish) or Midnight Diner (Japanese) where dialogue is slow and clear.", "Consistency beats duration. A focused 15-minute daily routine outperforms occasional multi-hour binges."]} />
 
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Netflix is one of the most powerful language learning tools available today. With thousands of shows and movies in dozens of languages, it provides authentic native content that textbooks simply cannot match. This guide covers everything you need to turn your Netflix habit into a language learning routine.</p>
@@ -80,6 +86,13 @@ export default function NetflixLanguageLearningContent() {
             </div>
           </div>
 
+          <img
+            src="/blog-images/netflix-language-learning-inline.jpg"
+            alt="A 15-minute daily language-learning habit loop with a clock, screen, and vocabulary card"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Dual Subtitle Method</h2>
           <p className="text-gray-300 mb-6">The dual subtitle method is the most effective way to learn from Netflix. Instead of choosing between native language subtitles (comfortable but passive) or target language subtitles (active but frustrating), you display both simultaneously.</p>
           <p className="text-gray-300 mb-6">Here is how it works: your target language appears as the primary subtitle, and your native language appears below it. You read the target language first, and glance at the translation only when needed. Over time, you glance down less and less as your comprehension improves.</p>

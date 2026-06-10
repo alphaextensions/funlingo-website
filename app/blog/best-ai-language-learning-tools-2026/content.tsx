@@ -28,6 +28,13 @@ export default function BlogPostContent() {
 
       <main className="w-full max-w-4xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/best-ai-language-learning-tools-2026-hero.jpg"
+            alt="A futuristic AI language-learning dashboard with video subtitles, AI chat, and vocabulary panels"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={["AI language learning lets you learn in context from the shows and videos you already watch, not isolated drills.", "In-player dual subtitles plus instant multi-translation lookup shorten the path from exposure to usable speech.", "Funlingo is the top free pick: dual subtitles on Netflix, YouTube, and Prime Video with no premium tier.", "Funlingo's unique UX includes a 1/2/3/All translation selector and per-word pronunciation audio.", "Research shows video-based, contextual learning beats traditional flashcard and drill approaches."]} />
           <p className="lead text-xl leading-relaxed">Traditional apps ask for dedicated study time. AI language learning finally lets you learn in context — from the shows, videos, and articles you already consume. According to a Preply survey (2024), 67% of language learners now prefer video-based methods over traditional classroom or app-based approaches. This guide compares today&apos;s leading AI tools and explains why in-player learning (dual subtitles + instant, multi-translation lookup + pronunciation) dramatically shortens the path from exposure to usable speech.</p>
 
@@ -51,6 +58,13 @@ export default function BlogPostContent() {
             ))}
           </ul>
 
+          <img
+            src="/blog-images/best-ai-language-learning-tools-2026-inline.jpg"
+            alt="Learning a language across laptop, tablet, and phone with AI tools while watching video"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-3xl font-bold text-white mt-16 mb-8">What AI does differently: three core mechanisms</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
