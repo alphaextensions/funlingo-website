@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, Play, Repeat, Mic } from "lucide-react";
+import { StepFlow } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function LearnByWatchingContent() {
@@ -40,6 +41,14 @@ export default function LearnByWatchingContent() {
           <p>When you hear words in conversation tied to tone, facial expression, and real situations, your brain builds stronger memory associations. This is called contextual language learning.</p>
           <hr className="border-white/10 my-12" />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">The 3-Layer Method for Learning From Shows</h2>
+          <StepFlow
+            steps={[
+              { title: "Watch with dual context", desc: "See the original and translated lines together for instant comparison." },
+              { title: "Save new words", desc: "Capture unfamiliar words in context with one click as you watch." },
+              { title: "Repeat & shadow", desc: "Replay key lines and say them aloud to lock in pronunciation." },
+              { title: "Review spaced", desc: "Revisit saved vocabulary over days so it sticks for good." },
+            ]}
+          />
           <h3 className="text-xl font-bold text-white mb-4">1. Watch With Dual Context (Not Just Subtitles)</h3>
           <p>Use both subtitles -- but intentionally. See the original line and the translated line together. This allows instant comparison without breaking listening rhythm.</p>
           <p className="italic text-gray-400 border-l-4 border-[#C642FC] pl-4">The key is: Read quickly, return to listening immediately. Over time, you&apos;ll rely less on translation.</p>

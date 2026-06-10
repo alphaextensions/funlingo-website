@@ -9,89 +9,22 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+// Per-category accent styling (badge + top-bar gradient). Brand purple is the
+// default; other categories get a complementary, muted accent.
+const CATEGORY_COLORS: Record<string, { badge: string; bar: string }> = {
+  Guide: { badge: "text-[#C642FC] border-[#C642FC]/30 bg-[#C642FC]/10", bar: "from-[#C642FC] to-[#7A1CAC]" },
+  Feature: { badge: "text-pink-300 border-pink-400/30 bg-pink-500/10", bar: "from-pink-400 to-fuchsia-600" },
+  Trending: { badge: "text-amber-300 border-amber-400/30 bg-amber-500/10", bar: "from-amber-400 to-orange-500" },
+  Dictionary: { badge: "text-emerald-300 border-emerald-400/30 bg-emerald-500/10", bar: "from-emerald-400 to-teal-500" },
+  Translation: { badge: "text-sky-300 border-sky-400/30 bg-sky-500/10", bar: "from-sky-400 to-blue-500" },
+  "AI Translation": { badge: "text-violet-300 border-violet-400/30 bg-violet-500/10", bar: "from-violet-400 to-purple-600" },
+  "Chinese Content": { badge: "text-rose-300 border-rose-400/30 bg-rose-500/10", bar: "from-rose-400 to-red-500" },
+};
+const accBadge = (c: string) => CATEGORY_COLORS[c]?.badge ?? CATEGORY_COLORS.Guide.badge;
+const accBar = (c: string) => CATEGORY_COLORS[c]?.bar ?? CATEGORY_COLORS.Guide.bar;
+
 export default function BlogContent() {
   const posts = [
-    {
-      id: -51,
-      title: "How to Export Google Meet Attendance to Google Sheets (Free, 2026)",
-      excerpt: "Free Google Meet has no built-in attendance export. Here's how to get your Meet roster into Google Sheets — the manual way, the paid Workspace way, and the free one-click way with Trackr.",
-      date: "May 31, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/export-google-meet-attendance-to-sheets"
-    },
-    {
-      id: -50,
-      title: "Meeting Attendance Tracker for Remote Teams (Free, No Bot Required)",
-      excerpt: "Track Google Meet attendance for remote-team standups and syncs without a creepy bot in the call. Free Chrome extension, no recording, data stays on your laptop, and it tracks patterns across recurring meetings.",
-      date: "May 31, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/meeting-attendance-tracker-remote-teams"
-    },
-    {
-      id: -49,
-      title: "HIPAA-Friendly Therapy Session Attendance Tracker (Free, Local-Only)",
-      excerpt: "Group therapy and telehealth need an attendance tracker that doesn't store your roster in someone else's cloud. Trackr is a free Chrome extension for Google Meet — local-only data, no BAA required, no signup.",
-      date: "May 26, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/therapy-session-attendance-tracker"
-    },
-    {
-      id: -48,
-      title: "Best Attendance Tracker for Online Classes (2026) — Free, No Signup",
-      excerpt: "Online classes need a different kind of attendance tracker. Compare free and paid options for instructors on Google Meet, Zoom, and Teams — with feature breakdown and the one free extension that actually works.",
-      date: "May 26, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/attendance-tracker-for-online-classes"
-    },
-    {
-      id: -47,
-      title: "Google Meet Attendance: The Complete 2026 Guide (Free)",
-      excerpt: "Everything you need to know about Google Meet attendance — what Google ships natively, what's missing, and how to add full automatic tracking for free in 30 seconds.",
-      date: "May 23, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/google-meet-attendance"
-    },
-    {
-      id: -46,
-      title: "How to Take Attendance on Google Meet (Free, 30-Second Setup)",
-      excerpt: "The fastest way to take attendance on Google Meet — free, no signup, no IT ticket. Step-by-step guide with screenshots, plus tips for late arrivals and exports.",
-      date: "May 23, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/how-to-take-attendance-on-google-meet"
-    },
-    {
-      id: -45,
-      title: "5 Best Google Meet Attendance Extensions (2026) — Free & Paid Compared",
-      excerpt: "Which Google Meet attendance extension is actually worth it? We tested 5 — Trackr (free), Meet Attendance, Vexa, Fellow, and Read.ai. Honest comparison with pricing and verdict.",
-      date: "May 23, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/best-google-meet-attendance-extensions"
-    },
-    {
-      id: -44,
-      title: "Does Google Meet Have Attendance? (2026 Answer + Free Workaround)",
-      excerpt: "Free Google Meet does not have attendance tracking — only paid Workspace Education plans do. But you can add full automatic attendance for free in 30 seconds. Here's how.",
-      date: "May 23, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/does-google-meet-have-attendance"
-    },
-    {
-      id: -43,
-      title: "Google Meet Attendance for Teachers: A No-Nonsense Guide (Free)",
-      excerpt: "A practical guide to taking attendance on Google Meet without disrupting class. Built for K-12 and higher-ed teachers — free Chrome extension, no IT ticket.",
-      date: "May 23, 2026",
-      author: "Funlingo Team",
-      category: "Meet Attendance",
-      slug: "/blog/google-meet-attendance-for-teachers"
-    },
     {
       id: -42,
       title: "Learn Spanish Watching TV: Best Shows, Tools & Daily Routine (2026)",
@@ -535,12 +468,15 @@ export default function BlogContent() {
     },
   ];
 
+  const featured = posts[0];
+  const rest = posts.slice(1);
+
   return (
     <div className="flex flex-col min-h-screen bg-black">
       <Navbar currentPage="/blog" />
 
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="flex flex-col gap-4 mb-16 text-center">
+        <div className="flex flex-col gap-4 mb-12 text-center">
           <Badge className="w-fit mx-auto bg-[rgba(198,66,252,0.1)] text-[#C642FC] border-[#C642FC]/20 px-3 py-1">
             Our Blog
           </Badge>
@@ -552,17 +488,53 @@ export default function BlogContent() {
           </p>
         </div>
 
+        {/* Featured (latest) post */}
+        {featured && (
+          <Link href={featured.slug} className="no-underline group block mb-12">
+            <Card className="relative overflow-hidden bg-white/5 border-white/10 hover:border-[#C642FC]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#C642FC]/20">
+              <div className="grid lg:grid-cols-2">
+                <div className="relative min-h-[200px] lg:min-h-[320px] overflow-hidden bg-[radial-gradient(130%_130%_at_0%_0%,#7A1CAC_0%,#1a0a28_55%,#000000_100%)] flex items-center justify-center p-8">
+                  <div className="absolute -inset-16 bg-[radial-gradient(circle_at_30%_30%,rgba(198,66,252,0.45),transparent_60%)] blur-2xl group-hover:scale-110 transition-transform duration-700" />
+                  <span className="relative font-heading-h3 text-3xl sm:text-4xl lg:text-5xl font-bold text-white/90 text-center leading-tight tracking-tight">
+                    {featured.category}
+                  </span>
+                  <Badge className="absolute top-4 left-4 bg-[#C642FC] text-white border-0 shadow-lg shadow-purple-500/30">
+                    ★ Latest
+                  </Badge>
+                </div>
+                <CardContent className="p-6 sm:p-10 flex flex-col justify-center gap-4">
+                  <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500">
+                    <span className={`px-2.5 py-0.5 rounded-full border ${accBadge(featured.category)}`}>
+                      {featured.category}
+                    </span>
+                    <span className="flex items-center gap-1"><Calendar className="w-3 h-3" />{featured.date}</span>
+                    <span className="flex items-center gap-1"><User className="w-3 h-3" />{featured.author}</span>
+                  </div>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-[#C642FC] transition-colors leading-tight">
+                    {featured.title}
+                  </h2>
+                  <p className="text-gray-400 line-clamp-3 sm:line-clamp-4">{featured.excerpt}</p>
+                  <div className="flex items-center gap-2 text-[#C642FC] font-semibold mt-1">
+                    Read article <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </div>
+            </Card>
+          </Link>
+        )}
+
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
+          {rest.map((post) => (
             <Link key={post.id} href={post.slug} className="no-underline">
               <Card
-                className="bg-white/5 border-white/10 overflow-hidden hover:border-[#C642FC]/50 transition-all duration-300 group cursor-pointer hover:shadow-lg hover:shadow-[#C642FC]/10 h-full"
+                className="relative bg-white/5 border-white/10 overflow-hidden hover:border-[#C642FC]/50 transition-all duration-300 group cursor-pointer hover:shadow-xl hover:shadow-[#C642FC]/10 hover:-translate-y-1 h-full"
               >
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${accBar(post.category)} opacity-60 group-hover:opacity-100 transition-opacity duration-300`} />
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
-                    <Badge variant="outline" className="border-white/20 text-gray-300">
+                    <span className={`px-2.5 py-0.5 rounded-full border text-xs font-medium ${accBadge(post.category)}`}>
                       {post.category}
-                    </Badge>
+                    </span>
                     <div className="flex items-center gap-2 text-xs text-gray-500">
                       <Calendar className="w-3 h-3" />
                       {post.date}

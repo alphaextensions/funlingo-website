@@ -1,0 +1,7 @@
+{
+  "nav": {"home":"หน้าแรก","roadmap":"แผนงาน","blog":"บล็อก","feedback":"ความคิดเห็น","about":"เกี่ยวกับเรา","download":"ดาวน์โหลดส่วนขยาย"},
+  "badges": {"learnWhileWatch":"เรียนรู้ไปพร้อมกับการดู","freeExtension":"ส่วนขยายซับไตเติลคู่ฟรี","worksOn":"ใช้งานได้บน Netflix, YouTube, Prime และอีก 5 แพลตฟอร์ม","twoLanguages":"ซับไตเติลสองภาษา"},
+  "hero": {"title":"ซับไตเติลคู่สำหรับ Netflix, YouTube, Prime และอีก 5 แพลตฟอร์ม","subtitle":"เปลี่ยน Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy และ Coursera ให้กลายเป็นบทเรียนภาษาแบบอิมเมอร์ซีฟ งานวิจัยชี้ว่าผู้เรียนที่ใช้ซับไตเติลคู่จดจำคำศัพท์ได้มากกว่าวิธีดั้งเดิมถึง 50% Funlingo รองรับมากกว่า 100+ ภาษา พร้อมซับไตเติลสองภาษา คำนิยามจาก AI ทันที และการสะสมคำศัพท์ — ทางเลือกที่ฟรีอย่างสมบูรณ์แทนส่วนขยายแบบเสียเงิน ได้รับคะแนน 4.92/5 ดาวบน Chrome Web Store","ctaPrimary":"เพิ่มลงใน Chrome - ฟรี","ctaSecondary":"วิธีการทำงาน","platformsHeading":"ใช้งานได้บนแพลตฟอร์มโปรดของคุณ"},
+  "footer": {"quickLinks":"ลิงก์ด่วน","information":"ข้อมูล","follow":"ติดตาม","downloadExtension":"ดาวน์โหลดส่วนขยาย","rights":"©2026 Funlingo สงวนลิขสิทธิ์","privacy":"นโยบายความเป็นส่วนตัว","support":"ฝ่ายสนับสนุน"},
+  "switcher": {"label":"ภาษา"}
+}

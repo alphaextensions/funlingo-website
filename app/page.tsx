@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HomeContent from "./home-content";
+import { alternateLanguages } from "./i18n/config";
 
 export const metadata: Metadata = {
   title: "Funlingo - Free Dual Subtitles for Netflix, YouTube, Prime, Hotstar & More",
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
   keywords: "free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, dual subtitles hotstar, dual subtitles apple tv, dual subtitles crunchyroll, dual subtitles udemy, dual subtitles coursera, ai powered language learning, best free subtitle tool, papaoutai afro soul song translation, lion king song translation",
   alternates: {
     canonical: "/",
+    languages: alternateLanguages("/"),
   },
   openGraph: {
     title: "Funlingo - Free Dual Subtitles for Netflix, YouTube, Prime, Hotstar & More",

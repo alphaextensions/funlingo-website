@@ -3,6 +3,9 @@
 const logo = "/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useT } from "@/app/i18n/I18nProvider";
+import { localizedHref } from "@/app/i18n/config";
+import LanguageSwitcher from "@/app/i18n/LanguageSwitcher";
 
 interface NavbarProps {
   currentPage?: string; // Optional prop to indicate current page
@@ -11,6 +14,7 @@ interface NavbarProps {
 const Navbar = ({ currentPage = "/" }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t, locale } = useT();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,14 +26,15 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
 
   // Navigation items with active state based on currentPage prop
   const navItems = [
-    { label: "Home", href: "/" },
+    { label: t("nav.home"), href: "/" },
     // { label: "Pricing", href: "/pricing" },
-    { label: "Roadmap", href: "/roadmap" },
-    { label: "Blog", href: "/blog" },
-    { label: "Feedback", href: "/feedback" },
-    { label: "About", href: "/about" },
+    { label: t("nav.roadmap"), href: "/roadmap" },
+    { label: t("nav.blog"), href: "/blog" },
+    { label: t("nav.feedback"), href: "/feedback" },
+    { label: t("nav.about"), href: "/about" },
   ].map(item => ({
-    ...item,
+    label: item.label,
+    href: localizedHref(item.href, locale),
     active: currentPage === item.href || (item.href === "/blog" && currentPage.startsWith("/blog"))
   }));
 
@@ -41,7 +46,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
       <div className="flex items-center justify-between h-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <a
-          href="/"
+          href={localizedHref("/", locale)}
           className="animate-fade-in-down hover:scale-105 transition-transform duration-300"
         >
           <div className="relative flex items-center justify-center w-fit bg-[linear-gradient(135deg,rgba(2120,2120,2120,0)_0%,#C642FC_40%,#7A1CAC_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-heading-h5 font-[number:var(--heading-h5-font-weight)] text-transparent text-[length:var(--heading-h5-font-size)] tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] whitespace-nowrap [font-style:var(--heading-h5-font-style)]">
@@ -75,9 +80,10 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
 
         {/* Desktop CTA Button */}
         <div
-          className="hidden md:block animate-fade-in-down"
+          className="hidden md:flex items-center gap-3 animate-fade-in-down"
           style={{ animationDelay: "700ms" }}
         >
+          <LanguageSwitcher />
           <a
             href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
             target="_blank"
@@ -85,7 +91,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
           >
             <Button className="bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] h-10 px-5 py-2 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group overflow-hidden relative">
               <span className="relative z-10 flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textwhite text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)]">
-                Download Extension
+                {t("nav.download")}
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#7A1CAC] to-[#C642FC] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Button>
@@ -133,6 +139,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
               )}
             </a>
           ))}
+          <div className="flex justify-center"><LanguageSwitcher /></div>
           <a
             href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
             target="_blank"
@@ -140,7 +147,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
           >
             <Button className="bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] h-12 px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 mt-4">
               <span className="relative flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textwhite text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)]">
-                Download Extension
+                {t("nav.download")}
               </span>
             </Button>
           </a>

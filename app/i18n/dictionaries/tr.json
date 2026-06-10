@@ -1,0 +1,7 @@
+{
+  "nav": {"home":"Ana Sayfa","roadmap":"Yol Haritası","blog":"Blog","feedback":"Geri Bildirim","about":"Hakkında","download":"Uzantıyı İndir"},
+  "badges": {"learnWhileWatch":"İzlerken öğren","freeExtension":"Ücretsiz çift altyazı uzantısı","worksOn":"Netflix, YouTube, Prime ve 5 platformda daha çalışır","twoLanguages":"İki dilde altyazı"},
+  "hero": {"title":"Netflix, YouTube, Prime ve 5 Platform İçin Çift Altyazı","subtitle":"Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy ve Coursera'yı sürükleyici bir dil dersine dönüştürün. Araştırmalar, çift altyazı kullanan öğrencilerin geleneksel yöntemlere kıyasla %50 daha fazla kelime hatırladığını gösteriyor. Funlingo; iki dilli altyazılar, anında AI tanımları ve kelime dağarcığı oluşturma ile 100+ dili destekler — ücretli uzantılara tamamen ücretsiz bir alternatif. Chrome Web Store'da 4.92/5 yıldız puanına sahip.","ctaPrimary":"Chrome'a Ekle - Ücretsiz","ctaSecondary":"Nasıl Çalışır","platformsHeading":"Favori platformlarınızda çalışır"},
+  "footer": {"quickLinks":"Hızlı Bağlantılar","information":"Bilgi","follow":"Takip Et","downloadExtension":"Uzantıyı İndir","rights":"©2026 Funlingo. Tüm hakları saklıdır.","privacy":"Gizlilik Politikası","support":"Destek"},
+  "switcher": {"label":"Dil"}
+}

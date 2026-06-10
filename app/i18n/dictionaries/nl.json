@@ -1,0 +1,7 @@
+{
+  "nav": {"home":"Home","roadmap":"Roadmap","blog":"Blog","feedback":"Feedback","about":"Over ons","download":"Extensie downloaden"},
+  "badges": {"learnWhileWatch":"Leer terwijl je kijkt","freeExtension":"Gratis extensie met dubbele ondertiteling","worksOn":"Werkt op Netflix, YouTube, Prime en 5 andere","twoLanguages":"Ondertiteling in twee talen"},
+  "hero": {"title":"Dubbele ondertiteling voor Netflix, YouTube, Prime en 5 andere","subtitle":"Maak van Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy en Coursera een meeslepende taalles. Onderzoek toont aan dat leerlingen die dubbele ondertiteling gebruiken tot 50% meer woordenschat onthouden dan met traditionele methoden. Funlingo ondersteunt meer dan 100 talen met tweetalige ondertiteling, directe AI-definities en het opbouwen van woordenschat — een volledig gratis alternatief voor betaalde extensies. Beoordeeld met 4.92/5 sterren in de Chrome Web Store.","ctaPrimary":"Toevoegen aan Chrome – gratis","ctaSecondary":"Hoe het werkt","platformsHeading":"Werkt op je favoriete platforms"},
+  "footer": {"quickLinks":"Snelle links","information":"Informatie","follow":"Volg ons","downloadExtension":"Extensie downloaden","rights":"©2026 Funlingo. Alle rechten voorbehouden.","privacy":"Privacybeleid","support":"Ondersteuning"},
+  "switcher": {"label":"Taal"}
+}

@@ -391,3 +391,297 @@ button {
   src: url(/fonts/Poppins-Regular.ttf);
   font-display: swap;
 }
+
+/* ============================================================
+   Blog reading experience
+   Scoped to `.prose` so it upgrades every blog post at once.
+   These rules are intentionally un-layered so they win over the
+   inline Tailwind utilities already on the markup.
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(198, 66, 252, 0.32);
+  color: #fff;
+}
+
+/* Gradient reading-progress bar (driven by ReadingProgress.tsx) */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  transform: scaleX(var(--scroll, 0));
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, #7a1cac, #c642fc 60%, #ff8bf6);
+  box-shadow: 0 0 12px rgba(198, 66, 252, 0.7);
+  z-index: 60;
+  will-change: transform;
+}
+[dir="rtl"] .reading-progress {
+  transform-origin: 100% 50%;
+}
+
+.prose {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  animation: blog-fade-up 0.6s ease-out both;
+}
+
+@keyframes blog-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Comfortable reading rhythm */
+.prose p {
+  font-size: 1.075rem;
+  line-height: 1.85;
+  letter-spacing: -0.005em;
+}
+
+/* Lead / intro paragraph */
+.prose .lead {
+  font-size: 1.3rem !important;
+  line-height: 1.7 !important;
+  color: #ead9ff !important;
+}
+
+/* Drop cap when the article opens with a paragraph */
+.prose > p:first-child::first-letter {
+  font-family: main-heading, "Poppins", sans-serif;
+  float: left;
+  font-size: 3.6em;
+  line-height: 0.78;
+  font-weight: 700;
+  padding: 0.06em 0.14em 0 0;
+  background: linear-gradient(135deg, #c642fc, #7a1cac);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Section headings: gradient accent + breathing room */
+.prose h2 {
+  position: relative;
+  margin-top: 2.4em;
+  padding-top: 0.3em;
+  scroll-margin-top: 96px;
+}
+.prose h2::before {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 4px;
+  margin-bottom: 0.65em;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #c642fc, #7a1cac);
+}
+.prose h3 {
+  scroll-margin-top: 96px;
+}
+
+/* Links: animated gradient underline */
+.prose a {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, #c642fc, #7a1cac);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease;
+}
+.prose a:hover {
+  background-size: 100% 2px;
+}
+
+.prose strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Images: framed with a soft purple glow */
+.prose img {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 22px 55px -22px rgba(198, 66, 252, 0.5);
+  margin: 2rem auto;
+  display: block;
+}
+
+/* Blockquote → callout */
+.prose blockquote {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.35rem 1.6rem 1.35rem 3.2rem;
+  border-radius: 1rem;
+  background: rgba(198, 66, 252, 0.06);
+  border: 1px solid rgba(198, 66, 252, 0.18);
+  color: #e7e7ee;
+  font-style: normal;
+}
+.prose blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0.7rem;
+  top: 0.2rem;
+  font-family: Georgia, serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: rgba(198, 66, 252, 0.5);
+}
+.prose blockquote p {
+  margin: 0;
+}
+
+/* Decorative section divider */
+.prose hr {
+  border: 0;
+  height: 1px;
+  margin: 3rem 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(198, 66, 252, 0.5),
+    transparent
+  );
+  position: relative;
+  overflow: visible;
+}
+.prose hr::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: linear-gradient(135deg, #c642fc, #7a1cac);
+  border-radius: 2px;
+  box-shadow: 0 0 14px rgba(198, 66, 252, 0.7);
+}
+
+/* Content lists (top-level only; never touch intentional list-none) */
+.prose > ul:not(.list-none),
+.prose > ol:not(.list-none) {
+  padding-left: 0;
+  list-style: none;
+}
+.prose > ul:not(.list-none) > li,
+.prose > ol:not(.list-none) > li {
+  position: relative;
+  padding-left: 1.9rem;
+  margin: 0.55rem 0;
+  line-height: 1.7;
+}
+.prose > ul:not(.list-none) > li::before {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  background: linear-gradient(135deg, #c642fc, #7a1cac);
+}
+.prose > ol:not(.list-none) {
+  counter-reset: item;
+}
+.prose > ol:not(.list-none) > li {
+  counter-increment: item;
+}
+.prose > ol:not(.list-none) > li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  width: 1.45rem;
+  height: 1.45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0.45rem;
+  background: linear-gradient(135deg, #c642fc, #7a1cac);
+}
+
+/* Tables */
+.prose table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+.prose thead th {
+  background: rgba(198, 66, 252, 0.12);
+  color: #fff;
+  text-align: left;
+}
+.prose th,
+.prose td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.prose tbody tr:last-child td {
+  border-bottom: 0;
+}
+.prose tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Inline code */
+.prose code {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.12em 0.4em;
+  border-radius: 0.4rem;
+  font-size: 0.88em;
+  color: #f0d9ff;
+}
+
+/* RTL adjustments */
+[dir="rtl"] .prose > p:first-child::first-letter {
+  float: right;
+  padding: 0.06em 0 0 0.14em;
+}
+[dir="rtl"] .prose > ul:not(.list-none) > li,
+[dir="rtl"] .prose > ol:not(.list-none) > li {
+  padding-left: 0;
+  padding-right: 1.9rem;
+}
+[dir="rtl"] .prose > ul:not(.list-none) > li::before {
+  left: auto;
+  right: 0.35rem;
+}
+[dir="rtl"] .prose > ol:not(.list-none) > li::before {
+  left: auto;
+  right: 0;
+}
+[dir="rtl"] .prose a {
+  background-position: 100% 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .prose {
+    animation: none;
+  }
+}

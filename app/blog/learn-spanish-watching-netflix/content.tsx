@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, Tv, BookOpen, Sparkles, Target, Timer, Brain, Headphones, Repeat, Bookmark } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { StatGrid, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function LearnSpanishNetflixContent() {
   return (
@@ -25,6 +26,14 @@ export default function LearnSpanishNetflixContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <StatGrid
+            stats={[
+              { value: "50%", label: "more vocabulary retained" },
+              { value: "100+", label: "languages supported" },
+              { value: "4.92★", label: "Chrome Web Store rating" },
+              { value: "8", label: "streaming platforms" },
+            ]}
+          />
           <h2 className="text-2xl font-bold text-white mb-4">Why Netflix Is the Best Tool for Learning Spanish</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Spanish is the most studied language in the world, and Netflix has the largest library of Spanish-language content of any streaming platform. From gritty crime dramas set in Colombia to lighthearted comedies from Spain, there are hundreds of titles that can double as language lessons.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">The key advantage of Netflix for Spanish learning is comprehensible input. When you watch engaging content with dual subtitles, you absorb vocabulary, grammar patterns, and pronunciation naturally, without the grind of traditional study.</p>
@@ -77,6 +86,7 @@ export default function LearnSpanishNetflixContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Dual Subtitle Method for Spanish</h2>
           <p className="text-gray-300 mb-6">The most effective way to learn Spanish from Netflix is the dual subtitle method. Instead of choosing between Spanish subtitles (which you might not fully understand) or English subtitles (which do not expose you to written Spanish), you use both at the same time.</p>
+          <DualSubtitleDemo targetLang="Spanish" target="¿Quién eres tú?" highlight="Quién" native="Who are you?" />
           <p className="text-gray-300 mb-6">Learn how to set this up in our step-by-step guide: <a href="/blog/how-to-get-dual-subtitles-on-netflix" className="text-[#C642FC] hover:underline">How to Get Dual Subtitles on Netflix</a>.</p>
           <p className="text-gray-300 mb-6">To set up dual subtitles for any of these shows, follow our step-by-step <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">Netflix dual subtitle guide</a>.</p>
 

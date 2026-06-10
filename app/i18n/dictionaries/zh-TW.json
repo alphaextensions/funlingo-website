@@ -1,0 +1,7 @@
+{
+  "nav": {"home":"首頁","roadmap":"路線圖","blog":"部落格","feedback":"意見回饋","about":"關於","download":"下載擴充功能"},
+  "badges": {"learnWhileWatch":"邊看邊學","freeExtension":"免費雙語字幕擴充功能","worksOn":"支援 Netflix、YouTube、Prime 及另外 5 個平台","twoLanguages":"雙語字幕"},
+  "hero": {"title":"為 Netflix、YouTube、Prime 及另外 5 個平台提供雙語字幕","subtitle":"把 Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Udemy 和 Coursera 變成身歷其境的語言課堂。研究顯示，使用雙語字幕的學習者比傳統方法多記住高達 50% 的詞彙。Funlingo 支援 100+ 種語言的雙語字幕、即時 AI 釋義與詞彙累積——是付費擴充功能的完全免費替代方案。在 Chrome Web Store 上獲得 4.92/5 星評分。","ctaPrimary":"加到 Chrome - 免費","ctaSecondary":"運作方式","platformsHeading":"支援你喜愛的平台"},
+  "footer": {"quickLinks":"快速連結","information":"資訊","follow":"追蹤","downloadExtension":"下載擴充功能","rights":"©2026 Funlingo。版權所有。","privacy":"隱私權政策","support":"支援"},
+  "switcher": {"label":"語言"}
+}

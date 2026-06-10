@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, X, AlertCircle, Monitor, Globe, Settings } from "lucide-react";
+import { DualSubtitleDemo } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function NetflixDualSubtitlesContent() {
@@ -27,6 +28,7 @@ export default function NetflixDualSubtitlesContent() {
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
           <h2 className="text-2xl font-bold text-white mb-4">What Are Netflix Dual Subtitles?</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Netflix dual subtitles let you display two subtitle tracks at the same time while watching any show or movie. Your native language appears alongside your target language, so you can follow the dialogue in both languages without pausing or switching back and forth.</p>
+          <DualSubtitleDemo targetLang="Spanish" target="No pasa nada" highlight="pasa" native="It's no big deal" />
           <p className="leading-relaxed text-gray-300 mb-6">Netflix itself only allows one subtitle track at a time. To get dual subtitles, you need a browser extension that overlays a second subtitle line on top of the Netflix player. The entire setup takes less than two minutes, and in this guide we will walk you through every step.</p>
           <p className="leading-relaxed text-gray-300 mb-6">This is different from simply switching between subtitle languages in Netflix settings. With dual subtitles, both languages are visible simultaneously, which means you can read the original dialogue and its translation in real time.</p>
 

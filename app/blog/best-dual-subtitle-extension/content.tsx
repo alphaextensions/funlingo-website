@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, Check, X, Shield, Zap, Globe, DollarSign } from "lucide-react";
+import { StatGrid } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function BestDualSubtitleExtensionContent() {
@@ -25,6 +26,14 @@ export default function BestDualSubtitleExtensionContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <StatGrid
+            stats={[
+              { value: "7", label: "extensions compared" },
+              { value: "Free", label: "best overall pick" },
+              { value: "100+", label: "languages with Funlingo" },
+              { value: "8", label: "supported platforms" },
+            ]}
+          />
           <h2 className="text-2xl font-bold text-white mb-4">What Are Dual Subtitle Extensions?</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Dual subtitle extensions are Chrome browser add-ons that display two sets of subtitles simultaneously while you watch videos on streaming platforms. You see your target language and your native language on screen at the same time, letting you follow along without constantly pausing to look up translations.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">This approach is backed by research on comprehensible input. When you understand what you hear in context, your brain acquires language naturally. Dual subtitles provide the scaffolding that makes input comprehensible, even for beginners.</p>
