@@ -85,7 +85,7 @@ export function ShareRail() {
   return (
     <div
       className="hidden xl:flex flex-col items-center gap-2 fixed top-1/3"
-      style={{ left: "calc(50% - 27.5rem)" }}
+      style={{ left: "max(1rem, calc(50% - 31rem))" }}
     >
       <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-600 mb-1 [writing-mode:vertical-rl] rotate-180">
         Share
