@@ -677,6 +677,22 @@ html {
   background-position: 100% 100%;
 }
 
+/* Readability refinements */
+.prose h1,
+.prose h2,
+.prose h3 {
+  text-wrap: balance;
+}
+.prose p,
+.prose li {
+  text-wrap: pretty;
+}
+.prose a:focus-visible {
+  outline: 2px solid #c642fc;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
