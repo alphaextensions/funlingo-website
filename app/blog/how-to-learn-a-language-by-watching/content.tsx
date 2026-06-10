@@ -26,6 +26,13 @@ export default function LearnByWatchingContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/how-to-learn-a-language-by-watching-hero.jpg"
+            alt="Person absorbing a new language while watching TV, with floating words flowing from the screen"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={["Passive watching rarely works; you need structure to actually improve listening and vocabulary.", "Watch with dual subtitles so you can compare the original and translated lines without breaking your listening rhythm.", "Focus on whole sentences first, then look up one or two unknown words inside that context.", "Repetition beats translation: replay 3 to 5 second clips, listen twice before reading, and shadow aloud.", "Start with vlogs, sitcoms, and interviews; avoid slang-heavy crime dramas and dense documentaries early on."]} />
           <p className="lead text-xl leading-relaxed text-gray-200">A lot of people say, &quot;Just watch Netflix in your target language.&quot;</p>
           <p>In theory, that sounds great. In practice, most learners either pause every 20 seconds to translate, turn on subtitles in their native language and stop paying attention, or give up because it feels too difficult.</p>
@@ -42,6 +49,13 @@ export default function LearnByWatchingContent() {
           <p>When you hear words in conversation tied to tone, facial expression, and real situations, your brain builds stronger memory associations. This is called contextual language learning.</p>
           <hr className="border-white/10 my-12" />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">The 3-Layer Method for Learning From Shows</h2>
+          <img
+            src="/blog-images/how-to-learn-a-language-by-watching-inline.jpg"
+            alt="Three-step method: watch with dual subtitles, save words, then shadow and speak"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <StepFlow
             steps={[
               { title: "Watch with dual context", desc: "See the original and translated lines together for instant comparison." },
