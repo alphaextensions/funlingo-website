@@ -43,7 +43,13 @@ export default function ImmersiveTranslateAlternativesContent() {
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pb-24">
         <article className="prose prose-invert prose-lg max-w-none">
-
+          <img
+            src="/blog-images/immersive-translate-alternatives-hero.jpg"
+            alt="Comparison of translation tools with the best alternative highlighted"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={["Immersive Translate excels at bilingual web page, PDF, and ebook translation but has very limited Netflix support and no vocabulary tools.", "Its Pro plan runs about $9.99/month or $69.99/year, with the free tier capping daily translations and premium engines.", "Funlingo is the best free alternative for video-based learning, with dual subtitles on Netflix, YouTube, and Prime Video plus a vocab builder.", "For web page reading, free options like Google Translate Extension and Microsoft Translator cover the basics.", "Choose by use case: video learning favors Funlingo, while reading-heavy workflows favor Immersive Translate or DeepL."]} />
 
           <StatGrid stats={[{ value: "$0", label: "Funlingo cost — free forever for dual subtitles" }, { value: "$9.99", label: "Immersive Translate Pro per month" }, { value: "7", label: "Alternatives compared side by side below" }, { value: "3", label: "Streaming platforms Funlingo supports (Netflix, YouTube, Prime)" }]} />
@@ -352,6 +358,13 @@ export default function ImmersiveTranslateAlternativesContent() {
             <h2 className="text-3xl font-bold mb-6 text-white">
               Immersive Translate Alternatives 2026: Full Comparison Table
             </h2>
+            <img
+              src="/blog-images/immersive-translate-alternatives-inline.jpg"
+              alt="A web page translated bilingually side by side, original text next to its translation"
+              width={1600}
+              height={893}
+              loading="lazy"
+            />
             <p className="text-gray-300 leading-relaxed mb-6">
               The table below compares the leading Immersive Translate alternatives in 2026 across
               the factors that matter most: price, supported platforms, whether the tool shows dual
