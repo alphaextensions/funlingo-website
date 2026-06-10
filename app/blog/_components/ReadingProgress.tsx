@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { usePathname } from "next/navigation";
 
 /**
  * Thin gradient bar at the top of the viewport that tracks reading progress
@@ -11,10 +12,14 @@ import * as React from "react";
 export default function ReadingProgress() {
   const [active, setActive] = React.useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   React.useEffect(() => {
     const article = document.querySelector<HTMLElement>(".prose");
-    if (!article) return;
+    if (!article) {
+      setActive(false);
+      return;
+    }
     setActive(true);
 
     let ticking = false;
@@ -44,7 +49,7 @@ export default function ReadingProgress() {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
-  }, []);
+  }, [pathname]);
 
   if (!active) return null;
   return <div ref={ref} className="reading-progress" aria-hidden="true" />;

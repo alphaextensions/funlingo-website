@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { createPortal } from "react-dom";
+import { usePathname } from "next/navigation";
 import { List, ChevronDown } from "lucide-react";
 
 type Heading = { id: string; text: string; level: 2 | 3 };
@@ -33,8 +34,14 @@ export default function TableOfContents() {
   const [activeId, setActiveId] = React.useState<string>("");
   const [mount, setMount] = React.useState<HTMLElement | null>(null);
   const [open, setOpen] = React.useState(true);
+  const pathname = usePathname();
 
   React.useEffect(() => {
+    // Reset for the new route — these run inside app/blog/layout.tsx, which
+    // persists across client-side navigation between posts.
+    setHeadings([]);
+    setActiveId("");
+    setMount(null);
     const article = document.querySelector<HTMLElement>(".prose");
     if (!article) return;
 
@@ -89,7 +96,7 @@ export default function TableOfContents() {
       observer.disconnect();
       el.remove();
     };
-  }, []);
+  }, [pathname]);
 
   if (headings.length < 2) return null;
 

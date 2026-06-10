@@ -3,6 +3,7 @@
 import * as React from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Calendar, ArrowRight } from "lucide-react";
 import { getRelatedPosts, accBadge, accBar, type BlogPost } from "../posts";
 import { ShareRow } from "./share";
@@ -16,14 +17,19 @@ import { ShareRow } from "./share";
 export default function ArticleEnd() {
   const [mount, setMount] = React.useState<HTMLElement | null>(null);
   const [related, setRelated] = React.useState<BlogPost[]>([]);
+  const pathname = usePathname();
 
   React.useEffect(() => {
+    // Reset for the new route — this component lives in the persistent blog
+    // layout, so it must re-run on client-side navigation between posts.
+    setMount(null);
+    setRelated([]);
     // Only on article pages (skip the /blog index, which has no .prose).
     if (!document.querySelector(".prose")) return;
     const footer = document.querySelector("footer");
     if (!footer || !footer.parentNode) return;
 
-    const slug = window.location.pathname.replace(/\/$/, "");
+    const slug = (pathname || window.location.pathname).replace(/\/$/, "");
     setRelated(getRelatedPosts(slug, 3));
 
     const el = document.createElement("div");
@@ -33,7 +39,7 @@ export default function ArticleEnd() {
     return () => {
       el.remove();
     };
-  }, []);
+  }, [pathname]);
 
   if (!mount) return null;
 

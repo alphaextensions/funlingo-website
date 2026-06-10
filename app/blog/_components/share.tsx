@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { usePathname } from "next/navigation";
 import { Link2, Check } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
@@ -27,13 +28,14 @@ const RedditIcon = (p: React.SVGProps<SVGSVGElement>) => (
 );
 
 function useShareContext() {
+  const pathname = usePathname();
   const [data, setData] = React.useState({ url: "", title: "" });
   React.useEffect(() => {
     setData({
       url: window.location.href,
       title: document.title.replace(/\s*\|\s*Funlingo\s*$/, ""),
     });
-  }, []);
+  }, [pathname]);
   return data;
 }
 
@@ -74,9 +76,10 @@ const railBtn =
 export function ShareRail() {
   const { url, title } = useShareContext();
   const [active, setActive] = React.useState(false);
+  const pathname = usePathname();
   React.useEffect(() => {
     setActive(!!document.querySelector(".prose"));
-  }, []);
+  }, [pathname]);
   if (!active) return null;
   const links = buildLinks(url, title);
   return (
