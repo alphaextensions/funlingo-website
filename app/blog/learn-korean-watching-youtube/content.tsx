@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Tv, Music, BookOpen, Utensils, Gamepad2, Timer, Target, Star, Headphones, MessageSquare } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function LearnKoreanYouTubeContent() {
   return (
@@ -25,6 +26,12 @@ export default function LearnKoreanYouTubeContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={[
+            "YouTube offers free, real Korean across every level, from structured lessons to vlogs, variety shows, K-pop, and gaming.",
+            "Learn Hangul first (it takes only a few hours) so you can read Korean subtitles instead of relying on romanization.",
+            "A 15-minute daily routine with dual subtitles can teach 150 to 300 new Korean words per month.",
+            "Focus on high-frequency words: the top 1,000 Korean words cover about 85% of everyday conversation.",
+          ]} />
           <h2 className="text-2xl font-bold text-white mb-4">Why YouTube Is the Best Free Resource for Learning Korean</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Korean is one of the most popular languages to learn in 2026, fueled by K-dramas, K-pop, and Korean cinema. And YouTube sits at the center of Korean culture online, with millions of hours of content from native speakers covering every topic imaginable.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Unlike textbooks or apps that use scripted dialogues, YouTube gives you access to real Korean as it is actually spoken. From casual vlogs to formal news broadcasts, you can immerse yourself in the language at every level, completely for free.</p>
@@ -66,6 +73,8 @@ export default function LearnKoreanYouTubeContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How to Use Dual Subtitles for Korean on YouTube</h2>
           <p className="text-gray-300 mb-6">Dual subtitles are the most powerful tool for learning Korean from YouTube. They let you see both Korean text (in Hangul) and your native language translation simultaneously, so you never lose track of meaning while being exposed to the Korean writing system.</p>
+
+          <DualSubtitleDemo targetLang="Korean" target="안녕하세요, 만나서 반가워요" highlight="반가워요" native="Hello, nice to meet you" />
 
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
             {[

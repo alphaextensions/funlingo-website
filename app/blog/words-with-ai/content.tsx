@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, BookOpen } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 const defined = (word: string, meaning: string) => (
   <div key={word} className="bg-white/5 rounded-lg px-4 py-3 border border-white/10">
@@ -52,6 +53,7 @@ export default function WordsWithAIContent() {
 
       {/* Body */}
       <article className="relative z-10 max-w-3xl mx-auto px-4 pb-24 prose prose-invert prose-lg">
+        <KeyTakeaways items={["The vowel team \"ai\" is one of the most common in English, appearing in over 2,000 words", "Grouping words into families like -ail, -ain, and -air makes them far easier to learn and spell", "In over 90% of cases, \"ai\" makes the long \"a\" sound /eɪ/, as in rain and train", "Key exceptions include unstressed endings (captain), -air words (chair), and said and again", "Seeing these words in real context with dual subtitles beats rote memorisation"]} />
         {/* 1 — Introduction */}
         <section className="mb-14">
           <h2 className="text-2xl font-bold mb-4">
@@ -255,6 +257,10 @@ export default function WordsWithAIContent() {
             Despite these exceptions, the core rule holds over 90% of the time: when
             you see &quot;ai,&quot; pronounce it as a long &quot;a.&quot;
           </p>
+
+          <Callout variant="note" title="Watch out for said and again">
+            These two everyday words break the rule entirely: said is pronounced /sɛd/ and again is often /əˈɡɛn/, with the &quot;ai&quot; sounding like a short &quot;e.&quot;
+          </Callout>
         </section>
 
         {/* 9 — Letter Patterns & Vocabulary Building */}

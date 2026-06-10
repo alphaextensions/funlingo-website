@@ -5,7 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, Play, Repeat, Mic } from "lucide-react";
-import { StepFlow } from "@/app/blog/_components/graphics";
+import { StepFlow, KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function LearnByWatchingContent() {
@@ -26,6 +26,7 @@ export default function LearnByWatchingContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Passive watching rarely works; you need structure to actually improve listening and vocabulary.", "Watch with dual subtitles so you can compare the original and translated lines without breaking your listening rhythm.", "Focus on whole sentences first, then look up one or two unknown words inside that context.", "Repetition beats translation: replay 3 to 5 second clips, listen twice before reading, and shadow aloud.", "Start with vlogs, sitcoms, and interviews; avoid slang-heavy crime dramas and dense documentaries early on."]} />
           <p className="lead text-xl leading-relaxed text-gray-200">A lot of people say, &quot;Just watch Netflix in your target language.&quot;</p>
           <p>In theory, that sounds great. In practice, most learners either pause every 20 seconds to translate, turn on subtitles in their native language and stop paying attention, or give up because it feels too difficult.</p>
           <p className="font-semibold text-white">Watching can absolutely help -- but only if it&apos;s structured correctly.</p>
@@ -52,6 +53,7 @@ export default function LearnByWatchingContent() {
           <h3 className="text-xl font-bold text-white mb-4">1. Watch With Dual Context (Not Just Subtitles)</h3>
           <p>Use both subtitles -- but intentionally. See the original line and the translated line together. This allows instant comparison without breaking listening rhythm.</p>
           <p className="italic text-gray-400 border-l-4 border-[#C642FC] pl-4">The key is: Read quickly, return to listening immediately. Over time, you&apos;ll rely less on translation.</p>
+          <DualSubtitleDemo targetLang="Spanish" target="¿Qué quieres hacer mañana?" highlight="mañana" native="What do you want to do tomorrow?" />
           <h3 className="text-xl font-bold text-white mt-8 mb-4">2. Focus on Sentences, Not Single Words</h3>
           <p>Most learners make the mistake of translating word-by-word. But language doesn&apos;t function word-by-word. Understand the full sentence first, then examine 1-2 unknown words inside context.</p>
           <h3 className="text-xl font-bold text-white mt-8 mb-4">3. Repetition Beats Translation</h3>

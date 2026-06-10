@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, BookOpen, Headphones, Repeat, Film, MessageCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function LearnJapaneseWithAnimeContent() {
   return (
@@ -25,6 +26,12 @@ export default function LearnJapaneseWithAnimeContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={[
+            "Anime gives you emotionally rich, context-heavy Japanese that flashcards and textbooks cannot teach.",
+            "Choose anime by level: slice-of-life like Shirokuma Cafe and Takagi-san for beginners, character-driven shows like Spy x Family for intermediate.",
+            "Use the 3-pass method per episode: watch for story, study the language, then shadow and speak.",
+            "Save just 5 to 10 words per episode with context, then review them the next day with spaced repetition.",
+          ]} />
           <h2 className="text-2xl font-bold text-white mb-4">Why Anime Works for Learning Japanese</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Anime is one of the most accessible windows into spoken Japanese. Unlike textbook audio, anime gives you emotionally rich, context-heavy dialogue. You hear how pitch, tone, and formality shift between characters — something no flashcard deck can teach.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">The catch? Watching anime passively will not teach you Japanese. You need a method. This guide gives you one: a structured, daily approach that turns anime episodes into focused language lessons using dual subtitles, shadowing, and active recall.</p>
@@ -67,6 +74,8 @@ export default function LearnJapaneseWithAnimeContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Step 2: Set Up Dual Subtitles</h2>
           <p className="text-gray-300 mb-6">The foundation of this method is watching with two sets of subtitles: Japanese and your native language displayed simultaneously. This lets you read the original Japanese text while immediately checking meaning below it — no pausing, no tab-switching, no dictionary apps.</p>
           <p className="text-gray-300 mb-6">Funlingo adds dual subtitles to YouTube for free. Many anime episodes, clips, and full series are available on YouTube with Japanese subtitles. Install the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C642FC] hover:underline">Funlingo Chrome extension</a>, open a video, and select your target and native languages.</p>
+
+          <DualSubtitleDemo targetLang="Japanese" target="はじめまして、よろしくお願いします" highlight="よろしく" native="Nice to meet you" />
           <p className="text-gray-300 mb-6">For a deeper look at dual subtitle tools, see our comparison of the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">7 best dual subtitle extensions</a>.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-[#C642FC]/30 mb-8">

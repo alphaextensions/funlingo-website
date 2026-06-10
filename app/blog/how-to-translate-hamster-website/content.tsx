@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Globe, BookOpen, Layers, Zap, Check, MousePointer, Languages, Eye } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, ProsCons } from "@/app/blog/_components/graphics";
 
 export default function HamsterWebsiteTranslationContent() {
     return (
@@ -35,6 +36,8 @@ export default function HamsterWebsiteTranslationContent() {
 
             <main className="w-full max-w-3xl mx-auto px-6 pb-24">
                 <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+                    <KeyTakeaways items={["Funlingo translates the Hamster website while keeping both languages visible side by side, so you understand the content and learn the language at once.", "It works on HammyHome, HAMSTER Corporation's Japanese site (hamster.co.jp), the nodemedia.cn extension, and any other website.", "Click any word for native meaning, multiple translations (1/2/3/All), pronunciation audio, and example sentences.", "Save unfamiliar words to a personal vocabulary deck and review them later.", "It is free, installs in under 30 seconds, and needs no account."]} />
 
                     {/* Intro */}
                     <h2 className="text-2xl font-bold text-white mb-4">Translate the Hamster Website — Without Losing the Original Text</h2>
@@ -174,6 +177,8 @@ export default function HamsterWebsiteTranslationContent() {
                     <div className="bg-gradient-to-br from-[#C642FC]/20 to-transparent p-8 rounded-xl border border-[#C642FC]/20 mb-16">
                         <h2 className="text-2xl font-bold text-white mb-6 mt-0">Funlingo vs. Google Translate for the Hamster Website</h2>
                         <p className="text-gray-300 mb-6">Google Translate is great for quick comprehension, but Funlingo is built for understanding <em>and</em> learning.</p>
+
+                        <ProsCons proLabel="Funlingo" conLabel="Google Translate" pros={["Shows both languages side by side", "Multiple translations (1/2/3/All) per word", "Per-word pronunciation with audio playback", "Click any word for AI context, examples, and grammar", "Built-in save-to-vocab with review deck"]} cons={["Replaces the original text completely", "One translation per word", "No pronunciation or audio", "No word-level explanations", "No vocabulary saving"]} />
 
                         <div className="space-y-4">
                             {[

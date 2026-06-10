@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Monitor, Download, Settings, Play, CheckCircle, Lightbulb, Target, BookOpen } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function HowToGetDualSubtitlesContent() {
   return (
@@ -25,6 +26,7 @@ export default function HowToGetDualSubtitlesContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Netflix only shows one subtitle language at a time, forcing learners to choose between comprehension and target-language practice.", "A free Chrome extension like Funlingo displays both languages at once, in about a 30-second setup.", "Dual subtitles only work in the Chrome browser on desktop, not the Netflix mobile or TV app.", "You can click any word for an instant translation and save it to a vocabulary list.", "Aim to save 5 to 15 new words per episode and review them with spaced repetition."]} />
           <h2 className="text-2xl font-bold text-white mb-4">Why You Need Dual Subtitles on Netflix</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Netflix has thousands of shows and movies in dozens of languages, making it one of the best language learning resources available. But there is a problem: Netflix only lets you display one subtitle language at a time.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">For language learners, that means constantly choosing between understanding what is happening (native language subtitles) and practicing your target language (target language subtitles). Dual subtitles solve this by showing both languages simultaneously.</p>
@@ -56,6 +58,8 @@ export default function HowToGetDualSubtitlesContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How Dual Subtitles Transform Netflix Into a Language Lesson</h2>
           <p className="text-gray-300 mb-6">Once you have dual subtitles set up, Netflix becomes a fundamentally different learning experience. Here is what changes.</p>
+
+          <DualSubtitleDemo targetLang="Spanish" target="No puedo creer que estés aquí." highlight="creer" native="I can't believe you're here." />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Lightbulb className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Instant Context</h3><p className="text-sm text-gray-400">You never need to pause and look up a word. The translation is right there on screen, keeping you immersed in the story.</p></div>

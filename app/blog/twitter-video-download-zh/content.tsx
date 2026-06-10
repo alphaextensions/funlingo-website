@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Download, ArrowRight, Monitor, Smartphone, Globe, Check, X } from "lucide-react";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function TwitterVideoDownloadZhContent() {
   return (
@@ -26,6 +27,8 @@ export default function TwitterVideoDownloadZhContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways title="核心要点" items={["推特官方不提供视频下载功能，但有3种完全免费的方法可以保存视频。", "在线工具（SaveTweetVid、TWDown、ssstwitter）最简单，复制链接即可下载，且支持手机端。", "浏览器扩展会在视频旁自动添加下载按钮，适合经常下载的用户。", "yt-dlp 命令行工具功能最强大，支持批量下载和完全自定义画质，但需要一定技术基础。", "下载的视频仅供个人学习欣赏使用，请尊重原作者版权，避免二次传播。"]} />
 
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">推特（现已更名为X）是全球最受欢迎的社交媒体平台之一，每天都有大量有趣的视频内容在上面传播。然而，推特官方并不提供直接的视频下载功能。本文将详细介绍3种完全免费的推特视频下载方法，帮助你轻松保存喜欢的视频内容。</p>
 
@@ -283,6 +286,8 @@ export default function TwitterVideoDownloadZhContent() {
           {/* 注意事项 */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">注意事项和版权提醒</h2>
           <p className="text-gray-300 mb-6">在下载和使用推特视频时，请务必注意以下几点：</p>
+
+          <Callout variant="warning" title="版权提醒">下载的视频仅限个人学习与欣赏，未经原作者授权请勿用于商业用途或二次传播；转发时务必标注原作者与来源。</Callout>
 
           <div className="space-y-3 mb-8">
             <div className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/10">

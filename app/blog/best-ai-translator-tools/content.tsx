@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Check, X, Globe, Zap, DollarSign, Brain, Languages, Sparkles, BookOpen } from "lucide-react";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function BestAiTranslatorToolsContent() {
   return (
@@ -26,6 +27,7 @@ export default function BestAiTranslatorToolsContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["DeepL leads accuracy for European languages; Papago dominates Korean; Yandex is strongest for Russian.", "Google Translate has the broadest coverage at 133+ languages with consistently good quality.", "ChatGPT and other LLMs produce the most natural output for nuanced, creative, and culturally sensitive text.", "Free tiers cover most personal needs; paying mainly buys glossaries, document formatting, and higher API limits.", "Funlingo offers free contextual translation while you watch, with dual subtitles and click-to-translate."]} />
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">AI translation has advanced dramatically in recent years. What once produced laughably bad output now delivers translations that rival professional human work for many language pairs. But with so many AI translator tools available, from established giants like Google Translate and DeepL to newcomers powered by large language models, choosing the right one can be overwhelming. This comprehensive guide compares the 10 best AI translators of 2026, covering accuracy, pricing, language support, and ideal use cases for each. Whether you&apos;re looking for the best AI translation tool for professional documents, a free AI language translator for casual use, or an AI-powered translation tool for learning — this guide covers your options.</p>
 
           <hr className="border-white/10 my-12" />
@@ -249,6 +251,9 @@ export default function BestAiTranslatorToolsContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How to Choose the Right AI Translator</h2>
           <p className="text-gray-300 mb-6">The best AI translator depends entirely on your use case. Here is a decision framework to help you choose:</p>
+
+          <Callout variant="tip" title="Test before you commit">Run the same passage through two or three tools in your specific language pair and compare. Accuracy varies enormously by pair, so the best general-purpose tool may not be best for yours.</Callout>
+
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center gap-2 mb-3"><Globe className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">Consider Your Language Pair</span></div>

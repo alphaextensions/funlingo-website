@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Check, X, ArrowRight, Globe, Languages, DollarSign, Star } from "lucide-react";
+import { KeyTakeaways, StatGrid, Callout } from "@/app/blog/_components/graphics";
 
 export default function PortugueseToEnglishTranslatorContent() {
   return (
@@ -27,10 +28,14 @@ export default function PortugueseToEnglishTranslatorContent() {
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
 
+          <KeyTakeaways items={["Portuguese has two major variants, Brazilian (PT-BR) and European (PT-PT), with real differences in vocabulary, grammar, and spelling, so always specify which you need.", "DeepL produces the most natural translations, especially for European Portuguese, while Google Translate handles everyday Brazilian Portuguese well.", "ChatGPT is the most flexible option: it explains translation choices, handles slang, and can target a specific variant.", "Watch out for false cognates: 'puxe' means pull, 'pretender' means to intend, and 'exquisito' means weird.", "Funlingo gives free dual Portuguese and English subtitles on Netflix, YouTube, and Prime Video so you learn in context, not just by looking words up."]} />
+
           <h2 className="text-2xl font-bold text-white mb-4">Why Portuguese to English Translation Matters in 2026</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Portuguese is the sixth most spoken language on the planet. With over 260 million speakers spread across Brazil, Portugal, Mozambique, Angola, and several other nations, it is one of the fastest-growing languages on the internet. Brazil alone accounts for roughly 215 million Portuguese speakers and is the largest economy in Latin America, making Brazilian Portuguese a critical language for business, travel, entertainment, and diplomacy.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Whether you are trying to understand a Brazilian news article, communicate with Portuguese-speaking colleagues, watch a Brazilian telenovela, or simply learn a new language, you need a reliable tradutor do ingl&ecirc;s para portugu&ecirc;s. But not all translation tools are created equal. Portuguese has two major variants &mdash; Brazilian and European &mdash; with meaningful differences in vocabulary, grammar, pronunciation, and spelling. A good translator handles both accurately.</p>
           <p className="leading-relaxed text-gray-300 mb-6">This guide compares the eight best Portuguese to English translation tools available in 2026, breaks down the differences between Brazilian and European Portuguese, gives you over 25 essential phrases, and shows you how immersive learning through video content can take your Portuguese far beyond what any translator alone can offer.</p>
+
+          <StatGrid stats={[{value:"260M+", label:"Portuguese speakers worldwide"}, {value:"6th", label:"most spoken language"}, {value:"215M", label:"speakers in Brazil"}, {value:"600-750h", label:"to reach proficiency for English speakers"}]} />
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Learn Portuguese naturally with free dual subtitles on Netflix, YouTube, and Prime Video.</p>
@@ -466,6 +471,8 @@ export default function PortugueseToEnglishTranslatorContent() {
           <hr className="border-white/10 my-12" />
 
           {/* ==================== TIPS SECTION ==================== */}
+
+          <Callout variant="warning" title="Watch for false cognates">Portuguese shares words with English and Spanish but meanings can differ. 'Puxe' on a door means pull, not push. 'Pretender' means to intend, not to pretend. 'Exquisito' means weird, not exquisite.</Callout>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Tips for More Accurate Portuguese Translation</h2>
 

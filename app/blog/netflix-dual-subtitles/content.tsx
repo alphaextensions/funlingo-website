@@ -5,7 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, X, AlertCircle, Monitor, Globe, Settings } from "lucide-react";
-import { DualSubtitleDemo } from "@/app/blog/_components/graphics";
+import { DualSubtitleDemo, KeyTakeaways, StepFlow } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function NetflixDualSubtitlesContent() {
@@ -26,6 +26,7 @@ export default function NetflixDualSubtitlesContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Netflix only shows one subtitle track at a time, so you need a free browser extension to display two languages at once.", "Dual subtitles put your target language and native language on screen together, so you read the original dialogue and its translation in real time.", "Funlingo sets this up in about 90 seconds and is completely free with no premium tiers or paywalls.", "Dual subtitle extensions work only in the Chrome desktop browser, not the Netflix mobile or smart TV apps.", "Funlingo also works on YouTube and Prime Video, unlike Language Reactor or Trancy."]} />
           <h2 className="text-2xl font-bold text-white mb-4">What Are Netflix Dual Subtitles?</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Netflix dual subtitles let you display two subtitle tracks at the same time while watching any show or movie. Your native language appears alongside your target language, so you can follow the dialogue in both languages without pausing or switching back and forth.</p>
           <DualSubtitleDemo targetLang="Spanish" target="No pasa nada" highlight="pasa" native="It's no big deal" />
@@ -57,6 +58,8 @@ export default function NetflixDualSubtitlesContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Step-by-Step: Set Up Netflix Dual Subtitles with Funlingo</h2>
           <p className="text-gray-300 mb-8">Follow these five steps to start watching Netflix with dual subtitles today. The entire process takes about 90 seconds.</p>
+
+          <StepFlow steps={[{title:"Install Funlingo", desc:"Add the free extension from the Chrome Web Store. The icon appears in your toolbar."}, {title:"Open Netflix in Chrome", desc:"Sign in at netflix.com in the Chrome desktop browser, not the app."}, {title:"Pick a show and play", desc:"Choose a title with subtitles in your target language and start playing."}, {title:"Enable and configure", desc:"Click the Funlingo icon, toggle dual subtitles on, and set your target and native languages."}]} />
 
           <div className="space-y-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">

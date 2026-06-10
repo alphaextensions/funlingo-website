@@ -5,7 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, Check, X, Shield, Zap, Globe, DollarSign } from "lucide-react";
-import { StatGrid } from "@/app/blog/_components/graphics";
+import { StatGrid, KeyTakeaways, ProsCons } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function BestDualSubtitleExtensionContent() {
@@ -26,6 +26,7 @@ export default function BestDualSubtitleExtensionContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Dual subtitle extensions show your target and native language on screen at once, so you rarely pause to look things up.", "We compared 7 extensions across price, platform support, features, and usability.", "Funlingo is the best free pick: no paywall, with Netflix, YouTube, and Prime Video support plus a vocabulary builder.", "Most competitors only cover two of the three major platforms and gate vocabulary tools behind a subscription.", "The approach is backed by comprehensible-input research: understanding in context drives natural acquisition."]} />
           <StatGrid
             stats={[
               { value: "7", label: "extensions compared" },
@@ -62,6 +63,11 @@ export default function BestDualSubtitleExtensionContent() {
               <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Word saving</div>
             </div>
           </div>
+
+          <ProsCons
+            pros={["Completely free with no premium tier or feature paywall", "Supports Netflix, YouTube, and Amazon Prime Video", "Built-in vocabulary builder and word saving", "One-minute setup straight from the Chrome Web Store"]}
+            cons={["Chrome desktop only, no mobile app support", "Requires an active streaming platform subscription"]}
+          />
 
           <h3 className="text-xl font-bold text-white mb-4">2. Language Reactor — Most Popular Option</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">

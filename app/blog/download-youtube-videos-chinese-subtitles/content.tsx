@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Download, ArrowRight, Monitor, Globe, Check, X } from "lucide-react";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function DownloadYoutubeVideosChineseSubtitlesContent() {
   return (
@@ -26,6 +27,7 @@ export default function DownloadYoutubeVideosChineseSubtitlesContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["yt-dlp is the most powerful method: use --write-sub --sub-lang zh-Hans --embed-subs to bake Chinese subtitles into the video.", "Online tools like SaveSubs and DownSub extract subtitle files (SRT/VTT) with no install, but not the video.", "Browser extensions add a one-click subtitle download button right on the YouTube page.", "Use language codes zh-Hans (Simplified), zh-Hant (Traditional), or zh; save subtitle files as UTF-8 SRT for best compatibility.", "Funlingo skips downloading entirely with free real-time dual Chinese-plus-English subtitles on YouTube, Netflix, and Prime."]} />
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Whether you are studying Mandarin Chinese or simply want to save Chinese-language YouTube videos for offline viewing, downloading videos with their Chinese subtitles intact is incredibly useful. This guide walks you through three free methods to download YouTube videos with Chinese subtitles (youtube视频在线下载) so you can study on the go, review tricky vocabulary on the train, or build a personal library of Chinese learning material.</p>
 
           <p className="text-gray-300 mb-6">We will cover the command-line tool yt-dlp, several online subtitle extraction services, and browser extensions. At the end, we will also show you a smarter alternative that eliminates the need to download anything at all: watching YouTube with free dual Chinese subtitles in real time using Funlingo.</p>
@@ -294,6 +296,8 @@ yt-dlp --write-sub --sub-lang zh-Hans --embed-subs "https://www.youtube.com/play
           <p className="text-gray-300 mb-6">Downloading videos is useful for offline access, but if your primary goal is learning Chinese, there is a faster and more effective approach. Instead of downloading, you can watch YouTube videos with dual subtitles in real time, seeing Chinese and your native language simultaneously on the screen.</p>
 
           <p className="text-gray-300 mb-6">Funlingo is a free Chrome extension that adds dual subtitles to YouTube, Netflix, and Amazon Prime Video. For Chinese learners, it displays Chinese characters (Simplified or Traditional) alongside an English translation (or any other language) directly below the video. You do not need to download anything, manage subtitle files, or use command-line tools.</p>
+
+          <DualSubtitleDemo targetLang="Chinese" target="我今天学了一个新词。" highlight="新词" native="I learned a new word today." />
 
           <div className="bg-gradient-to-br from-red-900/20 to-transparent p-8 rounded-xl border border-red-400/20 mb-12">
             <h3 className="text-2xl font-bold text-white mb-6 mt-0">Why Funlingo Beats Downloading for Chinese Learning</h3>

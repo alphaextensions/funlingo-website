@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Check, X, ArrowRight, Globe, MessageSquare, Languages, BookOpen, Star } from "lucide-react";
+import { KeyTakeaways, Callout, FeatureGrid } from "@/app/blog/_components/graphics";
 
 export default function PhraseTranslatorContent() {
   return (
@@ -26,6 +27,7 @@ export default function PhraseTranslatorContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Standard translators fail at idioms because they convert word by word, and a phrase's meaning has nothing to do with its individual words.", "LLMs like ChatGPT and Claude are the strongest phrase translators: they understand figurative meaning, explain cultural context, and give equivalent expressions.", "DeepL handles European idioms well for fast, accurate translation, while Reverso Context and Linguee show real bilingual examples from authentic texts.", "Learn the equivalent expression, not the literal translation, and study phrases in context for far better retention.", "Funlingo lets you encounter idioms naturally in shows with dual subtitles, so you see how professionals translated them in real conversation."]} />
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">You paste an idiom into Google Translate and get back something that makes zero sense. &quot;It&apos;s raining cats and dogs&quot; becomes a weather report about falling animals. &quot;Break a leg&quot; turns into a medical emergency. The problem is not the translator itself &mdash; it is that standard translation tools were built for literal, word-by-word conversion, not for understanding the meaning behind phrases, idioms, and cultural expressions. A dedicated phrase translator handles this differently. Instead of translating each word in isolation, it recognizes the phrase as a unit of meaning and provides the culturally equivalent expression in the target language. This guide compares the 8 best phrase translators of 2026 and shows you how to actually learn idioms in context rather than just looking them up.</p>
 
           <hr className="border-white/10 my-12" />
@@ -258,7 +260,11 @@ export default function PhraseTranslatorContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <Callout variant="tip" title="Use it within 24 hours">The fastest way to cement a new phrase is to use it within a day. Write a sentence, say it out loud, or drop it into a language exchange. Passive reading fades within days.</Callout>
+
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Tips for Learning Phrases in Context (Not Just Memorizing)</h2>
+
+          <FeatureGrid items={[{title:"Watch in your target language", desc:"Hear idioms in their natural habitat with tone, situation, and emotional context that a dictionary cannot give."}, {title:"Save phrases in context", desc:"Record the full sentence an expression appeared in, not the phrase alone, then review with spaced repetition."}, {title:"Learn the equivalent", desc:"Store the meaning as the equivalent expression, not the literal words, so you stop translating word by word."}, {title:"Group by theme", desc:"Cluster phrases by situation (surprise, encouragement, humor) the way native speakers actually store them."}]} />
           <p className="text-gray-300 mb-6">Looking up a phrase in a translator is useful, but it does not mean you will remember it or know when to use it. Research in second language acquisition consistently shows that learning vocabulary and phrases in context leads to significantly better retention and appropriate usage. Here are practical strategies for moving beyond simple lookup.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">

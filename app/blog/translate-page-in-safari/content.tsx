@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Check, X, Monitor, Smartphone, Tablet, Globe, AlertCircle } from "lucide-react";
+import { KeyTakeaways, ProsCons } from "@/app/blog/_components/graphics";
 
 export default function TranslatePageInSafariContent() {
   return (
@@ -27,6 +28,8 @@ export default function TranslatePageInSafariContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Safari has had built-in page translation since 2020 (macOS Big Sur / iOS 14 or later).", "On Mac, click the translate icon in the address bar; on iPhone and iPad, tap the 'aA' button and choose Translate.", "Safari supports roughly 20 languages — far fewer than Google Translate's 130+ — and cannot translate PDFs.", "It replaces text entirely, so there is no side-by-side bilingual view and no word-level lookups.", "For language learning, Funlingo shows the original and translation together with click-to-translate on any word."]} />
+
           <p className="lead text-xl leading-relaxed">Safari has had a built-in translation feature since 2020, but many users still do not know it exists or how to use it effectively. Whether you are browsing a foreign news site, reading a recipe in another language, or researching content for language learning, Safari can translate entire web pages with just a couple of taps. Here is everything you need to know about translating pages in Safari on Mac, iPhone, and iPad.</p>
 
           <p>If you are interested in using web translation as part of a language learning strategy, check out our guide on <a href="/blog/website-translation-language-learning" className="text-[#C642FC] hover:underline">website translation for language learning</a>.</p>
@@ -151,6 +154,8 @@ export default function TranslatePageInSafariContent() {
           {/* Limitations */}
           <h2 className="text-3xl font-bold text-white">Limitations of Safari Translation</h2>
           <p>While Safari&apos;s built-in translation is convenient, it does have some notable limitations you should be aware of:</p>
+
+          <ProsCons pros={["Built directly into Safari — no extension or setup needed", "Translates entire pages inline while keeping the layout intact", "One tap to toggle back to the original text", "Works offline on supported devices"]} cons={["Only about 20 languages supported", "No side-by-side bilingual view", "Cannot translate PDFs", "No word-level definitions or pronunciation", "May fail on JavaScript-heavy pages"]} />
 
           <div className="space-y-3 my-8">
             {[

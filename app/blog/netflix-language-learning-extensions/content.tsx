@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Check, X, Star, Crown, Zap } from "lucide-react";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function NetflixLanguageLearningExtensionsContent() {
   return (
@@ -27,6 +28,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Netflix only shows one subtitle language at a time, so a Chrome extension is required for dual subtitles and word lookups.", "Funlingo is the best free option: dual subtitles, multi-translation popups, pronunciation audio, AI explanations, and vocab saving at zero cost.", "Language Reactor ($7.99/mo) and Trancy ($9.90/mo) lock their best features behind paid plans.", "Funlingo is the only tool here that supports all three major platforms: Netflix, YouTube, and Prime Video.", "All five extensions are desktop-only Chrome add-ons; none work on the Netflix mobile app or smart TVs."]} />
           <p className="lead text-xl leading-relaxed">If you&apos;ve been searching for a language learning with Netflix Chrome extension, you&apos;re not alone &mdash; it&apos;s one of the most popular ways to combine entertainment with real language progress. Netflix has become one of the most popular platforms for language learning, and for good reason: thousands of shows and movies in dozens of languages, professional subtitles, and content you actually want to watch. But Netflix&apos;s built-in subtitle system only shows one language at a time. That is where Chrome extensions come in &mdash; they unlock dual subtitles, word lookups, and vocabulary tools that transform passive watching into active learning.</p>
 
           <p>We tested and compared the five most popular Netflix language learning extensions available in 2026. Below you will find detailed reviews, a side-by-side comparison table, and guidance on choosing the right tool for your learning style. If you are also interested in how <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">dual subtitle extensions</a> work across platforms, or want broader tips on <a href="/blog/netflix-language-learning" className="text-[#C642FC] hover:underline">learning languages with Netflix</a>, check out our dedicated guides.</p>
@@ -279,6 +281,8 @@ export default function NetflixLanguageLearningExtensionsContent() {
               </div>
             </div>
           </div>
+
+          <Callout variant="note" title="Don't run two at once">Running two subtitle-overlay extensions at the same time causes conflicts, overlapping subtitles, and performance issues. Pick one and disable the others while watching.</Callout>
 
           <h2 className="text-3xl font-bold text-white mt-16 mb-6">How to Choose the Right Extension</h2>
           <p>The best extension depends on your specific learning goals and budget. Here is a quick decision framework.</p>

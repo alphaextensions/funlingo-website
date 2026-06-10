@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Check, X, Download, Shield, Globe, FileText, AlertTriangle, BookOpen } from "lucide-react";
+import { KeyTakeaways, StepFlow, Callout } from "@/app/blog/_components/graphics";
 
 export default function BestSubtitleDownloadSitesContent() {
   return (
@@ -26,6 +27,7 @@ export default function BestSubtitleDownloadSitesContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["OpenSubtitles is the largest database with hash-based search for perfect sync; Podnapisi excels for European languages.", "Subscene is strongest for Asian and Middle Eastern languages; Addic7ed leads for fast TV-episode subtitles.", "DownSub and SaveSubs pull subtitles straight from YouTube and other streaming URLs.", "Subtitle files are plain text and safe, but host sites can be risky, so use an ad blocker and avoid fake download buttons.", "For language learning, Funlingo skips downloads entirely with in-browser dual subtitles and click-to-translate."]} />
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Whether you are watching a foreign film, studying a new language, or need accessibility captions for a video that does not have them, subtitle files are indispensable. But finding reliable, safe, and well-timed subtitles can be surprisingly difficult. This pillar guide reviews the 15 best subtitle download sites on the internet, covering movies, TV shows, and YouTube content. For each site we break down supported formats, language coverage, and honest pros and cons so you can make the right choice.</p>
 
           <hr className="border-white/10 my-12" />
@@ -233,6 +235,14 @@ export default function BestSubtitleDownloadSitesContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How to Use Subtitle Files</h2>
           <p className="text-gray-300 mb-6">Once you have downloaded a subtitle file, using it is straightforward. Here is a step-by-step walkthrough for the most common scenarios:</p>
 
+          <StepFlow steps={[
+            { title: "Match the file to your video", desc: "Rename the subtitle file to match the video exactly (movie.mp4 to movie.srt) and keep both in the same folder." },
+            { title: "Load it in your media player", desc: "In VLC use Subtitle > Add Subtitle File; in MPV just drag and drop the file onto the video window." },
+            { title: "Adjust timing if needed", desc: "If subs are early or late, press G or H in VLC to nudge them, or shift all timestamps in Subtitle Edit." },
+            { title: "Convert formats if necessary", desc: "Convert SRT to VTT for web players using an online tool or ffmpeg -i subs.srt subs.vtt." },
+          ]} />
+
+
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center gap-2 mb-3"><FileText className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">Step 1: Match the File to Your Video</span></div>
             <p className="text-gray-300">Rename the subtitle file to match your video file exactly (minus the extension). For example, if your video is <code className="bg-white/10 px-2 py-1 rounded text-sm">movie.mp4</code>, name the subtitle file <code className="bg-white/10 px-2 py-1 rounded text-sm">movie.srt</code>. Place both files in the same folder. Most media players will auto-detect and load the subtitle file.</p>
@@ -256,6 +266,9 @@ export default function BestSubtitleDownloadSitesContent() {
           <hr className="border-white/10 my-12" />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Safety Tips for Downloading Subtitles</h2>
+
+          <Callout variant="warning" title="Watch the file extension">A real subtitle file ends in .srt, .vtt, .sub, or .ass. If a download hands you a .exe, .zip, or .rar, delete it immediately and leave the site.</Callout>
+
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <div className="flex items-center gap-2 mb-3"><Shield className="w-5 h-5 text-yellow-400" /><span className="font-semibold text-white">Stay Safe When Downloading Subtitle Files</span></div>
             <p className="text-gray-300 mb-4">Subtitle files themselves (SRT, VTT, ASS) are plain text and cannot contain malware. However, the sites hosting them can be dangerous. Follow these rules to protect yourself:</p>

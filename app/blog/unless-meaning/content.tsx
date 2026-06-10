@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, BookOpen, ArrowRight, Check, X, AlertCircle } from "lucide-react";
+import { KeyTakeaways, Callout, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function UnlessMeaningContent() {
   return (
@@ -29,6 +30,8 @@ export default function UnlessMeaningContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways items={["'Unless' is a subordinating conjunction meaning 'except if' or 'if ... not'.", "It usually equals 'if not' in zero and first conditionals (real, possible situations).", "Do NOT use 'unless' in second or third conditionals — those describe hypothetical or past-unreal situations.", "Never use 'will' inside the unless-clause, and avoid double negatives like 'unless you don't'.", "Do not confuse 'unless' (a conditional exception) with 'until' (a time boundary)."]} />
 
           <p className="lead text-xl leading-relaxed">
             The word <strong className="text-white">&ldquo;unless&rdquo;</strong> is one of those small English words that trips up learners at every level. It looks simple, but its logic can be surprisingly tricky. Whether you&apos;re preparing for an English exam, writing a formal email, or trying to follow dialogue in a Netflix series, understanding <strong className="text-white">unless</strong> is essential. In this guide, we cover the full meaning, grammar rules across all conditional types, 30+ example sentences, common mistakes, translations into other languages, and how immersion tools can help you internalize grammar naturally.
@@ -179,6 +182,8 @@ export default function UnlessMeaningContent() {
               </div>
             ))}
           </div>
+
+          <Callout variant="warning" title="The #1 rule to remember">Never put &ldquo;will&rdquo; inside the unless-clause. Say &ldquo;Unless it rains, we&apos;ll go out&rdquo; &mdash; not &ldquo;Unless it will rain.&rdquo; The condition always uses the present simple.</Callout>
 
           <h3 className="text-xl font-bold text-white mb-4">Additional Grammar Notes</h3>
           <ul className="space-y-2 my-4">
@@ -360,6 +365,8 @@ export default function UnlessMeaningContent() {
           <p>
             When you watch an English TV series or YouTube video and hear a character say <em>&ldquo;I&apos;m not going unless you come with me,&rdquo;</em> your brain processes not just the grammar rule but also the tone, the emotion, the context, and the cultural nuance. That&apos;s far more powerful than reading the rule in a textbook.
           </p>
+
+          <DualSubtitleDemo targetLang="English" target="I'm not going unless you come with me" highlight="unless" native="No iré a menos que vengas conmigo" />
           <p>
             <strong className="text-white">Dual subtitles</strong> supercharge this process. With your target language on top and your native language below (or vice versa), you can:
           </p>

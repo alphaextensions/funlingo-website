@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, BookOpen, Languages, AlertTriangle, Utensils, Briefcase, MapPin } from "lucide-react";
+import { KeyTakeaways, Callout, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function ItalianToEnglishTranslationContent() {
   return (
@@ -26,6 +27,7 @@ export default function ItalianToEnglishTranslationContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Italian is not word-for-word: gendered nouns, flexible word order, and idioms mean literal translation often misses the real meaning.", "Use tools by task: DeepL for natural longer text, Google Translate for quick camera lookups, Reverso Context for real examples, WordReference for word-level depth.", "Watch for false friends like camera (room), libreria (bookshop), and parente (relative) that look English but mean something else.", "Translate meaning, not words: In bocca al lupo literally means in the mouth of the wolf but means good luck.", "Immersion with dual subtitles on Italian video builds an intuitive sense of how the language actually works."]} />
           <h2 className="text-2xl font-bold text-white mb-4">Why Italian to English Translation Matters</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Whether you are traveling through Rome, reading an Italian recipe, watching a Fellini film, or communicating with Italian business partners, the need to translate from italiano to english comes up constantly. Italian is spoken by over 85 million people worldwide and is one of the most studied languages in the world.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">The challenge is that Italian is not a word-for-word language. Gendered nouns, flexible word order, and idiomatic expressions mean that a literal translation often misses the actual meaning. This guide covers the best tools for accurate Italian to English translation, essential phrases you should know, grammar pitfalls to watch for, and how immersion through Italian media can transform your understanding.</p>
@@ -185,6 +187,10 @@ export default function ItalianToEnglishTranslationContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How Watching Italian Shows with Dual Subtitles Helps Translation Skills</h2>
           <p className="text-gray-300 mb-6">Reading about translation rules is useful, but nothing teaches you how Italian actually works like hearing it spoken by native speakers in real contexts. Italian cinema and television — from classic Fellini to modern Netflix series like &quot;Suburra&quot; and &quot;Baby&quot; — provide hours of authentic Italian with natural pacing, slang, regional accents, and emotional nuance that no textbook captures.</p>
           <p className="text-gray-300 mb-6">Watching with dual subtitles lets you see the Italian text and English translation simultaneously. Over time, you start recognizing patterns: how Italian structures sentences, which words are used in specific contexts, and how idiomatic expressions function. This builds an intuitive sense of translation that complements your tool-based approach.</p>
+
+          <DualSubtitleDemo targetLang="Italian" target="In bocca al lupo per l'esame!" highlight="bocca" native="Good luck on the exam!" />
+
+          <Callout variant="tip" title="Pair tools with immersion">Run a passage through DeepL for the gist, then watch related Italian videos with dual subtitles to hear those words in real context.</Callout>
           <p className="text-gray-300 mb-6">For a deeper dive into using Netflix as a language learning tool, read our guide on <a href="/blog/netflix-language-learning" className="text-[#C642FC] hover:underline">Netflix language learning strategies</a>.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">

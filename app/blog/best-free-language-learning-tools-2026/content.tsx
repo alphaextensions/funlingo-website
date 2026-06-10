@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, DollarSign, Zap, CheckCircle, XCircle, Trophy, Layers, Brain, Headphones, BookOpen, MessageCircle, Repeat } from "lucide-react";
+import { KeyTakeaways, StepFlow } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function BestFreeToolsContent() {
@@ -26,6 +27,8 @@ export default function BestFreeToolsContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways items={["You can build a complete language-learning stack covering input, vocabulary, grammar, speaking, and reading for $0.", "Comprehensible input, not gamified drills, is the primary driver of acquisition, and the best input tools are free.", "Funlingo is the only dual subtitle tool on the list that is 100% free with no premium tier.", "Pair Funlingo with Anki, Language Transfer, and HelloTalk for a research-backed daily routine.", "The only things you truly lose by going free are AI conversation partners and professional one-on-one tutoring."]} />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Subscription Fatigue Problem</h2>
           <p className="text-gray-300 mb-6">Language learning has become an expensive hobby. Duolingo Super costs $12.99 per month. Babbel charges $14.95. Rosetta Stone wants $11.99. Lingopie is $12.00. Busuu Premium runs $13.99. Add a tutor at $15 to $30 per session and you can easily spend $50 to $100 per month learning a language.</p>
@@ -233,6 +236,13 @@ export default function BestFreeToolsContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Complete Free Stack: How to Combine Everything</h2>
           <p className="text-gray-300 mb-6">Individual tools are useful. A combined routine is powerful. Here is how to assemble the free tools above into a complete daily language learning system.</p>
+
+          <StepFlow steps={[
+            { title: "Anki review (5 min)", desc: "Review flashcards from yesterday's watching session to activate memory of words seen in context." },
+            { title: "Dual subtitle watching (25 min)", desc: "Watch Netflix or YouTube with Funlingo dual subtitles and save 5 to 10 new words." },
+            { title: "Shadowing (5 min)", desc: "Rewind a scene and repeat the dialogue out loud, matching the speaker's rhythm and intonation." },
+            { title: "Micro writing or speaking (5 min)", desc: "Write a few sentences or send a HelloTalk voice message using at least one new word." },
+          ]} />
 
           <div className="bg-gradient-to-br from-[#C642FC]/20 to-transparent p-8 rounded-xl border border-[#C642FC]/20 mb-12">
             <h3 className="text-2xl font-bold text-white mb-6 mt-0">The $0 Daily Routine (40 Minutes)</h3>

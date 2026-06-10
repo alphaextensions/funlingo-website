@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, BookOpen, Brain, Repeat, Bookmark, Headphones, Sparkles, Target, Layers } from "lucide-react";
+import { KeyTakeaways, StatGrid } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function VocabularyBuildingContent() {
@@ -25,6 +26,14 @@ export default function VocabularyBuildingContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways
+            items={[
+              "Passive binge-watching rarely teaches new words — you need active strategies to make vocabulary stick.",
+              "Dual subtitles let your brain connect target-language words to their meaning in context as you watch.",
+              "Save 5-15 words per episode and review them with spaced repetition for lasting retention.",
+              "Match content to your level and build a consistent routine to learn 100-300 new words per month.",
+            ]}
+          />
           <h2 className="text-2xl font-bold text-white mb-4">Why Vocabulary Building While Watching Is the Smartest Way to Learn</h2>
           <p className="leading-relaxed text-gray-300 mb-6">You have probably experienced this: you binge-watch an entire season of a foreign-language show, enjoy every minute, and then realize you cannot remember a single new word.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">But here is the good news: vocabulary building while watching is one of the most effective ways to acquire new words, provided you use the right strategies.</p>
@@ -40,6 +49,13 @@ export default function VocabularyBuildingContent() {
           <p className="text-gray-300 mb-6">The single most impactful change you can make is switching from single-language subtitles to dual subtitles. When you see both your native language and your target language on screen simultaneously, your brain automatically starts making connections.</p>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Strategy 2: Save Words While Watching and Review with Spaced Repetition</h2>
           <p className="text-gray-300 mb-6">Encountering a new word once is rarely enough to learn it. Research suggests that most learners need to encounter a word 7 to 16 times before it moves into long-term memory.</p>
+          <StatGrid
+            stats={[
+              { value: "7-16", label: "encounters needed to learn a word" },
+              { value: "5-15", label: "new words to save per episode" },
+              { value: "100-300", label: "new words per month with a routine" },
+            ]}
+          />
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
             {[{title:"Spot a New Word",desc:"While watching with dual subtitles, notice a word you want to learn."},{title:"Save It Instantly",desc:"Click the word in the subtitle to save it to your vocabulary list."},{title:"Finish Your Episode",desc:"Keep watching. Save 5 to 15 words per episode."},{title:"Review with Spaced Repetition",desc:"Review saved words at increasing intervals."},{title:"Encounter Them Again Naturally",desc:"Recognize your saved words in new episodes."}].map((s,i)=>(
               <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i+1}</div><div className="pt-2 text-gray-300"><strong className="text-white block mb-1">{s.title}</strong>{s.desc}</div></div>

@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Volume2, Globe, MousePointerClick, Brain, Save, Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function BestAIToolsContent() {
   return (
@@ -25,6 +26,7 @@ export default function BestAIToolsContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Funlingo overlays dual subtitles so you see the learner and native language together in the player.", "A unique per-word selector lets you choose 1, 2, 3, or All translations to control depth and avoid overload.", "Click-for-context AI explanations add quick grammar and usage notes for tricky phrases.", "Pronunciation guides include phonetic transcription and slow playback to break down syllables.", "Save-to-vocab pulls phrases straight from the overlay into a spaced-review deck for durable learning."]} />
           <p className="lead text-xl leading-relaxed text-gray-200">Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.</p>
           <hr className="border-white/10 my-12" />
           <h3 className="text-2xl font-bold text-white mb-6">Feature breakdown</h3>
@@ -37,6 +39,8 @@ export default function BestAIToolsContent() {
               <li className="flex gap-4"><div className="mt-1 text-[#C642FC] shrink-0"><Save className="w-5 h-5" /></div><div><strong className="text-white">Save-to-Vocab and Review Deck</strong> — <span className="text-gray-400">immediate saving from overlay with spaced review.</span></div></li>
             </ul>
           </div>
+          <DualSubtitleDemo targetLang="Spanish" target="No puedo creer que estés aquí." highlight="creer" native="I can't believe you're here." />
+
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">How it works (step-by-step user flow)</h2>
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-16">
             {["Install the Funlingo browser extension.", "Play a video or open an article with dual subtitles.", "Hover or click any word in the learning subtitle. A small overlay appears with chips: [1][2][3][All].", "Select the number of translations to view. See phonetics, a short context sentence, and Play for native audio.", "Tap Save to Vocab to add the phrase to your review deck."].map((step, i) => (

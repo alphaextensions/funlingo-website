@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Download, Monitor, Terminal, Scissors, AlertTriangle, BookOpen } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, ProsCons, Callout } from "@/app/blog/_components/graphics";
 
 export default function DownloadYoutubeVideoPartsContent() {
   return (
@@ -26,6 +27,7 @@ export default function DownloadYoutubeVideoPartsContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Online tools like YTCutter let you clip a YouTube video with no install, but cap quality around 720p.", "Screen recording with OBS or built-in OS tools captures exactly what is on screen, including subtitles.", "yt-dlp with the --download-sections flag extracts precise time ranges at full quality.", "Downloading YouTube videos violates its Terms of Service; personal study use is generally low-risk under fair use.", "For language study, Funlingo adds dual subtitles directly on YouTube so you never need to download clips."]} />
           <h2 className="text-2xl font-bold text-white mb-4">Why Download Only Part of a YouTube Video?</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Sometimes you do not need an entire 20-minute video. Maybe you want a 30-second clip of a native speaker using a tricky grammar pattern, a short segment for a presentation, or a reference clip for a creative project. Downloading the full video wastes storage, takes longer, and gives you extra footage you will never watch again.</p>
           <p className="leading-relaxed text-gray-300 mb-6">Language learners in particular benefit from creating short, focused study clips. A two-minute dialogue from a Spanish vlog or a single scene from a Korean variety show becomes a powerful flashcard when you can replay it on demand. Instead of scrubbing through a long video every time you study, you have exactly the segment you need saved locally.</p>
@@ -84,6 +86,8 @@ export default function DownloadYoutubeVideoPartsContent() {
           </ol>
           <p className="text-gray-300 mb-6">For audio-only extraction, add the <code className="bg-white/10 px-2 py-1 rounded text-sm">-x --audio-format mp3</code> flags. This is perfect for creating listening exercises from podcast-style YouTube content.</p>
 
+          <ProsCons proLabel="Downloading clips" conLabel="Studying with Funlingo" pros={["Works offline once the clip is saved", "Full control over quality and exact time range", "Can keep a permanent local copy"]} cons={["Manage a growing library of files", "Risk of breaking YouTube Terms of Service", "No click-to-translate or vocabulary saving"]} />
+
           <hr className="border-white/10 my-12" />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Method 4: Browser-Based Video Editors</h2>
@@ -106,6 +110,8 @@ export default function DownloadYoutubeVideoPartsContent() {
             <p className="text-gray-300 mb-4">Downloading YouTube videos technically violates YouTube&apos;s Terms of Service. However, the legal landscape is nuanced. Personal, non-commercial use for study purposes is generally low-risk. Fair use provisions in many countries allow short clips for education, commentary, and criticism.</p>
             <p className="text-gray-300">That said, you should never redistribute downloaded content, upload it elsewhere, or use it commercially without the original creator&apos;s permission. When in doubt, stick to screen recording short clips for personal study.</p>
           </div>
+
+          <Callout variant="warning" title="Stay on the safe side">Never redistribute, re-upload, or commercially use downloaded YouTube clips without the creator's permission. Keep any clips strictly for personal, non-commercial study.</Callout>
 
           <hr className="border-white/10 my-12" />
 

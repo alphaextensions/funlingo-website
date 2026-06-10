@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, X, Star, Zap, Globe, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, ProsCons } from "@/app/blog/_components/graphics";
 
 export default function LanguageReactorAlternativesContent() {
   return (
@@ -42,6 +43,8 @@ export default function LanguageReactorAlternativesContent() {
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pb-24">
         <article className="prose prose-invert prose-lg max-w-none">
+
+          <KeyTakeaways items={["Language Reactor Pro now costs $7.99/month for vocab saving and advanced features, with a limited free tier and no Prime Video support.", "It also lacks per-word pronunciation audio, a multi-translation selector, and AI grammar explanations.", "Funlingo is the best free pick: dual subtitles on Netflix, YouTube, and Prime Video with pronunciation, AI grammar help, and vocab export.", "Trancy ($9.90/mo) is best for deep AI grammar analysis and AiTalk speaking practice; eJOY English ($4.99/mo) suits budget English learners.", "Substital, Mate Translate, and Linguo TV are niche tools that complement, rather than replace, a dedicated subtitle extension."]} />
 
           {/* Intro */}
           <section className="mb-16">
@@ -83,6 +86,8 @@ export default function LanguageReactorAlternativesContent() {
               translations from different engines, or AI-powered grammar explanations. If any of these
               gaps affect your workflow, one of the alternatives below will serve you better.
             </p>
+
+            <ProsCons proLabel="Language Reactor strengths" conLabel="Where it falls short" pros={["Popularized dual subtitles on Netflix", "Large, active community", "Curated catalog sorted by difficulty level", "Clean, familiar interface"]} cons={["Pro plan required at $7.99/month for vocab saving", "No Amazon Prime Video support", "No per-word pronunciation audio", "No multi-translation selector or AI grammar explanations"]} />
           </section>
 
           {/* The 7 Best Alternatives */}

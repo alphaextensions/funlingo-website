@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Check, X, Zap, DollarSign, Globe, Monitor } from "lucide-react";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function LanguageReactorVsTrancyContent() {
   return (
@@ -27,6 +28,12 @@ export default function LanguageReactorVsTrancyContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={[
+            "Language Reactor ($6/mo) is cheaper, has a more generous free tier, supports 40+ languages, and offers Anki export and catalogue mode.",
+            "Trancy ($8/mo) adds AI grammar analysis, pronunciation audio, web page translation, and wider platform support including Disney+.",
+            "Neither tool supports Amazon Prime Video, and both lock key features behind paid plans.",
+            "Funlingo is a free alternative covering Netflix, YouTube, and Prime Video with a 4.92/5 Chrome Web Store rating.",
+          ]} />
           <p className="lead text-xl leading-relaxed">If you learn languages by watching movies and TV shows, you have probably come across Language Reactor and Trancy. Both are popular Chrome extensions that add dual subtitles, vocabulary tools, and translation features to streaming platforms. But which one actually deserves a spot in your browser? We put them head to head across pricing, platform support, features, ease of use, and language coverage to help you decide.</p>
 
           <p>If you want a broader overview of all the tools available, check out our guide to the <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extensions</a> or our deep dive into <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>. Looking for more options beyond these two? Check our roundup of <a href="/blog/language-reactor-alternatives" className="text-[#C642FC] hover:underline">Language Reactor alternatives</a>.</p>
@@ -75,6 +82,8 @@ export default function LanguageReactorVsTrancyContent() {
           </div>
 
           <p>For learners on a budget, Language Reactor&apos;s free tier offers more functionality. But if AI grammar breakdowns are important to you, Trancy&apos;s $8/mo may be worth the premium.</p>
+
+          <Callout variant="tip" title="Budget tip">If you only watch Netflix and YouTube, Language Reactor's free tier covers the basics without any subscription &mdash; or skip the paywalls entirely with a fully free tool like Funlingo.</Callout>
 
           <hr className="border-white/10 my-10" />
 

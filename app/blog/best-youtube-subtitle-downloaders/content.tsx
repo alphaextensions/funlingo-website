@@ -16,6 +16,7 @@ import {
   Zap,
 } from "lucide-react";
 import Link from "next/link";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 const tools = [
   {
@@ -223,6 +224,14 @@ export default function BestYoutubeSubtitleDownloadersContent() {
 
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-4 pb-24 prose prose-invert prose-lg">
+        <KeyTakeaways
+          items={[
+            "We compared 10 of the best YouTube subtitle downloaders in 2026 across free web tools, desktop apps, and command-line utilities.",
+            "DownSub is the best free pick for most people; yt-dlp is the most powerful for developers and batch jobs.",
+            "Use 4K Video Downloader or yt-dlp for entire playlists, Subtitle Edit if you need to edit afterward.",
+            "Language learners can skip file downloads entirely and watch with Funlingo's dual subtitles on YouTube.",
+          ]}
+        />
         {/* Introduction */}
         <p>
           Whether you need subtitles for{" "}
@@ -284,6 +293,10 @@ export default function BestYoutubeSubtitleDownloadersContent() {
 
         {/* Tool Reviews */}
         <h2>The 10 Best YouTube Subtitle Downloaders</h2>
+
+        <Callout variant="tip" title="Match the tool to the job">
+          Quick one-off SRT? Use a web tool like DownSub. Whole playlist? Reach for yt-dlp or 4K Video Downloader. Learning a language? A dual-subtitle extension beats downloading files at all.
+        </Callout>
 
         {tools.map((tool, index) => (
           <div

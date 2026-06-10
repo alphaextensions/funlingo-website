@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, Tv, BookOpen, Sparkles, Target, Timer, Brain, Headphones, Repeat, Bookmark, Check, AlertTriangle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function LearnSpanishWatchingTvContent() {
   return (
@@ -25,6 +26,13 @@ export default function LearnSpanishWatchingTvContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways items={[
+            "Watching Spanish TV processes vocabulary, grammar, and pronunciation in context rather than in isolation.",
+            "Pick by level: Pocoyo and Extra en Espanol for beginners, Money Heist and Elite for intermediate, El Marginal and Vis a Vis for advanced.",
+            "Funlingo is the only browser extension that adds dual subtitles to Amazon Prime Video, not just Netflix.",
+            "A 15-minute daily routine of four passes per scene produces better results than occasional binge sessions.",
+          ]} />
 
           {/* ── Intro ── */}
           <h2 className="text-2xl font-bold text-white mb-4">Why Watching TV Is One of the Best Ways to Learn Spanish</h2>
@@ -107,6 +115,8 @@ export default function LearnSpanishWatchingTvContent() {
           <p className="text-gray-300 mb-6">The dual subtitle method is the most efficient way to learn Spanish from TV. Instead of choosing between Spanish subtitles (which beginners often cannot follow) or English subtitles (which let you understand but do not teach you to read Spanish), you display both languages on screen at the same time.</p>
           <p className="text-gray-300 mb-6">Here is why it works. When you see the Spanish text alongside the English translation, your brain automatically maps new words and phrases to their meanings. Over time, you start recognizing patterns in grammar, verb conjugations, and sentence structure without consciously studying them. You are essentially getting reading practice, listening practice, and vocabulary acquisition in a single activity.</p>
           <p className="text-gray-300 mb-6">Funlingo makes this effortless. Install the extension, pick your target language and your native language, and subtitles appear in both languages automatically. You can click any word to see its definition, save vocabulary for later review, and adjust subtitle positioning to your preference.</p>
+
+          <DualSubtitleDemo targetLang="Spanish" target="No pasa nada, tranquilo" highlight="tranquilo" native="It's all good, relax" />
           <p className="text-gray-300 mb-6">For a complete walkthrough, read our <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">Netflix dual subtitles setup guide</a>. And for a comparison of the best tools available, check out our roundup of <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>.</p>
 
           <hr className="border-white/10 my-12" />

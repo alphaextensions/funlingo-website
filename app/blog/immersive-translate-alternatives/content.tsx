@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, X, Star, Zap, Globe, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function ImmersiveTranslateAlternativesContent() {
   return (
@@ -42,6 +43,8 @@ export default function ImmersiveTranslateAlternativesContent() {
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pb-24">
         <article className="prose prose-invert prose-lg max-w-none">
+
+          <KeyTakeaways items={["Immersive Translate excels at bilingual web page, PDF, and ebook translation but has very limited Netflix support and no vocabulary tools.", "Its Pro plan runs about $9.99/month or $69.99/year, with the free tier capping daily translations and premium engines.", "Funlingo is the best free alternative for video-based learning, with dual subtitles on Netflix, YouTube, and Prime Video plus a vocab builder.", "For web page reading, free options like Google Translate Extension and Microsoft Translator cover the basics.", "Choose by use case: video learning favors Funlingo, while reading-heavy workflows favor Immersive Translate or DeepL."]} />
 
           {/* Best Alternatives */}
           <section className="mb-16">
@@ -444,6 +447,7 @@ export default function ImmersiveTranslateAlternativesContent() {
           {/* Limitations */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-white">Limitations of Immersive Translate</h2>
+            <Callout variant="warning" title="If you rely on Netflix">Immersive Translate has very limited or no Netflix dual-subtitle support. For Netflix learning, Funlingo or Language Reactor are far better fits.</Callout>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />

@@ -1,7 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { Play } from "lucide-react";
+import {
+  Play,
+  Check,
+  X,
+  Lightbulb,
+  Info,
+  AlertTriangle,
+  Sparkles,
+} from "lucide-react";
 
 /**
  * Reusable, brand-aligned visual building blocks for blog posts.
@@ -117,6 +125,126 @@ export function StatGrid({
           <div className="text-xs sm:text-sm text-gray-400 mt-1 leading-snug">
             {s.label}
           </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/** TL;DR / key-takeaways callout box. Works for any article. */
+export function KeyTakeaways({
+  items,
+  title = "Key takeaways",
+}: {
+  items: string[];
+  title?: string;
+}) {
+  return (
+    <div className="not-prose my-10 rounded-2xl border border-[#C642FC]/20 bg-[#C642FC]/[0.06] p-6">
+      <div className="flex items-center gap-2 mb-4">
+        <Sparkles className="w-5 h-5 text-[#C642FC]" />
+        <h3 className="text-white font-bold text-lg m-0">{title}</h3>
+      </div>
+      <ul className="list-none p-0 m-0 grid gap-2.5">
+        {items.map((it, i) => (
+          <li key={i} className="flex items-start gap-3 text-gray-300">
+            <Check className="w-5 h-5 text-[#C642FC] flex-shrink-0 mt-0.5" />
+            <span className="leading-relaxed">{it}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/** Highlighted note / tip / warning callout. */
+export function Callout({
+  variant = "tip",
+  title,
+  children,
+}: {
+  variant?: "tip" | "note" | "warning";
+  title?: string;
+  children: React.ReactNode;
+}) {
+  const styles = {
+    tip: { icon: Lightbulb, color: "#C642FC", border: "rgba(198,66,252,0.3)", bg: "rgba(198,66,252,0.07)", label: "Tip" },
+    note: { icon: Info, color: "#60a5fa", border: "rgba(96,165,250,0.3)", bg: "rgba(96,165,250,0.07)", label: "Note" },
+    warning: { icon: AlertTriangle, color: "#fbbf24", border: "rgba(251,191,36,0.3)", bg: "rgba(251,191,36,0.08)", label: "Heads up" },
+  }[variant];
+  const Icon = styles.icon;
+  return (
+    <div
+      className="not-prose my-8 rounded-xl border p-5 flex gap-4"
+      style={{ borderColor: styles.border, background: styles.bg }}
+    >
+      <Icon className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: styles.color }} />
+      <div>
+        <p className="font-semibold text-white m-0 mb-1">{title ?? styles.label}</p>
+        <div className="text-gray-300 text-[0.95rem] leading-relaxed [&_p]:m-0">{children}</div>
+      </div>
+    </div>
+  );
+}
+
+/** Side-by-side pros / cons. */
+export function ProsCons({
+  pros,
+  cons,
+  proLabel = "Pros",
+  conLabel = "Cons",
+}: {
+  pros: string[];
+  cons: string[];
+  proLabel?: string;
+  conLabel?: string;
+}) {
+  return (
+    <div className="not-prose my-10 grid gap-4 sm:grid-cols-2">
+      <div className="rounded-2xl border border-emerald-400/20 bg-emerald-500/[0.06] p-5">
+        <p className="font-bold text-emerald-300 m-0 mb-3">{proLabel}</p>
+        <ul className="list-none p-0 m-0 grid gap-2">
+          {pros.map((p, i) => (
+            <li key={i} className="flex items-start gap-2 text-gray-300">
+              <Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-1" />
+              <span className="leading-relaxed">{p}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="rounded-2xl border border-rose-400/20 bg-rose-500/[0.06] p-5">
+        <p className="font-bold text-rose-300 m-0 mb-3">{conLabel}</p>
+        <ul className="list-none p-0 m-0 grid gap-2">
+          {cons.map((c, i) => (
+            <li key={i} className="flex items-start gap-2 text-gray-300">
+              <X className="w-4 h-4 text-rose-400 flex-shrink-0 mt-1" />
+              <span className="leading-relaxed">{c}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+/** Grid of feature/highlight cards with gradient accents. */
+export function FeatureGrid({
+  items,
+}: {
+  items: { title: string; desc: string }[];
+}) {
+  return (
+    <div className="not-prose my-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {items.map((it, i) => (
+        <div
+          key={i}
+          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:border-[#C642FC]/40 transition-colors"
+        >
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] flex items-center justify-center mb-3 shadow-lg shadow-purple-500/20">
+            <Sparkles className="w-4 h-4 text-white" />
+          </div>
+          <h4 className="text-white font-semibold mb-1 leading-snug">{it.title}</h4>
+          <p className="text-sm text-gray-400 leading-relaxed m-0">{it.desc}</p>
         </div>
       ))}
     </div>

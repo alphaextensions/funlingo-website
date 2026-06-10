@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Coffee, Tv, BookOpen, Brain, Target } from "lucide-react";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function DailyLanguageLearningHabitsContent() {
@@ -25,6 +26,14 @@ export default function DailyLanguageLearningHabitsContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways
+            items={[
+              "Most people quit language learning because they treat it as a separate task that needs extra time.",
+              "Habit stacking — attaching language practice to things you already do — builds consistency without willpower.",
+              "Five stackable habits cover your whole day: streaming, coffee review, commute audio, lunch browsing, and bedtime shadowing.",
+              "All five together add only about 10 extra minutes a day while spreading exposure across morning to night.",
+            ]}
+          />
           <h2 className="text-2xl font-bold text-white mb-4">The Real Reason People Quit Learning Languages</h2>
           <p className="leading-relaxed text-gray-300 mb-6">It is not a lack of talent. It is not the wrong app. The number one reason people abandon language learning is that they treat it as a separate activity that requires finding extra time in an already full schedule. When life gets busy, the &ldquo;extra&rdquo; activity is the first thing to go.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">The solution is not more discipline. It is better design. Instead of adding new tasks to your day, attach language learning to things you already do. This is called habit stacking, and it is the most reliable way to build consistency without willpower.</p>
@@ -42,6 +51,10 @@ export default function DailyLanguageLearningHabitsContent() {
           <p className="text-gray-300 mb-6">Habit stacking was popularized by James Clear in Atomic Habits. The idea is simple: you take an existing habit you do every day and attach a new behavior to it. The existing habit acts as the trigger. Because the trigger already happens automatically, the new behavior gets pulled along with it.</p>
           <p className="text-gray-300 mb-6">For language learning, this means identifying moments in your day that are already consistent — your morning coffee, your commute, your evening streaming session — and layering a language activity on top of each one.</p>
           <p className="text-gray-300 mb-8">Here are five specific habits you can stack today, each one requiring zero extra time in your schedule.</p>
+
+          <Callout variant="note" title="The trigger does the work">
+            Because each new habit is anchored to an automatic daily trigger — your coffee, your commute, your evening show — you do not need motivation to start. The existing routine pulls the language practice along with it.
+          </Callout>
 
           <hr className="border-white/10 my-12" />
 

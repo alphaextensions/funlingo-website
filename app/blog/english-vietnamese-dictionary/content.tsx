@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Check, X, ArrowRight, BookOpen, Globe, Star, Smartphone, Languages } from "lucide-react";
+import { KeyTakeaways, StatGrid, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function EnglishVietnameseDictionaryContent() {
   return (
@@ -28,11 +29,15 @@ export default function EnglishVietnameseDictionaryContent() {
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
 
+          <KeyTakeaways items={["A good eng-viet dict must show tone marks, multiple meanings, and native-speaker audio, since Vietnamese has six tones that change a word's meaning.", "Top all-rounders are VDICT and Laban Dictionary; TFlat is best for spaced-repetition flashcards and Glosbe for real-world sentence examples.", "Several apps (Laban, TFlat, EVD, Dict Box) work fully offline, which is useful when traveling in Vietnam.", "Vietnamese grammar is actually simpler than many Asian languages: no conjugation, gender, or plurals, and it uses the Latin alphabet.", "Pair a dictionary with watching real content using Funlingo's free dual Vietnamese-plus-English subtitles to see words in context."]} />
+
           {/* --- Why a good dictionary matters --- */}
           <h2 className="text-2xl font-bold text-white mb-4">Why a Good English-Vietnamese Dictionary Matters</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Vietnamese is one of the fastest-growing languages for learners worldwide. Over 85 million native speakers call it their first language, and the Vietnamese diaspora spans the United States, Australia, France, and beyond. Whether you are planning a trip to Hanoi, building a relationship with Vietnamese family members, consuming Vietnamese media, or doing business in Ho Chi Minh City, you need a reliable English-Vietnamese dictionary — an eng viet dict you can trust for accuracy, pronunciation, and context.</p>
           <p className="leading-relaxed text-gray-300 mb-6">The problem is that Vietnamese and English are vastly different languages. Vietnamese is tonal (six tones change the meaning of a word entirely), uses a Latin-based script with extensive diacritical marks, and has grammar patterns that do not map to English at all. A bad dictionary gives you a single translation without tone marks, context, or usage examples — which is almost useless for a tonal language. A good dictionary gives you pronunciation with tones, multiple meanings, example sentences, and ideally audio from native speakers.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">This guide compares the 10 best English-Vietnamese dictionary apps and websites available in 2026, explains Vietnamese tones, lists essential phrases, and shows you how to learn Vietnamese through content you actually enjoy watching.</p>
+
+          <StatGrid stats={[{ value: "85M+", label: "native Vietnamese speakers" }, { value: "6", label: "tones that change meaning" }, { value: "10", label: "dictionaries compared" }]} />
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Learn Vietnamese naturally with free dual subtitles on YouTube and Netflix.</p>
@@ -331,6 +336,8 @@ export default function EnglishVietnameseDictionaryContent() {
           </div>
 
           <p className="text-gray-300 mb-6">The key is watching with dual subtitles — Vietnamese subtitles on top, English subtitles below. You hear the Vietnamese, read the Vietnamese text (reinforcing reading skills and tone marks), and check the English translation when needed. Over time, you rely on the English less and less.</p>
+
+          <DualSubtitleDemo targetLang="Vietnamese" target="Cảm ơn bạn rất nhiều." highlight="Cảm ơn" native="Thank you very much." />
 
           <hr className="border-white/10 my-12" />
 

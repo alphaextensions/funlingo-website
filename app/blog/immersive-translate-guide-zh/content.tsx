@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, X, Star, Download, Settings, Zap, Globe } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function ImmersiveTranslateGuideZhContent() {
   return (
@@ -26,6 +27,8 @@ export default function ImmersiveTranslateGuideZhContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways title="重點摘要" items={["沈浸式翻譯提供「雙語對照」模式，在原文下方顯示翻譯，特別適合語言學習者。", "支援 Chrome、Firefox、Edge 等瀏覽器，可翻譯網頁、YouTube 字幕、PDF 與 EPUB 電子書。", "免費版可使用 Google 翻譯引擎，DeepL、OpenAI 等進階引擎與 PDF 翻譯需要 Pro 方案。", "預設快捷鍵 Alt+A 可快速開關翻譯，並可設定常用網站自動翻譯。", "若主要需要影片雙語字幕，Funlingo 是完全免費的替代選擇，支援 Netflix、YouTube 和 Prime Video。"]} />
 
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">沈浸式翻譯是一款強大的瀏覽器擴充功能，能夠將網頁、影片字幕和PDF文件翻譯成雙語對照格式。本教學將帶你從安裝到進階設定，完整掌握這款工具的所有功能。</p>
 
@@ -122,6 +125,8 @@ export default function ImmersiveTranslateGuideZhContent() {
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">進階功能</h2>
+
+          <Callout variant="note" title="關於 Netflix">沈浸式翻譯的 YouTube 字幕翻譯功能完整，但對 Netflix 的支援有限。若你主要在 Netflix 上學習，建議搭配 Funlingo 使用。</Callout>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             <div className="bg-white/5 p-5 rounded-xl border border-white/10">

@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Check, Volume2, Headphones, Mic, BookOpen, Target } from "lucide-react";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function ShadowingLanguageLearningContent() {
   return (
@@ -27,6 +28,8 @@ export default function ShadowingLanguageLearningContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Shadowing means listening to native speech and repeating it aloud in real time, with a 1-2 second delay.", "It engages your motor cortex alongside your auditory cortex, building stronger neural pathways for speech.", "Just 10 minutes a day can produce measurable gains in pronunciation accuracy and fluency.", "Comprehension is key: always understand what you are repeating, ideally with dual subtitles.", "AI tools and dual subtitles remove guesswork by giving real-time feedback and instant translations."]} />
+
           <p className="lead text-xl leading-relaxed">If you have ever watched a polyglot speak a new language with near-native pronunciation after just a few months of study, there is a good chance they used shadowing. This powerful technique &mdash; repeating what you hear in real time &mdash; has been used by interpreters and language coaches for decades. Now, AI tools are making it more effective than ever.</p>
 
           <div className="bg-white/5 border-l-4 border-[#C642FC] p-6 rounded-r-lg my-8">
@@ -115,6 +118,9 @@ export default function ShadowingLanguageLearningContent() {
 
           <h2 className="text-3xl font-bold text-white mt-16 mb-6">How Funlingo Dual Subtitles Help with Shadowing</h2>
           <p>One of the biggest challenges with shadowing is understanding what you are repeating. Without comprehension, shadowing becomes mindless parroting. This is where <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">dual subtitles</a> make a transformative difference.</p>
+
+          <DualSubtitleDemo targetLang="Spanish" target="No me voy a ir a menos que me lo pidas" highlight="pidas" native="I won't leave unless you ask me to" />
+
 
           <div className="bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20 rounded-xl p-8 my-8">
             <h3 className="text-xl font-bold text-white mb-4 mt-0">Funlingo + Shadowing workflow</h3>

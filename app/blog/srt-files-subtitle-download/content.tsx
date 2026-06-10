@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, FileText, Download, Play, Pencil, RefreshCw, Globe, BookOpen, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function SrtFilesSubtitleDownloadContent() {
   return (
@@ -26,6 +27,8 @@ export default function SrtFilesSubtitleDownloadContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["SRT (SubRip Text) is a plain-text format with a sequence number, timestamp range, and subtitle text per entry.", "SRT uses commas before milliseconds; VTT uses periods and adds a WEBVTT header — converting between them takes seconds.", "VLC and MPV auto-load SRT files that share the video's filename; Netflix and YouTube do not accept external SRT files.", "SRT files are plain text and cannot carry malware, but subtitle sites can serve deceptive ads and fake download buttons.", "For language learning on streaming, Funlingo replaces manual SRT downloads with automatic, synced dual subtitles."]} />
+
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Subtitles are one of the most powerful tools for language learners, accessibility advocates, and anyone watching foreign-language content. At the heart of subtitles is the SRT file, a simple text format that has been the standard for over two decades. This guide covers everything you need to know about subtitle downloads: what SRT files are, where to find them, how to use them, and why modern tools like Funlingo are making manual subtitle management a thing of the past.</p>
 
           <hr className="border-white/10 my-12" />
@@ -48,6 +51,8 @@ export default function SrtFilesSubtitleDownloadContent() {
             <p className="text-gray-200">Let&apos;s get started.</p>
           </div>
           <p className="text-gray-300 mb-6">The timestamp format is <code className="bg-white/10 px-2 py-1 rounded text-sm">hours:minutes:seconds,milliseconds</code>. Note the comma before milliseconds, not a period. This is one of the key differences between SRT and other formats. The simplicity of this format is its greatest strength: you can open, read, and edit SRT files with any text editor.</p>
+
+          <Callout variant="tip" title="Save with UTF-8 encoding">When creating SRT files by hand, always save them as UTF-8 — otherwise non-Latin characters like accents, Cyrillic, or CJK text will appear as garbled symbols.</Callout>
 
           <hr className="border-white/10 my-12" />
 

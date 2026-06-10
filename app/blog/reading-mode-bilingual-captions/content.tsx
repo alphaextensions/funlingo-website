@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, BookOpen, Save } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function ReadingModeContent() {
   return (
@@ -25,6 +26,7 @@ export default function ReadingModeContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Reading Mode shows captions in both the original audio language and your learning language, synchronized to the video timestamp.", "It removes the friction of pausing to look up words, keeping audio and text together so learning momentum is not broken.", "Short, aligned bilingual lines are easier to scan and reduce cognitive load compared to full-paragraph translations.", "Use it five ways: passive exposure, vocabulary capture, pronunciation drills, comprehension checks, and timestamped note-taking.", "A daily 15-20 minute habit plus weekly spaced-repetition review turns entertainment time into real learning time."]} />
           <p className="lead text-xl leading-relaxed text-gray-200">Watching movies, shows, or videos is one of the easiest ways to learn a language -- if the learning experience fits naturally into your viewing flow. At Funlingo we built <em>Reading Mode</em> so learners can read exact captions in both the original (audio) language and their native/learning language -- synchronized to the video timestamp -- without breaking concentration.</p>
           <p>This article explains <em>why</em> Reading Mode works, <em>how</em> to use it effectively, and <em>how</em> it fits into a practical learning routine you can use today.</p>
           <hr className="border-white/10 my-12" />
@@ -36,6 +38,8 @@ export default function ReadingModeContent() {
             <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-gray-300"><strong className="text-white">Providing exact, timestamped context:</strong> Every caption is linked to a time code.</span></li>
             <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-gray-300"><strong className="text-white">Reducing cognitive load:</strong> Seeing short, aligned lines is easier to scan than full-paragraph translations.</span></li>
           </ul>
+          <DualSubtitleDemo targetLang="Korean" target="여행 가고 싶어요" highlight="여행" native="I want to go on a trip" />
+
           <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-6">What Reading Mode shows you</h2>
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 mb-12">
             <ul className="space-y-4 list-disc pl-5 m-0 text-gray-300">

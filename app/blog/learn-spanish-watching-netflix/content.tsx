@@ -6,7 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, Tv, BookOpen, Sparkles, Target, Timer, Brain, Headphones, Repeat, Bookmark } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { StatGrid, DualSubtitleDemo } from "@/app/blog/_components/graphics";
+import { StatGrid, DualSubtitleDemo, KeyTakeaways } from "@/app/blog/_components/graphics";
 
 export default function LearnSpanishNetflixContent() {
   return (
@@ -26,6 +26,12 @@ export default function LearnSpanishNetflixContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={[
+            "Netflix has the largest Spanish-language library of any platform, ideal for comprehensible-input learning.",
+            "Use the dual subtitle method to get reading, listening, and vocabulary practice in a single activity.",
+            "Match shows to your level: Extra en Espanol for beginners, La Casa de Papel and Elite for intermediate, Narcos and Vis a Vis for advanced.",
+            "A consistent 15-minute daily routine of watching, shadowing, and journaling beats occasional long sessions.",
+          ]} />
           <StatGrid
             stats={[
               { value: "50%", label: "more vocabulary retained" },
