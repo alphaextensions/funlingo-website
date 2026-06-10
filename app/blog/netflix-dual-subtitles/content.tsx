@@ -26,6 +26,13 @@ export default function NetflixDualSubtitlesContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/netflix-dual-subtitles-hero.jpg"
+            alt="Streaming player showing two stacked subtitle lines with a word-definition popup"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={["Netflix only shows one subtitle track at a time, so you need a free browser extension to display two languages at once.", "Dual subtitles put your target language and native language on screen together, so you read the original dialogue and its translation in real time.", "Funlingo sets this up in about 90 seconds and is completely free with no premium tiers or paywalls.", "Dual subtitle extensions work only in the Chrome desktop browser, not the Netflix mobile or smart TV apps.", "Funlingo also works on YouTube and Prime Video, unlike Language Reactor or Trancy."]} />
           <h2 className="text-2xl font-bold text-white mb-4">What Are Netflix Dual Subtitles?</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Netflix dual subtitles let you display two subtitle tracks at the same time while watching any show or movie. Your native language appears alongside your target language, so you can follow the dialogue in both languages without pausing or switching back and forth.</p>
@@ -35,6 +42,13 @@ export default function NetflixDualSubtitlesContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/netflix-dual-subtitles-inline.jpg"
+            alt="Installing a Chrome browser extension to enable dual subtitles on a streaming video"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Why Use Dual Subtitles for Language Learning?</h2>
           <p className="text-gray-300 mb-6">Research on second language acquisition consistently shows that comprehensible input is the most effective way to learn a language. Dual subtitles turn Netflix into a powerful learning tool by making foreign-language dialogue comprehensible even if you are a beginner.</p>
 

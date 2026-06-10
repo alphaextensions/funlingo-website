@@ -26,6 +26,13 @@ export default function BestDualSubtitleExtensionContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/best-dual-subtitle-extension-hero.jpg"
+            alt="A lineup of dual subtitle browser extensions with the best one highlighted"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={["Dual subtitle extensions show your target and native language on screen at once, so you rarely pause to look things up.", "We compared 7 extensions across price, platform support, features, and usability.", "Funlingo is the best free pick: no paywall, with Netflix, YouTube, and Prime Video support plus a vocabulary builder.", "Most competitors only cover two of the three major platforms and gate vocabulary tools behind a subscription.", "The approach is backed by comprehensible-input research: understanding in context drives natural acquisition."]} />
           <StatGrid
             stats={[
@@ -49,6 +56,13 @@ export default function BestDualSubtitleExtensionContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/best-dual-subtitle-extension-inline.jpg"
+            alt="Laptop showing dual subtitles next to a vocabulary builder sidebar"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The 7 Best Dual Subtitle Extensions Compared</h2>
           <p className="text-gray-300 mb-8">We tested every major dual subtitle extension in 2026. Here is how they compare across price, platform support, features, and usability.</p>
 

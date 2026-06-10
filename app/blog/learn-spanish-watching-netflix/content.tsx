@@ -61,6 +61,13 @@ export default function LearnSpanishNetflixContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/learn-spanish-watching-netflix-inline.jpg"
+            alt="Watching a Spanish TV drama at night with dual Spanish and English subtitles"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Best Netflix Shows for Learning Spanish by Level</h2>
           <p className="text-gray-300 mb-8">Choosing the right show for your level is crucial. Content that is too difficult leads to frustration, while content that is too easy does not push your skills forward. Here are our recommendations organized by proficiency level.</p>
 
