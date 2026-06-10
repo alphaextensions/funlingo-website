@@ -27,7 +27,13 @@ export default function LearnFrenchNetflixContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
-
+          <img
+            src="/blog-images/learn-french-watching-netflix-hero.jpg"
+            alt="French film on a TV with French and English dual subtitles for language learning"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={[
             "French is uniquely hard to learn by ear due to liaison, elision, nasal vowels, silent letters, and fast speech (about 7.18 syllables per second).",
             "Dual subtitles connect sound, spelling, and meaning at once, closing the gap between written and spoken French.",
@@ -69,6 +75,13 @@ export default function LearnFrenchNetflixContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/learn-french-watching-netflix-inline.jpg"
+            alt="A learner with headphones watching French video with subtitles and a notebook of French words"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Best Netflix Shows for Learning French by Level</h2>
           <p className="text-gray-300 mb-8">Choosing content at the right difficulty level is essential. Too hard and you get frustrated. Too easy and you plateau. Here are our picks for every level, selected for clear audio, engaging storylines, and useful everyday vocabulary.</p>
 
