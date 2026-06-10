@@ -26,6 +26,13 @@ export default function LearnSpanishNetflixContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/learn-spanish-watching-netflix-hero.jpg"
+            alt="Dual subtitles in Spanish and English shown together on a Netflix movie scene"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={[
             "Netflix has the largest Spanish-language library of any platform, ideal for comprehensible-input learning.",
             "Use the dual subtitle method to get reading, listening, and vocabulary practice in a single activity.",
