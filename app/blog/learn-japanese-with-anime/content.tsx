@@ -26,6 +26,13 @@ export default function LearnJapaneseWithAnimeContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/learn-japanese-with-anime-hero.jpg"
+            alt="Anime scene on a screen with Japanese and English dual subtitles for language learning"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
           <KeyTakeaways items={[
             "Anime gives you emotionally rich, context-heavy Japanese that flashcards and textbooks cannot teach.",
             "Choose anime by level: slice-of-life like Shirokuma Cafe and Takagi-san for beginners, character-driven shows like Spy x Family for intermediate.",
@@ -71,6 +78,13 @@ export default function LearnJapaneseWithAnimeContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/learn-japanese-with-anime-inline.jpg"
+            alt="Japanese vocabulary flashcards with kana and English meanings beside an anime screen"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Step 2: Set Up Dual Subtitles</h2>
           <p className="text-gray-300 mb-6">The foundation of this method is watching with two sets of subtitles: Japanese and your native language displayed simultaneously. This lets you read the original Japanese text while immediately checking meaning below it — no pausing, no tab-switching, no dictionary apps.</p>
           <p className="text-gray-300 mb-6">Funlingo adds dual subtitles to YouTube for free. Many anime episodes, clips, and full series are available on YouTube with Japanese subtitles. Install the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C642FC] hover:underline">Funlingo Chrome extension</a>, open a video, and select your target and native languages.</p>
