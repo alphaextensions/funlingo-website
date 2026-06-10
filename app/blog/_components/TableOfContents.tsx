@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { List, X } from "lucide-react";
+import { createPortal } from "react-dom";
+import { List, ChevronDown } from "lucide-react";
 
 type Heading = { id: string; text: string; level: 2 | 3 };
 
@@ -19,17 +20,19 @@ function slugify(text: string): string {
  * Auto-generated table of contents for blog posts.
  *
  * Rendered once via app/blog/layout.tsx so it applies to every post without
- * touching the 50 individual content files. It scans the rendered `.prose`
+ * touching the individual content files. It scans the rendered `.prose`
  * article for h2/h3 headings, injects stable ids, and renders:
  *   - a sticky "On this page" sidebar in the right gutter on xl+ screens
- *   - a floating button + dropdown panel on smaller screens
- * If no article (e.g. the /blog index) or fewer than 2 headings are found,
- * it renders nothing.
+ *   - an inline collapsible card at the top of the article on smaller screens
+ *     (portaled into the article so it never collides with the chat widget /
+ *     back-to-top button in the bottom-right corner)
+ * If no article or fewer than 2 headings are found, it renders nothing.
  */
 export default function TableOfContents() {
   const [headings, setHeadings] = React.useState<Heading[]>([]);
   const [activeId, setActiveId] = React.useState<string>("");
-  const [open, setOpen] = React.useState(false);
+  const [mount, setMount] = React.useState<HTMLElement | null>(null);
+  const [open, setOpen] = React.useState(true);
 
   React.useEffect(() => {
     const article = document.querySelector<HTMLElement>(".prose");
@@ -44,12 +47,11 @@ export default function TableOfContents() {
     for (const node of nodes) {
       const text = (node.textContent || "").trim();
       if (!text) continue;
-      let id = node.id || slugify(text);
-      if (!id) continue;
-      // De-duplicate ids so anchors stay unique.
-      let unique = id;
+      const base = node.id || slugify(text);
+      if (!base) continue;
+      let unique = base;
       let n = 2;
-      while (used.has(unique)) unique = `${id}-${n++}`;
+      while (used.has(unique)) unique = `${base}-${n++}`;
       used.add(unique);
       node.id = unique;
       node.style.scrollMarginTop = "88px";
@@ -63,6 +65,12 @@ export default function TableOfContents() {
     if (collected.length < 2) return;
     setHeadings(collected);
 
+    // Mount point for the inline (mobile/tablet) TOC at the top of the article.
+    const el = document.createElement("div");
+    el.setAttribute("data-toc-inline", "");
+    article.insertBefore(el, article.firstChild);
+    setMount(el);
+
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
@@ -73,10 +81,14 @@ export default function TableOfContents() {
       { rootMargin: "-88px 0px -70% 0px", threshold: 0 }
     );
     collected.forEach((h) => {
-      const el = document.getElementById(h.id);
-      if (el) observer.observe(el);
+      const node = document.getElementById(h.id);
+      if (node) observer.observe(node);
     });
-    return () => observer.disconnect();
+
+    return () => {
+      observer.disconnect();
+      el.remove();
+    };
   }, []);
 
   if (headings.length < 2) return null;
@@ -87,7 +99,6 @@ export default function TableOfContents() {
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
       setActiveId(id);
-      setOpen(false);
     }
   };
 
@@ -125,26 +136,33 @@ export default function TableOfContents() {
         {list}
       </nav>
 
-      {/* Mobile / tablet: floating button + dropdown panel */}
-      <div className="xl:hidden">
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle table of contents"
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-500/30"
-        >
-          {open ? <X className="w-4 h-4" /> : <List className="w-4 h-4" />}
-          Contents
-        </button>
-        {open && (
-          <div className="fixed bottom-24 right-6 z-50 w-72 max-h-[60vh] overflow-y-auto rounded-2xl border border-white/10 bg-[#0a0a0a]/95 backdrop-blur p-5 shadow-2xl">
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">
-              On this page
-            </p>
-            {list}
-          </div>
+      {/* Mobile / tablet: inline collapsible card at the top of the article */}
+      {mount &&
+        createPortal(
+          <nav
+            aria-label="Table of contents"
+            className="xl:hidden not-prose mb-8 rounded-2xl border border-white/10 bg-white/[0.03] overflow-hidden"
+          >
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              aria-expanded={open}
+              className="w-full flex items-center justify-between px-5 py-3.5 text-left"
+            >
+              <span className="flex items-center gap-2 text-sm font-semibold text-white">
+                <List className="w-4 h-4 text-[#C642FC]" />
+                On this page
+              </span>
+              <ChevronDown
+                className={`w-4 h-4 text-gray-400 transition-transform ${
+                  open ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {open && <div className="px-5 pb-4 pt-1">{list}</div>}
+          </nav>,
+          mount
         )}
-      </div>
     </>
   );
 }
