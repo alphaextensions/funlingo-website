@@ -45,21 +45,21 @@ export default function ItalianToEnglishTranslationContent() {
           <p className="text-gray-300 mb-6">No single tool is perfect for every translation scenario. Here are the best options depending on your needs, from quick lookups to deep contextual understanding.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">Google Translate</h3>
+            <h3 className="text-xl font-bold text-white mb-3"><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Google Translate</a></h3>
             <p className="text-gray-300 mb-3">The most widely used translator in the world. Google Translate handles Italian to English reasonably well for short sentences and common phrases. Its camera feature lets you point your phone at Italian menus, signs, and documents for instant translation.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Best for:</strong> Quick lookups, camera translation of signs and menus, getting the gist of a text.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Limitations:</strong> Struggles with complex sentences, idiomatic expressions, and literary Italian. Often produces awkward phrasing for longer passages.</p>
           </div>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">DeepL</h3>
+            <h3 className="text-xl font-bold text-white mb-3"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">DeepL</a></h3>
             <p className="text-gray-300 mb-3">DeepL consistently produces more natural-sounding translations than Google Translate, especially for Italian. It handles nuance, formal vs. informal registers, and complex grammar structures better. The free tier allows 500,000 characters per month.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Best for:</strong> Longer texts, emails, business documents, and any context where natural phrasing matters.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Limitations:</strong> No camera translation, limited free tier for heavy users, does not show alternative meanings for individual words.</p>
           </div>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">Reverso Context</h3>
+            <h3 className="text-xl font-bold text-white mb-3"><a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Reverso</a> Context</h3>
             <p className="text-gray-300 mb-3">Reverso Context is uniquely valuable because it shows your word or phrase used in real sentences from movies, books, and documents. Instead of a single translation, you see dozens of examples showing how native speakers actually use the expression.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Best for:</strong> Understanding how a word is used in context, finding the right translation for idiomatic expressions, learning natural phrasing.</p>
             <p className="text-gray-400 text-sm"><strong className="text-white">Limitations:</strong> Not ideal for translating full documents or long passages. Works best for phrases and short sentences.</p>

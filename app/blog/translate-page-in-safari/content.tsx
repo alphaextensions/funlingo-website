@@ -205,7 +205,7 @@ export default function TranslatePageInSafariContent() {
 
           <div className="space-y-4 my-8">
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mt-0 mb-2">Google Translate Extension</h3>
+              <h3 className="text-xl font-bold text-white mt-0 mb-2"><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Google Translate</a> Extension</h3>
               <p className="text-gray-300 mb-3">While Google Translate does not have an official Safari extension, you can use the Google Translate website to translate any URL. Simply go to translate.google.com, paste the page URL, select your target language, and click the translated link. It supports 130+ languages and handles most page types well.</p>
               <div className="flex gap-4 text-sm">
                 <span className="flex items-center gap-1 text-green-400"><Check className="w-4 h-4" /> 130+ languages</span>
@@ -214,7 +214,7 @@ export default function TranslatePageInSafariContent() {
             </div>
 
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mt-0 mb-2">Microsoft Translator</h3>
+              <h3 className="text-xl font-bold text-white mt-0 mb-2"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Microsoft Translator</a></h3>
               <p className="text-gray-300 mb-3">Microsoft offers a Translator extension for Safari on Mac. It adds a translate button to your toolbar and supports over 70 languages. The translation quality is comparable to Google Translate for major languages. It is free to use and integrates smoothly with Safari&apos;s interface.</p>
               <div className="flex gap-4 text-sm">
                 <span className="flex items-center gap-1 text-green-400"><Check className="w-4 h-4" /> Safari extension available</span>
@@ -288,7 +288,7 @@ export default function TranslatePageInSafariContent() {
 
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
               <h3 className="text-lg font-bold text-white mt-0 mb-2">Can Safari translate PDFs?</h3>
-              <p className="text-gray-300 m-0">No. Safari&apos;s built-in translation feature does not work with PDF files viewed in the browser. PDFs are rendered as document objects rather than standard HTML, so Safari cannot apply its page translation to them. If you need to translate a PDF, use Google Translate&apos;s document upload feature at translate.google.com, or a dedicated tool like DeepL&apos;s document translator.</p>
+              <p className="text-gray-300 m-0">No. Safari&apos;s built-in translation feature does not work with PDF files viewed in the browser. PDFs are rendered as document objects rather than standard HTML, so Safari cannot apply its page translation to them. If you need to translate a PDF, use Google Translate&apos;s document upload feature at translate.google.com, or a dedicated tool like <a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL</a>&apos;s document translator.</p>
             </div>
           </div>
 

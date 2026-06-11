@@ -31,7 +31,7 @@ export default function BestFreeToolsContent() {
           <KeyTakeaways items={["You can build a complete language-learning stack covering input, vocabulary, grammar, speaking, and reading for $0.", "Comprehensible input, not gamified drills, is the primary driver of acquisition, and the best input tools are free.", "Funlingo is the only dual subtitle tool on the list that is 100% free with no premium tier.", "Pair Funlingo with Anki, Language Transfer, and HelloTalk for a research-backed daily routine.", "The only things you truly lose by going free are AI conversation partners and professional one-on-one tutoring."]} />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Subscription Fatigue Problem</h2>
-          <p className="text-gray-300 mb-6">Language learning has become an expensive hobby. Duolingo Super costs $12.99 per month. Babbel charges $14.95. Rosetta Stone wants $11.99. Lingopie is $12.00. Busuu Premium runs $13.99. Add a tutor at $15 to $30 per session and you can easily spend $50 to $100 per month learning a language.</p>
+          <p className="text-gray-300 mb-6">Language learning has become an expensive hobby. <a href="https://www.duolingo.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Duolingo</a> Super costs $12.99 per month. <a href="https://www.babbel.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Babbel</a> charges $14.95. <a href="https://www.rosettastone.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Rosetta Stone</a> wants $11.99. <a href="https://lingopie.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Lingopie</a> is $12.00. <a href="https://www.busuu.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Busuu</a> Premium runs $13.99. Add a tutor at $15 to $30 per session and you can easily spend $50 to $100 per month learning a language.</p>
           <p className="text-gray-300 mb-6">Here is the uncomfortable question nobody in the language learning industry wants you to ask: <strong className="text-white">do paid tools actually produce better outcomes than free ones?</strong></p>
           <p className="text-gray-300 mb-6">The research suggests the answer is no — not because paid tools are bad, but because the most effective language acquisition methods are based on input and exposure, not on the gamified drill exercises that most paid apps provide. And in 2026, the tools that deliver high-quality input are largely free.</p>
           <p className="text-gray-300 mb-6">This guide covers every free tool worth using, organized by what it does and where it fits in a complete learning routine. No freemium traps, no &quot;free trial then $12/month&quot; bait-and-switches. Actually, genuinely free.</p>
@@ -99,7 +99,7 @@ export default function BestFreeToolsContent() {
           <div className="space-y-8 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-bold text-white mb-0 mt-0">Anki (Desktop)</h3>
+                <h3 className="text-xl font-bold text-white mb-0 mt-0"><a href="https://apps.ankiweb.net" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Anki</a> (Desktop)</h3>
                 <Badge className="bg-green-500/10 text-green-400 border-green-500/20">Free on Desktop</Badge>
               </div>
               <p className="text-gray-300 mb-4"><strong className="text-white">What it does:</strong> The gold standard of spaced-repetition flashcard software. Create your own cards or download shared decks. The algorithm schedules reviews at optimal intervals for long-term retention.</p>
@@ -270,12 +270,12 @@ export default function BestFreeToolsContent() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-white/5"><td className="p-4">Dual subtitles</td><td className="p-4 text-green-400">Funlingo (full feature)</td><td className="p-4">Trancy ($3-5/mo), Lingopie ($12/mo)</td></tr>
+                <tr className="border-b border-white/5"><td className="p-4">Dual subtitles</td><td className="p-4 text-green-400">Funlingo (full feature)</td><td className="p-4"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Trancy</a> ($3-5/mo), Lingopie ($12/mo)</td></tr>
                 <tr className="border-b border-white/5"><td className="p-4">Spaced repetition</td><td className="p-4 text-green-400">Anki (full feature)</td><td className="p-4">Anki iOS ($25 one-time)</td></tr>
                 <tr className="border-b border-white/5"><td className="p-4">Grammar lessons</td><td className="p-4 text-green-400">Language Transfer</td><td className="p-4">Babbel ($15/mo), Kwiziq ($10/mo)</td></tr>
                 <tr className="border-b border-white/5"><td className="p-4">Speaking practice</td><td className="p-4 text-green-400">HelloTalk, Tandem, Discord</td><td className="p-4">italki ($8-30/session)</td></tr>
-                <tr className="border-b border-white/5"><td className="p-4">AI conversation partner</td><td className="p-4 text-yellow-400">Not available free</td><td className="p-4">ChatGPT Plus ($20/mo), Speak ($14/mo)</td></tr>
-                <tr className="border-b border-white/5"><td className="p-4">Structured curriculum</td><td className="p-4 text-yellow-400">Self-directed only</td><td className="p-4">Babbel, Pimsleur ($15-21/mo)</td></tr>
+                <tr className="border-b border-white/5"><td className="p-4">AI conversation partner</td><td className="p-4 text-yellow-400">Not available free</td><td className="p-4"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">ChatGPT</a> Plus ($20/mo), Speak ($14/mo)</td></tr>
+                <tr className="border-b border-white/5"><td className="p-4">Structured curriculum</td><td className="p-4 text-yellow-400">Self-directed only</td><td className="p-4">Babbel, <a href="https://www.pimsleur.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Pimsleur</a> ($15-21/mo)</td></tr>
                 <tr><td className="p-4">Professional tutoring</td><td className="p-4 text-yellow-400">Exchange only</td><td className="p-4">italki, Preply ($8-30/session)</td></tr>
               </tbody>
             </table>

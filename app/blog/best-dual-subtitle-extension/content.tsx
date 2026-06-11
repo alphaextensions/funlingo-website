@@ -83,7 +83,7 @@ export default function BestDualSubtitleExtensionContent() {
             cons={["Chrome desktop only, no mobile app support", "Requires an active streaming platform subscription"]}
           />
 
-          <h3 className="text-xl font-bold text-white mb-4">2. Language Reactor — Most Popular Option</h3>
+          <h3 className="text-xl font-bold text-white mb-4">2. <a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Language Reactor</a> — Most Popular Option</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">Language Reactor (formerly Language Learning with Netflix) is one of the most well-known tools in this space. It offers dual subtitles and a pop-up dictionary. The free tier covers basic features, but advanced capabilities like saving vocabulary and exporting words require a paid subscription at around $6 per month.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
@@ -105,7 +105,7 @@ export default function BestDualSubtitleExtensionContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold text-white mb-4">4. eJOY English — Best for English Learners</h3>
+          <h3 className="text-xl font-bold text-white mb-4">4. <a href="https://ejoy-english.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">eJOY English</a> — Best for English Learners</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">eJOY is primarily designed for people learning English. It offers dual subtitles and a word-saving feature with games for review. The free plan is limited to saving a small number of words per day. Full access requires a subscription starting at around $5 per month.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
@@ -127,7 +127,7 @@ export default function BestDualSubtitleExtensionContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold text-white mb-4">6. Trancy — Best AI-Powered Option</h3>
+          <h3 className="text-xl font-bold text-white mb-4">6. <a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a> — Best AI-Powered Option</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">Trancy uses AI to enhance the subtitle learning experience with features like sentence analysis and grammar breakdowns. It supports Netflix and YouTube. The free plan is quite limited, and the full experience requires a subscription at around $8 per month, making it one of the more expensive options.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
@@ -138,7 +138,7 @@ export default function BestDualSubtitleExtensionContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold text-white mb-4">7. Immersive Translate — Best for General Translation</h3>
+          <h3 className="text-xl font-bold text-white mb-4">7. <a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Immersive Translate</a> — Best for General Translation</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">Immersive Translate is primarily a web page translation tool that also supports dual subtitles on YouTube. It provides bilingual translations for articles, PDFs, and ebooks. Video subtitle support is more limited compared to dedicated tools like Funlingo or Language Reactor.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">

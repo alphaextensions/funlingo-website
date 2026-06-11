@@ -28,7 +28,7 @@ export default function PhraseTranslatorContent() {
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
           <KeyTakeaways items={["Standard translators fail at idioms because they convert word by word, and a phrase's meaning has nothing to do with its individual words.", "LLMs like ChatGPT and Claude are the strongest phrase translators: they understand figurative meaning, explain cultural context, and give equivalent expressions.", "DeepL handles European idioms well for fast, accurate translation, while Reverso Context and Linguee show real bilingual examples from authentic texts.", "Learn the equivalent expression, not the literal translation, and study phrases in context for far better retention.", "Funlingo lets you encounter idioms naturally in shows with dual subtitles, so you see how professionals translated them in real conversation."]} />
-          <p className="lead text-xl leading-relaxed text-gray-200 mb-6">You paste an idiom into Google Translate and get back something that makes zero sense. &quot;It&apos;s raining cats and dogs&quot; becomes a weather report about falling animals. &quot;Break a leg&quot; turns into a medical emergency. The problem is not the translator itself &mdash; it is that standard translation tools were built for literal, word-by-word conversion, not for understanding the meaning behind phrases, idioms, and cultural expressions. A dedicated phrase translator handles this differently. Instead of translating each word in isolation, it recognizes the phrase as a unit of meaning and provides the culturally equivalent expression in the target language. This guide compares the 8 best phrase translators of 2026 and shows you how to actually learn idioms in context rather than just looking them up.</p>
+          <p className="lead text-xl leading-relaxed text-gray-200 mb-6">You paste an idiom into <a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Google Translate</a> and get back something that makes zero sense. &quot;It&apos;s raining cats and dogs&quot; becomes a weather report about falling animals. &quot;Break a leg&quot; turns into a medical emergency. The problem is not the translator itself &mdash; it is that standard translation tools were built for literal, word-by-word conversion, not for understanding the meaning behind phrases, idioms, and cultural expressions. A dedicated phrase translator handles this differently. Instead of translating each word in isolation, it recognizes the phrase as a unit of meaning and provides the culturally equivalent expression in the target language. This guide compares the 8 best phrase translators of 2026 and shows you how to actually learn idioms in context rather than just looking them up.</p>
 
           <hr className="border-white/10 my-12" />
 
@@ -69,7 +69,7 @@ export default function PhraseTranslatorContent() {
 
           {/* 1. ChatGPT */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">1. ChatGPT (OpenAI)</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">1. <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">ChatGPT</a> (OpenAI)</h3>
             <p className="text-gray-300 mb-3">ChatGPT is arguably the best phrase translator available today, not because it was built for translation, but because large language models fundamentally understand meaning in context. Ask ChatGPT to translate &quot;Il pleut des cordes&quot; and it will tell you it means &quot;It&apos;s raining cats and dogs&quot; &mdash; not &quot;It&apos;s raining ropes.&quot; You can also ask it to explain the origin of the idiom, provide equivalent expressions in other languages, and suggest how to use the phrase naturally in conversation. The ability to have a back-and-forth dialogue about a phrase makes it unmatched for deep understanding.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Deep idiom explanation, multi-language comparisons</span>
@@ -103,7 +103,7 @@ export default function PhraseTranslatorContent() {
 
           {/* 3. DeepL */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">3. DeepL</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">3. <a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">DeepL</a></h3>
             <p className="text-gray-300 mb-3">DeepL does not explain idioms like an LLM does, but it translates many of them correctly &mdash; especially for European language pairs. Where Google Translate might output a literal rendering of &quot;tomarse el pelo,&quot; DeepL often produces the correct idiomatic equivalent in English. Its strength is that phrase-level understanding is baked into its neural network from training on high-quality bilingual corpora. For common idioms in French, German, Spanish, Dutch, and Italian, DeepL gets it right more often than any other dedicated translation engine.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> European idioms, fast and accurate translation</span>
@@ -137,7 +137,7 @@ export default function PhraseTranslatorContent() {
 
           {/* 5. Reverso Context */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">5. Reverso Context</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">5. <a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Reverso</a> Context</h3>
             <p className="text-gray-300 mb-3">Reverso Context takes a fundamentally different approach to phrase translation. Instead of generating a translation algorithmically, it searches a massive database of bilingual texts &mdash; movie subtitles, literature, official documents, news articles &mdash; to find real examples of how a phrase has actually been translated by humans. Enter &quot;casser les pieds&quot; (French for &quot;to annoy someone&quot;) and you will see dozens of real-world sentence pairs showing how professional translators handled it. This makes Reverso Context invaluable for understanding not just what a phrase means, but how it is naturally used.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Seeing phrases in real-world context</span>
@@ -154,7 +154,7 @@ export default function PhraseTranslatorContent() {
 
           {/* 6. Linguee */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">6. Linguee</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">6. <a href="https://www.linguee.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Linguee</a></h3>
             <p className="text-gray-300 mb-3">Built by the same team behind DeepL, Linguee is a bilingual concordance search engine. It works similarly to Reverso Context: you enter a phrase and it shows you how that phrase has been translated in real-world documents. Linguee draws from a curated corpus of professional translations including EU documents, patent filings, and published articles. This makes it particularly reliable for formal and technical phrases. The dictionary entries that accompany search results also provide definitions, pronunciation, and usage notes.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Formal/technical phrases, professional translation</span>

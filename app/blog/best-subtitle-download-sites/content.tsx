@@ -36,7 +36,7 @@ export default function BestSubtitleDownloadSitesContent() {
 
           {/* 1. OpenSubtitles */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">1. OpenSubtitles</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">1. <a href="https://www.opensubtitles.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">OpenSubtitles</a></h3>
             <p className="text-gray-300 mb-3">The largest subtitle database in the world, OpenSubtitles hosts millions of subtitle files in over 60 languages. It supports search by movie name, IMDB ID, or file hash, making it easy to find precisely synced subtitles for your specific video file. The site offers a free tier with daily download limits and a VIP plan for unlimited access.</p>
             <p className="text-gray-400 text-sm mb-3"><strong className="text-white">Formats:</strong> SRT, SUB, SSA/ASS, VTT &nbsp;|&nbsp; <strong className="text-white">Languages:</strong> 60+</p>
             <div className="flex flex-col gap-2 text-sm">
@@ -250,7 +250,7 @@ export default function BestSubtitleDownloadSitesContent() {
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center gap-2 mb-3"><FileText className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">Step 2: Load in Your Media Player</span></div>
-            <p className="text-gray-300">In VLC, go to Subtitle &gt; Add Subtitle File and select the file. In MPV, drag and drop the subtitle file onto the video window. Most modern players (PotPlayer, MPC-HC, IINA on macOS) support the same auto-detect behavior or manual loading via their menus.</p>
+            <p className="text-gray-300">In <a href="https://www.videolan.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">VLC</a>, go to Subtitle &gt; Add Subtitle File and select the file. In MPV, drag and drop the subtitle file onto the video window. Most modern players (PotPlayer, MPC-HC, IINA on macOS) support the same auto-detect behavior or manual loading via their menus.</p>
           </div>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">

@@ -83,8 +83,8 @@ export const ComparisonTableSection = (): React.JSX.Element => {
               <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">
                 Funlingo
               </th>
-              <th className="p-6 text-gray-300 font-semibold w-1/4">Trancy</th>
-              <th className="p-6 text-gray-300 font-semibold w-1/4">Immersive Translate</th>
+              <th className="p-6 text-gray-300 font-semibold w-1/4"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a></th>
+              <th className="p-6 text-gray-300 font-semibold w-1/4"><a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Immersive Translate</a></th>
             </tr>
           </thead>
           <tbody className="divide-y divide-white/5">

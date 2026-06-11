@@ -63,22 +63,22 @@ export default function TurkishToEnglishTranslationContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <Globe className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Google Translate</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Google Translate</a></h3>
               <p className="text-sm text-gray-400">The most widely used translator with strong Turkish support. Features camera translation for signs and menus, conversation mode for real-time dialogue, and offline mode. Handles everyday phrases well but can struggle with complex Turkish grammar and idiomatic expressions.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <Languages className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">DeepL Translator</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">DeepL</a> Translator</h3>
               <p className="text-sm text-gray-400">Known for producing more natural-sounding translations. DeepL has expanded its Turkish support and excels at longer texts, formal documents, and capturing the tone of the original writing. The best choice for professional or academic translation needs.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <Sparkles className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Yandex Translate</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://translate.yandex.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Yandex Translate</a></h3>
               <p className="text-sm text-gray-400">A strong choice for Turkish translation due to its extensive training on Turkic languages. Yandex often outperforms Google on colloquial Turkish and slang. It also offers website translation and image-based text recognition.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <MessageSquare className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Reverso Context</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Reverso</a> Context</h3>
               <p className="text-sm text-gray-400">Instead of just translating words, Reverso shows real-world example sentences. This is invaluable for understanding how Turkish words and phrases are actually used in context, making it a favorite among language learners.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">

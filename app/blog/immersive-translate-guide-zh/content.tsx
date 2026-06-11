@@ -33,7 +33,7 @@ export default function ImmersiveTranslateGuideZhContent() {
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">沈浸式翻譯是一款強大的瀏覽器擴充功能，能夠將網頁、影片字幕和PDF文件翻譯成雙語對照格式。本教學將帶你從安裝到進階設定，完整掌握這款工具的所有功能。</p>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">什麼是沈浸式翻譯？</h2>
-          <p className="text-gray-300 mb-6">沈浸式翻譯（Immersive Translate）是一款免費的瀏覽器翻譯擴充功能，最大的特色是提供「雙語對照」的翻譯模式。與傳統翻譯工具不同，沈浸式翻譯會在原文下方顯示翻譯，讓你同時看到兩種語言，非常適合語言學習者使用。</p>
+          <p className="text-gray-300 mb-6">沈浸式翻譯（<a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Immersive Translate</a>）是一款免費的瀏覽器翻譯擴充功能，最大的特色是提供「雙語對照」的翻譯模式。與傳統翻譯工具不同，沈浸式翻譯會在原文下方顯示翻譯，讓你同時看到兩種語言，非常適合語言學習者使用。</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <h3 className="text-lg font-bold text-white mb-4">主要功能一覽</h3>
@@ -91,7 +91,7 @@ export default function ImmersiveTranslateGuideZhContent() {
                 <Settings className="w-5 h-5 text-[#C642FC] flex-shrink-0 mt-1" />
                 <div>
                   <strong className="text-white block mb-1">選擇翻譯引擎</strong>
-                  <p className="text-sm text-gray-400 mb-0">沈浸式翻譯支援多種翻譯引擎，包括Google翻譯、DeepL、Microsoft翻譯等。免費用戶可使用Google翻譯，Pro用戶可使用DeepL和OpenAI等進階引擎。建議根據翻譯語言選擇最適合的引擎。</p>
+                  <p className="text-sm text-gray-400 mb-0">沈浸式翻譯支援多種翻譯引擎，包括Google翻譯、<a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL</a>、Microsoft翻譯等。免費用戶可使用Google翻譯，Pro用戶可使用DeepL和OpenAI等進階引擎。建議根據翻譯語言選擇最適合的引擎。</p>
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function ImmersiveTranslateGuideZhContent() {
             </div>
 
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-              <strong className="text-white text-lg block mb-2">Trancy</strong>
+              <strong className="text-white text-lg block mb-2"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a></strong>
               <p className="text-gray-300 mb-4 text-sm">AI驅動的語言學習工具，支援Netflix和YouTube的雙語字幕，提供文法分析功能。完整功能需要每月約$8的訂閱。</p>
               <div className="grid grid-cols-2 gap-2 text-sm">
                 <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> AI文法分析</div>

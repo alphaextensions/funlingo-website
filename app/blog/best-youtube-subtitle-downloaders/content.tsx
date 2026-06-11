@@ -385,7 +385,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
           </li>
           <li>
             <strong>Downloading subtitles for an entire playlist?</strong> Use{" "}
-            <strong>4K Video Downloader</strong> or <strong>yt-dlp</strong> for
+            <strong>4K Video Downloader</strong> or <strong><a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">yt-dlp</a></strong> for
             batch processing.
           </li>
           <li>

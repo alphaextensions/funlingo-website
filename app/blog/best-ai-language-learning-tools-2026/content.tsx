@@ -100,7 +100,7 @@ export default function BlogPostContent() {
             ))}
           </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How Funlingo compares to Trancy and Immersive Translate</h2>
+          <h2 className="text-3xl font-bold text-white mt-16 mb-6">How Funlingo compares to <a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a> and <a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Immersive Translate</a></h2>
           <p>The comparison focuses on user outcomes: speed to comprehension, speaking readiness, and friction to use.</p>
 
           <div className="my-10 not-prose">

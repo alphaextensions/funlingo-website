@@ -80,7 +80,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
 
           {/* Extension 2: Language Reactor */}
           <div className="bg-white/5 rounded-xl p-8 border border-white/10 my-8">
-            <h2 className="text-3xl font-bold text-white mb-2 mt-0">2. Language Reactor</h2>
+            <h2 className="text-3xl font-bold text-white mb-2 mt-0">2. <a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Language Reactor</a></h2>
             <p className="text-yellow-400 font-medium mb-4">Free tier + Pro at $7.99/month</p>
             <p className="text-gray-300 mb-4">Language Reactor (formerly Language Learning with Netflix) is one of the most well-known extensions in this space. It provides dual subtitles, a side panel with machine translations, and a catalog for finding content in your target language. The free version covers basic dual subtitles, while the Pro plan unlocks features like phrase saving, human translations, and advanced playback controls.</p>
 
@@ -120,7 +120,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
 
           {/* Extension 3: Trancy */}
           <div className="bg-white/5 rounded-xl p-8 border border-white/10 my-8">
-            <h2 className="text-3xl font-bold text-white mb-2 mt-0">3. Trancy</h2>
+            <h2 className="text-3xl font-bold text-white mb-2 mt-0">3. <a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a></h2>
             <p className="text-yellow-400 font-medium mb-4">Free tier + Pro at $9.90/month</p>
             <p className="text-gray-300 mb-4">Trancy positions itself as an all-in-one immersive language learning tool. Beyond dual subtitles on Netflix and YouTube, it offers sentence-level grammar analysis, AI-powered speaking practice, and reading mode for web articles. It is a feature-rich option aimed at serious learners who want deep study tools integrated into their browser.</p>
 
@@ -160,7 +160,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
 
           {/* Extension 4: Immersive Translate */}
           <div className="bg-white/5 rounded-xl p-8 border border-white/10 my-8">
-            <h2 className="text-3xl font-bold text-white mb-2 mt-0">4. Immersive Translate</h2>
+            <h2 className="text-3xl font-bold text-white mb-2 mt-0">4. <a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Immersive Translate</a></h2>
             <p className="text-yellow-400 font-medium mb-4">Free tier + Pro at $6.99/month</p>
             <p className="text-gray-300 mb-4">Immersive Translate started as a web page translation tool and has expanded to include video subtitle translation. Its strength lies in translating entire web pages in a bilingual format, which makes it excellent for reading practice. For Netflix, it offers dual subtitle overlay, though its video-specific learning features are less developed than competitors focused purely on streaming.</p>
 
@@ -199,7 +199,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
 
           {/* Extension 5: eJOY */}
           <div className="bg-white/5 rounded-xl p-8 border border-white/10 my-8">
-            <h2 className="text-3xl font-bold text-white mb-2 mt-0">5. eJOY English</h2>
+            <h2 className="text-3xl font-bold text-white mb-2 mt-0">5. <a href="https://ejoy-english.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">eJOY</a> English</h2>
             <p className="text-yellow-400 font-medium mb-4">Free tier + Premium at $4.99/month</p>
             <p className="text-gray-300 mb-4">eJOY is geared primarily toward English learners, though it supports other languages as well. It offers dual subtitles on Netflix and YouTube, a word lookup feature, and a gamified vocabulary review system with mini-games. It is a solid budget option for learners focused on English comprehension.</p>
 

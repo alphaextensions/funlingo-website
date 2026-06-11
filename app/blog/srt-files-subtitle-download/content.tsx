@@ -80,7 +80,7 @@ export default function SrtFilesSubtitleDownloadContent() {
           <p className="text-gray-300 mb-6">There are several reputable websites where you can find subtitle files for movies, TV shows, and other video content. Here are the most reliable sources for <strong className="text-white">subtitle downloads</strong>:</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <div className="flex items-center gap-2 mb-3"><Download className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">OpenSubtitles.org</span></div>
+            <div className="flex items-center gap-2 mb-3"><Download className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white"><a href="https://www.opensubtitles.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">OpenSubtitles.org</a></span></div>
             <p className="text-gray-300">The largest subtitle database on the internet with millions of subtitles in dozens of languages. Supports searching by movie name, IMDB ID, or file hash. Free accounts have daily download limits; a VIP subscription removes them. The site also offers an API for developers building subtitle tools.</p>
           </div>
 
@@ -110,7 +110,7 @@ export default function SrtFilesSubtitleDownloadContent() {
           <p className="text-gray-300 mb-6">Once you have downloaded a subtitle file, loading it into a media player is straightforward. Here are instructions for the most popular players:</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <div className="flex items-center gap-2 mb-3"><Play className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">VLC Media Player</span></div>
+            <div className="flex items-center gap-2 mb-3"><Play className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white"><a href="https://www.videolan.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">VLC</a> Media Player</span></div>
             <ol className="list-decimal pl-6 space-y-2 text-gray-300">
               <li><strong className="text-white">Auto-load:</strong> Place the SRT file in the same folder as the video file with the same name (e.g., movie.mp4 and movie.srt). VLC will load it automatically.</li>
               <li><strong className="text-white">Manual load:</strong> Open your video in VLC, then go to Subtitle &gt; Add Subtitle File and select your SRT file.</li>

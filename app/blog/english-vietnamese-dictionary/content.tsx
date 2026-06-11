@@ -106,7 +106,7 @@ export default function EnglishVietnameseDictionaryContent() {
           {/* 4. Google Translate */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">4. Google Translate</h3>
+              <h3 className="text-xl font-bold text-white">4. <a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Google Translate</a></h3>
               <span className="text-xs text-gray-400 bg-white/10 px-2 py-1 rounded">Web &amp; App</span>
             </div>
             <p className="text-gray-300 mb-3">Google Translate needs no introduction. It handles English-Vietnamese translation for sentences and paragraphs, offers camera translation for signs and menus, and supports real-time conversation mode. Vietnamese translation quality has improved significantly with Neural Machine Translation, though it still struggles with tonal nuances and idiomatic Vietnamese expressions.</p>

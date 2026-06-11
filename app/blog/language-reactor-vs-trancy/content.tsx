@@ -46,7 +46,7 @@ export default function LanguageReactorVsTrancyContent() {
 
           <div className="grid sm:grid-cols-2 gap-4 my-8">
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mt-0 mb-2">Language Reactor</h3>
+              <h3 className="text-xl font-bold text-white mt-0 mb-2"><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Language Reactor</a></h3>
               <p className="text-sm text-gray-400 mb-3">Est. 2019 &middot; 1M+ users</p>
               <ul className="space-y-1 list-none pl-0 m-0 text-sm">
                 <li className="flex items-center gap-2 text-gray-300"><DollarSign className="w-4 h-4 text-[#C642FC]" /> $6/mo (Pro)</li>
@@ -55,7 +55,7 @@ export default function LanguageReactorVsTrancyContent() {
               </ul>
             </div>
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mt-0 mb-2">Trancy</h3>
+              <h3 className="text-xl font-bold text-white mt-0 mb-2"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a></h3>
               <p className="text-sm text-gray-400 mb-3">Est. 2023 &middot; 500K+ users</p>
               <ul className="space-y-1 list-none pl-0 m-0 text-sm">
                 <li className="flex items-center gap-2 text-gray-300"><DollarSign className="w-4 h-4 text-[#C642FC]" /> $8/mo (Pro)</li>
@@ -73,7 +73,7 @@ export default function LanguageReactorVsTrancyContent() {
 
           <div className="bg-white/5 rounded-xl p-6 border border-white/10 my-8">
             <h3 className="text-xl font-bold text-white mt-0 mb-4">Language Reactor Pricing</h3>
-            <p className="text-gray-300 mb-2">Language Reactor offers a free tier with basic dual subtitles on Netflix and YouTube. The Pro plan costs <strong className="text-white">$6 per month</strong> (or $48/year) and unlocks machine translations, phonetic transcriptions (romaji, pinyin), vocabulary export to Anki, and the catalogue mode for finding content by difficulty level. The free tier is surprisingly usable, but the vocabulary features are locked behind the paywall.</p>
+            <p className="text-gray-300 mb-2">Language Reactor offers a free tier with basic dual subtitles on Netflix and YouTube. The Pro plan costs <strong className="text-white">$6 per month</strong> (or $48/year) and unlocks machine translations, phonetic transcriptions (romaji, pinyin), vocabulary export to <a href="https://apps.ankiweb.net" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Anki</a>, and the catalogue mode for finding content by difficulty level. The free tier is surprisingly usable, but the vocabulary features are locked behind the paywall.</p>
           </div>
 
           <div className="bg-white/5 rounded-xl p-6 border border-white/10 my-8">
