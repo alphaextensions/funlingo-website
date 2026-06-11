@@ -121,3 +121,19 @@ export function navHref(path: string, locale: string): string {
   const clean = path.startsWith("/") ? path : `/${path}`;
   return LOCALIZED_PATHS.has(clean) ? localizedHref(clean, locale) : clean;
 }
+
+// Default territory per region-less language, so og:locale can use the
+// preferred language_TERRITORY form (e.g. ar_AR) instead of a bare "ar".
+const OG_TERRITORY: Record<string, string> = {
+  ar: "AR", bg: "BG", ca: "ES", hr: "HR", cs: "CZ", da: "DK", nl: "NL",
+  el: "GR", he: "IL", hi: "IN", hu: "HU", id: "ID", it: "IT", ja: "JP",
+  ko: "KR", no: "NO", fa: "IR", pl: "PL", ro: "RO", ru: "RU", sk: "SK",
+  es: "ES", sv: "SE", th: "TH", tr: "TR", uk: "UA", vi: "VN", en: "US",
+};
+
+/** OpenGraph og:locale value: language_TERRITORY (e.g. en_US, pt_BR, ar_AR). */
+export function ogLocale(code: string): string {
+  if (code.includes("-")) return code.replace("-", "_");
+  const terr = OG_TERRITORY[code];
+  return terr ? `${code}_${terr}` : code;
+}

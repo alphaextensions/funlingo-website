@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HomeContent from "@/app/home-content";
 import { getDictionary } from "@/app/i18n/dictionaries";
-import { alternateLanguages, localizedHref, getLocaleMeta } from "@/app/i18n/config";
+import { alternateLanguages, localizedHref, ogLocale } from "@/app/i18n/config";
 
 export async function generateMetadata({
   params,
@@ -10,7 +10,6 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const dict = getDictionary(locale);
-  const meta = getLocaleMeta(locale);
   // Title: just the (translated) hero title — the root layout template appends
   // " | Funlingo", so we avoid duplicating the brand here.
   const title = dict.hero.title;
@@ -26,7 +25,7 @@ export async function generateMetadata({
       title: `${dict.hero.title} | Funlingo`,
       description,
       url: localizedHref("/", locale),
-      locale: meta.hreflang.replace("-", "_"),
+      locale: ogLocale(locale),
     },
   };
 }

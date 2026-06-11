@@ -54,7 +54,6 @@ export default function LanguageSwitcher({
         {ALL_LOCALES.map((l) => (
           <option key={l.code} value={l.code} className="bg-[#0a0a0a] text-white">
             {l.nativeName}
-            {l.code === DEFAULT_LOCALE ? "" : ""}
           </option>
         ))}
       </select>

@@ -4,7 +4,7 @@ const logo = "/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useT } from "@/app/i18n/I18nProvider";
-import { navHref } from "@/app/i18n/config";
+import { navHref, LOCALE_CODES } from "@/app/i18n/config";
 import LanguageSwitcher from "@/app/i18n/LanguageSwitcher";
 
 interface NavbarProps {
@@ -24,7 +24,15 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Navigation items with active state based on currentPage prop
+  // Normalize the current page by stripping any locale prefix, so the active
+  // state matches whether the caller passes "/blog" or a localized "/fr/blog".
+  const segs = currentPage.split("/").filter(Boolean);
+  const current =
+    segs.length && LOCALE_CODES.includes(segs[0])
+      ? `/${segs.slice(1).join("/")}`
+      : currentPage;
+
+  // Navigation items with active state based on the normalized current page.
   const navItems = [
     { label: t("nav.home"), href: "/" },
     // { label: "Pricing", href: "/pricing" },
@@ -35,7 +43,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
   ].map(item => ({
     label: item.label,
     href: navHref(item.href, locale),
-    active: currentPage === item.href || (item.href === "/blog" && currentPage.startsWith("/blog"))
+    active: current === item.href || (item.href === "/blog" && current.startsWith("/blog"))
   }));
 
   return (
