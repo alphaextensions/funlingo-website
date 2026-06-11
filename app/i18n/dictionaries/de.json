@@ -1,8 +1,38 @@
 {
-  "nav": {"home":"Startseite","roadmap":"Roadmap","blog":"Blog","feedback":"Feedback","about":"Über uns","download":"Erweiterung herunterladen"},
-  "badges": {"learnWhileWatch":"Lerne beim Anschauen","freeExtension":"Kostenlose Erweiterung mit zweisprachigen Untertiteln","worksOn":"Funktioniert auf Netflix, YouTube, Prime und 5 weiteren","twoLanguages":"Untertitel in zwei Sprachen"},
-  "hero": {"title":"Zweisprachige Untertitel für Netflix, YouTube, Prime und 5 weitere","subtitle":"Verwandle Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy und Coursera in eine immersive Sprachstunde. Studien zeigen, dass Lernende, die zweisprachige Untertitel nutzen, bis zu 50 % mehr Vokabeln behalten als mit herkömmlichen Methoden. Funlingo unterstützt über 100 Sprachen mit zweisprachigen Untertiteln, sofortigen KI-Definitionen und dem Aufbau von Wortschatz — eine völlig kostenlose Alternative zu kostenpflichtigen Erweiterungen. Bewertet mit 4.92/5 Sternen im Chrome Web Store.","ctaPrimary":"Zu Chrome hinzufügen – kostenlos","ctaSecondary":"So funktioniert's","platformsHeading":"Funktioniert auf deinen Lieblingsplattformen"},
-  "footer": {"quickLinks":"Schnelllinks","information":"Informationen","follow":"Folgen","downloadExtension":"Erweiterung herunterladen","rights":"©2026 Funlingo. Alle Rechte vorbehalten.","privacy":"Datenschutzrichtlinie","support":"Support"},
-  "switcher": {"label":"Sprache"},
-  "meta": {"description":"Kostenlose zweisprachige Untertitel für Netflix, YouTube, Prime und mehr. Klicke ein Wort an, um es zu übersetzen, und lerne Sprachen beim Anschauen — 100+ Sprachen, gratis."}
+  "nav": {
+    "home": "Startseite",
+    "roadmap": "Roadmap",
+    "blog": "Blog",
+    "feedback": "Feedback",
+    "about": "Über uns",
+    "download": "Erweiterung herunterladen"
+  },
+  "badges": {
+    "learnWhileWatch": "Lerne beim Anschauen",
+    "freeExtension": "Kostenlose Erweiterung mit zweisprachigen Untertiteln",
+    "worksOn": "Funktioniert auf Netflix, YouTube, Prime und 5 weiteren",
+    "twoLanguages": "Untertitel in zwei Sprachen"
+  },
+  "hero": {
+    "title": "Zweisprachige Untertitel für Netflix, YouTube, Prime und 5 weitere",
+    "subtitle": "Verwandle Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy und Coursera in eine immersive Sprachstunde. Studien zeigen, dass Lernende, die zweisprachige Untertitel nutzen, bis zu 50 % mehr Vokabeln behalten als mit herkömmlichen Methoden. Funlingo unterstützt über 100 Sprachen mit zweisprachigen Untertiteln, sofortigen KI-Definitionen und dem Aufbau von Wortschatz — eine völlig kostenlose Alternative zu kostenpflichtigen Erweiterungen. Bewertet mit 4.92/5 Sternen im Chrome Web Store.",
+    "ctaPrimary": "Zu Chrome hinzufügen – kostenlos",
+    "ctaSecondary": "So funktioniert's",
+    "platformsHeading": "Funktioniert auf deinen Lieblingsplattformen"
+  },
+  "footer": {
+    "quickLinks": "Schnelllinks",
+    "information": "Informationen",
+    "follow": "Folgen",
+    "downloadExtension": "Erweiterung herunterladen",
+    "rights": "©2026 Funlingo. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "support": "Support"
+  },
+  "switcher": {
+    "label": "Sprache"
+  },
+  "meta": {
+    "description": "Kostenlose zweisprachige Untertitel für Netflix, YouTube, Prime & mehr — 100+ Sprachen, alles gratis. Jedes Wort beim Anschauen übersetzen."
+  }
 }
