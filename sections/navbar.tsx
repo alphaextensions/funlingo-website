@@ -4,7 +4,7 @@ const logo = "/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useT } from "@/app/i18n/I18nProvider";
-import { localizedHref } from "@/app/i18n/config";
+import { navHref } from "@/app/i18n/config";
 import LanguageSwitcher from "@/app/i18n/LanguageSwitcher";
 
 interface NavbarProps {
@@ -34,7 +34,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
     { label: t("nav.about"), href: "/about" },
   ].map(item => ({
     label: item.label,
-    href: localizedHref(item.href, locale),
+    href: navHref(item.href, locale),
     active: currentPage === item.href || (item.href === "/blog" && currentPage.startsWith("/blog"))
   }));
 
@@ -46,7 +46,7 @@ const Navbar = ({ currentPage = "/" }: NavbarProps) => {
       <div className="flex items-center justify-between h-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <a
-          href={localizedHref("/", locale)}
+          href={navHref("/", locale)}
           className="animate-fade-in-down hover:scale-105 transition-transform duration-300"
         >
           <div className="relative flex items-center justify-center w-fit bg-[linear-gradient(135deg,rgba(2120,2120,2120,0)_0%,#C642FC_40%,#7A1CAC_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-heading-h5 font-[number:var(--heading-h5-font-weight)] text-transparent text-[length:var(--heading-h5-font-size)] tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] whitespace-nowrap [font-style:var(--heading-h5-font-style)]">

@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import { useT } from "@/app/i18n/I18nProvider";
-import { localizedHref } from "@/app/i18n/config";
+import { navHref } from "@/app/i18n/config";
 const logo = "/assets/logo.png";
 
 export const FooterSection = (): React.JSX.Element => {
@@ -12,15 +12,15 @@ export const FooterSection = (): React.JSX.Element => {
   const { t, locale } = useT();
 
   const quickLinks = [
-    { label: t("nav.home"), href: localizedHref("/", locale) },
-    { label: t("nav.roadmap"), href: localizedHref("/roadmap", locale) },
-    { label: t("nav.blog"), href: localizedHref("/blog", locale) },
-    { label: t("nav.feedback"), href: localizedHref("/feedback", locale) },
-    { label: t("nav.about"), href: localizedHref("/about", locale) },
+    { label: t("nav.home"), href: navHref("/", locale) },
+    { label: t("nav.roadmap"), href: navHref("/roadmap", locale) },
+    { label: t("nav.blog"), href: navHref("/blog", locale) },
+    { label: t("nav.feedback"), href: navHref("/feedback", locale) },
+    { label: t("nav.about"), href: navHref("/about", locale) },
   ];
 
   const informationLinks = [
-    { label: t("nav.feedback"), href: localizedHref("/feedback", locale) },
+    { label: t("nav.feedback"), href: navHref("/feedback", locale) },
     { label: t("footer.downloadExtension"), href: "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" },
   ];
 
@@ -207,8 +207,8 @@ export const FooterSection = (): React.JSX.Element => {
         {/* Additional Links */}
         <div className="flex items-center gap-6">
           {[
-            { label: t("footer.privacy"), href: localizedHref("/privacy-policy", locale) },
-            { label: t("footer.support"), href: localizedHref("/support", locale) },
+            { label: t("footer.privacy"), href: navHref("/privacy-policy", locale) },
+            { label: t("footer.support"), href: navHref("/support", locale) },
             // { label: "Cookie Policy", href: "/cookies" },
           ].map((link, index) => (
             <a

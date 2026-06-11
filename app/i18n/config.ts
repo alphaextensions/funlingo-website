@@ -104,3 +104,20 @@ export function alternateLanguages(path = "/"): Record<string, string> {
   }
   return langs;
 }
+
+/**
+ * Paths that actually have a localized (`/[locale]/…`) page. Only the home
+ * page is localized today (static export, dynamicParams=false), so every other
+ * link must stay un-prefixed — otherwise nav/footer links on a localized page
+ * (e.g. /fr/roadmap) would 404. Add paths here as more routes get localized.
+ */
+export const LOCALIZED_PATHS = new Set<string>(["/"]);
+
+/**
+ * Href for nav/footer links: localized only when a localized version of that
+ * path exists; otherwise the plain (root, English) path.
+ */
+export function navHref(path: string, locale: string): string {
+  const clean = path.startsWith("/") ? path : `/${path}`;
+  return LOCALIZED_PATHS.has(clean) ? localizedHref(clean, locale) : clean;
+}
