@@ -4,7 +4,7 @@ import * as React from "react";
 import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, User, Clock, Check, X, Star, Zap, Globe, Shield } from "lucide-react";
+import { ArrowRight, Calendar, User, Clock, Check, X, Star, Zap, Globe, Shield, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { KeyTakeaways, Callout, ProsCons, StatGrid } from "@/app/blog/_components/graphics";
 
@@ -75,12 +75,12 @@ export default function ImmersiveTranslateAlternativesContent() {
                   </tr>
                 </thead>
                 <tbody className="text-gray-400">
-                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Funlingo</td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Google Translate Ext.</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
-                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">DeepL Extension</td><td className="py-3 px-4">Free/Pro</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Trancy</td><td className="py-3 px-4">$8/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
-                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Language Reactor</td><td className="py-3 px-4">$6/mo</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Microsoft Translator</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Funlingo</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Google Translate Ext.</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL Extension</a></td><td className="py-3 px-4">Free/Pro</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Trancy</a></td><td className="py-3 px-4">$8/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Language Reactor</a></td><td className="py-3 px-4">$6/mo</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Microsoft Translator</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
                 </tbody>
               </table>
             </div>
@@ -89,7 +89,7 @@ export default function ImmersiveTranslateAlternativesContent() {
             <div className="bg-white/5 border border-[#C642FC]/30 rounded-2xl p-8 mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <Star className="w-6 h-6 text-[#C642FC]" />
-                <h3 className="text-2xl font-bold text-white m-0">Funlingo</h3>
+                <h3 className="text-2xl font-bold text-white m-0"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Funlingo <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
                 <Badge className="bg-[#C642FC]/20 text-[#C642FC] border-[#C642FC]/30">
                   Best Pick
                 </Badge>
@@ -143,7 +143,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Google Translate Extension */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Google Translate Extension</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Google Translate Extension <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-6">
                 Google Translate&apos;s official Chrome extension is a straightforward tool for
                 translating web pages and selected text. It supports over 100 languages and is
@@ -184,7 +184,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* DeepL Extension */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">DeepL Extension</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">DeepL Extension <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-6">
                 DeepL is widely regarded as having the highest quality machine translations,
                 especially for European languages. Their browser extension brings that quality
@@ -225,7 +225,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Trancy */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Trancy</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Trancy <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-2">
                 <span className="text-gray-400 text-base">~$8/month</span>
               </p>
@@ -269,7 +269,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Language Reactor */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Language Reactor</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Language Reactor <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-2">
                 <span className="text-gray-400 text-base">~$6/month</span>
               </p>
@@ -313,7 +313,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Microsoft Translator */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Microsoft Translator</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Microsoft Translator <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-6">
                 Microsoft Translator integrates seamlessly with Microsoft Edge and offers a solid
                 free web page translation experience. It supports over 70 languages and provides
@@ -383,49 +383,49 @@ export default function ImmersiveTranslateAlternativesContent() {
               </thead>
               <tbody>
                 <tr>
-                  <td>Funlingo</td>
+                  <td><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Funlingo</a></td>
                   <td>Free</td>
                   <td>Chrome &amp; Edge extension</td>
                   <td>Yes &mdash; Netflix, YouTube &amp; Prime Video</td>
                   <td>Free video-based language learning</td>
                 </tr>
                 <tr>
-                  <td>Immersive Translate</td>
+                  <td><a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Immersive Translate</a></td>
                   <td>Freemium (~$9.99/mo Pro)</td>
                   <td>Browser extension, iOS, Android</td>
                   <td>Partial &mdash; YouTube only, no Netflix</td>
                   <td>Bilingual web, PDF &amp; ebook reading</td>
                 </tr>
                 <tr>
-                  <td>DeepL</td>
+                  <td><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL</a></td>
                   <td>Free tier; Pro from ~$8.74/mo</td>
                   <td>Web, desktop apps, browser extension</td>
                   <td>No</td>
                   <td>Highest-quality document &amp; text translation</td>
                 </tr>
                 <tr>
-                  <td>Google Translate</td>
+                  <td><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Google Translate</a></td>
                   <td>Free</td>
                   <td>Web, mobile apps, browser extension</td>
                   <td>No</td>
                   <td>Quick free web page translation, 100+ languages</td>
                 </tr>
                 <tr>
-                  <td>Trancy</td>
+                  <td><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Trancy</a></td>
                   <td>Freemium (~$8/mo Pro)</td>
                   <td>Chrome &amp; Edge extension</td>
                   <td>Yes &mdash; Netflix &amp; YouTube</td>
                   <td>AI sentence analysis on video &amp; web</td>
                 </tr>
                 <tr>
-                  <td>Language Reactor</td>
+                  <td><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Language Reactor</a></td>
                   <td>Freemium (~$6/mo Pro)</td>
                   <td>Chrome &amp; Edge extension</td>
                   <td>Yes &mdash; Netflix &amp; YouTube</td>
                   <td>Netflix/YouTube learning with hover translations</td>
                 </tr>
                 <tr>
-                  <td>Microsoft Translator</td>
+                  <td><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Microsoft Translator</a></td>
                   <td>Free</td>
                   <td>Edge built-in, web, mobile apps</td>
                   <td>No</td>

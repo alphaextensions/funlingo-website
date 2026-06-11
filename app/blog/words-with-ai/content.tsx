@@ -53,6 +53,13 @@ export default function WordsWithAIContent() {
 
       {/* Body */}
       <article className="relative z-10 max-w-3xl mx-auto px-4 pb-24 prose prose-invert prose-lg">
+        <img
+          src="/blog-images/words-with-ai-hero.jpg"
+          alt="English vocabulary and spelling concept with glowing letters and typography"
+          width={1600}
+          height={893}
+          fetchPriority="high"
+        />
         <KeyTakeaways items={["The vowel team \"ai\" is one of the most common in English, appearing in over 2,000 words", "Grouping words into families like -ail, -ain, and -air makes them far easier to learn and spell", "In over 90% of cases, \"ai\" makes the long \"a\" sound /eɪ/, as in rain and train", "Key exceptions include unstressed endings (captain), -air words (chair), and said and again", "Seeing these words in real context with dual subtitles beats rote memorisation"]} />
         {/* 1 — Introduction */}
         <section className="mb-14">
@@ -95,6 +102,13 @@ export default function WordsWithAIContent() {
           </div>
         </section>
 
+        <img
+          src="/blog-images/words-with-ai-inline.jpg"
+          alt="Grouping words into families shown as connected clusters of cards"
+          width={1600}
+          height={893}
+          loading="lazy"
+        />
         {/* 3 — Words ending in -ail */}
         <section className="mb-14">
           <h2 className="text-2xl font-bold mb-4">
