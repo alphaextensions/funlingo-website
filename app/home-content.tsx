@@ -10,27 +10,17 @@ import { WhyChooseFunlingoSection } from "@/sections/WhyChooseFunlingoSection";
 import { EvidenceSection } from "@/sections/EvidenceSection";
 import { ComparisonTableSection } from "@/sections/ComparisonTableSection";
 import Navbar from "@/sections/navbar";
+import { useT } from "@/app/i18n/I18nProvider";
 
 const featureBadges = [
-  {
-    icon: "/figmaAssets/svg-12.svg",
-    text: "Learn while you watch",
-  },
-  {
-    icon: "/figmaAssets/svg-6.svg",
-    text: "Free dual subtitle extension",
-  },
-  {
-    icon: "/figmaAssets/svg-5.svg",
-    text: "Works on Netflix, YouTube, Prime & 5 more",
-  },
-  {
-    icon: "/figmaAssets/svg-12.svg",
-    text: "Subtitles in two languages",
-  },
+  { icon: "/figmaAssets/svg-12.svg", textKey: "badges.learnWhileWatch" },
+  { icon: "/figmaAssets/svg-6.svg", textKey: "badges.freeExtension" },
+  { icon: "/figmaAssets/svg-5.svg", textKey: "badges.worksOn" },
+  { icon: "/figmaAssets/svg-12.svg", textKey: "badges.twoLanguages" },
 ];
 
 export default function HomeContent() {
+  const { t } = useT();
   return (
     <div className="flex flex-col items-start relative bg-[#000000]">
       {/* Navigation Header */}
@@ -52,7 +42,7 @@ export default function HomeContent() {
                   src={badge.icon}
                 />
                 <p className="relative flex items-center justify-center w-fit font-body-small-regular font-[number:var(--body-small-regular-font-weight)] text-textwhite text-[length:var(--body-small-regular-font-size)] tracking-[var(--body-small-regular-letter-spacing)] leading-[var(--body-small-regular-line-height)] whitespace-nowrap [font-style:var(--body-small-regular-font-style)] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
-                  {badge.text}
+                  {t(badge.textKey)}
                 </p>
               </div>
             ))}

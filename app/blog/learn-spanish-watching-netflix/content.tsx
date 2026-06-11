@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, Tv, BookOpen, Sparkles, Target, Timer, Brain, Headphones, Repeat, Bookmark } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { StatGrid, DualSubtitleDemo, KeyTakeaways } from "@/app/blog/_components/graphics";
 
 export default function LearnSpanishNetflixContent() {
   return (
@@ -25,6 +26,27 @@ export default function LearnSpanishNetflixContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/learn-spanish-watching-netflix-hero.jpg"
+            alt="Dual subtitles in Spanish and English shown together on a Netflix movie scene"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
+          <KeyTakeaways items={[
+            "Netflix has the largest Spanish-language library of any platform, ideal for comprehensible-input learning.",
+            "Use the dual subtitle method to get reading, listening, and vocabulary practice in a single activity.",
+            "Match shows to your level: Extra en Espanol for beginners, La Casa de Papel and Elite for intermediate, Narcos and Vis a Vis for advanced.",
+            "A consistent 15-minute daily routine of watching, shadowing, and journaling beats occasional long sessions.",
+          ]} />
+          <StatGrid
+            stats={[
+              { value: "50%", label: "more vocabulary retained" },
+              { value: "100+", label: "languages supported" },
+              { value: "4.92★", label: "Chrome Web Store rating" },
+              { value: "8", label: "streaming platforms" },
+            ]}
+          />
           <h2 className="text-2xl font-bold text-white mb-4">Why Netflix Is the Best Tool for Learning Spanish</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Spanish is the most studied language in the world, and Netflix has the largest library of Spanish-language content of any streaming platform. From gritty crime dramas set in Colombia to lighthearted comedies from Spain, there are hundreds of titles that can double as language lessons.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">The key advantage of Netflix for Spanish learning is comprehensible input. When you watch engaging content with dual subtitles, you absorb vocabulary, grammar patterns, and pronunciation naturally, without the grind of traditional study.</p>
@@ -39,6 +61,13 @@ export default function LearnSpanishNetflixContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/learn-spanish-watching-netflix-inline.jpg"
+            alt="Watching a Spanish TV drama at night with dual Spanish and English subtitles"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Best Netflix Shows for Learning Spanish by Level</h2>
           <p className="text-gray-300 mb-8">Choosing the right show for your level is crucial. Content that is too difficult leads to frustration, while content that is too easy does not push your skills forward. Here are our recommendations organized by proficiency level.</p>
 
@@ -77,6 +106,7 @@ export default function LearnSpanishNetflixContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Dual Subtitle Method for Spanish</h2>
           <p className="text-gray-300 mb-6">The most effective way to learn Spanish from Netflix is the dual subtitle method. Instead of choosing between Spanish subtitles (which you might not fully understand) or English subtitles (which do not expose you to written Spanish), you use both at the same time.</p>
+          <DualSubtitleDemo targetLang="Spanish" target="¿Quién eres tú?" highlight="Quién" native="Who are you?" />
           <p className="text-gray-300 mb-6">Learn how to set this up in our step-by-step guide: <a href="/blog/how-to-get-dual-subtitles-on-netflix" className="text-[#C642FC] hover:underline">How to Get Dual Subtitles on Netflix</a>.</p>
           <p className="text-gray-300 mb-6">To set up dual subtitles for any of these shows, follow our step-by-step <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">Netflix dual subtitle guide</a>.</p>
 
@@ -101,7 +131,7 @@ export default function LearnSpanishNetflixContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Vocabulary Tips for Spanish Learners</h2>
           <p className="text-gray-300 mb-6">Spanish shares thousands of cognates with English, words that look and sound similar. Recognizing these cognates on screen gives you an instant vocabulary boost. Words like &quot;universidad,&quot; &quot;importante,&quot; and &quot;problema&quot; are immediately understandable.</p>
-          <p className="text-gray-300 mb-6">For more strategies on building vocabulary while watching, check out our detailed guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a>. You can also compare tools in our <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extension comparison</a>.</p>
+          <p className="text-gray-300 mb-6">For more strategies on building vocabulary while watching, check out our detailed guide on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a>. You can also compare tools in our <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extension comparison</a>.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>

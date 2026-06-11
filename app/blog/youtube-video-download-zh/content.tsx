@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Download, ArrowRight, Monitor, Smartphone, Globe, Check, X, PlayCircle } from "lucide-react";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function YoutubeVideoDownloadZhContent() {
   return (
@@ -27,6 +28,8 @@ export default function YoutubeVideoDownloadZhContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways items={["四类下载方案：在线工具、桌面软件、浏览器扩展和手机端，各有适用场景", "在线工具（y2mate、savefrom.net）最简单，但通常最高只支持1080P", "yt-dlp功能最强大，免费开源，支持4K/8K和批量下载播放列表", "下载视频仅供个人学习使用，请尊重创作者版权", "如果目的是学外语，用Funlingo双语字幕在线学习更方便，无需下载视频"]} />
 
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">油管（YouTube）是全球最大的视频平台，上面有大量优质的教学视频、音乐MV、纪录片和语言学习资源。但很多时候我们需要在没有网络的情况下观看，或者想永久收藏某个视频。本文将详细介绍2026年最新的油管视频下载方法，包括免费在线工具、专业桌面软件、浏览器扩展以及手机端方案，帮你轻松保存高清无水印视频。</p>
 
@@ -344,6 +347,10 @@ export default function YoutubeVideoDownloadZhContent() {
 
           {/* 下载注意事项 */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">油管视频下载注意事项</h2>
+
+          <Callout variant="warning" title="版权提醒">
+            下载的视频仅供个人观看和学习使用。未经版权所有者许可，不得用于商业用途、重新上传或公开传播。
+          </Callout>
 
           <div className="space-y-3 mb-8">
             <div className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/10">

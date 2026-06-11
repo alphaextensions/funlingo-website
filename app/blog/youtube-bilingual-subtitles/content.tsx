@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, X, Play, BookOpen, Mic, Globe, Monitor, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo, StepFlow } from "@/app/blog/_components/graphics";
 
 export default function YoutubeBilingualSubtitlesContent() {
   return (
@@ -25,13 +26,29 @@ export default function YoutubeBilingualSubtitlesContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/youtube-bilingual-subtitles-hero.jpg"
+            alt="A YouTube video player showing two subtitle lines in different languages at once"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
+          <KeyTakeaways items={["Bilingual subtitles show your target and native language on screen at the same time", "YouTube natively displays only one subtitle track at a time, so you need an extension", "Funlingo adds free bilingual subtitles to YouTube, Netflix, and Prime Video", "It works with both manually uploaded and auto-generated captions across 100+ languages", "News, vlogs, educational channels, and interviews are the best content for learning"]} />
           <h2 className="text-2xl font-bold text-white mb-4">What Are Bilingual Subtitles on YouTube?</h2>
+          <DualSubtitleDemo targetLang="Spanish" target="El tren llegó tarde por la lluvia" highlight="lluvia" native="The train arrived late because of the rain" />
           <p className="leading-relaxed text-gray-300 mb-6">Bilingual subtitles display two languages on screen at the same time while you watch a YouTube video. Your target language appears alongside your native language, so you can follow foreign-language content without guessing or pausing to translate.</p>
           <p className="leading-relaxed text-gray-300 mb-6">YouTube has the largest library of free video content in the world, covering virtually every language. News broadcasts, vlogs, educational channels, interviews, music videos, and documentaries are all available. Bilingual subtitles unlock all of this content as language learning material.</p>
           <p className="leading-relaxed text-gray-300 mb-6">The concept is simple: instead of choosing between reading subtitles in the language you are learning or in your native language, you see both at once. This lets your brain connect the foreign words to their meanings in real time while you listen to natural speech.</p>
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/youtube-bilingual-subtitles-inline.jpg"
+            alt="Close-up of bilingual captions with a highlighted word and a definition popup"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Why YouTube Does Not Offer Bilingual Subtitles Natively</h2>
           <p className="text-gray-300 mb-6">Despite having auto-generated captions in dozens of languages and a translation feature, YouTube only lets you display one subtitle track at a time. You can turn on English captions or Spanish captions, but not both simultaneously.</p>
           <p className="text-gray-300 mb-6">YouTube&apos;s auto-translate feature generates a machine translation of existing captions, but it replaces the original text instead of showing both. This means you lose access to the original language subtitles when you enable translation.</p>
@@ -42,6 +59,8 @@ export default function YoutubeBilingualSubtitlesContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How to Get YouTube Bilingual Subtitles with Funlingo</h2>
           <p className="text-gray-300 mb-8">Funlingo is a free Chrome extension that adds bilingual subtitles to YouTube (as well as Netflix and Prime Video). Here is the step-by-step setup.</p>
+
+          <StepFlow steps={[{ title: "Install Funlingo", desc: "Add the free extension from the Chrome Web Store and confirm the installation." }, { title: "Open any YouTube video", desc: "Find a video with captions, indicated by the CC button in the player." }, { title: "Enable bilingual subtitles", desc: "Click the Funlingo icon, pick your target and native languages, then toggle it on." }, { title: "Customize your experience", desc: "Adjust font size, position, and opacity, and click words to save them." }]} />
 
           <div className="space-y-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">

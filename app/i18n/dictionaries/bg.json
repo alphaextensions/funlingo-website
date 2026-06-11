@@ -1,0 +1,8 @@
+{
+  "nav": {"home":"Начало","roadmap":"Пътна карта","blog":"Блог","feedback":"Обратна връзка","about":"За нас","download":"Изтегли разширението"},
+  "badges": {"learnWhileWatch":"Учи, докато гледаш","freeExtension":"Безплатно разширение с двойни субтитри","worksOn":"Работи с Netflix, YouTube, Prime и още 5","twoLanguages":"Субтитри на два езика"},
+  "hero": {"title":"Двойни субтитри за Netflix, YouTube, Prime и още 5","subtitle":"Превърни Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy и Coursera в завладяващ урок по език. Проучванията показват, че учещите, които използват двойни субтитри, запомнят до 50% повече думи в сравнение с традиционните методи. Funlingo поддържа 100+ езика с двуезични субтитри, мигновени AI определения и изграждане на речник — напълно безплатна алтернатива на платените разширения. Оценен с 4.92/5 звезди в Chrome Web Store.","ctaPrimary":"Добави в Chrome - безплатно е","ctaSecondary":"Как работи","platformsHeading":"Работи с любимите ти платформи"},
+  "footer": {"quickLinks":"Бързи връзки","information":"Информация","follow":"Последвай ни","downloadExtension":"Изтегли разширението","rights":"©2026 Funlingo. Всички права запазени.","privacy":"Политика за поверителност","support":"Поддръжка"},
+  "switcher": {"label":"Език"},
+  "meta": {"description":"Безплатни двойни субтитри за Netflix, YouTube, Prime и още. Кликни върху всяка дума за превод и учи езици, докато гледаш — 100+ езика, всички безплатни."}
+}

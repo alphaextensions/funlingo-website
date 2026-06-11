@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Check, X, Star, Zap, Globe, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, ProsCons } from "@/app/blog/_components/graphics";
 
 export default function LanguageReactorAlternativesContent() {
   return (
@@ -43,10 +44,12 @@ export default function LanguageReactorAlternativesContent() {
       <main className="max-w-3xl mx-auto px-6 pb-24">
         <article className="prose prose-invert prose-lg max-w-none">
 
+          <KeyTakeaways items={["Language Reactor Pro now costs $7.99/month for vocab saving and advanced features, with a limited free tier and no Prime Video support.", "It also lacks per-word pronunciation audio, a multi-translation selector, and AI grammar explanations.", "Funlingo is the best free pick: dual subtitles on Netflix, YouTube, and Prime Video with pronunciation, AI grammar help, and vocab export.", "Trancy ($9.90/mo) is best for deep AI grammar analysis and AiTalk speaking practice; eJOY English ($4.99/mo) suits budget English learners.", "Substital, Mate Translate, and Linguo TV are niche tools that complement, rather than replace, a dedicated subtitle extension."]} />
+
           {/* Intro */}
           <section className="mb-16">
             <p className="text-gray-300 leading-relaxed">
-              Language Reactor (formerly Language Learning with Netflix) has been one of the most popular
+              <a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Language Reactor</a> (formerly Language Learning with Netflix) has been one of the most popular
               browser extensions for learning languages through video content. But as the tool has evolved,
               many users have found reasons to look elsewhere. The free version is increasingly limited,
               Language Reactor Pro now costs $7.99 per month for full features, there is no support for
@@ -83,6 +86,8 @@ export default function LanguageReactorAlternativesContent() {
               translations from different engines, or AI-powered grammar explanations. If any of these
               gaps affect your workflow, one of the alternatives below will serve you better.
             </p>
+
+            <ProsCons proLabel="Language Reactor strengths" conLabel="Where it falls short" pros={["Popularized dual subtitles on Netflix", "Large, active community", "Curated catalog sorted by difficulty level", "Clean, familiar interface"]} cons={["Pro plan required at $7.99/month for vocab saving", "No Amazon Prime Video support", "No per-word pronunciation audio", "No multi-translation selector or AI grammar explanations"]} />
           </section>
 
           {/* The 7 Best Alternatives */}
@@ -108,9 +113,9 @@ export default function LanguageReactorAlternativesContent() {
                 </thead>
                 <tbody className="text-gray-400">
                   <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Funlingo</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Trancy</td><td className="py-3 px-4">$9.90/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td><td className="py-3 px-4">Limited</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
-                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Immersive Translate</td><td className="py-3 px-4">$9.99/mo</td><td className="py-3 px-4">Limited</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">eJOY English</td><td className="py-3 px-4">$4.99/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Trancy</a></td><td className="py-3 px-4">$9.90/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td><td className="py-3 px-4">Limited</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Immersive Translate</a></td><td className="py-3 px-4">$9.99/mo</td><td className="py-3 px-4">Limited</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://ejoy-english.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">eJOY English</a></td><td className="py-3 px-4">$4.99/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
                   <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Substital</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
                   <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Mate Translate</td><td className="py-3 px-4">$29.99</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
                   <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Linguo TV</td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
@@ -339,7 +344,7 @@ export default function LanguageReactorAlternativesContent() {
                 Substital takes a different approach: instead of generating translations automatically,
                 it lets you load your own SRT subtitle files onto Netflix, YouTube, and other streaming
                 sites. This makes it ideal for people who already have subtitle files in their target
-                language or who want to use community-sourced subtitles from sites like OpenSubtitles.
+                language or who want to use community-sourced subtitles from sites like <a href="https://www.opensubtitles.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">OpenSubtitles</a>.
                 The extension is free and lightweight, but it has no built-in translation, vocabulary
                 saving, or language learning tools. Think of it as a subtitle overlay utility rather
                 than a learning platform.

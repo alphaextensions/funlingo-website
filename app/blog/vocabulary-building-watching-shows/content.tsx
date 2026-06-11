@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Brain, Eye, BookOpen, Repeat, Target, Lightbulb, BarChart3, Layers, Zap, CheckCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, StepFlow, StatGrid } from "@/app/blog/_components/graphics";
 
 export default function VocabularyBuildingWatchingContent() {
   return (
@@ -25,6 +26,7 @@ export default function VocabularyBuildingWatchingContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Passive watching feels productive but rarely builds recallable vocabulary", "The science rests on three pillars: comprehensible input, dual coding, and the spacing effect", "A simple 4-step loop turns any episode into a vocabulary lesson in just a few extra minutes", "Aim to save 5 to 15 words per episode, not every unknown word", "Words learned in context beat isolated flashcards, reaching 85-95% retention at 30 days"]} />
           <h2 className="text-2xl font-bold text-white mb-4">The Problem with Passive Watching</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Most people who try to learn a language by watching shows make the same mistake: they watch passively. They enjoy the story, read the subtitles, and feel like they are learning. But when they try to use the language in real life, they cannot recall the words they saw.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">The solution is not to watch more. It is to watch smarter. Language science gives us a clear, repeatable method for turning every episode into a vocabulary lesson, and it only adds a few minutes to your viewing time.</p>
@@ -50,6 +52,8 @@ export default function VocabularyBuildingWatchingContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The 4-Step Vocabulary Building Method</h2>
           <p className="text-gray-300 mb-8">This method combines all three scientific principles into a simple, repeatable process you can use with any show on Netflix, YouTube, or Prime Video.</p>
+
+          <StepFlow steps={[{ title: "Watch with dual subtitles", desc: "Follow the story naturally with both languages on screen. Do not pause or look things up yet." }, { title: "Notice and save new words", desc: "Click words you want to learn to save them. Aim for 5 to 15 useful words per episode." }, { title: "Review with spaced repetition", desc: "Spend a few minutes reviewing saved words at increasing intervals: 1, 3, 7, then 14 days." }, { title: "Re-encounter words naturally", desc: "As you keep watching, saved words reappear in new contexts and reinforce themselves." }]} />
 
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
             {[
@@ -91,6 +95,7 @@ export default function VocabularyBuildingWatchingContent() {
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Retention Rates: What the Research Shows</h2>
+          <StatGrid stats={[{ value: "~80%", label: "of new words forgotten within 48 hours without review" }, { value: "85-95%", label: "retention at 30 days with context plus spaced repetition" }, { value: "5-15", label: "new words you can realistically learn per episode" }]} />
           <div className="bg-gradient-to-br from-[#C642FC]/20 to-transparent p-8 rounded-xl border border-[#C642FC]/20 mb-12">
             <div className="space-y-4">
               <div className="flex flex-col md:flex-row gap-4 border-b border-white/10 pb-4"><div className="flex-1"><span className="text-[#C642FC] text-sm uppercase tracking-wider block mb-1">Without any review</span><span className="text-white font-medium">Learners forget approximately 80% of new vocabulary within 48 hours (Ebbinghaus forgetting curve).</span></div></div>

@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Target, BookOpen, Sparkles, Brain, Headphones, Repeat, Bookmark, Tv, Globe, Zap, MessageCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function LearnFrenchNetflixContent() {
   return (
@@ -26,6 +27,19 @@ export default function LearnFrenchNetflixContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/learn-french-watching-netflix-hero.jpg"
+            alt="French film on a TV with French and English dual subtitles for language learning"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
+          <KeyTakeaways items={[
+            "French is uniquely hard to learn by ear due to liaison, elision, nasal vowels, silent letters, and fast speech (about 7.18 syllables per second).",
+            "Dual subtitles connect sound, spelling, and meaning at once, closing the gap between written and spoken French.",
+            "Pick content by level: Extra French for beginners, Lupin and Call My Agent for intermediate, The Bureau for advanced.",
+            "A 20-minute daily routine of watching, shadowing, and journaling can reach conversational French in 4 to 6 months.",
+          ]} />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Why French Learners Are Ditching Apps for Netflix</h2>
           <p className="text-gray-300 mb-6">French is one of the most popular languages to learn worldwide, studied by over 120 million people. It is also one of the most frustrating to listen to. The liaisons, the silent letters, the nasal vowels, the way native speakers seem to blur an entire sentence into a single flowing sound — these features make French uniquely challenging for listening comprehension.</p>
@@ -61,6 +75,13 @@ export default function LearnFrenchNetflixContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/learn-french-watching-netflix-inline.jpg"
+            alt="A learner with headphones watching French video with subtitles and a notebook of French words"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Best Netflix Shows for Learning French by Level</h2>
           <p className="text-gray-300 mb-8">Choosing content at the right difficulty level is essential. Too hard and you get frustrated. Too easy and you plateau. Here are our picks for every level, selected for clear audio, engaging storylines, and useful everyday vocabulary.</p>
 
@@ -121,6 +142,8 @@ export default function LearnFrenchNetflixContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Dual Subtitle Method for French</h2>
           <p className="text-gray-300 mb-6">The dual subtitle method is especially powerful for French because of the language&apos;s massive gap between written and spoken form. Seeing &quot;je ne sais pas&quot; on screen while hearing &quot;shay-pah&quot; is the single fastest way to decode French phonology.</p>
 
+          <DualSubtitleDemo targetLang="French" target="Je ne sais pas du coup" highlight="coup" native="So I don't know" />
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Brain className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Decode Liaison Patterns</h3><p className="text-sm text-gray-400">See where words link and blend in real time. Your brain learns to predict liaisons before they happen.</p></div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Headphones className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Train Nasal Vowels</h3><p className="text-sm text-gray-400">Hearing nasal vowels while reading their spelling builds the neural pathways that English-only ears lack.</p></div>
@@ -151,7 +174,7 @@ export default function LearnFrenchNetflixContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">French-Specific Vocabulary Strategies</h2>
           <p className="text-gray-300 mb-6">French shares thousands of cognates with English thanks to the Norman Conquest of 1066. Words like &quot;information,&quot; &quot;restaurant,&quot; &quot;situation,&quot; and &quot;important&quot; are immediately recognizable. This gives English speakers a massive head start in reading comprehension.</p>
           <p className="text-gray-300 mb-6">But there are also faux amis (false friends) that trip learners up constantly. &quot;Actuellement&quot; means &quot;currently,&quot; not &quot;actually.&quot; &quot;Bras&quot; means &quot;arm,&quot; not what English speakers think. &quot;Attendre&quot; means &quot;to wait,&quot; not &quot;to attend.&quot; Dual subtitles catch these instantly — you see the French word, read the English meaning, and your brain corrects the false association before it cements.</p>
-          <p className="text-gray-300 mb-6">For deeper strategies on capturing and retaining vocabulary from watching, read our guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a> and the companion piece on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">vocabulary building strategies for watching</a>.</p>
+          <p className="text-gray-300 mb-6">For deeper strategies on capturing and retaining vocabulary from watching, read our guide on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a> and the companion piece on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">vocabulary building strategies for watching</a>.</p>
 
           <h3 className="text-xl font-bold text-white mb-4">High-Value French Phrases You Will Hear Constantly</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">

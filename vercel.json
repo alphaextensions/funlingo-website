@@ -1,6 +1,17 @@
 {
   "redirects": [
-    { "source": "/blog/how-to-get-dual-subtitles-on-netflix", "destination": "/blog/netflix-dual-subtitles", "permanent": true }
-  ],
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/" }]
+    { "source": "/blog/how-to-get-dual-subtitles-on-netflix", "destination": "/blog/netflix-dual-subtitles", "permanent": true },
+    { "source": "/blog/export-google-meet-attendance-to-sheets", "destination": "/blog", "permanent": true },
+    { "source": "/blog/meeting-attendance-tracker-remote-teams", "destination": "/blog", "permanent": true },
+    { "source": "/blog/therapy-session-attendance-tracker", "destination": "/blog", "permanent": true },
+    { "source": "/blog/attendance-tracker-for-online-classes", "destination": "/blog", "permanent": true },
+    { "source": "/blog/google-meet-attendance", "destination": "/blog", "permanent": true },
+    { "source": "/blog/how-to-take-attendance-on-google-meet", "destination": "/blog", "permanent": true },
+    { "source": "/blog/best-google-meet-attendance-extensions", "destination": "/blog", "permanent": true },
+    { "source": "/blog/does-google-meet-have-attendance", "destination": "/blog", "permanent": true },
+    { "source": "/blog/google-meet-attendance-for-teachers", "destination": "/blog", "permanent": true },
+    { "source": "/ai-translator-tools", "destination": "/blog/best-ai-translator-tools", "permanent": true },
+    { "source": "/blog/build-vocabulary-watching-shows", "destination": "/blog/vocabulary-building-watching-shows", "permanent": true },
+    { "source": "/blog/reading-mode-bilingual-captions", "destination": "/blog/how-to-learn-languages-with-reading-mode", "permanent": true }
+  ]
 }

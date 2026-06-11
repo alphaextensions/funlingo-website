@@ -3,9 +3,12 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useT } from "@/app/i18n/I18nProvider";
+import { DEFAULT_LOCALE } from "@/app/i18n/config";
 
 export const HeroSection = (): React.JSX.Element => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t, locale } = useT();
 
   useEffect(() => {
     setIsVisible(true);
@@ -35,16 +38,22 @@ export const HeroSection = (): React.JSX.Element => {
               className="relative flex items-center justify-center lg:justify-start self-stretch font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-textwhite text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[length:var(--heading-h1-font-size)] text-center lg:text-left tracking-[var(--heading-h1-letter-spacing)] leading-[1.1] lg:leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] animate-fade-in-up"
               style={{ animationDelay: "400ms" }}
             >
-              Dual Subtitles <br className="hidden sm:block" />
-              for Netflix, YouTube, <br className="hidden sm:block" />
-              Prime &amp; 5 more
+              {locale === DEFAULT_LOCALE ? (
+                <>
+                  Dual Subtitles <br className="hidden sm:block" />
+                  for Netflix, YouTube, <br className="hidden sm:block" />
+                  Prime &amp; 5 more
+                </>
+              ) : (
+                t("hero.title")
+              )}
             </h1>
 
             <p
               className="relative flex items-center justify-center lg:justify-start self-stretch font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl md:text-2xl lg:text-[length:var(--body-large-regular-font-size)] text-center lg:text-left tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed lg:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "600ms" }}
             >
-              Turn Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera into an immersive language lesson. Research shows learners who use dual subtitles retain up to 50% more vocabulary than traditional methods. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.92/5 stars on the Chrome Web Store.
+              {t("hero.subtitle")}
             </p>
           </div>
 
@@ -60,7 +69,7 @@ export const HeroSection = (): React.JSX.Element => {
             >
               <Button className="relative bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] h-12 sm:h-11 px-6 sm:px-5 py-3 sm:py-2 rounded-lg overflow-hidden border-0 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 group w-full sm:w-auto">
                 <span className="relative z-10 flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textwhite text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)]">
-                  Add to Chrome - It's Free
+                  {t("hero.ctaPrimary")}
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#7A1CAC] to-[#C642FC] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
               </Button>
@@ -73,7 +82,7 @@ export const HeroSection = (): React.JSX.Element => {
             >
               <Button className="relative bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(229,229,232,1)_100%)] h-12 sm:h-11 px-6 sm:px-5 py-3 sm:py-2 rounded-lg overflow-hidden border-0 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl group w-full sm:w-auto">
                 <span className="relative flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textblack text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)] group-hover:text-gray-800 transition-colors duration-300">
-                  How it Works
+                  {t("hero.ctaSecondary")}
                 </span>
               </Button>
             </a>
@@ -151,7 +160,7 @@ export const HeroSection = (): React.JSX.Element => {
         style={{ animationDelay: "900ms" }}
       >
         <h2 className="text-textwhite text-sm sm:text-base md:text-lg font-semibold tracking-wider uppercase opacity-90 text-center">
-          Works on your favorite platforms
+          {t("hero.platformsHeading")}
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {[

@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Download, ArrowRight, Monitor, FileText, Globe, Check, X } from "lucide-react";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function YoutubeSubtitleDownloadZhContent() {
   return (
@@ -26,6 +27,8 @@ export default function YoutubeSubtitleDownloadZhContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways items={["本文介绍四种YouTube字幕下载方法：在线工具、浏览器扩展、yt-dlp命令行和YouTube内置转录功能", "在线工具（DownSub、SaveSubs）最简单，无需安装，适合普通用户", "yt-dlp功能最强大，支持批量下载和多语言，适合进阶用户", "SRT格式兼容性最好，是大多数场景的首选字幕格式", "如果目的是语言学习，用Funlingo直接显示实时双语字幕更高效，完全免费"]} />
 
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">无论你是语言学习者、内容创作者，还是需要为视频添加翻译字幕的专业人士，YouTube字幕下载都是一项非常实用的技能。YouTube作为全球最大的视频平台，拥有海量的多语言字幕资源。本文将详细介绍四种主流的YouTube字幕下载方法，帮助你快速获取SRT、VTT等格式的字幕文件，同时推荐一种更高效的双语字幕观看方案。</p>
 
@@ -140,6 +143,11 @@ export default function YoutubeSubtitleDownloadZhContent() {
 
           {/* 方法三：yt-dlp命令行 */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">方法三：yt-dlp命令行工具（推荐进阶用户）</h2>
+
+          <Callout variant="tip" title="提示">
+            如果只想下载字幕而不下载视频，记得加上 --skip-download 参数；用 --convert-subs srt 可以直接把字幕转换为兼容性最好的SRT格式。
+          </Callout>
+
           <p className="text-gray-300 mb-6">yt-dlp是youtube-dl的增强版，是目前功能最强大的YouTube字幕下载工具。它是一个开源的命令行工具，支持从YouTube及数百个其他视频网站下载视频和字幕。虽然需要一定的技术基础，但一旦掌握，效率远超其他方法。</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import Analytics from "./analytics";
+import HtmlLangSetter from "./i18n/HtmlLangSetter";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://getfunlingo.com"),
@@ -23,6 +25,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        <Analytics />
+        <HtmlLangSetter />
         {children}
         <Toaster />
         {/* Crisp Customer Support Chat Widget */}

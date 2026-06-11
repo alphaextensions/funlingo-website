@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Check, X, ArrowRight, Globe, Languages, DollarSign, Star } from "lucide-react";
+import { KeyTakeaways, StatGrid, Callout } from "@/app/blog/_components/graphics";
 
 export default function PortugueseToEnglishTranslatorContent() {
   return (
@@ -27,10 +28,14 @@ export default function PortugueseToEnglishTranslatorContent() {
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
 
+          <KeyTakeaways items={["Portuguese has two major variants, Brazilian (PT-BR) and European (PT-PT), with real differences in vocabulary, grammar, and spelling, so always specify which you need.", "DeepL produces the most natural translations, especially for European Portuguese, while Google Translate handles everyday Brazilian Portuguese well.", "ChatGPT is the most flexible option: it explains translation choices, handles slang, and can target a specific variant.", "Watch out for false cognates: 'puxe' means pull, 'pretender' means to intend, and 'exquisito' means weird.", "Funlingo gives free dual Portuguese and English subtitles on Netflix, YouTube, and Prime Video so you learn in context, not just by looking words up."]} />
+
           <h2 className="text-2xl font-bold text-white mb-4">Why Portuguese to English Translation Matters in 2026</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Portuguese is the sixth most spoken language on the planet. With over 260 million speakers spread across Brazil, Portugal, Mozambique, Angola, and several other nations, it is one of the fastest-growing languages on the internet. Brazil alone accounts for roughly 215 million Portuguese speakers and is the largest economy in Latin America, making Brazilian Portuguese a critical language for business, travel, entertainment, and diplomacy.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Whether you are trying to understand a Brazilian news article, communicate with Portuguese-speaking colleagues, watch a Brazilian telenovela, or simply learn a new language, you need a reliable tradutor do ingl&ecirc;s para portugu&ecirc;s. But not all translation tools are created equal. Portuguese has two major variants &mdash; Brazilian and European &mdash; with meaningful differences in vocabulary, grammar, pronunciation, and spelling. A good translator handles both accurately.</p>
           <p className="leading-relaxed text-gray-300 mb-6">This guide compares the eight best Portuguese to English translation tools available in 2026, breaks down the differences between Brazilian and European Portuguese, gives you over 25 essential phrases, and shows you how immersive learning through video content can take your Portuguese far beyond what any translator alone can offer.</p>
+
+          <StatGrid stats={[{value:"260M+", label:"Portuguese speakers worldwide"}, {value:"6th", label:"most spoken language"}, {value:"215M", label:"speakers in Brazil"}, {value:"600-750h", label:"to reach proficiency for English speakers"}]} />
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Learn Portuguese naturally with free dual subtitles on Netflix, YouTube, and Prime Video.</p>
@@ -49,7 +54,7 @@ export default function PortugueseToEnglishTranslatorContent() {
           {/* 1 - Google Translate */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">1. Google Translate</h3>
+              <h3 className="text-xl font-bold text-white">1. <a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Google Translate</a></h3>
               <span className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">Free</span>
             </div>
             <p className="text-gray-300 mb-4">The most widely used translation tool in the world. Google Translate supports Portuguese in both Brazilian and European variants and handles short sentences, everyday vocabulary, and basic communication well. The camera feature is excellent for translating signs, menus, and printed documents on the go. Its integration with Chrome means you can right-click any Portuguese text on any webpage for an instant translation.</p>
@@ -78,7 +83,7 @@ export default function PortugueseToEnglishTranslatorContent() {
           {/* 2 - DeepL */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">2. DeepL</h3>
+              <h3 className="text-xl font-bold text-white">2. <a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">DeepL</a></h3>
               <span className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">Free / $8.74/mo</span>
             </div>
             <p className="text-gray-300 mb-4">DeepL consistently produces more fluent, natural-sounding translations than most competitors, especially for European Portuguese. It excels at preserving tone and register, making it the preferred choice for professional and academic translations. The free plan offers 500,000 characters per month, while the Pro plan unlocks unlimited translation, document uploads, and API access.</p>
@@ -107,7 +112,7 @@ export default function PortugueseToEnglishTranslatorContent() {
           {/* 3 - ChatGPT */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">3. ChatGPT</h3>
+              <h3 className="text-xl font-bold text-white">3. <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">ChatGPT</a></h3>
               <span className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">Free / $20/mo</span>
             </div>
             <p className="text-gray-300 mb-4">ChatGPT is not a traditional translator, but it is one of the most flexible tools for Portuguese translation in 2026. You can ask it to translate text, explain why a phrase is translated a certain way, adapt translations for different audiences, and even specify whether you want Brazilian or European Portuguese. It handles slang, idioms, and cultural context better than rule-based systems because it understands meaning rather than just matching words.</p>
@@ -136,7 +141,7 @@ export default function PortugueseToEnglishTranslatorContent() {
           {/* 4 - Microsoft Translator */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">4. Microsoft Translator</h3>
+              <h3 className="text-xl font-bold text-white">4. <a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Microsoft Translator</a></h3>
               <span className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">Free</span>
             </div>
             <p className="text-gray-300 mb-4">Microsoft Translator integrates deeply into the Microsoft ecosystem &mdash; Edge browser, Office apps, Teams, and Windows. Its multi-person conversation mode lets up to 100 people join a live translation session from their phones, making it ideal for multilingual meetings and conferences. Portuguese translation quality is solid for business communication.</p>
@@ -165,7 +170,7 @@ export default function PortugueseToEnglishTranslatorContent() {
           {/* 5 - Reverso */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">5. Reverso</h3>
+              <h3 className="text-xl font-bold text-white">5. <a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Reverso</a></h3>
               <span className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">Free / $9.99/mo</span>
             </div>
             <p className="text-gray-300 mb-4">Reverso Context stands out by showing your translated word or phrase used in real sentences extracted from movies, books, legal documents, and websites. This context-driven approach is invaluable for understanding how Portuguese words function in practice, not just what they mean in isolation. It also offers verb conjugation tables and a flashcard-based vocabulary trainer.</p>
@@ -223,7 +228,7 @@ export default function PortugueseToEnglishTranslatorContent() {
           {/* 7 - Linguee */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">7. Linguee</h3>
+              <h3 className="text-xl font-bold text-white">7. <a href="https://www.linguee.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Linguee</a></h3>
               <span className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">Free</span>
             </div>
             <p className="text-gray-300 mb-4">Built by the same team behind DeepL, Linguee searches billions of bilingual texts to show you how words and phrases have been translated in real documents &mdash; EU publications, company websites, and professional texts. This makes it exceptional for finding the &quot;accepted&quot; translation of technical, legal, or business terms in Portuguese.</p>
@@ -252,7 +257,7 @@ export default function PortugueseToEnglishTranslatorContent() {
           {/* 8 - Yandex Translate */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">8. Yandex Translate</h3>
+              <h3 className="text-xl font-bold text-white">8. <a href="https://translate.yandex.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Yandex Translate</a></h3>
               <span className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">Free</span>
             </div>
             <p className="text-gray-300 mb-4">Yandex Translate is a free translation service from the Russian tech company Yandex. It supports Portuguese and offers website translation, image translation, and a predictive typing feature. While less polished than Google or DeepL for Portuguese, it serves as a useful alternative and handles straightforward translations adequately.</p>
@@ -466,6 +471,8 @@ export default function PortugueseToEnglishTranslatorContent() {
           <hr className="border-white/10 my-12" />
 
           {/* ==================== TIPS SECTION ==================== */}
+
+          <Callout variant="warning" title="Watch for false cognates">Portuguese shares words with English and Spanish but meanings can differ. 'Puxe' on a door means pull, not push. 'Pretender' means to intend, not to pretend. 'Exquisito' means weird, not exquisite.</Callout>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Tips for More Accurate Portuguese Translation</h2>
 

@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Globe, BookOpen, Languages, Lightbulb, Tv, MessageSquare, MapPin, Coffee, Hash, Sparkles } from "lucide-react";
+import { KeyTakeaways, StatGrid, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function TurkishToEnglishTranslationContent() {
   return (
@@ -30,6 +31,8 @@ export default function TurkishToEnglishTranslationContent() {
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
 
+          <KeyTakeaways items={["Turkish is agglutinative with subject-object-verb order, vowel harmony, and no grammatical gender — so word-by-word translation often fails.", "Translate full sentences, not single words, and cross-check tools like Google Translate, DeepL, and the Tureng dictionary.", "Yandex often handles colloquial Turkish and slang better; DeepL is best for natural-sounding longer texts.", "Turkish spelling is phonetic — words are pronounced exactly as written.", "Watching Turkish shows with dual Turkish + English subtitles gives real-world context no translator can match."]} />
+
           <h2 className="text-2xl font-bold text-white mb-4">Why Turkish to English Translation Matters</h2>
           <p className="leading-relaxed text-gray-300 mb-6">
             Turkish is spoken by over 80 million native speakers and serves as a gateway to the broader Turkic language family, which spans from Turkey to Central Asia. Whether you are a traveler exploring Istanbul, a business professional working with Turkish partners, or a language learner captivated by Turkish dramas, having reliable tools to translate T&uuml;rk&ccedil;e to English is essential.
@@ -40,6 +43,8 @@ export default function TurkishToEnglishTranslationContent() {
           <p className="text-gray-300 mb-6">
             In this guide, we cover the best translation tools, essential Turkish phrases, grammar tips for English speakers, and how watching Turkish shows with dual subtitles can accelerate your understanding of the language. For a broader look at AI-powered translation, check out our guide on <a href="/blog/best-ai-translator-tools" className="text-[#C642FC] hover:underline">the best AI translator tools</a>.
           </p>
+
+          <StatGrid stats={[{value:"80M+",label:"native Turkish speakers"},{value:"~90%",label:"mutual intelligibility with Azerbaijani"},{value:"1,100",label:"study hours (FSI Category IV)"}]} />
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
             <p className="text-lg text-gray-200 mb-6">Learn Turkish naturally with dual subtitles on Netflix &amp; YouTube. Free forever.</p>
@@ -58,22 +63,22 @@ export default function TurkishToEnglishTranslationContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <Globe className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Google Translate</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Google Translate</a></h3>
               <p className="text-sm text-gray-400">The most widely used translator with strong Turkish support. Features camera translation for signs and menus, conversation mode for real-time dialogue, and offline mode. Handles everyday phrases well but can struggle with complex Turkish grammar and idiomatic expressions.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <Languages className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">DeepL Translator</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">DeepL</a> Translator</h3>
               <p className="text-sm text-gray-400">Known for producing more natural-sounding translations. DeepL has expanded its Turkish support and excels at longer texts, formal documents, and capturing the tone of the original writing. The best choice for professional or academic translation needs.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <Sparkles className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Yandex Translate</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://translate.yandex.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Yandex Translate</a></h3>
               <p className="text-sm text-gray-400">A strong choice for Turkish translation due to its extensive training on Turkic languages. Yandex often outperforms Google on colloquial Turkish and slang. It also offers website translation and image-based text recognition.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <MessageSquare className="w-8 h-8 text-[#C642FC] mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Reverso Context</h3>
+              <h3 className="text-xl font-bold text-white mb-2"><a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Reverso</a> Context</h3>
               <p className="text-sm text-gray-400">Instead of just translating words, Reverso shows real-world example sentences. This is invaluable for understanding how Turkish words and phrases are actually used in context, making it a favorite among language learners.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
@@ -247,6 +252,8 @@ export default function TurkishToEnglishTranslationContent() {
           <p className="text-gray-300 mb-8">
             For the complete methodology behind learning languages through media, read our guide on <a href="/blog/netflix-language-learning" className="text-[#C642FC] hover:underline">Netflix language learning</a>.
           </p>
+
+          <DualSubtitleDemo targetLang="Turkish" target="Çalışmadıkça başaramazsın" highlight="başaramazsın" native="Unless you work, you cannot succeed" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">

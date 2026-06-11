@@ -1,0 +1,8 @@
+{
+  "nav": {"home":"Domů","roadmap":"Plán vývoje","blog":"Blog","feedback":"Zpětná vazba","about":"O nás","download":"Stáhnout rozšíření"},
+  "badges": {"learnWhileWatch":"Učte se při sledování","freeExtension":"Bezplatné rozšíření s duálními titulky","worksOn":"Funguje na Netflixu, YouTube, Prime a 5 dalších","twoLanguages":"Titulky ve dvou jazycích"},
+  "hero": {"title":"Duální titulky pro Netflix, YouTube, Prime a 5 dalších","subtitle":"Proměňte Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy a Coursera v poutavou jazykovou lekci. Výzkumy ukazují, že studenti, kteří používají duální titulky, si zapamatují až o 50 % více slovní zásoby než tradičními metodami. Funlingo podporuje více než 100 jazyků s dvojjazyčnými titulky, okamžitými definicemi od AI a budováním slovní zásoby — zcela bezplatná alternativa k placeným rozšířením. Hodnocení 4.92/5 hvězdiček v Chrome Web Store.","ctaPrimary":"Přidat do Chromu – zdarma","ctaSecondary":"Jak to funguje","platformsHeading":"Funguje na vašich oblíbených platformách"},
+  "footer": {"quickLinks":"Rychlé odkazy","information":"Informace","follow":"Sledujte nás","downloadExtension":"Stáhnout rozšíření","rights":"©2026 Funlingo. Všechna práva vyhrazena.","privacy":"Zásady ochrany osobních údajů","support":"Podpora"},
+  "switcher": {"label":"Jazyk"},
+  "meta": {"description":"Bezplatné duální titulky pro Netflix, YouTube, Prime a další. Klikněte na slovo pro překlad a učte se jazyky při sledování — 100+ jazyků, vše zdarma."}
+}

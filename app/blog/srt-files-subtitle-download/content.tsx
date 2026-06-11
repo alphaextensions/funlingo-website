@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, FileText, Download, Play, Pencil, RefreshCw, Globe, BookOpen, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function SrtFilesSubtitleDownloadContent() {
   return (
@@ -26,6 +27,8 @@ export default function SrtFilesSubtitleDownloadContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["SRT (SubRip Text) is a plain-text format with a sequence number, timestamp range, and subtitle text per entry.", "SRT uses commas before milliseconds; VTT uses periods and adds a WEBVTT header — converting between them takes seconds.", "VLC and MPV auto-load SRT files that share the video's filename; Netflix and YouTube do not accept external SRT files.", "SRT files are plain text and cannot carry malware, but subtitle sites can serve deceptive ads and fake download buttons.", "For language learning on streaming, Funlingo replaces manual SRT downloads with automatic, synced dual subtitles."]} />
+
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Subtitles are one of the most powerful tools for language learners, accessibility advocates, and anyone watching foreign-language content. At the heart of subtitles is the SRT file, a simple text format that has been the standard for over two decades. This guide covers everything you need to know about subtitle downloads: what SRT files are, where to find them, how to use them, and why modern tools like Funlingo are making manual subtitle management a thing of the past.</p>
 
           <hr className="border-white/10 my-12" />
@@ -48,6 +51,8 @@ export default function SrtFilesSubtitleDownloadContent() {
             <p className="text-gray-200">Let&apos;s get started.</p>
           </div>
           <p className="text-gray-300 mb-6">The timestamp format is <code className="bg-white/10 px-2 py-1 rounded text-sm">hours:minutes:seconds,milliseconds</code>. Note the comma before milliseconds, not a period. This is one of the key differences between SRT and other formats. The simplicity of this format is its greatest strength: you can open, read, and edit SRT files with any text editor.</p>
+
+          <Callout variant="tip" title="Save with UTF-8 encoding">When creating SRT files by hand, always save them as UTF-8 — otherwise non-Latin characters like accents, Cyrillic, or CJK text will appear as garbled symbols.</Callout>
 
           <hr className="border-white/10 my-12" />
 
@@ -75,7 +80,7 @@ export default function SrtFilesSubtitleDownloadContent() {
           <p className="text-gray-300 mb-6">There are several reputable websites where you can find subtitle files for movies, TV shows, and other video content. Here are the most reliable sources for <strong className="text-white">subtitle downloads</strong>:</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <div className="flex items-center gap-2 mb-3"><Download className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">OpenSubtitles.org</span></div>
+            <div className="flex items-center gap-2 mb-3"><Download className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white"><a href="https://www.opensubtitles.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">OpenSubtitles.org</a></span></div>
             <p className="text-gray-300">The largest subtitle database on the internet with millions of subtitles in dozens of languages. Supports searching by movie name, IMDB ID, or file hash. Free accounts have daily download limits; a VIP subscription removes them. The site also offers an API for developers building subtitle tools.</p>
           </div>
 
@@ -105,7 +110,7 @@ export default function SrtFilesSubtitleDownloadContent() {
           <p className="text-gray-300 mb-6">Once you have downloaded a subtitle file, loading it into a media player is straightforward. Here are instructions for the most popular players:</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <div className="flex items-center gap-2 mb-3"><Play className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">VLC Media Player</span></div>
+            <div className="flex items-center gap-2 mb-3"><Play className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white"><a href="https://www.videolan.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">VLC</a> Media Player</span></div>
             <ol className="list-decimal pl-6 space-y-2 text-gray-300">
               <li><strong className="text-white">Auto-load:</strong> Place the SRT file in the same folder as the video file with the same name (e.g., movie.mp4 and movie.srt). VLC will load it automatically.</li>
               <li><strong className="text-white">Manual load:</strong> Open your video in VLC, then go to Subtitle &gt; Add Subtitle File and select your SRT file.</li>
@@ -176,7 +181,7 @@ export default function SrtFilesSubtitleDownloadContent() {
             </ul>
           </div>
           <p className="text-gray-300 mb-6">The challenge with manual subtitle downloads is the friction. You need to find the right file, match it to your video, deal with timing issues, and you only get one language at a time. For language learning, you want two languages visible simultaneously, which is difficult to set up with standalone SRT files.</p>
-          <p className="text-gray-300 mb-6">For a deeper dive into this methodology, read our guide on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">how to learn a language by watching</a> and our article on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary through shows</a>.</p>
+          <p className="text-gray-300 mb-6">For a deeper dive into this methodology, read our guide on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">how to learn a language by watching</a> and our article on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary through shows</a>.</p>
 
           <hr className="border-white/10 my-12" />
 

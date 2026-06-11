@@ -2,29 +2,32 @@
 
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
+import { useT } from "@/app/i18n/I18nProvider";
+import { navHref } from "@/app/i18n/config";
 const logo = "/assets/logo.png";
-
-const quickLinks = [
-  { label: "Home", href: "/" },
-  { label: "Roadmap", href: "/roadmap" },
-  { label: "Blog", href: "/blog" },
-  { label: "Feedback", href: "/feedback" },
-  { label: "About", href: "/about" },
-];
-
-const informationLinks = [
-  { label: "Feedback", href: "/feedback" },
-  { label: "Download Extension", href: "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" },
-];
-
-const followLinks = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/getfunlingo/" },
-  { label: "Instagram", href: "https://www.instagram.com/getfunlingo?igsh=MWVkcWQ5Nmh0YmZqdA==" },
-];
 
 export const FooterSection = (): React.JSX.Element => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const { t, locale } = useT();
+
+  const quickLinks = [
+    { label: t("nav.home"), href: navHref("/", locale) },
+    { label: t("nav.roadmap"), href: navHref("/roadmap", locale) },
+    { label: t("nav.blog"), href: navHref("/blog", locale) },
+    { label: t("nav.feedback"), href: navHref("/feedback", locale) },
+    { label: t("nav.about"), href: navHref("/about", locale) },
+  ];
+
+  const informationLinks = [
+    { label: t("nav.feedback"), href: navHref("/feedback", locale) },
+    { label: t("footer.downloadExtension"), href: "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" },
+  ];
+
+  const followLinks = [
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/getfunlingo/" },
+    { label: "Instagram", href: "https://www.instagram.com/getfunlingo?igsh=MWVkcWQ5Nmh0YmZqdA==" },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -113,7 +116,7 @@ export const FooterSection = (): React.JSX.Element => {
             style={{ animationDelay: "200ms" }}
           >
             <h3 className="flex items-center justify-center w-fit mt-[-1.00px] font-body-small-medium font-[number:var(--body-small-medium-font-weight)] text-textwhite text-[length:var(--body-small-medium-font-size)] tracking-[var(--body-small-medium-letter-spacing)] leading-[var(--body-small-medium-line-height)] whitespace-nowrap [font-style:var(--body-small-medium-font-style)] group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#C642FC] hover:to-[#7A1CAC] transition-all duration-300">
-              Quick Links
+              {t("footer.quickLinks")}
             </h3>
 
             <ul className="inline-flex flex-col items-start gap-3">
@@ -139,7 +142,7 @@ export const FooterSection = (): React.JSX.Element => {
             style={{ animationDelay: "400ms" }}
           >
             <h3 className="flex items-center justify-center w-fit mt-[-1.00px] font-body-small-medium font-[number:var(--body-small-medium-font-weight)] text-textwhite text-[length:var(--body-small-medium-font-size)] tracking-[var(--body-small-medium-letter-spacing)] leading-[var(--body-small-medium-line-height)] whitespace-nowrap [font-style:var(--body-small-medium-font-style)] group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#C642FC] hover:to-[#7A1CAC] transition-all duration-300">
-              Information
+              {t("footer.information")}
             </h3>
 
             <ul className="inline-flex flex-col items-start gap-3">
@@ -165,7 +168,7 @@ export const FooterSection = (): React.JSX.Element => {
             style={{ animationDelay: "600ms" }}
           >
             <h3 className="flex items-center justify-center w-fit mt-[-1.00px] font-body-small-medium font-[number:var(--body-small-medium-font-weight)] text-textwhite text-[length:var(--body-small-medium-font-size)] tracking-[var(--body-small-medium-letter-spacing)] leading-[var(--body-small-medium-line-height)] whitespace-nowrap [font-style:var(--body-small-medium-font-style)] group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#C642FC] hover:to-[#7A1CAC] transition-all duration-300">
-              Follow
+              {t("footer.follow")}
             </h3>
 
             <ul className="inline-flex flex-col items-start gap-3">
@@ -198,14 +201,14 @@ export const FooterSection = (): React.JSX.Element => {
         }`}
       >
         <p className="flex items-center justify-center w-fit font-body-small-medium font-[number:var(--body-small-medium-font-weight)] text-textwhite text-[length:var(--body-small-medium-font-size)] tracking-[var(--body-small-medium-letter-spacing)] leading-[var(--body-small-medium-line-height)] whitespace-nowrap [font-style:var(--body-small-medium-font-style)] hover:scale-105 transition-transform duration-300 cursor-default">
-          ©2026 Funlingo. All rights reserved.
+          {t("footer.rights")}
         </p>
 
         {/* Additional Links */}
         <div className="flex items-center gap-6">
           {[
-            { label: "Privacy Policy", href: "/privacy-policy" },
-            { label: "Support", href: "/support" },
+            { label: t("footer.privacy"), href: navHref("/privacy-policy", locale) },
+            { label: t("footer.support"), href: navHref("/support", locale) },
             // { label: "Cookie Policy", href: "/cookies" },
           ].map((link, index) => (
             <a

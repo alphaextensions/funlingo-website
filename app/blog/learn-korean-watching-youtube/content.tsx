@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Tv, Music, BookOpen, Utensils, Gamepad2, Timer, Target, Star, Headphones, MessageSquare } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function LearnKoreanYouTubeContent() {
   return (
@@ -25,6 +26,19 @@ export default function LearnKoreanYouTubeContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/learn-korean-watching-youtube-hero.jpg"
+            alt="A YouTube video with Korean Hangul and English dual subtitles for learning Korean"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
+          <KeyTakeaways items={[
+            "YouTube offers free, real Korean across every level, from structured lessons to vlogs, variety shows, K-pop, and gaming.",
+            "Learn Hangul first (it takes only a few hours) so you can read Korean subtitles instead of relying on romanization.",
+            "A 15-minute daily routine with dual subtitles can teach 150 to 300 new Korean words per month.",
+            "Focus on high-frequency words: the top 1,000 Korean words cover about 85% of everyday conversation.",
+          ]} />
           <h2 className="text-2xl font-bold text-white mb-4">Why YouTube Is the Best Free Resource for Learning Korean</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Korean is one of the most popular languages to learn in 2026, fueled by K-dramas, K-pop, and Korean cinema. And YouTube sits at the center of Korean culture online, with millions of hours of content from native speakers covering every topic imaginable.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Unlike textbooks or apps that use scripted dialogues, YouTube gives you access to real Korean as it is actually spoken. From casual vlogs to formal news broadcasts, you can immerse yourself in the language at every level, completely for free.</p>
@@ -51,6 +65,13 @@ export default function LearnKoreanYouTubeContent() {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><MessageSquare className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Podcasts and Talk Shows</h3><p className="text-sm text-gray-400">Korean podcast-style channels and interview shows. These provide extended listening practice with natural conversational flow between speakers.</p></div>
           </div>
 
+          <img
+            src="/blog-images/learn-korean-watching-youtube-inline.jpg"
+            alt="Studying Korean on a phone and laptop with Hangul subtitles and a daily routine"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Your 15-Minute Daily Korean Routine</h2>
           <p className="text-gray-300 mb-6">Consistency matters more than intensity. This daily routine takes just 15 minutes and uses YouTube as your primary learning tool.</p>
 
@@ -66,6 +87,8 @@ export default function LearnKoreanYouTubeContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How to Use Dual Subtitles for Korean on YouTube</h2>
           <p className="text-gray-300 mb-6">Dual subtitles are the most powerful tool for learning Korean from YouTube. They let you see both Korean text (in Hangul) and your native language translation simultaneously, so you never lose track of meaning while being exposed to the Korean writing system.</p>
+
+          <DualSubtitleDemo targetLang="Korean" target="안녕하세요, 만나서 반가워요" highlight="반가워요" native="Hello, nice to meet you" />
 
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-12">
             {[
@@ -87,7 +110,7 @@ export default function LearnKoreanYouTubeContent() {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Headphones className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Shadow the Speakers</h3><p className="text-sm text-gray-400">Try repeating what the speakers say immediately after hearing it. This shadowing technique improves pronunciation and intonation.</p></div>
           </div>
 
-          <p className="text-gray-300 mb-6">Once you are comfortable with YouTube, expand to Netflix for longer-form Korean content. Read our guide on <a href="/blog/learn-spanish-watching-netflix" className="text-[#C642FC] hover:underline">learning languages with Netflix</a> for strategies that apply to Korean dramas as well. You can also learn how to <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">build vocabulary while watching shows</a> for more advanced techniques.</p>
+          <p className="text-gray-300 mb-6">Once you are comfortable with YouTube, expand to Netflix for longer-form Korean content. Read our guide on <a href="/blog/learn-spanish-watching-netflix" className="text-[#C642FC] hover:underline">learning languages with Netflix</a> for strategies that apply to Korean dramas as well. You can also learn how to <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">build vocabulary while watching shows</a> for more advanced techniques.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>

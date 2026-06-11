@@ -1,0 +1,8 @@
+{
+  "nav": {"home":"Strona główna","roadmap":"Plan rozwoju","blog":"Blog","feedback":"Opinie","about":"O nas","download":"Pobierz rozszerzenie"},
+  "badges": {"learnWhileWatch":"Ucz się podczas oglądania","freeExtension":"Darmowe rozszerzenie z podwójnymi napisami","worksOn":"Działa na Netflix, YouTube, Prime i 5 innych","twoLanguages":"Napisy w dwóch językach"},
+  "hero": {"title":"Podwójne napisy do Netflix, YouTube, Prime i 5 innych","subtitle":"Zamień Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy i Coursera w wciągającą lekcję języka. Badania pokazują, że osoby korzystające z podwójnych napisów zapamiętują nawet o 50% więcej słówek niż przy tradycyjnych metodach. Funlingo obsługuje ponad 100 języków z dwujęzycznymi napisami, błyskawicznymi definicjami AI i budowaniem słownictwa — to całkowicie darmowa alternatywa dla płatnych rozszerzeń. Ocena 4.92/5 gwiazdek w Chrome Web Store.","ctaPrimary":"Dodaj do Chrome - za darmo","ctaSecondary":"Jak to działa","platformsHeading":"Działa na Twoich ulubionych platformach"},
+  "footer": {"quickLinks":"Szybkie linki","information":"Informacje","follow":"Obserwuj","downloadExtension":"Pobierz rozszerzenie","rights":"©2026 Funlingo. Wszelkie prawa zastrzeżone.","privacy":"Polityka prywatności","support":"Wsparcie"},
+  "switcher": {"label":"Język"},
+  "meta": { "description": "Darmowe podwójne napisy do Netflix, YouTube, Prime i więcej — tłumacz dowolne słowo podczas oglądania. 100+ języków, za darmo." }
+}

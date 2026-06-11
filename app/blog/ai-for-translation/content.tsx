@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Brain, ArrowRight, Zap, Globe, Languages, Cpu, TrendingUp } from "lucide-react";
+import { KeyTakeaways, StepFlow, Callout } from "@/app/blog/_components/graphics";
 
 export default function AiForTranslationContent() {
   return (
@@ -26,6 +27,7 @@ export default function AiForTranslationContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Modern AI translation evolved through four eras: rule-based, statistical, neural (NMT), and large language models.", "High-resource pairs like English-Spanish reach 90%+ accuracy, while many of the world's 7,000 languages remain poorly served.", "Dedicated NMT systems win on speed and cost; LLMs win on nuance, tone, and cultural context.", "AI still struggles with cultural pragmatics, humor, low-resource languages, and specialized legal or medical text.", "Tools like Funlingo apply AI translation as a learning scaffold with dual subtitles on Netflix, YouTube, and Prime Video."]} />
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Translation is one of humanity&apos;s oldest intellectual challenges. For centuries, it required years of study, deep cultural knowledge, and painstaking manual effort. Today, AI for translation is rewriting the rules. Neural networks process billions of sentence pairs. Large language models understand idioms, context, and tone. Real-time subtitle translation happens inside your browser while you watch a show. This article explores how AI translation actually works, where it stands in 2026, its limitations, and what it means for anyone learning a new language.</p>
 
           <hr className="border-white/10 my-12" />
@@ -41,7 +43,7 @@ export default function AiForTranslationContent() {
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center gap-2 mb-3"><Cpu className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">Era 2: Statistical Machine Translation (1990s&ndash;2016)</span></div>
-            <p className="text-gray-300">Statistical machine translation (SMT) took a fundamentally different approach. Instead of hand-coded rules, SMT systems learned patterns from massive parallel corpora, collections of texts that had been translated by humans. The system would statistically determine which target-language phrases were most likely to correspond to source-language phrases. Google Translate launched in 2006 using this approach. SMT was a huge leap forward because it could handle many language pairs without linguists manually coding rules for each one. But it still struggled with word order, long-distance dependencies in sentences, and rare or unusual constructions. Translations were often grammatically awkward.</p>
+            <p className="text-gray-300">Statistical machine translation (SMT) took a fundamentally different approach. Instead of hand-coded rules, SMT systems learned patterns from massive parallel corpora, collections of texts that had been translated by humans. The system would statistically determine which target-language phrases were most likely to correspond to source-language phrases. <a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Google Translate</a> launched in 2006 using this approach. SMT was a huge leap forward because it could handle many language pairs without linguists manually coding rules for each one. But it still struggled with word order, long-distance dependencies in sentences, and rare or unusual constructions. Translations were often grammatically awkward.</p>
           </div>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
@@ -59,6 +61,14 @@ export default function AiForTranslationContent() {
           {/* Section 2: How NMT Works */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">How Neural Machine Translation Actually Works</h2>
           <p className="text-gray-300 mb-6">Understanding the mechanics behind AI for translation helps you appreciate both its power and its limitations. Here is a simplified explanation of how modern neural machine translation processes a sentence.</p>
+
+          <StepFlow steps={[
+            { title: "Tokenization", desc: "The sentence is split into sub-word tokens, so the model can handle words it has never seen by understanding their parts." },
+            { title: "Encoding", desc: "Self-attention turns each token into a context-aware vector, so 'bank' differs in 'river bank' versus 'bank account'." },
+            { title: "Decoding", desc: "Cross-attention generates the target sentence one token at a time, attending to the relevant source words." },
+            { title: "Beam search", desc: "Multiple candidate translations are scored simultaneously, selecting the most probable complete output." },
+          ]} />
+
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <div className="flex items-center gap-2 mb-3"><Zap className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">Step 1: Tokenization</span></div>
@@ -84,7 +94,10 @@ export default function AiForTranslationContent() {
 
           {/* Section 3: LLMs vs NMT */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">LLMs vs Traditional NMT for Translation</h2>
-          <p className="text-gray-300 mb-6">One of the most important questions in AI for translation today is when to use a dedicated NMT system like Google Translate or DeepL versus an LLM like ChatGPT or Claude. The answer depends on what you are translating.</p>
+          <p className="text-gray-300 mb-6">One of the most important questions in AI for translation today is when to use a dedicated NMT system like Google Translate or <a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL</a> versus an LLM like <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">ChatGPT</a> or Claude. The answer depends on what you are translating.</p>
+
+          <Callout variant="tip" title="Rule of thumb">Use fast, dedicated NMT for high-volume, straightforward content; reach for an LLM when tone, idioms, or cultural nuance matter most.</Callout>
+
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <h3 className="text-xl font-semibold text-white mb-3">Where NMT Excels</h3>
@@ -147,7 +160,7 @@ export default function AiForTranslationContent() {
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <div className="flex items-center gap-2 mb-3"><Languages className="w-5 h-5 text-[#C642FC]" /><span className="font-semibold text-white">Web and Content Localization</span></div>
-            <p className="text-gray-300">Browser-based translation, like Chrome&apos;s built-in page translation and extensions like Immersive Translate, makes the entire internet accessible regardless of language. This is particularly transformative for accessing information that exists primarily in one language, such as Japanese technical documentation, German engineering resources, or Korean pop culture content. AI for translation has effectively removed language as a barrier to information access for the majority of the world&apos;s major languages.</p>
+            <p className="text-gray-300">Browser-based translation, like Chrome&apos;s built-in page translation and extensions like <a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Immersive Translate</a>, makes the entire internet accessible regardless of language. This is particularly transformative for accessing information that exists primarily in one language, such as Japanese technical documentation, German engineering resources, or Korean pop culture content. AI for translation has effectively removed language as a barrier to information access for the majority of the world&apos;s major languages.</p>
           </div>
 
           <hr className="border-white/10 my-12" />
@@ -240,7 +253,7 @@ export default function AiForTranslationContent() {
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
             <h3 className="text-lg font-semibold text-white mb-2">What is the most accurate AI translator in 2026?</h3>
-            <p className="text-gray-300">Accuracy depends on the language pair and content type. DeepL leads for European languages like German, French, and Spanish. Google Translate offers the broadest language coverage with consistently good quality. ChatGPT and other LLMs produce the most natural translations for nuanced, creative, or context-heavy text. For Korean, Naver&apos;s Papago remains the strongest. For Russian, Yandex excels. There is no single &quot;best&quot; AI translator; the right choice depends on your specific languages and use case.</p>
+            <p className="text-gray-300">Accuracy depends on the language pair and content type. DeepL leads for European languages like German, French, and Spanish. Google Translate offers the broadest language coverage with consistently good quality. ChatGPT and other LLMs produce the most natural translations for nuanced, creative, or context-heavy text. For Korean, Naver&apos;s <a href="https://papago.naver.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Papago</a> remains the strongest. For Russian, <a href="https://translate.yandex.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Yandex</a> excels. There is no single &quot;best&quot; AI translator; the right choice depends on your specific languages and use case.</p>
           </div>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">

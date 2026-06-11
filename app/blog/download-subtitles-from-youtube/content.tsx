@@ -19,6 +19,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 
 export default function DownloadSubtitlesFromYoutubeContent() {
   return (
@@ -56,6 +57,14 @@ export default function DownloadSubtitlesFromYoutubeContent() {
       {/* Main Content */}
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways
+            items={[
+              "There are three free ways to download YouTube subtitles: the built-in transcript, online tools, and browser extensions.",
+              "YouTube's transcript feature needs no tools but only gives plain text — no SRT with timestamps.",
+              "Online tools like DownSub and SaveSubs are the easiest way to get proper SRT, VTT, or TXT files.",
+              "Language learners can skip downloads entirely and watch with Funlingo's dual subtitles instead.",
+            ]}
+          />
           {/* Introduction */}
           <p>
             Whether you need subtitles for language learning, accessibility,
@@ -572,6 +581,12 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           <h3 className="text-xl font-semibold text-white mt-8 mb-3">
             A Better Alternative: Dual Subtitles with Funlingo
           </h3>
+          <DualSubtitleDemo
+            targetLang="Spanish"
+            target="Vamos a empezar la lección de hoy."
+            highlight="lección"
+            native="Let's start today's lesson."
+          />
           <div className="bg-white/5 border border-white/10 rounded-xl p-6 my-6 not-prose">
             <div className="flex items-start gap-4">
               <Lightbulb className="w-8 h-8 text-[#C642FC] flex-shrink-0 mt-1" />

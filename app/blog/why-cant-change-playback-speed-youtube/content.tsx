@@ -21,6 +21,7 @@ import {
   Zap,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function PlaybackSpeedYoutubeContent() {
   return (
@@ -58,6 +59,7 @@ export default function PlaybackSpeedYoutubeContent() {
       {/* Main Content */}
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["An outdated browser or YouTube app is the single most common cause", "Conflicting extensions (ad blockers, downloaders) can disable the speed menu", "Live streams and active premieres disable speed control by design", "Embedded players can have speed controls restricted by the site owner", "Corrupted cache or cookies can break the speed menu, fixed by clearing them"]} />
           {/* Introduction */}
           <p>
             YouTube&apos;s playback speed control is one of its most useful features.
@@ -495,6 +497,10 @@ export default function PlaybackSpeedYoutubeContent() {
             If you&apos;re using YouTube for language learning, here&apos;s how playback
             speed fits into an effective study routine:
           </p>
+
+          <Callout variant="tip" title="Pair slow speed with dual subtitles">
+            Slowing a video to 0.75x while showing both the original and your native language subtitles is one of the fastest ways to catch every word. Funlingo syncs perfectly with YouTube speed changes.
+          </Callout>
 
           <div className="space-y-3 my-6 not-prose">
             <div className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4">

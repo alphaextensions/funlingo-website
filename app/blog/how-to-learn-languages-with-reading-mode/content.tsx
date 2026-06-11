@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, FeatureGrid } from "@/app/blog/_components/graphics";
 
 export default function ReadingMode2Content() {
   return (
@@ -25,6 +26,7 @@ export default function ReadingMode2Content() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Reading Mode shows synchronized captions in the original audio language and your learning language, tied to the video timestamp.", "Instant hover definitions and example sentences remove the friction of pausing to look up words.", "It keeps audio and reading together, so you do not lose context by pulling single words out of a sentence.", "Short repeatable routines turn passive viewing into measurable vocabulary gains.", "Saved words export to CSV or Anki format for spaced-repetition review."]} />
           <div className="bg-white/5 border-l-4 border-[#C642FC] p-6 rounded-r-lg my-8">
             <h3 className="text-white text-lg font-bold mt-0 mb-2">TL;DR</h3>
             <p className="m-0 text-gray-300">Watching shows and videos can become productive learning time when the viewing experience removes friction. Reading Mode shows exact captions in the original audio language and your learning language -- synchronized to the video timestamp -- with instant hover definitions and example sentences. Use the short routines below to turn passive viewing into repeatable vocabulary gains.</p>
@@ -38,6 +40,7 @@ export default function ReadingMode2Content() {
           </ul>
           <p>Reading Mode solves those problems by keeping audio and reading together.</p>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-6">How Reading Mode actually works</h2>
+          <FeatureGrid items={[{ title: "Video player", desc: "On the left, normal playback controls so you can pause, scrub, and replay any line." }, { title: "Reading pane", desc: "On the right, sentence-by-sentence captions in both your audio and learning languages." }, { title: "Active highlight", desc: "The current sentence is emphasized so you always know exactly where you are." }, { title: "Hover micro-help", desc: "Hover any word to reveal synonyms and example sentences without leaving the page." }]} />
           <p>Reading Mode presents a split interface:</p>
           <ul className="space-y-4 list-disc pl-5 text-gray-300">
             <li><strong className="text-white">Left:</strong> video player with normal playback controls.</li>

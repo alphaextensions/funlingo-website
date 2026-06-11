@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Star, Check, X, Shield, Zap, Globe, DollarSign } from "lucide-react";
+import { StatGrid, KeyTakeaways, ProsCons } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function BestDualSubtitleExtensionContent() {
@@ -25,6 +26,22 @@ export default function BestDualSubtitleExtensionContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <img
+            src="/blog-images/best-dual-subtitle-extension-hero.jpg"
+            alt="A lineup of dual subtitle browser extensions with the best one highlighted"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
+          <KeyTakeaways items={["Dual subtitle extensions show your target and native language on screen at once, so you rarely pause to look things up.", "We compared 7 extensions across price, platform support, features, and usability.", "Funlingo is the best free pick: no paywall, with Netflix, YouTube, and Prime Video support plus a vocabulary builder.", "Most competitors only cover two of the three major platforms and gate vocabulary tools behind a subscription.", "The approach is backed by comprehensible-input research: understanding in context drives natural acquisition."]} />
+          <StatGrid
+            stats={[
+              { value: "7", label: "extensions compared" },
+              { value: "Free", label: "best overall pick" },
+              { value: "100+", label: "languages with Funlingo" },
+              { value: "8", label: "supported platforms" },
+            ]}
+          />
           <h2 className="text-2xl font-bold text-white mb-4">What Are Dual Subtitle Extensions?</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Dual subtitle extensions are Chrome browser add-ons that display two sets of subtitles simultaneously while you watch videos on streaming platforms. You see your target language and your native language on screen at the same time, letting you follow along without constantly pausing to look up translations.</p>
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">This approach is backed by research on comprehensible input. When you understand what you hear in context, your brain acquires language naturally. Dual subtitles provide the scaffolding that makes input comprehensible, even for beginners.</p>
@@ -39,6 +56,13 @@ export default function BestDualSubtitleExtensionContent() {
 
           <hr className="border-white/10 my-12" />
 
+          <img
+            src="/blog-images/best-dual-subtitle-extension-inline.jpg"
+            alt="Laptop showing dual subtitles next to a vocabulary builder sidebar"
+            width={1600}
+            height={893}
+            loading="lazy"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The 7 Best Dual Subtitle Extensions Compared</h2>
           <p className="text-gray-300 mb-8">We tested every major dual subtitle extension in 2026. Here is how they compare across price, platform support, features, and usability.</p>
 
@@ -54,7 +78,12 @@ export default function BestDualSubtitleExtensionContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold text-white mb-4">2. Language Reactor — Most Popular Option</h3>
+          <ProsCons
+            pros={["Completely free with no premium tier or feature paywall", "Supports Netflix, YouTube, and Amazon Prime Video", "Built-in vocabulary builder and word saving", "One-minute setup straight from the Chrome Web Store"]}
+            cons={["Chrome desktop only, no mobile app support", "Requires an active streaming platform subscription"]}
+          />
+
+          <h3 className="text-xl font-bold text-white mb-4">2. <a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Language Reactor</a> — Most Popular Option</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">Language Reactor (formerly Language Learning with Netflix) is one of the most well-known tools in this space. It offers dual subtitles and a pop-up dictionary. The free tier covers basic features, but advanced capabilities like saving vocabulary and exporting words require a paid subscription at around $6 per month.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
@@ -76,7 +105,7 @@ export default function BestDualSubtitleExtensionContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold text-white mb-4">4. eJOY English — Best for English Learners</h3>
+          <h3 className="text-xl font-bold text-white mb-4">4. <a href="https://ejoy-english.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">eJOY English</a> — Best for English Learners</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">eJOY is primarily designed for people learning English. It offers dual subtitles and a word-saving feature with games for review. The free plan is limited to saving a small number of words per day. Full access requires a subscription starting at around $5 per month.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
@@ -98,7 +127,7 @@ export default function BestDualSubtitleExtensionContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold text-white mb-4">6. Trancy — Best AI-Powered Option</h3>
+          <h3 className="text-xl font-bold text-white mb-4">6. <a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a> — Best AI-Powered Option</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">Trancy uses AI to enhance the subtitle learning experience with features like sentence analysis and grammar breakdowns. It supports Netflix and YouTube. The free plan is quite limited, and the full experience requires a subscription at around $8 per month, making it one of the more expensive options.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
@@ -109,7 +138,7 @@ export default function BestDualSubtitleExtensionContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold text-white mb-4">7. Immersive Translate — Best for General Translation</h3>
+          <h3 className="text-xl font-bold text-white mb-4">7. <a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Immersive Translate</a> — Best for General Translation</h3>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
             <p className="text-gray-300 mb-4">Immersive Translate is primarily a web page translation tool that also supports dual subtitles on YouTube. It provides bilingual translations for articles, PDFs, and ebooks. Video subtitle support is more limited compared to dedicated tools like Funlingo or Language Reactor.</p>
             <div className="grid grid-cols-2 gap-2 text-sm">
@@ -134,7 +163,7 @@ export default function BestDualSubtitleExtensionContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Getting Started with Dual Subtitles</h2>
           <p className="text-gray-300 mb-6">Once you choose your extension, getting started takes less than a minute. For a step-by-step walkthrough, check out our guide on <a href="/blog/how-to-get-dual-subtitles-on-netflix" className="text-[#C642FC] hover:underline">how to get dual subtitles on Netflix</a>.</p>
-          <p className="text-gray-300 mb-6">After you are set up, you can start <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a> using proven strategies that turn passive viewing into active learning.</p>
+          <p className="text-gray-300 mb-6">After you are set up, you can start <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a> using proven strategies that turn passive viewing into active learning.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>

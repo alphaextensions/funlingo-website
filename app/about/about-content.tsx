@@ -226,7 +226,7 @@ export default function AboutContent() {
 
                   {/* Main Image */}
                   <img
-                    src="./figmaAssets/heroImg2.png"
+                    src="/figmaAssets/heroImg2.png"
                     alt="Funlingo in action showing dual subtitles on Netflix with Avengers"
                     className="w-full h-auto rounded-xl shadow-2xl transition-transform duration-700 group-hover:scale-105"
                   />

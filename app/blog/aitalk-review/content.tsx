@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, Check, X, ArrowRight, Star, MessageCircle, Mic, Brain, DollarSign } from "lucide-react";
+import { KeyTakeaways, ProsCons } from "@/app/blog/_components/graphics";
 
 export default function AitalkReviewContent() {
   return (
@@ -27,7 +28,8 @@ export default function AitalkReviewContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
-          <p className="lead text-xl leading-relaxed">AiTalk has been generating buzz among language learners looking for AI-powered conversation practice. Built as a feature within the Trancy ecosystem, AiTalk promises to simulate real-world conversations with an AI tutor that corrects your pronunciation and grammar in real time. But is it worth the price of a Trancy Pro subscription, or are there better ways to practice? We spent several weeks testing AiTalk across multiple languages to bring you this comprehensive review. In this AiTalk review, we cover everything you need to know before subscribing.</p>
+          <KeyTakeaways items={["AiTalk is an AI conversation-practice feature built into the Trancy extension, not a standalone app.", "Full access requires Trancy Pro at $11.99/mo; the free tier is capped at 3 conversations per day.", "Its grammar corrections are best-in-class, but pronunciation scoring is unreliable for tonal languages.", "ChatGPT Voice offers more natural conversation; Speak offers structured pronunciation courses.", "Build a comprehension foundation first with free immersion tools like Funlingo before drilling conversation."]} />
+          <p className="lead text-xl leading-relaxed">AiTalk has been generating buzz among language learners looking for AI-powered conversation practice. Built as a feature within the <a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Trancy</a> ecosystem, AiTalk promises to simulate real-world conversations with an AI tutor that corrects your pronunciation and grammar in real time. But is it worth the price of a Trancy Pro subscription, or are there better ways to practice? We spent several weeks testing AiTalk across multiple languages to bring you this comprehensive review. In this AiTalk review, we cover everything you need to know before subscribing.</p>
 
           <p>If you are exploring the broader landscape of AI language tools, you may also want to check out our guide to the <a href="/blog/best-ai-language-learning-tools-2026" className="text-[#C642FC] hover:underline">best AI language learning tools in 2026</a> or our comparison of <a href="/blog/language-reactor-vs-trancy" className="text-[#C642FC] hover:underline">Language Reactor vs Trancy</a>.</p>
 
@@ -62,7 +64,7 @@ export default function AitalkReviewContent() {
           <p>In practice, the conversation quality is decent but not remarkable. The AI handles common phrases and straightforward exchanges well. Where it struggles is with nuance: idiomatic expressions, humor, and culturally specific references sometimes get lost or generate awkward responses. For beginner to intermediate learners, this is unlikely to be an issue, but advanced learners may find the conversations feel stilted.</p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Pronunciation Feedback</h3>
-          <p>AiTalk scores your pronunciation on a scale of 1 to 100 after each spoken response. It highlights specific words or syllables that need improvement and can replay the correct pronunciation for comparison. The feedback is more granular than what you get from general AI assistants like ChatGPT, which typically cannot evaluate spoken input at all.</p>
+          <p>AiTalk scores your pronunciation on a scale of 1 to 100 after each spoken response. It highlights specific words or syllables that need improvement and can replay the correct pronunciation for comparison. The feedback is more granular than what you get from general AI assistants like <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">ChatGPT</a>, which typically cannot evaluate spoken input at all.</p>
           <p>However, the accuracy of the pronunciation scoring varies by language. It works well for English, Spanish, and French, where the speech recognition models are mature. For tonal languages like Mandarin or Vietnamese, the scoring feels less reliable &mdash; it sometimes marks correct tones as incorrect, which can confuse learners rather than help them.</p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Scenario-Based Practice</h3>
@@ -116,6 +118,11 @@ export default function AitalkReviewContent() {
 
           {/* Pros and Cons */}
           <h2 className="text-3xl font-bold text-white">AiTalk Pros and Cons</h2>
+
+          <ProsCons
+            pros={["Grammar corrections are genuinely helpful and well-explained", "Pronunciation scoring adds accountability to speaking practice", "Scenario variety covers most real-world situations", "Integrates with Trancy's subtitle engine for a unified workflow"]}
+            cons={["Expensive at $11.99/mo bundled with Trancy Pro", "Free tier limited to 3 conversations per day", "Pronunciation scoring unreliable for tonal languages", "Cannot be purchased as a standalone product"]}
+          />
 
           <div className="grid sm:grid-cols-2 gap-6 my-8">
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">

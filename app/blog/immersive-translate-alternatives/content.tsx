@@ -4,8 +4,9 @@ import * as React from "react";
 import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, User, Clock, Check, X, Star, Zap, Globe, Shield } from "lucide-react";
+import { ArrowRight, Calendar, User, Clock, Check, X, Star, Zap, Globe, Shield, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, Callout, ProsCons, StatGrid } from "@/app/blog/_components/graphics";
 
 export default function ImmersiveTranslateAlternativesContent() {
   return (
@@ -42,6 +43,16 @@ export default function ImmersiveTranslateAlternativesContent() {
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pb-24">
         <article className="prose prose-invert prose-lg max-w-none">
+          <img
+            src="/blog-images/immersive-translate-alternatives-hero.jpg"
+            alt="Comparison of translation tools with the best alternative highlighted"
+            width={1600}
+            height={893}
+            fetchPriority="high"
+          />
+          <KeyTakeaways items={["Immersive Translate excels at bilingual web page, PDF, and ebook translation but has very limited Netflix support and no vocabulary tools.", "Its Pro plan runs about $9.99/month or $69.99/year, with the free tier capping daily translations and premium engines.", "Funlingo is the best free alternative for video-based learning, with dual subtitles on Netflix, YouTube, and Prime Video plus a vocab builder.", "For web page reading, free options like Google Translate Extension and Microsoft Translator cover the basics.", "Choose by use case: video learning favors Funlingo, while reading-heavy workflows favor Immersive Translate or DeepL."]} />
+
+          <StatGrid stats={[{ value: "$0", label: "Funlingo cost — free forever for dual subtitles" }, { value: "$9.99", label: "Immersive Translate Pro per month" }, { value: "7", label: "Alternatives compared side by side below" }, { value: "3", label: "Streaming platforms Funlingo supports (Netflix, YouTube, Prime)" }]} />
 
           {/* Best Alternatives */}
           <section className="mb-16">
@@ -64,12 +75,12 @@ export default function ImmersiveTranslateAlternativesContent() {
                   </tr>
                 </thead>
                 <tbody className="text-gray-400">
-                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Funlingo</td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Google Translate Ext.</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
-                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">DeepL Extension</td><td className="py-3 px-4">Free/Pro</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Trancy</td><td className="py-3 px-4">$8/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
-                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium">Language Reactor</td><td className="py-3 px-4">$6/mo</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
-                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium">Microsoft Translator</td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Funlingo</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Google Translate Ext.</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL Extension</a></td><td className="py-3 px-4">Free/Pro</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Trancy</a></td><td className="py-3 px-4">$8/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
+                  <tr className="border-b border-white/5 bg-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Language Reactor</a></td><td className="py-3 px-4">$6/mo</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
+                  <tr className="border-b border-white/5"><td className="py-3 px-4 text-white font-medium"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Microsoft Translator</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
                 </tbody>
               </table>
             </div>
@@ -78,7 +89,7 @@ export default function ImmersiveTranslateAlternativesContent() {
             <div className="bg-white/5 border border-[#C642FC]/30 rounded-2xl p-8 mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <Star className="w-6 h-6 text-[#C642FC]" />
-                <h3 className="text-2xl font-bold text-white m-0">Funlingo</h3>
+                <h3 className="text-2xl font-bold text-white m-0"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Funlingo <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
                 <Badge className="bg-[#C642FC]/20 text-[#C642FC] border-[#C642FC]/30">
                   Best Pick
                 </Badge>
@@ -132,7 +143,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Google Translate Extension */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Google Translate Extension</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Google Translate Extension <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-6">
                 Google Translate&apos;s official Chrome extension is a straightforward tool for
                 translating web pages and selected text. It supports over 100 languages and is
@@ -173,7 +184,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* DeepL Extension */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">DeepL Extension</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">DeepL Extension <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-6">
                 DeepL is widely regarded as having the highest quality machine translations,
                 especially for European languages. Their browser extension brings that quality
@@ -214,7 +225,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Trancy */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Trancy</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Trancy <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-2">
                 <span className="text-gray-400 text-base">~$8/month</span>
               </p>
@@ -258,7 +269,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Language Reactor */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Language Reactor</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Language Reactor <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-2">
                 <span className="text-gray-400 text-base">~$6/month</span>
               </p>
@@ -302,7 +313,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
             {/* Microsoft Translator */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Microsoft Translator</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">Microsoft Translator <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
               <p className="text-gray-300 mb-6">
                 Microsoft Translator integrates seamlessly with Microsoft Edge and offers a solid
                 free web page translation experience. It supports over 70 languages and provides
@@ -340,6 +351,210 @@ export default function ImmersiveTranslateAlternativesContent() {
                 </div>
               </div>
             </div>
+          </section>
+
+          {/* Full comparison table */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-white">
+              Immersive Translate Alternatives 2026: Full Comparison Table
+            </h2>
+            <img
+              src="/blog-images/immersive-translate-alternatives-inline.jpg"
+              alt="A web page translated bilingually side by side, original text next to its translation"
+              width={1600}
+              height={893}
+              loading="lazy"
+            />
+            <p className="text-gray-300 leading-relaxed mb-6">
+              The table below compares the leading Immersive Translate alternatives in 2026 across
+              the factors that matter most: price, supported platforms, whether the tool shows dual
+              subtitles on streaming video, and what each one is genuinely best at. Prices are the
+              publicly listed rates at the time of writing and may change.
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Tool</th>
+                  <th>Price</th>
+                  <th>Platforms</th>
+                  <th>Dual subtitles on video</th>
+                  <th>Best for</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Funlingo</a></td>
+                  <td>Free</td>
+                  <td>Chrome &amp; Edge extension</td>
+                  <td>Yes &mdash; Netflix, YouTube &amp; Prime Video</td>
+                  <td>Free video-based language learning</td>
+                </tr>
+                <tr>
+                  <td><a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Immersive Translate</a></td>
+                  <td>Freemium (~$9.99/mo Pro)</td>
+                  <td>Browser extension, iOS, Android</td>
+                  <td>Partial &mdash; YouTube only, no Netflix</td>
+                  <td>Bilingual web, PDF &amp; ebook reading</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL</a></td>
+                  <td>Free tier; Pro from ~$8.74/mo</td>
+                  <td>Web, desktop apps, browser extension</td>
+                  <td>No</td>
+                  <td>Highest-quality document &amp; text translation</td>
+                </tr>
+                <tr>
+                  <td><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Google Translate</a></td>
+                  <td>Free</td>
+                  <td>Web, mobile apps, browser extension</td>
+                  <td>No</td>
+                  <td>Quick free web page translation, 100+ languages</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Trancy</a></td>
+                  <td>Freemium (~$8/mo Pro)</td>
+                  <td>Chrome &amp; Edge extension</td>
+                  <td>Yes &mdash; Netflix &amp; YouTube</td>
+                  <td>AI sentence analysis on video &amp; web</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Language Reactor</a></td>
+                  <td>Freemium (~$6/mo Pro)</td>
+                  <td>Chrome &amp; Edge extension</td>
+                  <td>Yes &mdash; Netflix &amp; YouTube</td>
+                  <td>Netflix/YouTube learning with hover translations</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Microsoft Translator</a></td>
+                  <td>Free</td>
+                  <td>Edge built-in, web, mobile apps</td>
+                  <td>No</td>
+                  <td>Free web translation inside Microsoft Edge</td>
+                </tr>
+              </tbody>
+            </table>
+            <Callout variant="tip" title="Mix tools instead of forcing one">
+              You do not have to pick a single tool. A practical free stack in 2026 is Funlingo for
+              dual subtitles while you watch Netflix and YouTube, plus Google Translate or DeepL&apos;s
+              free tier for reading articles and PDFs. That covers both video and text without paying
+              for Immersive Translate Pro.
+            </Callout>
+          </section>
+
+          {/* Which alternative should you choose? */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-white">
+              Which Alternative Should You Choose?
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              The right Immersive Translate alternative depends entirely on how you actually learn or
+              read. Here are clear picks by use case.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white/5 border border-[#C642FC]/30 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-white mb-2 m-0">Best free option for video &rarr; Funlingo</h3>
+                <p className="text-gray-400 text-base m-0">
+                  If you learn through Netflix, YouTube, or Prime Video, Funlingo gives you free dual
+                  subtitles, click-to-translate words, and a vocabulary builder &mdash; the things
+                  Immersive Translate charges for or simply does not offer for streaming video.
+                </p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-white mb-2 m-0">Best for documents &rarr; DeepL</h3>
+                <p className="text-gray-400 text-base m-0">
+                  For translating PDFs, Word files, and long-form text where accuracy matters most,
+                  DeepL produces the most natural output, especially for European languages.
+                </p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-white mb-2 m-0">Best all-round web translation &rarr; Immersive Translate</h3>
+                <p className="text-gray-400 text-base m-0">
+                  If your main need is reading foreign websites, ebooks, and PDFs in a bilingual
+                  side-by-side layout across many engines, Immersive Translate is still the most
+                  complete tool &mdash; it is the alternatives that beat it on video, not on reading.
+                </p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-white mb-2 m-0">Best for Netflix/YouTube learning &rarr; Funlingo or Language Reactor</h3>
+                <p className="text-gray-400 text-base m-0">
+                  Both turn streaming into structured practice. Choose Funlingo if you want a free,
+                  no-account experience that also covers Prime Video; choose Language Reactor if you
+                  want its large pre-built deck ecosystem and do not mind a Pro subscription.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Trancy vs Immersive Translate */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-white">
+              Trancy vs Immersive Translate
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Trancy and Immersive Translate are often compared because both translate web pages and
+              YouTube. The real difference is focus: Immersive Translate is a reading-and-translation
+              tool, while Trancy is built around active language learning on video, with AI sentence
+              breakdowns and Netflix dual subtitles that Immersive Translate lacks.
+            </p>
+            <h3 className="text-xl font-semibold text-white mb-3">Where Trancy wins</h3>
+            <ProsCons
+              proLabel="Trancy advantages"
+              conLabel="Immersive Translate advantages"
+              pros={["Dual subtitles on Netflix, not just YouTube", "AI-powered sentence and grammar analysis on subtitles", "Built for learners who study from video clips", "Vocabulary and saved-phrase review features"]}
+              cons={["Stronger full web page bilingual reading layout", "Native PDF and EPUB / ebook translation", "Wider choice of translation engines (DeepL, OpenAI, etc.)", "Mobile apps for iOS and Android"]}
+            />
+            <p className="text-gray-300 leading-relaxed">
+              In short: pick Trancy if your learning happens mostly inside Netflix and YouTube and you
+              want AI explanations; pick Immersive Translate if you mostly read articles, PDFs, and
+              books. If you want the same video benefits as Trancy without a subscription, Funlingo is
+              the free option to try first.
+            </p>
+          </section>
+
+          {/* Open source */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-white">
+              Is There an Open-Source Immersive Translate Alternative?
+            </h2>
+            <p className="text-gray-300 leading-relaxed">
+              There is no single open-source project that fully replicates Immersive Translate&apos;s
+              polished bilingual reading across web pages, PDFs, ebooks, and video. But if you
+              specifically want open-source or self-hostable tooling, a few honest options exist:
+            </p>
+            <ul className="space-y-4 mt-4">
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <p className="text-gray-300 m-0">
+                  <span className="font-semibold text-white">LibreTranslate:</span>{" "}
+                  A free and open-source machine-translation API you can self-host. It powers the
+                  translations but does not provide the on-page bilingual reading UI by itself &mdash;
+                  you pair it with a browser extension that supports custom engines.
+                </p>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <p className="text-gray-300 m-0">
+                  <span className="font-semibold text-white">Argos Translate:</span>{" "}
+                  An offline, open-source translation library (the engine behind LibreTranslate).
+                  Great for privacy and offline use, but it is a library, not a finished reading
+                  extension.
+                </p>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <p className="text-gray-300 m-0">
+                  <span className="font-semibold text-white">Open-source translate extensions:</span>{" "}
+                  Community extensions such as TWP (Translate Web Pages) are open-source and can route
+                  through your own or free translation backends for full-page translation.
+                </p>
+              </li>
+            </ul>
+            <Callout variant="note" title="Open source vs polish">
+              Open-source options give you privacy and control, but they generally do not match the
+              one-click reading experience or video dual-subtitle support of Immersive Translate,
+              Trancy, or Funlingo. If your priority is video learning rather than self-hosting,
+              Funlingo&apos;s free closed-source extension will be far less work to set up.
+            </Callout>
           </section>
 
           {/* What Is Immersive Translate? */}
@@ -444,6 +659,7 @@ export default function ImmersiveTranslateAlternativesContent() {
           {/* Limitations */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-white">Limitations of Immersive Translate</h2>
+            <Callout variant="warning" title="If you rely on Netflix">Immersive Translate has very limited or no Netflix dual-subtitle support. For Netflix learning, Funlingo or Language Reactor are far better fits.</Callout>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <X className="w-5 h-5 text-red-400 mt-1 flex-shrink-0" />
@@ -573,6 +789,29 @@ export default function ImmersiveTranslateAlternativesContent() {
                   provides dual subtitles on Netflix, YouTube, and Prime Video, plus a vocabulary
                   builder and word-saving features at no cost. For web page translation, Google
                   Translate Extension is a solid free choice.
+                </p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-white mb-2">
+                  Is there an open-source Immersive Translate alternative?
+                </h4>
+                <p className="text-gray-400 text-base">
+                  There is no exact open-source clone, but LibreTranslate and Argos Translate are
+                  free, open-source translation engines you can self-host, and open-source extensions
+                  like TWP (Translate Web Pages) can use them for full-page translation. None of them
+                  match Immersive Translate&apos;s polished bilingual reading or offer video dual
+                  subtitles &mdash; for free video learning, Funlingo is the easier route.
+                </p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-white mb-2">
+                  Trancy vs Immersive Translate &mdash; which is better?
+                </h4>
+                <p className="text-gray-400 text-base">
+                  Choose Trancy for learning from video: it adds Netflix dual subtitles and AI
+                  sentence analysis that Immersive Translate lacks. Choose Immersive Translate for
+                  reading websites, PDFs, and ebooks in a bilingual layout. If you want Trancy&apos;s
+                  video benefits without a subscription, Funlingo is a free alternative to try first.
                 </p>
               </div>
             </div>

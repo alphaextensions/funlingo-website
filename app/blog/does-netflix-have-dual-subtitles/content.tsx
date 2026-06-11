@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock } from "lucide-react";
+import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
 import { Badge } from "@/components/ui/badge";
 
 export default function DoesNetflixHaveDualSubtitlesContent() {
@@ -25,6 +26,14 @@ export default function DoesNetflixHaveDualSubtitlesContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways
+            items={[
+              "Netflix has no built-in dual subtitle feature — the player shows only one subtitle language at a time.",
+              "You can get dual subtitles on Netflix for free with the Funlingo Chrome extension.",
+              "Setup takes about 30 seconds: install Funlingo, open Netflix in Chrome, and toggle on your two languages.",
+              "Dual subtitles only work in the Chrome desktop browser, not in the Netflix mobile, tablet, or smart TV apps.",
+            ]}
+          />
           <p className="leading-relaxed text-gray-300 mb-6">Netflix does not have a built-in dual subtitle feature. The Netflix player only allows you to select one subtitle language at a time. However, you can get dual subtitles on Netflix for free using a Chrome extension called Funlingo. Once installed, Funlingo overlays a second subtitle track on top of the Netflix player, showing both your native language and your target language simultaneously. The setup takes about 30 seconds.</p>
 
           <hr className="border-white/10 my-12" />
@@ -54,6 +63,12 @@ export default function DoesNetflixHaveDualSubtitlesContent() {
           <hr className="border-white/10 my-12" />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Why Use Dual Subtitles for Language Learning?</h2>
+          <DualSubtitleDemo
+            targetLang="Spanish"
+            target="No tengo miedo de nada."
+            highlight="miedo"
+            native="I am not afraid of anything."
+          />
           <p className="text-gray-300 mb-6">Dual subtitles turn Netflix into a powerful language learning tool. By displaying both your native language and your target language at the same time, you can follow conversations naturally without pausing or switching subtitle tracks. This approach builds vocabulary in context, reinforces grammar patterns through real dialogue, and trains your ear to connect spoken words with their written form. Research on language acquisition consistently shows that comprehensible input from authentic media is one of the most effective ways to improve fluency.</p>
 
           <hr className="border-white/10 my-12" />

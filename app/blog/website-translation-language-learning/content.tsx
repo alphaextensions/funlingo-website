@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, Globe, BookOpen, Layers, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { KeyTakeaways, StepFlow } from "@/app/blog/_components/graphics";
 
 export default function WebsiteTranslationContent() {
   return (
@@ -25,6 +26,7 @@ export default function WebsiteTranslationContent() {
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <KeyTakeaways items={["Funlingo's Website Translation shows any webpage in both the original language and your learning language at once", "No tool switching: you learn without ever leaving the page", "Hover over words to understand their meaning and usage in real context", "Turn news, blogs, and documentation into bilingual learning material", "Repeated exposure across different pages naturally strengthens vocabulary retention"]} />
           <h2 className="text-2xl font-bold text-white mb-4">Learn Languages While Browsing the Web</h2>
           <p className="leading-relaxed text-gray-300 mb-6">Language learning often requires switching between multiple tools. This constant switching interrupts learning and makes the process slow.</p>
           <p className="lead text-xl leading-relaxed text-gray-200">Funlingo&apos;s Website Translation feature changes this experience completely. Instead of leaving the page, you can now read any website in both the original language and your learning language at the same time.</p>
@@ -38,6 +40,7 @@ export default function WebsiteTranslationContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">What is the Funlingo Website Translation Feature?</h2>
           <p className="text-gray-300 mb-6">The Website Translation feature allows users to open any website and instantly view the content in two languages: the original language and your learning language.</p>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">How the Feature Works</h2>
+          <StepFlow steps={[{ title: "Open any website", desc: "Visit any article, blog, or webpage you want to read." }, { title: "Enable Page Translation", desc: "Turn on Page Translation in the Funlingo extension." }, { title: "Activate Bilingual Display", desc: "Switch on the Bilingual Display option to see both languages." }, { title: "Learn words in context", desc: "Hover over words to understand their meaning and usage." }]} />
           <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-16">
             {[{title:"Open Any Website",desc:"Visit any article, blog, or webpage."},{title:"Enable Website Translation",desc:"Turn on Page Translation in Funlingo."},{title:"Activate Bilingual Display",desc:"Enable the Bilingual Display option."},{title:"Learn Words in Context",desc:"Hover over words to understand meanings and usage."}].map((s,i)=>(
               <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i+1}</div><div className="pt-2 text-gray-300"><strong className="text-white block mb-1">{s.title}</strong>{s.desc}</div></div>

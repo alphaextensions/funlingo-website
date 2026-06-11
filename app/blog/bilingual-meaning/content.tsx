@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock, ArrowRight, BookOpen, Brain, Globe, Briefcase, Users, Lightbulb } from "lucide-react";
+import { KeyTakeaways, StatGrid } from "@/app/blog/_components/graphics";
 
 export default function BilingualMeaningContent() {
   return (
@@ -29,6 +30,15 @@ export default function BilingualMeaningContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+
+          <KeyTakeaways
+            items={[
+              "Bilingual simply means being able to communicate in two languages — equal or perfect proficiency in both is not required.",
+              "Linguists treat bilingualism as a spectrum, with types like simultaneous vs. sequential and balanced vs. dominant.",
+              "Bilingualism is the global norm: most linguists estimate 60-75% of the world speaks two or more languages.",
+              "Adults can absolutely become bilingual through consistent, comprehensible input — immersion tools make it far more achievable.",
+            ]}
+          />
 
           <p className="lead text-xl leading-relaxed">
             The word <strong className="text-white">&ldquo;bilingual&rdquo;</strong> is used casually every day, but its meaning runs deeper than most people realize. Whether you&apos;re filling out a job application, describing your family&apos;s language background, or setting personal learning goals, understanding what bilingual truly means can reshape how you think about language ability. In this guide, we break down the definition, explore the different types of bilingualism, look at real-world examples, and show you how modern tools make becoming bilingual more achievable than ever.
@@ -128,6 +138,15 @@ export default function BilingualMeaningContent() {
               </div>
             ))}
           </div>
+
+          <StatGrid
+            stats={[
+              { value: "60-75%", label: "of the world is bilingual or multilingual" },
+              { value: "67M+", label: "in the US speak another language at home" },
+              { value: "5-20%", label: "wage premium for bilingual workers" },
+              { value: "4-5 yrs", label: "average delay in dementia onset" },
+            ]}
+          />
 
           <p>
             In the United States, over 67 million people speak a language other than English at home according to Census Bureau data. Spanish-English bilingualism is the most common combination, but Mandarin, Tagalog, Vietnamese, Arabic, and French are also widely spoken.

@@ -62,6 +62,14 @@ export const ComparisonTableSection = (): React.JSX.Element => {
         <p className="text-gray-400 max-w-2xl text-lg">
           See why learners are switching to Funlingo for immersive, AI-powered language acquisition.
         </p>
+        <p className="text-gray-500 text-sm max-w-2xl">
+          Looking for an{" "}
+          <a href="/blog/immersive-translate-alternatives" className="text-[#C642FC] hover:underline">immersive translate alternative</a>
+          ? Read our full{" "}
+          <a href="/blog/best-ai-translator-tools" className="text-[#C642FC] hover:underline">AI translator tools comparison</a>{" "}
+          or get the{" "}
+          <a href="/chrome-extension" className="text-[#C642FC] hover:underline">free Chrome extension</a>.
+        </p>
       </div>
 
       {/* Table Container */}
@@ -75,8 +83,8 @@ export const ComparisonTableSection = (): React.JSX.Element => {
               <th className="p-6 text-white font-bold text-xl w-1/4 bg-[rgba(198,66,252,0.15)] border-t-2 border-t-[#C642FC] border-b border-b-[#C642FC]/20">
                 Funlingo
               </th>
-              <th className="p-6 text-gray-300 font-semibold w-1/4">Trancy</th>
-              <th className="p-6 text-gray-300 font-semibold w-1/4">Immersive Translate</th>
+              <th className="p-6 text-gray-300 font-semibold w-1/4"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Trancy</a></th>
+              <th className="p-6 text-gray-300 font-semibold w-1/4"><a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors">Immersive Translate</a></th>
             </tr>
           </thead>
           <tbody className="divide-y divide-white/5">
