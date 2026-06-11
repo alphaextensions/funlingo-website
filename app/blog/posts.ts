@@ -27,6 +27,24 @@ export const accBar = (c: string) => CATEGORY_COLORS[c]?.bar ?? CATEGORY_COLORS.
 
 export const posts: BlogPost[] = [
     {
+      id: 8,
+      title: "Learn Japanese on Crunchyroll: Free Dual Subtitles Guide",
+      excerpt: "Turn Crunchyroll anime into Japanese practice with free dual subtitles and click-to-translate. The best anime to learn Japanese, by level, plus a daily routine.",
+      date: "June 11, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/learn-japanese-with-crunchyroll"
+    },
+    {
+      id: 7,
+      title: "How to Learn Japanese Fast: Best Methods & Free Apps",
+      excerpt: "A realistic fast-track roadmap for beginners — the best methods, free apps, and how immersion with native video (free dual subtitles) accelerates Japanese.",
+      date: "June 11, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/how-to-learn-japanese-fast"
+    },
+    {
       id: 6,
       title: "Immersive Translate Free: What You Get Without Paying (2026)",
       excerpt: "What Immersive Translate's free tier really includes, what Pro unlocks, and the best completely-free alternative for translating video subtitles on Netflix, YouTube & Prime.",
