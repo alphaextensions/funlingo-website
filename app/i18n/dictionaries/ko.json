@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"보면서 배우세요","freeExtension":"무료 이중 자막 확장 프로그램","worksOn":"Netflix, YouTube, Prime 외 5개 플랫폼 지원","twoLanguages":"두 가지 언어 자막"},
   "hero": {"title":"Netflix, YouTube, Prime 외 5개 플랫폼을 위한 이중 자막","subtitle":"Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, Coursera를 몰입형 언어 학습의 장으로 바꿔보세요. 연구에 따르면 이중 자막을 사용하는 학습자는 기존 방식보다 최대 50% 더 많은 어휘를 기억합니다. Funlingo는 100개 이상의 언어로 이중 언어 자막, 즉각적인 AI 정의, 어휘력 강화 기능을 제공하는 완전 무료의 유료 확장 프로그램 대안입니다. Chrome Web Store에서 별점 4.92/5를 받았습니다.","ctaPrimary":"Chrome에 추가 - 무료","ctaSecondary":"사용 방법","platformsHeading":"좋아하는 플랫폼에서 사용하세요"},
   "footer": {"quickLinks":"바로가기","information":"정보","follow":"팔로우","downloadExtension":"확장 프로그램 다운로드","rights":"©2026 Funlingo. 모든 권리 보유.","privacy":"개인정보 처리방침","support":"지원"},
-  "switcher": {"label":"언어"}
+  "switcher": {"label":"언어"},
+  "meta": { "description": "Netflix, YouTube, Prime 등에서 무료 이중 자막. 단어를 클릭해 번역하고 보면서 언어를 배우세요 — 100+개 언어, 모두 무료." }
 }

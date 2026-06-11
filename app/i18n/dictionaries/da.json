@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Lær, mens du ser","freeExtension":"Gratis udvidelse med dobbelte undertekster","worksOn":"Virker på Netflix, YouTube, Prime og 5 flere","twoLanguages":"Undertekster på to sprog"},
   "hero": {"title":"Dobbelte undertekster til Netflix, YouTube, Prime og 5 flere","subtitle":"Forvandl Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy og Coursera til en medrivende sprogundervisning. Forskning viser, at indlærere, der bruger dobbelte undertekster, husker op til 50 % flere gloser end med traditionelle metoder. Funlingo understøtter over 100 sprog med tosprogede undertekster, øjeblikkelige AI-definitioner og opbygning af ordforråd — et helt gratis alternativ til betalte udvidelser. Bedømt 4.92/5 stjerner i Chrome Web Store.","ctaPrimary":"Føj til Chrome – det er gratis","ctaSecondary":"Sådan virker det","platformsHeading":"Virker på dine yndlingsplatforme"},
   "footer": {"quickLinks":"Hurtige links","information":"Information","follow":"Følg os","downloadExtension":"Download udvidelse","rights":"©2026 Funlingo. Alle rettigheder forbeholdes.","privacy":"Privatlivspolitik","support":"Support"},
-  "switcher": {"label":"Sprog"}
+  "switcher": {"label":"Sprog"},
+  "meta": {"description":"Gratis dobbelte undertekster til Netflix, YouTube, Prime og mere. Klik på et ord for at oversætte og lær sprog, mens du ser — 100+ sprog, alt gratis."}
 }

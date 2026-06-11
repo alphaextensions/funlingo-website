@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Apprenez en regardant","freeExtension":"Extension gratuite à double sous-titres","worksOn":"Fonctionne sur Netflix, YouTube, Prime et 5 autres","twoLanguages":"Sous-titres en deux langues"},
   "hero": {"title":"Double sous-titres pour Netflix, YouTube, Prime et 5 autres","subtitle":"Transformez Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy et Coursera en une leçon de langue immersive. Les études montrent que les apprenants qui utilisent les doubles sous-titres mémorisent jusqu'à 50 % de vocabulaire en plus qu'avec les méthodes traditionnelles. Funlingo prend en charge plus de 100 langues avec des sous-titres bilingues, des définitions instantanées par IA et l'enrichissement du vocabulaire — une alternative entièrement gratuite aux extensions payantes. Noté 4.92/5 étoiles sur le Chrome Web Store.","ctaPrimary":"Ajouter à Chrome – c'est gratuit","ctaSecondary":"Comment ça marche","platformsHeading":"Fonctionne sur vos plateformes préférées"},
   "footer": {"quickLinks":"Liens rapides","information":"Informations","follow":"Suivez-nous","downloadExtension":"Télécharger l'extension","rights":"©2026 Funlingo. Tous droits réservés.","privacy":"Politique de confidentialité","support":"Assistance"},
-  "switcher": {"label":"Langue"}
+  "switcher": {"label":"Langue"},
+  "meta": {"description":"Doubles sous-titres gratuits pour Netflix, YouTube, Prime et plus. Cliquez sur un mot pour le traduire et apprenez des langues en regardant — 100+ langues, gratuit."}
 }

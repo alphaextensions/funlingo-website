@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Uči dok gledaš","freeExtension":"Besplatno proširenje s dvostrukim titlovima","worksOn":"Radi na Netflixu, YouTubeu, Primeu i još 5","twoLanguages":"Titlovi na dva jezika"},
   "hero": {"title":"Dvostruki titlovi za Netflix, YouTube, Prime i još 5","subtitle":"Pretvorite Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy i Coursera u zanimljiv sat jezika. Istraživanja pokazuju da osobe koje koriste dvostruke titlove pamte do 50% više vokabulara nego tradicionalnim metodama. Funlingo podržava 100+ jezika s dvojezičnim titlovima, trenutačnim AI definicijama i izgradnjom vokabulara — potpuno besplatna alternativa plaćenim proširenjima. Ocijenjeno s 4.92/5 zvjezdica na Chrome Web Storeu.","ctaPrimary":"Dodaj u Chrome - besplatno je","ctaSecondary":"Kako radi","platformsHeading":"Radi na tvojim omiljenim platformama"},
   "footer": {"quickLinks":"Brze poveznice","information":"Informacije","follow":"Prati nas","downloadExtension":"Preuzmi proširenje","rights":"©2026 Funlingo. Sva prava pridržana.","privacy":"Pravila privatnosti","support":"Podrška"},
-  "switcher": {"label":"Jezik"}
+  "switcher": {"label":"Jezik"},
+  "meta": {"description":"Besplatni dvostruki titlovi za Netflix, YouTube, Prime i još više. Kliknite bilo koju riječ za prijevod i učite jezike dok gledate — 100+ jezika, sve besplatno."}
 }

@@ -40,6 +40,10 @@ export const en = {
   switcher: {
     label: "Language",
   },
+  meta: {
+    description:
+      "Free dual subtitles for Netflix, YouTube, Prime & more. Click any word to translate and learn languages while you watch — 100+ languages, all free.",
+  },
 } as const;
 
 // Deeply-mutable mirror of the `en` shape, used as the runtime dictionary type

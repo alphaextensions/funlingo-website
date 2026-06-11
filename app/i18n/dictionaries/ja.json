@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"観ながら学ぼう","freeExtension":"無料のデュアル字幕拡張機能","worksOn":"Netflix、YouTube、Primeほか5サービスに対応","twoLanguages":"2つの言語の字幕"},
   "hero": {"title":"Netflix、YouTube、Primeほか5サービスのためのデュアル字幕","subtitle":"Netflix、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Udemy、Courseraを没入型の語学レッスンに変えましょう。研究によると、デュアル字幕を使う学習者は従来の方法より最大50%多くの語彙を定着させることができます。Funlingoは100以上の言語のバイリンガル字幕、瞬時のAI定義、語彙力アップに対応し、有料拡張機能に代わる完全無料の選択肢です。Chrome Web Storeで星4.92/5の高評価を獲得しています。","ctaPrimary":"Chromeに追加 - 無料","ctaSecondary":"使い方","platformsHeading":"お気に入りのプラットフォームで使えます"},
   "footer": {"quickLinks":"クイックリンク","information":"情報","follow":"フォロー","downloadExtension":"拡張機能をダウンロード","rights":"©2026 Funlingo. 無断複写・転載を禁じます。","privacy":"プライバシーポリシー","support":"サポート"},
-  "switcher": {"label":"言語"}
+  "switcher": {"label":"言語"},
+  "meta": { "description": "Netflix、YouTube、Primeほかで使える無料のデュアル字幕。単語をクリックして翻訳し、観ながら語学学習 — 100+言語、すべて無料。" }
 }

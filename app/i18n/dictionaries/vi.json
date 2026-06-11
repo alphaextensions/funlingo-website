@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Học trong khi xem","freeExtension":"Tiện ích phụ đề kép miễn phí","worksOn":"Hoạt động trên Netflix, YouTube, Prime và 5 nền tảng khác","twoLanguages":"Phụ đề bằng hai ngôn ngữ"},
   "hero": {"title":"Phụ đề kép cho Netflix, YouTube, Prime và 5 nền tảng khác","subtitle":"Biến Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy và Coursera thành một bài học ngôn ngữ đắm chìm. Nghiên cứu cho thấy người học dùng phụ đề kép ghi nhớ nhiều hơn tới 50% từ vựng so với phương pháp truyền thống. Funlingo hỗ trợ hơn 100+ ngôn ngữ với phụ đề song ngữ, định nghĩa AI tức thì và xây dựng vốn từ vựng — một giải pháp thay thế hoàn toàn miễn phí cho các tiện ích trả phí. Được đánh giá 4.92/5 sao trên Chrome Web Store.","ctaPrimary":"Thêm vào Chrome - Miễn phí","ctaSecondary":"Cách hoạt động","platformsHeading":"Hoạt động trên các nền tảng yêu thích của bạn"},
   "footer": {"quickLinks":"Liên kết nhanh","information":"Thông tin","follow":"Theo dõi","downloadExtension":"Tải tiện ích","rights":"©2026 Funlingo. Bảo lưu mọi quyền.","privacy":"Chính sách bảo mật","support":"Hỗ trợ"},
-  "switcher": {"label":"Ngôn ngữ"}
+  "switcher": {"label":"Ngôn ngữ"},
+  "meta": { "description": "Phụ đề kép miễn phí cho Netflix, YouTube, Prime và hơn thế nữa. Nhấp vào bất kỳ từ nào để dịch và học ngôn ngữ trong khi xem — 100+ ngôn ngữ, hoàn toàn miễn phí." }
 }

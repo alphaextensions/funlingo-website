@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Aprèn mentre mires","freeExtension":"Extensió gratuïta de subtítols dobles","worksOn":"Funciona amb Netflix, YouTube, Prime i 5 més","twoLanguages":"Subtítols en dos idiomes"},
   "hero": {"title":"Subtítols dobles per a Netflix, YouTube, Prime i 5 més","subtitle":"Converteix Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy i Coursera en una lliçó d'idiomes immersiva. La recerca demostra que els qui fan servir subtítols dobles retenen fins a un 50% més de vocabulari que amb els mètodes tradicionals. Funlingo admet més de 100+ idiomes amb subtítols bilingües, definicions instantànies amb AI i creació de vocabulari, una alternativa totalment gratuïta a les extensions de pagament. Valorat amb 4.92/5 estrelles a la Chrome Web Store.","ctaPrimary":"Afegeix a Chrome - És gratuït","ctaSecondary":"Com funciona","platformsHeading":"Funciona amb les teves plataformes preferides"},
   "footer": {"quickLinks":"Enllaços ràpids","information":"Informació","follow":"Segueix-nos","downloadExtension":"Baixa l'extensió","rights":"©2026 Funlingo. Tots els drets reservats.","privacy":"Política de privadesa","support":"Suport"},
-  "switcher": {"label":"Idioma"}
+  "switcher": {"label":"Idioma"},
+  "meta": {"description":"Subtítols dobles gratuïts per a Netflix, YouTube, Prime i més. Fes clic a qualsevol paraula per traduir-la i aprèn idiomes mentre mires — 100+ idiomes, tot gratis."}
 }

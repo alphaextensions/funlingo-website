@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"هنگام تماشا یاد بگیرید","freeExtension":"افزونه رایگان زیرنویس دوزبانه","worksOn":"روی Netflix، YouTube، Prime و ۵ سرویس دیگر کار می‌کند","twoLanguages":"زیرنویس به دو زبان"},
   "hero": {"title":"زیرنویس دوزبانه برای Netflix، YouTube، Prime و ۵ سرویس دیگر","subtitle":"Netflix، YouTube، Prime Video، Disney+ Hotstar، Apple TV، Crunchyroll، Udemy و Coursera را به یک کلاس زبان فراگیر تبدیل کنید. پژوهش‌ها نشان می‌دهند زبان‌آموزانی که از زیرنویس دوزبانه استفاده می‌کنند تا 50% واژگان بیشتری نسبت به روش‌های سنتی به خاطر می‌سپارند. Funlingo از بیش از 100 زبان با زیرنویس دوزبانه، تعریف‌های آنی AI و تقویت واژگان پشتیبانی می‌کند — جایگزینی کاملاً رایگان برای افزونه‌های پولی. در Chrome Web Store امتیاز 4.92/5 ستاره گرفته است.","ctaPrimary":"افزودن به Chrome - رایگان است","ctaSecondary":"چطور کار می‌کند","platformsHeading":"روی پلتفرم‌های مورد علاقه شما کار می‌کند"},
   "footer": {"quickLinks":"دسترسی سریع","information":"اطلاعات","follow":"ما را دنبال کنید","downloadExtension":"دانلود افزونه","rights":"©2026 Funlingo. تمامی حقوق محفوظ است.","privacy":"سیاست حریم خصوصی","support":"پشتیبانی"},
-  "switcher": {"label":"زبان"}
+  "switcher": {"label":"زبان"},
+  "meta": { "description": "زیرنویس دوزبانه رایگان برای Netflix، YouTube، Prime و بیشتر. روی هر کلمه کلیک کنید تا ترجمه شود و هنگام تماشا زبان بیاموزید — 100+ زبان، همگی رایگان." }
 }

@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Tanulj nézés közben","freeExtension":"Ingyenes kétnyelvű feliratbővítmény","worksOn":"Működik Netflixen, YouTube-on, Prime-on és 5 továbbin","twoLanguages":"Feliratok két nyelven"},
   "hero": {"title":"Kétnyelvű feliratok Netflixhez, YouTube-hoz, Prime-hoz és 5 továbbihoz","subtitle":"Alakítsd a Netflixet, a YouTube-ot, a Prime Videót, a Disney+ Hotstart, az Apple TV-t, a Crunchyrollt, az Udemyt és a Courserát magával ragadó nyelvleckévé. Kutatások szerint a kétnyelvű feliratokat használó tanulók akár 50%-kal több szókincset jegyeznek meg, mint a hagyományos módszerekkel. A Funlingo 100+ nyelvet támogat kétnyelvű feliratokkal, azonnali AI-definíciókkal és szókincsépítéssel — teljesen ingyenes alternatíva a fizetős bővítményekhez. 4.92/5 csillagos értékelés a Chrome Web Store-ban.","ctaPrimary":"Hozzáadás a Chrome-hoz - Ingyenes","ctaSecondary":"Hogyan működik","platformsHeading":"Működik a kedvenc platformjaidon"},
   "footer": {"quickLinks":"Gyors linkek","information":"Információ","follow":"Kövess minket","downloadExtension":"Bővítmény letöltése","rights":"©2026 Funlingo. Minden jog fenntartva.","privacy":"Adatvédelmi irányelvek","support":"Támogatás"},
-  "switcher": {"label":"Nyelv"}
+  "switcher": {"label":"Nyelv"},
+  "meta": { "description": "Ingyenes kétnyelvű feliratok Netflixhez, YouTube-hoz, Prime-hoz és máshoz. Kattints bármely szóra a fordításhoz, és tanulj nyelveket nézés közben — 100+ nyelv, mind ingyenes." }
 }

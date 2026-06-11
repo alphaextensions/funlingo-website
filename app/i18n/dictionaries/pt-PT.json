@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Aprenda enquanto vê","freeExtension":"Extensão gratuita de legendas duplas","worksOn":"Funciona no Netflix, YouTube, Prime e mais 5","twoLanguages":"Legendas em duas línguas"},
   "hero": {"title":"Legendas Duplas para Netflix, YouTube, Prime e mais 5","subtitle":"Transforme o Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy e Coursera numa aula de línguas imersiva. A investigação mostra que quem usa legendas duplas retém até 50% mais vocabulário do que com os métodos tradicionais. O Funlingo suporta mais de 100 línguas com legendas bilingues, definições instantâneas com AI e construção de vocabulário — uma alternativa totalmente gratuita às extensões pagas. Classificado com 4.92/5 estrelas na Chrome Web Store.","ctaPrimary":"Adicionar ao Chrome - É Grátis","ctaSecondary":"Como Funciona","platformsHeading":"Funciona nas suas plataformas favoritas"},
   "footer": {"quickLinks":"Ligações Rápidas","information":"Informação","follow":"Siga","downloadExtension":"Transferir Extensão","rights":"©2026 Funlingo. Todos os direitos reservados.","privacy":"Política de Privacidade","support":"Apoio"},
-  "switcher": {"label":"Idioma"}
+  "switcher": {"label":"Idioma"},
+  "meta": { "description": "Legendas duplas gratuitas para Netflix, YouTube, Prime e mais. Clique em qualquer palavra para traduzir e aprenda línguas enquanto vê — 100+ línguas, tudo grátis." }
 }

@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"Belajar sambil menonton","freeExtension":"Ekstensi subtitle ganda gratis","worksOn":"Berfungsi di Netflix, YouTube, Prime & 5 lainnya","twoLanguages":"Subtitle dalam dua bahasa"},
   "hero": {"title":"Subtitle Ganda untuk Netflix, YouTube, Prime & 5 Lainnya","subtitle":"Ubah Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, dan Coursera menjadi pelajaran bahasa yang imersif. Penelitian menunjukkan bahwa pelajar yang menggunakan subtitle ganda mengingat hingga 50% lebih banyak kosakata dibandingkan metode tradisional. Funlingo mendukung 100+ bahasa dengan subtitle dwibahasa, definisi AI instan, dan pembangunan kosakata — alternatif yang sepenuhnya gratis untuk ekstensi berbayar. Diberi rating 4.92/5 bintang di Chrome Web Store.","ctaPrimary":"Tambahkan ke Chrome - Gratis","ctaSecondary":"Cara Kerjanya","platformsHeading":"Berfungsi di platform favoritmu"},
   "footer": {"quickLinks":"Tautan Cepat","information":"Informasi","follow":"Ikuti","downloadExtension":"Unduh Ekstensi","rights":"©2026 Funlingo. Semua hak dilindungi.","privacy":"Kebijakan Privasi","support":"Dukungan"},
-  "switcher": {"label":"Bahasa"}
+  "switcher": {"label":"Bahasa"},
+  "meta": { "description": "Subtitle ganda gratis untuk Netflix, YouTube, Prime & lainnya. Klik kata mana pun untuk menerjemahkan dan belajar bahasa sambil menonton — 100+ bahasa, semua gratis." }
 }

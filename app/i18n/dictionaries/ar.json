@@ -3,5 +3,6 @@
   "badges": {"learnWhileWatch":"تعلّم وأنت تشاهد","freeExtension":"إضافة مجانية للترجمة المزدوجة","worksOn":"تعمل على Netflix وYouTube وPrime و5 منصات أخرى","twoLanguages":"ترجمة بلغتين"},
   "hero": {"title":"ترجمة مزدوجة لـ Netflix وYouTube وPrime و5 منصات أخرى","subtitle":"حوّل Netflix وYouTube وPrime Video وDisney+ Hotstar وApple TV وCrunchyroll وUdemy وCoursera إلى درس لغة غامر. تُظهر الأبحاث أن المتعلمين الذين يستخدمون الترجمة المزدوجة يحتفظون بمفردات أكثر بنسبة تصل إلى 50% مقارنةً بالطرق التقليدية. يدعم Funlingo أكثر من 100+ لغة بترجمة ثنائية اللغة وتعريفات فورية بالذكاء الاصطناعي AI وبناء المفردات — بديل مجاني تمامًا للإضافات المدفوعة. حاصل على تقييم 4.92/5 نجوم على Chrome Web Store.","ctaPrimary":"أضِف إلى Chrome - مجانًا","ctaSecondary":"كيف تعمل","platformsHeading":"تعمل على منصاتك المفضلة"},
   "footer": {"quickLinks":"روابط سريعة","information":"معلومات","follow":"تابعنا","downloadExtension":"تنزيل الإضافة","rights":"©2026 Funlingo. جميع الحقوق محفوظة.","privacy":"سياسة الخصوصية","support":"الدعم"},
-  "switcher": {"label":"اللغة"}
+  "switcher": {"label":"اللغة"},
+  "meta": {"description":"ترجمة مزدوجة مجانية لـ Netflix وYouTube وPrime والمزيد. انقر على أي كلمة لترجمتها وتعلّم اللغات وأنت تشاهد — أكثر من 100+ لغة، كلها مجانية."}
 }
