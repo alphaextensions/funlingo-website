@@ -181,7 +181,7 @@ export default function SrtFilesSubtitleDownloadContent() {
             </ul>
           </div>
           <p className="text-gray-300 mb-6">The challenge with manual subtitle downloads is the friction. You need to find the right file, match it to your video, deal with timing issues, and you only get one language at a time. For language learning, you want two languages visible simultaneously, which is difficult to set up with standalone SRT files.</p>
-          <p className="text-gray-300 mb-6">For a deeper dive into this methodology, read our guide on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">how to learn a language by watching</a> and our article on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary through shows</a>.</p>
+          <p className="text-gray-300 mb-6">For a deeper dive into this methodology, read our guide on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] hover:underline">how to learn a language by watching</a> and our article on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary through shows</a>.</p>
 
           <hr className="border-white/10 my-12" />
 

@@ -10,6 +10,8 @@
     { "source": "/blog/best-google-meet-attendance-extensions", "destination": "/blog", "permanent": true },
     { "source": "/blog/does-google-meet-have-attendance", "destination": "/blog", "permanent": true },
     { "source": "/blog/google-meet-attendance-for-teachers", "destination": "/blog", "permanent": true },
-    { "source": "/ai-translator-tools", "destination": "/blog/best-ai-translator-tools", "permanent": true }
+    { "source": "/ai-translator-tools", "destination": "/blog/best-ai-translator-tools", "permanent": true },
+    { "source": "/blog/build-vocabulary-watching-shows", "destination": "/blog/vocabulary-building-watching-shows", "permanent": true },
+    { "source": "/blog/reading-mode-bilingual-captions", "destination": "/blog/how-to-learn-languages-with-reading-mode", "permanent": true }
   ]
 }

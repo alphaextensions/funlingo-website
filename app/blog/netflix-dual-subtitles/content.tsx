@@ -218,7 +218,7 @@ export default function NetflixDualSubtitlesContent() {
             </div>
           </div>
 
-          <p className="text-gray-300 mb-6">For more strategies on building vocabulary while watching, check out our detailed guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary through shows</a>.</p>
+          <p className="text-gray-300 mb-6">For more strategies on building vocabulary while watching, check out our detailed guide on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary through shows</a>.</p>
 
           <hr className="border-white/10 my-12" />
 

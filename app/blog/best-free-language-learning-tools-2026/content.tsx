@@ -94,7 +94,7 @@ export default function BestFreeToolsContent() {
           <hr className="border-white/10 my-12" />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Category 2: Vocabulary and Flashcard Tools</h2>
-          <p className="text-gray-300 mb-6">Input is the engine. Vocabulary review is the maintenance. These tools help you retain the words you encounter during immersion. For strategies on capturing vocabulary effectively, see our guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a>.</p>
+          <p className="text-gray-300 mb-6">Input is the engine. Vocabulary review is the maintenance. These tools help you retain the words you encounter during immersion. For strategies on capturing vocabulary effectively, see our guide on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a>.</p>
 
           <div className="space-y-8 mb-12">
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
@@ -220,7 +220,7 @@ export default function BestFreeToolsContent() {
                 <h3 className="text-xl font-bold text-white mb-0 mt-0">Funlingo Reading Mode</h3>
                 <Badge className="bg-green-500/10 text-green-400 border-green-500/20">Free</Badge>
               </div>
-              <p className="text-gray-300 mb-0"><strong className="text-white">What it does:</strong> Translates any website into a bilingual reading experience with your target language and native language displayed side by side. Click any word for definitions. Read news, Wikipedia, blogs, and any web content in two languages simultaneously. See our guide to <a href="/blog/how-to-learn-languages-with-reading-mode" className="text-[#C642FC] hover:underline">learning languages with Reading Mode</a> and <a href="/blog/reading-mode-bilingual-captions" className="text-[#C642FC] hover:underline">bilingual captions in Reading Mode</a>.</p>
+              <p className="text-gray-300 mb-0"><strong className="text-white">What it does:</strong> Translates any website into a bilingual reading experience with your target language and native language displayed side by side. Click any word for definitions. Read news, Wikipedia, blogs, and any web content in two languages simultaneously. See our guide to <a href="/blog/how-to-learn-languages-with-reading-mode" className="text-[#C642FC] hover:underline">learning languages with Reading Mode</a> and <a href="/blog/how-to-learn-languages-with-reading-mode" className="text-[#C642FC] hover:underline">bilingual captions in Reading Mode</a>.</p>
             </div>
 
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">

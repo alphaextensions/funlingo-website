@@ -110,7 +110,7 @@ export default function LearnKoreanYouTubeContent() {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10"><Headphones className="w-8 h-8 text-[#C642FC] mb-4" /><h3 className="text-xl font-bold text-white mb-2">Shadow the Speakers</h3><p className="text-sm text-gray-400">Try repeating what the speakers say immediately after hearing it. This shadowing technique improves pronunciation and intonation.</p></div>
           </div>
 
-          <p className="text-gray-300 mb-6">Once you are comfortable with YouTube, expand to Netflix for longer-form Korean content. Read our guide on <a href="/blog/learn-spanish-watching-netflix" className="text-[#C642FC] hover:underline">learning languages with Netflix</a> for strategies that apply to Korean dramas as well. You can also learn how to <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">build vocabulary while watching shows</a> for more advanced techniques.</p>
+          <p className="text-gray-300 mb-6">Once you are comfortable with YouTube, expand to Netflix for longer-form Korean content. Read our guide on <a href="/blog/learn-spanish-watching-netflix" className="text-[#C642FC] hover:underline">learning languages with Netflix</a> for strategies that apply to Korean dramas as well. You can also learn how to <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">build vocabulary while watching shows</a> for more advanced techniques.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>

@@ -157,7 +157,7 @@ export default function LearnJapaneseWithAnimeContent() {
             </ul>
           </div>
 
-          <p className="text-gray-300 mb-6">For a deeper dive into vocabulary methods, read our guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a>.</p>
+          <p className="text-gray-300 mb-6">For a deeper dive into vocabulary methods, read our guide on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a>.</p>
 
           <hr className="border-white/10 my-12" />
 

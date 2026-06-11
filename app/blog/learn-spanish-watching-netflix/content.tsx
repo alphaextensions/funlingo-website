@@ -131,7 +131,7 @@ export default function LearnSpanishNetflixContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Vocabulary Tips for Spanish Learners</h2>
           <p className="text-gray-300 mb-6">Spanish shares thousands of cognates with English, words that look and sound similar. Recognizing these cognates on screen gives you an instant vocabulary boost. Words like &quot;universidad,&quot; &quot;importante,&quot; and &quot;problema&quot; are immediately understandable.</p>
-          <p className="text-gray-300 mb-6">For more strategies on building vocabulary while watching, check out our detailed guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a>. You can also compare tools in our <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extension comparison</a>.</p>
+          <p className="text-gray-300 mb-6">For more strategies on building vocabulary while watching, check out our detailed guide on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary while watching shows</a>. You can also compare tools in our <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] hover:underline">best dual subtitle extension comparison</a>.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>

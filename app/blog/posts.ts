@@ -432,15 +432,6 @@ export const posts: BlogPost[] = [
       slug: "/blog/vocabulary-building-watching-shows"
     },
     {
-      id: -1,
-      title: "How to Build Vocabulary While Watching: 5 Proven Strategies That Actually Work",
-      excerpt: "Discover 5 proven strategies to build vocabulary while watching movies and TV shows. Learn how contextual vocabulary learning and spaced repetition transform screen time into real language growth.",
-      date: "March 14, 2026",
-      author: "Funlingo Team",
-      category: "Guide",
-      slug: "/blog/build-vocabulary-watching-shows"
-    },
-    {
       id: 0,
       title: "Website Translation for Language Learning: Read Any Website in Two Languages",
       excerpt: "Discover how Funlingo's website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
@@ -466,15 +457,6 @@ export const posts: BlogPost[] = [
       author: "Funlingo Team",
       category: "Guide",
       slug: "/blog/how-to-learn-languages-with-reading-mode"
-    },
-    {
-      id: 3,
-      title: "Reading Mode: Learn Naturally — Read Captions Side-by-Side While You Watch",
-      excerpt: "Turn your watch time into a language lesson. Funlingo's Reading Mode shows synchronized bilingual captions with instant synonyms & examples.",
-      date: "February 05, 2026",
-      author: "Funlingo Team",
-      category: "Feature",
-      slug: "/blog/reading-mode-bilingual-captions"
     },
     {
       id: 4,

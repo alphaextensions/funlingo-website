@@ -83,7 +83,7 @@ export default function DailyLanguageLearningHabitsContent() {
             </div>
             <p className="text-gray-300 mb-4">While your kettle boils or your coffee brews, open your saved vocabulary in Funlingo. Review the words you saved from last night&apos;s watching session. Try to recall the meaning before checking. That is it.</p>
             <p className="text-gray-300 mb-4">This is spaced repetition in its simplest form. You encountered the word in context last night. You review it the next morning. Research shows this timing — reviewing within 12 to 24 hours — dramatically improves long-term retention.</p>
-            <p className="text-gray-300">For the science behind this, see our article on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a>.</p>
+            <p className="text-gray-300">For the science behind this, see our article on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a>.</p>
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Habit 3: Commute Listening</h2>

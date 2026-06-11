@@ -163,7 +163,7 @@ export default function BestDualSubtitleExtensionContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Getting Started with Dual Subtitles</h2>
           <p className="text-gray-300 mb-6">Once you choose your extension, getting started takes less than a minute. For a step-by-step walkthrough, check out our guide on <a href="/blog/how-to-get-dual-subtitles-on-netflix" className="text-[#C642FC] hover:underline">how to get dual subtitles on Netflix</a>.</p>
-          <p className="text-gray-300 mb-6">After you are set up, you can start <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a> using proven strategies that turn passive viewing into active learning.</p>
+          <p className="text-gray-300 mb-6">After you are set up, you can start <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">building vocabulary while watching shows</a> using proven strategies that turn passive viewing into active learning.</p>
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">Frequently Asked Questions</h3>

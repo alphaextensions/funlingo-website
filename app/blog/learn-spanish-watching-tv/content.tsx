@@ -147,7 +147,7 @@ export default function LearnSpanishWatchingTvContent() {
             </div>
           </div>
 
-          <p className="text-gray-300 mb-6">Want to learn more about building vocabulary through shows? Read our dedicated guide on <a href="/blog/build-vocabulary-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary watching shows</a>.</p>
+          <p className="text-gray-300 mb-6">Want to learn more about building vocabulary through shows? Read our dedicated guide on <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] hover:underline">how to build vocabulary watching shows</a>.</p>
 
           <hr className="border-white/10 my-12" />
 
