@@ -42,6 +42,29 @@ export default function Analytics() {
     }
   }, [pathname]);
 
+  // Conversion tracking: fire `install_click` whenever any "Add to Chrome" /
+  // Chrome Web Store link is clicked, anywhere on the site. Delegated once so
+  // it covers the navbar, hero, footer, blog CTAs, and the extension page
+  // without instrumenting every button. (gtag uses sendBeacon, so the event
+  // still sends even when the link navigates away.)
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const anchor = (e.target as HTMLElement | null)?.closest?.("a");
+      if (!anchor) return;
+      const href = anchor.getAttribute("href") || "";
+      if (!href.includes("chromewebstore.google.com")) return;
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "install_click", {
+          link_url: href,
+          link_text: (anchor.textContent || "").trim().slice(0, 100),
+          page_path: window.location.pathname,
+        });
+      }
+    };
+    document.addEventListener("click", onClick, { capture: true });
+    return () => document.removeEventListener("click", onClick, { capture: true });
+  }, []);
+
   return (
     <>
       <Script
