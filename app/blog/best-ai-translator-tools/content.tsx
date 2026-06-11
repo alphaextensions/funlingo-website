@@ -5,7 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Calendar, User, Clock, Check, X, Globe, Zap, DollarSign, Brain, Languages, Sparkles, BookOpen } from "lucide-react";
+import { ArrowRight, Calendar, User, Clock, Check, X, Globe, Zap, DollarSign, Brain, Languages, Sparkles, BookOpen, ExternalLink } from "lucide-react";
 import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
 
 export default function BestAiTranslatorToolsContent() {
@@ -43,7 +43,7 @@ export default function BestAiTranslatorToolsContent() {
 
           {/* 1. Google Translate */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">1. Google Translate</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">1. Google Translate <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">The most widely used AI translator in the world, Google Translate supports over 130 languages and handles text, documents, images, speech, and real-time conversation. Powered by Google&apos;s Neural Machine Translation (NMT) system, it has improved significantly since its early statistical days. Google Translate is deeply integrated into Chrome, Android, and Google&apos;s ecosystem, making it the default choice for billions of users.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Broadest language coverage, casual translation</span>
@@ -61,7 +61,7 @@ export default function BestAiTranslatorToolsContent() {
 
           {/* 2. DeepL */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">2. DeepL</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">2. DeepL <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">DeepL has built its reputation on translation quality. Founded in Germany in 2017, it consistently outperforms Google Translate in blind tests for European languages like German, French, Spanish, and Dutch. DeepL excels at preserving natural phrasing, handling idioms, and maintaining the tone of the original text. Its paid tiers add document translation (preserving formatting), glossary customization, and higher API limits.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> European languages, professional-quality translation</span>
@@ -77,9 +77,28 @@ export default function BestAiTranslatorToolsContent() {
             </div>
           </div>
 
-          {/* 3. ChatGPT */}
+          {/* 3. Funlingo (Contextual Translation While Watching) */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">3. ChatGPT (OpenAI)</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">3. Funlingo (Contextual Translation While Watching) <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
+            <p className="text-gray-300 mb-3">Funlingo approaches AI translation from a unique angle: contextual translation while watching video content. Rather than translating text you paste into a box, Funlingo works inside Netflix, YouTube, and Amazon Prime Video to provide dual subtitles and instant word-level translations. Click any word in the subtitles to see its meaning, pronunciation, and usage. This makes it uniquely powerful for language learners who want to understand content in real time rather than translating text after the fact. For <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">dual subtitles on Netflix</a>, YouTube, and Prime Video, check out our <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">dual subtitles setup guide</a>. If you prefer building vocabulary through video content, see our guide to <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>.</p>
+            <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
+              <span><strong className="text-white">Best for:</strong> Language learning through video content</span>
+              <span><strong className="text-white">Pricing:</strong> Free</span>
+              <span><strong className="text-white">Languages:</strong> All platform-supported languages</span>
+            </div>
+            <div className="flex flex-col gap-2 text-sm">
+              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Contextual translation while watching videos, not just text-in/text-out</div>
+              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Dual subtitles show both languages simultaneously</div>
+              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Click-to-translate on any word with vocabulary saving</div>
+              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Completely free with no usage limits</div>
+              <div className="flex items-center gap-2 text-red-400"><X className="w-4 h-4" /> Chrome extension only, not a standalone translator</div>
+              <div className="flex items-center gap-2 text-red-400"><X className="w-4 h-4" /> Designed for video content, not general text translation</div>
+            </div>
+          </div>
+
+          {/* 4. ChatGPT (OpenAI) */}
+          <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">4. ChatGPT (OpenAI) <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">ChatGPT is not a traditional translator, but its large language model capabilities make it an exceptionally flexible translation tool. You can ask ChatGPT to translate text, explain nuances, adjust formality levels, translate while preserving a specific tone, or provide multiple translation options with explanations of the differences. It understands context in ways that traditional NMT systems cannot, making it ideal for ambiguous or culturally sensitive content.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Nuanced translation, explanations, creative text</span>
@@ -96,9 +115,9 @@ export default function BestAiTranslatorToolsContent() {
             </div>
           </div>
 
-          {/* 4. Microsoft Translator */}
+          {/* 5. Microsoft Translator */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">4. Microsoft Translator</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">5. Microsoft Translator <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">Microsoft Translator is deeply integrated into the Microsoft ecosystem: Outlook, Word, Excel, PowerPoint, Edge browser, Teams, and Skype all use it. It supports over 120 languages and offers features like multi-person conversation translation (up to 100 people), image translation, and offline language packs. For businesses already in the Microsoft ecosystem, it is the most seamless choice.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Microsoft ecosystem users, business meetings</span>
@@ -114,9 +133,9 @@ export default function BestAiTranslatorToolsContent() {
             </div>
           </div>
 
-          {/* 5. Apple Translate */}
+          {/* 6. Apple Translate */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">5. Apple Translate</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://apps.apple.com/us/app/translate/id1514844618" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">6. Apple Translate <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">Built into iOS, iPadOS, and macOS, Apple Translate prioritizes privacy by processing translations on-device whenever possible. It supports text and conversation translation with a clean, minimal interface. Safari&apos;s built-in page translation also uses this engine. While it supports fewer languages than Google or Microsoft, its on-device processing means it works without an internet connection and your data never leaves your device.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Apple users, privacy-focused translation</span>
@@ -133,9 +152,9 @@ export default function BestAiTranslatorToolsContent() {
             </div>
           </div>
 
-          {/* 6. Papago */}
+          {/* 7. Papago (Naver) */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">6. Papago (Naver)</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://papago.naver.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">7. Papago (Naver) <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">Developed by Korean tech giant Naver, Papago is the gold standard for Korean translation. It significantly outperforms Google Translate and DeepL for Korean-English, Korean-Japanese, and other Korean language pairs. Papago also handles Japanese and Chinese well, and includes features like image translation, voice input, and a built-in dictionary with example sentences. If you are learning Korean or working with Korean content, Papago is indispensable.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Korean, Japanese, and Chinese translation</span>
@@ -151,9 +170,9 @@ export default function BestAiTranslatorToolsContent() {
             </div>
           </div>
 
-          {/* 7. Yandex Translate */}
+          {/* 8. Yandex Translate */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">7. Yandex Translate</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://translate.yandex.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">8. Yandex Translate <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">Russia&apos;s leading search engine also runs one of the better AI translation services, particularly for Russian and other Slavic languages. Yandex Translate supports over 100 languages, offers document and website translation, and includes image translation via its mobile app. It is the best choice for Russian-English and Russian-European language pairs.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Russian and Slavic languages</span>
@@ -169,9 +188,9 @@ export default function BestAiTranslatorToolsContent() {
             </div>
           </div>
 
-          {/* 8. iTranslate */}
+          {/* 9. iTranslate */}
           <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">8. iTranslate</h3>
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://itranslate.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">9. iTranslate <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">iTranslate is a polished mobile-first translator with a strong focus on user experience. It supports text, voice, camera, and conversation translation across over 100 languages. The Pro version adds offline translation, website translation via a Safari extension, and voice-to-voice conversation mode. It is particularly popular among travelers for its clean interface and reliable offline capabilities.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Travel, mobile-first translation</span>
@@ -187,9 +206,9 @@ export default function BestAiTranslatorToolsContent() {
             </div>
           </div>
 
-          {/* 9. Reverso */}
-          <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-3">9. Reverso</h3>
+          {/* 10. Reverso */}
+          <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
+            <h3 className="text-xl font-semibold text-white mb-3"><a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#C642FC] transition-colors inline-flex items-center gap-1.5">10. Reverso <ExternalLink className="w-4 h-4 text-[#C642FC]" /></a></h3>
             <p className="text-gray-300 mb-3">Reverso stands out from other translators by combining translation with language learning features. It shows translations in context with real-world example sentences, conjugation tables, synonym suggestions, and grammar explanations. The Reverso Context feature is particularly valuable: it searches a massive database of bilingual texts to show how words and phrases are actually used in authentic content.</p>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
               <span><strong className="text-white">Best for:</strong> Language learners, contextual translation</span>
@@ -202,25 +221,6 @@ export default function BestAiTranslatorToolsContent() {
               <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Flashcard system for saving and reviewing vocabulary</div>
               <div className="flex items-center gap-2 text-red-400"><X className="w-4 h-4" /> Only 18 languages supported</div>
               <div className="flex items-center gap-2 text-red-400"><X className="w-4 h-4" /> Full-text translation quality behind DeepL and Google</div>
-            </div>
-          </div>
-
-          {/* 10. Funlingo */}
-          <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
-            <h3 className="text-xl font-semibold text-white mb-3">10. Funlingo (Contextual Translation While Watching)</h3>
-            <p className="text-gray-300 mb-3">Funlingo approaches AI translation from a unique angle: contextual translation while watching video content. Rather than translating text you paste into a box, Funlingo works inside Netflix, YouTube, and Amazon Prime Video to provide dual subtitles and instant word-level translations. Click any word in the subtitles to see its meaning, pronunciation, and usage. This makes it uniquely powerful for language learners who want to understand content in real time rather than translating text after the fact. For <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">dual subtitles on Netflix</a>, YouTube, and Prime Video, check out our <a href="/blog/netflix-dual-subtitles" className="text-[#C642FC] hover:underline">dual subtitles setup guide</a>. If you prefer building vocabulary through video content, see our guide to <a href="/blog/netflix-language-learning-extensions" className="text-[#C642FC] hover:underline">Netflix language learning extensions</a>.</p>
-            <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-3">
-              <span><strong className="text-white">Best for:</strong> Language learning through video content</span>
-              <span><strong className="text-white">Pricing:</strong> Free</span>
-              <span><strong className="text-white">Languages:</strong> All platform-supported languages</span>
-            </div>
-            <div className="flex flex-col gap-2 text-sm">
-              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Contextual translation while watching videos, not just text-in/text-out</div>
-              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Dual subtitles show both languages simultaneously</div>
-              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Click-to-translate on any word with vocabulary saving</div>
-              <div className="flex items-center gap-2 text-green-400"><Check className="w-4 h-4" /> Completely free with no usage limits</div>
-              <div className="flex items-center gap-2 text-red-400"><X className="w-4 h-4" /> Chrome extension only, not a standalone translator</div>
-              <div className="flex items-center gap-2 text-red-400"><X className="w-4 h-4" /> Designed for video content, not general text translation</div>
             </div>
           </div>
 
@@ -247,16 +247,16 @@ export default function BestAiTranslatorToolsContent() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">Google Translate</td><td className="py-2 pr-4">Broadest coverage</td><td className="py-2 pr-4">133+</td><td className="py-2">Yes</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">DeepL</td><td className="py-2 pr-4">European accuracy</td><td className="py-2 pr-4">33</td><td className="py-2">Yes (limited)</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">ChatGPT</td><td className="py-2 pr-4">Nuanced / creative</td><td className="py-2 pr-4">90+</td><td className="py-2">Yes (limited)</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">Microsoft Translator</td><td className="py-2 pr-4">Microsoft ecosystem</td><td className="py-2 pr-4">120+</td><td className="py-2">Yes</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">Apple Translate</td><td className="py-2 pr-4">Privacy / Apple users</td><td className="py-2 pr-4">20</td><td className="py-2">Yes</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">Papago</td><td className="py-2 pr-4">Korean / CJK languages</td><td className="py-2 pr-4">15</td><td className="py-2">Yes</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">Yandex Translate</td><td className="py-2 pr-4">Russian / Slavic</td><td className="py-2 pr-4">102</td><td className="py-2">Yes</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">iTranslate</td><td className="py-2 pr-4">Mobile / travel</td><td className="py-2 pr-4">100+</td><td className="py-2">Yes (limited)</td></tr>
-                <tr className="border-b border-white/5"><td className="py-2 pr-4">Reverso</td><td className="py-2 pr-4">Context / learning</td><td className="py-2 pr-4">18</td><td className="py-2">Yes</td></tr>
-                <tr><td className="py-2 pr-4">Funlingo</td><td className="py-2 pr-4">Video learning</td><td className="py-2 pr-4">All platform</td><td className="py-2">Yes (full)</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Google Translate</a></td><td className="py-2 pr-4">Broadest coverage</td><td className="py-2 pr-4">133+</td><td className="py-2">Yes</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">DeepL</a></td><td className="py-2 pr-4">European accuracy</td><td className="py-2 pr-4">33</td><td className="py-2">Yes (limited)</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Funlingo</a></td><td className="py-2 pr-4">Video learning</td><td className="py-2 pr-4">All platform</td><td className="py-2">Yes (full)</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">ChatGPT</a></td><td className="py-2 pr-4">Nuanced / creative</td><td className="py-2 pr-4">90+</td><td className="py-2">Yes (limited)</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Microsoft Translator</a></td><td className="py-2 pr-4">Microsoft ecosystem</td><td className="py-2 pr-4">120+</td><td className="py-2">Yes</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://apps.apple.com/us/app/translate/id1514844618" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Apple Translate</a></td><td className="py-2 pr-4">Privacy / Apple users</td><td className="py-2 pr-4">20</td><td className="py-2">Yes</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://papago.naver.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Papago</a></td><td className="py-2 pr-4">Korean / CJK languages</td><td className="py-2 pr-4">15</td><td className="py-2">Yes</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://translate.yandex.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Yandex Translate</a></td><td className="py-2 pr-4">Russian / Slavic</td><td className="py-2 pr-4">102</td><td className="py-2">Yes</td></tr>
+                <tr className="border-b border-white/5"><td className="py-2 pr-4"><a href="https://itranslate.com" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">iTranslate</a></td><td className="py-2 pr-4">Mobile / travel</td><td className="py-2 pr-4">100+</td><td className="py-2">Yes (limited)</td></tr>
+                <tr><td className="py-2 pr-4"><a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">Reverso</a></td><td className="py-2 pr-4">Context / learning</td><td className="py-2 pr-4">18</td><td className="py-2">Yes</td></tr>
               </tbody>
             </table>
           </div>
