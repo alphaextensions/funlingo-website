@@ -27,7 +27,18 @@ export default function LearnJapaneseWithCrunchyrollContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
-          <img src="/blog-images/learn-japanese-with-crunchyroll-hero.jpg" alt="Crunchyroll anime with Japanese and English dual subtitles for language learning" width={1600} height={893} fetchPriority="high" />
+          <video
+            className="w-full my-8 rounded-2xl border border-white/10 shadow-2xl shadow-purple-500/20"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/blog-images/learn-japanese-with-crunchyroll-hero.jpg"
+            aria-label="Anime scene with Japanese and English dual subtitles for language learning"
+          >
+            <source src="/blog-videos/learn-japanese-with-crunchyroll.mp4" type="video/mp4" />
+          </video>
 
           <KeyTakeaways items={["Crunchyroll is a goldmine of native Japanese audio, but it does not show Japanese subtitles or dual subtitles on its own.", "The free Funlingo Chrome extension adds Crunchyroll dual subtitles — Japanese plus your language — with click-to-translate on any word.", "Slice-of-life and school comedies are the best anime to learn Japanese because the speech is natural, slow, and everyday.", "A simple daily routine — watch, mine words, rewatch — turns each episode into real listening and vocabulary practice.", "Pair anime with structured grammar and kanji study so the immersion actually sticks."]} />
 
