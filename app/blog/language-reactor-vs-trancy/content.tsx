@@ -32,7 +32,7 @@ export default function LanguageReactorVsTrancyContent() {
             "Language Reactor ($6/mo) is cheaper, has a more generous free tier, supports 40+ languages, and offers Anki export and catalogue mode.",
             "Trancy ($8/mo) adds AI grammar analysis, pronunciation audio, web page translation, and wider platform support including Disney+.",
             "Neither tool supports Amazon Prime Video, and both lock key features behind paid plans.",
-            "Funlingo is a free alternative covering Netflix, YouTube, and Prime Video with a 4.92/5 Chrome Web Store rating.",
+            "Funlingo is a free alternative covering Netflix, YouTube, and Prime Video with a 4.8/5 Chrome Web Store rating.",
           ]} />
           <p className="lead text-xl leading-relaxed">If you learn languages by watching movies and TV shows, you have probably come across Language Reactor and Trancy. Both are popular Chrome extensions that add dual subtitles, vocabulary tools, and translation features to streaming platforms. But which one actually deserves a spot in your browser? We put them head to head across pricing, platform support, features, ease of use, and language coverage to help you decide.</p>
 
@@ -236,7 +236,7 @@ export default function LanguageReactorVsTrancyContent() {
                 <li key={i} className="flex items-start gap-3 text-sm"><Check className="w-4 h-4 text-green-400 mt-1 shrink-0" /><span className="text-[var(--text)]">{f}</span></li>
               ))}
             </ul>
-            <p className="text-[var(--text-dim)] mb-0">Funlingo covers all three major streaming platforms &mdash; including Prime Video, which neither Language Reactor nor Trancy supports. With a 4.92/5 rating on the Chrome Web Store, it is the highest-rated tool in the category.</p>
+            <p className="text-[var(--text-dim)] mb-0">Funlingo covers all three major streaming platforms &mdash; including Prime Video, which neither Language Reactor nor Trancy supports. With a 4.8/5 rating on the Chrome Web Store, it is the highest-rated tool in the category.</p>
           </div>
 
           <hr className="border-[var(--border)] my-10" />

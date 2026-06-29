@@ -129,7 +129,7 @@ export default function RoadmapContent() {
             <h2 style={{ fontSize: "clamp(26px,3vw,36px)", fontWeight: 800, margin: "0 0 8px", color: "var(--text)", letterSpacing: "-.01em" }}>{t("roadmap.ctaTitle")}</h2>
             <p style={{ fontSize: 17, color: "var(--text-dim)", margin: 0, fontWeight: 500 }}>{t("roadmap.ctaSub")}</p>
           </div>
-          <a href="/feedback" className="inline-flex items-center gap-[10px]" style={{ textDecoration: "none", whiteSpace: "nowrap", padding: "16px 28px", borderRadius: 15, background: "var(--grad)", color: "#fff", fontSize: 16, fontWeight: 800, boxShadow: "0 14px 30px -12px rgba(200,31,212,.7)" }}>{t("roadmap.ctaBtn")}</a>
+          <a href="/feedback" data-cta className="inline-flex items-center gap-[10px]" style={{ textDecoration: "none", whiteSpace: "nowrap", padding: "16px 28px", borderRadius: 14, background: "var(--grad)", color: "#fff", fontSize: 16, fontWeight: 800, boxShadow: "0 14px 30px -12px rgba(200,31,212,.7)" }}>{t("roadmap.ctaBtn")}</a>
         </div>
       </section>
 

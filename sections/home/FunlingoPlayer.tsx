@@ -533,6 +533,7 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
               <div style={{ fontSize: 15, fontWeight: 700, color: "#1B0F26", marginBottom: 10 }}>{hover.w.meaning}</div>
               <button
                 onClick={() => speak(hover.w.text, data.bcp)}
+                data-cta
                 className="w-full flex items-center gap-2"
                 style={{ padding: "8px 11px", border: "none", cursor: "pointer", borderRadius: 11, background: "#FBEEF8", marginBottom: 11, fontFamily: "'Poppins',sans-serif" }}
               >
@@ -550,6 +551,7 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
                 return (
                   <button
                     onClick={() => toggleSave({ key: hover.key, text: hover.w.text, meaning: hover.w.meaning! })}
+                    data-cta
                     className="w-full"
                     style={{
                       border: "none", cursor: "pointer", borderRadius: 12, padding: "10px 12px",

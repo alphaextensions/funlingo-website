@@ -52,7 +52,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
                 "Per-word pronunciation with audio playback and slow mode",
                 "AI-powered contextual explanations and grammar notes",
                 "Save words to vocabulary list for later review",
-                "Rated 4.92/5 stars on the Chrome Web Store",
+                "Rated 4.8/5 stars on the Chrome Web Store",
               ].map((f, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm"><Check className="w-4 h-4 text-green-400 mt-1 shrink-0" /><span className="text-[var(--text)]">{f}</span></li>
               ))}

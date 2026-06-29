@@ -110,7 +110,7 @@ const faqs = [
   {
     question: "Is Funlingo a safe Chrome extension?",
     answer:
-      "Yes. Funlingo is published on the official Chrome Web Store, where it is reviewed by Google, and is rated 4.92 out of 5 stars. It runs locally in your browser to display subtitles and does not require you to create an account to start learning.",
+      "Yes. Funlingo is published on the official Chrome Web Store, where it is reviewed by Google, and is rated 4.8 out of 5 stars. It runs locally in your browser to display subtitles and does not require you to create an account to start learning.",
   },
 ];
 
@@ -127,7 +127,7 @@ const ChromeExtensionContent = (): React.JSX.Element => {
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center gap-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-1.5 text-sm text-[var(--text-dim)]">
             <Sparkles className="w-4 h-4 text-[#C81FD4]" />
-            Free Chrome extension · Rated 4.92/5
+            Free Chrome extension · Rated 4.8/5
           </span>
 
           <h1 className="text-[var(--text)] font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight">
@@ -303,7 +303,7 @@ const ChromeExtensionContent = (): React.JSX.Element => {
               </Button>
             </a>
             <p className="text-white/70 text-sm">
-              Free forever · Rated 4.92/5 on the Chrome Web Store
+              Free forever · Rated 4.8/5 on the Chrome Web Store
             </p>
           </div>
         </div>

@@ -27,7 +27,7 @@ export const en = {
   hero: {
     title: "Dual Subtitles for Netflix, YouTube, Prime & 5 more",
     subtitle:
-      "Turn Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera into an immersive language lesson. Research shows learners who use dual subtitles retain up to 50% more vocabulary than traditional methods. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.92/5 stars on the Chrome Web Store.",
+      "Turn Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera into an immersive language lesson. Research shows learners who use dual subtitles retain up to 50% more vocabulary than traditional methods. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.8/5 stars on the Chrome Web Store.",
     ctaPrimary: "Add to Chrome - It's Free",
     ctaSecondary: "How it Works",
     platformsHeading: "Works on your favorite platforms",
@@ -192,7 +192,7 @@ export const en = {
     stat1Label: "languages supported",
     stat2Big: "8",
     stat2Label: "platforms, one extension",
-    stat3Big: "4.9★",
+    stat3Big: "4.8★",
     stat3Label: "on the Chrome Web Store",
     stat4Big: "$0",
     stat4Label: "forever",

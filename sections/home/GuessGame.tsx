@@ -310,7 +310,7 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
                     className="flex items-center gap-[10px] text-left"
                     style={{
                       padding: "18px 20px",
-                      borderRadius: 16,
+                      borderRadius: 14,
                       background: bg,
                       border: bd,
                       color: col,

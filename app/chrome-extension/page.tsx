@@ -43,7 +43,7 @@ const softwareSchema = {
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.92",
+    "ratingValue": "4.8",
     "ratingCount": "12",
     "bestRating": "5",
     "worstRating": "1",
@@ -91,7 +91,7 @@ const faqSchema = {
       "name": "Is Funlingo a safe Chrome extension?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Funlingo is published on the official Chrome Web Store, where it is reviewed by Google, and is rated 4.92 out of 5 stars. It runs locally in your browser to display subtitles and does not require you to create an account to start learning.",
+        "text": "Yes. Funlingo is published on the official Chrome Web Store, where it is reviewed by Google, and is rated 4.8 out of 5 stars. It runs locally in your browser to display subtitles and does not require you to create an account to start learning.",
       },
     },
   ],

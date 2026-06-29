@@ -28,7 +28,7 @@ export const FooterSection = (): React.JSX.Element => {
   const product = [
     { label: t("nav.home"), href: navHref("/", locale) },
     { label: t("nav.roadmap"), href: navHref("/roadmap", locale) },
-    { label: t("footer.compare"), href: "/compare" },
+    { label: t("footer.compare"), href: `${navHref("/", locale)}#compare` },
   ];
   const company = [
     { label: t("nav.about"), href: navHref("/about", locale) },

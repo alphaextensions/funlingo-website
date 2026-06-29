@@ -38,7 +38,7 @@ const schemaData = {
   "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Prime Video support, Disney+ Hotstar support, Apple TV support, Crunchyroll support, Udemy support, Coursera support, Vocabulary builder, 100+ languages, Language learning tools",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.92",
+    "ratingValue": "4.8",
     "ratingCount": "12",
     "bestRating": "5",
     "worstRating": "1"
@@ -102,7 +102,7 @@ const faqSchema = {
       "name": "How is Funlingo different from Trancy and Language Reactor?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Funlingo differentiates itself in three key ways. First, it is completely free — no premium tier or paywall for any feature. Second, it offers unique UX features like inline bracketed native meanings for difficult words and a multi-translation selector (choose 1, 2, 3, or all translations per word). Third, it includes per-word pronunciation with spelled-out phonetic cues and audio playback, which most competitors either lack or lock behind paid plans. Funlingo is rated 4.92/5 stars on the Chrome Web Store."
+        "text": "Funlingo differentiates itself in three key ways. First, it is completely free — no premium tier or paywall for any feature. Second, it offers unique UX features like inline bracketed native meanings for difficult words and a multi-translation selector (choose 1, 2, 3, or all translations per word). Third, it includes per-word pronunciation with spelled-out phonetic cues and audio playback, which most competitors either lack or lock behind paid plans. Funlingo is rated 4.8/5 stars on the Chrome Web Store."
       }
     }
   ]

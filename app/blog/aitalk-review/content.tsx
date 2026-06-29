@@ -282,7 +282,7 @@ export default function AitalkReviewContent() {
                 <li key={i} className="flex items-start gap-3 text-sm"><Check className="w-4 h-4 text-green-400 mt-1 shrink-0" /><span className="text-[var(--text)]">{f}</span></li>
               ))}
             </ul>
-            <p className="text-[var(--text-dim)] mb-0">Funlingo supports all three major streaming platforms &mdash; including Amazon Prime Video, which neither Trancy nor AiTalk supports. With a 4.92/5 rating on the Chrome Web Store, it is the highest-rated dual subtitle extension available.</p>
+            <p className="text-[var(--text-dim)] mb-0">Funlingo supports all three major streaming platforms &mdash; including Amazon Prime Video, which neither Trancy nor AiTalk supports. With a 4.8/5 rating on the Chrome Web Store, it is the highest-rated dual subtitle extension available.</p>
           </div>
 
           <hr className="border-[var(--border)] my-12" />

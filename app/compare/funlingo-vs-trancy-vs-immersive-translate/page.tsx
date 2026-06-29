@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Funlingo vs Trancy vs Immersive Translate - Best Dual Subtitle Tool Comparison", description: "Detailed feature comparison of Funlingo, Trancy, and Immersive Translate.", url: "/compare/funlingo-vs-trancy-vs-immersive-translate" },
 };
 
-const schemaData = { "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Funlingo", "applicationCategory": "EducationalApplication", "operatingSystem": "Chrome", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "description": "Compare Funlingo vs Trancy vs Immersive Translate. Funlingo offers free dual subtitles and AI learning tools for Netflix and YouTube.", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.92", "ratingCount": "12" } };
+const schemaData = { "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Funlingo", "applicationCategory": "EducationalApplication", "operatingSystem": "Chrome", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "description": "Compare Funlingo vs Trancy vs Immersive Translate. Funlingo offers free dual subtitles and AI learning tools for Netflix and YouTube.", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "12" } };
 
 export default function Page() {
   return (

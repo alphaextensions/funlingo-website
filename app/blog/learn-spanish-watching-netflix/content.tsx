@@ -43,7 +43,7 @@ export default function LearnSpanishNetflixContent() {
             stats={[
               { value: "50%", label: "more vocabulary retained" },
               { value: "100+", label: "languages supported" },
-              { value: "4.92★", label: "Chrome Web Store rating" },
+              { value: "4.8★", label: "Chrome Web Store rating" },
               { value: "8", label: "streaming platforms" },
             ]}
           />

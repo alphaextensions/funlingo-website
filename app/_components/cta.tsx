@@ -71,7 +71,7 @@ export function ChromeCTA({
   const variants: Record<Variant, React.CSSProperties> = {
     gradient: {
       padding: "17px 30px",
-      borderRadius: 16,
+      borderRadius: 14,
       background: "var(--grad)",
       color: "#fff",
       fontSize: 17,
@@ -80,7 +80,7 @@ export function ChromeCTA({
     },
     white: {
       padding: "18px 34px",
-      borderRadius: 16,
+      borderRadius: 14,
       background: "#fff",
       color: "#1B0F26",
       fontSize: 18,
@@ -103,6 +103,7 @@ export function ChromeCTA({
       href={STORE_URL}
       target="_blank"
       rel="noopener noreferrer"
+      data-cta
       className={className}
       style={{ ...base, ...variants[variant], ...style }}
     >

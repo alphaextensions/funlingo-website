@@ -19,7 +19,7 @@
   },
   "hero": {
     "title": "为 Netflix、YouTube、Prime 及另外 5 个平台提供双语字幕",
-    "subtitle": "把 Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Udemy 和 Coursera 变成沉浸式的语言课堂。研究表明，使用双语字幕的学习者比传统方法多记住高达 50% 的词汇。Funlingo 支持 100+ 种语言的双语字幕、即时 AI 释义和词汇积累——是付费扩展的完全免费替代品。在 Chrome Web Store 上获得 4.92/5 星评分。",
+    "subtitle": "把 Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Udemy 和 Coursera 变成沉浸式的语言课堂。研究表明，使用双语字幕的学习者比传统方法多记住高达 50% 的词汇。Funlingo 支持 100+ 种语言的双语字幕、即时 AI 释义和词汇积累——是付费扩展的完全免费替代品。在 Chrome Web Store 上获得 4.8/5 星评分。",
     "ctaPrimary": "添加到 Chrome - 免费",
     "ctaSecondary": "工作原理",
     "platformsHeading": "支持你喜爱的平台"
@@ -175,7 +175,7 @@
     "stat1Label": "支持的语言",
     "stat2Big": "8",
     "stat2Label": "个平台，一个扩展",
-    "stat3Big": "4.9★",
+    "stat3Big": "4.8★",
     "stat3Label": "Chrome Web Store 评分",
     "stat4Big": "$0",
     "stat4Label": "永久",

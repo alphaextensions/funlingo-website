@@ -162,15 +162,22 @@ export default function HomeContent() {
             <div className="flex items-center gap-[14px]" style={{ marginTop: 22 }}>
               <div className="flex">
                 {[
-                  { l: "M", g: "linear-gradient(135deg,#BC22D6,#E0319E)" },
-                  { l: "A", g: "linear-gradient(135deg,#7A3FF2,#C81FD4)" },
-                  { l: "D", g: "linear-gradient(135deg,#E0319E,#FF7A59)" },
-                ].map((a, i) => (
-                  <span key={i} style={{ width: 34, height: 34, borderRadius: "50%", background: a.g, border: "2px solid var(--bg)", marginLeft: i ? -10 : 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: 12, fontWeight: 800 }}>{a.l}</span>
+                  "https://i.pravatar.cc/96?img=42",
+                  "https://i.pravatar.cc/96?img=59",
+                  "https://i.pravatar.cc/96?img=8",
+                ].map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt=""
+                    loading="lazy"
+                    className="object-cover"
+                    style={{ width: 34, height: 34, borderRadius: "50%", border: "2px solid var(--bg)", marginLeft: i ? -10 : 0 }}
+                  />
                 ))}
               </div>
               <div style={{ fontSize: 14, fontWeight: 600, color: "var(--text-dim)" }}>
-                <span style={{ color: "#F5A623", fontWeight: 800 }}>★ 4.9</span> {t("home.ratingTail")}
+                <span style={{ color: "#F5A623", fontWeight: 800 }}>★ 4.8</span> {t("home.ratingTail")}
               </div>
             </div>
           </div>
@@ -224,7 +231,7 @@ export default function HomeContent() {
       </section>
 
       {/* ============ COMPARISON ============ */}
-      <section style={{ background: "var(--bg2)", borderTop: "1px solid var(--border)" }}>
+      <section id="compare" style={{ background: "var(--bg2)", borderTop: "1px solid var(--border)", scrollMarginTop: "90px" }}>
         <div className="max-w-[1120px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-[104px]">
           <div className="text-center" style={{ marginBottom: 56 }}>
             <div style={eyebrow}>{t("home.cmpEyebrow")}</div>
