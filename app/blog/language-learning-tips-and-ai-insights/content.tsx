@@ -10,14 +10,14 @@ import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics"
 
 export default function BestAIToolsContent() {
   return (
-    <div className="flex flex-col min-h-screen bg-black">
+    <div className="flex flex-col min-h-screen bg-[var(--bg)]">
       <Navbar currentPage="/blog" />
       <section className="relative w-full py-16 lg:py-24 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-black to-black z-0 pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-[var(--bg)] to-[var(--bg)] z-0 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-6 text-center lg:text-left">
-          <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(198,66,252,0.1)] text-[#C642FC] border-[#C642FC]/20 px-3 py-1">Blog Post</Badge>
-          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Funlingo: AI-native, low-friction learning</h1>
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
+          <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(200,31,212,0.1)] text-[#C81FD4] border-[#C81FD4]/20 px-3 py-1">Blog Post</Badge>
+          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text)] leading-tight">Funlingo: AI-native, low-friction learning</h1>
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-[var(--text-dim)] font-medium">
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> January 28, 2026</div>
             <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 4 min read</div>
@@ -25,47 +25,47 @@ export default function BestAIToolsContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Funlingo overlays dual subtitles so you see the learner and native language together in the player.", "A unique per-word selector lets you choose 1, 2, 3, or All translations to control depth and avoid overload.", "Click-for-context AI explanations add quick grammar and usage notes for tricky phrases.", "Pronunciation guides include phonetic transcription and slow playback to break down syllables.", "Save-to-vocab pulls phrases straight from the overlay into a spaced-review deck for durable learning."]} />
-          <p className="lead text-xl leading-relaxed text-gray-200">Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.</p>
-          <hr className="border-white/10 my-12" />
-          <h3 className="text-2xl font-bold text-white mb-6">Feature breakdown</h3>
-          <div className="bg-white/5 rounded-2xl p-8 border border-white/10 mb-12">
+          <p className="lead text-xl leading-relaxed text-[var(--text)]">Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.</p>
+          <hr className="border-[var(--border)] my-12" />
+          <h3 className="text-2xl font-bold text-[var(--text)] mb-6">Feature breakdown</h3>
+          <div className="bg-[var(--surface)] rounded-2xl p-8 border border-[var(--border)] mb-12">
             <ul className="space-y-6 list-none pl-0 m-0">
-              <li className="flex gap-4"><div className="mt-1 text-[#C642FC] shrink-0"><Globe className="w-5 h-5" /></div><div><strong className="text-white">Interactive Dual Subtitles (in-player)</strong> — <span className="text-gray-400">view learner + native subtitles together.</span></div></li>
-              <li className="flex gap-4"><div className="mt-1 text-[#C642FC] shrink-0"><MousePointerClick className="w-5 h-5" /></div><div><strong className="text-white">Word-Level Multi-Translation Selector (choose depth)</strong> — <span className="text-gray-400">pick how many meanings to show per word to avoid overload or to get deeper nuance. (Unique Funlingo UX)</span></div></li>
-              <li className="flex gap-4"><div className="mt-1 text-[#C642FC] shrink-0"><Brain className="w-5 h-5" /></div><div><strong className="text-white">Click-for-Context AI Explanations</strong> — <span className="text-gray-400">brief grammar and usage notes for phrases.</span></div></li>
-              <li className="flex gap-4"><div className="mt-1 text-[#C642FC] shrink-0"><Volume2 className="w-5 h-5" /></div><div><strong className="text-white">Pronunciation Guides with phonetic transcription & slow playback</strong> — <span className="text-gray-400">hear native speech and break down syllables.</span></div></li>
-              <li className="flex gap-4"><div className="mt-1 text-[#C642FC] shrink-0"><Save className="w-5 h-5" /></div><div><strong className="text-white">Save-to-Vocab and Review Deck</strong> — <span className="text-gray-400">immediate saving from overlay with spaced review.</span></div></li>
+              <li className="flex gap-4"><div className="mt-1 text-[#C81FD4] shrink-0"><Globe className="w-5 h-5" /></div><div><strong className="text-[var(--text)]">Interactive Dual Subtitles (in-player)</strong> — <span className="text-[var(--text-dim)]">view learner + native subtitles together.</span></div></li>
+              <li className="flex gap-4"><div className="mt-1 text-[#C81FD4] shrink-0"><MousePointerClick className="w-5 h-5" /></div><div><strong className="text-[var(--text)]">Word-Level Multi-Translation Selector (choose depth)</strong> — <span className="text-[var(--text-dim)]">pick how many meanings to show per word to avoid overload or to get deeper nuance. (Unique Funlingo UX)</span></div></li>
+              <li className="flex gap-4"><div className="mt-1 text-[#C81FD4] shrink-0"><Brain className="w-5 h-5" /></div><div><strong className="text-[var(--text)]">Click-for-Context AI Explanations</strong> — <span className="text-[var(--text-dim)]">brief grammar and usage notes for phrases.</span></div></li>
+              <li className="flex gap-4"><div className="mt-1 text-[#C81FD4] shrink-0"><Volume2 className="w-5 h-5" /></div><div><strong className="text-[var(--text)]">Pronunciation Guides with phonetic transcription & slow playback</strong> — <span className="text-[var(--text-dim)]">hear native speech and break down syllables.</span></div></li>
+              <li className="flex gap-4"><div className="mt-1 text-[#C81FD4] shrink-0"><Save className="w-5 h-5" /></div><div><strong className="text-[var(--text)]">Save-to-Vocab and Review Deck</strong> — <span className="text-[var(--text-dim)]">immediate saving from overlay with spaced review.</span></div></li>
             </ul>
           </div>
           <DualSubtitleDemo targetLang="Spanish" target="No puedo creer que estés aquí." highlight="creer" native="I can't believe you're here." />
 
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">How it works (step-by-step user flow)</h2>
-          <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10 mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-8">How it works (step-by-step user flow)</h2>
+          <div className="space-y-6 relative before:absolute before:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-[var(--surface-2)] mb-16">
             {["Install the Funlingo browser extension.", "Play a video or open an article with dual subtitles.", "Hover or click any word in the learning subtitle. A small overlay appears with chips: [1][2][3][All].", "Select the number of translations to view. See phonetics, a short context sentence, and Play for native audio.", "Tap Save to Vocab to add the phrase to your review deck."].map((step, i) => (
-              <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C642FC]/50 flex items-center justify-center text-[#C642FC] font-bold shrink-0 z-10">{i + 1}</div><div className="pt-2 text-gray-300">{step}</div></div>
+              <div key={i} className="flex gap-6 relative"><div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#C81FD4]/50 flex items-center justify-center text-[#C81FD4] font-bold shrink-0 z-10">{i + 1}</div><div className="pt-2 text-[var(--text-dim)]">{step}</div></div>
             ))}
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Real use cases (users & intent)</h2>
-          <ul className="space-y-4 list-disc pl-5 text-gray-300 mb-16">
-            <li><strong className="text-white">Students:</strong> speed up comprehension for lectures and foreign-language media.</li>
-            <li><strong className="text-white">Travelers & professionals:</strong> learn targeted vocabulary from local shows and webinars.</li>
-            <li><strong className="text-white">Teachers:</strong> create classroom exercises from real media.</li>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Real use cases (users & intent)</h2>
+          <ul className="space-y-4 list-disc pl-5 text-[var(--text-dim)] mb-16">
+            <li><strong className="text-[var(--text)]">Students:</strong> speed up comprehension for lectures and foreign-language media.</li>
+            <li><strong className="text-[var(--text)]">Travelers & professionals:</strong> learn targeted vocabulary from local shows and webinars.</li>
+            <li><strong className="text-[var(--text)]">Teachers:</strong> create classroom exercises from real media.</li>
           </ul>
-          <div className="bg-gradient-to-br from-[#C642FC]/20 to-transparent p-8 rounded-xl border border-[#C642FC]/20">
-            <h2 className="text-2xl font-bold text-white mb-6 mt-0">Comparison summary: Why Funlingo stands out</h2>
+          <div className="bg-gradient-to-br from-[#C81FD4]/20 to-transparent p-8 rounded-xl border border-[#C81FD4]/20">
+            <h2 className="text-2xl font-bold text-[var(--text)] mb-6 mt-0">Comparison summary: Why Funlingo stands out</h2>
             <ul className="space-y-4 list-none pl-0 mb-0">
-              <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-gray-300"><strong className="text-white">Unique per-word multi-translation selector</strong> eliminates guesswork and minimizes re-search time.</span></li>
-              <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-gray-300"><strong className="text-white">Integrated pronunciation & save flows</strong> convert viewing time to durable memory.</span></li>
-              <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-gray-300"><strong className="text-white">Low friction, in-player overlays</strong> preserve immersion and boost daily usage — key to consistent learning.</span></li>
+              <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-[var(--text-dim)]"><strong className="text-[var(--text)]">Unique per-word multi-translation selector</strong> eliminates guesswork and minimizes re-search time.</span></li>
+              <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-[var(--text-dim)]"><strong className="text-[var(--text)]">Integrated pronunciation & save flows</strong> convert viewing time to durable memory.</span></li>
+              <li className="flex gap-3"><Check className="w-5 h-5 text-green-400 mt-1 shrink-0" /><span className="text-[var(--text-dim)]"><strong className="text-[var(--text)]">Low friction, in-player overlays</strong> preserve immersion and boost daily usage — key to consistent learning.</span></li>
             </ul>
           </div>
-          <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
-            <h2 className="text-3xl font-bold text-white mb-4">Ready to try Funlingo?</h2>
-            <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">Turn your next movie night into a language breakthrough.</p>
+          <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
+            <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Ready to try Funlingo?</h2>
+            <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Turn your next movie night into a language breakthrough.</p>
             <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
         </div>

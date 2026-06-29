@@ -3,107 +3,149 @@
 import * as React from "react";
 import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Calendar, User, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { posts, accBadge, accBar } from "./posts";
 
-
 export default function BlogContent() {
-
   const featured = posts[0];
   const rest = posts.slice(1);
 
   return (
-    <div className="flex flex-col min-h-screen bg-black">
+    <div className="fnl-root flex flex-col min-h-screen overflow-x-hidden">
       <Navbar currentPage="/blog" />
 
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="flex flex-col gap-4 mb-12 text-center">
-          <Badge className="w-fit mx-auto bg-[rgba(198,66,252,0.1)] text-[#C642FC] border-[#C642FC]/20 px-3 py-1">
+      <main className="flex-1 w-full max-w-[1240px] mx-auto px-5 sm:px-[34px] py-16 sm:py-24">
+        {/* Header */}
+        <div className="text-center max-w-[680px] mx-auto mb-14">
+          <div
+            style={{
+              fontSize: 13,
+              fontWeight: 900,
+              letterSpacing: ".12em",
+              textTransform: "uppercase",
+              color: "var(--pink)",
+              marginBottom: 14,
+            }}
+          >
             Our Blog
-          </Badge>
-          <h1 className="font-heading-h1 text-4xl sm:text-5xl font-bold text-white">
-            Latest Insights & Guides
+          </div>
+          <h1
+            style={{
+              fontSize: "clamp(40px,5vw,64px)",
+              fontWeight: 800,
+              margin: 0,
+              letterSpacing: "-.02em",
+              lineHeight: 1.04,
+              color: "var(--text)",
+            }}
+          >
+            Latest insights &amp;{" "}
+            <span
+              style={{
+                background: "var(--grad)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                color: "transparent",
+              }}
+            >
+              guides
+            </span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Discover tips, tricks, and in-depth comparisons to supercharge your language learning journey.
+          <p
+            className="mx-auto"
+            style={{
+              fontSize: 20,
+              lineHeight: 1.55,
+              color: "var(--text-dim)",
+              margin: "20px auto 0",
+              maxWidth: 560,
+              fontWeight: 500,
+            }}
+          >
+            Tips, tricks, and in-depth comparisons to supercharge your language
+            learning journey.
           </p>
         </div>
 
         {/* Featured (latest) post */}
         {featured && (
           <Link href={featured.slug} className="no-underline group block mb-12">
-            <Card className="relative overflow-hidden bg-white/5 border-white/10 hover:border-[#C642FC]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#C642FC]/20">
+            <div
+              className="relative overflow-hidden rounded-[28px] border transition-all duration-300 group-hover:-translate-y-1"
+              style={{ background: "var(--surface)", borderColor: "var(--border)" }}
+            >
               <div className="grid lg:grid-cols-2">
-                <div className="relative min-h-[200px] lg:min-h-[320px] overflow-hidden bg-[radial-gradient(130%_130%_at_0%_0%,#7A1CAC_0%,#1a0a28_55%,#000000_100%)] flex items-center justify-center p-8">
-                  <div className="absolute -inset-16 bg-[radial-gradient(circle_at_30%_30%,rgba(198,66,252,0.45),transparent_60%)] blur-2xl group-hover:scale-110 transition-transform duration-700" />
-                  <span className="relative font-heading-h3 text-3xl sm:text-4xl lg:text-5xl font-bold text-white/90 text-center leading-tight tracking-tight">
+                <div className="relative min-h-[200px] lg:min-h-[320px] overflow-hidden flex items-center justify-center p-8" style={{ background: "var(--grad)" }}>
+                  <div className="absolute -inset-16" style={{ background: "radial-gradient(circle at 30% 30%, rgba(255,255,255,.25), transparent 60%)" }} />
+                  <span className="relative text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white/95 text-center leading-tight tracking-tight">
                     {featured.category}
                   </span>
-                  <Badge className="absolute top-4 left-4 bg-[#C642FC] text-white border-0 shadow-lg shadow-purple-500/30">
+                  <span
+                    className="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-xs font-extrabold"
+                    style={{ background: "rgba(0,0,0,.25)" }}
+                  >
                     ★ Latest
-                  </Badge>
+                  </span>
                 </div>
-                <CardContent className="p-6 sm:p-10 flex flex-col justify-center gap-4">
-                  <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500">
+                <div className="p-6 sm:p-10 flex flex-col justify-center gap-4">
+                  <div className="flex flex-wrap items-center gap-3 text-xs" style={{ color: "var(--text-dim2)" }}>
                     <span className={`px-2.5 py-0.5 rounded-full border ${accBadge(featured.category)}`}>
                       {featured.category}
                     </span>
                     <span className="flex items-center gap-1"><Calendar className="w-3 h-3" />{featured.date}</span>
                     <span className="flex items-center gap-1"><User className="w-3 h-3" />{featured.author}</span>
                   </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-[#C642FC] transition-colors leading-tight">
+                  <h2 className="text-2xl sm:text-3xl font-bold leading-tight transition-colors" style={{ color: "var(--text)" }}>
                     {featured.title}
                   </h2>
-                  <p className="text-gray-400 line-clamp-3 sm:line-clamp-4">{featured.excerpt}</p>
-                  <div className="flex items-center gap-2 text-[#C642FC] font-semibold mt-1">
+                  <p className="line-clamp-3 sm:line-clamp-4" style={{ color: "var(--text-dim)" }}>{featured.excerpt}</p>
+                  <div className="flex items-center gap-2 font-semibold mt-1" style={{ color: "var(--pink)" }}>
                     Read article <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
-                </CardContent>
+                </div>
               </div>
-            </Card>
+            </div>
           </Link>
         )}
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* Grid */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {rest.map((post) => (
             <Link key={post.id} href={post.slug} className="no-underline">
-              <Card
-                className="relative bg-white/5 border-white/10 overflow-hidden hover:border-[#C642FC]/50 transition-all duration-300 group cursor-pointer hover:shadow-xl hover:shadow-[#C642FC]/10 hover:-translate-y-1 h-full"
+              <div
+                className="relative h-full overflow-hidden rounded-[22px] border cursor-pointer group transition-all duration-300 hover:-translate-y-1"
+                style={{ background: "var(--surface)", borderColor: "var(--border)" }}
               >
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${accBar(post.category)} opacity-60 group-hover:opacity-100 transition-opacity duration-300`} />
-                <CardHeader>
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${accBar(post.category)} opacity-70 group-hover:opacity-100 transition-opacity`} />
+                <div className="p-6 flex flex-col h-full">
                   <div className="flex items-center justify-between mb-4">
                     <span className={`px-2.5 py-0.5 rounded-full border text-xs font-medium ${accBadge(post.category)}`}>
                       {post.category}
                     </span>
-                    <div className="flex items-center gap-2 text-xs text-gray-500">
+                    <div className="flex items-center gap-2 text-xs" style={{ color: "var(--text-dim2)" }}>
                       <Calendar className="w-3 h-3" />
                       {post.date}
                     </div>
                   </div>
-                  <CardTitle className="text-xl text-white group-hover:text-[#C642FC] transition-colors leading-tight">
+                  <h3 className="text-xl font-bold leading-tight mb-3" style={{ color: "var(--text)" }}>
                     {post.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-400 line-clamp-3 mb-6">
+                  </h3>
+                  <p className="line-clamp-3 mb-6" style={{ color: "var(--text-dim)" }}>
                     {post.excerpt}
-                  </CardDescription>
-                  <div className="flex items-center justify-between pt-4 border-t border-white/5">
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                  </p>
+                  <div className="flex items-center justify-between pt-4 mt-auto border-t" style={{ borderColor: "var(--border)" }}>
+                    <div className="flex items-center gap-2 text-sm" style={{ color: "var(--text-dim2)" }}>
                       <User className="w-3 h-3" />
                       {post.author}
                     </div>
-                    <Button variant="link" className="text-[#C642FC] p-0 h-auto font-semibold group-hover:translate-x-1 transition-transform">
-                      Read More <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
+                    <span className="inline-flex items-center gap-1 font-semibold group-hover:translate-x-1 transition-transform" style={{ color: "var(--pink)" }}>
+                      Read more <ArrowRight className="w-4 h-4" />
+                    </span>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </Link>
           ))}
         </div>

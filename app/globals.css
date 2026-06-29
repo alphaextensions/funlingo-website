@@ -6,6 +6,108 @@
   }
 }
 
+/* ============================================================
+   Funlingo 2026 design system — themable tokens (dark default,
+   light via [data-theme="light"] on <html>). Used by the shared
+   navbar/footer and the redesigned Home / Roadmap / About pages.
+   Names are intentionally distinct from the legacy tokens above.
+   ============================================================ */
+:root {
+  --bg: #0e0816;
+  --bg2: #140b20;
+  --surface: #1a1026;
+  --surface-2: #221531;
+  --text: #f6effb;
+  --text-dim: rgba(246, 239, 251, 0.64);
+  --text-dim2: rgba(246, 239, 251, 0.4);
+  --border: rgba(255, 255, 255, 0.08);
+  --chip: rgba(255, 255, 255, 0.06);
+  --pink: #ec4db0;
+  --magenta: #c81fd4;
+  --pink-soft: rgba(236, 77, 176, 0.14);
+  --grad: linear-gradient(135deg, #bc22d6 0%, #9a1c8e 52%, #e0319e 100%);
+  --nav: rgba(14, 8, 22, 0.78);
+}
+
+:root[data-theme="light"] {
+  --bg: #fbf4ff;
+  --bg2: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #fbf2fe;
+  --text: #1b0f26;
+  --text-dim: #675579;
+  --text-dim2: #9a8aa6;
+  --border: rgba(27, 15, 38, 0.09);
+  --chip: #f4eafb;
+  --pink-soft: rgba(236, 77, 176, 0.1);
+  --nav: rgba(251, 244, 255, 0.82);
+}
+
+html {
+  background: var(--bg);
+}
+
+/* Page-level wrapper for the redesigned pages. */
+.fnl-root {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+.fnl-root * {
+  box-sizing: border-box;
+}
+
+@keyframes fnl-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--r, 0deg));
+  }
+  50% {
+    transform: translateY(-14px) rotate(var(--r, 0deg));
+  }
+}
+@keyframes fnl-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes fnl-mq {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes fnl-mq2 {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes gg-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-7px);
+  }
+  40%,
+  80% {
+    transform: translateX(7px);
+  }
+}
+
 :root {
   --backgroundbackdrop: #000000;
   --black: rgba(14, 16, 15, 1);
@@ -700,4 +802,68 @@ html {
   .prose {
     animation: none;
   }
+}
+
+/* ============================================================
+   Theme-aware overrides for the blog reading experience.
+   The rules above were authored for the old dark-only blog; these
+   re-point their colors at the 2026 design tokens so articles read
+   correctly in BOTH light and dark themes, with the magenta accent.
+   Appended last so they win on cascade order.
+   ============================================================ */
+.prose .lead {
+  color: var(--text) !important;
+}
+.prose strong {
+  color: var(--text);
+}
+.prose code {
+  background: var(--surface-2);
+  border-color: var(--border);
+  color: var(--pink);
+}
+.prose img {
+  border-color: var(--border);
+}
+.prose blockquote {
+  background: var(--pink-soft);
+  border-color: rgba(200, 31, 212, 0.25);
+  color: var(--text);
+}
+.prose table {
+  border-color: var(--border);
+}
+.prose thead th {
+  background: var(--pink-soft);
+  color: var(--text);
+}
+.prose th,
+.prose td {
+  border-bottom-color: var(--border);
+}
+.prose tbody tr:hover td {
+  background: var(--surface-2);
+}
+/* Gradient accents → new magenta gradient */
+.prose > p:first-child::first-letter,
+.prose hr::after,
+.prose > ul:not(.list-none) > li::before,
+.prose > ol:not(.list-none) > li::before {
+  background: linear-gradient(135deg, #c81fd4, #9a1c8e);
+}
+.prose > ol:not(.list-none) > li::before {
+  color: #fff;
+}
+.prose h2::before {
+  background: linear-gradient(90deg, #c81fd4, #9a1c8e);
+}
+.prose a {
+  background-image: linear-gradient(90deg, #c81fd4, #9a1c8e);
+}
+.prose a:focus-visible {
+  outline-color: var(--pink);
+}
+.reading-progress {
+  background: linear-gradient(90deg, #9a1c8e, #c81fd4 60%, #ec4db0);
+  box-shadow: 0 0 12px rgba(200, 31, 212, 0.7);
 }

@@ -21,10 +21,27 @@ export const metadata: Metadata = {
   },
 };
 
+// Runs before paint to apply the saved theme, preventing a flash of the wrong
+// theme. Defaults to dark when nothing is stored.
+const themeInit = `(function(){try{var t=localStorage.getItem('funlingo-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
         <Analytics />
         <HtmlLangSetter />
         {children}
