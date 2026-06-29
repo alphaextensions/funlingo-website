@@ -55,7 +55,7 @@ export const FooterSection = (): React.JSX.Element => {
           <img
             src={logo}
             alt="Funlingo"
-            className="h-10 w-auto block mb-4"
+            className="h-12 w-auto block mb-4"
           />
           <p
             className="text-[15px] leading-[1.55] font-medium m-0 max-w-[270px]"

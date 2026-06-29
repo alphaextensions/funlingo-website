@@ -9,6 +9,10 @@ import { posts, accBadge } from "./posts";
 
 const PAGE = 6;
 
+// Posts ship a hero image at /blog-images/<slug>-hero.jpg.
+const heroImg = (slug: string) =>
+  `/blog-images/${slug.split("/").filter(Boolean).pop()}-hero.jpg`;
+
 export default function BlogContent() {
   const featured = posts[0];
   const rest = posts.slice(1);
@@ -80,14 +84,18 @@ export default function BlogContent() {
               style={{ background: "var(--surface)", borderColor: "var(--border)" }}
             >
               <div className="grid lg:grid-cols-2">
-                <div className="relative min-h-[200px] lg:min-h-[320px] overflow-hidden flex items-center justify-center p-8" style={{ background: "var(--grad)" }}>
-                  <div className="absolute -inset-16" style={{ background: "radial-gradient(circle at 30% 30%, rgba(255,255,255,.25), transparent 60%)" }} />
-                  <span className="relative text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white/95 text-center leading-tight tracking-tight">
-                    {featured.category}
-                  </span>
+                <div className="relative min-h-[220px] lg:min-h-[340px] overflow-hidden" style={{ background: "var(--grad)" }}>
+                  <img
+                    src={heroImg(featured.slug)}
+                    alt={featured.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
+                  />
                   <span
                     className="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-xs font-extrabold"
-                    style={{ background: "rgba(0,0,0,.25)" }}
+                    style={{ background: "rgba(0,0,0,.4)", backdropFilter: "blur(4px)" }}
                   >
                     ★ Latest
                   </span>

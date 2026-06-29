@@ -26,7 +26,7 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
       >
         <div className="flex items-center justify-center max-w-[1240px] mx-auto px-[34px] py-[15px]">
           <a href={navHref("/", locale)}>
-            <img src={logo} alt="Funlingo" className="h-11 w-auto block" />
+            <img src={logo} alt="Funlingo" className="h-12 sm:h-14 w-auto block" />
           </a>
         </div>
       </header>
@@ -62,7 +62,7 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
       <div className="flex items-center justify-between max-w-[1240px] mx-auto px-5 sm:px-[34px] py-[15px]">
         {/* Logo */}
         <a href={navHref("/", locale)} className="block shrink-0">
-          <img src={logo} alt="Funlingo" className="h-11 w-auto block" />
+          <img src={logo} alt="Funlingo" className="h-12 sm:h-14 w-auto block" />
         </a>
 
         {/* Desktop nav links */}

@@ -75,13 +75,15 @@ export default function HomeContent() {
     { label: t("home.row5"), fun: <MarkYes />, tr: <MarkPart />, im: <MarkNo /> },
   ];
 
+  // A mix of Indian and international reviewers, each with a matching stock
+  // portrait (pravatar fixed-index faces verified to fit the name).
   const reviews = [
-    { quote: t("home.rev1"), name: "Aastha Pandey", initials: "AP", photo: "https://i.pravatar.cc/96?img=45", stars: 5 },
-    { quote: t("home.rev2"), name: "Daniel", initials: "D", photo: "https://i.pravatar.cc/96?img=12", stars: 4 },
-    { quote: t("home.rev3"), name: "Shubham R.", initials: "SR", photo: "https://i.pravatar.cc/96?img=33", stars: 5 },
-    { quote: t("home.rev4"), name: "Sarthak Shinde", initials: "SS", photo: "https://i.pravatar.cc/96?img=8", stars: 5 },
-    { quote: t("home.rev5"), name: "Aastha P.", initials: "AP", photo: "https://i.pravatar.cc/96?img=47", stars: 5 },
-    { quote: t("home.rev6"), name: "Indera", initials: "IC", photo: "https://i.pravatar.cc/96?img=60", stars: 5 },
+    { quote: t("home.rev1"), name: "Aastha Pandey", initials: "AP", photo: "https://i.pravatar.cc/96?img=42", stars: 5 },
+    { quote: t("home.rev2"), name: "Daniel Carter", initials: "DC", photo: "https://i.pravatar.cc/96?img=8", stars: 4 },
+    { quote: t("home.rev3"), name: "Rohan Mehta", initials: "RM", photo: "https://i.pravatar.cc/96?img=59", stars: 5 },
+    { quote: t("home.rev4"), name: "Sofia Rossi", initials: "SR", photo: "https://i.pravatar.cc/96?img=26", stars: 5 },
+    { quote: t("home.rev5"), name: "Vikram Reddy", initials: "VR", photo: "https://i.pravatar.cc/96?img=60", stars: 5 },
+    { quote: t("home.rev6"), name: "Emma Larsen", initials: "EL", photo: "https://i.pravatar.cc/96?img=5", stars: 5 },
   ];
   const loopA = [...reviews, ...reviews];
   const loopB = [...reviews.slice().reverse(), ...reviews.slice().reverse()];
@@ -336,9 +338,30 @@ export default function HomeContent() {
                     <span style={{ fontSize: 18, fontWeight: 700, color: "var(--text)" }}>{f.q}</span>
                     <span style={{ fontSize: 26, fontWeight: 400, lineHeight: 1, color: "var(--pink)", flexShrink: 0, transform: open ? "rotate(45deg)" : "rotate(0deg)", transition: "transform .2s ease" }}>+</span>
                   </button>
-                  {open && (
-                    <div style={{ padding: "0 26px 24px", fontSize: 16, lineHeight: 1.6, color: "var(--text-dim)", fontWeight: 500 }}>{f.a}</div>
-                  )}
+                  <div
+                    style={{
+                      display: "grid",
+                      gridTemplateRows: open ? "1fr" : "0fr",
+                      transition: "grid-template-rows .32s cubic-bezier(.4,0,.2,1)",
+                    }}
+                  >
+                    <div style={{ overflow: "hidden" }}>
+                      <div
+                        style={{
+                          padding: "0 26px 24px",
+                          fontSize: 16,
+                          lineHeight: 1.6,
+                          color: "var(--text-dim)",
+                          fontWeight: 500,
+                          opacity: open ? 1 : 0,
+                          transform: open ? "translateY(0)" : "translateY(-6px)",
+                          transition: "opacity .3s ease, transform .3s ease",
+                        }}
+                      >
+                        {f.a}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               );
             })}
