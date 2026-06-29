@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { useT } from "@/app/i18n/I18nProvider";
+import { track } from "@/app/_components/track";
 
 type Word = {
   text: string;
@@ -240,10 +241,6 @@ const DATA: Record<string, LangData> = {
   },
 };
 
-const DWELL = 3600; // ms each subtitle line stays on screen
-const TICK = 80; // ms progress update step
-const TOTAL_SECONDS = 2850; // faux runtime (47:30) for the timecode
-
 function speak(text: string, bcp: string) {
   try {
     const u = new SpeechSynthesisUtterance(text.replace(/[¿?？.,!]/g, ""));
@@ -275,52 +272,26 @@ export default function FunlingoPlayer({
   const data = DATA[lang] || DATA.es;
   const total = data.lines.length;
 
-  // progress 0..1 drives both the timeline bar and which subtitle line shows,
-  // so they can never drift. Hovering a word or pausing freezes it.
-  const [progress, setProgress] = React.useState(0);
-  const [paused, setPaused] = React.useState(false);
+  // The player does NOT auto-play. The visitor moves through the subtitle
+  // lines with the 3 clickable points (dots in the video / markers on the bar).
+  const [lineIndex, setLineIndex] = React.useState(0);
   const [hovered, setHovered] = React.useState<string | null>(null);
   const [saved, setSaved] = React.useState<
     { key: string; text: string; meaning: string }[]
   >([]);
   const leaveTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const lineIndex = Math.min(total - 1, Math.floor(progress * total));
-
   // Reset when the learning language changes.
   React.useEffect(() => {
-    setProgress(0);
+    setLineIndex(0);
     setHovered(null);
     setSaved([]);
   }, [lang]);
-
-  // Start paused for visitors who prefer reduced motion (auto-advancing content).
-  React.useEffect(() => {
-    try {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        setPaused(true);
-      }
-    } catch {
-      /* no matchMedia */
-    }
-  }, []);
 
   // Let the parent know when a word popup is open (to fix z-index over floats).
   React.useEffect(() => {
     onActiveChange?.(hovered != null);
   }, [hovered, onActiveChange]);
-
-  // Playback clock.
-  React.useEffect(() => {
-    if (paused || hovered) return;
-    const id = setInterval(() => {
-      setProgress((p) => {
-        const np = p + TICK / (total * DWELL);
-        return np >= 1 ? 0 : np;
-      });
-    }, TICK);
-    return () => clearInterval(id);
-  }, [paused, hovered, total]);
 
   const enter = (key: string) => {
     if (leaveTimer.current) clearTimeout(leaveTimer.current);
@@ -331,25 +302,25 @@ export default function FunlingoPlayer({
     leaveTimer.current = setTimeout(() => setHovered(null), 150);
   };
   const toggleSave = (w: { key: string; text: string; meaning: string }) =>
-    setSaved((s) => (s.some((x) => x.key === w.key) ? s : [...s, w]));
+    setSaved((s) => {
+      if (s.some((x) => x.key === w.key)) return s;
+      track("vocab_save", { word: w.text, lang });
+      return [...s, w];
+    });
 
-  const seek = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const frac = Math.min(0.999, Math.max(0, (e.clientX - rect.left) / rect.width));
-    setHovered(null);
-    setProgress(frac);
-  };
-  // Jump to the start of a subtitle line. The small epsilon keeps the derived
-  // lineIndex on the intended line despite float rounding.
+  // Jump to a subtitle line via one of the clickable points.
   const jumpToLine = (i: number) => {
     setHovered(null);
-    setProgress((i + 0.02) / total);
+    setLineIndex(i);
+    track("player_line_select", { line: i + 1, lang });
   };
 
   const langUpper = data.code;
   const helperUpper = data.helper || "EN";
   const current = data.lines[lineIndex];
-  const curTime = fmtTime(progress * TOTAL_SECONDS);
+  // Position along the bar: 3 evenly-spaced points (0 / 50 / 100% for 3 lines).
+  const pos = total > 1 ? lineIndex / (total - 1) : 0;
+  const curTime = fmtTime(12 + lineIndex * 21);
 
   return (
     <div className="w-full" style={{ fontFamily: "'Poppins',sans-serif" }}>
@@ -502,52 +473,38 @@ export default function FunlingoPlayer({
 
         {/* Control strip */}
         <div className="flex items-center gap-[14px]" style={{ padding: "13px 18px", background: "#0E0719" }}>
-          <button
-            onClick={() => setPaused((p) => !p)}
-            aria-label={paused ? "Play" : "Pause"}
-            className="flex items-center justify-center"
-            style={{ border: "none", background: "transparent", cursor: "pointer", color: "#fff", opacity: 0.95, padding: 0 }}
-          >
-            {paused ? (
-              <svg width="21" height="21" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" /></svg>
-            ) : (
-              <svg width="21" height="21" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z" fill="currentColor" /></svg>
-            )}
-          </button>
           <div
             className="flex-1 relative"
-            style={{ height: 5, borderRadius: 99, background: "rgba(255,255,255,.16)", cursor: "pointer" }}
-            onClick={seek}
-            role="slider"
-            aria-label="Seek"
-            aria-valuemin={0}
-            aria-valuemax={100}
-            aria-valuenow={Math.round(progress * 100)}
+            style={{ height: 5, borderRadius: 99, background: "rgba(255,255,255,.16)" }}
+            role="group"
+            aria-label="Subtitle line selector"
           >
-            <div className="absolute left-0 top-0 bottom-0" style={{ width: `${progress * 100}%`, borderRadius: 99, background: "linear-gradient(90deg,#BC22D6,#E0319E)", transition: "width .1s linear" }} />
-            {/* chapter markers — one clickable point per subtitle line */}
-            {data.lines.map((_, i) => (
-              <button
-                key={i}
-                onClick={(e) => { e.stopPropagation(); jumpToLine(i); }}
-                aria-label={`Jump to line ${i + 1}`}
-                title={`Line ${i + 1}`}
-                className="absolute"
-                style={{
-                  left: `${(i / total) * 100}%`,
-                  top: "50%",
-                  transform: "translate(-50%,-50%)",
-                  width: 12,
-                  height: 12,
-                  borderRadius: "50%",
-                  border: "2px solid rgba(14,7,25,.9)",
-                  background: i <= lineIndex ? "#fff" : "rgba(255,255,255,.5)",
-                  cursor: "pointer",
-                  padding: 0,
-                }}
-              />
-            ))}
-            <div className="absolute" style={{ left: `${progress * 100}%`, top: "50%", transform: "translate(-50%,-50%)", width: 13, height: 13, borderRadius: "50%", background: "#fff", boxShadow: "0 1px 4px rgba(0,0,0,.4)", transition: "left .1s linear", pointerEvents: "none" }} />
+            <div className="absolute left-0 top-0 bottom-0" style={{ width: `${pos * 100}%`, borderRadius: 99, background: "linear-gradient(90deg,#BC22D6,#E0319E)", transition: "width .25s ease" }} />
+            {/* position indicators (non-interactive) — the clickable points are
+                the 3 dots inside the video above */}
+            {data.lines.map((_, i) => {
+              const p = total > 1 ? i / (total - 1) : 0;
+              const isActive = i === lineIndex;
+              return (
+                <div
+                  key={i}
+                  className="absolute"
+                  style={{
+                    left: `${p * 100}%`,
+                    top: "50%",
+                    transform: "translate(-50%,-50%)",
+                    width: isActive ? 14 : 11,
+                    height: isActive ? 14 : 11,
+                    borderRadius: "50%",
+                    border: "2px solid rgba(14,7,25,.9)",
+                    background: i <= lineIndex ? "#fff" : "rgba(255,255,255,.5)",
+                    boxShadow: isActive ? "0 0 0 3px rgba(224,49,158,.55)" : "none",
+                    pointerEvents: "none",
+                    transition: "all .2s ease",
+                  }}
+                />
+              );
+            })}
           </div>
           <span style={{ color: "rgba(255,255,255,.6)", fontSize: 12, fontWeight: 600, fontVariantNumeric: "tabular-nums" }}>{curTime} / 47:30</span>
           <div className="flex items-center" style={{ padding: 3, borderRadius: 999, background: "rgba(255,255,255,.1)" }}>

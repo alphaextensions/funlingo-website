@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { track } from "@/app/_components/track";
 
 type Theme = "dark" | "light";
 
@@ -30,6 +31,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       /* ignore */
     }
     setTheme(next);
+    track("theme_change", { theme: next });
   };
 
   const isDark = theme === "dark";

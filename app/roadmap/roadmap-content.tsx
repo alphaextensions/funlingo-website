@@ -4,6 +4,7 @@ import * as React from "react";
 import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { useT } from "@/app/i18n/I18nProvider";
+import { track } from "@/app/_components/track";
 
 type Status = "shipped" | "progress" | "planned";
 
@@ -78,7 +79,10 @@ export default function RoadmapContent() {
               return (
                 <button
                   key={tab.k}
-                  onClick={() => setFilter(tab.k)}
+                  onClick={() => {
+                    setFilter(tab.k);
+                    track("roadmap_filter", { filter: tab.k });
+                  }}
                   style={{
                     border: "none",
                     cursor: "pointer",

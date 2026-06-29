@@ -8,6 +8,7 @@ import GuessGame from "@/sections/home/GuessGame";
 import { FlagSvg } from "@/sections/home/flags";
 import { PLATFORMS, PlatformLogo } from "@/sections/home/platformLogos";
 import { ChromeCTA } from "@/app/_components/cta";
+import { track } from "@/app/_components/track";
 import { useT } from "@/app/i18n/I18nProvider";
 
 const HERO_LANGS = [
@@ -132,7 +133,10 @@ export default function HomeContent() {
                   return (
                     <button
                       key={l.code}
-                      onClick={() => setLearn(l.code)}
+                      onClick={() => {
+                        setLearn(l.code);
+                        track("learn_language_select", { lang: l.code });
+                      }}
                       className="flex items-center gap-[9px]"
                       style={{
                         padding: "10px 16px",
@@ -331,7 +335,11 @@ export default function HomeContent() {
               return (
                 <div key={i} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 18, overflow: "hidden" }}>
                   <button
-                    onClick={() => setFaqOpen(open ? -1 : i)}
+                    onClick={() => {
+                      const willOpen = !open;
+                      setFaqOpen(willOpen ? i : -1);
+                      if (willOpen) track("faq_open", { q: i + 1 });
+                    }}
                     className="w-full flex items-center justify-between gap-4 text-start"
                     style={{ padding: "22px 26px", background: "transparent", border: "none", cursor: "pointer", fontFamily: "'Poppins',sans-serif" }}
                   >

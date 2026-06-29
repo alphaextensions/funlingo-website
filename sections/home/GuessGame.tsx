@@ -3,6 +3,7 @@
 import * as React from "react";
 import { useT } from "@/app/i18n/I18nProvider";
 import { ChromeCTA } from "@/app/_components/cta";
+import { track } from "@/app/_components/track";
 import { FlagSvg } from "./flags";
 
 type Round = { word: string; answer: string; options: string[] };
@@ -151,8 +152,10 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
     if (right) setCorrectCount((c) => c + 1);
   };
   const next = () => {
-    if (last) setFinished(true);
-    else {
+    if (last) {
+      setFinished(true);
+      track("game_complete", { score: correctCount, total, lang });
+    } else {
       setRound((x) => x + 1);
       setPicked(null);
     }

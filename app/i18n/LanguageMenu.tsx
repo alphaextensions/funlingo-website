@@ -10,6 +10,7 @@ import {
 } from "./config";
 import { useI18n } from "./I18nProvider";
 import { useT } from "./I18nProvider";
+import { track } from "@/app/_components/track";
 
 /**
  * Themed language dropdown matching the 2026 design: a pill button showing the
@@ -105,6 +106,7 @@ export default function LanguageMenu() {
                   key={l.code}
                   onClick={() => {
                     setOpen(false);
+                    track("locale_change", { locale: l.code });
                     router.push(targetHref(l.code));
                   }}
                   className="w-full flex items-center gap-[10px] justify-between px-3 py-[11px] rounded-[11px] border-0 cursor-pointer text-start text-[15px]"

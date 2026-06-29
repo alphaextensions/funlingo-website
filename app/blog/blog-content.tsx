@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { posts, accBadge } from "./posts";
+import { track } from "@/app/_components/track";
 
 const PAGE = 6;
 
@@ -164,7 +165,11 @@ export default function BlogContent() {
         {visible < rest.length && (
           <div className="flex justify-center mt-12">
             <button
-              onClick={() => setVisible((v) => v + PAGE)}
+              onClick={() => {
+                const next = visible + PAGE;
+                setVisible(next);
+                track("blog_show_more", { shown: Math.min(next, rest.length) });
+              }}
               className="inline-flex items-center gap-2 rounded-full font-bold"
               style={{
                 padding: "14px 30px",
