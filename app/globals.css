@@ -878,3 +878,33 @@ html {
   background: linear-gradient(90deg, #9a1c8e, #c81fd4 60%, #ec4db0);
   box-shadow: 0 0 12px rgba(200, 31, 212, 0.7);
 }
+
+/* ============================================================
+   Re-point the legacy color tokens at the themed tokens, so older
+   components/pages that use .bg-backgroundbackdrop / .text-textwhite /
+   .text-textbody (support, feedback, privacy, compare, …) follow the
+   dark/light theme automatically. Placed last to win the cascade.
+   ============================================================ */
+:root {
+  --backgroundbackdrop: var(--bg);
+  --textwhite: var(--text);
+  --textbody: var(--text-dim);
+  --textblack: var(--text);
+}
+
+/* Legacy CTA elements whose background is a fixed magenta gradient applied via
+   a Tailwind arbitrary class keep white text/icons in both themes (the themed
+   tokens above would otherwise make them dark-on-magenta in light mode). The
+   redesigned components use inline `var(--grad)`, so they are unaffected. */
+[class*="linear-gradient(135deg,#9A1C8E"],
+[class*="linear-gradient(135deg,#C81FD4"],
+[class*="linear-gradient(135deg,#9a1c8e"],
+[class*="linear-gradient(135deg,#c81fd4"] {
+  color: #fff;
+}
+[class*="linear-gradient(135deg,#9A1C8E"] *,
+[class*="linear-gradient(135deg,#C81FD4"] *,
+[class*="linear-gradient(135deg,#9a1c8e"] *,
+[class*="linear-gradient(135deg,#c81fd4"] * {
+  color: #fff !important;
+}

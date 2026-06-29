@@ -76,12 +76,12 @@ export default function HomeContent() {
   ];
 
   const reviews = [
-    { quote: t("home.rev1"), name: "Aastha Pandey", initials: "AP" },
-    { quote: t("home.rev2"), name: "Daniel", initials: "D" },
-    { quote: t("home.rev3"), name: "Shubham R.", initials: "SR" },
-    { quote: t("home.rev4"), name: "Sarthak Shinde", initials: "SS" },
-    { quote: t("home.rev5"), name: "Aastha P.", initials: "AP" },
-    { quote: t("home.rev6"), name: "Indera", initials: "IC" },
+    { quote: t("home.rev1"), name: "Aastha Pandey", initials: "AP", photo: "https://i.pravatar.cc/96?img=45", stars: 5 },
+    { quote: t("home.rev2"), name: "Daniel", initials: "D", photo: "https://i.pravatar.cc/96?img=12", stars: 4 },
+    { quote: t("home.rev3"), name: "Shubham R.", initials: "SR", photo: "https://i.pravatar.cc/96?img=33", stars: 5 },
+    { quote: t("home.rev4"), name: "Sarthak Shinde", initials: "SS", photo: "https://i.pravatar.cc/96?img=8", stars: 5 },
+    { quote: t("home.rev5"), name: "Aastha P.", initials: "AP", photo: "https://i.pravatar.cc/96?img=47", stars: 5 },
+    { quote: t("home.rev6"), name: "Indera", initials: "IC", photo: "https://i.pravatar.cc/96?img=60", stars: 5 },
   ];
   const loopA = [...reviews, ...reviews];
   const loopB = [...reviews.slice().reverse(), ...reviews.slice().reverse()];
@@ -306,12 +306,12 @@ export default function HomeContent() {
         </div>
         <div className="flex" style={{ width: "max-content", gap: 20, animation: "fnl-mq 46s linear infinite", marginBottom: 20 }}>
           {loopA.map((rv, i) => (
-            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} />
+            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} photo={rv.photo} stars={rv.stars} />
           ))}
         </div>
         <div className="flex" style={{ width: "max-content", gap: 20, animation: "fnl-mq2 46s linear infinite" }}>
           {loopB.map((rv, i) => (
-            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} />
+            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} photo={rv.photo} stars={rv.stars} />
           ))}
         </div>
       </section>
@@ -366,13 +366,40 @@ export default function HomeContent() {
   );
 }
 
-function ReviewCard({ quote, name, initials }: { quote: string; name: string; initials: string }) {
+function ReviewCard({
+  quote,
+  name,
+  initials,
+  photo,
+  stars = 5,
+}: {
+  quote: string;
+  name: string;
+  initials: string;
+  photo?: string;
+  stars?: number;
+}) {
   return (
     <div style={{ width: 380, background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 22, padding: "26px 28px" }}>
-      <div style={{ color: "#F5A623", fontSize: 14, marginBottom: 12, letterSpacing: "2px" }}>★★★★★</div>
+      <div style={{ fontSize: 14, marginBottom: 12, letterSpacing: "2px" }} aria-label={`${stars} out of 5 stars`}>
+        <span style={{ color: "#F5A623" }}>{"★".repeat(stars)}</span>
+        <span style={{ color: "var(--text-dim2)" }}>{"★".repeat(5 - stars)}</span>
+      </div>
       <p style={{ fontSize: 16, lineHeight: 1.55, color: "var(--text)", margin: "0 0 18px", fontWeight: 500 }}>{quote}</p>
       <div className="flex items-center gap-[10px]">
-        <div className="flex items-center justify-center" style={{ width: 36, height: 36, borderRadius: "50%", background: "var(--grad)", color: "#fff", fontSize: 13, fontWeight: 800 }}>{initials}</div>
+        {photo ? (
+          <img
+            src={photo}
+            alt={name}
+            width={36}
+            height={36}
+            loading="lazy"
+            className="object-cover"
+            style={{ width: 36, height: 36, borderRadius: "50%", border: "1px solid var(--border)" }}
+          />
+        ) : (
+          <div className="flex items-center justify-center" style={{ width: 36, height: 36, borderRadius: "50%", background: "var(--grad)", color: "#fff", fontSize: 13, fontWeight: 800 }}>{initials}</div>
+        )}
         <span style={{ fontSize: 14, fontWeight: 700, color: "var(--text)" }}>{name}</span>
       </div>
     </div>

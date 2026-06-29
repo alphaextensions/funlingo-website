@@ -5,11 +5,14 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { posts, accBadge, accBar } from "./posts";
+import { posts, accBadge } from "./posts";
+
+const PAGE = 6;
 
 export default function BlogContent() {
   const featured = posts[0];
   const rest = posts.slice(1);
+  const [visible, setVisible] = React.useState(PAGE);
 
   return (
     <div className="fnl-root flex flex-col min-h-screen overflow-x-hidden">
@@ -112,13 +115,12 @@ export default function BlogContent() {
 
         {/* Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {rest.map((post) => (
+          {rest.slice(0, visible).map((post) => (
             <Link key={post.id} href={post.slug} className="no-underline">
               <div
                 className="relative h-full overflow-hidden rounded-[22px] border cursor-pointer group transition-all duration-300 hover:-translate-y-1"
                 style={{ background: "var(--surface)", borderColor: "var(--border)" }}
               >
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${accBar(post.category)} opacity-70 group-hover:opacity-100 transition-opacity`} />
                 <div className="p-6 flex flex-col h-full">
                   <div className="flex items-center justify-between mb-4">
                     <span className={`px-2.5 py-0.5 rounded-full border text-xs font-medium ${accBadge(post.category)}`}>
@@ -149,6 +151,29 @@ export default function BlogContent() {
             </Link>
           ))}
         </div>
+
+        {/* Show more */}
+        {visible < rest.length && (
+          <div className="flex justify-center mt-12">
+            <button
+              onClick={() => setVisible((v) => v + PAGE)}
+              className="inline-flex items-center gap-2 rounded-full font-bold"
+              style={{
+                padding: "14px 30px",
+                fontSize: 15,
+                color: "var(--text)",
+                background: "var(--surface)",
+                border: "1px solid var(--border)",
+                cursor: "pointer",
+              }}
+            >
+              Show more
+              <span style={{ color: "var(--text-dim2)", fontWeight: 600 }}>
+                ({rest.length - visible} more)
+              </span>
+            </button>
+          </div>
+        )}
       </main>
 
       <FooterSection />

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import Navbar from "@/sections/navbar";
+import { FooterSection } from "@/sections/FooterSection";
 
 // Define types for our form data
 interface FeedbackFormData {
@@ -144,7 +145,7 @@ export default function FeedbackContent() {
   };
 
   return (
-    <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
+    <div className="flex flex-col items-start relative fnl-root min-h-screen">
       {/* Navigation Header */}
       <Navbar currentPage="/feedback" />
 
@@ -185,12 +186,12 @@ export default function FeedbackContent() {
           {/* Success Message */}
           {submitted && (
             <div
-              className={`w-full max-w-2xl p-4 rounded-lg bg-[rgba(198,66,252,0.2)] border border-[#C642FC] backdrop-blur-sm transition-all duration-500 ${
+              className={`w-full max-w-2xl p-4 rounded-lg bg-[rgba(200,31,212,0.2)] border border-[#C81FD4] backdrop-blur-sm transition-all duration-500 ${
                 submitted ? "animate-fade-in-up opacity-100" : "opacity-0"
               }`}
               style={{ animationDelay: "300ms" }}
             >
-              <p className="font-body-normal-medium text-white text-center">
+              <p className="font-body-normal-medium text-[var(--text)] text-center">
                 Thank you for your feedback! We&apos;ll review it carefully.
               </p>
             </div>
@@ -203,13 +204,13 @@ export default function FeedbackContent() {
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
-            } border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.08)] group hover:shadow-2xl hover:shadow-purple-500/10 animate-fade-in-up`}
+            } border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-2)] group hover:shadow-2xl hover:shadow-purple-500/10 animate-fade-in-up`}
             style={{ animationDelay: "400ms" }}
           >
             {/* Basic Information */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col gap-2">
-                <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                   Name
                 </label>
                 <Input
@@ -219,13 +220,13 @@ export default function FeedbackContent() {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   required
-                  className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                  className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                   placeholder="Your name"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                   Email
                 </label>
                 <Input
@@ -235,14 +236,14 @@ export default function FeedbackContent() {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   required
-                  className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                  className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                   placeholder="your.email@example.com"
                 />
               </div>
             </div>
 
             <div className="flex flex-col gap-2">
-              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                 Category
               </label>
               <select
@@ -250,7 +251,7 @@ export default function FeedbackContent() {
                 onChange={(e) =>
                   setFormData({ ...formData, category: e.target.value })
                 }
-                className="h-10 px-3 py-2 rounded-lg bg-[rgba(0,0,0,0.3)] border border-[#ffffff1a] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                className="h-10 px-3 py-2 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
               >
                 <option value="feature">Feature Request</option>
                 <option value="bug">Bug Report</option>
@@ -262,7 +263,7 @@ export default function FeedbackContent() {
 
             {/* Satisfaction Rating */}
             <div className="flex flex-col gap-3">
-              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                 Overall Satisfaction
               </label>
               <div className="flex flex-col gap-2">
@@ -272,7 +273,7 @@ export default function FeedbackContent() {
                   max="5"
                   value={formData.satisfaction}
                   onChange={(e) => setFormData({ ...formData, satisfaction: parseInt(e.target.value) })}
-                  className="w-full h-2 bg-[rgba(255,255,255,0.1)] rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-gradient-to-r [&::-webkit-slider-thumb]:from-[#C642FC] [&::-webkit-slider-thumb]:to-[#7A1CAC]"
+                  className="w-full h-2 bg-[var(--surface-2)] rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-gradient-to-r [&::-webkit-slider-thumb]:from-[#C81FD4] [&::-webkit-slider-thumb]:to-[#9A1C8E]"
                 />
                 <div className="flex justify-between text-xs text-textbody">
                   <span>1 - Very Dissatisfied</span>
@@ -286,7 +287,7 @@ export default function FeedbackContent() {
 
             {/* Uninstall Reasons - Conditionally Shown */}
             {formData.category === 'uninstall' && (
-              <div className="space-y-4 p-4 rounded-lg bg-[rgba(0,0,0,0.2)] border border-[#ffffff1a] animate-fade-in-up">
+              <div className="space-y-4 p-4 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] animate-fade-in-up">
                 <h4 className="font-body-normal-medium text-textwhite mb-3">
                   Why are you considering uninstalling?
                 </h4>
@@ -298,7 +299,7 @@ export default function FeedbackContent() {
                       id="missing-features"
                       checked={formData.missingFeatures.includes('features')}
                       onChange={() => handleCheckboxChange('features')}
-                      className="w-4 h-4 rounded border-[#ffffff1a] bg-[rgba(0,0,0,0.3)] text-[#C642FC] focus:ring-[#C642FC] focus:ring-2"
+                      className="w-4 h-4 rounded border-[var(--border)] bg-[var(--surface-2)] text-[#C81FD4] focus:ring-[#C81FD4] focus:ring-2"
                     />
                     <label htmlFor="missing-features" className="font-body-normal-regular text-textwhite cursor-pointer">
                       Missing features I need
@@ -311,7 +312,7 @@ export default function FeedbackContent() {
                       id="not-working"
                       checked={formData.notWorkingProperly}
                       onChange={(e) => setFormData({ ...formData, notWorkingProperly: e.target.checked })}
-                      className="w-4 h-4 rounded border-[#ffffff1a] bg-[rgba(0,0,0,0.3)] text-[#C642FC] focus:ring-[#C642FC] focus:ring-2"
+                      className="w-4 h-4 rounded border-[var(--border)] bg-[var(--surface-2)] text-[#C81FD4] focus:ring-[#C81FD4] focus:ring-2"
                     />
                     <label htmlFor="not-working" className="font-body-normal-regular text-textwhite cursor-pointer">
                       Not working properly
@@ -324,7 +325,7 @@ export default function FeedbackContent() {
                       id="other-reason"
                       checked={formData.missingFeatures.includes('other')}
                       onChange={() => handleCheckboxChange('other')}
-                      className="w-4 h-4 rounded border-[#ffffff1a] bg-[rgba(0,0,0,0.3)] text-[#C642FC] focus:ring-[#C642FC] focus:ring-2"
+                      className="w-4 h-4 rounded border-[var(--border)] bg-[var(--surface-2)] text-[#C81FD4] focus:ring-[#C81FD4] focus:ring-2"
                     />
                     <label htmlFor="other-reason" className="font-body-normal-regular text-textwhite cursor-pointer">
                       Other reasons
@@ -337,7 +338,7 @@ export default function FeedbackContent() {
                         type="text"
                         value={formData.otherReason}
                         onChange={(e) => setFormData({ ...formData, otherReason: e.target.value })}
-                        className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                        className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                         placeholder="Please specify other reasons..."
                       />
                     </div>
@@ -348,14 +349,14 @@ export default function FeedbackContent() {
 
             {/* Feature Request Section */}
             <div className="flex flex-col gap-2">
-              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                 {formData.category === 'feature' ? 'Feature Details' : 'Any Feature You\'d Like Us to Build?'}
               </label>
               <Input
                 type="text"
                 value={formData.desiredFeature}
                 onChange={(e) => setFormData({ ...formData, desiredFeature: e.target.value })}
-                className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                 placeholder={
                   formData.category === 'feature'
                     ? "Describe the feature you'd like to see..."
@@ -366,13 +367,13 @@ export default function FeedbackContent() {
 
             {/* Recommendation */}
             <div className="flex flex-col gap-2">
-              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                 Would you recommend Funlingo to others?
               </label>
               <select
                 value={formData.recommend}
                 onChange={(e) => setFormData({ ...formData, recommend: e.target.value })}
-                className="h-10 px-3 py-2 rounded-lg bg-[rgba(0,0,0,0.3)] border border-[#ffffff1a] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                className="h-10 px-3 py-2 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
               >
                 <option value="">Select an option</option>
                 <option value="definitely">Definitely yes</option>
@@ -385,7 +386,7 @@ export default function FeedbackContent() {
 
             {/* Main Message */}
             <div className="flex flex-col gap-2">
-              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+              <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                 Additional Comments
               </label>
               <Textarea
@@ -394,7 +395,7 @@ export default function FeedbackContent() {
                   setFormData({ ...formData, message: e.target.value })
                 }
                 required
-                className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300 min-h-[120px] resize-vertical"
+                className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300 min-h-[120px] resize-vertical"
                 placeholder="Share any additional thoughts, suggestions, or details..."
               />
             </div>
@@ -405,7 +406,7 @@ export default function FeedbackContent() {
               className={`w-full h-12 px-6 py-3 rounded-lg transition-all duration-300 mt-2 ${
                 loading
                   ? "bg-gray-500 cursor-not-allowed"
-                  : "bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] hover:opacity-90 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
+                  : "bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] hover:opacity-90 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
               }`}
             >
               <span className="relative z-10 font-body-normal-medium text-textwhite">
@@ -469,12 +470,12 @@ export default function FeedbackContent() {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-3 p-6 rounded-xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm text-center group hover:bg-[rgba(255,255,255,0.08)] hover:border-[#ffffff40] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 animate-fade-in-up no-underline"
+                className="flex flex-col items-center gap-3 p-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm text-center group hover:bg-[var(--surface-2)] hover:border-[#ffffff40] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 animate-fade-in-up no-underline"
                 style={{ animationDelay: item.delay }}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-6 h-6 text-white"
+                    className="w-6 h-6 text-[var(--text)]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -482,7 +483,7 @@ export default function FeedbackContent() {
                     {item.icon}
                   </svg>
                 </div>
-                <h4 className="font-heading-h6 text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                <h4 className="font-heading-h6 text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                   {item.title}
                 </h4>
                 <p className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
@@ -524,6 +525,7 @@ export default function FeedbackContent() {
           opacity: 0;
         }
       `}</style>
+    <FooterSection />
     </div>
   );
 }
