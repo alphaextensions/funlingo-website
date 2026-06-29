@@ -262,7 +262,15 @@ function fmtTime(sec: number) {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
-export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
+export default function FunlingoPlayer({
+  lang = "es",
+  onActiveChange,
+}: {
+  lang?: string;
+  // Fires true while a word popup is open, so the parent can lift the player
+  // above the floating word chips (otherwise they cover the popup).
+  onActiveChange?: (active: boolean) => void;
+}) {
   const { t } = useT();
   const data = DATA[lang] || DATA.es;
   const total = data.lines.length;
@@ -297,6 +305,11 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
     }
   }, []);
 
+  // Let the parent know when a word popup is open (to fix z-index over floats).
+  React.useEffect(() => {
+    onActiveChange?.(hovered != null);
+  }, [hovered, onActiveChange]);
+
   // Playback clock.
   React.useEffect(() => {
     if (paused || hovered) return;
@@ -325,6 +338,12 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
     const frac = Math.min(0.999, Math.max(0, (e.clientX - rect.left) / rect.width));
     setHovered(null);
     setProgress(frac);
+  };
+  // Jump to the start of a subtitle line. The small epsilon keeps the derived
+  // lineIndex on the intended line despite float rounding.
+  const jumpToLine = (i: number) => {
+    setHovered(null);
+    setProgress((i + 0.02) / total);
   };
 
   const langUpper = data.code;
@@ -454,17 +473,27 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
             </div>
           </div>
 
-          {/* line dots */}
-          <div className="absolute left-0 right-0 flex items-center justify-center gap-[6px]" style={{ bottom: 14 }}>
+          {/* clickable line points — jump between the subtitle lines */}
+          <div className="absolute left-0 right-0 flex items-center justify-center gap-[10px]" style={{ bottom: 12, zIndex: 6 }}>
             {data.lines.map((_, i) => (
-              <span
+              <button
                 key={i}
+                onClick={() => jumpToLine(i)}
+                aria-label={`Go to line ${i + 1}`}
+                title={`Line ${i + 1}`}
                 style={{
-                  width: i === lineIndex ? 18 : 6,
-                  height: 6,
+                  width: i === lineIndex ? 26 : 11,
+                  height: 11,
                   borderRadius: 99,
-                  background: i === lineIndex ? "linear-gradient(90deg,#BC22D6,#E0319E)" : "rgba(255,255,255,.3)",
-                  transition: "width .25s ease",
+                  border: "none",
+                  padding: 0,
+                  cursor: "pointer",
+                  background:
+                    i === lineIndex
+                      ? "linear-gradient(90deg,#BC22D6,#E0319E)"
+                      : "rgba(255,255,255,.4)",
+                  boxShadow: i === lineIndex ? "0 2px 8px -2px rgba(224,49,158,.8)" : "none",
+                  transition: "width .25s ease, background .25s ease",
                 }}
               />
             ))}
@@ -496,7 +525,29 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
             aria-valuenow={Math.round(progress * 100)}
           >
             <div className="absolute left-0 top-0 bottom-0" style={{ width: `${progress * 100}%`, borderRadius: 99, background: "linear-gradient(90deg,#BC22D6,#E0319E)", transition: "width .1s linear" }} />
-            <div className="absolute" style={{ left: `${progress * 100}%`, top: "50%", transform: "translate(-50%,-50%)", width: 13, height: 13, borderRadius: "50%", background: "#fff", boxShadow: "0 1px 4px rgba(0,0,0,.4)", transition: "left .1s linear" }} />
+            {/* chapter markers — one clickable point per subtitle line */}
+            {data.lines.map((_, i) => (
+              <button
+                key={i}
+                onClick={(e) => { e.stopPropagation(); jumpToLine(i); }}
+                aria-label={`Jump to line ${i + 1}`}
+                title={`Line ${i + 1}`}
+                className="absolute"
+                style={{
+                  left: `${(i / total) * 100}%`,
+                  top: "50%",
+                  transform: "translate(-50%,-50%)",
+                  width: 12,
+                  height: 12,
+                  borderRadius: "50%",
+                  border: "2px solid rgba(14,7,25,.9)",
+                  background: i <= lineIndex ? "#fff" : "rgba(255,255,255,.5)",
+                  cursor: "pointer",
+                  padding: 0,
+                }}
+              />
+            ))}
+            <div className="absolute" style={{ left: `${progress * 100}%`, top: "50%", transform: "translate(-50%,-50%)", width: 13, height: 13, borderRadius: "50%", background: "#fff", boxShadow: "0 1px 4px rgba(0,0,0,.4)", transition: "left .1s linear", pointerEvents: "none" }} />
           </div>
           <span style={{ color: "rgba(255,255,255,.6)", fontSize: 12, fontWeight: 600, fontVariantNumeric: "tabular-nums" }}>{curTime} / 47:30</span>
           <div className="flex items-center" style={{ padding: 3, borderRadius: 999, background: "rgba(255,255,255,.1)" }}>
