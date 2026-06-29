@@ -45,8 +45,12 @@ export function FlagSvg({ code, w = 26, h = 19 }: { code: string; w?: number; h?
     case "ko":
       return wrap([
         <rect key="1" x={0} y={0} width={26} height={19} fill="#fff" />,
-        <path key="2" d="M13 5.5a4 4 0 010 8 4 4 0 000-8z" fill="#CD2E3A" />,
-        <path key="3" d="M13 5.5a4 4 0 000 8 4 4 0 010-8z" fill="#0047A0" />,
+        <circle key="2" cx={13} cy={9.5} r={4.2} fill="#0047A0" />,
+        <path
+          key="3"
+          d="M13 5.3a2.1 2.1 0 010 4.2 2.1 2.1 0 000 4.2 4.2 4.2 0 000-8.4z"
+          fill="#CD2E3A"
+        />,
       ]);
     case "en":
       return wrap([
