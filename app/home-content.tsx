@@ -58,9 +58,6 @@ export default function HomeContent() {
   const { t } = useT();
   const [learn, setLearn] = React.useState("es");
   const [faqOpen, setFaqOpen] = React.useState(0);
-  // True while a word popup is open in the player, so we can raise it above the
-  // floating word chips (hola / bonjour / 안녕).
-  const [playerActive, setPlayerActive] = React.useState(false);
 
   const steps = [
     { n: "1", title: t("home.step1Title"), body: t("home.step1Body") },
@@ -110,10 +107,7 @@ export default function HomeContent() {
         <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: 250, left: "64%", ["--r" as string]: "7deg", animation: "fnl-float 7.4s ease-in-out infinite", padding: "10px 17px", borderRadius: 15, background: "linear-gradient(135deg,#BC22D6,#E0319E)", boxShadow: "0 12px 30px -10px rgba(236,77,176,.5)", fontWeight: 700, color: "#fff", fontSize: 18 }}>bonjour</div>
         <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: 188, left: "80%", ["--r" as string]: "7deg", animation: "fnl-float 7s ease-in-out infinite", padding: "9px 15px", borderRadius: 15, background: "var(--surface)", boxShadow: "0 12px 30px -10px rgba(150,30,160,.4)", border: "1px solid var(--border)", fontWeight: 700, color: "var(--pink)", fontSize: 17 }}>안녕</div>
 
-        <div
-          style={{ zIndex: playerActive ? 40 : 2 }}
-          className="relative max-w-[1240px] mx-auto px-5 sm:px-[34px] grid grid-cols-1 min-[860px]:grid-cols-[1.02fr_1fr] gap-9 min-[860px]:gap-[50px] items-center pt-9 min-[860px]:pt-[60px] pb-12 min-[860px]:pb-[70px]"
-        >
+        <div className="relative z-[2] max-w-[1240px] mx-auto px-5 sm:px-[34px] grid grid-cols-1 min-[860px]:grid-cols-[1.02fr_1fr] gap-9 min-[860px]:gap-[50px] items-center pt-9 min-[860px]:pt-[60px] pb-12 min-[860px]:pb-[70px]">
           <div>
             <div className="inline-flex items-center gap-[9px] mb-6" style={{ padding: "9px 16px", borderRadius: 999, background: "var(--pink-soft)", border: "1px solid rgba(236,77,176,.3)" }}>
               <span style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--pink)", animation: "fnl-pulse 2s infinite" }} />
@@ -182,7 +176,7 @@ export default function HomeContent() {
           </div>
 
           <div className="relative z-[4]">
-            <FunlingoPlayer lang={learn} onActiveChange={setPlayerActive} />
+            <FunlingoPlayer lang={learn} />
           </div>
         </div>
       </section>

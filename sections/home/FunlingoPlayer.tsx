@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { createPortal } from "react-dom";
 import { useT } from "@/app/i18n/I18nProvider";
 import { track } from "@/app/_components/track";
 
@@ -259,23 +260,15 @@ function fmtTime(sec: number) {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
-export default function FunlingoPlayer({
-  lang = "es",
-  onActiveChange,
-}: {
-  lang?: string;
-  // Fires true while a word popup is open, so the parent can lift the player
-  // above the floating word chips (otherwise they cover the popup).
-  onActiveChange?: (active: boolean) => void;
-}) {
+export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
   const { t } = useT();
   const data = DATA[lang] || DATA.es;
   const total = data.lines.length;
 
-  // The player does NOT auto-play. The visitor moves through the subtitle
-  // lines with the 3 clickable points (dots in the video / markers on the bar).
+  // Auto-advances through the subtitle lines on a 2s timer; the 3 clickable
+  // points let you jump at any time.
   const [lineIndex, setLineIndex] = React.useState(0);
-  const [hovered, setHovered] = React.useState<string | null>(null);
+  const [hover, setHover] = React.useState<{ key: string; w: Word; rect: DOMRect } | null>(null);
   const [saved, setSaved] = React.useState<
     { key: string; text: string; meaning: string }[]
   >([]);
@@ -284,22 +277,36 @@ export default function FunlingoPlayer({
   // Reset when the learning language changes.
   React.useEffect(() => {
     setLineIndex(0);
-    setHovered(null);
+    setHover(null);
     setSaved([]);
   }, [lang]);
 
-  // Let the parent know when a word popup is open (to fix z-index over floats).
+  // Auto-advance: 2s per line, looping. Pauses while a word popup is open, and
+  // the 2s window restarts whenever the line changes (e.g. after a manual jump).
+  // Respects reduced-motion (stays static; the clickable points still work).
   React.useEffect(() => {
-    onActiveChange?.(hovered != null);
-  }, [hovered, onActiveChange]);
+    if (hover) return;
+    let reduce = false;
+    try {
+      reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    } catch {
+      /* no matchMedia */
+    }
+    if (reduce) return;
+    const id = setTimeout(() => setLineIndex((i) => (i + 1) % total), 2000);
+    return () => clearTimeout(id);
+  }, [lineIndex, hover, total, lang]);
 
-  const enter = (key: string) => {
+  const enter = (key: string, w: Word, el: Element) => {
     if (leaveTimer.current) clearTimeout(leaveTimer.current);
-    setHovered(key);
+    setHover({ key, w, rect: el.getBoundingClientRect() });
+  };
+  const cancelLeave = () => {
+    if (leaveTimer.current) clearTimeout(leaveTimer.current);
   };
   const leave = () => {
     if (leaveTimer.current) clearTimeout(leaveTimer.current);
-    leaveTimer.current = setTimeout(() => setHovered(null), 150);
+    leaveTimer.current = setTimeout(() => setHover(null), 150);
   };
   const toggleSave = (w: { key: string; text: string; meaning: string }) =>
     setSaved((s) => {
@@ -310,7 +317,7 @@ export default function FunlingoPlayer({
 
   // Jump to a subtitle line via one of the clickable points.
   const jumpToLine = (i: number) => {
-    setHovered(null);
+    setHover(null);
     setLineIndex(i);
     track("player_line_select", { line: i + 1, lang });
   };
@@ -364,17 +371,19 @@ export default function FunlingoPlayer({
                 {current.words.map((w, i) => {
                   const interesting = !!w.meaning;
                   const key = `${lang}:${lineIndex}:${i}`;
-                  const isHover = hovered === key;
-                  const isSaved = saved.some((s) => s.key === key);
+                  const isHover = hover?.key === key;
                   return (
                     <span
                       key={key}
                       className="relative inline-block"
-                      onMouseEnter={() => interesting && enter(key)}
+                      onMouseEnter={(e) => interesting && enter(key, w, e.currentTarget)}
                       onMouseLeave={() => leave()}
                     >
                       <span
-                        onClick={() => interesting && (isHover ? setHovered(null) : enter(key))}
+                        onClick={(e) =>
+                          interesting &&
+                          (isHover ? setHover(null) : enter(key, w, e.currentTarget))
+                        }
                         style={
                           interesting
                             ? {
@@ -392,50 +401,6 @@ export default function FunlingoPlayer({
                       >
                         {w.text}
                       </span>
-                      {isHover && interesting && (
-                        <div
-                          className="absolute z-40"
-                          style={{ bottom: "100%", left: "50%", transform: "translateX(-50%)", paddingBottom: 12 }}
-                          onMouseEnter={() => enter(key)}
-                          onMouseLeave={() => leave()}
-                        >
-                          <div style={{ width: 240, background: "#fff", borderRadius: 18, boxShadow: "0 20px 48px -10px rgba(80,10,80,.55)", padding: "15px 17px", textAlign: "left" }}>
-                            <div className="flex items-baseline gap-2" style={{ marginBottom: 3 }}>
-                              <span style={{ fontSize: 20, fontWeight: 800, color: "#1B0F26" }}>{w.text}</span>
-                              {w.pos && (
-                                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".05em", color: "#C81FD4", textTransform: "uppercase" }}>{w.pos}</span>
-                              )}
-                            </div>
-                            <div style={{ fontSize: 15, fontWeight: 700, color: "#1B0F26", marginBottom: 10 }}>{w.meaning}</div>
-                            <button
-                              onClick={() => speak(w.text, data.bcp)}
-                              className="w-full flex items-center gap-2"
-                              style={{ padding: "8px 11px", border: "none", cursor: "pointer", borderRadius: 11, background: "#FBEEF8", marginBottom: 11, fontFamily: "'Poppins',sans-serif" }}
-                            >
-                              <span style={{ color: "#C81FD4", display: "flex" }}>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                                  <path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor" />
-                                  <path d="M16.5 8.5a5 5 0 010 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                </svg>
-                              </span>
-                              <span style={{ fontSize: 13, fontWeight: 700, color: "#7A4E72", fontStyle: "italic" }}>{w.pron}</span>
-                              <span style={{ marginLeft: "auto", fontSize: 11, fontWeight: 800, color: "#C81FD4" }}>{t("player.play")}</span>
-                            </button>
-                            <button
-                              onClick={() => toggleSave({ key, text: w.text, meaning: w.meaning! })}
-                              className="w-full"
-                              style={{
-                                border: "none", cursor: "pointer", borderRadius: 12, padding: "10px 12px",
-                                fontFamily: "'Poppins',sans-serif", fontSize: 14, fontWeight: 800,
-                                background: isSaved ? "rgba(236,77,176,.14)" : "linear-gradient(135deg,#BC22D6,#E0319E)",
-                                color: isSaved ? "#B81E8E" : "#fff",
-                              }}
-                            >
-                              {isSaved ? t("player.saved") : t("player.save")}
-                            </button>
-                          </div>
-                        </div>
-                      )}
                     </span>
                   );
                 })}
@@ -538,6 +503,69 @@ export default function FunlingoPlayer({
           <div style={{ fontSize: 14, fontWeight: 500, color: "var(--text-dim)", lineHeight: 1.5 }}>{t("player.emptyHint")}</div>
         )}
       </div>
+
+      {/* Word popup — portaled to <body> so it layers ABOVE the floating word
+          chips (which stay above the video player), and escapes the player's
+          rounded/overflow box. Positioned just above the hovered word. */}
+      {hover &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <div
+            style={{
+              position: "fixed",
+              left: hover.rect.left + hover.rect.width / 2,
+              top: hover.rect.top,
+              transform: "translate(-50%, -100%)",
+              paddingBottom: 12,
+              zIndex: 50,
+              fontFamily: "'Poppins',sans-serif",
+            }}
+            onMouseEnter={cancelLeave}
+            onMouseLeave={leave}
+          >
+            <div style={{ width: 240, background: "#fff", borderRadius: 18, boxShadow: "0 20px 48px -10px rgba(80,10,80,.55)", padding: "15px 17px", textAlign: "left" }}>
+              <div className="flex items-baseline gap-2" style={{ marginBottom: 3 }}>
+                <span style={{ fontSize: 20, fontWeight: 800, color: "#1B0F26" }}>{hover.w.text}</span>
+                {hover.w.pos && (
+                  <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".05em", color: "#C81FD4", textTransform: "uppercase" }}>{hover.w.pos}</span>
+                )}
+              </div>
+              <div style={{ fontSize: 15, fontWeight: 700, color: "#1B0F26", marginBottom: 10 }}>{hover.w.meaning}</div>
+              <button
+                onClick={() => speak(hover.w.text, data.bcp)}
+                className="w-full flex items-center gap-2"
+                style={{ padding: "8px 11px", border: "none", cursor: "pointer", borderRadius: 11, background: "#FBEEF8", marginBottom: 11, fontFamily: "'Poppins',sans-serif" }}
+              >
+                <span style={{ color: "#C81FD4", display: "flex" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor" />
+                    <path d="M16.5 8.5a5 5 0 010 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                </span>
+                <span style={{ fontSize: 13, fontWeight: 700, color: "#7A4E72", fontStyle: "italic" }}>{hover.w.pron}</span>
+                <span style={{ marginLeft: "auto", fontSize: 11, fontWeight: 800, color: "#C81FD4" }}>{t("player.play")}</span>
+              </button>
+              {(() => {
+                const isSaved = saved.some((s) => s.key === hover.key);
+                return (
+                  <button
+                    onClick={() => toggleSave({ key: hover.key, text: hover.w.text, meaning: hover.w.meaning! })}
+                    className="w-full"
+                    style={{
+                      border: "none", cursor: "pointer", borderRadius: 12, padding: "10px 12px",
+                      fontFamily: "'Poppins',sans-serif", fontSize: 14, fontWeight: 800,
+                      background: isSaved ? "rgba(236,77,176,.14)" : "linear-gradient(135deg,#BC22D6,#E0319E)",
+                      color: isSaved ? "#B81E8E" : "#fff",
+                    }}
+                  >
+                    {isSaved ? t("player.saved") : t("player.save")}
+                  </button>
+                );
+              })()}
+            </div>
+          </div>,
+          document.body
+        )}
     </div>
   );
 }
