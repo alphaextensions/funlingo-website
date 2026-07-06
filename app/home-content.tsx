@@ -7,6 +7,7 @@ import FunlingoPlayer from "@/sections/home/FunlingoPlayer";
 import GuessGame from "@/sections/home/GuessGame";
 import { FlagSvg } from "@/sections/home/flags";
 import { PLATFORMS, PlatformLogo } from "@/sections/home/platformLogos";
+import { orderedReviews } from "@/sections/home/reviews";
 import { ChromeCTA } from "@/app/_components/cta";
 import { track } from "@/app/_components/track";
 import { useT } from "@/app/i18n/I18nProvider";
@@ -55,7 +56,7 @@ function MarkNo() {
 }
 
 export default function HomeContent() {
-  const { t } = useT();
+  const { t, locale } = useT();
   const [learn, setLearn] = React.useState("es");
   const [faqOpen, setFaqOpen] = React.useState(0);
 
@@ -73,18 +74,12 @@ export default function HomeContent() {
     { label: t("home.row5"), fun: <MarkYes />, tr: <MarkPart />, im: <MarkNo /> },
   ];
 
-  // A mix of Indian and international reviewers, each with a matching stock
-  // portrait (pravatar fixed-index faces verified to fit the name).
-  const reviews = [
-    { quote: t("home.rev1"), name: "Aastha Pandey", initials: "AP", photo: "https://i.pravatar.cc/96?img=42", stars: 5 },
-    { quote: t("home.rev2"), name: "Daniel Carter", initials: "DC", photo: "https://i.pravatar.cc/96?img=8", stars: 4 },
-    { quote: t("home.rev3"), name: "Rohan Mehta", initials: "RM", photo: "https://i.pravatar.cc/96?img=59", stars: 5 },
-    { quote: t("home.rev4"), name: "Sofia Rossi", initials: "SR", photo: "https://i.pravatar.cc/96?img=26", stars: 5 },
-    { quote: t("home.rev5"), name: "Vikram Reddy", initials: "VR", photo: "https://i.pravatar.cc/96?img=60", stars: 5 },
-    { quote: t("home.rev6"), name: "Emma Larsen", initials: "EL", photo: "https://i.pravatar.cc/96?img=5", stars: 5 },
-  ];
-  const loopA = [...reviews, ...reviews];
-  const loopB = [...reviews.slice().reverse(), ...reviews.slice().reverse()];
+  // Localized testimonials — the visitor's language shows first. The English
+  // set keeps stock-photo avatars + one 4-star; other languages use initials.
+  const reviews = orderedReviews(locale);
+  const half = Math.ceil(reviews.length / 2);
+  const loopA = [...reviews.slice(0, half), ...reviews.slice(0, half)];
+  const loopB = [...reviews.slice(half), ...reviews.slice(half)];
 
   const faqs = [1, 2, 3, 4, 5, 6].map((i) => ({
     q: t(`home.q${i}`),

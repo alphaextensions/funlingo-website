@@ -16,8 +16,31 @@ const heroImg = (slug: string) =>
 
 export default function BlogContent() {
   const featured = posts[0];
-  const rest = posts.slice(1);
+  const [filter, setFilter] = React.useState("All");
   const [visible, setVisible] = React.useState(PAGE);
+
+  // Category tabs — only categories that actually have posts, with counts.
+  const categories = React.useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const p of posts) counts[p.category] = (counts[p.category] || 0) + 1;
+    const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+    return [
+      { key: "All", count: posts.length },
+      ...cats.map((c) => ({ key: c, count: counts[c] })),
+    ];
+  }, []);
+
+  const showFeatured = filter === "All";
+  const gridPosts =
+    filter === "All"
+      ? posts.slice(1)
+      : posts.filter((p) => p.category === filter);
+
+  const pickFilter = (c: string) => {
+    setFilter(c);
+    setVisible(PAGE);
+    track("blog_filter", { category: c });
+  };
 
   return (
     <div className="fnl-root flex flex-col min-h-screen overflow-x-hidden">
@@ -77,8 +100,39 @@ export default function BlogContent() {
           </p>
         </div>
 
+        {/* Category filters */}
+        <div className="flex justify-center mb-12">
+          <div
+            className="inline-flex flex-wrap justify-center gap-[6px] p-[6px] rounded-full"
+            style={{ background: "var(--surface-2)", border: "1px solid var(--border)" }}
+          >
+            {categories.map((c) => {
+              const active = filter === c.key;
+              return (
+                <button
+                  key={c.key}
+                  onClick={() => pickFilter(c.key)}
+                  style={{
+                    border: "none",
+                    cursor: "pointer",
+                    padding: "9px 16px",
+                    borderRadius: 999,
+                    fontFamily: "'Poppins',sans-serif",
+                    fontSize: 14,
+                    fontWeight: 700,
+                    background: active ? "var(--grad)" : "transparent",
+                    color: active ? "#fff" : "var(--text-dim)",
+                  }}
+                >
+                  {c.key} <span style={{ opacity: 0.6 }}>{c.count}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Featured (latest) post */}
-        {featured && (
+        {showFeatured && featured && (
           <Link href={featured.slug} className="no-underline group block mb-12">
             <div
               className="relative overflow-hidden rounded-[28px] border transition-all duration-300 group-hover:-translate-y-1"
@@ -124,7 +178,7 @@ export default function BlogContent() {
 
         {/* Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {rest.slice(0, visible).map((post) => (
+          {gridPosts.slice(0, visible).map((post) => (
             <Link key={post.id} href={post.slug} className="no-underline">
               <div
                 className="relative h-full overflow-hidden rounded-[22px] border cursor-pointer group transition-all duration-300 hover:-translate-y-1"
@@ -162,13 +216,13 @@ export default function BlogContent() {
         </div>
 
         {/* Show more */}
-        {visible < rest.length && (
+        {visible < gridPosts.length && (
           <div className="flex justify-center mt-12">
             <button
               onClick={() => {
                 const next = visible + PAGE;
                 setVisible(next);
-                track("blog_show_more", { shown: Math.min(next, rest.length) });
+                track("blog_show_more", { shown: Math.min(next, gridPosts.length) });
               }}
               className="inline-flex items-center gap-2 rounded-full font-bold"
               style={{
@@ -182,7 +236,7 @@ export default function BlogContent() {
             >
               Show more
               <span style={{ color: "var(--text-dim2)", fontWeight: 600 }}>
-                ({rest.length - visible} more)
+                ({gridPosts.length - visible} more)
               </span>
             </button>
           </div>
