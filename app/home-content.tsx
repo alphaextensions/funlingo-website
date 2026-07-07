@@ -74,8 +74,8 @@ export default function HomeContent() {
     { label: t("home.row5"), fun: <MarkYes />, tr: <MarkPart />, im: <MarkNo /> },
   ];
 
-  // Localized testimonials — the visitor's language shows first. The English
-  // set keeps stock-photo avatars + one 4-star; other languages use initials.
+  // Localized testimonials — the visitor's language shows first. Every review
+  // has a stock-photo avatar (the English set keeps one 4-star review).
   const reviews = orderedReviews(locale);
   const half = Math.ceil(reviews.length / 2);
   const loopA = [...reviews.slice(0, half), ...reviews.slice(0, half)];
