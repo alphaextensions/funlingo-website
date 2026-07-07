@@ -5,106 +5,19 @@ import { useT } from "@/app/i18n/I18nProvider";
 import { ChromeCTA } from "@/app/_components/cta";
 import { track } from "@/app/_components/track";
 import { FlagSvg } from "./flags";
+import { GAME_ROUNDS, optWord } from "./gameData";
 
-type Round = { word: string; answer: string; options: string[] };
-type LangSet = { label: string; flag: string; bcp: string; rounds: Round[] };
-
-// Word sets per learning language. Options are in the helper/native language
-// (English for all targets; Spanish when the learner picked English), matching
-// the player demo. The selected "I want to learn" language drives which set
-// the visitor plays.
-const LANGS: Record<string, LangSet> = {
-  es: {
-    label: "Spanish",
-    flag: "es",
-    bcp: "es-ES",
-    rounds: [
-      { word: "playa", answer: "a beach", options: ["a plate", "a beach", "a game", "a door"] },
-      { word: "gato", answer: "a cat", options: ["a cat", "a dog", "a hat", "a car"] },
-      { word: "agua", answer: "water", options: ["bread", "water", "fire", "money"] },
-      { word: "feliz", answer: "happy", options: ["tired", "happy", "hungry", "angry"] },
-      { word: "libro", answer: "a book", options: ["a book", "a table", "a shoe", "a key"] },
-      { word: "amigo", answer: "a friend", options: ["a friend", "a brother", "a neighbor", "a teacher"] },
-    ],
-  },
-  fr: {
-    label: "French",
-    flag: "fr",
-    bcp: "fr-FR",
-    rounds: [
-      { word: "cadeau", answer: "a gift", options: ["a gift", "a song", "a key", "a dog"] },
-      { word: "chien", answer: "a dog", options: ["a cat", "a dog", "a bird", "a fish"] },
-      { word: "eau", answer: "water", options: ["bread", "water", "wine", "milk"] },
-      { word: "heureux", answer: "happy", options: ["sad", "happy", "tired", "busy"] },
-      { word: "livre", answer: "a book", options: ["a book", "a pen", "a chair", "a window"] },
-      { word: "ami", answer: "a friend", options: ["a friend", "an enemy", "a cousin", "a guest"] },
-    ],
-  },
-  it: {
-    label: "Italian",
-    flag: "it",
-    bcp: "it-IT",
-    rounds: [
-      { word: "felice", answer: "happy", options: ["tired", "happy", "hungry", "late"] },
-      { word: "gatto", answer: "a cat", options: ["a cat", "a mouse", "a horse", "a cow"] },
-      { word: "acqua", answer: "water", options: ["water", "bread", "salt", "oil"] },
-      { word: "casa", answer: "a house", options: ["a house", "a road", "a tree", "a boat"] },
-      { word: "libro", answer: "a book", options: ["a book", "a lamp", "a plate", "a coin"] },
-      { word: "amico", answer: "a friend", options: ["a friend", "a stranger", "a doctor", "a king"] },
-    ],
-  },
-  de: {
-    label: "German",
-    flag: "de",
-    bcp: "de-DE",
-    rounds: [
-      { word: "Freund", answer: "a friend", options: ["bread", "a friend", "morning", "a street"] },
-      { word: "Hund", answer: "a dog", options: ["a dog", "a cat", "a bird", "a bear"] },
-      { word: "Wasser", answer: "water", options: ["water", "fire", "wind", "stone"] },
-      { word: "glücklich", answer: "happy", options: ["angry", "happy", "sleepy", "sick"] },
-      { word: "Buch", answer: "a book", options: ["a book", "a door", "a clock", "a spoon"] },
-      { word: "Haus", answer: "a house", options: ["a house", "a garden", "a bridge", "a car"] },
-    ],
-  },
-  ko: {
-    label: "Korean",
-    flag: "ko",
-    bcp: "ko-KR",
-    rounds: [
-      { word: "사랑", answer: "love", options: ["water", "money", "love", "a friend"] },
-      { word: "고양이", answer: "a cat", options: ["a cat", "a dog", "a fish", "a bird"] },
-      { word: "물", answer: "water", options: ["water", "rice", "tea", "milk"] },
-      { word: "행복", answer: "happiness", options: ["sadness", "happiness", "anger", "fear"] },
-      { word: "책", answer: "a book", options: ["a book", "a pen", "a bag", "a phone"] },
-      { word: "친구", answer: "a friend", options: ["a friend", "a teacher", "a sister", "a guest"] },
-    ],
-  },
-  ja: {
-    label: "Japanese",
-    flag: "ja",
-    bcp: "ja-JP",
-    rounds: [
-      { word: "ねこ", answer: "a cat", options: ["a book", "rain", "a star", "a cat"] },
-      { word: "いぬ", answer: "a dog", options: ["a dog", "a cat", "a fish", "a frog"] },
-      { word: "みず", answer: "water", options: ["water", "fire", "a tree", "gold"] },
-      { word: "ともだち", answer: "a friend", options: ["a friend", "a stranger", "a brother", "a rival"] },
-      { word: "ほん", answer: "a book", options: ["a book", "a desk", "a door", "a hat"] },
-      { word: "しあわせ", answer: "happiness", options: ["sadness", "happiness", "anger", "worry"] },
-    ],
-  },
-  en: {
-    label: "English",
-    flag: "en",
-    bcp: "en-US",
-    rounds: [
-      { word: "gift", answer: "un regalo", options: ["una canción", "un regalo", "una llave", "un perro"] },
-      { word: "cat", answer: "un gato", options: ["un gato", "un perro", "un pájaro", "un pez"] },
-      { word: "water", answer: "agua", options: ["pan", "agua", "fuego", "dinero"] },
-      { word: "happy", answer: "feliz", options: ["cansado", "feliz", "hambriento", "enojado"] },
-      { word: "book", answer: "un libro", options: ["un libro", "una mesa", "un zapato", "una llave"] },
-      { word: "friend", answer: "un amigo", options: ["un amigo", "un hermano", "un vecino", "un maestro"] },
-    ],
-  },
+// The "I want to learn" language drives which word set the visitor plays; the
+// option/answer meanings are resolved into the viewer's native (UI) language by
+// gameData's optWord(). Rounds live in gameData.ts (concept-keyed, localized).
+const LEARN_LABELS: Record<string, string> = {
+  es: "Spanish",
+  fr: "French",
+  it: "Italian",
+  de: "German",
+  ko: "Korean",
+  ja: "Japanese",
+  en: "English",
 };
 
 const CORRECT_MSGS = ["Nice!", "You got it!", "Exactly!", "Spot on!", "Yes!"];
@@ -122,10 +35,12 @@ function speak(text: string, bcp: string) {
 }
 
 export default function GuessGame({ lang = "es" }: { lang?: string }) {
-  const { t } = useT();
-  const set = LANGS[lang] || LANGS.es;
-  const rounds = set.rounds;
+  const { t, locale } = useT();
+  const rounds = GAME_ROUNDS[lang] || GAME_ROUNDS.es;
   const total = rounds.length;
+  const flag = rounds[0].flag;
+  const label = LEARN_LABELS[lang] || LEARN_LABELS.es;
+  const rtl = (locale || "").split("-")[0] === "ar";
 
   const [round, setRound] = React.useState(0);
   const [picked, setPicked] = React.useState<string | null>(null);
@@ -144,11 +59,11 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
   const answered = picked != null;
   const last = round >= total - 1;
 
-  const pick = (opt: string) => {
+  const pick = (concept: string) => {
     if (picked != null) return;
-    const right = opt === r.answer;
-    speak(r.word, set.bcp);
-    setPicked(opt);
+    const right = concept === r.ans;
+    speak(r.word, r.bcp);
+    setPicked(concept);
     if (right) setCorrectCount((c) => c + 1);
   };
   const next = () => {
@@ -172,6 +87,7 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
   return (
     <div className="w-full relative" style={{ fontFamily: "'Poppins',sans-serif" }}>
       <div
+        dir={rtl ? "rtl" : "ltr"}
         className="relative rounded-[28px] overflow-hidden border p-[22px] min-[560px]:p-9 min-[560px]:pb-[38px]"
         style={{
           background: "var(--surface)",
@@ -185,13 +101,13 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
             <div className="flex items-center justify-between gap-4 mb-[26px]">
               <div className="flex items-center gap-[11px]">
                 <span className="flex">
-                  <FlagSvg code={set.flag} />
+                  <FlagSvg code={flag} />
                 </span>
                 <span
                   className="text-[15px] font-bold"
                   style={{ color: "var(--text-dim)" }}
                 >
-                  {t("game.prompt").replace("{lang}", set.label)}
+                  {t("game.prompt").replace("{lang}", label)}
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -227,7 +143,8 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
             {/* the word */}
             <div className="text-center mb-2">
               <button
-                onClick={() => speak(r.word, set.bcp)}
+                dir="ltr"
+                onClick={() => speak(r.word, r.bcp)}
                 className="inline-flex items-center gap-[14px] border-0 cursor-pointer bg-transparent"
                 style={{ fontFamily: "'Poppins',sans-serif" }}
               >
@@ -282,9 +199,10 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
 
             {/* options */}
             <div className="grid grid-cols-1 min-[560px]:grid-cols-2 gap-[14px] mt-[26px]">
-              {r.options.map((opt) => {
-                const isAnswer = opt === r.answer;
-                const isPicked = opt === picked;
+              {r.opts.map((concept) => {
+                const opt = optWord(locale, concept);
+                const isAnswer = concept === r.ans;
+                const isPicked = concept === picked;
                 let bg = "var(--surface-2)";
                 let col = "var(--text)";
                 let bd = "1px solid var(--border)";
@@ -305,8 +223,8 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
                 }
                 return (
                   <button
-                    key={opt}
-                    onClick={() => pick(opt)}
+                    key={concept}
+                    onClick={() => pick(concept)}
                     className="flex items-center gap-[10px] text-left"
                     style={{
                       padding: "18px 20px",
@@ -346,14 +264,14 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
 
             {/* feedback */}
             <div className="text-center mt-[18px]" style={{ height: 30 }}>
-              {answered && picked === r.answer && (
+              {answered && picked === r.ans && (
                 <span className="text-[17px] font-extrabold" style={{ color: "#16B57F" }}>
                   ✓ {CORRECT_MSGS[round % CORRECT_MSGS.length]}
                 </span>
               )}
-              {answered && picked !== r.answer && (
+              {answered && picked !== r.ans && (
                 <span className="text-[17px] font-extrabold" style={{ color: "#E0319E" }}>
-                  {t("game.wrong").replace("{answer}", r.answer)}
+                  {t("game.wrong").replace("{answer}", optWord(locale, r.ans))}
                 </span>
               )}
             </div>
