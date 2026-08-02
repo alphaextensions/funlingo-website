@@ -8,7 +8,7 @@ type LogoCfg = { src: string; bg: string; pad: number; wide?: boolean };
 const LOGOS: Record<string, LogoCfg> = {
   Netflix: { src: "/platforms/netflix.png", bg: "#141414", pad: 7 },
   YouTube: { src: "/platforms/youtube.png", bg: "#ffffff", pad: 5 },
-  "Prime Video": { src: "/platforms/primevideo.png", bg: "#ffffff", pad: 7, wide: true },
+  "Prime Video": { src: "/platforms/primevideo.svg", bg: "#ffffff", pad: 7, wide: true },
   "Disney+ Hotstar": { src: "/platforms/disneyhotstar.png", bg: "#0C1B4A", pad: 5 },
   "Apple TV": { src: "/platforms/appletv.svg", bg: "#ffffff", pad: 7, wide: true },
   Crunchyroll: { src: "/platforms/crunchyroll.png", bg: "#ffffff", pad: 5 },
