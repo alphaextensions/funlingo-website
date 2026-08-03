@@ -543,3 +543,18 @@ export function optWord(locale: string | undefined, concept: string): string {
   const dict = GAME_OPT[gameBase(locale)] || GAME_OPT.en;
   return dict[concept] || concept;
 }
+
+// Stable filename for a word's pre-generated pronunciation clip. FNV-1a over
+// `${bcp}|${word}` — deterministic across Node and the browser, so the audio
+// generator (scripts/generate-game-audio.mjs) and the player compute the same
+// name for words that can't be a filesystem-safe slug (CJK, accents, etc).
+// NOTE: keep this identical to audioKey() in scripts/generate-game-audio.mjs.
+export function audioKey(bcp: string, word: string): string {
+  const s = `${bcp}|${word}`;
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return (h >>> 0).toString(16).padStart(8, "0");
+}
