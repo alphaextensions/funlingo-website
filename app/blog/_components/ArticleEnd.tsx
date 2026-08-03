@@ -45,32 +45,32 @@ export default function ArticleEnd() {
 
   return createPortal(
     <section className="w-full max-w-3xl mx-auto px-6 pb-16">
-      <div className="border-t border-white/10 pt-8">
+      <div className="border-t border-[var(--border)] pt-8">
         <ShareRow />
       </div>
 
       {related.length > 0 && (
         <div className="mt-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Continue reading</h2>
+          <h2 className="text-2xl font-bold text-[var(--text)] mb-6">Continue reading</h2>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((post) => (
               <Link key={post.id} href={post.slug} className="no-underline group">
-                <article className="relative h-full rounded-2xl border border-white/10 bg-white/[0.03] overflow-hidden hover:border-[#C642FC]/50 hover:-translate-y-1 transition-all duration-300">
+                <article className="relative h-full rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden hover:border-[#C81FD4]/50 hover:-translate-y-1 transition-all duration-300">
                   <div className={`absolute top-0 inset-x-0 h-1 bg-gradient-to-r ${accBar(post.category)} opacity-60 group-hover:opacity-100 transition-opacity`} />
                   <div className="p-5 flex flex-col h-full">
                     <span className={`w-fit px-2.5 py-0.5 rounded-full border text-xs font-medium mb-3 ${accBadge(post.category)}`}>
                       {post.category}
                     </span>
-                    <h3 className="text-white font-semibold leading-snug group-hover:text-[#C642FC] transition-colors mb-2">
+                    <h3 className="text-[var(--text)] font-semibold leading-snug group-hover:text-[#C81FD4] transition-colors mb-2">
                       {post.title}
                     </h3>
-                    <p className="text-sm text-gray-400 line-clamp-2 mb-4">{post.excerpt}</p>
-                    <div className="mt-auto flex items-center justify-between text-xs text-gray-500">
+                    <p className="text-sm text-[var(--text-dim)] line-clamp-2 mb-4">{post.excerpt}</p>
+                    <div className="mt-auto flex items-center justify-between text-xs text-[var(--text-dim2)]">
                       <span className="flex items-center gap-1">
                         <Calendar className="w-3 h-3" />
                         {post.date}
                       </span>
-                      <ArrowRight className="w-4 h-4 text-[#C642FC] group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-4 h-4 text-[#C81FD4] group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </article>

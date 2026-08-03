@@ -23,24 +23,24 @@ import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics"
 
 export default function DownloadSubtitlesFromYoutubeContent() {
   return (
-    <div className="flex flex-col min-h-screen bg-black">
+    <div className="flex flex-col min-h-screen bg-[var(--bg)]">
       <Navbar currentPage="/blog" />
 
       {/* Hero Section */}
       <section className="relative w-full py-16 lg:py-24 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-black to-black z-0 pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-[var(--bg)] to-[var(--bg)] z-0 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-6 text-center lg:text-left">
-          <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(198,66,252,0.1)] text-[#C642FC] border-[#C642FC]/20 px-3 py-1">
+          <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(200,31,212,0.1)] text-[#C81FD4] border-[#C81FD4]/20 px-3 py-1">
             Guide
           </Badge>
-          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text)] leading-tight">
             How to Download Subtitles from YouTube (3 Free Methods)
           </h1>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0">
+          <p className="text-lg text-[var(--text-dim)] max-w-2xl mx-auto lg:mx-0">
             A complete step-by-step guide to downloading YouTube subtitles in
             SRT, TXT, and other formats — no software installation required.
           </p>
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-400 font-medium">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-[var(--text-dim)] font-medium">
             <div className="flex items-center gap-1">
               <Calendar className="w-4 h-4" /> March 19, 2026
             </div>
@@ -56,7 +56,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
 
       {/* Main Content */}
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways
             items={[
               "There are three free ways to download YouTube subtitles: the built-in transcript, online tools, and browser extensions.",
@@ -83,7 +83,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </p>
 
           {/* Why download subtitles */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Why Would You Want to Download YouTube Subtitles?
           </h2>
           <p>
@@ -91,34 +91,34 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             reasons people download subtitles from YouTube:
           </p>
           <div className="grid sm:grid-cols-2 gap-4 my-6 not-prose">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <Globe className="w-6 h-6 text-[#C642FC] mb-2" />
-              <h3 className="text-white font-semibold mb-1">Language Learning</h3>
-              <p className="text-gray-400 text-sm">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <Globe className="w-6 h-6 text-[#C81FD4] mb-2" />
+              <h3 className="text-[var(--text)] font-semibold mb-1">Language Learning</h3>
+              <p className="text-[var(--text-dim)] text-sm">
                 Study vocabulary and grammar from authentic video content. Having
                 a text transcript lets you review at your own pace.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <FileText className="w-6 h-6 text-[#C642FC] mb-2" />
-              <h3 className="text-white font-semibold mb-1">Content Creation</h3>
-              <p className="text-gray-400 text-sm">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <FileText className="w-6 h-6 text-[#C81FD4] mb-2" />
+              <h3 className="text-[var(--text)] font-semibold mb-1">Content Creation</h3>
+              <p className="text-[var(--text-dim)] text-sm">
                 Repurpose video content into blog posts, social media captions,
                 or translated versions for a global audience.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <Shield className="w-6 h-6 text-[#C642FC] mb-2" />
-              <h3 className="text-white font-semibold mb-1">Accessibility</h3>
-              <p className="text-gray-400 text-sm">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <Shield className="w-6 h-6 text-[#C81FD4] mb-2" />
+              <h3 className="text-[var(--text)] font-semibold mb-1">Accessibility</h3>
+              <p className="text-[var(--text-dim)] text-sm">
                 Provide subtitles for deaf or hard-of-hearing viewers when
                 embedding videos on external platforms.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <Lightbulb className="w-6 h-6 text-[#C642FC] mb-2" />
-              <h3 className="text-white font-semibold mb-1">Research & Study</h3>
-              <p className="text-gray-400 text-sm">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <Lightbulb className="w-6 h-6 text-[#C81FD4] mb-2" />
+              <h3 className="text-[var(--text)] font-semibold mb-1">Research & Study</h3>
+              <p className="text-[var(--text-dim)] text-sm">
                 Analyze lectures, interviews, and educational content by
                 searching through the full text transcript.
               </p>
@@ -126,7 +126,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Method 1 */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Method 1: Use YouTube&apos;s Built-in Transcript Feature
           </h2>
           <p>
@@ -135,13 +135,13 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             tools and works directly in your browser.
           </p>
 
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6 my-6 not-prose">
-            <h3 className="text-white font-semibold text-lg mb-4">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 my-6 not-prose">
+            <h3 className="text-[var(--text)] font-semibold text-lg mb-4">
               Step-by-Step Instructions
             </h3>
-            <ol className="space-y-3 text-gray-300">
+            <ol className="space-y-3 text-[var(--text-dim)]">
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   1
                 </span>
                 <span>
@@ -150,7 +150,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   2
                 </span>
                 <span>
@@ -159,7 +159,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   3
                 </span>
                 <span>
@@ -168,7 +168,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   4
                 </span>
                 <span>
@@ -178,7 +178,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   5
                 </span>
                 <span>
@@ -188,7 +188,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   6
                 </span>
                 <span>
@@ -200,15 +200,15 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             </ol>
           </div>
 
-          <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+          <h3 className="text-xl font-semibold text-[var(--text)] mt-8 mb-3">
             Pros and Cons of Method 1
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 my-4 not-prose">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
               <h4 className="text-green-400 font-semibold mb-3 flex items-center gap-2">
                 <Check className="w-5 h-5" /> Pros
               </h4>
-              <ul className="space-y-2 text-gray-300 text-sm">
+              <ul className="space-y-2 text-[var(--text-dim)] text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
                   No external tools or installations needed
@@ -223,11 +223,11 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
               <h4 className="text-red-400 font-semibold mb-3 flex items-center gap-2">
                 <X className="w-5 h-5" /> Cons
               </h4>
-              <ul className="space-y-2 text-gray-300 text-sm">
+              <ul className="space-y-2 text-[var(--text-dim)] text-sm">
                 <li className="flex items-start gap-2">
                   <X className="w-4 h-4 text-red-400 mt-0.5 flex-shrink-0" />
                   Only plain text — no SRT format with timestamps
@@ -245,7 +245,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Method 2 */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Method 2: Online Subtitle Download Tools (DownSub, SaveSubs)
           </h2>
           <p>
@@ -255,13 +255,13 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             YouTube&apos;s servers and convert them into usable file formats.
           </p>
 
-          <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+          <h3 className="text-xl font-semibold text-[var(--text)] mt-8 mb-3">
             Using DownSub
           </h3>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6 my-6 not-prose">
-            <ol className="space-y-3 text-gray-300">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 my-6 not-prose">
+            <ol className="space-y-3 text-[var(--text-dim)]">
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   1
                 </span>
                 <span>
@@ -269,7 +269,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   2
                 </span>
                 <span>
@@ -278,7 +278,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   3
                 </span>
                 <span>
@@ -287,7 +287,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   4
                 </span>
                 <span>
@@ -297,7 +297,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   5
                 </span>
                 <span>
@@ -307,7 +307,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             </ol>
           </div>
 
-          <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+          <h3 className="text-xl font-semibold text-[var(--text)] mt-8 mb-3">
             Using SaveSubs
           </h3>
           <p>
@@ -318,15 +318,15 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             platforms like Vimeo and Dailymotion.
           </p>
 
-          <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+          <h3 className="text-xl font-semibold text-[var(--text)] mt-8 mb-3">
             Pros and Cons of Online Tools
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 my-4 not-prose">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
               <h4 className="text-green-400 font-semibold mb-3 flex items-center gap-2">
                 <Check className="w-5 h-5" /> Pros
               </h4>
-              <ul className="space-y-2 text-gray-300 text-sm">
+              <ul className="space-y-2 text-[var(--text-dim)] text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
                   Proper SRT format with accurate timestamps
@@ -345,11 +345,11 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
               <h4 className="text-red-400 font-semibold mb-3 flex items-center gap-2">
                 <X className="w-5 h-5" /> Cons
               </h4>
-              <ul className="space-y-2 text-gray-300 text-sm">
+              <ul className="space-y-2 text-[var(--text-dim)] text-sm">
                 <li className="flex items-start gap-2">
                   <X className="w-4 h-4 text-red-400 mt-0.5 flex-shrink-0" />
                   Some sites show intrusive ads
@@ -367,7 +367,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Method 3 */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Method 3: Browser Extensions for Subtitle Download
           </h2>
           <p>
@@ -377,37 +377,37 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             interface.
           </p>
 
-          <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+          <h3 className="text-xl font-semibold text-[var(--text)] mt-8 mb-3">
             Popular Subtitle Download Extensions
           </h3>
           <div className="space-y-4 my-6 not-prose">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h4 className="text-white font-semibold mb-2">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h4 className="text-[var(--text)] font-semibold mb-2">
                 Substital
               </h4>
-              <p className="text-gray-400 text-sm mb-2">
+              <p className="text-[var(--text-dim)] text-sm mb-2">
                 Available for Chrome and Firefox. Substital lets you load
                 external subtitle files onto any video, and also allows you to
                 download existing subtitles from YouTube. It adds a subtitle icon
                 to the video player controls.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h4 className="text-white font-semibold mb-2">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h4 className="text-[var(--text)] font-semibold mb-2">
                 YouTube Subtitle Downloader (various)
               </h4>
-              <p className="text-gray-400 text-sm mb-2">
+              <p className="text-[var(--text-dim)] text-sm mb-2">
                 Several extensions on the Chrome Web Store specifically focus on
                 downloading YouTube subtitles. Look for ones with high ratings
                 and recent updates. Most add a &quot;Download Subtitles&quot; button
                 directly below the video.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h4 className="text-white font-semibold mb-2">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h4 className="text-[var(--text)] font-semibold mb-2">
                 Tampermonkey + YouTube Subtitle Scripts
               </h4>
-              <p className="text-gray-400 text-sm mb-2">
+              <p className="text-[var(--text-dim)] text-sm mb-2">
                 For advanced users, Tampermonkey (a userscript manager) can run
                 community-created scripts that add subtitle download
                 functionality. This approach is more technical but highly
@@ -416,13 +416,13 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+          <h3 className="text-xl font-semibold text-[var(--text)] mt-8 mb-3">
             How to Use a Subtitle Download Extension
           </h3>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6 my-6 not-prose">
-            <ol className="space-y-3 text-gray-300">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 my-6 not-prose">
+            <ol className="space-y-3 text-[var(--text-dim)]">
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   1
                 </span>
                 <span>
@@ -431,7 +431,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   2
                 </span>
                 <span>
@@ -439,7 +439,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   3
                 </span>
                 <span>
@@ -448,7 +448,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C642FC]/20 text-[#C642FC] flex items-center justify-center text-sm font-bold">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#C81FD4]/20 text-[#C81FD4] flex items-center justify-center text-sm font-bold">
                   4
                 </span>
                 <span>
@@ -459,7 +459,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Understanding SRT format */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Understanding Subtitle File Formats
           </h2>
           <p>
@@ -467,11 +467,11 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             file formats. Here&apos;s what each one means:
           </p>
           <div className="space-y-4 my-6 not-prose">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h4 className="text-white font-semibold mb-2">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h4 className="text-[var(--text)] font-semibold mb-2">
                 SRT (SubRip Subtitle)
               </h4>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 The most widely used subtitle format. SRT files contain numbered
                 subtitle entries, each with a timestamp range and the subtitle
                 text. Compatible with virtually all media players including VLC,
@@ -479,21 +479,21 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 Pro.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h4 className="text-white font-semibold mb-2">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h4 className="text-[var(--text)] font-semibold mb-2">
                 VTT (Web Video Text Tracks)
               </h4>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 Similar to SRT but designed for HTML5 video players. VTT
                 supports additional styling options like text positioning and
                 colors. Used natively by web browsers and streaming platforms.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h4 className="text-white font-semibold mb-2">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h4 className="text-[var(--text)] font-semibold mb-2">
                 TXT (Plain Text)
               </h4>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 A simple text file containing just the subtitle text without
                 timestamps. Best for reading transcripts, studying content, or
                 creating written summaries of video content.
@@ -502,48 +502,48 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Comparison Table */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Comparing All 3 Methods
           </h2>
           <p>
             Here&apos;s a quick comparison to help you choose the right method:
           </p>
           <div className="overflow-x-auto my-6 not-prose">
-            <table className="w-full text-sm text-gray-300 border border-white/10 rounded-xl overflow-hidden">
+            <table className="w-full text-sm text-[var(--text-dim)] border border-[var(--border)] rounded-xl overflow-hidden">
               <thead>
-                <tr className="bg-white/5">
-                  <th className="text-left p-3 text-white font-semibold">Feature</th>
-                  <th className="text-center p-3 text-white font-semibold">Transcript</th>
-                  <th className="text-center p-3 text-white font-semibold">Online Tools</th>
-                  <th className="text-center p-3 text-white font-semibold">Extensions</th>
+                <tr className="bg-[var(--surface)]">
+                  <th className="text-left p-3 text-[var(--text)] font-semibold">Feature</th>
+                  <th className="text-center p-3 text-[var(--text)] font-semibold">Transcript</th>
+                  <th className="text-center p-3 text-[var(--text)] font-semibold">Online Tools</th>
+                  <th className="text-center p-3 text-[var(--text)] font-semibold">Extensions</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-t border-white/10">
+                <tr className="border-t border-[var(--border)]">
                   <td className="p-3">SRT Format</td>
                   <td className="p-3 text-center"><X className="w-4 h-4 text-red-400 mx-auto" /></td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                 </tr>
-                <tr className="border-t border-white/10 bg-white/[0.02]">
+                <tr className="border-t border-[var(--border)] bg-[var(--surface)]">
                   <td className="p-3">No Install Needed</td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                   <td className="p-3 text-center"><X className="w-4 h-4 text-red-400 mx-auto" /></td>
                 </tr>
-                <tr className="border-t border-white/10">
+                <tr className="border-t border-[var(--border)]">
                   <td className="p-3">Multiple Languages</td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                 </tr>
-                <tr className="border-t border-white/10 bg-white/[0.02]">
+                <tr className="border-t border-[var(--border)] bg-[var(--surface)]">
                   <td className="p-3">Timestamps</td>
                   <td className="p-3 text-center">Optional</td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                   <td className="p-3 text-center"><Check className="w-4 h-4 text-green-400 mx-auto" /></td>
                 </tr>
-                <tr className="border-t border-white/10">
+                <tr className="border-t border-[var(--border)]">
                   <td className="p-3">Ease of Use</td>
                   <td className="p-3 text-center">Easy</td>
                   <td className="p-3 text-center">Very Easy</td>
@@ -554,13 +554,13 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Language Learning Section */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Downloading Subtitles for Language Learning
           </h2>
           <p>
             One of the most popular reasons people download YouTube subtitles is
             for{" "}
-            <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] no-underline hover:underline">
+            <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C81FD4] no-underline hover:underline">
               language learning through video content
             </a>
             . Having a subtitle file lets you:
@@ -578,7 +578,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             download two separate files, sync them, and switch back and forth.
           </p>
 
-          <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+          <h3 className="text-xl font-semibold text-[var(--text)] mt-8 mb-3">
             A Better Alternative: Dual Subtitles with Funlingo
           </h3>
           <DualSubtitleDemo
@@ -587,37 +587,37 @@ export default function DownloadSubtitlesFromYoutubeContent() {
             highlight="lección"
             native="Let's start today's lesson."
           />
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6 my-6 not-prose">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 my-6 not-prose">
             <div className="flex items-start gap-4">
-              <Lightbulb className="w-8 h-8 text-[#C642FC] flex-shrink-0 mt-1" />
+              <Lightbulb className="w-8 h-8 text-[#C81FD4] flex-shrink-0 mt-1" />
               <div>
-                <h4 className="text-white font-semibold mb-2">
+                <h4 className="text-[var(--text)] font-semibold mb-2">
                   Skip the Download — Watch with Dual Subtitles Instead
                 </h4>
-                <p className="text-gray-300 text-sm mb-3">
+                <p className="text-[var(--text-dim)] text-sm mb-3">
                   If your goal is language learning, you might not need to
                   download subtitles at all.{" "}
                   <a
                     href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#C642FC] hover:underline"
+                    className="text-[#C81FD4] hover:underline"
                   >
                     Funlingo
                   </a>{" "}
                   is a free Chrome extension that shows{" "}
-                  <strong className="text-white">dual subtitles</strong> directly on
+                  <strong className="text-[var(--text)]">dual subtitles</strong> directly on
                   YouTube, Netflix, and Prime Video. You see your target language
                   and your native language at the same time — no file downloads
                   required.
                 </p>
-                <p className="text-gray-300 text-sm">
+                <p className="text-[var(--text-dim)] text-sm">
                   Funlingo also includes features like word-level translations on
                   hover, a reading mode for studying transcripts, and AI-powered
                   explanations. Learn more about{" "}
                   <a
                     href="/blog/best-dual-subtitle-extension"
-                    className="text-[#C642FC] hover:underline"
+                    className="text-[#C81FD4] hover:underline"
                   >
                     the best dual subtitle extensions
                   </a>{" "}
@@ -628,47 +628,47 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Tips */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Tips for Getting the Best YouTube Subtitles
           </h2>
           <div className="space-y-3 my-6 not-prose">
-            <div className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4">
-              <Check className="w-5 h-5 text-[#C642FC] mt-0.5 flex-shrink-0" />
+            <div className="flex items-start gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
+              <Check className="w-5 h-5 text-[#C81FD4] mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-white font-medium text-sm">Look for manually uploaded subtitles</p>
-                <p className="text-gray-400 text-sm">
+                <p className="text-[var(--text)] font-medium text-sm">Look for manually uploaded subtitles</p>
+                <p className="text-[var(--text-dim)] text-sm">
                   Videos with creator-uploaded subtitles are far more accurate
                   than auto-generated ones. Check if the subtitle option says
                   &quot;English&quot; vs. &quot;English (auto-generated)&quot;.
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4">
-              <Check className="w-5 h-5 text-[#C642FC] mt-0.5 flex-shrink-0" />
+            <div className="flex items-start gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
+              <Check className="w-5 h-5 text-[#C81FD4] mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-white font-medium text-sm">Choose official channels for accuracy</p>
-                <p className="text-gray-400 text-sm">
+                <p className="text-[var(--text)] font-medium text-sm">Choose official channels for accuracy</p>
+                <p className="text-[var(--text-dim)] text-sm">
                   Official channels for TV shows, educational content, and news
                   organizations typically have high-quality, proofread subtitles.
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4">
-              <Check className="w-5 h-5 text-[#C642FC] mt-0.5 flex-shrink-0" />
+            <div className="flex items-start gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
+              <Check className="w-5 h-5 text-[#C81FD4] mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-white font-medium text-sm">Edit auto-generated subtitles</p>
-                <p className="text-gray-400 text-sm">
+                <p className="text-[var(--text)] font-medium text-sm">Edit auto-generated subtitles</p>
+                <p className="text-[var(--text-dim)] text-sm">
                   If you download auto-generated subtitles, review and edit
                   them in a text editor. Auto-captions often have errors with
                   names, technical terms, and punctuation.
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4">
-              <Check className="w-5 h-5 text-[#C642FC] mt-0.5 flex-shrink-0" />
+            <div className="flex items-start gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
+              <Check className="w-5 h-5 text-[#C81FD4] mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-white font-medium text-sm">Use SRT for video editing</p>
-                <p className="text-gray-400 text-sm">
+                <p className="text-[var(--text)] font-medium text-sm">Use SRT for video editing</p>
+                <p className="text-[var(--text-dim)] text-sm">
                   If you plan to use the subtitles in video editing software
                   (Premiere Pro, DaVinci Resolve, Final Cut), always download
                   in SRT format for maximum compatibility.
@@ -678,17 +678,17 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* FAQ Section */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Frequently Asked Questions
           </h2>
 
           <div className="space-y-4 my-6 not-prose">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
-                <ChevronDown className="w-5 h-5 text-[#C642FC]" />
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="text-[var(--text)] font-semibold mb-2 flex items-center gap-2">
+                <ChevronDown className="w-5 h-5 text-[#C81FD4]" />
                 Can you download auto-generated subtitles from YouTube?
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 Yes. Both online tools like DownSub and browser extensions can
                 download auto-generated (also called &quot;auto-captions&quot;) subtitles.
                 YouTube&apos;s transcript feature also shows auto-generated text.
@@ -697,12 +697,12 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 or technical content.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
-                <ChevronDown className="w-5 h-5 text-[#C642FC]" />
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="text-[var(--text)] font-semibold mb-2 flex items-center gap-2">
+                <ChevronDown className="w-5 h-5 text-[#C81FD4]" />
                 What format are YouTube subtitles in?
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 YouTube internally stores subtitles in a proprietary XML-based
                 format (sometimes called srv3 or timedtext). When you use a
                 download tool, it converts these into standard formats like SRT
@@ -711,12 +711,12 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 software.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
-                <ChevronDown className="w-5 h-5 text-[#C642FC]" />
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="text-[var(--text)] font-semibold mb-2 flex items-center gap-2">
+                <ChevronDown className="w-5 h-5 text-[#C81FD4]" />
                 Are YouTube subtitle downloaders safe to use?
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 Reputable tools like DownSub and SaveSubs are generally safe.
                 They only extract the subtitle text that&apos;s already publicly
                 available on YouTube. However, be cautious of lesser-known
@@ -725,12 +725,12 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 ad blocker.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
-                <ChevronDown className="w-5 h-5 text-[#C642FC]" />
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="text-[var(--text)] font-semibold mb-2 flex items-center gap-2">
+                <ChevronDown className="w-5 h-5 text-[#C81FD4]" />
                 Can I download subtitles in multiple languages?
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 Yes. If a video has subtitles available in multiple languages,
                 most download tools will show you all available options. You
                 can download as many language versions as you need. For language
@@ -738,19 +738,19 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                 consider using{" "}
                 <a
                   href="/blog/best-dual-subtitle-extension"
-                  className="text-[#C642FC] hover:underline"
+                  className="text-[#C81FD4] hover:underline"
                 >
                   a dual subtitle extension like Funlingo
                 </a>{" "}
                 instead.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
-                <ChevronDown className="w-5 h-5 text-[#C642FC]" />
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="text-[var(--text)] font-semibold mb-2 flex items-center gap-2">
+                <ChevronDown className="w-5 h-5 text-[#C81FD4]" />
                 Why can&apos;t I find subtitles for a YouTube video?
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-[var(--text-dim)] text-sm">
                 Not all YouTube videos have subtitles. If a creator hasn&apos;t
                 uploaded subtitles and YouTube&apos;s auto-caption system can&apos;t
                 process the audio (e.g., the audio is in an unsupported language
@@ -762,7 +762,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </div>
 
           {/* Related content */}
-          <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--text)] mt-12 mb-4">
             Related Guides
           </h2>
           <p>
@@ -771,33 +771,33 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           </p>
           <ul>
             <li>
-              <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C642FC] no-underline hover:underline">
+              <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C81FD4] no-underline hover:underline">
                 How to Learn a Language by Watching Movies and TV Shows
               </a>
             </li>
             <li>
-              <a href="/blog/best-dual-subtitle-extension" className="text-[#C642FC] no-underline hover:underline">
+              <a href="/blog/best-dual-subtitle-extension" className="text-[#C81FD4] no-underline hover:underline">
                 Best Dual Subtitle Extensions for Netflix, YouTube & More
               </a>
             </li>
             <li>
-              <a href="/blog/learn-korean-watching-youtube" className="text-[#C642FC] no-underline hover:underline">
+              <a href="/blog/learn-korean-watching-youtube" className="text-[#C81FD4] no-underline hover:underline">
                 How to Learn Korean by Watching YouTube
               </a>
             </li>
             <li>
-              <a href="/blog/vocabulary-building-watching-shows" className="text-[#C642FC] no-underline hover:underline">
+              <a href="/blog/vocabulary-building-watching-shows" className="text-[#C81FD4] no-underline hover:underline">
                 Building Vocabulary by Watching TV Shows
               </a>
             </li>
           </ul>
 
           {/* CTA */}
-          <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(198,66,252,0.05)] border border-[#C642FC]/20">
-            <h2 className="text-3xl font-bold text-white mb-4">
+          <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
+            <h2 className="text-3xl font-bold text-[var(--text)] mb-4">
               Learn Languages While Watching YouTube
             </h2>
-            <p className="text-lg text-gray-400 mb-8 max-w-xl mx-auto">
+            <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">
               Skip the subtitle downloads. Funlingo shows dual subtitles right
               on YouTube, Netflix, and Prime Video — with instant translations,
               word lookups, and AI-powered learning tools.
@@ -808,7 +808,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
               rel="noopener noreferrer"
               className="no-underline"
             >
-              <Button className="bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">
+              <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">
                 Get Funlingo Free{" "}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

@@ -1,164 +1,158 @@
 "use client";
 
 const logo = "/assets/logo.png";
-import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useT } from "@/app/i18n/I18nProvider";
 import { navHref, LOCALE_CODES } from "@/app/i18n/config";
-import LanguageSwitcher from "@/app/i18n/LanguageSwitcher";
+import LanguageMenu from "@/app/i18n/LanguageMenu";
+import ThemeToggle from "@/app/theme/ThemeToggle";
+import { ChromeCTA } from "@/app/_components/cta";
 
 interface NavbarProps {
   currentPage?: string; // Optional prop to indicate current page
+  minimal?: boolean; // Logo-only header (e.g. uninstall page) — no nav links or CTA
 }
 
-const Navbar = ({ currentPage = "/" }: NavbarProps) => {
+const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const { t, locale } = useT();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // Minimal mode: just the logo, centered. Used on focused pages (uninstall).
+  if (minimal) {
+    return (
+      <header
+        className="sticky top-0 z-50 w-full backdrop-blur-[16px] border-b"
+        style={{ background: "var(--nav)", borderColor: "var(--border)" }}
+      >
+        <div className="flex items-center justify-center max-w-[1240px] mx-auto px-[34px] py-[15px]">
+          <a href={navHref("/", locale)}>
+            <img src={logo} alt="Funlingo" className="h-12 sm:h-14 w-auto block" />
+          </a>
+        </div>
+      </header>
+    );
+  }
 
-  // Normalize the current page by stripping any locale prefix, so the active
-  // state matches whether the caller passes "/blog" or a localized "/fr/blog".
+  // Normalize current page by stripping any locale prefix, so the active state
+  // matches whether the caller passes "/blog" or a localized "/fr/blog".
   const segs = currentPage.split("/").filter(Boolean);
   const current =
     segs.length && LOCALE_CODES.includes(segs[0])
       ? `/${segs.slice(1).join("/")}`
       : currentPage;
 
-  // Navigation items with active state based on the normalized current page.
   const navItems = [
     { label: t("nav.home"), href: "/" },
-    // { label: "Pricing", href: "/pricing" },
     { label: t("nav.roadmap"), href: "/roadmap" },
     { label: t("nav.blog"), href: "/blog" },
-    { label: t("nav.feedback"), href: "/feedback" },
     { label: t("nav.about"), href: "/about" },
-  ].map(item => ({
+  ].map((item) => ({
     label: item.label,
     href: navHref(item.href, locale),
-    active: current === item.href || (item.href === "/blog" && current.startsWith("/blog"))
+    active:
+      current === item.href ||
+      (item.href === "/blog" && current.startsWith("/blog")),
   }));
 
   return (
     <header
-      className={`relative self-stretch w-full h-16 bg-[rgba(0,0,0,0.8)] backdrop-blur-[15px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(15px)_brightness(100%)] border-b border-[#ffffff1a] sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "shadow-2xl shadow-purple-500/20" : ""
-        }`}
+      className="sticky top-0 z-[100] w-full backdrop-blur-[16px] border-b"
+      style={{ background: "var(--nav)", borderColor: "var(--border)" }}
     >
-      <div className="flex items-center justify-between h-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex items-center justify-between max-w-[1240px] mx-auto px-5 sm:px-[34px] py-[15px]">
         {/* Logo */}
-        <a
-          href={navHref("/", locale)}
-          className="animate-fade-in-down hover:scale-105 transition-transform duration-300"
-        >
-          <div className="relative flex items-center justify-center w-fit bg-[linear-gradient(135deg,rgba(2120,2120,2120,0)_0%,#C642FC_40%,#7A1CAC_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-heading-h5 font-[number:var(--heading-h5-font-weight)] text-transparent text-[length:var(--heading-h5-font-size)] tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] whitespace-nowrap [font-style:var(--heading-h5-font-style)]">
-            <img
-              src={logo}
-              width={140}
-              alt="Funlingo Logo"
-              className="drop-shadow-lg hover:drop-shadow-2xl transition-all duration-300"
-            />
-          </div>
+        <a href={navHref("/", locale)} className="block shrink-0">
+          <img src={logo} alt="Funlingo" className="h-12 sm:h-14 w-auto block" />
         </a>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center justify-center gap-6 lg:gap-8">
-          {navItems.map((item, index) => (
+        {/* Desktop nav links */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navItems.map((item, i) => (
             <a
-              key={index}
+              key={i}
               href={item.href}
-              className={`relative flex items-center justify-center w-fit font-inter font-medium ${item.active ? "text-textwhite" : "text-textbody"
-                } text-base tracking-[0.16px] leading-[26px] whitespace-nowrap hover:text-textwhite transition-all duration-300 group animate-fade-in-down`}
-              style={{ animationDelay: `${index * 100 + 200}ms` }}
+              className="text-[15px] no-underline transition-colors"
+              style={{
+                fontWeight: item.active ? 700 : 600,
+                color: item.active ? "var(--text)" : "var(--text-dim)",
+              }}
             >
               {item.label}
-              <span
-                className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] transition-all duration-300 group-hover:w-full ${item.active ? "w-full" : ""
-                  }`}
-              ></span>
             </a>
           ))}
         </nav>
 
-        {/* Desktop CTA Button */}
-        <div
-          className="hidden md:flex items-center gap-3 animate-fade-in-down"
-          style={{ animationDelay: "700ms" }}
-        >
-          <LanguageSwitcher />
-          <a
-            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] h-10 px-5 py-2 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group overflow-hidden relative">
-              <span className="relative z-10 flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textwhite text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)]">
-                {t("nav.download")}
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#7A1CAC] to-[#C642FC] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Button>
-          </a>
-        </div>
+        {/* Right cluster */}
+        <div className="flex items-center gap-[10px]">
+          <div className="hidden sm:block">
+            <LanguageMenu />
+          </div>
+          <ThemeToggle />
+          <div className="hidden sm:block">
+            <ChromeCTA label={t("cta.short")} variant="navPill" glyphSize={17} />
+          </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg bg-[rgba(2120,2120,2120,0.1)] hover:bg-[rgba(2120,2120,2120,0.2)] transition-all duration-300 group animate-fade-in-down"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`w-5 h-[2px] bg-textwhite shadow-sm shadow-white/50 transition-all duration-300 ${isMenuOpen ? "rotate-45 translate-y-1.5" : "-translate-y-1"
-              }`}
-          ></span>
-          <span
-            className={`w-5 h-[2px] bg-textwhite shadow-sm shadow-white/50 transition-all duration-300 my-1.5 ${isMenuOpen ? "opacity-0" : "opacity-100"
-              }`}
-          ></span>
-          <span
-            className={`w-5 h-[2px] bg-textwhite shadow-sm shadow-white/50 transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-1.5" : "translate-y-1"
-              }`}
-          ></span>
-        </button>
+          {/* Mobile menu toggle */}
+          <button
+            className="md:hidden w-[42px] h-[42px] rounded-full border flex flex-col items-center justify-center gap-[5px] cursor-pointer"
+            style={{ borderColor: "var(--border)", background: "var(--chip)" }}
+            onClick={() => setIsMenuOpen((o) => !o)}
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+          >
+            <span
+              className="w-[18px] h-[2px] rounded transition-all"
+              style={{
+                background: "var(--text)",
+                transform: isMenuOpen ? "rotate(45deg) translateY(5px)" : "none",
+              }}
+            />
+            <span
+              className="w-[18px] h-[2px] rounded transition-all"
+              style={{ background: "var(--text)", opacity: isMenuOpen ? 0 : 1 }}
+            />
+            <span
+              className="w-[18px] h-[2px] rounded transition-all"
+              style={{
+                background: "var(--text)",
+                transform: isMenuOpen
+                  ? "rotate(-45deg) translateY(-5px)"
+                  : "none",
+              }}
+            />
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile dropdown */}
       <div
-        className={`md:hidden absolute top-16 left-0 w-full bg-[rgba(0,0,0,0.95)] backdrop-blur-xl border-b border-[#ffffff1a] transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+        className="md:hidden overflow-hidden transition-all duration-300 border-t"
+        style={{
+          maxHeight: isMenuOpen ? 420 : 0,
+          opacity: isMenuOpen ? 1 : 0,
+          borderColor: isMenuOpen ? "var(--border)" : "transparent",
+          background: "var(--bg2)",
+        }}
       >
-        <nav className="flex flex-col items-center py-6 space-y-6">
-          {navItems.map((item, index) => (
+        <nav className="flex flex-col items-start gap-1 px-5 py-4">
+          {navItems.map((item, i) => (
             <a
-              key={index}
+              key={i}
               href={item.href}
-              className={`relative flex items-center justify-center w-fit font-inter font-medium text-lg ${item.active ? "text-textwhite" : "text-textbody"
-                } hover:text-textwhite transition-all duration-300 transform hover:scale-105`}
               onClick={() => setIsMenuOpen(false)}
+              className="w-full py-3 text-[17px] no-underline"
+              style={{
+                fontWeight: item.active ? 700 : 600,
+                color: item.active ? "var(--text)" : "var(--text-dim)",
+              }}
             >
               {item.label}
-              {item.active && (
-                <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] rounded-full"></span>
-              )}
             </a>
           ))}
-          <div className="flex justify-center"><LanguageSwitcher /></div>
-          <a
-            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-[linear-gradient(135deg,#C642FC_0%,#7A1CAC_100%)] h-12 px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 mt-4">
-              <span className="relative flex items-center justify-center w-fit font-body-normal-medium font-[number:var(--body-normal-medium-font-weight)] text-textwhite text-[length:var(--body-normal-medium-font-size)] tracking-[var(--body-normal-medium-letter-spacing)] leading-[var(--body-normal-medium-line-height)] whitespace-nowrap [font-style:var(--body-normal-medium-font-style)]">
-                {t("nav.download")}
-              </span>
-            </Button>
-          </a>
+          <div className="flex items-center gap-3 pt-3">
+            <LanguageMenu />
+            <ChromeCTA label={t("cta.short")} variant="navPill" glyphSize={17} />
+          </div>
         </nav>
       </div>
     </header>

@@ -70,7 +70,7 @@ function CopyButton({ url, className }: { url: string; className?: string }) {
 }
 
 const railBtn =
-  "w-10 h-10 rounded-full border border-white/10 bg-white/[0.04] text-gray-400 hover:text-white hover:border-[#C642FC]/50 hover:bg-[#C642FC]/10 flex items-center justify-center transition-colors";
+  "w-10 h-10 rounded-full border border-[var(--border)] bg-[var(--surface)] text-[var(--text-dim)] hover:text-[var(--text)] hover:border-[#C81FD4]/50 hover:bg-[#C81FD4]/10 flex items-center justify-center transition-colors";
 
 /** Desktop-only vertical share rail in the left gutter, sticky while reading. */
 export function ShareRail() {
@@ -87,7 +87,7 @@ export function ShareRail() {
       className="hidden xl:flex flex-col items-center gap-2 fixed top-1/3"
       style={{ left: "max(1rem, calc(50% - 31rem))" }}
     >
-      <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-600 mb-1 [writing-mode:vertical-rl] rotate-180">
+      <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-dim2)] mb-1 [writing-mode:vertical-rl] rotate-180">
         Share
       </span>
       {links.map((l) => (
@@ -106,7 +106,7 @@ export function ShareRow() {
   const links = buildLinks(url, title);
   return (
     <div className="not-prose flex flex-wrap items-center gap-3">
-      <span className="text-sm font-semibold text-white">Share this article</span>
+      <span className="text-sm font-semibold text-[var(--text)]">Share this article</span>
       <div className="flex items-center gap-2">
         {links.map((l) => (
           <a key={l.name} href={l.href} target="_blank" rel="noopener noreferrer" aria-label={l.name} className={railBtn}>

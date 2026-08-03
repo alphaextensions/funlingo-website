@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/sections/navbar";
+import { FooterSection } from "@/sections/FooterSection";
 
 // TODO: replace FORM_UID_ENTRY_ID once a short-answer field titled "User ID"
 // is added to the Google Form. Use Forms' "Get pre-filled link" feature to
@@ -60,7 +61,7 @@ function UninstallInner() {
     : GOOGLE_FORM_BASE;
 
   return (
-    <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
+    <div className="flex flex-col items-start relative fnl-root min-h-screen">
       <Navbar currentPage="/uninstall" />
 
       <main
@@ -85,12 +86,12 @@ function UninstallInner() {
           </div>
 
           <div
-            className={`w-full rounded-2xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm overflow-hidden shadow-2xl shadow-purple-500/10 transition-all duration-1000 delay-300 ${
+            className={`w-full rounded-2xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm overflow-hidden shadow-2xl shadow-purple-500/10 transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             } animate-fade-in-up`}
             style={{ animationDelay: "400ms" }}
           >
-            <div className="h-1 bg-gradient-to-r from-[#7A1CAC] to-[#C642FC]" />
+            <div className="h-1 bg-gradient-to-r from-[#9A1C8E] to-[#C81FD4]" />
             <iframe
               src={formSrc}
               width="100%"
@@ -114,6 +115,7 @@ function UninstallInner() {
           opacity: 0;
         }
       `}</style>
+    <FooterSection />
     </div>
   );
 }

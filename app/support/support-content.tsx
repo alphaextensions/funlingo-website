@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import Navbar from "@/sections/navbar";
+import { FooterSection } from "@/sections/FooterSection";
 
 export default function SupportContent() {
   const [formData, setFormData] = useState<{
@@ -130,7 +131,7 @@ export default function SupportContent() {
   ];
 
   return (
-    <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
+    <div className="flex flex-col items-start relative fnl-root min-h-screen">
       {/* Navigation Header */}
       <Navbar currentPage="/support" />
 
@@ -170,13 +171,13 @@ export default function SupportContent() {
             {supportTypes.map((type, index) => (
               <div
                 key={index}
-                className="flex flex-col p-6 rounded-xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm group hover:bg-[rgba(255,255,255,0.08)] hover:border-[#ffffff40] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 animate-fade-in-up"
+                className="flex flex-col p-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm group hover:bg-[var(--surface-2)] hover:border-[#ffffff40] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${400 + index * 100}ms` }}
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-6 h-6 text-[var(--text)]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -185,7 +186,7 @@ export default function SupportContent() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-heading-h6 text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                    <h4 className="font-heading-h6 text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                       {type.title}
                     </h4>
                     <p className="font-body-small-regular text-textbody text-xs">
@@ -203,12 +204,12 @@ export default function SupportContent() {
           {/* Success Message */}
           {submitted && (
             <div
-              className={`w-full max-w-4xl p-4 rounded-lg bg-[rgba(198,66,252,0.2)] border border-[#C642FC] backdrop-blur-sm transition-all duration-500 ${
+              className={`w-full max-w-4xl p-4 rounded-lg bg-[rgba(200,31,212,0.2)] border border-[#C81FD4] backdrop-blur-sm transition-all duration-500 ${
                 submitted ? "animate-fade-in-up opacity-100" : "opacity-0"
               }`}
               style={{ animationDelay: "300ms" }}
             >
-              <p className="font-body-normal-medium text-white text-center">
+              <p className="font-body-normal-medium text-[var(--text)] text-center">
                 Thank you for contacting us! We&apos;ll get back to you as soon as possible.
               </p>
             </div>
@@ -223,12 +224,12 @@ export default function SupportContent() {
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"
-                } border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.08)] group hover:shadow-2xl hover:shadow-purple-500/10 animate-fade-in-up`}
+                } border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-2)] group hover:shadow-2xl hover:shadow-purple-500/10 animate-fade-in-up`}
                 style={{ animationDelay: "800ms" }}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
-                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                       Name
                     </label>
                     <Input
@@ -238,13 +239,13 @@ export default function SupportContent() {
                         setFormData({ ...formData, name: e.target.value })
                       }
                       required
-                      className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                      className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                       placeholder="Your full name"
                     />
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                       Email
                     </label>
                     <Input
@@ -254,7 +255,7 @@ export default function SupportContent() {
                         setFormData({ ...formData, email: e.target.value })
                       }
                       required
-                      className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                      className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -262,7 +263,7 @@ export default function SupportContent() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
-                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                       Issue Type
                     </label>
                     <select
@@ -270,7 +271,7 @@ export default function SupportContent() {
                       onChange={(e) =>
                         setFormData({ ...formData, issueType: e.target.value })
                       }
-                      className="h-10 px-3 py-2 rounded-lg bg-[rgba(0,0,0,0.3)] border border-[#ffffff1a] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                      className="h-10 px-3 py-2 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                     >
                       <option value="technical">Technical Support</option>
                       <option value="billing">Billing & Account</option>
@@ -281,7 +282,7 @@ export default function SupportContent() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                    <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                       Priority
                     </label>
                     <select
@@ -289,7 +290,7 @@ export default function SupportContent() {
                       onChange={(e) =>
                         setFormData({ ...formData, priority: e.target.value })
                       }
-                      className="h-10 px-3 py-2 rounded-lg bg-[rgba(0,0,0,0.3)] border border-[#ffffff1a] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                      className="h-10 px-3 py-2 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                     >
                       {priorityOptions.map(option => (
                         <option key={option.value} value={option.value}>
@@ -301,7 +302,7 @@ export default function SupportContent() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                  <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                     Subject
                   </label>
                   <Input
@@ -311,13 +312,13 @@ export default function SupportContent() {
                       setFormData({ ...formData, subject: e.target.value })
                     }
                     required
-                    className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300"
+                    className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                     placeholder="Brief description of your issue"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                  <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                     Message
                   </label>
                   <Textarea
@@ -326,13 +327,13 @@ export default function SupportContent() {
                       setFormData({ ...formData, message: e.target.value })
                     }
                     required
-                    className="bg-[rgba(0,0,0,0.3)] border-[#ffffff1a] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C642FC] transition-all duration-300 min-h-[150px] resize-vertical"
+                    className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300 min-h-[150px] resize-vertical"
                     placeholder="Please describe your issue in detail..."
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                  <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                     Attachments (Optional)
                   </label>
                   <div className="flex flex-col gap-3">
@@ -340,14 +341,14 @@ export default function SupportContent() {
                       type="file"
                       onChange={handleFileChange}
                       multiple
-                      className="text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-body-normal-medium file:bg-gradient-to-r file:from-[#7A1CAC] file:to-[#C642FC] file:text-textwhite hover:file:opacity-90 transition-all duration-300"
+                      className="text-[var(--text)] file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-body-normal-medium file:bg-gradient-to-r file:from-[#9A1C8E] file:to-[#C81FD4] file:text-textwhite hover:file:opacity-90 transition-all duration-300"
                     />
                     {formData.attachments.length > 0 && (
                       <div className="flex flex-wrap gap-2">
                         {formData.attachments.map((file, index) => (
                           <div
                             key={index}
-                            className="flex items-center gap-2 px-3 py-1 rounded-full bg-[rgba(198,66,252,0.2)] border border-[#C642FC]"
+                            className="flex items-center gap-2 px-3 py-1 rounded-full bg-[rgba(200,31,212,0.2)] border border-[#C81FD4]"
                           >
                             <span className="font-body-small-regular text-textwhite text-sm">
                               {file.name}
@@ -355,7 +356,7 @@ export default function SupportContent() {
                             <button
                               type="button"
                               onClick={() => removeAttachment(index)}
-                              className="w-4 h-4 rounded-full bg-red-500 text-white flex items-center justify-center text-xs hover:bg-red-600 transition-colors duration-200"
+                              className="w-4 h-4 rounded-full bg-red-500 text-[var(--text)] flex items-center justify-center text-xs hover:bg-red-600 transition-colors duration-200"
                             >
                               x
                             </button>
@@ -368,12 +369,12 @@ export default function SupportContent() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-12 px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group/btn overflow-hidden relative mt-2"
+                  className="w-full bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group/btn overflow-hidden relative mt-2"
                 >
                   <span className="relative z-10 font-body-normal-medium text-textwhite group-hover/btn:scale-105 transition-transform duration-300">
                     Send Support Request
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#C81FD4] to-[#9A1C8E] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
                 </Button>
               </form>
             </div>
@@ -386,15 +387,15 @@ export default function SupportContent() {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <div className="p-6 rounded-2xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm hover:bg-[rgba(255,255,255,0.08)] hover:border-[#ffffff40] transition-all duration-300 animate-fade-in-up">
-                <h3 className="font-heading-h4 text-textwhite mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+              <div className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm hover:bg-[var(--surface-2)] hover:border-[#ffffff40] transition-all duration-300 animate-fade-in-up">
+                <h3 className="font-heading-h4 text-textwhite mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                   Contact Information
                 </h3>
 
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-[rgba(0,0,0,0.3)] hover:bg-[rgba(0,0,0,0.5)] transition-all duration-300 group">
-                    <div className="w-10 h-10 bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center gap-3 p-3 rounded-lg bg-[var(--surface-2)] hover:bg-[var(--surface-2)] transition-all duration-300 group">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-5 h-5 text-[var(--text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
@@ -406,9 +407,9 @@ export default function SupportContent() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-[rgba(0,0,0,0.3)] hover:bg-[rgba(0,0,0,0.5)] transition-all duration-300 group">
-                    <div className="w-10 h-10 bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center gap-3 p-3 rounded-lg bg-[var(--surface-2)] hover:bg-[var(--surface-2)] transition-all duration-300 group">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-5 h-5 text-[var(--text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                       </svg>
                     </div>
@@ -420,9 +421,9 @@ export default function SupportContent() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-[rgba(0,0,0,0.3)] hover:bg-[rgba(0,0,0,0.5)] transition-all duration-300 group">
-                    <div className="w-10 h-10 bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center gap-3 p-3 rounded-lg bg-[var(--surface-2)] hover:bg-[var(--surface-2)] transition-all duration-300 group">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-5 h-5 text-[var(--text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
@@ -436,7 +437,7 @@ export default function SupportContent() {
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm hover:bg-[rgba(255,255,255,0.08)] hover:border-[#ffffff40] transition-all duration-300 animate-fade-in-up">
+              <div className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm hover:bg-[var(--surface-2)] hover:border-[#ffffff40] transition-all duration-300 animate-fade-in-up">
                 <h3 className="font-heading-h4 text-textwhite mb-4">Before You Contact</h3>
                 <ul className="space-y-2">
                   {[
@@ -446,7 +447,7 @@ export default function SupportContent() {
                     "Mention your device and app version"
                   ].map((tip, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#C81FD4] to-[#9A1C8E] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="font-body-small-regular text-textbody">{tip}</span>
                     </li>
                   ))}
@@ -487,6 +488,7 @@ export default function SupportContent() {
           opacity: 0;
         }
       `}</style>
+    <FooterSection />
     </div>
   );
 }

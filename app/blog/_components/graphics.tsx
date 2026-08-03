@@ -36,7 +36,7 @@ export function DualSubtitleDemo({
       <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-purple-500/20">
         <div className="relative aspect-video bg-[radial-gradient(120%_120%_at_30%_20%,#3b1158_0%,#160a22_55%,#000000_100%)]">
           {/* scene glow */}
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-2/3 h-1/2 bg-[radial-gradient(circle,rgba(198,66,252,0.25),transparent_70%)] blur-2xl" />
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-2/3 h-1/2 bg-[radial-gradient(circle,rgba(200,31,212,0.25),transparent_70%)] blur-2xl" />
           {/* play button */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white/10 border border-white/20 backdrop-blur flex items-center justify-center">
             <Play className="w-6 h-6 text-white fill-white ml-0.5" />
@@ -48,7 +48,7 @@ export function DualSubtitleDemo({
                 p.toLowerCase() === highlight.toLowerCase() ? (
                   <span
                     key={i}
-                    className="rounded-md bg-[#C642FC]/30 ring-1 ring-[#C642FC]/60 px-1.5 py-0.5 text-white"
+                    className="rounded-md bg-[#C81FD4]/30 ring-1 ring-[#C81FD4]/60 px-1.5 py-0.5 text-white"
                   >
                     {p}
                   </span>
@@ -62,14 +62,14 @@ export function DualSubtitleDemo({
             </div>
           </div>
           {/* mock word tooltip */}
-          <div className="absolute left-1/2 bottom-[40%] -translate-x-1/2 rounded-xl border border-[#C642FC]/40 bg-[#0a0a0a]/95 px-4 py-2 text-sm shadow-xl shadow-purple-500/20">
+          <div className="absolute left-1/2 bottom-[40%] -translate-x-1/2 rounded-xl border border-[#C81FD4]/40 bg-[#0a0a0a]/95 px-4 py-2 text-sm shadow-xl shadow-purple-500/20">
             <span className="text-white font-semibold">{highlight}</span>
             <span className="text-gray-400"> · /kjen/ · </span>
-            <span className="text-[#C642FC]">who</span>
+            <span className="text-[#C81FD4]">who</span>
           </div>
         </div>
       </div>
-      <figcaption className="text-center text-sm text-gray-500 mt-3">
+      <figcaption className="text-center text-sm text-[var(--text-dim2)] mt-3">
         Dual subtitles in {targetLang} + your language — tap any word for an instant definition.
       </figcaption>
     </figure>
@@ -87,13 +87,13 @@ export function StepFlow({
       {steps.map((s, i) => (
         <li
           key={i}
-          className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:border-[#C642FC]/40 transition-colors"
+          className="relative rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 hover:border-[#C81FD4]/40 transition-colors"
         >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] flex items-center justify-center font-bold text-white mb-3 shadow-lg shadow-purple-500/20">
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] flex items-center justify-center font-bold text-white mb-3 shadow-lg shadow-purple-500/20">
             {i + 1}
           </div>
-          <h4 className="text-white font-semibold mb-1 leading-snug">{s.title}</h4>
-          <p className="text-sm text-gray-400 leading-relaxed">{s.desc}</p>
+          <h4 className="text-[var(--text)] font-semibold mb-1 leading-snug">{s.title}</h4>
+          <p className="text-sm text-[var(--text-dim)] leading-relaxed">{s.desc}</p>
         </li>
       ))}
     </ol>
@@ -117,12 +117,12 @@ export function StatGrid({
       {stats.map((s, i) => (
         <div
           key={i}
-          className="rounded-2xl border border-[#C642FC]/20 bg-[#C642FC]/[0.06] p-5 text-center"
+          className="rounded-2xl border border-[#C81FD4]/20 bg-[#C81FD4]/[0.06] p-5 text-center"
         >
-          <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-br from-[#C642FC] to-[#e9a6ff] bg-clip-text text-transparent">
+          <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-br from-[#C81FD4] to-[#e9a6ff] bg-clip-text text-transparent">
             {s.value}
           </div>
-          <div className="text-xs sm:text-sm text-gray-400 mt-1 leading-snug">
+          <div className="text-xs sm:text-sm text-[var(--text-dim)] mt-1 leading-snug">
             {s.label}
           </div>
         </div>
@@ -140,15 +140,15 @@ export function KeyTakeaways({
   title?: string;
 }) {
   return (
-    <div className="not-prose my-10 rounded-2xl border border-[#C642FC]/20 bg-[#C642FC]/[0.06] p-6">
+    <div className="not-prose my-10 rounded-2xl border border-[#C81FD4]/20 bg-[#C81FD4]/[0.06] p-6">
       <div className="flex items-center gap-2 mb-4">
-        <Sparkles className="w-5 h-5 text-[#C642FC]" />
-        <h3 className="text-white font-bold text-lg m-0">{title}</h3>
+        <Sparkles className="w-5 h-5 text-[#C81FD4]" />
+        <h3 className="text-[var(--text)] font-bold text-lg m-0">{title}</h3>
       </div>
       <ul className="list-none p-0 m-0 grid gap-2.5">
         {items.map((it, i) => (
-          <li key={i} className="flex items-start gap-3 text-gray-300">
-            <Check className="w-5 h-5 text-[#C642FC] flex-shrink-0 mt-0.5" />
+          <li key={i} className="flex items-start gap-3 text-[var(--text-dim)]">
+            <Check className="w-5 h-5 text-[#C81FD4] flex-shrink-0 mt-0.5" />
             <span className="leading-relaxed">{it}</span>
           </li>
         ))}
@@ -168,7 +168,7 @@ export function Callout({
   children: React.ReactNode;
 }) {
   const styles = {
-    tip: { icon: Lightbulb, color: "#C642FC", border: "rgba(198,66,252,0.3)", bg: "rgba(198,66,252,0.07)", label: "Tip" },
+    tip: { icon: Lightbulb, color: "#C81FD4", border: "rgba(200,31,212,0.3)", bg: "rgba(200,31,212,0.07)", label: "Tip" },
     note: { icon: Info, color: "#60a5fa", border: "rgba(96,165,250,0.3)", bg: "rgba(96,165,250,0.07)", label: "Note" },
     warning: { icon: AlertTriangle, color: "#fbbf24", border: "rgba(251,191,36,0.3)", bg: "rgba(251,191,36,0.08)", label: "Heads up" },
   }[variant];
@@ -180,8 +180,8 @@ export function Callout({
     >
       <Icon className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: styles.color }} />
       <div>
-        <p className="font-semibold text-white m-0 mb-1">{title ?? styles.label}</p>
-        <div className="text-gray-300 text-[0.95rem] leading-relaxed [&_p]:m-0">{children}</div>
+        <p className="font-semibold text-[var(--text)] m-0 mb-1">{title ?? styles.label}</p>
+        <div className="text-[var(--text-dim)] text-[0.95rem] leading-relaxed [&_p]:m-0">{children}</div>
       </div>
     </div>
   );
@@ -205,7 +205,7 @@ export function ProsCons({
         <p className="font-bold text-emerald-300 m-0 mb-3">{proLabel}</p>
         <ul className="list-none p-0 m-0 grid gap-2">
           {pros.map((p, i) => (
-            <li key={i} className="flex items-start gap-2 text-gray-300">
+            <li key={i} className="flex items-start gap-2 text-[var(--text-dim)]">
               <Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-1" />
               <span className="leading-relaxed">{p}</span>
             </li>
@@ -216,7 +216,7 @@ export function ProsCons({
         <p className="font-bold text-rose-300 m-0 mb-3">{conLabel}</p>
         <ul className="list-none p-0 m-0 grid gap-2">
           {cons.map((c, i) => (
-            <li key={i} className="flex items-start gap-2 text-gray-300">
+            <li key={i} className="flex items-start gap-2 text-[var(--text-dim)]">
               <X className="w-4 h-4 text-rose-400 flex-shrink-0 mt-1" />
               <span className="leading-relaxed">{c}</span>
             </li>
@@ -238,13 +238,13 @@ export function FeatureGrid({
       {items.map((it, i) => (
         <div
           key={i}
-          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:border-[#C642FC]/40 transition-colors"
+          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:border-[#C81FD4]/40 transition-colors"
         >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] flex items-center justify-center mb-3 shadow-lg shadow-purple-500/20">
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] flex items-center justify-center mb-3 shadow-lg shadow-purple-500/20">
             <Sparkles className="w-4 h-4 text-white" />
           </div>
-          <h4 className="text-white font-semibold mb-1 leading-snug">{it.title}</h4>
-          <p className="text-sm text-gray-400 leading-relaxed m-0">{it.desc}</p>
+          <h4 className="text-[var(--text)] font-semibold mb-1 leading-snug">{it.title}</h4>
+          <p className="text-sm text-[var(--text-dim)] leading-relaxed m-0">{it.desc}</p>
         </div>
       ))}
     </div>

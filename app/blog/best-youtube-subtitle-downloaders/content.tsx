@@ -183,7 +183,7 @@ const tools = [
 
 export default function BestYoutubeSubtitleDownloadersContent() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
       <Navbar />
 
       {/* Hero Section */}
@@ -196,19 +196,19 @@ export default function BestYoutubeSubtitleDownloadersContent() {
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <Badge className="mb-6 bg-white/10 text-white border-white/20 hover:bg-white/20">
+          <Badge className="mb-6 bg-[var(--surface-2)] text-[var(--text)] border-[var(--border)] hover:bg-white/20">
             <Download className="w-3 h-3 mr-1" />
             Guide
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Best YouTube Subtitle Downloaders — Top 10 Tools Compared
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-[var(--text-dim)] max-w-2xl mx-auto mb-8">
             Find the perfect tool to download YouTube subtitles in SRT, VTT, or
             TXT. We compare free and paid options so you can choose what fits
             your workflow.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[var(--text-dim)]">
             <span className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4" /> March 19, 2026
             </span>
@@ -301,15 +301,15 @@ export default function BestYoutubeSubtitleDownloadersContent() {
         {tools.map((tool, index) => (
           <div
             key={tool.name}
-            className="bg-white/5 border border-white/10 rounded-2xl p-6 my-8 not-prose"
+            className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 my-8 not-prose"
           >
             <div className="flex items-center gap-3 mb-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-purple-600/30 text-purple-300 text-sm font-bold">
                 {index + 1}
               </span>
-              <h3 className="text-xl font-bold text-white">{tool.name}</h3>
+              <h3 className="text-xl font-bold text-[var(--text)]">{tool.name}</h3>
             </div>
-            <p className="text-gray-300 mb-5 leading-relaxed">
+            <p className="text-[var(--text-dim)] mb-5 leading-relaxed">
               {tool.description}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
@@ -321,7 +321,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
                   {tool.pros.map((pro) => (
                     <li
                       key={pro}
-                      className="flex items-start gap-2 text-sm text-gray-300"
+                      className="flex items-start gap-2 text-sm text-[var(--text-dim)]"
                     >
                       <Check className="w-3.5 h-3.5 text-green-400 mt-0.5 shrink-0" />
                       {pro}
@@ -337,7 +337,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
                   {tool.cons.map((con) => (
                     <li
                       key={con}
-                      className="flex items-start gap-2 text-sm text-gray-300"
+                      className="flex items-start gap-2 text-sm text-[var(--text-dim)]"
                     >
                       <X className="w-3.5 h-3.5 text-red-400 mt-0.5 shrink-0" />
                       {con}
@@ -352,10 +352,10 @@ export default function BestYoutubeSubtitleDownloadersContent() {
         {/* Mid-Article CTA */}
         <div className="bg-gradient-to-r from-purple-900/40 to-indigo-900/40 border border-purple-500/20 rounded-2xl p-8 my-12 text-center not-prose">
           <Zap className="w-8 h-8 text-purple-400 mx-auto mb-3" />
-          <h3 className="text-2xl font-bold text-white mb-3">
+          <h3 className="text-2xl font-bold text-[var(--text)] mb-3">
             Skip the Downloads — Watch with Dual Subtitles
           </h3>
-          <p className="text-gray-300 mb-6 max-w-lg mx-auto">
+          <p className="text-[var(--text-dim)] mb-6 max-w-lg mx-auto">
             Funlingo shows subtitles in two languages directly on YouTube. No
             files to manage, no formatting headaches — just learn as you watch.
           </p>
@@ -364,7 +364,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full">
+            <Button className="bg-purple-600 hover:bg-purple-700 text-[var(--text)] px-6 py-3 rounded-full">
               <Globe className="w-4 h-4 mr-2" />
               Try Funlingo Free
             </Button>
@@ -385,7 +385,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
           </li>
           <li>
             <strong>Downloading subtitles for an entire playlist?</strong> Use{" "}
-            <strong>4K Video Downloader</strong> or <strong><a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer" className="text-[#C642FC] hover:underline">yt-dlp</a></strong> for
+            <strong>4K Video Downloader</strong> or <strong><a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">yt-dlp</a></strong> for
             batch processing.
           </li>
           <li>
@@ -456,11 +456,11 @@ export default function BestYoutubeSubtitleDownloadersContent() {
         </p>
 
         {/* End CTA */}
-        <div className="bg-gradient-to-br from-purple-900/50 to-black border border-purple-500/20 rounded-2xl p-10 my-12 text-center not-prose">
-          <h3 className="text-3xl font-bold text-white mb-4">
+        <div className="bg-gradient-to-br from-purple-900/50 to-[var(--bg)] border border-purple-500/20 rounded-2xl p-10 my-12 text-center not-prose">
+          <h3 className="text-3xl font-bold text-[var(--text)] mb-4">
             Learn Languages While Watching YouTube
           </h3>
-          <p className="text-gray-300 mb-8 max-w-xl mx-auto text-lg">
+          <p className="text-[var(--text-dim)] mb-8 max-w-xl mx-auto text-lg">
             Instead of downloading and managing subtitle files, use Funlingo to
             display dual-language subtitles directly on YouTube. Hover over any
             word for an instant translation.
@@ -470,7 +470,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white text-lg px-8 py-4 rounded-full">
+            <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-[var(--text)] text-lg px-8 py-4 rounded-full">
               Add Funlingo to Chrome — It&apos;s Free
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
