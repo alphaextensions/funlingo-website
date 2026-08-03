@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import Navbar from "@/sections/navbar";
+import Link from "next/link";
+import { Zap, ArrowRight } from "lucide-react";
+import { INSTALL_URL } from "@/lib/site";
 
 export default function SupportContent() {
   const [formData, setFormData] = useState<{
@@ -157,6 +160,53 @@ export default function SupportContent() {
             >
               Our team is here to help you succeed with Funlingo. Reach out anytime.
             </p>
+          </div>
+
+          {/* Subtitle self-serve deflection — resolves the single most common
+              request (downloadable subtitles for a specific movie/show) before a
+              ticket is ever filed, re-educating the user on how Funlingo works. */}
+          <div className="w-full max-w-4xl rounded-2xl border border-[#C642FC]/30 bg-[rgba(198,66,252,0.06)] p-6 sm:p-8 backdrop-blur-sm">
+            <div className="flex items-start gap-4">
+              <span className="hidden sm:inline-flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] shadow-lg shadow-purple-500/20">
+                <Zap className="h-5 w-5 text-white" />
+              </span>
+              <div className="flex flex-col gap-3">
+                <h2 className="font-heading-h4 text-textwhite text-xl sm:text-2xl">
+                  Looking for subtitles for a specific movie or show?
+                </h2>
+                <p className="text-textbody leading-relaxed">
+                  You are in the right place, and the quickest fix is not a support ticket. Funlingo
+                  does not host or send subtitle files &mdash; instead, the free extension overlays{" "}
+                  <span className="text-textwhite font-medium">dual subtitles directly on the video</span>.
+                  Open the title on Netflix, YouTube, Prime Video, or any supported platform, turn
+                  Funlingo on, and choose your two languages. Subtitles appear instantly, with
+                  click-to-translate on every word.
+                </p>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-1">
+                  <a href={INSTALL_URL} target="_blank" rel="noopener noreferrer" className="no-underline">
+                    <Button className="w-full sm:w-auto bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] h-11 px-6 rounded-full hover:scale-105 transition-transform duration-300">
+                      Install Funlingo free <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </a>
+                  <Link href="/watch/squid-game" className="no-underline">
+                    <Button
+                      variant="outline"
+                      className="w-full sm:w-auto h-11 px-6 rounded-full border-[#C642FC]/40 bg-transparent text-textwhite hover:bg-[rgba(198,66,252,0.12)]"
+                    >
+                      See it work on a movie
+                    </Button>
+                  </Link>
+                  <Link href="/blog/best-subtitle-download-sites" className="no-underline">
+                    <Button
+                      variant="outline"
+                      className="w-full sm:w-auto h-11 px-6 rounded-full border-white/15 bg-transparent text-textbody hover:bg-white/5"
+                    >
+                      Compare subtitle options
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Support Type Cards */}

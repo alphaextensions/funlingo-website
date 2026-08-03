@@ -19,7 +19,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { KeyTakeaways, DualSubtitleDemo } from "@/app/blog/_components/graphics";
+import { KeyTakeaways, DualSubtitleDemo, SubtitleRedirectCTA } from "@/app/blog/_components/graphics";
+import SearchByMovie from "@/app/blog/_components/SearchByMovie";
 
 export default function DownloadSubtitlesFromYoutubeContent() {
   return (
@@ -57,6 +58,8 @@ export default function DownloadSubtitlesFromYoutubeContent() {
       {/* Main Content */}
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <SubtitleRedirectCTA />
+          <SearchByMovie />
           <KeyTakeaways
             items={[
               "There are three free ways to download YouTube subtitles: the built-in transcript, online tools, and browser extensions.",

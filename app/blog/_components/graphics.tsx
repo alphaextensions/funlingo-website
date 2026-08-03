@@ -9,7 +9,11 @@ import {
   Info,
   AlertTriangle,
   Sparkles,
+  Zap,
+  ArrowRight,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { INSTALL_URL } from "@/lib/site";
 
 /**
  * Reusable, brand-aligned visual building blocks for blog posts.
@@ -248,5 +252,52 @@ export function FeatureGrid({
         </div>
       ))}
     </div>
+  );
+}
+
+/**
+ * Top-of-article intent interceptor for subtitle-download posts. It reframes the
+ * reader's "find and download an SRT file" goal toward Funlingo's instant,
+ * in-player dual subtitles — the pitch the old listicles bury at the bottom.
+ *
+ * Rendered entirely in the server payload (no state, no effects), so it ships in
+ * the initial HTML and adds ZERO cumulative layout shift. The install link uses
+ * the canonical store URL, so app/analytics.tsx tracks the click automatically.
+ */
+export function SubtitleRedirectCTA({
+  platforms = "Netflix, YouTube, Prime Video, and 5 more platforms",
+}: {
+  platforms?: string;
+}) {
+  return (
+    <aside className="not-prose my-8 overflow-hidden rounded-2xl border border-[#C642FC]/30 bg-[linear-gradient(135deg,rgba(122,28,172,0.18),rgba(198,66,252,0.06))]">
+      <div className="flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:p-7">
+        <div className="flex-1">
+          <div className="mb-2 flex items-center gap-2">
+            <span className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-[#C642FC] to-[#7A1CAC] shadow-lg shadow-purple-500/20">
+              <Zap className="h-4 w-4 text-white" />
+            </span>
+            <p className="m-0 font-semibold text-white">
+              Looking for subtitles for a specific movie?
+            </p>
+          </div>
+          <p className="m-0 leading-relaxed text-gray-300">
+            You don&apos;t need to download anything. Funlingo shows{" "}
+            <strong className="text-white">dual subtitles instantly</strong> on {platforms} &mdash;
+            tap any word for a translation and save vocabulary as you watch. Free, no sign-up.
+          </p>
+        </div>
+        <a
+          href={INSTALL_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline sm:flex-shrink-0"
+        >
+          <Button className="h-12 w-full rounded-full bg-[linear-gradient(135deg,#7A1CAC_0%,#C642FC_100%)] px-7 text-base shadow-lg shadow-purple-500/20 transition-transform duration-300 hover:scale-105 sm:w-auto">
+            Install free <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </a>
+      </div>
+    </aside>
   );
 }

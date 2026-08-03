@@ -16,7 +16,8 @@ import {
   Zap,
 } from "lucide-react";
 import Link from "next/link";
-import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
+import { KeyTakeaways, Callout, SubtitleRedirectCTA } from "@/app/blog/_components/graphics";
+import SearchByMovie from "@/app/blog/_components/SearchByMovie";
 
 const tools = [
   {
@@ -224,6 +225,8 @@ export default function BestYoutubeSubtitleDownloadersContent() {
 
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-4 pb-24 prose prose-invert prose-lg">
+        <SubtitleRedirectCTA />
+        <SearchByMovie />
         <KeyTakeaways
           items={[
             "We compared 10 of the best YouTube subtitle downloaders in 2026 across free web tools, desktop apps, and command-line utilities.",

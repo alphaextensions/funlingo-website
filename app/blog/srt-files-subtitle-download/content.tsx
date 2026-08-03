@@ -6,7 +6,8 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, User, Clock, FileText, Download, Play, Pencil, RefreshCw, Globe, BookOpen, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { KeyTakeaways, Callout } from "@/app/blog/_components/graphics";
+import { KeyTakeaways, Callout, SubtitleRedirectCTA } from "@/app/blog/_components/graphics";
+import SearchByMovie from "@/app/blog/_components/SearchByMovie";
 
 export default function SrtFilesSubtitleDownloadContent() {
   return (
@@ -27,6 +28,8 @@ export default function SrtFilesSubtitleDownloadContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <SubtitleRedirectCTA />
+          <SearchByMovie />
           <KeyTakeaways items={["SRT (SubRip Text) is a plain-text format with a sequence number, timestamp range, and subtitle text per entry.", "SRT uses commas before milliseconds; VTT uses periods and adds a WEBVTT header — converting between them takes seconds.", "VLC and MPV auto-load SRT files that share the video's filename; Netflix and YouTube do not accept external SRT files.", "SRT files are plain text and cannot carry malware, but subtitle sites can serve deceptive ads and fake download buttons.", "For language learning on streaming, Funlingo replaces manual SRT downloads with automatic, synced dual subtitles."]} />
 
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Subtitles are one of the most powerful tools for language learners, accessibility advocates, and anyone watching foreign-language content. At the heart of subtitles is the SRT file, a simple text format that has been the standard for over two decades. This guide covers everything you need to know about subtitle downloads: what SRT files are, where to find them, how to use them, and why modern tools like Funlingo are making manual subtitle management a thing of the past.</p>

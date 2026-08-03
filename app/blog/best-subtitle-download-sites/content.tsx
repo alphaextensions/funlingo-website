@@ -6,7 +6,8 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, User, Clock, Check, X, Download, Shield, Globe, FileText, AlertTriangle, BookOpen } from "lucide-react";
-import { KeyTakeaways, StepFlow, Callout } from "@/app/blog/_components/graphics";
+import { KeyTakeaways, StepFlow, Callout, SubtitleRedirectCTA } from "@/app/blog/_components/graphics";
+import SearchByMovie from "@/app/blog/_components/SearchByMovie";
 
 export default function BestSubtitleDownloadSitesContent() {
   return (
@@ -27,6 +28,8 @@ export default function BestSubtitleDownloadSitesContent() {
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
         <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+          <SubtitleRedirectCTA />
+          <SearchByMovie />
           <KeyTakeaways items={["OpenSubtitles is the largest database with hash-based search for perfect sync; Podnapisi excels for European languages.", "Subscene is strongest for Asian and Middle Eastern languages; Addic7ed leads for fast TV-episode subtitles.", "DownSub and SaveSubs pull subtitles straight from YouTube and other streaming URLs.", "Subtitle files are plain text and safe, but host sites can be risky, so use an ad blocker and avoid fake download buttons.", "For language learning, Funlingo skips downloads entirely with in-browser dual subtitles and click-to-translate."]} />
           <p className="lead text-xl leading-relaxed text-gray-200 mb-6">Whether you are watching a foreign film, studying a new language, or need accessibility captions for a video that does not have them, subtitle files are indispensable. But finding reliable, safe, and well-timed subtitles can be surprisingly difficult. This pillar guide reviews the 15 best subtitle download sites on the internet, covering movies, TV shows, and YouTube content. For each site we break down supported formats, language coverage, and honest pros and cons so you can make the right choice.</p>
 
