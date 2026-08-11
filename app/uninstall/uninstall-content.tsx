@@ -11,12 +11,15 @@ import { FooterSection } from "@/sections/FooterSection";
 const GOOGLE_FORM_BASE =
   "https://docs.google.com/forms/d/e/1FAIpQLSdv2e6cdee5tguj0Fh1iS7QWcAmAp8dHTDkx0rqvyfVAq-MKw/viewform?embedded=true";
 const FORM_UID_ENTRY_ID = "entry.<NUMBER>";
+const APPS_SCRIPT_URL =
+   "https://script.google.com/macros/s/AKfycbywUx7pWZrqF8dQRHWewNlAo8CVMVAX2Tq2XjVpNhPs-JDm7lOJHrKk5eAuBfVfkmhFnw/exec";
 
 function UninstallInner() {
   const searchParams = useSearchParams();
   const uid = searchParams.get("uid") || "";
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const uninstallLogSentRef = useRef(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,21 +37,27 @@ function UninstallInner() {
 
   useEffect(() => {
     const params = Object.fromEntries(searchParams.entries());
-    if (!params.uid) return;
+    if (!params.uid || uninstallLogSentRef.current) return;
 
-    const body = new Blob([JSON.stringify(params)], { type: "application/json" });
+    uninstallLogSentRef.current = true;
 
-    // sendBeacon is purpose-built to survive tab close — non-blocking,
-    // queued on a separate browser thread. Returns false if the browser
-    // rejected the request (rare; usually payload too large).
-    const queued = navigator.sendBeacon("/api/uninstall-log", body);
+    const payload = {
+      eventType: "uninstall_redirect",
+      timestamp: new Date().toISOString(),
+      ...params,
+    };
+    const requestBody = JSON.stringify({ payload });
+    const body = new Blob([requestBody], { type: "text/plain;charset=UTF-8" });
+
+    const queued = navigator.sendBeacon(APPS_SCRIPT_URL, body);
+    console.log("[Uninstall] Apps Script beacon queued:", queued);
 
     if (!queued) {
-      // Fallback: keepalive fetch also survives tab close on modern browsers.
-      fetch("/api/uninstall-log", {
+      fetch(APPS_SCRIPT_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(params),
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=UTF-8" },
+        body: requestBody,
         keepalive: true,
       }).catch(() => {
         /* user is gone; nothing to do */
