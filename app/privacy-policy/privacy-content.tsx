@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Shield, Lock, Eye, Globe, Mail } from "lucide-react";
 import Navbar from "@/sections/navbar";
+import { FooterSection } from "@/sections/FooterSection";
 
 export default function PrivacyContent() {
   const [isVisible, setIsVisible] = useState(false);
@@ -77,7 +78,7 @@ export default function PrivacyContent() {
   ];
 
   return (
-    <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
+    <div className="flex flex-col items-start relative fnl-root min-h-screen">
       {/* Navigation Header */}
       <Navbar currentPage="/privacy" />
 
@@ -95,7 +96,7 @@ export default function PrivacyContent() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(198,66,252,0.1)] border border-[#C642FC]/20 text-[#C642FC] text-sm font-medium mb-2 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(200,31,212,0.1)] border border-[#C81FD4]/20 text-[#C81FD4] text-sm font-medium mb-2 animate-fade-in-up">
               <Shield className="w-4 h-4" />
               Your Privacy Matters
             </div>
@@ -122,7 +123,7 @@ export default function PrivacyContent() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(122,28,172,0.2)] border border-[#7A1CAC]/30 text-textbody text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(122,28,172,0.2)] border border-[#9A1C8E]/30 text-textbody text-sm">
               Effective Date: November 2025
             </div>
           </div>
@@ -132,16 +133,16 @@ export default function PrivacyContent() {
             {policySections.map((section, index) => (
               <div
                 key={index}
-                className={`group p-6 sm:p-8 rounded-2xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm transition-all duration-500 hover:border-[#ffffff40] animate-fade-in-up`}
+                className={`group p-6 sm:p-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm transition-all duration-500 hover:border-[#ffffff40] animate-fade-in-up`}
                 style={{ animationDelay: `${400 + index * 100}ms` }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#C642FC] to-[#7A1CAC] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                    <div className="text-white">{section.icon}</div>
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#C81FD4] to-[#9A1C8E] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-[var(--text)]">{section.icon}</div>
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="font-body-normal-medium text-textwhite text-xl mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C642FC] group-hover:to-[#7A1CAC] transition-all duration-300">
+                    <h3 className="font-body-normal-medium text-textwhite text-xl mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                       {section.title}
                     </h3>
 
@@ -162,9 +163,9 @@ export default function PrivacyContent() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="p-8 sm:p-12 rounded-2xl bg-[rgba(122,28,172,0.1)] border border-[#7A1CAC]/30 backdrop-blur-sm text-center">
+            <div className="p-8 sm:p-12 rounded-2xl bg-[rgba(122,28,172,0.1)] border border-[#9A1C8E]/30 backdrop-blur-sm text-center">
               <div className="space-y-6 animate-fade-in-up">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(198,66,252,0.2)] border border-[#C642FC]/30 text-[#C642FC] text-sm font-medium">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(200,31,212,0.2)] border border-[#C81FD4]/30 text-[#C81FD4] text-sm font-medium">
                   <Mail className="w-4 h-4" />
                   Get In Touch
                 </div>
@@ -180,7 +181,7 @@ export default function PrivacyContent() {
                   </p>
 
                   <div className="flex justify-center">
-                    <Button className="bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.2)] text-textwhite font-body-normal-medium h-12 px-8 py-3 rounded-lg border border-[#ffffff1a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 group">
+                    <Button className="bg-[var(--surface-2)] hover:bg-[rgba(255,255,255,0.2)] text-textwhite font-body-normal-medium h-12 px-8 py-3 rounded-lg border border-[var(--border)] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 group">
                       <Mail className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                       getfunlingo@gmail.com
                     </Button>
@@ -198,8 +199,8 @@ export default function PrivacyContent() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl bg-[rgba(198,66,252,0.1)] border border-[#C642FC]/20">
-              <Shield className="w-5 h-5 text-[#C642FC]" />
+            <div className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl bg-[rgba(200,31,212,0.1)] border border-[#C81FD4]/20">
+              <Shield className="w-5 h-5 text-[#C81FD4]" />
               <p className="font-body-normal-medium text-textwhite">
                 Funlingo is committed to making language learning through
                 streaming safe, private, and effortless.
@@ -225,6 +226,7 @@ export default function PrivacyContent() {
           opacity: 0;
         }
       `}</style>
+    <FooterSection />
     </div>
   );
 }

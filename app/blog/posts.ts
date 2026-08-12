@@ -14,7 +14,7 @@ export type BlogPost = {
 // Per-category accent styling (badge + top-bar gradient). Brand purple is the
 // default; other categories get a complementary, muted accent.
 export const CATEGORY_COLORS: Record<string, { badge: string; bar: string }> = {
-  Guide: { badge: "text-[#C642FC] border-[#C642FC]/30 bg-[#C642FC]/10", bar: "from-[#C642FC] to-[#7A1CAC]" },
+  Guide: { badge: "text-[#C81FD4] border-[#C81FD4]/30 bg-[#C81FD4]/10", bar: "from-[#C81FD4] to-[#9A1C8E]" },
   Feature: { badge: "text-pink-300 border-pink-400/30 bg-pink-500/10", bar: "from-pink-400 to-fuchsia-600" },
   Trending: { badge: "text-amber-300 border-amber-400/30 bg-amber-500/10", bar: "from-amber-400 to-orange-500" },
   Dictionary: { badge: "text-emerald-300 border-emerald-400/30 bg-emerald-500/10", bar: "from-emerald-400 to-teal-500" },

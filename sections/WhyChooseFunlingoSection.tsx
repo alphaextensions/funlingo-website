@@ -352,7 +352,7 @@ export const WhyChooseFunlingoSection = (): React.JSX.Element => {
               ))}
             </div>
             <div className="font-body-normal-regular font-[number:var(--body-normal-regular-font-weight)] text-textbody text-[length:var(--body-normal-regular-font-size)] tracking-[var(--body-normal-regular-letter-spacing)] leading-[var(--body-normal-regular-line-height)] [font-style:var(--body-normal-regular-font-style)]">
-              4.9/5 Rating
+              4.8/5 Rating
             </div>
           </div>
         </div>

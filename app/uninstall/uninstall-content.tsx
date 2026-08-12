@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/sections/navbar";
+import { FooterSection } from "@/sections/FooterSection";
 
 // TODO: replace FORM_UID_ENTRY_ID once a short-answer field titled "User ID"
 // is added to the Google Form. Use Forms' "Get pre-filled link" feature to
@@ -10,12 +11,15 @@ import Navbar from "@/sections/navbar";
 const GOOGLE_FORM_BASE =
   "https://docs.google.com/forms/d/e/1FAIpQLSdv2e6cdee5tguj0Fh1iS7QWcAmAp8dHTDkx0rqvyfVAq-MKw/viewform?embedded=true";
 const FORM_UID_ENTRY_ID = "entry.<NUMBER>";
+const APPS_SCRIPT_URL =
+   "https://script.google.com/macros/s/AKfycbywUx7pWZrqF8dQRHWewNlAo8CVMVAX2Tq2XjVpNhPs-JDm7lOJHrKk5eAuBfVfkmhFnw/exec";
 
 function UninstallInner() {
   const searchParams = useSearchParams();
   const uid = searchParams.get("uid") || "";
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const uninstallLogSentRef = useRef(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,21 +37,27 @@ function UninstallInner() {
 
   useEffect(() => {
     const params = Object.fromEntries(searchParams.entries());
-    if (!params.uid) return;
+    if (!params.uid || uninstallLogSentRef.current) return;
 
-    const body = new Blob([JSON.stringify(params)], { type: "application/json" });
+    uninstallLogSentRef.current = true;
 
-    // sendBeacon is purpose-built to survive tab close — non-blocking,
-    // queued on a separate browser thread. Returns false if the browser
-    // rejected the request (rare; usually payload too large).
-    const queued = navigator.sendBeacon("/api/uninstall-log", body);
+    const payload = {
+      eventType: "uninstall_redirect",
+      timestamp: new Date().toISOString(),
+      ...params,
+    };
+    const requestBody = JSON.stringify({ payload });
+    const body = new Blob([requestBody], { type: "text/plain;charset=UTF-8" });
+
+    const queued = navigator.sendBeacon(APPS_SCRIPT_URL, body);
+    console.log("[Uninstall] Apps Script beacon queued:", queued);
 
     if (!queued) {
-      // Fallback: keepalive fetch also survives tab close on modern browsers.
-      fetch("/api/uninstall-log", {
+      fetch(APPS_SCRIPT_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(params),
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=UTF-8" },
+        body: requestBody,
         keepalive: true,
       }).catch(() => {
         /* user is gone; nothing to do */
@@ -60,7 +70,7 @@ function UninstallInner() {
     : GOOGLE_FORM_BASE;
 
   return (
-    <div className="flex flex-col items-start relative bg-[linear-gradient(180deg,#000000_0%,#1a0a28_50%,#7A1CAC_100%)] min-h-screen">
+    <div className="flex flex-col items-start relative fnl-root min-h-screen">
       <Navbar currentPage="/uninstall" />
 
       <main
@@ -85,12 +95,12 @@ function UninstallInner() {
           </div>
 
           <div
-            className={`w-full rounded-2xl border border-[#ffffff1a] bg-[rgba(255,255,255,0.05)] backdrop-blur-sm overflow-hidden shadow-2xl shadow-purple-500/10 transition-all duration-1000 delay-300 ${
+            className={`w-full rounded-2xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm overflow-hidden shadow-2xl shadow-purple-500/10 transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             } animate-fade-in-up`}
             style={{ animationDelay: "400ms" }}
           >
-            <div className="h-1 bg-gradient-to-r from-[#7A1CAC] to-[#C642FC]" />
+            <div className="h-1 bg-gradient-to-r from-[#9A1C8E] to-[#C81FD4]" />
             <iframe
               src={formSrc}
               width="100%"
@@ -114,6 +124,7 @@ function UninstallInner() {
           opacity: 0;
         }
       `}</style>
+    <FooterSection />
     </div>
   );
 }

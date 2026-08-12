@@ -118,8 +118,8 @@ export default function TableOfContents() {
             onClick={(e) => handleClick(e, h.id)}
             className={`block py-1 leading-snug transition-colors border-l-2 pl-3 ${
               activeId === h.id
-                ? "border-[#C642FC] text-[#C642FC]"
-                : "border-white/10 text-gray-400 hover:text-white hover:border-white/30"
+                ? "border-[#C81FD4] text-[#C81FD4]"
+                : "border-[var(--border)] text-[var(--text-dim)] hover:text-[var(--text)] hover:border-[var(--border)]"
             } ${h.level === 3 ? "text-[13px]" : ""}`}
           >
             {h.text}
@@ -137,7 +137,7 @@ export default function TableOfContents() {
         className="hidden xl:block fixed top-24 w-56 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2"
         style={{ left: "calc(50% + 25rem)" }}
       >
-        <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">
+        <p className="text-xs font-semibold uppercase tracking-wider text-[var(--text-dim2)] mb-3">
           On this page
         </p>
         {list}
@@ -148,7 +148,7 @@ export default function TableOfContents() {
         createPortal(
           <nav
             aria-label="Table of contents"
-            className="xl:hidden not-prose mb-8 rounded-2xl border border-white/10 bg-white/[0.03] overflow-hidden"
+            className="xl:hidden not-prose mb-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden"
           >
             <button
               type="button"
@@ -156,12 +156,12 @@ export default function TableOfContents() {
               aria-expanded={open}
               className="w-full flex items-center justify-between px-5 py-3.5 text-left"
             >
-              <span className="flex items-center gap-2 text-sm font-semibold text-white">
-                <List className="w-4 h-4 text-[#C642FC]" />
+              <span className="flex items-center gap-2 text-sm font-semibold text-[var(--text)]">
+                <List className="w-4 h-4 text-[#C81FD4]" />
                 On this page
               </span>
               <ChevronDown
-                className={`w-4 h-4 text-gray-400 transition-transform ${
+                className={`w-4 h-4 text-[var(--text-dim)] transition-transform ${
                   open ? "rotate-180" : ""
                 }`}
               />
