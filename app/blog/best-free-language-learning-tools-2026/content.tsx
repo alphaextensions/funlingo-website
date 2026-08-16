@@ -26,7 +26,7 @@ export default function BestFreeToolsContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways items={["You can build a complete language-learning stack covering input, vocabulary, grammar, speaking, and reading for $0.", "Comprehensible input, not gamified drills, is the primary driver of acquisition, and the best input tools are free.", "Funlingo is the only dual subtitle tool on the list that is 100% free with no premium tier.", "Pair Funlingo with Anki, Language Transfer, and HelloTalk for a research-backed daily routine.", "The only things you truly lose by going free are AI conversation partners and professional one-on-one tutoring."]} />
 
@@ -38,7 +38,7 @@ export default function BestFreeToolsContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Funlingo is the only dual subtitle tool on this list that is 100% free with no premium tier. Try it now.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Get Funlingo Free</Button>
             </a>
           </div>
@@ -260,7 +260,7 @@ export default function BestFreeToolsContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Free vs Paid: What You Actually Lose</h2>
           <p className="text-[var(--text-dim)] mb-6">To be fair, paid tools do offer features you cannot get for free. Here is an honest comparison of what you sacrifice by going fully free.</p>
 
-          <div className="overflow-x-auto mb-12">
+          <div className="thin-scroll overflow-x-auto mb-12">
             <table className="w-full text-sm text-[var(--text-dim)] border border-[var(--border)] rounded-xl overflow-hidden">
               <thead className="bg-[var(--surface)]">
                 <tr>
@@ -324,7 +324,7 @@ export default function BestFreeToolsContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Your Free Language Learning Stack Today</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Funlingo gives you dual subtitles, click-to-translate, and vocabulary saving on Netflix and YouTube. 100% free, no premium tier, no credit card.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

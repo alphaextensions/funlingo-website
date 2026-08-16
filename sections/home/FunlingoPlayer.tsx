@@ -507,7 +507,12 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
           <div
             style={{
               position: "fixed",
-              left: hover.rect.left + hover.rect.width / 2,
+              // Clamp the centered 240px popup inside the viewport so it never
+              // spills past a screen edge (which caused horizontal scroll on mobile).
+              left: Math.min(
+                Math.max(hover.rect.left + hover.rect.width / 2, 128),
+                (typeof window !== "undefined" ? window.innerWidth : 400) - 128
+              ),
               top: hover.rect.top,
               transform: "translate(-50%, -100%)",
               paddingBottom: 12,

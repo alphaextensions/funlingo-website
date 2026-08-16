@@ -27,6 +27,51 @@ export const accBar = (c: string) => CATEGORY_COLORS[c]?.bar ?? CATEGORY_COLORS.
 
 export const posts: BlogPost[] = [
     {
+      id: 13,
+      title: "How to Learn a Language on Amazon Prime Video with Dual Subtitles (2026)",
+      excerpt: "Prime Video has a huge foreign-language library but no native dual subtitles — and most learning extensions don't support it. Here's how to add free dual subtitles, a daily routine, and the best content by level.",
+      date: "August 12, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/learn-language-amazon-prime-video"
+    },
+    {
+      id: 12,
+      title: "YouTube Auto-Dubbing vs Dual Subtitles: Which Is Better for Learning? (2026)",
+      excerpt: "YouTube's AI auto-dubbing is now everywhere in 2026 — but is it good for learning a language? Why dubbing replaces the input you need, and when dual subtitles win.",
+      date: "August 11, 2026",
+      author: "Funlingo Team",
+      category: "Trending",
+      slug: "/blog/youtube-auto-dubbing-vs-dual-subtitles"
+    },
+    {
+      id: 11,
+      title: "7 Best Trancy Alternatives (2026): Free & Paid Dual-Subtitle Tools",
+      excerpt: "Trancy's best features sit behind a paid plan and it skips Prime Video. Compare 7 alternatives — including Funlingo (free, supports Prime), Language Reactor, Immersive Translate, Migaku, and more.",
+      date: "August 10, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/trancy-alternatives"
+    },
+    {
+      id: 10,
+      title: "Lingopie Alternatives 2026: Best Free & Cheaper Options (Extension Reviewed)",
+      excerpt: "Lingopie's new Netflix extension is Netflix-only, 4 languages, and needs a subscription. Compare the best free and cheaper alternatives — starting with Funlingo (free, 100+ languages, Netflix/YouTube/Prime).",
+      date: "August 9, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/lingopie-alternatives"
+    },
+    {
+      id: 9,
+      title: "6 Best Migaku Alternatives (2026): Simpler, Free Ways to Immerse",
+      excerpt: "Migaku is powerful but paid, complex, and built around Anki. If you just want to watch shows with dual subtitles and save words, here are 6 simpler alternatives — including a free one.",
+      date: "August 8, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/migaku-alternatives"
+    },
+    {
       id: 8,
       title: "Learn Japanese on Crunchyroll: Free Dual Subtitles Guide",
       excerpt: "Turn Crunchyroll anime into Japanese practice with free dual subtitles and click-to-translate. The best anime to learn Japanese, by level, plus a daily routine.",

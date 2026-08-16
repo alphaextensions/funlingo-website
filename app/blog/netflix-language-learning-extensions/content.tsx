@@ -27,7 +27,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Netflix only shows one subtitle language at a time, so a Chrome extension is required for dual subtitles and word lookups.", "Funlingo is the best free option: dual subtitles, multi-translation popups, pronunciation audio, AI explanations, and vocab saving at zero cost.", "Language Reactor ($7.99/mo) and Trancy ($9.90/mo) lock their best features behind paid plans.", "Funlingo is the only tool here that supports all three major platforms: Netflix, YouTube, and Prime Video.", "All five extensions are desktop-only Chrome add-ons; none work on the Netflix mobile app or smart TVs."]} />
           <p className="lead text-xl leading-relaxed">If you&apos;ve been searching for a language learning with Netflix Chrome extension, you&apos;re not alone &mdash; it&apos;s one of the most popular ways to combine entertainment with real language progress. Netflix has become one of the most popular platforms for language learning, and for good reason: thousands of shows and movies in dozens of languages, professional subtitles, and content you actually want to watch. But Netflix&apos;s built-in subtitle system only shows one language at a time. That is where Chrome extensions come in &mdash; they unlock dual subtitles, word lookups, and vocabulary tools that transform passive watching into active learning.</p>
 
@@ -242,7 +242,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
 
           <div className="my-10 not-prose">
             <div className="w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.03)] backdrop-blur-sm">
-              <div className="overflow-x-auto">
+              <div className="thin-scroll overflow-x-auto">
                 <table className="w-full min-w-[700px] text-left border-collapse" aria-label="Netflix language learning extensions comparison">
                   <thead className="bg-[var(--surface)]">
                     <tr className="border-b border-[var(--border)]">
@@ -341,7 +341,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
           <div className="mt-16 text-center">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Learning Languages on Netflix Today</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-2xl mx-auto">Funlingo is free, requires no account, and takes 10 seconds to install. Get dual subtitles, word lookups, pronunciation, and vocabulary saving on Netflix, YouTube, and Prime Video.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Add Funlingo to Chrome &mdash; Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

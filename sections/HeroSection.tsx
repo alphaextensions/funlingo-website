@@ -63,7 +63,7 @@ export const HeroSection = (): React.JSX.Element => {
             style={{ animationDelay: "800ms" }}
           >
             <a
-              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -76,7 +76,7 @@ export const HeroSection = (): React.JSX.Element => {
             </a>
 
             <a
-              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >

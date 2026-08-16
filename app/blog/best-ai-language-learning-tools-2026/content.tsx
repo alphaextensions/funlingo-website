@@ -27,7 +27,7 @@ export default function BlogPostContent() {
       </section>
 
       <main className="w-full max-w-4xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <img
             src="/blog-images/best-ai-language-learning-tools-2026-hero.jpg"
             alt="A futuristic AI language-learning dashboard with video subtitles, AI chat, and vocabulary panels"
@@ -105,7 +105,7 @@ export default function BlogPostContent() {
 
           <div className="my-10 not-prose">
             <div className="w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.03)] backdrop-blur-sm">
-              <div className="max-h-[600px] overflow-y-auto overflow-x-auto custom-scrollbar">
+              <div className="max-h-[600px] overflow-y-auto thin-scroll overflow-x-auto custom-scrollbar">
                 <table className="w-full min-w-[800px] text-left border-collapse" aria-label="Feature comparison between Funlingo, Trancy, and Immersive Translate">
                   <thead className="sticky top-0 z-20 bg-[var(--surface)] shadow-sm">
                     <tr className="border-b border-[var(--border)]">
@@ -194,7 +194,7 @@ export default function BlogPostContent() {
           <div className="mt-16 text-center">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Learning Naturally</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-2xl mx-auto">Funlingo shortens the path from exposure to usable speech by combining dual subtitles, multi-translation lookup, and pronunciation tools.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Try the Extension Now <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

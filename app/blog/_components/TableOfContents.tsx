@@ -34,7 +34,23 @@ export default function TableOfContents() {
   const [activeId, setActiveId] = React.useState<string>("");
   const [mount, setMount] = React.useState<HTMLElement | null>(null);
   const [open, setOpen] = React.useState(true);
+  const [nearFooter, setNearFooter] = React.useState(false);
   const pathname = usePathname();
+
+  // Fade the fixed sidebar out before it can overlap the footer at the bottom.
+  React.useEffect(() => {
+    setNearFooter(false);
+    const footer = document.querySelector("footer");
+    if (!footer) return;
+    const io = new IntersectionObserver(
+      ([e]) => setNearFooter(e.isIntersecting),
+      // Positive bottom margin: treat the footer as "near" a little BEFORE it
+      // scrolls into view, so the fixed sidebar fades out before it can overlap.
+      { rootMargin: "0px 0px 40px 0px" }
+    );
+    io.observe(footer);
+    return () => io.disconnect();
+  }, [pathname]);
 
   React.useEffect(() => {
     // Reset for the new route — these run inside app/blog/layout.tsx, which
@@ -134,7 +150,9 @@ export default function TableOfContents() {
       {/* Desktop: sticky sidebar in the right gutter beside centered content */}
       <nav
         aria-label="Table of contents"
-        className="hidden xl:block fixed top-24 w-56 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2"
+        className={`thin-scroll hidden xl:block fixed top-24 w-56 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2 transition-opacity duration-300 ${
+          nearFooter ? "opacity-0 pointer-events-none" : "opacity-100"
+        }`}
         style={{ left: "calc(50% + 25rem)" }}
       >
         <p className="text-xs font-semibold uppercase tracking-wider text-[var(--text-dim2)] mb-3">

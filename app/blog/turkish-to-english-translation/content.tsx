@@ -29,7 +29,7 @@ export default function TurkishToEnglishTranslationContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways items={["Turkish is agglutinative with subject-object-verb order, vowel harmony, and no grammatical gender — so word-by-word translation often fails.", "Translate full sentences, not single words, and cross-check tools like Google Translate, DeepL, and the Tureng dictionary.", "Yandex often handles colloquial Turkish and slang better; DeepL is best for natural-sounding longer texts.", "Turkish spelling is phonetic — words are pronounced exactly as written.", "Watching Turkish shows with dual Turkish + English subtitles gives real-world context no translator can match."]} />
 
@@ -48,7 +48,7 @@ export default function TurkishToEnglishTranslationContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Learn Turkish naturally with dual subtitles on Netflix &amp; YouTube. Free forever.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
@@ -302,7 +302,7 @@ export default function TurkishToEnglishTranslationContent() {
             <p className="text-lg text-[var(--text)] mb-6">
               Watch Turkish shows with dual subtitles, click words to translate them instantly, and build your vocabulary over time. Funlingo is free and works on Netflix and YouTube.
             </p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Install Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

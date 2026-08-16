@@ -26,7 +26,7 @@ export default function ImmersiveTranslateGuideZhContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways title="重點摘要" items={["沈浸式翻譯提供「雙語對照」模式，在原文下方顯示翻譯，特別適合語言學習者。", "支援 Chrome、Firefox、Edge 等瀏覽器，可翻譯網頁、YouTube 字幕、PDF 與 EPUB 電子書。", "免費版可使用 Google 翻譯引擎，DeepL、OpenAI 等進階引擎與 PDF 翻譯需要 Pro 方案。", "預設快捷鍵 Alt+A 可快速開關翻譯，並可設定常用網站自動翻譯。", "若主要需要影片雙語字幕，Funlingo 是完全免費的替代選擇，支援 Netflix、YouTube 和 Prime Video。"]} />
 
@@ -153,7 +153,7 @@ export default function ImmersiveTranslateGuideZhContent() {
 
           <div className="text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20 mb-12">
             <p className="text-lg text-[var(--text)] mb-6">想要免費的影片雙語字幕？試試 Funlingo — 支援 Netflix、YouTube 和 Prime Video。</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">免費試用 Funlingo</Button>
             </a>
           </div>
@@ -256,7 +256,7 @@ export default function ImmersiveTranslateGuideZhContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">免費取得影片雙語字幕</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Funlingo 提供 Netflix、YouTube 和 Prime Video 的免費雙語字幕，內建詞彙本功能，完全免費使用。</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">免費安裝 Funlingo <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

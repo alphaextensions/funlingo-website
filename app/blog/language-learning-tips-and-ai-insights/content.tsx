@@ -25,7 +25,7 @@ export default function BestAIToolsContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Funlingo overlays dual subtitles so you see the learner and native language together in the player.", "A unique per-word selector lets you choose 1, 2, 3, or All translations to control depth and avoid overload.", "Click-for-context AI explanations add quick grammar and usage notes for tricky phrases.", "Pronunciation guides include phonetic transcription and slow playback to break down syllables.", "Save-to-vocab pulls phrases straight from the overlay into a spaced-review deck for durable learning."]} />
           <p className="lead text-xl leading-relaxed text-[var(--text)]">Funlingo overlays dual subtitles and lets users click any word to see 1/2/3/All native-language translations, with phonetics, audio, and a save-to-vocab flow that creates durable learning.</p>
           <hr className="border-[var(--border)] my-12" />
@@ -64,7 +64,7 @@ export default function BestAIToolsContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Ready to try Funlingo?</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Turn your next movie night into a language breakthrough.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

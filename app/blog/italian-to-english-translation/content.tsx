@@ -26,7 +26,7 @@ export default function ItalianToEnglishTranslationContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Italian is not word-for-word: gendered nouns, flexible word order, and idioms mean literal translation often misses the real meaning.", "Use tools by task: DeepL for natural longer text, Google Translate for quick camera lookups, Reverso Context for real examples, WordReference for word-level depth.", "Watch for false friends like camera (room), libreria (bookshop), and parente (relative) that look English but mean something else.", "Translate meaning, not words: In bocca al lupo literally means in the mouth of the wolf but means good luck.", "Immersion with dual subtitles on Italian video builds an intuitive sense of how the language actually works."]} />
           <h2 className="text-2xl font-bold text-[var(--text)] mb-4">Why Italian to English Translation Matters</h2>
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Whether you are traveling through Rome, reading an Italian recipe, watching a Fellini film, or communicating with Italian business partners, the need to translate from italiano to english comes up constantly. Italian is spoken by over 85 million people worldwide and is one of the most studied languages in the world.</p>
@@ -34,7 +34,7 @@ export default function ItalianToEnglishTranslationContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Learn Italian naturally with dual subtitles on YouTube — free with Funlingo.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
@@ -217,7 +217,7 @@ export default function ItalianToEnglishTranslationContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Learn Italian Naturally with Dual Subtitles</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Watch Italian videos on YouTube with Italian and English subtitles side by side. Click any word for instant translation. Completely free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

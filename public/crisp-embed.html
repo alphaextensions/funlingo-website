@@ -7,47 +7,103 @@
 </head>
 <body>
 <!-- ==========================================================================
-  FunLingo · unread-reply notifier (host this on YOUR website)
+  FunLingo · unread-reply notifier (hosted on www.getfunlingo.com)
   --------------------------------------------------------------------------
   WHAT IT DOES
     Runs the Crisp JS SDK, stays invisible, reads Crisp's unread-message count,
     and posts it to the FunLingo extension popup so it can light the red dot
-    when your support team replies. (Crisp's own hosted chatbox posts nothing to
-    the parent, so this tiny page is the only client-side way to know.)
+    when support replies. (Crisp's own hosted chatbox posts nothing to the
+    parent, so this tiny page is the only client-side way to know.)
 
-  HOW TO USE
-    1. Upload this file to your site, e.g.  https://getfunlingo.com/crisp-embed.html
-    2. In the extension's  popup/funlingo-support.js  set:
-           reporterUrl: "https://getfunlingo.com/crisp-embed.html"
-    3. Reload the extension. The popup loads this page hidden; when support
-       replies, the Chat Support card shows a red dot.
+  HOW THE EXTENSION USES IT
+    1. Embed this page hidden in the popup, passing both params in the URL
+       FRAGMENT (not the query string — see SECURITY below). Use the canonical
+       www host (see CANONICAL HOST below) so no redirect changes the origin:
 
-  It receives website_id and token_id via the URL (added by the extension) so it
-  binds to the SAME Crisp visitor/conversation as the in-popup chat.
+         https://www.getfunlingo.com/crisp-embed.html#website_id=<id>&token_id=<uuid>
+
+    2. Listen for messages from the frame:
+
+         { type: "flcs:unread", ready: true,  count: <number> }   // authoritative
+         { type: "flcs:unread", ready: false, count: 0, error: "<reason>" }
+
+       Only render the red dot on ready:true. A ready:false message means this
+       notifier could not determine the count — it is NOT "zero unread".
+       The listener MUST verify event.origin === "https://www.getfunlingo.com",
+       otherwise any page could spoof an unread count.
+
+  CANONICAL HOST — must be www
+    Production redirects the apex to www (getfunlingo.com 307-> www.getfunlingo.com).
+    If the extension embeds the apex URL, the iframe follows that redirect and the
+    frame's real origin becomes https://www.getfunlingo.com — so its postMessages
+    carry the www origin. Embed the www URL directly AND verify the www origin, or
+    every message is dropped and the red dot never lights. (Local dev has no www
+    redirect, so this mismatch does NOT show up in testing — only in production.)
+
+  BOTH PARAMS ARE REQUIRED
+    Inside an extension popup this page is a third-party frame, so Chrome
+    partitions its storage — it does not inherit the popup chat's Crisp
+    session. CRISP_TOKEN_ID is the only thing binding the two to the same
+    visitor. Without it this page would load happily, bind to a *different*
+    anonymous visitor, and report a confidently wrong count.
+
+  SECURITY
+    Crisp's docs warn that a leaked token permits hijacking that support
+    conversation, so the token must be a cryptographically random UUID v4 —
+    never an email, hash, or incrementing id. Params are read from the URL
+    fragment because fragments are never transmitted to the server: this keeps
+    the token out of Vercel access logs, Referer headers, and browser history.
 =========================================================================== -->
 <script>
 (function () {
   "use strict";
-  function qp(k) {
-    try { return new URLSearchParams(location.search).get(k) || ""; } catch (e) { return ""; }
+
+  // Fragment first; query string is still accepted so an older extension build
+  // keeps working, but it leaks the token into server logs — prefer the hash.
+  function param(k) {
+    try {
+      var fromHash = new URLSearchParams(String(location.hash || "").replace(/^#/, ""));
+      return fromHash.get(k) || new URLSearchParams(location.search).get(k) || "";
+    } catch (e) { return ""; }
   }
-  var websiteId = qp("website_id");
-  var tokenId = qp("token_id");
-  if (!websiteId) return;
+
+  function post(msg) {
+    try { parent.postMessage(msg, "*"); } catch (e) {}
+  }
+
+  // Every failure path reports itself. A silent frame is indistinguishable
+  // from "no unread messages", which is the one thing we must never imply.
+  function fail(reason) {
+    post({ type: "flcs:unread", ready: false, count: 0, error: reason });
+  }
+
+  var websiteId = param("website_id");
+  var tokenId = param("token_id");
+  if (!websiteId) return fail("missing_website_id");
+  if (!tokenId) return fail("missing_token_id");
 
   window.$crisp = [];
   window.CRISP_WEBSITE_ID = websiteId;
-  if (tokenId) window.CRISP_TOKEN_ID = tokenId; // same visitor as the popup chat
+  // Must be set before l.js is injected — Crisp applies it at load time only.
+  window.CRISP_TOKEN_ID = tokenId;
 
   // keep the chatbox + launcher hidden — this page is only a silent reporter
   window.$crisp.push(["do", "chat:hide"]);
   window.$crisp.push(["safe", true]);
 
-  function report() {
-    var c = 0;
-    try { c = window.$crisp.get("chat:unread:count") || 0; } catch (e) {}
-    try { parent.postMessage({ type: "flcs:unread", count: Number(c) || 0 }, "*"); } catch (e) {}
+  // $crisp is a plain Array until l.js swaps in the real SDK, and Array has no
+  // .get — so anything read before then is meaningless, not zero.
+  function sdkReady() {
+    return !!(window.$crisp && typeof window.$crisp.get === "function");
   }
+
+  function report() {
+    if (!sdkReady()) return;
+    var c;
+    try { c = window.$crisp.get("chat:unread:count"); } catch (e) { return; }
+    post({ type: "flcs:unread", ready: true, count: Number(c) || 0 });
+  }
+
   window.$crisp.push(["on", "session:loaded", report]);
   window.$crisp.push(["on", "message:received", report]);
   window.$crisp.push(["on", "message:sent", report]);
@@ -57,11 +113,20 @@
   // load the SDK
   var d = document, s = d.createElement("script");
   s.src = "https://client.crisp.chat/l.js"; s.async = 1;
+  s.onerror = function () { fail("sdk_load_failed"); };
   (d.head || d.documentElement).appendChild(s);
 
-  // safety-net poll (also reconciles read-state changed by the other session)
-  setInterval(report, 4000);
-  // and an initial nudge in case events fire before our listeners attach
+  // Safety-net poll (also reconciles read-state changed by the other session).
+  // If the SDK still hasn't appeared after ~12s it is blocked or offline —
+  // say so once, rather than posting a zero the popup would render as "read".
+  var polls = 0, reportedStall = false;
+  setInterval(function () {
+    polls++;
+    if (sdkReady()) { reportedStall = false; report(); return; }
+    if (!reportedStall && polls >= 3) { reportedStall = true; fail("sdk_unavailable"); }
+  }, 4000);
+
+  // initial nudge in case events fire before our listeners attach
   setTimeout(report, 1500);
 })();
 </script>
