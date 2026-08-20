@@ -27,6 +27,24 @@ export const accBar = (c: string) => CATEGORY_COLORS[c]?.bar ?? CATEGORY_COLORS.
 
 export const posts: BlogPost[] = [
     {
+      id: 15,
+      title: "Language Reactor Not Working on Netflix? Fixes + the Best Free Alternative (2026)",
+      excerpt: "Language Reactor stopped showing dual subtitles on Netflix? Here are the common fixes — plus a more reliable free alternative that works on Netflix, YouTube, and Prime Video.",
+      date: "August 16, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/language-reactor-not-working-netflix"
+    },
+    {
+      id: 14,
+      title: "eJOY Alternatives: 6 Best Free & Paid Options (2026)",
+      excerpt: "eJOY is built for English learners and skips Prime Video. Compare 6 alternatives — including Funlingo (free, 100+ languages, Netflix/YouTube/Prime), Language Reactor, Trancy, and more.",
+      date: "August 15, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/ejoy-alternatives"
+    },
+    {
       id: 13,
       title: "How to Learn a Language on Amazon Prime Video with Dual Subtitles (2026)",
       excerpt: "Prime Video has a huge foreign-language library but no native dual subtitles — and most learning extensions don't support it. Here's how to add free dual subtitles, a daily routine, and the best content by level.",
