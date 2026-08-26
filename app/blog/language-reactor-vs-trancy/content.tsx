@@ -27,7 +27,7 @@ export default function LanguageReactorVsTrancyContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={[
             "Language Reactor ($6/mo) is cheaper, has a more generous free tier, supports 40+ languages, and offers Anki export and catalogue mode.",
             "Trancy ($8/mo) adds AI grammar analysis, pronunciation audio, web page translation, and wider platform support including Disney+.",
@@ -267,7 +267,7 @@ export default function LanguageReactorVsTrancyContent() {
           <div className="bg-[rgba(200,31,212,0.05)] rounded-xl p-8 border border-[#C81FD4]/20 text-center my-8">
             <h2 className="text-2xl font-bold text-[var(--text)] mt-0 mb-3">Skip the Monthly Fees</h2>
             <p className="text-[var(--text-dim)] mb-6">Get dual subtitles, AI translations, pronunciation audio, and vocabulary tools on Netflix, YouTube, and Prime Video &mdash; 100% free with Funlingo.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] text-[var(--text)] px-8 py-4 text-lg rounded-full hover:opacity-90 transition-opacity">
                 Add Funlingo to Chrome &mdash; It&apos;s Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

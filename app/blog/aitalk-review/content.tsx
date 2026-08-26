@@ -27,7 +27,7 @@ export default function AitalkReviewContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["AiTalk is an AI conversation-practice feature built into the Trancy extension, not a standalone app.", "Full access requires Trancy Pro at $11.99/mo; the free tier is capped at 3 conversations per day.", "Its grammar corrections are best-in-class, but pronunciation scoring is unreliable for tonal languages.", "ChatGPT Voice offers more natural conversation; Speak offers structured pronunciation courses.", "Build a comprehension foundation first with free immersion tools like Funlingo before drilling conversation."]} />
           <p className="lead text-xl leading-relaxed">AiTalk has been generating buzz among language learners looking for AI-powered conversation practice. Built as a feature within the <a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Trancy</a> ecosystem, AiTalk promises to simulate real-world conversations with an AI tutor that corrects your pronunciation and grammar in real time. But is it worth the price of a Trancy Pro subscription, or are there better ways to practice? We spent several weeks testing AiTalk across multiple languages to bring you this comprehensive review. In this AiTalk review, we cover everything you need to know before subscribing.</p>
 
@@ -165,7 +165,7 @@ export default function AitalkReviewContent() {
           <p>AiTalk is not the only option for AI-powered language practice. Here is how it stacks up against the most popular alternatives in 2026.</p>
 
           <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] my-8 overflow-hidden">
-            <div className="overflow-x-auto">
+            <div className="thin-scroll overflow-x-auto">
               <table className="w-full min-w-[700px] text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-[var(--border)] bg-[var(--surface)]">
@@ -337,7 +337,7 @@ export default function AitalkReviewContent() {
           <div className="bg-[rgba(200,31,212,0.05)] rounded-xl p-8 border border-[#C81FD4]/20 text-center my-8">
             <h2 className="text-2xl font-bold text-[var(--text)] mt-0 mb-3">Start With Immersion &mdash; It&apos;s Free</h2>
             <p className="text-[var(--text-dim)] mb-6">Build real comprehension with dual subtitles on Netflix, YouTube, and Prime Video. Word-level translations, pronunciation audio, and vocabulary saving &mdash; all at no cost with Funlingo.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] text-[var(--text)] px-8 py-4 text-lg rounded-full hover:opacity-90 transition-opacity">
                 Add Funlingo to Chrome &mdash; It&apos;s Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

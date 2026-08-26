@@ -76,15 +76,28 @@ const railBtn =
 export function ShareRail() {
   const { url, title } = useShareContext();
   const [active, setActive] = React.useState(false);
+  const [nearFooter, setNearFooter] = React.useState(false);
   const pathname = usePathname();
   React.useEffect(() => {
     setActive(!!document.querySelector(".prose"));
+    // Fade the fixed rail out before it can overlap the footer at the bottom.
+    setNearFooter(false);
+    const footer = document.querySelector("footer");
+    if (!footer) return;
+    const io = new IntersectionObserver(
+      ([e]) => setNearFooter(e.isIntersecting),
+      { rootMargin: "0px 0px -40% 0px" }
+    );
+    io.observe(footer);
+    return () => io.disconnect();
   }, [pathname]);
   if (!active) return null;
   const links = buildLinks(url, title);
   return (
     <div
-      className="hidden xl:flex flex-col items-center gap-2 fixed top-1/3"
+      className={`hidden xl:flex flex-col items-center gap-2 fixed top-1/3 transition-opacity duration-300 ${
+        nearFooter ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
       style={{ left: "max(1rem, calc(50% - 31rem))" }}
     >
       <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-dim2)] mb-1 [writing-mode:vertical-rl] rotate-180">

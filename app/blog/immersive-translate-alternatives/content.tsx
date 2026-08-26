@@ -20,7 +20,7 @@ export default function ImmersiveTranslateAlternativesContent() {
           <Badge className="mb-6 bg-[var(--surface-2)] text-[var(--text)] border-[var(--border)] hover:bg-white/15">
             Guide
           </Badge>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-[var(--text)] to-[var(--text-dim)]">
             Best Immersive Translate Alternatives (2026): 6 Free & Paid Options Compared
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[var(--text-dim)] mt-8">
@@ -42,7 +42,7 @@ export default function ImmersiveTranslateAlternativesContent() {
 
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pb-24">
-        <article className="prose prose-invert prose-lg max-w-none">
+        <article className="prose prose-lg max-w-none">
           <img
             src="/blog-images/immersive-translate-alternatives-hero.jpg"
             alt="Comparison of translation tools with the best alternative highlighted"
@@ -61,7 +61,7 @@ export default function ImmersiveTranslateAlternativesContent() {
             </h2>
 
             {/* Comparison Table */}
-            <div className="overflow-x-auto mb-12">
+            <div className="thin-scroll overflow-x-auto mb-12">
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-[var(--border)]">
@@ -75,7 +75,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                   </tr>
                 </thead>
                 <tbody className="text-[var(--text-dim)]">
-                  <tr className="border-b border-[var(--border)] bg-[var(--surface)]"><td className="py-3 px-4 text-[var(--text)] font-medium"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Funlingo</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
+                  <tr className="border-b border-[var(--border)] bg-[var(--surface)]"><td className="py-3 px-4 text-[var(--text)] font-medium"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Funlingo</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4">No</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td></tr>
                   <tr className="border-b border-[var(--border)]"><td className="py-3 px-4 text-[var(--text)] font-medium"><a href="https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Google Translate Ext.</a></td><td className="py-3 px-4">Free</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
                   <tr className="border-b border-[var(--border)] bg-[var(--surface)]"><td className="py-3 px-4 text-[var(--text)] font-medium"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">DeepL Extension</a></td><td className="py-3 px-4">Free/Pro</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td><td className="py-3 px-4">No</td></tr>
                   <tr className="border-b border-[var(--border)]"><td className="py-3 px-4 text-[var(--text)] font-medium"><a href="https://www.trancy.org" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Trancy</a></td><td className="py-3 px-4">$8/mo</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4 text-green-400">Yes</td><td className="py-3 px-4">No</td><td className="py-3 px-4">Pro only</td></tr>
@@ -89,7 +89,7 @@ export default function ImmersiveTranslateAlternativesContent() {
             <div className="bg-[var(--surface)] border border-[#C81FD4]/30 rounded-2xl p-8 mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <Star className="w-6 h-6 text-[#C81FD4]" />
-                <h3 className="text-2xl font-bold text-[var(--text)] m-0"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors inline-flex items-center gap-1.5">Funlingo <ExternalLink className="w-4 h-4 text-[#C81FD4]" /></a></h3>
+                <h3 className="text-2xl font-bold text-[var(--text)] m-0"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors inline-flex items-center gap-1.5">Funlingo <ExternalLink className="w-4 h-4 text-[#C81FD4]" /></a></h3>
                 <Badge className="bg-[#C81FD4]/20 text-[#C81FD4] border-[#C81FD4]/30">
                   Best Pick
                 </Badge>
@@ -383,7 +383,7 @@ export default function ImmersiveTranslateAlternativesContent() {
               </thead>
               <tbody>
                 <tr>
-                  <td><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Funlingo</a></td>
+                  <td><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Funlingo</a></td>
                   <td>Free</td>
                   <td>Chrome &amp; Edge extension</td>
                   <td>Yes &mdash; Netflix, YouTube &amp; Prime Video</td>
@@ -699,7 +699,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                 translations across all major streaming platforms.
               </p>
               <a
-                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -829,7 +829,7 @@ export default function ImmersiveTranslateAlternativesContent() {
                 real progress &mdash; all completely free.
               </p>
               <a
-                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >

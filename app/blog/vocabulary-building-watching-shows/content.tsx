@@ -25,7 +25,7 @@ export default function VocabularyBuildingWatchingContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Passive watching feels productive but rarely builds recallable vocabulary", "The science rests on three pillars: comprehensible input, dual coding, and the spacing effect", "A simple 4-step loop turns any episode into a vocabulary lesson in just a few extra minutes", "Aim to save 5 to 15 words per episode, not every unknown word", "Words learned in context beat isolated flashcards, reaching 85-95% retention at 30 days"]} />
           <h2 className="text-2xl font-bold text-[var(--text)] mb-4">The Problem with Passive Watching</h2>
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Most people who try to learn a language by watching shows make the same mistake: they watch passively. They enjoy the story, read the subtitles, and feel like they are learning. But when they try to use the language in real life, they cannot recall the words they saw.</p>
@@ -34,7 +34,7 @@ export default function VocabularyBuildingWatchingContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Turn every show into a vocabulary lesson with free dual subtitles.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
@@ -129,7 +129,7 @@ export default function VocabularyBuildingWatchingContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Building Vocabulary While You Watch</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Dual subtitles. One-click word saving. Spaced repetition. The complete science-backed vocabulary building toolkit, completely free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

@@ -239,7 +239,9 @@ export default function GuessGame({ lang = "es" }: { lang?: string }) {
               >
                 <span
                   style={{
-                    fontSize: 64,
+                    // Fluid so long words (e.g. "glücklich") don't overflow the
+                    // card and get clipped on narrow screens.
+                    fontSize: "clamp(30px, 10vw, 64px)",
                     fontWeight: 800,
                     lineHeight: 1,
                     background: "linear-gradient(135deg,#BC22D6,#E0319E)",

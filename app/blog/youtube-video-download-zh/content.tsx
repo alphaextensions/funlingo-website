@@ -27,7 +27,7 @@ export default function YoutubeVideoDownloadZhContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways items={["四类下载方案：在线工具、桌面软件、浏览器扩展和手机端，各有适用场景", "在线工具（y2mate、savefrom.net）最简单，但通常最高只支持1080P", "yt-dlp功能最强大，免费开源，支持4K/8K和批量下载播放列表", "下载视频仅供个人学习使用，请尊重创作者版权", "如果目的是学外语，用Funlingo双语字幕在线学习更方便，无需下载视频"]} />
 
@@ -285,7 +285,7 @@ export default function YoutubeVideoDownloadZhContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">各方法对比一览表</h2>
           <p className="text-[var(--text-dim)] mb-6">以下表格帮你快速选择最适合你的油管视频下载方法：</p>
 
-          <div className="overflow-x-auto mb-8">
+          <div className="thin-scroll overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -397,7 +397,7 @@ export default function YoutubeVideoDownloadZhContent() {
 
           <div className="text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20 mb-12">
             <p className="text-lg text-[var(--text)] mb-6">想用油管视频学外语？试试 Funlingo 免费双语字幕，学习效率翻倍！</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">免费安装 Funlingo <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
@@ -435,7 +435,7 @@ export default function YoutubeVideoDownloadZhContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">用Funlingo看油管视频学外语</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Funlingo 为 YouTube、Netflix 和 Prime Video 提供免费双语字幕，内置查词和词汇本功能，让你边看视频边轻松学语言。</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">免费安装 Funlingo <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

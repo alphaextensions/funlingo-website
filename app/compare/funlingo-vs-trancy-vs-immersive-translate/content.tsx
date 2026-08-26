@@ -72,7 +72,7 @@ export default function CompareContent() {
           <div className="p-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] flex flex-col justify-center items-center text-center gap-6">
             <h3 className="text-2xl font-bold text-[var(--text)]">Ready to switch?</h3>
             <p className="text-[var(--text-dim)]">Install Funlingo today and experience the difference. It takes less than 30 seconds to get started.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button className="w-full sm:w-auto bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-lg hover:scale-105 transition-transform shadow-lg shadow-purple-500/20">Get Funlingo for Chrome <ArrowRight className="ml-2 w-4 h-4" /></Button>
             </a>
           </div>

@@ -25,7 +25,7 @@ export default function YoutubeBilingualSubtitlesContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <img
             src="/blog-images/youtube-bilingual-subtitles-hero.jpg"
             alt="A YouTube video player showing two subtitle lines in different languages at once"
@@ -68,7 +68,7 @@ export default function YoutubeBilingualSubtitlesContent() {
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] flex items-center justify-center text-[var(--text)] font-bold text-lg">1</div>
                 <div>
                   <h3 className="text-lg font-bold text-[var(--text)] mb-2">Install Funlingo from the Chrome Web Store</h3>
-                  <p className="text-[var(--text-dim)] text-sm">Visit the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C81FD4] hover:underline" target="_blank" rel="noopener noreferrer">Funlingo extension page</a> and click &quot;Add to Chrome.&quot; Confirm the installation when prompted. The extension is entirely free with no hidden costs or premium tiers.</p>
+                  <p className="text-[var(--text-dim)] text-sm">Visit the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" className="text-[#C81FD4] hover:underline" target="_blank" rel="noopener noreferrer">Funlingo extension page</a> and click &quot;Add to Chrome.&quot; Confirm the installation when prompted. The extension is entirely free with no hidden costs or premium tiers.</p>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function YoutubeBilingualSubtitlesContent() {
 
           <div className="text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20 mb-12">
             <p className="text-lg text-[var(--text)] mb-6">Turn YouTube into your personal language classroom. Install Funlingo for free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>
@@ -250,7 +250,7 @@ export default function YoutubeBilingualSubtitlesContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Watch YouTube with Bilingual Subtitles</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Turn every YouTube video into a language lesson. Bilingual subtitles on YouTube, Netflix, and Prime Video. Free forever.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

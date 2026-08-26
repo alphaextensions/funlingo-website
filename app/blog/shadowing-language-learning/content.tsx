@@ -27,7 +27,7 @@ export default function ShadowingLanguageLearningContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Shadowing means listening to native speech and repeating it aloud in real time, with a 1-2 second delay.", "It engages your motor cortex alongside your auditory cortex, building stronger neural pathways for speech.", "Just 10 minutes a day can produce measurable gains in pronunciation accuracy and fluency.", "Comprehension is key: always understand what you are repeating, ideally with dual subtitles.", "AI tools and dual subtitles remove guesswork by giving real-time feedback and instant translations."]} />
 
           <p className="lead text-xl leading-relaxed">If you have ever watched a polyglot speak a new language with near-native pronunciation after just a few months of study, there is a good chance they used shadowing. This powerful technique &mdash; repeating what you hear in real time &mdash; has been used by interpreters and language coaches for decades. Now, AI tools are making it more effective than ever.</p>
@@ -194,7 +194,7 @@ export default function ShadowingLanguageLearningContent() {
           <div className="mt-16 text-center">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Shadowing with Dual Subtitles</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-2xl mx-auto">Funlingo gives you real-time bilingual subtitles on Netflix, YouTube, and Prime Video &mdash; so you always understand what you are shadowing. Free to use, no account required.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Try Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

@@ -52,7 +52,7 @@ export default function WordsWithAIContent() {
       </section>
 
       {/* Body */}
-      <article className="relative z-10 max-w-3xl mx-auto px-4 pb-24 prose prose-invert prose-lg">
+      <article className="relative z-10 max-w-3xl mx-auto px-4 pb-24 prose prose-lg">
         <img
           src="/blog-images/words-with-ai-hero.jpg"
           alt="English vocabulary and spelling concept with glowing letters and typography"
@@ -383,7 +383,7 @@ export default function WordsWithAIContent() {
               Netflix, YouTube, and more — completely free.
             </p>
             <a
-              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >

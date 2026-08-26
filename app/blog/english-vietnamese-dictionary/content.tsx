@@ -27,7 +27,7 @@ export default function EnglishVietnameseDictionaryContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways items={["A good eng-viet dict must show tone marks, multiple meanings, and native-speaker audio, since Vietnamese has six tones that change a word's meaning.", "Top all-rounders are VDICT and Laban Dictionary; TFlat is best for spaced-repetition flashcards and Glosbe for real-world sentence examples.", "Several apps (Laban, TFlat, EVD, Dict Box) work fully offline, which is useful when traveling in Vietnam.", "Vietnamese grammar is actually simpler than many Asian languages: no conjugation, gender, or plurals, and it uses the Latin alphabet.", "Pair a dictionary with watching real content using Funlingo's free dual Vietnamese-plus-English subtitles to see words in context."]} />
 
@@ -41,7 +41,7 @@ export default function EnglishVietnameseDictionaryContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Learn Vietnamese naturally with free dual subtitles on YouTube and Netflix.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
@@ -226,7 +226,7 @@ export default function EnglishVietnameseDictionaryContent() {
 
           {/* --- Comparison Table --- */}
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6"><Star className="w-6 h-6 inline mr-2 text-[#C81FD4]" />English-Vietnamese Dictionary Comparison Table</h2>
-          <div className="overflow-x-auto mb-8">
+          <div className="thin-scroll overflow-x-auto mb-8">
             <table className="w-full text-sm text-left border border-[var(--border)] rounded-xl overflow-hidden">
               <thead className="bg-[var(--surface)]">
                 <tr>
@@ -382,7 +382,7 @@ export default function EnglishVietnameseDictionaryContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Learning Vietnamese with Dual Subtitles</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Watch Vietnamese videos on YouTube and Netflix with Vietnamese and English subtitles side by side. Click any word for instant translation. Completely free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

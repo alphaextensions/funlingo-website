@@ -29,7 +29,7 @@ export default function UnlessMeaningContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways items={["'Unless' is a subordinating conjunction meaning 'except if' or 'if ... not'.", "It usually equals 'if not' in zero and first conditionals (real, possible situations).", "Do NOT use 'unless' in second or third conditionals — those describe hypothetical or past-unreal situations.", "Never use 'will' inside the unless-clause, and avoid double negatives like 'unless you don't'.", "Do not confuse 'unless' (a conditional exception) with 'until' (a time boundary)."]} />
 
@@ -389,7 +389,7 @@ export default function UnlessMeaningContent() {
             </li>
           </ul>
           <p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-amber-400 hover:underline">Funlingo</a> is a free Chrome extension that adds dual subtitles to Netflix, YouTube, and Prime Video. It also provides AI-powered word definitions, per-word pronunciation, and a built-in vocabulary builder &mdash; so every show you watch becomes a hands-on grammar and vocabulary lesson.
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" className="text-amber-400 hover:underline">Funlingo</a> is a free Chrome extension that adds dual subtitles to Netflix, YouTube, and Prime Video. It also provides AI-powered word definitions, per-word pronunciation, and a built-in vocabulary builder &mdash; so every show you watch becomes a hands-on grammar and vocabulary lesson.
           </p>
 
           <hr className="border-[var(--border)] my-10" />
@@ -436,7 +436,7 @@ export default function UnlessMeaningContent() {
             <p className="text-[var(--text-dim)] mb-6 max-w-xl mx-auto">
               Grammar rules like &ldquo;unless&rdquo; click faster when you hear them in real shows with dual subtitles. Funlingo adds free dual subtitles, AI word lookup, and pronunciation tools to Netflix, YouTube, and Prime Video &mdash; so you learn naturally while watching what you love.
             </p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#b45309_0%,#f59e0b_100%)] text-[var(--text)] px-8 py-3 text-lg rounded-full hover:opacity-90 transition-opacity">
                 Try Funlingo Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

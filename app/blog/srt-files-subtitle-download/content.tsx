@@ -26,7 +26,7 @@ export default function SrtFilesSubtitleDownloadContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["SRT (SubRip Text) is a plain-text format with a sequence number, timestamp range, and subtitle text per entry.", "SRT uses commas before milliseconds; VTT uses periods and adds a WEBVTT header — converting between them takes seconds.", "VLC and MPV auto-load SRT files that share the video's filename; Netflix and YouTube do not accept external SRT files.", "SRT files are plain text and cannot carry malware, but subtitle sites can serve deceptive ads and fake download buttons.", "For language learning on streaming, Funlingo replaces manual SRT downloads with automatic, synced dual subtitles."]} />
 
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">Subtitles are one of the most powerful tools for language learners, accessibility advocates, and anyone watching foreign-language content. At the heart of subtitles is the SRT file, a simple text format that has been the standard for over two decades. This guide covers everything you need to know about subtitle downloads: what SRT files are, where to find them, how to use them, and why modern tools like Funlingo are making manual subtitle management a thing of the past.</p>
@@ -229,7 +229,7 @@ export default function SrtFilesSubtitleDownloadContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">Stop hunting for subtitle files. Start learning with Funlingo.</p>
             <p className="text-[var(--text-dim)] mb-6">Dual subtitles, instant word translations, and vocabulary saving — all built into Netflix, YouTube, and Prime Video. Completely free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

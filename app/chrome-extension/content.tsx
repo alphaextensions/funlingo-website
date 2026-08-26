@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 const CHROME_STORE_URL =
-  "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en";
+  "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en";
 
 const features = [
   {
