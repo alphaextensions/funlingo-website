@@ -27,6 +27,15 @@ export const accBar = (c: string) => CATEGORY_COLORS[c]?.bar ?? CATEGORY_COLORS.
 
 export const posts: BlogPost[] = [
     {
+      id: 9,
+      title: "Is Lingopie Worth It? Free Lingopie Alternative for 2026",
+      excerpt: "Lingopie review and full cost breakdown — what it is, what it costs, and who it's worth it for. Plus a 100% free alternative that adds dual subtitles to Netflix, YouTube & Prime Video.",
+      date: "June 25, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/lingopie-review-free-alternative"
+    },
+    {
       id: 8,
       title: "Learn Japanese on Crunchyroll: Free Dual Subtitles Guide",
       excerpt: "Turn Crunchyroll anime into Japanese practice with free dual subtitles and click-to-translate. The best anime to learn Japanese, by level, plus a daily routine.",
