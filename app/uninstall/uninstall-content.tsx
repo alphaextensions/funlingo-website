@@ -43,6 +43,7 @@ function UninstallInner() {
 
     const payload = {
       eventType: "uninstall_redirect",
+      analyticsCategory: "uninstall",
       timestamp: new Date().toISOString(),
       ...params,
     };
