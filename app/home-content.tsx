@@ -165,10 +165,10 @@ export default function HomeContent() {
             {/* Social-proof panel. Monogram avatars replace the former pravatar.cc
                 images: three third-party requests, and not brand assets. */}
             <div
-              className="flex items-center flex-wrap"
-              style={{ gap: 20, marginTop: 26, padding: "16px 20px", borderRadius: 18, background: "var(--surface)", border: "1px solid var(--border)" }}
+              className="fnl-proof"
+              style={{ marginTop: 26, borderRadius: 18, background: "var(--surface)", border: "1px solid var(--border)" }}
             >
-              <div className="flex items-center" style={{ gap: 13 }}>
+              <div className="fnl-proof-main flex items-center" style={{ gap: 13 }}>
                 <div className="flex" aria-hidden="true">
                   {PROOF_AVATARS.map((a, i) => (
                     <span
@@ -187,9 +187,9 @@ export default function HomeContent() {
                 </div>
               </div>
 
-              <div style={{ width: 1, alignSelf: "stretch", background: "var(--border)" }} />
+              <div className="fnl-proof-div" />
 
-              <div>
+              <div className="fnl-proof-rating">
                 <div className="flex items-center" style={{ gap: 6 }}>
                   <span style={{ color: "#F5A623", fontSize: 15, letterSpacing: 1 }}>★★★★★</span>
                   <span style={{ fontSize: 15, fontWeight: 800, color: "var(--text)" }}>4.8</span>
