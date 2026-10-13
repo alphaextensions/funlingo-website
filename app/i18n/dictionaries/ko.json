@@ -25,10 +25,10 @@
     "platformsHeading": "좋아하는 플랫폼에서 사용하세요"
   },
   "home": {
-    "badgeFree": "100% 무료 — 유료 장벽은 영원히 없습니다",
+    "badgeFree": "100% 무료 — 결제벽 없이",
     "heroPre": "보면서",
     "heroAccent": "배우세요.",
-    "heroSub": "이중 자막, 즉각적인 단어 뜻, 어휘 학습 도구를 Netflix, YouTube, Prime 외 5개 플랫폼 안에서 바로 만나보세요. 언어를 골라 플레이어를 체험해 보세요.",
+    "heroSub": "이중 자막, 즉석 단어 뜻, 단어장까지 — Netflix, YouTube, Prime 등 10개 플랫폼 안에 바로. 언어를 골라 플레이어를 체험해 보세요.",
     "learnLabel": "배우고 싶은 언어",
     "learnMore": "+ 100개 더",
     "ratingTail": "Chrome Web Store · 언어 학습자들의 사랑을 받는",
@@ -39,7 +39,7 @@
     "step1Title": "Chrome에 추가",
     "step1Body": "Web Store에서 클릭 한 번. 계정도, 카드도, 복잡한 설정도 없습니다.",
     "step2Title": "재생 버튼을 누르세요",
-    "step2Body": "Netflix, YouTube, Prime 등 총 8개 플랫폼을 열고 이미 좋아하는 콘텐츠를 보세요.",
+    "step2Body": "Netflix, YouTube, Prime — 총 10개 플랫폼 — 평소 보던 걸 그대로 보세요.",
     "step3Title": "단어를 탭하세요",
     "step3Body": "이중 자막이 나타납니다. 탭하면 뜻을 보고, 발음을 듣고, 저장해 둘 수 있습니다.",
     "gameH3": "이제 당신 차례 — 뜻을 맞혀보세요",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "사람들이 갈아타는 이유",
     "cmpH2a": "그들이 돈 받고 파는 모든 것.",
     "cmpH2b": "당신에겐 $0.",
-    "cmpFreeForever": "영원히 무료",
+    "cmpFreeForever": "무료",
     "row1": "플레이어 내 이중 자막",
     "row2": "팝업으로 보는 단어 뜻 + 예문",
     "row3": "단어별 발음 (오디오)",
@@ -56,7 +56,7 @@
     "row6": "가격",
     "priceFree": "무료",
     "sciEyebrow": "과학적으로 입증됨",
-    "sciCap": "단어를 실제 영상 맥락에서 만나면 — 플래시카드만 사용할 때보다 더 많은 어휘를 기억합니다.",
+    "sciCap": "실제 영상 속에서 단어를 만나면, 플래시카드만 볼 때보다 더 많이 기억돼요.",
     "sciSrc": "Montero Perez et al., Modern Language Journal · “우리는 메시지를 이해할 때 언어를 습득합니다.” — Dr. Stephen Krashen",
     "chartCap": "30일 후 기억하는 단어",
     "chartFlash": "플래시카드",
@@ -72,9 +72,9 @@
     "faqEyebrow": "좋은 질문들",
     "faqH2": "간단한 답변",
     "q1": "정말 무료인가요?",
-    "a1": "네 — 완전히 무료입니다. 프리미엄 등급도, 유료 장벽도, 숨은 비용도 없습니다. 이중 자막, AI 뜻풀이, 발음, 어휘 학습 도구 모두 영원히 무료입니다.",
+    "a1": "네, 완전히요. 프리미엄도, 결제벽도, 숨은 비용도 없어요. 이중 자막, AI 뜻풀이, 발음, 단어장 모두 무료예요.",
     "q2": "어떤 사이트에서 작동하나요?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, Coursera 등 8개 플랫폼에서 작동하며, 더 많은 플랫폼이 추가될 예정입니다.",
+    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, Coursera — 10개 플랫폼이고 계속 늘어나요.",
     "q3": "계정이 필요한가요?",
     "a3": "아니요. 확장 프로그램을 설치하고 영상을 열면 30초 안에 학습이 시작됩니다. 가입은 필요 없습니다.",
     "q4": "몇 개의 언어를 지원하나요?",
@@ -85,7 +85,10 @@
     "a6": "Funlingo는 최소한의 권한만 사용하며 개인정보를 우선하는 가벼운 모델로 설계되었습니다. 당신의 시청 기록은 당신의 것입니다.",
     "ctaH2a": "오늘 밤 볼 그 에피소드를",
     "ctaH2b": "다음 수업으로 바꿔보세요.",
-    "ctaSub": "Funlingo를 Chrome에 추가하면 다음에 보는 콘텐츠가 이미 당신을 가르치고 있습니다. 영원히 무료, 계정 불필요."
+    "ctaSub": "Funlingo를 Chrome에 추가하면, 다음에 보는 영상이 이미 당신을 가르치고 있어요. 무료, 계정도 필요 없어요.",
+    "usersCount": "20,000+",
+    "usersLabel": "주간 활성 학습자",
+    "ratingStore": "Chrome 웹 스토어"
   },
   "player": {
     "learning": "학습 중",
@@ -96,7 +99,7 @@
     "emptyHint": "강조된 단어에 마우스를 올리고, 재생을 탭해 들어본 뒤 저장하세요 — 여기에 모여 복습할 준비가 됩니다."
   },
   "game": {
-    "prompt": "이 {lang} 단어는 무슨 뜻일까요?",
+    "prompt": "이 단어는 무슨 뜻일까요?",
     "wordOf": "{total}개 중 {n}번째 단어",
     "tapHear": "탭하면 발음을 들을 수 있어요",
     "wrong": "아쉬워요 — 뜻은 “{answer}”입니다. 다음을 탭하세요.",

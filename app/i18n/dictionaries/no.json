@@ -25,10 +25,8 @@
     "platformsHeading": "Fungerer på dine favorittplattformer"
   },
   "home": {
-    "badgeFree": "100 % gratis — aldri noen betalingsmur",
     "heroPre": "Lær mens du",
     "heroAccent": "ser på.",
-    "heroSub": "Doble undertekster, umiddelbare ordforklaringer og en ordforrådsbygger — rett inne i Netflix, YouTube, Prime og 5 til. Velg et språk og prøv spilleren.",
     "learnLabel": "Jeg vil lære",
     "learnMore": "+ 100 til",
     "ratingTail": "på Chrome Web Store · elsket av språkelever",
@@ -39,7 +37,6 @@
     "step1Title": "Legg til i Chrome",
     "step1Body": "Ett klikk fra Web Store. Ingen konto, ingen kort, ingen tungvint oppsett.",
     "step2Title": "Trykk på play",
-    "step2Body": "Åpne Netflix, YouTube, Prime — 8 plattformer totalt — og se på det du allerede elsker.",
     "step3Title": "Trykk på et ord",
     "step3Body": "Doble undertekster dukker opp. Trykk for å se betydningen, hør det uttalt, og lagre det til senere.",
     "gameH3": "Din tur — gjett betydningen",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Derfor bytter folk",
     "cmpH2a": "Alt de tar betalt for.",
     "cmpH2b": "Ditt for $0.",
-    "cmpFreeForever": "Gratis for alltid",
     "row1": "Doble undertekster i spilleren",
     "row2": "Ordbetydning + eksempel i popup",
     "row3": "Uttale per ord (lyd)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Gode spørsmål",
     "faqH2": "De korte svarene",
     "q1": "Er det virkelig gratis?",
-    "a1": "Ja — helt og holdent. Ingen premiumnivå, ingen betalingsmur, ingen skjulte kostnader. Doble undertekster, AI-betydninger, uttale og ordforrådsbyggeren er alle gratis, for alltid.",
     "q2": "Hvilke nettsteder fungerer det på?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy og Coursera — 8 plattformer, og flere er på vei.",
     "q3": "Trenger jeg en konto?",
     "a3": "Nei. Installer utvidelsen, åpne en video, og du lærer på under 30 sekunder. Ingen registrering kreves.",
     "q4": "Hvor mange språk støttes?",
@@ -84,8 +78,7 @@
     "q6": "Er dataene mine private?",
     "a6": "Funlingo bruker minimale tillatelser og er bygget rundt en lett modell der personvernet kommer først. Det du ser på, forblir ditt.",
     "ctaH2a": "Gjør kveldens episode",
-    "ctaH2b": "om til din neste leksjon.",
-    "ctaSub": "Legg Funlingo til i Chrome, så lærer det neste du ser på deg allerede noe. Gratis for alltid, ingen konto nødvendig."
+    "ctaH2b": "om til din neste leksjon."
   },
   "player": {
     "learning": "LÆRER",

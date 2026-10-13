@@ -25,10 +25,8 @@
     "platformsHeading": "Fungerar på dina favoritplattformar"
   },
   "home": {
-    "badgeFree": "100% gratis – ingen betalvägg, någonsin",
     "heroPre": "Lär dig medan du",
     "heroAccent": "tittar.",
-    "heroSub": "Dubbla undertexter, direkta ordbetydelser och en ordförrådsbyggare – direkt i Netflix, YouTube, Prime och 5 till. Välj ett språk och testa spelaren.",
     "learnLabel": "Jag vill lära mig",
     "learnMore": "+ 100 till",
     "ratingTail": "i Chrome Web Store · älskat av språkinlärare",
@@ -39,7 +37,6 @@
     "step1Title": "Lägg till i Chrome",
     "step1Body": "Ett klick från Web Store. Inget konto, inget kort, ingen krånglig installation.",
     "step2Title": "Tryck på play",
-    "step2Body": "Öppna Netflix, YouTube, Prime – 8 plattformar totalt – och titta på det du redan älskar.",
     "step3Title": "Tryck på vilket ord som helst",
     "step3Body": "Dubbla undertexter dyker upp. Tryck för betydelsen, hör det uttalas och spara det för senare.",
     "gameH3": "Din tur – gissa betydelsen",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Varför folk byter",
     "cmpH2a": "Allt de tar betalt för.",
     "cmpH2b": "Ditt för $0.",
-    "cmpFreeForever": "Gratis för alltid",
     "row1": "Dubbla undertexter i spelaren",
     "row2": "Ordbetydelse + exempel i popup",
     "row3": "Uttal per ord (ljud)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Bra frågor",
     "faqH2": "De korta svaren",
     "q1": "Är det verkligen gratis?",
-    "a1": "Ja – helt och hållet. Ingen premiumnivå, ingen betalvägg, inga dolda kostnader. Dubbla undertexter, AI-betydelser, uttal och ordförrådsbyggaren är alla gratis, för alltid.",
     "q2": "Vilka sidor fungerar det på?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy och Coursera – 8 plattformar, med fler på väg.",
     "q3": "Behöver jag ett konto?",
     "a3": "Nej. Installera tillägget, öppna en video och du lär dig på under 30 sekunder. Ingen registrering krävs.",
     "q4": "Hur många språk stöds?",
@@ -84,8 +78,7 @@
     "q6": "Är mina data privata?",
     "a6": "Funlingo använder minimala behörigheter och är byggt kring en lättviktig modell med integritet i första rummet. Ditt tittande förblir ditt.",
     "ctaH2a": "Förvandla kvällens avsnitt",
-    "ctaH2b": "till din nästa lektion.",
-    "ctaSub": "Lägg till Funlingo i Chrome så lär dig redan nästa sak du tittar på något. Gratis för alltid, inget konto behövs."
+    "ctaH2b": "till din nästa lektion."
   },
   "player": {
     "learning": "LÄR DIG",

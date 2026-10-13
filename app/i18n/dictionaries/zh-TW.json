@@ -25,10 +25,10 @@
     "platformsHeading": "支援你喜愛的平台"
   },
   "home": {
-    "badgeFree": "100% 免費——永遠不收費",
+    "badgeFree": "100% 免費 —— 無需付費",
     "heroPre": "邊看邊",
     "heroAccent": "學。",
-    "heroSub": "雙語字幕、即時單字釋義，還有詞彙累積工具——全都直接內建在 Netflix、YouTube、Prime 及另外 5 個平台裡。選一種語言，試試播放器吧。",
+    "heroSub": "雙語字幕、即時字義、生字本，全都在 Netflix、YouTube、Prime 等 10 大平台裡。選一種語言，試試播放器。",
     "learnLabel": "我想學",
     "learnMore": "+ 還有 100 種",
     "ratingTail": "在 Chrome Web Store 上 · 深受語言學習者喜愛",
@@ -39,7 +39,7 @@
     "step1Title": "加到 Chrome",
     "step1Body": "從 Web Store 一鍵安裝。免帳號、免刷卡、不用繁瑣設定。",
     "step2Title": "按下播放",
-    "step2Body": "打開 Netflix、YouTube、Prime——共 8 個平台——觀看你早已喜愛的內容。",
+    "step2Body": "打開 Netflix、YouTube、Prime —— 共 10 大平台 —— 看你本來就愛看的內容。",
     "step3Title": "點擊任何單字",
     "step3Body": "雙語字幕隨即出現。點一下看意思、聽發音，再存起來日後複習。",
     "gameH3": "換你了——猜猜意思",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "大家為什麼紛紛改用它",
     "cmpH2a": "他們收費的所有功能。",
     "cmpH2b": "在這裡只要 $0。",
-    "cmpFreeForever": "永久免費",
+    "cmpFreeForever": "免費",
     "row1": "播放器內雙語字幕",
     "row2": "彈出視窗顯示單字意思＋例句",
     "row3": "逐字發音（語音）",
@@ -56,7 +56,7 @@
     "row6": "價格",
     "priceFree": "免費",
     "sciEyebrow": "有科學佐證",
-    "sciCap": "在真實影片情境中遇到單字時，比起只用單字卡，能多記住的詞彙量。",
+    "sciCap": "在真實影片情境裡遇到單字，比單純背卡片記得更多詞彙。",
     "sciSrc": "Montero Perez et al., Modern Language Journal · 「我們在理解訊息時才習得語言。」——Dr. Stephen Krashen",
     "chartCap": "30 天後仍記得的單字",
     "chartFlash": "單字卡",
@@ -72,9 +72,9 @@
     "faqEyebrow": "好問題",
     "faqH2": "簡短的回答",
     "q1": "真的免費嗎？",
-    "a1": "是的——完全免費。沒有付費方案、沒有付費牆、沒有隱藏費用。雙語字幕、AI 釋義、發音和詞彙累積工具全部免費，而且永遠免費。",
+    "a1": "是的，完全免費。沒有進階版、沒有付費牆、沒有隱藏費用。雙語字幕、AI 字義、發音和生字本全部免費。",
     "q2": "它支援哪些網站？",
-    "a2": "Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Udemy 和 Coursera——共 8 個平台，未來還會有更多。",
+    "a2": "Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Tubi、bilibili、Udemy 和 Coursera —— 共 10 大平台，還在持續增加。",
     "q3": "我需要帳號嗎？",
     "a3": "不用。安裝擴充功能、打開影片，30 秒內就能開始學習。無需註冊。",
     "q4": "支援多少種語言？",
@@ -85,7 +85,10 @@
     "a6": "Funlingo 只使用最少的權限，並以隱私優先的輕量模式打造。你看的內容永遠屬於你。",
     "ctaH2a": "把今晚的影集",
     "ctaH2b": "變成你的下一堂課。",
-    "ctaSub": "把 Funlingo 加到 Chrome，你接下來看的內容就已經在教你了。永久免費，無需帳號。"
+    "ctaSub": "把 Funlingo 加到 Chrome，你接下來看的內容就已經在教你了。免費，免帳號。",
+    "usersCount": "20,000+",
+    "usersLabel": "每週活躍學習者",
+    "ratingStore": "Chrome 線上商店"
   },
   "player": {
     "learning": "學習中",
@@ -96,7 +99,7 @@
     "emptyHint": "把游標移到標示的單字上，點播放鍵聽發音，再按儲存——它就會出現在這裡，隨時可複習。"
   },
   "game": {
-    "prompt": "這個 {lang} 單字是什麼意思？",
+    "prompt": "這個詞是什麼意思？",
     "wordOf": "第 {n} 個，共 {total} 個",
     "tapHear": "點一下聽發音",
     "wrong": "差一點——它的意思是「{answer}」。點「下一個」。",

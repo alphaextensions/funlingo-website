@@ -25,10 +25,8 @@
     "platformsHeading": "Berfungsi di platform favoritmu"
   },
   "home": {
-    "badgeFree": "100% gratis — tanpa paywall, selamanya",
     "heroPre": "Belajar sambil",
     "heroAccent": "menonton.",
-    "heroSub": "Subtitle ganda, arti kata instan, dan pembangun kosakata — langsung di dalam Netflix, YouTube, Prime & 5 lainnya. Pilih bahasa dan coba pemutarnya.",
     "learnLabel": "Saya ingin belajar",
     "learnMore": "+ 100 lainnya",
     "ratingTail": "di Chrome Web Store · disukai oleh para pelajar bahasa",
@@ -39,7 +37,6 @@
     "step1Title": "Tambahkan ke Chrome",
     "step1Body": "Satu klik dari Web Store. Tanpa akun, tanpa kartu, tanpa proses pengaturan yang rumit.",
     "step2Title": "Tekan putar",
-    "step2Body": "Buka Netflix, YouTube, Prime — 8 platform sekaligus — dan tonton yang sudah kamu sukai.",
     "step3Title": "Ketuk kata mana pun",
     "step3Body": "Subtitle ganda muncul. Ketuk untuk artinya, dengarkan pengucapannya, dan simpan untuk nanti.",
     "gameH3": "Giliranmu — tebak artinya",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Mengapa orang beralih",
     "cmpH2a": "Semua yang mereka kenakan biaya.",
     "cmpH2b": "Untukmu seharga $0.",
-    "cmpFreeForever": "Gratis selamanya",
     "row1": "Subtitle ganda di dalam pemutar",
     "row2": "Arti kata + contoh dalam popup",
     "row3": "Pengucapan per kata (audio)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Pertanyaan bagus",
     "faqH2": "Jawaban singkatnya",
     "q1": "Apakah benar-benar gratis?",
-    "a1": "Ya — sepenuhnya. Tanpa tingkatan premium, tanpa paywall, tanpa biaya tersembunyi. Subtitle ganda, arti AI, pengucapan, dan pembangun kosakata semuanya gratis, selamanya.",
     "q2": "Di situs mana saja ini berfungsi?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, dan Coursera — 8 platform, dengan lebih banyak yang akan datang.",
     "q3": "Apakah saya perlu akun?",
     "a3": "Tidak. Pasang ekstensinya, buka sebuah video, dan kamu sudah belajar dalam kurang dari 30 detik. Tanpa perlu mendaftar.",
     "q4": "Berapa banyak bahasa yang didukung?",
@@ -84,8 +78,7 @@
     "q6": "Apakah dataku privat?",
     "a6": "Funlingo menggunakan izin minimal dan dibangun di atas model ringan yang mengutamakan privasi. Apa yang kamu tonton tetap menjadi milikmu.",
     "ctaH2a": "Ubah episode malam ini",
-    "ctaH2b": "menjadi pelajaran berikutmu.",
-    "ctaSub": "Tambahkan Funlingo ke Chrome dan hal berikutnya yang kamu tonton sudah mengajarimu. Gratis selamanya, tanpa perlu akun."
+    "ctaH2b": "menjadi pelajaran berikutmu."
   },
   "player": {
     "learning": "BELAJAR",

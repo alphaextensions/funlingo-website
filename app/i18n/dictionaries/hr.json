@@ -25,10 +25,8 @@
     "platformsHeading": "Radi na tvojim omiljenim platformama"
   },
   "home": {
-    "badgeFree": "100% besplatno — bez naplate, zauvijek",
     "heroPre": "Uči dok",
     "heroAccent": "gledaš.",
-    "heroSub": "Dvostruki titlovi, trenutačna značenja riječi i alat za vokabular — izravno u Netflixu, YouTubeu, Primeu i još 5. Odaberi jezik i isprobaj player.",
     "learnLabel": "Želim učiti",
     "learnMore": "+ još 100",
     "ratingTail": "na Chrome Web Storeu · obožavaju ga oni koji uče jezike",
@@ -39,7 +37,6 @@
     "step1Title": "Dodaj u Chrome",
     "step1Body": "Jedan klik iz Web Storea. Bez računa, bez kartice, bez zamršenog postavljanja.",
     "step2Title": "Pritisni play",
-    "step2Body": "Otvori Netflix, YouTube, Prime — ukupno 8 platformi — i gledaj ono što već voliš.",
     "step3Title": "Dodirni bilo koju riječ",
     "step3Body": "Pojave se dvostruki titlovi. Dodirni za značenje, poslušaj izgovor i spremi za kasnije.",
     "gameH3": "Tvoj red — pogodi značenje",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Zašto ljudi prelaze",
     "cmpH2a": "Sve što oni naplaćuju.",
     "cmpH2b": "Tvoje za $0.",
-    "cmpFreeForever": "Besplatno zauvijek",
     "row1": "Dvostruki titlovi u playeru",
     "row2": "Značenje riječi + primjer u skočnom prozoru",
     "row3": "Izgovor svake riječi (zvuk)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Dobra pitanja",
     "faqH2": "Kratki odgovori",
     "q1": "Je li stvarno besplatno?",
-    "a1": "Da — potpuno. Bez premium razine, bez naplate, bez skrivenih troškova. Dvostruki titlovi, AI značenja, izgovor i alat za vokabular sve je besplatno, zauvijek.",
     "q2": "Na kojim stranicama radi?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy i Coursera — 8 platformi, a stiže ih još.",
     "q3": "Trebam li račun?",
     "a3": "Ne. Instaliraj proširenje, otvori video i učiš za manje od 30 sekundi. Nije potrebna registracija.",
     "q4": "Koliko je jezika podržano?",
@@ -84,8 +78,7 @@
     "q6": "Jesu li moji podaci privatni?",
     "a6": "Funlingo koristi minimalna dopuštenja i izgrađen je na laganom modelu koji prvenstveno štiti privatnost. Ono što gledaš ostaje tvoje.",
     "ctaH2a": "Pretvori večerašnju epizodu",
-    "ctaH2b": "u svoju sljedeću lekciju.",
-    "ctaSub": "Dodaj Funlingo u Chrome i ono što sljedeće gledaš već te uči. Besplatno zauvijek, bez računa."
+    "ctaH2b": "u svoju sljedeću lekciju."
   },
   "player": {
     "learning": "UČENJE",

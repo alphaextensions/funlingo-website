@@ -25,10 +25,10 @@
     "platformsHeading": "Működik a kedvenc platformjaidon"
   },
   "home": {
-    "badgeFree": "100% ingyenes — soha semmilyen fizetős fal",
+    "badgeFree": "100% ingyenes — nincs fizetős fal",
     "heroPre": "Tanulj, miközben",
     "heroAccent": "nézel.",
-    "heroSub": "Kétnyelvű feliratok, azonnali szójelentések és szókincsépítő — egyenesen a Netflixen, YouTube-on, Prime-on és 5 továbbin belül. Válassz egy nyelvet, és próbáld ki a lejátszót.",
+    "heroSub": "Kettős felirat, azonnali szójelentések és szókincsépítő — egyenesen a Netflix, YouTube, Prime és további felületeken belül. Válassz nyelvet, és próbáld ki a lejátszót.",
     "learnLabel": "Tanulni szeretnék",
     "learnMore": "+ 100 további",
     "ratingTail": "a Chrome Web Store-ban · nyelvtanulók kedvence",
@@ -39,7 +39,7 @@
     "step1Title": "Hozzáadás a Chrome-hoz",
     "step1Body": "Egy kattintás a Web Store-ból. Nincs fiók, nincs kártya, nincs beállítási útvesztő.",
     "step2Title": "Indítsd el a lejátszást",
-    "step2Body": "Nyisd meg a Netflixet, YouTube-ot, Prime-ot — összesen 8 platformot — és nézd, amit már most is szeretsz.",
+    "step2Body": "Nyisd meg a Netflixet, YouTube-ot, Prime-ot — összesen 10 felület — és nézd, amit úgyis szeretsz.",
     "step3Title": "Koppints bármelyik szóra",
     "step3Body": "Megjelennek a kétnyelvű feliratok. Koppints a jelentésért, hallgasd meg kimondva, és mentsd el későbbre.",
     "gameH3": "Te jössz — találd ki a jelentést",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "Miért váltanak az emberek",
     "cmpH2a": "Minden, amiért ők pénzt kérnek.",
     "cmpH2b": "Nálad $0-ért.",
-    "cmpFreeForever": "Örökké ingyenes",
+    "cmpFreeForever": "Ingyenes",
     "row1": "Kétnyelvű feliratok a lejátszóban",
     "row2": "Szójelentés + példa a felugró ablakban",
     "row3": "Szavankénti kiejtés (hang)",
@@ -56,7 +56,7 @@
     "row6": "Ár",
     "priceFree": "Ingyenes",
     "sciEyebrow": "Tudományosan megalapozott",
-    "sciCap": "több szókincs marad meg, ha a szavakkal valódi videós szövegkörnyezetben találkozol — szemben a puszta szókártyákkal.",
+    "sciCap": "több szókincs marad meg, ha a szavakkal valódi videós környezetben találkozol — a puszta szókártyákhoz képest.",
     "sciSrc": "Montero Perez et al., Modern Language Journal · „Akkor sajátítjuk el a nyelvet, amikor megértjük az üzeneteket.” — Dr. Stephen Krashen",
     "chartCap": "30 nap után megjegyzett szavak",
     "chartFlash": "Szókártyák",
@@ -72,9 +72,9 @@
     "faqEyebrow": "Jó kérdések",
     "faqH2": "A rövid válaszok",
     "q1": "Tényleg ingyenes?",
-    "a1": "Igen — teljesen. Nincs prémium szint, nincs fizetős fal, nincsenek rejtett költségek. A kétnyelvű feliratok, az AI-jelentések, a kiejtés és a szókincsépítő mind ingyenesek, örökké.",
+    "a1": "Igen, teljesen. Nincs prémium szint, nincs fizetős fal, nincsenek rejtett költségek. A kettős felirat, az MI-jelentések, a kiejtés és a szókincsépítő mind ingyenes.",
     "q2": "Mely oldalakon működik?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy és Coursera — 8 platform, és továbbiak is úton vannak.",
+    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy és Coursera — 10 felület, és továbbiak jönnek.",
     "q3": "Szükségem van fiókra?",
     "a3": "Nem. Telepítsd a bővítményt, nyiss meg egy videót, és 30 másodpercen belül már tanulsz is. Nincs szükség regisztrációra.",
     "q4": "Hány nyelvet támogat?",
@@ -85,7 +85,10 @@
     "a6": "A Funlingo minimális engedélyeket használ, és egy adatvédelmet előtérbe helyező, könnyű modellre épül. Amit nézel, az a tiéd marad.",
     "ctaH2a": "Tedd a ma esti epizódot",
     "ctaH2b": "a következő leckéddé.",
-    "ctaSub": "Add hozzá a Funlingót a Chrome-hoz, és a következő dolog, amit nézel, már tanít is. Örökké ingyenes, nem kell fiók."
+    "ctaSub": "Add a Funlingót a Chrome-hoz, és a következő dolog, amit nézel, máris tanít. Ingyenes, fiók nélkül.",
+    "usersCount": "20 000+",
+    "usersLabel": "tanuló minden héten",
+    "ratingStore": "a Chrome Web Áruházban"
   },
   "player": {
     "learning": "TANULÁS",
@@ -96,7 +99,7 @@
     "emptyHint": "Vidd az egeret egy kiemelt szóra, koppints a lejátszásra, hogy meghalld, majd Mentsd el — ide kerül, készen az ismétlésre."
   },
   "game": {
-    "prompt": "Mit jelent ez a(z) {lang} szó?",
+    "prompt": "Mit jelent ez a szó?",
     "wordOf": "{n}. szó / {total}",
     "tapHear": "koppints, hogy halld kimondva",
     "wrong": "Nem egészen — azt jelenti, hogy „{answer}”. Koppints a Tovább gombra.",

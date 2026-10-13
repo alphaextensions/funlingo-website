@@ -25,10 +25,10 @@
     "platformsHeading": "Funziona sulle tue piattaforme preferite"
   },
   "home": {
-    "badgeFree": "100% gratis — nessun paywall, mai",
+    "badgeFree": "100% gratis — senza paywall",
     "heroPre": "Impara mentre",
     "heroAccent": "guardi.",
-    "heroSub": "Sottotitoli doppi, significati istantanei delle parole e un costruttore di vocabolario — direttamente dentro Netflix, YouTube, Prime e altri 5. Scegli una lingua e prova il player.",
+    "heroSub": "Sottotitoli doppi, significati istantanei e un raccoglitore di vocaboli — dentro Netflix, YouTube, Prime e altri. Scegli una lingua e prova il player.",
     "learnLabel": "Voglio imparare",
     "learnMore": "+ altre 100",
     "ratingTail": "sul Chrome Web Store · amata da chi impara le lingue",
@@ -39,7 +39,7 @@
     "step1Title": "Aggiungi a Chrome",
     "step1Body": "Un clic dal Web Store. Niente account, niente carta, niente labirinti di configurazione.",
     "step2Title": "Premi play",
-    "step2Body": "Apri Netflix, YouTube, Prime — 8 piattaforme in tutto — e guarda ciò che già ami.",
+    "step2Body": "Apri Netflix, YouTube, Prime — 10 piattaforme in tutto — e guarda ciò che già ami.",
     "step3Title": "Tocca una parola",
     "step3Body": "Compaiono i sottotitoli doppi. Tocca per il significato, ascolta la pronuncia e salvala per dopo.",
     "gameH3": "Tocca a te — indovina il significato",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "Perché la gente sta passando a Funlingo",
     "cmpH2a": "Tutto ciò che gli altri fanno pagare.",
     "cmpH2b": "Per te a $0.",
-    "cmpFreeForever": "Gratis per sempre",
+    "cmpFreeForever": "Gratis",
     "row1": "Sottotitoli doppi nel player",
     "row2": "Significato + esempio della parola nel popup",
     "row3": "Pronuncia parola per parola (audio)",
@@ -56,7 +56,7 @@
     "row6": "Prezzo",
     "priceFree": "Gratis",
     "sciEyebrow": "Sostenuto dalla scienza",
-    "sciCap": "in più di vocaboli memorizzati quando incontri le parole nel contesto reale di un video — rispetto alle sole flashcard.",
+    "sciCap": "di vocaboli in più memorizzati quando incontri le parole in un video reale — invece delle sole flashcard.",
     "sciSrc": "Montero Perez et al., Modern Language Journal · “Acquisiamo una lingua quando comprendiamo i messaggi.” — Dr. Stephen Krashen",
     "chartCap": "Parole ricordate dopo 30 giorni",
     "chartFlash": "Flashcard",
@@ -72,9 +72,9 @@
     "faqEyebrow": "Belle domande",
     "faqH2": "Le risposte brevi",
     "q1": "È davvero gratis?",
-    "a1": "Sì — completamente. Nessun piano premium, nessun paywall, nessun costo nascosto. Sottotitoli doppi, significati AI, pronuncia e il costruttore di vocabolario sono tutti gratis, per sempre.",
+    "a1": "Sì, completamente. Nessun piano premium, nessun paywall, nessun costo nascosto. Sottotitoli doppi, significati con IA, pronuncia e vocabolario sono gratis.",
     "q2": "Su quali siti funziona?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy e Coursera — 8 piattaforme, con altre in arrivo.",
+    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy e Coursera — 10 piattaforme, e altre in arrivo.",
     "q3": "Mi serve un account?",
     "a3": "No. Installa l'estensione, apri un video e stai già imparando in meno di 30 seconds. Nessuna registrazione richiesta.",
     "q4": "Quante lingue sono supportate?",
@@ -85,7 +85,10 @@
     "a6": "Funlingo usa permessi minimi ed è costruita attorno a un modello leggero e attento alla privacy. Ciò che guardi resta tuo.",
     "ctaH2a": "Trasforma l'episodio di stasera",
     "ctaH2b": "nella tua prossima lezione.",
-    "ctaSub": "Aggiungi Funlingo a Chrome e la prossima cosa che guardi ti sta già insegnando. Gratis per sempre, nessun account necessario."
+    "ctaSub": "Aggiungi Funlingo a Chrome e la prossima cosa che guardi ti sta già insegnando. Gratis, senza account.",
+    "usersCount": "20.000+",
+    "usersLabel": "utenti ogni settimana",
+    "ratingStore": "sul Chrome Web Store"
   },
   "player": {
     "learning": "STAI IMPARANDO",
@@ -96,7 +99,7 @@
     "emptyHint": "Passa il mouse su una parola evidenziata, tocca play per ascoltarla, poi Salva — finisce qui, pronta da ripassare."
   },
   "game": {
-    "prompt": "Cosa significa questa parola in {lang}?",
+    "prompt": "Cosa significa questa parola?",
     "wordOf": "Parola {n} di {total}",
     "tapHear": "tocca per ascoltarla",
     "wrong": "Non proprio — significa “{answer}”. Tocca Avanti.",

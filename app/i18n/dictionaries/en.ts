@@ -21,11 +21,11 @@ export const en = {
   badges: {
     learnWhileWatch: "Learn while you watch",
     freeExtension: "Free dual subtitle extension",
-    worksOn: "Works on Netflix, YouTube, Prime & 5 more",
+    worksOn: "Works on Netflix, YouTube, Prime & more",
     twoLanguages: "Subtitles in two languages",
   },
   hero: {
-    title: "Dual Subtitles for Netflix, YouTube, Prime & 5 more",
+    title: "Dual Subtitles for Netflix, YouTube, Prime & more",
     subtitle:
       "Turn Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera into an immersive language lesson. Research shows learners who use dual subtitles retain up to 50% more vocabulary than traditional methods. Funlingo supports 100+ languages with bilingual subtitles, instant AI definitions, and vocabulary building — a completely free alternative to paid extensions. Rated 4.8/5 stars on the Chrome Web Store.",
     ctaPrimary: "Add to Chrome - It's Free",
@@ -33,14 +33,17 @@ export const en = {
     platformsHeading: "Works on your favorite platforms",
   },
   home: {
-    badgeFree: "100% free — no paywall, ever",
+    badgeFree: "100% free — no paywall",
     heroPre: "Learn while you",
     heroAccent: "watch.",
     heroSub:
-      "Dual subtitles, instant word meanings, and a vocab builder — right inside Netflix, YouTube, Prime & 5 more. Pick a language and try the player.",
+      "Dual subtitles, instant word meanings, and a vocab builder — right inside Netflix, YouTube, Prime & more. Pick a language and try the player.",
     learnLabel: "I want to learn",
     learnMore: "+ 100 more",
     ratingTail: "on the Chrome Web Store · loved by language learners",
+    usersCount: "20,000+",
+    usersLabel: "learners every week",
+    ratingStore: "on the Chrome Web Store",
     platformHeading:
       "One extension. Works everywhere you already watch & learn.",
     hiwEyebrow: "It really is this easy",
@@ -50,7 +53,7 @@ export const en = {
     step1Body: "One click from the Web Store. No account, no card, no setup maze.",
     step2Title: "Press play",
     step2Body:
-      "Open Netflix, YouTube, Prime — 8 platforms in all — and watch what you already love.",
+      "Open Netflix, YouTube, Prime — 10 platforms in all — and watch what you already love.",
     step3Title: "Tap any word",
     step3Body:
       "Dual subtitles appear. Tap for the meaning, hear it spoken, and save it for later.",
@@ -59,7 +62,7 @@ export const en = {
     cmpEyebrow: "Why people are switching",
     cmpH2a: "Everything they charge for.",
     cmpH2b: "Yours for $0.",
-    cmpFreeForever: "Free forever",
+    cmpFreeForever: "Free",
     row1: "In-player dual subtitles",
     row2: "Word meaning + example in popup",
     row3: "Per-word pronunciation (audio)",
@@ -69,7 +72,7 @@ export const en = {
     priceFree: "Free",
     sciEyebrow: "Backed by science",
     sciCap:
-      "more vocabulary retained when you meet words in real video context — vs flashcards alone.",
+      "more vocabulary retained when you meet words in real video context — rather than flashcards alone.",
     sciSrc:
       "Montero Perez et al., Modern Language Journal · “We acquire language when we understand messages.” — Dr. Stephen Krashen",
     chartCap: "Words remembered after 30 days",
@@ -86,9 +89,9 @@ export const en = {
     faqEyebrow: "Good questions",
     faqH2: "The short answers",
     q1: "Is it really free?",
-    a1: "Yes — completely. No premium tier, no paywall, no hidden costs. Dual subtitles, AI meanings, pronunciation and the vocab builder are all free, forever.",
+    a1: "Yes — completely. No premium tier, no paywall, no hidden costs. Dual subtitles, AI meanings, pronunciation and the vocab builder are all free.",
     q2: "Which sites does it work on?",
-    a2: "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy and Coursera — 8 platforms, with more on the way.",
+    a2: "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy and Coursera — 10 platforms, with more on the way.",
     q3: "Do I need an account?",
     a3: "Nope. Install the extension, open a video, and you're learning in under 30 seconds. No sign-up required.",
     q4: "How many languages are supported?",
@@ -100,7 +103,7 @@ export const en = {
     ctaH2a: "Turn tonight's episode",
     ctaH2b: "into your next lesson.",
     ctaSub:
-      "Add Funlingo to Chrome and the next thing you watch is already teaching you. Free forever, no account needed.",
+      "Add Funlingo to Chrome and the next thing you watch is already teaching you. Free, no account needed.",
   },
   player: {
     learning: "LEARNING",
@@ -112,8 +115,8 @@ export const en = {
       "Hover a highlighted word, tap play to hear it, then Save — it lands here, ready to review.",
   },
   game: {
-    prompt: "What does this {lang} word mean?",
-    wordOf: "Word {n} of {total}",
+    prompt: "What does this word mean?",
+    wordOf: "Word {n} / {total}",
     tapHear: "tap to hear it spoken",
     wrong: "Not quite — it means “{answer}”. Tap Next.",
     next: "Next word →",
@@ -205,7 +208,7 @@ export const en = {
     follow: "Follow",
     downloadExtension: "Download Extension",
     tagline:
-      "Learn while you watch. Free dual subtitles for Netflix, YouTube, Prime & 5 more.",
+      "Learn while you watch. Free dual subtitles for Netflix, YouTube, Prime & more.",
     product: "Product",
     company: "Company",
     compare: "Compare",

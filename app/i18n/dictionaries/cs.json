@@ -25,10 +25,8 @@
     "platformsHeading": "Funguje na vašich oblíbených platformách"
   },
   "home": {
-    "badgeFree": "100% zdarma — nikdy žádné placení",
     "heroPre": "Učte se, když",
     "heroAccent": "sledujete.",
-    "heroSub": "Duální titulky, okamžité významy slov a nástroj na budování slovní zásoby — přímo v Netflixu, YouTube, Prime a 5 dalších. Vyberte si jazyk a vyzkoušejte přehrávač.",
     "learnLabel": "Chci se učit",
     "learnMore": "+ 100 dalších",
     "ratingTail": "v Chrome Web Store · oblíbené mezi studenty jazyků",
@@ -39,7 +37,6 @@
     "step1Title": "Přidat do Chromu",
     "step1Body": "Jedním kliknutím z Web Store. Žádný účet, žádná karta, žádné složité nastavování.",
     "step2Title": "Spusťte přehrávání",
-    "step2Body": "Otevřete Netflix, YouTube, Prime — celkem 8 platforem — a sledujte, co už máte rádi.",
     "step3Title": "Klepněte na jakékoli slovo",
     "step3Body": "Objeví se duální titulky. Klepnutím zobrazíte význam, uslyšíte výslovnost a uložíte si ho na později.",
     "gameH3": "Teď vy — uhodněte význam",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Proč lidé přecházejí",
     "cmpH2a": "Všechno, za co si účtují.",
     "cmpH2b": "U vás za $0.",
-    "cmpFreeForever": "Zdarma navždy",
     "row1": "Duální titulky přímo v přehrávači",
     "row2": "Význam slova + příklad ve vyskakovacím okně",
     "row3": "Výslovnost jednotlivých slov (audio)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Dobré otázky",
     "faqH2": "Stručné odpovědi",
     "q1": "Je to opravdu zdarma?",
-    "a1": "Ano — úplně. Žádná prémiová úroveň, žádné placení, žádné skryté náklady. Duální titulky, významy od AI, výslovnost i budování slovní zásoby jsou zdarma, navždy.",
     "q2": "Na kterých webech funguje?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy a Coursera — 8 platforem a další na cestě.",
     "q3": "Potřebuji účet?",
     "a3": "Ne. Nainstalujte rozšíření, otevřete video a za méně než 30 sekund se učíte. Žádná registrace není potřeba.",
     "q4": "Kolik jazyků je podporováno?",
@@ -84,8 +78,7 @@
     "q6": "Jsou má data v soukromí?",
     "a6": "Funlingo využívá minimum oprávnění a je postaveno na odlehčeném modelu s důrazem na soukromí. Co sledujete, zůstává jen vaše.",
     "ctaH2a": "Proměňte dnešní epizodu",
-    "ctaH2b": "ve svou další lekci.",
-    "ctaSub": "Přidejte Funlingo do Chromu a další věc, kterou sledujete, vás už učí. Zdarma navždy, bez nutnosti účtu."
+    "ctaH2b": "ve svou další lekci."
   },
   "player": {
     "learning": "UČENÍ",

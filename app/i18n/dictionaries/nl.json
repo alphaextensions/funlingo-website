@@ -25,10 +25,10 @@
     "platformsHeading": "Werkt op je favoriete platforms"
   },
   "home": {
-    "badgeFree": "100% gratis — nooit een betaalmuur",
+    "badgeFree": "100% gratis — geen betaalmuur",
     "heroPre": "Leer terwijl je",
     "heroAccent": "kijkt.",
-    "heroSub": "Dubbele ondertiteling, directe woordbetekenissen en een woordenschattrainer — direct in Netflix, YouTube, Prime en 5 andere. Kies een taal en probeer de speler.",
+    "heroSub": "Dubbele ondertiteling, directe woordbetekenissen en een woordenschatbouwer — gewoon in Netflix, YouTube, Prime en meer. Kies een taal en probeer de speler.",
     "learnLabel": "Ik wil leren",
     "learnMore": "+ 100 meer",
     "ratingTail": "in de Chrome Web Store · geliefd bij taalleerders",
@@ -39,7 +39,7 @@
     "step1Title": "Toevoegen aan Chrome",
     "step1Body": "Eén klik in de Web Store. Geen account, geen kaart, geen ingewikkelde installatie.",
     "step2Title": "Druk op afspelen",
-    "step2Body": "Open Netflix, YouTube, Prime — 8 platforms in totaal — en kijk waar je al van houdt.",
+    "step2Body": "Open Netflix, YouTube, Prime — 10 platforms in totaal — en kijk wat je toch al leuk vindt.",
     "step3Title": "Tik op elk woord",
     "step3Body": "Dubbele ondertiteling verschijnt. Tik voor de betekenis, hoor het uitgesproken en bewaar het voor later.",
     "gameH3": "Jouw beurt — raad de betekenis",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "Waarom mensen overstappen",
     "cmpH2a": "Alles waarvoor zij geld vragen.",
     "cmpH2b": "Voor jou voor $0.",
-    "cmpFreeForever": "Voor altijd gratis",
+    "cmpFreeForever": "Gratis",
     "row1": "Dubbele ondertiteling in de speler",
     "row2": "Woordbetekenis + voorbeeld in pop-up",
     "row3": "Uitspraak per woord (audio)",
@@ -56,7 +56,7 @@
     "row6": "Prijs",
     "priceFree": "Gratis",
     "sciEyebrow": "Wetenschappelijk onderbouwd",
-    "sciCap": "meer woordenschat onthouden wanneer je woorden in echte videocontext tegenkomt — vergeleken met alleen flashcards.",
+    "sciCap": "meer woordenschat onthouden wanneer je woorden in echte videocontext tegenkomt — in plaats van alleen flashcards.",
     "sciSrc": "Montero Perez et al., Modern Language Journal · “We leren taal wanneer we boodschappen begrijpen.” — Dr. Stephen Krashen",
     "chartCap": "Woorden onthouden na 30 dagen",
     "chartFlash": "Flashcards",
@@ -72,9 +72,9 @@
     "faqEyebrow": "Goede vragen",
     "faqH2": "De korte antwoorden",
     "q1": "Is het echt gratis?",
-    "a1": "Ja — volledig. Geen premiumlaag, geen betaalmuur, geen verborgen kosten. Dubbele ondertiteling, AI-betekenissen, uitspraak en de woordenschattrainer zijn allemaal gratis, voor altijd.",
+    "a1": "Ja, helemaal. Geen premium, geen betaalmuur, geen verborgen kosten. Dubbele ondertiteling, AI-betekenissen, uitspraak en de woordenschatbouwer zijn gratis.",
     "q2": "Op welke sites werkt het?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy en Coursera — 8 platforms, en er komen er meer aan.",
+    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy en Coursera — 10 platforms, en er komen er meer.",
     "q3": "Heb ik een account nodig?",
     "a3": "Nee. Installeer de extensie, open een video en je leert binnen 30 seconden. Geen registratie vereist.",
     "q4": "Hoeveel talen worden ondersteund?",
@@ -85,7 +85,10 @@
     "a6": "Funlingo gebruikt minimale machtigingen en is gebouwd rond een privacy-first, licht model. Wat je kijkt blijft van jou.",
     "ctaH2a": "Maak van de aflevering van vanavond",
     "ctaH2b": "je volgende les.",
-    "ctaSub": "Voeg Funlingo toe aan Chrome en het volgende dat je kijkt leert je al iets. Voor altijd gratis, geen account nodig."
+    "ctaSub": "Voeg Funlingo toe aan Chrome en het volgende dat je kijkt leert je al iets. Gratis, geen account nodig.",
+    "usersCount": "20.000+",
+    "usersLabel": "leerders elke week",
+    "ratingStore": "in de Chrome Web Store"
   },
   "player": {
     "learning": "LEREN",
@@ -96,7 +99,7 @@
     "emptyHint": "Beweeg over een gemarkeerd woord, tik op afspelen om het te horen en klik op Opslaan — het komt hier terecht, klaar om te herhalen."
   },
   "game": {
-    "prompt": "Wat betekent dit {lang} woord?",
+    "prompt": "Wat betekent dit woord?",
     "wordOf": "Woord {n} van {total}",
     "tapHear": "tik om het uitgesproken te horen",
     "wrong": "Net niet — het betekent “{answer}”. Tik op Volgende.",
