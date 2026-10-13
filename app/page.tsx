@@ -32,10 +32,10 @@ const schemaData = {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD",
-    "description": "Free forever version available"
+    "description": "Free version available"
   },
   "description": "A free dual subtitle Chrome extension that helps users learn languages by watching videos on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera with simultaneous bilingual subtitles. Supports 100+ languages with AI-powered translations.",
-  "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Prime Video support, Disney+ Hotstar support, Apple TV support, Crunchyroll support, Udemy support, Coursera support, Vocabulary builder, 100+ languages, Language learning tools",
+  "featureList": "Dual subtitles, AI dictionary, Netflix support, YouTube support, Prime Video support, Disney+ Hotstar support, Apple TV support, Crunchyroll support, Tubi support, bilibili support, Udemy support, Coursera support, Vocabulary builder, 100+ languages, Language learning tools",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
@@ -78,7 +78,7 @@ const faqSchema = {
       "name": "Which streaming platforms does Funlingo support?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Funlingo supports dual subtitles across 8 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera — covering the world's largest streaming services and top online learning platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
+        "text": "Funlingo supports dual subtitles across 10 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera — covering the world's largest streaming services and top online learning platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
       }
     },
     {

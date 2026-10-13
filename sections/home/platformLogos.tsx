@@ -14,6 +14,9 @@ const LOGOS: Record<string, LogoCfg> = {
   Crunchyroll: { src: "/platforms/crunchyroll.png", bg: "#ffffff", pad: 5 },
   Udemy: { src: "/platforms/udemy.png", bg: "#ffffff", pad: 6 },
   Coursera: { src: "/platforms/coursera.png", bg: "#ffffff", pad: 5 },
+  // Added by the 2026 redesign. Both are wordmarks, so they take the wide tile.
+  Tubi: { src: "/platforms/tubi.svg", bg: "#ffffff", pad: 6, wide: true },
+  bilibili: { src: "/platforms/bilibili.png", bg: "#ffffff", pad: 6, wide: true },
 };
 
 export const PLATFORMS = Object.keys(LOGOS);
