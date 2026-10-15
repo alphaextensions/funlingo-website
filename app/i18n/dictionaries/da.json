@@ -25,10 +25,8 @@
     "platformsHeading": "Virker på dine yndlingsplatforme"
   },
   "home": {
-    "badgeFree": "100 % gratis — ingen betalingsmur, nogensinde",
     "heroPre": "Lær, mens du",
     "heroAccent": "ser.",
-    "heroSub": "Dobbelte undertekster, øjeblikkelige ordbetydninger og en glosebygger — direkte inde i Netflix, YouTube, Prime og 5 flere. Vælg et sprog og prøv afspilleren.",
     "learnLabel": "Jeg vil lære",
     "learnMore": "+ 100 flere",
     "ratingTail": "i Chrome Web Store · elsket af sprogindlærere",
@@ -39,7 +37,6 @@
     "step1Title": "Føj til Chrome",
     "step1Body": "Ét klik fra Web Store. Ingen konto, intet kort, ingen indviklet opsætning.",
     "step2Title": "Tryk på afspil",
-    "step2Body": "Åbn Netflix, YouTube, Prime — 8 platforme i alt — og se det, du allerede elsker.",
     "step3Title": "Tryk på et hvilket som helst ord",
     "step3Body": "Dobbelte undertekster dukker op. Tryk for betydningen, hør det udtalt, og gem det til senere.",
     "gameH3": "Din tur — gæt betydningen",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Derfor skifter folk",
     "cmpH2a": "Alt det, de tager betaling for.",
     "cmpH2b": "Dit for $0.",
-    "cmpFreeForever": "Gratis for altid",
     "row1": "Dobbelte undertekster i afspilleren",
     "row2": "Ordbetydning + eksempel i pop op",
     "row3": "Udtale af hvert ord (lyd)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Gode spørgsmål",
     "faqH2": "De korte svar",
     "q1": "Er det virkelig gratis?",
-    "a1": "Ja — helt og holdent. Ingen premium-version, ingen betalingsmur, ingen skjulte omkostninger. Dobbelte undertekster, AI-betydninger, udtale og glosebyggeren er alle gratis, for altid.",
     "q2": "Hvilke sider virker det på?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy og Coursera — 8 platforme, med flere på vej.",
     "q3": "Skal jeg have en konto?",
     "a3": "Nej. Installer udvidelsen, åbn en video, og du er i gang med at lære på under 30 sekunder. Ingen tilmelding kræves.",
     "q4": "Hvor mange sprog understøttes?",
@@ -84,8 +78,7 @@
     "q6": "Er mine data private?",
     "a6": "Funlingo bruger minimale tilladelser og er bygget op omkring en let model med privatliv først. Det, du ser, forbliver dit.",
     "ctaH2a": "Gør aftenens afsnit",
-    "ctaH2b": "til din næste lektion.",
-    "ctaSub": "Føj Funlingo til Chrome, og det næste, du ser, underviser dig allerede. Gratis for altid, ingen konto nødvendig."
+    "ctaH2b": "til din næste lektion."
   },
   "player": {
     "learning": "LÆRER",

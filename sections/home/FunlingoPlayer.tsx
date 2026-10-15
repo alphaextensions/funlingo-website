@@ -341,7 +341,21 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
         >
           <div className="absolute pointer-events-none" style={{ top: -70, right: -40, width: 280, height: 280, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,77,176,.5), rgba(236,77,176,0) 70%)", filter: "blur(6px)" }} />
           <div className="absolute pointer-events-none" style={{ bottom: -130, left: -60, width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(150,40,220,.45), rgba(150,40,220,0) 70%)" }} />
-          <div className="absolute left-0 right-0 bottom-0 pointer-events-none" style={{ height: 150, background: "linear-gradient(to top, rgba(8,4,16,.9), rgba(8,4,16,0))" }} />
+
+          {/* Scene still. Sits above the ambient orbs and below both scrims, so the
+              subtitles keep their contrast over any frame. */}
+          <img
+            src="/hero-scene.jpg"
+            alt=""
+            aria-hidden="true"
+            fetchPriority="high"
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          />
+          {/* Top scrim keeps the platform/learning chips legible */}
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(180deg, rgba(8,4,16,.35) 0%, rgba(8,4,16,0) 30%)" }} />
+          {/* Bottom protection gradient — 170px in the redesign, up from 150px,
+              because the subtitles now sit over photography rather than a flat field */}
+          <div className="absolute left-0 right-0 bottom-0 pointer-events-none" style={{ height: 170, background: "linear-gradient(to top, rgba(8,4,16,.92), rgba(8,4,16,0))" }} />
 
           {/* Netflix chip */}
           <div className="absolute flex items-center gap-2" style={{ top: 18, left: 20, padding: "7px 12px", borderRadius: 999, background: "rgba(8,4,16,.5)", backdropFilter: "blur(6px)" }}>
@@ -432,6 +446,11 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
 
         {/* Control strip */}
         <div className="flex items-center gap-[14px]" style={{ padding: "13px 18px", background: "#0E0719" }}>
+          {/* Decorative play glyph — the redesign reads as a real player.
+              Not a control: the mock advances on its own timer. */}
+          <span aria-hidden="true" className="flex items-center" style={{ color: "rgba(255,255,255,.92)", flex: "0 0 auto" }}>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5-13-7.5z" /></svg>
+          </span>
           <div
             className="flex-1 relative"
             style={{ height: 5, borderRadius: 99, background: "rgba(255,255,255,.16)" }}

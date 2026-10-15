@@ -941,3 +941,44 @@ html {
 [class*="linear-gradient(135deg,#c81fd4"] * {
   color: #fff !important;
 }
+
+/* ── Hero social-proof panel ───────────────────────────────────────────────
+   Three columns: count | rule | rating. It must never wrap — a wrapped flex
+   row leaves the 1px divider stranded at the end of the first line. Below
+   700px the panel stays a 3-column grid and the two halves stack internally,
+   matching the redesign's own responsive rules. */
+.fnl-proof {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 20px;
+}
+.fnl-proof-div {
+  width: 1px;
+  align-self: stretch;
+  background: var(--border);
+  flex: 0 0 1px;
+}
+@media (max-width: 700px) {
+  .fnl-proof {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    padding: 18px 12px;
+    text-align: center;
+  }
+  .fnl-proof > * { min-width: 0; }
+  .fnl-proof-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+  }
+  .fnl-proof-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 0 8px;
+  }
+}

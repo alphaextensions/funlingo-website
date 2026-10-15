@@ -25,10 +25,10 @@
     "platformsHeading": "お気に入りのプラットフォームで使えます"
   },
   "home": {
-    "badgeFree": "100%無料 — ずっと有料の壁なし",
+    "badgeFree": "100% 無料 — 課金の壁なし",
     "heroPre": "観ながら",
     "heroAccent": "学ぼう。",
-    "heroSub": "デュアル字幕、瞬時の単語の意味、語彙ビルダー — すべてNetflix、YouTube、Primeほか5サービスの中で。言語を選んでプレーヤーを試してみてください。",
+    "heroSub": "二重字幕、その場で単語の意味、単語帳まで — Netflix、YouTube、Prime など10つのプラットフォームの中に。言語を選んでプレーヤーを試してみて。",
     "learnLabel": "学びたい言語",
     "learnMore": "+ ほか100言語",
     "ratingTail": "Chrome Web Storeで · 語学学習者に愛用されています",
@@ -39,7 +39,7 @@
     "step1Title": "Chromeに追加",
     "step1Body": "Web Storeからワンクリック。アカウントもカードも、面倒な設定もありません。",
     "step2Title": "再生する",
-    "step2Body": "Netflix、YouTube、Prime — 全8プラットフォーム — を開いて、好きな作品を観るだけ。",
+    "step2Body": "Netflix、YouTube、Prime — 全10プラットフォーム — いつも観ている作品をそのまま。",
     "step3Title": "単語をタップ",
     "step3Body": "デュアル字幕が表示されます。タップで意味を確認し、発音を聞いて、後で復習するために保存。",
     "gameH3": "あなたの番 — 意味を当ててみよう",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "みんなが乗り換える理由",
     "cmpH2a": "他社が課金する機能のすべて。",
     "cmpH2b": "あなたには$0で。",
-    "cmpFreeForever": "ずっと無料",
+    "cmpFreeForever": "無料",
     "row1": "プレーヤー内デュアル字幕",
     "row2": "ポップアップに単語の意味＋例文",
     "row3": "単語ごとの発音（音声）",
@@ -56,7 +56,7 @@
     "row6": "価格",
     "priceFree": "無料",
     "sciEyebrow": "科学に裏付けられて",
-    "sciCap": "実際の動画の文脈で単語に出会うと、語彙の定着率が向上します — フラッシュカードだけの場合と比べて。",
+    "sciCap": "実際の映像の文脈で単語に出会うと、単語カードだけのときより多く記憶に残ります。",
     "sciSrc": "Montero Perez et al., Modern Language Journal · 「人はメッセージを理解したときに言語を習得する。」 — Dr. Stephen Krashen",
     "chartCap": "30日後に覚えていた単語数",
     "chartFlash": "フラッシュカード",
@@ -72,9 +72,9 @@
     "faqEyebrow": "よくある質問",
     "faqH2": "手短に答えます",
     "q1": "本当に無料ですか？",
-    "a1": "はい — 完全に無料です。プレミアムプランも、有料の壁も、隠れた費用もありません。デュアル字幕、AIの意味、発音、語彙ビルダーはすべてずっと無料です。",
+    "a1": "はい、完全に。プレミアムも課金の壁も隠れた費用もありません。二重字幕、AIによる意味、発音、単語帳すべてが無料です。",
     "q2": "どのサイトで使えますか？",
-    "a2": "Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Udemy、Coursera — 8プラットフォームで、さらに追加予定です。",
+    "a2": "Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Tubi、bilibili、Udemy、Coursera — 10プラットフォーム、さらに追加予定です。",
     "q3": "アカウントは必要ですか？",
     "a3": "いいえ。拡張機能をインストールして動画を開けば、30秒以内に学習を始められます。登録は不要です。",
     "q4": "対応している言語はいくつですか？",
@@ -85,7 +85,10 @@
     "a6": "Funlingoは最小限の権限しか使わず、プライバシー優先の軽量モデルを中心に作られています。あなたの視聴履歴はあなたのものです。",
     "ctaH2a": "今夜のエピソードを",
     "ctaH2b": "次のレッスンに。",
-    "ctaSub": "FunlingoをChromeに追加すれば、次に観るものがもうあなたに教えてくれます。ずっと無料、アカウント不要。"
+    "ctaSub": "Funlingo を Chrome に追加すれば、次に観るものがもう教えてくれます。無料、アカウント不要。",
+    "usersCount": "20,000+",
+    "usersLabel": "週間アクティブ学習者",
+    "ratingStore": "Chrome ウェブストア"
   },
   "player": {
     "learning": "LEARNING",
@@ -96,7 +99,7 @@
     "emptyHint": "ハイライトされた単語にカーソルを合わせ、再生をタップして聞き、保存しましょう — ここに表示され、復習の準備が整います。"
   },
   "game": {
-    "prompt": "この{lang}の単語の意味は？",
+    "prompt": "この単語の意味は?",
     "wordOf": "{total}問中{n}問目",
     "tapHear": "タップして発音を聞く",
     "wrong": "惜しい — 意味は「{answer}」です。次へをタップ。",

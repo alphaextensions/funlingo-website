@@ -25,10 +25,10 @@
     "platformsHeading": "Favori platformlarınızda çalışır"
   },
   "home": {
-    "badgeFree": "%100 ücretsiz — asla ödeme duvarı yok",
+    "badgeFree": "%100 ücretsiz — ödeme duvarı yok",
     "heroPre": "İzlerken",
     "heroAccent": "öğren.",
-    "heroSub": "Çift altyazı, anında kelime anlamları ve bir kelime dağarcığı oluşturucu — tam Netflix, YouTube, Prime ve 5 platformun içinde. Bir dil seçin ve oynatıcıyı deneyin.",
+    "heroSub": "Çift altyazı, anında kelime anlamları ve bir kelime defteri — tam Netflix, YouTube, Prime ve daha fazla platformun içinde. Bir dil seç ve oynatıcıyı dene.",
     "learnLabel": "Şunu öğrenmek istiyorum",
     "learnMore": "+ 100 dil daha",
     "ratingTail": "Chrome Web Store'da · dil öğrenenler tarafından seviliyor",
@@ -39,7 +39,7 @@
     "step1Title": "Chrome'a Ekle",
     "step1Body": "Web Store'dan tek tıkla. Hesap yok, kart yok, karmaşık kurulum yok.",
     "step2Title": "Oynat'a bas",
-    "step2Body": "Netflix, YouTube, Prime — toplam 8 platform — açın ve zaten sevdiğiniz şeyi izleyin.",
+    "step2Body": "Netflix, YouTube, Prime — toplam 10 platform — zaten sevdiğin şeyi izle.",
     "step3Title": "Herhangi bir kelimeye dokun",
     "step3Body": "Çift altyazı belirir. Anlamı için dokunun, seslendirilmesini dinleyin ve sonrası için kaydedin.",
     "gameH3": "Sıra sende — anlamı tahmin et",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "İnsanlar neden geçiş yapıyor",
     "cmpH2a": "Onların ücret aldığı her şey.",
     "cmpH2b": "Sizin için $0.",
-    "cmpFreeForever": "Sonsuza dek ücretsiz",
+    "cmpFreeForever": "Ücretsiz",
     "row1": "Oynatıcı içi çift altyazı",
     "row2": "Açılır pencerede kelime anlamı + örnek",
     "row3": "Kelime başına telaffuz (ses)",
@@ -56,7 +56,7 @@
     "row6": "Fiyat",
     "priceFree": "Ücretsiz",
     "sciEyebrow": "Bilimle destekleniyor",
-    "sciCap": "kelimelerle gerçek video bağlamında karşılaştığınızda daha fazla kelime aklınızda kalır — yalnızca kelime kartlarına kıyasla.",
+    "sciCap": "kelimelerle gerçek video bağlamında karşılaştığında — yalnızca kartlara kıyasla — daha fazla kelime aklında kalır.",
     "sciSrc": "Montero Perez et al., Modern Language Journal · “Mesajları anladığımızda dili ediniriz.” — Dr. Stephen Krashen",
     "chartCap": "30 gün sonra hatırlanan kelimeler",
     "chartFlash": "Kelime kartları",
@@ -72,9 +72,9 @@
     "faqEyebrow": "Güzel sorular",
     "faqH2": "Kısa cevaplar",
     "q1": "Gerçekten ücretsiz mi?",
-    "a1": "Evet — tamamen. Premium katman yok, ödeme duvarı yok, gizli maliyet yok. Çift altyazı, AI anlamları, telaffuz ve kelime dağarcığı oluşturucu hepsi ücretsiz, sonsuza dek.",
+    "a1": "Evet, tamamen. Premium yok, ödeme duvarı yok, gizli ücret yok. Çift altyazı, yapay zekâ anlamları, telaffuz ve kelime defteri ücretsiz.",
     "q2": "Hangi sitelerde çalışıyor?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy ve Coursera — 8 platform, yenileri de yolda.",
+    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy ve Coursera — 10 platform, dahası da yolda.",
     "q3": "Hesaba ihtiyacım var mı?",
     "a3": "Hayır. Uzantıyı kurun, bir video açın ve 30 saniyeden kısa sürede öğrenmeye başlayın. Kayıt gerekmiyor.",
     "q4": "Kaç dil destekleniyor?",
@@ -85,7 +85,10 @@
     "a6": "Funlingo minimum izin kullanır ve gizlilik öncelikli, hafif bir model üzerine kuruludur. İzledikleriniz size ait kalır.",
     "ctaH2a": "Bu geceki bölümü",
     "ctaH2b": "bir sonraki dersinize dönüştürün.",
-    "ctaSub": "Funlingo'yu Chrome'a ekleyin, izlediğiniz bir sonraki şey size çoktan öğretmeye başlasın. Sonsuza dek ücretsiz, hesap gerekmez."
+    "ctaSub": "Funlingo'yu Chrome'a ekle, izleyeceğin bir sonraki şey sana çoktan öğretmeye başlasın. Ücretsiz, hesap gerekmez.",
+    "usersCount": "20.000+",
+    "usersLabel": "haftalık aktif kullanıcı",
+    "ratingStore": "Chrome Web Mağazası"
   },
   "player": {
     "learning": "ÖĞRENİLEN",
@@ -96,7 +99,7 @@
     "emptyHint": "Vurgulanan bir kelimenin üzerine gelin, dinlemek için oynat'a dokunun, ardından Kaydet — buraya gelir, tekrar için hazır."
   },
   "game": {
-    "prompt": "Bu {lang} kelimesi ne anlama geliyor?",
+    "prompt": "Bu kelime ne demek?",
     "wordOf": "{n} / {total} kelime",
     "tapHear": "seslendirilmesini dinlemek için dokun",
     "wrong": "Pek değil — anlamı “{answer}”. Sonraki'ne dokunun.",

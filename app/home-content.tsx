@@ -12,6 +12,14 @@ import { ChromeCTA } from "@/app/_components/cta";
 import { track } from "@/app/_components/track";
 import { useT } from "@/app/i18n/I18nProvider";
 
+// Hero social-proof avatars. Gradient monograms, not photos — the previous
+// pravatar.cc images were third-party requests and not brand assets.
+const PROOF_AVATARS = [
+  { initial: "M", grad: "linear-gradient(135deg,#BC22D6,#E0319E)" },
+  { initial: "A", grad: "linear-gradient(135deg,#7A3FF2,#C81FD4)" },
+  { initial: "D", grad: "linear-gradient(135deg,#E0319E,#FF7A59)" },
+];
+
 const HERO_LANGS = [
   { code: "en", label: "English" },
   { code: "es", label: "Spanish" },
@@ -74,8 +82,8 @@ export default function HomeContent() {
     { label: t("home.row5"), fun: <MarkYes />, tr: <MarkPart />, im: <MarkNo /> },
   ];
 
-  // Localized testimonials — the visitor's language shows first. Every review
-  // has a stock-photo avatar (the English set keeps one 4-star review).
+  // Localized testimonials — the visitor's language shows first. Avatars are
+  // gradient monograms; the English set keeps one 4-star review.
   const reviews = orderedReviews(locale);
   const half = Math.ceil(reviews.length / 2);
   const loopA = [...reviews.slice(0, half), ...reviews.slice(0, half)];
@@ -154,25 +162,39 @@ export default function HomeContent() {
               <ChromeCTA label={t("cta.long")} />
             </div>
 
-            <div className="flex items-center gap-[14px]" style={{ marginTop: 22 }}>
-              <div className="flex">
-                {[
-                  "https://i.pravatar.cc/96?img=42",
-                  "https://i.pravatar.cc/96?img=59",
-                  "https://i.pravatar.cc/96?img=8",
-                ].map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt=""
-                    loading="lazy"
-                    className="object-cover"
-                    style={{ width: 34, height: 34, borderRadius: "50%", border: "2px solid var(--bg)", marginLeft: i ? -10 : 0 }}
-                  />
-                ))}
+            {/* Social-proof panel. Monogram avatars replace the former pravatar.cc
+                images: three third-party requests, and not brand assets. */}
+            <div
+              className="fnl-proof"
+              style={{ marginTop: 26, borderRadius: 18, background: "var(--surface)", border: "1px solid var(--border)" }}
+            >
+              <div className="fnl-proof-main flex items-center" style={{ gap: 13 }}>
+                <div className="flex" aria-hidden="true">
+                  {PROOF_AVATARS.map((a, i) => (
+                    <span
+                      key={a.initial}
+                      style={{ width: 34, height: 34, borderRadius: "50%", background: a.grad, border: "2px solid var(--surface)", marginLeft: i ? -10 : 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: 12, fontWeight: 800 }}
+                    >
+                      {a.initial}
+                    </span>
+                  ))}
+                </div>
+                <div>
+                  <div style={{ fontSize: 26, fontWeight: 900, lineHeight: 1.05, letterSpacing: "-.01em", background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+                    {t("home.usersCount")}
+                  </div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-dim)", marginTop: 1 }}>{t("home.usersLabel")}</div>
+                </div>
               </div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: "var(--text-dim)" }}>
-                <span style={{ color: "#F5A623", fontWeight: 800 }}>★ 4.8</span> {t("home.ratingTail")}
+
+              <div className="fnl-proof-div" />
+
+              <div className="fnl-proof-rating">
+                <div className="flex items-center" style={{ gap: 6 }}>
+                  <span style={{ color: "#F5A623", fontSize: 15, letterSpacing: 1 }}>★★★★★</span>
+                  <span style={{ fontSize: 15, fontWeight: 800, color: "var(--text)" }}>4.8</span>
+                </div>
+                <div style={{ fontSize: 13, fontWeight: 600, color: "var(--text-dim)", marginTop: 1 }}>{t("home.ratingStore")}</div>
               </div>
             </div>
           </div>
@@ -308,12 +330,12 @@ export default function HomeContent() {
         </div>
         <div className="flex" style={{ width: "max-content", gap: 20, animation: "fnl-mq 46s linear infinite", marginBottom: 20 }}>
           {loopA.map((rv, i) => (
-            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} photo={rv.photo} stars={rv.stars} />
+            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} stars={rv.stars} />
           ))}
         </div>
         <div className="flex" style={{ width: "max-content", gap: 20, animation: "fnl-mq2 46s linear infinite" }}>
           {loopB.map((rv, i) => (
-            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} photo={rv.photo} stars={rv.stars} />
+            <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} stars={rv.stars} />
           ))}
         </div>
       </section>
@@ -397,13 +419,11 @@ function ReviewCard({
   quote,
   name,
   initials,
-  photo,
   stars = 5,
 }: {
   quote: string;
   name: string;
   initials: string;
-  photo?: string;
   stars?: number;
 }) {
   return (
@@ -414,19 +434,7 @@ function ReviewCard({
       </div>
       <p style={{ fontSize: 16, lineHeight: 1.55, color: "var(--text)", margin: "0 0 18px", fontWeight: 500 }}>{quote}</p>
       <div className="flex items-center gap-[10px]">
-        {photo ? (
-          <img
-            src={photo}
-            alt={name}
-            width={36}
-            height={36}
-            loading="lazy"
-            className="object-cover"
-            style={{ width: 36, height: 36, borderRadius: "50%", border: "1px solid var(--border)" }}
-          />
-        ) : (
-          <div className="flex items-center justify-center" style={{ width: 36, height: 36, borderRadius: "50%", background: "var(--grad)", color: "#fff", fontSize: 13, fontWeight: 800 }}>{initials}</div>
-        )}
+        <div className="flex items-center justify-center" style={{ width: 36, height: 36, borderRadius: "50%", background: "var(--grad)", color: "#fff", fontSize: 13, fontWeight: 800 }}>{initials}</div>
         <span style={{ fontSize: 14, fontWeight: 700, color: "var(--text)" }}>{name}</span>
       </div>
     </div>

@@ -25,10 +25,8 @@
     "platformsHeading": "Działa na Twoich ulubionych platformach"
   },
   "home": {
-    "badgeFree": "100% za darmo — żadnych opłat, nigdy",
     "heroPre": "Ucz się, gdy",
     "heroAccent": "oglądasz.",
-    "heroSub": "Podwójne napisy, błyskawiczne znaczenia słów i kreator słownictwa — bezpośrednio w Netflix, YouTube, Prime i 5 innych. Wybierz język i wypróbuj odtwarzacz.",
     "learnLabel": "Chcę się uczyć",
     "learnMore": "+ 100 więcej",
     "ratingTail": "w Chrome Web Store · uwielbiane przez uczących się języków",
@@ -39,7 +37,6 @@
     "step1Title": "Dodaj do Chrome",
     "step1Body": "Jedno kliknięcie w Web Store. Bez konta, bez karty, bez skomplikowanej konfiguracji.",
     "step2Title": "Naciśnij play",
-    "step2Body": "Otwórz Netflix, YouTube, Prime — łącznie 8 platform — i oglądaj to, co już kochasz.",
     "step3Title": "Dotknij dowolnego słowa",
     "step3Body": "Pojawiają się podwójne napisy. Dotknij, aby poznać znaczenie, usłyszeć wymowę i zapisać na później.",
     "gameH3": "Twoja kolej — zgadnij znaczenie",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Dlaczego ludzie się przesiadają",
     "cmpH2a": "Wszystko, za co inni każą płacić.",
     "cmpH2b": "U nas za $0.",
-    "cmpFreeForever": "Za darmo na zawsze",
     "row1": "Podwójne napisy w odtwarzaczu",
     "row2": "Znaczenie słowa + przykład w okienku",
     "row3": "Wymowa każdego słowa (audio)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Dobre pytania",
     "faqH2": "Krótkie odpowiedzi",
     "q1": "Czy to naprawdę za darmo?",
-    "a1": "Tak — całkowicie. Bez wersji premium, bez opłat, bez ukrytych kosztów. Podwójne napisy, znaczenia AI, wymowa i kreator słownictwa są darmowe, na zawsze.",
     "q2": "Na jakich stronach działa?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy i Coursera — 8 platform, a kolejne są w drodze.",
     "q3": "Czy potrzebuję konta?",
     "a3": "Nie. Zainstaluj rozszerzenie, otwórz film i uczysz się w mniej niż 30 sekund. Bez rejestracji.",
     "q4": "Ile języków jest obsługiwanych?",
@@ -84,8 +78,7 @@
     "q6": "Czy moje dane są prywatne?",
     "a6": "Funlingo używa minimalnych uprawnień i opiera się na lekkim modelu stawiającym prywatność na pierwszym miejscu. To, co oglądasz, pozostaje Twoje.",
     "ctaH2a": "Zamień dzisiejszy odcinek",
-    "ctaH2b": "w swoją następną lekcję.",
-    "ctaSub": "Dodaj Funlingo do Chrome, a kolejna rzecz, którą obejrzysz, już Cię uczy. Za darmo na zawsze, bez konta."
+    "ctaH2b": "w swoją następną lekcję."
   },
   "player": {
     "learning": "UCZĘ SIĘ",

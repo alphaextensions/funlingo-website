@@ -25,10 +25,10 @@
     "platformsHeading": "Funktioniert auf deinen Lieblingsplattformen"
   },
   "home": {
-    "badgeFree": "100 % kostenlos — keine Bezahlschranke, niemals",
+    "badgeFree": "100% gratis — keine Paywall",
     "heroPre": "Lerne, während du",
     "heroAccent": "schaust.",
-    "heroSub": "Zweisprachige Untertitel, sofortige Wortbedeutungen und ein Vokabeltrainer — direkt in Netflix, YouTube, Prime und 5 weiteren. Wähle eine Sprache und probiere den Player aus.",
+    "heroSub": "Doppelte Untertitel, sofortige Wortbedeutungen und ein Vokabeltrainer — direkt in Netflix, YouTube, Prime und weiteren. Wähl eine Sprache und teste den Player.",
     "learnLabel": "Ich möchte lernen",
     "learnMore": "+ 100 weitere",
     "ratingTail": "im Chrome Web Store · geliebt von Sprachlernenden",
@@ -39,7 +39,7 @@
     "step1Title": "Zu Chrome hinzufügen",
     "step1Body": "Ein Klick im Web Store. Kein Konto, keine Karte, kein Einrichtungs-Labyrinth.",
     "step2Title": "Auf Play drücken",
-    "step2Body": "Öffne Netflix, YouTube, Prime — insgesamt 8 Plattformen — und schau, was du ohnehin liebst.",
+    "step2Body": "Öffne Netflix, YouTube, Prime — insgesamt 10 Plattformen — und schau, was du ohnehin liebst.",
     "step3Title": "Tippe auf ein beliebiges Wort",
     "step3Body": "Zweisprachige Untertitel erscheinen. Tippe für die Bedeutung, höre die Aussprache und speichere es für später.",
     "gameH3": "Du bist dran — errate die Bedeutung",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "Warum die Leute wechseln",
     "cmpH2a": "Alles, wofür sie Geld verlangen.",
     "cmpH2b": "Für dich für 0 $.",
-    "cmpFreeForever": "Für immer kostenlos",
+    "cmpFreeForever": "Gratis",
     "row1": "Zweisprachige Untertitel im Player",
     "row2": "Wortbedeutung + Beispiel im Pop-up",
     "row3": "Aussprache pro Wort (Audio)",
@@ -56,7 +56,7 @@
     "row6": "Preis",
     "priceFree": "Kostenlos",
     "sciEyebrow": "Wissenschaftlich belegt",
-    "sciCap": "mehr Vokabeln bleiben hängen, wenn du Wörtern im echten Videokontext begegnest — im Vergleich zu reinen Karteikarten.",
+    "sciCap": "mehr Vokabeln bleiben hängen, wenn du Wörter im echten Videokontext triffst — statt nur mit Karteikarten.",
     "sciSrc": "Montero Perez et al., Modern Language Journal · „Wir erwerben Sprache, wenn wir Botschaften verstehen.“ — Dr. Stephen Krashen",
     "chartCap": "Nach 30 Tagen behaltene Wörter",
     "chartFlash": "Karteikarten",
@@ -72,9 +72,9 @@
     "faqEyebrow": "Gute Fragen",
     "faqH2": "Die kurzen Antworten",
     "q1": "Ist es wirklich kostenlos?",
-    "a1": "Ja — komplett. Keine Premium-Stufe, keine Bezahlschranke, keine versteckten Kosten. Zweisprachige Untertitel, KI-Bedeutungen, Aussprache und der Vokabeltrainer sind alle kostenlos, für immer.",
+    "a1": "Ja, komplett. Keine Premium-Stufe, keine Paywall, keine versteckten Kosten. Doppelte Untertitel, KI-Bedeutungen, Aussprache und Vokabeltrainer sind gratis.",
     "q2": "Auf welchen Seiten funktioniert es?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy und Coursera — 8 Plattformen, und weitere folgen.",
+    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy und Coursera — 10 Plattformen, weitere folgen.",
     "q3": "Brauche ich ein Konto?",
     "a3": "Nein. Installiere die Erweiterung, öffne ein Video, und in unter 30 Sekunden lernst du schon. Keine Anmeldung erforderlich.",
     "q4": "Wie viele Sprachen werden unterstützt?",
@@ -85,7 +85,10 @@
     "a6": "Funlingo nutzt minimale Berechtigungen und basiert auf einem datenschutzfreundlichen, schlanken Modell. Was du schaust, bleibt deine Sache.",
     "ctaH2a": "Mach aus der heutigen Folge",
     "ctaH2b": "deine nächste Lektion.",
-    "ctaSub": "Füge Funlingo zu Chrome hinzu, und das Nächste, was du schaust, bringt dir schon etwas bei. Für immer kostenlos, kein Konto nötig."
+    "ctaSub": "Füge Funlingo zu Chrome hinzu und das Nächste, was du schaust, bringt dir schon etwas bei. Gratis, ohne Konto.",
+    "usersCount": "20.000+",
+    "usersLabel": "Lernende jede Woche",
+    "ratingStore": "im Chrome Web Store"
   },
   "player": {
     "learning": "LERNEN",
@@ -96,7 +99,7 @@
     "emptyHint": "Fahre über ein hervorgehobenes Wort, tippe auf Play, um es zu hören, und dann auf Speichern — es landet hier, bereit zur Wiederholung."
   },
   "game": {
-    "prompt": "Was bedeutet dieses {lang} Wort?",
+    "prompt": "Was bedeutet dieses Wort?",
     "wordOf": "Wort {n} von {total}",
     "tapHear": "tippen, um die Aussprache zu hören",
     "wrong": "Fast — es bedeutet „{answer}“. Tippe auf Weiter.",

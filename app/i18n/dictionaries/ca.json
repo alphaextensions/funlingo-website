@@ -25,10 +25,8 @@
     "platformsHeading": "Funciona amb les teves plataformes preferides"
   },
   "home": {
-    "badgeFree": "100% gratuït — sense mur de pagament, mai",
     "heroPre": "Aprèn mentre",
     "heroAccent": "mires.",
-    "heroSub": "Subtítols dobles, significats instantanis de paraules i un creador de vocabulari, directament dins de Netflix, YouTube, Prime i 5 més. Tria un idioma i prova el reproductor.",
     "learnLabel": "Vull aprendre",
     "learnMore": "+ 100 més",
     "ratingTail": "a la Chrome Web Store · estimat pels estudiants d'idiomes",
@@ -39,7 +37,6 @@
     "step1Title": "Afegeix a Chrome",
     "step1Body": "Un sol clic des de la Web Store. Sense compte, sense targeta, sense laberints de configuració.",
     "step2Title": "Prem reproduir",
-    "step2Body": "Obre Netflix, YouTube, Prime — 8 plataformes en total — i mira el que ja t'encanta.",
     "step3Title": "Toca qualsevol paraula",
     "step3Body": "Apareixen els subtítols dobles. Toca per veure'n el significat, escolta'n la pronunciació i desa-la per més tard.",
     "gameH3": "El teu torn — endevina el significat",
@@ -47,7 +44,6 @@
     "cmpEyebrow": "Per què la gent es passa",
     "cmpH2a": "Tot el que ells cobren.",
     "cmpH2b": "Per a tu, per $0.",
-    "cmpFreeForever": "Gratis per sempre",
     "row1": "Subtítols dobles dins del reproductor",
     "row2": "Significat de la paraula + exemple a la finestra emergent",
     "row3": "Pronunciació paraula per paraula (àudio)",
@@ -72,9 +68,7 @@
     "faqEyebrow": "Bones preguntes",
     "faqH2": "Les respostes curtes",
     "q1": "És realment gratis?",
-    "a1": "Sí — totalment. Sense nivell premium, sense mur de pagament, sense costos amagats. Els subtítols dobles, els significats amb IA, la pronunciació i el creador de vocabulari són tots gratis, per sempre.",
     "q2": "A quins llocs funciona?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy i Coursera — 8 plataformes, i en vénen més.",
     "q3": "Necessito un compte?",
     "a3": "No. Instal·la l'extensió, obre un vídeo i estaràs aprenent en menys de 30 seconds. Sense cap registre.",
     "q4": "Quants idiomes hi ha disponibles?",
@@ -84,8 +78,7 @@
     "q6": "Les meves dades són privades?",
     "a6": "Funlingo fa servir permisos mínims i està construïda al voltant d'un model lleuger i que prioritza la privadesa. El que mires continua sent teu.",
     "ctaH2a": "Converteix l'episodi d'aquesta nit",
-    "ctaH2b": "en la teva propera lliçó.",
-    "ctaSub": "Afegeix Funlingo a Chrome i el següent que miris ja t'estarà ensenyant. Gratis per sempre, sense necessitat de compte."
+    "ctaH2b": "en la teva propera lliçó."
   },
   "player": {
     "learning": "APRENENT",

@@ -25,10 +25,10 @@
     "platformsHeading": "Funciona nas suas plataformas favoritas"
   },
   "home": {
-    "badgeFree": "100% grátis — sem paywall, nunca",
+    "badgeFree": "100% grátis — sem paywall",
     "heroPre": "Aprenda enquanto",
     "heroAccent": "assiste.",
-    "heroSub": "Legendas duplas, significados instantâneos das palavras e um construtor de vocabulário — direto no Netflix, YouTube, Prime e mais 5. Escolha um idioma e teste o player.",
+    "heroSub": "Legendas duplas, significados na hora e um criador de vocabulário — dentro da Netflix, YouTube, Prime e mais. Escolha um idioma e teste o player.",
     "learnLabel": "Quero aprender",
     "learnMore": "+ 100 outros",
     "ratingTail": "na Chrome Web Store · amado por quem aprende idiomas",
@@ -39,7 +39,7 @@
     "step1Title": "Adicione ao Chrome",
     "step1Body": "Um clique na Web Store. Sem conta, sem cartão, sem labirinto de configuração.",
     "step2Title": "Aperte o play",
-    "step2Body": "Abra Netflix, YouTube, Prime — 8 plataformas no total — e assista ao que você já ama.",
+    "step2Body": "Abra Netflix, YouTube, Prime — 10 plataformas no total — e assista ao que você já curte.",
     "step3Title": "Toque em qualquer palavra",
     "step3Body": "As legendas duplas aparecem. Toque para ver o significado, ouça a pronúncia e salve para depois.",
     "gameH3": "Sua vez — adivinhe o significado",
@@ -47,7 +47,7 @@
     "cmpEyebrow": "Por que as pessoas estão mudando",
     "cmpH2a": "Tudo o que eles cobram.",
     "cmpH2b": "Seu por $0.",
-    "cmpFreeForever": "Grátis para sempre",
+    "cmpFreeForever": "Grátis",
     "row1": "Legendas duplas dentro do player",
     "row2": "Significado da palavra + exemplo no popup",
     "row3": "Pronúncia por palavra (áudio)",
@@ -56,7 +56,7 @@
     "row6": "Preço",
     "priceFree": "Grátis",
     "sciEyebrow": "Comprovado pela ciência",
-    "sciCap": "mais vocabulário retido quando você encontra palavras no contexto real de vídeos — comparado a flashcards sozinhos.",
+    "sciCap": "mais vocabulário retido quando você encontra as palavras em vídeos reais — em vez de só flashcards.",
     "sciSrc": "Montero Perez et al., Modern Language Journal · “Adquirimos um idioma quando entendemos mensagens.” — Dr. Stephen Krashen",
     "chartCap": "Palavras lembradas após 30 dias",
     "chartFlash": "Flashcards",
@@ -72,9 +72,9 @@
     "faqEyebrow": "Boas perguntas",
     "faqH2": "As respostas curtas",
     "q1": "É realmente grátis?",
-    "a1": "Sim — completamente. Sem plano premium, sem paywall, sem custos ocultos. Legendas duplas, significados com IA, pronúncia e o construtor de vocabulário são todos grátis, para sempre.",
+    "a1": "Sim, totalmente. Sem plano premium, sem paywall, sem custos escondidos. Legendas duplas, significados com IA, pronúncia e vocabulário são grátis.",
     "q2": "Em quais sites ele funciona?",
-    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy e Coursera — 8 plataformas, com mais a caminho.",
+    "a2": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy e Coursera — 10 plataformas, e vêm mais por aí.",
     "q3": "Preciso de uma conta?",
     "a3": "Não. Instale a extensão, abra um vídeo e você estará aprendendo em menos de 30 segundos. Sem cadastro necessário.",
     "q4": "Quantos idiomas são suportados?",
@@ -85,7 +85,10 @@
     "a6": "O Funlingo usa permissões mínimas e é construído em torno de um modelo leve e focado na privacidade. O que você assiste continua sendo seu.",
     "ctaH2a": "Transforme o episódio de hoje",
     "ctaH2b": "na sua próxima aula.",
-    "ctaSub": "Adicione o Funlingo ao Chrome e a próxima coisa que você assistir já estará te ensinando. Grátis para sempre, sem conta necessária."
+    "ctaSub": "Adicione o Funlingo ao Chrome e a próxima coisa que você assistir já vai te ensinar. Grátis, sem conta.",
+    "usersCount": "20.000+",
+    "usersLabel": "usuários por semana",
+    "ratingStore": "na Chrome Web Store"
   },
   "player": {
     "learning": "APRENDENDO",
@@ -96,7 +99,7 @@
     "emptyHint": "Passe o mouse sobre uma palavra destacada, toque em tocar para ouvi-la e depois Salve — ela aparece aqui, pronta para revisar."
   },
   "game": {
-    "prompt": "O que significa esta palavra em {lang}?",
+    "prompt": "O que esta palavra significa?",
     "wordOf": "Palavra {n} de {total}",
     "tapHear": "toque para ouvir a pronúncia",
     "wrong": "Quase — significa “{answer}”. Toque em Próxima.",
