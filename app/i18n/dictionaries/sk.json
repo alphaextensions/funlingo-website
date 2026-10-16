@@ -27,6 +27,7 @@
   "home": {
     "heroPre": "Učte sa počas",
     "heroAccent": "pozerania.",
+    "heroPost": "",
     "learnLabel": "Chcem sa učiť",
     "learnMore": "+ ďalších 100",
     "ratingTail": "v Chrome Web Store · obľúbené medzi tými, čo sa učia jazyky",

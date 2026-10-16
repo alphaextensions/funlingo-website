@@ -96,6 +96,11 @@ export default function HomeContent() {
 
   const platformLoop = [...PLATFORMS, ...PLATFORMS];
 
+  // Optional third part of the H1. `t()` echoes the key back when it is missing,
+  // so treat that as "not set" and keep the original two-part headline.
+  const heroPostRaw = t("home.heroPost");
+  const heroPost = heroPostRaw && heroPostRaw !== "home.heroPost" ? heroPostRaw : "";
+
   return (
     <div className="fnl-root overflow-x-hidden">
       <Navbar currentPage="/" />
@@ -105,20 +110,23 @@ export default function HomeContent() {
         <div className="absolute pointer-events-none" style={{ top: -180, left: -140, width: 560, height: 560, borderRadius: "50%", background: "radial-gradient(circle, rgba(179,36,217,.24), transparent 65%)" }} />
         <div className="absolute pointer-events-none" style={{ top: 80, right: -160, width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,77,176,.22), transparent 65%)" }} />
 
-        {/* Floating word chips (desktop only) */}
-        <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: 200, left: "50.5%", ["--r" as string]: "-8deg", animation: "fnl-float 6s ease-in-out infinite", padding: "10px 17px", borderRadius: 15, background: "var(--surface)", boxShadow: "0 12px 30px -10px rgba(150,30,160,.4)", border: "1px solid var(--border)", fontWeight: 700, color: "var(--magenta)", fontSize: 18 }}>hola</div>
-        <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: 250, left: "64%", ["--r" as string]: "7deg", animation: "fnl-float 7.4s ease-in-out infinite", padding: "10px 17px", borderRadius: 15, background: "linear-gradient(135deg,#BC22D6,#E0319E)", boxShadow: "0 12px 30px -10px rgba(236,77,176,.5)", fontWeight: 700, color: "#fff", fontSize: 18 }}>bonjour</div>
-        <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: 188, left: "80%", ["--r" as string]: "7deg", animation: "fnl-float 7s ease-in-out infinite", padding: "9px 15px", borderRadius: 15, background: "var(--surface)", boxShadow: "0 12px 30px -10px rgba(150,30,160,.4)", border: "1px solid var(--border)", fontWeight: 700, color: "var(--pink)", fontSize: 17 }}>안녕</div>
-
         <div className="relative z-[2] max-w-[1240px] mx-auto px-5 sm:px-[34px] grid grid-cols-1 min-[860px]:grid-cols-[1.02fr_1fr] gap-9 min-[860px]:gap-[50px] items-center pt-9 min-[860px]:pt-[60px] pb-12 min-[860px]:pb-[70px]">
           <div>
             <div className="inline-flex items-center gap-[9px] mb-6" style={{ padding: "9px 16px", borderRadius: 999, background: "var(--pink-soft)", border: "1px solid rgba(236,77,176,.3)" }}>
               <span style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--pink)", animation: "fnl-pulse 2s infinite" }} />
               <span style={{ fontSize: 13, fontWeight: 700, color: "var(--pink)" }}>{t("home.badgeFree")}</span>
             </div>
-            <h1 style={{ fontSize: "clamp(52px,5.6vw,82px)", lineHeight: 1, fontWeight: 800, margin: 0, letterSpacing: "-.02em", color: "var(--text)" }}>
+            {/* The headline is a long descriptive line, so it runs smaller and
+                tighter than the old three-word one and balances its ragged edge. */}
+            <h1 style={{ fontSize: "clamp(32px,3.6vw,50px)", lineHeight: 1.08, fontWeight: 800, margin: 0, letterSpacing: "-.02em", color: "var(--text)", textWrap: "balance" }}>
               {t("home.heroPre")}{" "}
-              <span style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent" }}>{t("home.heroAccent")}</span>
+              {/* nowrap keeps the gradient phrase on one line — splitting it
+                  across a line break breaks the accent visually */}
+              <span style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent", whiteSpace: "nowrap" }}>{t("home.heroAccent")}</span>
+              {/* Optional trailing clause so the gradient accent can sit mid-headline.
+                  Locales that don't define heroPost fall through to the original
+                  two-part "{pre} {accent}" shape. */}
+              {heroPost ? <> {heroPost}</> : null}
             </h1>
             <p style={{ fontSize: 20, lineHeight: 1.55, color: "var(--text-dim)", margin: "24px 0 0", maxWidth: 480, fontWeight: 500 }}>{t("home.heroSub")}</p>
 
@@ -200,6 +208,15 @@ export default function HomeContent() {
           </div>
 
           <div className="relative z-[4]">
+            {/* Floating word chips (desktop only). Anchored to the player, not to
+                the section: they used fixed `top` offsets measured against the old
+                two-line headline, so any copy change slid them onto the player's
+                NETFLIX / LEARNING badges. Positioned off the player's own edges
+                they stay put whatever the headline does, in any locale. */}
+            <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: -26, left: "14%", ["--r" as string]: "-8deg", animation: "fnl-float 6s ease-in-out infinite", padding: "10px 17px", borderRadius: 15, background: "var(--surface)", boxShadow: "0 12px 30px -10px rgba(150,30,160,.4)", border: "1px solid var(--border)", fontWeight: 700, color: "var(--magenta)", fontSize: 18 }}>hola</div>
+            <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: "22%", left: -40, ["--r" as string]: "7deg", animation: "fnl-float 7.4s ease-in-out infinite", padding: "10px 17px", borderRadius: 15, background: "linear-gradient(135deg,#BC22D6,#E0319E)", boxShadow: "0 12px 30px -10px rgba(236,77,176,.5)", fontWeight: 700, color: "#fff", fontSize: 18 }}>bonjour</div>
+            <div className="hidden min-[860px]:block absolute pointer-events-none z-[5]" style={{ top: "11%", right: -30, ["--r" as string]: "7deg", animation: "fnl-float 7s ease-in-out infinite", padding: "9px 15px", borderRadius: 15, background: "var(--surface)", boxShadow: "0 12px 30px -10px rgba(150,30,160,.4)", border: "1px solid var(--border)", fontWeight: 700, color: "var(--pink)", fontSize: 17 }}>안녕</div>
+
             <FunlingoPlayer lang={learn} />
           </div>
         </div>

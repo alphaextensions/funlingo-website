@@ -34,8 +34,9 @@ export const en = {
   },
   home: {
     badgeFree: "100% free — no paywall",
-    heroPre: "Learn while you",
-    heroAccent: "watch.",
+    heroPre: "Language learning",
+    heroAccent: "Dual Subtitles",
+    heroPost: "for Netflix, YouTube & many more...",
     heroSub:
       "Dual subtitles, instant word meanings, and a vocab builder — right inside Netflix, YouTube, Prime & more. Pick a language and try the player.",
     learnLabel: "I want to learn",
