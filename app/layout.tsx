@@ -23,11 +23,13 @@ export const metadata: Metadata = {
 
 // Runs before paint to apply the saved theme, preventing a flash of the wrong
 // theme. Defaults to dark when nothing is stored.
-const themeInit = `(function(){try{var t=localStorage.getItem('funlingo-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`;
+// Light is the default from the 2026 redesign. A stored preference still wins,
+// so anyone who already chose dark keeps it.
+const themeInit = `(function(){try{var t=localStorage.getItem('funlingo-theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="dark" suppressHydrationWarning>
+    <html lang="en" data-theme="light" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

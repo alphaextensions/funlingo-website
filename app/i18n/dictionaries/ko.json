@@ -86,7 +86,16 @@
     "ctaSub": "Funlingo를 Chrome에 추가하면, 다음에 보는 영상이 이미 당신을 가르치고 있어요. 무료, 계정도 필요 없어요.",
     "usersCount": "20,000+",
     "usersLabel": "주간 활성 학습자",
-    "ratingStore": "Chrome 웹 스토어"
+    "ratingStore": "Chrome 웹 스토어",
+    "webEyebrow": "영상만이 아니에요",
+    "webH2": "모든 웹사이트에서도 돼요.",
+    "webSub": "뉴스, 레시피, 문서, 이메일 — 어떤 페이지든 단어를 드래그하면 뜻을 보고, 발음을 듣고, 단어장에 저장할 수 있어요.",
+    "webS1": "단어를 드래그하세요",
+    "webS2": "배우는 언어로 뜻을 확인하세요",
+    "webS3": "저장하면 단어장에 들어가요",
+    "webSave": "+ 저장",
+    "webSaved": "✓ 저장됨",
+    "webMyWords": "내 단어"
   },
   "player": {
     "learning": "학습 중",

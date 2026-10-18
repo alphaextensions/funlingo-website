@@ -76,7 +76,16 @@
     "q6": "ข้อมูลของฉันเป็นส่วนตัวไหม?",
     "a6": "Funlingo ใช้สิทธิ์การเข้าถึงน้อยที่สุดและสร้างขึ้นบนแนวคิดที่ให้ความสำคัญกับความเป็นส่วนตัวเป็นอันดับแรกและมีขนาดเบา สิ่งที่คุณดูยังคงเป็นของคุณ",
     "ctaH2a": "เปลี่ยนตอนที่คุณจะดูคืนนี้",
-    "ctaH2b": "ให้เป็นบทเรียนถัดไปของคุณ"
+    "ctaH2b": "ให้เป็นบทเรียนถัดไปของคุณ",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words"
   },
   "player": {
     "learning": "กำลังเรียน",

@@ -86,7 +86,16 @@
     "ctaSub": "Adicione o Funlingo ao Chrome e a próxima coisa que você assistir já vai te ensinar. Grátis, sem conta.",
     "usersCount": "20.000+",
     "usersLabel": "usuários por semana",
-    "ratingStore": "na Chrome Web Store"
+    "ratingStore": "na Chrome Web Store",
+    "webEyebrow": "Não é só vídeo",
+    "webH2": "Funciona em qualquer site, também.",
+    "webSub": "Selecione qualquer palavra em qualquer página — notícias, receitas, documentos, e-mails — para ver o significado, ouvir e salvar no seu deck.",
+    "webS1": "Selecione uma palavra",
+    "webS2": "Veja o significado no idioma que você está aprendendo",
+    "webS3": "Salve — ela entra no seu deck",
+    "webSave": "+ Salvar",
+    "webSaved": "✓ Salva",
+    "webMyWords": "Minhas palavras"
   },
   "player": {
     "learning": "APRENDENDO",

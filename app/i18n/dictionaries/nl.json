@@ -86,7 +86,16 @@
     "ctaSub": "Voeg Funlingo toe aan Chrome en het volgende dat je kijkt leert je al iets. Gratis, geen account nodig.",
     "usersCount": "20.000+",
     "usersLabel": "leerders elke week",
-    "ratingStore": "in de Chrome Web Store"
+    "ratingStore": "in de Chrome Web Store",
+    "webEyebrow": "Niet alleen video",
+    "webH2": "Werkt ook op elke website.",
+    "webSub": "Markeer een woord op welke pagina dan ook — nieuws, recepten, docs, mails — en zie de betekenis, hoor het en sla het op in je deck.",
+    "webS1": "Markeer een woord",
+    "webS2": "Zie de betekenis in de taal die je leert",
+    "webS3": "Sla het op — het komt in je deck",
+    "webSave": "+ Opslaan",
+    "webSaved": "✓ Opgeslagen",
+    "webMyWords": "Mijn woorden"
   },
   "player": {
     "learning": "LEREN",

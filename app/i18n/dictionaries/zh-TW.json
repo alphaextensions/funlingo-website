@@ -86,7 +86,16 @@
     "ctaSub": "把 Funlingo 加到 Chrome，你接下來看的內容就已經在教你了。免費，免帳號。",
     "usersCount": "20,000+",
     "usersLabel": "每週活躍學習者",
-    "ratingStore": "Chrome 線上商店"
+    "ratingStore": "Chrome 線上商店",
+    "webEyebrow": "不只影片",
+    "webH2": "任何網站，一樣好用。",
+    "webSub": "在任何頁面圈選一個字——新聞、食譜、文件、郵件——馬上看字義、聽發音，一鍵存進單字本。",
+    "webS1": "圈選一個字",
+    "webS2": "用你正在學的語言看字義",
+    "webS3": "收藏它——自動加入單字本",
+    "webSave": "+ 收藏",
+    "webSaved": "✓ 已收藏",
+    "webMyWords": "我的單字"
   },
   "player": {
     "learning": "學習中",

@@ -86,7 +86,16 @@
     "ctaSub": "Ajoute Funlingo à Chrome et la prochaine chose que tu regardes t’apprend déjà. Gratuit, sans compte.",
     "usersCount": "20 000+",
     "usersLabel": "apprenants chaque semaine",
-    "ratingStore": "sur le Chrome Web Store"
+    "ratingStore": "sur le Chrome Web Store",
+    "webEyebrow": "Pas que la vidéo",
+    "webH2": "Ça marche aussi sur tous les sites.",
+    "webSub": "Surligne n’importe quel mot sur n’importe quelle page — actus, recettes, docs, e-mails — pour voir son sens, l’écouter et l’ajouter à ton paquet.",
+    "webS1": "Surligne un mot",
+    "webS2": "Vois son sens dans la langue que tu apprends",
+    "webS3": "Enregistre-le — il rejoint ton paquet",
+    "webSave": "+ Enregistrer",
+    "webSaved": "✓ Enregistré",
+    "webMyWords": "Mes mots"
   },
   "player": {
     "learning": "APPRENTISSAGE",

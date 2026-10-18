@@ -76,7 +76,16 @@
     "q6": "Czy moje dane są prywatne?",
     "a6": "Funlingo używa minimalnych uprawnień i opiera się na lekkim modelu stawiającym prywatność na pierwszym miejscu. To, co oglądasz, pozostaje Twoje.",
     "ctaH2a": "Zamień dzisiejszy odcinek",
-    "ctaH2b": "w swoją następną lekcję."
+    "ctaH2b": "w swoją następną lekcję.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words"
   },
   "player": {
     "learning": "UCZĘ SIĘ",

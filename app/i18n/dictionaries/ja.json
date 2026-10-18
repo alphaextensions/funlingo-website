@@ -86,7 +86,16 @@
     "ctaSub": "Funlingo を Chrome に追加すれば、次に観るものがもう教えてくれます。無料、アカウント不要。",
     "usersCount": "20,000+",
     "usersLabel": "週間アクティブ学習者",
-    "ratingStore": "Chrome ウェブストア"
+    "ratingStore": "Chrome ウェブストア",
+    "webEyebrow": "動画だけじゃない",
+    "webH2": "どんなサイトでも使えます。",
+    "webSub": "ニュース、レシピ、ドキュメント、メール — どのページでも単語を選ぶだけで、意味を見て、発音を聞いて、単語帳に保存できます。",
+    "webS1": "単語を選ぶ",
+    "webS2": "学んでいる言語で意味を見る",
+    "webS3": "保存すると単語帳に追加",
+    "webSave": "+ 保存",
+    "webSaved": "✓ 保存済み",
+    "webMyWords": "マイ単語"
   },
   "player": {
     "learning": "LEARNING",

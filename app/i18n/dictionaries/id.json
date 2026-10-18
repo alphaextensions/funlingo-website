@@ -76,7 +76,16 @@
     "q6": "Apakah dataku privat?",
     "a6": "Funlingo menggunakan izin minimal dan dibangun di atas model ringan yang mengutamakan privasi. Apa yang kamu tonton tetap menjadi milikmu.",
     "ctaH2a": "Ubah episode malam ini",
-    "ctaH2b": "menjadi pelajaran berikutmu."
+    "ctaH2b": "menjadi pelajaran berikutmu.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words"
   },
   "player": {
     "learning": "BELAJAR",

@@ -86,7 +86,16 @@
     "ctaSub": "Add a Funlingót a Chrome-hoz, és a következő dolog, amit nézel, máris tanít. Ingyenes, fiók nélkül.",
     "usersCount": "20 000+",
     "usersLabel": "tanuló minden héten",
-    "ratingStore": "a Chrome Web Áruházban"
+    "ratingStore": "a Chrome Web Áruházban",
+    "webEyebrow": "Nem csak videó",
+    "webH2": "Bármelyik weboldalon is működik.",
+    "webSub": "Jelölj ki egy szót bármelyik oldalon — hírek, receptek, dokumentumok, e-mailek —, és lásd a jelentését, hallgasd meg, mentsd a paklidba.",
+    "webS1": "Jelölj ki egy szót",
+    "webS2": "Lásd a jelentését a tanult nyelven",
+    "webS3": "Mentsd el — bekerül a paklidba",
+    "webSave": "+ Mentés",
+    "webSaved": "✓ Elmentve",
+    "webMyWords": "Saját szavak"
   },
   "player": {
     "learning": "TANULÁS",

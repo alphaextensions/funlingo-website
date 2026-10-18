@@ -76,7 +76,16 @@
     "q6": "Sú moje údaje súkromné?",
     "a6": "Funlingo používa minimálne povolenia a je postavené na odľahčenom modeli s dôrazom na súkromie. To, čo pozeráte, zostáva vaše.",
     "ctaH2a": "Premeňte dnešnú epizódu",
-    "ctaH2b": "na svoju ďalšiu lekciu."
+    "ctaH2b": "na svoju ďalšiu lekciu.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words"
   },
   "player": {
     "learning": "UČENIE",

@@ -5,6 +5,7 @@ import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
 import FunlingoPlayer from "@/sections/home/FunlingoPlayer";
 import GuessGame from "@/sections/home/GuessGame";
+import AnySiteSection from "@/sections/home/AnySiteSection";
 import { FlagSvg } from "@/sections/home/flags";
 import { PLATFORMS, PlatformLogo } from "@/sections/home/platformLogos";
 import { orderedReviews } from "@/sections/home/reviews";
@@ -267,7 +268,9 @@ export default function HomeContent() {
         </div>
       </section>
 
-      {/* ============ COMPARISON ============ */}
+            <AnySiteSection learn={learn} />
+
+{/* ============ COMPARISON ============ */}
       <section id="compare" style={{ background: "var(--bg2)", borderTop: "1px solid var(--border)", scrollMarginTop: "90px" }}>
         <div className="max-w-[1120px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-[104px]">
           <div className="text-center" style={{ marginBottom: 56 }}>

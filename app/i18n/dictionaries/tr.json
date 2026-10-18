@@ -86,7 +86,16 @@
     "ctaSub": "Funlingo'yu Chrome'a ekle, izleyeceğin bir sonraki şey sana çoktan öğretmeye başlasın. Ücretsiz, hesap gerekmez.",
     "usersCount": "20.000+",
     "usersLabel": "haftalık aktif kullanıcı",
-    "ratingStore": "Chrome Web Mağazası"
+    "ratingStore": "Chrome Web Mağazası",
+    "webEyebrow": "Sadece video değil",
+    "webH2": "Her web sitesinde de çalışır.",
+    "webSub": "Herhangi bir sayfada bir kelimeyi seç — haber, tarif, belge, e-posta — anlamını gör, dinle ve destene kaydet.",
+    "webS1": "Bir kelime seç",
+    "webS2": "Anlamını öğrendiğin dilde gör",
+    "webS3": "Kaydet — kelime destene eklenir",
+    "webSave": "+ Kaydet",
+    "webSaved": "✓ Kaydedildi",
+    "webMyWords": "Kelimelerim"
   },
   "player": {
     "learning": "ÖĞRENİLEN",

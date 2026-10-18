@@ -76,7 +76,16 @@
     "q6": "Är mina data privata?",
     "a6": "Funlingo använder minimala behörigheter och är byggt kring en lättviktig modell med integritet i första rummet. Ditt tittande förblir ditt.",
     "ctaH2a": "Förvandla kvällens avsnitt",
-    "ctaH2b": "till din nästa lektion."
+    "ctaH2b": "till din nästa lektion.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words"
   },
   "player": {
     "learning": "LÄR DIG",

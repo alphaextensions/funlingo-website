@@ -76,7 +76,16 @@
     "q6": "آیا داده‌هایم خصوصی می‌ماند؟",
     "a6": "Funlingo از کمترین دسترسی‌ها استفاده می‌کند و بر پایهٔ مدلی سبک و حریم‌خصوصی‌محور ساخته شده است. آنچه تماشا می‌کنی، مال خودت می‌ماند.",
     "ctaH2a": "قسمت امشب را",
-    "ctaH2b": "به درس بعدی‌ات تبدیل کن."
+    "ctaH2b": "به درس بعدی‌ات تبدیل کن.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words"
   },
   "player": {
     "learning": "در حال یادگیری",
