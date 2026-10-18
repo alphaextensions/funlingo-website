@@ -13,6 +13,15 @@ export function FlagSvg({ code, w = 26, h = 19 }: { code: string; w?: number; h?
     </svg>
   );
   switch (code) {
+    case "zh":
+      return wrap([
+        <rect key="1" x={0} y={0} width={26} height={19} fill="#DE2910" />,
+        <path key="2" d="M5.2 3.1l.72 2.21h2.33l-1.885 1.37.72 2.21L5.2 7.52 3.315 8.89l.72-2.21L2.15 5.31h2.33z" fill="#FFDE00" />,
+        <circle key="3" cx={10.4} cy={2.6} r={.95} fill="#FFDE00" />,
+        <circle key="4" cx={12.2} cy={4.5} r={.95} fill="#FFDE00" />,
+        <circle key="5" cx={12.2} cy={7.0} r={.95} fill="#FFDE00" />,
+        <circle key="6" cx={10.4} cy={8.9} r={.95} fill="#FFDE00" />,
+      ]);
     case "fr":
       return wrap([
         <rect key="1" x={0} y={0} width={9} height={19} fill="#002654" />,

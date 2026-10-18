@@ -4,14 +4,19 @@ import * as React from "react";
 import { createPortal } from "react-dom";
 import { useT } from "@/app/i18n/I18nProvider";
 import { track } from "@/app/_components/track";
+import { sceneFor, glossFor, translationFor, DEFAULT_SCENE_IMG } from "./scenes";
 
-type Concept = "give" | "gift" | "special" | "birthday" | "friend";
-type PosKind = "verb" | "noun" | "adj";
+// The built-in gift scene uses these five; per-language scenes bring their own
+// concept keys, resolved through SCENE_CONCEPTS instead of NATIVE.
+type Concept = string;
+type PosKind = string;
 type Word = {
   text: string;
   pron?: string;
   concept?: Concept; // interesting (highlighted) words carry a concept
   posKind?: PosKind;
+  /** punctuation that must sit flush against this word, outside the highlight */
+  tail?: string;
 };
 type Line = { words: Word[] };
 type LangData = {
@@ -246,14 +251,51 @@ function fmtTime(sec: number) {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
+/** BCP-47 tags for learning languages that have a scene but no built-in entry. */
+const SCENE_BCP: Record<string, string> = {
+  zh: "zh-CN",
+  "zh-CN": "zh-CN",
+  "zh-TW": "zh-TW",
+};
+
 export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
   const { t, locale } = useT();
-  const data = DATA[lang] || DATA.es;
+
+  // Per-language hero scene (a real still + its own subtitle lines). Learning
+  // languages without one — fr, it, de … — keep the built-in gift scene.
+  const scene = sceneFor(lang);
+  // A learning language can have a scene without a built-in gift-scene entry
+  // (Chinese does). Fall back for shape only — never for code/bcp, or the
+  // language chip and speech synthesis would speak the wrong language.
+  const builtIn = DATA[lang] || {
+    ...DATA.es,
+    code: lang.split("-")[0].toUpperCase(),
+    bcp: SCENE_BCP[lang] ?? lang,
+  };
+  const data: LangData = React.useMemo(() => {
+    if (!scene) return builtIn;
+    const split = (s: string): Word[] =>
+      s.split(/\s+/).filter(Boolean).map((text) => ({ text }));
+    return {
+      code: builtIn.code,
+      bcp: builtIn.bcp,
+      lines: scene.lines.map((l) => ({
+        words: [
+          ...split(l.pre),
+          { text: l.hot, concept: l.concept, posKind: l.pos, pron: l.pron, tail: l.post },
+        ],
+      })),
+    };
+  }, [scene, builtIn]);
   const total = data.lines.length;
 
   // The viewer's native language — everything glossed in the player resolves here.
   const N = NATIVE[nbase(locale)] || NATIVE.en;
-  const meaningOf = (w: Word) => (w.concept ? N[w.concept] : "");
+  const meaningOf = (w: Word) => {
+    if (!w.concept) return "";
+    if (!scene) return (N as unknown as Record<string, string>)[w.concept] ?? "";
+    return glossFor(w.concept, nbase(locale));
+  };
   const posOf = (w: Word) =>
     w.posKind === "verb" ? N.verb : w.posKind === "adj" ? N.adj : N.noun;
 
@@ -318,7 +360,9 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
   const helperUpper = N.code;
   const tipDir = N.rtl ? "rtl" : "ltr";
   const current = data.lines[lineIndex];
-  const curTranslation = N.s[lineIndex] || "";
+  const curTranslation = scene
+    ? translationFor(scene, lineIndex, nbase(locale))
+    : N.s[lineIndex] || "";
   // Position along the bar: 3 evenly-spaced points (0 / 50 / 100% for 3 lines).
   const pos = total > 1 ? lineIndex / (total - 1) : 0;
   const curTime = fmtTime(12 + lineIndex * 21);
@@ -345,7 +389,8 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
           {/* Scene still. Sits above the ambient orbs and below both scrims, so the
               subtitles keep their contrast over any frame. */}
           <img
-            src="/hero-scene.jpg"
+            key={scene ? scene.img : DEFAULT_SCENE_IMG}
+            src={scene ? scene.img : DEFAULT_SCENE_IMG}
             alt=""
             aria-hidden="true"
             fetchPriority="high"
@@ -359,8 +404,8 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
 
           {/* Netflix chip */}
           <div className="absolute flex items-center gap-2" style={{ top: 18, left: 20, padding: "7px 12px", borderRadius: 999, background: "rgba(8,4,16,.5)", backdropFilter: "blur(6px)" }}>
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#E50914" }} />
-            <span style={{ color: "rgba(255,255,255,.92)", fontSize: 12, fontWeight: 800, letterSpacing: ".06em" }}>NETFLIX</span>
+            <span style={{ width: 8, height: 8, borderRadius: "50%", background: scene ? scene.dot : "#E50914" }} />
+            <span style={{ color: "rgba(255,255,255,.92)", fontSize: 12, fontWeight: 800, letterSpacing: ".06em" }}>{scene ? scene.chip : "NETFLIX"}</span>
           </div>
           {/* Learning chip */}
           <div className="absolute flex items-center gap-[7px]" style={{ top: 18, right: 20, padding: "7px 13px", borderRadius: 999, background: "linear-gradient(135deg,#BC22D6,#E0319E)" }}>
@@ -409,6 +454,9 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
                       >
                         {w.text}
                       </span>
+                      {w.tail ? (
+                        <span style={{ color: "rgba(255,255,255,.94)" }}>{w.tail}</span>
+                      ) : null}
                     </span>
                   );
                 })}

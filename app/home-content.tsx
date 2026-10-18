@@ -20,14 +20,16 @@ const PROOF_AVATARS = [
   { initial: "D", grad: "linear-gradient(135deg,#E0319E,#FF7A59)" },
 ];
 
+// Chip set and order follow the 2026 redesign. Chinese is added (it has its own
+// hero scene); German is dropped by the design to make room for it.
 const HERO_LANGS = [
   { code: "en", label: "English" },
+  { code: "ja", label: "Japanese" },
+  { code: "zh", label: "Chinese" },
   { code: "es", label: "Spanish" },
   { code: "fr", label: "French" },
   { code: "it", label: "Italian" },
-  { code: "de", label: "German" },
   { code: "ko", label: "Korean" },
-  { code: "ja", label: "Japanese" },
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -119,7 +121,8 @@ export default function HomeContent() {
             {/* The headline is a long descriptive line, so it runs smaller and
                 tighter than the old three-word one and balances its ragged edge. */}
             <h1 style={{ fontSize: "clamp(32px,3.6vw,50px)", lineHeight: 1.08, fontWeight: 800, margin: 0, letterSpacing: "-.02em", color: "var(--text)", textWrap: "balance" }}>
-              {t("home.heroPre")}{" "}
+              {/* heroPre is optional: the headline may open with the accent */}
+              {t("home.heroPre") ? <>{t("home.heroPre")} </> : null}
               {/* nowrap keeps the gradient phrase on one line — splitting it
                   across a line break breaks the accent visually */}
               <span style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent", whiteSpace: "nowrap" }}>{t("home.heroAccent")}</span>
