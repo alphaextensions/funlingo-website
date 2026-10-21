@@ -35,7 +35,7 @@ export default function HamsterWebsiteTranslationContent() {
             </section>
 
             <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-                <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+                <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
                     <KeyTakeaways items={["Funlingo translates the Hamster website while keeping both languages visible side by side, so you understand the content and learn the language at once.", "It works on HammyHome, HAMSTER Corporation's Japanese site (hamster.co.jp), the nodemedia.cn extension, and any other website.", "Click any word for native meaning, multiple translations (1/2/3/All), pronunciation audio, and example sentences.", "Save unfamiliar words to a personal vocabulary deck and review them later.", "It is free, installs in under 30 seconds, and needs no account."]} />
 
@@ -53,7 +53,7 @@ export default function HamsterWebsiteTranslationContent() {
                             Translate any Hamster website in seconds — free.
                         </p>
                         <a
-                            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="no-underline"
@@ -240,7 +240,7 @@ export default function HamsterWebsiteTranslationContent() {
                             Bilingual display. Word-level lookups. Pronunciation audio. Vocabulary saving. Everything you need to translate and learn — in one extension.
                         </p>
                         <a
-                            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="no-underline"

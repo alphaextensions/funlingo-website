@@ -12,3 +12,6 @@ hashnode-blog-*.md
 linkedin-blog-*.md
 Reddit_Thread_Intelligence_Report.xlsx
 funlingo-open-publishing-platforms.xlsx
+
+# Paused community portal — separate Next.js app, not part of this site's build/deploy
+funlingo-community/

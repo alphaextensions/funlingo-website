@@ -27,7 +27,7 @@ export default function TranslatePageInSafariContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Safari has had built-in page translation since 2020 (macOS Big Sur / iOS 14 or later).", "On Mac, click the translate icon in the address bar; on iPhone and iPad, tap the 'aA' button and choose Translate.", "Safari supports roughly 20 languages — far fewer than Google Translate's 130+ — and cannot translate PDFs.", "It replaces text entirely, so there is no side-by-side bilingual view and no word-level lookups.", "For language learning, Funlingo shows the original and translation together with click-to-translate on any word."]} />
 
           <p className="lead text-xl leading-relaxed">Safari has had a built-in translation feature since 2020, but many users still do not know it exists or how to use it effectively. Whether you are browsing a foreign news site, reading a recipe in another language, or researching content for language learning, Safari can translate entire web pages with just a couple of taps. Here is everything you need to know about translating pages in Safari on Mac, iPhone, and iPad.</p>
@@ -298,7 +298,7 @@ export default function TranslatePageInSafariContent() {
           <div className="bg-[rgba(200,31,212,0.05)] rounded-xl p-8 border border-[#C81FD4]/20 text-center my-8">
             <h2 className="text-2xl font-bold text-[var(--text)] mt-0 mb-3">Go Beyond Simple Translation</h2>
             <p className="text-[var(--text-dim)] mb-6">Safari translates pages, but Funlingo helps you actually learn. Get dual subtitles, word-level translations, pronunciation audio, and vocabulary tools &mdash; all free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] text-[var(--text)] px-8 py-4 text-lg rounded-full hover:opacity-90 transition-opacity">
                 Add Funlingo to Chrome &mdash; It&apos;s Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

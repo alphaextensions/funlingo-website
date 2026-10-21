@@ -26,7 +26,7 @@ export default function DownloadYoutubeVideoPartsContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Online tools like YTCutter let you clip a YouTube video with no install, but cap quality around 720p.", "Screen recording with OBS or built-in OS tools captures exactly what is on screen, including subtitles.", "yt-dlp with the --download-sections flag extracts precise time ranges at full quality.", "Downloading YouTube videos violates its Terms of Service; personal study use is generally low-risk under fair use.", "For language study, Funlingo adds dual subtitles directly on YouTube so you never need to download clips."]} />
           <h2 className="text-2xl font-bold text-[var(--text)] mb-4">Why Download Only Part of a YouTube Video?</h2>
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Sometimes you do not need an entire 20-minute video. Maybe you want a 30-second clip of a native speaker using a tricky grammar pattern, a short segment for a presentation, or a reference clip for a creative project. Downloading the full video wastes storage, takes longer, and gives you extra footage you will never watch again.</p>
@@ -152,7 +152,7 @@ export default function DownloadYoutubeVideoPartsContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">Skip the downloads. Study languages directly on YouTube.</p>
             <p className="text-[var(--text-dim)] mb-6">Funlingo adds dual subtitles, word translations, and vocabulary saving right inside your browser. No clips to manage, no files to organize.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

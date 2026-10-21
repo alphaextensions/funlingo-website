@@ -26,7 +26,7 @@ export default function HowToLearnJapaneseFastContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <img src="/blog-images/how-to-learn-japanese-fast-hero.jpg" alt="A practical roadmap for learning Japanese fast: methods, apps, and immersion" width={1600} height={893} fetchPriority="high" />
 
           <KeyTakeaways items={["There is no magic shortcut, but the fastest path is structured basics plus daily immersion from week one.", "Learn the kana (hiragana and katakana) first — it takes about two weeks and unlocks everything else.", "Pair one grammar resource with a spaced-repetition app for vocabulary, then reinforce both with native video.", "Immersion with anime and Japanese shows builds listening and real-world vocabulary faster than textbooks alone.", "Funlingo adds free dual subtitles and click-to-translate to Netflix, YouTube, and Crunchyroll so you learn in context."]} />
@@ -145,7 +145,7 @@ export default function HowToLearnJapaneseFastContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">Learn Japanese faster from the shows you already love</p>
             <p className="text-[var(--text-dim)] mb-6">Funlingo adds free dual subtitles and click-to-translate to Netflix, YouTube, Prime Video, and Crunchyroll. Tap any word for an instant meaning, immerse in real Japanese, and pay nothing. Free, forever, right in your browser.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

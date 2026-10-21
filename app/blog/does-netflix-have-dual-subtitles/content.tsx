@@ -25,7 +25,7 @@ export default function DoesNetflixHaveDualSubtitlesContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways
             items={[
               "Netflix has no built-in dual subtitle feature — the player shows only one subtitle language at a time.",
@@ -44,7 +44,7 @@ export default function DoesNetflixHaveDualSubtitlesContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-[var(--surface)] p-5 rounded-xl border border-[var(--border)]">
               <strong className="text-[var(--text)]">Step 1: Install Funlingo</strong>
-              <p className="text-[var(--text-dim)] text-sm mt-1">Go to the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C81FD4] hover:underline" target="_blank" rel="noopener noreferrer">Funlingo Chrome Web Store page</a> and click &quot;Add to Chrome.&quot; Confirm the installation when prompted.</p>
+              <p className="text-[var(--text-dim)] text-sm mt-1">Go to the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" className="text-[#C81FD4] hover:underline" target="_blank" rel="noopener noreferrer">Funlingo Chrome Web Store page</a> and click &quot;Add to Chrome.&quot; Confirm the installation when prompted.</p>
             </div>
             <div className="bg-[var(--surface)] p-5 rounded-xl border border-[var(--border)]">
               <strong className="text-[var(--text)]">Step 2: Open Netflix in Chrome</strong>
@@ -99,7 +99,7 @@ export default function DoesNetflixHaveDualSubtitlesContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Try Dual Subtitles on Netflix Today</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Set up dual subtitles in 30 seconds. Free forever, no premium tier, no feature limits.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

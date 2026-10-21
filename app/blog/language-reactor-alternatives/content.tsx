@@ -20,7 +20,7 @@ export default function LanguageReactorAlternativesContent() {
           <Badge className="mb-6 bg-[var(--surface-2)] text-[var(--text)] border-[var(--border)] hover:bg-white/15">
             Guide
           </Badge>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-[var(--text)] to-[var(--text-dim)]">
             Best Language Reactor Alternatives for Language Learning (2026)
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[var(--text-dim)] mt-8">
@@ -42,7 +42,7 @@ export default function LanguageReactorAlternativesContent() {
 
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pb-24">
-        <article className="prose prose-invert prose-lg max-w-none">
+        <article className="prose prose-lg max-w-none">
 
           <KeyTakeaways items={["Language Reactor Pro now costs $7.99/month for vocab saving and advanced features, with a limited free tier and no Prime Video support.", "It also lacks per-word pronunciation audio, a multi-translation selector, and AI grammar explanations.", "Funlingo is the best free pick: dual subtitles on Netflix, YouTube, and Prime Video with pronunciation, AI grammar help, and vocab export.", "Trancy ($9.90/mo) is best for deep AI grammar analysis and AiTalk speaking practice; eJOY English ($4.99/mo) suits budget English learners.", "Substital, Mate Translate, and Linguo TV are niche tools that complement, rather than replace, a dedicated subtitle extension."]} />
 
@@ -97,7 +97,7 @@ export default function LanguageReactorAlternativesContent() {
             </h2>
 
             {/* Comparison Table */}
-            <div className="overflow-x-auto mb-12">
+            <div className="thin-scroll overflow-x-auto mb-12">
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-[var(--border)]">
@@ -487,7 +487,7 @@ export default function LanguageReactorAlternativesContent() {
                 and AI grammar explanations across all major streaming platforms.
               </p>
               <a
-                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -591,7 +591,7 @@ export default function LanguageReactorAlternativesContent() {
                 pronunciation, and get AI grammar help &mdash; all completely free.
               </p>
               <a
-                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >

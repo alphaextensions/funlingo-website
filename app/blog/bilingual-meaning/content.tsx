@@ -29,7 +29,7 @@ export default function BilingualMeaningContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways
             items={[
@@ -220,7 +220,7 @@ export default function BilingualMeaningContent() {
             One of the biggest barriers to becoming bilingual is access to quality immersion. Not everyone can move to another country or attend an immersion school. This is where technology bridges the gap.
           </p>
           <p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C81FD4] hover:underline">Funlingo</a> is a free Chrome extension that transforms your everyday streaming into a bilingual immersion experience. Here&apos;s how it supports the journey to bilingualism:
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" className="text-[#C81FD4] hover:underline">Funlingo</a> is a free Chrome extension that transforms your everyday streaming into a bilingual immersion experience. Here&apos;s how it supports the journey to bilingualism:
           </p>
 
           <div className="space-y-4 my-8">
@@ -269,7 +269,7 @@ export default function BilingualMeaningContent() {
             <p className="text-[var(--text-dim)] mb-6 max-w-xl mx-auto">
               Becoming bilingual doesn&apos;t require moving abroad or spending years in a classroom. With Funlingo&apos;s dual subtitles, AI-powered word lookup, and pronunciation tools, you can build bilingual comprehension naturally &mdash; just by watching the shows you love.
             </p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] text-[var(--text)] px-8 py-3 text-lg rounded-full hover:opacity-90 transition-opacity">
                 Try Funlingo Free <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

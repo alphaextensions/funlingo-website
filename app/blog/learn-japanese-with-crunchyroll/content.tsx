@@ -26,7 +26,7 @@ export default function LearnJapaneseWithCrunchyrollContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <img src="/blog-images/learn-japanese-with-crunchyroll-hero.jpg" alt="Crunchyroll anime with Japanese and English dual subtitles for language learning" width={1600} height={893} fetchPriority="high" />
 
           <KeyTakeaways items={["Crunchyroll is a goldmine of native Japanese audio, but it does not show Japanese subtitles or dual subtitles on its own.", "The free Funlingo Chrome extension adds Crunchyroll dual subtitles — Japanese plus your language — with click-to-translate on any word.", "Slice-of-life and school comedies are the best anime to learn Japanese because the speech is natural, slow, and everyday.", "A simple daily routine — watch, mine words, rewatch — turns each episode into real listening and vocabulary practice.", "Pair anime with structured grammar and kanji study so the immersion actually sticks."]} />
@@ -148,7 +148,7 @@ export default function LearnJapaneseWithCrunchyrollContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">Turn every Crunchyroll episode into a Japanese lesson</p>
             <p className="text-[var(--text-dim)] mb-6">Funlingo adds free dual subtitles and click-to-translate to Crunchyroll, Netflix, YouTube, and Prime Video. Read Japanese and English together, tap any word to learn it, and pay nothing. Free, forever, right in your browser.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

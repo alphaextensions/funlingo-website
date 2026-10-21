@@ -26,7 +26,7 @@ export default function ImmersiveTranslateFreeContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Immersive Translate is genuinely free for everyday web-page reading, with bilingual side-by-side translation.", "Free machine engines (Google, Microsoft, DeepL free quota) cover most casual needs without spending a cent.", "Immersive Translate Pro is around $9.99/mo and mainly buys higher quotas and premium AI engines like DeepL Pro, OpenAI, Claude, and Gemini.", "Trying to bypass the paywall with cracks or mods is risky and against the terms — use the free tier well instead.", "For video and subtitle translation, Funlingo is a completely free Chrome extension with dual subtitles and no monthly limit."]} />
 
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">If you searched for &quot;immersive translate free,&quot; you probably want a straight answer: how much of <a href="https://immersivetranslate.com" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Immersive Translate</a> can you actually use without paying, and is the Pro plan worth it? The short version is that Immersive Translate has one of the more generous free tiers in the translation-tool space, but its premium AI engines and higher quotas sit behind a subscription. This guide breaks down exactly what is free versus paid, how to squeeze the most out of the free tier honestly, and where a genuinely free alternative makes more sense — especially for translating video subtitles.</p>
@@ -102,7 +102,7 @@ export default function ImmersiveTranslateFreeContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Immersive Translate Free vs Funlingo: Quick Comparison</h2>
           <p className="text-[var(--text-dim)] mb-6">They overlap less than you might think — one is reading-first, the other is video-first. Here is how the free experiences compare:</p>
 
-          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8 overflow-x-auto">
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8 thin-scroll overflow-x-auto">
             <table className="w-full text-sm text-[var(--text-dim)]">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -161,7 +161,7 @@ export default function ImmersiveTranslateFreeContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">Want free video translation that never hits a paywall?</p>
             <p className="text-[var(--text-dim)] mb-6">Funlingo adds dual subtitles and AI translation to Netflix, YouTube, and Prime Video. Click any word to translate it, learn in 100+ languages, and pay nothing. Free, forever, right in your browser.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

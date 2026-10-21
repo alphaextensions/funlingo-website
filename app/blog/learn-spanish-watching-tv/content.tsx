@@ -25,7 +25,7 @@ export default function LearnSpanishWatchingTvContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways items={[
             "Watching Spanish TV processes vocabulary, grammar, and pronunciation in context rather than in isolation.",
@@ -42,7 +42,7 @@ export default function LearnSpanishWatchingTvContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Start learning Spanish with dual subtitles on Netflix, Prime Video, and more. Free setup in 30 seconds.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free <ArrowRight className="w-4 h-4 ml-2" /></Button>
             </a>
           </div>
@@ -193,7 +193,7 @@ export default function LearnSpanishWatchingTvContent() {
           <div className="text-center py-10 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-4">Ready to Start Learning Spanish Tonight?</h2>
             <p className="text-lg text-[var(--text)] mb-6">Install Funlingo, pick a show from this guide, and follow the 15-minute routine. Dual subtitles on Netflix, Amazon Prime Video, and more — completely free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="w-4 h-4 ml-2" /></Button>
             </a>
           </div>

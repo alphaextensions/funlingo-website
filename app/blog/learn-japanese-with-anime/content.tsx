@@ -25,7 +25,7 @@ export default function LearnJapaneseWithAnimeContent() {
         </div>
       </section>
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <img
             src="/blog-images/learn-japanese-with-anime-hero.jpg"
             alt="Anime scene on a screen with Japanese and English dual subtitles for language learning"
@@ -46,7 +46,7 @@ export default function LearnJapaneseWithAnimeContent() {
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Watch anime with dual subtitles for free using Funlingo on YouTube.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
@@ -87,7 +87,7 @@ export default function LearnJapaneseWithAnimeContent() {
           />
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Step 2: Set Up Dual Subtitles</h2>
           <p className="text-[var(--text-dim)] mb-6">The foundation of this method is watching with two sets of subtitles: Japanese and your native language displayed simultaneously. This lets you read the original Japanese text while immediately checking meaning below it — no pausing, no tab-switching, no dictionary apps.</p>
-          <p className="text-[var(--text-dim)] mb-6">Funlingo adds dual subtitles to YouTube for free. Many anime episodes, clips, and full series are available on YouTube with Japanese subtitles. Install the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C81FD4] hover:underline">Funlingo Chrome extension</a>, open a video, and select your target and native languages.</p>
+          <p className="text-[var(--text-dim)] mb-6">Funlingo adds dual subtitles to YouTube for free. Many anime episodes, clips, and full series are available on YouTube with Japanese subtitles. Install the <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" className="text-[#C81FD4] hover:underline">Funlingo Chrome extension</a>, open a video, and select your target and native languages.</p>
 
           <DualSubtitleDemo targetLang="Japanese" target="はじめまして、よろしくお願いします" highlight="よろしく" native="Nice to meet you" />
           <p className="text-[var(--text-dim)] mb-6">For a deeper look at dual subtitle tools, see our comparison of the <a href="/blog/best-dual-subtitle-extension" className="text-[#C81FD4] hover:underline">7 best dual subtitle extensions</a>.</p>
@@ -225,7 +225,7 @@ export default function LearnJapaneseWithAnimeContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Learning Japanese with Anime Today</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Free dual subtitles on YouTube. Built-in vocabulary builder. Click any word for instant definitions. No subscription required.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

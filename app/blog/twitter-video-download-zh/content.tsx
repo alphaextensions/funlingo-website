@@ -26,7 +26,7 @@ export default function TwitterVideoDownloadZhContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways title="核心要点" items={["推特官方不提供视频下载功能，但有3种完全免费的方法可以保存视频。", "在线工具（SaveTweetVid、TWDown、ssstwitter）最简单，复制链接即可下载，且支持手机端。", "浏览器扩展会在视频旁自动添加下载按钮，适合经常下载的用户。", "yt-dlp 命令行工具功能最强大，支持批量下载和完全自定义画质，但需要一定技术基础。", "下载的视频仅供个人学习欣赏使用，请尊重原作者版权，避免二次传播。"]} />
 
@@ -187,7 +187,7 @@ export default function TwitterVideoDownloadZhContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">三种方法对比</h2>
           <p className="text-[var(--text-dim)] mb-6">根据你的使用场景和技术水平，可以选择最适合的方法：</p>
 
-          <div className="overflow-x-auto mb-8">
+          <div className="thin-scroll overflow-x-auto mb-8">
             <table className="w-full text-sm text-left border-collapse">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -313,7 +313,7 @@ export default function TwitterVideoDownloadZhContent() {
             <h2 className="text-2xl font-bold text-[var(--text)] mb-4">Funlingo 推荐：在线学习更高效</h2>
             <p className="text-lg text-[var(--text)] mb-4">与其下载视频离线观看，不如直接在线用双语字幕学习效果更好！</p>
             <p className="text-sm text-[var(--text-dim)] mb-6">Funlingo 是一款完全免费的Chrome双语字幕扩展，支持 Netflix、YouTube 和 Prime Video。观看推特博主推荐的外语影视内容时，开启双语字幕，边看边学，语言能力自然提升。还提供点击查词、词汇本等实用功能，让你的观影时间变成高效的语言学习时间。</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">免费安装 Funlingo <ArrowRight className="ml-2 w-4 h-4" /></Button>
             </a>
           </div>
@@ -342,7 +342,7 @@ export default function TwitterVideoDownloadZhContent() {
               </div>
               <div>
                 <strong className="text-[var(--text)] block mb-2">想要学习推特上的外语视频内容，有什么好工具？</strong>
-                <p className="text-sm text-[var(--text-dim)] mb-0">如果你想通过观看外语视频来学习语言，推荐使用 <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C81FD4] hover:underline">Funlingo</a> 双语字幕扩展。它完全免费，支持在Netflix、YouTube和Prime Video上显示双语字幕，帮助你更高效地学习外语。配合点击查词和词汇本功能，让每次观影都成为学习机会。</p>
+                <p className="text-sm text-[var(--text-dim)] mb-0">如果你想通过观看外语视频来学习语言，推荐使用 <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" className="text-[#C81FD4] hover:underline">Funlingo</a> 双语字幕扩展。它完全免费，支持在Netflix、YouTube和Prime Video上显示双语字幕，帮助你更高效地学习外语。配合点击查词和词汇本功能，让每次观影都成为学习机会。</p>
               </div>
             </div>
           </div>
@@ -351,7 +351,7 @@ export default function TwitterVideoDownloadZhContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">免费获取影视双语字幕</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Funlingo 提供 Netflix、YouTube 和 Prime Video 的免费双语字幕，内置词汇本功能，完全免费使用。</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">免费安装 Funlingo <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

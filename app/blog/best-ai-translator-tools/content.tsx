@@ -26,7 +26,7 @@ export default function BestAiTranslatorToolsContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <img
             src="/blog-images/best-ai-translator-tools-hero.jpg"
             alt="AI translation concept: a glowing globe with text morphing between languages"
@@ -79,7 +79,7 @@ export default function BestAiTranslatorToolsContent() {
 
           {/* 3. Funlingo (Contextual Translation While Watching) */}
           <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
-            <h3 className="text-xl font-semibold text-[var(--text)] mb-3"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors inline-flex items-center gap-1.5">3. Funlingo (Contextual Translation While Watching) <ExternalLink className="w-4 h-4 text-[#C81FD4]" /></a></h3>
+            <h3 className="text-xl font-semibold text-[var(--text)] mb-3"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors inline-flex items-center gap-1.5">3. Funlingo (Contextual Translation While Watching) <ExternalLink className="w-4 h-4 text-[#C81FD4]" /></a></h3>
             <p className="text-[var(--text-dim)] mb-3">Funlingo approaches AI translation from a unique angle: contextual translation while watching video content. Rather than translating text you paste into a box, Funlingo works inside Netflix, YouTube, and Amazon Prime Video to provide dual subtitles and instant word-level translations. Click any word in the subtitles to see its meaning, pronunciation, and usage. This makes it uniquely powerful for language learners who want to understand content in real time rather than translating text after the fact. For <a href="/blog/netflix-dual-subtitles" className="text-[#C81FD4] hover:underline">dual subtitles on Netflix</a>, YouTube, and Prime Video, check out our <a href="/blog/netflix-dual-subtitles" className="text-[#C81FD4] hover:underline">dual subtitles setup guide</a>. If you prefer building vocabulary through video content, see our guide to <a href="/blog/netflix-language-learning-extensions" className="text-[#C81FD4] hover:underline">Netflix language learning extensions</a>.</p>
             <div className="flex flex-wrap gap-4 text-sm text-[var(--text-dim)] mb-3">
               <span><strong className="text-[var(--text)]">Best for:</strong> Language learning through video content</span>
@@ -236,7 +236,7 @@ export default function BestAiTranslatorToolsContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Comparison Summary</h2>
           <p className="text-[var(--text-dim)] mb-6">Here is a quick breakdown to help you choose the right AI translator for your specific needs:</p>
 
-          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8 overflow-x-auto">
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8 thin-scroll overflow-x-auto">
             <table className="w-full text-sm text-[var(--text-dim)]">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -249,7 +249,7 @@ export default function BestAiTranslatorToolsContent() {
               <tbody>
                 <tr className="border-b border-[var(--border)]"><td className="py-2 pr-4"><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Google Translate</a></td><td className="py-2 pr-4">Broadest coverage</td><td className="py-2 pr-4">133+</td><td className="py-2">Yes</td></tr>
                 <tr className="border-b border-[var(--border)]"><td className="py-2 pr-4"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">DeepL</a></td><td className="py-2 pr-4">European accuracy</td><td className="py-2 pr-4">33</td><td className="py-2">Yes (limited)</td></tr>
-                <tr className="border-b border-[var(--border)]"><td className="py-2 pr-4"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Funlingo</a></td><td className="py-2 pr-4">Video learning</td><td className="py-2 pr-4">All platform</td><td className="py-2">Yes (full)</td></tr>
+                <tr className="border-b border-[var(--border)]"><td className="py-2 pr-4"><a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Funlingo</a></td><td className="py-2 pr-4">Video learning</td><td className="py-2 pr-4">All platform</td><td className="py-2">Yes (full)</td></tr>
                 <tr className="border-b border-[var(--border)]"><td className="py-2 pr-4"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">ChatGPT</a></td><td className="py-2 pr-4">Nuanced / creative</td><td className="py-2 pr-4">90+</td><td className="py-2">Yes (limited)</td></tr>
                 <tr className="border-b border-[var(--border)]"><td className="py-2 pr-4"><a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Microsoft Translator</a></td><td className="py-2 pr-4">Microsoft ecosystem</td><td className="py-2 pr-4">120+</td><td className="py-2">Yes</td></tr>
                 <tr className="border-b border-[var(--border)]"><td className="py-2 pr-4"><a href="https://apps.apple.com/us/app/translate/id1514844618" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Apple Translate</a></td><td className="py-2 pr-4">Privacy / Apple users</td><td className="py-2 pr-4">20</td><td className="py-2">Yes</td></tr>
@@ -346,7 +346,7 @@ export default function BestAiTranslatorToolsContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">Experience AI translation in context.</p>
             <p className="text-[var(--text-dim)] mb-6">Funlingo brings contextual translation to Netflix, YouTube, and Prime Video. Dual subtitles, click-to-translate any word, and vocabulary saving. All free, all inside your browser.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

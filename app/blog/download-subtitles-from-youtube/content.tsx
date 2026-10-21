@@ -56,7 +56,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
 
       {/* Main Content */}
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways
             items={[
               "There are three free ways to download YouTube subtitles: the built-in transcript, online tools, and browser extensions.",
@@ -508,7 +508,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
           <p>
             Here&apos;s a quick comparison to help you choose the right method:
           </p>
-          <div className="overflow-x-auto my-6 not-prose">
+          <div className="thin-scroll overflow-x-auto my-6 not-prose">
             <table className="w-full text-sm text-[var(--text-dim)] border border-[var(--border)] rounded-xl overflow-hidden">
               <thead>
                 <tr className="bg-[var(--surface)]">
@@ -598,7 +598,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
                   If your goal is language learning, you might not need to
                   download subtitles at all.{" "}
                   <a
-                    href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+                    href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#C81FD4] hover:underline"
@@ -803,7 +803,7 @@ export default function DownloadSubtitlesFromYoutubeContent() {
               word lookups, and AI-powered learning tools.
             </p>
             <a
-              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="no-underline"

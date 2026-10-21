@@ -26,7 +26,7 @@ export default function YoutubeSubtitleDownloadZhContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
 
           <KeyTakeaways items={["本文介绍四种YouTube字幕下载方法：在线工具、浏览器扩展、yt-dlp命令行和YouTube内置转录功能", "在线工具（DownSub、SaveSubs）最简单，无需安装，适合普通用户", "yt-dlp功能最强大，支持批量下载和多语言，适合进阶用户", "SRT格式兼容性最好，是大多数场景的首选字幕格式", "如果目的是语言学习，用Funlingo直接显示实时双语字幕更高效，完全免费"]} />
 
@@ -153,7 +153,7 @@ export default function YoutubeSubtitleDownloadZhContent() {
           <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
             <h3 className="text-lg font-bold text-[var(--text)] mb-4">安装步骤</h3>
             <p className="text-[var(--text-dim)] mb-3">首先你需要在电脑上安装yt-dlp。以下是各系统的安装命令：</p>
-            <div className="bg-black/50 p-4 rounded-lg mb-4 overflow-x-auto">
+            <div className="bg-black/50 p-4 rounded-lg mb-4 thin-scroll overflow-x-auto">
               <code className="text-sm text-green-400 block"># Windows（使用pip安装）</code>
               <code className="text-sm text-[var(--text-dim)] block">pip install yt-dlp</code>
               <code className="text-sm text-green-400 block mt-3"># macOS（使用Homebrew安装）</code>
@@ -167,32 +167,32 @@ export default function YoutubeSubtitleDownloadZhContent() {
             <h3 className="text-lg font-bold text-[var(--text)] mb-4">下载字幕的常用命令</h3>
 
             <p className="text-[var(--text-dim)] mb-2"><strong className="text-[var(--text)]">1. 查看视频可用的字幕列表：</strong></p>
-            <div className="bg-black/50 p-4 rounded-lg mb-4 overflow-x-auto">
+            <div className="bg-black/50 p-4 rounded-lg mb-4 thin-scroll overflow-x-auto">
               <code className="text-sm text-[var(--text-dim)] block">yt-dlp --list-subs &quot;https://www.youtube.com/watch?v=VIDEO_ID&quot;</code>
             </div>
 
             <p className="text-[var(--text-dim)] mb-2"><strong className="text-[var(--text)]">2. 下载指定语言的字幕（以中文为例）：</strong></p>
-            <div className="bg-black/50 p-4 rounded-lg mb-4 overflow-x-auto">
+            <div className="bg-black/50 p-4 rounded-lg mb-4 thin-scroll overflow-x-auto">
               <code className="text-sm text-[var(--text-dim)] block">yt-dlp --write-sub --sub-lang zh-Hans --skip-download &quot;https://www.youtube.com/watch?v=VIDEO_ID&quot;</code>
             </div>
 
             <p className="text-[var(--text-dim)] mb-2"><strong className="text-[var(--text)]">3. 下载自动生成的字幕：</strong></p>
-            <div className="bg-black/50 p-4 rounded-lg mb-4 overflow-x-auto">
+            <div className="bg-black/50 p-4 rounded-lg mb-4 thin-scroll overflow-x-auto">
               <code className="text-sm text-[var(--text-dim)] block">yt-dlp --write-auto-sub --sub-lang zh-Hans --skip-download &quot;https://www.youtube.com/watch?v=VIDEO_ID&quot;</code>
             </div>
 
             <p className="text-[var(--text-dim)] mb-2"><strong className="text-[var(--text)]">4. 下载字幕并转换为SRT格式：</strong></p>
-            <div className="bg-black/50 p-4 rounded-lg mb-4 overflow-x-auto">
+            <div className="bg-black/50 p-4 rounded-lg mb-4 thin-scroll overflow-x-auto">
               <code className="text-sm text-[var(--text-dim)] block">yt-dlp --write-sub --sub-lang zh-Hans --convert-subs srt --skip-download &quot;https://www.youtube.com/watch?v=VIDEO_ID&quot;</code>
             </div>
 
             <p className="text-[var(--text-dim)] mb-2"><strong className="text-[var(--text)]">5. 同时下载中文和英文字幕：</strong></p>
-            <div className="bg-black/50 p-4 rounded-lg mb-4 overflow-x-auto">
+            <div className="bg-black/50 p-4 rounded-lg mb-4 thin-scroll overflow-x-auto">
               <code className="text-sm text-[var(--text-dim)] block">yt-dlp --write-sub --sub-lang &quot;zh-Hans,en&quot; --convert-subs srt --skip-download &quot;https://www.youtube.com/watch?v=VIDEO_ID&quot;</code>
             </div>
 
             <p className="text-[var(--text-dim)] mb-2"><strong className="text-[var(--text)]">6. 下载所有可用语言的字幕：</strong></p>
-            <div className="bg-black/50 p-4 rounded-lg mb-0 overflow-x-auto">
+            <div className="bg-black/50 p-4 rounded-lg mb-0 thin-scroll overflow-x-auto">
               <code className="text-sm text-[var(--text-dim)] block">yt-dlp --write-sub --all-subs --convert-subs srt --skip-download &quot;https://www.youtube.com/watch?v=VIDEO_ID&quot;</code>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function YoutubeSubtitleDownloadZhContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">SRT vs VTT vs TXT：字幕格式对比</h2>
           <p className="text-[var(--text-dim)] mb-6">下载YouTube字幕时，你通常会遇到三种主要的字幕格式。了解它们的区别有助于你选择最合适的格式。</p>
 
-          <div className="overflow-x-auto mb-8">
+          <div className="thin-scroll overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -314,7 +314,7 @@ export default function YoutubeSubtitleDownloadZhContent() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">四种方法对比</h2>
           <p className="text-[var(--text-dim)] mb-6">以下是四种YouTube字幕下载方法的综合对比，帮助你根据自己的需求选择最合适的方式：</p>
 
-          <div className="overflow-x-auto mb-8">
+          <div className="thin-scroll overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -410,7 +410,7 @@ export default function YoutubeSubtitleDownloadZhContent() {
 
           <div className="text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20 mb-12">
             <p className="text-lg text-[var(--text)] mb-6">不再需要手动下载字幕 —— 用Funlingo在YouTube上直接显示双语字幕，完全免费！</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">免费安装 Funlingo</Button>
             </a>
           </div>
@@ -439,7 +439,7 @@ export default function YoutubeSubtitleDownloadZhContent() {
               </div>
               <div>
                 <strong className="text-[var(--text)] block mb-2">如何获取YouTube视频的中英双语字幕？</strong>
-                <p className="text-sm text-[var(--text-dim)] mb-0">最简单的方法是使用<a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" className="text-[#C81FD4] hover:underline" target="_blank" rel="noopener noreferrer">Funlingo</a>Chrome扩展，安装后自动在YouTube上同时显示中英双语字幕。如果你需要下载双语字幕文件，可以使用yt-dlp分别下载中文和英文字幕（<code className="text-[#C81FD4]">--sub-lang &quot;zh-Hans,en&quot;</code>），然后使用字幕编辑工具合并。</p>
+                <p className="text-sm text-[var(--text-dim)] mb-0">最简单的方法是使用<a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" className="text-[#C81FD4] hover:underline" target="_blank" rel="noopener noreferrer">Funlingo</a>Chrome扩展，安装后自动在YouTube上同时显示中英双语字幕。如果你需要下载双语字幕文件，可以使用yt-dlp分别下载中文和英文字幕（<code className="text-[#C81FD4]">--sub-lang &quot;zh-Hans,en&quot;</code>），然后使用字幕编辑工具合并。</p>
               </div>
             </div>
           </div>
@@ -448,7 +448,7 @@ export default function YoutubeSubtitleDownloadZhContent() {
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">告别手动下载字幕</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Funlingo为YouTube、Netflix和Prime Video提供免费实时双语字幕，内置点击查词和词汇本功能，让看视频变成高效的语言学习体验。</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">免费安装 Funlingo <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

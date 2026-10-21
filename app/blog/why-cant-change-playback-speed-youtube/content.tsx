@@ -58,7 +58,7 @@ export default function PlaybackSpeedYoutubeContent() {
 
       {/* Main Content */}
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["An outdated browser or YouTube app is the single most common cause", "Conflicting extensions (ad blockers, downloaders) can disable the speed menu", "Live streams and active premieres disable speed control by design", "Embedded players can have speed controls restricted by the site owner", "Corrupted cache or cookies can break the speed menu, fixed by clearing them"]} />
           {/* Introduction */}
           <p>
@@ -200,7 +200,7 @@ export default function PlaybackSpeedYoutubeContent() {
           <p>
             Note that well-built extensions like{" "}
             <a
-              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#C81FD4] no-underline hover:underline"
@@ -424,7 +424,7 @@ export default function PlaybackSpeedYoutubeContent() {
             more effectively.
           </p>
 
-          <div className="overflow-x-auto my-6 not-prose">
+          <div className="thin-scroll overflow-x-auto my-6 not-prose">
             <table className="w-full text-sm text-[var(--text-dim)] border border-[var(--border)] rounded-xl overflow-hidden">
               <thead>
                 <tr className="bg-[var(--surface)]">
@@ -553,7 +553,7 @@ export default function PlaybackSpeedYoutubeContent() {
           <p>
             For the best language learning experience on YouTube, consider using{" "}
             <a
-              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#C81FD4] no-underline hover:underline"
@@ -744,7 +744,7 @@ export default function PlaybackSpeedYoutubeContent() {
               Video — completely free.
             </p>
             <a
-              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+              href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="no-underline"

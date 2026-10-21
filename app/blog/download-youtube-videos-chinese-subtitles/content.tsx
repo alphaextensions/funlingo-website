@@ -26,7 +26,7 @@ export default function DownloadYoutubeVideosChineseSubtitlesContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["yt-dlp is the most powerful method: use --write-sub --sub-lang zh-Hans --embed-subs to bake Chinese subtitles into the video.", "Online tools like SaveSubs and DownSub extract subtitle files (SRT/VTT) with no install, but not the video.", "Browser extensions add a one-click subtitle download button right on the YouTube page.", "Use language codes zh-Hans (Simplified), zh-Hant (Traditional), or zh; save subtitle files as UTF-8 SRT for best compatibility.", "Funlingo skips downloading entirely with free real-time dual Chinese-plus-English subtitles on YouTube, Netflix, and Prime."]} />
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">Whether you are studying Mandarin Chinese or simply want to save Chinese-language YouTube videos for offline viewing, downloading videos with their Chinese subtitles intact is incredibly useful. This guide walks you through three free methods to download YouTube videos with Chinese subtitles (youtube视频在线下载) so you can study on the go, review tricky vocabulary on the train, or build a personal library of Chinese learning material.</p>
 
@@ -69,7 +69,7 @@ export default function DownloadYoutubeVideosChineseSubtitlesContent() {
 
           <h3 className="text-xl font-semibold text-[var(--text)] mb-4">Step 1: Install yt-dlp</h3>
           <p className="text-[var(--text-dim)] mb-4">You can install yt-dlp on Windows, macOS, or Linux. The easiest methods are:</p>
-          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 overflow-x-auto">
+          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 thin-scroll overflow-x-auto">
             <pre className="text-sm text-green-400 whitespace-pre-wrap"><code>{`# Windows (using winget)
 winget install yt-dlp
 
@@ -85,14 +85,14 @@ pip install yt-dlp
 
           <h3 className="text-xl font-semibold text-[var(--text)] mb-4">Step 2: List Available Subtitle Languages</h3>
           <p className="text-[var(--text-dim)] mb-4">Before downloading, check which subtitle languages are available for a video:</p>
-          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 overflow-x-auto">
+          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 thin-scroll overflow-x-auto">
             <pre className="text-sm text-green-400 whitespace-pre-wrap"><code>{`yt-dlp --list-subs "https://www.youtube.com/watch?v=VIDEO_ID"`}</code></pre>
           </div>
           <p className="text-[var(--text-dim)] mb-4">Look for language codes like <code className="text-red-400 bg-[var(--surface)] px-2 py-0.5 rounded">zh-Hans</code> (Simplified Chinese), <code className="text-red-400 bg-[var(--surface)] px-2 py-0.5 rounded">zh-Hant</code> (Traditional Chinese), or <code className="text-red-400 bg-[var(--surface)] px-2 py-0.5 rounded">zh</code> (generic Chinese). Auto-generated subtitles will appear under a separate section.</p>
 
           <h3 className="text-xl font-semibold text-[var(--text)] mb-4">Step 3: Download Video with Chinese Subtitles</h3>
           <p className="text-[var(--text-dim)] mb-4">To download a video with embedded Chinese subtitles:</p>
-          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 overflow-x-auto">
+          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 thin-scroll overflow-x-auto">
             <pre className="text-sm text-green-400 whitespace-pre-wrap"><code>{`# Download video + Chinese subtitles (embedded into the video)
 yt-dlp --write-sub --sub-lang zh-Hans --embed-subs "https://www.youtube.com/watch?v=VIDEO_ID"
 
@@ -111,7 +111,7 @@ yt-dlp --write-sub --sub-lang zh-Hans --convert-subs srt --skip-download "https:
 
           <h3 className="text-xl font-semibold text-[var(--text)] mb-4">Step 4: Choose Video Quality</h3>
           <p className="text-[var(--text-dim)] mb-4">You can specify the video quality to balance file size and resolution:</p>
-          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 overflow-x-auto">
+          <div className="bg-[#0d1117] p-4 rounded-xl border border-[var(--border)] mb-6 thin-scroll overflow-x-auto">
             <pre className="text-sm text-green-400 whitespace-pre-wrap"><code>{`# Best quality (may be large)
 yt-dlp -f "bestvideo+bestaudio" --write-sub --sub-lang zh-Hans --embed-subs URL
 
@@ -217,7 +217,7 @@ yt-dlp --write-sub --sub-lang zh-Hans --embed-subs "https://www.youtube.com/play
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Comparison: Which Method Should You Use?</h2>
           <p className="text-[var(--text-dim)] mb-6">Each method has its strengths. Here is a side-by-side comparison to help you decide.</p>
 
-          <div className="overflow-x-auto mb-12">
+          <div className="thin-scroll overflow-x-auto mb-12">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -331,7 +331,7 @@ yt-dlp --write-sub --sub-lang zh-Hans --embed-subs "https://www.youtube.com/play
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Watch Chinese YouTube videos with dual subtitles. No downloading needed.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
             </a>
           </div>
@@ -410,7 +410,7 @@ yt-dlp --write-sub --sub-lang zh-Hans --embed-subs "https://www.youtube.com/play
           <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Learning Chinese on YouTube Today</h2>
             <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Free dual subtitles on every Chinese YouTube video. Click any word to see its meaning. No subscription, no downloading, no hassle.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </div>

@@ -26,7 +26,7 @@ export default function AiForTranslationContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Modern AI translation evolved through four eras: rule-based, statistical, neural (NMT), and large language models.", "High-resource pairs like English-Spanish reach 90%+ accuracy, while many of the world's 7,000 languages remain poorly served.", "Dedicated NMT systems win on speed and cost; LLMs win on nuance, tone, and cultural context.", "AI still struggles with cultural pragmatics, humor, low-resource languages, and specialized legal or medical text.", "Tools like Funlingo apply AI translation as a learning scaffold with dual subtitles on Netflix, YouTube, and Prime Video."]} />
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">Translation is one of humanity&apos;s oldest intellectual challenges. For centuries, it required years of study, deep cultural knowledge, and painstaking manual effort. Today, AI for translation is rewriting the rules. Neural networks process billions of sentence pairs. Large language models understand idioms, context, and tone. Real-time subtitle translation happens inside your browser while you watch a show. This article explores how AI translation actually works, where it stands in 2026, its limitations, and what it means for anyone learning a new language.</p>
 
@@ -272,7 +272,7 @@ export default function AiForTranslationContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">See AI translation in action while you learn.</p>
             <p className="text-[var(--text-dim)] mb-6">Funlingo uses AI-powered translation to give you dual subtitles on Netflix, YouTube, and Prime Video. Click any word for instant translation. Save vocabulary. All free, right in your browser.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

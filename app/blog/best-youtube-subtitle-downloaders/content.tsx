@@ -223,7 +223,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
       </section>
 
       {/* Main Content */}
-      <main className="max-w-3xl mx-auto px-4 pb-24 prose prose-invert prose-lg">
+      <main className="max-w-3xl mx-auto px-4 pb-24 prose prose-lg">
         <KeyTakeaways
           items={[
             "We compared 10 of the best YouTube subtitle downloaders in 2026 across free web tools, desktop apps, and command-line utilities.",
@@ -360,7 +360,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
             files to manage, no formatting headaches — just learn as you watch.
           </p>
           <a
-            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -466,7 +466,7 @@ export default function BestYoutubeSubtitleDownloadersContent() {
             word for an instant translation.
           </p>
           <a
-            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en"
+            href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en"
             target="_blank"
             rel="noopener noreferrer"
           >

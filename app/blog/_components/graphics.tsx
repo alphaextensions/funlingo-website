@@ -238,7 +238,7 @@ export function FeatureGrid({
       {items.map((it, i) => (
         <div
           key={i}
-          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:border-[#C81FD4]/40 transition-colors"
+          className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 hover:border-[#C81FD4]/40 transition-colors"
         >
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#C81FD4] to-[#9A1C8E] flex items-center justify-center mb-3 shadow-lg shadow-purple-500/20">
             <Sparkles className="w-4 h-4 text-white" />

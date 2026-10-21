@@ -26,7 +26,7 @@ export default function PhraseTranslatorContent() {
       </section>
 
       <main className="w-full max-w-3xl mx-auto px-6 pb-24">
-        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+        <div className="prose prose-lg max-w-none text-[var(--text-dim)]">
           <KeyTakeaways items={["Standard translators fail at idioms because they convert word by word, and a phrase's meaning has nothing to do with its individual words.", "LLMs like ChatGPT and Claude are the strongest phrase translators: they understand figurative meaning, explain cultural context, and give equivalent expressions.", "DeepL handles European idioms well for fast, accurate translation, while Reverso Context and Linguee show real bilingual examples from authentic texts.", "Learn the equivalent expression, not the literal translation, and study phrases in context for far better retention.", "Funlingo lets you encounter idioms naturally in shows with dual subtitles, so you see how professionals translated them in real conversation."]} />
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">You paste an idiom into <a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[#C81FD4] hover:underline">Google Translate</a> and get back something that makes zero sense. &quot;It&apos;s raining cats and dogs&quot; becomes a weather report about falling animals. &quot;Break a leg&quot; turns into a medical emergency. The problem is not the translator itself &mdash; it is that standard translation tools were built for literal, word-by-word conversion, not for understanding the meaning behind phrases, idioms, and cultural expressions. A dedicated phrase translator handles this differently. Instead of translating each word in isolation, it recognizes the phrase as a unit of meaning and provides the culturally equivalent expression in the target language. This guide compares the 8 best phrase translators of 2026 and shows you how to actually learn idioms in context rather than just looking them up.</p>
 
@@ -38,7 +38,7 @@ export default function PhraseTranslatorContent() {
 
           <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
             <div className="flex items-center gap-2 mb-4"><MessageSquare className="w-5 h-5 text-[#C81FD4]" /><span className="font-semibold text-[var(--text)]">Literal vs. Correct Phrase Translation</span></div>
-            <div className="overflow-x-auto">
+            <div className="thin-scroll overflow-x-auto">
               <table className="w-full text-sm text-[var(--text-dim)]">
                 <thead>
                   <tr className="border-b border-[var(--border)]">
@@ -303,7 +303,7 @@ export default function PhraseTranslatorContent() {
           <hr className="border-[var(--border)] my-12" />
 
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Comparison: Which Phrase Translator Should You Use?</h2>
-          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8 overflow-x-auto">
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8 thin-scroll overflow-x-auto">
             <table className="w-full text-sm text-[var(--text-dim)]">
               <thead>
                 <tr className="border-b border-[var(--border)]">
@@ -361,7 +361,7 @@ export default function PhraseTranslatorContent() {
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-2 font-semibold">Learn phrases the way native speakers use them.</p>
             <p className="text-[var(--text-dim)] mb-6">Funlingo shows dual subtitles on Netflix, YouTube, and Prime Video so you see idioms and expressions translated in real context. Click any word for instant definitions. Completely free.</p>
-            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
               <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">
                 Try Funlingo Free <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
