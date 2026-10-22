@@ -40,7 +40,7 @@ export default function AnySiteSection({ learn = "es" }: { learn?: string }) {
   const steps = [t("home.webS1"), t("home.webS2"), t("home.webS3")];
 
   return (
-    <section style={{ background: "var(--bg2)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
+    <section style={{ background: "var(--bg2)" }}>
       <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-[104px] grid grid-cols-1 min-[860px]:grid-cols-[.85fr_1.15fr] gap-10 min-[860px]:gap-[54px] items-center">
         <div>
           <div style={{ fontSize: 13, fontWeight: 900, letterSpacing: ".12em", textTransform: "uppercase", color: "var(--pink)", marginBottom: 14 }}>

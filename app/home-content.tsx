@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import FunlingoPlayer from "@/sections/home/FunlingoPlayer";
 import GuessGame from "@/sections/home/GuessGame";
 import AnySiteSection from "@/sections/home/AnySiteSection";
+import { Reveal, CountUp } from "@/sections/home/reveal";
 import { FlagSvg } from "@/sections/home/flags";
 import { PLATFORMS, PlatformLogo } from "@/sections/home/platformLogos";
 import { orderedReviews } from "@/sections/home/reviews";
@@ -193,7 +194,7 @@ export default function HomeContent() {
                 </div>
                 <div>
                   <div style={{ fontSize: 26, fontWeight: 900, lineHeight: 1.05, letterSpacing: "-.01em", background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
-                    {t("home.usersCount")}
+                    <CountUp value={t("home.usersCount")} />
                   </div>
                   <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-dim)", marginTop: 1 }}>{t("home.usersLabel")}</div>
                 </div>
@@ -204,7 +205,7 @@ export default function HomeContent() {
               <div className="fnl-proof-rating">
                 <div className="flex items-center" style={{ gap: 6 }}>
                   <span style={{ color: "#F5A623", fontSize: 15, letterSpacing: 1 }}>★★★★★</span>
-                  <span style={{ fontSize: 15, fontWeight: 800, color: "var(--text)" }}>4.8</span>
+                  <span style={{ fontSize: 15, fontWeight: 800, color: "var(--text)" }}><CountUp value="4.8" /></span>
                 </div>
                 <div style={{ fontSize: 13, fontWeight: 600, color: "var(--text-dim)", marginTop: 1 }}>{t("home.ratingStore")}</div>
               </div>
@@ -242,12 +243,14 @@ export default function HomeContent() {
       {/* ============ HOW IT WORKS + GAME ============ */}
       <section style={{ background: "var(--bg)" }}>
         <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-[104px]">
+          <Reveal>
           <div className="text-center mx-auto" style={{ maxWidth: 680, marginBottom: 58 }}>
             <div style={eyebrow}>{t("home.hiwEyebrow")}</div>
             <h2 style={{ fontSize: "clamp(38px,4.4vw,56px)", fontWeight: 800, margin: 0, color: "var(--text)", letterSpacing: "-.02em", lineHeight: 1.04 }}>
               {t("home.hiwH2a")}<br />{t("home.hiwH2b")}
             </h2>
           </div>
+          </Reveal>
           <div className="grid grid-cols-1 min-[860px]:grid-cols-3 gap-6" style={{ marginBottom: 56 }}>
             {steps.map((s) => (
               <div key={s.n} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 24, padding: "34px 30px" }}>
@@ -271,14 +274,16 @@ export default function HomeContent() {
             <AnySiteSection learn={learn} />
 
 {/* ============ COMPARISON ============ */}
-      <section id="compare" style={{ background: "var(--bg2)", borderTop: "1px solid var(--border)", scrollMarginTop: "90px" }}>
+      <section id="compare" style={{ background: "var(--bg2)", scrollMarginTop: "90px" }}>
         <div className="max-w-[1120px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-[104px]">
+          <Reveal>
           <div className="text-center" style={{ marginBottom: 56 }}>
             <div style={eyebrow}>{t("home.cmpEyebrow")}</div>
             <h2 style={{ fontSize: "clamp(38px,4.4vw,56px)", fontWeight: 800, margin: 0, color: "var(--text)", letterSpacing: "-.02em" }}>
               {t("home.cmpH2a")}<br />{t("home.cmpH2b")}
             </h2>
           </div>
+          </Reveal>
           <div className="overflow-x-auto">
             <div style={{ border: "1px solid var(--border)", borderRadius: 28, overflow: "hidden", background: "var(--surface)", minWidth: 560 }}>
               <div className="grid" style={{ gridTemplateColumns: "1.7fr 1fr 1fr 1fr" }}>
@@ -320,23 +325,25 @@ export default function HomeContent() {
       <section className="relative overflow-hidden" style={{ background: "var(--bg)" }}>
         <div className="max-w-[1120px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-[104px]">
           <div className="grid grid-cols-1 min-[860px]:grid-cols-2 gap-9 min-[860px]:gap-[54px] items-center">
+            <Reveal>
             <div>
               <div style={eyebrow}>{t("home.sciEyebrow")}</div>
-              <div style={{ fontSize: "clamp(80px,11vw,140px)", fontWeight: 900, lineHeight: 0.9, background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent", letterSpacing: "-.03em" }}>50%</div>
+              <div style={{ fontSize: "clamp(80px,11vw,140px)", fontWeight: 900, lineHeight: 0.9, background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent", letterSpacing: "-.03em" }}><CountUp value="50%" /></div>
               <p style={{ fontSize: 22, lineHeight: 1.45, color: "var(--text)", margin: "18px 0 0", fontWeight: 600, maxWidth: 420 }}>{t("home.sciCap")}</p>
               <p style={{ fontSize: 14, color: "var(--text-dim2)", margin: "14px 0 0", fontWeight: 600 }}>{t("home.sciSrc")}</p>
             </div>
+            </Reveal>
             <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 24, padding: "38px 36px" }}>
               <div style={{ fontSize: 14, fontWeight: 800, color: "var(--text-dim)", marginBottom: 26 }}>{t("home.chartCap")}</div>
               <div className="flex items-end gap-[30px]" style={{ height: 200 }}>
                 <div className="flex-1 flex flex-col items-center justify-end" style={{ height: "100%" }}>
-                  <div style={{ fontSize: 20, fontWeight: 800, color: "var(--text-dim)", marginBottom: 8 }}>~30%</div>
-                  <div style={{ width: "100%", height: "30%", borderRadius: "12px 12px 0 0", background: "var(--chip)" }} />
+                  <div style={{ fontSize: 20, fontWeight: 800, color: "var(--text-dim)", marginBottom: 8 }}><CountUp value="~30%" /></div>
+                  <div className="fnl-bar" style={{ width: "100%", height: "30%", borderRadius: "12px 12px 0 0", background: "var(--chip)" }} />
                   <div style={{ fontSize: 14, fontWeight: 700, color: "var(--text-dim)", marginTop: 12 }}>{t("home.chartFlash")}</div>
                 </div>
                 <div className="flex-1 flex flex-col items-center justify-end" style={{ height: "100%" }}>
-                  <div style={{ fontSize: 24, fontWeight: 900, color: "var(--pink)", marginBottom: 8 }}>~80%</div>
-                  <div style={{ width: "100%", height: "80%", borderRadius: "12px 12px 0 0", background: "var(--grad)" }} />
+                  <div style={{ fontSize: 24, fontWeight: 900, color: "var(--pink)", marginBottom: 8 }}><CountUp value="~80%" /></div>
+                  <div className="fnl-bar" style={{ width: "100%", height: "80%", borderRadius: "12px 12px 0 0", background: "var(--grad)" }} />
                   <div style={{ fontSize: 14, fontWeight: 800, color: "var(--text)", marginTop: 12 }}>{t("home.chartFun")}</div>
                 </div>
               </div>
@@ -346,17 +353,19 @@ export default function HomeContent() {
       </section>
 
       {/* ============ TESTIMONIALS ============ */}
-      <section className="overflow-hidden border-t border-b" style={{ background: "var(--bg2)", borderColor: "var(--border)", padding: "96px 0" }}>
+      <section className="overflow-hidden" style={{ background: "var(--bg2)", padding: "96px 0" }}>
+        <Reveal>
         <div className="text-center mx-auto px-5 sm:px-[34px]" style={{ maxWidth: 680, marginBottom: 50 }}>
           <div style={eyebrow}>{t("home.tstEyebrow")}</div>
           <h2 style={{ fontSize: "clamp(38px,4.4vw,56px)", fontWeight: 800, margin: 0, color: "var(--text)", letterSpacing: "-.02em" }}>{t("home.tstH2")}</h2>
         </div>
-        <div className="flex" style={{ width: "max-content", gap: 20, animation: "fnl-mq 46s linear infinite", marginBottom: 20 }}>
+        </Reveal>
+        <div className="flex fnl-mqrow" style={{ width: "max-content", gap: 20, animation: "fnl-mq 90s linear infinite", marginBottom: 20 }}>
           {loopA.map((rv, i) => (
             <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} stars={rv.stars} />
           ))}
         </div>
-        <div className="flex" style={{ width: "max-content", gap: 20, animation: "fnl-mq2 46s linear infinite" }}>
+        <div className="flex fnl-mqrow" style={{ width: "max-content", gap: 20, animation: "fnl-mq2 90s linear infinite" }}>
           {loopB.map((rv, i) => (
             <ReviewCard key={i} quote={rv.quote} name={rv.name} initials={rv.initials} stars={rv.stars} />
           ))}
@@ -366,10 +375,12 @@ export default function HomeContent() {
       {/* ============ FAQ ============ */}
       <section style={{ background: "var(--bg)" }}>
         <div className="max-w-[840px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-[104px]">
+          <Reveal>
           <div className="text-center" style={{ marginBottom: 50 }}>
             <div style={eyebrow}>{t("home.faqEyebrow")}</div>
             <h2 style={{ fontSize: "clamp(38px,4.4vw,56px)", fontWeight: 800, margin: 0, color: "var(--text)", letterSpacing: "-.02em" }}>{t("home.faqH2")}</h2>
           </div>
+          </Reveal>
           <div className="flex flex-col gap-[14px]">
             {faqs.map((f, i) => {
               const open = faqOpen === i;
