@@ -43,6 +43,28 @@ const eyebrow: React.CSSProperties = {
   marginBottom: 14,
 };
 
+function StepIcon({ kind }: { kind: "download" | "play" | "tap" }) {
+  const common = { width: 26, height: 26, viewBox: "0 0 24 24", fill: "none" as const };
+  if (kind === "download")
+    return (
+      <svg {...common} aria-hidden="true">
+        <path d="M12 3v11m0 0l-4-4m4 4l4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    );
+  if (kind === "play")
+    return (
+      <svg {...common} aria-hidden="true">
+        <path d="M8 5.5v13l11-6.5-11-6.5z" fill="currentColor" />
+      </svg>
+    );
+  return (
+    <svg {...common} aria-hidden="true">
+      <path d="M9 3.5v8.2l-1.9-1.9a1.6 1.6 0 10-2.2 2.3l4.6 5A4 4 0 0012 18.6h3.3a3.4 3.4 0 003.4-3.4V11a1.5 1.5 0 10-3 0 1.5 1.5 0 10-3 0 1.5 1.5 0 10-3 0V3.5a1.4 1.4 0 10-2.8 0z" fill="currentColor" />
+    </svg>
+  );
+}
+
 function MarkYes() {
   return (
     <span
@@ -252,9 +274,15 @@ export default function HomeContent() {
           </div>
           </Reveal>
           <div className="grid grid-cols-1 min-[860px]:grid-cols-3 gap-6" style={{ marginBottom: 56 }}>
-            {steps.map((s) => (
-              <div key={s.n} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 24, padding: "34px 30px" }}>
-                <div className="flex items-center justify-center" style={{ fontSize: 17, fontWeight: 900, color: "#fff", width: 42, height: 42, borderRadius: 13, background: "var(--grad)", marginBottom: 20 }}>{s.n}</div>
+            {steps.map((s, si) => (
+              <div key={s.n} className="fnl-step" style={{ position: "relative", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 24, padding: "34px 30px" }}>
+                {/* the ordinal moves to the corner; the tile carries an icon */}
+                <span style={{ position: "absolute", top: 18, right: 22, fontSize: 13, fontWeight: 900, color: "var(--text-dim2)", letterSpacing: ".04em" }}>
+                  {String(si + 1).padStart(2, "0")}
+                </span>
+                <div className="flex items-center justify-center" style={{ color: "#fff", width: 56, height: 56, borderRadius: 17, background: "var(--grad)", marginBottom: 20 }}>
+                  <StepIcon kind={si === 0 ? "download" : si === 1 ? "play" : "tap"} />
+                </div>
                 <h3 style={{ fontSize: 23, fontWeight: 700, margin: "0 0 9px", color: "var(--text)" }}>{s.title}</h3>
                 <p style={{ fontSize: 16, lineHeight: 1.55, color: "var(--text-dim)", margin: 0, fontWeight: 500 }}>{s.body}</p>
               </div>

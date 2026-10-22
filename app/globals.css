@@ -1030,3 +1030,12 @@ html {
   .fnl-bar { animation: none; }
   .fnl-mqrow > *:hover { transform: none; }
 }
+
+/* Step cards lift on hover, as the redesign specifies. */
+.fnl-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+.fnl-step:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--pink) 45%, transparent);
+  box-shadow: 0 22px 44px -24px rgba(236, 77, 176, .5);
+}
+@media (prefers-reduced-motion: reduce) { .fnl-step:hover { transform: none; } }
