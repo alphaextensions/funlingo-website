@@ -220,6 +220,9 @@ const NATIVE: Record<string, Native> = {
   nl: { code: "NL", s: ["Waarom geef je me een cadeau?", "Omdat vandaag speciaal is.", "Fijne verjaardag, mijn vriend!"], give: "geven", gift: "een cadeau", special: "speciaal", birthday: "verjaardag", friend: "vriend", verb: "werkwoord", noun: "zelfst. nw.", adj: "bijv. nw." },
   hu: { code: "HU", s: ["Miért adsz nekem ajándékot?", "Mert ma különleges nap van.", "Boldog születésnapot, barátom!"], give: "adni", gift: "ajándék", special: "különleges", birthday: "születésnap", friend: "barát", verb: "ige", noun: "főnév", adj: "melléknév" },
   bg: { code: "BG", s: ["Защо ми правиш подарък?", "Защото днес е специален.", "Честит рожден ден, приятелю!"], give: "давам", gift: "подарък", special: "специален", birthday: "рожден ден", friend: "приятел", verb: "глагол", noun: "същ.", adj: "прил." },
+  // Hindi: s[0], give, gift, verb, noun from the design; s[1], s[2], special,
+  // birthday, friend and adj authored to match its informal तुम register.
+  hi: { code: "HI", s: ["तुम मुझे तोहफ़ा क्यों दे रहे हो?", "क्योंकि आज का दिन ख़ास है।", "जन्मदिन मुबारक हो, मेरे दोस्त!"], give: "देना", gift: "एक तोहफ़ा", special: "ख़ास", birthday: "जन्मदिन", friend: "दोस्त", verb: "क्रिया", noun: "संज्ञा", adj: "विशेषण" },
 };
 
 // UI locale → native-dictionary bucket (mirrors the design's nbase()).
@@ -231,6 +234,19 @@ function nbase(code?: string): string {
   if (code.indexOf("en") === 0) return "en";
   const two = code.split("-")[0];
   return NATIVE[code] ? code : NATIVE[two] ? two : "en";
+}
+
+/** The language the translation line is written in.
+ *
+ *  Normally the visitor's own (UI) language. But when that is the very language
+ *  they picked to learn — Spanish site, "Spanish" chip — a translation into it
+ *  would just repeat the subtitle, so fall back to English, and to Spanish if
+ *  English is what they are learning. Deterministic on purpose: it runs during
+ *  server render, where the browser's language is not available. */
+function helperFor(native: string, learning: string): string {
+  const base = (c: string) => c.split("-")[0].toLowerCase();
+  if (base(native) !== base(learning)) return native;
+  return base(learning) === "en" ? "es" : "en";
 }
 
 function speak(text: string, bcp: string) {
@@ -290,11 +306,12 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
   const total = data.lines.length;
 
   // The viewer's native language — everything glossed in the player resolves here.
-  const N = NATIVE[nbase(locale)] || NATIVE.en;
+  const native = helperFor(nbase(locale), lang);
+  const N = NATIVE[native] || NATIVE.en;
   const meaningOf = (w: Word) => {
     if (!w.concept) return "";
     if (!scene) return (N as unknown as Record<string, string>)[w.concept] ?? "";
-    return glossFor(w.concept, nbase(locale));
+    return glossFor(w.concept, native);
   };
   const posOf = (w: Word) =>
     w.posKind === "verb" ? N.verb : w.posKind === "adj" ? N.adj : N.noun;
@@ -361,7 +378,7 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
   const tipDir = N.rtl ? "rtl" : "ltr";
   const current = data.lines[lineIndex];
   const curTranslation = scene
-    ? translationFor(scene, lineIndex, nbase(locale))
+    ? translationFor(scene, lineIndex, native)
     : N.s[lineIndex] || "";
   // Position along the bar: 3 evenly-spaced points (0 / 50 / 100% for 3 lines).
   const pos = total > 1 ? lineIndex / (total - 1) : 0;
