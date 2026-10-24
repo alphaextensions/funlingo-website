@@ -41,7 +41,7 @@ export function cardFromLogs(logs: ReviewLog[]): Card | null {
 
 /** When each rating would schedule the card next, for the labels under the buttons. */
 export function previewIntervals(logs: ReviewLog[], now: Date): Record<1 | 2 | 3 | 4, Date> {
-  const card = cardFromLogs(logs) ?? createEmptyCard(now);
+  const card: Card = cardFromLogs(logs) ?? createEmptyCard<Card>(now);
   const due = (g: 1 | 2 | 3 | 4) => scheduler.next(card, now, g as Grade).card.due;
   return { 1: due(1), 2: due(2), 3: due(3), 4: due(4) };
 }

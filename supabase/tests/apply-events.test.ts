@@ -193,6 +193,46 @@ describe("apply_events", () => {
     expect(rows[0].score).toBe(67);
   });
 
+  it("saves a reviewed word once and keeps every review", async () => {
+    const r = await sendAs(a, [
+      ev("word_reviewed", "hola", { rating: 3, term: "hola" }),
+      ev("word_reviewed", "hola", { rating: 1, term: "hola" }),
+    ]);
+    expect(r).toEqual({ applied: 2, duplicates: 0, rejected: [] });
+    const words = await pool.query("select id, lemma, term, source from saved_words where user_id = $1", [a]);
+    expect(words.rows).toHaveLength(1);
+    expect(words.rows[0]).toMatchObject({ lemma: "hola", term: "hola", source: "path" });
+    const logs = await pool.query("select rating from review_logs where user_id = $1 and word_id = $2 order by reviewed_at", [a, words.rows[0].id]);
+    expect(logs.rows.map((x) => x.rating)).toEqual([3, 1]);
+  });
+
+  it("does not repeat a review when the batch is re-sent", async () => {
+    const batch = [ev("word_reviewed", "hola", { rating: 4, term: "hola" })];
+    await sendAs(a, batch);
+    expect(await sendAs(a, batch)).toMatchObject({ applied: 0, duplicates: 1 });
+    const { rows } = await pool.query("select count(*)::int as n from review_logs where user_id = $1", [a]);
+    expect(rows[0].n).toBe(1);
+  });
+
+  it("rejects a review with a bad rating or no term", async () => {
+    const bad = [
+      ev("word_reviewed", "hola", { rating: 5, term: "hola" }),
+      ev("word_reviewed", "hola", { rating: 0, term: "hola" }),
+      ev("word_reviewed", "hola", { rating: 3 }),
+      ev("word_reviewed", "hola", { rating: 3, term: "x".repeat(201) }),
+    ];
+    const r = await sendAs(a, bad);
+    expect(r.rejected).toHaveLength(4);
+    const { rows } = await pool.query("select count(*)::int as n from saved_words where user_id = $1", [a]);
+    expect(rows[0].n).toBe(0);
+  });
+
+  it("keeps one user's reviews from another", async () => {
+    await sendAs(a, [ev("word_reviewed", "hola", { rating: 3, term: "hola" })]);
+    const rows = await asUser(pool, b, async (c) => (await c.query("select * from review_logs")).rows);
+    expect(rows).toHaveLength(0);
+  });
+
   it("marks a finale passed at 75 and failed at 74", async () => {
     const fail = ev("finale_done", "ep1", { score: 74, answers: [0, 1] });
     const pass = ev("finale_done", "ep1", { score: 75, answers: [0, 1] });

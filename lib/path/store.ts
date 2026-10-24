@@ -36,7 +36,9 @@ function read(storage: Storage | null, key: string): Saved | null {
     if (!isRecord(saved) || !isRecord(saved.state) || !Array.isArray(saved.outbox)) throw new Error("shape");
     const st = saved.state;
     if (st.v !== 1 || !isRecord(st.scenes) || !isRecord(st.finales) || !Array.isArray(st.seen)) throw new Error("shape");
-    return saved as Saved;
+    if (st.reviews !== undefined && !isRecord(st.reviews)) throw new Error("shape");
+    // Saved before the review deck existed: same version, no reviews yet.
+    return { state: { ...(st as PathState), reviews: (st.reviews as PathState["reviews"]) ?? {} }, outbox: saved.outbox as PathEvent[] };
   } catch {
     return { state: emptyState(), outbox: [] };
   }

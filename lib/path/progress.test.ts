@@ -82,6 +82,21 @@ describe("applyEvent", () => {
     expect(s.finales[finaleKey(C.id, EP1.id)]).toMatchObject({ passed: true, bestScore: 90 });
   });
 
+  it("appends a word review to that word's log, once per event", () => {
+    const r1 = ev("word_reviewed", "hola", { rating: 3, term: "hola" }, T0);
+    const r2 = ev("word_reviewed", "hola", { rating: 1, term: "hola" }, T1);
+    const s = run([r1, r2, r1]);
+    expect(s.reviews[`${C.id}/hola`]).toEqual([
+      { id: r1.id, rating: 3, at: T0.toISOString() },
+      { id: r2.id, rating: 1, at: T1.toISOString() },
+    ]);
+  });
+
+  it("ignores a review with a rating outside 1-4", () => {
+    const s = run([ev("word_reviewed", "hola", { rating: 5, term: "hola" }), ev("word_reviewed", "hola", { term: "hola" })]);
+    expect(s.reviews).toEqual({});
+  });
+
   it("treats take_done as log-only", () => {
     const s = run([ev("take_done", `${S0}:0`, { kind: "guess" })]);
     expect(s.scenes).toEqual({});

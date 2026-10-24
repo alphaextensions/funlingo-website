@@ -47,6 +47,13 @@ describe("createStore", () => {
     }
   });
 
+  it("loads progress saved before reviews existed, with an empty review log", () => {
+    const old = { v: 1, scenes: { [sceneKey("en-es", "s1")]: { status: "done", bestScore: 80, attempts: 1, firstDoneAt: null } }, finales: {}, seen: [] };
+    const store = createStore(memoryStorage({ [KEY]: JSON.stringify({ state: old, outbox: [] }) }));
+    expect(store.getState().scenes[sceneKey("en-es", "s1")]).toMatchObject({ status: "done" });
+    expect(store.getState().reviews).toEqual({});
+  });
+
   it("keeps both tabs' progress when two tabs write in turn", () => {
     const storage = memoryStorage();
     const tabA = createStore(storage);

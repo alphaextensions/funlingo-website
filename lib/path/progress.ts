@@ -93,6 +93,14 @@ export function applyEvent(state: PathState, ev: PathEvent): PathState {
     };
   }
 
+  if (ev.kind === "word_reviewed") {
+    const rating = ev.payload.rating;
+    if (rating !== 1 && rating !== 2 && rating !== 3 && rating !== 4) return state;
+    const key = `${ev.course_id}/${ev.ref}`;
+    const log: ReviewLog = { id: ev.id, rating, at: ev.client_ts };
+    return { ...state, seen, reviews: { ...state.reviews, [key]: [...(state.reviews[key] ?? []), log] } };
+  }
+
   return { ...state, seen }; // take_done: logged only
 }
 

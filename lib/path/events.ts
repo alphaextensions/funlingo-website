@@ -1,7 +1,7 @@
 // Client-side progress events. The shape matches what supabase apply_events() accepts,
 // so the Phase 2 sync worker can upload the outbox as-is.
 
-export type PathEventKind = "scene_started" | "take_done" | "scene_done" | "finale_done";
+export type PathEventKind = "scene_started" | "take_done" | "scene_done" | "finale_done" | "word_reviewed";
 
 export type PathEvent = {
   id: string;
