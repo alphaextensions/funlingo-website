@@ -6,6 +6,7 @@ import { FINALE_PASS_PCT } from "@/lib/path/constants";
 import { findEpisode } from "@/lib/path/course";
 import { episodeProgress, finaleKey, sceneStatus } from "@/lib/path/progress";
 import type { Course } from "@/lib/path/schema";
+import { ThemeArt } from "./art/ThemeArt";
 import { LearnShell, PrimaryLink, ProgressRing } from "./ui";
 import { usePath } from "./usePath";
 
@@ -25,6 +26,8 @@ export default function EpisodePath({ course, episodeId }: { course: Course; epi
       <Link href={`/learn/${course.id}`} className="text-[14px] font-medium" style={{ color: "var(--text-dim)" }}>
         All episodes
       </Link>
+
+      <ThemeArt theme={episode.theme} rounded={28} aspect={4} className="mt-6 w-full h-[150px] min-[560px]:h-[220px]" />
 
       <header className="mt-6 flex items-start justify-between gap-6">
         <div>

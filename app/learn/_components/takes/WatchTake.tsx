@@ -3,6 +3,7 @@
 import * as React from "react";
 import { speak } from "@/app/_components/speak";
 import type { Scene } from "@/lib/path/schema";
+import { Avatar } from "../art/Avatar";
 import { PrimaryButton, SecondaryButton } from "../ui";
 import { PATH_AUDIO_DIR, SpeakButton, TakeHeading, type TakeProps } from "./shared";
 
@@ -36,8 +37,8 @@ export function WatchTake({ scene, bcp, onDone }: TakeProps & { scene: Scene; bc
             className="flex items-start gap-3 rounded-[18px] border p-4"
             style={{ background: "var(--surface)", borderColor: i === shown - 1 ? "rgba(236,77,176,.45)" : "var(--border)" }}
           >
-            <SpeakButton text={line.target} bcp={bcp} label={`Play: ${line.target}`} size={36} />
-            <div className="min-w-0">
+            {line.speaker && <Avatar name={line.speaker} size={40} />}
+            <div className="min-w-0 flex-1">
               {line.speaker && (
                 <p className="text-[12px] font-semibold" style={{ color: "var(--text-dim)" }}>
                   {line.speaker}
@@ -50,6 +51,7 @@ export function WatchTake({ scene, bcp, onDone }: TakeProps & { scene: Scene; bc
                 </p>
               )}
             </div>
+            <SpeakButton text={line.target} bcp={bcp} label={`Play: ${line.target}`} size={36} />
           </li>
         ))}
       </ol>

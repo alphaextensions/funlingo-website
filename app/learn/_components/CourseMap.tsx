@@ -7,6 +7,7 @@ import { langName } from "@/lib/path/langs";
 import { episodeProgress, nextUp } from "@/lib/path/progress";
 import { deckStats, untilLabel } from "@/lib/path/review";
 import type { Course } from "@/lib/path/schema";
+import { ThemeArt } from "./art/ThemeArt";
 import { LearnShell, PrimaryLink, ProgressBar, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
 
@@ -111,20 +112,26 @@ export default function CourseMap({ course }: { course: Course }) {
               return (
                 <li
                   key={episode.id}
-                  className="grid grid-cols-[64px_1fr] min-[560px]:grid-cols-[96px_1fr_auto] gap-x-5 gap-y-4 items-center rounded-[24px] border p-5 min-[560px]:p-6"
+                  className="grid grid-cols-[64px_1fr] min-[760px]:grid-cols-[84px_176px_1fr_auto] gap-x-5 gap-y-4 items-center rounded-[24px] border p-4 min-[560px]:p-6"
                   style={{
                     background: "var(--surface)",
                     borderColor: isNext ? "rgba(236,77,176,.55)" : "var(--border)",
                   }}
                 >
+                  <ThemeArt
+                    theme={episode.theme}
+                    rounded={16}
+                    aspect={2.5}
+                    className="col-span-2 w-full h-[136px] min-[760px]:order-2 min-[760px]:col-span-1 min-[760px]:h-[99px]"
+                  />
                   <span
                     aria-hidden
-                    className="text-[56px] min-[560px]:text-[80px] font-extrabold leading-none tracking-[-0.04em] text-center"
+                    className="text-[56px] min-[560px]:text-[72px] font-extrabold leading-none tracking-[-0.04em] text-center min-[760px]:order-1"
                     style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}
                   >
                     {episodeNumber}
                   </span>
-                  <div className="min-w-0">
+                  <div className="min-w-0 min-[760px]:order-3">
                     <p className="text-[13px] font-medium" style={{ color: "var(--text-dim)" }}>
                       Episode {episodeNumber}, {episode.scenes.length} scenes and a finale
                     </p>
@@ -138,7 +145,7 @@ export default function CourseMap({ course }: { course: Course }) {
                       </span>
                     </div>
                   </div>
-                  <div className="col-span-2 min-[560px]:col-span-1">
+                  <div className="col-span-2 min-[760px]:col-span-1 min-[760px]:order-4">
                     <PrimaryLink href={`/learn/${course.id}/${episode.id}`}>{label}</PrimaryLink>
                   </div>
                 </li>

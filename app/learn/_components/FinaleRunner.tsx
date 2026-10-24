@@ -8,6 +8,7 @@ import { findEpisode } from "@/lib/path/course";
 import { makeEvent } from "@/lib/path/events";
 import { testOutEvents } from "@/lib/path/progress";
 import type { Course } from "@/lib/path/schema";
+import { ThemeArt } from "./art/ThemeArt";
 import { RunnerFrame } from "./RunnerFrame";
 import { PrimaryButton, PrimaryLink, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
@@ -59,6 +60,7 @@ export default function FinaleRunner({ course, episodeId }: { course: Course; ep
   if (result) {
     return (
       <RunnerFrame exitHref={base} steps={questions.length} current={questions.length}>
+        {result.passed && <ThemeArt theme={episode.theme} rounded={24} aspect={3.4} className="mb-6 w-full h-[150px] min-[560px]:h-[190px]" />}
         <h1 className="text-[30px] font-bold leading-[1.15]">{result.passed ? "Passed. Episode complete." : "Almost there."}</h1>
         <p className="mt-2 text-[17px]" style={{ color: "var(--text-dim)" }}>
           {result.passed

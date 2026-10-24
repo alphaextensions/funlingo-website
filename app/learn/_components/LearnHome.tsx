@@ -5,6 +5,7 @@ import { langName } from "@/lib/path/langs";
 import { episodeProgress, nextUp } from "@/lib/path/progress";
 import { deckStats } from "@/lib/path/review";
 import type { Course } from "@/lib/path/schema";
+import { ThemeArt } from "./art/ThemeArt";
 import { LearnShell, PrimaryLink, ProgressBar, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
 
@@ -45,6 +46,11 @@ export default function LearnHome({ courses }: { courses: Course[] }) {
               <p className="mt-2 text-[15px]" style={{ color: "var(--text-dim)" }}>
                 For {langName(course.native)} speakers. {course.seasons.length === 1 ? "1 season" : `${course.seasons.length} seasons`}, {episodes.length} episodes, {scenes} scenes.
               </p>
+              <div className="mt-5 grid grid-cols-4 gap-2">
+                {episodes.slice(0, 4).map((e) => (
+                  <ThemeArt key={e.id} theme={e.theme} rounded={12} className="w-full aspect-[16/9]" />
+                ))}
+              </div>
               <div className="mt-6 flex flex-col min-[560px]:flex-row min-[560px]:items-center gap-5">
                 <div className="flex-1">
                   <ProgressBar pct={pct} />
