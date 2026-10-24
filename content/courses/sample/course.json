@@ -1,0 +1,76 @@
+{
+  "_note": "fixture, not real course content",
+  "id": "en-es",
+  "native": "en",
+  "target": "es",
+  "version": 1,
+  "words": {
+    "hola": { "term": "hola", "gloss": "hello" },
+    "buenos-dias": { "term": "buenos días", "gloss": "good morning" },
+    "gracias": { "term": "gracias", "gloss": "thank you" },
+    "por-favor": { "term": "por favor", "gloss": "please" },
+    "un-cafe": { "term": "un café", "gloss": "a coffee" },
+    "adios": { "term": "adiós", "gloss": "goodbye" }
+  },
+  "seasons": [
+    {
+      "id": "s1",
+      "cefr": "A1",
+      "title": "Season 1: First words",
+      "canDo": ["Greet someone and say goodbye", "Order a coffee politely"],
+      "episodes": [
+        {
+          "id": "greetings",
+          "theme": "greetings",
+          "title": "Hello, café",
+          "scenes": [
+            {
+              "id": "greetings-hello",
+              "title": "Saying hello",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Ana", "target": "¡Hola! Buenos días.", "native": "Hi! Good morning." },
+                  { "speaker": "Leo", "target": "¡Hola, Ana!", "native": "Hi, Ana!" }
+                ]
+              },
+              "words": ["hola", "buenos-dias", "adios"],
+              "takes": [
+                { "kind": "watch" },
+                { "kind": "wordlab", "items": ["hola", "buenos-dias", "adios"] },
+                { "kind": "guess" }
+              ]
+            },
+            {
+              "id": "greetings-cafe",
+              "title": "At the café",
+              "coldOpen": {
+                "kind": "clip",
+                "clip": {
+                  "src": "clips/sample/greetings-cafe.mp4",
+                  "durationSec": 12,
+                  "difficulty": 10,
+                  "cues": [
+                    { "t": 0.5, "target": "Un café, por favor.", "native": "A coffee, please." },
+                    { "t": 4, "target": "¡Gracias!", "native": "Thank you!" },
+                    { "t": 9, "target": "¡Adiós!", "native": "Goodbye!" }
+                  ]
+                }
+              },
+              "words": ["un-cafe", "por-favor", "gracias"],
+              "pattern": { "title": "Asking politely", "tip": "Add \"por favor\" to the end of any request." },
+              "takes": [{ "kind": "watch" }, { "kind": "pattern" }, { "kind": "shadow" }, { "kind": "listen" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "How do you say \"thank you\"?", "options": ["hola", "gracias", "adiós"], "answer": 1 },
+              { "prompt": "What did Ana order?", "options": ["a coffee", "a tea"], "answer": 0 }
+            ],
+            "passPct": 75
+          }
+        }
+      ]
+    }
+  ]
+}
