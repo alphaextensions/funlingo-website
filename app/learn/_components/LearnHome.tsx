@@ -3,6 +3,7 @@
 import { FlagSvg } from "@/sections/home/flags";
 import { langName } from "@/lib/path/langs";
 import { episodeProgress, nextUp } from "@/lib/path/progress";
+import { deckStats } from "@/lib/path/review";
 import type { Course } from "@/lib/path/schema";
 import { LearnShell, PrimaryLink, ProgressBar, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
@@ -30,6 +31,7 @@ export default function LearnHome({ courses }: { courses: Course[] }) {
           const pct = Math.round((done / scenes) * 100);
           const next = nextUp(course, state);
           const nextEpisode = next ? episodes.findIndex((e) => e.id === next.episodeId) + 1 : null;
+          const due = hydrated ? deckStats(course, state, new Date()).due : 0;
           return (
             <article
               key={course.id}
@@ -56,6 +58,11 @@ export default function LearnHome({ courses }: { courses: Course[] }) {
                   </PrimaryLink>
                   {hydrated && done === 0 && (
                     <SecondaryLink href={`/learn/${course.id}/placement`}>Find my starting point</SecondaryLink>
+                  )}
+                  {due > 0 && (
+                    <SecondaryLink href={`/learn/${course.id}/review`}>
+                      Review {due} {due === 1 ? "word" : "words"}
+                    </SecondaryLink>
                   )}
                 </div>
               </div>

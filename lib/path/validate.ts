@@ -1,8 +1,8 @@
 import { type Course, CourseSchema } from "./schema";
 
 // Static route segments that a content id would collide with:
-// app/learn/[course]/placement and app/learn/[course]/[episode]/finale.
-const RESERVED_EPISODE_IDS = new Set(["placement"]);
+// app/learn/[course]/{placement,review} and app/learn/[course]/[episode]/finale.
+const RESERVED_EPISODE_IDS = new Set(["placement", "review"]);
 const RESERVED_SCENE_IDS = new Set(["finale"]);
 
 export type ValidationResult = { ok: true; course: Course } | { ok: false; errors: string[] };

@@ -76,3 +76,13 @@ export function deckStats(course: Course, state: PathState, now: Date) {
     nextDue: future.length ? new Date(Math.min(...future)) : null,
   };
 }
+
+/** "in 10 min", "in 5 h", "in 3 days", "tomorrow". */
+export function untilLabel(when: Date, now: Date): string {
+  const min = Math.max(1, Math.round((when.getTime() - now.getTime()) / 60_000));
+  if (min < 60) return `in ${min} min`;
+  const hours = Math.round(min / 60);
+  if (hours < 24) return `in ${hours} h`;
+  const days = Math.round(hours / 24);
+  return days === 1 ? "tomorrow" : `in ${days} days`;
+}

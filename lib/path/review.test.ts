@@ -12,6 +12,7 @@ import {
   previewIntervals,
   type ReviewLog,
   SESSION_MAX,
+  untilLabel,
 } from "./review";
 import type { Course } from "./schema";
 import { validateCourse } from "./validate";
@@ -123,5 +124,16 @@ describe("sessions and stats", () => {
     expect(stats.due).toBe(1 + stats.newCount);
     expect(stats.nextDue!.getTime()).toBe(cardFromLogs(s.reviews[`${C.id}/${w0}`])!.due.getTime());
     expect(stats.nextDue!.getTime()).toBeLessThan(later.getTime() + 30 * DAY);
+  });
+});
+
+describe("untilLabel", () => {
+  const at = (ms: number) => new Date(T0.getTime() + ms);
+  it("reads like a person would say it", () => {
+    expect(untilLabel(at(10 * 60_000), T0)).toBe("in 10 min");
+    expect(untilLabel(at(0), T0)).toBe("in 1 min");
+    expect(untilLabel(at(5 * 3_600_000), T0)).toBe("in 5 h");
+    expect(untilLabel(at(DAY), T0)).toBe("tomorrow");
+    expect(untilLabel(at(3 * DAY), T0)).toBe("in 3 days");
   });
 });

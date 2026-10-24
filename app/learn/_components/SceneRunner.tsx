@@ -93,7 +93,8 @@ export default function SceneRunner({ course, episodeId, sceneId }: { course: Co
       <RunnerFrame exitHref={base} steps={scene.takes.length} current={scene.takes.length}>
         <h1 className="text-[30px] font-bold leading-[1.15]">Scene complete</h1>
         <p className="mt-2 text-[17px]" style={{ color: "var(--text-dim)" }}>
-          {scored ? `You got ${finalScore}% of the questions right in “${scene.title}”.` : `You finished “${scene.title}”.`}
+          {scored ? `You got ${finalScore}% of the questions right in “${scene.title}”.` : `You finished “${scene.title}”.`}{" "}
+          Its {scene.words.length} words are now in your review deck.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           {nextScene ? (
@@ -102,6 +103,7 @@ export default function SceneRunner({ course, episodeId, sceneId }: { course: Co
             <PrimaryLink href={`${base}/finale`}>Take the finale</PrimaryLink>
           )}
           <SecondaryLink href={base}>Back to the episode</SecondaryLink>
+          <SecondaryLink href={`/learn/${course.id}/review`}>Review words</SecondaryLink>
         </div>
       </RunnerFrame>
     );
