@@ -64,7 +64,70 @@
     "me-la-llevo": { "term": "me la llevo", "gloss": "I'll take it" },
     "efectivo-o-tarjeta": { "term": "¿efectivo o tarjeta?", "gloss": "cash or card?" },
     "en-efectivo": { "term": "en efectivo", "gloss": "in cash" },
-    "recibo": { "term": "el recibo", "gloss": "the receipt" }
+    "recibo": { "term": "el recibo", "gloss": "the receipt" },
+    "tienes-hermanos": { "term": "¿tienes hermanos?", "gloss": "do you have siblings?" },
+    "tengo": { "term": "tengo…", "gloss": "I have…" },
+    "hermano": { "term": "un hermano", "gloss": "a brother" },
+    "hermana": { "term": "una hermana", "gloss": "a sister" },
+    "mayor": { "term": "mayor", "gloss": "older" },
+    "menor": { "term": "menor", "gloss": "younger" },
+    "quien-es": { "term": "¿quién es…?", "gloss": "who is…?" },
+    "mi-mama": { "term": "mi mamá", "gloss": "my mom" },
+    "mi-papa": { "term": "mi papá", "gloss": "my dad" },
+    "los-ninos": { "term": "los niños", "gloss": "the children" },
+    "sobrinos": { "term": "mis sobrinos", "gloss": "my nephew and niece" },
+    "bienvenido": { "term": "¡bienvenido!", "gloss": "welcome!" },
+    "pasa": { "term": "pasa", "gloss": "come in" },
+    "que-bonita": { "term": "¡qué bonita!", "gloss": "how lovely!" },
+    "la-cocina": { "term": "la cocina", "gloss": "the kitchen" },
+    "vives-aqui": { "term": "¿vives aquí?", "gloss": "do you live here?" },
+    "mis-papas": { "term": "mis papás", "gloss": "my parents" },
+    "a-que-te-dedicas": { "term": "¿a qué te dedicas?", "gloss": "what do you do for work?" },
+    "profesor": { "term": "profesor", "gloss": "teacher" },
+    "trabajo-en": { "term": "trabajo en…", "gloss": "I work at…" },
+    "enfermera": { "term": "enfermera", "gloss": "nurse" },
+    "que-interesante": { "term": "¡qué interesante!", "gloss": "how interesting!" },
+    "estudias-o-trabajas": { "term": "¿estudias o trabajas?", "gloss": "do you study or work?" },
+    "la-universidad": { "term": "la universidad", "gloss": "the university" },
+    "que-estudias": { "term": "¿qué estudias?", "gloss": "what are you studying?" },
+    "dificil": { "term": "difícil", "gloss": "difficult" },
+    "me-gusta": { "term": "me gusta", "gloss": "I like it" },
+    "llego-tarde": { "term": "llego tarde", "gloss": "I'm late" },
+    "no-pasa-nada": { "term": "no pasa nada", "gloss": "no problem" },
+    "la-reunion": { "term": "la reunión", "gloss": "the meeting" },
+    "a-las-diez": { "term": "a las diez", "gloss": "at ten o'clock" },
+    "segundo-piso": { "term": "el segundo piso", "gloss": "the second floor" },
+    "que-hora-es": { "term": "¿qué hora es?", "gloss": "what time is it?" },
+    "son-las": { "term": "son las…", "gloss": "it's … o'clock" },
+    "y-media": { "term": "y media", "gloss": "half past" },
+    "es-tarde": { "term": "es tarde", "gloss": "it's late" },
+    "estas-libre": { "term": "¿estás libre?", "gloss": "are you free?" },
+    "el-sabado": { "term": "el sábado", "gloss": "on Saturday" },
+    "el-domingo": { "term": "el domingo", "gloss": "on Sunday" },
+    "perfecto": { "term": "perfecto", "gloss": "perfect" },
+    "nos-vemos": { "term": "nos vemos", "gloss": "see you" },
+    "quieres-ir": { "term": "¿quieres ir…?", "gloss": "do you want to go…?" },
+    "al-cine": { "term": "al cine", "gloss": "to the movies" },
+    "me-encanta": { "term": "me encanta", "gloss": "I love it" },
+    "a-que-hora": { "term": "¿a qué hora?", "gloss": "at what time?" },
+    "de-acuerdo": { "term": "de acuerdo", "gloss": "agreed" },
+    "estas-bien": { "term": "¿estás bien?", "gloss": "are you OK?" },
+    "me-duele": { "term": "me duele…", "gloss": "my … hurts" },
+    "la-cabeza": { "term": "la cabeza", "gloss": "the head" },
+    "fiebre": { "term": "fiebre", "gloss": "a fever" },
+    "cansado": { "term": "cansado", "gloss": "tired" },
+    "buenas-tardes": { "term": "buenas tardes", "gloss": "good afternoon" },
+    "tiene-algo-para": { "term": "¿tiene algo para…?", "gloss": "do you have something for…?" },
+    "medicamento": { "term": "el medicamento", "gloss": "the medicine" },
+    "una-pastilla": { "term": "una pastilla", "gloss": "a pill" },
+    "cada-ocho-horas": { "term": "cada ocho horas", "gloss": "every eight hours" },
+    "con-comida": { "term": "con comida", "gloss": "with food" },
+    "ayuda": { "term": "¡ayuda!", "gloss": "help!" },
+    "que-pasa": { "term": "¿qué pasa?", "gloss": "what's going on?" },
+    "perdi": { "term": "perdí…", "gloss": "I lost…" },
+    "pasaporte": { "term": "mi pasaporte", "gloss": "my passport" },
+    "tranquila": { "term": "tranquila", "gloss": "stay calm" },
+    "la-policia": { "term": "la policía", "gloss": "the police" }
   },
   "seasons": [
     {
@@ -75,7 +138,11 @@
         "Greet people and introduce yourself",
         "Order at a café and pay",
         "Ask for and follow simple directions",
-        "Shop for clothes and check out"
+        "Shop for clothes and check out",
+        "Talk about your family and home",
+        "Say what you do for work or study",
+        "Tell the time and make plans",
+        "Say what hurts and ask for help"
       ],
       "episodes": [
         {
@@ -338,6 +405,268 @@
               { "prompt": "Where is the fitting room?", "options": ["At the back", "At the entrance", "Upstairs"], "answer": 0 },
               { "prompt": "How do you say “I'll take it”?", "options": ["Me llamo.", "Me la llevo.", "Muy bien."], "answer": 1 },
               { "prompt": "Which is natural Spanish for “a blue T-shirt”?", "options": ["una azul camiseta", "azul una camiseta", "una camiseta azul"], "answer": 2 }
+            ]
+          }
+        },
+        {
+          "id": "familia",
+          "theme": "family",
+          "title": "Mi familia: Family and home",
+          "scenes": [
+            {
+              "id": "familia-hermanos",
+              "title": "Brothers and sisters",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Diego", "target": "¿Tienes hermanos?", "native": "Do you have any brothers or sisters?" },
+                  { "speaker": "Sofía", "target": "Sí, tengo un hermano y una hermana.", "native": "Yes, I have a brother and a sister." },
+                  { "speaker": "Diego", "target": "¿Son mayores o menores?", "native": "Are they older or younger?" },
+                  { "speaker": "Sofía", "target": "Mi hermano es mayor. Mi hermana es menor.", "native": "My brother is older. My sister is younger." }
+                ]
+              },
+              "words": ["tienes-hermanos", "tengo", "hermano", "hermana", "mayor", "menor"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "familia-fotos",
+              "title": "Family photos",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Ana", "target": "¿Quién es ella?", "native": "Who is she?" },
+                  { "speaker": "Leo", "target": "Es mi mamá. Y él es mi papá.", "native": "That's my mom. And he's my dad." },
+                  { "speaker": "Ana", "target": "¿Y los niños?", "native": "And the kids?" },
+                  { "speaker": "Leo", "target": "Son mis sobrinos, Mateo y Lucía.", "native": "They're my nephew and niece, Mateo and Lucía." }
+                ]
+              },
+              "words": ["quien-es", "mi-mama", "mi-papa", "los-ninos", "sobrinos"],
+              "pattern": {
+                "title": "“Mi” for one, “mis” for more",
+                "tip": "Use “mi” for one thing and “mis” for more than one: mi hermano (my brother), mis hermanos (my brothers, or my siblings)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "familia-casa",
+              "title": "Welcome home",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Sofía", "target": "¡Bienvenido! Pasa, pasa.", "native": "Welcome! Come in, come in." },
+                  { "speaker": "Diego", "target": "Gracias. ¡Qué bonita tu casa!", "native": "Thanks. What a lovely home!" },
+                  { "speaker": "Sofía", "target": "Gracias. La cocina está aquí y el baño está allí.", "native": "Thanks. The kitchen is here and the bathroom is over there." },
+                  { "speaker": "Diego", "target": "¿Vives aquí con tu familia?", "native": "Do you live here with your family?" },
+                  { "speaker": "Sofía", "target": "Sí, con mis papás.", "native": "Yes, with my parents." }
+                ]
+              },
+              "words": ["bienvenido", "pasa", "que-bonita", "la-cocina", "vives-aqui", "mis-papas"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "“Tengo una hermana” means…", "options": ["I am a sister", "I have a sister", "I want a sister"], "answer": 1 },
+              { "prompt": "Sofía's brother is…", "options": ["younger than her", "older than her", "her twin"], "answer": 1 },
+              { "prompt": "How do you ask “who is she?”", "options": ["¿Quién es ella?", "¿Cómo estás?", "¿Dónde está?"], "answer": 0 },
+              { "prompt": "Which one means “my nephews and nieces”?", "options": ["mi sobrino", "mi papá", "mis sobrinos"], "answer": 2 },
+              { "prompt": "Who does Sofía live with?", "options": ["Her parents", "Her sister", "On her own"], "answer": 0 }
+            ]
+          }
+        },
+        {
+          "id": "trabajo",
+          "theme": "work",
+          "title": "Trabajo y estudios: Work and study",
+          "scenes": [
+            {
+              "id": "trabajo-dedicas",
+              "title": "What do you do?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Ana", "target": "¿A qué te dedicas?", "native": "What do you do?" },
+                  { "speaker": "Leo", "target": "Soy profesor. ¿Y tú?", "native": "I'm a teacher. And you?" },
+                  { "speaker": "Ana", "target": "Trabajo en un hospital. Soy enfermera.", "native": "I work at a hospital. I'm a nurse." },
+                  { "speaker": "Leo", "target": "¡Qué interesante!", "native": "How interesting!" }
+                ]
+              },
+              "words": ["a-que-te-dedicas", "profesor", "trabajo-en", "enfermera", "que-interesante"],
+              "pattern": {
+                "title": "No “a” before a job",
+                "tip": "Spanish leaves out the article when you say what someone does: Soy profesor (I'm a teacher), Es enfermera (she's a nurse)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "trabajo-estudios",
+              "title": "At university",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Diego", "target": "¿Estudias o trabajas?", "native": "Do you study or work?" },
+                  { "speaker": "Sofía", "target": "Estudio en la universidad.", "native": "I study at the university." },
+                  { "speaker": "Diego", "target": "¿Qué estudias?", "native": "What are you studying?" },
+                  { "speaker": "Sofía", "target": "Estudio medicina. Es difícil, pero me gusta.", "native": "I'm studying medicine. It's hard, but I like it." }
+                ]
+              },
+              "words": ["estudias-o-trabajas", "la-universidad", "que-estudias", "dificil", "me-gusta"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "trabajo-reunion",
+              "title": "Running late",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Leo", "target": "Perdón, llego tarde.", "native": "Sorry, I'm late." },
+                  { "speaker": "Jefa", "target": "No pasa nada. La reunión empieza a las diez.", "native": "No problem. The meeting starts at ten." },
+                  { "speaker": "Leo", "target": "¿En qué sala?", "native": "Which room?" },
+                  { "speaker": "Jefa", "target": "En la sala dos, en el segundo piso.", "native": "Room two, on the second floor." }
+                ]
+              },
+              "words": ["llego-tarde", "no-pasa-nada", "la-reunion", "a-las-diez", "segundo-piso"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "How do you ask someone what they do for work?", "options": ["¿Qué estudias?", "¿A qué te dedicas?", "¿Cuánto cuesta?"], "answer": 1 },
+              { "prompt": "What is Ana's job?", "options": ["Teacher", "Nurse", "Student"], "answer": 1 },
+              { "prompt": "“Me gusta” means…", "options": ["I like it", "I need it", "I have it"], "answer": 0 },
+              { "prompt": "When does the meeting start?", "options": ["At two", "At twelve", "At ten"], "answer": 2 },
+              { "prompt": "Which is the natural way to say “I'm a teacher”?", "options": ["Soy profesor.", "Estoy profesor.", "Tengo profesor."], "answer": 0 }
+            ]
+          }
+        },
+        {
+          "id": "planes",
+          "theme": "time",
+          "title": "¿Qué hora es? Time and plans",
+          "scenes": [
+            {
+              "id": "planes-hora",
+              "title": "What time is it?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Ana", "target": "Disculpa, ¿qué hora es?", "native": "Excuse me, what time is it?" },
+                  { "speaker": "Señora", "target": "Son las tres y media.", "native": "It's half past three." },
+                  { "speaker": "Ana", "target": "¡Uy, es tarde! Gracias.", "native": "Oh, it's late! Thanks." },
+                  { "speaker": "Señora", "target": "De nada.", "native": "You're welcome." }
+                ]
+              },
+              "words": ["que-hora-es", "son-las", "y-media", "es-tarde"],
+              "pattern": {
+                "title": "Telling the time",
+                "tip": "Say “Es la una” for one o'clock and “Son las…” for every other hour: son las dos, son las tres y media (3:30)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "planes-dias",
+              "title": "Are you free?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Diego", "target": "¿Estás libre el sábado?", "native": "Are you free on Saturday?" },
+                  { "speaker": "Sofía", "target": "El sábado no, trabajo. ¿El domingo?", "native": "Not Saturday, I'm working. Sunday?" },
+                  { "speaker": "Diego", "target": "Perfecto, el domingo.", "native": "Perfect, Sunday." },
+                  { "speaker": "Sofía", "target": "¡Nos vemos el domingo!", "native": "See you on Sunday!" }
+                ]
+              },
+              "words": ["estas-libre", "el-sabado", "el-domingo", "perfecto", "nos-vemos"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "planes-cine",
+              "title": "Movie night",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Diego", "target": "¿Quieres ir al cine?", "native": "Do you want to go to the movies?" },
+                  { "speaker": "Sofía", "target": "¡Sí, me encanta! ¿A qué hora?", "native": "Yes, I'd love to! What time?" },
+                  { "speaker": "Diego", "target": "A las siete, en el centro.", "native": "At seven, downtown." },
+                  { "speaker": "Sofía", "target": "Mejor a las ocho.", "native": "Eight is better." },
+                  { "speaker": "Diego", "target": "De acuerdo, a las ocho.", "native": "OK, eight it is." }
+                ]
+              },
+              "words": ["quieres-ir", "al-cine", "me-encanta", "a-que-hora", "de-acuerdo"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "How do you ask what time it is?", "options": ["¿A qué hora?", "¿Qué hora es?", "¿Cuánto cuesta?"], "answer": 1 },
+              { "prompt": "“Son las tres y media” means it's…", "options": ["3:30", "3:15", "2:30"], "answer": 0 },
+              { "prompt": "Why can't Sofía meet on Saturday?", "options": ["She's working", "She's sick", "She's travelling"], "answer": 0 },
+              { "prompt": "What time do they agree to meet?", "options": ["At seven", "At three", "At eight"], "answer": 2 },
+              { "prompt": "“Me encanta” means…", "options": ["I'm tired", "I love it", "I'm late"], "answer": 1 }
+            ]
+          }
+        },
+        {
+          "id": "salud",
+          "theme": "health",
+          "title": "En la farmacia: Health and help",
+          "scenes": [
+            {
+              "id": "salud-cabeza",
+              "title": "I don't feel well",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Ana", "target": "¿Estás bien?", "native": "Are you OK?" },
+                  { "speaker": "Leo", "target": "No mucho. Me duele la cabeza.", "native": "Not really. I have a headache." },
+                  { "speaker": "Ana", "target": "¿Tienes fiebre?", "native": "Do you have a fever?" },
+                  { "speaker": "Leo", "target": "Creo que no, pero estoy muy cansado.", "native": "I don't think so, but I'm really tired." }
+                ]
+              },
+              "words": ["estas-bien", "me-duele", "la-cabeza", "fiebre", "cansado"],
+              "pattern": {
+                "title": "Saying what hurts",
+                "tip": "Use “me duele” and the body part: me duele la cabeza (my head hurts), me duele el estómago (my stomach hurts)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "salud-farmacia",
+              "title": "At the pharmacy",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Leo", "target": "Buenas tardes. ¿Tiene algo para el dolor de cabeza?", "native": "Good afternoon. Do you have something for a headache?" },
+                  { "speaker": "Farmacéutica", "target": "Sí, este medicamento. Una pastilla cada ocho horas.", "native": "Yes, this medicine. One pill every eight hours." },
+                  { "speaker": "Leo", "target": "¿Con comida?", "native": "With food?" },
+                  { "speaker": "Farmacéutica", "target": "Sí, mejor con comida.", "native": "Yes, it's better with food." }
+                ]
+              },
+              "words": ["buenas-tardes", "tiene-algo-para", "medicamento", "una-pastilla", "cada-ocho-horas", "con-comida"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "salud-ayuda",
+              "title": "Asking for help",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Sofía", "target": "¡Ayuda, por favor!", "native": "Help, please!" },
+                  { "speaker": "Señor", "target": "¿Qué pasa?", "native": "What's going on?" },
+                  { "speaker": "Sofía", "target": "Perdí mi pasaporte.", "native": "I lost my passport." },
+                  { "speaker": "Señor", "target": "Tranquila. Vamos a llamar a la policía.", "native": "Stay calm. Let's call the police." }
+                ]
+              },
+              "words": ["ayuda", "que-pasa", "perdi", "pasaporte", "tranquila", "la-policia"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "“Me duele la cabeza” means…", "options": ["My head hurts", "I'm hungry", "I'm cold"], "answer": 0 },
+              { "prompt": "How often should Leo take the pill?", "options": ["Once a day", "Every eight hours", "Every hour"], "answer": 1 },
+              { "prompt": "Which one do you shout when you need help?", "options": ["¡Adiós!", "¡Qué bien!", "¡Ayuda!"], "answer": 2 },
+              { "prompt": "What did Sofía lose?", "options": ["Her phone", "Her passport", "Her keys"], "answer": 1 },
+              { "prompt": "“Cansado” means…", "options": ["tired", "sick", "late"], "answer": 0 }
             ]
           }
         }
