@@ -7,11 +7,13 @@ import { X } from "lucide-react";
 // Focused chrome for scenes and finales: a way out and a progress bar, nothing else.
 export function RunnerFrame({
   exitHref,
+  exitLabel = "Leave and go back to the episode",
   steps,
   current,
   children,
 }: {
   exitHref: string;
+  exitLabel?: string;
   steps: number;
   current: number;
   children: React.ReactNode;
@@ -22,7 +24,7 @@ export function RunnerFrame({
         <div className="flex items-center gap-4">
           <Link
             href={exitHref}
-            aria-label="Leave and go back to the episode"
+            aria-label={exitLabel}
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border"
             style={{ background: "var(--chip)", borderColor: "var(--border)", color: "var(--text)" }}
           >

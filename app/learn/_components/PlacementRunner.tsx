@@ -5,12 +5,14 @@ import { Check, X } from "lucide-react";
 import { track } from "@/app/_components/track";
 import { langName } from "@/lib/path/langs";
 import { buildPlacement, type PlacementResult, placementEvents, scoreStep, stepPassed } from "@/lib/path/placement";
+import { nextUp } from "@/lib/path/progress";
 import type { Course } from "@/lib/path/schema";
 import { RunnerFrame } from "./RunnerFrame";
-import { PrimaryButton, PrimaryLink, SecondaryButton, SecondaryLink } from "./ui";
+import { PrimaryButton, PrimaryLink, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
 
 type Phase = "intro" | "quiz" | "result";
+type Pick = number | "unsure" | null;
 
 // "Which episode should you start on?" Two finale questions per episode, in order,
 // stopping at the first episode the learner doesn't know. Nothing is recorded until
@@ -22,7 +24,9 @@ export default function PlacementRunner({ course }: { course: Course }) {
   const [phase, setPhase] = React.useState<Phase>("intro");
   const [stepIndex, setStepIndex] = React.useState(0);
   const [qIndex, setQIndex] = React.useState(0);
-  const [picked, setPicked] = React.useState<number | null>(null);
+  // "Not sure" is a pick like any option: it reveals the answer and waits for Next, so a
+  // double-click on Next or "Not sure" can never answer a question the learner hasn't seen.
+  const [picked, setPicked] = React.useState<Pick>(null);
   const [answers, setAnswers] = React.useState<(number | null)[]>([]);
   const [results, setResults] = React.useState<PlacementResult[]>([]);
   const exit = `/learn/${course.id}`;
@@ -38,8 +42,9 @@ export default function PlacementRunner({ course }: { course: Course }) {
     setPhase("result");
   };
 
-  const answer = (choice: number | null) => {
-    const stepAnswers = [...answers, choice];
+  const answer = (pick: Pick) => {
+    if (pick === null) return;
+    const stepAnswers = [...answers, pick === "unsure" ? null : pick];
     setPicked(null);
     if (qIndex < step.questions.length - 1) {
       setAnswers(stepAnswers);
@@ -60,7 +65,7 @@ export default function PlacementRunner({ course }: { course: Course }) {
 
   if (phase === "intro") {
     return (
-      <RunnerFrame exitHref={exit} steps={steps.length} current={0}>
+      <RunnerFrame exitHref={exit} exitLabel="Leave and go back to the season" steps={steps.length} current={0}>
         <h1 className="text-[30px] min-[560px]:text-[36px] font-bold leading-[1.15]">Find your starting point</h1>
         <p className="mt-3 text-[17px] leading-[1.6]" style={{ color: "var(--text-dim)" }}>
           You'll get two questions from each episode. Get both right and that episode is marked done, then we move on. The
@@ -75,10 +80,12 @@ export default function PlacementRunner({ course }: { course: Course }) {
   }
 
   if (phase === "result") {
-    const passed = results.filter((r) => stepPassed(r.score)).length;
-    const startAt = passed < episodes.length ? episodes[passed] : null;
+    // From the saved progress, so a retake agrees with the course map.
+    const next = nextUp(course, state);
+    const startAt = next ? episodes.find((e) => e.id === next.episodeId) ?? null : null;
+    const passed = startAt ? episodes.indexOf(startAt) : episodes.length;
     return (
-      <RunnerFrame exitHref={exit} steps={steps.length} current={steps.length}>
+      <RunnerFrame exitHref={exit} exitLabel="Leave and go back to the season" steps={steps.length} current={steps.length}>
         <h1 className="text-[30px] font-bold leading-[1.15]">
           {startAt ? `Start with episode ${passed + 1}` : "You placed out of the whole season"}
         </h1>
@@ -102,7 +109,7 @@ export default function PlacementRunner({ course }: { course: Course }) {
   }
 
   return (
-    <RunnerFrame exitHref={exit} steps={steps.length} current={stepIndex}>
+    <RunnerFrame exitHref={exit} exitLabel="Leave and go back to the season" steps={steps.length} current={stepIndex}>
       <p className="text-[15px] font-semibold" style={{ color: "var(--pink)" }}>
         Episode {stepIndex + 1}, question {qIndex + 1} of {step.questions.length}
       </p>
@@ -130,16 +137,29 @@ export default function PlacementRunner({ course }: { course: Course }) {
             </button>
           );
         })}
+        <button
+          type="button"
+          disabled={picked !== null}
+          onClick={() => setPicked("unsure")}
+          className="flex min-h-14 items-center rounded-[16px] border border-dashed px-5 py-3 text-left text-[16px] font-semibold"
+          style={{
+            borderColor: picked === "unsure" ? "var(--pink)" : "var(--border)",
+            color: "var(--text-dim)",
+            opacity: picked !== null && picked !== "unsure" ? 0.55 : 1,
+          }}
+        >
+          Not sure
+        </button>
       </div>
       <p className="sr-only" aria-live="polite">
-        {picked === null ? "" : picked === question.answer ? "Correct." : `Not quite. The answer is ${question.options[question.answer]}.`}
+        {picked === null
+          ? ""
+          : picked === question.answer
+            ? "Correct."
+            : `${picked === "unsure" ? "" : "Not quite. "}The answer is ${question.options[question.answer]}.`}
       </p>
-      <div className="mt-6 flex flex-wrap gap-3 min-h-12">
-        {picked !== null ? (
-          <PrimaryButton onClick={() => answer(picked)}>Next</PrimaryButton>
-        ) : (
-          <SecondaryButton onClick={() => answer(null)}>Not sure</SecondaryButton>
-        )}
+      <div className="mt-6 min-h-12">
+        {picked !== null && <PrimaryButton onClick={() => answer(picked)}>Next</PrimaryButton>}
       </div>
     </RunnerFrame>
   );
