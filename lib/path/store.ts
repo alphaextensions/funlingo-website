@@ -44,11 +44,16 @@ function read(storage: Storage | null, key: string): Saved | null {
   }
 }
 
+// When full, drop what costs least to lose: take_done is analytics only, and a
+// word_reviewed log also lives on in state.reviews, so the Phase 2 upload can rebuild
+// it from there. Scene and finale progress go last.
+const EVICTION_ORDER: PathEvent["kind"][] = ["take_done", "word_reviewed"];
+
 function capOutbox(outbox: PathEvent[]): PathEvent[] {
   const next = [...outbox];
   while (next.length > OUTBOX_CAP) {
-    const take = next.findIndex((e) => e.kind === "take_done");
-    next.splice(take >= 0 ? take : 0, 1);
+    const kind = EVICTION_ORDER.find((k) => next.some((e) => e.kind === k));
+    next.splice(kind ? next.findIndex((e) => e.kind === kind) : 0, 1);
   }
   return next;
 }

@@ -68,9 +68,12 @@ export function deckStats(course: Course, state: PathState, now: Date) {
   const reviewed = cards.filter((c) => c.card);
   const newCount = cards.length - reviewed.length;
   const future = reviewed.filter((c) => c.due > now).map((c) => c.due.getTime());
+  const dueReviews = reviewed.length - future.length;
   return {
     total: cards.length,
-    due: reviewed.length - future.length + newCount,
+    /** What the next session holds: the number to show as "ready to review". */
+    ready: Math.min(dueReviews + Math.min(newCount, NEW_PER_SESSION), SESSION_MAX),
+    due: dueReviews + newCount,
     newCount,
     known: reviewed.filter((c) => c.card!.stability >= KNOWN_STABILITY_DAYS).length,
     nextDue: future.length ? new Date(Math.min(...future)) : null,

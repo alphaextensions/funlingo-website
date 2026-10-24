@@ -111,6 +111,17 @@ describe("createStore", () => {
     expect(ids).not.toContain(firstTake.id);
   });
 
+  it("evicts reviews before scene progress when the outbox is full", () => {
+    const store = createStore(memoryStorage());
+    const scene = done("s-first");
+    const reviews = Array.from({ length: OUTBOX_CAP }, (_, i) => makeEvent("word_reviewed", "en-es", `w${i}`, { rating: 3, term: `t${i}` }));
+    store.record([scene, ...reviews]);
+    const ids = store.getOutbox().map((e) => e.id);
+    expect(ids).toHaveLength(OUTBOX_CAP);
+    expect(ids).toContain(scene.id);
+    expect(store.getState().reviews["en-es/w0"]).toHaveLength(1); // still in state for a later upload
+  });
+
   it("notifies subscribers and stops after unsubscribe", () => {
     const store = createStore(null);
     const fn = vi.fn();

@@ -92,6 +92,13 @@ describe("applyEvent", () => {
     ]);
   });
 
+  it("does not repeat a review that is already in the log, even after `seen` forgot it", () => {
+    const r1 = ev("word_reviewed", "hola", { rating: 3, term: "hola" }, T0);
+    const once = run([r1]);
+    const forgetful = { ...once, seen: [] };
+    expect(run([r1], forgetful).reviews[`${C.id}/hola`]).toHaveLength(1);
+  });
+
   it("ignores a review with a rating outside 1-4", () => {
     const s = run([ev("word_reviewed", "hola", { rating: 5, term: "hola" }), ev("word_reviewed", "hola", { term: "hola" })]);
     expect(s.reviews).toEqual({});

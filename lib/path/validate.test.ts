@@ -103,6 +103,16 @@ describe("validateCourse", () => {
     expect(errorsOf(c).join("\n")).toMatch(/^id: /m);
   });
 
+  it("rejects ids and terms longer than the server accepts", () => {
+    const c = sample();
+    c.seasons[0].episodes[0].scenes[0].id = "s".repeat(129);
+    const w = Object.keys(c.words)[0];
+    c.words[w].term = "x".repeat(201);
+    const text = errorsOf(c).join("\n");
+    expect(text).toMatch(/scenes\[0\]\.id/);
+    expect(text).toMatch(/words\.[a-z-]+\.term/);
+  });
+
   it("rejects an unknown take kind", () => {
     const c = sample();
     c.seasons[0].episodes[0].scenes[0].takes[0].kind = "karaoke";

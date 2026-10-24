@@ -31,7 +31,7 @@ export default function LearnHome({ courses }: { courses: Course[] }) {
           const pct = Math.round((done / scenes) * 100);
           const next = nextUp(course, state);
           const nextEpisode = next ? episodes.findIndex((e) => e.id === next.episodeId) + 1 : null;
-          const due = hydrated ? deckStats(course, state, new Date()).due : 0;
+          const due = hydrated ? deckStats(course, state, new Date()).ready : 0;
           return (
             <article
               key={course.id}

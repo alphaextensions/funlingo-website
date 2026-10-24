@@ -48,6 +48,7 @@ export default function ReviewRunner({ course }: { course: Course }) {
   const [index, setIndex] = React.useState(0);
   const [revealed, setRevealed] = React.useState(false);
   const [reviewed, setReviewed] = React.useState(0);
+  const headingRef = React.useRef<HTMLHeadingElement>(null);
 
   const start = React.useCallback(() => {
     setQueue(buildSession(course, state, new Date()));
@@ -75,20 +76,20 @@ export default function ReviewRunner({ course }: { course: Course }) {
     (grade: 1 | 2 | 3 | 4) => {
       if (!current || !word || !revealed) return;
       record([makeEvent("word_reviewed", course.id, current.wordId, { rating: grade, term: word.term })]);
+      if (queue && index + 1 >= queue.length) track("path_review_done", { course: course.id, reviewed: reviewed + 1 });
       setReviewed((n) => n + 1);
       setRevealed(false);
-      setIndex((i) => {
-        if (queue && i + 1 >= queue.length) track("path_review_done", { course: course.id, reviewed: reviewed + 1 });
-        return i + 1;
-      });
+      setIndex(index + 1);
+      // The rating buttons unmount; keep keyboard and screen-reader users on the card.
+      requestAnimationFrame(() => headingRef.current?.focus({ preventScroll: true }));
     },
-    [current, word, revealed, record, course.id, queue, reviewed],
+    [current, word, revealed, record, course.id, queue, reviewed, index],
   );
 
   // Space shows the answer; 1-4 rate it.
   React.useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLElement && e.target.closest("input, textarea")) return;
+      if (e.target instanceof HTMLElement && e.target.closest("input, textarea, button, a")) return;
       if (e.key === " " && !revealed && current) {
         e.preventDefault();
         setRevealed(true);
@@ -123,18 +124,18 @@ export default function ReviewRunner({ course }: { course: Course }) {
           </>
         ) : (
           <>
-            <h1 className="text-[30px] font-bold leading-[1.15]">{stats.due > 0 ? "Round done" : "All caught up"}</h1>
+            <h1 className="text-[30px] font-bold leading-[1.15]">{stats.ready > 0 ? "Round done" : "All caught up"}</h1>
             <p className="mt-3 text-[17px] leading-[1.6]" style={{ color: "var(--text-dim)" }}>
               {reviewed > 0 ? `You reviewed ${reviewed} ${reviewed === 1 ? "word" : "words"}. ` : ""}
               You know {stats.known} of {stats.total} words in your deck.
-              {stats.due === 0 && stats.nextDue ? ` The next one is due ${untilLabel(stats.nextDue, now)}.` : ""}
+              {stats.ready === 0 && stats.nextDue ? ` The next one is due ${untilLabel(stats.nextDue, now)}.` : ""}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              {stats.due > 0 ? (
-                <PrimaryButton onClick={start}>Review {stats.due} more</PrimaryButton>
-              ) : (
-                <PrimaryLink href={firstScene}>{next ? "Play the next scene" : "Back to the season"}</PrimaryLink>
-              )}
+              {stats.ready > 0 ? (
+                <PrimaryButton onClick={start}>Review {stats.ready} more</PrimaryButton>
+              ) : next ? (
+                <PrimaryLink href={firstScene}>Play the next scene</PrimaryLink>
+              ) : null}
               <SecondaryLink href={exit}>Back to the season</SecondaryLink>
             </div>
           </>
@@ -160,9 +161,16 @@ export default function ReviewRunner({ course }: { course: Course }) {
         <div className="flex justify-center">
           <SpeakButton key={current.wordId} text={word.term} bcp={bcp} label={`Play: ${word.term}`} size={52} />
         </div>
-        <h1 className="mt-5 text-[32px] min-[560px]:text-[40px] font-bold leading-[1.15] break-words">{word.term}</h1>
-        {revealed && (
-          <div aria-live="polite">
+        <h1
+          ref={headingRef}
+          tabIndex={-1}
+          className="mt-5 text-[32px] min-[560px]:text-[40px] font-bold leading-[1.15] break-words outline-none"
+        >
+          {word.term}
+        </h1>
+        <div aria-live="polite">
+          {revealed && (
+            <>
             <p className="mt-3 text-[20px] font-semibold" style={{ color: "var(--pink)" }}>
               {word.gloss}
             </p>
@@ -172,8 +180,9 @@ export default function ReviewRunner({ course }: { course: Course }) {
                 <span style={{ color: "var(--text-dim)" }}>{example.native}</span>
               </p>
             )}
-          </div>
-        )}
+            </>
+          )}
+        </div>
       </div>
 
       <div className="mt-6">

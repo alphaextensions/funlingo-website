@@ -6,13 +6,15 @@ import { CEFR, TAKE_KINDS } from "./constants";
 // per-language map. Objects are strict so a misspelled key fails instead of vanishing.
 // Cross-course checks (unique ids, word refs) live in validate.ts.
 
-const Id = z.string().regex(/^[a-z0-9][a-z0-9-]*$/, "must be lowercase letters, digits and dashes");
+// Limits match supabase apply_events (refs ≤ 128 chars, review terms ≤ 200), so content
+// the server would reject fails the build instead of every sync.
+const Id = z.string().max(128).regex(/^[a-z0-9][a-z0-9-]*$/, "must be lowercase letters, digits and dashes");
 const Lang = z.string().regex(/^[a-z]{2}$/, "must be a two-letter language code");
 const Text = z.string().min(1);
 
 export const WordEntrySchema = z
   .object({
-    term: Text,
+    term: Text.max(200),
     gloss: Text,
     romanization: z.string().optional(),
     audio: z.string().optional(),

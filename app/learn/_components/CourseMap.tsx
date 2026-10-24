@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { langName } from "@/lib/path/langs";
@@ -14,7 +15,8 @@ export default function CourseMap({ course }: { course: Course }) {
   const { state, hydrated } = usePath();
   const next = nextUp(course, state);
   const now = new Date();
-  const review = deckStats(course, state, now);
+  // Replays every review log, so only when progress changes.
+  const review = React.useMemo(() => deckStats(course, state, new Date()), [course, state]);
   const notStarted = course.seasons.every((s) =>
     s.episodes.every((e) => {
       const p = episodeProgress(course, e, state);
@@ -67,8 +69,8 @@ export default function CourseMap({ course }: { course: Course }) {
               <div className="min-w-0 flex-1">
                 <p className="text-[16px] font-semibold">Review deck</p>
                 <p className="mt-1 text-[14px]" style={{ color: "var(--text-dim)" }}>
-                  {review.due > 0
-                    ? `${review.due} ${review.due === 1 ? "word is" : "words are"} ready to review.`
+                  {review.ready > 0
+                    ? `${review.ready} ${review.ready === 1 ? "word is" : "words are"} ready to review.`
                     : `All caught up${review.nextDue ? `; the next word is due ${untilLabel(review.nextDue, now)}` : ""}.`}{" "}
                   You know {review.known} of {review.total} words.
                 </p>
@@ -76,7 +78,7 @@ export default function CourseMap({ course }: { course: Course }) {
                   <ProgressBar pct={Math.round((review.known / review.total) * 100)} />
                 </div>
               </div>
-              {review.due > 0 ? (
+              {review.ready > 0 ? (
                 <PrimaryLink href={`/learn/${course.id}/review`}>Review now</PrimaryLink>
               ) : (
                 <SecondaryLink href={`/learn/${course.id}/review`}>Open the deck</SecondaryLink>

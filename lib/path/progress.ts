@@ -97,6 +97,8 @@ export function applyEvent(state: PathState, ev: PathEvent): PathState {
     const rating = ev.payload.rating;
     if (rating !== 1 && rating !== 2 && rating !== 3 && rating !== 4) return state;
     const key = `${ev.course_id}/${ev.ref}`;
+    // The log itself is the durable record of which reviews were applied; `seen` is capped.
+    if (state.reviews[key]?.some((l) => l.id === ev.id)) return { ...state, seen };
     const log: ReviewLog = { id: ev.id, rating, at: ev.client_ts };
     return { ...state, seen, reviews: { ...state.reviews, [key]: [...(state.reviews[key] ?? []), log] } };
   }

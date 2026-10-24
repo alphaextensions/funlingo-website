@@ -105,6 +105,17 @@ describe("sessions and stats", () => {
     expect(session.filter((c) => c.card === null).length).toBe(NEW_PER_SESSION);
   });
 
+  it("reports a ready count that one session can actually cover", () => {
+    const big = structuredClone(C);
+    big.words = Object.fromEntries(Array.from({ length: 40 }, (_, i) => [`w${i}`, { term: `t${i}`, gloss: `g${i}` }]));
+    big.seasons[0].episodes[0].scenes[0].words = Object.keys(big.words);
+    const s: PathState = { ...emptyState(), scenes: { [sceneKey(big.id, S0.id)]: done } };
+    const stats = deckStats(big, s, T0);
+    expect(stats.newCount).toBe(40);
+    expect(stats.ready).toBe(buildSession(big, s, T0).length);
+    expect(stats.ready).toBe(NEW_PER_SESSION);
+  });
+
   it("counts a word as known once its stability reaches three weeks", () => {
     const logs: ReviewLog[] = [log(4, T0)];
     for (let i = 0; i < 12 && cardFromLogs(logs)!.stability < KNOWN_STABILITY_DAYS; i++) {
