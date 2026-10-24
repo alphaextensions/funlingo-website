@@ -1,0 +1,97 @@
+import { describe, expect, it, vi } from "vitest";
+import { makeEvent } from "./events";
+import { emptyState, sceneKey } from "./progress";
+import { createStore, OUTBOX_CAP } from "./store";
+
+const KEY = "funlingo-path-v1";
+
+function memoryStorage(initial: Record<string, string> = {}) {
+  const data = { ...initial };
+  return {
+    data,
+    getItem: (k: string) => (k in data ? data[k] : null),
+    setItem: (k: string, v: string) => {
+      data[k] = v;
+    },
+  };
+}
+
+const done = (ref: string, score = 80) => makeEvent("scene_done", "en-es", ref, { score, content_version: 1 });
+
+describe("createStore", () => {
+  it("persists state and outbox and reads them back", () => {
+    const storage = memoryStorage();
+    const a = createStore(storage);
+    const e = done("s1");
+    a.record([e]);
+    const b = createStore(storage);
+    expect(b.getState().scenes[sceneKey("en-es", "s1")]).toMatchObject({ status: "done" });
+    expect(b.getOutbox().map((x) => x.id)).toEqual([e.id]);
+  });
+
+  it("starts empty when the saved data is not JSON", () => {
+    const store = createStore(memoryStorage({ [KEY]: "{not json" }));
+    expect(store.getState()).toEqual(emptyState());
+    expect(store.getOutbox()).toEqual([]);
+  });
+
+  it("starts empty when the saved data is from another version", () => {
+    const store = createStore(memoryStorage({ [KEY]: JSON.stringify({ state: { v: 0 }, outbox: [] }) }));
+    expect(store.getState()).toEqual(emptyState());
+  });
+
+  it("keeps working in memory when storage throws", () => {
+    const storage = {
+      getItem: () => {
+        throw new Error("denied");
+      },
+      setItem: () => {
+        throw new Error("quota");
+      },
+    };
+    const store = createStore(storage);
+    store.record([done("s1")]);
+    expect(store.getState().scenes[sceneKey("en-es", "s1")]).toBeDefined();
+  });
+
+  it("works with no storage at all", () => {
+    const store = createStore(null);
+    store.record([done("s1")]);
+    expect(store.getOutbox()).toHaveLength(1);
+  });
+
+  it("drops the oldest take_done first when the outbox is full", () => {
+    const store = createStore(memoryStorage());
+    const firstTake = makeEvent("take_done", "en-es", "s1:0", { kind: "guess" });
+    const fillers = Array.from({ length: OUTBOX_CAP - 1 }, (_, i) => done(`s${i}`));
+    store.record([firstTake, ...fillers]);
+    expect(store.getOutbox()).toHaveLength(OUTBOX_CAP);
+    store.record([done("one-more")]);
+    const ids = store.getOutbox().map((x) => x.id);
+    expect(ids).toHaveLength(OUTBOX_CAP);
+    expect(ids).not.toContain(firstTake.id);
+  });
+
+  it("notifies subscribers and stops after unsubscribe", () => {
+    const store = createStore(null);
+    const fn = vi.fn();
+    const off = store.subscribe(fn);
+    store.record([done("s1")]);
+    off();
+    store.record([done("s2")]);
+    expect(fn).toHaveBeenCalledTimes(1);
+  });
+
+  it("returns the same state object until something changes", () => {
+    const store = createStore(null);
+    expect(store.getState()).toBe(store.getState());
+  });
+
+  it("clears everything on reset", () => {
+    const storage = memoryStorage();
+    const store = createStore(storage);
+    store.record([done("s1")]);
+    store.reset();
+    expect(createStore(storage).getState()).toEqual(emptyState());
+  });
+});
