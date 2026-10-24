@@ -1,13 +1,17 @@
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { FINALE_PASS_PCT } from "./constants";
 import { validateCourse } from "./validate";
 
 const COURSES = join(process.cwd(), "content", "courses");
+const courseDirs = existsSync(COURSES)
+  ? readdirSync(COURSES, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)
+  : [];
 const load = (dir: string) => JSON.parse(readFileSync(join(COURSES, dir, "course.json"), "utf8"));
+// The fixture lives outside content/ so it is never published as a real course.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const sample = (): any => load("sample");
+const sample = (): any => JSON.parse(readFileSync(join(__dirname, "__fixtures__", "sample-course.json"), "utf8"));
 
 function errorsOf(json: unknown): string[] {
   const r = validateCourse(json);
@@ -21,7 +25,7 @@ describe("validateCourse", () => {
     expect(r.ok ? [] : r.errors).toEqual([]);
   });
 
-  it.each(readdirSync(COURSES, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name))(
+  it.each(courseDirs)(
     "accepts content/courses/%s/course.json",
     (dir) => {
       const r = validateCourse(load(dir));
@@ -93,6 +97,19 @@ describe("validateCourse", () => {
     const c = sample();
     c.seasons[0].episodes[0].scenes[0].takes[0].kind = "karaoke";
     expect(errorsOf(c).join("\n")).toMatch(/takes\[0\]\.kind/);
+  });
+
+  it("rejects a misspelled key instead of silently dropping it", () => {
+    const c = sample();
+    delete c.seasons[0].episodes[0].finale.passPct;
+    c.seasons[0].episodes[0].finale.passPCT = 85;
+    expect(errorsOf(c).join("\n")).toMatch(/finale: .*passPCT/);
+  });
+
+  it("allows a top-level _note for authors", () => {
+    const c = sample();
+    c._note = "draft";
+    expect(validateCourse(c).ok).toBe(true);
   });
 
   it("rejects something that is not a course at all", () => {

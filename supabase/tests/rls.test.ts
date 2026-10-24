@@ -117,7 +117,7 @@ describe("row-level security", () => {
         [
           JSON.stringify([
             { id: crypto.randomUUID(), kind: "scene_done", course_id: "hi-en", ref: "s1", payload: { score: 80, content_version: 1 }, client_ts: new Date().toISOString() },
-            { id: crypto.randomUUID(), kind: "watch_tick", course_id: "hi-en", payload: { day: "2026-10-24", seconds: 60, source: "path" }, client_ts: new Date().toISOString() },
+            { id: crypto.randomUUID(), kind: "watch_tick", course_id: "hi-en", payload: { day: new Date().toISOString().slice(0, 10), seconds: 60, source: "path" }, client_ts: new Date().toISOString() },
           ]),
         ],
       );

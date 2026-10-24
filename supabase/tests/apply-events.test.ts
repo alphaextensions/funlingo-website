@@ -4,6 +4,7 @@ import { asUser, createUser, getPool } from "./pg";
 
 const pool = getPool();
 const COURSE = "hi-en";
+const TODAY = new Date().toISOString().slice(0, 10); // UTC, as apply_events reads it
 
 type Ev = { id: string; kind: string; course_id: string; ref?: string | null; payload: unknown; client_ts: string };
 type Result = { applied: number; duplicates: number; rejected: { id: string; reason: string }[] };
@@ -57,7 +58,7 @@ describe("apply_events", () => {
   it("treats a re-sent batch as duplicates and changes nothing", async () => {
     const batch = [
       ev("scene_done", "s1", { score: 50, content_version: 1 }),
-      ev("watch_tick", null, { day: "2026-10-24", seconds: 120, source: "path" }),
+      ev("watch_tick", null, { day: TODAY, seconds: 120, source: "path" }),
     ];
     await sendAs(a, batch);
     const again = await sendAs(a, batch);
@@ -82,19 +83,19 @@ describe("apply_events", () => {
 
   it("sums watch ticks for the same day", async () => {
     await sendAs(a, [
-      ev("watch_tick", null, { day: "2026-10-24", seconds: 300, source: "path" }),
-      ev("watch_tick", null, { day: "2026-10-24", seconds: 200, source: "path" }),
+      ev("watch_tick", null, { day: TODAY, seconds: 300, source: "path" }),
+      ev("watch_tick", null, { day: TODAY, seconds: 200, source: "path" }),
     ]);
-    const { rows } = await pool.query("select seconds from watch_daily where user_id = $1 and day = '2026-10-24'", [a]);
+    const { rows } = await pool.query("select seconds from watch_daily where user_id = $1 and day = $2", [a, TODAY]);
     expect(rows[0].seconds).toBe(500);
   });
 
   it("rejects bad events and still applies the good ones", async () => {
     const bad = [
       ev("scene_done", "s1", { score: 140, content_version: 1 }),
-      ev("watch_tick", null, { day: "2026-10-24", seconds: -5, source: "path" }),
-      ev("watch_tick", null, { day: "2026-10-24", seconds: 100000, source: "path" }),
-      ev("watch_tick", null, { day: "2026-10-24", seconds: 10, source: "tv" }),
+      ev("watch_tick", null, { day: TODAY, seconds: -5, source: "path" }),
+      ev("watch_tick", null, { day: TODAY, seconds: 100000, source: "path" }),
+      ev("watch_tick", null, { day: TODAY, seconds: 10, source: "tv" }),
       ev("hack", "s1", {}),
       ev("scene_done", null, { score: 50, content_version: 1 }),
     ];
@@ -144,6 +145,52 @@ describe("apply_events", () => {
     await sendAs(a, [ev("take_done", "s1:0", { kind: "guess" })]);
     const rows = await asUser(pool, b, async (c) => (await c.query("select * from events")).rows);
     expect(rows).toHaveLength(0);
+  });
+
+  it("rejects an oversized payload or ref", async () => {
+    const fat = ev("take_done", "s1:0", { kind: "guess", blob: "x".repeat(5000) });
+    const longRef = ev("take_done", "s".repeat(200), { kind: "guess" });
+    const r = await sendAs(a, [fat, longRef]);
+    expect(r.rejected.map((x) => x.id).sort()).toEqual([fat.id, longRef.id].sort());
+    expect(r.rejected.every((x) => /too large|too long/.test(x.reason))).toBe(true);
+  });
+
+  it("rejects a watch day far from the event time", async () => {
+    const r = await sendAs(a, [ev("watch_tick", null, { day: "9999-12-31", seconds: 60, source: "path" })]);
+    expect(r.rejected).toHaveLength(1);
+    const { rows } = await pool.query("select count(*)::int as n from watch_daily where user_id = $1", [a]);
+    expect(rows[0].n).toBe(0);
+  });
+
+  it("caps a single day at 24 hours of watch time", async () => {
+    const ticks = Array.from({ length: 30 }, () => ev("watch_tick", null, { day: TODAY, seconds: 3600, source: "path" }));
+    await sendAs(a, ticks);
+    const { rows } = await pool.query("select seconds from watch_daily where user_id = $1", [a]);
+    expect(rows[0].seconds).toBe(86_400);
+  });
+
+  it("floors an ancient client timestamp so it cannot poison first_done_at", async () => {
+    await sendAs(a, [ev("scene_done", "s1", { score: 50, content_version: 1 }, "1970-01-01T00:00:00Z")]);
+    const { rows } = await pool.query(
+      "select first_done_at >= now() - interval '1 year' - interval '1 minute' as ok from scene_progress where user_id = $1",
+      [a],
+    );
+    expect(rows[0].ok).toBe(true);
+  });
+
+  it("rejects an event id that another user already used, instead of calling it a duplicate", async () => {
+    const shared = ev("scene_done", "s1", { score: 50, content_version: 1 });
+    await sendAs(a, [shared]);
+    const r = await sendAs(b, [shared]);
+    expect(r).toMatchObject({ applied: 0, duplicates: 0 });
+    expect(r.rejected).toHaveLength(1);
+  });
+
+  it("rounds a fractional score instead of losing the attempt", async () => {
+    const r = await sendAs(a, [ev("finale_done", "ep1", { score: 66.67, answers: [0, 1, 1] })]);
+    expect(r.applied).toBe(1);
+    const { rows } = await pool.query("select score from finale_attempts where user_id = $1", [a]);
+    expect(rows[0].score).toBe(67);
   });
 
   it("marks a finale passed at 75 and failed at 74", async () => {

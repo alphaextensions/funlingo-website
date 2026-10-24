@@ -189,7 +189,9 @@ create policy own_rows_read on public.watch_daily for select to authenticated us
 -- Applies a batch of client events for the caller. Idempotent per event id; a bad
 -- event is reported in "rejected" and skipped without failing the rest of the batch.
 -- Merge rules: completion is an OR, best_score is the max, attempts count distinct
--- events, first_done_at is the earliest, watch seconds add up.
+-- events, first_done_at is the earliest, watch seconds add up (capped at 24h a day).
+-- Guards: client_ts is clamped to [now - 1 year, now], payloads are capped at 4 KB and
+-- refs at 128 chars, so one account cannot bloat the database or poison its own stats.
 create function public.apply_events(batch jsonb) returns jsonb
 language plpgsql security definer set search_path = public, pg_temp
 as $$
@@ -228,25 +230,30 @@ begin
       v_course  := e ->> 'course_id';
       v_ref     := nullif(e ->> 'ref', '');
       v_payload := coalesce(e -> 'payload', '{}'::jsonb);
-      v_ts      := least(coalesce((e ->> 'client_ts')::timestamptz, now()), now());
+      v_ts      := least(greatest(coalesce((e ->> 'client_ts')::timestamptz, now()), now() - interval '1 year'), now());
       v_score   := null;
       v_version := (v_payload ->> 'content_version')::int;
 
       if v_id is null then raise exception 'missing id'; end if;
       if v_course is null or v_course !~ '^[a-z]{2}-[a-z]{2}$' then raise exception 'bad course_id'; end if;
+      if length(v_ref) > 128 then raise exception 'ref too long (max 128 chars)'; end if;
+      if octet_length(v_payload::text) > 4096 then raise exception 'payload too large (max 4 KB)'; end if;
 
       case v_kind
         when 'scene_started', 'take_done' then
           if v_ref is null then raise exception '% needs ref', v_kind; end if;
         when 'scene_done', 'finale_done' then
           if v_ref is null then raise exception '% needs ref', v_kind; end if;
-          v_score := (v_payload ->> 'score')::int;
+          v_score := round((v_payload ->> 'score')::numeric)::int;
           if v_score is null or v_score not between 0 and 100 then raise exception 'score must be 0..100'; end if;
         when 'watch_tick' then
           v_day     := (v_payload ->> 'day')::date;
           v_seconds := (v_payload ->> 'seconds')::int;
           v_source  := v_payload ->> 'source';
           if v_day is null then raise exception 'watch_tick needs day'; end if;
+          if v_day not between (v_ts at time zone 'UTC')::date - 1 and (v_ts at time zone 'UTC')::date + 1 then
+            raise exception 'day must be within a day of the event time';
+          end if;
           if v_seconds is null or v_seconds not between 1 and 3600 then raise exception 'seconds must be 1..3600'; end if;
           if v_source is null or v_source not in ('path', 'extension', 'app') then raise exception 'bad source'; end if;
         else
@@ -257,6 +264,9 @@ begin
       values (v_id, uid, v_course, v_kind, v_ref, v_payload, v_ts)
       on conflict (id) do nothing;
       if not found then
+        if exists (select 1 from events where id = v_id and user_id <> uid) then
+          raise exception 'event id already in use';
+        end if;
         n_dups := n_dups + 1;
         continue;
       end if;
@@ -280,7 +290,7 @@ begin
           insert into watch_daily (user_id, course_id, day, seconds, source)
           values (uid, v_course, v_day, v_seconds, v_source)
           on conflict (user_id, course_id, day, source) do update set
-            seconds = watch_daily.seconds + excluded.seconds;
+            seconds = least(watch_daily.seconds + excluded.seconds, 86400);
         when 'finale_done' then
           insert into finale_attempts (id, user_id, course_id, episode_id, score, passed, answers, created_at)
           values (v_id, uid, v_course, v_ref, v_score, v_score >= 75, v_payload -> 'answers', v_ts);
