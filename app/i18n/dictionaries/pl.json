@@ -25,8 +25,6 @@
     "platformsHeading": "Działa na Twoich ulubionych platformach"
   },
   "home": {
-    "heroPre": "Ucz się, gdy",
-    "heroAccent": "oglądasz.",
     "learnLabel": "Chcę się uczyć",
     "learnMore": "+ 100 więcej",
     "ratingTail": "w Chrome Web Store · uwielbiane przez uczących się języków",
@@ -78,7 +76,18 @@
     "q6": "Czy moje dane są prywatne?",
     "a6": "Funlingo używa minimalnych uprawnień i opiera się na lekkim modelu stawiającym prywatność na pierwszym miejscu. To, co oglądasz, pozostaje Twoje.",
     "ctaH2a": "Zamień dzisiejszy odcinek",
-    "ctaH2b": "w swoją następną lekcję."
+    "ctaH2b": "w swoją następną lekcję.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "Ucz się, gdy",
+    "heroAccent": "oglądasz."
   },
   "player": {
     "learning": "UCZĘ SIĘ",
@@ -166,12 +175,10 @@
     "p4Body": "Nie dla lingwistów, nie dla zaawansowanych użytkowników — dla ludzi, którzy chcą oglądać swój serial i przy okazji przyswajać język. Prostota wygrywa.",
     "stat1Big": "100+",
     "stat1Label": "obsługiwanych języków",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "platform, jedno rozszerzenie",
     "stat3Big": "4.8★",
     "stat3Label": "w Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "na zawsze",
     "ctaH2": "Ucz się w przyjemny sposób.",
     "ctaSub": "Jest za darmo, jest już wewnątrz aplikacji, których używasz, a rozpoczęcie zajmuje 30 sekund."
   },

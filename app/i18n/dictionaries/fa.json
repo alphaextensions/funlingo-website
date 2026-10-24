@@ -25,8 +25,6 @@
     "platformsHeading": "روی پلتفرم‌های مورد علاقه شما کار می‌کند"
   },
   "home": {
-    "heroPre": "هنگام تماشا",
-    "heroAccent": "یاد بگیرید.",
     "learnLabel": "می‌خواهم یاد بگیرم",
     "learnMore": "+ ۱۰۰ مورد دیگر",
     "ratingTail": "در Chrome Web Store · محبوب زبان‌آموزان",
@@ -78,7 +76,18 @@
     "q6": "آیا داده‌هایم خصوصی می‌ماند؟",
     "a6": "Funlingo از کمترین دسترسی‌ها استفاده می‌کند و بر پایهٔ مدلی سبک و حریم‌خصوصی‌محور ساخته شده است. آنچه تماشا می‌کنی، مال خودت می‌ماند.",
     "ctaH2a": "قسمت امشب را",
-    "ctaH2b": "به درس بعدی‌ات تبدیل کن."
+    "ctaH2b": "به درس بعدی‌ات تبدیل کن.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "هنگام تماشا",
+    "heroAccent": "یاد بگیرید."
   },
   "player": {
     "learning": "در حال یادگیری",
@@ -166,12 +175,10 @@
     "p4Body": "نه زبان‌شناسان، نه کاربران حرفه‌ای — آدم‌هایی که می‌خواهند سریالشان را تماشا کنند و در کنارش یک زبان یاد بگیرند. سادگی برنده است.",
     "stat1Big": "100+",
     "stat1Label": "زبان پشتیبانی‌شده",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "پلتفرم، یک افزونه",
     "stat3Big": "4.8★",
     "stat3Label": "در Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "برای همیشه",
     "ctaH2": "بیا به شیوهٔ لذت‌بخش یاد بگیر.",
     "ctaSub": "رایگان است، از پیش داخل اپ‌هایی است که استفاده می‌کنی و شروعش 30 seconds طول می‌کشد."
   },

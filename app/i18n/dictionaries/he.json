@@ -25,8 +25,6 @@
     "platformsHeading": "עובד בפלטפורמות האהובות עליכם"
   },
   "home": {
-    "heroPre": "ללמוד תוך כדי",
-    "heroAccent": "צפייה.",
     "learnLabel": "אני רוצה ללמוד",
     "learnMore": "+ עוד 100",
     "ratingTail": "ב-Chrome Web Store · אהוב על לומדי שפות",
@@ -78,7 +76,18 @@
     "q6": "האם הנתונים שלי פרטיים?",
     "a6": "Funlingo משתמש בהרשאות מינימליות ובנוי סביב מודל קל משקל שמעמיד את הפרטיות במקום הראשון. הצפייה שלכם נשארת שלכם.",
     "ctaH2a": "הפכו את הפרק של הערב",
-    "ctaH2b": "לשיעור הבא שלכם."
+    "ctaH2b": "לשיעור הבא שלכם.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "ללמוד תוך כדי",
+    "heroAccent": "צפייה."
   },
   "player": {
     "learning": "לומדים",
@@ -166,12 +175,10 @@
     "p4Body": "לא בלשנים, לא משתמשי על — אנשים שרוצים לצפות בתוכנית שלהם ולקלוט שפה דרך אגב. הפשטות מנצחת.",
     "stat1Big": "100+",
     "stat1Label": "שפות נתמכות",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "פלטפורמות, תוסף אחד",
     "stat3Big": "4.8★",
     "stat3Label": "ב-Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "לתמיד",
     "ctaH2": "בואו ללמוד בדרך הכיפית.",
     "ctaSub": "זה חינם, זה כבר בתוך האפליקציות שאתם משתמשים בהן, ולוקח 30 שניות להתחיל."
   },

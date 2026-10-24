@@ -1,4 +1,5 @@
 "use client";
+import * as React from "react";
 
 const logo = "/assets/logo.png";
 import { useState } from "react";
@@ -54,15 +55,41 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
       (item.href === "/blog" && current.startsWith("/blog")),
   }));
 
+  // Compact the bar once the page has scrolled past the fold edge, as the
+  // redesign specifies: tighter padding, smaller logo, a soft shadow.
+  const [compact, setCompact] = React.useState(false);
+  React.useEffect(() => {
+    const onScroll = () => setCompact(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <header
       className="sticky top-0 z-[100] w-full backdrop-blur-[16px] border-b"
-      style={{ background: "var(--nav)", borderColor: "var(--border)" }}
+      style={{
+        background: "var(--nav)",
+        borderColor: "var(--border)",
+        boxShadow: compact ? "0 10px 30px -18px rgba(80,10,80,.45)" : "none",
+        transition: "box-shadow .25s ease",
+      }}
     >
-      <div className="flex items-center justify-between max-w-[1240px] mx-auto px-5 sm:px-[34px] py-[15px]">
+      <div
+        className="flex items-center justify-between max-w-[1240px] mx-auto px-5 sm:px-[34px]"
+        style={{ paddingTop: compact ? 9 : 15, paddingBottom: compact ? 9 : 15, transition: "padding .25s ease" }}
+      >
         {/* Logo */}
         <a href={navHref("/", locale)} className="block shrink-0">
-          <img src={logo} alt="Funlingo" className="h-12 sm:h-14 w-auto block" />
+          <img
+            src={logo}
+            alt="Funlingo"
+            className="w-auto block"
+            style={{
+              height: compact ? 42 : 56,
+              transition: "height .25s ease",
+            }}
+          />
         </a>
 
         {/* Desktop nav links */}
@@ -71,7 +98,8 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
             <a
               key={i}
               href={item.href}
-              className="text-[15px] no-underline transition-colors"
+              className="fnl-navlink text-[15px] no-underline"
+              data-active={item.active ? "true" : undefined}
               style={{
                 fontWeight: item.active ? 700 : 600,
                 color: item.active ? "var(--text)" : "var(--text-dim)",

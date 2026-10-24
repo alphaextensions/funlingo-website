@@ -25,8 +25,6 @@
     "platformsHeading": "Radi na tvojim omiljenim platformama"
   },
   "home": {
-    "heroPre": "Uči dok",
-    "heroAccent": "gledaš.",
     "learnLabel": "Želim učiti",
     "learnMore": "+ još 100",
     "ratingTail": "na Chrome Web Storeu · obožavaju ga oni koji uče jezike",
@@ -78,7 +76,18 @@
     "q6": "Jesu li moji podaci privatni?",
     "a6": "Funlingo koristi minimalna dopuštenja i izgrađen je na laganom modelu koji prvenstveno štiti privatnost. Ono što gledaš ostaje tvoje.",
     "ctaH2a": "Pretvori večerašnju epizodu",
-    "ctaH2b": "u svoju sljedeću lekciju."
+    "ctaH2b": "u svoju sljedeću lekciju.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "Uči dok",
+    "heroAccent": "gledaš."
   },
   "player": {
     "learning": "UČENJE",
@@ -166,12 +175,10 @@
     "p4Body": "Ne za lingviste, ne za napredne korisnike — za ljude koji žele gledati svoju seriju i usput pokupiti jezik. Jednostavno pobjeđuje.",
     "stat1Big": "100+",
     "stat1Label": "podržanih jezika",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "platformi, jedno proširenje",
     "stat3Big": "4.8★",
     "stat3Label": "na Chrome Web Storeu",
-    "stat4Big": "$0",
-    "stat4Label": "zauvijek",
     "ctaH2": "Dođi učiti na zabavan način.",
     "ctaSub": "Besplatno je, već je unutar aplikacija koje koristiš i treba ti 30 sekundi za početak."
   },

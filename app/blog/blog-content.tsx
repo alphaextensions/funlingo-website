@@ -71,7 +71,7 @@ export default function BlogContent() {
               color: "var(--text)",
             }}
           >
-            Latest insights &amp;{" "}
+            Tips, guides &amp;{" "}
             <span
               style={{
                 background: "var(--grad)",
@@ -81,7 +81,7 @@ export default function BlogContent() {
                 color: "transparent",
               }}
             >
-              guides
+              honest comparisons.
             </span>
           </h1>
           <p
@@ -95,8 +95,8 @@ export default function BlogContent() {
               fontWeight: 500,
             }}
           >
-            Tips, tricks, and in-depth comparisons to supercharge your language
-            learning journey.
+            Everything to learn a language faster from the shows, videos and
+            courses you already watch.
           </p>
         </div>
 

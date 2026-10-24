@@ -982,3 +982,60 @@ html {
     padding: 0 8px;
   }
 }
+
+/* ── Top-bar links ─────────────────────────────────────────────────────────
+   A gradient underline slides in on hover; the current page keeps it shown.
+   The live site had no hover state here at all. */
+.fnl-navlink {
+  position: relative;
+  transition: color .15s ease;
+}
+.fnl-navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--grad);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .22s cubic-bezier(.4, 0, .2, 1);
+}
+.fnl-navlink:hover { color: var(--text); }
+.fnl-navlink:hover::after,
+.fnl-navlink[data-active="true"]::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) {
+  .fnl-navlink::after { transition: none; }
+}
+
+/* ── Evidence chart ────────────────────────────────────────────────────────
+   Bars grow with their count-up figure. */
+.fnl-bar { animation: fnl-bar-grow 1.4s cubic-bezier(.2,.7,.3,1) both; transform-origin: bottom center; }
+@keyframes fnl-bar-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+/* ── Review marquee ────────────────────────────────────────────────────────
+   Slower loop, and hovering a row pauses it so a card can be read. The
+   hovered card lifts, grows slightly and picks up a pink edge. */
+.fnl-mqrow:hover { animation-play-state: paused; }
+.fnl-mqrow > * { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+.fnl-mqrow > *:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: var(--pink);
+  box-shadow: 0 18px 40px -18px rgba(236, 77, 176, .55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fnl-bar { animation: none; }
+  .fnl-mqrow > *:hover { transform: none; }
+}
+
+/* Step cards lift on hover, as the redesign specifies. */
+.fnl-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+.fnl-step:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--pink) 45%, transparent);
+  box-shadow: 0 22px 44px -24px rgba(236, 77, 176, .5);
+}
+@media (prefers-reduced-motion: reduce) { .fnl-step:hover { transform: none; } }

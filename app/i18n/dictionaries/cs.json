@@ -25,8 +25,6 @@
     "platformsHeading": "Funguje na vašich oblíbených platformách"
   },
   "home": {
-    "heroPre": "Učte se, když",
-    "heroAccent": "sledujete.",
     "learnLabel": "Chci se učit",
     "learnMore": "+ 100 dalších",
     "ratingTail": "v Chrome Web Store · oblíbené mezi studenty jazyků",
@@ -78,7 +76,18 @@
     "q6": "Jsou má data v soukromí?",
     "a6": "Funlingo využívá minimum oprávnění a je postaveno na odlehčeném modelu s důrazem na soukromí. Co sledujete, zůstává jen vaše.",
     "ctaH2a": "Proměňte dnešní epizodu",
-    "ctaH2b": "ve svou další lekci."
+    "ctaH2b": "ve svou další lekci.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "Učte se, když",
+    "heroAccent": "sledujete."
   },
   "player": {
     "learning": "UČENÍ",
@@ -166,12 +175,10 @@
     "p4Body": "Ne pro lingvisty, ne pro experty — pro lidi, kteří chtějí sledovat svůj seriál a mimochodem pochytit jazyk. Vyhrává jednoduchost.",
     "stat1Big": "100+",
     "stat1Label": "podporovaných jazyků",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "platforem, jedno rozšíření",
     "stat3Big": "4.8★",
     "stat3Label": "v Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "navždy",
     "ctaH2": "Pojďte se učit zábavně.",
     "ctaSub": "Je to zdarma, je to už uvnitř aplikací, které používáte, a začátek zabere 30 sekund."
   },

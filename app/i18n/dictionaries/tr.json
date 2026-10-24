@@ -88,7 +88,16 @@
     "ctaSub": "Funlingo'yu Chrome'a ekle, izleyeceğin bir sonraki şey sana çoktan öğretmeye başlasın. Ücretsiz, hesap gerekmez.",
     "usersCount": "20.000+",
     "usersLabel": "haftalık aktif kullanıcı",
-    "ratingStore": "Chrome Web Mağazası"
+    "ratingStore": "Chrome Web Mağazası",
+    "webEyebrow": "Sadece video değil",
+    "webH2": "Her web sitesinde de çalışır.",
+    "webSub": "Herhangi bir sayfada bir kelimeyi seç — haber, tarif, belge, e-posta — anlamını gör, dinle ve destene kaydet.",
+    "webS1": "Bir kelime seç",
+    "webS2": "Anlamını öğrendiğin dilde gör",
+    "webS3": "Kaydet — kelime destene eklenir",
+    "webSave": "+ Kaydet",
+    "webSaved": "✓ Kaydedildi",
+    "webMyWords": "Kelimelerim"
   },
   "player": {
     "learning": "ÖĞRENİLEN",
@@ -176,12 +185,10 @@
     "p4Body": "Dilbilimciler değil, ileri düzey kullanıcılar değil — dizisini izlemek ve yan tarafta bir dil kapmak isteyen insanlar. Basit olan kazanır.",
     "stat1Big": "100+",
     "stat1Label": "desteklenen dil",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "platform, tek uzantı",
     "stat3Big": "4.8★",
     "stat3Label": "Chrome Web Store'da",
-    "stat4Big": "$0",
-    "stat4Label": "sonsuza dek",
     "ctaH2": "Eğlenceli yoldan öğrenmeye gelin.",
     "ctaSub": "Ücretsiz, zaten kullandığınız uygulamaların içinde ve başlaması 30 saniye sürüyor."
   },

@@ -25,8 +25,6 @@
     "platformsHeading": "Fungerer på dine favorittplattformer"
   },
   "home": {
-    "heroPre": "Lær mens du",
-    "heroAccent": "ser på.",
     "learnLabel": "Jeg vil lære",
     "learnMore": "+ 100 til",
     "ratingTail": "på Chrome Web Store · elsket av språkelever",
@@ -78,7 +76,18 @@
     "q6": "Er dataene mine private?",
     "a6": "Funlingo bruker minimale tillatelser og er bygget rundt en lett modell der personvernet kommer først. Det du ser på, forblir ditt.",
     "ctaH2a": "Gjør kveldens episode",
-    "ctaH2b": "om til din neste leksjon."
+    "ctaH2b": "om til din neste leksjon.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "Lær mens du",
+    "heroAccent": "ser på."
   },
   "player": {
     "learning": "LÆRER",
@@ -166,12 +175,10 @@
     "p4Body": "Ikke språkforskere, ikke avanserte brukere — folk som vil se serien sin og plukke opp et språk på si. Det enkle vinner.",
     "stat1Big": "100+",
     "stat1Label": "språk støttet",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "plattformer, én utvidelse",
     "stat3Big": "4.8★",
     "stat3Label": "på Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "for alltid",
     "ctaH2": "Kom og lær på den morsomme måten.",
     "ctaSub": "Det er gratis, det er allerede inne i appene du bruker, og det tar 30 sekunder å komme i gang."
   },

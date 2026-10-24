@@ -12,12 +12,12 @@ type Theme = "dark" | "light";
  * handles clicks. CSS variables (--bg, --text, …) do the actual theming.
  */
 export default function ThemeToggle({ className = "" }: { className?: string }) {
-  const [theme, setTheme] = React.useState<Theme>("dark");
+  const [theme, setTheme] = React.useState<Theme>("light");
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
     const current =
-      (document.documentElement.getAttribute("data-theme") as Theme) || "dark";
+      (document.documentElement.getAttribute("data-theme") as Theme) || "light";
     setTheme(current);
     setMounted(true);
   }, []);

@@ -25,8 +25,6 @@
     "platformsHeading": "Λειτουργεί στις αγαπημένες σου πλατφόρμες"
   },
   "home": {
-    "heroPre": "Μάθε ενώ",
-    "heroAccent": "βλέπεις.",
     "learnLabel": "Θέλω να μάθω",
     "learnMore": "+ 100 ακόμη",
     "ratingTail": "στο Chrome Web Store · αγαπημένο των μαθητών γλωσσών",
@@ -78,7 +76,18 @@
     "q6": "Είναι τα δεδομένα μου ιδιωτικά;",
     "a6": "Το Funlingo χρησιμοποιεί ελάχιστα δικαιώματα και είναι χτισμένο γύρω από ένα ελαφρύ μοντέλο με προτεραιότητα στην ιδιωτικότητα. Όσα βλέπεις παραμένουν δικά σου.",
     "ctaH2a": "Κάνε το αποψινό επεισόδιο",
-    "ctaH2b": "το επόμενο μάθημά σου."
+    "ctaH2b": "το επόμενο μάθημά σου.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "Μάθε ενώ",
+    "heroAccent": "βλέπεις."
   },
   "player": {
     "learning": "ΜΑΘΑΙΝΩ",
@@ -166,12 +175,10 @@
     "p4Body": "Όχι γλωσσολόγους, όχι έμπειρους χρήστες — ανθρώπους που θέλουν να δουν τη σειρά τους και να μάθουν μια γλώσσα παράλληλα. Η απλότητα κερδίζει.",
     "stat1Big": "100+",
     "stat1Label": "γλώσσες υποστηρίζονται",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "πλατφόρμες, μία επέκταση",
     "stat3Big": "4.8★",
     "stat3Label": "στο Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "για πάντα",
     "ctaH2": "Έλα να μάθεις με τον διασκεδαστικό τρόπο.",
     "ctaSub": "Είναι δωρεάν, βρίσκεται ήδη μέσα στις εφαρμογές που χρησιμοποιείς, και χρειάζεται 30 δευτερόλεπτα για να ξεκινήσεις."
   },

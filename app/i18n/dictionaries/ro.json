@@ -25,8 +25,6 @@
     "platformsHeading": "Funcționează pe platformele tale preferate"
   },
   "home": {
-    "heroPre": "Învață în timp ce",
-    "heroAccent": "te uiți.",
     "learnLabel": "Vreau să învăț",
     "learnMore": "+ încă 100",
     "ratingTail": "în Chrome Web Store · iubit de cei care învață limbi străine",
@@ -78,7 +76,18 @@
     "q6": "Datele mele sunt private?",
     "a6": "Funlingo folosește permisiuni minime și este construit în jurul unui model ușor, care pune confidențialitatea pe primul loc. Ce te uiți rămâne al tău.",
     "ctaH2a": "Transformă episodul din seara asta",
-    "ctaH2b": "în următoarea ta lecție."
+    "ctaH2b": "în următoarea ta lecție.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "Învață în timp ce",
+    "heroAccent": "te uiți."
   },
   "player": {
     "learning": "ÎNVEȚI",
@@ -166,12 +175,10 @@
     "p4Body": "Nu pentru lingviști, nu pentru utilizatori avansați — pentru oameni care vor să-și vadă serialul și să prindă o limbă pe lângă. Simplitatea câștigă.",
     "stat1Big": "100+",
     "stat1Label": "limbi acceptate",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "platforme, o singură extensie",
     "stat3Big": "4.8★",
     "stat3Label": "în Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "pentru totdeauna",
     "ctaH2": "Vino să înveți în mod distractiv.",
     "ctaSub": "Este gratuit, este deja în aplicațiile pe care le folosești și pornește în 30 de secunde."
   },

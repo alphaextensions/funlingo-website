@@ -88,7 +88,16 @@
     "ctaSub": "Funlingo を Chrome に追加すれば、次に観るものがもう教えてくれます。無料、アカウント不要。",
     "usersCount": "20,000+",
     "usersLabel": "週間アクティブ学習者",
-    "ratingStore": "Chrome ウェブストア"
+    "ratingStore": "Chrome ウェブストア",
+    "webEyebrow": "動画だけじゃない",
+    "webH2": "どんなサイトでも使えます。",
+    "webSub": "ニュース、レシピ、ドキュメント、メール — どのページでも単語を選ぶだけで、意味を見て、発音を聞いて、単語帳に保存できます。",
+    "webS1": "単語を選ぶ",
+    "webS2": "学んでいる言語で意味を見る",
+    "webS3": "保存すると単語帳に追加",
+    "webSave": "+ 保存",
+    "webSaved": "✓ 保存済み",
+    "webMyWords": "マイ単語"
   },
   "player": {
     "learning": "LEARNING",
@@ -176,12 +185,10 @@
     "p4Body": "言語学者でもパワーユーザーでもなく — 好きな番組を観ながら、ついでに言語を身につけたい人のために。シンプルが勝ちます。",
     "stat1Big": "100+",
     "stat1Label": "対応言語",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "プラットフォーム、ひとつの拡張機能",
     "stat3Big": "4.8★",
     "stat3Label": "Chrome Web Storeで",
-    "stat4Big": "$0",
-    "stat4Label": "ずっと",
     "ctaH2": "楽しい方法で学びに来てください。",
     "ctaSub": "無料で、あなたが使うアプリの中にすでにあり、始めるのに30秒しかかかりません。"
   },

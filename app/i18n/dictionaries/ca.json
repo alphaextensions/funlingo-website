@@ -25,8 +25,6 @@
     "platformsHeading": "Funciona amb les teves plataformes preferides"
   },
   "home": {
-    "heroPre": "Aprèn mentre",
-    "heroAccent": "mires.",
     "learnLabel": "Vull aprendre",
     "learnMore": "+ 100 més",
     "ratingTail": "a la Chrome Web Store · estimat pels estudiants d'idiomes",
@@ -78,7 +76,18 @@
     "q6": "Les meves dades són privades?",
     "a6": "Funlingo fa servir permisos mínims i està construïda al voltant d'un model lleuger i que prioritza la privadesa. El que mires continua sent teu.",
     "ctaH2a": "Converteix l'episodi d'aquesta nit",
-    "ctaH2b": "en la teva propera lliçó."
+    "ctaH2b": "en la teva propera lliçó.",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "Aprèn mentre",
+    "heroAccent": "mires."
   },
   "player": {
     "learning": "APRENENT",
@@ -166,12 +175,10 @@
     "p4Body": "Ni lingüistes ni usuaris avançats — gent que vol mirar la seva sèrie i aprendre un idioma de passada. La senzillesa guanya.",
     "stat1Big": "100+",
     "stat1Label": "idiomes disponibles",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "plataformes, una sola extensió",
     "stat3Big": "4.8★",
     "stat3Label": "a la Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "per sempre",
     "ctaH2": "Vine a aprendre de la manera divertida.",
     "ctaSub": "És gratis, ja és dins de les apps que fas servir i triga 30 seconds a començar."
   },

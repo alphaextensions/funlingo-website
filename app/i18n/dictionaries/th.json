@@ -25,8 +25,6 @@
     "platformsHeading": "ใช้งานได้บนแพลตฟอร์มโปรดของคุณ"
   },
   "home": {
-    "heroPre": "เรียนรู้ไปพร้อมกับ",
-    "heroAccent": "การดู",
     "learnLabel": "ฉันอยากเรียน",
     "learnMore": "+ อีก 100 ภาษา",
     "ratingTail": "บน Chrome Web Store · ผู้เรียนภาษาต่างหลงรัก",
@@ -78,7 +76,18 @@
     "q6": "ข้อมูลของฉันเป็นส่วนตัวไหม?",
     "a6": "Funlingo ใช้สิทธิ์การเข้าถึงน้อยที่สุดและสร้างขึ้นบนแนวคิดที่ให้ความสำคัญกับความเป็นส่วนตัวเป็นอันดับแรกและมีขนาดเบา สิ่งที่คุณดูยังคงเป็นของคุณ",
     "ctaH2a": "เปลี่ยนตอนที่คุณจะดูคืนนี้",
-    "ctaH2b": "ให้เป็นบทเรียนถัดไปของคุณ"
+    "ctaH2b": "ให้เป็นบทเรียนถัดไปของคุณ",
+    "webEyebrow": "Not just video",
+    "webH2": "Works on every website, too.",
+    "webSub": "Highlight any word on any page — news, recipes, docs, emails — to see its meaning, hear it, and save it to your deck.",
+    "webS1": "Highlight a word",
+    "webS2": "See the meaning in the language you’re learning",
+    "webS3": "Save it — it joins your vocab deck",
+    "webSave": "+ Save",
+    "webSaved": "✓ Saved",
+    "webMyWords": "My Words",
+    "heroPre": "เรียนรู้ไปพร้อมกับ",
+    "heroAccent": "การดู"
   },
   "player": {
     "learning": "กำลังเรียน",
@@ -166,12 +175,10 @@
     "p4Body": "ไม่ใช่นักภาษาศาสตร์ ไม่ใช่ผู้ใช้ระดับสูง — แต่คือคนที่อยากดูซีรีส์ของตัวเองและซึมซับภาษาไปในตัว ความเรียบง่ายคือผู้ชนะ",
     "stat1Big": "100+",
     "stat1Label": "ภาษาที่รองรับ",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "แพลตฟอร์ม ส่วนขยายเดียว",
     "stat3Big": "4.8★",
     "stat3Label": "บน Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "ตลอดไป",
     "ctaH2": "มาเรียนแบบสนุก ๆ กัน",
     "ctaSub": "มันฟรี มันอยู่ในแอปที่คุณใช้อยู่แล้ว และใช้เวลาเพียง 30 วินาทีในการเริ่ม"
   },

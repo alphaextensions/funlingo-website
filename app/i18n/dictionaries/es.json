@@ -88,7 +88,16 @@
     "ctaSub": "Añade Funlingo a Chrome y lo próximo que veas ya te estará enseñando. Gratis, sin cuenta.",
     "usersCount": "20.000+",
     "usersLabel": "usuarios cada semana",
-    "ratingStore": "en la Chrome Web Store"
+    "ratingStore": "en la Chrome Web Store",
+    "webEyebrow": "No solo vídeo",
+    "webH2": "También funciona en cualquier web.",
+    "webSub": "Selecciona cualquier palabra en cualquier página — noticias, recetas, documentos, correos — para ver su significado, oírla y guardarla en tu mazo.",
+    "webS1": "Selecciona una palabra",
+    "webS2": "Ve su significado en el idioma que aprendes",
+    "webS3": "Guárdala — se suma a tu mazo",
+    "webSave": "+ Guardar",
+    "webSaved": "✓ Guardada",
+    "webMyWords": "Mis palabras"
   },
   "player": {
     "learning": "APRENDIENDO",
@@ -176,12 +185,10 @@
     "p4Body": "No para lingüistas ni usuarios avanzados — para gente que quiere ver su serie y aprender un idioma de paso. Lo simple gana.",
     "stat1Big": "100+",
     "stat1Label": "idiomas admitidos",
-    "stat2Big": "8",
+    "stat2Big": "10",
     "stat2Label": "plataformas, una extensión",
     "stat3Big": "4.8★",
     "stat3Label": "en la Chrome Web Store",
-    "stat4Big": "$0",
-    "stat4Label": "para siempre",
     "ctaH2": "Ven a aprender de la forma divertida.",
     "ctaSub": "Es gratis, ya está dentro de las apps que usas y tardas 30 seconds en empezar."
   },
