@@ -3,12 +3,13 @@
 import * as React from "react";
 import { Check, X } from "lucide-react";
 import { track } from "@/app/_components/track";
+import { FINALE_PASS_PCT } from "@/lib/path/constants";
 import { findEpisode } from "@/lib/path/course";
 import { makeEvent } from "@/lib/path/events";
 import { testOutEvents } from "@/lib/path/progress";
 import type { Course } from "@/lib/path/schema";
 import { RunnerFrame } from "./RunnerFrame";
-import { PrimaryButton, PrimaryLink, SecondaryButton, SecondaryLink } from "./ui";
+import { PrimaryButton, PrimaryLink, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
 
 export default function FinaleRunner({ course, episodeId }: { course: Course; episodeId: string }) {
@@ -21,7 +22,8 @@ export default function FinaleRunner({ course, episodeId }: { course: Course; ep
   if (!found) return null;
 
   const { episode, season, index } = found;
-  const { questions, passPct } = episode.finale;
+  const { questions } = episode.finale;
+  const passPct = FINALE_PASS_PCT;
   const q = questions[i];
   const last = i === questions.length - 1;
   const base = `/learn/${course.id}/${episode.id}`;
@@ -109,9 +111,12 @@ export default function FinaleRunner({ course, episodeId }: { course: Course; ep
           );
         })}
       </div>
+      <p className="sr-only" aria-live="polite">
+        {picked === null ? "" : picked === q.answer ? "Correct." : `Not quite. The answer is ${q.options[q.answer]}.`}
+      </p>
       <div className="mt-6 flex gap-3 min-h-12">
         {picked !== null && <PrimaryButton onClick={next}>{last ? "See my score" : "Next question"}</PrimaryButton>}
-        {i === 0 && picked === null && <SecondaryButton onClick={() => history.back()}>Not now</SecondaryButton>}
+        {i === 0 && picked === null && <SecondaryLink href={base}>Not now</SecondaryLink>}
       </div>
     </RunnerFrame>
   );

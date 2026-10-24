@@ -40,6 +40,38 @@ describe("createStore", () => {
     expect(store.getState()).toEqual(emptyState());
   });
 
+  it("starts empty when the saved state has the wrong shape", () => {
+    for (const state of [{ v: 1, scenes: null }, { v: 1, scenes: {}, finales: [], seen: [] }, { v: 1, scenes: {}, finales: {}, seen: "x" }]) {
+      const store = createStore(memoryStorage({ [KEY]: JSON.stringify({ state, outbox: [] }) }));
+      expect(store.getState()).toEqual(emptyState());
+    }
+  });
+
+  it("keeps both tabs' progress when two tabs write in turn", () => {
+    const storage = memoryStorage();
+    const tabA = createStore(storage);
+    const tabB = createStore(storage);
+    const a = done("s1");
+    const b = done("s2");
+    tabB.record([b]);
+    tabA.record([a]);
+    const fresh = createStore(storage);
+    expect(Object.keys(fresh.getState().scenes).sort()).toEqual([sceneKey("en-es", "s1"), sceneKey("en-es", "s2")]);
+    expect(fresh.getOutbox().map((e) => e.id).sort()).toEqual([a.id, b.id].sort());
+  });
+
+  it("picks up another tab's writes on refresh", () => {
+    const storage = memoryStorage();
+    const tabA = createStore(storage);
+    const tabB = createStore(storage);
+    const fn = vi.fn();
+    tabA.subscribe(fn);
+    tabB.record([done("s2")]);
+    tabA.refresh();
+    expect(tabA.getState().scenes[sceneKey("en-es", "s2")]).toBeDefined();
+    expect(fn).toHaveBeenCalledTimes(1);
+  });
+
   it("keeps working in memory when storage throws", () => {
     const storage = {
       getItem: () => {

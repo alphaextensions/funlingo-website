@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { CEFR, FINALE_PASS_PCT, TAKE_KINDS } from "./constants";
+import { CEFR, TAKE_KINDS } from "./constants";
 
 // Shape of content/courses/<course>/course.json. One course is one language pair, so
 // every human-readable string is in the course's native language and glosses need no
@@ -89,9 +89,10 @@ export const QuestionSchema = z
     }
   });
 
+// The pass mark is FINALE_PASS_PCT for every episode; supabase apply_events applies
+// the same constant, so it is deliberately not configurable per episode.
 export const FinaleSchema = z.object({
   questions: z.array(QuestionSchema).min(1),
-  passPct: z.number().int().min(1).max(100).default(FINALE_PASS_PCT),
 }).strict();
 
 export const EpisodeSchema = z.object({

@@ -37,9 +37,19 @@ export function ShadowTake({ scene, bcp, onDone }: TakeProps & { scene: Scene; b
   React.useEffect(() => setCanListen(recognitionCtor() !== null), []);
   React.useEffect(() => () => recRef.current?.abort?.(), []);
 
+  const stopListening = () => {
+    const rec = recRef.current;
+    recRef.current = null;
+    if (rec) {
+      rec.onresult = rec.onerror = rec.onend = null; // a late result must not land on the next line
+      rec.abort?.();
+    }
+    setListening(false);
+  };
+
   const listen = () => {
     const Ctor = recognitionCtor();
-    if (!Ctor) return;
+    if (!Ctor || listening) return;
     setHeard(null);
     setError(null);
     try {
@@ -61,6 +71,7 @@ export function ShadowTake({ scene, bcp, onDone }: TakeProps & { scene: Scene; b
   };
 
   const next = () => {
+    stopListening();
     if (last) onDone(null);
     else {
       setI((n) => n + 1);
@@ -99,7 +110,7 @@ export function ShadowTake({ scene, bcp, onDone }: TakeProps & { scene: Scene; b
       </div>
       <div className="mt-6 flex flex-wrap gap-3">
         {canListen && (
-          <SecondaryButton onClick={listen}>
+          <SecondaryButton onClick={listen} disabled={listening}>
             <Mic size={18} aria-hidden /> {listening ? "Listening…" : heard !== null ? "Say it again" : "Say it"}
           </SecondaryButton>
         )}

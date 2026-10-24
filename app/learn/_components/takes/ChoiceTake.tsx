@@ -87,6 +87,9 @@ export function ChoiceTake({
           );
         })}
       </div>
+      <p className="sr-only" aria-live="polite">
+        {picked ? (picked === item.answer ? "Correct." : `Not quite. The answer is ${item.answer}.`) : ""}
+      </p>
       <div className="mt-6 min-h-12">
         {picked && <PrimaryButton onClick={next}>{last ? "Continue" : "Next"}</PrimaryButton>}
       </div>

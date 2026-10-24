@@ -66,8 +66,7 @@
             "questions": [
               { "prompt": "How do you say \"thank you\"?", "options": ["hola", "gracias", "adiós"], "answer": 1 },
               { "prompt": "What did Ana order?", "options": ["a coffee", "a tea"], "answer": 0 }
-            ],
-            "passPct": 75
+            ]
           }
         }
       ]

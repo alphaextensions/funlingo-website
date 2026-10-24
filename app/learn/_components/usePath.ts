@@ -3,7 +3,7 @@
 import * as React from "react";
 import type { PathEvent } from "@/lib/path/events";
 import { emptyState, type PathState } from "@/lib/path/progress";
-import { createStore, type PathStore } from "@/lib/path/store";
+import { createStore, type PathStore, STORE_KEY } from "@/lib/path/store";
 
 let store: PathStore | null = null;
 const SERVER_STATE = emptyState();
@@ -17,6 +17,9 @@ function getStore(): PathStore {
       // blocked site data: progress lives in memory for this visit
     }
     store = createStore(storage);
+    window.addEventListener("storage", (e) => {
+      if (e.key === STORE_KEY) store?.refresh();
+    });
   }
   return store;
 }

@@ -62,12 +62,21 @@ export function PrimaryButton({
   );
 }
 
-export function SecondaryButton({ children, onClick }: { children: React.ReactNode; onClick: () => void }) {
+export function SecondaryButton({
+  children,
+  onClick,
+  disabled,
+}: {
+  children: React.ReactNode;
+  onClick: () => void;
+  disabled?: boolean;
+}) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={`${pill} border`}
+      disabled={disabled}
+      className={`${pill} border disabled:opacity-60`}
       style={{ background: "var(--chip)", borderColor: "var(--border)", color: "var(--text)" }}
     >
       {children}

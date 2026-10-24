@@ -31,6 +31,7 @@ export function RunnerFrame({
           <div
             className="flex flex-1 gap-[6px]"
             role="progressbar"
+            aria-label="Progress"
             aria-valuemin={0}
             aria-valuemax={steps}
             aria-valuenow={current}

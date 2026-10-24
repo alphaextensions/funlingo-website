@@ -1,7 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { FINALE_PASS_PCT } from "./constants";
 import { validateCourse } from "./validate";
 
 const COURSES = join(process.cwd(), "content", "courses");
@@ -33,11 +32,10 @@ describe("validateCourse", () => {
     },
   );
 
-  it("defaults the finale pass mark to 75", () => {
+  it("rejects a per-episode pass mark, which the server would not honour", () => {
     const c = sample();
-    delete c.seasons[0].episodes[0].finale.passPct;
-    const r = validateCourse(c);
-    expect(r.ok && r.course.seasons[0].episodes[0].finale.passPct).toBe(FINALE_PASS_PCT);
+    c.seasons[0].episodes[0].finale.passPct = 80;
+    expect(errorsOf(c).join("\n")).toMatch(/finale: .*passPct/);
   });
 
   it("rejects a duplicate scene id", () => {
@@ -107,7 +105,6 @@ describe("validateCourse", () => {
 
   it("rejects a misspelled key instead of silently dropping it", () => {
     const c = sample();
-    delete c.seasons[0].episodes[0].finale.passPct;
     c.seasons[0].episodes[0].finale.passPCT = 85;
     expect(errorsOf(c).join("\n")).toMatch(/finale: .*passPCT/);
   });
