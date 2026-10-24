@@ -1,5 +1,8 @@
 import { type Course, CourseSchema } from "./schema";
 
+// Static segments under app/learn/[course]/[episode]/ that a scene id would collide with.
+const RESERVED_SCENE_IDS = new Set(["finale"]);
+
 export type ValidationResult = { ok: true; course: Course } | { ok: false; errors: string[] };
 
 /** ["seasons", 0, "episodes", 1] → "seasons[0].episodes[1]" */
@@ -35,6 +38,7 @@ export function validateCourse(json: unknown): ValidationResult {
       claim(episode.id, ep);
       episode.scenes.forEach((scene, ci) => {
         const cp = `${ep}.scenes[${ci}]`;
+        if (RESERVED_SCENE_IDS.has(scene.id)) errors.push(`${cp}.id: "${scene.id}" is reserved for a route`);
         claim(scene.id, cp);
         scene.words.forEach((word, wi) => {
           if (!Object.hasOwn(course.words, word)) errors.push(`${cp}.words[${wi}]: unknown word "${word}"`);

@@ -47,6 +47,12 @@ describe("validateCourse", () => {
     expect(errorsOf(c).join("\n")).toMatch(/seasons\[0\]\.episodes\[0\]\.scenes\[1\]\.id: duplicate id/);
   });
 
+  it("rejects the reserved scene id 'finale', which is a route segment", () => {
+    const c = sample();
+    c.seasons[0].episodes[0].scenes[0].id = "finale";
+    expect(errorsOf(c).join("\n")).toMatch(/scenes\[0\]\.id: .*reserved/);
+  });
+
   it("rejects an id shared by an episode and a scene", () => {
     const c = sample();
     c.seasons[0].episodes[0].scenes[0].id = c.seasons[0].episodes[0].id;
