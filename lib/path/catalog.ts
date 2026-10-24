@@ -1,6 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { Course, Episode, Season } from "./schema";
+import type { Course } from "./schema";
 import { validateCourse } from "./validate";
 
 // Server-only: page.tsx files read the courses at build time. An invalid course
@@ -25,13 +25,4 @@ export function getCourse(id: string): Course | undefined {
   return loadCourses().find((c) => c.id === id);
 }
 
-export function findEpisode(
-  course: Course,
-  episodeId: string,
-): { season: Season; episode: Episode; index: number } | undefined {
-  for (const season of course.seasons) {
-    const index = season.episodes.findIndex((e) => e.id === episodeId);
-    if (index >= 0) return { season, episode: season.episodes[index], index };
-  }
-  return undefined;
-}
+export { findEpisode } from "./course";
