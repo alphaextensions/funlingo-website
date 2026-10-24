@@ -4,11 +4,11 @@ import { FlagSvg } from "@/sections/home/flags";
 import { langName } from "@/lib/path/langs";
 import { episodeProgress, nextUp } from "@/lib/path/progress";
 import type { Course } from "@/lib/path/schema";
-import { LearnShell, PrimaryLink, ProgressBar } from "./ui";
+import { LearnShell, PrimaryLink, ProgressBar, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
 
 export default function LearnHome({ courses }: { courses: Course[] }) {
-  const { state } = usePath();
+  const { state, hydrated } = usePath();
 
   return (
     <LearnShell>
@@ -50,9 +50,14 @@ export default function LearnHome({ courses }: { courses: Course[] }) {
                     {done === 0 ? "Not started yet" : next ? `${done} of ${scenes} scenes done` : "Season complete"}
                   </p>
                 </div>
-                <PrimaryLink href={`/learn/${course.id}`}>
-                  {done === 0 ? "Start episode 1" : nextEpisode ? `Continue episode ${nextEpisode}` : "See the season"}
-                </PrimaryLink>
+                <div className="flex flex-wrap gap-3">
+                  <PrimaryLink href={`/learn/${course.id}`}>
+                    {done === 0 ? "Start episode 1" : nextEpisode ? `Continue episode ${nextEpisode}` : "See the season"}
+                  </PrimaryLink>
+                  {hydrated && done === 0 && (
+                    <SecondaryLink href={`/learn/${course.id}/placement`}>Find my starting point</SecondaryLink>
+                  )}
+                </div>
               </div>
             </article>
           );

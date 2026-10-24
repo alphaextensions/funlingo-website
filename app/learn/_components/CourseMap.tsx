@@ -5,13 +5,19 @@ import { Check } from "lucide-react";
 import { langName } from "@/lib/path/langs";
 import { episodeProgress, nextUp } from "@/lib/path/progress";
 import type { Course } from "@/lib/path/schema";
-import { LearnShell, PrimaryLink, ProgressBar } from "./ui";
+import { LearnShell, PrimaryLink, ProgressBar, SecondaryLink } from "./ui";
 import { usePath } from "./usePath";
 
 // The season page reads like a show's episode guide: big episode numbers, one row each.
 export default function CourseMap({ course }: { course: Course }) {
-  const { state } = usePath();
+  const { state, hydrated } = usePath();
   const next = nextUp(course, state);
+  const notStarted = course.seasons.every((s) =>
+    s.episodes.every((e) => {
+      const p = episodeProgress(course, e, state);
+      return p.done === 0 && !p.finalePassed;
+    }),
+  );
   let episodeNumber = 0;
 
   return (
@@ -49,6 +55,21 @@ export default function CourseMap({ course }: { course: Course }) {
               </ul>
             </div>
           </header>
+
+          {si === 0 && hydrated && notStarted && (
+            <div
+              className="mt-8 flex flex-col min-[560px]:flex-row min-[560px]:items-center justify-between gap-4 rounded-[20px] border p-5"
+              style={{ borderColor: "var(--border)", background: "var(--surface)" }}
+            >
+              <div>
+                <p className="text-[16px] font-semibold">Know some {langName(course.target)} already?</p>
+                <p className="mt-1 text-[14px]" style={{ color: "var(--text-dim)" }}>
+                  A three-minute check marks the episodes you know as done.
+                </p>
+              </div>
+              <SecondaryLink href={`/learn/${course.id}/placement`}>Find your starting point</SecondaryLink>
+            </div>
+          )}
 
           <ol className="mt-10 grid gap-4">
             {season.episodes.map((episode) => {
