@@ -15,16 +15,19 @@ export type SceneState = {
 
 export type FinaleState = { bestScore: number; passed: boolean; attempts: number };
 
+export type ReviewLog = { id: string; rating: 1 | 2 | 3 | 4; at: string };
+
 export type PathState = {
   v: 1;
   scenes: Record<string, SceneState>;
   finales: Record<string, FinaleState>;
+  reviews: Record<string, ReviewLog[]>; // "<course>/<wordId>" → that word's review logs
   seen: string[]; // applied event ids, newest last; makes applyEvent idempotent
 };
 
 const SEEN_CAP = 5000;
 
-export const emptyState = (): PathState => ({ v: 1, scenes: {}, finales: {}, seen: [] });
+export const emptyState = (): PathState => ({ v: 1, scenes: {}, finales: {}, reviews: {}, seen: [] });
 export const sceneKey = (courseId: string, sceneId: string) => `${courseId}/${sceneId}`;
 export const finaleKey = (courseId: string, episodeId: string) => `${courseId}/${episodeId}`;
 
