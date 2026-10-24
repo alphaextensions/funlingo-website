@@ -1,6 +1,8 @@
 import { type Course, CourseSchema } from "./schema";
 
-// Static segments under app/learn/[course]/[episode]/ that a scene id would collide with.
+// Static route segments that a content id would collide with:
+// app/learn/[course]/placement and app/learn/[course]/[episode]/finale.
+const RESERVED_EPISODE_IDS = new Set(["placement"]);
 const RESERVED_SCENE_IDS = new Set(["finale"]);
 
 export type ValidationResult = { ok: true; course: Course } | { ok: false; errors: string[] };
@@ -35,6 +37,7 @@ export function validateCourse(json: unknown): ValidationResult {
     claim(season.id, sp);
     season.episodes.forEach((episode, ei) => {
       const ep = `${sp}.episodes[${ei}]`;
+      if (RESERVED_EPISODE_IDS.has(episode.id)) errors.push(`${ep}.id: "${episode.id}" is reserved for a route`);
       claim(episode.id, ep);
       episode.scenes.forEach((scene, ci) => {
         const cp = `${ep}.scenes[${ci}]`;

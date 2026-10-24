@@ -51,6 +51,12 @@ describe("validateCourse", () => {
     expect(errorsOf(c).join("\n")).toMatch(/scenes\[0\]\.id: .*reserved/);
   });
 
+  it("rejects the reserved episode id 'placement', which is a route segment", () => {
+    const c = sample();
+    c.seasons[0].episodes[0].id = "placement";
+    expect(errorsOf(c).join("\n")).toMatch(/episodes\[0\]\.id: .*reserved/);
+  });
+
   it("rejects an id shared by an episode and a scene", () => {
     const c = sample();
     c.seasons[0].episodes[0].scenes[0].id = c.seasons[0].episodes[0].id;
