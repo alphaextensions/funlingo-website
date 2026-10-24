@@ -122,10 +122,6 @@ export default function HomeContent() {
 
   const platformLoop = [...PLATFORMS, ...PLATFORMS];
 
-  // Optional third part of the H1. `t()` echoes the key back when it is missing,
-  // so treat that as "not set" and keep the original two-part headline.
-  const heroPostRaw = t("home.heroPost");
-  const heroPost = heroPostRaw && heroPostRaw !== "home.heroPost" ? heroPostRaw : "";
 
   return (
     <div className="fnl-root overflow-x-hidden">
@@ -142,18 +138,12 @@ export default function HomeContent() {
               <span style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--pink)", animation: "fnl-pulse 2s infinite" }} />
               <span style={{ fontSize: 13, fontWeight: 700, color: "var(--pink)" }}>{t("home.badgeFree")}</span>
             </div>
-            {/* The headline is a long descriptive line, so it runs smaller and
-                tighter than the old three-word one and balances its ragged edge. */}
-            <h1 style={{ fontSize: "clamp(32px,3.6vw,50px)", lineHeight: 1.08, fontWeight: 800, margin: 0, letterSpacing: "-.02em", color: "var(--text)", textWrap: "balance" }}>
-              {/* heroPre is optional: the headline may open with the accent */}
-              {t("home.heroPre") ? <>{t("home.heroPre")} </> : null}
-              {/* nowrap keeps the gradient phrase on one line — splitting it
-                  across a line break breaks the accent visually */}
-              <span style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent", whiteSpace: "nowrap" }}>{t("home.heroAccent")}</span>
-              {/* Optional trailing clause so the gradient accent can sit mid-headline.
-                  Locales that don't define heroPost fall through to the original
-                  two-part "{pre} {accent}" shape. */}
-              {heroPost ? <> {heroPost}</> : null}
+            <h1 style={{ fontSize: "clamp(52px,5.6vw,82px)", lineHeight: 1, fontWeight: 800, margin: 0, letterSpacing: "-.02em", color: "var(--text)" }}>
+              {/* Chinese, Japanese and Thai don't put spaces between words, so
+                  the two halves join directly — a space there renders as a
+                  visible gap ("边看边 学。" instead of "边看边学。"). */}
+              {t("home.heroPre")}{/^(zh|ja|th)/.test(locale) ? "" : " "}
+              <span style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent" }}>{t("home.heroAccent")}</span>
             </h1>
             <p style={{ fontSize: 20, lineHeight: 1.55, color: "var(--text-dim)", margin: "24px 0 0", maxWidth: 480, fontWeight: 500 }}>{t("home.heroSub")}</p>
 

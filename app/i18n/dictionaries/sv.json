@@ -85,7 +85,9 @@
     "webS3": "Save it — it joins your vocab deck",
     "webSave": "+ Save",
     "webSaved": "✓ Saved",
-    "webMyWords": "My Words"
+    "webMyWords": "My Words",
+    "heroPre": "Lär dig medan du",
+    "heroAccent": "tittar."
   },
   "player": {
     "learning": "LÄR DIG",

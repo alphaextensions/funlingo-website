@@ -85,7 +85,9 @@
     "webS3": "Save it — it joins your vocab deck",
     "webSave": "+ Save",
     "webSaved": "✓ Saved",
-    "webMyWords": "My Words"
+    "webMyWords": "My Words",
+    "heroPre": "Belajar sambil",
+    "heroAccent": "menonton."
   },
   "player": {
     "learning": "BELAJAR",
