@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { loadCourses } from "./catalog";
-import { ART_THEMES, avatarLook } from "./art";
+import { ART_THEMES, avatarLook, isMainCast } from "./art";
 
 describe("theme art", () => {
   it("has an illustration for every episode theme in the courses", () => {
@@ -19,9 +19,16 @@ describe("avatarLook", () => {
     expect(avatarLook("Barista")).toEqual(avatarLook("Barista"));
   });
 
-  it("keeps the four main characters visibly different", () => {
-    const looks = ["Ana", "Diego", "Sofía", "Leo"].map(avatarLook);
-    const keys = looks.map((l) => `${l.skin}|${l.hair}|${l.style}`);
+  it.each([
+    ["Spanish", ["Ana", "Diego", "Sofía", "Leo"]],
+    ["French", ["Camille", "Hugo", "Léa", "Malik"]],
+  ])("keeps the %s course's four main characters visibly different", (_, cast) => {
+    const keys = (cast as string[]).map(avatarLook).map((l) => `${l.skin}|${l.hair}|${l.style}`);
     expect(new Set(keys).size).toBe(4);
+  });
+
+  it("gives every main character a fixed look rather than a derived one", () => {
+    for (const name of ["Camille", "Hugo", "Léa", "Malik"]) expect(isMainCast(name)).toBe(true);
+    expect(isMainCast("Serveur")).toBe(false);
   });
 });

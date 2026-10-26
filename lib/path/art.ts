@@ -19,7 +19,14 @@ const CAST: Record<string, AvatarLook> = {
   Diego: { skin: SKIN[2], hair: HAIR[0], style: "short", backdrop: BACKDROP[2] },
   Sofía: { skin: SKIN[1], hair: HAIR[1], style: "curly", backdrop: BACKDROP[0] },
   Leo: { skin: SKIN[3], hair: HAIR[3], style: "short", backdrop: BACKDROP[5] },
+  // French course
+  Camille: { skin: SKIN[0], hair: HAIR[4], style: "bun", backdrop: BACKDROP[2] },
+  Hugo: { skin: SKIN[1], hair: HAIR[1], style: "short", backdrop: BACKDROP[1] },
+  Léa: { skin: SKIN[2], hair: HAIR[0], style: "long", backdrop: BACKDROP[5] },
+  Malik: { skin: SKIN[3], hair: HAIR[0], style: "curly", backdrop: BACKDROP[0] },
 };
+
+export const isMainCast = (name: string) => Object.hasOwn(CAST, name);
 
 function fnv1a(s: string): number {
   let h = 0x811c9dc5;
