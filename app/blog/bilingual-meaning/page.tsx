@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BilingualMeaningContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "What Does 'Bilingual' Mean? Definition, Types & Examples",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/bilingual-meaning" title={"What Does 'Bilingual' Mean? Definition, Types & Examples"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <BilingualMeaningContent />

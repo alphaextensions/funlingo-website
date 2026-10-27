@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TurkishToEnglishTranslationContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Turkish to English Translation: Tools, Tips & Common Phrases",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/turkish-to-english-translation" title={"Turkish to English Translation: Tools, Tips & Common Phrases"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <TurkishToEnglishTranslationContent />

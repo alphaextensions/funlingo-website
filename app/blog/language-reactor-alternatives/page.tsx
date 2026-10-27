@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LanguageReactorAlternativesContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "7 Best Language Reactor Alternatives (2026) — Free & Paid Options",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/language-reactor-alternatives" title={"7 Best Language Reactor Alternatives (2026) — Free & Paid Options"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <LanguageReactorAlternativesContent />

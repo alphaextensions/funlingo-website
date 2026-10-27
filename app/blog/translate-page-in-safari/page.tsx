@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TranslatePageInSafariContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Translate a Web Page in Safari (Mac, iPhone, iPad) | Funlingo",
@@ -56,6 +57,7 @@ const howToSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/translate-page-in-safari" title={"How to Translate a Web Page in Safari (Mac, iPhone, iPad)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import YoutubeSubtitleDownloadZhContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "YouTube字幕下载 — SRT一键导出指南 (2026)",
@@ -16,6 +17,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/youtube-subtitle-download-zh" title={"YouTube字幕下载 — SRT一键导出指南 (2026)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <YoutubeSubtitleDownloadZhContent />

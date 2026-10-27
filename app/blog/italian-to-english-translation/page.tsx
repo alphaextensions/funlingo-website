@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ItalianToEnglishTranslationContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Italian to English Translation: Best Tools & Tips",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/italian-to-english-translation" title={"Italian to English Translation: Best Tools & Tips"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ItalianToEnglishTranslationContent />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import VocabularyBuildingWatchingContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Build Vocabulary While Watching Shows (A Science-Backed Method)",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/vocabulary-building-watching-shows" title={"How to Build Vocabulary While Watching Shows (A Science-Backed Method)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <VocabularyBuildingWatchingContent />

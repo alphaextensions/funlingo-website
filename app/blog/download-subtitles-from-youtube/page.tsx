@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DownloadSubtitlesFromYoutubeContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Download Subtitles from YouTube (3 Free Methods) | Funlingo",
@@ -116,6 +117,7 @@ const howToSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/download-subtitles-from-youtube" title={"How to Download Subtitles from YouTube (3 Free Methods)"} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LanguageReactorVsTrancyContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Language Reactor vs Trancy: Which Is Better in 2026? | Funlingo",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/language-reactor-vs-trancy" title={"Language Reactor vs Trancy: Which Is Better in 2026?"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <LanguageReactorVsTrancyContent />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import EnglishVietnameseDictionaryContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Best English-Vietnamese Dictionary Apps & Sites (2026)",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/english-vietnamese-dictionary" title={"Best English-Vietnamese Dictionary Apps & Sites (2026)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <EnglishVietnameseDictionaryContent />

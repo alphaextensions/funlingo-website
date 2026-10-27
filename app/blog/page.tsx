@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogContent from "./blog-content";
+import { readBlogMeta } from "./blogMeta";
 
 export const metadata: Metadata = {
   title: "Funlingo Blog - Language Learning Tips & AI Insights",
@@ -19,5 +20,5 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  return <BlogContent />;
+  return <BlogContent meta={readBlogMeta()} />;
 }

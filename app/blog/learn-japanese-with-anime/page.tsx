@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LearnJapaneseWithAnimeContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/learn-japanese-with-anime" title={"How to Learn Japanese with Anime: A Beginner's 2026 Guide"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <LearnJapaneseWithAnimeContent />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SrtFilesSubtitleDownloadContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "SRT Files Explained: How to Download & Use Subtitle Files",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/srt-files-subtitle-download" title={"SRT Files Explained: How to Download & Use Subtitle Files"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SrtFilesSubtitleDownloadContent />

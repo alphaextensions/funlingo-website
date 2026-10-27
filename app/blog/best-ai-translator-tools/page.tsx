@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BestAiTranslatorToolsContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Best AI Translator Tools (2026): 10 Options Compared for Accuracy, Price & Speed",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/best-ai-translator-tools" title={"AI Translator Tools: 10 Best Options Compared for 2026"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <BestAiTranslatorToolsContent />

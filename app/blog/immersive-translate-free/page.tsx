@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ImmersiveTranslateFreeContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Immersive Translate Free: What You Get Without Paying (2026)",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/immersive-translate-free" title={"Immersive Translate Free: What You Get Without Paying (2026)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ImmersiveTranslateFreeContent />

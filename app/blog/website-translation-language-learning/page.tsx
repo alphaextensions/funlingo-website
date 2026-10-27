@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import WebsiteTranslationContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "AI Website Translation for Language Learning | Funlingo Bilingual Browsing",
@@ -14,6 +15,7 @@ const articleSchema = { "@context": "https://schema.org", "@type": "Article", "h
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/website-translation-language-learning" title={"Website Translation for Language Learning: Read Any Website in Two Languages"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <WebsiteTranslationContent />
     </>

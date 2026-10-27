@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ImmersiveTranslateAlternativesContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "6 Best Immersive Translate Alternatives (2026) — Free Options Included",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/immersive-translate-alternatives" title={"Immersive Translate: What It Is & Best Alternatives"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ImmersiveTranslateAlternativesContent />

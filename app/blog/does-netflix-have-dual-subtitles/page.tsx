@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DoesNetflixHaveDualSubtitlesContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Does Netflix Have Dual Subtitles? (2026 Answer + Free Fix)",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/does-netflix-have-dual-subtitles" title={"Does Netflix Have Dual Subtitles? (2026 Answer + Free Fix)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <DoesNetflixHaveDualSubtitlesContent />

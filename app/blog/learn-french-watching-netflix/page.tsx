@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LearnFrenchNetflixContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Learn French by Watching Netflix & YouTube (2026 Guide)",
@@ -16,6 +17,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/learn-french-watching-netflix" title={"How to Learn French by Watching Netflix & YouTube (2026 Guide)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <LearnFrenchNetflixContent />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ReadingMode2Content from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Reading Mode -- Learn Languages While You Watch with Bilingual Captions",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/how-to-learn-languages-with-reading-mode" title={"Reading Mode: How to Learn Languages While You Watch"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ReadingMode2Content />
