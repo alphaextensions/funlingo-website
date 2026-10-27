@@ -51,8 +51,6 @@ const COVERS: Record<string, [string, string, string, string, string, string]> =
   "srt-files-subtitle-download": ["ANY SITE", "PT · EN", "Cadê a ", "legenda", "?", "Where are the subtitles?"],
   "how-to-learn-languages-with-reading-mode": ["ANY SITE", "IT · EN", "Leggo ", "ogni", " giorno.", "I read every day."],
   "language-learning-tips-and-ai-insights": ["NETFLIX", "ES · EN", "Un ", "consejo", " cada día.", "One tip a day."],
-  "best-subtitle-extensions-chrome": ["YOUTUBE", "ES · EN", "Los mejores ", "subtítulos", ".", "The best subtitles."],
-  "how-to-add-subtitles-to-a-video": ["YOUTUBE", "FR · EN", "Ajouter des ", "sous-titres", ".", "Add subtitles."],
 };
 
 // The platform dot takes that platform's colour (the design used red for all).
