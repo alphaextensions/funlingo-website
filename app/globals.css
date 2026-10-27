@@ -132,6 +132,30 @@ html {
   transform: translateY(0);
   filter: brightness(0.97);
 }
+/* The main "Add to Chrome" buttons (top bar, hero, final call-to-action) get a
+   stronger hover than the shared one: a bigger rise, a deeper glow and a soft
+   ring. The white final button also grows slightly. */
+[data-cta-variant] {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+[data-cta-variant="navPill"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -10px rgba(200, 31, 212, 0.9), 0 0 0 4px rgba(236, 77, 176, 0.18) !important;
+  filter: brightness(1.08) saturate(1.1);
+}
+[data-cta-variant="gradient"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 44px -12px rgba(200, 31, 212, 0.95), 0 0 0 5px rgba(236, 77, 176, 0.16) !important;
+  filter: brightness(1.08) saturate(1.1);
+}
+[data-cta-variant="white"]:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 26px 50px -14px rgba(0, 0, 0, 0.5), 0 0 0 6px rgba(255, 255, 255, 0.22) !important;
+  filter: none;
+}
+[data-cta-variant]:active {
+  transform: translateY(0) scale(0.98);
+}
 @media (prefers-reduced-motion: reduce) {
   .fnl-root button:hover,
   .fnl-root a[data-cta]:hover,
@@ -150,6 +174,25 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Word popups fade and rise in; saved-word chips bounce in; the highlight hint
+   card slides up. */
+@keyframes fnl-popin {
+  from { opacity: 0; transform: translateY(8px) scale(.94); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fnl-chipin {
+  0% { opacity: 0; transform: scale(.4); }
+  60% { opacity: 1; transform: scale(1.1); }
+  100% { transform: none; }
+}
+@keyframes fnl-hintin {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-popin], [data-chipin] { animation: none !important; }
 }
 
 :root {
@@ -1009,6 +1052,44 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .fnl-navlink::after { transition: none; }
 }
+
+/* ── Top bar ───────────────────────────────────────────────────────────────
+   Once the page scrolls past 24px the bar compacts: less padding, a smaller
+   logo and a soft shadow. Phones start smaller and shrink further, and the
+   icon buttons scale down with them. */
+.fnl-navbar { transition: box-shadow .25s ease; }
+.fnl-navbar[data-compact] { box-shadow: 0 10px 30px -18px rgba(80, 10, 80, .45); }
+.fnl-navbar-inner { padding-top: 15px; padding-bottom: 15px; transition: padding .25s ease; }
+.fnl-navbar[data-compact] .fnl-navbar-inner { padding-top: 8px; padding-bottom: 8px; }
+.fnl-navlogo { height: 56px; transition: height .25s ease; }
+.fnl-navbar[data-compact] .fnl-navlogo { height: 42px; }
+.fnl-navicon { transition: transform .25s ease; }
+@media (max-width: 700px) {
+  .fnl-navbar-inner { padding-top: 10px; padding-bottom: 10px; }
+  .fnl-navbar[data-compact] .fnl-navbar-inner { padding-top: 6px; padding-bottom: 6px; }
+  .fnl-navlogo { height: 40px; }
+  .fnl-navbar[data-compact] .fnl-navlogo { height: 30px; }
+  .fnl-navbar[data-compact] .fnl-navicon { transform: scale(.88); }
+}
+
+/* Language menu rows: the row reached by typing or arrow keys is marked. */
+.fnl-langitem:focus-visible { outline: none; box-shadow: inset 0 0 0 2px var(--pink); }
+
+/* ── Highlight a word ───────────────────────────────────────────────────────
+   Hidden words tint on hover. The hint card sits bottom-left (full width on
+   phones); the My Words pill sits bottom-right, above the support chat bubble. */
+.fnl-hidden:hover { background: var(--pink-soft); }
+.fnl-hidden-dark:hover { background: rgba(255, 255, 255, .14); }
+.fnl-hlhint { left: 22px; bottom: 22px; max-width: 330px; }
+.fnl-hlpill { right: 22px; bottom: 96px; }
+@media (max-width: 700px) {
+  .fnl-hlhint { left: 12px; right: 12px; bottom: 84px; max-width: none; }
+  .fnl-hlpill { right: 12px; bottom: 84px; }
+}
+
+/* Footer links darken on hover. */
+.fnl-footlink { transition: color .15s ease; }
+.fnl-footlink:hover { color: var(--text) !important; }
 
 /* ── Evidence chart ────────────────────────────────────────────────────────
    Bars grow with their count-up figure. */

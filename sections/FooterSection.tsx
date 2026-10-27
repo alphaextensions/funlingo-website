@@ -70,7 +70,7 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.product")}</div>
           <div className="flex flex-col gap-3">
             {product.map((l, i) => (
-              <a key={i} href={l.href} style={linkStyle} className="hover:opacity-80 transition-opacity">
+              <a key={i} href={l.href} style={linkStyle} className="fnl-footlink">
                 {l.label}
               </a>
             ))}
@@ -82,7 +82,7 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.company")}</div>
           <div className="flex flex-col gap-3">
             {company.map((l, i) => (
-              <a key={i} href={l.href} style={linkStyle} className="hover:opacity-80 transition-opacity">
+              <a key={i} href={l.href} style={linkStyle} className="fnl-footlink">
                 {l.label}
               </a>
             ))}
@@ -98,7 +98,7 @@ export const FooterSection = (): React.JSX.Element => {
                 key={i}
                 href={l.href}
                 style={linkStyle}
-                className="hover:opacity-80 transition-opacity"
+                className="fnl-footlink"
                 {...(l.href.startsWith("http")
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}

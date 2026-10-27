@@ -97,7 +97,15 @@
     "webS3": "Salve — ela entra no seu deck",
     "webSave": "+ Salvar",
     "webSaved": "✓ Salva",
-    "webMyWords": "Minhas palavras"
+    "webMyWords": "Minhas palavras",
+    "webTurn": "Sua vez — selecione qualquer palavra ↑",
+    "hlPlay": "Ouvir",
+    "hlUnknown": "Na extensão, toda palavra de todo site funciona assim. Nesta página preparamos algumas — tente outra ou adicione o Funlingo para buscar qualquer coisa.",
+    "hlHintT": "Psiu — teste aqui mesmo",
+    "hlHintB": "Esta página funciona como o Funlingo. Selecione qualquer palavra ou encontre as 5 escondidas.",
+    "hlKeep": "Guarde-as — Adicionar ao Chrome",
+    "hlFound": "palavras escondidas encontradas",
+    "hlAllFound": "🎉 Você achou as 5! Isso é o Funlingo, em qualquer site."
   },
   "player": {
     "learning": "APRENDENDO",

@@ -97,7 +97,15 @@
     "webS3": "保存すると単語帳に追加",
     "webSave": "+ 保存",
     "webSaved": "✓ 保存済み",
-    "webMyWords": "マイ単語"
+    "webMyWords": "マイ単語",
+    "webTurn": "あなたの番 — 好きな単語を選んで ↑",
+    "hlPlay": "再生",
+    "hlUnknown": "拡張機能なら、どのサイトのどの単語もこう動きます。このページではいくつか用意しました — 別の単語を試すか、Funlingo を追加して何でも調べてみて。",
+    "hlHintT": "ねえ — ここで試してみて",
+    "hlHintB": "このページは Funlingo のように動きます。好きな単語を選ぶか、隠れた 5 つの単語を探してみて。",
+    "hlKeep": "残しておく — Chrome に追加",
+    "hlFound": "個の隠し単語を発見",
+    "hlAllFound": "🎉 5 つ全部見つけた！これが Funlingo、どのサイトでも。"
   },
   "player": {
     "learning": "LEARNING",

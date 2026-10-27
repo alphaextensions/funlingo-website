@@ -97,7 +97,15 @@
     "webS3": "Lưu lại — từ vào bộ từ của bạn",
     "webSave": "+ Lưu",
     "webSaved": "✓ Đã lưu",
-    "webMyWords": "Từ của tôi"
+    "webMyWords": "Từ của tôi",
+    "webTurn": "Đến lượt bạn — chọn một từ bất kỳ ↑",
+    "hlPlay": "Nghe",
+    "hlUnknown": "Với tiện ích, mọi từ trên mọi trang đều hoạt động như vậy. Trang này chỉ chuẩn bị vài từ — thử từ khác hoặc thêm Funlingo để tra mọi thứ.",
+    "hlHintT": "Psst — thử ngay tại đây",
+    "hlHintB": "Trang này hoạt động như Funlingo. Chọn một từ bất kỳ hoặc tìm 5 từ ẩn.",
+    "hlKeep": "Giữ lại — Thêm vào Chrome",
+    "hlFound": "từ ẩn đã tìm thấy",
+    "hlAllFound": "🎉 Bạn đã tìm đủ 5! Đó là Funlingo, trên mọi trang web."
   },
   "player": {
     "learning": "ĐANG HỌC",

@@ -6,6 +6,7 @@ import { FooterSection } from "@/sections/FooterSection";
 import FunlingoPlayer from "@/sections/home/FunlingoPlayer";
 import GuessGame from "@/sections/home/GuessGame";
 import AnySiteSection from "@/sections/home/AnySiteSection";
+import { HighlightProvider, HiddenWord, HiddenAccent } from "@/sections/home/highlight/HighlightLayer";
 import { Reveal, CountUp } from "@/sections/home/reveal";
 import { FlagSvg } from "@/sections/home/flags";
 import { PLATFORMS, PlatformLogo } from "@/sections/home/platformLogos";
@@ -124,6 +125,7 @@ export default function HomeContent() {
 
 
   return (
+    <HighlightProvider learn={learn}>
     <div className="fnl-root overflow-x-hidden">
       <Navbar currentPage="/" />
 
@@ -143,9 +145,9 @@ export default function HomeContent() {
                   the two halves join directly — a space there renders as a
                   visible gap ("边看边 学。" instead of "边看边学。"). */}
               {t("home.heroPre")}{/^(zh|ja|th)/.test(locale) ? "" : " "}
-              <span style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent" }}>{t("home.heroAccent")}</span>
+              <HiddenAccent text={t("home.heroAccent")} style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent" }} />
             </h1>
-            <p style={{ fontSize: 20, lineHeight: 1.55, color: "var(--text-dim)", margin: "24px 0 0", maxWidth: 480, fontWeight: 500 }}>{t("home.heroSub")}</p>
+            <p className="text-[16px] min-[701px]:text-[18px]" style={{ lineHeight: 1.6, color: "var(--text-dim)", margin: "22px 0 0", maxWidth: 460, fontWeight: 500, textWrap: "pretty" }}>{t("home.heroSub")}</p>
 
             <div style={{ marginTop: 30 }}>
               <div style={{ fontSize: 13, fontWeight: 800, letterSpacing: ".04em", textTransform: "uppercase", color: "var(--text-dim2)", marginBottom: 12 }}>{t("home.learnLabel")}</div>
@@ -259,7 +261,7 @@ export default function HomeContent() {
           <div className="text-center mx-auto" style={{ maxWidth: 680, marginBottom: 58 }}>
             <div style={eyebrow}>{t("home.hiwEyebrow")}</div>
             <h2 style={{ fontSize: "clamp(38px,4.4vw,56px)", fontWeight: 800, margin: 0, color: "var(--text)", letterSpacing: "-.02em", lineHeight: 1.04 }}>
-              {t("home.hiwH2a")}<br />{t("home.hiwH2b")}
+              <HiddenWord slot={1} text={t("home.hiwH2a")} /><br /><HiddenWord slot={2} text={t("home.hiwH2b")} />
             </h2>
           </div>
           </Reveal>
@@ -375,7 +377,7 @@ export default function HomeContent() {
         <Reveal>
         <div className="text-center mx-auto px-5 sm:px-[34px]" style={{ maxWidth: 680, marginBottom: 50 }}>
           <div style={eyebrow}>{t("home.tstEyebrow")}</div>
-          <h2 style={{ fontSize: "clamp(38px,4.4vw,56px)", fontWeight: 800, margin: 0, color: "var(--text)", letterSpacing: "-.02em" }}>{t("home.tstH2")}</h2>
+          <h2 style={{ fontSize: "clamp(38px,4.4vw,56px)", fontWeight: 800, margin: 0, color: "var(--text)", letterSpacing: "-.02em" }}><HiddenWord slot={3} text={t("home.tstH2")} /></h2>
         </div>
         </Reveal>
         <div className="flex fnl-mqrow" style={{ width: "max-content", gap: 20, animation: "fnl-mq 90s linear infinite", marginBottom: 20 }}>
@@ -454,7 +456,7 @@ export default function HomeContent() {
           <div className="absolute pointer-events-none" style={{ top: -120, right: -60, width: 300, height: 300, borderRadius: "50%", background: "rgba(255,255,255,.10)" }} />
           <div className="relative">
             <h2 style={{ fontSize: "clamp(40px,5vw,64px)", fontWeight: 900, margin: "0 0 16px", color: "#fff", letterSpacing: "-.02em", lineHeight: 1.02 }}>
-              {t("home.ctaH2a")}<br />{t("home.ctaH2b")}
+              {t("home.ctaH2a")}<br /><HiddenWord slot={4} text={t("home.ctaH2b")} onDark />
             </h2>
             <p className="mx-auto" style={{ fontSize: 20, color: "rgba(255,255,255,.92)", margin: "0 auto 32px", maxWidth: 540, fontWeight: 500 }}>{t("home.ctaSub")}</p>
             <ChromeCTA label={t("cta.long")} variant="white" glyphSize={21} />
@@ -464,6 +466,7 @@ export default function HomeContent() {
 
       <FooterSection />
     </div>
+    </HighlightProvider>
   );
 }
 

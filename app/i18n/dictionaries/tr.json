@@ -97,7 +97,15 @@
     "webS3": "Kaydet — kelime destene eklenir",
     "webSave": "+ Kaydet",
     "webSaved": "✓ Kaydedildi",
-    "webMyWords": "Kelimelerim"
+    "webMyWords": "Kelimelerim",
+    "webTurn": "Sıra sende — bir kelime seç ↑",
+    "hlPlay": "Dinle",
+    "hlUnknown": "Eklentide her sitedeki her kelime böyle çalışır. Bu sayfada birkaç tane hazırladık — başka birini dene ya da her şeye bakmak için Funlingo’yu ekle.",
+    "hlHintT": "Psst — hemen burada dene",
+    "hlHintB": "Bu sayfa Funlingo gibi çalışır. Bir kelime seç ya da 5 gizli kelimeyi bul.",
+    "hlKeep": "Sakla — Chrome’a ekle",
+    "hlFound": "gizli kelime bulundu",
+    "hlAllFound": "🎉 5’ini de buldun! İşte Funlingo, her sitede."
   },
   "player": {
     "learning": "ÖĞRENİLEN",
