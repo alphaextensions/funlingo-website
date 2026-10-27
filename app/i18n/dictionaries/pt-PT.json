@@ -97,7 +97,15 @@
     "webS3": "Guarda-a — entra no teu baralho",
     "webSave": "+ Guardar",
     "webSaved": "✓ Guardada",
-    "webMyWords": "As minhas palavras"
+    "webMyWords": "As minhas palavras",
+    "webTurn": "A tua vez — seleciona qualquer palavra ↑",
+    "hlPlay": "Ouvir",
+    "hlUnknown": "Na extensão, cada palavra de cada site funciona assim. Nesta página preparámos algumas — experimenta outra ou adiciona o Funlingo para procurar tudo.",
+    "hlHintT": "Psst — experimenta aqui mesmo",
+    "hlHintB": "Esta página funciona como o Funlingo. Seleciona qualquer palavra ou encontra as 5 escondidas.",
+    "hlKeep": "Guarda-as — Adicionar ao Chrome",
+    "hlFound": "palavras escondidas encontradas",
+    "hlAllFound": "🎉 Encontraste as 5! Isto é o Funlingo, em qualquer site."
   },
   "player": {
     "learning": "A APRENDER",

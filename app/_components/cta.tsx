@@ -104,6 +104,7 @@ export function ChromeCTA({
       target="_blank"
       rel="noopener noreferrer"
       data-cta
+      data-cta-variant={variant}
       className={className}
       style={{ ...base, ...variants[variant], ...style }}
     >

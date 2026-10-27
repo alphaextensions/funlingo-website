@@ -97,7 +97,15 @@
     "webS3": "Sla het op — het komt in je deck",
     "webSave": "+ Opslaan",
     "webSaved": "✓ Opgeslagen",
-    "webMyWords": "Mijn woorden"
+    "webMyWords": "Mijn woorden",
+    "webTurn": "Jij bent — selecteer een woord ↑",
+    "hlPlay": "Luister",
+    "hlUnknown": "In de extensie werkt elk woord op elke site zo. Hier hebben we er een paar klaargezet — probeer een ander of voeg Funlingo toe om alles op te zoeken.",
+    "hlHintT": "Psst — probeer het hier",
+    "hlHintB": "Deze pagina werkt als Funlingo. Selecteer een woord of vind de 5 verborgen woorden.",
+    "hlKeep": "Bewaar ze — Toevoegen aan Chrome",
+    "hlFound": "verborgen woorden gevonden",
+    "hlAllFound": "🎉 Alle 5 gevonden! Dat is Funlingo, op elke site."
   },
   "player": {
     "learning": "LEREN",

@@ -97,7 +97,15 @@
     "webS3": "Enregistre-le — il rejoint ton paquet",
     "webSave": "+ Enregistrer",
     "webSaved": "✓ Enregistré",
-    "webMyWords": "Mes mots"
+    "webMyWords": "Mes mots",
+    "webTurn": "À toi — sélectionne un mot ↑",
+    "hlPlay": "Écouter",
+    "hlUnknown": "Avec l’extension, chaque mot de chaque site marche comme ça. Ici, on en a préparé quelques-uns — essaie un autre ou ajoute Funlingo pour tout chercher.",
+    "hlHintT": "Psst — essaie ici même",
+    "hlHintB": "Cette page marche comme Funlingo. Sélectionne un mot ou trouve les 5 mots cachés.",
+    "hlKeep": "Garde-les — Ajouter à Chrome",
+    "hlFound": "mots cachés trouvés",
+    "hlAllFound": "🎉 Tu as trouvé les 5 ! C’est ça, Funlingo, sur tous les sites."
   },
   "player": {
     "learning": "APPRENTISSAGE",

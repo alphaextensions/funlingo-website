@@ -97,7 +97,15 @@
     "webS3": "Mentsd el — bekerül a paklidba",
     "webSave": "+ Mentés",
     "webSaved": "✓ Elmentve",
-    "webMyWords": "Saját szavak"
+    "webMyWords": "Saját szavak",
+    "webTurn": "Te jössz — jelölj ki egy szót ↑",
+    "hlPlay": "Lejátszás",
+    "hlUnknown": "A bővítményben minden oldal minden szava így működik. Itt csak néhányat készítettünk elő — próbálj egy másikat, vagy add hozzá a Funlingót, és nézz meg bármit.",
+    "hlHintT": "Pszt — próbáld ki itt",
+    "hlHintB": "Ez az oldal úgy működik, mint a Funlingo. Jelölj ki egy szót, vagy keresd meg az 5 rejtett szót.",
+    "hlKeep": "Tartsd meg — Hozzáadás a Chrome-hoz",
+    "hlFound": "rejtett szó megtalálva",
+    "hlAllFound": "🎉 Mind az 5-öt megtaláltad! Ez a Funlingo, bármelyik oldalon."
   },
   "player": {
     "learning": "TANULÁS",

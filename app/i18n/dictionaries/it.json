@@ -97,7 +97,15 @@
     "webS3": "Salvala — entra nel tuo mazzo",
     "webSave": "+ Salva",
     "webSaved": "✓ Salvata",
-    "webMyWords": "Le mie parole"
+    "webMyWords": "Le mie parole",
+    "webTurn": "Tocca a te — seleziona una parola ↑",
+    "hlPlay": "Ascolta",
+    "hlUnknown": "Con l’estensione, ogni parola di ogni sito funziona così. Qui ne abbiamo preparate alcune — provane un’altra o aggiungi Funlingo per cercare tutto.",
+    "hlHintT": "Psst — provalo proprio qui",
+    "hlHintB": "Questa pagina funziona come Funlingo. Seleziona una parola o trova le 5 nascoste.",
+    "hlKeep": "Tienile — Aggiungi a Chrome",
+    "hlFound": "parole nascoste trovate",
+    "hlAllFound": "🎉 Le hai trovate tutte e 5! Questo è Funlingo, su ogni sito."
   },
   "player": {
     "learning": "STAI IMPARANDO",

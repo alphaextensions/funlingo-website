@@ -97,7 +97,15 @@
     "webS3": "저장하면 단어장에 들어가요",
     "webSave": "+ 저장",
     "webSaved": "✓ 저장됨",
-    "webMyWords": "내 단어"
+    "webMyWords": "내 단어",
+    "webTurn": "이제 직접 해보세요 — 아무 단어나 선택 ↑",
+    "hlPlay": "재생",
+    "hlUnknown": "확장 프로그램에서는 모든 사이트의 모든 단어가 이렇게 작동해요. 이 페이지에는 몇 개만 준비했어요 — 다른 단어를 시도하거나 Funlingo를 추가해 무엇이든 찾아보세요.",
+    "hlHintT": "쉿 — 여기서 바로 해보세요",
+    "hlHintB": "이 페이지는 Funlingo처럼 작동해요. 아무 단어나 선택하거나 숨겨진 단어 5개를 찾아보세요.",
+    "hlKeep": "간직하기 — Chrome에 추가",
+    "hlFound": "개 숨은 단어 찾음",
+    "hlAllFound": "🎉 5개 모두 찾았어요! 이게 바로 Funlingo, 어떤 사이트에서든."
   },
   "player": {
     "learning": "학습 중",

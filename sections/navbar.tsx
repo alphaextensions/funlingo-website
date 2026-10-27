@@ -66,34 +66,21 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
   }, []);
 
   return (
+    // Sizes for both states live in globals.css (.fnl-navbar), so phones can
+    // use their own smaller logo and icon buttons.
     <header
-      className="sticky top-0 z-[100] w-full backdrop-blur-[16px] border-b"
-      style={{
-        background: "var(--nav)",
-        borderColor: "var(--border)",
-        boxShadow: compact ? "0 10px 30px -18px rgba(80,10,80,.45)" : "none",
-        transition: "box-shadow .25s ease",
-      }}
+      className="fnl-navbar sticky top-0 z-[100] w-full backdrop-blur-[16px] border-b"
+      data-compact={compact ? "true" : undefined}
+      style={{ background: "var(--nav)", borderColor: "var(--border)" }}
     >
-      <div
-        className="flex items-center justify-between max-w-[1240px] mx-auto px-5 sm:px-[34px]"
-        style={{ paddingTop: compact ? 9 : 15, paddingBottom: compact ? 9 : 15, transition: "padding .25s ease" }}
-      >
+      <div className="fnl-navbar-inner flex items-center justify-between max-w-[1240px] mx-auto px-4 sm:px-[34px]">
         {/* Logo */}
         <a href={navHref("/", locale)} className="block shrink-0">
-          <img
-            src={logo}
-            alt="Funlingo"
-            className="w-auto block"
-            style={{
-              height: compact ? 42 : 56,
-              transition: "height .25s ease",
-            }}
-          />
+          <img src={logo} alt="Funlingo" className="fnl-navlogo w-auto block" />
         </a>
 
         {/* Desktop nav links */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden min-[860px]:flex items-center gap-8">
           {navItems.map((item, i) => (
             <a
               key={i}
@@ -113,16 +100,16 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
         {/* Right cluster */}
         <div className="flex items-center gap-[10px]">
           <div className="hidden sm:block">
-            <LanguageMenu />
+            <LanguageMenu buttonClassName="fnl-navicon" />
           </div>
-          <ThemeToggle />
+          <ThemeToggle className="fnl-navicon" />
           <div className="hidden sm:block">
             <ChromeCTA label={t("cta.short")} variant="navPill" glyphSize={17} />
           </div>
 
           {/* Mobile menu toggle */}
           <button
-            className="md:hidden w-[42px] h-[42px] rounded-full border flex flex-col items-center justify-center gap-[5px] cursor-pointer"
+            className="fnl-navicon min-[860px]:hidden w-[42px] h-[42px] rounded-full border flex flex-col items-center justify-center gap-[5px] cursor-pointer"
             style={{ borderColor: "var(--border)", background: "var(--chip)" }}
             onClick={() => setIsMenuOpen((o) => !o)}
             aria-label="Toggle menu"
@@ -154,7 +141,7 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
 
       {/* Mobile dropdown */}
       <div
-        className="md:hidden overflow-hidden transition-all duration-300 border-t"
+        className="min-[860px]:hidden overflow-hidden transition-all duration-300 border-t"
         style={{
           maxHeight: isMenuOpen ? 420 : 0,
           opacity: isMenuOpen ? 1 : 0,
@@ -168,7 +155,7 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
               key={i}
               href={item.href}
               onClick={() => setIsMenuOpen(false)}
-              className="w-full py-3 text-[17px] no-underline"
+              className="w-full min-h-[48px] flex items-center text-[17px] no-underline"
               style={{
                 fontWeight: item.active ? 700 : 600,
                 color: item.active ? "var(--text)" : "var(--text-dim)",
@@ -177,7 +164,7 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
               {item.label}
             </a>
           ))}
-          <div className="flex items-center gap-3 pt-3">
+          <div className="sm:hidden flex items-center gap-3 pt-3">
             <LanguageMenu />
             <ChromeCTA label={t("cta.short")} variant="navPill" glyphSize={17} />
           </div>

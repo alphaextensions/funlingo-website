@@ -97,7 +97,15 @@
     "webS3": "收藏它——自动进入生词本",
     "webSave": "+ 收藏",
     "webSaved": "✓ 已收藏",
-    "webMyWords": "我的单词"
+    "webMyWords": "我的单词",
+    "webTurn": "轮到你了——随便选一个词 ↑",
+    "hlPlay": "播放",
+    "hlUnknown": "装上插件后，任何网站上的任何词都能这样查。这个页面我们只准备了几个——换一个试试，或者添加 Funlingo，想查什么查什么。",
+    "hlHintT": "嘿——就在这儿试试",
+    "hlHintB": "这个页面就像 Funlingo。随便选一个词，或者找出 5 个隐藏词。",
+    "hlKeep": "留住它们——添加到 Chrome",
+    "hlFound": "个隐藏词已找到",
+    "hlAllFound": "🎉 5 个全找到了！这就是 Funlingo，任何网站都行。"
   },
   "player": {
     "learning": "LEARNING",

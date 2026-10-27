@@ -97,7 +97,15 @@
     "webS3": "Speichern — es landet in deinem Deck",
     "webSave": "+ Speichern",
     "webSaved": "✓ Gespeichert",
-    "webMyWords": "Meine Wörter"
+    "webMyWords": "Meine Wörter",
+    "webTurn": "Jetzt du — markier ein Wort ↑",
+    "hlPlay": "Anhören",
+    "hlUnknown": "In der Erweiterung funktioniert jedes Wort auf jeder Seite so. Hier haben wir ein paar vorbereitet — probier ein anderes oder hol dir Funlingo, um alles nachzuschlagen.",
+    "hlHintT": "Psst — probier’s gleich hier",
+    "hlHintB": "Diese Seite funktioniert wie Funlingo. Markier ein Wort oder finde die 5 versteckten.",
+    "hlKeep": "Behalten — Zu Chrome hinzufügen",
+    "hlFound": "versteckte Wörter gefunden",
+    "hlAllFound": "🎉 Alle 5 gefunden! Das ist Funlingo — auf jeder Seite."
   },
   "player": {
     "learning": "LERNEN",

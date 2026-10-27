@@ -4,7 +4,8 @@ import * as React from "react";
 import { createPortal } from "react-dom";
 import { useT } from "@/app/i18n/I18nProvider";
 import { track } from "@/app/_components/track";
-import { sceneFor, glossFor, translationFor, DEFAULT_SCENE_IMG } from "./scenes";
+import { sceneFor, glossFor, translationFor, DEFAULT_SCENE_IMG, SCENES } from "./scenes";
+import { fadeOut, flyTo, plusOne, pop, sparks } from "./celebrate";
 
 // The built-in gift scene uses these five; per-language scenes bring their own
 // concept keys, resolved through SCENE_CONCEPTS instead of NATIVE.
@@ -324,6 +325,15 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
     { key: string; text: string; meaning: string }[]
   >([]);
   const leaveTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const tipRef = React.useRef<HTMLDivElement>(null);
+  const badgeRef = React.useRef<HTMLSpanElement>(null);
+
+  // Load every scene still up front, so switching language never shows the
+  // previous scene while the new image downloads.
+  React.useEffect(() => {
+    for (const s of Object.values(SCENES)) new Image().src = s.img;
+    new Image().src = DEFAULT_SCENE_IMG;
+  }, []);
 
   // Reset when the learning language changes.
   React.useEffect(() => {
@@ -355,16 +365,27 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
   const cancelLeave = () => {
     if (leaveTimer.current) clearTimeout(leaveTimer.current);
   };
-  const leave = () => {
+  // Close with a short fade so the popup never just blinks out.
+  const leave = (delay = 150) => {
     if (leaveTimer.current) clearTimeout(leaveTimer.current);
-    leaveTimer.current = setTimeout(() => setHover(null), 150);
+    leaveTimer.current = setTimeout(() => fadeOut(tipRef.current, () => setHover(null)), delay);
   };
-  const toggleSave = (w: { key: string; text: string; meaning: string }) =>
-    setSaved((s) => {
-      if (s.some((x) => x.key === w.key)) return s;
-      track("vocab_save", { word: w.text, lang });
-      return [...s, w];
+  // Saving: the word flies from the Save button into the My Words counter,
+  // which pops with sparks and a "+1"; the popup then fades away.
+  const save = (w: { key: string; text: string; meaning: string }, from: Element) => {
+    if (saved.some((x) => x.key === w.key)) return;
+    track("vocab_save", { word: w.text, lang });
+    setSaved((s) => (s.some((x) => x.key === w.key) ? s : [...s, w]));
+    flyTo(w.text, from.getBoundingClientRect(), badgeRef.current, () => {
+      const badge = badgeRef.current;
+      if (!badge) return;
+      pop(badge);
+      const r = badge.getBoundingClientRect();
+      sparks(r);
+      plusOne(r);
     });
+    leave(450);
+  };
 
   // Jump to a subtitle line via one of the clickable points.
   const jumpToLine = (i: number) => {
@@ -442,6 +463,7 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
                   const interesting = !!w.concept;
                   const key = `${lang}:${lineIndex}:${i}`;
                   const isHover = hover?.key === key;
+                  const isSaved = saved.some((s) => s.key === key);
                   return (
                     <span
                       key={key}
@@ -449,11 +471,10 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
                       onMouseEnter={(e) => interesting && enter(key, w, e.currentTarget)}
                       onMouseLeave={() => leave()}
                     >
+                      {/* A tap fires mouseenter and then click, so clicking only
+                          ever opens; leaving the word or the popup closes it. */}
                       <span
-                        onClick={(e) =>
-                          interesting &&
-                          (isHover ? setHover(null) : enter(key, w, e.currentTarget))
-                        }
+                        onClick={(e) => interesting && enter(key, w, e.currentTarget)}
                         style={
                           interesting
                             ? {
@@ -461,8 +482,9 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
                                 cursor: "pointer",
                                 padding: "1px 7px",
                                 borderRadius: 10,
-                                borderBottom: "2px dashed #EC4DB0",
-                                background: isHover ? "rgba(236,77,176,.30)" : "rgba(236,77,176,.12)",
+                                // Saved words keep a solid underline.
+                                borderBottom: isSaved ? "2px solid #EC4DB0" : "2px dashed #EC4DB0",
+                                background: isHover ? "rgba(236,77,176,.30)" : isSaved ? "rgba(236,77,176,.26)" : "rgba(236,77,176,.12)",
                                 transition: "background .15s ease",
                                 display: "inline-block",
                               }
@@ -565,12 +587,12 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
             <svg width="18" height="18" viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z" fill="currentColor" /></svg>
           </span>
           <span style={{ fontSize: 17, fontWeight: 700, color: "var(--text)" }}>{t("player.myWords")}</span>
-          <span style={{ marginLeft: "auto", padding: "3px 12px", borderRadius: 999, background: "linear-gradient(135deg,#BC22D6,#E0319E)", color: "#fff", fontSize: 12, fontWeight: 800 }}>{saved.length}</span>
+          <span ref={badgeRef} style={{ marginLeft: "auto", padding: "3px 12px", borderRadius: 999, background: "linear-gradient(135deg,#BC22D6,#E0319E)", color: "#fff", fontSize: 12, fontWeight: 800 }}>{saved.length}</span>
         </div>
         {saved.length > 0 ? (
           <div className="flex flex-wrap gap-2">
             {saved.map((s) => (
-              <div key={s.key} className="flex items-center gap-[7px]" style={{ padding: "8px 13px", borderRadius: 13, background: "var(--chip)" }}>
+              <div key={s.key} data-chipin className="flex items-center gap-[7px]" style={{ padding: "8px 13px", borderRadius: 13, background: "var(--chip)", animation: "fnl-chipin .5s cubic-bezier(.2,1.2,.4,1) .55s both" }}>
                 <span dir="ltr" style={{ fontWeight: 700, color: "var(--text)", fontSize: 14 }}>{s.text}</span>
                 <span style={{ color: "#E0319E", fontSize: 14 }}>→</span>
                 <span style={{ fontWeight: 600, color: "var(--text-dim)", fontSize: 14 }}>{s.meaning}</span>
@@ -599,9 +621,14 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
               fontFamily: "'Poppins',sans-serif",
             }}
             onMouseEnter={cancelLeave}
-            onMouseLeave={leave}
+            onMouseLeave={() => leave()}
           >
-            <div dir={tipDir} style={{ width: 240, background: "#fff", borderRadius: 18, boxShadow: "0 20px 48px -10px rgba(80,10,80,.55)", padding: "15px 17px", textAlign: "start" }}>
+            <div
+              ref={tipRef}
+              data-popin
+              dir={tipDir}
+              style={{ width: 240, background: "#fff", borderRadius: 18, boxShadow: "0 20px 48px -10px rgba(80,10,80,.55)", padding: "15px 17px", textAlign: "start", transformOrigin: "50% 100%", animation: "fnl-popin .22s cubic-bezier(.2,.8,.2,1) both" }}
+            >
               <div className="flex items-baseline gap-2" style={{ marginBottom: 3 }}>
                 <span dir="ltr" style={{ fontSize: 20, fontWeight: 800, color: "#1B0F26" }}>{hover.w.text}</span>
                 {hover.w.posKind && (
@@ -628,7 +655,7 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
                 const isSaved = saved.some((s) => s.key === hover.key);
                 return (
                   <button
-                    onClick={() => toggleSave({ key: hover.key, text: hover.w.text, meaning: meaningOf(hover.w) })}
+                    onClick={(e) => save({ key: hover.key, text: hover.w.text, meaning: meaningOf(hover.w) }, e.currentTarget)}
                     data-cta
                     className="w-full"
                     style={{
