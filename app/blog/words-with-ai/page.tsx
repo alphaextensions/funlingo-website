@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import WordsWithAiContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Words That Have 'AI' in Them — Complete List & Meanings",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/words-with-ai" title={"Words That Have 'AI' in Them — Complete List & Meanings"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <WordsWithAiContent />

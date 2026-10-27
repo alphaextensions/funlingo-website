@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ImmersiveTranslateGuideZhContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "沈浸式翻譯完整教學：安裝、設定與使用技巧",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/immersive-translate-guide-zh" title={"沈浸式翻譯完整教學：安裝、設定與使用技巧"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ImmersiveTranslateGuideZhContent />

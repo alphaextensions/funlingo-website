@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AitalkReviewContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "AiTalk Review (2026): Is It Worth $11.99/Month? Honest Test Results",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/aitalk-review" title={"AiTalk Review — AI Language Practice Tool (2026)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <AitalkReviewContent />

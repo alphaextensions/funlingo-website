@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PlaybackSpeedYoutubeContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Why Can't I Change Playback Speed on YouTube? (Fixed) | Funlingo",
@@ -84,6 +85,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/why-cant-change-playback-speed-youtube" title={"Why Can't I Change Playback Speed on YouTube? (Fixed)"} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

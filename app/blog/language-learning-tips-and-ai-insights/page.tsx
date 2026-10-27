@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BestAIToolsContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Funlingo: AI-native, low-friction learning",
@@ -14,6 +15,7 @@ const articleSchema = { "@context": "https://schema.org", "@type": "Article", "h
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/language-learning-tips-and-ai-insights" title={"Funlingo: AI-native, low-friction learning"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <BestAIToolsContent />
     </>

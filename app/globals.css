@@ -1120,3 +1120,12 @@ html {
   box-shadow: 0 22px 44px -24px rgba(236, 77, 176, .5);
 }
 @media (prefers-reduced-motion: reduce) { .fnl-step:hover { transform: none; } }
+
+/* Blog cards lift with a pink edge on hover. */
+.fnl-blogcard { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.fnl-blogcard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(236, 77, 176, .35) !important;
+  box-shadow: 0 30px 70px -30px rgba(150, 20, 140, .45);
+}
+@media (prefers-reduced-motion: reduce) { .fnl-blogcard:hover { transform: none; } }

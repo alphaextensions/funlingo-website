@@ -27,6 +27,24 @@ export const accBar = (c: string) => CATEGORY_COLORS[c]?.bar ?? CATEGORY_COLORS.
 
 export const posts: BlogPost[] = [
     {
+      id: 10,
+      title: "7 Best Subtitle Extensions for Chrome (2026)",
+      excerpt: "The best Chrome subtitle extensions by job: adding subtitles to videos that have none, downloading SRT files, translating captions, fixing sync, and making captions readable.",
+      date: "August 26, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/best-subtitle-extensions-chrome"
+    },
+    {
+      id: 9,
+      title: "How to Add Subtitles to a Video (2026): 5 Free Methods",
+      excerpt: "Add subtitles to any video — auto-generate in YouTube Studio, attach an SRT in VLC, burn captions in with HandBrake, or overlay them on Netflix and YouTube with a free Chrome extension.",
+      date: "August 26, 2026",
+      author: "Funlingo Team",
+      category: "Guide",
+      slug: "/blog/how-to-add-subtitles-to-a-video"
+    },
+    {
       id: 8,
       title: "Learn Japanese on Crunchyroll: Free Dual Subtitles Guide",
       excerpt: "Turn Crunchyroll anime into Japanese practice with free dual subtitles and click-to-translate. The best anime to learn Japanese, by level, plus a daily routine.",

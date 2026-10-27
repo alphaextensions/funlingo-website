@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NetflixLanguageLearningExtensionsContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "5 Best Netflix Language Learning Extensions (2026) — Free & Paid Compared",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/netflix-language-learning-extensions" title={"Netflix Language Learning Extensions: Top 5 for 2026"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <NetflixLanguageLearningExtensionsContent />

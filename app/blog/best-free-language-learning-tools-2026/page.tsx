@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BestFreeToolsContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Best Free Language Learning Tools in 2026 — No Subscriptions Required",
@@ -16,6 +17,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/best-free-language-learning-tools-2026" title={"Best Free Language Learning Tools in 2026 — No Subscriptions Required"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <BestFreeToolsContent />

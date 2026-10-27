@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LearnByWatchingContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Learn a Language by Watching (Step-by-Step Guide)",
@@ -14,6 +15,7 @@ const articleSchema = { "@context": "https://schema.org", "@type": "Article", "h
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/how-to-learn-a-language-by-watching" title={"How to Learn a Language by Watching (Without Wasting Your Time)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <LearnByWatchingContent />
     </>

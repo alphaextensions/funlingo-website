@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ShadowingLanguageLearningContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "What Is Shadowing in Language Learning? (+ AI Tools) | Funlingo",
@@ -41,6 +42,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/shadowing-language-learning" title={"What Is Shadowing in Language Learning? (+ AI Tools)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ShadowingLanguageLearningContent />

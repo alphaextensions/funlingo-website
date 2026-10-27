@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Best AI Language Learning Apps 2026 — Why Funlingo Wins for Passive Learning",
@@ -41,6 +42,7 @@ const articleSchema = {
 export default function BlogPostPage() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/best-ai-language-learning-tools-2026" title={"Best AI Language Learning Tools (2026): Learn faster with AI & real content"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <BlogPostContent />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HowToAddSubtitlesToAVideoContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Add Subtitles to a Video (2026): 5 Free Methods",
@@ -18,6 +19,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/how-to-add-subtitles-to-a-video" title={"How to Add Subtitles to a Video (2026): 5 Free Methods"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

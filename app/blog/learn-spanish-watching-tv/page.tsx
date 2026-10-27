@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LearnSpanishWatchingTvContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Learn Spanish Watching TV: Best Shows, Tools & Daily Routine (2026)",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/learn-spanish-watching-tv" title={"Learn Spanish Watching TV: Best Shows, Tools & Daily Routine (2026)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <LearnSpanishWatchingTvContent />

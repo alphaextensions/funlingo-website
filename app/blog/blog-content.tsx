@@ -6,16 +6,21 @@ import { FooterSection } from "@/sections/FooterSection";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { posts, accBadge } from "./posts";
+import { coverFor } from "./covers";
+import type { BlogMeta } from "./blogMeta";
+import BlogCover from "./_components/BlogCover";
 import { track } from "@/app/_components/track";
 
-const PAGE = 6;
+const PAGE = 9;
 
-// Posts ship a hero image at /blog-images/<slug>-hero.jpg.
-const heroImg = (slug: string) =>
-  `/blog-images/${slug.split("/").filter(Boolean).pop()}-hero.jpg`;
+const slugOf = (slug: string) => slug.split("/").filter(Boolean).pop() ?? "";
+// Posts with photography ship a hero image at /blog-images/<slug>-hero.jpg.
+const heroImg = (slug: string) => `/blog-images/${slugOf(slug)}-hero.jpg`;
 
-export default function BlogContent() {
+export default function BlogContent({ meta }: { meta: BlogMeta }) {
   const featured = posts[0];
+  const hasPhoto = (slug: string) => meta.photos.includes(slugOf(slug));
+  const readOf = (slug: string) => meta.read[slugOf(slug)] ?? "";
   const [filter, setFilter] = React.useState("All");
   const [visible, setVisible] = React.useState(PAGE);
 
@@ -140,14 +145,11 @@ export default function BlogContent() {
             >
               <div className="grid lg:grid-cols-2">
                 <div className="relative min-h-[220px] lg:min-h-[340px] overflow-hidden" style={{ background: "var(--grad)" }}>
-                  <img
-                    src={heroImg(featured.slug)}
-                    alt={featured.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = "none";
-                    }}
-                  />
+                  {hasPhoto(featured.slug) ? (
+                    <img src={heroImg(featured.slug)} alt={featured.title} className="absolute inset-0 w-full h-full object-cover" />
+                  ) : (
+                    <BlogCover cover={coverFor(featured.slug, featured.category)} size="hero" />
+                  )}
                   <span
                     className="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-xs font-extrabold"
                     style={{ background: "rgba(0,0,0,.4)", backdropFilter: "blur(4px)" }}
@@ -162,6 +164,7 @@ export default function BlogContent() {
                     </span>
                     <span className="flex items-center gap-1"><Calendar className="w-3 h-3" />{featured.date}</span>
                     <span className="flex items-center gap-1"><User className="w-3 h-3" />{featured.author}</span>
+                    {readOf(featured.slug) && <span>{readOf(featured.slug)}</span>}
                   </div>
                   <h2 className="text-2xl sm:text-3xl font-bold leading-tight transition-colors" style={{ color: "var(--text)" }}>
                     {featured.title}
@@ -176,43 +179,47 @@ export default function BlogContent() {
           </Link>
         )}
 
-        {/* Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {gridPosts.slice(0, visible).map((post) => (
-            <Link key={post.id} href={post.slug} className="no-underline">
-              <div
-                className="relative h-full overflow-hidden rounded-[22px] border cursor-pointer group transition-all duration-300 hover:-translate-y-1"
-                style={{ background: "var(--surface)", borderColor: "var(--border)" }}
+        {/* Grid. Every post's card is in the page so search engines can follow
+            every link; cards past "Show more" are just hidden. */}
+        <div className="grid gap-[22px] md:grid-cols-2 lg:grid-cols-3">
+          {gridPosts.map((post, i) => {
+            const photo = hasPhoto(post.slug);
+            const read = readOf(post.slug);
+            return (
+              <Link
+                key={post.id}
+                href={post.slug}
+                className="fnl-blogcard no-underline flex-col overflow-hidden rounded-[22px] border"
+                style={{ display: i < visible ? "flex" : "none", background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)" }}
               >
-                <div className="p-6 flex flex-col h-full">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className={`px-2.5 py-0.5 rounded-full border text-xs font-medium ${accBadge(post.category)}`}>
+                <div className="relative overflow-hidden" style={{ aspectRatio: "16 / 9", background: "var(--grad)" }}>
+                  {photo ? (
+                    <img src={heroImg(post.slug)} alt={post.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                  ) : (
+                    <BlogCover cover={coverFor(post.slug, post.category)} />
+                  )}
+                </div>
+                <div className="flex flex-col flex-1" style={{ padding: "20px 22px 22px" }}>
+                  <div className="flex items-center" style={{ gap: 10, marginBottom: 12 }}>
+                    <span style={{ padding: "4px 11px", borderRadius: 999, background: "var(--pink-soft)", color: "var(--pink)", fontSize: 12, fontWeight: 800 }}>
                       {post.category}
                     </span>
-                    <div className="flex items-center gap-2 text-xs" style={{ color: "var(--text-dim2)" }}>
-                      <Calendar className="w-3 h-3" />
-                      {post.date}
-                    </div>
+                    <time style={{ fontSize: 13, fontWeight: 600, color: "var(--text-dim2)" }}>{post.date}</time>
                   </div>
-                  <h3 className="text-xl font-bold leading-tight mb-3" style={{ color: "var(--text)" }}>
+                  <h3 style={{ fontSize: 19, fontWeight: 700, margin: "0 0 9px", color: "var(--text)", lineHeight: 1.3, textWrap: "balance" }}>
                     {post.title}
                   </h3>
-                  <p className="line-clamp-3 mb-6" style={{ color: "var(--text-dim)" }}>
+                  <p className="line-clamp-3" style={{ fontSize: 15, lineHeight: 1.55, color: "var(--text-dim)", margin: "0 0 16px", fontWeight: 500 }}>
                     {post.excerpt}
                   </p>
-                  <div className="flex items-center justify-between pt-4 mt-auto border-t" style={{ borderColor: "var(--border)" }}>
-                    <div className="flex items-center gap-2 text-sm" style={{ color: "var(--text-dim2)" }}>
-                      <User className="w-3 h-3" />
-                      {post.author}
-                    </div>
-                    <span className="inline-flex items-center gap-1 font-semibold group-hover:translate-x-1 transition-transform" style={{ color: "var(--pink)" }}>
-                      Read more <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </div>
+                  <span className="flex items-center justify-between" style={{ marginTop: "auto", fontSize: 14, fontWeight: 800, color: "var(--pink)" }}>
+                    <span>Read article →</span>
+                    {read && <span style={{ fontSize: 13, fontWeight: 600, color: "var(--text-dim2)" }}>{read}</span>}
+                  </span>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Show more */}
@@ -236,7 +243,7 @@ export default function BlogContent() {
             >
               Show more
               <span style={{ color: "var(--text-dim2)", fontWeight: 600 }}>
-                ({gridPosts.length - visible} more)
+                ({gridPosts.length - visible})
               </span>
             </button>
           </div>

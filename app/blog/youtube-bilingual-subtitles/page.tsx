@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import YoutubeBilingualSubtitlesContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "YouTube Bilingual Subtitles: Watch Videos in Two Languages",
@@ -16,6 +17,7 @@ const howToSchema = { "@context": "https://schema.org", "@type": "HowTo", "name"
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/youtube-bilingual-subtitles" title={"YouTube Bilingual Subtitles: Watch Videos in Two Languages"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />

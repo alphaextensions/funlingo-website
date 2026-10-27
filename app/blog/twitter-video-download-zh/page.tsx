@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TwitterVideoDownloadZhContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "推特视频下载 — 3种免费保存方法 (2026)",
@@ -16,6 +17,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/twitter-video-download-zh" title={"推特视频下载 — 3种免费保存方法 (2026)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <TwitterVideoDownloadZhContent />

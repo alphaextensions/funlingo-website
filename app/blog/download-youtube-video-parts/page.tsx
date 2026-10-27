@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DownloadYoutubeVideoPartsContent from "./content";
+import BreadcrumbSchema from "../_components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "How to Download YouTube Videos (Specific Parts Only)",
@@ -15,6 +16,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema slug="/blog/download-youtube-video-parts" title={"How to Download YouTube Videos (Specific Parts Only)"} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <DownloadYoutubeVideoPartsContent />
