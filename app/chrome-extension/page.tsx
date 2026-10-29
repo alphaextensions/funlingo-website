@@ -11,12 +11,14 @@ export const metadata: Metadata = {
     canonical: "/chrome-extension",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Funlingo Chrome Extension — Free Dual Subtitles & AI Translation",
     description:
       "Free Funlingo Chrome extension: dual subtitles & AI translation on Netflix, YouTube, Prime & more in 100+ languages. Add to Chrome and learn while you watch.",
     url: "/chrome-extension",
   },
   twitter: {
+    images: ["/og-image.jpg"],
     title: "Funlingo Chrome Extension — Free Dual Subtitles & AI Translation",
     description:
       "Free Funlingo Chrome extension: dual subtitles & AI translation on Netflix, YouTube, Prime & more in 100+ languages. Add to Chrome and learn while you watch.",
@@ -32,14 +34,14 @@ const softwareSchema = {
   "operatingSystem": "Chrome",
   "url": "https://getfunlingo.com/chrome-extension",
   "description":
-    "Funlingo is a free Chrome extension that adds dual subtitles and AI-powered translation to Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera in 100+ languages.",
+    "Funlingo is a free Chrome extension that adds dual subtitles and AI-powered translation to Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera in 100+ languages.",
   "featureList":
-    "Dual subtitles, AI translation, AI word definitions, Vocabulary builder, 100+ languages, 8 streaming and learning platforms, 100% free",
+    "Dual subtitles, AI translation, AI word definitions, Vocabulary builder, 100+ languages, 10 streaming and learning platforms, 100% free",
   "offers": {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD",
-    "description": "Free forever, no paywall",
+    "description": "Free, no paywall",
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -67,7 +69,7 @@ const faqSchema = {
       "name": "What platforms does the Funlingo extension work on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Funlingo works on 8 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera. Dual subtitles and AI translation integrate directly into each video player, so you can learn languages while watching movies, shows, anime, and online courses.",
+        "text": "Funlingo works on 10 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera. Dual subtitles and AI translation integrate directly into each video player, so you can learn languages while watching movies, shows, anime, and online courses.",
       },
     },
     {
