@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/best-ai-language-learning-tools-2026",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Best AI Language Learning Apps 2026 — Why Funlingo Wins for Passive Learning",
     description: "Compare the top AI language learning tools and discover how Funlingo turns your streaming time into fast, context-rich learning with in-player dual subtitles.",
     type: "article",

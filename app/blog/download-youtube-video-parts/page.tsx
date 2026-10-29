@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Learn how to download specific parts of YouTube videos using online clip tools, screen recording, yt-dlp, and browser editors. Perfect for language study clips and reference material.",
   keywords: "download youtube video part of video, download part of youtube video, youtube clip download, download youtube segment, youtube video cutter, yt-dlp timestamps, language learning clips",
   alternates: { canonical: "/blog/download-youtube-video-parts" },
-  openGraph: { title: "How to Download YouTube Videos (Specific Parts Only)", description: "Learn how to download specific parts of YouTube videos using online clip tools, screen recording, yt-dlp, and browser editors.", type: "article", url: "/blog/download-youtube-video-parts" },
+  openGraph: { images: ["/og-image.jpg"], title: "How to Download YouTube Videos (Specific Parts Only)", description: "Learn how to download specific parts of YouTube videos using online clip tools, screen recording, yt-dlp, and browser editors.", type: "article", url: "/blog/download-youtube-video-parts" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "How to Download YouTube Videos (Specific Parts Only)", "description": "Learn how to download specific parts of YouTube videos using online clip tools, screen recording, yt-dlp, and browser editors.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-19", "dateModified": "2026-03-19", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

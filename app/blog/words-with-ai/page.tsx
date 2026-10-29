@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/words-with-ai",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Words That Have 'AI' in Them — Complete List & Meanings",
     description: "Explore a comprehensive list of English words containing 'ai' — from common words like rain and train to unusual ones. Includes pronunciation tips, meanings, and example sentences.",
     type: "article",

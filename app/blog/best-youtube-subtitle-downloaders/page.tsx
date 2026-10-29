@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Compare the 10 best YouTube subtitle downloaders in 2026. Download subtitles in SRT, VTT, and TXT formats. Free and paid options compared with pros and cons.",
   keywords: "youtube subtitles downloader, download youtube subtitles, youtube subtitle download, youtube captions download, srt download youtube, best subtitle downloader",
   alternates: { canonical: "/blog/best-youtube-subtitle-downloaders" },
-  openGraph: { title: "Best YouTube Subtitle Downloaders — Top 10 Tools Compared", description: "Compare the 10 best YouTube subtitle downloaders in 2026. Free and paid options with pros and cons.", type: "article", url: "/blog/best-youtube-subtitle-downloaders" },
+  openGraph: { images: ["/og-image.jpg"], title: "Best YouTube Subtitle Downloaders — Top 10 Tools Compared", description: "Compare the 10 best YouTube subtitle downloaders in 2026. Free and paid options with pros and cons.", type: "article", url: "/blog/best-youtube-subtitle-downloaders" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Best YouTube Subtitle Downloaders — Top 10 Tools Compared", "description": "Compare the 10 best YouTube subtitle downloaders in 2026. Free and paid options with pros and cons.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-19", "dateModified": "2026-03-19", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

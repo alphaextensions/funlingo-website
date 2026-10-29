@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Learn how to get bilingual subtitles on YouTube. Watch videos with two languages displayed at once and turn YouTube into a free language learning tool.",
   keywords: "youtube bilingual subtitles, youtube two language subtitles, youtube dual subtitles, bilingual captions youtube, youtube language learning subtitles, watch youtube two languages",
   alternates: { canonical: "/blog/youtube-bilingual-subtitles" },
-  openGraph: { title: "YouTube Bilingual Subtitles: Watch Videos in Two Languages", description: "Learn how to get bilingual subtitles on YouTube. Watch videos with two languages displayed at once.", type: "article", url: "/blog/youtube-bilingual-subtitles" },
+  openGraph: { images: ["/og-image.jpg"], title: "YouTube Bilingual Subtitles: Watch Videos in Two Languages", description: "Learn how to get bilingual subtitles on YouTube. Watch videos with two languages displayed at once.", type: "article", url: "/blog/youtube-bilingual-subtitles" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "YouTube Bilingual Subtitles: Watch Videos in Two Languages", "description": "Learn how to get bilingual subtitles on YouTube. Watch videos with two languages displayed at once and turn YouTube into a free language learning tool.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-19", "dateModified": "2026-03-19", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/translate-page-in-safari",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "How to Translate a Web Page in Safari (Mac, iPhone, iPad)",
     description: "Step-by-step guide to translating web pages in Safari on Mac, iPhone, and iPad. Learn about Safari's built-in translation, supported languages, limitations, and the best third-party alternatives for 2026.",
     type: "article",

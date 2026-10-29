@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Turn your watch time into a language lesson. Funlingo's Reading Mode displays synchronized bilingual captions with hover synonyms & examples for contextual learning.",
   keywords: "Reading Mode, bilingual captions, dual subtitles, learn languages while watching, AI language learning, contextual learning",
   alternates: { canonical: "/blog/how-to-learn-languages-with-reading-mode" },
-  openGraph: { title: "Reading Mode -- Learn Languages While You Watch with Bilingual Captions", description: "Turn your watch time into a language lesson with bilingual captions.", type: "article", url: "/blog/how-to-learn-languages-with-reading-mode" },
+  openGraph: { images: ["/og-image.jpg"], title: "Reading Mode -- Learn Languages While You Watch with Bilingual Captions", description: "Turn your watch time into a language lesson with bilingual captions.", type: "article", url: "/blog/how-to-learn-languages-with-reading-mode" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Reading Mode -- Learn Languages While You Watch", "description": "Turn your watch time into a language lesson with Funlingo's Reading Mode.", "author": { "@type": "Person", "name": "Aastha Pandey", "url": "https://www.linkedin.com/in/aastha-p/" }, "datePublished": "2026-02-16", "dateModified": "2026-02-16", "image": "https://getfunlingo.com/blog-images/image.png", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } }, "mainEntityOfPage": { "@type": "WebPage", "@id": "https://getfunlingo.com/blog/how-to-learn-languages-with-reading-mode" } };

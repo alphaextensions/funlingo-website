@@ -9,11 +9,13 @@ export const metadata: Metadata = {
     canonical: "/support",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Get Help & Support",
     description: "Get help and support from the Funlingo team. Report issues, request features, or ask questions about our language learning extension.",
     url: "/support",
   },
   twitter: {
+    images: ["/og-image.jpg"],
     title: "Get Help & Support",
     description: "Get help and support from the Funlingo team. Report issues, request features, or ask questions about our language learning extension.",
   },

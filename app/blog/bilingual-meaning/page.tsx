@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/bilingual-meaning",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "What Does 'Bilingual' Mean? Definition, Types & Examples",
     description: "Learn the full meaning of bilingual — types of bilingualism, real-world examples, cognitive benefits, and how to become bilingual as an adult with immersion tools like Funlingo.",
     type: "article",

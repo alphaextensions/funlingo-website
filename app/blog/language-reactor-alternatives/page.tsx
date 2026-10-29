@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/language-reactor-alternatives",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "7 Best Language Reactor Alternatives (2026) — Free & Paid Options",
     description: "Language Reactor not meeting your needs? Compare 7 alternatives including Funlingo (free, supports Prime Video), Trancy, Immersive Translate, eJOY, Substital, and more. Full feature comparison.",
     type: "article",

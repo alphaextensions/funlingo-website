@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Regular translators butcher idioms and phrases. Find the best phrase translators that understand context, slang, and expressions. Compare 8 tools for accurate phrase translation.",
   keywords: "phrase translator, translate phrases, idiom translator, expression translator, phrase translation tool, translate idioms accurately, contextual phrase translation, slang translator, funlingo phrase translation, best phrase translator 2026",
   alternates: { canonical: "/blog/phrase-translator" },
-  openGraph: { title: "Phrase Translator — Best Tools for Idioms & Expressions (2026)", description: "Best phrase translators that understand idioms, slang, and context.", type: "article", url: "/blog/phrase-translator" },
+  openGraph: { images: ["/og-image.jpg"], title: "Phrase Translator — Best Tools for Idioms & Expressions (2026)", description: "Best phrase translators that understand idioms, slang, and context.", type: "article", url: "/blog/phrase-translator" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Phrase Translator — Best Tools for Idioms & Expressions (2026)", "description": "Best phrase translators that understand idioms, slang, and context.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-21", "dateModified": "2026-03-21", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

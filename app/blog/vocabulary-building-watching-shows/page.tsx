@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching — backed by language science.",
   keywords: "vocabulary building watching shows, learn vocabulary watching tv, build vocabulary netflix, vocabulary retention method, spaced repetition vocabulary, word saving while watching, science backed vocabulary learning",
   alternates: { canonical: "/blog/vocabulary-building-watching-shows" },
-  openGraph: { title: "How to Build Vocabulary While Watching Shows (A Science-Backed Method)", description: "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching.", type: "article", url: "/blog/vocabulary-building-watching-shows" },
+  openGraph: { images: ["/og-image.jpg"], title: "How to Build Vocabulary While Watching Shows (A Science-Backed Method)", description: "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching.", type: "article", url: "/blog/vocabulary-building-watching-shows" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "How to Build Vocabulary While Watching Shows (A Science-Backed Method)", "description": "Turn Netflix and YouTube into vocabulary lessons. Learn the 4-step method to save and retain new words while watching.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-14", "dateModified": "2026-03-14", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

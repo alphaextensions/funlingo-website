@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Step-by-step guide to downloading YouTube videos with Chinese subtitles. 3 free methods for saving videos with Chinese captions for offline language learning.",
   keywords: "youtube视频在线下载, download youtube videos chinese subtitles, youtube chinese subtitles download, save youtube video with subtitles, youtube video downloader chinese, learn chinese youtube videos, chinese subtitle download, funlingo chinese subtitles",
   alternates: { canonical: "/blog/download-youtube-videos-chinese-subtitles" },
-  openGraph: { title: "Download YouTube Videos with Chinese Subtitles (2026 Guide)", description: "3 free methods to download YouTube videos with Chinese subtitles for offline learning.", type: "article", url: "/blog/download-youtube-videos-chinese-subtitles" },
+  openGraph: { images: ["/og-image.jpg"], title: "Download YouTube Videos with Chinese Subtitles (2026 Guide)", description: "3 free methods to download YouTube videos with Chinese subtitles for offline learning.", type: "article", url: "/blog/download-youtube-videos-chinese-subtitles" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Download YouTube Videos with Chinese Subtitles (2026 Guide)", "description": "Step-by-step guide to downloading YouTube videos with Chinese subtitles.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-21", "dateModified": "2026-03-21", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

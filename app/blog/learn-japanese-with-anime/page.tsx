@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition to turn every episode into a real lesson.",
   keywords: "learn japanese with anime, japanese anime subtitles, learn japanese watching anime, dual subtitles anime, anime language learning, japanese for beginners anime, funlingo anime",
   alternates: { canonical: "/blog/learn-japanese-with-anime" },
-  openGraph: { title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide", description: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition.", type: "article", url: "/blog/learn-japanese-with-anime" },
+  openGraph: { images: ["/og-image.jpg"], title: "How to Learn Japanese with Anime: A Beginner's 2026 Guide", description: "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition.", type: "article", url: "/blog/learn-japanese-with-anime" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "How to Learn Japanese with Anime: A Beginner's 2026 Guide", "description": "Want to learn Japanese through anime? Discover a structured method using dual subtitles, shadowing, and spaced repetition to turn every episode into a real lesson.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-18", "dateModified": "2026-03-18", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

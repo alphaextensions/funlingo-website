@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/language-reactor-vs-trancy",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Language Reactor vs Trancy: Which Is Better in 2026?",
     description: "Detailed comparison of Language Reactor vs Trancy in 2026. We compare pricing, features, platform support, dual subtitles, vocabulary tools, and AI grammar to help you choose the best language learning extension.",
     type: "article",

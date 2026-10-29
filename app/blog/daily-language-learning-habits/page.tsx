@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Struggling to stay consistent with language learning? Discover 5 simple daily habits that fit into your existing routine and make real progress without extra study time.",
   keywords: "language learning habits, daily language learning routine, consistent language learning, language learning tips, learn language every day, language learning motivation, language habit stacking",
   alternates: { canonical: "/blog/daily-language-learning-habits" },
-  openGraph: { title: "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)", description: "Struggling to stay consistent? Discover 5 simple daily habits that fit into your existing routine.", type: "article", url: "/blog/daily-language-learning-habits" },
+  openGraph: { images: ["/og-image.jpg"], title: "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)", description: "Struggling to stay consistent? Discover 5 simple daily habits that fit into your existing routine.", type: "article", url: "/blog/daily-language-learning-habits" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "5 Daily Habits That Make Language Learning Stick (Without Extra Study Time)", "description": "Struggling to stay consistent with language learning? Discover 5 simple daily habits that fit into your existing routine and make real progress without extra study time.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-18", "dateModified": "2026-03-18", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Master the word 'unless' in English. Complete guide with meaning, grammar rules, conditional sentence patterns, common mistakes, and 30+ example sentences for ESL learners.",
   keywords: "unless, unless meaning, unless grammar, unless in a sentence, unless conditional, unless vs if not, unless examples, english grammar unless, unless meaning in english, learn english grammar, funlingo",
   alternates: { canonical: "/blog/unless-meaning" },
-  openGraph: { title: "'Unless' — Meaning, Grammar Rules & Examples", description: "Complete guide to using 'unless' in English with grammar rules and examples.", type: "article", url: "/blog/unless-meaning" },
+  openGraph: { images: ["/og-image.jpg"], title: "'Unless' — Meaning, Grammar Rules & Examples", description: "Complete guide to using 'unless' in English with grammar rules and examples.", type: "article", url: "/blog/unless-meaning" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "'Unless' — Meaning, Grammar Rules & Examples", "description": "Complete guide to using 'unless' in English with grammar rules and examples.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-21", "dateModified": "2026-03-21", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };
