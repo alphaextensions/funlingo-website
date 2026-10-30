@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "download subtitles from youtube, youtube subtitle download, download youtube captions, youtube srt download, save youtube subtitles, extract youtube subtitles, youtube transcript download",
   alternates: { canonical: "/blog/download-subtitles-from-youtube" },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "How to Download Subtitles from YouTube (3 Free Methods)",
     description:
       "Step-by-step guide to downloading YouTube subtitles for free. Covers YouTube transcript, online tools, and browser extensions for SRT & TXT formats.",

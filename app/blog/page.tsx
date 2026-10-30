@@ -9,11 +9,13 @@ export const metadata: Metadata = {
     canonical: "/blog",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Funlingo Blog - Language Learning Tips & AI Insights",
     description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with Funlingo.",
     url: "/blog",
   },
   twitter: {
+    images: ["/og-image.jpg"],
     title: "Funlingo Blog - Language Learning Tips & AI Insights",
     description: "Read the latest articles about AI language learning, dual subtitles, and how to master new languages faster with Funlingo.",
   },

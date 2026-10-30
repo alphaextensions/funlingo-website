@@ -9,11 +9,13 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "About Funlingo - Our Mission in Free Language Learning",
     description: "Learn about Funlingo's mission to provide a free dual subtitle alternative for language learners. We make immersive learning accessible to everyone.",
     url: "/about",
   },
   twitter: {
+    images: ["/og-image.jpg"],
     title: "About Funlingo - Our Mission in Free Language Learning",
     description: "Learn about Funlingo's mission to provide a free dual subtitle alternative for language learners. We make immersive learning accessible to everyone.",
   },

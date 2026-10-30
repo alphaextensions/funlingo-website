@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/shadowing-language-learning",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "What Is Shadowing in Language Learning? (+ AI Tools)",
     description: "Learn the shadowing technique for language learning: the science behind it, step-by-step guide, best content sources, and how AI tools like Funlingo supercharge your practice.",
     type: "article",

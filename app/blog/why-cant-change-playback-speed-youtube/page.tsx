@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "why can't i change playback speed on youtube, youtube playback speed not working, youtube speed control greyed out, youtube playback speed missing, change youtube speed, youtube slow motion not working",
   alternates: { canonical: "/blog/why-cant-change-playback-speed-youtube" },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Why Can't I Change Playback Speed on YouTube? (Fixed)",
     description:
       "Troubleshoot and fix YouTube playback speed issues. Covers browser problems, app bugs, embedded videos, and tips for language learners using speed controls.",

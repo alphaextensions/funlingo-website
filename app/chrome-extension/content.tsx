@@ -47,15 +47,15 @@ const features = [
   },
   {
     icon: MonitorPlay,
-    title: "8 Platforms",
+    title: "10 Platforms",
     description:
-      "Works on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera.",
+      "Works on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera.",
   },
   {
     icon: Gift,
     title: "100% Free",
     description:
-      "No paywalls, no premium tier, no account required. Every feature is free, forever.",
+      "No paywalls, no premium tier, no account required. Every feature is free.",
   },
 ];
 
@@ -95,7 +95,7 @@ const faqs = [
   {
     question: "What platforms does the Funlingo extension work on?",
     answer:
-      "Funlingo works on 8 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera. Dual subtitles and AI translation integrate directly into each video player, so you can learn languages while watching movies, shows, anime, and online courses.",
+      "Funlingo works on 10 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera. Dual subtitles and AI translation integrate directly into each video player, so you can learn languages while watching movies, shows, anime, and online courses.",
   },
   {
     question: "How do I install the Funlingo Chrome extension?",
@@ -136,7 +136,7 @@ const ChromeExtensionContent = (): React.JSX.Element => {
 
           <p className="text-[var(--text-dim)] text-lg sm:text-xl md:text-2xl max-w-2xl leading-relaxed">
             Free dual subtitles and AI translation on Netflix, YouTube, Prime
-            Video and 5 more platforms. Learn languages in 100+ tongues while you
+            Video and 7 more platforms. Learn languages in 100+ tongues while you
             watch.
           </p>
 
@@ -288,7 +288,7 @@ const ChromeExtensionContent = (): React.JSX.Element => {
             </h2>
             <p className="text-white/90 text-lg max-w-xl">
               Join thousands of learners using Funlingo for free dual subtitles
-              and AI translation across 8 platforms.
+              and AI translation across 10 platforms.
             </p>
             <a
               href={CHROME_STORE_URL}
@@ -303,7 +303,7 @@ const ChromeExtensionContent = (): React.JSX.Element => {
               </Button>
             </a>
             <p className="text-white/70 text-sm">
-              Free forever · Rated 4.8/5 on the Chrome Web Store
+              Free · Rated 4.8/5 on the Chrome Web Store
             </p>
           </div>
         </div>

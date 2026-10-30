@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Learn Japanese with anime using free dual subtitles and click-to-translate on Crunchyroll. Turn every episode into a lesson — try Funlingo free.",
   keywords: "crunchyroll dual subtitles, crunchyroll japanese subtitles, best anime to learn japanese on crunchyroll, learn japanese with anime, best slice of life anime to learn japanese",
   alternates: { canonical: "/blog/learn-japanese-with-crunchyroll" },
-  openGraph: { title: "Learn Japanese on Crunchyroll: Free Dual Subtitles Guide", description: "Learn Japanese with anime using free dual subtitles and click-to-translate on Crunchyroll. Turn every episode into a lesson — try Funlingo free.", type: "article", url: "/blog/learn-japanese-with-crunchyroll" },
+  openGraph: { images: ["/og-image.jpg"], title: "Learn Japanese on Crunchyroll: Free Dual Subtitles Guide", description: "Learn Japanese with anime using free dual subtitles and click-to-translate on Crunchyroll. Turn every episode into a lesson — try Funlingo free.", type: "article", url: "/blog/learn-japanese-with-crunchyroll" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Learn Japanese on Crunchyroll: Free Dual Subtitles Guide", "description": "Learn Japanese with anime using free dual subtitles and click-to-translate on Crunchyroll. Turn every episode into a lesson — try Funlingo free.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-06-11", "dateModified": "2026-06-11", "image": "https://getfunlingo.com/blog-images/learn-japanese-with-crunchyroll-hero.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

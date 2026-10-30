@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/netflix-language-learning-extensions",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "5 Best Netflix Language Learning Extensions (2026) — Free & Paid Compared",
     description: "Which Netflix language learning extension is actually worth it? We tested all 5 — Funlingo (free), Language Reactor ($7.99/mo), Trancy ($9.90/mo), Immersive Translate, and eJOY. Full comparison with features, pricing, and verdict.",
     type: "article",

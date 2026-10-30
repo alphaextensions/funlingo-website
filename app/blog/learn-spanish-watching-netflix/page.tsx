@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Discover the best Netflix shows by level, a proven dual subtitle method, and a free 15-minute daily routine to learn Spanish. Start tonight.",
   keywords: "learn spanish netflix, learn spanish watching netflix, best netflix shows spanish, spanish dual subtitles, netflix spanish learning, spanish language learning netflix",
   alternates: { canonical: "/blog/learn-spanish-watching-netflix" },
-  openGraph: { title: "How to Learn Spanish Watching Netflix (Your Complete 2026 Guide)", description: "Discover the best Netflix shows by level, a proven dual subtitle method, and a free 15-minute daily routine to learn Spanish.", type: "article", url: "/blog/learn-spanish-watching-netflix" },
+  openGraph: { images: ["/og-image.jpg"], title: "How to Learn Spanish Watching Netflix (Your Complete 2026 Guide)", description: "Discover the best Netflix shows by level, a proven dual subtitle method, and a free 15-minute daily routine to learn Spanish.", type: "article", url: "/blog/learn-spanish-watching-netflix" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "How to Learn Spanish Watching Netflix (Your Complete 2026 Guide)", "description": "Discover the best Netflix shows by level, a proven dual subtitle method, and a free 15-minute daily routine to learn Spanish.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-14", "dateModified": "2026-03-14", "image": "https://getfunlingo.com/og-image.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

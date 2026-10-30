@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Discover how Funlingo's website translation extension helps you learn languages while browsing. Read websites in two languages, understand words in context, and improve vocabulary naturally.",
   keywords: "website translation for language learning, bilingual website reading, Funlingo, AI language learning extension",
   alternates: { canonical: "/blog/website-translation-language-learning" },
-  openGraph: { title: "AI Website Translation for Language Learning", description: "Discover how Funlingo's website translation extension helps you learn languages while browsing.", type: "article", url: "/blog/website-translation-language-learning" },
+  openGraph: { images: ["/og-image.jpg"], title: "AI Website Translation for Language Learning", description: "Discover how Funlingo's website translation extension helps you learn languages while browsing.", type: "article", url: "/blog/website-translation-language-learning" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "Website Translation for Language Learning: Read Any Website in Two Languages with Funlingo", "description": "Discover how Funlingo's website translation extension helps you learn languages while browsing.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-03-07", "dateModified": "2026-03-07", "image": "https://getfunlingo.com/og-image.jpg" };

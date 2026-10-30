@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "The best Chrome subtitle extensions by job: adding subtitles to videos that have none, downloading SRT files, translating captions, fixing sync, and making captions readable.",
   keywords: "best subtitle extensions chrome, chrome subtitle extension, add subtitles chrome extension, subtitle downloader extension, srt chrome extension, subtitle sync extension, caption styling chrome, subtitles for videos without captions",
   alternates: { canonical: "/blog/best-subtitle-extensions-chrome" },
-  openGraph: { title: "7 Best Subtitle Extensions for Chrome (2026)", description: "Chrome subtitle extensions by job: adding, downloading, translating, fixing sync, and restyling captions.", type: "article", url: "/blog/best-subtitle-extensions-chrome" },
+  openGraph: { images: ["/og-image.jpg"], title: "7 Best Subtitle Extensions for Chrome (2026)", description: "Chrome subtitle extensions by job: adding, downloading, translating, fixing sync, and restyling captions.", type: "article", url: "/blog/best-subtitle-extensions-chrome" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "7 Best Subtitle Extensions for Chrome (2026)", "description": "Chrome subtitle extensions by job: adding, downloading, translating, fixing sync, and restyling captions.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-08-26", "dateModified": "2026-08-26", "image": "https://getfunlingo.com/blog-images/best-subtitle-extensions-chrome-hero.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

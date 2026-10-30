@@ -9,11 +9,13 @@ export const metadata: Metadata = {
     canonical: "/roadmap",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Funlingo Product Roadmap - Future of Language Learning",
     description: "Explore the future of Funlingo. See our planned features including mobile apps, more streaming platforms support, and advanced learning tools.",
     url: "/roadmap",
   },
   twitter: {
+    images: ["/og-image.jpg"],
     title: "Funlingo Product Roadmap - Future of Language Learning",
     description: "Explore the future of Funlingo. See our planned features including mobile apps, more streaming platforms support, and advanced learning tools.",
   },

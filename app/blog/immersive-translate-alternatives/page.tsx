@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/immersive-translate-alternatives",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "6 Best Immersive Translate Alternatives (2026) — Free Options Included",
     description: "Looking for an Immersive Translate alternative? Compare 6 options including Funlingo (free dual subtitles on Netflix/YouTube/Prime), DeepL, Google Translate, Trancy, Language Reactor, and Microsoft Translator. Feature-by-feature comparison.",
     type: "article",

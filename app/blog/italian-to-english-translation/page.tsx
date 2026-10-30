@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/blog/italian-to-english-translation",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Italian to English Translation: Best Tools & Tips",
     description: "Discover the best tools for italiano translate to english including Google Translate, DeepL, WordReference, and Funlingo. Plus common Italian phrases, grammar tips, and translation advice.",
     type: "article",

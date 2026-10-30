@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "How to learn Japanese fast with the best methods, apps, and immersion tips for beginners. Start free with Funlingo's click-to-translate subtitles.",
   keywords: "how to learn japanese fast, how to learn japanese for beginners, how to learn japanese by yourself, best app to learn japanese, how to learn japanese from anime",
   alternates: { canonical: "/blog/how-to-learn-japanese-fast" },
-  openGraph: { title: "How to Learn Japanese Fast: Best Methods & Free Apps", description: "How to learn Japanese fast with the best methods, apps, and immersion tips for beginners. Start free with Funlingo's click-to-translate subtitles.", type: "article", url: "/blog/how-to-learn-japanese-fast" },
+  openGraph: { images: ["/og-image.jpg"], title: "How to Learn Japanese Fast: Best Methods & Free Apps", description: "How to learn Japanese fast with the best methods, apps, and immersion tips for beginners. Start free with Funlingo's click-to-translate subtitles.", type: "article", url: "/blog/how-to-learn-japanese-fast" },
 };
 
 const articleSchema = { "@context": "https://schema.org", "@type": "Article", "headline": "How to Learn Japanese Fast: Best Methods & Free Apps", "description": "How to learn Japanese fast with the best methods, apps, and immersion tips for beginners. Start free with Funlingo's click-to-translate subtitles.", "author": { "@type": "Organization", "name": "Funlingo Team" }, "datePublished": "2026-06-11", "dateModified": "2026-06-11", "image": "https://getfunlingo.com/blog-images/how-to-learn-japanese-fast-hero.jpg", "publisher": { "@type": "Organization", "name": "Funlingo", "logo": { "@type": "ImageObject", "url": "https://getfunlingo.com/logo.png" } } };

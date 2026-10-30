@@ -9,11 +9,13 @@ export const metadata: Metadata = {
     canonical: "/privacy-policy",
   },
   openGraph: {
+    images: ["/og-image.jpg"],
     title: "Privacy Policy",
     description: "Funlingo Privacy Policy. Learn how we handle your information when you use the Funlingo Chrome Extension and our website.",
     url: "/privacy-policy",
   },
   twitter: {
+    images: ["/og-image.jpg"],
     title: "Privacy Policy",
     description: "Funlingo Privacy Policy. Learn how we handle your information when you use the Funlingo Chrome Extension and our website.",
   },
