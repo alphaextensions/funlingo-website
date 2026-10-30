@@ -1,0 +1,3842 @@
+{
+  "ar": {
+    "expressions": [
+      {
+        "phrase": "يلا",
+        "romanization": "yalla",
+        "meaning": "Let's go / Come on / Hurry up",
+        "example": "يلا نروح، تأخرنا كتير.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "والله",
+        "romanization": "wallah",
+        "meaning": "I swear / Seriously / For real",
+        "example": "والله ما كنت أعرف إنه هون.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "خلص",
+        "romanization": "khalas",
+        "meaning": "Enough / Done / That's it",
+        "example": "خلص، ما بدي أحكي بالموضوع.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "يا زلمة",
+        "romanization": "ya zalame",
+        "meaning": "Dude / Man (Levantine)",
+        "example": "يا زلمة، وين رايح بهالسرعة؟",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "حبيبي",
+        "romanization": "habibi",
+        "meaning": "My dear / My love / Buddy (used broadly)",
+        "example": "كيفك حبيبي، شو أخبارك؟",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "هبل",
+        "romanization": "habal",
+        "meaning": "Crazy / Stupid / Foolish",
+        "example": "شو هالهبل، ليش عملت هيك؟",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "زحمة",
+        "romanization": "zahme",
+        "meaning": "Crowded / Packed / Traffic jam",
+        "example": "الشوارع زحمة اليوم، خذ طريق ثاني.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "تمام",
+        "romanization": "tamam",
+        "meaning": "OK / Alright / Perfect",
+        "example": "تمام، بشوفك بكرا الساعة عشرة.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "كيفك",
+        "romanization": "kifak",
+        "meaning": "How are you (Levantine casual)",
+        "example": "هلا، كيفك؟ شو عم تعمل؟",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "عادي",
+        "romanization": "aadi",
+        "meaning": "Normal / No big deal / It's fine",
+        "example": "ما خلصت الشغل؟ عادي، بكمل بكرا.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "أخ يا قلبي",
+        "romanization": "akh ya albi",
+        "meaning": "Oh my heart / Expresses sympathy or adoration",
+        "example": "أخ يا قلبي، شو هالأكل الطيب!",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "طز",
+        "romanization": "tuz",
+        "meaning": "Screw it / I don't care / Whatever",
+        "example": "طز، مش فارقة معي شو بيقولوا.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "يلا",
+        "meaning": "Lets go, come on, hurry up",
+        "example": "يلا نروح عالسينما!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "yalla",
+        "category": "modern"
+      },
+      {
+        "phrase": "والله",
+        "meaning": "I swear, really, honestly",
+        "example": "والله ما كنت أعرف إنك هون.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "wallah",
+        "category": "modern"
+      },
+      {
+        "phrase": "خلص",
+        "meaning": "Thats it, enough, done",
+        "example": "خلص، ما بدي أحكي عن الموضوع.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "khalas",
+        "category": "modern"
+      },
+      {
+        "phrase": "حبيبي",
+        "meaning": "My dear, buddy (term of endearment)",
+        "example": "كيفك حبيبي؟ شو أخبارك؟",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "habibi",
+        "category": "modern"
+      },
+      {
+        "phrase": "إن شاء الله",
+        "meaning": "God willing (also used as maybe/hopefully)",
+        "example": "إن شاء الله بكرا بيكون الطقس حلو.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "inshallah",
+        "category": "modern"
+      },
+      {
+        "phrase": "مش مشكلة",
+        "meaning": "No problem, its all good",
+        "example": "تأخرت شوي. — مش مشكلة، ولا يهمك.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "mish mushkile",
+        "category": "modern"
+      },
+      {
+        "phrase": "يا سلام",
+        "meaning": "Oh wow, how wonderful",
+        "example": "يا سلام، شو هالأكل الطيب!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "ya salaam",
+        "category": "modern"
+      },
+      {
+        "phrase": "طبعاً",
+        "meaning": "Of course, naturally",
+        "example": "بتيجي معنا؟ — طبعاً!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "tab'an",
+        "category": "modern"
+      },
+      {
+        "phrase": "كتير",
+        "meaning": "Very, a lot",
+        "example": "هالفيلم كتير حلو.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "kteer",
+        "category": "modern"
+      },
+      {
+        "phrase": "هلق",
+        "meaning": "Now, right now (Levantine)",
+        "example": "تعال هلق، ما فيك تأخر!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "halla'",
+        "category": "modern"
+      },
+      {
+        "phrase": "عادي",
+        "meaning": "Normal, its fine, no big deal",
+        "example": "ما لحقت أجهز. — عادي، خد وقتك.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "aadi",
+        "category": "modern"
+      },
+      {
+        "phrase": "تمام",
+        "meaning": "Okay, perfect, all good",
+        "example": "بنتلاقى الساعة سبعة؟ — تمام!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "tamam",
+        "category": "modern"
+      }
+    ]
+  },
+  "de": {
+    "expressions": [
+      {
+        "phrase": "geil",
+        "meaning": "awesome / cool / great",
+        "example": "Die Party gestern war richtig geil!",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "krass",
+        "meaning": "extreme / intense / crazy (can be positive or negative)",
+        "example": "Krass, du hast den Job bekommen? Herzlichen Glückwunsch!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "Mist",
+        "meaning": "damn / crap (mild expletive)",
+        "example": "Mist, ich hab meinen Schlüssel vergessen!",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "Alter",
+        "meaning": "dude / man (interjection of surprise or to address someone)",
+        "example": "Alter, was hast du dir dabei gedacht?",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "keinen Bock haben",
+        "meaning": "to not feel like it / to not be in the mood",
+        "example": "Ich hab keinen Bock auf Aufräumen heute.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "abhauen",
+        "meaning": "to take off / to leave quickly",
+        "example": "Lass uns abhauen, die Party ist langweilig.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "Kumpel",
+        "meaning": "buddy / pal / mate",
+        "example": "Er ist ein alter Kumpel von mir aus der Schule.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "Schnauze",
+        "meaning": "shut up / be quiet (literally: snout)",
+        "example": "Halt die Schnauze, ich will das Ende vom Film sehen!",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "sich verarschen lassen",
+        "meaning": "to let yourself be made a fool of / to be taken for a ride",
+        "example": "Von dem Händler lass ich mich nicht verarschen.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "chillen",
+        "meaning": "to chill / to relax / to hang out",
+        "example": "Wollen wir am Sonntag einfach chillen?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "Bock haben",
+        "meaning": "to feel like doing something / to be up for it",
+        "example": "Hast du Bock, heute Abend ins Kino zu gehen?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "Kohle",
+        "meaning": "money / cash (literally: coal)",
+        "example": "Ich hab gerade keine Kohle, kannst du mir was leihen?",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "geil",
+        "meaning": "Awesome, cool, great",
+        "example": "Das Konzert war echt geil!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "krass",
+        "meaning": "Extreme, crazy, intense",
+        "example": "Krass, hast du gesehen wie schnell der war?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "Alter",
+        "meaning": "Dude, man (exclamation)",
+        "example": "Alter, das glaubst du nicht!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "Bock haben",
+        "meaning": "To feel like doing something",
+        "example": "Hast du Bock, heute Abend ins Kino zu gehen?",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "chillen",
+        "meaning": "To chill, relax",
+        "example": "Lass uns einfach zu Hause chillen.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "mega",
+        "meaning": "Super, extremely (intensifier)",
+        "example": "Das Essen war mega lecker.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "Quatsch",
+        "meaning": "Nonsense, rubbish",
+        "example": "Das ist doch totaler Quatsch!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "mies",
+        "meaning": "Bad, lousy, crappy",
+        "example": "Das Wetter ist echt mies heute.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "lit",
+        "meaning": "Lit, awesome (borrowed from English)",
+        "example": "Die Party gestern war so lit!",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "abgehen",
+        "meaning": "To go off, to be wild/exciting",
+        "example": "Auf dem Festival ist es voll abgegangen.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "Digga",
+        "meaning": "Bro, dude",
+        "example": "Digga, wo warst du gestern?",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "safe",
+        "meaning": "Definitely, for sure",
+        "example": "Kommst du mit? — Safe!",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "en-GB": {
+    "expressions": [
+      {
+        "phrase": "knackered",
+        "meaning": "extremely tired / exhausted",
+        "example": "I've been on my feet all day, I'm absolutely knackered.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "dodgy",
+        "meaning": "suspicious, unreliable, or of poor quality",
+        "example": "Don't eat there, the food's a bit dodgy.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "gutted",
+        "meaning": "extremely disappointed",
+        "example": "I was gutted when they cancelled the gig.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "taking the piss",
+        "meaning": "making fun of someone / being unreasonable",
+        "example": "You want me to work overtime for free? You're taking the piss!",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "sorted",
+        "meaning": "arranged, taken care of, all good",
+        "example": "I got the tickets online — we're sorted for Saturday.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "cheeky",
+        "meaning": "playfully bold or slightly rude / a spontaneous treat",
+        "example": "Fancy a cheeky pint after work?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "bollocks",
+        "meaning": "nonsense / rubbish (also an expletive)",
+        "example": "That's absolute bollocks and you know it.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "leg it",
+        "meaning": "to run away quickly",
+        "example": "We saw the security guard and just legged it.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "naff",
+        "meaning": "uncool, tacky, or unfashionable",
+        "example": "Those matching outfits are a bit naff, aren't they?",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "having a go",
+        "meaning": "trying something / confronting someone",
+        "example": "Are you having a go at me? I didn't do anything wrong!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "quid",
+        "meaning": "British pound (informal term for money)",
+        "example": "Can you lend me twenty quid until Friday?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "mate",
+        "meaning": "friend / buddy (also used to address strangers)",
+        "example": "Alright, mate? Haven't seen you in ages!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "proper",
+        "meaning": "Really, very, or genuine",
+        "example": "That was a proper good night out.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "innit",
+        "meaning": "Isn't it / right?",
+        "example": "Weather's rubbish today, innit?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "cheeky",
+        "meaning": "Playfully bold or sneaky",
+        "example": "Fancy a cheeky Nando's after work?",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "gutted",
+        "meaning": "Extremely disappointed",
+        "example": "I'm gutted I missed the match last night.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "dodgy",
+        "meaning": "Suspicious, unreliable, or risky",
+        "example": "Don't eat there, the food looks well dodgy.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "mint",
+        "meaning": "Excellent, great",
+        "example": "That new film was absolutely mint.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "knackered",
+        "meaning": "Extremely tired",
+        "example": "I've been up since five, I'm absolutely knackered.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "buzzing",
+        "meaning": "Very excited or happy",
+        "example": "I'm buzzing for the festival this weekend!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "skint",
+        "meaning": "Having no money, broke",
+        "example": "Can't come out tonight, I'm skint until payday.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "sorted",
+        "meaning": "Taken care of, arranged",
+        "example": "Got the tickets booked — we're sorted.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "minging",
+        "meaning": "Disgusting or unattractive",
+        "example": "That milk's gone off, it's absolutely minging.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "brilliant",
+        "meaning": "Great, wonderful (used enthusiastically)",
+        "example": "You got the job? That's brilliant!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "en-US": {
+    "expressions": [
+      {
+        "phrase": "my bad",
+        "meaning": "my mistake / I'm sorry",
+        "example": "Oh, I forgot to text you back — my bad!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "no-brainer",
+        "meaning": "an easy decision, something obvious",
+        "example": "Free pizza at the office? That's a no-brainer.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "bail",
+        "meaning": "to leave suddenly or cancel plans",
+        "example": "He was supposed to come to the party but he bailed last minute.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "sketchy",
+        "meaning": "suspicious, untrustworthy, or unsafe",
+        "example": "That neighborhood is kind of sketchy at night.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "a total rip-off",
+        "meaning": "something overpriced or a scam",
+        "example": "Twenty bucks for a beer? What a rip-off!",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "crash at someone's place",
+        "meaning": "to sleep at someone's house informally",
+        "example": "I had too many drinks, can I crash at your place tonight?",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "rain check",
+        "meaning": "to postpone plans to another time",
+        "example": "I'm swamped tonight — can I take a rain check?",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "hit the sack",
+        "meaning": "to go to bed / go to sleep",
+        "example": "I'm beat. I'm gonna hit the sack early tonight.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "to be down",
+        "meaning": "to be willing or interested in doing something",
+        "example": "We're going bowling later — you down?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "screw up",
+        "meaning": "to make a mistake / mess something up",
+        "example": "I really screwed up that job interview.",
+        "register": "informal",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "hang out",
+        "meaning": "to spend time casually with someone",
+        "example": "Wanna hang out this weekend? We could grab coffee.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "shotgun",
+        "meaning": "calling the front passenger seat of a car",
+        "example": "Shotgun! I'm not sitting in the back again.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "no cap",
+        "meaning": "No lie, for real",
+        "example": "That concert was amazing, no cap.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "it's giving",
+        "meaning": "It has the vibe/energy of",
+        "example": "That outfit? It's giving main character energy.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "slay",
+        "meaning": "To do something exceptionally well",
+        "example": "She walked in and absolutely slayed that presentation.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "lowkey",
+        "meaning": "Quietly, subtly, or somewhat",
+        "example": "I lowkey wanna skip the party tonight.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bussin",
+        "meaning": "Extremely good, especially food",
+        "example": "Have you tried their tacos? They're bussin.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "hits different",
+        "meaning": "Feels uniquely special or impactful",
+        "example": "Iced coffee at 2 AM hits different.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bet",
+        "meaning": "Okay, sounds good, agreement",
+        "example": "Wanna grab lunch? — Bet.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "sus",
+        "meaning": "Suspicious or shady",
+        "example": "He left without saying goodbye, that's kinda sus.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "vibe",
+        "meaning": "A feeling, atmosphere, or to relax and enjoy",
+        "example": "We're just vibing at the beach today.",
+        "register": "casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "ghosted",
+        "meaning": "Suddenly stopped all communication",
+        "example": "We went on three dates and then she ghosted me.",
+        "register": "casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "salty",
+        "meaning": "Bitter or upset about something minor",
+        "example": "He's still salty about losing that game last week.",
+        "register": "casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "flex",
+        "meaning": "To show off or brag",
+        "example": "Nice car — no need to flex on us like that.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "es-ES": {
+    "expressions": [
+      {
+        "phrase": "mola",
+        "meaning": "it's cool / it's awesome",
+        "example": "Esa chaqueta mola un montón, ¿dónde la compraste?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "tío / tía",
+        "meaning": "dude / mate (informal way to address someone)",
+        "example": "Eh tío, ¿vienes a tomar algo o qué?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "flipar",
+        "meaning": "to be amazed / to freak out",
+        "example": "Estoy flipando con lo que me acabas de contar.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "currar",
+        "meaning": "to work (informal)",
+        "example": "Hoy no puedo quedar, tengo que currar hasta las nueve.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "mogollón",
+        "meaning": "a lot / loads / tons of",
+        "example": "Había mogollón de gente en el concierto.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "ir de cañas",
+        "meaning": "to go out for beers",
+        "example": "¿Quedamos el viernes para ir de cañas después del trabajo?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "pasarse",
+        "meaning": "to go too far / to cross the line",
+        "example": "Lo que dijo tu hermano se pasó tres pueblos.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "estar empanado",
+        "meaning": "to be spaced out / clueless / not paying attention",
+        "example": "¿No te has enterado? Tío, estás empanado.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "pillar",
+        "meaning": "to catch / to get / to understand",
+        "example": "¿Pillas lo que te estoy diciendo? No pillo nada.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "quedada",
+        "meaning": "a meetup / a get-together",
+        "example": "Estamos organizando una quedada el sábado en el parque.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "majo / maja",
+        "meaning": "nice / likeable / pleasant (describing a person)",
+        "example": "Tu novio es muy majo, me cae genial.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "irse de marcha",
+        "meaning": "to go out and party",
+        "example": "Ayer nos fuimos de marcha y no volvi hasta las seis de la manana.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "mola",
+        "meaning": "That's cool / awesome",
+        "example": "Tu chaqueta nueva mola mucho.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "tío/tía",
+        "meaning": "Dude, mate (term of address)",
+        "example": "¡Tío, no te vas a creer lo que pasó!",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "flipar",
+        "meaning": "To be amazed or shocked",
+        "example": "Estoy flipando con los precios de los alquileres.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "currar",
+        "meaning": "To work",
+        "example": "Mañana tengo que currar desde las siete.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "guay",
+        "meaning": "Cool, great",
+        "example": "La serie nueva está muy guay.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "quedar",
+        "meaning": "To meet up, make plans",
+        "example": "¿Quedamos el sábado para tomar algo?",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "ir de cañas",
+        "meaning": "To go out for beers",
+        "example": "¿Salimos a ir de cañas después del trabajo?",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "pasarlo bomba",
+        "meaning": "To have a blast, great time",
+        "example": "En la boda lo pasamos bomba.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "enrollado",
+        "meaning": "Cool, easy-going person",
+        "example": "Mi jefe es bastante enrollado con los horarios.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "mogollón",
+        "meaning": "A lot, tons of",
+        "example": "Había mogollón de gente en el concierto.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "majo",
+        "meaning": "Nice, likeable",
+        "example": "La vecina nueva es muy maja.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "cachondeo",
+        "meaning": "A joke, messing around, chaos",
+        "example": "La reunión fue un cachondeo total.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "es-LA": {
+    "expressions": [
+      {
+        "phrase": "no manches",
+        "meaning": "no way! / you're kidding! (expression of disbelief)",
+        "example": "No manches, me sacaron del equipo.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "estar crudo",
+        "meaning": "to be hungover",
+        "example": "No me hables, estoy bien crudo desde anoche.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "la neta",
+        "meaning": "the truth / for real / honestly",
+        "example": "La neta, esa película estuvo buenísima.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ponerse las pilas",
+        "meaning": "to get your act together / to step it up",
+        "example": "Ya ponte las pilas, el examen es mañana.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "fresa",
+        "meaning": "snobby / preppy / someone who acts upper class",
+        "example": "No seas fresa, vamos a comer tacos en la calle.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "me vale",
+        "meaning": "I don't care / I couldn't care less",
+        "example": "Que digan lo que quieran, me vale.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "echar la hueva",
+        "meaning": "to be lazy / to lounge around doing nothing",
+        "example": "No tengo planes, voy a echar la hueva todo el día.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "caer gordo",
+        "meaning": "to find someone annoying / to dislike someone",
+        "example": "Ese tipo me cae gordo, siempre habla de más.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "un pedo",
+        "meaning": "a problem / a mess / a complicated situation",
+        "example": "Se armó un pedo en la oficina por el reporte.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "naco",
+        "meaning": "tacky / low-class / unsophisticated",
+        "example": "Esa camisa está bien naca, no te la pongas.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "darle la vuelta",
+        "meaning": "to find a workaround / to get around a problem",
+        "example": "No hay boletos, pero vamos a darle la vuelta.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "echar relajo",
+        "meaning": "to goof around / to joke around / to have fun",
+        "example": "Deja de echar relajo, el jefe ya viene.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "chévere",
+        "meaning": "Cool, awesome",
+        "example": "Esa fiesta estuvo chévere.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "buena onda",
+        "meaning": "Good vibes, cool person",
+        "example": "Tu amigo es muy buena onda.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "pana",
+        "meaning": "Friend, buddy",
+        "example": "¿Qué más, pana? ¿Cómo estás?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "qué onda",
+        "meaning": "What's up, what's going on",
+        "example": "¡Ey! ¿Qué onda? ¿Vamos al cine?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "está padre",
+        "meaning": "That's cool/awesome (Mexico)",
+        "example": "Tu carro nuevo está bien padre.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "neta",
+        "meaning": "Truth, for real (Mexico)",
+        "example": "¿Neta te vas a mudar a otro país?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bacán",
+        "meaning": "Cool, great (Andes/Southern Cone)",
+        "example": "Ese concierto estuvo bacán.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "pilas",
+        "meaning": "Be alert, pay attention",
+        "example": "¡Pilas con esa curva, está peligrosa!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "vaina",
+        "meaning": "Thing, stuff (can mean anything)",
+        "example": "Pásame esa vaina que está en la mesa.",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "parcero",
+        "meaning": "Close friend, buddy (Colombia)",
+        "example": "¡Parcero! Hace rato no te veía.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "chido",
+        "meaning": "Cool, nice (Mexico)",
+        "example": "Qué chido que te dieron el trabajo.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "dale",
+        "meaning": "Go ahead, okay, let's do it",
+        "example": "¿Nos vemos a las ocho? — Dale.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "fr": {
+    "expressions": [
+      {
+        "phrase": "kiffer",
+        "meaning": "to really like / to love something",
+        "example": "Je kiffe trop cette chanson, mets-la en boucle.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "la flemme",
+        "meaning": "feeling too lazy to do something",
+        "example": "J'ai la flemme de cuisiner, on commande une pizza ?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "galère",
+        "meaning": "a hassle / a struggle / a difficult situation",
+        "example": "C'est la galère pour trouver un appart à Paris.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "péter un câble",
+        "meaning": "to lose it / to snap / to go crazy",
+        "example": "Mon boss a pété un câble quand il a vu les chiffres.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "être crevé",
+        "meaning": "to be exhausted / dead tired",
+        "example": "Je suis crevé, j'ai bossé douze heures aujourd'hui.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "un mec / une meuf",
+        "meaning": "a guy / a girl (informal)",
+        "example": "T'as vu le mec là-bas ? C'est le pote de Sarah.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "se marrer",
+        "meaning": "to laugh hard / to have a great time",
+        "example": "On s'est bien marrés à la soirée hier soir.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "un truc de ouf",
+        "meaning": "something crazy / insane / unbelievable",
+        "example": "Il a sauté en parachute — c'est un truc de ouf !",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "bosser",
+        "meaning": "to work (informal) / to study hard",
+        "example": "Faut que je bosse ce week-end, j'ai un examen lundi.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "craquer",
+        "meaning": "to give in to temptation / to break down emotionally",
+        "example": "J'ai craqué et j'ai mangé tout le gâteau.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "se prendre la tête",
+        "meaning": "to overthink / to argue / to stress out",
+        "example": "Arrête de te prendre la tête, ça va s'arranger.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ça craint",
+        "meaning": "that sucks / that's bad / that's sketchy",
+        "example": "Il t'a posé un lapin ? Ça craint, sérieux.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "kiffer",
+        "meaning": "To really love or enjoy something",
+        "example": "Je kiffe cette chanson, mets-la plus fort !",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "c'est ouf",
+        "meaning": "That's crazy (verlan of 'fou')",
+        "example": "T'as vu le prix ? C'est ouf !",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "grave",
+        "meaning": "Totally, seriously (as an intensifier)",
+        "example": "Il est grave sympa, ce mec.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "la flemme",
+        "meaning": "Laziness, can't be bothered",
+        "example": "J'ai la flemme de cuisiner, on commande ?",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bosser",
+        "meaning": "To work, to study hard",
+        "example": "Faut que je bosse ce week-end pour l'examen.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "péter un câble",
+        "meaning": "To lose it, to snap",
+        "example": "Mon père va péter un câble quand il verra la note.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "ça gère",
+        "meaning": "That's great, that rocks",
+        "example": "Ton nouveau appart ? Ça gère !",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "relou",
+        "meaning": "Annoying (verlan of 'lourd')",
+        "example": "Il est relou, il arrête pas de m'envoyer des messages.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "chanmé",
+        "meaning": "Awesome, amazing (verlan of 'méchant')",
+        "example": "Le concert était chanmé hier soir !",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "se la péter",
+        "meaning": "To show off, to be full of oneself",
+        "example": "Depuis qu'il a sa voiture, il se la pète.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "être à fond",
+        "meaning": "To be fully into something, all in",
+        "example": "Je suis à fond dans cette série en ce moment.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "galère",
+        "meaning": "A struggle, a hassle",
+        "example": "Trouver un appart à Paris, c'est la galère.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "hi": {
+    "expressions": [
+      {
+        "phrase": "जुगाड़",
+        "romanization": "jugaad",
+        "meaning": "A creative hack / Makeshift solution / Resourcefulness",
+        "example": "कोई जुगाड़ लगाओ, नहीं तो काम नहीं होगा।",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "यार",
+        "romanization": "yaar",
+        "meaning": "Dude / Buddy / Man",
+        "example": "यार, तू कहाँ था इतने दिन?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "बकवास",
+        "romanization": "bakwas",
+        "meaning": "Nonsense / Rubbish / Bullshit",
+        "example": "ये सब बकवास है, मुझे सच बताओ।",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "फटा हाल",
+        "romanization": "phata haal",
+        "meaning": "In terrible shape / Broke / Messed up situation",
+        "example": "महीने के आखिर में मेरा फटा हाल हो जाता है।",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "पकाना",
+        "romanization": "pakana",
+        "meaning": "To bore someone / To annoy / To nag",
+        "example": "मत पका, मुझे जाने दे।",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "घपला",
+        "romanization": "ghapla",
+        "meaning": "Scam / Fraud / Shady dealings",
+        "example": "उस कंपनी में बड़ा घपला हुआ है।",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "चमचा",
+        "romanization": "chamcha",
+        "meaning": "Sycophant / Yes-man / Boot-licker",
+        "example": "वो बॉस का चमचा है, इसलिए प्रमोशन मिला।",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "दिमाग खराब",
+        "romanization": "dimag kharab",
+        "meaning": "Are you crazy / Lost your mind / Fed up",
+        "example": "तेरा दिमाग खराब है क्या? ये कैसे कर सकता है?",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "पैसा वसूल",
+        "romanization": "paisa vasool",
+        "meaning": "Worth every penny / Money well spent",
+        "example": "ये फिल्म पूरी पैसा वसूल है, ज़रूर देखो।",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "झोल",
+        "romanization": "jhol",
+        "meaning": "Something fishy / A problem / Fraud",
+        "example": "कुछ झोल है भाई, ध्यान से देख।",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "वाट लगाना",
+        "romanization": "vaat lagana",
+        "meaning": "To destroy / To mess things up completely",
+        "example": "बारिश ने सारे प्लान की वाट लगा दी।",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "फ़िल्मी",
+        "romanization": "filmi",
+        "meaning": "Dramatic / Over the top / Like a Bollywood movie",
+        "example": "इतना फ़िल्मी मत बन, सीधे बात कर।",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "जुगाड़",
+        "meaning": "A creative hack or workaround",
+        "example": "कोई न कोई जुगाड़ तो निकालना पड़ेगा।",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "jugaad",
+        "category": "modern"
+      },
+      {
+        "phrase": "यार",
+        "meaning": "Friend, buddy, dude",
+        "example": "यार, आज बहुत बोरिंग दिन था।",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "yaar",
+        "category": "modern"
+      },
+      {
+        "phrase": "बकवास",
+        "meaning": "Nonsense, rubbish",
+        "example": "ये फिल्म पूरी बकवास थी।",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "bakwas",
+        "category": "modern"
+      },
+      {
+        "phrase": "मस्त",
+        "meaning": "Awesome, cool, great",
+        "example": "पार्टी बहुत मस्त थी!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "mast",
+        "category": "modern"
+      },
+      {
+        "phrase": "फंडू",
+        "meaning": "Fantastic, superb",
+        "example": "तेरा नया फ़ोन तो फंडू है!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "fundoo",
+        "category": "modern"
+      },
+      {
+        "phrase": "टाइमपास",
+        "meaning": "Killing time, doing nothing useful",
+        "example": "बस यार, टाइमपास कर रहे हैं।",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "timepass",
+        "category": "modern"
+      },
+      {
+        "phrase": "अच्छा",
+        "meaning": "Oh really? / I see / Okay (versatile)",
+        "example": "अच्छा, तो तुम वहाँ गए थे?",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "achha",
+        "category": "modern"
+      },
+      {
+        "phrase": "चलो",
+        "meaning": "Lets go, come on, alright then",
+        "example": "चलो, देर हो रही है, निकलते हैं।",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "chalo",
+        "category": "modern"
+      },
+      {
+        "phrase": "पटाखा",
+        "meaning": "Firecracker — a stunning person",
+        "example": "वो तो पटाखा है, सबकी नज़र उस पर थी।",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "pataka",
+        "category": "modern"
+      },
+      {
+        "phrase": "बिंदास",
+        "meaning": "Carefree, fearless, bold",
+        "example": "वो बिंदास इंसान है, किसी की परवाह नहीं करता।",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "bindaas",
+        "category": "modern"
+      },
+      {
+        "phrase": "फटाफट",
+        "meaning": "Quickly, in a snap",
+        "example": "फटाफट तैयार हो जाओ, गाड़ी आ गई।",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "fatafat",
+        "category": "modern"
+      },
+      {
+        "phrase": "ज़बरदस्त",
+        "meaning": "Tremendous, awesome, powerful",
+        "example": "क्या ज़बरदस्त मैच था!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "zabardast",
+        "category": "modern"
+      }
+    ]
+  },
+  "it": {
+    "expressions": [
+      {
+        "phrase": "che figata",
+        "romanization": "ke figata",
+        "meaning": "How cool / Awesome / Sick",
+        "example": "Hai visto la nuova moto? Che figata!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "fregarsene",
+        "romanization": "fregarsene",
+        "meaning": "To not give a damn / To not care",
+        "example": "Me ne frego di quello che pensano gli altri.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "un casino",
+        "romanization": "un kazino",
+        "meaning": "A mess / A ton / Chaos",
+        "example": "C'era un casino di gente al concerto.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "che palle",
+        "romanization": "ke palle",
+        "meaning": "What a pain / How boring / Ugh",
+        "example": "Devo lavorare anche sabato, che palle!",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "beccarsi",
+        "romanization": "bekkarsi",
+        "meaning": "To catch / To meet up / To run into",
+        "example": "Ci becchiamo domani al bar alle otto.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "sgamare",
+        "romanization": "zgamare",
+        "meaning": "To get caught / To be found out",
+        "example": "L'hanno sgamato a copiare durante l'esame.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "incazzarsi",
+        "romanization": "inkatsarsi",
+        "meaning": "To get really angry / To lose it",
+        "example": "Si è incazzato di brutto quando ha saputo la verità.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "fare il figo",
+        "romanization": "fare il figo",
+        "meaning": "To act cool / To show off",
+        "example": "Smettila di fare il figo, non impressioni nessuno.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "una pacchia",
+        "romanization": "una pakkia",
+        "meaning": "A breeze / Easy street / Cushy situation",
+        "example": "Quel lavoro è una pacchia, non fa niente tutto il giorno.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "boh",
+        "romanization": "bo",
+        "meaning": "I dunno / Beats me / Who knows",
+        "example": "Dove andiamo stasera? Boh, decidi tu.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "essere al verde",
+        "romanization": "essere al verde",
+        "meaning": "To be broke / To have no money",
+        "example": "Non posso uscire, sono al verde fino a fine mese.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "menare il can per l'aia",
+        "romanization": "menare il kan per laia",
+        "meaning": "To beat around the bush / To avoid the point",
+        "example": "Non menare il can per l'aia, dimmi cosa è successo.",
+        "register": "informal",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "fico",
+        "meaning": "Cool, awesome",
+        "example": "Che giacca fica che hai!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "che figata",
+        "meaning": "How cool, thats awesome",
+        "example": "Hai vinto il concorso? Che figata!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "boh",
+        "meaning": "I dunno, who knows",
+        "example": "Dove andiamo stasera? — Boh, decidi tu.",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "dai",
+        "meaning": "Come on, go ahead, no way",
+        "example": "Dai, andiamo! Siamo già in ritardo.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "magari",
+        "meaning": "I wish, if only, maybe",
+        "example": "Vuoi venire in vacanza con noi? — Magari!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "cavolo",
+        "meaning": "Darn, shoot (mild expletive)",
+        "example": "Cavolo, ho dimenticato le chiavi!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "basta",
+        "meaning": "Enough, thats it, stop",
+        "example": "Basta, non ne posso più di questa situazione.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "figurati",
+        "meaning": "Dont worry about it, no problem",
+        "example": "Scusa per il ritardo. — Figurati, tranquillo!",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "assurdo",
+        "meaning": "Insane, unbelievable (positive or negative)",
+        "example": "Il traffico stamattina era assurdo.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "sfigato",
+        "meaning": "Loser, unlucky person",
+        "example": "Non fare lo sfigato, vieni a ballare!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "beccarsi",
+        "meaning": "To meet up, to catch up",
+        "example": "Ci becchiamo domani al bar?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "spaccare",
+        "meaning": "To kill it, to rock",
+        "example": "Quel gruppo spacca dal vivo!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "ja": {
+    "expressions": [
+      {
+        "phrase": "マジで",
+        "romanization": "maji de",
+        "meaning": "Seriously / For real",
+        "example": "マジで？それ本当に起きたの？",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ヤバい",
+        "romanization": "yabai",
+        "meaning": "Amazing / Terrible / Oh no (context-dependent)",
+        "example": "このラーメン、ヤバいくらい美味しい！",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ダサい",
+        "romanization": "dasai",
+        "meaning": "Lame / Uncool / Tacky",
+        "example": "そのTシャツ、ちょっとダサくない？",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "ウザい",
+        "romanization": "uzai",
+        "meaning": "Annoying / Irritating",
+        "example": "あいつ、何回も同じ話してウザいんだけど。",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ビビる",
+        "romanization": "bibiru",
+        "meaning": "To get scared / To freak out",
+        "example": "急に犬が吠えてビビった。",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "ハマる",
+        "romanization": "hamaru",
+        "meaning": "To get hooked on / To be addicted to",
+        "example": "最近、韓国ドラマにハマってる。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "サボる",
+        "romanization": "saboru",
+        "meaning": "To skip / To slack off (from 'sabotage')",
+        "example": "今日の授業サボっちゃった。",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "ドタキャン",
+        "romanization": "dotakyan",
+        "meaning": "Last-minute cancellation",
+        "example": "彼女にドタキャンされて暇になった。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ノリがいい",
+        "romanization": "nori ga ii",
+        "meaning": "Fun / Easy-going / Up for anything",
+        "example": "田中さんはノリがいいから飲み会に誘おう。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "空気読めない",
+        "romanization": "kuuki yomenai",
+        "meaning": "Can't read the room (KY)",
+        "example": "あの場で冗談言うなんて、空気読めないよね。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ムカつく",
+        "romanization": "mukatsuku",
+        "meaning": "To be pissed off / Infuriating",
+        "example": "上司の態度がマジでムカつく。",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "テンション高い",
+        "romanization": "tenshon takai",
+        "meaning": "Super energetic / Hyped up",
+        "example": "朝からテンション高いね、何かあった？",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "やばい",
+        "meaning": "Amazing or terrible (context-dependent)",
+        "example": "このラーメン、やばいくらい美味しい！",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "yabai",
+        "category": "modern"
+      },
+      {
+        "phrase": "マジ",
+        "meaning": "Seriously, for real",
+        "example": "マジで？信じられない！",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "maji",
+        "category": "modern"
+      },
+      {
+        "phrase": "ウケる",
+        "meaning": "Thats hilarious, LOL",
+        "example": "その話ウケるんだけど！",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "ukeru",
+        "category": "modern"
+      },
+      {
+        "phrase": "エモい",
+        "meaning": "Emotional, nostalgic, moving",
+        "example": "この曲エモいよね。",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "emoi",
+        "category": "modern"
+      },
+      {
+        "phrase": "草",
+        "meaning": "LOL (from w which looks like grass)",
+        "example": "あの動画見た？草すぎる。",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "kusa",
+        "category": "modern"
+      },
+      {
+        "phrase": "推し",
+        "meaning": "Favorite idol/character you support",
+        "example": "私の推しが新曲出したよ！",
+        "register": "casual",
+        "era": "2010s-2020s",
+        "romanization": "oshi",
+        "category": "modern"
+      },
+      {
+        "phrase": "それな",
+        "meaning": "Thats so true, I agree",
+        "example": "月曜日だるいよね。— それな。",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "sorena",
+        "category": "modern"
+      },
+      {
+        "phrase": "ガチ",
+        "meaning": "Seriously, genuinely, for real",
+        "example": "ガチでこの映画おすすめ。",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "gachi",
+        "category": "modern"
+      },
+      {
+        "phrase": "神",
+        "meaning": "God-tier, amazing, perfect",
+        "example": "この新作ゲーム、神だわ。",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "kami",
+        "category": "modern"
+      },
+      {
+        "phrase": "きつい",
+        "meaning": "Tough, harsh, exhausting",
+        "example": "残業続きできつい。",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "kitsui",
+        "category": "modern"
+      },
+      {
+        "phrase": "めっちゃ",
+        "meaning": "Very, extremely, super",
+        "example": "めっちゃ楽しかった！",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "meccha",
+        "category": "modern"
+      },
+      {
+        "phrase": "ワンチャン",
+        "meaning": "Theres a chance, maybe (from one chance)",
+        "example": "ワンチャン今日中に届くかも。",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "wanchan",
+        "category": "modern"
+      }
+    ]
+  },
+  "ko": {
+    "expressions": [
+      {
+        "phrase": "대박",
+        "romanization": "daebak",
+        "meaning": "Amazing / Jackpot / No way",
+        "example": "대박! 시험에 합격했어!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "헐",
+        "romanization": "heol",
+        "meaning": "OMG / What the... / Shocked exclamation",
+        "example": "헐, 걔 진짜 그랬어?",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "꿀잼",
+        "romanization": "kkuljaem",
+        "meaning": "Super fun / Entertaining (honey + fun)",
+        "example": "이 영화 꿀잼이야, 꼭 봐!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "노잼",
+        "romanization": "nojaem",
+        "meaning": "Boring / No fun",
+        "example": "그 드라마 노잼이라 한 회 보고 껐어.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "멘붕",
+        "romanization": "menbung",
+        "meaning": "Mental breakdown / Mind blown",
+        "example": "과제 마감이 내일이라니 멘붕이야.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "치맥",
+        "romanization": "chimaek",
+        "meaning": "Chicken and beer (fried chicken + maekju)",
+        "example": "오늘 퇴근하고 치맥 하자!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "빡세다",
+        "romanization": "ppakseda",
+        "meaning": "Tough / Intense / Grueling",
+        "example": "이번 학기 수업이 진짜 빡세.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "눈치",
+        "romanization": "nunchi",
+        "meaning": "Social awareness / Reading the vibe",
+        "example": "눈치가 빨라서 분위기 파악을 잘 해.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "갑분싸",
+        "romanization": "gapbunssa",
+        "meaning": "Suddenly the mood goes cold",
+        "example": "그 말 한마디에 갑분싸 됐어.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "찐",
+        "romanization": "jjin",
+        "meaning": "Real / Genuine / The real deal",
+        "example": "이 맛집은 찐이야, 진짜 맛있어.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "썸 타다",
+        "romanization": "sseom tada",
+        "meaning": "In the flirting stage before dating",
+        "example": "걔네 둘이 썸 타는 거 같아.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "짜증나",
+        "romanization": "jjajeungna",
+        "meaning": "So annoying / Frustrating",
+        "example": "버스가 또 안 와서 짜증나.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "대박",
+        "meaning": "Amazing, jackpot, wow",
+        "example": "이 영화 대박이야!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "daebak",
+        "category": "modern"
+      },
+      {
+        "phrase": "꽀잼",
+        "meaning": "Super fun (honey + fun)",
+        "example": "이 게임 꽀잼이야, 해봐.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "kkuljaem",
+        "category": "modern"
+      },
+      {
+        "phrase": "갑분싸",
+        "meaning": "Suddenly the mood gets awkward",
+        "example": "그 얘기 꺼내서 갑분싸 됐어.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "gapbunssa",
+        "category": "modern"
+      },
+      {
+        "phrase": "존맛",
+        "meaning": "Incredibly delicious",
+        "example": "이 떡볶이 존맛이야!",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "jonmat",
+        "category": "modern"
+      },
+      {
+        "phrase": "레전드",
+        "meaning": "Legendary, epic",
+        "example": "오늘 경기 레전드였어.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "rejendeu",
+        "category": "modern"
+      },
+      {
+        "phrase": "TMI",
+        "meaning": "Too much information (used playfully)",
+        "example": "TMI인데 나 오늘 양말 짝짝이야.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "tiemai",
+        "category": "modern"
+      },
+      {
+        "phrase": "혼코노",
+        "meaning": "Singing karaoke alone (solo noraebang)",
+        "example": "스트레스 받아서 혼코노 갔어.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": "honkono",
+        "category": "modern"
+      },
+      {
+        "phrase": "멘붕",
+        "meaning": "Mental breakdown, losing it",
+        "example": "시험 결과 보고 멘붕 왔어.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "menbung",
+        "category": "modern"
+      },
+      {
+        "phrase": "치맥",
+        "meaning": "Chicken and beer (iconic combo)",
+        "example": "오늘 저녁 치맥 어때?",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "chimaek",
+        "category": "modern"
+      },
+      {
+        "phrase": "갓생",
+        "meaning": "Living your best productive life",
+        "example": "요즘 갓생 살고 있어, 매일 운동해.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": "gatsaeng",
+        "category": "modern"
+      },
+      {
+        "phrase": "워라밸",
+        "meaning": "Work-life balance",
+        "example": "이 회사는 워라밸이 좋아.",
+        "register": "casual",
+        "era": "2020s",
+        "romanization": "worabal",
+        "category": "modern"
+      },
+      {
+        "phrase": "쨐다",
+        "meaning": "Thats insane, impressive",
+        "example": "시험 만점 받았어? 쨐다!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "jjeonda",
+        "category": "modern"
+      }
+    ]
+  },
+  "pt-BR": {
+    "expressions": [
+      {
+        "phrase": "maneiro",
+        "meaning": "cool / awesome / nice",
+        "example": "Essa festa tá maneira demais!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "dar um rolê",
+        "meaning": "to go for a walk / to go out / to take a ride",
+        "example": "Bora dar um rolê no shopping hoje à noite?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "mano",
+        "meaning": "bro / dude / buddy",
+        "example": "E aí, mano, tudo certo? Sumiu!",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "bora",
+        "meaning": "let's go / come on (contraction of 'vamos embora')",
+        "example": "Bora sair daqui, tá muito cheio.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "tá ligado",
+        "meaning": "you know what I mean / you get it",
+        "example": "A gente precisa chegar cedo, tá ligado?",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "vacilão",
+        "meaning": "someone unreliable / a jerk / someone who messes up",
+        "example": "Ele furou de novo, que vacilão.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "pagar mico",
+        "meaning": "to embarrass yourself in public",
+        "example": "Caí na frente de todo mundo, paguei o maior mico.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "dar um jeitinho",
+        "meaning": "to find a creative workaround / to fix things informally",
+        "example": "Não tem vaga? A gente dá um jeitinho.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "zueira",
+        "meaning": "joking around / messing around / banter",
+        "example": "Relaxa, foi zueira, não precisa ficar bravo.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "dar mole",
+        "meaning": "to slack off / to be careless / to flirt passively",
+        "example": "Não dá mole no trabalho novo, hein.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "quebrada",
+        "meaning": "the neighborhood / the hood / the area",
+        "example": "Ele é da minha quebrada, a gente cresceu junto.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "puxar o saco",
+        "meaning": "to suck up / to kiss up to someone",
+        "example": "Ele só foi promovido porque puxa o saco do chefe.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "massa",
+        "meaning": "Cool, awesome",
+        "example": "Esse lugar é muito massa!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "mano",
+        "meaning": "Bro, dude",
+        "example": "E aí, mano, tudo certo?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "top",
+        "meaning": "Great, excellent",
+        "example": "A comida desse restaurante é top.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bora",
+        "meaning": "Lets go (from vamos embora)",
+        "example": "Bora tomar um açaí depois da aula?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "zoar",
+        "meaning": "To mess around, joke, or tease",
+        "example": "Para de me zoar, cara!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "saudade",
+        "meaning": "Deep longing or missing someone/something",
+        "example": "Tô com tanta saudade da praia.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "firmeza",
+        "meaning": "All good, solid, agreed",
+        "example": "Nos vemos às oito? — Firmeza!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "suave",
+        "meaning": "Easy, chill, no problem",
+        "example": "A prova foi suave, não se preocupa.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "pô",
+        "meaning": "Come on, man (exclamation)",
+        "example": "Pô, você podia ter me avisado!",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "da hora",
+        "meaning": "Cool, awesome",
+        "example": "Seu tênis novo tá da hora!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "maneiro",
+        "meaning": "Cool, nice",
+        "example": "Que maneiro esse show ao vivo!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "tá ligado",
+        "meaning": "You know what I mean, got it?",
+        "example": "A gente se encontra no shopping, tá ligado?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "pt-PT": {
+    "expressions": [
+      {
+        "phrase": "fixe",
+        "meaning": "cool / nice / great",
+        "example": "A festa ontem foi muito fixe!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "gajo / gaja",
+        "meaning": "guy / girl (informal, can refer to anyone)",
+        "example": "Quem é aquele gajo que estava a falar contigo?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "bué",
+        "meaning": "a lot / very / loads of",
+        "example": "Estou bué cansada, vou para casa.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "estar lixado",
+        "meaning": "to be in trouble / to be screwed / to be broken",
+        "example": "Se o professor descobre, estamos lixados.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "curtir",
+        "meaning": "to enjoy / to like / to have a good time",
+        "example": "Estou a curtir bué este restaurante novo.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "cena",
+        "meaning": "thing / stuff / situation (very versatile word)",
+        "example": "Qual é a cena do jantar? Vamos onde?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ir à rasca",
+        "meaning": "to be in a tough spot / to struggle",
+        "example": "Sem guarda-chuva nesta chuva, fomos à rasca.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "tipo",
+        "meaning": "like (filler word, similar to English 'like')",
+        "example": "Ele disse, tipo, que não queria ir, mas depois apareceu.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "fogo",
+        "meaning": "damn / jeez (mild exclamation of frustration or surprise)",
+        "example": "Fogo, já são oito horas e ainda não jantei!",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "alheira",
+        "meaning": "a mess / a tricky situation (from the sausage name)",
+        "example": "Meteste-te numa bela alheira com esse negócio.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "desenrascar",
+        "meaning": "to figure it out on the fly / to improvise a solution",
+        "example": "Não temos plano, mas a gente desenrasca.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "chato / chata",
+        "meaning": "annoying / boring (person or situation)",
+        "example": "Não sejas chato, deixa-me ver o meu telemóvel.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "fixe",
+        "meaning": "Cool, nice",
+        "example": "A festa ontem foi muito fixe.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "gajo/gaja",
+        "meaning": "Guy/girl, dude",
+        "example": "Aquele gajo é bué simpático.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bué",
+        "meaning": "A lot, very, tons of",
+        "example": "Estou bué cansado hoje.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "curtes?",
+        "meaning": "Do you like it? Are you into it?",
+        "example": "Vou ao concerto amanhã, curtes?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "ó pá",
+        "meaning": "Hey, man (exclamation of address)",
+        "example": "Ó pá, não acredito no que aconteceu!",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "altamente",
+        "meaning": "Awesome, excellent",
+        "example": "O jogo ontem foi altamente!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "giro/gira",
+        "meaning": "Cute, attractive, pretty",
+        "example": "Que vestido tão giro que compraste!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "combinado",
+        "meaning": "Deal, agreed",
+        "example": "Encontramo-nos às seis? — Combinado!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "tranquilo",
+        "meaning": "Chill, relaxed, no worries",
+        "example": "Não te stresses, fica tranquilo.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "arrasar",
+        "meaning": "To rock, to be awesome",
+        "example": "Esse DJ arrasou no festival!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "lendário",
+        "meaning": "Legendary, epic moment",
+        "example": "Esse golo foi lendário.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "na boa",
+        "meaning": "No worries, not a big deal",
+        "example": "Não vieste? Na boa, logo combinamos.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "tr": {
+    "expressions": [
+      {
+        "phrase": "çok fena",
+        "romanization": "chok fena",
+        "meaning": "Awesome / Intense / Crazy good (or bad)",
+        "example": "Bu şarkı çok fena, tekrar çal!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "kanka",
+        "romanization": "kanka",
+        "meaning": "Bro / Buddy / Close friend",
+        "example": "Kanka, bu akşam ne yapıyoruz?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "kafayı yemek",
+        "romanization": "kafayi yemek",
+        "meaning": "To lose your mind / To go crazy",
+        "example": "Bu iş yüzünden kafayı yiyeceğim.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ayıp",
+        "romanization": "ayip",
+        "meaning": "Shameful / That's rude / Not cool",
+        "example": "Öyle konuşmak ayıp, özür dile.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "keriz",
+        "romanization": "keriz",
+        "meaning": "Sucker / Fool / Easy to trick",
+        "example": "Onu keriz yerine koyma, o kadar da saf değil.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "hadi be",
+        "romanization": "hadi be",
+        "meaning": "No way / Come on / Get outta here",
+        "example": "Hadi be, ciddi misin? İnanamıyorum!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "ne alaka",
+        "romanization": "ne alaka",
+        "meaning": "What's that got to do with anything / Irrelevant",
+        "example": "Ben yemekten bahsediyorum, ne alaka şimdi?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "beleş",
+        "romanization": "belesh",
+        "meaning": "Free / For nothing / Freebie",
+        "example": "Beleş yemek var, koş gelsin!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "kafa dengi",
+        "romanization": "kafa dengi",
+        "meaning": "Like-minded / On the same wavelength",
+        "example": "O benim kafa dengim, her konuda anlaşıyoruz.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "deli gibi",
+        "romanization": "deli gibi",
+        "meaning": "Like crazy / Insanely / A ton",
+        "example": "Deli gibi çalıştım ama yetişemedim.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "çıldırmak",
+        "romanization": "childirmak",
+        "meaning": "To go nuts / To freak out / To be furious",
+        "example": "Annesi öğrenince çıldıracak.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "triplerini atmak",
+        "romanization": "triplerini atmak",
+        "meaning": "To throw a tantrum / To act dramatic",
+        "example": "Yine triplerini atıyor, bırak hallolsun.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "efsane",
+        "meaning": "Legendary, epic",
+        "example": "Dün gece efsane bir konser vardı.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "aynen",
+        "meaning": "Exactly, thats right",
+        "example": "Bu film çok uzundu. — Aynen, bitmiyor.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "harbiden",
+        "meaning": "For real, seriously",
+        "example": "Harbiden mi söylüyorsun? İnanamıyorum!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "kanka",
+        "meaning": "Close friend, bestie (from kan kardesi)",
+        "example": "Kanka, bu akşam ne yapıyoruz?",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "çok iyi",
+        "meaning": "So good, awesome",
+        "example": "Bu yemek çok iyi olmuş, ellerine sağlık!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "off ya",
+        "meaning": "Ugh, oh man (frustration or admiration)",
+        "example": "Off ya, yine trafik var.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "yuh",
+        "meaning": "No way, thats outrageous",
+        "example": "Yuh, bu fiyatlar ne böyle!",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "aşırı",
+        "meaning": "Extremely, excessively",
+        "example": "Bu dizi aşırı sürükleyici.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "taş gibi",
+        "meaning": "Solid, gorgeous, rock-solid",
+        "example": "Yeni araba taş gibi olmuş.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "resmen",
+        "meaning": "Literally, basically (emphatic)",
+        "example": "Resmen bütün gün uyudum.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "fena",
+        "meaning": "Sick, intense, not bad at all",
+        "example": "Bu şarkı fena değil, beğendim.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "kesinlikle",
+        "meaning": "Absolutely, definitely",
+        "example": "Bu restoran güzel mi? — Kesinlikle!",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "zh-CN": {
+    "expressions": [
+      {
+        "phrase": "牛逼",
+        "romanization": "niubi",
+        "meaning": "Awesome / Badass / Incredible",
+        "example": "他一个人搞定了整个项目，真牛逼。",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "靠谱",
+        "romanization": "kaopu",
+        "meaning": "Reliable / Trustworthy / Solid",
+        "example": "找他帮忙吧，他做事很靠谱。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "给力",
+        "romanization": "geili",
+        "meaning": "Awesome / Powerful / Delivers results",
+        "example": "这次的表演太给力了！",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "坑爹",
+        "romanization": "kengdie",
+        "meaning": "What a rip-off / That's BS / Screwed over",
+        "example": "这个软件收费这么贵，太坑爹了。",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "吐槽",
+        "romanization": "tucao",
+        "meaning": "To roast / To complain / To mock",
+        "example": "大家都在吐槽那部新电影。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "纠结",
+        "romanization": "jiujie",
+        "meaning": "Torn / Conflicted / Can't decide",
+        "example": "我好纠结，不知道该选哪个。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "忽悠",
+        "romanization": "huyou",
+        "meaning": "To con / To bullshit / To sweet-talk",
+        "example": "别被他忽悠了，他说的不靠谱。",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "接地气",
+        "romanization": "jie diqi",
+        "meaning": "Down-to-earth / Relatable / Unpretentious",
+        "example": "这个老板很接地气，经常和员工一起吃饭。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "装逼",
+        "romanization": "zhuangbi",
+        "meaning": "To show off / To act pretentious",
+        "example": "他买了辆跑车天天装逼。",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "掉链子",
+        "romanization": "diao lianzi",
+        "meaning": "To drop the ball / To fail at a crucial moment",
+        "example": "关键时刻别掉链子啊！",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "不靠谱",
+        "romanization": "bu kaopu",
+        "meaning": "Unreliable / Sketchy / Can't be trusted",
+        "example": "他说的话不靠谱，别当真。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "脑子进水",
+        "romanization": "naozi jin shui",
+        "meaning": "Are you out of your mind / Brain is waterlogged",
+        "example": "你脑子进水了吧？这种事也信？",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "666",
+        "meaning": "Awesome, impressive, skilled",
+        "example": "你这操作666啊！",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "liu liu liu",
+        "category": "modern"
+      },
+      {
+        "phrase": "yyds",
+        "meaning": "Eternal god, the GOAT (yong yuan de shen)",
+        "example": "梅西真的是yyds。",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": "yong yuan de shen",
+        "category": "modern"
+      },
+      {
+        "phrase": "绝绝子",
+        "meaning": "Absolutely amazing, incredible",
+        "example": "这家店的奶茶绝绝子！",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": "jue jue zi",
+        "category": "modern"
+      },
+      {
+        "phrase": "内卷",
+        "meaning": "Rat race, excessive competition",
+        "example": "现在考研太内卷了。",
+        "register": "casual",
+        "era": "2020s",
+        "romanization": "nei juan",
+        "category": "modern"
+      },
+      {
+        "phrase": "摆烂",
+        "meaning": "To give up trying, let things rot",
+        "example": "这学期我决定摆烂了。",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": "bai lan",
+        "category": "modern"
+      },
+      {
+        "phrase": "种草",
+        "meaning": "To be influenced to want to buy something",
+        "example": "被你种草了这个包，我也想买。",
+        "register": "casual",
+        "era": "2020s",
+        "romanization": "zhong cao",
+        "category": "modern"
+      },
+      {
+        "phrase": "凡尔赛",
+        "meaning": "Humble-bragging",
+        "example": "他又在凡尔赛了，说自己只考了第二名。",
+        "register": "casual",
+        "era": "2020s",
+        "romanization": "fan er sai",
+        "category": "modern"
+      },
+      {
+        "phrase": "社恐",
+        "meaning": "Socially anxious, introvert",
+        "example": "我社恐，不太喜欢聚会。",
+        "register": "casual",
+        "era": "2020s",
+        "romanization": "she kong",
+        "category": "modern"
+      },
+      {
+        "phrase": "躺平",
+        "meaning": "To lie flat, opt out of hustle culture",
+        "example": "工作太累了，我想躺平。",
+        "register": "casual",
+        "era": "2020s",
+        "romanization": "tang ping",
+        "category": "modern"
+      },
+      {
+        "phrase": "真香",
+        "meaning": "Something you said you would never like but ended up loving",
+        "example": "之前说不看这部剧，结果真香了。",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "zhen xiang",
+        "category": "modern"
+      },
+      {
+        "phrase": "emo",
+        "meaning": "Feeling down, sad, or moody",
+        "example": "今天有点emo，不想说话。",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": "emo",
+        "category": "modern"
+      },
+      {
+        "phrase": "上头",
+        "meaning": "Getting hooked, obsessed, or tipsy",
+        "example": "这首歌太上头了，单曲循环一天了。",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": "shang tou",
+        "category": "modern"
+      }
+    ]
+  },
+  "zh-TW": {
+    "expressions": [
+      {
+        "phrase": "超扯",
+        "romanization": "chao che",
+        "meaning": "So ridiculous / Outrageous / Unbelievable",
+        "example": "他居然遲到三個小時，超扯的！",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "機車",
+        "romanization": "jiche",
+        "meaning": "Annoying / Difficult / Pain in the neck",
+        "example": "那個店員態度很機車。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "白目",
+        "romanization": "baimu",
+        "meaning": "Clueless / Oblivious / Tactless person",
+        "example": "他真的很白目，講話都不看場合。",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "龜毛",
+        "romanization": "guimao",
+        "meaning": "Nitpicky / Fussy / Overly particular",
+        "example": "你不要那麼龜毛啦，差不多就好了。",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "很瞎",
+        "romanization": "hen xia",
+        "meaning": "Ridiculous / Makes no sense / Absurd",
+        "example": "這個規定很瞎，根本沒有道理。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "很雷",
+        "romanization": "hen lei",
+        "meaning": "Shocking / Cringy / Unexpectedly bad",
+        "example": "那部電影的結局很雷。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "有梗",
+        "romanization": "you geng",
+        "meaning": "Funny / Has a punchline / Witty",
+        "example": "他講話超有梗的，大家都在笑。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "踩雷",
+        "romanization": "cai lei",
+        "meaning": "Stepped on a landmine / Bad experience with something",
+        "example": "那家餐廳我踩雷了，超難吃。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "廢話",
+        "romanization": "feihua",
+        "meaning": "Nonsense / No duh / Obviously",
+        "example": "廢話！這種事誰不知道？",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "87",
+        "romanization": "baqi",
+        "meaning": "Stupid / Idiot (sounds like 白痴 baichi)",
+        "example": "你是87嗎？這樣也會搞錯。",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "傻眼",
+        "romanization": "shayan",
+        "meaning": "Stunned / Dumbfounded / Can't believe it",
+        "example": "聽到那個消息我整個傻眼。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "奧客",
+        "romanization": "aoке",
+        "meaning": "Difficult / Unreasonable customer",
+        "example": "今天又遇到一個奧客，搞得我好累。",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "超讃",
+        "meaning": "Super awesome, excellent",
+        "example": "這家餐廳超讃的，你一定要來！",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "chao zan",
+        "category": "modern"
+      },
+      {
+        "phrase": "傻眼",
+        "meaning": "Stunned, dumbfounded",
+        "example": "聽到那個消息我整個傻眼。",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "sha yan",
+        "category": "modern"
+      },
+      {
+        "phrase": "有夠",
+        "meaning": "Extremely, so much (Taiwanese emphasis)",
+        "example": "今天有夠熱的啦！",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "you gou",
+        "category": "modern"
+      },
+      {
+        "phrase": "機車",
+        "meaning": "Annoying, difficult (person)",
+        "example": "那個客人超機車的，一直抱怨。",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "ji che",
+        "category": "modern"
+      },
+      {
+        "phrase": "白目",
+        "meaning": "Clueless, tactless person",
+        "example": "你不要這麼白目好不好？",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "bai mu",
+        "category": "modern"
+      },
+      {
+        "phrase": "三八",
+        "meaning": "Silly, goofy, ditzy (usually for women)",
+        "example": "她很三八，每次都鬧笑話。",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": "san ba",
+        "category": "modern"
+      },
+      {
+        "phrase": "很鬧",
+        "meaning": "Being ridiculous, chaotic, dramatic",
+        "example": "你們兩個很鬧耶！",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "hen nao",
+        "category": "modern"
+      },
+      {
+        "phrase": "厉害",
+        "meaning": "Impressive, formidable, amazing",
+        "example": "你也太厉害了吧，全部滿分！",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": "li hai",
+        "category": "modern"
+      },
+      {
+        "phrase": "罩子放亮",
+        "meaning": "Be smart about it, pay attention",
+        "example": "罩子放亮一點，別再犯同樣的錯。",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": "zhao zi fang liang",
+        "category": "modern"
+      },
+      {
+        "phrase": "吃土",
+        "meaning": "To be broke (so poor you eat dirt)",
+        "example": "月底了，又要吃土了。",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": "chi tu",
+        "category": "modern"
+      },
+      {
+        "phrase": "懶叫",
+        "meaning": "Nonsense, rubbish (vulgar)",
+        "example": "他講的都是懶叫啦！",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": "lan jiao",
+        "category": "modern"
+      },
+      {
+        "phrase": "浮誇",
+        "meaning": "Over the top, exaggerated, extra",
+        "example": "你的反應也太浮誇了吧！",
+        "register": "casual",
+        "era": "modern",
+        "romanization": "fu kua",
+        "category": "modern"
+      }
+    ]
+  },
+  "en": {
+    "expressions": [
+      {
+        "phrase": "my bad",
+        "meaning": "my mistake / I'm sorry",
+        "example": "Oh, I forgot to text you back — my bad!",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "no-brainer",
+        "meaning": "an easy decision, something obvious",
+        "example": "Free pizza at the office? That's a no-brainer.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "bail",
+        "meaning": "to leave suddenly or cancel plans",
+        "example": "He was supposed to come to the party but he bailed last minute.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "sketchy",
+        "meaning": "suspicious, untrustworthy, or unsafe",
+        "example": "That neighborhood is kind of sketchy at night.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "a total rip-off",
+        "meaning": "something overpriced or a scam",
+        "example": "Twenty bucks for a beer? What a rip-off!",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "crash at someone's place",
+        "meaning": "to sleep at someone's house informally",
+        "example": "I had too many drinks, can I crash at your place tonight?",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "rain check",
+        "meaning": "to postpone plans to another time",
+        "example": "I'm swamped tonight — can I take a rain check?",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "hit the sack",
+        "meaning": "to go to bed / go to sleep",
+        "example": "I'm beat. I'm gonna hit the sack early tonight.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "to be down",
+        "meaning": "to be willing or interested in doing something",
+        "example": "We're going bowling later — you down?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "screw up",
+        "meaning": "to make a mistake / mess something up",
+        "example": "I really screwed up that job interview.",
+        "register": "informal",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "hang out",
+        "meaning": "to spend time casually with someone",
+        "example": "Wanna hang out this weekend? We could grab coffee.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "shotgun",
+        "meaning": "calling the front passenger seat of a car",
+        "example": "Shotgun! I'm not sitting in the back again.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "no cap",
+        "meaning": "No lie, for real",
+        "example": "That concert was amazing, no cap.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "it's giving",
+        "meaning": "It has the vibe/energy of",
+        "example": "That outfit? It's giving main character energy.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "slay",
+        "meaning": "To do something exceptionally well",
+        "example": "She walked in and absolutely slayed that presentation.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "lowkey",
+        "meaning": "Quietly, subtly, or somewhat",
+        "example": "I lowkey wanna skip the party tonight.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bussin",
+        "meaning": "Extremely good, especially food",
+        "example": "Have you tried their tacos? They're bussin.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "hits different",
+        "meaning": "Feels uniquely special or impactful",
+        "example": "Iced coffee at 2 AM hits different.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "bet",
+        "meaning": "Okay, sounds good, agreement",
+        "example": "Wanna grab lunch? — Bet.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "sus",
+        "meaning": "Suspicious or shady",
+        "example": "He left without saying goodbye, that's kinda sus.",
+        "register": "very casual",
+        "era": "2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "vibe",
+        "meaning": "A feeling, atmosphere, or to relax and enjoy",
+        "example": "We're just vibing at the beach today.",
+        "register": "casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "ghosted",
+        "meaning": "Suddenly stopped all communication",
+        "example": "We went on three dates and then she ghosted me.",
+        "register": "casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "salty",
+        "meaning": "Bitter or upset about something minor",
+        "example": "He's still salty about losing that game last week.",
+        "register": "casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "flex",
+        "meaning": "To show off or brag",
+        "example": "Nice car — no need to flex on us like that.",
+        "register": "very casual",
+        "era": "2010s-2020s",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  },
+  "es": {
+    "expressions": [
+      {
+        "phrase": "mola",
+        "meaning": "it's cool / it's awesome",
+        "example": "Esa chaqueta mola un montón, ¿dónde la compraste?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "tío / tía",
+        "meaning": "dude / mate (informal way to address someone)",
+        "example": "Eh tío, ¿vienes a tomar algo o qué?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "flipar",
+        "meaning": "to be amazed / to freak out",
+        "example": "Estoy flipando con lo que me acabas de contar.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "currar",
+        "meaning": "to work (informal)",
+        "example": "Hoy no puedo quedar, tengo que currar hasta las nueve.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "mogollón",
+        "meaning": "a lot / loads / tons of",
+        "example": "Había mogollón de gente en el concierto.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "ir de cañas",
+        "meaning": "to go out for beers",
+        "example": "¿Quedamos el viernes para ir de cañas después del trabajo?",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "pasarse",
+        "meaning": "to go too far / to cross the line",
+        "example": "Lo que dijo tu hermano se pasó tres pueblos.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "estar empanado",
+        "meaning": "to be spaced out / clueless / not paying attention",
+        "example": "¿No te has enterado? Tío, estás empanado.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "pillar",
+        "meaning": "to catch / to get / to understand",
+        "example": "¿Pillas lo que te estoy diciendo? No pillo nada.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "quedada",
+        "meaning": "a meetup / a get-together",
+        "example": "Estamos organizando una quedada el sábado en el parque.",
+        "register": "casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "majo / maja",
+        "meaning": "nice / likeable / pleasant (describing a person)",
+        "example": "Tu novio es muy majo, me cae genial.",
+        "register": "casual",
+        "category": "classic",
+        "era": "classic"
+      },
+      {
+        "phrase": "irse de marcha",
+        "meaning": "to go out and party",
+        "example": "Ayer nos fuimos de marcha y no volvi hasta las seis de la manana.",
+        "register": "very casual",
+        "category": "classic",
+        "era": "everyday"
+      },
+      {
+        "phrase": "mola",
+        "meaning": "That's cool / awesome",
+        "example": "Tu chaqueta nueva mola mucho.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "tío/tía",
+        "meaning": "Dude, mate (term of address)",
+        "example": "¡Tío, no te vas a creer lo que pasó!",
+        "register": "very casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "flipar",
+        "meaning": "To be amazed or shocked",
+        "example": "Estoy flipando con los precios de los alquileres.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "currar",
+        "meaning": "To work",
+        "example": "Mañana tengo que currar desde las siete.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "guay",
+        "meaning": "Cool, great",
+        "example": "La serie nueva está muy guay.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "quedar",
+        "meaning": "To meet up, make plans",
+        "example": "¿Quedamos el sábado para tomar algo?",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "ir de cañas",
+        "meaning": "To go out for beers",
+        "example": "¿Salimos a ir de cañas después del trabajo?",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "pasarlo bomba",
+        "meaning": "To have a blast, great time",
+        "example": "En la boda lo pasamos bomba.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "enrollado",
+        "meaning": "Cool, easy-going person",
+        "example": "Mi jefe es bastante enrollado con los horarios.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "mogollón",
+        "meaning": "A lot, tons of",
+        "example": "Había mogollón de gente en el concierto.",
+        "register": "casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "majo",
+        "meaning": "Nice, likeable",
+        "example": "La vecina nueva es muy maja.",
+        "register": "casual",
+        "era": "traditional/modern",
+        "romanization": null,
+        "category": "modern"
+      },
+      {
+        "phrase": "cachondeo",
+        "meaning": "A joke, messing around, chaos",
+        "example": "La reunión fue un cachondeo total.",
+        "register": "very casual",
+        "era": "modern",
+        "romanization": null,
+        "category": "modern"
+      }
+    ]
+  }
+}

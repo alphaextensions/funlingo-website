@@ -1,0 +1,443 @@
+<title>Trancy Teardown</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap">
+<style>
+/* Layout: one reading column (maxw-narrow), alternating bg/bg2 bands per Funlingo's "two backgrounds" rule; cards with borders, no resting shadow. */
+:root{
+  --bg:#0E0816; --bg2:#140B20; --surface:#1A1026; --surface-2:#221531;
+  --text:#F6EFFB; --text-dim:rgba(246,239,251,.64); --text-dim2:rgba(246,239,251,.46);
+  --border:rgba(255,255,255,.08); --chip:rgba(255,255,255,.06); --pink-soft:rgba(236,77,176,.14);
+  --pink:#EC4DB0; --pink-text:#F277C0; --ink:#1B0F26;
+  --grad:linear-gradient(135deg,#BC22D6 0%,#9A1C8E 52%,#E0319E 100%);
+  --ok:#16B57F; --warn:#F5A623; --bad:#FF5C7A;
+  --ok-soft:rgba(22,181,127,.14); --warn-soft:rgba(245,166,35,.14); --bad-soft:rgba(255,92,122,.14);
+  --sans:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#FBF4FF; --bg2:#FFFFFF; --surface:#FFFFFF; --surface-2:#FBF2FE;
+  --text:#1B0F26; --text-dim:#675579; --text-dim2:#7E6E8C;
+  --border:rgba(27,15,38,.09); --chip:#F4EAFB; --pink-soft:rgba(236,77,176,.10);
+  --pink:#C81F8E; --pink-text:#B0197C;
+  --ok:#0E8A60; --warn:#A86A06; --bad:#C4224A;
+  --ok-soft:rgba(22,181,127,.12); --warn-soft:rgba(245,166,35,.16); --bad-soft:rgba(220,40,80,.10);
+  color-scheme:light;
+}}
+:root[data-theme="light"]{
+  --bg:#FBF4FF; --bg2:#FFFFFF; --surface:#FFFFFF; --surface-2:#FBF2FE;
+  --text:#1B0F26; --text-dim:#675579; --text-dim2:#7E6E8C;
+  --border:rgba(27,15,38,.09); --chip:#F4EAFB; --pink-soft:rgba(236,77,176,.10);
+  --pink:#C81F8E; --pink-text:#B0197C;
+  --ok:#0E8A60; --warn:#A86A06; --bad:#C4224A;
+  --ok-soft:rgba(22,181,127,.12); --warn-soft:rgba(245,166,35,.16); --bad-soft:rgba(220,40,80,.10);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:500;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.band{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:72px;border-bottom:1px solid var(--border)}
+.band.alt{background:var(--bg2)}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.copy{max-width:720px}
+.eyebrow{font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--pink-text);margin:0}
+h1{font-size:clamp(38px,5.4vw,64px);font-weight:800;line-height:1.04;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(28px,3.6vw,40px);font-weight:800;line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h3{font-size:19px;font-weight:700;line-height:1.3;margin:0}
+p{margin:0}
+.lead{font-size:19px;color:var(--text-dim);line-height:1.55}
+.accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dim{color:var(--text-dim)}
+a{color:var(--pink-text)}
+.head{display:flex;flex-direction:column;gap:12px}
+
+/* verdict tiles */
+.verdicts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card p{color:var(--text-dim);font-size:15px}
+
+/* risk pills */
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;white-space:nowrap;align-self:flex-start}
+.pill::before{content:"";width:7px;height:7px;border-radius:999px;background:currentColor}
+.low{color:var(--ok);background:var(--ok-soft)}
+.med{color:var(--warn);background:var(--warn-soft)}
+.high{color:var(--bad);background:var(--bad-soft)}
+
+/* section map table */
+.tw{overflow-x:auto;border:1px solid var(--border);border-radius:24px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px}
+th{text-align:left;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--text-dim);padding:16px 18px;border-bottom:1px solid var(--border)}
+td{padding:16px 18px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text-dim)}
+tr:last-child td{border-bottom:none}
+td.n{color:var(--text);font-weight:700;white-space:nowrap}
+td.n small{display:block;font-weight:500;font-size:12px;color:var(--text-dim2)}
+
+/* player anatomy */
+.anatomy{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px;align-items:start}
+.player{background:#130C1F;border-radius:26px;padding:18px;display:flex;flex-direction:column;gap:14px;color:#F6EFFB;border:1px solid rgba(255,255,255,.06)}
+.screen{aspect-ratio:16/9;max-width:100%;border-radius:16px;background:radial-gradient(130% 110% at 72% 6%,#4A1F6E 0%,#2B1240 44%,#140A22 100%);display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(246,239,251,.7);text-align:center;padding:12px}
+.subs{text-align:center;display:flex;flex-direction:column;gap:2px;font-size:15px}
+.subs .l1 u{text-decoration:2px dashed #EC4DB0;text-underline-offset:4px;background:rgba(236,77,176,.12)}
+.subs .l2{color:rgba(246,239,251,.64);font-size:14px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;background:#0E0719;border-radius:14px;padding:10px}
+.bar span{font-size:12px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);color:rgba(246,239,251,.8)}
+.bar span.on{background:rgba(236,77,176,.2);color:#F277C0}
+.parts{display:flex;flex-direction:column;gap:12px}
+.part{display:flex;gap:14px;align-items:flex-start}
+.part b{flex:none;width:28px;height:28px;border-radius:999px;background:var(--grad);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.part div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.part p{color:var(--text-dim);font-size:15px}
+
+/* callout */
+.callout{background:var(--pink-soft);border-radius:22px;padding:24px 26px;display:flex;flex-direction:column;gap:8px}
+.callout p{color:var(--text)}
+.callout.red{background:var(--bad-soft)}
+
+/* comparison */
+.cmp{display:grid;grid-template-columns:1.7fr 1fr 1fr;min-width:620px}
+.cmp>div{padding:14px 18px;border-bottom:1px solid var(--border);font-size:15px;color:var(--text-dim);display:flex;align-items:center;gap:8px}
+.cmp>.h{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.cmp>.fh{background:var(--grad);color:#fff;border-radius:18px 18px 0 0}
+.cmp>.f{background:var(--pink-soft);color:var(--text)}
+.cmp>.row{color:var(--text)}
+.cmp>div:nth-last-child(-n+3){border-bottom:none}
+.yes{display:inline-flex;width:20px;height:20px;border-radius:999px;background:var(--grad);flex:none;align-items:center;justify-content:center}
+.yes svg{width:12px;height:12px}
+.part-mark{color:var(--text-dim2);font-weight:800;flex:none;width:20px;text-align:center}
+.no{color:var(--text-dim2);flex:none;width:20px;text-align:center}
+
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.phases ul{margin:0;padding-left:18px;color:var(--text-dim);font-size:15px;display:flex;flex-direction:column;gap:6px}
+.chip{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--pink-text);background:var(--pink-soft);border-radius:999px;padding:4px 10px;align-self:flex-start}
+
+.ideas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.foot{font-size:14px;color:var(--text-dim2);display:flex;flex-direction:column;gap:6px}
+
+/* deep dive */
+.dives{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.dive{gap:14px}
+.dive-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.dive dl{margin:0;display:flex;flex-direction:column;gap:10px}
+.dive dt{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--pink-text)}
+.dive dd{margin:2px 0 0;color:var(--text-dim);font-size:15px}
+.angle{background:var(--pink-soft);border-radius:14px;padding:14px 16px;color:var(--text)!important}
+.angle b{font-weight:700}
+.errs{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;color:var(--text)}
+.errs b{font-weight:700}
+
+@media (max-width:860px){
+  .verdicts,.phases,.ideas,.anatomy,.dives{grid-template-columns:1fr}
+  .band{padding-block:56px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head copy">
+      <p class="eyebrow">Competitor teardown · learn.trancy.org</p>
+      <h1>Trancy built a study hub.<br>Funlingo can build a <span class="accent">better</span> one.</h1>
+      <p class="lead">A section-by-section walk through Trancy's Learning Center, what each part is built on, how risky it is legally, and how a Funlingo version should differ. Browsed signed in on 15 October 2026.</p>
+    </div>
+    <div class="verdicts">
+      <div class="card">
+        <span class="pill low">Safe to copy</span>
+        <h3>Books, AI Talk, flashcards</h3>
+        <p>Public-domain classics, Creative Commons kids' readers, AI-written role-plays and your own vocab tools. All clean.</p>
+      </div>
+      <div class="card">
+        <span class="pill med">Copy with care</span>
+        <h3>The YouTube player</h3>
+        <p>The official embed is fine. Pulling captions, exporting them and AI-summarising other people's videos sit in YouTube's grey zone.</p>
+      </div>
+      <div class="card">
+        <span class="pill high">Do not copy</span>
+        <h3>The Movie shelf</h3>
+        <p>Full subtitle scripts of commercial films, read aloud by text-to-speech, with no licence shown anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <div class="head copy">
+      <p class="eyebrow">The map</p>
+      <h2>Seven rooms behind one sidebar</h2>
+      <p class="lead">Every section, what's in it, where the content comes from, and the legal read.</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Section</th><th>What it does</th><th>Content comes from</th><th>Risk</th></tr></thead>
+        <tbody>
+          <tr><td class="n">Home<small>/home</small></td><td>Dashboard: latest videos from followed channels, podcasts, AI Talk courses, streak calendar, flashcard target (0/10 a day), activity heatmap, upgrade card.</td><td>Your own follows and progress</td><td><span class="pill low">Low</span></td></tr>
+          <tr><td class="n">Library · YouTube<small>/youtube</small></td><td>Feed from followed channels (TEDx, TED-Ed, BBC Learning English, MKBHD…), favourites, history, "paste a YouTube link" box, ⌘K search.</td><td>YouTube via the official embed player</td><td><span class="pill med">Medium</span></td></tr>
+          <tr><td class="n">Library · Podcasts<small>/podcast</small></td><td>Subscribe to shows, then study episodes in the same player. Empty until you add a feed.</td><td>Public RSS feeds</td><td><span class="pill low">Low</span></td></tr>
+          <tr><td class="n">Library · Sentence Packs<small>/sentence-shadowing</small></td><td>Themed sentence decks for shadowing: 2,000 everyday sentences, famous quotes by level, idioms, travel, business letters, a named author's slang list. Users can make their own.</td><td>Mostly Trancy-written; one pack credits a named author</td><td><span class="pill low">Low</span></td></tr>
+          <tr><td class="n">Library · Movie<small>/movie</small></td><td>About 30 films (e.g. <i>The Girl on the Train</i>, <i>The Mauritanian</i>, <i>Outside the Wire</i>) filterable by genre and CEFR level. Opening one gives the whole subtitle track as practice sentences (1,512 lines for one film), voiced by TTS. No video, no film audio.</td><td>Commercial film subtitles, no licence shown</td><td><span class="pill high">High</span></td></tr>
+          <tr><td class="n">AI Talk<small>/talk-home</small></td><td>~110 role-play scenario sets across Work, Travel, Social, Shopping, School (TOEFL, IELTS, job interviews, ordering at restaurants, dating). Tracks minutes, sessions, streak.</td><td>Trancy's own prompts plus an LLM and speech scoring</td><td><span class="pill low">Low</span></td></tr>
+          <tr><td class="n">Reader<small>/book-home</small></td><td>Upload your own book, or browse <b>Classics</b> (public-domain novels with CEFR levels, painting covers) and <b>Graded Readers</b> (picture books, Levels 1–5). 20-minute daily reading goal.</td><td>Public domain; StoryWeaver, African Storybook, BookDash, Global Digital Library (CC licences)</td><td><span class="pill low">Low</span></td></tr>
+          <tr><td class="n">PDF Translator<small>pdf.trancy.org</small></td><td>Upload a PDF (up to 1 GB) and read it bilingually. Beta.</td><td>The user's own files</td><td><span class="pill low">Low</span></td></tr>
+          <tr><td class="n">Vocabulary<small>/vocabulary</small></td><td>Saved words with IPA, audio, meanings in your language; plus ready-made lists: Oxford 5000, CEFR A1–C2, IELTS, TOEFL, GRE, SAT, COCA 20k, CET-4/6, IT industry.</td><td>Third-party word lists</td><td><span class="pill med">Medium</span></td></tr>
+          <tr><td class="n">Sentences<small>/sentence</small></td><td>Saved sentences, split into Favourites, Dictation and Speaking queues.</td><td>The user's own saves</td><td><span class="pill low">Low</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="dim" style="font-size:14px">Pricing (Trancy's help centre, region-dependent): Premium from about $3.49/month, Premium + Advanced AI from about $8.79/month. Free plan caps saved words at 100, sentences at 50 and PDF translation at 50 pages a month; AI Talk, AI shadowing scores and AI transcription are paid.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head copy">
+      <p class="eyebrow">The core product</p>
+      <h2>Inside the practice player</h2>
+      <p class="lead">Every YouTube video and podcast opens in the same screen. This is the part users spend time in, and the part to match first.</p>
+    </div>
+    <div class="anatomy">
+      <div class="player" aria-label="Sketch of the Trancy practice player">
+        <div class="screen">Official YouTube embed<br>(YouTube branding, share, "More videos" intact)</div>
+        <div class="subs">
+          <span class="l1">Look what I just <u>carried out</u> here.</span>
+          <span class="l2">देखो मैंने अभी यहां क्या किया।</span>
+        </div>
+        <div class="bar">
+          <span>Play</span><span>Prev line</span><span>Next line</span><span>Loop</span><span>Speed</span><span>Subtitle style</span><span>AI</span><span class="on">Watch &amp; Listen</span><span>Shadowing</span><span>Dictation</span>
+        </div>
+        <div class="bar">
+          <span class="on">Subtitles · 209</span><span>Words · 486</span><span>Sentences</span><span>Summary</span><span>AI transcribe</span><span>Export subtitles</span>
+        </div>
+      </div>
+      <div class="parts">
+        <div class="part"><b>1</b><div><h3>Player</h3><p>Official YouTube iframe with Trancy's own control bar underneath: line-by-line skip, loop, speed.</p></div></div>
+        <div class="part"><b>2</b><div><h3>Dual subtitles</h3><p>Under the video, not over it. Useful phrases ("carried out", "to start with") are pre-highlighted.</p></div></div>
+        <div class="part"><b>3</b><div><h3>Side panel</h3><p>Full timed transcript, every word in the video sorted saved/learning/all, saved sentences, and an AI summary with timestamped key points in your language.</p></div></div>
+        <div class="part"><b>4</b><div><h3>Three modes</h3><p>Watch &amp; Listen; Shadowing (record yourself, get a pronunciation score); Dictation (type what you hear).</p></div></div>
+        <div class="part"><b>5</b><div><h3>Caption trick</h3><p>A popup asks you to install their extension "for faster subtitle loading". Captions are likely fetched in the user's own browser, keeping Trancy's servers off YouTube's caption endpoints.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="deep-dive">
+  <div class="wrap">
+    <div class="head copy">
+      <p class="eyebrow">Deep dive</p>
+      <h2>The five study rooms, opened up</h2>
+      <p class="lead">AI Talk, the Reader, the PDF tool, Vocabulary and Sentences, each tried hands-on. What's inside, where it falls short, and the Funlingo angle.</p>
+    </div>
+
+    <div class="callout">
+      <h3>The biggest gap: Trancy's translations miss idioms</h3>
+      <p>Sentence packs and subtitles use Google Translate by default. In the "Everyday English" pack, with Hindi as the native language, several common phrases came out wrong:</p>
+      <ul class="errs">
+        <li><b>"Same old, same old."</b> Translated word for word into a phrase that means nothing in Hindi.</li>
+        <li><b>"How have you been?"</b> Cut off to a fragment, roughly "Are you?"</li>
+        <li><b>"I've been better, honestly."</b> Rendered as "I have gotten better", the opposite of what it means.</li>
+        <li><b>"Hey, how's it going?"</b> Translated literally, where a Hindi speaker would just say "और, क्या हाल है?"</li>
+      </ul>
+      <p>Trancy's paid AI Sentence Analysis fixes this one line at a time. Funlingo's "translate the idiom, never the words" rule can make this the default for every line, for free.</p>
+    </div>
+
+    <div class="dives">
+      <article class="card dive">
+        <div class="dive-head"><h3>AI Talk</h3><span class="pill med">Paid</span></div>
+        <dl>
+          <dt>Structure</dt><dd>About 110 topics across Work, Travel, Social, Shopping and School. Each opens into 2–11 lessons; Small Talk has Weather, Weekend Plans, Movies &amp; TV, Food, Music, Current Events, Elevator Talk and more.</dd>
+          <dt>A lesson</dt><dd>A one-paragraph scene, two roles you can swap, AI difficulty (Beginner / Intermediate / Advanced), four optional tasks, 25 shadowing sentences, then the AI roleplay.</dd>
+          <dt>The chat</dt><dd>The AI opens. Every line shows a translation with replay, hide-text and save buttons. You answer by mic or text. "AI Assistant" writes a full suggested reply you can listen to or send. Settings choose the AI voice, your voice, speed, auto-translation and a hide-text listening mode.</dd>
+          <dt>Gap</dt><dd>I replied "Yes, I am enjoy the sun very much today". The AI simply carried on: no correction, no hint, no end-of-chat report. Feedback is only pronunciation scoring, and that's behind Premium.</dd>
+        </dl>
+        <p class="angle"><b>Funlingo angle:</b> gentle inline fixes ("you can say: I'm enjoying the sun"), a short recap of mistakes after each chat, and scenes drawn from the shows users just watched.</p>
+      </article>
+
+      <article class="card dive">
+        <div class="dive-head"><h3>Reader</h3><span class="pill low">Free</span></div>
+        <dl>
+          <dt>Shelves</dt><dd>My Books (upload your own), Classics (Standard Ebooks, filterable by genre and CEFR level) and Graded Readers (StoryWeaver, African Storybook, BookDash and others, Levels 1–5).</dd>
+          <dt>Reading view</dt><dd>A two-page spread with page turns (A Christmas Carol is 162 pages). Phrases like "hard work" and "builds on" have a wavy underline. Tapping one opens a card with the meaning, an example with translation, a word-by-word breakdown and tags such as "Collocation · A1".</dd>
+          <dt>Side panel</dt><dd>Stats show percent read, time left (3 h 38 min), 4,503 unique words split into learning / new / untracked, and 28,317 total words. There are also tabs for page vocabulary and saved sentences, plus a 20-minute daily goal on the shelf.</dd>
+          <dt>Toolbar</dt><dd>Bilingual translation, Google engine switch, a learning-mode toggle, typography and fullscreen.</dd>
+        </dl>
+        <p class="angle"><b>Funlingo angle:</b> the same reader, plus StoryWeaver's books in Hindi, Marathi, Gujarati and other Indian languages. That serves English speakers learning those languages too, which Trancy's English-led shelf barely does.</p>
+      </article>
+
+      <article class="card dive">
+        <div class="dive-head"><h3>PDF Translator</h3><span class="pill low">Beta</span></div>
+        <dl>
+          <dt>What it is</dt><dd>A separate site (pdf.trancy.org): drag in a PDF up to 1 GB and read it bilingually, with a history of past files.</dd>
+          <dt>Limits</dt><dd>50 pages a month free, 2,000 on Premium, 4,000 on Advanced AI.</dd>
+          <dt>Not tested</dt><dd>Seeing the translated view means uploading a real document to Trancy, so I stopped at the upload screen. The demo link didn't open a viewer in this session.</dd>
+        </dl>
+        <p class="angle"><b>Funlingo angle:</b> low priority. It's a utility rather than a learning feature, and it's far from Funlingo's "night in with a show" feeling. Skip it for now.</p>
+      </article>
+
+      <article class="card dive">
+        <div class="dive-head"><h3>Vocabulary</h3><span class="pill med">Mostly paid</span></div>
+        <dl>
+          <dt>Word lists</dt><dd>Saved Words plus 21 ready-made books: Oxford 5000, CEFR A1–C2, IELTS, TOEFL, GRE, SAT, GMAT, PTE, TOEIC, BEC, CET-4/6, COCA 20k and IT Industry.</dd>
+          <dt>A list</dt><dd>Each row shows how often you've met the word, US audio, IPA and meanings in your language by part of speech. You can mark it mastered, favourite it or open details. An eye toggle hides meanings for self-testing, and there's a sort by frequency.</dd>
+          <dt>Studying</dt><dd>"Study This Wordbook" opens the Premium paywall. Free users get flashcards for saved words only.</dd>
+          <dt>Flashcards</dt><dd>The front shows the word, IPA and audio; tap or press Enter to reveal. The back has meanings by part of speech and two example sentences with audio and translation. You grade Unknown / Unclear / Known with arrow keys. Settings: auto-reveal after 3 s, auto-pronounce, type-the-word practice.</dd>
+          <dt>Gap</dt><dd>The examples are stock dictionary sentences, not the scene where you saved the word, and one example for "link" was culturally insensitive.</dd>
+        </dl>
+        <p class="angle"><b>Funlingo angle:</b> every card shows the exact line and show it came from ("you saved this in Episode 3 of …"). That memory hook beats any dictionary example.</p>
+      </article>
+
+      <article class="card dive">
+        <div class="dive-head"><h3>Sentences</h3><span class="pill low">Free, capped</span></div>
+        <dl>
+          <dt>Queues</dt><dd>Favourites, Dictation and Speaking, sorted by time, with a hide-text eye and a shuffle. Filled from lines saved in the player or the extension (50 free).</dd>
+          <dt>Practice player</dt><dd>Shared with Sentence Packs and Movies: one line at a time with prev / next, loop, playback speed and an AI voice. Each line can be set to Show, Blur or Hide, for original and translation separately. A mic records you for shadowing, and AI Sentence Analysis gives a better translation, a grammar note in your language and colour-coded word types.</dd>
+          <dt>Settings</dt><dd>Translation engine, font size and fonts, karaoke word highlight, highlights for saved and learning words, phrase categories, keyboard shortcuts.</dd>
+        </dl>
+        <p class="angle"><b>Funlingo angle:</b> keep the Show / Blur / Hide trick, it's a great self-test, and turn saved lines into the guess-the-meaning game.</p>
+      </article>
+
+      <article class="card dive">
+        <div class="dive-head"><h3>What to build first</h3><span class="pill low">Summary</span></div>
+        <p>Of these five, two are worth copying almost as-is: the Reader and the Sentences practice player. Two are worth copying and improving: AI Talk (add corrections) and flashcards (use real scenes). The PDF tool can wait. Across all of them, natural idiom-aware translation is the one change Trancy's users would notice first.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head copy">
+      <p class="eyebrow">Is it legal?</p>
+      <h2>Mostly yes. One shelf, no.</h2>
+    </div>
+    <div class="callout red">
+      <h3>The Movie shelf is the one to stay away from</h3>
+      <p>Film dialogue and its translated subtitles are copyrighted, separately from the video. Trancy stores the whole subtitle track of commercial films, including song lyrics, and serves it as study material. Leaving out the picture doesn't change that. Without a licence from the studio or subtitle owner, this is reproduction of a copyrighted work. It's the kind of feature that draws takedown notices, and for a small team, an app-store complaint is enough to hurt.</p>
+    </div>
+    <div class="ideas">
+      <div class="card">
+        <span class="pill med">YouTube player</span>
+        <p>Embedding is allowed. The risk sits around the edges: YouTube's API rules ban scraping and storing captions without permission, and "Export subtitles" hands users a copy of someone else's transcript. Charging can't gate playback. Safer pattern: fetch captions only in the user's browser through the extension, keep nothing server-side, and drop the export button. Two more to skip: "AI transcribe" re-transcribes the YouTube audio on Trancy's servers (YouTube forbids downloading or separating audio), and Theater layout draws subtitles over the YouTube player.</p>
+      </div>
+      <div class="card">
+        <span class="pill med">Word lists</span>
+        <p>Single words aren't protected, but a curated list can be (Oxford 5000 is Oxford's product; the COCA list is sold under licence). Build Funlingo lists from frequency data you're allowed to use, or from words your users actually save.</p>
+      </div>
+      <div class="card">
+        <span class="pill low">Books</span>
+        <p>Public-domain classics are free to use. The children's readers are Creative Commons; most require credit to the author, illustrator and publisher on every book. Easy to do right.</p>
+      </div>
+      <div class="card">
+        <span class="pill low">AI Talk, PDFs, your own saves</span>
+        <p>Original prompts, the user's own files and the user's own words. No third-party content involved.</p>
+      </div>
+    </div>
+    <p class="dim" style="font-size:14px">This is a product-level read, not legal advice. Get a lawyer to check the caption setup before launch, especially for users in India, the US and the EU, where the rules differ.</p>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <div class="head copy">
+      <p class="eyebrow">The Funlingo version</p>
+      <h2>Same rooms. Fewer walls.<br>Yours for <span class="accent">$0.</span></h2>
+      <p class="lead">Trancy's hub only works on YouTube and podcasts. Funlingo already lives on eight platforms and is free. The hub should build on that.</p>
+    </div>
+    <div class="tw">
+      <div class="cmp" role="table" aria-label="Trancy versus a Funlingo hub">
+        <div class="h" role="columnheader">Feature</div>
+        <div class="h" role="columnheader">Trancy</div>
+        <div class="h fh" role="columnheader">Funlingo hub</div>
+
+        <div class="row">Words saved while watching Netflix, Prime, Crunchyroll…</div>
+        <div><span class="part-mark">–</span>Via extension, YouTube-first</div>
+        <div class="f"><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>All 8 platforms, one deck</div>
+
+        <div class="row">YouTube study player</div>
+        <div><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Strong</div>
+        <div class="f"><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Match it, minus caption export</div>
+
+        <div class="row">Cultural context for what you hear</div>
+        <div><span class="part-mark">–</span>Generic AI summary</div>
+        <div class="f"><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Culture notes on idioms, slang, references</div>
+
+        <div class="row">Shadowing and dictation</div>
+        <div><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>With pronunciation score</div>
+        <div class="f"><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Same, plus the guess-the-meaning game</div>
+
+        <div class="row">Graded books</div>
+        <div><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>English-led</div>
+        <div class="f"><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Plus Hindi, Marathi, Gujarati readers from StoryWeaver</div>
+
+        <div class="row">Movie scripts as lessons</div>
+        <div><span class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Unlicensed</div>
+        <div class="f"><span class="no">✕</span>Study the real show in your own Netflix tab instead</div>
+
+        <div class="row">Price</div>
+        <div>Free tier, premium upsell</div>
+        <div class="f">Free</div>
+      </div>
+    </div>
+
+    <div class="ideas">
+      <div class="card">
+        <h3>Replace the Movie shelf with "Show Packs"</h3>
+        <p>For each popular show, link straight to it on the user's own streaming account, where the extension handles subtitles live. Add a Funlingo-written pack of the slang, idioms and cultural references the show uses, in your own words. Learners get the same "study this film" pull without you hosting a single line of the script.</p>
+      </div>
+      <div class="card">
+        <h3>One deck from everywhere</h3>
+        <p>Trancy's hub is mostly fed by YouTube. Funlingo's extension already sees Netflix, Prime Video, Hotstar and Crunchyroll. Every word saved there should land in the hub with the scene it came from. That's the feature Trancy can't easily match.</p>
+      </div>
+      <div class="card">
+        <h3>Culture notes, not summaries</h3>
+        <p>Trancy summarises what a video says. Funlingo should explain why a line is funny, rude or regional. This is the Cultural Context Engine, and it's your own content, so it's legally clean too.</p>
+      </div>
+      <div class="card">
+        <h3>AI Talk with local scenes</h3>
+        <p>Trancy's role-plays are generic (cruise travel, warehouse clubs). Funlingo can do scenes your users actually live: a Mumbai local, a chai stall, a family WhatsApp call, an anime convention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head copy">
+      <p class="eyebrow">Build order</p>
+      <h2>Three phases, each shippable on its own</h2>
+    </div>
+    <div class="phases">
+      <div class="card">
+        <span class="chip">Phase 1 · The deck</span>
+        <h3>Home and vocabulary</h3>
+        <ul>
+          <li>Sign-in and sync with the extension</li>
+          <li>Saved words and sentences with the scene they came from</li>
+          <li>Flashcards with spaced repetition, streak, daily target</li>
+          <li>The guess-the-meaning game as review</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="chip">Phase 2 · The player</span>
+        <h3>YouTube and podcasts</h3>
+        <ul>
+          <li>Official embed, dual subtitles beside it</li>
+          <li>Captions fetched in the user's browser, nothing stored</li>
+          <li>Shadowing and dictation modes</li>
+          <li>Culture notes in the side panel</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="chip">Phase 3 · The shelves</span>
+        <h3>Books, Show Packs, AI Talk</h3>
+        <ul>
+          <li>Public-domain and CC readers, credited properly</li>
+          <li>Show Packs linking to the real streams</li>
+          <li>AI Talk with local scenarios</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot">
+      <p>Sources: Trancy Learning Center browsed signed in on 15 Oct 2026; Trancy changelog (cf.trancy.org/changelog); YouTube API Services Developer Policies.</p>
+    </div>
+  </div>
+</section>

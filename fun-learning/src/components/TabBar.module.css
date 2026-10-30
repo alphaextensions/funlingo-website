@@ -1,0 +1,87 @@
+/* TabBar — pill tabs with pink-soft wash on the active one.
+   Non-color signal (QA): active tab also carries a brand gradient
+   underline + heavier font weight. */
+
+.wrap {
+  display: flex;
+  gap: var(--s-1);
+  padding: 4px;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-pill);
+  width: fit-content;
+  margin-bottom: var(--s-6);
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--r-pill);
+  color: var(--fl-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--d-fast), background var(--d-fast);
+}
+
+.tab:hover {
+  color: var(--fl-text);
+  background: var(--fl-surface-2);
+}
+
+.active {
+  color: var(--fl-text);
+  font-weight: 700; /* non-color signal */
+  background: var(--fl-surface-3);
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--fl-accent), var(--fl-secondary));
+}
+
+.count {
+  display: inline-block;
+  min-width: 22px;
+  padding: 2px 6px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-2);
+  color: var(--fl-text-2);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.active .count {
+  background: var(--fl-primary);
+  color: var(--fl-text);
+}
+
+/* Edge-fade affordance when the tab strip overflows (toggled by data-fade-*
+   from TabBar.tsx). mask-image applies to the visible box of the scroll
+   container, so the fade stays pinned at the edges, not on the scrolled
+   content. No attributes set → no mask → no fade when everything fits. */
+.wrap[data-fade-right="true"][data-fade-left="false"] {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+.wrap[data-fade-left="true"][data-fade-right="false"] {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 28px);
+  mask-image: linear-gradient(to right, transparent, #000 28px);
+}
+.wrap[data-fade-left="true"][data-fade-right="true"] {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+}
