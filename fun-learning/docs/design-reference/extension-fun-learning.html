@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="learn.pageTitle">Fun Learning — Funlingo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./learn.css" />
+</head>
+<body data-funlingo-root data-view="landing" data-landing="editorial" data-motion="on">
+
+    <!-- ambient backdrop -->
+    <div class="ambient" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="veil"></div>
+    </div>
+
+    <!-- ====== TOP NAV ====== -->
+    <nav class="nav">
+        <div class="nav-in">
+            <button class="nav-back" id="navBack" aria-label="Back" data-i18n-aria="sp.back">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H6M12 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="nav-brand" id="navBrand">
+                <span class="logo-mark" aria-hidden="true">
+                    <img src="../logo.png" alt="Funlingo" />
+                </span>
+                <span class="nav-title" data-i18n="learn.navTitle" translate="no">Fun Learning</span>
+            </div>
+            <div class="nav-spacer"></div>
+
+            <span class="progress-chip hidden" id="progressChip" aria-live="polite">
+                <span class="pulse"></span>
+                <span id="progressText"></span>
+            </span>
+
+            <div class="lang-pills" role="group" aria-label="Languages" data-i18n-aria="learn.ariaLanguages">
+                <label class="lang-pill">
+                    <span class="lp-label" data-i18n="learn.langNative">Native</span>
+                    <span class="lp-value"><span class="lp-value-text" id="lpNativeText"></span></span>
+                    <select id="nav-native-lang" aria-label="Native language" data-i18n-aria="learn.ariaNativeLang"></select>
+                </label>
+                <label class="lang-pill">
+                    <span class="lp-label" data-i18n="learn.langLearning">Learning</span>
+                    <span class="lp-value"><span class="lp-value-text" id="lpLearningText"></span></span>
+                    <select id="nav-learning-lang" aria-label="Learning language" data-i18n-aria="learn.ariaLearningLang"></select>
+                </label>
+            </div>
+
+            <button class="nav-gear" id="navGear" aria-label="Settings" data-i18n-aria="learn.settings">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="app">
+
+        <!-- ====== LANDING ====== -->
+        <section class="view active" id="view-landing">
+            <div class="hero">
+                <span class="greet"><span class="e-dot"></span><span data-i18n="learn.greeting">Welcome — what to learn today?</span></span>
+                <h1><span data-i18n="learn.heroTitleLine1" translate="no">Fun</span><span class="l2" data-i18n="learn.heroTitleLine2" translate="no">Learning</span></h1>
+                <p class="sub" data-i18n="learn.heroSub">Bite-sized experiments to grow your vocabulary — built from the words you meet while watching.</p>
+            </div>
+
+            <!-- first-run welcome — shown only when body[data-firstrun="true"] -->
+            <div class="welcome-banner">
+                <div class="w-emoji">👋</div>
+                <div>
+                    <h3 data-i18n="learn.welcomeTitle">Welcome to <span translate="no">Fun Learning</span></h3>
+                    <p data-i18n="learn.welcomeBody">Two of these grow with you: as you bookmark words while watching, Word Replay and Quick Quiz fill up with your own vocabulary. Until then, dive into Tiny Lessons and Slang Hang — they're ready right now.</p>
+                </div>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-card c-replay" tabindex="0" role="button" data-go="continue" data-locks-on-empty>
+                    <span class="motif motif-replay mtxt" aria-hidden="true">
+                        <span class="mw mw-3">betray</span>
+                        <span class="mw mw-2">gorgeous</span>
+                        <span class="mw mw-1">curious<span class="bar"></span></span>
+                    </span>
+                    <span class="x-num">01</span>
+                    <h3 data-i18n="learn.continueTitle">Word Replay</h3>
+                    <p data-i18n="learn.continueDesc">Revisit words from your recent sessions across every platform you watch on.</p>
+                    <span class="try"><span data-i18n="learn.ctaContinue">Continue learning</span> <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M12 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <span class="lock-hint">
+                        <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="2"/></svg>
+                        <span data-i18n="learn.saveToUnlock">Save words while watching to unlock</span>
+                    </span>
+                </div>
+
+                <div class="exp-card c-quiz" tabindex="0" role="button" data-go="practice" data-locks-on-empty>
+                    <span class="motif motif-quiz mtxt" aria-hidden="true">
+                        <span class="q-word">whisper</span>
+                        <span class="q-opt q-ok"><span class="q-opt-text"></span><span class="tick">✓</span></span>
+                        <span class="q-opt q-dim"><span class="q-opt-text"></span></span>
+                    </span>
+                    <span class="x-num">02</span>
+                    <h3 data-i18n="learn.practiceTitle">Quick Quiz</h3>
+                    <p data-i18n="learn.practiceDesc">Calm meaning-recall practice. No score, no streak — just gentle reinforcement.</p>
+                    <span class="try"><span data-i18n="learn.ctaPractice">Practise</span> <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M12 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <span class="lock-hint">
+                        <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="2"/></svg>
+                        <span data-i18n="learn.saveToUnlock">Save words while watching to unlock</span>
+                    </span>
+                </div>
+
+                <div class="exp-card c-lessons" tabindex="0" role="button" data-go="situations">
+                    <span class="motif motif-lessons mtxt" aria-hidden="true">
+                        <span class="l-card">
+                            <span class="l-phrase">Window seat, please</span>
+                            <span class="l-line w1"></span>
+                            <span class="l-line w2"></span>
+                            <span class="l-tap" data-i18n="learn.tapToFlip">tap to flip →</span>
+                        </span>
+                    </span>
+                    <span class="x-num">03</span>
+                    <h3 data-i18n="learn.situationsTitle">Tiny Lessons</h3>
+                    <p data-i18n="learn.situationsDesc">Phrase packs for real situations — restaurants, airports, dates, interviews.</p>
+                    <span class="try"><span data-i18n="learn.ctaExplore">Explore</span> <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M12 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+
+                <div class="exp-card c-slang" tabindex="0" role="button" data-go="slangs">
+                    <span class="motif motif-slang mtxt" aria-hidden="true">
+                        <span class="s-era">modern</span>
+                        <span class="s-bubble">lowkey</span>
+                    </span>
+                    <span class="x-num">04</span>
+                    <h3 data-i18n="learn.slangsTitle">Slang Hang</h3>
+                    <p data-i18n="learn.slangsDesc">How people actually talk — modern slang with the context it's used in.</p>
+                    <span class="try"><span data-i18n="learn.ctaDiscover">Discover</span> <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M12 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+
+                <div class="exp-card c-library" tabindex="0" role="button" data-go="saved">
+                    <span class="motif motif-library" aria-hidden="true">
+                        <span class="lc on"></span><span class="lc"></span><span class="lc mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg></span>
+                        <span class="lc"></span><span class="lc on"></span><span class="lc"></span>
+                    </span>
+                    <span class="x-num">05</span>
+                    <h3 data-i18n="learn.savedTitle">Your Library</h3>
+                    <p data-i18n="learn.savedDesc">Every word you've saved, searchable in one calm place.</p>
+                    <span class="try"><span data-i18n="learn.ctaBrowse">Browse</span> <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M12 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </div>
+
+            <div class="fl-footer" data-i18n="learn.footer">Funlingo — Learn while you watch</div>
+        </section>
+
+        <!-- ====== WORD REPLAY ====== -->
+        <section class="view" id="view-continue">
+            <div class="view-head">
+                <div class="vh-l">
+                    <span class="eyebrow-chip"><span class="e-dot"></span><span data-i18n="learn.eyebrowContinue">Continue learning</span></span>
+                    <h2 data-i18n="learn.continueTitle">Word Replay</h2>
+                    <p data-i18n="learn.continueViewDesc">Words from your recent sessions — bookmarked ones rank first. Tap any word to hear it.</p>
+                </div>
+            </div>
+            <div class="view-body" id="continueBody"></div>
+        </section>
+
+        <!-- ====== QUICK QUIZ ====== -->
+        <section class="view" id="view-practice">
+            <div class="view-head">
+                <div class="vh-l">
+                    <span class="eyebrow-chip"><span class="e-dot"></span><span data-i18n="learn.eyebrowPractice">Calm practice</span></span>
+                    <h2 data-i18n="learn.practiceTitle">Quick Quiz</h2>
+                    <p data-i18n="learn.practiceViewDesc">Match the word to its meaning. No timer, no score — practice at your own pace.</p>
+                </div>
+            </div>
+            <div class="view-body" id="practiceBody"></div>
+        </section>
+
+        <!-- ====== TINY LESSONS ====== -->
+        <section class="view" id="view-situations">
+            <div class="view-head">
+                <div class="vh-l">
+                    <span class="eyebrow-chip"><span class="e-dot"></span><span data-i18n="learn.eyebrowSituations">Situations</span></span>
+                    <h2 data-i18n="learn.situationsTitle">Tiny Lessons</h2>
+                    <p data-i18n="learn.situationsViewDesc">Pick a situation, learn the phrases. Tap a card to reveal its meaning.</p>
+                </div>
+            </div>
+            <div class="view-body" id="situationsBody"></div>
+        </section>
+
+        <!-- ====== SLANG HANG ====== -->
+        <section class="view" id="view-slangs">
+            <div class="view-head">
+                <div class="vh-l">
+                    <span class="eyebrow-chip"><span class="e-dot"></span><span data-i18n="learn.eyebrowSlang">How people really talk</span></span>
+                    <h2 data-i18n="learn.slangsTitle">Slang Hang</h2>
+                    <p data-i18n="learn.slangsViewDesc">Modern expressions with the context they're used in. The example stays in the learning language on purpose.</p>
+                </div>
+            </div>
+            <div class="view-body" id="slangsBody"></div>
+        </section>
+
+        <!-- ====== LIBRARY ====== -->
+        <section class="view" id="view-saved">
+            <div class="view-head">
+                <div class="vh-l">
+                    <span class="eyebrow-chip"><span class="e-dot"></span><span data-i18n="learn.eyebrowLibrary">Saved words</span></span>
+                    <h2 data-i18n="learn.savedTitle">Your Library</h2>
+                    <p data-i18n="learn.savedViewDesc">Every word you've bookmarked while watching, in one searchable place.</p>
+                </div>
+            </div>
+            <div class="view-body" id="savedBody"></div>
+        </section>
+
+    </main>
+
+    <!-- ====== SETTINGS DRAWER ====== -->
+    <div class="scrim" id="scrim"></div>
+    <aside class="drawer" id="drawer" aria-label="Settings" data-i18n-aria="learn.settings" aria-hidden="true">
+        <div class="drawer-head">
+            <h3 data-i18n="learn.settings">Settings</h3>
+            <button class="drawer-close" id="drawerClose" aria-label="Close" data-i18n-aria="learn.ariaClose">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+
+        <div class="set-group">
+            <div class="sg-label" data-i18n="learn.audioFeedback">Audio &amp; feedback</div>
+            <div class="set-row">
+                <div>
+                    <div class="sr-label" data-i18n="learn.soundEffects">Sound effects</div>
+                    <div class="sr-desc" data-i18n="learn.soundEffectsDesc">Taps, flips, quiz chimes</div>
+                </div>
+                <div class="toggle on" id="tgSound" role="switch" tabindex="0" aria-checked="true" aria-label="Sound effects" data-i18n-aria="learn.soundEffects"></div>
+            </div>
+            <div class="set-row">
+                <div>
+                    <div class="sr-label" data-i18n="learn.haptics">Haptics</div>
+                    <div class="sr-desc" data-i18n="learn.hapticsDesc">Subtle vibration on supported devices</div>
+                </div>
+                <div class="toggle on" id="tgHaptics" role="switch" tabindex="0" aria-checked="true" aria-label="Haptics" data-i18n-aria="learn.haptics"></div>
+            </div>
+            <div class="set-row">
+                <div>
+                    <div class="sr-label" data-i18n="learn.voice">Voice</div>
+                    <div class="sr-desc" data-i18n="learn.voiceDesc">For Listen buttons</div>
+                </div>
+                <div class="select-wrap">
+                    <select id="voiceSel" aria-label="Voice" data-i18n-aria="learn.voice"></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="set-group">
+            <div class="sg-label" data-i18n="learn.motionDisplay">Motion &amp; display</div>
+            <div class="set-row">
+                <div>
+                    <div class="sr-label" data-i18n="learn.animations">Animations</div>
+                    <div class="sr-desc" data-i18n="learn.animationsDesc">Ambient glow, flips, transitions</div>
+                </div>
+                <div class="toggle on" id="tgMotion" role="switch" tabindex="0" aria-checked="true" aria-label="Animations" data-i18n-aria="learn.animations"></div>
+            </div>
+            <div class="set-row">
+                <div>
+                    <div class="sr-label" data-i18n="learn.rtlPreview">RTL preview</div>
+                    <div class="sr-desc" data-i18n="learn.rtlPreviewDesc">Mirror layout for Arabic / Urdu</div>
+                </div>
+                <div class="toggle" id="tgRtl" role="switch" tabindex="0" aria-checked="false" aria-label="RTL preview" data-i18n-aria="learn.rtlPreview"></div>
+            </div>
+        </div>
+
+        <p class="drawer-foot" data-i18n="learn.settingsFootnote">These controls are new in this revamp — voice, sound, haptics and motion were previously OS-only.</p>
+    </aside>
+
+    <!-- ====== TOAST ====== -->
+    <div class="toast" id="toast"></div>
+
+    <script src="../i18n.js"></script>
+    <script src="../src/injected/voicePolicy.js"></script>
+    <script src="./learn-bootstrap.js"></script>
+    <script src="../learn.js"></script>
+    <script src="../learn_analytics.js"></script>
+    <script src="./learn-pills.js"></script>
+    <!-- Slang Hang: audio playback for example sentences (add-on) -->
+    <script src="./slang-audio.js"></script>
+    <script src="../wordmeta/vendor/pinyin-pro.umd.js"></script>
+    <script src="../wordmeta/vendor/wanakana.umd.js"></script>
+    <script src="../wordmeta/kuromoji/kuromoji.umd.js"></script>
+    <script src="../wordmeta/zh.js"></script>
+    <script src="../wordmeta/de.js"></script>
+    <script src="../wordmeta/ja.js"></script>
+    <script src="../wordmeta/ko.js"></script>
+    <script src="../funlingo-word-meta.js"></script>
+</body>
+</html>

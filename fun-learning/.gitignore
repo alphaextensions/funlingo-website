@@ -1,0 +1,35 @@
+# deps
+node_modules/
+.pnpm-store/
+
+# next
+.next/
+out/
+next-env.d.ts
+
+# env
+.env
+.env.local
+*.local
+
+# prisma
+prisma/dev.db
+prisma/dev.db-journal
+prisma/dev.db*
+
+# Read: user-uploaded EPUBs (filesystem only — never DB, never cloud).
+# Owned by Talk+Read lane. Path shape: .uploads/<userId>/<bookId>.epub
+.uploads/
+
+# test output
+test-results/
+playwright-report/
+coverage/
+
+# misc
+.DS_Store
+*.log
+.claude/
+
+# tsc incremental build outputs
+*.tsbuildinfo

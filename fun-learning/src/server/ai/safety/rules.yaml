@@ -1,0 +1,76 @@
+# AI output safety rules.
+#
+# Every AI output passes through src/server/ai/safety/filter.ts BEFORE being
+# returned to any caller. This file is the authoritative source of filters.
+# See docs/LEGAL.md "Content safety for generated text".
+#
+# Entry format:
+#   id:         short machine id (used in error messages)
+#   pattern:    JS regex source (no leading/trailing slashes)
+#   flags:      "i" / "iu" / etc. — defaults to "i"
+#   category:   slurs | group_crime | sexual | stereotypes | self_harm | pii
+#   note:       one-line human description for QA
+#
+# Rules of thumb:
+#   - Err wide. False positives on a GENERATED language-learning sentence are
+#     cheap (re-prompt); false negatives are a brand event.
+#   - Group+crime patterns intentionally catch the structural shape
+#     "<group> are <criminal>" rather than any specific group.
+#   - Keep slurs stub-only here; the real slur list lives in a server-only
+#     env file in production (SLUR_PATTERNS env var) and is merged in by the
+#     filter at runtime. This file is checked in so unit tests can run.
+#
+rules:
+  - id: group_crime_are_patterns
+    pattern: '\b(?:all|most|many)\s+(\w+?)s?\s+(?:are|were)\s+(?:terrorists|criminals|rapists|thieves|animals|savages|parasites)'
+    flags: "iu"
+    category: group_crime
+    note: Blocks "all X are terrorists / criminals / …" generalisations.
+
+  - id: group_crime_commit
+    pattern: '\b(?:all|most|many)\s+(\w+?)s?\s+commit\s+(?:crimes|terror|rapes|murders)'
+    flags: "iu"
+    category: group_crime
+    note: Catches "all X commit crimes".
+
+  - id: slurs_placeholder
+    pattern: '\b__SLUR_CANARY_TEST__\b'
+    flags: "i"
+    category: slurs
+    note: Placeholder — real list loaded from env SLUR_PATTERNS at runtime.
+
+  - id: sexual_explicit
+    pattern: '\b(?:cum|cumshot|anal|blowjob|handjob|rimjob|cunnilingus|fellatio|porn(?:ographic)?|xxx)\b'
+    flags: "i"
+    category: sexual
+    note: Blocks explicit sexual terms unlikely to appear in learner material.
+
+  - id: sexual_underage
+    pattern: '\b(?:child|minor|teen|kid|underage)\s+(?:porn|sex|erotica|nudes?)\b'
+    flags: "iu"
+    category: sexual
+    note: Child sexual content — unconditional block.
+
+  - id: self_harm
+    pattern: '\b(?:how to|ways to)\s+(?:kill (?:myself|yourself)|commit suicide|hang (?:myself|yourself))'
+    flags: "i"
+    category: self_harm
+    note: Blocks "how to kill yourself" style generations.
+
+  - id: stereotype_lazy
+    pattern: '\b(\w+?)s?\s+(?:are|were)\s+(?:lazy|stupid|dirty|savages?|primitive|dumb|inferior|subhuman)'
+    flags: "iu"
+    category: stereotypes
+    note: Catches "<group> are lazy / stupid / dirty …" stereotypes.
+
+  - id: pii_credit_card_like
+    pattern: '\b(?:\d[ -]*?){13,16}\b'
+    flags: ""
+    category: pii
+    note: 13-16 digit sequences — likely credit card. Filter so examples never bake one in.
+
+  - id: pii_ssn_like
+    pattern: '\b\d{3}-\d{2}-\d{4}\b'
+    flags: ""
+    category: pii
+    note: US SSN pattern.

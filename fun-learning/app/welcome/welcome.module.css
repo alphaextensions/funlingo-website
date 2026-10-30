@@ -1,0 +1,487 @@
+/* /welcome — port of the extension's `.onboarding-modal` (src/styles/main.css)
+   and the "You're all set!" card (firstTimeActivationInjector.js).
+   Every colour is a --fl-* token. Extension → token mapping:
+     modal bg  #0f0f14→#1a1a24      → --fl-bg → --fl-bg-2
+     buttons   #cf30da→#bc1d99      → --fl-grad-bar
+     progress  #e05aec→#d63cc0      → --fl-grad-bar
+     selected pill #630c77          → --fl-secondary
+     all-set check #34D399          → --fl-success
+     step number #a855f7            → --fl-primary                           */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  padding: var(--s-10) var(--s-4);
+  background: var(--fl-shadow-ink);
+}
+
+.modal {
+  position: relative;
+  width: 380px; /* extension: 360px — +20 so "Intermediate" fits un-truncated */
+  max-width: 100%;
+  margin: auto 0;
+  background: linear-gradient(135deg, var(--fl-bg) 0%, var(--fl-bg-2) 100%);
+  border: 1px solid var(--fl-border);
+  border-radius: 18px;
+  box-shadow: var(--el-3);
+  color: var(--fl-text);
+  font-family: var(--font);
+  line-height: 1.4;
+}
+
+/* ---- Chrome ------------------------------------------------ */
+.stepIndicator {
+  position: absolute;
+  top: 16px;
+  inset-inline-end: 24px;
+  font-size: 12px; /* eyebrow */
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--fl-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.backButton {
+  position: absolute;
+  top: 10px;
+  inset-inline-start: 10px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-text-2);
+  cursor: pointer;
+  transition: background var(--d-fast) var(--ease), color var(--d-fast) var(--ease);
+}
+.backButton:hover {
+  background: var(--fl-surface-3);
+  border-color: var(--fl-border-2);
+  color: var(--fl-text);
+}
+[dir="rtl"] .backButton svg { transform: scaleX(-1); }
+
+.progress {
+  width: 85%;
+  height: 12px;
+  margin: 52px auto 12px; /* ext: 40px — clears the 46px back button */
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--fl-surface-3);
+}
+.progressBar {
+  height: 100%;
+  border-radius: 10px;
+  background: var(--fl-grad-bar);
+  background-size: 200% 200%;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 4px var(--s-5) 8px;
+  text-align: center;
+}
+.welcomeMark {
+  height: 56px;
+  width: auto;
+  max-width: 90%;
+  object-fit: contain;
+  filter: drop-shadow(var(--el-1));
+}
+.welcomeSubtext {
+  margin: 0 8px 4px;
+  max-width: 340px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--fl-text-2);
+}
+
+.h2 {
+  margin: 0;
+  padding: 6px var(--s-5) 8px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--fl-text);
+  outline: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  padding: var(--s-5) var(--s-5) 18px;
+}
+
+.rowLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--fl-text-2);
+  text-align: start;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-8) var(--s-5) var(--s-5);
+}
+
+/* Primary — the extension's `.onboarding-modal .funlingo-button`. Used on a
+   <button> and on the all-set <a>. */
+.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 50px;
+  padding: 0 32px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--fl-grad-bar);
+  background-size: 200% auto;
+  color: var(--fl-on-accent);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px var(--fl-accent-glow);
+  transition: transform var(--d-base) var(--ease), box-shadow var(--d-base) var(--ease),
+    background-position var(--d-base) var(--ease);
+}
+.primary:hover {
+  background-position: right center;
+  box-shadow: 0 8px 20px var(--fl-accent-glow-strong);
+}
+.primary:disabled {
+  opacity: 0.5;
+  cursor: default;
+  box-shadow: none;
+}
+.primary:focus-visible,
+.skip:focus-visible,
+.backButton:focus-visible,
+.profBtn:focus-visible,
+.dropdownSelected:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.skip {
+  padding: 6px 10px;
+  border: 0;
+  background: none;
+  color: var(--fl-text-3);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.skip:hover {
+  color: var(--fl-text);
+  text-decoration: underline;
+}
+
+.error {
+  margin: 0;
+  font-size: 14px;
+  color: var(--fl-danger);
+}
+
+/* ---- Searchable dropdown ---------------------------------- */
+.langRow {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown {
+  position: relative;
+}
+.dropdownSelected {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--fl-border-2);
+  background: var(--fl-surface-1);
+  color: var(--fl-text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: start;
+  cursor: pointer;
+}
+.dropdownSelected:hover {
+  background: var(--fl-surface-2);
+}
+.caret {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-right: 2px solid var(--fl-text-2); /* physical: rotated glyph, same in RTL */
+  border-bottom: 2px solid var(--fl-text-2);
+  transform: translateY(-2px) rotate(45deg);
+}
+.dropdownPanel {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 4px);
+  inset-inline: 0;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid var(--fl-border-2);
+  background: var(--fl-bg-2);
+  box-shadow: var(--el-2);
+}
+.dropdownSearch {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--fl-border);
+  background: var(--fl-surface-1);
+  color: var(--fl-text);
+  font: inherit;
+  font-size: 14px;
+}
+.dropdownSearch:focus {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 0;
+}
+.dropdownList {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.dropdownOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fl-text);
+  cursor: pointer;
+}
+.dropdownOption[data-active="true"] {
+  background: var(--fl-surface-3);
+}
+.dropdownOption[aria-selected="true"] {
+  font-weight: 700;
+}
+.optCheck {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: var(--fl-accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.dropdownEmpty {
+  padding: 9px 10px;
+  font-size: 14px;
+  color: var(--fl-text-3);
+}
+
+/* ---- Proficiency pills ------------------------------------ */
+.profSection {
+  display: flex;
+  flex-direction: column;
+}
+.profButtons {
+  display: flex;
+  gap: var(--s-2);
+}
+.profBtn {
+  flex: 1;
+  min-width: 0;
+  min-height: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 4px;
+  border-radius: 8px;
+  border: 1px solid var(--fl-border);
+  background: var(--fl-surface-1);
+  color: var(--fl-text);
+  font: inherit;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+  transition: background var(--d-fast) var(--ease), border-color var(--d-fast) var(--ease);
+}
+/* Wrap (with hyphenation) rather than ellipsize — long translations such as
+   "Fortgeschritten" must stay readable. */
+.profBtn > span:first-child {
+  max-width: 100%;
+  hyphens: auto;
+}
+.profBtn:hover {
+  background: var(--fl-surface-2);
+  border-color: var(--fl-border-2);
+}
+/* Selected: colour + weight + glow (non-colour signal = weight + shadow). */
+.profBtn[aria-pressed="true"] {
+  background: var(--fl-secondary);
+  border-color: transparent;
+  color: var(--fl-on-accent);
+  font-weight: 600;
+  box-shadow: 0 4px 12px var(--fl-secondary-glow);
+}
+.recommended {
+  margin-top: 1px;
+  font-size: 11px; /* tag-sized second line, as in the extension (10px) */
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+/* ---- You're all set --------------------------------------- */
+.allSet {
+  padding: var(--s-8) var(--s-6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.asIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto var(--s-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fl-success-ring);
+}
+.asIcon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--fl-success);
+}
+.asHeading {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--fl-text);
+}
+.asSub {
+  margin: 0 0 var(--s-5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--fl-text-2);
+}
+.asSteps {
+  list-style: none;
+  margin: 0 0 var(--s-5);
+  padding: var(--s-4);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: start;
+  border-radius: 14px;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+}
+.asStep {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-3);
+}
+.asNum {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fl-pink-soft);
+  color: var(--fl-primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+.asStepText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--fl-text-2);
+}
+
+/* ---- Motion (all gated) ----------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  .overlay { animation: wFadeIn 0.2s ease-out both; }
+  .modal { animation: wPopIn 0.4s var(--ease-bounce) both; }
+  .step { animation: wSlideIn 0.3s ease-out both; }
+  .progressBar {
+    transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    animation: wGradientFlow 3s ease infinite;
+  }
+  .primary:hover { transform: translateY(-2px); }
+  .backButton:hover { transform: translateX(-2px); }
+  .asIcon svg { animation: wCheck 0.6s ease-out 0.2s both; }
+  :global(body[data-motion="off"]) .overlay,
+  :global(body[data-motion="off"]) .modal,
+  :global(body[data-motion="off"]) .step,
+  :global(body[data-motion="off"]) .progressBar,
+  :global(body[data-motion="off"]) .asIcon svg { animation: none; }
+}
+
+@keyframes wFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes wPopIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes wSlideIn {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes wGradientFlow {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+@keyframes wCheck {
+  0%   { transform: scale(0) rotate(-45deg); opacity: 0; }
+  60%  { transform: scale(1.1) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@media (max-width: 380px) {
+  .profBtn { padding: 6px 2px; }
+}

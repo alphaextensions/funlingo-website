@@ -1,0 +1,196 @@
+/* ----- Top nav (ported from extension-fun-learning.css §Top nav) ----- */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--fl-glass);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  border-bottom: 1px solid var(--fl-border);
+}
+
+.navIn {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px var(--s-8);
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+}
+@media (max-width: 600px) {
+  .navIn { padding: 12px var(--s-4); }
+}
+
+.navBack {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--fl-border);
+  background: var(--fl-surface-1);
+  color: var(--fl-text);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform var(--d-fast) var(--ease), background var(--d-fast);
+}
+.navBack svg { width: 18px; height: 18px; }
+.navBack:hover { background: var(--fl-surface-2); }
+.navBack:active { transform: scale(0.92); }
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.logoMark {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  display: grid;
+  place-items: center;
+}
+.logoMark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: drop-shadow(0 3px 9px var(--fl-secondary-glow));
+}
+.logoMark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 9px var(--fl-secondary-glow));
+}
+.navTitle {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+/* Funlingo wordmark — hidden by default, shown on wide viewports.
+   Pairs with the mark + "Fun Learning" title to anchor the brand
+   on desktop without crowding mobile. */
+.logoWordmark {
+  display: none;
+  align-items: center;
+  margin-left: 2px;
+  margin-right: var(--s-2);
+  padding-right: var(--s-2);
+  border-right: 1px solid var(--fl-border);
+}
+.logoWordmark img {
+  display: block;
+  height: 20px;
+  width: auto;
+  filter: drop-shadow(0 2px 6px var(--fl-secondary-glow));
+}
+@media (min-width: 1200px) {
+  .logoWordmark { display: inline-flex; }
+}
+
+.navSpacer { flex: 1; }
+
+/* ---- Language pills ---- */
+.langPills { display: flex; gap: 8px; }
+.langPill {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 6px 13px;
+  border-radius: var(--r-md);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  cursor: pointer;
+  position: relative;
+  min-width: 64px;
+  transition: background var(--d-fast), border-color var(--d-fast), transform var(--d-fast);
+}
+.langPill:hover { background: var(--fl-surface-2); border-color: var(--fl-border-2); }
+.langPill:active { transform: scale(0.97); }
+.lpLabel {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+  font-weight: 600;
+}
+.lpValue {
+  /* The visible language name — bumped to the 14px chrome floor (DESIGN.md:
+     nothing below 14px except tags/eyebrows). The .lpLabel above stays 9px as
+     an eyebrow. (Design review 2026-10-25.) */
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lpValue::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 3.5px solid transparent;
+  border-right: 3.5px solid transparent;
+  border-top: 4px solid var(--fl-text-3);
+  margin-left: 2px;
+}
+.lpSelect {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+}
+
+.lpError {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  padding: 6px 10px;
+  border-radius: var(--r-sm);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-danger);
+  color: var(--fl-danger);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: var(--el-2);
+  z-index: 50;
+}
+
+.navGear {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--fl-border);
+  background: var(--fl-surface-1);
+  color: var(--fl-text-2);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform var(--d-fast) var(--ease), background var(--d-fast), color var(--d-fast);
+  text-decoration: none;
+}
+.navGear svg { width: 18px; height: 18px; }
+.navGear:hover {
+  background: var(--fl-surface-2);
+  color: var(--fl-text);
+}
+/* Design MED-D6: the 40deg rotate is decorative. Keep the bg + colour hover
+   state outside the gate so the hover still reads for every user. */
+@media (prefers-reduced-motion: no-preference) {
+  .navGear:hover { transform: rotate(40deg); }
+}
+
+@media (max-width: 720px) {
+  .navTitle { display: none; }
+  .lpLabel { display: none; }
+  .langPill { min-width: 0; padding: 6px 10px; }
+}

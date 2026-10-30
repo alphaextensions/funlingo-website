@@ -1,0 +1,145 @@
+/* ---- Icon rail (desktop ≥1200px). Mobile uses BottomTabs. ---- */
+
+.railWrap {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .railWrap {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 72px;
+    align-self: start;
+    padding: var(--s-6) var(--s-3);
+    gap: var(--s-1);
+    width: 220px;
+    flex: none;
+  }
+}
+
+.railLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  color: var(--fl-text-2);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background var(--d-fast), color var(--d-fast);
+}
+
+.railLink:hover {
+  background: var(--fl-surface-1);
+  color: var(--fl-text);
+}
+
+/* Active page — Design QA HIGH-1. Non-color signals (bar + weight + background)
+   are redundant with color so users with low color-vision still get the cue. */
+.railLinkActive {
+  color: var(--fl-text);
+  background: var(--fl-surface-2);
+  font-weight: 700;
+}
+
+.railLinkActive::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--fl-accent);
+}
+
+.railIcon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+.railLabel {
+  flex: 1;
+  white-space: nowrap;
+}
+
+/* ---- Tablet + mobile bottom tab bar (<1200px). Design QA HIGH-4 fix: used
+   to hide above 767px, leaving tablet 768–1199 without any primary nav. ---- */
+.bottomTabs {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .bottomTabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: var(--fl-glass);
+    backdrop-filter: blur(18px) saturate(1.2);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    border-top: 1px solid var(--fl-border);
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .tabLink {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--fl-text-3);
+    text-decoration: none;
+    /* Design MED: DESIGN.md forbids <14px except 11-13px uppercase tags/eyebrows.
+       Mobile-tab labels are sentence case navigation; bump to 11px/700 to clear
+       the floor while staying compact. */
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 4px;
+    letter-spacing: 0.01em;
+  }
+
+  .tabIcon { width: 22px; height: 22px; }
+
+  .tabLink:hover,
+  .tabLink:focus-visible { color: var(--fl-text); }
+
+  /* Active tab — Design QA HIGH-1 (mobile). Top-bar + bold text + color. */
+  .tabLinkActive {
+    color: var(--fl-text);
+    font-weight: 800;
+  }
+
+  .tabLinkActive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--fl-accent);
+  }
+}
+
+/* Tablet gets wider tap targets and a horizontal accent for breathing room. */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .bottomTabs {
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .tabLink {
+    font-size: 11px;
+    padding: 10px 8px;
+  }
+
+  .tabIcon { width: 24px; height: 24px; }
+}

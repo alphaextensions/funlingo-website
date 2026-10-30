@@ -1,0 +1,515 @@
+/* Words — Wave 11 extension-parity vertical list.
+ *
+ * NOT a 240px tile grid. Mirrors the extension's live /words view:
+ *   top:   .search-wrap + .search-input (pill, 48px icon inset)
+ *   below: FilterChip row (handled by shared FilterChip CSS)
+ *   list:  one .row per word → [POS badge] [word + meaning] [state badge] [🔊]
+ *   on tap: inline .expanded block showing scene + source + "Review this word"
+ *
+ * Audio button is a sibling of the clickable row body, not nested — avoids
+ * the button-in-button hydration bug noted in the Wave 10 deck fix.
+ */
+
+.searchWrap {
+  position: relative;
+  margin-top: var(--s-4);
+  margin-bottom: var(--s-5);
+}
+
+.searchWrap svg {
+  position: absolute;
+  inset-inline-start: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--fl-text-3);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--fl-text);
+  padding: 15px 18px 15px 48px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  transition: border-color var(--d-fast), background var(--d-fast);
+}
+
+.searchInput::placeholder {
+  color: var(--fl-text-3);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--fl-accent);
+  background: var(--fl-surface-2);
+}
+
+.countNote {
+  color: var(--fl-text-3);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  margin: var(--s-4) 0 var(--s-3);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: 0 0 var(--s-20);
+  list-style: none;
+  margin: 0;
+}
+
+.row {
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  transition: border-color var(--d-fast), background var(--d-fast);
+}
+
+.row:hover {
+  border-color: var(--fl-border-2);
+  background: var(--fl-surface-2);
+}
+
+.row[data-expanded="true"] {
+  border-color: var(--fl-border-2);
+  background: var(--fl-surface-2);
+}
+
+.rowBody {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--s-4);
+  padding: var(--s-4) var(--s-5);
+  cursor: pointer;
+  color: inherit;
+}
+
+.rowBody:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: -2px;
+  border-radius: var(--r-md);
+}
+
+.posBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 2px 8px;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--fl-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.row:hover .posBadge,
+.row[data-expanded="true"] .posBadge {
+  background: var(--fl-surface-3);
+}
+
+.lemmaCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.lemma {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--fl-text);
+  /* Wave 17: wrap instead of ellipsis — a word bank must show the whole word. */
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.gloss {
+  font-size: 13px;
+  color: var(--fl-text-2);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.state {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-text-2);
+  white-space: nowrap;
+}
+
+.state[data-state="new"] { color: var(--fl-text-2); }
+.state[data-state="learning"] { color: var(--fl-warning); border-color: var(--fl-warning-ring); }
+.state[data-state="known"] { color: var(--fl-success); border-color: var(--fl-success-ring); }
+.state[data-state="mastered"] { color: var(--fl-accent); border-color: var(--fl-accent-glow); }
+
+.state::before {
+  /* non-color signal: differentiator glyph per state */
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.state[data-state="learning"]::before { border-radius: 1px; }
+.state[data-state="known"]::before { border-radius: 50%; }
+.state[data-state="mastered"]::before {
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(45deg);
+}
+
+.audioSlot {
+  display: inline-flex;
+  align-items: center;
+}
+
+.expanded {
+  padding: 0 var(--s-5) var(--s-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  border-top: 1px dashed var(--fl-border);
+  margin-top: var(--s-2);
+  padding-top: var(--s-4);
+}
+
+.sceneLabel {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+  vertical-align: middle;
+}
+
+.scene {
+  color: var(--fl-text-2);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.scene mark {
+  background: var(--fl-pink-soft);
+  color: var(--fl-text);
+  padding: 0 3px;
+  border-radius: 4px;
+  text-decoration: underline;
+  text-decoration-color: var(--fl-accent);
+  text-decoration-style: dashed;
+  text-underline-offset: 2px;
+}
+
+.source {
+  margin: 0;
+  font-size: 11px;
+  color: var(--fl-text-3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sceneEmpty {
+  margin: 0;
+  color: var(--fl-text-3);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.expandedActions {
+  display: flex;
+  gap: var(--s-3);
+  margin-top: var(--s-2);
+}
+
+.reviewLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: var(--r-pill);
+  background: linear-gradient(120deg, var(--fl-secondary), var(--fl-accent));
+  color: var(--fl-on-accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+
+.reviewLink:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+/* Narrow widths: state badge and audio drop below the lemma block,
+ * POS stays on the left for scanning. */
+@media (max-width: 540px) {
+  .rowBody {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    row-gap: var(--s-2);
+  }
+  .audioSlot {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .state {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    justify-self: start;
+  }
+  .lemma {
+    white-space: normal;
+  }
+  .posBadge {
+    min-width: 0;
+    padding: 2px 6px;
+  }
+  .rowBody {
+    gap: var(--s-3);
+    padding: var(--s-4);
+  }
+  .gloss {
+    white-space: normal;
+  }
+}
+
+/* ---------------------------------------------------------------------
+ * Wave 17 — popup parity additions (counts header, export, select mode,
+ * meta line, senses, undo toast). Tokens only.
+ * ------------------------------------------------------------------- */
+
+.headerRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  margin-top: var(--s-4);
+}
+
+.counts {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--fl-text-2);
+}
+
+.headerActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.ghostBtn,
+.ghostBtnDanger,
+.dangerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-text);
+  transition: background var(--d-fast), border-color var(--d-fast);
+}
+
+.ghostBtn:hover,
+.ghostBtnDanger:hover {
+  background: var(--fl-surface-2);
+  border-color: var(--fl-border-2);
+}
+
+.ghostBtn[aria-pressed="true"] {
+  border-color: var(--fl-accent);
+  font-weight: 700;
+}
+
+.ghostBtnDanger {
+  color: var(--fl-danger);
+}
+
+.dangerBtn {
+  background: var(--fl-danger-soft);
+  border-color: var(--fl-danger-ring);
+  color: var(--fl-danger);
+  font-weight: 700;
+}
+
+.dangerBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ghostBtn:focus-visible,
+.ghostBtnDanger:focus-visible,
+.dangerBtn:focus-visible,
+.toastBtn:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.listToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+}
+
+.errorNote {
+  margin: 0 0 var(--s-3);
+  font-size: 14px;
+  color: var(--fl-danger);
+}
+
+.metaLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--fl-text-3);
+}
+
+.metaLine:empty {
+  display: none;
+}
+
+.metaBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--fl-text-2);
+}
+
+.senses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.senseChip {
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  font-size: 13px;
+  color: var(--fl-text-2);
+}
+
+.expandedActions {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Select mode — the check square replaces the POS badge. Non-colour
+ * signal: a ✓ glyph plus a heavier ring. */
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid var(--fl-border-2);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--fl-on-accent);
+}
+
+.check[data-checked="true"] {
+  background: var(--fl-accent);
+  border-color: var(--fl-accent);
+}
+
+.row[data-selected="true"] {
+  border-color: var(--fl-accent);
+  background: var(--fl-surface-2);
+}
+
+.row[data-graduated="true"] .lemma {
+  color: var(--fl-text-2);
+}
+
+.selectBar,
+.toast {
+  position: fixed;
+  inset-inline: 0;
+  bottom: var(--s-6);
+  margin-inline: auto;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: 10px 12px 10px 18px;
+  border-radius: var(--r-pill);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border-2);
+  box-shadow: var(--el-3);
+  backdrop-filter: blur(14px);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--fl-text);
+  z-index: 50;
+}
+
+/* Below 1200px a bottom tab bar (IconRail .bottomTabs) sits at the
+ * viewport edge — lift the floating bars above it. */
+@media (max-width: 1199px) {
+  .selectBar,
+  .toast {
+    bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+.toastBtn {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--fl-accent);
+  background: transparent;
+  color: var(--fl-accent);
+  cursor: pointer;
+}

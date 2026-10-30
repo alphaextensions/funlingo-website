@@ -1,0 +1,177 @@
+/* ============================================================
+   Fun Learning — Design tokens (Wave 4 refresh)
+   SOURCE OF TRUTH: docs/design-reference/funlingo-design-system.html
+                    + docs/design-reference/funlingo-tokens.css
+   (the Funlingo Design System zip — brand purple #BC22D6 → deep
+    magenta #9A1C8E → pink #E0319E on bg #0E0816).
+   The earlier `extension-fun-learning.css` palette (#841167 /
+   #b218d1 / #d678f0 on #0a0813) is SUPERSEDED and must not appear
+   anywhere outside this file.
+
+   Rule from AGENT-PLAYBOOK: these variables are the ONLY source
+   of color. Any raw hex or raw brand-rgba outside this file is
+   a lint failure.
+
+   The variable NAMES here are kept stable across the refresh so
+   25 route-scoped CSS modules keep compiling. Values swapped to
+   the Funlingo Design System. `--fnl-*` passthrough aliases hold
+   the exact Design System token names so a new lane can reach
+   for either style.
+   ============================================================ */
+
+:root {
+  /* ---- Brand (literal, never themed) ------------------------ */
+  --fl-primary:    #BC22D6;   /* Funlingo purple        (was #841167) */
+  --fl-secondary:  #9A1C8E;   /* Funlingo deep magenta  (was #b218d1) */
+  --fl-accent:     #E0319E;   /* Funlingo pink end      (was #d678f0) */
+  --fl-accent-2:   #EC4DB0;   /* Funlingo pink          (new; was #8b5cf6) */
+  --fl-magenta:    #C81FD4;   /* Funlingo magenta glow source */
+  --fl-ink:        #1B0F26;   /* Funlingo ink (light-mode text / shadows) */
+
+  /* On-brand neutrals used for text on gradient pills + modal shadows */
+  --fl-on-accent:  #FFFFFF;   /* text that sits on the gradient CTA */
+  --fl-pink-soft:  rgba(236, 77, 176, 0.14); /* subtle highlight tint */
+
+  /* Brand-color rgba utilities (replace raw rgba literals) */
+  --fl-accent-glow:        rgba(224, 49, 158, 0.35);  /* soft pink glow */
+  --fl-accent-glow-strong: rgba(224, 49, 158, 0.55);  /* pulse peak */
+  --fl-accent-glow-0:      rgba(224, 49, 158, 0.00);  /* pulse ring fade */
+  --fl-secondary-glow:     rgba(200, 31, 212, 0.45);  /* magenta drop-shadow */
+  --fl-shadow-ink:         rgba(5, 3, 10, 0.60);      /* scrim ink */
+  --fl-shadow-veil:        rgba(5, 3, 10, 0.50);      /* ambient veil */
+
+  /* ---- Surfaces (dark — DEFAULT theme) ---------------------- */
+  --fl-bg:         #0E0816;                   /* was #0a0813 */
+  --fl-bg-2:       #140B20;                   /* was #120c1f */
+  --fl-surface-1:  rgba(255, 255, 255, 0.045);
+  --fl-surface-2:  rgba(255, 255, 255, 0.075);
+  --fl-surface-3:  rgba(255, 255, 255, 0.11);
+  --fl-border:     rgba(255, 255, 255, 0.10);
+  --fl-border-2:   rgba(255, 255, 255, 0.16);
+  --fl-glass:      rgba(14, 8, 22, 0.72);     /* re-tinted to new --fl-bg */
+
+  /* ---- Text (AA on --fl-bg) --------------------------------- */
+  --fl-text:       #F6EFFB;                   /* was #f4f1f8 */
+  --fl-text-2:     rgba(246, 239, 251, 0.64); /* was 0.66 */
+  --fl-text-3:     rgba(246, 239, 251, 0.40); /* was 0.42 */
+
+  /* ---- Semantic --------------------------------------------- */
+  --fl-success:    #16B57F;   /* was #4ade80 — DS "correct" */
+  --fl-warning:    #F5A623;   /* was #fbbf24 — DS "star" */
+  --fl-danger:     #FB6F72;
+  --fl-easy:       var(--fl-success);
+  --fl-medium:     var(--fl-warning);
+  --fl-hard:       var(--fl-danger);
+
+  /* Rgba shells for semantic rings used around chips/states */
+  --fl-success-ring: rgba(22, 181, 127, 0.35);
+  --fl-warning-ring: rgba(245, 166, 35, 0.35);
+  --fl-danger-ring:  rgba(251, 111, 114, 0.35);
+  --fl-danger-soft:  rgba(251, 111, 114, 0.08);
+  --fl-danger-edge:  rgba(251, 111, 114, 0.45);
+
+  /* ---- Gradient tokens (Funlingo DS brand gradients) -------- */
+  --fl-grad:       linear-gradient(135deg, #BC22D6 0%, #9A1C8E 52%, #E0319E 100%);
+  --fl-grad-2:     linear-gradient(135deg, #BC22D6, #E0319E);
+  --fl-grad-bar:   linear-gradient(90deg, #BC22D6, #E0319E);
+
+  /* ---- Radius ----------------------------------------------- */
+  --r-sm: 10px;  --r-md: 16px;  --r-lg: 24px;  --r-xl: 30px;  --r-pill: 100px;
+
+  /* ---- Spacing ---------------------------------------------- */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px; --s-6:24px;
+  --s-8:32px; --s-10:40px; --s-12:48px; --s-16:64px; --s-20:80px; --s-24:96px;
+
+  /* ---- Motion ----------------------------------------------- */
+  --d-fast: 150ms; --d-base: 300ms; --d-slow: 500ms;
+  --ease:        cubic-bezier(0.22,0.61,0.36,1);
+  --ease-out:    cubic-bezier(0.16,1,0.3,1);
+  --ease-bounce: cubic-bezier(0.34,1.56,0.64,1);
+  --ease-theme:  0.4s;
+
+  /* ---- Type (scripted stack; locale overrides in globals.css) ---- */
+  --font: var(--font-ui, 'Poppins'), 'Noto Sans Devanagari', 'Mangal', 'Kohinoor Devanagari',
+          'Noto Sans Gujarati', 'Shruti', 'Noto Sans Arabic', 'Tahoma',
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* ---- Elevation / shadows --------------------------------- */
+  --el-1: 0 2px 8px rgba(0,0,0,0.30);
+  --el-2: 0 12px 32px -8px rgba(0,0,0,0.55);
+  --el-3: 0 24px 60px -12px rgba(0,0,0,0.70);
+  --glow: 0 0 0 1px var(--fl-accent-glow),
+          0 16px 50px -12px var(--fl-secondary-glow);
+
+  /* ---- Chrome ----------------------------------------------- */
+  --nav-h: 60px;
+
+  /* ---- Funlingo Design System passthrough aliases ---------- *
+     Lets a lane spell tokens with the exact DS names from
+     funlingo-tokens.css. Values are the same as the --fl-* set
+     above, so themes carry through. */
+  --fnl-purple:         var(--fl-primary);
+  --fnl-deep-magenta:   var(--fl-secondary);
+  --fnl-pink-end:       var(--fl-accent);
+  --fnl-pink:           var(--fl-accent-2);
+  --fnl-magenta:        var(--fl-magenta);
+  --fnl-ink:            var(--fl-ink);
+  --fnl-star:           var(--fl-warning);
+  --fnl-correct:        var(--fl-success);
+  --grad:               var(--fl-grad);
+  --grad-2:             var(--fl-grad-2);
+  --grad-bar:           var(--fl-grad-bar);
+}
+
+/* ============================================================
+   Light theme — Dark remains the DEFAULT per the Design System.
+   Light applies when:
+     - the viewer's OS says "light" AND no explicit choice,  OR
+     - an explicit `data-theme="light"` is set on <html>.
+   Explicit choice wins in both directions.
+   ============================================================ */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --fl-bg:         #FBF4FF;
+    --fl-bg-2:       #FFFFFF;
+    --fl-surface-1:  rgba(27, 15, 38, 0.03);
+    --fl-surface-2:  rgba(27, 15, 38, 0.055);
+    --fl-surface-3:  rgba(27, 15, 38, 0.085);
+    --fl-border:     rgba(27, 15, 38, 0.09);
+    --fl-border-2:   rgba(27, 15, 38, 0.16);
+    --fl-glass:      rgba(251, 244, 255, 0.82);
+
+    --fl-text:       #1B0F26;
+    --fl-text-2:     #675579;
+    --fl-text-3:     #6F5D82; /* WCAG AA on light bg (~5.9:1); was #9A8AA6 (3.2:1) */
+
+    --fl-pink-soft:  rgba(236, 77, 176, 0.10);
+    --fl-shadow-ink: rgba(27, 15, 38, 0.50);
+    --fl-shadow-veil: rgba(27, 15, 38, 0.08);
+
+    --el-1: 0 2px 8px rgba(27, 15, 38, 0.08);
+    --el-2: 0 12px 32px -8px rgba(27, 15, 38, 0.16);
+    --el-3: 0 24px 60px -12px rgba(27, 15, 38, 0.22);
+  }
+}
+
+:root[data-theme="light"] {
+  --fl-bg:         #FBF4FF;
+  --fl-bg-2:       #FFFFFF;
+  --fl-surface-1:  rgba(27, 15, 38, 0.03);
+  --fl-surface-2:  rgba(27, 15, 38, 0.055);
+  --fl-surface-3:  rgba(27, 15, 38, 0.085);
+  --fl-border:     rgba(27, 15, 38, 0.09);
+  --fl-border-2:   rgba(27, 15, 38, 0.16);
+  --fl-glass:      rgba(251, 244, 255, 0.82);
+
+  --fl-text:       #1B0F26;
+  --fl-text-2:     #675579;
+  --fl-text-3:     #6F5D82; /* WCAG AA on light bg (~5.9:1); was #9A8AA6 (3.2:1) */
+
+  --fl-pink-soft:  rgba(236, 77, 176, 0.10);
+  --fl-shadow-ink: rgba(27, 15, 38, 0.50);
+  --fl-shadow-veil: rgba(27, 15, 38, 0.08);
+
+  --el-1: 0 2px 8px rgba(27, 15, 38, 0.08);
+  --el-2: 0 12px 32px -8px rgba(27, 15, 38, 0.16);
+  --el-3: 0 24px 60px -12px rgba(27, 15, 38, 0.22);
+}

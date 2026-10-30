@@ -1,0 +1,32 @@
+[
+  {
+    "input": "वही पुरानी बातें।",
+    "expected_patterns": ["(?i)same old", "(?i)the usual", "(?i)nothing new"],
+    "acceptable_patterns": ["(?i)as always"]
+  },
+  {
+    "input": "क्या हाल है?",
+    "expected_patterns": ["(?i)how(')?s it going", "(?i)how are you", "(?i)what(')?s up"],
+    "acceptable_patterns": ["(?i)how are things"]
+  },
+  {
+    "input": "सच कहूँ तो पहले बेहतर था।",
+    "expected_patterns": ["(?i)been better", "(?i)honestly.*(not great|could be better)"],
+    "acceptable_patterns": ["(?i)not doing great"]
+  },
+  {
+    "input": "अरे, कैसा चल रहा है?",
+    "expected_patterns": ["(?i)how(')?s it going", "(?i)hey.*how", "(?i)what(')?s up"],
+    "acceptable_patterns": ["(?i)how are things"]
+  },
+  {
+    "input": "चलो योजना को लागू करें।",
+    "expected_patterns": ["(?i)carry out the plan", "(?i)execute the plan", "(?i)put the plan into"],
+    "acceptable_patterns": ["(?i)go ahead with the plan"]
+  },
+  {
+    "input": "उसने पार्टी में माहौल को हल्का किया।",
+    "expected_patterns": ["(?i)broke the ice", "(?i)lightened the mood"],
+    "acceptable_patterns": ["(?i)warmed up"]
+  }
+]
