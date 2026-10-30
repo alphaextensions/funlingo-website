@@ -275,7 +275,16 @@ const SCENE_BCP: Record<string, string> = {
   "zh-TW": "zh-TW",
 };
 
-export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
+export default function FunlingoPlayer({
+  lang = "es",
+  chip,
+  chipDot,
+}: {
+  lang?: string;
+  /** Platform pages pin the platform chip (e.g. NETFLIX) whatever the scene. */
+  chip?: string;
+  chipDot?: string;
+}) {
   const { t, locale } = useT();
 
   // Per-language hero scene (a real still + its own subtitle lines). Learning
@@ -440,10 +449,10 @@ export default function FunlingoPlayer({ lang = "es" }: { lang?: string }) {
               because the subtitles now sit over photography rather than a flat field */}
           <div className="absolute left-0 right-0 bottom-0 pointer-events-none" style={{ height: 170, background: "linear-gradient(to top, rgba(8,4,16,.92), rgba(8,4,16,0))" }} />
 
-          {/* Netflix chip */}
+          {/* Platform chip: the page's platform when given, else the scene's own */}
           <div className="absolute flex items-center gap-2" style={{ top: 18, left: 20, padding: "7px 12px", borderRadius: 999, background: "rgba(8,4,16,.5)", backdropFilter: "blur(6px)" }}>
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: scene ? scene.dot : "#E50914" }} />
-            <span style={{ color: "rgba(255,255,255,.92)", fontSize: 12, fontWeight: 800, letterSpacing: ".06em" }}>{scene ? scene.chip : "NETFLIX"}</span>
+            <span style={{ width: 8, height: 8, borderRadius: "50%", background: chip ? chipDot : scene ? scene.dot : "#E50914" }} />
+            <span style={{ color: "rgba(255,255,255,.92)", fontSize: 12, fontWeight: 800, letterSpacing: ".06em" }}>{chip ?? (scene ? scene.chip : "NETFLIX")}</span>
           </div>
           {/* Learning chip */}
           <div className="absolute flex items-center gap-[7px]" style={{ top: 18, right: 20, padding: "7px 13px", borderRadius: 999, background: "linear-gradient(135deg,#BC22D6,#E0319E)" }}>
