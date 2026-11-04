@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import Link from "next/link";
 
 const logo = "/assets/logo.png";
 import { useState } from "react";
@@ -26,9 +27,9 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
         style={{ background: "var(--nav)", borderColor: "var(--border)" }}
       >
         <div className="flex items-center justify-center max-w-[1240px] mx-auto px-[34px] py-[15px]">
-          <a href={navHref("/", locale)}>
+          <Link href={navHref("/", locale)} prefetch={false}>
             <img src={logo} alt="Funlingo" className="h-12 sm:h-14 w-auto block" />
-          </a>
+          </Link>
         </div>
       </header>
     );
@@ -75,16 +76,19 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
     >
       <div className="fnl-navbar-inner flex items-center justify-between max-w-[1240px] mx-auto px-4 sm:px-[34px]">
         {/* Logo */}
-        <a href={navHref("/", locale)} className="block shrink-0">
+        {/* Next.js links switch pages in place instead of reloading the site.
+            No prefetch: pages load on click, so a visit costs nothing extra. */}
+        <Link href={navHref("/", locale)} prefetch={false} className="block shrink-0">
           <img src={logo} alt="Funlingo" className="fnl-navlogo w-auto block" />
-        </a>
+        </Link>
 
         {/* Desktop nav links */}
         <nav className="hidden min-[860px]:flex items-center gap-8">
           {navItems.map((item, i) => (
-            <a
+            <Link
               key={i}
               href={item.href}
+              prefetch={false}
               className="fnl-navlink text-[15px] no-underline"
               data-active={item.active ? "true" : undefined}
               style={{
@@ -93,7 +97,7 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
               }}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -151,9 +155,10 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
       >
         <nav className="flex flex-col items-start gap-1 px-5 py-4">
           {navItems.map((item, i) => (
-            <a
+            <Link
               key={i}
               href={item.href}
+              prefetch={false}
               onClick={() => setIsMenuOpen(false)}
               className="w-full min-h-[48px] flex items-center text-[17px] no-underline"
               style={{
@@ -162,7 +167,7 @@ const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
               }}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <div className="sm:hidden flex items-center gap-3 pt-3">
             <LanguageMenu />

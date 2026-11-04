@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { useT } from "@/app/i18n/I18nProvider";
 import { navHref } from "@/app/i18n/config";
 import { PLATFORM_LINKS, platformPath } from "@/sections/platform/platformLinks";
@@ -71,9 +72,9 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.product")}</div>
           <div className="flex flex-col gap-3">
             {product.map((l, i) => (
-              <a key={i} href={l.href} style={linkStyle} className="fnl-footlink">
+              <Link key={i} href={l.href} prefetch={false} style={linkStyle} className="fnl-footlink">
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -83,9 +84,9 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.company")}</div>
           <div className="flex flex-col gap-3">
             {company.map((l, i) => (
-              <a key={i} href={l.href} style={linkStyle} className="fnl-footlink">
+              <Link key={i} href={l.href} prefetch={false} style={linkStyle} className="fnl-footlink">
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -94,19 +95,17 @@ export const FooterSection = (): React.JSX.Element => {
         <div>
           <div style={colTitle}>{t("footer.follow")}</div>
           <div className="flex flex-col gap-3">
-            {follow.map((l, i) => (
-              <a
-                key={i}
-                href={l.href}
-                style={linkStyle}
-                className="fnl-footlink"
-                {...(l.href.startsWith("http")
-                  ? { target: "_blank", rel: "noopener noreferrer" }
-                  : {})}
-              >
-                {l.label}
-              </a>
-            ))}
+            {follow.map((l, i) =>
+              l.href.startsWith("http") ? (
+                <a key={i} href={l.href} style={linkStyle} className="fnl-footlink" target="_blank" rel="noopener noreferrer">
+                  {l.label}
+                </a>
+              ) : (
+                <Link key={i} href={l.href} prefetch={false} style={linkStyle} className="fnl-footlink">
+                  {l.label}
+                </Link>
+              ),
+            )}
           </div>
         </div>
 
@@ -115,9 +114,9 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.worksOn")}</div>
           <div className="grid grid-cols-2 gap-x-5 gap-y-3">
             {PLATFORM_LINKS.map((p) => (
-              <a key={p.slug} href={navHref(platformPath(p.slug), locale)} style={linkStyle} className="fnl-footlink">
+              <Link key={p.slug} href={navHref(platformPath(p.slug), locale)} prefetch={false} style={linkStyle} className="fnl-footlink">
                 {p.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -138,19 +137,21 @@ export const FooterSection = (): React.JSX.Element => {
           className="text-sm font-medium"
           style={{ color: "var(--text-dim2)" }}
         >
-          <a
+          <Link
             href={navHref("/privacy-policy", locale)}
+            prefetch={false}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             {t("footer.privacy")}
-          </a>{" "}
+          </Link>{" "}
           ·{" "}
-          <a
+          <Link
             href={navHref("/support", locale)}
+            prefetch={false}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             {t("footer.support")}
-          </a>
+          </Link>
         </span>
       </div>
     </footer>
