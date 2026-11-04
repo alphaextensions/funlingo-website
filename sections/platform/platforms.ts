@@ -608,7 +608,7 @@ export const LANG_NAMES: Record<string, string> = {
   ko: "Korean", ja: "Japanese", zh: "Chinese", hi: "Hindi", pt: "Portuguese",
 };
 
-export const platformPath = (slug: string) => `/learn-languages-with-${slug}`;
+export { platformPath } from "./platformLinks";
 
 export function platformBySlug(slug: string): Platform {
   const p = PLATFORM_PAGES.find((x) => x.slug === slug);

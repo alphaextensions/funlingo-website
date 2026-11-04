@@ -3,6 +3,7 @@
 import * as React from "react";
 import { useT } from "@/app/i18n/I18nProvider";
 import { navHref } from "@/app/i18n/config";
+import { PLATFORM_LINKS, platformPath } from "@/sections/platform/platformLinks";
 
 const logo = "/assets/logo.png";
 
@@ -49,7 +50,7 @@ export const FooterSection = (): React.JSX.Element => {
       className="w-full border-t"
       style={{ background: "var(--bg2)", borderColor: "var(--border)" }}
     >
-      <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] pt-[60px] pb-9 grid grid-cols-1 min-[560px]:grid-cols-2 min-[860px]:grid-cols-[1.6fr_1fr_1fr_1fr] gap-7 min-[860px]:gap-[34px]">
+      <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] pt-[60px] pb-9 grid grid-cols-1 min-[560px]:grid-cols-2 min-[860px]:grid-cols-[1.3fr_1fr_1fr_1fr_1.6fr] gap-7 min-[860px]:gap-[34px]">
         {/* Brand */}
         <div>
           <img
@@ -104,6 +105,18 @@ export const FooterSection = (): React.JSX.Element => {
                   : {})}
               >
                 {l.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Platform pages */}
+        <div>
+          <div style={colTitle}>{t("footer.worksOn")}</div>
+          <div className="grid grid-cols-2 gap-x-5 gap-y-3">
+            {PLATFORM_LINKS.map((p) => (
+              <a key={p.slug} href={platformPath(p.slug)} style={linkStyle} className="fnl-footlink">
+                {p.name}
               </a>
             ))}
           </div>
