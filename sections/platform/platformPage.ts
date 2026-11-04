@@ -33,7 +33,7 @@ export function platformSchemas(slug: string, locale = DEFAULT_LOCALE) {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       inLanguage: locale,
-      mainEntity: p.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })),
+      mainEntity: p.faqs.map(([q, a, link]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: link ? `${a} ${link.text}.` : a } })),
     },
     {
       "@context": "https://schema.org",

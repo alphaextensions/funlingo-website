@@ -36,7 +36,8 @@ export type Platform = {
   /** Shows by language code. Catalogs vary by country: verify per region. */
   shows: Record<string, PlatformShow[]>;
   special: { eyebrow: string; h: string; items: [string, string][] };
-  faqs: [string, string][];
+  /** [question, answer, optional link shown after the answer]. */
+  faqs: [string, string, { text: string; href: string }?][];
   /** Words that pick related reviews and blog guides. */
   kw: string[];
   /** PlatformLogo key, when it differs from the name. */
@@ -163,6 +164,8 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Is Funlingo free on Netflix?", "Yes. Every feature is free and there is no account."],
       ["Does it work on the Netflix app or my TV?", "No. Chrome extensions run in desktop Chrome, so it works when you watch Netflix in Chrome on a laptop or desktop."],
       ["Which languages can I learn on Netflix?", "Any pair Netflix has subtitles for. Spanish, Korean, Japanese, French and German have the most titles."],
+      ["How do I change the subtitle language on Netflix?", "While a title is playing, click the Audio & Subtitles icon (the speech bubble) and pick a language. If yours isn’t listed, add it to your profile’s language settings. The languages offered depend on the title and your country."],
+      ["Is Funlingo a Language Reactor alternative?", "Yes. Both add dual subtitles to Netflix in Chrome. Funlingo is free, needs no account, and also works on YouTube, Prime Video, Crunchyroll, Apple TV, Tubi, bilibili, Udemy and Coursera.", { text: "See the full comparison", href: "/#compare" }],
     ],
     kw: ["netflix"],
   },
@@ -270,6 +273,8 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Does it work with auto-generated captions?", "Yes. When a video has no uploaded captions, Funlingo uses YouTube’s auto-generated ones."],
       ["Does it work on YouTube Shorts?", "Yes, on desktop Chrome."],
       ["Is it free?", "Yes. No account and no paid tier."],
+      ["How do I translate a YouTube video into English?", "Open the video, click Settings (the gear), then Subtitles/CC, then Auto-translate, and pick English. This works on videos that have captions. YouTube shows one language at a time; with Funlingo you see the original line and the English line together."],
+      ["How do I turn on subtitles on YouTube?", "Click the CC button at the bottom of the player, or go to Settings, then Subtitles/CC, and pick a language. Funlingo uses the same captions to add a line in your second language."],
     ],
     kw: ["youtube"],
   },
@@ -363,6 +368,8 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Is it free?", "Yes, with no account."],
       ["Why don’t I see my language?", "Prime Video offers different subtitle languages per title and country. Funlingo can only use the tracks a title has."],
       ["Does it work on the Prime Video app?", "No, only in desktop Chrome."],
+      ["Which subtitle languages does Prime Video have?", "It depends on the title and your country. Many titles offer several subtitle languages. To check, play the title and open the Subtitles and Audio menu in the top-right of the player."],
+      ["How do I turn off subtitles on Prime Video?", "While a title is playing, open the Subtitles and Audio menu in the top-right of the player and choose Off under Subtitles."],
     ],
     kw: ["prime"],
   },
@@ -425,6 +432,8 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Can I learn English with it?", "Yes. Pick English on top and your language underneath."],
       ["Is it free?", "Yes. No account needed."],
       ["Does it work on the mobile app?", "No, only in desktop Chrome."],
+      ["Is Disney+ Hotstar now JioHotstar?", "Yes, in India. Disney+ Hotstar merged with JioCinema in February 2025 and became JioHotstar. JioHotstar also replaced Hotstar in the UK, Canada and Singapore in September 2026. Funlingo works on JioHotstar in Chrome."],
+      ["Can I learn Hindi with Disney+ Hotstar?", "Yes. Pick a Hindi title with Hindi subtitles and add English (or your language) as the second line in Funlingo. Tap any word to see its meaning and save it."],
     ],
     kw: ["disney", "hotstar"],
   },
@@ -497,6 +506,8 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Is it free?", "Yes, with no account."],
       ["Which languages work?", "Any subtitle language a title offers."],
       ["Does it work with Apple TV+?", "Yes. Apple TV+ is now called Apple TV. Funlingo works with its shows on tv.apple.com in Chrome."],
+      ["How do I turn on subtitles on Apple TV?", "On tv.apple.com, play a title, click the subtitles icon in the player and pick a language. On the Apple TV box, open the playback controls and choose the subtitles option. Funlingo’s dual subtitles work on the web version in Chrome only."],
+      ["Does Apple TV have Spanish subtitles?", "Many Apple TV shows have Spanish subtitles, along with many other languages, but it varies by title. Play the title and open the subtitles menu to see what’s available."],
     ],
     kw: ["apple"],
   },
@@ -555,6 +566,8 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Is it free on Crunchyroll?", "Yes, every feature, no account."],
       ["Does it work on the Crunchyroll app?", "No, only in desktop Chrome."],
       ["Does Crunchyroll have Japanese subtitles?", "Only a few titles do. Most Crunchyroll titles have subtitles in English and other languages."],
+      ["How do I change the subtitle language on Crunchyroll?", "While an episode plays, click the settings (gear) icon in the player, choose Subtitles/CC and pick a language. The languages offered depend on the episode and your region."],
+      ["Does Crunchyroll use AI for subtitles?", "Crunchyroll says its vendors aren’t allowed to use AI-generated subtitles. In 2025, AI subtitles from a third-party vendor appeared on one show, and Crunchyroll said that broke its agreement with the vendor."],
     ],
     kw: ["crunchyroll", "anime", "japanese"],
   },
@@ -606,6 +619,8 @@ export const PLATFORM_PAGES: Platform[] = [
       ["How do I turn on subtitles on Tubi?", "Play a title on tubi.tv, click the CC icon in the player and pick a language. Not every title has subtitles."],
       ["Why are there no subtitles on a title?", "Some Tubi titles don’t include subtitles, so there’s nothing to show."],
       ["Does it work on the Tubi app?", "No, only in desktop Chrome."],
+      ["Does Tubi have subtitles?", "Many titles do. Tubi adds closed captions whenever its content partners provide them, so not every title has them. If a title has no CC icon, it has no captions on Tubi."],
+      ["What are good Spanish movies on Tubi?", "Start with the Spanish picks on this page. Each one is free on Tubi and labeled by level. Tubi’s catalog changes often, so check that a title is still available before you plan around it."],
     ],
     kw: ["tubi"],
   },
@@ -662,6 +677,9 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Is it free?", "Yes, no account."],
       ["Do I need a bilibili account?", "Not for Funlingo. Some videos on bilibili may need you to sign in."],
       ["Does bilibili have English subtitles?", "Some videos do, but most don’t. Funlingo adds a line in your language under the Chinese, with pinyin on every word."],
+      ["What is bilibili?", "bilibili is one of China’s biggest video sites, similar to YouTube. It’s known for anime, donghua, documentaries and creator videos, and for danmaku, the viewer comments that scroll across the screen. Most videos are in Mandarin, which makes it a good place to learn Chinese."],
+      ["How do I get English subtitles on bilibili?", "Some videos have English subtitles under the subtitle (字幕) button in the player, but most don’t. Funlingo adds a line in your language under the Chinese, with pinyin on every word."],
+      ["Is bilibili free?", "Yes, most videos are free to watch. Some anime and dramas need a paid bilibili membership."],
     ],
     kw: ["bilibili", "chinese"],
   },
@@ -714,6 +732,7 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Is it free?", "Yes, no account."],
       ["Does it work in the Udemy app?", "No, only in desktop Chrome."],
       ["Can I translate Udemy subtitles into my language?", "Yes. Funlingo shows the course’s subtitles and a translation in your language together, one above the other."],
+      ["Do Udemy courses have subtitles?", "Most do. Udemy auto-generates captions in the language a course is taught in, and some courses also have captions in other languages. Turn them on with the CC button in the player. Funlingo shows them with a translation in your language."],
     ],
     kw: ["udemy", "course"],
   },
@@ -765,6 +784,7 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Is it free?", "Funlingo is free. Coursera pricing depends on the course."],
       ["Does it work in the Coursera app?", "No, only in desktop Chrome."],
       ["Can I translate Coursera subtitles into my language?", "Yes. Funlingo shows the lecture’s subtitles and a translation in your language together, one above the other."],
+      ["Do Coursera videos have subtitles in other languages?", "Many do. Turn on subtitles in the player and pick a language. A course’s overview page lists which subtitle languages it offers. Funlingo shows the lecture’s subtitles together with a translation in your language."],
     ],
     kw: ["coursera", "course"],
   },

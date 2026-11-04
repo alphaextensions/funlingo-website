@@ -400,7 +400,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
               <h2 style={h2}>{p.faqH ?? fill(L.faqH)}</h2>
             </div>
             <div className="flex flex-col gap-[10px]">
-              {p.faqs.map(([q, a], i) => {
+              {p.faqs.map(([q, a, link], i) => {
                 const open = faqOpen === i;
                 return (
                   <div key={q} style={{ ...card, borderRadius: 18, overflow: "hidden" }}>
@@ -416,7 +416,10 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
                       <span className="flex items-center justify-center shrink-0" style={{ width: 28, height: 28, borderRadius: "50%", background: "var(--pink-soft)", color: "var(--pink)", fontSize: 18, fontWeight: 800, transform: open ? "rotate(45deg)" : "none", transition: "transform .2s ease" }}>+</span>
                     </button>
                     {/* Answers stay in the HTML when closed, so crawlers read them. */}
-                    <div id={`faq-${i}`} hidden={!open} style={{ padding: "0 22px 20px", fontSize: 15, lineHeight: 1.65, color: "var(--text-dim)", fontWeight: 500 }}>{a}</div>
+                    <div id={`faq-${i}`} hidden={!open} style={{ padding: "0 22px 20px", fontSize: 15, lineHeight: 1.65, color: "var(--text-dim)", fontWeight: 500 }}>
+                      {a}
+                      {link && <> <Link href={link.href} style={{ color: "var(--pink)", fontWeight: 700 }}>{link.text}</Link>.</>}
+                    </div>
                   </div>
                 );
               })}
