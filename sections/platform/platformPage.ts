@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { posts } from "@/app/blog/posts";
 import { readBlogMeta } from "@/app/blog/blogMeta";
-import { platformBySlug, platformPath, fillName, PLATFORM_LABELS } from "./platforms";
+import { alternateLanguages, localizedHref, ogLocale, DEFAULT_LOCALE } from "@/app/i18n/config";
+import { platformBySlug, platformPath, fillName } from "./platforms";
+import { localizePlatform } from "./platformLocale";
 import type { Guide } from "./PlatformContent";
 
 // Server-side half of a platform page: metadata, structured data and the
@@ -10,27 +12,27 @@ import type { Guide } from "./PlatformContent";
 
 const SITE = "https://getfunlingo.com";
 
-export function platformMetadata(slug: string): Metadata {
-  const p = platformBySlug(slug);
-  const url = platformPath(p.slug);
+export function platformMetadata(slug: string, locale = DEFAULT_LOCALE): Metadata {
+  const { p } = localizePlatform(slug, locale);
+  const url = localizedHref(platformPath(p.slug), locale);
   return {
     // The title already carries the brand, so skip the " | Funlingo" template.
     title: { absolute: p.title },
     description: p.desc,
-    alternates: { canonical: url },
-    openGraph: { images: ["/og-image.jpg"], title: p.title, description: p.desc, url },
+    alternates: { canonical: url, languages: alternateLanguages(platformPath(p.slug)) },
+    openGraph: { images: ["/og-image.jpg"], title: p.title, description: p.desc, url, locale: ogLocale(locale) },
     twitter: { images: ["/og-image.jpg"], title: p.title, description: p.desc },
   };
 }
 
-export function platformSchemas(slug: string) {
-  const p = platformBySlug(slug);
-  const url = `${SITE}${platformPath(p.slug)}`;
+export function platformSchemas(slug: string, locale = DEFAULT_LOCALE) {
+  const { p, L } = localizePlatform(slug, locale);
+  const url = `${SITE}${localizedHref(platformPath(p.slug), locale)}`;
   return [
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      inLanguage: "en",
+      inLanguage: locale,
       mainEntity: p.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })),
     },
     {
@@ -38,7 +40,7 @@ export function platformSchemas(slug: string) {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Funlingo", item: SITE },
-        { "@type": "ListItem", position: 2, name: fillName(PLATFORM_LABELS.forX, p.name), item: url },
+        { "@type": "ListItem", position: 2, name: fillName(L.forX, p.name), item: url },
       ],
     },
     // No rating here: the design asks for one only if it is the real

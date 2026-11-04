@@ -10,14 +10,9 @@ import { PlatformLogo } from "@/sections/home/platformLogos";
 import { orderedReviews } from "@/sections/home/reviews";
 import { ChromeCTA } from "@/app/_components/cta";
 import { useT } from "@/app/i18n/I18nProvider";
-import {
-  PLATFORM_PAGES,
-  PLATFORM_LABELS as L,
-  LANG_NAMES,
-  platformBySlug,
-  platformPath,
-  fillName,
-} from "./platforms";
+import { navHref } from "@/app/i18n/config";
+import { PLATFORM_LINKS, platformPath, fillName } from "./platformLinks";
+import type { LocalizedPlatform } from "./platformLocale";
 
 export type Guide = { slug: string; title: string; category: string; read?: string };
 
@@ -63,9 +58,10 @@ function StepIcon({ i }: { i: number }) {
   return <svg {...common}><path d="M4 7h10M4 11h6" /><path d="M13 13l7 3-3 1.2-1.2 3z" fill="currentColor" /></svg>;
 }
 
-export default function PlatformContent({ slug, guides }: { slug: string; guides: Guide[] }) {
+// The page's copy arrives already in the visitor's language (platformLocale.ts).
+export default function PlatformContent({ data, guides }: { data: LocalizedPlatform; guides: Guide[] }) {
   const { t, locale } = useT();
-  const p = platformBySlug(slug);
+  const { p, L, langNames } = data;
   const name = p.name;
   const fill = (s: string) => fillName(s, name);
 
@@ -84,7 +80,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
   const mentions = all.filter((r) => p.kw.some((k) => r.quote.toLowerCase().includes(k)));
   const reviews = [...mentions, ...all.filter((r) => !mentions.includes(r))].slice(0, 3);
 
-  const others = PLATFORM_PAGES.filter((x) => x.slug !== p.slug);
+  const others = PLATFORM_LINKS.filter((x) => x.slug !== p.slug);
 
   // The "On this page" bar sticks right under the site nav, whose height
   // changes as it compacts on scroll and between phone and desktop.
@@ -147,7 +143,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
         <div className="relative z-[2] max-w-[1240px] mx-auto px-5 sm:px-[34px] grid grid-cols-1 min-[860px]:grid-cols-[1fr_1.05fr] gap-9 min-[860px]:gap-14 items-center pt-10 min-[860px]:pt-16 pb-14 min-[860px]:pb-20">
           <div>
             <nav aria-label="Breadcrumb" className="flex items-center gap-2" style={{ fontSize: 13, fontWeight: 600, color: "var(--text-dim2)", marginBottom: 18 }}>
-              <Link href="/" className="inline-flex items-center min-h-[44px] min-[701px]:min-h-0" style={{ color: "var(--text-dim)", textDecoration: "none" }}>{t("nav.home")}</Link>
+              <Link href={navHref("/", locale)} className="inline-flex items-center min-h-[44px] min-[701px]:min-h-0" style={{ color: "var(--text-dim)", textDecoration: "none" }}>{t("nav.home")}</Link>
               <span aria-hidden="true">/</span>
               <span>{name}</span>
             </nav>
@@ -158,6 +154,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
             <h1 className="text-[40px] min-[701px]:text-[clamp(42px,5vw,66px)]" style={{ lineHeight: 1.03, fontWeight: 800, margin: 0, letterSpacing: "-.02em", color: "var(--text)", textWrap: "balance" }}>
               {p.h1a}
               <span style={{ background: "var(--grad)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent" }}>{p.h1b}</span>
+              {p.h1c}
             </h1>
             <p style={{ fontSize: 18, lineHeight: 1.6, color: "var(--text-dim)", margin: "20px 0 0", maxWidth: 500, fontWeight: 500, textWrap: "pretty" }}>{p.sub}</p>
             <div className="flex flex-wrap items-center gap-[14px]" style={{ marginTop: 28 }}>
@@ -178,7 +175,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
                     }}
                     style={pill(c === learn)}
                   >
-                    {LANG_NAMES[c] ?? c}
+                    {langNames[c] ?? c}
                   </button>
                 ))}
               </div>
@@ -260,7 +257,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
                   onClick={() => setShowLang(c)}
                   style={{ border: "none", borderRadius: 999, padding: "9px 15px", minHeight: 40, fontFamily: "'Poppins',sans-serif", fontSize: 14, fontWeight: 700, cursor: "pointer", background: c === showLang ? "var(--grad)" : "transparent", color: c === showLang ? "#fff" : "var(--text-dim)" }}
                 >
-                  {LANG_NAMES[c] ?? c}
+                  {langNames[c] ?? c}
                 </button>
               ))}
             </div>
@@ -400,7 +397,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
             <h2 style={{ ...h2, fontSize: "clamp(24px,2.6vw,32px)", letterSpacing: "-.01em", marginBottom: 22 }}>{L.othersH}</h2>
             <div className="grid grid-cols-2 min-[860px]:grid-cols-3 gap-3">
               {others.map((o) => (
-                <Link key={o.slug} href={platformPath(o.slug)} className="fnl-blogcard flex items-center gap-3" style={{ ...card, borderRadius: 16, padding: "14px 16px", minHeight: 56, textDecoration: "none", color: "var(--text)" }}>
+                <Link key={o.slug} href={navHref(platformPath(o.slug), locale)} className="fnl-blogcard flex items-center gap-3" style={{ ...card, borderRadius: 16, padding: "14px 16px", minHeight: 56, textDecoration: "none", color: "var(--text)" }}>
                   <PlatformLogo name={o.name} />
                   <span style={{ fontSize: 15, fontWeight: 700 }}>{fillName(L.forX, o.name)}</span>
                 </Link>

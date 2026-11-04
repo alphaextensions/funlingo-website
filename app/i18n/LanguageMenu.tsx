@@ -6,6 +6,7 @@ import {
   ALL_LOCALES,
   LOCALE_CODES,
   localizedHref,
+  LOCALIZED_PATHS,
   DEFAULT_LOCALE,
 } from "./config";
 import { useI18n } from "./I18nProvider";
@@ -85,7 +86,9 @@ export default function LanguageMenu({ buttonClassName = "" }: { buttonClassName
   }, [pathname]);
 
   const targetHref = (code: string) =>
-    code === DEFAULT_LOCALE ? basePath : localizedHref("/", code);
+    code === DEFAULT_LOCALE
+      ? basePath
+      : localizedHref(LOCALIZED_PATHS.has(basePath) ? basePath : "/", code);
 
   const curShort = (locale.split("-")[0] || "en").toUpperCase();
 

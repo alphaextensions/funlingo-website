@@ -1,3 +1,5 @@
+import { PLATFORM_LINKS, platformPath } from "@/sections/platform/platformLinks";
+
 // i18n configuration — single source of truth for supported locales.
 //
 // The site is a static export (no middleware), so every locale page is
@@ -106,12 +108,13 @@ export function alternateLanguages(path = "/"): Record<string, string> {
 }
 
 /**
- * Paths that actually have a localized (`/[locale]/…`) page. Only the home
- * page is localized today (static export, dynamicParams=false), so every other
- * link must stay un-prefixed — otherwise nav/footer links on a localized page
- * (e.g. /fr/roadmap) would 404. Add paths here as more routes get localized.
+ * Paths that actually have a localized (`/[locale]/…`) page: the home page and
+ * the platform pages (/fr/netflix …). Static export with dynamicParams=false,
+ * so every other link must stay un-prefixed — otherwise nav/footer links on a
+ * localized page (e.g. /fr/roadmap) would 404. Add paths here as more routes
+ * get localized.
  */
-export const LOCALIZED_PATHS = new Set<string>(["/"]);
+export const LOCALIZED_PATHS = new Set<string>(["/", ...PLATFORM_LINKS.map((p) => platformPath(p.slug))]);
 
 /**
  * Href for nav/footer links: localized only when a localized version of that

@@ -1,7 +1,7 @@
 // Platform landing pages ("Funlingo for Netflix" …), from the 2026 redesign
 // (Funlingo For.dc.html + platforms.js). One shared template; each platform
-// supplies its own copy. English only for now — the design's translations
-// (plat-tx-*.js) move into the dictionaries when the pages are localized.
+// supplies its own copy. This is the English copy; other languages come from
+// plat-tx.json (the design's plat-tx-*.js), applied in platformLocale.ts.
 //
 // Only platforms listed here get a page, and the "works on these too" links
 // only point at platforms listed here, so a page never links to a 404.
@@ -10,6 +10,8 @@ export type PlatformShow = {
   title: string;
   level: string;
   note: string;
+  /** plat-tx key for the translated note (the English note is per show). */
+  d: string;
 };
 
 export type Platform = {
@@ -24,6 +26,8 @@ export type Platform = {
   desc: string;
   h1a: string;
   h1b: string;
+  /** Text after the gradient name, for languages that put the name mid-title. */
+  h1c?: string;
   sub: string;
   intro: string;
   steps: [string, string][];
@@ -65,28 +69,28 @@ export const PLATFORM_PAGES: Platform[] = [
     showsH: "Netflix shows to learn with, by language",
     shows: {
       es: [
-        { title: "Money Heist (La casa de papel)", level: "Intermediate", note: "Fast heist dialogue from Spain." },
-        { title: "Elite", level: "Intermediate", note: "Everyday teen Spanish." },
-        { title: "Club de Cuervos", level: "Beginner+", note: "Mexican Spanish comedy." },
+        { title: "Money Heist (La casa de papel)", level: "Intermediate", note: "Fast heist dialogue from Spain.", d: "d_fast" },
+        { title: "Elite", level: "Intermediate", note: "Everyday teen Spanish.", d: "d_everyday" },
+        { title: "Club de Cuervos", level: "Beginner+", note: "Mexican Spanish comedy.", d: "d_comedy" },
       ],
       ko: [
-        { title: "Squid Game", level: "Intermediate", note: "Clear, dramatic dialogue." },
-        { title: "Crash Landing on You", level: "Beginner+", note: "Romantic drama with lots of repetition." },
+        { title: "Squid Game", level: "Intermediate", note: "Clear, dramatic dialogue.", d: "d_thriller" },
+        { title: "Crash Landing on You", level: "Beginner+", note: "Romantic drama with lots of repetition.", d: "d_family" },
       ],
       ja: [
-        { title: "Alice in Borderland", level: "Intermediate", note: "Modern Tokyo Japanese." },
-        { title: "Midnight Diner: Tokyo Stories", level: "Beginner+", note: "Slow, warm conversations." },
+        { title: "Alice in Borderland", level: "Intermediate", note: "Modern Tokyo Japanese.", d: "d_everyday" },
+        { title: "Midnight Diner: Tokyo Stories", level: "Beginner+", note: "Slow, warm conversations.", d: "d_slow" },
       ],
       fr: [
-        { title: "Lupin", level: "Intermediate", note: "Contemporary Paris French." },
-        { title: "Call My Agent!", level: "Advanced", note: "Quick, witty office talk." },
+        { title: "Lupin", level: "Intermediate", note: "Contemporary Paris French.", d: "d_everyday" },
+        { title: "Call My Agent!", level: "Advanced", note: "Quick, witty office talk.", d: "d_comedy" },
       ],
       de: [
-        { title: "Dark", level: "Advanced", note: "Rich, careful German." },
-        { title: "How to Sell Drugs Online (Fast)", level: "Intermediate", note: "Young, casual German." },
+        { title: "Dark", level: "Advanced", note: "Rich, careful German.", d: "d_thriller" },
+        { title: "How to Sell Drugs Online (Fast)", level: "Intermediate", note: "Young, casual German.", d: "d_slang" },
       ],
-      it: [{ title: "Suburra", level: "Advanced", note: "Roman Italian and slang." }],
-      hi: [{ title: "Sacred Games", level: "Advanced", note: "Mumbai Hindi with slang." }],
+      it: [{ title: "Suburra", level: "Advanced", note: "Roman Italian and slang.", d: "d_slang" }],
+      hi: [{ title: "Sacred Games", level: "Advanced", note: "Mumbai Hindi with slang.", d: "d_slang" }],
     },
     special: {
       eyebrow: "Netflix tip",
@@ -130,23 +134,23 @@ export const PLATFORM_PAGES: Platform[] = [
     ],
     showsH: "YouTube channels to learn with, by language",
     shows: {
-      ko: [{ title: "Talk To Me In Korean", level: "Beginner", note: "Lessons and real conversations." }],
+      ko: [{ title: "Talk To Me In Korean", level: "Beginner", note: "Lessons and real conversations.", d: "d_lessons" }],
       es: [
-        { title: "Dreaming Spanish", level: "Beginner → Advanced", note: "Comprehensible input by level." },
-        { title: "Easy Spanish", level: "Intermediate", note: "Street interviews." },
+        { title: "Dreaming Spanish", level: "Beginner → Advanced", note: "Comprehensible input by level.", d: "d_lessons" },
+        { title: "Easy Spanish", level: "Intermediate", note: "Street interviews.", d: "d_street" },
       ],
       fr: [
-        { title: "Easy French", level: "Intermediate", note: "Street interviews." },
-        { title: "innerFrench", level: "Intermediate", note: "Slow, clear French on real topics." },
+        { title: "Easy French", level: "Intermediate", note: "Street interviews.", d: "d_street" },
+        { title: "innerFrench", level: "Intermediate", note: "Slow, clear French on real topics.", d: "d_slow" },
       ],
       de: [
-        { title: "Easy German", level: "Intermediate", note: "Street interviews." },
-        { title: "Nicos Weg (DW)", level: "Beginner", note: "A full beginner series." },
+        { title: "Easy German", level: "Intermediate", note: "Street interviews.", d: "d_street" },
+        { title: "Nicos Weg (DW)", level: "Beginner", note: "A full beginner series.", d: "d_lessons" },
       ],
-      ja: [{ title: "Comprehensible Japanese", level: "Beginner", note: "Simple, visual stories." }],
-      en: [{ title: "BBC Learning English", level: "Beginner → Advanced", note: "Short lessons and news." }],
-      it: [{ title: "Easy Italian", level: "Intermediate", note: "Street interviews." }],
-      zh: [{ title: "Mandarin Corner", level: "Intermediate", note: "Real conversations with Chinese subtitles." }],
+      ja: [{ title: "Comprehensible Japanese", level: "Beginner", note: "Simple, visual stories.", d: "d_slow" }],
+      en: [{ title: "BBC Learning English", level: "Beginner → Advanced", note: "Short lessons and news.", d: "d_lessons" }],
+      it: [{ title: "Easy Italian", level: "Intermediate", note: "Street interviews.", d: "d_street" }],
+      zh: [{ title: "Mandarin Corner", level: "Intermediate", note: "Real conversations with Chinese subtitles.", d: "d_everyday" }],
     },
     special: {
       eyebrow: "YouTube tip",
@@ -191,29 +195,29 @@ export const PLATFORM_PAGES: Platform[] = [
     showsH: "Prime Video shows to learn with, by language",
     shows: {
       es: [
-        { title: "El Cid", level: "Advanced", note: "Historical Castilian Spanish." },
-        { title: "LOL: Last One Laughing Mexico", level: "Intermediate", note: "Casual Mexican comedy." },
+        { title: "El Cid", level: "Advanced", note: "Historical Castilian Spanish.", d: "d_hist" },
+        { title: "LOL: Last One Laughing Mexico", level: "Intermediate", note: "Casual Mexican comedy.", d: "d_slang" },
       ],
       hi: [
-        { title: "Mirzapur", level: "Advanced", note: "North Indian Hindi." },
-        { title: "The Family Man", level: "Intermediate", note: "Hindi with some English." },
+        { title: "Mirzapur", level: "Advanced", note: "North Indian Hindi.", d: "d_everyday" },
+        { title: "The Family Man", level: "Intermediate", note: "Hindi with some English.", d: "d_everyday" },
       ],
       ja: [
-        { title: "Modern Love Tokyo", level: "Intermediate", note: "Everyday Tokyo Japanese." },
-        { title: "Bachelor Japan", level: "Beginner+", note: "Unscripted conversation." },
+        { title: "Modern Love Tokyo", level: "Intermediate", note: "Everyday Tokyo Japanese.", d: "d_everyday" },
+        { title: "Bachelor Japan", level: "Beginner+", note: "Unscripted conversation.", d: "d_everyday" },
       ],
       de: [
-        { title: "Wir Kinder vom Bahnhof Zoo", level: "Advanced", note: "1970s Berlin German." },
-        { title: "LOL: Last One Laughing Germany", level: "Intermediate", note: "Quick, casual German." },
+        { title: "Wir Kinder vom Bahnhof Zoo", level: "Advanced", note: "1970s Berlin German.", d: "d_everyday" },
+        { title: "LOL: Last One Laughing Germany", level: "Intermediate", note: "Quick, casual German.", d: "d_slang" },
       ],
       it: [
-        { title: "Vita da Carlo", level: "Intermediate", note: "Roman comedy." },
-        { title: "LOL: Chi ride è fuori", level: "Intermediate", note: "Casual Italian." },
+        { title: "Vita da Carlo", level: "Intermediate", note: "Roman comedy.", d: "d_comedy" },
+        { title: "LOL: Chi ride è fuori", level: "Intermediate", note: "Casual Italian.", d: "d_slang" },
       ],
-      fr: [{ title: "Mixte", level: "Intermediate", note: "1960s school drama." }],
+      fr: [{ title: "Mixte", level: "Intermediate", note: "1960s school drama.", d: "d_family" }],
       en: [
-        { title: "The Boys", level: "Advanced", note: "Fast American English." },
-        { title: "Fleabag", level: "Advanced", note: "British English, very quick." },
+        { title: "The Boys", level: "Advanced", note: "Fast American English.", d: "d_fast" },
+        { title: "Fleabag", level: "Advanced", note: "British English, very quick.", d: "d_fast" },
       ],
     },
     special: {
@@ -259,15 +263,15 @@ export const PLATFORM_PAGES: Platform[] = [
     showsH: "Disney+ Hotstar shows to learn with, by language",
     shows: {
       en: [
-        { title: "Loki", level: "Intermediate", note: "Clear, theatrical English." },
-        { title: "The Avengers films", level: "Intermediate", note: "Action dialogue you can follow." },
+        { title: "Loki", level: "Intermediate", note: "Clear, theatrical English.", d: "d_slow" },
+        { title: "The Avengers films", level: "Intermediate", note: "Action dialogue you can follow.", d: "d_action" },
       ],
       hi: [
-        { title: "Special Ops", level: "Intermediate", note: "Thriller Hindi." },
-        { title: "Aarya", level: "Intermediate", note: "Family drama in Hindi." },
+        { title: "Special Ops", level: "Intermediate", note: "Thriller Hindi.", d: "d_thriller" },
+        { title: "Aarya", level: "Intermediate", note: "Family drama in Hindi.", d: "d_family" },
       ],
-      ko: [{ title: "Moving", level: "Intermediate", note: "Korean superhero drama." }],
-      ja: [{ title: "Shōgun", level: "Advanced", note: "Period Japanese with English." }],
+      ko: [{ title: "Moving", level: "Intermediate", note: "Korean superhero drama.", d: "d_action" }],
+      ja: [{ title: "Shōgun", level: "Advanced", note: "Period Japanese with English.", d: "d_hist" }],
     },
     special: {
       eyebrow: "For English learners",
@@ -312,17 +316,17 @@ export const PLATFORM_PAGES: Platform[] = [
     showsH: "Apple TV shows to learn with, by language",
     shows: {
       es: [
-        { title: "Acapulco", level: "Beginner+", note: "Spanish and English, easy to follow." },
-        { title: "Now and Then", level: "Advanced", note: "Spanish thriller." },
+        { title: "Acapulco", level: "Beginner+", note: "Spanish and English, easy to follow.", d: "d_mixed" },
+        { title: "Now and Then", level: "Advanced", note: "Spanish thriller.", d: "d_thriller" },
       ],
-      ko: [{ title: "Pachinko", level: "Intermediate", note: "Korean, Japanese and English." }],
+      ko: [{ title: "Pachinko", level: "Intermediate", note: "Korean, Japanese and English.", d: "d_mixed" }],
       fr: [
-        { title: "Drops of God", level: "Intermediate", note: "French and Japanese." },
-        { title: "La Maison", level: "Advanced", note: "Paris fashion drama." },
+        { title: "Drops of God", level: "Intermediate", note: "French and Japanese.", d: "d_mixed" },
+        { title: "La Maison", level: "Advanced", note: "Paris fashion drama.", d: "d_thriller" },
       ],
       en: [
-        { title: "Ted Lasso", level: "Intermediate", note: "British and American English." },
-        { title: "Severance", level: "Intermediate", note: "Measured, clear English." },
+        { title: "Ted Lasso", level: "Intermediate", note: "British and American English.", d: "d_mixed" },
+        { title: "Severance", level: "Intermediate", note: "Measured, clear English.", d: "d_slow" },
       ],
     },
     special: {
@@ -368,12 +372,12 @@ export const PLATFORM_PAGES: Platform[] = [
     showsH: "Anime to learn Japanese with, by level",
     shows: {
       ja: [
-        { title: "Spy x Family", level: "Beginner", note: "Everyday family conversations." },
-        { title: "Horimiya", level: "Beginner+", note: "School-life Japanese." },
-        { title: "Frieren: Beyond Journey’s End", level: "Intermediate", note: "Calm, clear dialogue." },
-        { title: "Demon Slayer", level: "Intermediate", note: "Repeated phrases, some old-fashioned speech." },
-        { title: "Jujutsu Kaisen", level: "Advanced", note: "Fast, slangy dialogue." },
-        { title: "Naruto", level: "Intermediate", note: "Lots of repetition and catchphrases." },
+        { title: "Spy x Family", level: "Beginner", note: "Everyday family conversations.", d: "d_family" },
+        { title: "Horimiya", level: "Beginner+", note: "School-life Japanese.", d: "d_family" },
+        { title: "Frieren: Beyond Journey’s End", level: "Intermediate", note: "Calm, clear dialogue.", d: "d_slow" },
+        { title: "Demon Slayer", level: "Intermediate", note: "Repeated phrases, some old-fashioned speech.", d: "d_hist" },
+        { title: "Jujutsu Kaisen", level: "Advanced", note: "Fast, slangy dialogue.", d: "d_slang" },
+        { title: "Naruto", level: "Intermediate", note: "Lots of repetition and catchphrases.", d: "d_everyday" },
       ],
     },
     special: {
@@ -418,10 +422,10 @@ export const PLATFORM_PAGES: Platform[] = [
     ],
     showsH: "Where to start on Tubi, by language",
     shows: {
-      es: [{ title: "Tubi en Español", level: "All levels", note: "Tubi’s Spanish-language collection of films and series." }],
-      ko: [{ title: "Korean drama collection", level: "Beginner+", note: "K-dramas with English subtitles." }],
-      ja: [{ title: "Anime collection", level: "Beginner+", note: "Subtitled anime series and films." }],
-      en: [{ title: "Classic films", level: "Intermediate", note: "Older films speak more slowly and clearly." }],
+      es: [{ title: "Tubi en Español", level: "All levels", note: "Tubi’s Spanish-language collection of films and series.", d: "d_collection" }],
+      ko: [{ title: "Korean drama collection", level: "Beginner+", note: "K-dramas with English subtitles.", d: "d_collection" }],
+      ja: [{ title: "Anime collection", level: "Beginner+", note: "Subtitled anime series and films.", d: "d_collection" }],
+      en: [{ title: "Classic films", level: "Intermediate", note: "Older films speak more slowly and clearly.", d: "d_slow" }],
     },
     special: {
       eyebrow: "Tubi note",
@@ -466,8 +470,8 @@ export const PLATFORM_PAGES: Platform[] = [
     showsH: "bilibili picks to learn Chinese with",
     shows: {
       zh: [
-        { title: "Masters in the Forbidden City (我在故宫修文物)", level: "Intermediate", note: "Calm documentary Mandarin." },
-        { title: "Link Click (时光代理人)", level: "Intermediate", note: "Modern everyday Mandarin." },
+        { title: "Masters in the Forbidden City (我在故宫修文物)", level: "Intermediate", note: "Calm documentary Mandarin.", d: "d_doc" },
+        { title: "Link Click (时光代理人)", level: "Intermediate", note: "Modern everyday Mandarin.", d: "d_everyday" },
       ],
     },
     special: {
@@ -513,8 +517,8 @@ export const PLATFORM_PAGES: Platform[] = [
     showsH: "How to choose a course",
     shows: {
       en: [
-        { title: "A topic you already know", level: "Beginner+", note: "Familiar content makes new language easier to follow." },
-        { title: "Short lectures", level: "Intermediate", note: "Five to ten minutes keeps focus high." },
+        { title: "A topic you already know", level: "Beginner+", note: "Familiar content makes new language easier to follow.", d: "d_lecture" },
+        { title: "Short lectures", level: "Intermediate", note: "Five to ten minutes keeps focus high.", d: "d_lecture" },
       ],
     },
     special: {
@@ -559,9 +563,9 @@ export const PLATFORM_PAGES: Platform[] = [
     ],
     showsH: "Courses to try, by language",
     shows: {
-      en: [{ title: "Learning How to Learn", level: "Beginner+", note: "Clear, friendly English lectures." }],
-      es: [{ title: "Courses from Universidad de los Andes", level: "Intermediate", note: "University courses taught in Spanish." }],
-      fr: [{ title: "Courses from École Polytechnique", level: "Advanced", note: "University courses taught in French." }],
+      en: [{ title: "Learning How to Learn", level: "Beginner+", note: "Clear, friendly English lectures.", d: "d_lecture" }],
+      es: [{ title: "Courses from Universidad de los Andes", level: "Intermediate", note: "University courses taught in Spanish.", d: "d_lecture" }],
+      fr: [{ title: "Courses from École Polytechnique", level: "Advanced", note: "University courses taught in French.", d: "d_lecture" }],
     },
     special: {
       eyebrow: "Course tips",
@@ -608,7 +612,8 @@ export const LANG_NAMES: Record<string, string> = {
   ko: "Korean", ja: "Japanese", zh: "Chinese", hi: "Hindi", pt: "Portuguese",
 };
 
-export { platformPath } from "./platformLinks";
+import { fillName } from "./platformLinks";
+export { platformPath, fillName } from "./platformLinks";
 
 export function platformBySlug(slug: string): Platform {
   const p = PLATFORM_PAGES.find((x) => x.slug === slug);
@@ -616,4 +621,3 @@ export function platformBySlug(slug: string): Platform {
   return p;
 }
 
-export const fillName = (s: string, name: string) => s.split("{name}").join(name);

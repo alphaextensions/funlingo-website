@@ -115,7 +115,7 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.worksOn")}</div>
           <div className="grid grid-cols-2 gap-x-5 gap-y-3">
             {PLATFORM_LINKS.map((p) => (
-              <a key={p.slug} href={platformPath(p.slug)} style={linkStyle} className="fnl-footlink">
+              <a key={p.slug} href={navHref(platformPath(p.slug), locale)} style={linkStyle} className="fnl-footlink">
                 {p.name}
               </a>
             ))}

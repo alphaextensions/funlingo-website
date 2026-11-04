@@ -4,8 +4,9 @@
 // pages ship with lang="en" and no dir — meaning crawlers see the wrong
 // language and RTL locales (ar/he/fa) briefly render LTR before HtmlLangSetter
 // runs on the client. Here we rewrite the <html> tag in each locale's HTML to
-// the correct lang + dir. The same goes for the few blog posts written in
-// another language (app/i18n/page-lang.json).
+// the correct lang + dir. That covers each locale's home and platform pages
+// (/fr, /fr/netflix …), plus the few blog posts written in another language
+// (app/i18n/page-lang.json).
 //
 // Both copies of each page are rewritten: out/ (the static export) and
 // .next/server/app/ (what Vercel actually serves). Patching only out/ left
@@ -23,10 +24,16 @@ const CODES = [
   "pt-BR", "pt-PT", "ro", "ru", "sk", "es", "sv", "th", "tr", "uk", "vi",
 ];
 const PAGE_LANG = JSON.parse(readFileSync("app/i18n/page-lang.json", "utf8"));
+// Platform slugs, read from the TypeScript list the routes are built from.
+const PLATFORMS = [
+  ...readFileSync("sections/platform/platformLinks.ts", "utf8").matchAll(/slug: "([^"]+)"/g),
+].map((m) => m[1]);
+if (PLATFORMS.length === 0) throw new Error("[postbuild-locale-html] no platform slugs found");
 
 // [page path without leading slash, lang]
 const PAGES = [
   ...CODES.map((code) => [code, code]),
+  ...CODES.flatMap((code) => PLATFORMS.map((slug) => [`${code}/${slug}`, code])),
   ...Object.entries(PAGE_LANG).map(([path, lang]) => [path.slice(1), lang]),
 ];
 const ROOTS = ["out", ".next/server/app"].filter((root) => existsSync(root));

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { LOCALE_CODES } from "./i18n/config";
+import { LOCALE_CODES, localizedHref } from "./i18n/config";
 import { posts } from "./blog/posts";
 import { PLATFORM_PAGES, platformPath } from "@/sections/platform/platforms";
 
@@ -29,6 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...LOCALE_CODES.map((code) => ({ url: `${BASE}/${code}` })),
     ...PAGES.map((path) => ({ url: `${BASE}${path}` })),
     ...PLATFORM_PAGES.map((p) => ({ url: `${BASE}${platformPath(p.slug)}` })),
+    ...LOCALE_CODES.flatMap((code) =>
+      PLATFORM_PAGES.map((p) => ({ url: `${BASE}${localizedHref(platformPath(p.slug), code)}` })),
+    ),
     { url: `${BASE}/blog`, lastModified: newest },
     ...dated,
   ];

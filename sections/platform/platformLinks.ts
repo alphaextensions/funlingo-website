@@ -14,3 +14,5 @@ export const PLATFORM_LINKS = [
 ] as const;
 
 export const platformPath = (slug: string) => `/${slug}`;
+
+export const fillName = (s: string, name: string) => s.split("{name}").join(name);
