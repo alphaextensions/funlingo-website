@@ -1,11 +1,13 @@
 "use client";
 
 import * as React from "react";
-import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   ALL_LOCALES,
   LOCALE_CODES,
   localizedHref,
+  LOCALIZED_PATHS,
   DEFAULT_LOCALE,
 } from "./config";
 import { useI18n } from "./I18nProvider";
@@ -15,8 +17,10 @@ import { track } from "@/app/_components/track";
 /**
  * Themed language dropdown matching the 2026 design: a pill button showing the
  * current locale's short code, opening a panel of native names with a check on
- * the active one. Routing mirrors LanguageSwitcher — English maps back to the
- * un-prefixed path; other locales route to their localized home.
+ * the active one. Each language is a real link (hover shows the URL; it can be
+ * opened in a new tab, and crawlers follow it). Routing mirrors
+ * LanguageSwitcher — English maps back to the un-prefixed path; other locales
+ * keep the page when it has a localized version, else go to their home.
  */
 // Words a typed letter can match: the native name plus the English one, without
 // accents, so "G" finds Deutsch (German) and "E" finds Español.
@@ -27,7 +31,6 @@ const SEARCH_WORDS = ALL_LOCALES.map((l) =>
 );
 
 export default function LanguageMenu({ buttonClassName = "" }: { buttonClassName?: string }) {
-  const router = useRouter();
   const pathname = usePathname() || "/";
   const { locale } = useI18n();
   const { t } = useT();
@@ -37,12 +40,12 @@ export default function LanguageMenu({ buttonClassName = "" }: { buttonClassName
 
   // With the menu open: typing a letter jumps to the first language whose
   // native or English name starts with it, and the same letter again cycles
-  // (H → Hindi → Hungarian). Arrows move, Enter picks (the focused button's
-  // own click), Esc closes.
+  // (H → Hindi → Hungarian). Arrows move, Enter follows the focused link,
+  // Esc closes.
   React.useEffect(() => {
     if (!open) return;
     const items = () =>
-      Array.from(listRef.current?.querySelectorAll<HTMLButtonElement>("button[data-lang]") ?? []);
+      Array.from(listRef.current?.querySelectorAll<HTMLAnchorElement>("a[data-lang]") ?? []);
     const go = (i: number) => {
       const b = items()[i];
       const list = listRef.current;
@@ -58,7 +61,7 @@ export default function LanguageMenu({ buttonClassName = "" }: { buttonClassName
     const onKey = (e: KeyboardEvent) => {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const all = items();
-      const at = all.indexOf(document.activeElement as HTMLButtonElement);
+      const at = all.indexOf(document.activeElement as HTMLAnchorElement);
       if (e.key === "ArrowDown") { e.preventDefault(); go(Math.min(all.length - 1, at + 1)); return; }
       if (e.key === "ArrowUp") { e.preventDefault(); go(Math.max(0, at - 1)); return; }
       if (e.key === "Escape") { setOpen(false); toggleRef.current?.focus(); return; }
@@ -85,7 +88,9 @@ export default function LanguageMenu({ buttonClassName = "" }: { buttonClassName
   }, [pathname]);
 
   const targetHref = (code: string) =>
-    code === DEFAULT_LOCALE ? basePath : localizedHref("/", code);
+    code === DEFAULT_LOCALE
+      ? basePath
+      : localizedHref(LOCALIZED_PATHS.has(basePath) ? basePath : "/", code);
 
   const curShort = (locale.split("-")[0] || "en").toUpperCase();
 
@@ -154,18 +159,24 @@ export default function LanguageMenu({ buttonClassName = "" }: { buttonClassName
             {ALL_LOCALES.map((l) => {
               const current = l.code === locale;
               return (
-                <button
+                <Link
                   key={l.code}
                   data-lang={l.code}
+                  href={targetHref(l.code)}
+                  // 35 links appear at once when the menu opens; don't fetch them all.
+                  prefetch={false}
+                  hrefLang={l.code}
+                  lang={l.code}
+                  aria-current={current ? "page" : undefined}
                   onClick={() => {
                     setOpen(false);
                     track("locale_change", { locale: l.code });
-                    router.push(targetHref(l.code));
                   }}
                   className="fnl-langitem w-full flex items-center gap-[10px] justify-between px-3 py-[11px] rounded-[11px] border-0 cursor-pointer text-start text-[15px]"
                   style={{
                     background: current ? "var(--pink-soft)" : "transparent",
                     color: "var(--text)",
+                    textDecoration: "none",
                     fontFamily: "'Poppins',sans-serif",
                     fontWeight: current ? 800 : 600,
                   }}
@@ -184,7 +195,7 @@ export default function LanguageMenu({ buttonClassName = "" }: { buttonClassName
                       </svg>
                     </span>
                   )}
-                </button>
+                </Link>
               );
             })}
           </div>

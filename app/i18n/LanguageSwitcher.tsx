@@ -7,6 +7,7 @@ import {
   ALL_LOCALES,
   LOCALE_CODES,
   localizedHref,
+  LOCALIZED_PATHS,
   DEFAULT_LOCALE,
 } from "./config";
 import { useI18n } from "./I18nProvider";
@@ -34,11 +35,13 @@ export default function LanguageSwitcher({
     return pathname;
   }, [pathname]);
 
-  // Only the home page is localized for now. For non-English locales we route
-  // to the locale home to avoid 404s on pages that aren't translated yet;
-  // English (default) pages all exist, so we preserve the current path there.
+  // Pages with a localized version keep their path (/fr/netflix -> /es/netflix);
+  // the rest go to the locale home, since they aren't translated yet. English
+  // (default) pages all exist, so we preserve the current path there.
   const targetHref = (code: string) =>
-    code === DEFAULT_LOCALE ? basePath : localizedHref("/", code);
+    code === DEFAULT_LOCALE
+      ? basePath
+      : localizedHref(LOCALIZED_PATHS.has(basePath) ? basePath : "/", code);
 
   return (
     <label
