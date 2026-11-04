@@ -599,7 +599,16 @@ export const PLATFORM_PAGES: Platform[] = [
     featH: "Dual subtitles on Tubi: what you get",
     faqH: "Tubi dual subtitles: FAQ",
     shows: {
-      es: [{ title: "Tubi en Español", level: "All levels", note: "Tubi’s Spanish-language collection of films and series.", d: "d_collection" }],
+      // Named in Tubi's Spanish category and US guides, Nov 2026; Tubi rotates its catalog.
+      es: [
+        { title: "Padre no hay más que uno", level: "Beginner+", note: "Madrid family comedy.", d: "d_comedy" },
+        { title: "No manches Frida", level: "Beginner+", note: "Mexican school comedy.", d: "d_comedy" },
+        { title: "All About My Mother (Todo sobre mi madre)", level: "Intermediate", note: "Almodóvar family drama from Spain.", d: "d_family" },
+        { title: "Open Your Eyes (Abre los ojos)", level: "Intermediate", note: "Madrid psychological thriller.", d: "d_thriller" },
+        { title: "The Secret in Their Eyes (El secreto de sus ojos)", level: "Advanced", note: "Argentine crime drama.", d: "d_thriller" },
+        { title: "Amores perros", level: "Advanced", note: "Mexico City street Spanish.", d: "d_slang" },
+        { title: "Tubi en Español", level: "All levels", note: "Tubi’s Spanish-language collection of films and series.", d: "d_collection" },
+      ],
       ko: [{ title: "Korean drama collection", level: "Beginner+", note: "K-dramas with English subtitles.", d: "d_collection" }],
       ja: [{ title: "Anime collection", level: "Beginner+", note: "Subtitled anime series and films.", d: "d_collection" }],
       en: [{ title: "Classic films", level: "Intermediate", note: "Older films speak more slowly and clearly.", d: "d_slow" }],
@@ -619,7 +628,7 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Why are there no subtitles on a title?", "Some Tubi titles don’t include subtitles, so there’s nothing to show."],
       ["Does it work on the Tubi app?", "No, only in desktop Chrome."],
       ["Does Tubi have subtitles?", "Many titles do. Tubi adds closed captions whenever its content partners provide them, so not every title has them. If a title has no CC icon, it has no captions on Tubi."],
-      ["What are good Spanish movies on Tubi?", "Tubi has a free Spanish-language section, Tubi en Español, with films and series from Mexico, Spain and Latin America. Its catalog changes every month, so browse that section on tubi.tv rather than going by a fixed list. For learning, start with comedies and family dramas, which are easier to follow than thrillers, and pick a title that shows a CC icon so Funlingo has subtitles to work with."],
+      ["What are good Spanish movies on Tubi?", "Start with the Spanish picks on this page. Each one is free on Tubi and labeled by level. Tubi’s catalog changes often, so check that a title is still available before you plan around it."],
     ],
     kw: ["tubi"],
   },
