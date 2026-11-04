@@ -51,7 +51,7 @@ export default function RoadmapContent() {
   const items = ITEMS.filter((i) => filter === "all" || i.status === filter);
 
   return (
-    <div className="fnl-root overflow-x-hidden">
+    <div className="fnl-root overflow-x-clip">
       <Navbar currentPage="/roadmap" />
 
       {/* HERO */}
