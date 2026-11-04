@@ -54,6 +54,8 @@ export type Platform = {
   afterShows?: { h: string; body: string };
   /** Leave out the tip section (its text moved elsewhere). */
   hideTip?: boolean;
+  /** Short comparison before the FAQ; rows are [feature, Funlingo, other]. */
+  compare?: { h: string; other: string; rows: [string, string, string][] };
 };
 
 export const PLATFORM_PAGES: Platform[] = [
@@ -85,6 +87,18 @@ export const PLATFORM_PAGES: Platform[] = [
     setupH: "How to show two subtitles on Netflix",
     featH: "Dual subtitles on Netflix: what you get",
     faqH: "Netflix dual subtitles: FAQ",
+    // Rows and values from the homepage comparison (/#compare).
+    compare: {
+      h: "Funlingo vs Trancy on Netflix",
+      other: "Trancy",
+      rows: [
+        ["In-player dual subtitles", "Yes", "Partly"],
+        ["Word meaning + example in popup", "Yes", "Partly"],
+        ["Per-word pronunciation (audio)", "Yes", "Partly"],
+        ["Save-to-vocab & review deck", "Yes", "Partly"],
+        ["Price", "Free", "$5–12/mo"],
+      ],
+    },
     shows: {
       es: [
         { title: "Money Heist (La casa de papel)", level: "Intermediate", note: "Fast heist dialogue from Spain.", d: "d_fast" },
@@ -353,21 +367,21 @@ export const PLATFORM_PAGES: Platform[] = [
     kw: ["prime"],
   },
   {
-    slug: "jiohotstar",
-    name: "JioHotstar",
-    chip: "JIOHOTSTAR",
+    slug: "disney-hotstar",
+    name: "Disney+ Hotstar",
+    chip: "DISNEY+ HOTSTAR",
     dot: "#1F80E0",
     lang: "en",
-    title: "JioHotstar Dual Subtitles (Disney+ Hotstar) | Funlingo",
-    desc: "Learn English, Hindi and more on JioHotstar (formerly Disney+ Hotstar) with two subtitle lines and tap-to-translate. Free.",
+    title: "Disney+ Hotstar Dual Subtitles | Funlingo",
+    desc: "Learn English, Hindi and more on Disney+ Hotstar with two subtitle lines and tap-to-translate. Free.",
     h1a: "Dual subtitles on ",
-    h1b: "JioHotstar",
-    sub: "JioHotstar is the new name for Disney+ Hotstar in India. Marvel, Star Wars and Indian originals, with two subtitle lines and every word one tap away.",
+    h1b: "Disney+ Hotstar",
+    sub: "Marvel, Star Wars and Indian originals, with two subtitle lines and every word one tap away.",
     intro:
-      "JioHotstar mixes Hollywood films with Hindi and regional series, which makes it a good place to learn English or Hindi. Funlingo puts two subtitle lines on the player and explains any word you tap, free in desktop Chrome.",
+      "Disney+ Hotstar mixes Hollywood films with Hindi and regional series, which makes it a good place to learn English or Hindi. Funlingo puts two subtitle lines on the player and explains any word you tap, free in desktop Chrome.",
     steps: [
       ["Add Funlingo to Chrome", "One click, no account."],
-      ["Open JioHotstar in Chrome", "Choose a title with subtitles."],
+      ["Open Disney+ Hotstar in Chrome", "Choose a title with subtitles."],
       ["Turn on your two languages", "Tap words to see their meaning and save them."],
     ],
     features: [
@@ -376,10 +390,10 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Save as you watch", "Your list keeps the sentence."],
       ["English and Indian languages", "Great for English learners and for Hindi."],
     ],
-    showsH: "Best JioHotstar shows to learn English, Hindi and more",
-    setupH: "How to get dual subtitles on JioHotstar",
-    featH: "Dual subtitles on JioHotstar: what you get",
-    faqH: "JioHotstar dual subtitles: FAQ",
+    showsH: "Best Disney+ Hotstar shows to learn English, Hindi and more",
+    setupH: "How to get dual subtitles on Disney+ Hotstar",
+    featH: "Dual subtitles on Disney+ Hotstar: what you get",
+    faqH: "Disney+ Hotstar dual subtitles: FAQ",
     shows: {
       en: [
         { title: "Loki", level: "Intermediate", note: "Clear, theatrical English.", d: "d_slow" },
@@ -407,13 +421,12 @@ export const PLATFORM_PAGES: Platform[] = [
       ],
     },
     faqs: [
-      ["Does Funlingo work on JioHotstar (Disney+ Hotstar)?", "Yes, in desktop Chrome."],
+      ["Does Funlingo work on Disney+ Hotstar?", "Yes, in desktop Chrome."],
       ["Can I learn English with it?", "Yes. Pick English on top and your language underneath."],
       ["Is it free?", "Yes. No account needed."],
       ["Does it work on the mobile app?", "No, only in desktop Chrome."],
     ],
     kw: ["disney", "hotstar"],
-    logo: "Disney+ Hotstar",
   },
   {
     slug: "apple-tv",
@@ -541,6 +554,7 @@ export const PLATFORM_PAGES: Platform[] = [
       ["Does Funlingo show readings?", "Yes. Tap a word to see how it’s read and hear it."],
       ["Is it free on Crunchyroll?", "Yes, every feature, no account."],
       ["Does it work on the Crunchyroll app?", "No, only in desktop Chrome."],
+      ["Does Crunchyroll have Japanese subtitles?", "Only a few titles do. Most Crunchyroll titles have subtitles in English and other languages."],
     ],
     kw: ["crunchyroll", "anime", "japanese"],
   },

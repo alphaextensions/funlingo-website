@@ -361,6 +361,36 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
         </div>
       </section>
 
+      {/* ============ COMPARISON ============ */}
+      {p.compare && (
+        <section style={{ background: "var(--bg)" }}>
+          <div className="max-w-[820px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-20">
+            <h2 style={{ ...h2, fontSize: "clamp(28px,3.2vw,38px)", marginBottom: 24 }}>{p.compare.h}</h2>
+            <div style={{ ...card, overflow: "hidden" }}>
+              <table className="w-full" style={{ borderCollapse: "collapse", fontSize: 15 }}>
+                <thead>
+                  <tr>
+                    <td />
+                    <th scope="col" style={{ padding: "16px 14px", background: "var(--grad)", color: "#fff", fontWeight: 800 }}>Funlingo</th>
+                    <th scope="col" style={{ padding: "16px 14px", color: "var(--text-dim)", fontWeight: 700 }}>{p.compare.other}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {p.compare.rows.map(([label, fun, other]) => (
+                    <tr key={label} style={{ borderTop: "1px solid var(--border)" }}>
+                      <th scope="row" style={{ padding: "14px 18px", textAlign: "start", fontWeight: 600, color: "var(--text)" }}>{label}</th>
+                      <td style={{ padding: "14px", textAlign: "center", fontWeight: 800, color: "#C81FD4", background: "var(--pink-soft)" }}>{fun}</td>
+                      <td style={{ padding: "14px", textAlign: "center", fontWeight: 700, color: "var(--text-dim)" }}>{other}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <Link href={`${navHref("/", locale)}#compare`} className="inline-flex items-center min-h-[44px]" style={{ marginTop: 12, fontSize: 15, fontWeight: 800, color: "var(--pink)", textDecoration: "none" }}>See the full comparison →</Link>
+          </div>
+        </section>
+      )}
+
       {/* ============ FAQ ============ */}
       <section id="pf-faq" style={{ ...anchorTarget, background: "var(--bg2)" }}>
         <div className={wrap}>

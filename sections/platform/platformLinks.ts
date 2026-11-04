@@ -11,8 +11,7 @@ export const PLATFORM_LINKS: PlatformLink[] = [
   { slug: "netflix", name: "Netflix" },
   { slug: "youtube", name: "YouTube" },
   { slug: "prime-video", name: "Prime Video" },
-  // Renamed from Disney+ Hotstar in 2025; no JioHotstar logo asset yet.
-  { slug: "jiohotstar", name: "JioHotstar", logo: "Disney+ Hotstar" },
+  { slug: "disney-hotstar", name: "Disney+ Hotstar" },
   { slug: "apple-tv", name: "Apple TV" },
   { slug: "crunchyroll", name: "Crunchyroll" },
   { slug: "tubi", name: "Tubi" },

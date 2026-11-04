@@ -99,6 +99,7 @@ export function localizePlatform(slug: string, locale: string): LocalizedPlatfor
     showsIntro: undefined,
     howTo: undefined,
     afterShows: undefined,
+    compare: undefined,
     hideTip: false,
   };
   return { p, L, langNames };
