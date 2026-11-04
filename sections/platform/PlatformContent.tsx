@@ -48,6 +48,14 @@ const wrap = "max-w-[1120px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-24";
 // Learning languages the hero player has content for.
 const PLAYER_LANGS = ["en", "es", "fr", "it", "de", "ko", "ja", "zh"];
 
+/** "#E50914" + alpha -> "rgba(229,9,20,a)". */
+function rgba(hex: string, a: number) {
+  let x = hex.slice(1);
+  if (x.length === 3) x = x.split("").map((c) => c + c).join("");
+  const n = parseInt(x, 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+}
+
 function StepIcon({ i }: { i: number }) {
   const common = { width: 24, height: 24, viewBox: "0 0 24 24", fill: "none" as const, stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
   if (i === 0) return <svg {...common}><path d="M12 4v11" /><path d="M7 10l5 5 5-5" /><path d="M5 20h14" /></svg>;
@@ -78,6 +86,25 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
 
   const others = PLATFORM_PAGES.filter((x) => x.slug !== p.slug);
 
+  // The "On this page" bar sticks right under the site nav, whose height
+  // changes as it compacts on scroll and between phone and desktop.
+  const [navH, setNavH] = React.useState(72);
+  React.useEffect(() => {
+    const nav = document.querySelector<HTMLElement>(".fnl-navbar");
+    if (!nav) return;
+    const ro = new ResizeObserver(() => setNavH(nav.offsetHeight));
+    ro.observe(nav);
+    return () => ro.disconnect();
+  }, []);
+  const anchors = [
+    { id: "pf-setup", label: L.setupEye },
+    { id: "pf-features", label: L.featEye },
+    { id: "pf-shows", label: L.showsEye },
+    { id: "pf-faq", label: "FAQ" },
+  ];
+  // Jumps land below both sticky bars.
+  const anchorTarget: React.CSSProperties = { scrollMarginTop: navH + 52 + 8 };
+
   const pill = (on: boolean): React.CSSProperties => ({
     border: on ? "1px solid transparent" : "1px solid var(--border)",
     background: on ? "var(--grad)" : "var(--surface)",
@@ -92,13 +119,31 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
   });
 
   return (
-    <div className="fnl-root overflow-x-hidden">
+    // overflow-x: clip (not hidden) so the sticky bars still stick.
+    <div className="fnl-root overflow-x-clip" style={{ "--pf-acc": p.dot } as React.CSSProperties}>
+      {/* Thin strip in the platform's colour */}
+      <div style={{ height: 3, width: "100%", background: `linear-gradient(90deg, ${p.dot} 0%, ${rgba(p.dot, 0.35)} 45%, rgba(0,0,0,0) 80%)` }} />
       <Navbar currentPage={platformPath(p.slug)} />
+
+      {/* ============ ON THIS PAGE ============ */}
+      <nav aria-label="On this page" className="sticky z-[90]" style={{ top: navH, background: "var(--nav)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", borderBottom: "1px solid var(--border)" }}>
+        <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] flex items-center gap-5" style={{ height: 52 }}>
+          <span className="flex items-center gap-[9px] shrink-0">
+            <span className="flex" style={{ transform: "scale(.7)", margin: -5 }}><PlatformLogo name={name} /></span>
+            <span className="max-[480px]:hidden" style={{ fontSize: 14, fontWeight: 800, color: "var(--text)" }}>{name}</span>
+          </span>
+          <div className="fnl-pfanchors flex items-center gap-[22px] overflow-x-auto ms-auto">
+            {anchors.map((a) => (
+              <a key={a.id} href={`#${a.id}`} className="fnl-pfanchor">{a.label}</a>
+            ))}
+          </div>
+        </div>
+      </nav>
 
       {/* ============ HERO ============ */}
       <section className="relative overflow-hidden">
-        <div className="absolute pointer-events-none" style={{ top: -160, right: -120, width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,77,176,.22), transparent 65%)" }} />
-        <div className="absolute pointer-events-none" style={{ top: 160, left: -160, width: 460, height: 460, borderRadius: "50%", background: "radial-gradient(circle, rgba(179,36,217,.18), transparent 65%)" }} />
+        <div className="absolute pointer-events-none" style={{ top: -160, right: -120, width: 520, height: 520, borderRadius: "50%", background: `radial-gradient(circle, ${rgba(p.dot, 0.26)}, transparent 65%)` }} />
+        <div className="absolute pointer-events-none" style={{ top: 160, left: -160, width: 460, height: 460, borderRadius: "50%", background: `radial-gradient(circle, ${rgba(p.dot, 0.13)}, transparent 65%)` }} />
         <div className="relative z-[2] max-w-[1240px] mx-auto px-5 sm:px-[34px] grid grid-cols-1 min-[860px]:grid-cols-[1fr_1.05fr] gap-9 min-[860px]:gap-14 items-center pt-10 min-[860px]:pt-16 pb-14 min-[860px]:pb-20">
           <div>
             <nav aria-label="Breadcrumb" className="flex items-center gap-2" style={{ fontSize: 13, fontWeight: 600, color: "var(--text-dim2)", marginBottom: 18 }}>
@@ -106,7 +151,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
               <span aria-hidden="true">/</span>
               <span>{name}</span>
             </nav>
-            <div className="inline-flex items-center gap-[10px]" style={{ padding: "6px 14px 6px 6px", borderRadius: 999, background: "var(--surface)", border: "1px solid var(--border)", marginBottom: 22 }}>
+            <div className="inline-flex items-center gap-[10px]" style={{ padding: "6px 14px 6px 6px", borderRadius: 999, background: "var(--surface)", border: `1px solid ${rgba(p.dot, 0.45)}`, marginBottom: 22 }}>
               <PlatformLogo name={name} />
               <span style={{ fontSize: 13, fontWeight: 800, color: "var(--text)" }}>{fill(L.forX)}</span>
             </div>
@@ -153,7 +198,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
       </section>
 
       {/* ============ STEPS ============ */}
-      <section style={{ background: "var(--bg2)" }}>
+      <section id="pf-setup" style={{ ...anchorTarget, background: "var(--bg2)" }}>
         <div className={wrap}>
           <div className="text-center mx-auto" style={{ maxWidth: 640, marginBottom: 48 }}>
             <div style={eyebrow}>{L.setupEye}</div>
@@ -175,7 +220,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
       </section>
 
       {/* ============ FEATURES ============ */}
-      <section style={{ background: "var(--bg)" }}>
+      <section id="pf-features" style={{ ...anchorTarget, background: "var(--bg)" }}>
         <div className={wrap}>
           <div style={{ maxWidth: 640, marginBottom: 44 }}>
             <div style={eyebrow}>{L.featEye}</div>
@@ -198,7 +243,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
       </section>
 
       {/* ============ SHOWS BY LANGUAGE ============ */}
-      <section style={{ background: "var(--bg2)" }}>
+      <section id="pf-shows" style={{ ...anchorTarget, background: "var(--bg2)" }}>
         <div className={wrap}>
           <div className="flex flex-wrap items-end justify-between gap-5" style={{ marginBottom: 32 }}>
             <div style={{ maxWidth: 620 }}>
@@ -294,7 +339,7 @@ export default function PlatformContent({ slug, guides }: { slug: string; guides
       </section>
 
       {/* ============ FAQ ============ */}
-      <section style={{ background: "var(--bg2)" }}>
+      <section id="pf-faq" style={{ ...anchorTarget, background: "var(--bg2)" }}>
         <div className={wrap}>
           <div className="grid grid-cols-1 min-[860px]:grid-cols-[.8fr_1.2fr] gap-8 min-[860px]:gap-12 items-start">
             <div>
