@@ -2,16 +2,16 @@ import PlatformContent from "@/sections/platform/PlatformContent";
 import { platformMetadata, platformSchemas, platformGuides } from "@/sections/platform/platformPage";
 import { localizePlatform } from "@/sections/platform/platformLocale";
 
-export const metadata = platformMetadata("disney-hotstar");
+export const metadata = platformMetadata("jiohotstar");
 
-export default function DisneyHotstarPage() {
+export default function JioHotstarPage() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(platformSchemas("disney-hotstar")) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(platformSchemas("jiohotstar")) }}
       />
-      <PlatformContent data={localizePlatform("disney-hotstar", "en")} guides={platformGuides("disney-hotstar")} />
+      <PlatformContent data={localizePlatform("jiohotstar", "en")} guides={platformGuides("jiohotstar")} />
     </>
   );
 }

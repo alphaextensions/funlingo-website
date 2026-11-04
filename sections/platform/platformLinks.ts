@@ -1,17 +1,25 @@
 // Slug and name only, for links on every page (the footer). Kept apart from
 // platforms.ts so those pages don't ship the full platform copy.
-export const PLATFORM_LINKS = [
+export type PlatformLink = {
+  slug: string;
+  name: string;
+  /** PlatformLogo key, when it differs from the name. */
+  logo?: string;
+};
+
+export const PLATFORM_LINKS: PlatformLink[] = [
   { slug: "netflix", name: "Netflix" },
   { slug: "youtube", name: "YouTube" },
   { slug: "prime-video", name: "Prime Video" },
-  { slug: "disney-hotstar", name: "Disney+ Hotstar" },
+  // Renamed from Disney+ Hotstar in 2025; no JioHotstar logo asset yet.
+  { slug: "jiohotstar", name: "JioHotstar", logo: "Disney+ Hotstar" },
   { slug: "apple-tv", name: "Apple TV" },
   { slug: "crunchyroll", name: "Crunchyroll" },
   { slug: "tubi", name: "Tubi" },
   { slug: "bilibili", name: "bilibili" },
   { slug: "udemy", name: "Udemy" },
   { slug: "coursera", name: "Coursera" },
-] as const;
+];
 
 export const platformPath = (slug: string) => `/${slug}`;
 

@@ -92,6 +92,14 @@ export function localizePlatform(slug: string, locale: string): LocalizedPlatfor
     ),
     special: { eyebrow: fill(S.tip_eye), h: tp[2], items: [[tp[3], tp[4]], [tp[5], tp[6]]] },
     faqs: [["q1", "a1"], ["q2", "a2"], ["q3", "a3"], ["q4", "a4"]].map(([q, a]) => [fill(S[q]), fill(S[a])]),
+    // The SEO headings and extra sections are English-only for now.
+    setupH: undefined,
+    featH: undefined,
+    faqH: undefined,
+    showsIntro: undefined,
+    howTo: undefined,
+    afterShows: undefined,
+    hideTip: false,
   };
   return { p, L, langNames };
 }

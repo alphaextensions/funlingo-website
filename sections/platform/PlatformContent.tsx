@@ -58,6 +58,18 @@ function StepIcon({ i }: { i: number }) {
   return <svg {...common}><path d="M4 7h10M4 11h6" /><path d="M13 13l7 3-3 1.2-1.2 3z" fill="currentColor" /></svg>;
 }
 
+/** A heading and one paragraph, for the SEO how-to and comparison sections. */
+function ExtraSection({ h, body, bg }: { h: string; body: string; bg: string }) {
+  return (
+    <section style={{ background: bg }}>
+      <div className="max-w-[820px] mx-auto px-5 sm:px-[34px] py-16 min-[860px]:py-20">
+        <h2 style={{ ...h2, fontSize: "clamp(28px,3.2vw,38px)" }}>{h}</h2>
+        <p style={{ fontSize: 17, lineHeight: 1.7, color: "var(--text-dim)", margin: "16px 0 0", fontWeight: 500, textWrap: "pretty" }}>{body}</p>
+      </div>
+    </section>
+  );
+}
+
 // The page's copy arrives already in the visitor's language (platformLocale.ts).
 export default function PlatformContent({ data, guides }: { data: LocalizedPlatform; guides: Guide[] }) {
   const { t, locale } = useT();
@@ -76,7 +88,9 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
     .slice(0, 6);
 
   // Reviews that mention the platform first, then the visitor's language.
-  const all = orderedReviews(locale);
+  // Reviews naming another platform are left out.
+  const otherNames = PLATFORM_LINKS.filter((x) => x.slug !== p.slug).map((x) => x.name.toLowerCase());
+  const all = orderedReviews(locale).filter((r) => !otherNames.some((n) => r.quote.toLowerCase().includes(n)));
   const mentions = all.filter((r) => p.kw.some((k) => r.quote.toLowerCase().includes(k)));
   const reviews = [...mentions, ...all.filter((r) => !mentions.includes(r))].slice(0, 3);
 
@@ -125,7 +139,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
       <nav aria-label="On this page" className="sticky z-[90]" style={{ top: navH, background: "var(--nav)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", borderBottom: "1px solid var(--border)" }}>
         <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] flex items-center gap-5" style={{ height: 52 }}>
           <span className="flex items-center gap-[9px] shrink-0">
-            <span className="flex" style={{ transform: "scale(.7)", margin: -5 }}><PlatformLogo name={name} /></span>
+            <span className="flex" style={{ transform: "scale(.7)", margin: -5 }}><PlatformLogo name={p.logo ?? name} /></span>
             <span className="max-[480px]:hidden" style={{ fontSize: 14, fontWeight: 800, color: "var(--text)" }}>{name}</span>
           </span>
           <div className="fnl-pfanchors flex items-center gap-[22px] overflow-x-auto ms-auto">
@@ -148,7 +162,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
               <span>{name}</span>
             </nav>
             <div className="inline-flex items-center gap-[10px]" style={{ padding: "6px 14px 6px 6px", borderRadius: 999, background: "var(--surface)", border: `1px solid ${rgba(p.dot, 0.45)}`, marginBottom: 22 }}>
-              <PlatformLogo name={name} />
+              <PlatformLogo name={p.logo ?? name} />
               <span style={{ fontSize: 13, fontWeight: 800, color: "var(--text)" }}>{fill(L.forX)}</span>
             </div>
             <h1 className="text-[40px] min-[701px]:text-[clamp(42px,5vw,66px)]" style={{ lineHeight: 1.03, fontWeight: 800, margin: 0, letterSpacing: "-.02em", color: "var(--text)", textWrap: "balance" }}>
@@ -199,7 +213,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
         <div className={wrap}>
           <div className="text-center mx-auto" style={{ maxWidth: 640, marginBottom: 48 }}>
             <div style={eyebrow}>{L.setupEye}</div>
-            <h2 style={{ ...h2, fontSize: "clamp(32px,4vw,48px)", lineHeight: 1.08 }}>{fill(L.setupH)}</h2>
+            <h2 style={{ ...h2, fontSize: "clamp(32px,4vw,48px)", lineHeight: 1.08 }}>{p.setupH ?? fill(L.setupH)}</h2>
           </div>
           <div className="grid grid-cols-1 min-[860px]:grid-cols-3 gap-5 min-[860px]:gap-[22px]">
             {p.steps.map(([title, body], i) => (
@@ -216,12 +230,14 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
         </div>
       </section>
 
+      {p.howTo && <ExtraSection {...p.howTo} bg="var(--bg)" />}
+
       {/* ============ FEATURES ============ */}
       <section id="pf-features" style={{ ...anchorTarget, background: "var(--bg)" }}>
         <div className={wrap}>
           <div style={{ maxWidth: 640, marginBottom: 44 }}>
             <div style={eyebrow}>{L.featEye}</div>
-            <h2 style={{ ...h2, fontSize: "clamp(32px,4vw,48px)", lineHeight: 1.08 }}>{fill(L.featH)}</h2>
+            <h2 style={{ ...h2, fontSize: "clamp(32px,4vw,48px)", lineHeight: 1.08 }}>{p.featH ?? fill(L.featH)}</h2>
           </div>
           <div className="grid grid-cols-1 min-[701px]:grid-cols-2 gap-[18px]">
             {p.features.map(([title, body]) => (
@@ -246,6 +262,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
             <div style={{ maxWidth: 620 }}>
               <div style={eyebrow}>{L.showsEye}</div>
               <h2 style={h2}>{p.showsH}</h2>
+              {p.showsIntro && <p style={{ fontSize: 16, lineHeight: 1.6, color: "var(--text-dim)", margin: "14px 0 0", fontWeight: 500 }}>{p.showsIntro}</p>}
             </div>
             <div role="tablist" className="flex flex-wrap gap-[6px]" style={{ padding: 5, borderRadius: 999, background: "var(--surface)", border: "1px solid var(--border)" }}>
               {showLangs.map((c) => (
@@ -253,6 +270,8 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
                   key={c}
                   type="button"
                   role="tab"
+                  id={`pf-tab-${c}`}
+                  aria-controls={`pf-shows-${c}`}
                   aria-selected={c === showLang}
                   onClick={() => setShowLang(c)}
                   style={{ border: "none", borderRadius: 999, padding: "9px 15px", minHeight: 40, fontFamily: "'Poppins',sans-serif", fontSize: 14, fontWeight: 700, cursor: "pointer", background: c === showLang ? "var(--grad)" : "transparent", color: c === showLang ? "#fff" : "var(--text-dim)" }}
@@ -262,21 +281,27 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
               ))}
             </div>
           </div>
-          <div role="tabpanel" className="grid grid-cols-1 min-[860px]:grid-cols-3 gap-[18px]">
-            {(p.shows[showLang] || []).map((s) => (
-              <div key={s.title} className="flex flex-col gap-[10px]" style={{ ...card, padding: 24 }}>
-                <span style={{ alignSelf: "flex-start", padding: "4px 10px", borderRadius: 999, background: "var(--pink-soft)", color: "var(--pink)", fontSize: 12, fontWeight: 800 }}>{s.level}</span>
-                <h3 style={{ fontSize: 19, fontWeight: 800, margin: 0, color: "var(--text)", lineHeight: 1.3 }}>{s.title}</h3>
-                <p style={{ fontSize: 15, lineHeight: 1.55, color: "var(--text-dim)", margin: 0, fontWeight: 500 }}>{s.note}</p>
-              </div>
-            ))}
-          </div>
+          {/* Every language's list is in the HTML; the tabs only show and hide them. */}
+          {showLangs.map((c) => (
+            <div key={c} id={`pf-shows-${c}`} role="tabpanel" aria-labelledby={`pf-tab-${c}`} hidden={c !== showLang} className="grid grid-cols-1 min-[860px]:grid-cols-3 gap-[18px]">
+              {p.shows[c].map((s) => (
+                <div key={s.title} className="flex flex-col gap-[10px]" style={{ ...card, padding: 24 }}>
+                  <span style={{ alignSelf: "flex-start", padding: "4px 10px", borderRadius: 999, background: "var(--pink-soft)", color: "var(--pink)", fontSize: 12, fontWeight: 800 }}>{s.level}</span>
+                  <h3 style={{ fontSize: 19, fontWeight: 800, margin: 0, color: "var(--text)", lineHeight: 1.3 }}>{s.title}</h3>
+                  <p style={{ fontSize: 15, lineHeight: 1.55, color: "var(--text-dim)", margin: 0, fontWeight: 500 }}>{s.note}</p>
+                </div>
+              ))}
+            </div>
+          ))}
           <p style={{ fontSize: 13, color: "var(--text-dim2)", margin: "18px 0 0", fontWeight: 500 }}>{L.catalogNote}</p>
         </div>
       </section>
 
+      {p.afterShows && <ExtraSection {...p.afterShows} bg="var(--bg)" />}
+
       {/* ============ PLATFORM TIP ============ */}
-      <section style={{ background: "var(--bg)" }}>
+      {!p.hideTip && (
+      <section style={{ background: p.afterShows ? "var(--bg2)" : "var(--bg)" }}>
         <div className={wrap}>
           <div className="grid grid-cols-1 min-[860px]:grid-cols-[.85fr_1.15fr] gap-8 min-[860px]:gap-12 items-start">
             <div>
@@ -297,13 +322,14 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
           </div>
         </div>
       </section>
+      )}
 
       {/* ============ GAME ============ */}
       <section style={{ background: "var(--bg2)" }}>
         <div className={wrap}>
           <div className="text-center mx-auto" style={{ maxWidth: 620, marginBottom: 36 }}>
             <div style={eyebrow}>{L.gameEye}</div>
-            <h2 style={h2}>{L.gameH}</h2>
+            <p style={h2}>{L.gameH}</p>
           </div>
           <div className="mx-auto" style={{ maxWidth: 780 }}>
             <GuessGame lang={learn} />
@@ -341,7 +367,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
           <div className="grid grid-cols-1 min-[860px]:grid-cols-[.8fr_1.2fr] gap-8 min-[860px]:gap-12 items-start">
             <div>
               <div style={eyebrow}>FAQ</div>
-              <h2 style={h2}>{fill(L.faqH)}</h2>
+              <h2 style={h2}>{p.faqH ?? fill(L.faqH)}</h2>
             </div>
             <div className="flex flex-col gap-[10px]">
               {p.faqs.map(([q, a], i) => {
@@ -398,7 +424,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
             <div className="grid grid-cols-2 min-[860px]:grid-cols-3 gap-3">
               {others.map((o) => (
                 <Link key={o.slug} href={navHref(platformPath(o.slug), locale)} className="fnl-blogcard flex items-center gap-3" style={{ ...card, borderRadius: 16, padding: "14px 16px", minHeight: 56, textDecoration: "none", color: "var(--text)" }}>
-                  <PlatformLogo name={o.name} />
+                  <PlatformLogo name={o.logo ?? o.name} />
                   <span style={{ fontSize: 15, fontWeight: 700 }}>{fillName(L.forX, o.name)}</span>
                 </Link>
               ))}
@@ -413,7 +439,7 @@ export default function PlatformContent({ data, guides }: { data: LocalizedPlatf
         <div className="max-w-[1080px] mx-auto relative overflow-hidden text-center" style={{ borderRadius: 36, background: "var(--grad)", padding: "76px 24px" }}>
           <div className="absolute pointer-events-none" style={{ bottom: -140, right: -70, width: 360, height: 360, borderRadius: "50%", background: "rgba(255,255,255,.12)" }} />
           <div className="relative">
-            <h2 style={{ fontSize: "clamp(34px,4.4vw,54px)", fontWeight: 900, margin: "0 0 14px", color: "#fff", letterSpacing: "-.02em", lineHeight: 1.05, textWrap: "balance" }}>{fill(L.ctaH)}</h2>
+            <p style={{ fontSize: "clamp(34px,4.4vw,54px)", fontWeight: 900, margin: "0 0 14px", color: "#fff", letterSpacing: "-.02em", lineHeight: 1.05, textWrap: "balance" }}>{fill(L.ctaH)}</p>
             <p className="mx-auto" style={{ fontSize: 18, color: "rgba(255,255,255,.92)", margin: "0 auto 28px", maxWidth: 520, fontWeight: 500 }}>{L.ctaS}</p>
             {/* At full size the button is wider than the box on a 375px phone. */}
             <ChromeCTA label={t("cta.long")} variant="white" glyphSize={21} className="max-[480px]:!text-[15px] max-[480px]:!px-5" />
