@@ -40,6 +40,7 @@ export default function NetflixLanguageLearningContent() {
 
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Why Netflix Is Perfect for Language Learning</h2>
           <p className="text-[var(--text-dim)] mb-6">Language acquisition research consistently shows that comprehensible input is the most effective way to learn a language. When you understand messages in your target language, your brain naturally acquires vocabulary, grammar, and pronunciation patterns. Netflix delivers exactly this kind of input.</p>
+          <p className="text-[var(--text-dim)] mb-6">To read the original line and its translation together while you watch, set up <a href="/netflix" className="text-[#C81FD4] hover:underline">Netflix dual subtitles</a>.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             <div className="bg-[var(--surface)] p-5 rounded-xl border border-[var(--border)]">

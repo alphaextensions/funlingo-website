@@ -51,6 +51,7 @@ export default function LearnSpanishNetflixContent() {
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Spanish is the most studied language in the world, and Netflix has the largest library of Spanish-language content of any streaming platform. From gritty crime dramas set in Colombia to lighthearted comedies from Spain, there are hundreds of titles that can double as language lessons.</p>
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">The key advantage of Netflix for Spanish learning is comprehensible input. When you watch engaging content with dual subtitles, you absorb vocabulary, grammar patterns, and pronunciation naturally, without the grind of traditional study.</p>
           <p className="text-[var(--text-dim)] mb-6">For the broader approach to learning any language through media, check out our guide on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C81FD4] hover:underline">how to learn a language by watching</a>.</p>
+          <p className="text-[var(--text-dim)] mb-6">To see Spanish and your own language on screen together, set up <a href="/netflix" className="text-[#C81FD4] hover:underline">Netflix dual subtitles</a> first.</p>
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Watch Spanish Netflix with dual subtitles tonight. Free setup in 30 seconds.</p>

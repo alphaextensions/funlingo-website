@@ -35,6 +35,7 @@ export default function DoesNetflixHaveDualSubtitlesContent() {
             ]}
           />
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Netflix does not have a built-in dual subtitle feature. The Netflix player only allows you to select one subtitle language at a time. However, you can get dual subtitles on Netflix for free using a Chrome extension called Funlingo. Once installed, Funlingo overlays a second subtitle track on top of the Netflix player, showing both your native language and your target language simultaneously. The setup takes about 30 seconds.</p>
+          <p className="text-[var(--text-dim)] mb-6">For the full setup and the best shows to learn with, see <a href="/netflix" className="text-[#C81FD4] hover:underline">Netflix dual subtitles</a>.</p>
 
           <hr className="border-[var(--border)] my-12" />
 

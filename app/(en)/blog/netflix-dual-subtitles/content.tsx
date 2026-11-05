@@ -39,6 +39,7 @@ export default function NetflixDualSubtitlesContent() {
           <DualSubtitleDemo targetLang="Spanish" target="No pasa nada" highlight="pasa" native="It's no big deal" />
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Netflix itself only allows one subtitle track at a time. To get dual subtitles, you need a browser extension that overlays a second subtitle line on top of the Netflix player. The entire setup takes less than two minutes, and in this guide we will walk you through every step.</p>
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">This is different from simply switching between subtitle languages in Netflix settings. With dual subtitles, both languages are visible simultaneously, which means you can read the original dialogue and its translation in real time.</p>
+          <p className="text-[var(--text-dim)] mb-6">For everything Funlingo does on Netflix, including the best shows to start with in each language, see our <a href="/netflix" className="text-[#C81FD4] hover:underline">Netflix dual subtitles</a> page.</p>
 
           <hr className="border-[var(--border)] my-12" />
 

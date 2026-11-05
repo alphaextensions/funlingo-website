@@ -43,6 +43,7 @@ export default function LearnKoreanYouTubeContent() {
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Korean is one of the most popular languages to learn in 2026, fueled by K-dramas, K-pop, and Korean cinema. And YouTube sits at the center of Korean culture online, with millions of hours of content from native speakers covering every topic imaginable.</p>
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">Unlike textbooks or apps that use scripted dialogues, YouTube gives you access to real Korean as it is actually spoken. From casual vlogs to formal news broadcasts, you can immerse yourself in the language at every level, completely for free.</p>
           <p className="text-[var(--text-dim)] mb-6">For the broader methodology behind learning languages through media, check out our complete guide on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C81FD4] hover:underline">how to learn a language by watching</a>.</p>
+          <p className="text-[var(--text-dim)] mb-6">To watch Korean videos with two subtitle lines, set up <a href="/youtube" className="text-[#C81FD4] hover:underline">YouTube dual subtitles</a> with Funlingo.</p>
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Watch Korean YouTube with dual subtitles. Completely free.</p>
