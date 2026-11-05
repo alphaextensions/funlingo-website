@@ -1,0 +1,50 @@
+/* Wave 15 — toast pill ported from the extension's `.toast` block
+   (learn.css). Every value is a token from src/styles/tokens.css. */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%) translateY(20px);
+  z-index: 60;
+  padding: 13px 20px;
+  border-radius: var(--r-pill);
+  background: var(--fl-bg-2);
+  border: 1px solid var(--fl-border-2);
+  box-shadow: var(--el-3);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fl-text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none;
+  max-width: 90vw;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .toast {
+    transition: opacity var(--d-base), transform var(--d-base) var(--ease-out);
+  }
+}
+
+:global(body[data-motion="off"]) .toast { transition: none; }
+
+.toast[data-show="true"] {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.tDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--fl-warning);
+  flex: none;
+}
+
+/* <1200px: the bottom tab bar (IconRail.module.css) sits at the viewport
+   floor — lift the toast above it. */
+@media (max-width: 1199px) {
+  .toast { bottom: calc(28px + 64px + env(safe-area-inset-bottom, 0px)); }
+}

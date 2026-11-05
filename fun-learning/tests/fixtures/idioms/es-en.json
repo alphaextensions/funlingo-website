@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Lo de siempre.",
+    "expected_patterns": ["(?i)same old", "(?i)nothing new", "(?i)the usual"],
+    "acceptable_patterns": ["(?i)as always"]
+  },
+  {
+    "input": "¿Qué tal has estado?",
+    "expected_patterns": ["(?i)how (have|'ve) you been", "(?i)how are you doing"],
+    "acceptable_patterns": ["(?i)how have things been"]
+  },
+  {
+    "input": "He estado mejor, la verdad.",
+    "expected_patterns": ["(?i)i('| ha)?ve been better", "(?i)could be better", "(?i)seen better days"],
+    "acceptable_patterns": ["(?i)not great, honestly"]
+  },
+  {
+    "input": "Hola, ¿cómo te va?",
+    "expected_patterns": ["(?i)how(')?s it going", "(?i)how are you", "(?i)how are things"],
+    "acceptable_patterns": ["(?i)hey"]
+  },
+  {
+    "input": "Vamos a llevar a cabo el plan.",
+    "expected_patterns": ["(?i)carry out the plan", "(?i)execute the plan", "(?i)go through with the plan"],
+    "acceptable_patterns": ["(?i)follow through"]
+  },
+  {
+    "input": "Ella rompió el hielo en la fiesta.",
+    "expected_patterns": ["(?i)broke the ice"],
+    "acceptable_patterns": ["(?i)got everyone talking"]
+  }
+]

@@ -1,0 +1,741 @@
+// Fun Learning — Prisma schema (SQLite)
+// Models derived from docs/SPEC.md §16 + AGENT-PLAYBOOK.md rules.
+// Rule 4 (AGENT-PLAYBOOK): every reviewable entity carries a `lang` column.
+// Rule 1 (idempotency): writes with Idempotency-Key use the IdempotencyRecord table.
+//
+// IMPORTANT: After editing this file, run `pnpm prisma migrate dev` so the client
+// regenerates and the dev DB picks up the change. `prisma generate` alone is NOT
+// enough for schema changes — see AGENT-PLAYBOOK "Playbook learnings".
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---------- Auth.js ----------
+
+model User {
+  id                 String    @id @default(cuid())
+  email              String?   @unique
+  emailVerified      DateTime?
+  name               String?
+  image              String?
+  // Fun Learning profile
+  nativeLang         String?
+  uiLocale           String    @default("en")
+  activeLearningLang String?
+  level              String? // A1 | A2 | B1 | B2 | C1 | C2
+  dailyGoalType      String? // "minutes" | "reviews"
+  dailyGoalValue     Int?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  deletedAt          DateTime?
+
+  accounts           Account[]
+  sessions           Session[]
+  userWords          UserWord[]
+  sentences          Sentence[]
+  reviewLogs         ReviewLog[]
+  reviewCardStates   ReviewCardState[]
+  activities         Activity[]
+  streaks            Streak[]
+  idempotencyRecords IdempotencyRecord[]
+  talkSessions       TalkSession[]
+  notes              Note[]
+  readingPositions   ReadingPosition[]
+  prefs              Prefs?
+  encounters         Encounter[]
+  aiWallet           UserAiWallet?
+  follows            Follow[]
+  progressSnapshots  ProgressSnapshot[]
+  historyEntries     HistoryEntry[]
+  favorites          Favorite[]
+  packProgress       UserPackProgress[]
+  bookmarks          Bookmark[]
+  videoSessions      VideoSession[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ---------- Core domain ----------
+
+// A watchable/readable/listenable thing. YouTube videos only store metadata — never captions.
+model Source {
+  id          String   @id @default(cuid())
+  type        String // youtube_video | podcast_episode | show | book | sentence_pack | talk_lesson | upload
+  externalId  String?
+  title       String
+  lang        String
+  level       String?
+  durationSec Int?
+  meta        String? // JSON blob (title, channel, thumbnail, etc.)
+  createdAt   DateTime @default(now())
+
+  encounters        Encounter[]
+  sentences         Sentence[]
+  notes             Note[]
+  progressSnapshots ProgressSnapshot[]
+  historyEntries    HistoryEntry[]
+  favorites         Favorite[]
+  videoSessions     VideoSession[]
+
+  @@index([type, externalId])
+}
+
+// User's saved word: FSRS state lives here. `lang` scoping per AGENT-PLAYBOOK rule 4.
+model UserWord {
+  id        String   @id @default(cuid())
+  userId    String
+  lemma     String
+  pos       String?
+  lang      String // learning language
+  state     String   @default("new") // new | learning | known | mastered
+  favorite  Boolean  @default(false)
+  note      String?
+  fsrs      String? // JSON FSRS card state
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  encounters Encounter[]
+
+  @@index([userId, lang])
+  @@index([userId, state])
+}
+
+// The user's own saved line from a source. Private per user.
+model Encounter {
+  id           String   @id @default(cuid())
+  userWordId   String?
+  userId       String
+  sourceId     String?
+  platform     String?
+  lang         String
+  timestampSec Int?
+  line         String // user's private saved line
+  translation  String?
+  savedAt      DateTime @default(now())
+
+  userWord UserWord? @relation(fields: [userWordId], references: [id], onDelete: Cascade)
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source   Source?   @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@index([userId, lang])
+}
+
+// Saved sentence: lists (favorite|dictation|speaking) stored as comma-joined string.
+model Sentence {
+  id           String   @id @default(cuid())
+  userId       String
+  sourceId     String?
+  lang         String
+  text         String
+  translation  String?
+  timestampSec Int?
+  lists        String   @default("") // "favorite,dictation,speaking" etc.
+  fsrs         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source Source? @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@index([userId, lang])
+}
+
+// Per-grade log. Non-polymorphic (AGENT-PLAYBOOK rule 3): composite (cardType, cardId).
+// `skipped` lets us log a skip without advancing FSRS (`format = "skip"`).
+model ReviewLog {
+  id        String   @id @default(cuid())
+  userId    String
+  cardType  String // "word" | "sentence"
+  cardId    String
+  lang      String
+  format    String // flashcard | guess | dictation | shadow | speaking | skip
+  grade     Int // 1..4 (Again/Hard/Good/Easy); 0 for skips
+  elapsedMs Int
+  at        DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, cardType, cardId])
+  @@index([userId, lang])
+}
+
+// FSRS card state keyed by (userId, cardType, cardId) — AGENT-PLAYBOOK rule 3
+// (no polymorphic FKs). Composite UNIQUE prevents the collision veto test
+// where grading `UserWord#X` would touch `Sentence#X.fsrs`.
+//
+// `lang` is denormalised onto this row (rule 4) so `cards due now` queries can
+// filter by (userId, lang) with an index hit — not a join through UserWord /
+// Sentence. The Review scheduler always writes lang alongside; cross-lang
+// mixing is impossible by construction.
+//
+// Serialised FSRS card lives in `card` (JSON string). Shape:
+//   { due: ISO, stability, difficulty, elapsed_days, scheduled_days,
+//     learning_steps, reps, lapses, state, last_review?: ISO }
+model ReviewCardState {
+  id         String   @id @default(cuid())
+  userId     String
+  cardType   String // "word" | "sentence"
+  cardId     String
+  lang       String
+  due        DateTime // mirror of card.due for cheap "due now" queries
+  stability  Float    @default(0)
+  difficulty Float    @default(0)
+  reps       Int      @default(0)
+  lapses     Int      @default(0)
+  state      Int      @default(0) // 0=New 1=Learning 2=Review 3=Relearning
+  card       String // JSON-serialised ts-fsrs Card
+  updatedAt  DateTime @updatedAt
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, cardType, cardId])
+  @@index([userId, lang, due])
+}
+
+// Streaks are scoped per learning language — a user studying both JP and ES
+// has independent streaks, so one quiet week in ES doesn't break their JP streak.
+// Non-negotiable #4 (multi-lang scoping on data model).
+model Streak {
+  userId         String
+  lang           String // ISO 639-1 of the learning language
+  current        Int       @default(0)
+  best           Int       @default(0)
+  freezes        Int       @default(0)
+  lastActiveDate DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, lang])
+}
+
+// Activity.lang is REQUIRED per AGENT-PLAYBOOK non-negotiable #4 — a null-lang
+// row is unassignable to any learner's active lang. Review lane fixed it in
+// `review_lane` migration before any production data lands.
+model Activity {
+  id           String   @id @default(cuid())
+  userId       String
+  date         DateTime
+  lang         String
+  minutesWatch Int      @default(0)
+  minutesRead  Int      @default(0)
+  minutesTalk  Int      @default(0)
+  reviews      Int      @default(0)
+  words        Int      @default(0)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date, lang])
+}
+
+// Rule 1 — idempotent writes. UNIQUE on (userId, clientRequestId).
+model IdempotencyRecord {
+  id              String   @id @default(cuid())
+  userId          String
+  clientRequestId String
+  method          String
+  path            String
+  statusCode      Int
+  response        String // JSON serialized
+  createdAt       DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, clientRequestId])
+  @@index([createdAt])
+}
+
+// Talk — AI conversation sessions.
+// NOTE (Talk+Read lane, 2026-10-16): For v1, TalkTopic + TalkLesson are
+// hard-coded in TypeScript (src/lib/talk/topics.ts). The Prisma models below
+// exist so a future Content/Packs lane can seed authored lessons without a
+// migration. Runtime currently matches lessonId against the in-code constants
+// — any id written here must come from that catalog.
+model TalkTopic {
+  id        String   @id
+  slug      String   @unique
+  lang      String? // null = generic / all languages; set when a topic is
+  // locale-specific (konbini: ja, chai stall: hi, …)
+  category  String
+  title     String
+  emoji     String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  lessons TalkLesson[]
+}
+
+model TalkLesson {
+  id              String   @id
+  slug            String
+  topicId         String
+  title           String
+  scene           String
+  // JSON { ai: string, user: string } — role descriptions used in prompts.
+  roles           String   @default("{}")
+  // JSON string[] — task checklist shown to the learner.
+  tasks           String   @default("[]")
+  // JSON string[] — shadowing warm-up sentences (<= ~25).
+  shadowSentences String   @default("[]")
+  order           Int      @default(0)
+  createdAt       DateTime @default(now())
+
+  topic    TalkTopic     @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  turns    TalkTurn[]
+  sessions TalkSession[]
+
+  @@unique([topicId, slug])
+}
+
+model TalkSession {
+  id         String    @id @default(cuid())
+  userId     String
+  lessonId   String?
+  lang       String
+  difficulty String? // beginner | intermediate | advanced
+  startedAt  DateTime  @default(now())
+  endedAt    DateTime?
+  report     String? // JSON
+
+  user   User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson TalkLesson? @relation(fields: [lessonId], references: [id], onDelete: SetNull)
+  turns  TalkTurn[]
+
+  @@index([userId, lang])
+}
+
+// A single AI or user turn in a Talk conversation. Private per user — never
+// shown to others. `correction` and `speechScore` are JSON blobs populated by
+// the Talk+Read lane's /api/talk routes.
+model TalkTurn {
+  id          String   @id @default(cuid())
+  sessionId   String
+  lessonId    String?
+  // "ai" | "user"
+  role        String
+  // The turn's text in the learning language (or the user's native language
+  // when they typed something to be translated — the help ladder may show
+  // either). Private to the user.
+  text        String
+  translation String?
+  // Which help level (0..3) the user tapped BEFORE sending this user turn.
+  // 0 = none used. Logged for the end-of-session report.
+  helpLevel   Int      @default(0)
+  // JSON CorrectTurnOutput — populated when a user turn is corrected.
+  correction  String?
+  // JSON SpeechScore — populated when the user used voice input.
+  speechScore String?
+  at          DateTime @default(now())
+
+  session TalkSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  lesson  TalkLesson? @relation(fields: [lessonId], references: [id], onDelete: SetNull)
+
+  @@index([sessionId, at])
+}
+
+model Note {
+  id           String   @id @default(cuid())
+  userId       String
+  sourceId     String?
+  timestampSec Int?
+  text         String
+  createdAt    DateTime @default(now())
+
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source Source? @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+}
+
+// Read module
+//
+// IMPORTANT (AGENT-PLAYBOOK + LEGAL): NEVER add a `text` / `content` field
+// here. Classics stream from the publisher's URL at render time (sourceUrl);
+// uploads live on the local filesystem under .uploads/<userId>/<bookId>.epub
+// — only the path lives in contentRef. Graded readers reference bundled text
+// in the repo. Anything else leaks book content into the DB.
+model Book {
+  id          String   @id @default(cuid())
+  // standard_ebooks | gutenberg | aozora | storyweaver | graded | upload | …
+  source      String
+  ownerUserId String? // null for public books; set for user uploads (private)
+  title       String
+  author      String?
+  illustrator String?
+  lang        String
+  level       String? // A1 | A2 | B1 | B2 | C1 | C2 (estimate)
+  licence     String? // CC-BY, CC-BY-SA, public-domain, uploaded, …
+  credits     String? // JSON — author, illustrator, translator, publisher URL
+  coverUrl    String? // Public cover image URL (publisher-hosted) or null.
+  // Where the content lives — never the content itself.
+  //   - classics:        the public source URL to stream from
+  //   - graded readers:  the bundled catalog key (e.g. "graded:a1-cafe")
+  //   - uploads:         a filesystem path under .uploads/<userId>/
+  contentRef  String
+  sourceUrl   String? // Public URL where the book was fetched from, when any.
+  createdAt   DateTime @default(now())
+
+  positions ReadingPosition[]
+
+  @@index([ownerUserId])
+  @@index([source, lang])
+}
+
+model ReadingPosition {
+  id          String   @id @default(cuid())
+  userId      String
+  bookId      String
+  location    String // CFI or offset
+  percent     Float    @default(0)
+  secondsRead Int      @default(0)
+  updatedAt   DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  book Book @relation(fields: [bookId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, bookId])
+}
+
+// Per-user settings
+model Prefs {
+  userId    String   @id
+  json      String   @default("{}") // translation style, voices, theme, review prefs
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ---------- AI cost control ----------
+
+// Monthly aggregate of AI spend / token usage across ALL users for one function
+// (or _global_). Enforced by src/server/ai/limits.ts as a circuit breaker so a
+// bug or abuse event cannot run away with the Groq bill. One row per
+// (yearMonth, scope).
+model BudgetMeter {
+  id            String   @id @default(cuid())
+  // "YYYY-MM" UTC month this row aggregates
+  yearMonth     String
+  // Either "_global_" or a function name ("translateLines", "talkTurn", …).
+  scope         String
+  // Running counters — decremented/incremented synchronously before/after calls.
+  inputTokens   Int      @default(0)
+  outputTokens  Int      @default(0)
+  // Approximate USD spent — accumulated as `estimateCostUsd` from limits.ts.
+  // Stored as integer micro-dollars (1e-6 USD) to avoid float drift in SQLite.
+  microUsdSpent Int      @default(0)
+  callCount     Int      @default(0)
+  updatedAt     DateTime @updatedAt
+
+  @@unique([yearMonth, scope])
+}
+
+// Per-user AI token wallet. Decremented synchronously *before* the model call.
+// Reset per UTC day — the sliding-window check in limits.ts additionally caps
+// per hour / per minute via AiCallCounter.
+model UserAiWallet {
+  userId          String   @id
+  // "YYYY-MM-DD" UTC date the wallet reflects. When a call lands on a new day,
+  // limits.ts rolls the wallet (resets counters, bumps date).
+  day             String
+  tokensUsedToday Int      @default(0)
+  callsToday      Int      @default(0)
+  updatedAt       DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Finer-grained counters keyed by (scope, userId|ipHash, window) so pre-call
+// rate-limiting can enforce `perUserDay` and `perIpHour` from the prompt file's
+// rateLimit config. `windowKey` is `"YYYY-MM-DDTHH"` for ipHour windows and
+// `"YYYY-MM-DD"` for userDay windows. `bucket` holds a userId when kind is
+// "userDay" (no FK — we don't want to cascade across the rate-limit table on
+// user deletion mid-request) or an ipHash when kind is "ipHour".
+model AiCallCounter {
+  id        String   @id @default(cuid())
+  scope     String // function name ("translateLines", …)
+  kind      String // "userDay" | "ipHour"
+  bucket    String // userId or ipHash
+  windowKey String // "YYYY-MM-DD" or "YYYY-MM-DDTHH"
+  count     Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  @@unique([scope, kind, bucket, windowKey])
+  @@index([scope, windowKey])
+}
+
+model Follow {
+  id         String   @id @default(cuid())
+  userId     String
+  kind       String // youtube_channel | podcast_show | show
+  externalId String
+  title      String? // cached display title
+  avatarUrl  String? // cached avatar / art
+  lang       String? // learning language this follow is scoped to
+  order      Int      @default(0)
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, kind, externalId])
+  @@index([userId, kind])
+}
+
+// ProgressSnapshot: resume state per source (video timestamp, book page, etc.)
+model ProgressSnapshot {
+  id          String    @id @default(cuid())
+  userId      String
+  sourceId    String
+  positionSec Int? // for video / audio
+  page        Int? // for books
+  percent     Float     @default(0)
+  updatedAt   DateTime  @updatedAt
+  finishedAt  DateTime?
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, sourceId])
+  @@index([userId, updatedAt])
+}
+
+// ---------- Watch lane ----------
+
+// A single watching session on one source, scoped per learning language.
+// Autobiographical Home ("Last night, on your shows") reads from this.
+// No caption text here — only sourceId + timestamp + position.
+model VideoSession {
+  id          String    @id @default(cuid())
+  userId      String
+  sourceId    String
+  lang        String // learning language (per AGENT-PLAYBOOK rule 4)
+  positionSec Int       @default(0)
+  durationSec Int?
+  // Progress 0..1 (watched / duration), tracked locally and synced on pulse.
+  percent     Float     @default(0)
+  mode        String    @default("default") // "default" | "focus" | "cinema"
+  startedAt   DateTime  @default(now())
+  lastPulseAt DateTime  @default(now())
+  endedAt     DateTime?
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  // Multi-lang scoping (AGENT-PLAYBOOK non-negotiable #4): an EN+JP learner
+  // watching the same source gets independent VideoSession rows per language.
+  // Dropped the (userId, sourceId) unique in favour of (userId, sourceId, lang).
+  @@unique([userId, sourceId, lang])
+  @@index([userId, lastPulseAt])
+}
+
+// HistoryEntry: the "I opened this" log — deletable by the user.
+model HistoryEntry {
+  id           String   @id @default(cuid())
+  userId       String
+  sourceId     String
+  lastOpenedAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, sourceId])
+  @@index([userId, lastOpenedAt])
+}
+
+// Favorite: starred content.
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  sourceId  String
+  createdAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, sourceId])
+}
+
+// Pack: a Funlingo-authored study pack (sentence pack, show pack, word list).
+model Pack {
+  id        String   @id @default(cuid())
+  kind      String // sentence | show | word_list
+  lang      String
+  title     String
+  level     String? // A1..C1
+  category  String?
+  meta      String? // JSON (platforms, blurb, cover, etc.)
+  createdAt DateTime @default(now())
+
+  items    PackItem[]
+  progress UserPackProgress[]
+
+  @@index([kind, lang])
+}
+
+model PackItem {
+  id          String  @id @default(cuid())
+  packId      String
+  chapter     Int     @default(0)
+  order       Int     @default(0)
+  kind        String // sentence | word | phrase | culture
+  text        String
+  translation String?
+  audioUrl    String?
+
+  pack Pack @relation(fields: [packId], references: [id], onDelete: Cascade)
+
+  @@index([packId, chapter, order])
+}
+
+model UserPackProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  packId    String
+  chapter   Int      @default(0)
+  itemsDone Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  pack Pack @relation(fields: [packId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, packId, chapter])
+}
+
+// Bookmark: lives next to Book / ReadingPosition.
+model Bookmark {
+  id        String   @id @default(cuid())
+  userId    String
+  bookId    String
+  location  String // CFI or offset
+  note      String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, bookId])
+}
+
+// CultureNote: a short, idiomatic or cultural footnote tied to a source,
+// a show, or a lexeme. Written by Funlingo (or AI-generated, moderated).
+model CultureNote {
+  id         String   @id @default(cuid())
+  scope      String // source | show | lexeme
+  refId      String? // Source.id, show slug, or Lexeme.id (lane-free fk)
+  lang       String // the learning language this note talks about
+  nativeLang String // the language the note is WRITTEN in
+  anchor     String? // JSON (timestamp, line id, chapter, etc.)
+  kind       String // idiom | reference | humour | register | custom
+  text       String
+  createdAt  DateTime @default(now())
+
+  @@index([scope, refId, lang])
+}
+
+// TODO (future agents): Lexeme, WordCard, TalkTopic, TalkLesson, TalkTurn —
+// stub when their lane picks them up.
+
+// Cached culture notes keyed by sourceId + SHA-256(line) + language pair.
+// IMPORTANT: lineHash is a SHA-256 digest of the caption line — the raw line
+// text NEVER lands here (LEGAL.md rule: no caption text persisted, even in
+// cache keys). The payload stores only the AI-generated culture note text
+// and anchors (timestampSec), which are Funlingo-owned derived content.
+model CultureNoteCache {
+  id         String   @id @default(cuid())
+  sourceId   String // the Source this note belongs to
+  lineHash   String // SHA-256 hex of the triggering caption line (no raw text)
+  sourceLang String
+  nativeLang String
+  // JSON array of CultureNote objects (anchor + text + kind). Note TEXT
+  // itself is our own writing, not caption text, so it's safe to persist.
+  notesJson  String
+  createdAt  DateTime @default(now())
+  // Auto-stale check happens at read-time; see Watch lane cache logic.
+  freshness  DateTime @default(now())
+
+  @@unique([sourceId, lineHash, sourceLang, nativeLang])
+  @@index([sourceId])
+}
+
+// Cached WordCard keyed by (lemma, srcLang, tgtLang). Reusable across users
+// and sources — the user's own sentence is NEVER part of the key or payload.
+// Entries auto-stale after 90 days (checked on read, cleaned by sweeper).
+model WordCardCache {
+  id        String   @id @default(cuid())
+  lemma     String
+  srcLang   String // learning language
+  tgtLang   String // user's native language
+  // JSON of WordCard (lemma, pos, cefr, shortMeaning, senses[], isPhrase, cultureNote).
+  cardJson  String
+  freshness DateTime @default(now())
+
+  @@unique([lemma, srcLang, tgtLang])
+}
+
+// ---------- Wave 6 content seeding ----------
+//
+// YouTube channel recommendations curated per (lang, category). The Follow
+// table remains the single source of truth for *which* channels a user has
+// followed; this table is just the discovery catalogue. Non-negotiable #4
+// (lang scoping) applies — every recommendation carries the learning
+// language it belongs to.
+//
+// Idempotent seeding uses the composite unique on (lang, channelId): a
+// channel can appear once per language (so Easy Spanish can live under both
+// es and en, for example).
+model YtChannelRec {
+  id             String   @id @default(cuid())
+  lang           String // learning language this rec is for
+  categorySlug   String // mirror of yt-channels.json categories[].slug
+  channelId      String // YouTube channel id ("UC…")
+  handle         String? // "@TED-Ed"
+  displayName    String
+  blurb          String // 1-sentence Funlingo-authored why-pick-this
+  subscriberBand String? // "1M+" | "500K-1M" etc.
+  verified       Boolean  @default(false)
+  order          Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([lang, channelId])
+  @@index([lang, categorySlug])
+}
+
+// TODO (future agents): Lexeme — stub when its lane picks it up.

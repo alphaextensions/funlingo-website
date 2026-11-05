@@ -1,0 +1,205 @@
+@import "./tokens.css";
+
+/* ============================================================
+   Fun Learning — base styles
+   Ported from docs/design-reference/extension-fun-learning.css
+   ============================================================ */
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+/* Buttons don't inherit font/color by default — make them.
+   Without this, Devanagari titles on <button> tiles render as black Arial. */
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--fl-bg);
+  color: var(--fl-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+  /* Design MED-D: body weight 500 (DESIGN.md). Without this the UI reads too
+     light at 15–16px; Poppins 500 is where the extension actually sits. */
+  font-weight: 500;
+  /* Wave 4: smooth light/dark theme swap (DS tokens.css: --ease-theme). */
+  transition: background var(--ease-theme, 0.4s) ease,
+              color var(--ease-theme, 0.4s) ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  body { transition: none; }
+}
+
+/* utility */
+.hidden { display: none !important; }
+
+/* ---- Per-locale line-height + script-specific font stacks ----
+   Design QA HIGH-2 fix: reference the next/font CSS variables (set in
+   fonts.ts via Noto_Sans_*.variable) instead of raw family names, so the
+   fonts next/font actually loaded get picked up — hashed family names like
+   `__Noto_Sans_Devanagari_xxx` are opaque, only the vars are reachable. */
+body[data-funlingo-locale="hi"],
+body[data-funlingo-locale="mr"] {
+  line-height: 1.55;
+  font-family: var(--font-poppins, 'Poppins'),
+               var(--font-noto-devanagari, 'Noto Sans Devanagari'),
+               'Mangal', 'Kohinoor Devanagari',
+               -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body[data-funlingo-locale="gu"] {
+  line-height: 1.55;
+  font-family: var(--font-poppins, 'Poppins'),
+               'Noto Sans Gujarati', 'Shruti',
+               -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body[data-funlingo-locale="ar"] {
+  line-height: 1.55;
+  font-family: var(--font-poppins, 'Poppins'),
+               var(--font-noto-arabic, 'Noto Sans Arabic'),
+               'Tahoma',
+               -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body[data-funlingo-locale="ja"] {
+  line-height: 1.6;
+  font-family: var(--font-poppins, 'Poppins'),
+               var(--font-noto-jp, 'Noto Sans JP'),
+               'Hiragino Sans', 'Yu Gothic',
+               -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body[data-funlingo-locale="ko"] {
+  line-height: 1.6;
+  font-family: var(--font-poppins, 'Poppins'),
+               var(--font-noto-kr, 'Noto Sans KR'),
+               'Apple SD Gothic Neo', 'Malgun Gothic',
+               -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body[data-funlingo-locale="th"] {
+  line-height: 1.6;
+  font-family: var(--font-poppins, 'Poppins'),
+               var(--font-noto-thai, 'Noto Sans Thai'),
+               'Thonburi',
+               -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:lang(hi), [lang="hi"] { line-height: 1.7; }
+
+/* ---- Skip to main content — Design QA HIGH-3. Hidden until focused. ---- */
+.skipLink {
+  position: fixed;
+  top: var(--s-2);
+  left: var(--s-2);
+  z-index: 100;
+  background: var(--fl-bg-2);
+  color: var(--fl-text);
+  padding: var(--s-3) var(--s-4);
+  border: 1px solid var(--fl-border-2);
+  border-radius: var(--r-md);
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: var(--el-2);
+  transform: translateY(-200%);
+  transition: transform var(--d-fast) var(--ease-out);
+}
+
+.skipLink:focus,
+.skipLink:focus-visible {
+  transform: translateY(0);
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 3px;
+  color: var(--fl-text);
+}
+
+/* ============================================================
+   Ambient animated backdrop (CSS-only, respects reduced motion)
+   ============================================================ */
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: transparent;
+  pointer-events: none;
+}
+.ambient::before,
+.ambient::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+.ambient::before {
+  width: 60vw;
+  height: 60vw;
+  left: -10vw;
+  top: -15vw;
+  background: radial-gradient(circle at 50% 50%, var(--fl-primary), transparent 65%);
+  animation: drift1 34s ease-in-out infinite alternate;
+}
+.ambient::after {
+  width: 55vw;
+  height: 55vw;
+  right: -12vw;
+  bottom: -18vw;
+  background: radial-gradient(circle at 50% 50%, var(--fl-secondary), transparent 62%);
+  animation: drift2 40s ease-in-out infinite alternate;
+}
+.ambient .orb {
+  position: absolute;
+  width: 38vw;
+  height: 38vw;
+  border-radius: 50%;
+  left: 40vw;
+  top: 30vh;
+  filter: blur(90px);
+  opacity: 0.28;
+  background: radial-gradient(circle at 50% 50%, var(--fl-accent), transparent 60%);
+  animation: drift3 28s ease-in-out infinite alternate;
+}
+.ambient .veil {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 90% at 50% 0%, transparent 40%, var(--fl-shadow-veil) 100%);
+}
+@keyframes drift1 { to { transform: translate( 8vw,  6vh) scale(1.15); } }
+@keyframes drift2 { to { transform: translate(-7vw, -5vh) scale(1.10); } }
+@keyframes drift3 { to { transform: translate(-10vw, 8vh) scale(1.20); } }
+
+body[data-motion="off"] .ambient::before,
+body[data-motion="off"] .ambient::after,
+body[data-motion="off"] .ambient .orb { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient::before,
+  .ambient::after,
+  .ambient .orb { animation: none; }
+  * { scroll-behavior: auto; }
+}
+
+/* ============================================================
+   Focus ring (WCAG 2.2 AA — SPEC §17 Accessibility)
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+a {
+  color: var(--fl-accent);
+  text-decoration: none;
+}
+a:hover { color: var(--fl-text); }

@@ -1,0 +1,445 @@
+{
+  "category": "business",
+  "label": "Business & Email",
+  "chapters": [
+    { "id": 1, "name": "Scheduling" },
+    { "id": 2, "name": "Follow-ups" },
+    { "id": 3, "name": "Declines" },
+    { "id": 4, "name": "Apologies" },
+    { "id": 5, "name": "Email openers & closers" }
+  ],
+  "packs": {
+    "en": {
+      "title": "Business English — 25 polite work lines",
+      "blurb": "Scheduling, following up, declining, apologising, signing off — in the register colleagues actually use.",
+      "level": "B1",
+      "items": [
+        { "text": "Could we find a 30-minute slot this week?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0, "meta": { "register": "formal" } },
+        { "text": "Would Thursday afternoon work for you?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1, "meta": { "register": "formal" } },
+        { "text": "I'll send a calendar invite shortly.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2, "meta": { "register": "neutral" } },
+        { "text": "Happy to reschedule if the timing isn't ideal.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3, "meta": { "register": "formal" } },
+        { "text": "Let me know what works and I'll adjust.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4, "meta": { "register": "neutral" } },
+
+        { "text": "Just circling back on this — any update?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0, "meta": { "register": "neutral" } },
+        { "text": "Flagging this in case it slipped through.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1, "meta": { "register": "neutral" } },
+        { "text": "Any chance you could share a quick status?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2, "meta": { "register": "formal" } },
+        { "text": "Following up on my note from last Tuesday.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3, "meta": { "register": "formal" } },
+        { "text": "Would next steps still land this week?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4, "meta": { "register": "formal" } },
+
+        { "text": "I'm afraid I can't take this on right now.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0, "meta": { "register": "formal" } },
+        { "text": "Thanks for thinking of me — this one's a pass.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1, "meta": { "register": "neutral" } },
+        { "text": "I won't be able to make Thursday after all.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2, "meta": { "register": "neutral" } },
+        { "text": "Unfortunately we're going to pass on this.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3, "meta": { "register": "formal" } },
+        { "text": "That's not something I can commit to this quarter.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4, "meta": { "register": "formal" } },
+
+        { "text": "Apologies for the delay in getting back to you.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0, "meta": { "register": "formal" } },
+        { "text": "That was my mistake — thanks for flagging.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1, "meta": { "register": "neutral" } },
+        { "text": "Sorry for the confusion earlier.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2, "meta": { "register": "neutral" } },
+        { "text": "I appreciate your patience on this one.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3, "meta": { "register": "formal" } },
+        { "text": "I owe you a quicker turnaround next time.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4, "meta": { "register": "neutral" } },
+
+        { "text": "Hope you've had a good week so far.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0, "meta": { "register": "neutral" } },
+        { "text": "Thanks for making the time.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1, "meta": { "register": "neutral" } },
+        { "text": "Looking forward to your thoughts.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2, "meta": { "register": "formal" } },
+        { "text": "Let me know if anything's unclear.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3, "meta": { "register": "neutral" } },
+        { "text": "Best regards and talk soon.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4, "meta": { "register": "formal" } }
+      ]
+    },
+    "es": {
+      "title": "Español profesional — 25 frases de trabajo",
+      "blurb": "Agenda, seguimiento, decir que no, disculparte, despedirte — en el registro que usan tus colegas.",
+      "level": "B1",
+      "items": [
+        { "text": "¿Podríamos encontrar un hueco de 30 minutos esta semana?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "¿Te vendría bien el jueves por la tarde?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "Te mando una invitación de calendario en breve.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "Si no te viene bien, lo cambiamos sin problema.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "Dime qué te cuadra y me adapto.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "Vuelvo sobre este tema — ¿hay novedades?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "Lo recuerdo por si se te pasó.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "¿Me podrías dar un estado rápido?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "Doy seguimiento a mi mensaje del martes pasado.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "¿Los próximos pasos siguen quedando esta semana?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "Lamentablemente no puedo asumirlo ahora mismo.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "Gracias por pensar en mí — esta vez paso.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "Al final no voy a poder el jueves.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "Por desgracia, en este caso vamos a declinar.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "No es algo con lo que me pueda comprometer este trimestre.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "Disculpa el retraso en responderte.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "Fue error mío — gracias por avisar.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "Perdona el lío de antes.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "Te agradezco la paciencia con este tema.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "La próxima vez te respondo más rápido, prometido.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "Espero que la semana vaya bien.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "Gracias por sacar un rato.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "Quedo atento a tus comentarios.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "Dime si algo no queda claro.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "Un saludo, hablamos pronto.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "fr": {
+      "title": "Français pro — 25 phrases de bureau",
+      "blurb": "Planifier, relancer, décliner, s'excuser, signer — dans le registre que tes collègues utilisent.",
+      "level": "B1",
+      "items": [
+        { "text": "On pourrait caler un créneau de 30 minutes cette semaine ?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "Est-ce que jeudi après-midi vous conviendrait ?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "Je t'envoie l'invitation calendrier d'ici peu.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "Pas de souci pour reprogrammer si l'horaire ne te va pas.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "Dis-moi ce qui t'arrange et je m'adapte.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "Je reviens vers toi — une avancée de ton côté ?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "Je le remonte au cas où ça serait passé entre les mailles.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "Pourrais-tu me faire un point rapide ?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "Je fais suite à mon message de mardi dernier.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "Les prochaines étapes tiennent toujours cette semaine ?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "Je crains de ne pas pouvoir prendre ça en charge pour l'instant.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "Merci d'y avoir pensé — je passe mon tour cette fois.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "Finalement je ne pourrai pas être là jeudi.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "Malheureusement, nous allons passer sur celui-ci.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "Ce n'est pas quelque chose sur lequel je peux m'engager ce trimestre.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "Désolé pour le retard de réponse.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "C'était ma faute — merci de l'avoir signalé.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "Désolé pour la confusion tout à l'heure.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "Merci pour ta patience là-dessus.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "Je te promets un retour plus rapide la prochaine fois.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "J'espère que la semaine se passe bien.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "Merci d'avoir pris le temps.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "Dans l'attente de ton retour.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "Dis-moi si quelque chose n'est pas clair.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "Cordialement, à très vite.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "de": {
+      "title": "Business-Deutsch — 25 höfliche Arbeitssätze",
+      "blurb": "Termine, Nachfassen, Absagen, Entschuldigungen, Abschiedsgrüße — im Ton, den Kolleg:innen wirklich benutzen.",
+      "level": "B1",
+      "items": [
+        { "text": "Könnten wir diese Woche ein 30-minütiges Zeitfenster finden?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "Würde Ihnen Donnerstagnachmittag passen?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "Ich schicke dir gleich eine Kalendereinladung.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "Gerne verschieben wir, wenn der Zeitpunkt nicht passt.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "Sag mir, was dir passt, dann richte ich mich danach.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "Ich komme noch mal auf das Thema zurück — gibt's Neues?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "Ich melde das hier, falls es untergegangen ist.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "Könnten Sie mir einen kurzen Statusstand geben?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "Ich knüpfe an meine Nachricht vom Dienstag an.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "Schaffen wir die nächsten Schritte noch diese Woche?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "Ich fürchte, das kann ich gerade nicht übernehmen.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "Danke, dass du an mich gedacht hast — diesmal bleibe ich raus.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "Donnerstag wird es doch nicht klappen.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "Leider werden wir hier passen.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "Dazu kann ich mich dieses Quartal nicht verpflichten.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "Entschuldige die späte Rückmeldung.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "Das war mein Fehler — danke fürs Melden.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "Entschuldige das Durcheinander von vorhin.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "Danke für deine Geduld bei dem Thema.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "Nächstes Mal melde ich mich schneller, versprochen.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "Ich hoffe, deine Woche läuft bisher gut.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "Danke, dass du dir die Zeit genommen hast.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "Ich freue mich auf deine Rückmeldung.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "Sag Bescheid, wenn etwas unklar ist.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "Beste Grüße, bis bald.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "it": {
+      "title": "Italiano al lavoro — 25 frasi professionali",
+      "blurb": "Fissare, sollecitare, declinare, scusarsi, salutare — nel tono che i colleghi usano davvero.",
+      "level": "B1",
+      "items": [
+        { "text": "Riusciremmo a trovare 30 minuti questa settimana?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "Giovedì pomeriggio ti andrebbe bene?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "Ti mando a breve l'invito sul calendario.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "Nessun problema a riprogrammare se l'orario non ti è comodo.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "Dimmi tu cosa ti torna e mi adeguo.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "Torno sulla cosa — ci sono aggiornamenti?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "Lo riprendo nel caso ti fosse sfuggito.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "Potresti darmi un aggiornamento rapido?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "Riprendo la mia nota di martedì scorso.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "I prossimi passi riusciremmo a chiuderli entro settimana?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "Purtroppo adesso non riesco a prenderlo in carico.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "Grazie per avermi pensato — stavolta passo.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "Alla fine giovedì non riuscirò a esserci.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "Purtroppo su questo preferiamo lasciar perdere.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "Non è una cosa su cui posso impegnarmi in questo trimestre.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "Scusa il ritardo nella risposta.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "È stato un mio errore — grazie di avermelo detto.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "Scusa la confusione di prima.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "Grazie della pazienza su questa cosa.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "Prometto risposta più veloce la prossima volta.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "Spero che la settimana stia andando bene.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "Grazie per aver trovato il tempo.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "Resto in attesa di un tuo riscontro.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "Fammi sapere se qualcosa non è chiaro.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "Un caro saluto, a presto.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "pt": {
+      "title": "Português no trabalho — 25 frases profissionais",
+      "blurb": "Marcar, cobrar, recusar, pedir desculpa, assinar — no tom que seus colegas usam.",
+      "level": "B1",
+      "items": [
+        { "text": "Dá pra encaixarmos 30 minutos esta semana?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "Quinta à tarde funcionaria pra você?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "Já te mando o convite da agenda.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "Se o horário não for bom, remarcamos sem problema.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "Me diz o que te serve e eu me ajusto.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "Voltando a este assunto — alguma novidade?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "Trago isto aqui caso tenha passado batido.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "Dá pra me passar um status rápido?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "Dando seguimento ao meu recado de terça.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "Os próximos passos ainda ficam para esta semana?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "Infelizmente não consigo pegar isso agora.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "Obrigado por lembrar de mim — desta vez vou passar.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "No fim, quinta não vai dar pra mim.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "Infelizmente vamos passar nessa.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "Não é algo com que eu consiga me comprometer neste trimestre.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "Desculpa a demora pra retornar.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "Foi erro meu — obrigado por avisar.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "Desculpa a confusão de antes.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "Agradeço a paciência com isso.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "Prometo retorno mais rápido na próxima.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "Espero que sua semana esteja indo bem.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "Obrigado por reservar um tempinho.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "Fico no aguardo da sua opinião.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "Me avise se algo não ficou claro.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "Um abraço, a gente se fala em breve.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "ja": {
+      "title": "ビジネス日本語 — 25 の丁寧な仕事フレーズ",
+      "blurb": "予定調整、リマインド、お断り、お詫び、締めの一言 — 同僚が実際に使う敬語で。",
+      "level": "B1",
+      "items": [
+        { "text": "今週、30分ほどお時間いただけないでしょうか?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "木曜日の午後はご都合いかがでしょうか?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "のちほどカレンダーの招待をお送りします。", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "ご都合に合わない場合は、調整いたします。", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "ご都合の良いお時間を教えてください、合わせます。", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "先日の件、何か進展はございますでしょうか?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "念のためご連絡まで。", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "簡単に状況をお知らせいただけますでしょうか?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "先週火曜日のメッセージの続きになります。", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "次のステップは今週中に進められそうでしょうか?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "恐れ入りますが、今はお引き受けできません。", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "お声がけありがとうございます — 今回は見送らせていただきます。", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "やはり木曜日は参加できなくなってしまいました。", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "残念ながら、こちらは見送らせていただきます。", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "こちらは今四半期中にお約束することはできかねます。", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "ご返信が遅くなり申し訳ございません。", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "こちらのミスでした — ご指摘ありがとうございます。", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "先ほどの混乱、失礼いたしました。", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "この件、ご配慮いただきありがとうございます。", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "次回はもっと早くご連絡いたします。", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "今週も順調でいらっしゃいますでしょうか。", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "お時間をいただきありがとうございます。", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "ご意見お待ちしております。", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "不明点があればお知らせください。", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "何卒よろしくお願いいたします。", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "ko": {
+      "title": "비즈니스 한국어 — 정중한 업무 25 문장",
+      "blurb": "일정 잡기, 리마인드, 거절, 사과, 마무리 인사 — 동료들이 실제로 쓰는 톤으로.",
+      "level": "B1",
+      "items": [
+        { "text": "이번 주에 30분 정도 시간 가능하실까요?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "목요일 오후 괜찮으세요?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "곧 캘린더 초대 보내 드릴게요.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "시간이 안 맞으시면 다시 잡아도 됩니다.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "편한 시간 알려 주시면 맞춰 드릴게요.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "지난번 건 혹시 진행된 사항 있으실까요?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "혹시 묻혔을까 봐 다시 알려 드립니다.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "간단한 상황만 공유해 주실 수 있을까요?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "지난 화요일 메일 관련해서 다시 연락드립니다.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "다음 단계, 이번 주 안에 가능할까요?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "죄송하지만 지금은 맡기 어려울 것 같습니다.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "생각해 주셔서 감사합니다 — 이번엔 패스할게요.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "죄송합니다, 목요일은 결국 참석이 어려워졌습니다.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "아쉽지만 이번 건은 패스하도록 하겠습니다.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "이번 분기엔 확답드리기 어려운 사안입니다.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "답장이 늦어 죄송합니다.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "제 실수였어요 — 알려 주셔서 감사합니다.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "아까는 혼선이 있어서 죄송해요.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "이 건에 대해 양해해 주셔서 감사합니다.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "다음엔 더 빠르게 회신드릴게요.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "이번 주도 잘 보내고 계시죠?", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "시간 내 주셔서 감사합니다.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "의견 기다리고 있겠습니다.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "불명확한 부분 있으면 말씀 주세요.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "감사합니다, 곧 다시 연락드리겠습니다.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "zh": {
+      "title": "商务中文 — 25 句得体的职场表达",
+      "blurb": "约时间、跟进、婉拒、道歉、结尾 — 用同事真正会用的语气。",
+      "level": "B1",
+      "items": [
+        { "text": "本周能约 30 分钟吗?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "周四下午方便吗?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "我稍后发日历邀请给你。", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "时间不合适的话我们可以另约。", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "你方便的时间告诉我,我来配合。", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "跟进一下之前的事 — 有新进展吗?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "怕你没看到,这里再提一下。", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "可以简单同步一下状态吗?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "跟进一下我上周二发的信息。", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "下一步工作还赶得上这周吗?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "抱歉,我目前接不了这个。", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "谢谢你想到我 — 这次我先过。", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "周四我后来还是去不了了。", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "很遗憾,这个我们暂时不接。", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "这件事本季度我没法承诺。", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "抱歉回复晚了。", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "是我这边的疏忽 — 谢谢你提醒。", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "刚才让你困惑了,抱歉。", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "谢谢你对这件事的耐心。", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "下次我一定更快回你。", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "希望你这周过得还顺。", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "谢谢你抽时间。", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "期待你的反馈。", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "有不清楚的地方请告诉我。", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "祝好,回头聊。", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "hi": {
+      "title": "दफ़्तरी हिंदी — काम की 25 बातें",
+      "blurb": "मीटिंग तय करना, याद दिलाना, मना करना, माफ़ी, विदाई — वही अंदाज़ जो सहकर्मी इस्तेमाल करते हैं।",
+      "level": "B1",
+      "items": [
+        { "text": "क्या इस हफ़्ते 30 मिनट का समय मिल सकता है?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "क्या गुरुवार दोपहर आपके लिए ठीक है?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "मैं कैलेंडर इनवाइट जल्दी ही भेजता हूं।", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "समय ठीक न हो तो दोबारा शेड्यूल कर सकते हैं।", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "आपका सुविधाजनक समय बता दीजिए, मैं उसी हिसाब से एडजस्ट कर लूंगा।", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "उस विषय पर लौट रहा हूं — कोई अपडेट?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "अगर यह छूट गया हो तो याद दिला रहा हूं।", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "क्या आप एक छोटा-सा स्टेटस दे सकते हैं?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "मेरे मंगलवार के संदेश के बारे में फ़ॉलो-अप कर रहा हूं।", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "क्या अगले कदम इस हफ़्ते तक पूरे हो पाएंगे?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "माफ़ी, मैं अभी यह काम नहीं ले पाऊंगा।", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "मेरे बारे में सोचने के लिए शुक्रिया — इस बार मैं पास।", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "आख़िर में गुरुवार को मैं नहीं पहुंच पाऊंगा।", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "दुर्भाग्य से इस बार हम इसे छोड़ रहे हैं।", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "यह ऐसी चीज़ नहीं है जिसका मैं इस तिमाही में वादा कर सकूं।", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "देर से जवाब देने के लिए माफ़ कीजिए।", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "वह मेरी ग़लती थी — बताने के लिए शुक्रिया।", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "पहले हुए भ्रम के लिए माफ़ी।", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "इस मामले में आपके धैर्य के लिए शुक्रिया।", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "अगली बार मैं और जल्दी जवाब दूंगा।", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "उम्मीद है आपका हफ़्ता अब तक अच्छा रहा होगा।", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "समय देने के लिए शुक्रिया।", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "आपकी राय का इंतज़ार रहेगा।", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "अगर कुछ साफ़ न हो तो बता दीजिएगा।", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "शुभकामनाएं, जल्द बात करते हैं।", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "tr": {
+      "title": "İş Türkçesi — 25 kibar iş cümlesi",
+      "blurb": "Toplantı ayarlama, takip, red, özür, selamlama — meslektaşların gerçekten kullandığı tonla.",
+      "level": "B1",
+      "items": [
+        { "text": "Bu hafta içinde 30 dakikalık bir uygunluk bulabilir miyiz?", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "Perşembe öğleden sonra size uyar mı?", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "Birazdan takvim davetiyesini gönderiyorum.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "Saat uygun değilse memnuniyetle değiştirebiliriz.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "Size uygun saati söyleyin, ben kendimi ona göre ayarlayayım.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "Bu konuya tekrar dönüyorum — gelişme var mı?", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "Kaçmış olabilir diye hatırlatıyorum.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "Kısa bir durum paylaşımı mümkün mü?", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "Geçen salıki notumu takip ediyorum.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "Sonraki adımları bu hafta içinde kapatabilir miyiz?", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "Maalesef şu an bunu üstlenemem.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "Beni düşündüğünüz için teşekkürler — bu seferlik pas.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "Sonuçta perşembe gelemeyeceğim.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "Ne yazık ki bu teklifi geçeceğiz.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "Bu çeyrek için söz veremeyeceğim bir konu.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "Geç dönüş için özür dilerim.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "Benim hatamdı — belirttiğiniz için teşekkürler.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "Az önceki karışıklık için özür dilerim.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "Bu konudaki sabrınız için teşekkür ederim.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "Bir dahaki sefere daha hızlı döneceğim.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "Haftanız şimdiye kadar iyi gidiyordur umarım.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "Zaman ayırdığınız için teşekkürler.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "Görüşlerinizi dört gözle bekliyorum.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "Belirsiz bir şey olursa haber verin.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "Saygılarımla, yakında görüşmek üzere.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    },
+    "ar": {
+      "title": "عربية الأعمال — 25 جملة مهذبة للعمل",
+      "blurb": "تحديد المواعيد والمتابعة والاعتذار والرفض والخاتمة — بالأسلوب الذي يستخدمه زملاؤك.",
+      "level": "B1",
+      "items": [
+        { "text": "هل يمكننا إيجاد نصف ساعة هذا الأسبوع؟", "translation": "Could we find a 30-minute slot this week?", "chapter": 1, "order": 0 },
+        { "text": "هل يناسبك عصر الخميس؟", "translation": "Would Thursday afternoon work for you?", "chapter": 1, "order": 1 },
+        { "text": "سأرسل دعوة التقويم بعد قليل.", "translation": "I'll send a calendar invite shortly.", "chapter": 1, "order": 2 },
+        { "text": "لا مانع من إعادة تحديد الموعد إذا لم يناسبك الوقت.", "translation": "Happy to reschedule if the timing isn't ideal.", "chapter": 1, "order": 3 },
+        { "text": "أخبرني بالوقت المناسب لك وسأتكيّف معه.", "translation": "Let me know what works and I'll adjust.", "chapter": 1, "order": 4 },
+
+        { "text": "أعود إليك بشأن هذا الأمر — هل من جديد؟", "translation": "Just circling back on this — any update?", "chapter": 2, "order": 0 },
+        { "text": "أذكّرك به تحسّباً أن يكون قد فاتك.", "translation": "Flagging this in case it slipped through.", "chapter": 2, "order": 1 },
+        { "text": "هل يمكنك مشاركتي حالة سريعة؟", "translation": "Any chance you could share a quick status?", "chapter": 2, "order": 2 },
+        { "text": "متابعة لرسالتي يوم الثلاثاء الماضي.", "translation": "Following up on my note from last Tuesday.", "chapter": 2, "order": 3 },
+        { "text": "هل ستنتهي الخطوات التالية خلال هذا الأسبوع؟", "translation": "Would next steps still land this week?", "chapter": 2, "order": 4 },
+
+        { "text": "أخشى أنني لا أستطيع تولّي ذلك الآن.", "translation": "I'm afraid I can't take this on right now.", "chapter": 3, "order": 0 },
+        { "text": "شكراً لتفكيرك فيّ — سأمتنع هذه المرة.", "translation": "Thanks for thinking of me — this one's a pass.", "chapter": 3, "order": 1 },
+        { "text": "لن أتمكّن من الحضور يوم الخميس بعد كل شيء.", "translation": "I won't be able to make Thursday after all.", "chapter": 3, "order": 2 },
+        { "text": "للأسف، سنعتذر عن هذا العرض.", "translation": "Unfortunately we're going to pass on this.", "chapter": 3, "order": 3 },
+        { "text": "هذا ليس أمراً أستطيع الالتزام به هذا الربع.", "translation": "That's not something I can commit to this quarter.", "chapter": 3, "order": 4 },
+
+        { "text": "أعتذر عن تأخّر الرد.", "translation": "Apologies for the delay in getting back to you.", "chapter": 4, "order": 0 },
+        { "text": "كان ذلك خطئي — شكراً للتنبيه.", "translation": "That was my mistake — thanks for flagging.", "chapter": 4, "order": 1 },
+        { "text": "أعتذر عن اللبس الذي حصل سابقاً.", "translation": "Sorry for the confusion earlier.", "chapter": 4, "order": 2 },
+        { "text": "أقدّر صبرك في هذا الأمر.", "translation": "I appreciate your patience on this one.", "chapter": 4, "order": 3 },
+        { "text": "سأرد عليك أسرع في المرة القادمة.", "translation": "I owe you a quicker turnaround next time.", "chapter": 4, "order": 4 },
+
+        { "text": "أتمنى أن أسبوعك يسير جيداً حتى الآن.", "translation": "Hope you've had a good week so far.", "chapter": 5, "order": 0 },
+        { "text": "شكراً على إتاحتك الوقت.", "translation": "Thanks for making the time.", "chapter": 5, "order": 1 },
+        { "text": "في انتظار ملاحظاتك.", "translation": "Looking forward to your thoughts.", "chapter": 5, "order": 2 },
+        { "text": "أخبرني إن كان هناك ما ليس واضحاً.", "translation": "Let me know if anything's unclear.", "chapter": 5, "order": 3 },
+        { "text": "مع أطيب التحيات، نتحدث قريباً.", "translation": "Best regards and talk soon.", "chapter": 5, "order": 4 }
+      ]
+    }
+  }
+}

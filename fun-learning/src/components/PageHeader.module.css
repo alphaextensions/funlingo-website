@@ -1,0 +1,77 @@
+/* PageHeader — the inner-screen header: eyebrow, title, lede, actions. */
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: var(--s-6) 0 var(--s-5);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--s-4);
+}
+
+.titleCol {
+  flex: 1;
+  min-width: 0;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fl-accent);
+  margin-bottom: 4px;
+}
+
+/* Optional pulsing dot — matches Home's `.greetDot`. Opt-out via showDot={false}. */
+.eyebrowDot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--fl-accent);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .eyebrowDot { animation: eyebrowPulse 2.4s ease-out infinite; }
+}
+:global(body[data-motion="off"]) .eyebrowDot { animation: none; }
+
+@keyframes eyebrowPulse {
+  0%   { box-shadow: 0 0 0 0 var(--fl-accent-glow-strong); }
+  70%  { box-shadow: 0 0 0 7px var(--fl-accent-glow-0); }
+  100% { box-shadow: 0 0 0 0 var(--fl-accent-glow-0); }
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  margin: 6px 0 0;
+  color: var(--fl-text-2);
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 56ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .actions { margin-left: 0; width: 100%; }
+}

@@ -1,0 +1,420 @@
+/* ============================================================
+   FlashcardDeck — Wave 10 extension-parity deck layout
+   Mirrors the "FLASHCARD DECK (Tiny Lessons + Slang Hang)" block
+   in docs/design-reference/extension-fun-learning.css starting
+   at line 705. Single centered card, 3D flip, prev/next nav,
+   top counter + progress bar.
+   ============================================================ */
+
+.deck {
+  max-width: 560px;
+  margin: 0 auto;
+  padding-bottom: var(--s-20);
+}
+
+.deckHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: var(--s-4) 0 var(--s-6);
+}
+
+.deckTitle {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fl-text);
+}
+
+.deckCounter {
+  font-size: 13px;
+  color: var(--fl-text-2);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.progressTrack {
+  height: 6px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-2);
+  overflow: hidden;
+  margin-bottom: var(--s-8);
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: var(--r-pill);
+  background: linear-gradient(90deg, var(--fl-secondary), var(--fl-accent));
+  width: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .progressFill {
+    transition: width var(--d-slow) var(--ease);
+  }
+}
+
+/* ---- Flashcard --------------------------------------------- */
+
+.flashcard {
+  perspective: 1400px;
+  width: 100%;
+  height: 340px;
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  /* Keep role="button" styling neutral — the <div> acts as the trigger. */
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.flashcard:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 4px;
+  border-radius: var(--r-lg);
+}
+
+.fcInner {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fcInner {
+    transition: transform var(--d-slow) var(--ease-out);
+  }
+}
+
+.flashcard[data-flipped="true"] .fcInner {
+  transform: rotateY(180deg);
+}
+
+/* Wave 15 — the in-app Animations toggle (extension
+   `body[data-motion="off"] .fc-inner{transition:none}`). The card still
+   flips; it just snaps instead of spinning. */
+:global(body[data-motion="off"]) .fcInner,
+:global(body[data-motion="off"]) .progressFill {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* No 3D flip — faces cross-fade via opacity so screen-readers and
+     reduced-motion users still see the back content. */
+  .fcInner {
+    transition: none;
+  }
+  .flashcard[data-flipped="true"] .fcInner {
+    transform: none;
+  }
+  .fcFront { opacity: 1; }
+  .fcBack  { opacity: 0; transform: none; }
+  .flashcard[data-flipped="true"] .fcFront { opacity: 0; }
+  .flashcard[data-flipped="true"] .fcBack  { opacity: 1; }
+}
+
+.fcFace {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--r-lg);
+  padding: var(--s-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--fl-border);
+}
+
+.fcFront {
+  background:
+    radial-gradient(130% 100% at 50% 0%, rgba(214, 120, 240, 0.12), transparent 60%),
+    var(--fl-surface-1);
+  gap: 18px;
+}
+
+.fcBack {
+  transform: rotateY(180deg);
+  background:
+    radial-gradient(130% 100% at 50% 0%, rgba(139, 92, 246, 0.16), transparent 60%),
+    var(--fl-bg-2);
+  gap: 12px;
+  justify-content: flex-start;
+  padding-top: var(--s-10);
+  overflow: auto;
+}
+
+.fcEra,
+.fcRegister {
+  position: absolute;
+  top: 18px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  /* Match the extension's `.badge-pill` casing — NOT uppercased. The data
+     ships era / register strings as "everyday", "casual", etc., and the
+     extension renders them verbatim. Wave 12B parity fix. */
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+}
+
+.fcEra {
+  inset-inline-end: 18px;
+  color: var(--fl-text);
+  background: color-mix(in oklab, var(--fl-accent-2) 22%, var(--fl-surface-2));
+  border: 1px solid color-mix(in oklab, var(--fl-accent-2) 36%, transparent);
+}
+
+.fcRegister {
+  inset-inline-start: 18px;
+  color: var(--fl-text-2);
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+}
+
+.fcPhrase {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  max-width: 18ch;
+  word-break: break-word;
+  color: var(--fl-text);
+  margin: 0;
+}
+
+.fcRoman {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--fl-text-3);
+  margin: -6px 0 0;
+}
+
+.fcHint {
+  position: absolute;
+  bottom: 18px;
+  font-size: 12.5px;
+  color: var(--fl-text-3);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Hand-tap SVG that leads the hint copy. Mirrors the extension's
+   `.fc-hint svg{width:13px;height:13px;opacity:0.8}` rule (Wave 12B/12C). */
+.fcHint svg,
+.fcHintIcon {
+  width: 13px;
+  height: 13px;
+  opacity: 0.8;
+  flex: none;
+}
+
+/* Front-face audio row sits above the hint. The wrapper carries
+   `data-no-flip` on the component so audio taps don't bubble into a flip. */
+.fcFrontAudio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-2);
+}
+
+.fcFrontAudioLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+}
+
+/* ---- Back face ---- */
+
+.bMean {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--fl-accent);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 4px 0 0;
+}
+
+.bLiteral {
+  font-size: 13px;
+  color: var(--fl-text-3);
+  font-style: italic;
+  margin: 0;
+}
+
+.bUsage {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  color: var(--fl-text-2);
+  line-height: 1.55;
+  max-width: 42ch;
+}
+
+.bExample {
+  margin-top: 10px;
+  padding: 12px 16px;
+  border-radius: var(--r-md);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  font-size: 14.5px;
+  color: var(--fl-text);
+  line-height: 1.5;
+  max-width: 42ch;
+  text-align: start;
+}
+
+.bExample .lbl {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+  margin-bottom: 5px;
+}
+
+.bDivider {
+  width: 40px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--fl-border-2);
+  margin: 6px 0;
+}
+
+.bAudioRow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-3);
+}
+
+.bAudioLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+}
+
+/* ---- Nav row ---- */
+
+.deckNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: var(--s-6);
+}
+
+.navBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.navBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: var(--r-pill);
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--fl-border);
+  background: var(--fl-surface-1);
+  color: var(--fl-text);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .navBtn {
+    transition: transform var(--d-fast) var(--ease),
+                background var(--d-fast),
+                border-color var(--d-fast);
+  }
+  .navBtn:active:not(:disabled) {
+    transform: scale(0.96);
+  }
+}
+
+.navBtn:hover:not(:disabled) {
+  background: var(--fl-surface-2);
+  border-color: var(--fl-border-2);
+}
+
+.navBtn:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.navBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.navBtn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Primary variant — Wave 12B/12C. The extension renders "Next →" as the
+   brand-gradient `.btn-pill.primary` and "Prev" as the muted secondary.
+   Mirrors `extension-fun-learning.css` lines 496–500. */
+.navBtnPrimary {
+  background: linear-gradient(120deg, var(--fl-secondary), var(--fl-accent));
+  border-color: transparent;
+  color: var(--fl-on-accent);
+  box-shadow: 0 8px 24px -8px color-mix(in oklab, var(--fl-secondary) 55%, transparent);
+}
+
+.navBtnPrimary:hover:not(:disabled) {
+  background: linear-gradient(120deg, var(--fl-secondary), var(--fl-accent));
+  border-color: transparent;
+  filter: brightness(1.06);
+}
+
+.navBtnPrimary:disabled {
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-text);
+  box-shadow: none;
+  filter: none;
+}
+
+.deckHint {
+  font-size: 12px;
+  color: var(--fl-text-3);
+}
+
+.heroMeta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 11px;
+  border-radius: var(--r-pill);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-2);
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  margin-bottom: var(--s-4);
+}
+
+@media (max-width: 560px) {
+  .flashcard {
+    height: 380px;
+  }
+  .deckHint {
+    display: none;
+  }
+}

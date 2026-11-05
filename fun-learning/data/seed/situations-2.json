@@ -1,0 +1,3488 @@
+{
+  "ja": {
+    "restaurant": {
+      "title": "レストランで",
+      "titleEn": "At a Restaurant",
+      "phrases": [
+        {
+          "phrase": "すみません、メニューをお願いします",
+          "romanization": "Sumimasen, menyuu wo onegai shimasu",
+          "meaning": "Excuse me, menu please",
+          "usage": "Polite request to staff",
+          "literal": null
+        },
+        {
+          "phrase": "おすすめは何ですか",
+          "romanization": "Osusume wa nan desu ka",
+          "meaning": "What do you recommend?",
+          "usage": "Asking for suggestions",
+          "literal": "Recommendation is what?"
+        },
+        {
+          "phrase": "お会計をお願いします",
+          "romanization": "Okaikei wo onegai shimasu",
+          "meaning": "Check please",
+          "usage": "Requesting the bill",
+          "literal": null
+        },
+        {
+          "phrase": "二名です",
+          "romanization": "Nimei desu",
+          "meaning": "Table for two",
+          "usage": "When entering a restaurant",
+          "literal": "Two people"
+        },
+        {
+          "phrase": "アレルギーがあります",
+          "romanization": "Arerugii ga arimasu",
+          "meaning": "I have allergies",
+          "usage": "Informing about dietary needs",
+          "literal": null
+        },
+        {
+          "phrase": "これは何ですか",
+          "romanization": "Kore wa nan desu ka",
+          "meaning": "What is this?",
+          "usage": "Asking about a dish",
+          "literal": null
+        },
+        {
+          "phrase": "とても美味しかったです",
+          "romanization": "Totemo oishikatta desu",
+          "meaning": "It was very delicious",
+          "usage": "Complimenting the meal",
+          "literal": null
+        },
+        {
+          "phrase": "予約をしています",
+          "romanization": "Yoyaku wo shite imasu",
+          "meaning": "I have a reservation",
+          "usage": "At the entrance",
+          "literal": "Reservation is being done"
+        }
+      ]
+    },
+    "airport": {
+      "title": "空港で",
+      "titleEn": "At the Airport",
+      "phrases": [
+        {
+          "phrase": "搭乗口はどこですか",
+          "romanization": "Toujouguchi wa doko desu ka",
+          "meaning": "Where is the boarding gate?",
+          "usage": "Finding your gate",
+          "literal": null
+        },
+        {
+          "phrase": "荷物が出てきません",
+          "romanization": "Nimotsu ga dete kimasen",
+          "meaning": "My luggage hasn't arrived",
+          "usage": "At baggage claim",
+          "literal": "Luggage hasn't come out"
+        },
+        {
+          "phrase": "乗り継ぎはどこですか",
+          "romanization": "Noritsugi wa doko desu ka",
+          "meaning": "Where are the transfers?",
+          "usage": "Connecting flights",
+          "literal": null
+        },
+        {
+          "phrase": "窓側の席をお願いします",
+          "romanization": "Madogawa no seki wo onegai shimasu",
+          "meaning": "Window seat please",
+          "usage": "At check-in counter",
+          "literal": null
+        },
+        {
+          "phrase": "観光で来ました",
+          "romanization": "Kankou de kimashita",
+          "meaning": "I'm here for sightseeing",
+          "usage": "At immigration",
+          "literal": "Came for tourism"
+        },
+        {
+          "phrase": "三日間滞在します",
+          "romanization": "Mikkakan taizai shimasu",
+          "meaning": "I'll stay for three days",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "申告するものはありません",
+          "romanization": "Shinkoku suru mono wa arimasen",
+          "meaning": "I have nothing to declare",
+          "usage": "At customs",
+          "literal": null
+        },
+        {
+          "phrase": "この便は遅れていますか",
+          "romanization": "Kono bin wa okurete imasu ka",
+          "meaning": "Is this flight delayed?",
+          "usage": "Checking flight status",
+          "literal": null
+        }
+      ]
+    },
+    "taxi": {
+      "title": "タクシーで",
+      "titleEn": "In a Taxi",
+      "phrases": [
+        {
+          "phrase": "この住所までお願いします",
+          "romanization": "Kono juusho made onegai shimasu",
+          "meaning": "To this address please",
+          "usage": "Showing address to driver",
+          "literal": null
+        },
+        {
+          "phrase": "どのくらいかかりますか",
+          "romanization": "Dono kurai kakarimasu ka",
+          "meaning": "How long will it take?",
+          "usage": "Asking about travel time",
+          "literal": null
+        },
+        {
+          "phrase": "ここで降ろしてください",
+          "romanization": "Koko de oroshite kudasai",
+          "meaning": "Please drop me off here",
+          "usage": "Requesting a stop",
+          "literal": null
+        },
+        {
+          "phrase": "トランクを開けてください",
+          "romanization": "Toranku wo akete kudasai",
+          "meaning": "Please open the trunk",
+          "usage": "For luggage",
+          "literal": null
+        },
+        {
+          "phrase": "カードで払えますか",
+          "romanization": "Kaado de haraemasu ka",
+          "meaning": "Can I pay by card?",
+          "usage": "Asking about payment",
+          "literal": null
+        },
+        {
+          "phrase": "急いでください",
+          "romanization": "Isoide kudasai",
+          "meaning": "Please hurry",
+          "usage": "When in a rush",
+          "literal": null
+        },
+        {
+          "phrase": "まっすぐ行ってください",
+          "romanization": "Massugu itte kudasai",
+          "meaning": "Please go straight",
+          "usage": "Giving directions",
+          "literal": null
+        },
+        {
+          "phrase": "領収書をお願いします",
+          "romanization": "Ryoushuusho wo onegai shimasu",
+          "meaning": "Receipt please",
+          "usage": "After paying",
+          "literal": null
+        }
+      ]
+    },
+    "hotel": {
+      "title": "ホテルで",
+      "titleEn": "At a Hotel",
+      "phrases": [
+        {
+          "phrase": "チェックインをお願いします",
+          "romanization": "Chekkuin wo onegai shimasu",
+          "meaning": "I'd like to check in",
+          "usage": "At the front desk",
+          "literal": null
+        },
+        {
+          "phrase": "Wi-Fiのパスワードは何ですか",
+          "romanization": "Waifai no pasuwaado wa nan desu ka",
+          "meaning": "What's the Wi-Fi password?",
+          "usage": "Asking for internet access",
+          "literal": null
+        },
+        {
+          "phrase": "部屋を変えていただけますか",
+          "romanization": "Heya wo kaete itadakemasu ka",
+          "meaning": "Could you change my room?",
+          "usage": "Very polite room change request",
+          "literal": null
+        },
+        {
+          "phrase": "タオルを追加でお願いします",
+          "romanization": "Taoru wo tsuika de onegai shimasu",
+          "meaning": "Extra towels please",
+          "usage": "Requesting amenities",
+          "literal": null
+        },
+        {
+          "phrase": "朝食は何時からですか",
+          "romanization": "Choushoku wa nanji kara desu ka",
+          "meaning": "What time does breakfast start?",
+          "usage": "Asking about meals",
+          "literal": null
+        },
+        {
+          "phrase": "荷物を預かっていただけますか",
+          "romanization": "Nimotsu wo azukatte itadakemasu ka",
+          "meaning": "Could you store my luggage?",
+          "usage": "Before/after checkout",
+          "literal": null
+        },
+        {
+          "phrase": "エアコンが動きません",
+          "romanization": "Eakon ga ugokimasen",
+          "meaning": "The air conditioning doesn't work",
+          "usage": "Reporting a problem",
+          "literal": null
+        },
+        {
+          "phrase": "チェックアウトは何時ですか",
+          "romanization": "Chekkuauto wa nanji desu ka",
+          "meaning": "What time is checkout?",
+          "usage": "Asking about checkout time",
+          "literal": null
+        }
+      ]
+    },
+    "shopping": {
+      "title": "買い物で",
+      "titleEn": "Shopping",
+      "phrases": [
+        {
+          "phrase": "試着してもいいですか",
+          "romanization": "Shichaku shite mo ii desu ka",
+          "meaning": "Can I try this on?",
+          "usage": "At a clothing store",
+          "literal": null
+        },
+        {
+          "phrase": "もう少し安くなりませんか",
+          "romanization": "Mou sukoshi yasuku narimasen ka",
+          "meaning": "Can you make it a bit cheaper?",
+          "usage": "Polite bargaining",
+          "literal": null
+        },
+        {
+          "phrase": "他の色はありますか",
+          "romanization": "Hoka no iro wa arimasu ka",
+          "meaning": "Do you have other colors?",
+          "usage": "Asking for options",
+          "literal": null
+        },
+        {
+          "phrase": "免税手続きをお願いします",
+          "romanization": "Menzei tetsuzuki wo onegai shimasu",
+          "meaning": "Tax-free processing please",
+          "usage": "For tourist tax exemption",
+          "literal": null
+        },
+        {
+          "phrase": "これをください",
+          "romanization": "Kore wo kudasai",
+          "meaning": "I'll take this",
+          "usage": "Making a purchase",
+          "literal": "Give me this"
+        },
+        {
+          "phrase": "見ているだけです",
+          "romanization": "Mite iru dake desu",
+          "meaning": "I'm just looking",
+          "usage": "When approached by staff",
+          "literal": null
+        },
+        {
+          "phrase": "ギフト用に包んでください",
+          "romanization": "Gifuto you ni tsutsunde kudasai",
+          "meaning": "Please gift wrap it",
+          "usage": "Requesting gift wrapping",
+          "literal": null
+        },
+        {
+          "phrase": "返品できますか",
+          "romanization": "Henpin dekimasu ka",
+          "meaning": "Can I return this?",
+          "usage": "Asking about returns",
+          "literal": null
+        }
+      ]
+    },
+    "doctor": {
+      "title": "病院で",
+      "titleEn": "At the Doctor",
+      "phrases": [
+        {
+          "phrase": "頭が痛いです",
+          "romanization": "Atama ga itai desu",
+          "meaning": "I have a headache",
+          "usage": "Describing symptoms",
+          "literal": "Head is painful"
+        },
+        {
+          "phrase": "熱があります",
+          "romanization": "Netsu ga arimasu",
+          "meaning": "I have a fever",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "この薬にアレルギーがあります",
+          "romanization": "Kono kusuri ni arerugii ga arimasu",
+          "meaning": "I'm allergic to this medicine",
+          "usage": "Important medical info",
+          "literal": null
+        },
+        {
+          "phrase": "保険証を持っています",
+          "romanization": "Hokenshou wo motte imasu",
+          "meaning": "I have my insurance card",
+          "usage": "At reception",
+          "literal": null
+        },
+        {
+          "phrase": "いつからですか",
+          "romanization": "Itsu kara desu ka",
+          "meaning": "Since when?",
+          "usage": "Doctor may ask this",
+          "literal": null
+        },
+        {
+          "phrase": "お腹が痛いです",
+          "romanization": "Onaka ga itai desu",
+          "meaning": "I have a stomachache",
+          "usage": "Describing symptoms",
+          "literal": "Stomach is painful"
+        },
+        {
+          "phrase": "処方箋をお願いします",
+          "romanization": "Shohousen wo onegai shimasu",
+          "meaning": "Prescription please",
+          "usage": "Requesting medication",
+          "literal": null
+        },
+        {
+          "phrase": "英語が話せる先生はいますか",
+          "romanization": "Eigo ga hanaseru sensei wa imasu ka",
+          "meaning": "Is there a doctor who speaks English?",
+          "usage": "Requesting English-speaking doctor",
+          "literal": null
+        }
+      ]
+    },
+    "dating": {
+      "title": "デートで",
+      "titleEn": "Dating",
+      "phrases": [
+        {
+          "phrase": "今度、食事に行きませんか",
+          "romanization": "Kondo, shokuji ni ikimasen ka",
+          "meaning": "Would you like to go eat sometime?",
+          "usage": "Asking someone out",
+          "literal": "Next time, won't you go to eat?"
+        },
+        {
+          "phrase": "とても楽しかったです",
+          "romanization": "Totemo tanoshikatta desu",
+          "meaning": "I had a great time",
+          "usage": "After a date",
+          "literal": null
+        },
+        {
+          "phrase": "趣味は何ですか",
+          "romanization": "Shumi wa nan desu ka",
+          "meaning": "What are your hobbies?",
+          "usage": "Getting to know someone",
+          "literal": null
+        },
+        {
+          "phrase": "また会いたいです",
+          "romanization": "Mata aitai desu",
+          "meaning": "I'd like to see you again",
+          "usage": "Expressing interest",
+          "literal": "Want to meet again"
+        },
+        {
+          "phrase": "連絡先を教えてもらえますか",
+          "romanization": "Renrakusaki wo oshiete moraemasu ka",
+          "meaning": "Can I have your contact info?",
+          "usage": "Exchanging details",
+          "literal": null
+        },
+        {
+          "phrase": "素敵ですね",
+          "romanization": "Suteki desu ne",
+          "meaning": "You look wonderful",
+          "usage": "Giving a compliment",
+          "literal": null
+        },
+        {
+          "phrase": "何が好きですか",
+          "romanization": "Nani ga suki desu ka",
+          "meaning": "What do you like?",
+          "usage": "Asking about preferences",
+          "literal": null
+        },
+        {
+          "phrase": "今日は私がおごります",
+          "romanization": "Kyou wa watashi ga ogorimasu",
+          "meaning": "It's my treat today",
+          "usage": "Offering to pay",
+          "literal": null
+        }
+      ]
+    },
+    "interview": {
+      "title": "面接で",
+      "titleEn": "Job Interview",
+      "phrases": [
+        {
+          "phrase": "本日はよろしくお願いいたします",
+          "romanization": "Honjitsu wa yoroshiku onegai itashimasu",
+          "meaning": "Thank you for today (formal greeting)",
+          "usage": "Opening an interview",
+          "literal": "Today, please treat me well"
+        },
+        {
+          "phrase": "前職では営業を担当しておりました",
+          "romanization": "Zenshoku dewa eigyou wo tantou shite orimashita",
+          "meaning": "In my previous job, I was in charge of sales",
+          "usage": "Describing past experience",
+          "literal": null
+        },
+        {
+          "phrase": "御社で成長したいと考えています",
+          "romanization": "Onsha de seichou shitai to kangaete imasu",
+          "meaning": "I want to grow at your company",
+          "usage": "Expressing motivation",
+          "literal": null
+        },
+        {
+          "phrase": "質問してもよろしいですか",
+          "romanization": "Shitsumon shite mo yoroshii desu ka",
+          "meaning": "May I ask a question?",
+          "usage": "Before asking questions",
+          "literal": null
+        },
+        {
+          "phrase": "自己紹介をさせていただきます",
+          "romanization": "Jiko shoukai wo sasete itadakimasu",
+          "meaning": "Allow me to introduce myself",
+          "usage": "Starting self-introduction",
+          "literal": null
+        },
+        {
+          "phrase": "チームワークを大切にしています",
+          "romanization": "Chiimuwaku wo taisetsu ni shite imasu",
+          "meaning": "I value teamwork",
+          "usage": "Describing work style",
+          "literal": null
+        },
+        {
+          "phrase": "いつから働けますか",
+          "romanization": "Itsu kara hatarakemasu ka",
+          "meaning": "When can you start?",
+          "usage": "Interviewer may ask",
+          "literal": null
+        },
+        {
+          "phrase": "本日はありがとうございました",
+          "romanization": "Honjitsu wa arigatou gozaimashita",
+          "meaning": "Thank you very much for today",
+          "usage": "Closing an interview",
+          "literal": null
+        }
+      ]
+    }
+  },
+  "ko": {
+    "restaurant": {
+      "title": "식당에서",
+      "titleEn": "At a Restaurant",
+      "phrases": [
+        {
+          "phrase": "저기요, 메뉴판 주세요",
+          "romanization": "Jeogiyo, menyupan juseyo",
+          "meaning": "Excuse me, menu please",
+          "usage": "Calling a server",
+          "literal": "Over there, give menu"
+        },
+        {
+          "phrase": "추천 메뉴가 뭐예요?",
+          "romanization": "Chucheon menyuga mwoyeyo?",
+          "meaning": "What do you recommend?",
+          "usage": "Asking for suggestions",
+          "literal": null
+        },
+        {
+          "phrase": "계산해 주세요",
+          "romanization": "Gyesanhae juseyo",
+          "meaning": "Check please",
+          "usage": "Requesting the bill",
+          "literal": null
+        },
+        {
+          "phrase": "두 명이요",
+          "romanization": "Du myeongiyo",
+          "meaning": "Two people",
+          "usage": "When entering a restaurant",
+          "literal": null
+        },
+        {
+          "phrase": "덜 맵게 해주세요",
+          "romanization": "Deol maepge haejuseyo",
+          "meaning": "Less spicy please",
+          "usage": "Adjusting spice level",
+          "literal": null
+        },
+        {
+          "phrase": "이거 하나 더 주세요",
+          "romanization": "Igeo hana deo juseyo",
+          "meaning": "One more of this please",
+          "usage": "Ordering more",
+          "literal": null
+        },
+        {
+          "phrase": "정말 맛있어요",
+          "romanization": "Jeongmal masisseoyo",
+          "meaning": "It's really delicious",
+          "usage": "Complimenting the food",
+          "literal": null
+        },
+        {
+          "phrase": "예약했어요",
+          "romanization": "Yeyakhaesseoyo",
+          "meaning": "I have a reservation",
+          "usage": "At the entrance",
+          "literal": "Reserved"
+        }
+      ]
+    },
+    "airport": {
+      "title": "공항에서",
+      "titleEn": "At the Airport",
+      "phrases": [
+        {
+          "phrase": "탑승구가 어디예요?",
+          "romanization": "Tapseungguga eodiyeyo?",
+          "meaning": "Where is the boarding gate?",
+          "usage": "Finding your gate",
+          "literal": null
+        },
+        {
+          "phrase": "짐이 안 나왔어요",
+          "romanization": "Jimi an nawasseoyo",
+          "meaning": "My luggage didn't come out",
+          "usage": "At baggage claim",
+          "literal": null
+        },
+        {
+          "phrase": "환승은 어디서 해요?",
+          "romanization": "Hwanseungeun eodiseo haeyo?",
+          "meaning": "Where do I transfer?",
+          "usage": "Connecting flights",
+          "literal": null
+        },
+        {
+          "phrase": "창가 좌석으로 주세요",
+          "romanization": "Changga jwaseougeuro juseyo",
+          "meaning": "Window seat please",
+          "usage": "At check-in",
+          "literal": null
+        },
+        {
+          "phrase": "관광 목적입니다",
+          "romanization": "Gwangwang mokjeogimnida",
+          "meaning": "I'm here for tourism",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "삼 일 동안 있을 거예요",
+          "romanization": "Sam il dongan isseul geoyeyo",
+          "meaning": "I'll stay for three days",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "신고할 물건이 없습니다",
+          "romanization": "Singohal mulgeoni eopseumnida",
+          "meaning": "I have nothing to declare",
+          "usage": "At customs",
+          "literal": null
+        },
+        {
+          "phrase": "이 비행기 지연됐어요?",
+          "romanization": "I bihaenggi jiyeondwaesseoyo?",
+          "meaning": "Is this flight delayed?",
+          "usage": "Checking flight status",
+          "literal": null
+        }
+      ]
+    },
+    "taxi": {
+      "title": "택시에서",
+      "titleEn": "In a Taxi",
+      "phrases": [
+        {
+          "phrase": "이 주소로 가 주세요",
+          "romanization": "I jusoro ga juseyo",
+          "meaning": "Please go to this address",
+          "usage": "Showing address to driver",
+          "literal": null
+        },
+        {
+          "phrase": "얼마나 걸려요?",
+          "romanization": "Eolmana geollyeoyo?",
+          "meaning": "How long will it take?",
+          "usage": "Asking about travel time",
+          "literal": null
+        },
+        {
+          "phrase": "여기서 내려 주세요",
+          "romanization": "Yeogiseo naeryeo juseyo",
+          "meaning": "Please let me off here",
+          "usage": "Requesting a stop",
+          "literal": null
+        },
+        {
+          "phrase": "트렁크 열어 주세요",
+          "romanization": "Teureongkeu yeoreo juseyo",
+          "meaning": "Please open the trunk",
+          "usage": "For luggage",
+          "literal": null
+        },
+        {
+          "phrase": "카드로 결제 돼요?",
+          "romanization": "Kadeuro gyeolje dwaeyo?",
+          "meaning": "Can I pay by card?",
+          "usage": "Asking about payment",
+          "literal": null
+        },
+        {
+          "phrase": "빨리 가 주세요",
+          "romanization": "Ppalli ga juseyo",
+          "meaning": "Please go fast",
+          "usage": "When in a rush",
+          "literal": null
+        },
+        {
+          "phrase": "직진해 주세요",
+          "romanization": "Jikjinhae juseyo",
+          "meaning": "Please go straight",
+          "usage": "Giving directions",
+          "literal": null
+        },
+        {
+          "phrase": "영수증 주세요",
+          "romanization": "Yeongsujeung juseyo",
+          "meaning": "Receipt please",
+          "usage": "After paying",
+          "literal": null
+        }
+      ]
+    },
+    "hotel": {
+      "title": "호텔에서",
+      "titleEn": "At a Hotel",
+      "phrases": [
+        {
+          "phrase": "체크인 하려고요",
+          "romanization": "Chekeu-in haryeogoyo",
+          "meaning": "I'd like to check in",
+          "usage": "At the front desk",
+          "literal": null
+        },
+        {
+          "phrase": "와이파이 비밀번호가 뭐예요?",
+          "romanization": "Waipai bimilbeonhoga mwoyeyo?",
+          "meaning": "What's the Wi-Fi password?",
+          "usage": "Asking for internet access",
+          "literal": null
+        },
+        {
+          "phrase": "방을 바꿔 주실 수 있어요?",
+          "romanization": "Bangeul bakkwo jusil su isseoyo?",
+          "meaning": "Could you change my room?",
+          "usage": "Requesting a room change",
+          "literal": null
+        },
+        {
+          "phrase": "수건 더 주세요",
+          "romanization": "Sugeon deo juseyo",
+          "meaning": "More towels please",
+          "usage": "Requesting amenities",
+          "literal": null
+        },
+        {
+          "phrase": "조식은 몇 시부터예요?",
+          "romanization": "Josigeun myeot sibuteyeyo?",
+          "meaning": "What time does breakfast start?",
+          "usage": "Asking about meals",
+          "literal": null
+        },
+        {
+          "phrase": "짐을 맡아 주실 수 있어요?",
+          "romanization": "Jimeul mata jusil su isseoyo?",
+          "meaning": "Could you store my luggage?",
+          "usage": "Before/after checkout",
+          "literal": null
+        },
+        {
+          "phrase": "에어컨이 안 돼요",
+          "romanization": "Eeokeon-i an dwaeyo",
+          "meaning": "The air conditioning doesn't work",
+          "usage": "Reporting a problem",
+          "literal": null
+        },
+        {
+          "phrase": "체크아웃은 몇 시예요?",
+          "romanization": "Chekeu-auseun myeot siyeyo?",
+          "meaning": "What time is checkout?",
+          "usage": "Asking about checkout time",
+          "literal": null
+        }
+      ]
+    },
+    "shopping": {
+      "title": "쇼핑할 때",
+      "titleEn": "Shopping",
+      "phrases": [
+        {
+          "phrase": "입어 봐도 돼요?",
+          "romanization": "Ibeo bwado dwaeyo?",
+          "meaning": "Can I try this on?",
+          "usage": "At a clothing store",
+          "literal": null
+        },
+        {
+          "phrase": "좀 깎아 주세요",
+          "romanization": "Jom kkakka juseyo",
+          "meaning": "Please give a discount",
+          "usage": "Bargaining at markets",
+          "literal": "Please shave some off"
+        },
+        {
+          "phrase": "다른 색깔 있어요?",
+          "romanization": "Dareun saekkal isseoyo?",
+          "meaning": "Do you have other colors?",
+          "usage": "Asking for options",
+          "literal": null
+        },
+        {
+          "phrase": "면세 되나요?",
+          "romanization": "Myeonse doenayo?",
+          "meaning": "Is this tax-free?",
+          "usage": "Asking about tax exemption",
+          "literal": null
+        },
+        {
+          "phrase": "이거 주세요",
+          "romanization": "Igeo juseyo",
+          "meaning": "I'll take this",
+          "usage": "Making a purchase",
+          "literal": "Give me this"
+        },
+        {
+          "phrase": "그냥 구경하고 있어요",
+          "romanization": "Geunyang gugyeonghago isseoyo",
+          "meaning": "I'm just looking around",
+          "usage": "When approached by staff",
+          "literal": null
+        },
+        {
+          "phrase": "선물 포장해 주세요",
+          "romanization": "Seonmul pojanghae juseyo",
+          "meaning": "Please gift wrap it",
+          "usage": "Requesting gift wrapping",
+          "literal": null
+        },
+        {
+          "phrase": "환불 가능해요?",
+          "romanization": "Hwanbul ganeunghaeyo?",
+          "meaning": "Can I get a refund?",
+          "usage": "Asking about returns",
+          "literal": null
+        }
+      ]
+    },
+    "doctor": {
+      "title": "병원에서",
+      "titleEn": "At the Doctor",
+      "phrases": [
+        {
+          "phrase": "머리가 아파요",
+          "romanization": "Meoriga apayo",
+          "meaning": "I have a headache",
+          "usage": "Describing symptoms",
+          "literal": "Head hurts"
+        },
+        {
+          "phrase": "열이 나요",
+          "romanization": "Yeori nayo",
+          "meaning": "I have a fever",
+          "usage": "Describing symptoms",
+          "literal": "Fever comes out"
+        },
+        {
+          "phrase": "이 약에 알레르기가 있어요",
+          "romanization": "I yage allereugi-ga isseoyo",
+          "meaning": "I'm allergic to this medicine",
+          "usage": "Important medical info",
+          "literal": null
+        },
+        {
+          "phrase": "보험 있어요",
+          "romanization": "Boheom isseoyo",
+          "meaning": "I have insurance",
+          "usage": "At reception",
+          "literal": null
+        },
+        {
+          "phrase": "언제부터 아팠어요?",
+          "romanization": "Eonjebuteo apasseoyo?",
+          "meaning": "Since when did it hurt?",
+          "usage": "Doctor may ask this",
+          "literal": null
+        },
+        {
+          "phrase": "배가 아파요",
+          "romanization": "Baega apayo",
+          "meaning": "I have a stomachache",
+          "usage": "Describing symptoms",
+          "literal": "Stomach hurts"
+        },
+        {
+          "phrase": "처방전 주세요",
+          "romanization": "Cheobangjeon juseyo",
+          "meaning": "Prescription please",
+          "usage": "Requesting medication",
+          "literal": null
+        },
+        {
+          "phrase": "영어 하시는 의사 선생님 계세요?",
+          "romanization": "Yeongeo hasineun uisa seonsaengnim gyeseyo?",
+          "meaning": "Is there a doctor who speaks English?",
+          "usage": "Requesting English-speaking doctor",
+          "literal": null
+        }
+      ]
+    },
+    "dating": {
+      "title": "데이트할 때",
+      "titleEn": "Dating",
+      "phrases": [
+        {
+          "phrase": "같이 밥 먹으러 갈래요?",
+          "romanization": "Gachi bap meogeureo gallaeyo?",
+          "meaning": "Want to go eat together?",
+          "usage": "Asking someone out",
+          "literal": null
+        },
+        {
+          "phrase": "오늘 정말 즐거웠어요",
+          "romanization": "Oneul jeongmal jeulgeoweosseoyo",
+          "meaning": "I really enjoyed today",
+          "usage": "After a date",
+          "literal": null
+        },
+        {
+          "phrase": "취미가 뭐예요?",
+          "romanization": "Chwimiga mwoyeyo?",
+          "meaning": "What are your hobbies?",
+          "usage": "Getting to know someone",
+          "literal": null
+        },
+        {
+          "phrase": "또 만나고 싶어요",
+          "romanization": "Tto mannago sipeoyo",
+          "meaning": "I want to see you again",
+          "usage": "Expressing interest",
+          "literal": null
+        },
+        {
+          "phrase": "연락처 알려 주실래요?",
+          "romanization": "Yeollakcheo allyeo jusillaeyo?",
+          "meaning": "Can I have your number?",
+          "usage": "Exchanging details",
+          "literal": null
+        },
+        {
+          "phrase": "오늘 멋져 보여요",
+          "romanization": "Oneul meotjyeo boyeoyo",
+          "meaning": "You look great today",
+          "usage": "Giving a compliment",
+          "literal": null
+        },
+        {
+          "phrase": "뭐 좋아해요?",
+          "romanization": "Mwo joahaeyo?",
+          "meaning": "What do you like?",
+          "usage": "Asking about preferences",
+          "literal": null
+        },
+        {
+          "phrase": "오늘은 제가 살게요",
+          "romanization": "Oneureun jega salgeyo",
+          "meaning": "I'll pay today",
+          "usage": "Offering to pay",
+          "literal": "Today I'll buy"
+        }
+      ]
+    },
+    "interview": {
+      "title": "면접에서",
+      "titleEn": "Job Interview",
+      "phrases": [
+        {
+          "phrase": "안녕하세요, 잘 부탁드립니다",
+          "romanization": "Annyeonghaseyo, jal butakdeurimnida",
+          "meaning": "Hello, I'm in your care",
+          "usage": "Formal greeting to open",
+          "literal": null
+        },
+        {
+          "phrase": "이전 회사에서 마케팅을 담당했습니다",
+          "romanization": "Ijeon hoesaeseo maketing-eul damdanghaesseumnida",
+          "meaning": "I was in charge of marketing at my previous company",
+          "usage": "Describing past experience",
+          "literal": null
+        },
+        {
+          "phrase": "이 회사에서 성장하고 싶습니다",
+          "romanization": "I hoesaeseo seongjang-hago sipseumnida",
+          "meaning": "I want to grow at this company",
+          "usage": "Expressing motivation",
+          "literal": null
+        },
+        {
+          "phrase": "질문 드려도 될까요?",
+          "romanization": "Jilmun deuryeodo doelkkayo?",
+          "meaning": "May I ask a question?",
+          "usage": "Before asking questions",
+          "literal": null
+        },
+        {
+          "phrase": "자기소개를 하겠습니다",
+          "romanization": "Jagisogae-reul hagesseumnida",
+          "meaning": "I'll introduce myself",
+          "usage": "Starting self-introduction",
+          "literal": null
+        },
+        {
+          "phrase": "협업을 중요하게 생각합니다",
+          "romanization": "Hyeobeop-eul jungyohage saenggakhamnida",
+          "meaning": "I value collaboration",
+          "usage": "Describing work style",
+          "literal": null
+        },
+        {
+          "phrase": "언제부터 근무 가능하세요?",
+          "romanization": "Eonjebuteo geunmu ganeunghaseyo?",
+          "meaning": "When can you start working?",
+          "usage": "Interviewer may ask",
+          "literal": null
+        },
+        {
+          "phrase": "오늘 감사했습니다",
+          "romanization": "Oneul gamsahaesseumnida",
+          "meaning": "Thank you for today",
+          "usage": "Closing an interview",
+          "literal": null
+        }
+      ]
+    }
+  },
+  "zh-CN": {
+    "restaurant": {
+      "title": "在餐厅",
+      "titleEn": "At a Restaurant",
+      "phrases": [
+        {
+          "phrase": "你好，请给我菜单",
+          "romanization": "Nǐ hǎo, qǐng gěi wǒ càidān",
+          "meaning": "Hello, menu please",
+          "usage": "Requesting a menu",
+          "literal": null
+        },
+        {
+          "phrase": "有什么推荐的吗？",
+          "romanization": "Yǒu shénme tuījiàn de ma?",
+          "meaning": "Any recommendations?",
+          "usage": "Asking for suggestions",
+          "literal": null
+        },
+        {
+          "phrase": "买单",
+          "romanization": "Mǎidān",
+          "meaning": "Check please",
+          "usage": "Requesting the bill",
+          "literal": "Buy the bill"
+        },
+        {
+          "phrase": "两位",
+          "romanization": "Liǎng wèi",
+          "meaning": "Table for two",
+          "usage": "When entering",
+          "literal": "Two people"
+        },
+        {
+          "phrase": "我不能吃辣",
+          "romanization": "Wǒ bù néng chī là",
+          "meaning": "I can't eat spicy food",
+          "usage": "Dietary restriction",
+          "literal": null
+        },
+        {
+          "phrase": "这道菜是什么？",
+          "romanization": "Zhè dào cài shì shénme?",
+          "meaning": "What is this dish?",
+          "usage": "Asking about a dish",
+          "literal": null
+        },
+        {
+          "phrase": "非常好吃",
+          "romanization": "Fēicháng hǎochī",
+          "meaning": "Very delicious",
+          "usage": "Complimenting the food",
+          "literal": null
+        },
+        {
+          "phrase": "我预定了位子",
+          "romanization": "Wǒ yùdìng le wèizi",
+          "meaning": "I have a reservation",
+          "usage": "At the entrance",
+          "literal": null
+        }
+      ]
+    },
+    "airport": {
+      "title": "在机场",
+      "titleEn": "At the Airport",
+      "phrases": [
+        {
+          "phrase": "登机口在哪里？",
+          "romanization": "Dēngjī kǒu zài nǎlǐ?",
+          "meaning": "Where is the boarding gate?",
+          "usage": "Finding your gate",
+          "literal": null
+        },
+        {
+          "phrase": "我的行李没有到",
+          "romanization": "Wǒ de xínglǐ méiyǒu dào",
+          "meaning": "My luggage hasn't arrived",
+          "usage": "At baggage claim",
+          "literal": null
+        },
+        {
+          "phrase": "转机在哪里？",
+          "romanization": "Zhuǎnjī zài nǎlǐ?",
+          "meaning": "Where do I transfer?",
+          "usage": "Connecting flights",
+          "literal": null
+        },
+        {
+          "phrase": "我要靠窗的座位",
+          "romanization": "Wǒ yào kào chuāng de zuòwèi",
+          "meaning": "I want a window seat",
+          "usage": "At check-in",
+          "literal": null
+        },
+        {
+          "phrase": "我来旅游的",
+          "romanization": "Wǒ lái lǚyóu de",
+          "meaning": "I'm here for tourism",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "我待三天",
+          "romanization": "Wǒ dāi sān tiān",
+          "meaning": "I'll stay three days",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "没有需要申报的",
+          "romanization": "Méiyǒu xūyào shēnbào de",
+          "meaning": "Nothing to declare",
+          "usage": "At customs",
+          "literal": null
+        },
+        {
+          "phrase": "这个航班晚点了吗？",
+          "romanization": "Zhège hángbān wǎndiǎn le ma?",
+          "meaning": "Is this flight delayed?",
+          "usage": "Checking flight status",
+          "literal": null
+        }
+      ]
+    },
+    "taxi": {
+      "title": "在出租车里",
+      "titleEn": "In a Taxi",
+      "phrases": [
+        {
+          "phrase": "师傅，去这个地址",
+          "romanization": "Shīfu, qù zhège dìzhǐ",
+          "meaning": "Driver, go to this address",
+          "usage": "Showing address",
+          "literal": "Master, go this address"
+        },
+        {
+          "phrase": "大概要多久？",
+          "romanization": "Dàgài yào duōjiǔ?",
+          "meaning": "How long will it take?",
+          "usage": "Asking about travel time",
+          "literal": null
+        },
+        {
+          "phrase": "在这里停",
+          "romanization": "Zài zhèlǐ tíng",
+          "meaning": "Stop here",
+          "usage": "Requesting a stop",
+          "literal": null
+        },
+        {
+          "phrase": "请打开后备箱",
+          "romanization": "Qǐng dǎkāi hòubèixiāng",
+          "meaning": "Please open the trunk",
+          "usage": "For luggage",
+          "literal": null
+        },
+        {
+          "phrase": "可以刷卡吗？",
+          "romanization": "Kěyǐ shuā kǎ ma?",
+          "meaning": "Can I pay by card?",
+          "usage": "Asking about payment",
+          "literal": "Can swipe card?"
+        },
+        {
+          "phrase": "请快一点",
+          "romanization": "Qǐng kuài yìdiǎn",
+          "meaning": "Please hurry",
+          "usage": "When in a rush",
+          "literal": null
+        },
+        {
+          "phrase": "一直走",
+          "romanization": "Yìzhí zǒu",
+          "meaning": "Go straight",
+          "usage": "Giving directions",
+          "literal": null
+        },
+        {
+          "phrase": "给我发票",
+          "romanization": "Gěi wǒ fāpiào",
+          "meaning": "Give me a receipt",
+          "usage": "After paying",
+          "literal": null
+        }
+      ]
+    },
+    "hotel": {
+      "title": "在酒店",
+      "titleEn": "At a Hotel",
+      "phrases": [
+        {
+          "phrase": "我要办理入住",
+          "romanization": "Wǒ yào bànlǐ rùzhù",
+          "meaning": "I'd like to check in",
+          "usage": "At the front desk",
+          "literal": null
+        },
+        {
+          "phrase": "Wi-Fi密码是多少？",
+          "romanization": "Wi-Fi mìmǎ shì duōshǎo?",
+          "meaning": "What's the Wi-Fi password?",
+          "usage": "Asking for internet access",
+          "literal": null
+        },
+        {
+          "phrase": "能换个房间吗？",
+          "romanization": "Néng huàn ge fángjiān ma?",
+          "meaning": "Can I change rooms?",
+          "usage": "Requesting a room change",
+          "literal": null
+        },
+        {
+          "phrase": "请多给几条毛巾",
+          "romanization": "Qǐng duō gěi jǐ tiáo máojīn",
+          "meaning": "Extra towels please",
+          "usage": "Requesting amenities",
+          "literal": null
+        },
+        {
+          "phrase": "早餐几点开始？",
+          "romanization": "Zǎocān jǐ diǎn kāishǐ?",
+          "meaning": "What time does breakfast start?",
+          "usage": "Asking about meals",
+          "literal": null
+        },
+        {
+          "phrase": "可以寄存行李吗？",
+          "romanization": "Kěyǐ jìcún xínglǐ ma?",
+          "meaning": "Can I store my luggage?",
+          "usage": "Before/after checkout",
+          "literal": null
+        },
+        {
+          "phrase": "空调坏了",
+          "romanization": "Kòngtiáo huài le",
+          "meaning": "The air conditioning is broken",
+          "usage": "Reporting a problem",
+          "literal": null
+        },
+        {
+          "phrase": "几点退房？",
+          "romanization": "Jǐ diǎn tuìfáng?",
+          "meaning": "What time is checkout?",
+          "usage": "Asking about checkout time",
+          "literal": null
+        }
+      ]
+    },
+    "shopping": {
+      "title": "购物",
+      "titleEn": "Shopping",
+      "phrases": [
+        {
+          "phrase": "能试穿一下吗？",
+          "romanization": "Néng shìchuān yíxià ma?",
+          "meaning": "Can I try this on?",
+          "usage": "At a clothing store",
+          "literal": null
+        },
+        {
+          "phrase": "能便宜一点吗？",
+          "romanization": "Néng piányi yìdiǎn ma?",
+          "meaning": "Can it be cheaper?",
+          "usage": "Bargaining",
+          "literal": null
+        },
+        {
+          "phrase": "有别的颜色吗？",
+          "romanization": "Yǒu bié de yánsè ma?",
+          "meaning": "Do you have other colors?",
+          "usage": "Asking for options",
+          "literal": null
+        },
+        {
+          "phrase": "可以退税吗？",
+          "romanization": "Kěyǐ tuìshuì ma?",
+          "meaning": "Can I get a tax refund?",
+          "usage": "For tourist tax refund",
+          "literal": null
+        },
+        {
+          "phrase": "我要这个",
+          "romanization": "Wǒ yào zhège",
+          "meaning": "I want this one",
+          "usage": "Making a purchase",
+          "literal": null
+        },
+        {
+          "phrase": "我随便看看",
+          "romanization": "Wǒ suíbiàn kànkan",
+          "meaning": "I'm just browsing",
+          "usage": "When approached by staff",
+          "literal": "I casually look look"
+        },
+        {
+          "phrase": "帮我包装成礼物",
+          "romanization": "Bāng wǒ bāozhuāng chéng lǐwù",
+          "meaning": "Please gift wrap it for me",
+          "usage": "Requesting gift wrapping",
+          "literal": null
+        },
+        {
+          "phrase": "能退货吗？",
+          "romanization": "Néng tuìhuò ma?",
+          "meaning": "Can I return this?",
+          "usage": "Asking about returns",
+          "literal": null
+        }
+      ]
+    },
+    "doctor": {
+      "title": "在医院",
+      "titleEn": "At the Doctor",
+      "phrases": [
+        {
+          "phrase": "我头疼",
+          "romanization": "Wǒ tóu téng",
+          "meaning": "I have a headache",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "我发烧了",
+          "romanization": "Wǒ fāshāo le",
+          "meaning": "I have a fever",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "我对这种药过敏",
+          "romanization": "Wǒ duì zhè zhǒng yào guòmǐn",
+          "meaning": "I'm allergic to this medicine",
+          "usage": "Important medical info",
+          "literal": null
+        },
+        {
+          "phrase": "我有医疗保险",
+          "romanization": "Wǒ yǒu yīliáo bǎoxiǎn",
+          "meaning": "I have medical insurance",
+          "usage": "At reception",
+          "literal": null
+        },
+        {
+          "phrase": "从什么时候开始的？",
+          "romanization": "Cóng shénme shíhou kāishǐ de?",
+          "meaning": "When did it start?",
+          "usage": "Doctor may ask this",
+          "literal": null
+        },
+        {
+          "phrase": "我肚子疼",
+          "romanization": "Wǒ dùzi téng",
+          "meaning": "I have a stomachache",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "请给我开个处方",
+          "romanization": "Qǐng gěi wǒ kāi ge chǔfāng",
+          "meaning": "Please write me a prescription",
+          "usage": "Requesting medication",
+          "literal": null
+        },
+        {
+          "phrase": "有会说英语的医生吗？",
+          "romanization": "Yǒu huì shuō Yīngyǔ de yīshēng ma?",
+          "meaning": "Is there a doctor who speaks English?",
+          "usage": "Requesting English-speaking doctor",
+          "literal": null
+        }
+      ]
+    },
+    "dating": {
+      "title": "约会",
+      "titleEn": "Dating",
+      "phrases": [
+        {
+          "phrase": "一起吃个饭吧",
+          "romanization": "Yìqǐ chī ge fàn ba",
+          "meaning": "Let's grab a meal together",
+          "usage": "Asking someone out",
+          "literal": null
+        },
+        {
+          "phrase": "今天玩得很开心",
+          "romanization": "Jīntiān wán de hěn kāixīn",
+          "meaning": "I had a great time today",
+          "usage": "After a date",
+          "literal": null
+        },
+        {
+          "phrase": "你平时喜欢做什么？",
+          "romanization": "Nǐ píngshí xǐhuan zuò shénme?",
+          "meaning": "What do you like to do usually?",
+          "usage": "Getting to know someone",
+          "literal": null
+        },
+        {
+          "phrase": "我想再见到你",
+          "romanization": "Wǒ xiǎng zài jiàndào nǐ",
+          "meaning": "I want to see you again",
+          "usage": "Expressing interest",
+          "literal": null
+        },
+        {
+          "phrase": "能加个微信吗？",
+          "romanization": "Néng jiā ge Wēixìn ma?",
+          "meaning": "Can I add you on WeChat?",
+          "usage": "Exchanging contacts (China-specific)",
+          "literal": null
+        },
+        {
+          "phrase": "你今天真好看",
+          "romanization": "Nǐ jīntiān zhēn hǎokàn",
+          "meaning": "You look really nice today",
+          "usage": "Giving a compliment",
+          "literal": null
+        },
+        {
+          "phrase": "你喜欢什么类型的？",
+          "romanization": "Nǐ xǐhuan shénme lèixíng de?",
+          "meaning": "What type do you like?",
+          "usage": "Asking about preferences",
+          "literal": null
+        },
+        {
+          "phrase": "今天我请客",
+          "romanization": "Jīntiān wǒ qǐngkè",
+          "meaning": "My treat today",
+          "usage": "Offering to pay",
+          "literal": "Today I invite guest"
+        }
+      ]
+    },
+    "interview": {
+      "title": "面试",
+      "titleEn": "Job Interview",
+      "phrases": [
+        {
+          "phrase": "您好，感谢给我这次面试机会",
+          "romanization": "Nín hǎo, gǎnxiè gěi wǒ zhè cì miànshì jīhuì",
+          "meaning": "Hello, thanks for this interview opportunity",
+          "usage": "Opening greeting",
+          "literal": null
+        },
+        {
+          "phrase": "我之前在做市场营销",
+          "romanization": "Wǒ zhīqián zài zuò shìchǎng yíngxiāo",
+          "meaning": "I was doing marketing before",
+          "usage": "Describing past experience",
+          "literal": null
+        },
+        {
+          "phrase": "我希望在贵公司发展",
+          "romanization": "Wǒ xīwàng zài guì gōngsī fāzhǎn",
+          "meaning": "I hope to develop at your company",
+          "usage": "Expressing motivation",
+          "literal": null
+        },
+        {
+          "phrase": "我可以问一个问题吗？",
+          "romanization": "Wǒ kěyǐ wèn yí ge wèntí ma?",
+          "meaning": "May I ask a question?",
+          "usage": "Before asking questions",
+          "literal": null
+        },
+        {
+          "phrase": "让我先自我介绍一下",
+          "romanization": "Ràng wǒ xiān zìwǒ jièshào yíxià",
+          "meaning": "Let me introduce myself first",
+          "usage": "Starting self-introduction",
+          "literal": null
+        },
+        {
+          "phrase": "我注重团队合作",
+          "romanization": "Wǒ zhùzhòng tuánduì hézuò",
+          "meaning": "I value teamwork",
+          "usage": "Describing work style",
+          "literal": null
+        },
+        {
+          "phrase": "你什么时候能入职？",
+          "romanization": "Nǐ shénme shíhou néng rùzhí?",
+          "meaning": "When can you start?",
+          "usage": "Interviewer may ask",
+          "literal": null
+        },
+        {
+          "phrase": "谢谢您的时间",
+          "romanization": "Xièxiè nín de shíjiān",
+          "meaning": "Thank you for your time",
+          "usage": "Closing an interview",
+          "literal": null
+        }
+      ]
+    }
+  },
+  "zh-TW": {
+    "restaurant": {
+      "title": "在餐廳",
+      "titleEn": "At a Restaurant",
+      "phrases": [
+        {
+          "phrase": "你好，請給我菜單",
+          "romanization": "Nǐ hǎo, qǐng gěi wǒ càidān",
+          "meaning": "Hello, menu please",
+          "usage": "Requesting a menu",
+          "literal": null
+        },
+        {
+          "phrase": "有什麼推薦的嗎？",
+          "romanization": "Yǒu shénme tuījiàn de ma?",
+          "meaning": "Any recommendations?",
+          "usage": "Asking for suggestions",
+          "literal": null
+        },
+        {
+          "phrase": "結帳",
+          "romanization": "Jiézhàng",
+          "meaning": "Check please",
+          "usage": "Requesting the bill",
+          "literal": "Settle accounts"
+        },
+        {
+          "phrase": "兩位",
+          "romanization": "Liǎng wèi",
+          "meaning": "Table for two",
+          "usage": "When entering",
+          "literal": null
+        },
+        {
+          "phrase": "我不能吃辣",
+          "romanization": "Wǒ bù néng chī là",
+          "meaning": "I can't eat spicy food",
+          "usage": "Dietary restriction",
+          "literal": null
+        },
+        {
+          "phrase": "這道菜是什麼？",
+          "romanization": "Zhè dào cài shì shénme?",
+          "meaning": "What is this dish?",
+          "usage": "Asking about a dish",
+          "literal": null
+        },
+        {
+          "phrase": "非常好吃",
+          "romanization": "Fēicháng hǎochī",
+          "meaning": "Very delicious",
+          "usage": "Complimenting the food",
+          "literal": null
+        },
+        {
+          "phrase": "我有訂位",
+          "romanization": "Wǒ yǒu dìngwèi",
+          "meaning": "I have a reservation",
+          "usage": "At the entrance",
+          "literal": null
+        }
+      ]
+    },
+    "airport": {
+      "title": "在機場",
+      "titleEn": "At the Airport",
+      "phrases": [
+        {
+          "phrase": "登機門在哪裡？",
+          "romanization": "Dēngjī mén zài nǎlǐ?",
+          "meaning": "Where is the boarding gate?",
+          "usage": "Finding your gate",
+          "literal": null
+        },
+        {
+          "phrase": "我的行李沒有到",
+          "romanization": "Wǒ de xínglǐ méiyǒu dào",
+          "meaning": "My luggage hasn't arrived",
+          "usage": "At baggage claim",
+          "literal": null
+        },
+        {
+          "phrase": "轉機在哪裡？",
+          "romanization": "Zhuǎnjī zài nǎlǐ?",
+          "meaning": "Where do I transfer?",
+          "usage": "Connecting flights",
+          "literal": null
+        },
+        {
+          "phrase": "我要靠窗的位子",
+          "romanization": "Wǒ yào kào chuāng de wèizi",
+          "meaning": "I want a window seat",
+          "usage": "At check-in",
+          "literal": null
+        },
+        {
+          "phrase": "我來觀光的",
+          "romanization": "Wǒ lái guānguāng de",
+          "meaning": "I'm here for sightseeing",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "我待三天",
+          "romanization": "Wǒ dāi sān tiān",
+          "meaning": "I'll stay three days",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "沒有需要申報的",
+          "romanization": "Méiyǒu xūyào shēnbào de",
+          "meaning": "Nothing to declare",
+          "usage": "At customs",
+          "literal": null
+        },
+        {
+          "phrase": "這班飛機有延誤嗎？",
+          "romanization": "Zhè bān fēijī yǒu yánwù ma?",
+          "meaning": "Is this flight delayed?",
+          "usage": "Checking flight status",
+          "literal": null
+        }
+      ]
+    },
+    "taxi": {
+      "title": "在計程車裡",
+      "titleEn": "In a Taxi",
+      "phrases": [
+        {
+          "phrase": "司機，請到這個地址",
+          "romanization": "Sījī, qǐng dào zhège dìzhǐ",
+          "meaning": "Driver, to this address please",
+          "usage": "Showing address",
+          "literal": null
+        },
+        {
+          "phrase": "大概要多久？",
+          "romanization": "Dàgài yào duōjiǔ?",
+          "meaning": "How long will it take?",
+          "usage": "Asking about travel time",
+          "literal": null
+        },
+        {
+          "phrase": "在這裡停",
+          "romanization": "Zài zhèlǐ tíng",
+          "meaning": "Stop here",
+          "usage": "Requesting a stop",
+          "literal": null
+        },
+        {
+          "phrase": "請打開後車廂",
+          "romanization": "Qǐng dǎkāi hòu chēxiāng",
+          "meaning": "Please open the trunk",
+          "usage": "For luggage",
+          "literal": null
+        },
+        {
+          "phrase": "可以刷卡嗎？",
+          "romanization": "Kěyǐ shuā kǎ ma?",
+          "meaning": "Can I pay by card?",
+          "usage": "Asking about payment",
+          "literal": null
+        },
+        {
+          "phrase": "請快一點",
+          "romanization": "Qǐng kuài yìdiǎn",
+          "meaning": "Please hurry",
+          "usage": "When in a rush",
+          "literal": null
+        },
+        {
+          "phrase": "一直走",
+          "romanization": "Yìzhí zǒu",
+          "meaning": "Go straight",
+          "usage": "Giving directions",
+          "literal": null
+        },
+        {
+          "phrase": "請給我收據",
+          "romanization": "Qǐng gěi wǒ shōujù",
+          "meaning": "Receipt please",
+          "usage": "After paying",
+          "literal": null
+        }
+      ]
+    },
+    "hotel": {
+      "title": "在飯店",
+      "titleEn": "At a Hotel",
+      "phrases": [
+        {
+          "phrase": "我要辦理入住",
+          "romanization": "Wǒ yào bànlǐ rùzhù",
+          "meaning": "I'd like to check in",
+          "usage": "At the front desk",
+          "literal": null
+        },
+        {
+          "phrase": "Wi-Fi密碼是多少？",
+          "romanization": "Wi-Fi mìmǎ shì duōshǎo?",
+          "meaning": "What's the Wi-Fi password?",
+          "usage": "Asking for internet access",
+          "literal": null
+        },
+        {
+          "phrase": "能換個房間嗎？",
+          "romanization": "Néng huàn ge fángjiān ma?",
+          "meaning": "Can I change rooms?",
+          "usage": "Requesting a room change",
+          "literal": null
+        },
+        {
+          "phrase": "請多給幾條毛巾",
+          "romanization": "Qǐng duō gěi jǐ tiáo máojīn",
+          "meaning": "Extra towels please",
+          "usage": "Requesting amenities",
+          "literal": null
+        },
+        {
+          "phrase": "早餐幾點開始？",
+          "romanization": "Zǎocān jǐ diǎn kāishǐ?",
+          "meaning": "What time does breakfast start?",
+          "usage": "Asking about meals",
+          "literal": null
+        },
+        {
+          "phrase": "可以寄放行李嗎？",
+          "romanization": "Kěyǐ jìfàng xínglǐ ma?",
+          "meaning": "Can I store my luggage?",
+          "usage": "Before/after checkout",
+          "literal": null
+        },
+        {
+          "phrase": "冷氣壞了",
+          "romanization": "Lěngqì huài le",
+          "meaning": "The air conditioning is broken",
+          "usage": "Reporting a problem",
+          "literal": "Cold air broken"
+        },
+        {
+          "phrase": "幾點退房？",
+          "romanization": "Jǐ diǎn tuìfáng?",
+          "meaning": "What time is checkout?",
+          "usage": "Asking about checkout time",
+          "literal": null
+        }
+      ]
+    },
+    "shopping": {
+      "title": "購物",
+      "titleEn": "Shopping",
+      "phrases": [
+        {
+          "phrase": "能試穿一下嗎？",
+          "romanization": "Néng shìchuān yíxià ma?",
+          "meaning": "Can I try this on?",
+          "usage": "At a clothing store",
+          "literal": null
+        },
+        {
+          "phrase": "能算便宜一點嗎？",
+          "romanization": "Néng suàn piányi yìdiǎn ma?",
+          "meaning": "Can you make it cheaper?",
+          "usage": "Bargaining",
+          "literal": "Can calculate cheaper?"
+        },
+        {
+          "phrase": "有別的顏色嗎？",
+          "romanization": "Yǒu bié de yánsè ma?",
+          "meaning": "Do you have other colors?",
+          "usage": "Asking for options",
+          "literal": null
+        },
+        {
+          "phrase": "可以退稅嗎？",
+          "romanization": "Kěyǐ tuìshuì ma?",
+          "meaning": "Can I get a tax refund?",
+          "usage": "For tourist tax refund",
+          "literal": null
+        },
+        {
+          "phrase": "我要這個",
+          "romanization": "Wǒ yào zhège",
+          "meaning": "I want this one",
+          "usage": "Making a purchase",
+          "literal": null
+        },
+        {
+          "phrase": "我隨便看看",
+          "romanization": "Wǒ suíbiàn kànkan",
+          "meaning": "I'm just browsing",
+          "usage": "When approached by staff",
+          "literal": null
+        },
+        {
+          "phrase": "幫我包裝成禮物",
+          "romanization": "Bāng wǒ bāozhuāng chéng lǐwù",
+          "meaning": "Please gift wrap it for me",
+          "usage": "Requesting gift wrapping",
+          "literal": null
+        },
+        {
+          "phrase": "能退貨嗎？",
+          "romanization": "Néng tuìhuò ma?",
+          "meaning": "Can I return this?",
+          "usage": "Asking about returns",
+          "literal": null
+        }
+      ]
+    },
+    "doctor": {
+      "title": "在醫院",
+      "titleEn": "At the Doctor",
+      "phrases": [
+        {
+          "phrase": "我頭痛",
+          "romanization": "Wǒ tóu tòng",
+          "meaning": "I have a headache",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "我發燒了",
+          "romanization": "Wǒ fāshāo le",
+          "meaning": "I have a fever",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "我對這種藥過敏",
+          "romanization": "Wǒ duì zhè zhǒng yào guòmǐn",
+          "meaning": "I'm allergic to this medicine",
+          "usage": "Important medical info",
+          "literal": null
+        },
+        {
+          "phrase": "我有健保",
+          "romanization": "Wǒ yǒu jiànbǎo",
+          "meaning": "I have health insurance",
+          "usage": "At reception (Taiwan NHI)",
+          "literal": null
+        },
+        {
+          "phrase": "從什麼時候開始的？",
+          "romanization": "Cóng shénme shíhou kāishǐ de?",
+          "meaning": "When did it start?",
+          "usage": "Doctor may ask this",
+          "literal": null
+        },
+        {
+          "phrase": "我肚子痛",
+          "romanization": "Wǒ dùzi tòng",
+          "meaning": "I have a stomachache",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "請給我開處方",
+          "romanization": "Qǐng gěi wǒ kāi chǔfāng",
+          "meaning": "Please write me a prescription",
+          "usage": "Requesting medication",
+          "literal": null
+        },
+        {
+          "phrase": "有會說英語的醫生嗎？",
+          "romanization": "Yǒu huì shuō Yīngyǔ de yīshēng ma?",
+          "meaning": "Is there a doctor who speaks English?",
+          "usage": "Requesting English-speaking doctor",
+          "literal": null
+        }
+      ]
+    },
+    "dating": {
+      "title": "約會",
+      "titleEn": "Dating",
+      "phrases": [
+        {
+          "phrase": "一起吃個飯吧",
+          "romanization": "Yìqǐ chī ge fàn ba",
+          "meaning": "Let's grab a meal together",
+          "usage": "Asking someone out",
+          "literal": null
+        },
+        {
+          "phrase": "今天很開心",
+          "romanization": "Jīntiān hěn kāixīn",
+          "meaning": "I had a great time today",
+          "usage": "After a date",
+          "literal": null
+        },
+        {
+          "phrase": "你平常喜歡做什麼？",
+          "romanization": "Nǐ píngcháng xǐhuan zuò shénme?",
+          "meaning": "What do you usually like to do?",
+          "usage": "Getting to know someone",
+          "literal": null
+        },
+        {
+          "phrase": "我想再見到你",
+          "romanization": "Wǒ xiǎng zài jiàndào nǐ",
+          "meaning": "I want to see you again",
+          "usage": "Expressing interest",
+          "literal": null
+        },
+        {
+          "phrase": "能加個LINE嗎？",
+          "romanization": "Néng jiā ge LINE ma?",
+          "meaning": "Can I add you on LINE?",
+          "usage": "Exchanging contacts (Taiwan-specific)",
+          "literal": null
+        },
+        {
+          "phrase": "你今天真好看",
+          "romanization": "Nǐ jīntiān zhēn hǎokàn",
+          "meaning": "You look really nice today",
+          "usage": "Giving a compliment",
+          "literal": null
+        },
+        {
+          "phrase": "你喜歡什麼類型的？",
+          "romanization": "Nǐ xǐhuan shénme lèixíng de?",
+          "meaning": "What type do you like?",
+          "usage": "Asking about preferences",
+          "literal": null
+        },
+        {
+          "phrase": "今天我請客",
+          "romanization": "Jīntiān wǒ qǐngkè",
+          "meaning": "My treat today",
+          "usage": "Offering to pay",
+          "literal": null
+        }
+      ]
+    },
+    "interview": {
+      "title": "面試",
+      "titleEn": "Job Interview",
+      "phrases": [
+        {
+          "phrase": "您好，感謝給我這次面試機會",
+          "romanization": "Nín hǎo, gǎnxiè gěi wǒ zhè cì miànshì jīhuì",
+          "meaning": "Hello, thanks for this interview opportunity",
+          "usage": "Opening greeting",
+          "literal": null
+        },
+        {
+          "phrase": "我之前在做行銷",
+          "romanization": "Wǒ zhīqián zài zuò xíngxiāo",
+          "meaning": "I was doing marketing before",
+          "usage": "Describing past experience",
+          "literal": null
+        },
+        {
+          "phrase": "我希望在貴公司發展",
+          "romanization": "Wǒ xīwàng zài guì gōngsī fāzhǎn",
+          "meaning": "I hope to develop at your company",
+          "usage": "Expressing motivation",
+          "literal": null
+        },
+        {
+          "phrase": "我可以問一個問題嗎？",
+          "romanization": "Wǒ kěyǐ wèn yí ge wèntí ma?",
+          "meaning": "May I ask a question?",
+          "usage": "Before asking questions",
+          "literal": null
+        },
+        {
+          "phrase": "讓我先自我介紹一下",
+          "romanization": "Ràng wǒ xiān zìwǒ jièshào yíxià",
+          "meaning": "Let me introduce myself first",
+          "usage": "Starting self-introduction",
+          "literal": null
+        },
+        {
+          "phrase": "我很注重團隊合作",
+          "romanization": "Wǒ hěn zhùzhòng tuánduì hézuò",
+          "meaning": "I value teamwork a lot",
+          "usage": "Describing work style",
+          "literal": null
+        },
+        {
+          "phrase": "你什麼時候能到職？",
+          "romanization": "Nǐ shénme shíhou néng dàozhí?",
+          "meaning": "When can you start?",
+          "usage": "Interviewer may ask",
+          "literal": null
+        },
+        {
+          "phrase": "謝謝您的時間",
+          "romanization": "Xièxiè nín de shíjiān",
+          "meaning": "Thank you for your time",
+          "usage": "Closing an interview",
+          "literal": null
+        }
+      ]
+    }
+  },
+  "hi": {
+    "restaurant": {
+      "title": "रेस्तरां में",
+      "titleEn": "At a Restaurant",
+      "phrases": [
+        {
+          "phrase": "भाई साहब, मेन्यू दिखाइए",
+          "romanization": "Bhai sahab, menu dikhaiye",
+          "meaning": "Brother, please show the menu",
+          "usage": "Polite request to waiter",
+          "literal": "Brother sir, show menu"
+        },
+        {
+          "phrase": "सबसे अच्छा क्या है?",
+          "romanization": "Sabse achcha kya hai?",
+          "meaning": "What's the best dish?",
+          "usage": "Asking for suggestions",
+          "literal": null
+        },
+        {
+          "phrase": "बिल लाइए",
+          "romanization": "Bill laiye",
+          "meaning": "Bring the bill",
+          "usage": "Requesting the bill",
+          "literal": null
+        },
+        {
+          "phrase": "दो लोगों के लिए टेबल चाहिए",
+          "romanization": "Do logon ke liye table chahiye",
+          "meaning": "Table for two people",
+          "usage": "When entering",
+          "literal": null
+        },
+        {
+          "phrase": "मुझे तीखा नहीं चाहिए",
+          "romanization": "Mujhe teekha nahi chahiye",
+          "meaning": "I don't want it spicy",
+          "usage": "Dietary preference",
+          "literal": null
+        },
+        {
+          "phrase": "यह क्या है?",
+          "romanization": "Yeh kya hai?",
+          "meaning": "What is this?",
+          "usage": "Asking about a dish",
+          "literal": null
+        },
+        {
+          "phrase": "बहुत स्वादिष्ट था",
+          "romanization": "Bahut swaadisht tha",
+          "meaning": "It was very delicious",
+          "usage": "Complimenting the food",
+          "literal": null
+        },
+        {
+          "phrase": "मेरा रिज़र्वेशन है",
+          "romanization": "Mera reservation hai",
+          "meaning": "I have a reservation",
+          "usage": "At the entrance",
+          "literal": null
+        }
+      ]
+    },
+    "airport": {
+      "title": "हवाई अड्डे पर",
+      "titleEn": "At the Airport",
+      "phrases": [
+        {
+          "phrase": "बोर्डिंग गेट कहाँ है?",
+          "romanization": "Boarding gate kahaan hai?",
+          "meaning": "Where is the boarding gate?",
+          "usage": "Finding your gate",
+          "literal": null
+        },
+        {
+          "phrase": "मेरा सामान नहीं आया",
+          "romanization": "Mera saamaan nahi aaya",
+          "meaning": "My luggage hasn't arrived",
+          "usage": "At baggage claim",
+          "literal": null
+        },
+        {
+          "phrase": "कनेक्टिंग फ़्लाइट कहाँ से है?",
+          "romanization": "Connecting flight kahaan se hai?",
+          "meaning": "Where is the connecting flight?",
+          "usage": "Connecting flights",
+          "literal": null
+        },
+        {
+          "phrase": "खिड़की वाली सीट चाहिए",
+          "romanization": "Khidki wali seat chahiye",
+          "meaning": "I want a window seat",
+          "usage": "At check-in",
+          "literal": "Window one seat want"
+        },
+        {
+          "phrase": "मैं घूमने आया हूँ",
+          "romanization": "Main ghoomne aaya hoon",
+          "meaning": "I'm here for tourism",
+          "usage": "At immigration",
+          "literal": "I came to roam"
+        },
+        {
+          "phrase": "तीन दिन रहूँगा",
+          "romanization": "Teen din rahoonga",
+          "meaning": "I'll stay three days",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "कुछ भी डिक्लेयर करने को नहीं है",
+          "romanization": "Kuch bhi declare karne ko nahi hai",
+          "meaning": "Nothing to declare",
+          "usage": "At customs",
+          "literal": null
+        },
+        {
+          "phrase": "क्या यह फ़्लाइट लेट है?",
+          "romanization": "Kya yeh flight late hai?",
+          "meaning": "Is this flight delayed?",
+          "usage": "Checking flight status",
+          "literal": null
+        }
+      ]
+    },
+    "taxi": {
+      "title": "टैक्सी में",
+      "titleEn": "In a Taxi",
+      "phrases": [
+        {
+          "phrase": "भाई, इस पते पर चलो",
+          "romanization": "Bhai, is pate par chalo",
+          "meaning": "Brother, go to this address",
+          "usage": "Showing address to driver",
+          "literal": null
+        },
+        {
+          "phrase": "कितना टाइम लगेगा?",
+          "romanization": "Kitna time lagega?",
+          "meaning": "How long will it take?",
+          "usage": "Asking about travel time",
+          "literal": null
+        },
+        {
+          "phrase": "यहाँ रोक दो",
+          "romanization": "Yahaan rok do",
+          "meaning": "Stop here",
+          "usage": "Requesting a stop",
+          "literal": null
+        },
+        {
+          "phrase": "डिक्की खोलो",
+          "romanization": "Dikki kholo",
+          "meaning": "Open the trunk",
+          "usage": "For luggage",
+          "literal": null
+        },
+        {
+          "phrase": "कार्ड से पेमेंट होगा?",
+          "romanization": "Card se payment hoga?",
+          "meaning": "Can I pay by card?",
+          "usage": "Asking about payment",
+          "literal": null
+        },
+        {
+          "phrase": "जल्दी चलो",
+          "romanization": "Jaldi chalo",
+          "meaning": "Go fast",
+          "usage": "When in a rush",
+          "literal": null
+        },
+        {
+          "phrase": "सीधे चलो",
+          "romanization": "Seedhe chalo",
+          "meaning": "Go straight",
+          "usage": "Giving directions",
+          "literal": null
+        },
+        {
+          "phrase": "रसीद दे दो",
+          "romanization": "Raseed de do",
+          "meaning": "Give me a receipt",
+          "usage": "After paying",
+          "literal": null
+        }
+      ]
+    },
+    "hotel": {
+      "title": "होटल में",
+      "titleEn": "At a Hotel",
+      "phrases": [
+        {
+          "phrase": "चेक-इन करना है",
+          "romanization": "Check-in karna hai",
+          "meaning": "I'd like to check in",
+          "usage": "At the front desk",
+          "literal": null
+        },
+        {
+          "phrase": "वाई-फाई का पासवर्ड क्या है?",
+          "romanization": "Wi-Fi ka password kya hai?",
+          "meaning": "What's the Wi-Fi password?",
+          "usage": "Asking for internet access",
+          "literal": null
+        },
+        {
+          "phrase": "क्या कमरा बदल सकते हैं?",
+          "romanization": "Kya kamra badal sakte hain?",
+          "meaning": "Can I change the room?",
+          "usage": "Requesting a room change",
+          "literal": null
+        },
+        {
+          "phrase": "एक और तौलिया दे दीजिए",
+          "romanization": "Ek aur tauliya de dijiye",
+          "meaning": "Please give one more towel",
+          "usage": "Requesting amenities",
+          "literal": null
+        },
+        {
+          "phrase": "नाश्ता कितने बजे है?",
+          "romanization": "Nashta kitne baje hai?",
+          "meaning": "What time is breakfast?",
+          "usage": "Asking about meals",
+          "literal": null
+        },
+        {
+          "phrase": "क्या सामान रख सकते हैं?",
+          "romanization": "Kya saamaan rakh sakte hain?",
+          "meaning": "Can you keep my luggage?",
+          "usage": "Before/after checkout",
+          "literal": null
+        },
+        {
+          "phrase": "एसी काम नहीं कर रहा",
+          "romanization": "AC kaam nahi kar raha",
+          "meaning": "The AC isn't working",
+          "usage": "Reporting a problem",
+          "literal": null
+        },
+        {
+          "phrase": "चेक-आउट कितने बजे है?",
+          "romanization": "Check-out kitne baje hai?",
+          "meaning": "What time is checkout?",
+          "usage": "Asking about checkout time",
+          "literal": null
+        }
+      ]
+    },
+    "shopping": {
+      "title": "शॉपिंग करते हुए",
+      "titleEn": "Shopping",
+      "phrases": [
+        {
+          "phrase": "यह पहनकर देख सकता हूँ?",
+          "romanization": "Yeh pehankar dekh sakta hoon?",
+          "meaning": "Can I try this on?",
+          "usage": "At a clothing store",
+          "literal": null
+        },
+        {
+          "phrase": "कुछ कम कर दो",
+          "romanization": "Kuch kam kar do",
+          "meaning": "Reduce the price a bit",
+          "usage": "Bargaining",
+          "literal": "Do some less"
+        },
+        {
+          "phrase": "और कलर में है?",
+          "romanization": "Aur color mein hai?",
+          "meaning": "Is it available in other colors?",
+          "usage": "Asking for options",
+          "literal": null
+        },
+        {
+          "phrase": "क्या टैक्स वापस मिलेगा?",
+          "romanization": "Kya tax vapas milega?",
+          "meaning": "Will I get a tax refund?",
+          "usage": "Asking about tax refund",
+          "literal": null
+        },
+        {
+          "phrase": "यह दे दो",
+          "romanization": "Yeh de do",
+          "meaning": "I'll take this",
+          "usage": "Making a purchase",
+          "literal": "Give this"
+        },
+        {
+          "phrase": "बस देख रहा हूँ",
+          "romanization": "Bas dekh raha hoon",
+          "meaning": "Just looking",
+          "usage": "When approached by staff",
+          "literal": null
+        },
+        {
+          "phrase": "गिफ्ट पैक कर दो",
+          "romanization": "Gift pack kar do",
+          "meaning": "Gift wrap it please",
+          "usage": "Requesting gift wrapping",
+          "literal": null
+        },
+        {
+          "phrase": "वापस कर सकते हैं?",
+          "romanization": "Vapas kar sakte hain?",
+          "meaning": "Can I return this?",
+          "usage": "Asking about returns",
+          "literal": null
+        }
+      ]
+    },
+    "doctor": {
+      "title": "डॉक्टर के पास",
+      "titleEn": "At the Doctor",
+      "phrases": [
+        {
+          "phrase": "सिर में दर्द है",
+          "romanization": "Sir mein dard hai",
+          "meaning": "I have a headache",
+          "usage": "Describing symptoms",
+          "literal": "Pain in head"
+        },
+        {
+          "phrase": "बुखार है",
+          "romanization": "Bukhaar hai",
+          "meaning": "I have a fever",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "मुझे इस दवाई से एलर्जी है",
+          "romanization": "Mujhe is dawai se allergy hai",
+          "meaning": "I'm allergic to this medicine",
+          "usage": "Important medical info",
+          "literal": null
+        },
+        {
+          "phrase": "मेरा इंश्योरेंस है",
+          "romanization": "Mera insurance hai",
+          "meaning": "I have insurance",
+          "usage": "At reception",
+          "literal": null
+        },
+        {
+          "phrase": "कब से है?",
+          "romanization": "Kab se hai?",
+          "meaning": "Since when?",
+          "usage": "Doctor may ask this",
+          "literal": null
+        },
+        {
+          "phrase": "पेट में दर्द है",
+          "romanization": "Pet mein dard hai",
+          "meaning": "I have a stomachache",
+          "usage": "Describing symptoms",
+          "literal": "Pain in stomach"
+        },
+        {
+          "phrase": "दवाई लिख दीजिए",
+          "romanization": "Dawai likh dijiye",
+          "meaning": "Please prescribe medicine",
+          "usage": "Requesting prescription",
+          "literal": "Write medicine"
+        },
+        {
+          "phrase": "कोई अंग्रेज़ी बोलने वाला डॉक्टर है?",
+          "romanization": "Koi angrezi bolne wala doctor hai?",
+          "meaning": "Is there an English-speaking doctor?",
+          "usage": "Requesting English-speaking doctor",
+          "literal": null
+        }
+      ]
+    },
+    "dating": {
+      "title": "डेटिंग",
+      "titleEn": "Dating",
+      "phrases": [
+        {
+          "phrase": "कभी साथ में खाना खाएँ?",
+          "romanization": "Kabhi saath mein khana khayein?",
+          "meaning": "Shall we eat together sometime?",
+          "usage": "Asking someone out",
+          "literal": null
+        },
+        {
+          "phrase": "आज बहुत मज़ा आया",
+          "romanization": "Aaj bahut maza aaya",
+          "meaning": "Had a great time today",
+          "usage": "After a date",
+          "literal": "Today much fun came"
+        },
+        {
+          "phrase": "आपकी हॉबी क्या है?",
+          "romanization": "Aapki hobby kya hai?",
+          "meaning": "What are your hobbies?",
+          "usage": "Getting to know someone",
+          "literal": null
+        },
+        {
+          "phrase": "फिर से मिलना चाहूँगा",
+          "romanization": "Phir se milna chahoonga",
+          "meaning": "I'd like to meet again",
+          "usage": "Expressing interest",
+          "literal": null
+        },
+        {
+          "phrase": "नंबर दे दोगे?",
+          "romanization": "Number de doge?",
+          "meaning": "Can I have your number?",
+          "usage": "Exchanging contacts",
+          "literal": "Will you give number?"
+        },
+        {
+          "phrase": "आप बहुत अच्छी लग रही हो",
+          "romanization": "Aap bahut achchi lag rahi ho",
+          "meaning": "You're looking really nice",
+          "usage": "Giving a compliment",
+          "literal": null
+        },
+        {
+          "phrase": "आपको क्या पसंद है?",
+          "romanization": "Aapko kya pasand hai?",
+          "meaning": "What do you like?",
+          "usage": "Asking about preferences",
+          "literal": null
+        },
+        {
+          "phrase": "आज मेरी तरफ़ से",
+          "romanization": "Aaj meri taraf se",
+          "meaning": "Today it's on me",
+          "usage": "Offering to pay",
+          "literal": "Today from my side"
+        }
+      ]
+    },
+    "interview": {
+      "title": "इंटरव्यू में",
+      "titleEn": "Job Interview",
+      "phrases": [
+        {
+          "phrase": "नमस्ते, मौका देने के लिए धन्यवाद",
+          "romanization": "Namaste, mauka dene ke liye dhanyavaad",
+          "meaning": "Hello, thank you for the opportunity",
+          "usage": "Opening greeting",
+          "literal": null
+        },
+        {
+          "phrase": "मैं पहले मार्केटिंग में था",
+          "romanization": "Main pehle marketing mein tha",
+          "meaning": "I was previously in marketing",
+          "usage": "Describing past experience",
+          "literal": null
+        },
+        {
+          "phrase": "मैं आपकी कंपनी में बढ़ना चाहता हूँ",
+          "romanization": "Main aapki company mein badhna chahta hoon",
+          "meaning": "I want to grow in your company",
+          "usage": "Expressing motivation",
+          "literal": null
+        },
+        {
+          "phrase": "क्या मैं एक सवाल पूछ सकता हूँ?",
+          "romanization": "Kya main ek sawal pooch sakta hoon?",
+          "meaning": "May I ask a question?",
+          "usage": "Before asking questions",
+          "literal": null
+        },
+        {
+          "phrase": "मैं अपना परिचय दे दूँ",
+          "romanization": "Main apna parichay de doon",
+          "meaning": "Let me introduce myself",
+          "usage": "Starting self-introduction",
+          "literal": null
+        },
+        {
+          "phrase": "मैं टीमवर्क को बहुत महत्व देता हूँ",
+          "romanization": "Main teamwork ko bahut mahatv deta hoon",
+          "meaning": "I value teamwork a lot",
+          "usage": "Describing work style",
+          "literal": null
+        },
+        {
+          "phrase": "आप कब से जॉइन कर सकते हैं?",
+          "romanization": "Aap kab se join kar sakte hain?",
+          "meaning": "When can you join?",
+          "usage": "Interviewer may ask",
+          "literal": null
+        },
+        {
+          "phrase": "आपका बहुत-बहुत धन्यवाद",
+          "romanization": "Aapka bahut-bahut dhanyavaad",
+          "meaning": "Thank you very much",
+          "usage": "Closing an interview",
+          "literal": null
+        }
+      ]
+    }
+  },
+  "it": {
+    "restaurant": {
+      "title": "Al ristorante",
+      "titleEn": "At a Restaurant",
+      "phrases": [
+        {
+          "phrase": "Scusi, potrei avere il menù?",
+          "romanization": null,
+          "meaning": "Excuse me, could I have the menu?",
+          "usage": "Polite request to waiter",
+          "literal": null
+        },
+        {
+          "phrase": "Cosa mi consiglia?",
+          "romanization": null,
+          "meaning": "What do you recommend?",
+          "usage": "Asking for suggestions",
+          "literal": "What do you advise me?"
+        },
+        {
+          "phrase": "Il conto, per favore",
+          "romanization": null,
+          "meaning": "The check, please",
+          "usage": "Requesting the bill",
+          "literal": null
+        },
+        {
+          "phrase": "Un tavolo per due, per favore",
+          "romanization": null,
+          "meaning": "A table for two, please",
+          "usage": "When entering",
+          "literal": null
+        },
+        {
+          "phrase": "Sono allergico al glutine",
+          "romanization": null,
+          "meaning": "I'm allergic to gluten",
+          "usage": "Dietary restriction",
+          "literal": null
+        },
+        {
+          "phrase": "Cos'è questo piatto?",
+          "romanization": null,
+          "meaning": "What is this dish?",
+          "usage": "Asking about a dish",
+          "literal": null
+        },
+        {
+          "phrase": "Era squisito, complimenti",
+          "romanization": null,
+          "meaning": "It was exquisite, compliments",
+          "usage": "Complimenting the chef",
+          "literal": null
+        },
+        {
+          "phrase": "Ho una prenotazione",
+          "romanization": null,
+          "meaning": "I have a reservation",
+          "usage": "At the entrance",
+          "literal": null
+        }
+      ]
+    },
+    "airport": {
+      "title": "In aeroporto",
+      "titleEn": "At the Airport",
+      "phrases": [
+        {
+          "phrase": "Dov'è il gate d'imbarco?",
+          "romanization": null,
+          "meaning": "Where is the boarding gate?",
+          "usage": "Finding your gate",
+          "literal": null
+        },
+        {
+          "phrase": "Il mio bagaglio non è arrivato",
+          "romanization": null,
+          "meaning": "My luggage hasn't arrived",
+          "usage": "At baggage claim",
+          "literal": null
+        },
+        {
+          "phrase": "Dove sono i voli in coincidenza?",
+          "romanization": null,
+          "meaning": "Where are connecting flights?",
+          "usage": "Connecting flights",
+          "literal": null
+        },
+        {
+          "phrase": "Vorrei un posto finestrino",
+          "romanization": null,
+          "meaning": "I'd like a window seat",
+          "usage": "At check-in",
+          "literal": null
+        },
+        {
+          "phrase": "Sono qui per turismo",
+          "romanization": null,
+          "meaning": "I'm here for tourism",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "Resterò tre giorni",
+          "romanization": null,
+          "meaning": "I'll stay three days",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "Non ho nulla da dichiarare",
+          "romanization": null,
+          "meaning": "I have nothing to declare",
+          "usage": "At customs",
+          "literal": null
+        },
+        {
+          "phrase": "Questo volo è in ritardo?",
+          "romanization": null,
+          "meaning": "Is this flight delayed?",
+          "usage": "Checking flight status",
+          "literal": null
+        }
+      ]
+    },
+    "taxi": {
+      "title": "In taxi",
+      "titleEn": "In a Taxi",
+      "phrases": [
+        {
+          "phrase": "Mi porti a questo indirizzo, per favore",
+          "romanization": null,
+          "meaning": "Take me to this address, please",
+          "usage": "Showing address to driver",
+          "literal": null
+        },
+        {
+          "phrase": "Quanto tempo ci vuole?",
+          "romanization": null,
+          "meaning": "How long does it take?",
+          "usage": "Asking about travel time",
+          "literal": null
+        },
+        {
+          "phrase": "Mi faccia scendere qui",
+          "romanization": null,
+          "meaning": "Let me off here",
+          "usage": "Requesting a stop",
+          "literal": null
+        },
+        {
+          "phrase": "Può aprire il bagagliaio?",
+          "romanization": null,
+          "meaning": "Can you open the trunk?",
+          "usage": "For luggage",
+          "literal": null
+        },
+        {
+          "phrase": "Posso pagare con la carta?",
+          "romanization": null,
+          "meaning": "Can I pay by card?",
+          "usage": "Asking about payment",
+          "literal": null
+        },
+        {
+          "phrase": "Ho fretta, per favore",
+          "romanization": null,
+          "meaning": "I'm in a hurry, please",
+          "usage": "When in a rush",
+          "literal": null
+        },
+        {
+          "phrase": "Vada dritto",
+          "romanization": null,
+          "meaning": "Go straight",
+          "usage": "Giving directions",
+          "literal": null
+        },
+        {
+          "phrase": "Mi serve la ricevuta",
+          "romanization": null,
+          "meaning": "I need a receipt",
+          "usage": "After paying",
+          "literal": null
+        }
+      ]
+    },
+    "hotel": {
+      "title": "In albergo",
+      "titleEn": "At a Hotel",
+      "phrases": [
+        {
+          "phrase": "Vorrei fare il check-in",
+          "romanization": null,
+          "meaning": "I'd like to check in",
+          "usage": "At the front desk",
+          "literal": null
+        },
+        {
+          "phrase": "Qual è la password del Wi-Fi?",
+          "romanization": null,
+          "meaning": "What's the Wi-Fi password?",
+          "usage": "Asking for internet access",
+          "literal": null
+        },
+        {
+          "phrase": "Sarebbe possibile cambiare camera?",
+          "romanization": null,
+          "meaning": "Would it be possible to change rooms?",
+          "usage": "Requesting a room change",
+          "literal": null
+        },
+        {
+          "phrase": "Potrei avere degli asciugamani in più?",
+          "romanization": null,
+          "meaning": "Could I have some extra towels?",
+          "usage": "Requesting amenities",
+          "literal": null
+        },
+        {
+          "phrase": "A che ora è la colazione?",
+          "romanization": null,
+          "meaning": "What time is breakfast?",
+          "usage": "Asking about meals",
+          "literal": null
+        },
+        {
+          "phrase": "Posso lasciare i bagagli qui?",
+          "romanization": null,
+          "meaning": "Can I leave my luggage here?",
+          "usage": "Before/after checkout",
+          "literal": null
+        },
+        {
+          "phrase": "L'aria condizionata non funziona",
+          "romanization": null,
+          "meaning": "The air conditioning doesn't work",
+          "usage": "Reporting a problem",
+          "literal": null
+        },
+        {
+          "phrase": "A che ora è il check-out?",
+          "romanization": null,
+          "meaning": "What time is checkout?",
+          "usage": "Asking about checkout time",
+          "literal": null
+        }
+      ]
+    },
+    "shopping": {
+      "title": "Fare shopping",
+      "titleEn": "Shopping",
+      "phrases": [
+        {
+          "phrase": "Posso provarlo?",
+          "romanization": null,
+          "meaning": "Can I try it on?",
+          "usage": "At a clothing store",
+          "literal": null
+        },
+        {
+          "phrase": "Può farmi un po' di sconto?",
+          "romanization": null,
+          "meaning": "Can you give me a small discount?",
+          "usage": "Polite bargaining",
+          "literal": null
+        },
+        {
+          "phrase": "L'avete in altri colori?",
+          "romanization": null,
+          "meaning": "Do you have it in other colors?",
+          "usage": "Asking for options",
+          "literal": null
+        },
+        {
+          "phrase": "Posso avere il rimborso IVA?",
+          "romanization": null,
+          "meaning": "Can I get a VAT refund?",
+          "usage": "For tourist tax refund",
+          "literal": null
+        },
+        {
+          "phrase": "Prendo questo",
+          "romanization": null,
+          "meaning": "I'll take this",
+          "usage": "Making a purchase",
+          "literal": null
+        },
+        {
+          "phrase": "Sto solo guardando, grazie",
+          "romanization": null,
+          "meaning": "I'm just looking, thanks",
+          "usage": "When approached by staff",
+          "literal": null
+        },
+        {
+          "phrase": "Può fare una confezione regalo?",
+          "romanization": null,
+          "meaning": "Can you gift wrap it?",
+          "usage": "Requesting gift wrapping",
+          "literal": null
+        },
+        {
+          "phrase": "Si può restituire?",
+          "romanization": null,
+          "meaning": "Can it be returned?",
+          "usage": "Asking about returns",
+          "literal": null
+        }
+      ]
+    },
+    "doctor": {
+      "title": "Dal dottore",
+      "titleEn": "At the Doctor",
+      "phrases": [
+        {
+          "phrase": "Ho mal di testa",
+          "romanization": null,
+          "meaning": "I have a headache",
+          "usage": "Describing symptoms",
+          "literal": "I have bad of head"
+        },
+        {
+          "phrase": "Ho la febbre",
+          "romanization": null,
+          "meaning": "I have a fever",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "Sono allergico a questo farmaco",
+          "romanization": null,
+          "meaning": "I'm allergic to this medicine",
+          "usage": "Important medical info",
+          "literal": null
+        },
+        {
+          "phrase": "Ho l'assicurazione sanitaria",
+          "romanization": null,
+          "meaning": "I have health insurance",
+          "usage": "At reception",
+          "literal": null
+        },
+        {
+          "phrase": "Da quando ha questi sintomi?",
+          "romanization": null,
+          "meaning": "Since when have you had these symptoms?",
+          "usage": "Doctor may ask this",
+          "literal": null
+        },
+        {
+          "phrase": "Ho mal di stomaco",
+          "romanization": null,
+          "meaning": "I have a stomachache",
+          "usage": "Describing symptoms",
+          "literal": null
+        },
+        {
+          "phrase": "Mi può fare una ricetta?",
+          "romanization": null,
+          "meaning": "Can you write me a prescription?",
+          "usage": "Requesting medication",
+          "literal": null
+        },
+        {
+          "phrase": "C'è un medico che parla inglese?",
+          "romanization": null,
+          "meaning": "Is there a doctor who speaks English?",
+          "usage": "Requesting English-speaking doctor",
+          "literal": null
+        }
+      ]
+    },
+    "dating": {
+      "title": "Appuntamento",
+      "titleEn": "Dating",
+      "phrases": [
+        {
+          "phrase": "Ti va di andare a cena insieme?",
+          "romanization": null,
+          "meaning": "Would you like to go to dinner together?",
+          "usage": "Asking someone out",
+          "literal": null
+        },
+        {
+          "phrase": "Mi sono divertito molto",
+          "romanization": null,
+          "meaning": "I had a great time",
+          "usage": "After a date",
+          "literal": null
+        },
+        {
+          "phrase": "Cosa ti piace fare nel tempo libero?",
+          "romanization": null,
+          "meaning": "What do you like to do in your free time?",
+          "usage": "Getting to know someone",
+          "literal": null
+        },
+        {
+          "phrase": "Mi piacerebbe rivederti",
+          "romanization": null,
+          "meaning": "I'd like to see you again",
+          "usage": "Expressing interest",
+          "literal": null
+        },
+        {
+          "phrase": "Mi dai il tuo numero?",
+          "romanization": null,
+          "meaning": "Can I have your number?",
+          "usage": "Exchanging details",
+          "literal": "Give me your number?"
+        },
+        {
+          "phrase": "Stai benissimo stasera",
+          "romanization": null,
+          "meaning": "You look great tonight",
+          "usage": "Giving a compliment",
+          "literal": null
+        },
+        {
+          "phrase": "Cosa ti piace?",
+          "romanization": null,
+          "meaning": "What do you like?",
+          "usage": "Asking about preferences",
+          "literal": null
+        },
+        {
+          "phrase": "Stasera offro io",
+          "romanization": null,
+          "meaning": "Tonight is on me",
+          "usage": "Offering to pay",
+          "literal": "Tonight I offer"
+        }
+      ]
+    },
+    "interview": {
+      "title": "Colloquio di lavoro",
+      "titleEn": "Job Interview",
+      "phrases": [
+        {
+          "phrase": "Buongiorno, grazie per questa opportunità",
+          "romanization": null,
+          "meaning": "Good morning, thank you for this opportunity",
+          "usage": "Opening greeting",
+          "literal": null
+        },
+        {
+          "phrase": "Prima lavoravo nel marketing",
+          "romanization": null,
+          "meaning": "I previously worked in marketing",
+          "usage": "Describing past experience",
+          "literal": null
+        },
+        {
+          "phrase": "Vorrei crescere nella vostra azienda",
+          "romanization": null,
+          "meaning": "I'd like to grow in your company",
+          "usage": "Expressing motivation",
+          "literal": null
+        },
+        {
+          "phrase": "Posso fare una domanda?",
+          "romanization": null,
+          "meaning": "May I ask a question?",
+          "usage": "Before asking questions",
+          "literal": null
+        },
+        {
+          "phrase": "Mi permetta di presentarmi",
+          "romanization": null,
+          "meaning": "Allow me to introduce myself",
+          "usage": "Starting self-introduction",
+          "literal": null
+        },
+        {
+          "phrase": "Per me il lavoro di squadra è fondamentale",
+          "romanization": null,
+          "meaning": "Teamwork is fundamental to me",
+          "usage": "Describing work style",
+          "literal": null
+        },
+        {
+          "phrase": "Quando potrebbe iniziare?",
+          "romanization": null,
+          "meaning": "When could you start?",
+          "usage": "Interviewer may ask",
+          "literal": null
+        },
+        {
+          "phrase": "Grazie per il suo tempo",
+          "romanization": null,
+          "meaning": "Thank you for your time",
+          "usage": "Closing an interview",
+          "literal": null
+        }
+      ]
+    }
+  },
+  "tr": {
+    "restaurant": {
+      "title": "Restoranda",
+      "titleEn": "At a Restaurant",
+      "phrases": [
+        {
+          "phrase": "Bakar mısınız, menüyü alabilir miyim?",
+          "romanization": null,
+          "meaning": "Excuse me, can I get the menu?",
+          "usage": "Polite request to waiter",
+          "literal": "Would you look, can I take menu?"
+        },
+        {
+          "phrase": "Ne tavsiye edersiniz?",
+          "romanization": null,
+          "meaning": "What do you recommend?",
+          "usage": "Asking for suggestions",
+          "literal": null
+        },
+        {
+          "phrase": "Hesap, lütfen",
+          "romanization": null,
+          "meaning": "Check, please",
+          "usage": "Requesting the bill",
+          "literal": null
+        },
+        {
+          "phrase": "İki kişilik bir masa lütfen",
+          "romanization": null,
+          "meaning": "A table for two please",
+          "usage": "When entering",
+          "literal": null
+        },
+        {
+          "phrase": "Acı yemiyorum",
+          "romanization": null,
+          "meaning": "I don't eat spicy food",
+          "usage": "Dietary preference",
+          "literal": "I don't eat spicy"
+        },
+        {
+          "phrase": "Bu yemek nedir?",
+          "romanization": null,
+          "meaning": "What is this dish?",
+          "usage": "Asking about a dish",
+          "literal": null
+        },
+        {
+          "phrase": "Çok lezzetliydi, elinize sağlık",
+          "romanization": null,
+          "meaning": "Very delicious, bless your hands",
+          "usage": "Complimenting (traditional phrase)",
+          "literal": "Health to your hands"
+        },
+        {
+          "phrase": "Rezervasyonum var",
+          "romanization": null,
+          "meaning": "I have a reservation",
+          "usage": "At the entrance",
+          "literal": null
+        }
+      ]
+    },
+    "airport": {
+      "title": "Havalimanında",
+      "titleEn": "At the Airport",
+      "phrases": [
+        {
+          "phrase": "Biniş kapısı nerede?",
+          "romanization": null,
+          "meaning": "Where is the boarding gate?",
+          "usage": "Finding your gate",
+          "literal": null
+        },
+        {
+          "phrase": "Bagajım gelmedi",
+          "romanization": null,
+          "meaning": "My luggage didn't arrive",
+          "usage": "At baggage claim",
+          "literal": null
+        },
+        {
+          "phrase": "Aktarma nerede?",
+          "romanization": null,
+          "meaning": "Where is the transfer?",
+          "usage": "Connecting flights",
+          "literal": null
+        },
+        {
+          "phrase": "Pencere kenarı istiyorum",
+          "romanization": null,
+          "meaning": "I want a window seat",
+          "usage": "At check-in",
+          "literal": null
+        },
+        {
+          "phrase": "Turist olarak geldim",
+          "romanization": null,
+          "meaning": "I came as a tourist",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "Üç gün kalacağım",
+          "romanization": null,
+          "meaning": "I'll stay three days",
+          "usage": "At immigration",
+          "literal": null
+        },
+        {
+          "phrase": "Beyan edecek bir şeyim yok",
+          "romanization": null,
+          "meaning": "I have nothing to declare",
+          "usage": "At customs",
+          "literal": null
+        },
+        {
+          "phrase": "Bu uçuş rötar mı?",
+          "romanization": null,
+          "meaning": "Is this flight delayed?",
+          "usage": "Checking flight status",
+          "literal": null
+        }
+      ]
+    },
+    "taxi": {
+      "title": "Takside",
+      "titleEn": "In a Taxi",
+      "phrases": [
+        {
+          "phrase": "Bu adrese gidelim lütfen",
+          "romanization": null,
+          "meaning": "Let's go to this address please",
+          "usage": "Showing address to driver",
+          "literal": null
+        },
+        {
+          "phrase": "Ne kadar sürer?",
+          "romanization": null,
+          "meaning": "How long does it take?",
+          "usage": "Asking about travel time",
+          "literal": null
+        },
+        {
+          "phrase": "Burada inecek misiniz?",
+          "romanization": null,
+          "meaning": "Will you get off here?",
+          "usage": "Driver may ask / requesting stop",
+          "literal": null
+        },
+        {
+          "phrase": "Bagajı açar mısınız?",
+          "romanization": null,
+          "meaning": "Can you open the trunk?",
+          "usage": "For luggage",
+          "literal": null
+        },
+        {
+          "phrase": "Kartla ödeyebilir miyim?",
+          "romanization": null,
+          "meaning": "Can I pay by card?",
+          "usage": "Asking about payment",
+          "literal": null
+        },
+        {
+          "phrase": "Acelem var, lütfen hızlı gidin",
+          "romanization": null,
+          "meaning": "I'm in a hurry, please go fast",
+          "usage": "When in a rush",
+          "literal": null
+        },
+        {
+          "phrase": "Düz gidin",
+          "romanization": null,
+          "meaning": "Go straight",
+          "usage": "Giving directions",
+          "literal": null
+        },
+        {
+          "phrase": "Fiş alabilir miyim?",
+          "romanization": null,
+          "meaning": "Can I get a receipt?",
+          "usage": "After paying",
+          "literal": null
+        }
+      ]
+    },
+    "hotel": {
+      "title": "Otelde",
+      "titleEn": "At a Hotel",
+      "phrases": [
+        {
+          "phrase": "Giriş yapmak istiyorum",
+          "romanization": null,
+          "meaning": "I'd like to check in",
+          "usage": "At the front desk",
+          "literal": null
+        },
+        {
+          "phrase": "Wi-Fi şifresi ne?",
+          "romanization": null,
+          "meaning": "What's the Wi-Fi password?",
+          "usage": "Asking for internet access",
+          "literal": null
+        },
+        {
+          "phrase": "Odamı değiştirebilir miyim?",
+          "romanization": null,
+          "meaning": "Can I change my room?",
+          "usage": "Requesting a room change",
+          "literal": null
+        },
+        {
+          "phrase": "Ekstra havlu alabilir miyim?",
+          "romanization": null,
+          "meaning": "Can I get extra towels?",
+          "usage": "Requesting amenities",
+          "literal": null
+        },
+        {
+          "phrase": "Kahvaltı saat kaçta?",
+          "romanization": null,
+          "meaning": "What time is breakfast?",
+          "usage": "Asking about meals",
+          "literal": null
+        },
+        {
+          "phrase": "Bavulumu bırakabilir miyim?",
+          "romanization": null,
+          "meaning": "Can I leave my suitcase?",
+          "usage": "Before/after checkout",
+          "literal": null
+        },
+        {
+          "phrase": "Klima çalışmıyor",
+          "romanization": null,
+          "meaning": "The air conditioning doesn't work",
+          "usage": "Reporting a problem",
+          "literal": null
+        },
+        {
+          "phrase": "Çıkış saati kaç?",
+          "romanization": null,
+          "meaning": "What time is checkout?",
+          "usage": "Asking about checkout time",
+          "literal": null
+        }
+      ]
+    },
+    "shopping": {
+      "title": "Alışverişte",
+      "titleEn": "Shopping",
+      "phrases": [
+        {
+          "phrase": "Deneyebilir miyim?",
+          "romanization": null,
+          "meaning": "Can I try it on?",
+          "usage": "At a clothing store",
+          "literal": null
+        },
+        {
+          "phrase": "Biraz indirim yapabilir misiniz?",
+          "romanization": null,
+          "meaning": "Can you give a small discount?",
+          "usage": "Bargaining at bazaars",
+          "literal": null
+        },
+        {
+          "phrase": "Başka rengi var mı?",
+          "romanization": null,
+          "meaning": "Is there another color?",
+          "usage": "Asking for options",
+          "literal": null
+        },
+        {
+          "phrase": "Vergi iadesi alabilir miyim?",
+          "romanization": null,
+          "meaning": "Can I get a tax refund?",
+          "usage": "For tourist tax refund",
+          "literal": null
+        },
+        {
+          "phrase": "Bunu alıyorum",
+          "romanization": null,
+          "meaning": "I'll take this",
+          "usage": "Making a purchase",
+          "literal": "I'm buying this"
+        },
+        {
+          "phrase": "Sadece bakıyorum, teşekkürler",
+          "romanization": null,
+          "meaning": "Just looking, thanks",
+          "usage": "When approached by staff",
+          "literal": null
+        },
+        {
+          "phrase": "Hediye paketi yapabilir misiniz?",
+          "romanization": null,
+          "meaning": "Can you gift wrap it?",
+          "usage": "Requesting gift wrapping",
+          "literal": null
+        },
+        {
+          "phrase": "İade edebilir miyim?",
+          "romanization": null,
+          "meaning": "Can I return this?",
+          "usage": "Asking about returns",
+          "literal": null
+        }
+      ]
+    },
+    "doctor": {
+      "title": "Doktorda",
+      "titleEn": "At the Doctor",
+      "phrases": [
+        {
+          "phrase": "Başım ağrıyor",
+          "romanization": null,
+          "meaning": "I have a headache",
+          "usage": "Describing symptoms",
+          "literal": "My head hurts"
+        },
+        {
+          "phrase": "Ateşim var",
+          "romanization": null,
+          "meaning": "I have a fever",
+          "usage": "Describing symptoms",
+          "literal": "I have fire"
+        },
+        {
+          "phrase": "Bu ilaca alerjim var",
+          "romanization": null,
+          "meaning": "I'm allergic to this medicine",
+          "usage": "Important medical info",
+          "literal": null
+        },
+        {
+          "phrase": "Sağlık sigortam var",
+          "romanization": null,
+          "meaning": "I have health insurance",
+          "usage": "At reception",
+          "literal": null
+        },
+        {
+          "phrase": "Şikayetleriniz ne zamandan beri var?",
+          "romanization": null,
+          "meaning": "How long have you had these complaints?",
+          "usage": "Doctor may ask this",
+          "literal": null
+        },
+        {
+          "phrase": "Karnım ağrıyor",
+          "romanization": null,
+          "meaning": "I have a stomachache",
+          "usage": "Describing symptoms",
+          "literal": "My stomach hurts"
+        },
+        {
+          "phrase": "Reçete yazabilir misiniz?",
+          "romanization": null,
+          "meaning": "Can you write a prescription?",
+          "usage": "Requesting medication",
+          "literal": null
+        },
+        {
+          "phrase": "İngilizce bilen bir doktor var mı?",
+          "romanization": null,
+          "meaning": "Is there a doctor who speaks English?",
+          "usage": "Requesting English-speaking doctor",
+          "literal": null
+        }
+      ]
+    },
+    "dating": {
+      "title": "Buluşmada",
+      "titleEn": "Dating",
+      "phrases": [
+        {
+          "phrase": "Birlikte yemek yemek ister misin?",
+          "romanization": null,
+          "meaning": "Would you like to have dinner together?",
+          "usage": "Asking someone out",
+          "literal": null
+        },
+        {
+          "phrase": "Bugün çok güzel vakit geçirdim",
+          "romanization": null,
+          "meaning": "I had a really nice time today",
+          "usage": "After a date",
+          "literal": null
+        },
+        {
+          "phrase": "Boş zamanlarında ne yaparsın?",
+          "romanization": null,
+          "meaning": "What do you do in your free time?",
+          "usage": "Getting to know someone",
+          "literal": null
+        },
+        {
+          "phrase": "Seni tekrar görmek isterim",
+          "romanization": null,
+          "meaning": "I'd like to see you again",
+          "usage": "Expressing interest",
+          "literal": null
+        },
+        {
+          "phrase": "Numaranı alabilir miyim?",
+          "romanization": null,
+          "meaning": "Can I have your number?",
+          "usage": "Exchanging details",
+          "literal": null
+        },
+        {
+          "phrase": "Bu akşam çok güzel görünüyorsun",
+          "romanization": null,
+          "meaning": "You look beautiful tonight",
+          "usage": "Giving a compliment",
+          "literal": null
+        },
+        {
+          "phrase": "Nelerden hoşlanırsın?",
+          "romanization": null,
+          "meaning": "What do you enjoy?",
+          "usage": "Asking about preferences",
+          "literal": null
+        },
+        {
+          "phrase": "Bu akşam benden",
+          "romanization": null,
+          "meaning": "Tonight is on me",
+          "usage": "Offering to pay",
+          "literal": "Tonight from me"
+        }
+      ]
+    },
+    "interview": {
+      "title": "İş görüşmesinde",
+      "titleEn": "Job Interview",
+      "phrases": [
+        {
+          "phrase": "Merhaba, bu fırsat için teşekkür ederim",
+          "romanization": null,
+          "meaning": "Hello, thank you for this opportunity",
+          "usage": "Opening greeting",
+          "literal": null
+        },
+        {
+          "phrase": "Daha önce pazarlama alanında çalıştım",
+          "romanization": null,
+          "meaning": "I previously worked in marketing",
+          "usage": "Describing past experience",
+          "literal": null
+        },
+        {
+          "phrase": "Şirketinizde gelişmek istiyorum",
+          "romanization": null,
+          "meaning": "I want to develop at your company",
+          "usage": "Expressing motivation",
+          "literal": null
+        },
+        {
+          "phrase": "Bir soru sorabilir miyim?",
+          "romanization": null,
+          "meaning": "May I ask a question?",
+          "usage": "Before asking questions",
+          "literal": null
+        },
+        {
+          "phrase": "Kendimi tanıtmama izin verin",
+          "romanization": null,
+          "meaning": "Allow me to introduce myself",
+          "usage": "Starting self-introduction",
+          "literal": null
+        },
+        {
+          "phrase": "Takım çalışmasına çok önem veriyorum",
+          "romanization": null,
+          "meaning": "I value teamwork very much",
+          "usage": "Describing work style",
+          "literal": null
+        },
+        {
+          "phrase": "Ne zaman başlayabilirsiniz?",
+          "romanization": null,
+          "meaning": "When can you start?",
+          "usage": "Interviewer may ask",
+          "literal": null
+        },
+        {
+          "phrase": "Vaktiniz için teşekkür ederim",
+          "romanization": null,
+          "meaning": "Thank you for your time",
+          "usage": "Closing an interview",
+          "literal": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_source": "Funlingo extension dev source (src-live/funlingo-develop-2/src/core/i18n/translations.js). Team-written, but NOT in the shipped 1.3.2 bundle. Only locales the team translated.",
+  "hi": {
+    "learn.correct": "सही!",
+    "learn.correctAnswer": "सही उत्तर: {answer}",
+    "learn.skip": "छोड़ें"
+  },
+  "es": {
+    "learn.correct": "¡Correcto!",
+    "learn.correctAnswer": "Respuesta correcta: {answer}",
+    "learn.skip": "Saltar"
+  },
+  "ja": {
+    "learn.correct": "正解!",
+    "learn.correctAnswer": "正解: {answer}",
+    "learn.skip": "スキップ"
+  },
+  "zh_CN": {
+    "learn.correct": "正确!",
+    "learn.correctAnswer": "正确答案:{answer}",
+    "learn.skip": "跳过"
+  },
+  "pt_BR": {
+    "learn.correct": "Correto!",
+    "learn.correctAnswer": "Resposta correta: {answer}",
+    "learn.skip": "Pular"
+  }
+}

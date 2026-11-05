@@ -1,0 +1,300 @@
+.runner {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
+}
+
+.runner[data-busy] {
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-accent);
+}
+
+.drillBadge {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-text);
+}
+
+.counter {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--fl-text-2);
+  font-size: 14px;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 6px;
+  background: var(--fl-surface-1);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+  border: 1px solid var(--fl-border);
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fl-accent-2), var(--fl-accent));
+  transition: width var(--d-base) var(--ease);
+}
+
+/* ---------- Drill container ---------- */
+
+.drillArea {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+}
+
+/* ---------- Quit modal ---------- */
+
+.quit {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--fl-shadow-ink);
+  z-index: 50;
+  padding: var(--s-4);
+}
+
+.quitCard {
+  max-width: 420px;
+  padding: var(--s-6);
+  background: var(--fl-bg-2);
+  border: 1px solid var(--fl-border-2);
+  border-radius: var(--r-lg);
+  box-shadow: var(--el-3);
+}
+
+.quitTitle {
+  margin: 0 0 var(--s-2);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quitBody {
+  margin: 0 0 var(--s-5);
+  color: var(--fl-text-2);
+  line-height: 1.55;
+  font-size: 15px;
+}
+
+.quitRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--s-3);
+  flex-wrap: wrap;
+}
+
+.quitBtn {
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  transition: transform var(--d-fast) var(--ease), background var(--d-fast) var(--ease);
+}
+
+.quitBtnGhost {
+  border-color: var(--fl-border-2);
+  color: var(--fl-text);
+}
+
+.quitBtnGhost:hover {
+  background: var(--fl-surface-2);
+}
+
+.quitBtnPrimary {
+  background: linear-gradient(135deg, var(--fl-secondary), var(--fl-primary));
+  color: var(--fl-on-accent);
+  box-shadow: var(--glow);
+}
+
+.quitBtnPrimary:hover {
+  transform: translateY(-1px);
+}
+
+/* ---------- Empty + Summary ---------- */
+
+.empty, .summary {
+  width: 100%;
+  max-width: 520px;
+  margin: var(--s-10) auto;
+  padding: var(--s-10) var(--s-6);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--el-2);
+  text-align: center;
+}
+
+.emptyTitle, .summaryTitle {
+  margin: 0 0 var(--s-3);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.emptyBody, .summaryBody {
+  margin: 0 0 var(--s-5);
+  color: var(--fl-text-2);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.emptyLang {
+  color: var(--fl-text);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-3);
+  margin: 0 0 var(--s-5);
+  text-align: left;
+}
+
+.summaryCell {
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  padding: var(--s-3) var(--s-4);
+  margin: 0;
+}
+
+.summaryCell dt {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+  margin-bottom: 4px;
+}
+
+.summaryCell dd {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--fl-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.summaryFoot {
+  margin: 0;
+  color: var(--fl-text-2);
+  font-size: 14px;
+}
+
+/* PM-polish fix 1: action footer under the summary stats. Mirrors the
+   EmptyState action-row shape so a learner leaving a session lands in a
+   familiar place. */
+.summaryActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--s-5);
+}
+
+.summaryBtnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  background: linear-gradient(100deg, var(--fl-accent), var(--fl-secondary) 60%, var(--fl-accent-2));
+  color: var(--fl-on-accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: var(--glow);
+  font-family: inherit;
+  transition: filter var(--d-fast), transform var(--d-fast);
+}
+.summaryBtnPrimary:hover { filter: brightness(1.07); }
+@media (prefers-reduced-motion: no-preference) {
+  .summaryBtnPrimary:hover { transform: translateY(-1px); }
+}
+.summaryBtnPrimary:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 3px;
+}
+
+.summaryBtnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-1);
+  color: var(--fl-text);
+  border: 1px solid var(--fl-border);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background var(--d-fast), border-color var(--d-fast);
+}
+.summaryBtnSecondary:hover {
+  background: var(--fl-surface-2);
+  border-color: var(--fl-border-2);
+}
+.summaryBtnSecondary:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.summaryBtnText {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 4px;
+  color: var(--fl-text-2);
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: inherit;
+}
+.summaryBtnText:hover { color: var(--fl-text); }
+.summaryBtnText:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}

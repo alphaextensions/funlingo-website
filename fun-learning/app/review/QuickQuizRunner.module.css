@@ -1,0 +1,334 @@
+/* Quick Quiz — Wave 11 extension-parity rebuild.
+ *
+ * Mirrors the Funlingo Chrome extension's `.quiz-stage` block:
+ *   - centered 600px stage
+ *   - single `.quiz-word-card` with radial gradient + prompt + big word
+ *   - 2-col `.quiz-options` of `.quiz-opt` buttons, each with an `.opt-key` square
+ *   - correct/wrong pulse feedback (reduced-motion gated)
+ *   - `.quiz-feedback` + `.quiz-actions` row below
+ */
+
+.stage {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--s-8) 0 var(--s-20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.topRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  color: var(--fl-text-3);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: var(--s-5);
+}
+
+.topRow .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topRow .eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--fl-accent);
+}
+
+.wordCard {
+  width: 100%;
+  border-radius: var(--r-lg);
+  padding: var(--s-12) var(--s-8);
+  background:
+    radial-gradient(120% 100% at 50% 0%, color-mix(in oklab, var(--fl-accent) 14%, transparent), transparent 60%),
+    var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  margin-bottom: var(--s-6);
+  position: relative;
+}
+
+.prompt {
+  /* Extension CSS has no text-transform here — the prompt reads as a
+   * sentence-case question ("What does this mean?"), not an eyebrow label.
+   * The uppercase eyebrow lives in `.topRow .eyebrow` above the card. */
+  font-size: 13px;
+  color: var(--fl-text-3);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 0 0 14px;
+}
+
+.word {
+  font-size: clamp(34px, 6vw, 52px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--fl-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  word-break: break-word;
+  margin: 0;
+}
+
+.hint {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--fl-text-3);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-3);
+  width: 100%;
+}
+
+.opt {
+  font-family: var(--font, inherit);
+  text-align: left;
+  cursor: pointer;
+  padding: 16px 18px;
+  border-radius: var(--r-md);
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-text);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.35;
+  transition: background var(--d-fast), border-color var(--d-fast);
+}
+
+.optKey {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+  background: var(--fl-surface-2);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--fl-text-3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .opt {
+    transition:
+      transform var(--d-fast) var(--ease),
+      background var(--d-fast),
+      border-color var(--d-fast);
+  }
+  .opt:hover:not([disabled]) {
+    transform: translateY(-2px);
+  }
+  .opt:active:not([disabled]) {
+    transform: scale(0.98);
+  }
+}
+
+.opt:hover:not([disabled]) {
+  background: var(--fl-surface-2);
+  border-color: var(--fl-border-2);
+}
+
+.opt:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.opt[disabled] {
+  cursor: default;
+}
+
+.opt[data-state="correct"] {
+  background: color-mix(in oklab, var(--fl-success) 18%, var(--fl-surface-1));
+  border-color: var(--fl-success);
+  color: var(--fl-on-accent);
+}
+
+.opt[data-state="correct"] .optKey {
+  background: var(--fl-success);
+  color: #06310f;
+}
+
+.opt[data-state="wrong"] {
+  background: color-mix(in oklab, var(--fl-danger) 18%, var(--fl-surface-1));
+  border-color: var(--fl-danger);
+  color: var(--fl-on-accent);
+}
+
+.opt[data-state="wrong"] .optKey {
+  background: var(--fl-danger);
+  color: #3a0509;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .opt[data-state="correct"] {
+    animation: correctPulse var(--d-base) var(--ease-out);
+  }
+}
+
+/* Wave 15 — in-app Animations toggle off. */
+:global(body[data-motion="off"]) .opt[data-state="correct"] { animation: none; }
+
+@keyframes correctPulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--fl-success-ring, rgba(22, 181, 127, 0.4));
+  }
+  100% {
+    box-shadow: 0 0 0 14px rgba(22, 181, 127, 0);
+  }
+}
+
+.feedback {
+  min-height: 26px;
+  margin: var(--s-6) 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feedback[data-tone="correct"] {
+  color: var(--fl-success);
+}
+
+.feedback[data-tone="wrong"] {
+  color: var(--fl-danger);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: var(--s-5);
+}
+
+.nextBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 20px;
+  border-radius: var(--r-pill);
+  background: linear-gradient(120deg, var(--fl-secondary), var(--fl-accent));
+  color: var(--fl-on-accent, #ffffff);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.nextBtn:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+/* Wave 15 — extension `.btn-pill.ghost` Skip button (`#quizSkip`). */
+.skipBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: var(--r-pill);
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--fl-border);
+  background: transparent;
+  color: var(--fl-text);
+}
+.skipBtn:hover {
+  background: var(--fl-surface-2);
+  border-color: var(--fl-border-2);
+}
+.skipBtn:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skipBtn {
+    transition: transform var(--d-fast) var(--ease), background var(--d-fast), border-color var(--d-fast);
+  }
+  .skipBtn:active { transform: scale(0.96); }
+}
+
+.progressDots {
+  display: flex;
+  gap: 4px;
+  margin-top: var(--s-6);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--fl-surface-3);
+  transition: background var(--d-fast);
+}
+
+.dot[data-state="done"] {
+  background: var(--fl-accent);
+}
+
+.dot[data-state="current"] {
+  background: var(--fl-text);
+}
+
+/* Mobile: options stack vertically — matches extension's `@media (max-width:560px)`. */
+@media (max-width: 560px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Summary card after the round finishes. */
+.summary {
+  text-align: center;
+  padding: var(--s-12) var(--s-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  align-items: center;
+}
+
+.summary h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+}
+
+.summary p {
+  margin: 0;
+  color: var(--fl-text-2);
+  font-size: 15px;
+}
+
+.summaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  background: linear-gradient(120deg, var(--fl-secondary), var(--fl-accent));
+  color: var(--fl-on-accent, #ffffff);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid transparent;
+}

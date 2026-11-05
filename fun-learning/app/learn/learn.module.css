@@ -1,0 +1,449 @@
+/* Fun Learning — extension-parity landing page.
+ *
+ * Ports `extension-fun-learning.css`'s `.exp-grid` + `.exp-card` recipe into
+ * CSS Modules + Funlingo DS tokens. Palette uses the DS tokens (not the
+ * superseded Cinema-Noir rgba), per Wave 4.
+ *
+ * Rules honoured:
+ *   - No raw hex (card hues map to DS tokens via var passthroughs).
+ *   - Every interactive state has a non-color signal (translate + border).
+ *   - Reduced-motion-gated hover transforms.
+ */
+
+.wrap {
+  padding: 0 0 var(--s-16);
+}
+
+.hero {
+  padding: var(--s-24) 0 var(--s-16);
+  text-align: center;
+}
+
+/* Hero title clamp mirrors `extension-fun-learning.css` `.hero h1`:
+   `clamp(52px, 9vw, 108px)` so Fun / Learning lands on the web app at the
+   same display size an extension user is used to. */
+.hero h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(52px, 9vw, 108px);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  margin: 0;
+}
+
+.hero h1 span { line-height: 1; }
+
+.hero h1 .l2 {
+  display: block;
+  line-height: 1;
+  padding-bottom: 0.1em;
+  background: linear-gradient(100deg, var(--fl-accent), var(--fl-secondary) 60%, var(--fl-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Eyebrow greet pill. Mirrors the extension's `.hero .greet` + `.e-dot`
+   (no uppercase — the extension renders sentence case). The dot keyframe
+   is the same pulse ring the extension uses for `.e-dot`. */
+.greet {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fl-text-2);
+  margin-bottom: var(--s-2);
+}
+
+.greetDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--fl-accent);
+  box-shadow: 0 0 0 0 var(--fl-accent-glow-strong);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .greetDot { animation: learnGreetPulse 2.4s ease-out infinite; }
+}
+
+@keyframes learnGreetPulse {
+  0%   { box-shadow: 0 0 0 0 var(--fl-accent-glow-strong); }
+  70%  { box-shadow: 0 0 0 7px var(--fl-accent-glow-0); }
+  100% { box-shadow: 0 0 0 0 var(--fl-accent-glow-0); }
+}
+
+:global(body[data-motion="off"]) .greetDot { animation: none; }
+
+.sub {
+  margin: var(--s-6) auto 0;
+  max-width: 46ch;
+  color: var(--fl-text-2);
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.5;
+}
+
+/* Welcome banner — first-run only. Mirrors the extension's
+   `.welcome-banner` padding, radius and 👋 size so a first-time learner
+   sees the same reassurance card they'd meet in the extension. */
+.welcome {
+  display: flex;
+  gap: var(--s-6);
+  align-items: center;
+  padding: var(--s-8);
+  border-radius: var(--r-lg);
+  background:
+    /* Byte-for-byte match to extension-fun-learning.css line ~820. Wave 4
+       mapped this to --fl-secondary via color-mix, but the DS secondary
+       (#9A1C8E) renders a dimmer, deeper magenta than the extension's
+       intentional vivid purple (#b218d1). The welcome banner is a one-off
+       vibe glow — same rationale as the per-tile --card-hue values. */
+    radial-gradient(120% 120% at 0% 0%, rgba(178, 24, 209, 0.18), transparent 55%),
+    var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  margin-bottom: var(--s-8);
+}
+
+.welcomeEmoji {
+  font-size: 54px;
+  line-height: 1;
+  flex: none;
+}
+
+.welcomeBody h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--fl-text);
+}
+
+.welcomeBody p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--fl-text-2);
+  max-width: 54ch;
+}
+
+@media (max-width: 600px) {
+  .welcome { flex-direction: column; text-align: center; }
+}
+
+/* ---- 5-tile experience grid ---- */
+.grid {
+  display: grid;
+  gap: var(--s-6);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+  --card-hue: var(--fl-accent);
+  grid-column: span 3;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: var(--r-lg);
+  padding: var(--s-6);
+  min-height: 240px;
+  background:
+    radial-gradient(120% 100% at 100% 0%, color-mix(in oklab, var(--card-hue) 22%, transparent), transparent 60%),
+    var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--d-base), box-shadow var(--d-base);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card { transition: transform var(--d-base) var(--ease-out), border-color var(--d-base), box-shadow var(--d-base); }
+  .card:hover { transform: translateY(-4px); }
+  .card:active { transform: translateY(-1px) scale(0.992); }
+}
+
+.card:hover {
+  border-color: var(--fl-border-2);
+  box-shadow: var(--el-2);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 3px;
+}
+
+/* Replay tile is the editorial-hero width on wide viewports. */
+.cReplay { grid-column: span 6; min-height: 200px; }
+.cReplay .h { font-size: 32px; }
+.cQuiz,
+.cLessons,
+.cSlang,
+.cLibrary { grid-column: span 3; }
+
+/* Hue per card — DS pulled, not raw hex. */
+/* Per-tile hues — matched BYTE-FOR-BYTE to the live extension
+   (docs/design-reference/extension-fun-learning.css lines 441-445).
+   These are intentional *vibe* colors — teal/lavender/amber break
+   from the brand palette on purpose so each tile is instantly
+   recognizable. The Wave 4 DS migration mistakenly mapped them to
+   semantic tokens; restored to the extension's literal hexes.
+   Jay flagged "Slang Hang hue is wrong" on 2026-10-25. */
+.cReplay  { --card-hue: #ec4899; }  /* hot pink    */
+.cQuiz    { --card-hue: #fbbf24; }  /* amber       */
+.cLessons { --card-hue: #2dd4bf; }  /* teal/cyan   */
+.cSlang   { --card-hue: #a78bfa; }  /* lavender    */
+.cLibrary { --card-hue: #d678f0; }  /* light pink  */
+
+/* Motif cluster — small live preview of each feature. */
+.motif {
+  position: absolute;
+  top: 20px;
+  inset-inline-end: 20px;
+  width: 150px;
+  height: 104px;
+  pointer-events: none;
+  transform-origin: top right;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motif { transition: transform var(--d-slow) var(--ease-bounce); }
+  .card:hover .motif { transform: translateY(-3px) rotate(-1.5deg); }
+}
+
+.motif,
+.motif * { font-family: var(--font); letter-spacing: -0.01em; }
+
+/* Word Replay — fanned word cards. */
+.motifReplay .mw {
+  position: absolute;
+  inset-inline-end: 0;
+  width: 124px;
+  padding: 8px 11px;
+  border-radius: 10px;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fl-text-2);
+  box-shadow: var(--el-1);
+}
+.motifReplay .mw .bar { display: block; height: 4px; width: 62%; margin-top: 5px; border-radius: 3px; background: var(--fl-border-2); }
+.motifReplay .mw3 { top: -2px; transform: rotate(-8deg) translateX(-8px); opacity: 0.45; }
+.motifReplay .mw2 { top: 20px; transform: rotate(4deg) translateX(2px); opacity: 0.85; }
+.motifReplay .mw1 {
+  top: 44px;
+  transform: rotate(-2deg);
+  color: var(--fl-text);
+  background: color-mix(in oklab, var(--card-hue) 20%, var(--fl-surface-2));
+  border-color: color-mix(in oklab, var(--card-hue) 50%, transparent);
+}
+.motifReplay .mw1 .bar { background: var(--card-hue); }
+
+/* Quick Quiz — mini multiple choice. */
+.motifQuiz { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+.motifQuiz .qWord { font-size: 13px; font-weight: 700; color: var(--fl-text); }
+.motifQuiz .qOpt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 124px;
+  justify-content: flex-end;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--fl-text-2);
+}
+.motifQuiz .qOk {
+  background: color-mix(in oklab, var(--fl-success) 22%, var(--fl-surface-2));
+  border-color: var(--fl-success);
+  color: var(--fl-text);
+}
+.motifQuiz .qOk .tick {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--fl-success);
+  display: grid;
+  place-items: center;
+  color: var(--fl-bg);
+  font-size: 9px;
+  font-weight: 800;
+}
+.motifQuiz .qDim { opacity: 0.5; }
+.motifQuiz .qOptText { display: inline-block; min-width: 42px; }
+
+/* Tiny Lessons — tilted flashcard. */
+.motifLessons { display: grid; place-items: center; }
+.motifLessons .lCard {
+  width: 128px;
+  height: 92px;
+  border-radius: 12px;
+  transform: rotate(-4deg);
+  background: color-mix(in oklab, var(--card-hue) 12%, var(--fl-bg-2));
+  border: 1px solid color-mix(in oklab, var(--card-hue) 30%, var(--fl-border));
+  box-shadow: var(--el-2);
+  padding: 11px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.motifLessons .lPhrase { font-size: 12px; font-weight: 700; color: var(--fl-text); line-height: 1.2; }
+.motifLessons .lLine { height: 4px; border-radius: 3px; background: var(--fl-border-2); }
+.motifLessons .lLine1 { width: 80%; }
+.motifLessons .lLine2 { width: 55%; }
+.motifLessons .lTap { margin-top: auto; font-size: 9.5px; font-weight: 600; color: var(--card-hue); letter-spacing: 0.02em; }
+
+/* Slang Hang — chat bubble. */
+.motifSlang { display: flex; flex-direction: column; align-items: flex-end; gap: 7px; }
+.motifSlang .sEra {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--r-pill);
+  color: var(--fl-text);
+  background: color-mix(in oklab, var(--card-hue) 28%, var(--fl-surface-2));
+}
+.motifSlang .sBubble {
+  position: relative;
+  padding: 11px 16px;
+  border-radius: 14px;
+  border-end-end-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--fl-text);
+  background: color-mix(in oklab, var(--card-hue) 16%, var(--fl-surface-2));
+  border: 1px solid color-mix(in oklab, var(--card-hue) 34%, transparent);
+  box-shadow: var(--el-1);
+}
+
+/* Your Library — grid of saved chips.
+ *
+ * Width stays at the parent `.motif` 150px so the 3-column chip grid
+ * matches the extension's rendered width. The extension's own
+ * `.motif-library { width:124px }` is dead code there — `.exp-card
+ * .motif { width:150px }` wins on specificity. Porting to CSS Modules
+ * loses that specificity edge, so we DON'T re-declare the width here
+ * and let the parent `.motif` rule own it. */
+.motifLibrary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+.motifLibrary .lc {
+  height: 24px;
+  border-radius: 7px;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+}
+.motifLibrary .lcOn {
+  background: color-mix(in oklab, var(--card-hue) 22%, var(--fl-surface-2));
+  border-color: color-mix(in oklab, var(--card-hue) 45%, transparent);
+}
+.motifLibrary .lcMark {
+  display: grid;
+  place-items: center;
+  color: var(--card-hue);
+}
+.motifLibrary .lcMark svg { width: 12px; height: 12px; }
+
+@media (max-width: 600px) {
+  .motif { transform: scale(0.92); opacity: 0.92; }
+}
+
+.xnum {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fl-text-3);
+  letter-spacing: 0.08em;
+}
+
+.h {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: auto 0 8px;
+  color: var(--fl-text);
+}
+
+.p {
+  margin: 0 0 var(--s-5);
+  color: var(--fl-text-2);
+  font-size: 13.5px;
+  line-height: 1.5;
+  max-width: 32ch;
+}
+
+.try {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  align-self: flex-start;
+  padding: 9px 16px;
+  border-radius: var(--r-pill);
+  background: color-mix(in oklab, var(--card-hue) 26%, var(--fl-surface-2));
+  border: 1px solid color-mix(in oklab, var(--card-hue) 40%, transparent);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fl-text);
+  transition: gap var(--d-fast) var(--ease), background var(--d-fast);
+}
+
+.card:hover .try {
+  gap: 11px;
+  background: color-mix(in oklab, var(--card-hue) 40%, var(--fl-surface-2));
+}
+
+.try svg { width: 13px; height: 13px; }
+
+/* Locked tile — Word Replay / Quick Quiz when userWordCount == 0. */
+.lockHint {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  align-self: flex-start;
+  padding: 8px 13px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-1);
+  border: 1px dashed var(--fl-border-2);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--fl-text-3);
+}
+.lockHint svg { width: 12px; height: 12px; flex: none; }
+.card.locked { opacity: 0.82; cursor: not-allowed; }
+.card.locked .try { display: none; }
+
+.card:not(.locked) .lockHint { display: none; }
+
+@media (max-width: 880px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .card { grid-column: span 1 !important; min-height: 200px; }
+  .cReplay { grid-column: span 2 !important; }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  .card { grid-column: span 1 !important; }
+}
+
+.footer {
+  padding: var(--s-12) 0 var(--s-8);
+  text-align: center;
+  color: var(--fl-text-3);
+  font-size: 13px;
+  margin-top: var(--s-8);
+  border-top: 1px solid var(--fl-border);
+}
