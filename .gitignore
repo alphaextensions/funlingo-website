@@ -12,3 +12,6 @@ hashnode-blog-*.md
 linkedin-blog-*.md
 Reddit_Thread_Intelligence_Report.xlsx
 funlingo-open-publishing-platforms.xlsx
+
+# Local env (Supabase keys etc.)
+.env*.local
