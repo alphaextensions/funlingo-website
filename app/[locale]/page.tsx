@@ -11,12 +11,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const dict = getDictionary(locale);
-  // Title: just the (translated) hero title — the root layout template appends
-  // " | Funlingo", so we avoid duplicating the brand here.
+  // This page sits in the same segment as its root layout, so that layout's
+  // "%s | Funlingo" template doesn't reach it: add the brand here.
   const title = dict.hero.title;
   const description = dict.meta.description;
   return {
-    title,
+    title: { absolute: `${title} | Funlingo` },
     description,
     alternates: {
       canonical: localizedHref("/", locale),

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { posts } from "@/app/blog/posts";
-import { readBlogMeta } from "@/app/blog/blogMeta";
+import { posts } from "@/app/(en)/blog/posts";
+import { readBlogMeta } from "@/app/(en)/blog/blogMeta";
 import { alternateLanguages, localizedHref, ogLocale, DEFAULT_LOCALE } from "@/app/i18n/config";
 import { platformBySlug, platformPath, fillName } from "./platforms";
 import { localizePlatform } from "./platformLocale";

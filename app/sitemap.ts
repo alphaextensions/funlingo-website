@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { LOCALE_CODES, localizedHref } from "./i18n/config";
-import { posts } from "./blog/posts";
+import { posts } from "./(en)/blog/posts";
 import { PLATFORM_PAGES, platformPath } from "@/sections/platform/platforms";
 
 // Generated at build time, so new blog posts and locales are listed
