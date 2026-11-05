@@ -225,6 +225,7 @@ export const en = {
     quickLinks: "Quick Links",
     information: "Information",
     follow: "Follow",
+    worksOn: "Works on",
     downloadExtension: "Download Extension",
     tagline:
       "Learn while you watch. Free dual subtitles for Netflix, YouTube, Prime & more.",

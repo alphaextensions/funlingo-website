@@ -1072,6 +1072,17 @@ html {
   .fnl-navbar[data-compact] .fnl-navicon { transform: scale(.88); }
 }
 
+/* Platform pages: "On this page" links, underlined in the platform's colour. */
+.fnl-pfanchors { scrollbar-width: none; }
+.fnl-pfanchors::-webkit-scrollbar { display: none; }
+.fnl-pfanchor {
+  text-decoration: none; font-size: 14px; font-weight: 700; color: var(--text-dim);
+  white-space: nowrap; padding: 6px 0; border-bottom: 2px solid transparent;
+  transition: color .15s ease, border-color .15s ease;
+}
+.fnl-pfanchor:hover, .fnl-pfanchor:focus-visible { color: var(--text); border-bottom-color: var(--pf-acc); }
+@media (max-width: 700px) { .fnl-pfanchor { min-height: 44px; display: inline-flex; align-items: center; } }
+
 /* Language menu rows: the row reached by typing or arrow keys is marked. */
 .fnl-langitem:focus-visible { outline: none; box-shadow: inset 0 0 0 2px var(--pink); }
 

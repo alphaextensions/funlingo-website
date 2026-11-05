@@ -1,0 +1,533 @@
+"use client";
+
+import * as React from "react";
+import Navbar from "@/sections/navbar";
+import { FooterSection } from "@/sections/FooterSection";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Calendar, User, Clock, Check, X, ArrowRight, Globe, Languages, DollarSign, Star } from "lucide-react";
+import { KeyTakeaways, StatGrid, Callout } from "@/app/(en)/blog/_components/graphics";
+
+export default function PortugueseToEnglishTranslatorContent() {
+  return (
+    <div className="flex flex-col min-h-screen bg-[var(--bg)]">
+      <Navbar currentPage="/blog" />
+      <section className="relative w-full py-16 lg:py-24 px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-900/40 via-[var(--bg)] to-[var(--bg)] z-0 pointer-events-none" />
+        <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-6 text-center lg:text-left">
+          <Badge className="w-fit mx-auto lg:mx-0 bg-[rgba(200,31,212,0.1)] text-[#C81FD4] border-[#C81FD4]/20 px-3 py-1">Translation</Badge>
+          <h1 className="font-heading-h1 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text)] leading-tight">Portuguese to English Translator &mdash; Best Tools 2026</h1>
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-[var(--text-dim)] font-medium">
+            <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 21, 2026</div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4" /> Funlingo Team</div>
+            <div className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</div>
+          </div>
+        </div>
+      </section>
+
+      <main className="w-full max-w-3xl mx-auto px-6 pb-24">
+        <div className="prose prose-invert prose-lg max-w-none text-[var(--text-dim)]">
+
+          <KeyTakeaways items={["Portuguese has two major variants, Brazilian (PT-BR) and European (PT-PT), with real differences in vocabulary, grammar, and spelling, so always specify which you need.", "DeepL produces the most natural translations, especially for European Portuguese, while Google Translate handles everyday Brazilian Portuguese well.", "ChatGPT is the most flexible option: it explains translation choices, handles slang, and can target a specific variant.", "Watch out for false cognates: 'puxe' means pull, 'pretender' means to intend, and 'exquisito' means weird.", "Funlingo gives free dual Portuguese and English subtitles on Netflix, YouTube, and Prime Video so you learn in context, not just by looking words up."]} />
+
+          <h2 className="text-2xl font-bold text-[var(--text)] mb-4">Why Portuguese to English Translation Matters in 2026</h2>
+          <p className="leading-relaxed text-[var(--text-dim)] mb-6">Portuguese is the sixth most spoken language on the planet. With over 260 million speakers spread across Brazil, Portugal, Mozambique, Angola, and several other nations, it is one of the fastest-growing languages on the internet. Brazil alone accounts for roughly 215 million Portuguese speakers and is the largest economy in Latin America, making Brazilian Portuguese a critical language for business, travel, entertainment, and diplomacy.</p>
+          <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">Whether you are trying to understand a Brazilian news article, communicate with Portuguese-speaking colleagues, watch a Brazilian telenovela, or simply learn a new language, you need a reliable tradutor do ingl&ecirc;s para portugu&ecirc;s. But not all translation tools are created equal. Portuguese has two major variants &mdash; Brazilian and European &mdash; with meaningful differences in vocabulary, grammar, pronunciation, and spelling. A good translator handles both accurately.</p>
+          <p className="leading-relaxed text-[var(--text-dim)] mb-6">This guide compares the eight best Portuguese to English translation tools available in 2026, breaks down the differences between Brazilian and European Portuguese, gives you over 25 essential phrases, and shows you how immersive learning through video content can take your Portuguese far beyond what any translator alone can offer.</p>
+
+          <StatGrid stats={[{value:"260M+", label:"Portuguese speakers worldwide"}, {value:"6th", label:"most spoken language"}, {value:"215M", label:"speakers in Brazil"}, {value:"600-750h", label:"to reach proficiency for English speakers"}]} />
+
+          <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
+            <p className="text-lg text-[var(--text)] mb-6">Learn Portuguese naturally with free dual subtitles on Netflix, YouTube, and Prime Video.</p>
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+              <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-8 rounded-full hover:scale-105 transition-transform duration-300 text-base shadow-lg shadow-purple-500/20">Try Funlingo Free</Button>
+            </a>
+          </div>
+
+          <hr className="border-[var(--border)] my-12" />
+
+          {/* ==================== TOP 8 TRANSLATORS ==================== */}
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6"><Languages className="w-6 h-6 inline mr-2 text-[#C81FD4]" />Top 8 Portuguese to English Translators Compared</h2>
+          <p className="text-[var(--text-dim)] mb-6">Each tool below has been evaluated for accuracy with both Brazilian and European Portuguese, ease of use, pricing, and special features. No single translator is best for every situation, so we highlight what each one does well and where it falls short.</p>
+
+          {/* 1 - Google Translate */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">1. <a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors">Google Translate</a></h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">The most widely used translation tool in the world. Google Translate supports Portuguese in both Brazilian and European variants and handles short sentences, everyday vocabulary, and basic communication well. The camera feature is excellent for translating signs, menus, and printed documents on the go. Its integration with Chrome means you can right-click any Portuguese text on any webpage for an instant translation.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Completely free with no limits</li>
+                  <li>Camera and voice translation</li>
+                  <li>Offline mode available on mobile</li>
+                  <li>Supports 130+ languages</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Struggles with complex grammar</li>
+                  <li>Idiomatic expressions often lost</li>
+                  <li>Less natural phrasing for long texts</li>
+                  <li>No context-based suggestions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 2 - DeepL */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">2. <a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors">DeepL</a></h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free / $8.74/mo</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">DeepL consistently produces more fluent, natural-sounding translations than most competitors, especially for European Portuguese. It excels at preserving tone and register, making it the preferred choice for professional and academic translations. The free plan offers 500,000 characters per month, while the Pro plan unlocks unlimited translation, document uploads, and API access.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Best natural phrasing for Portuguese</li>
+                  <li>Handles formal and informal register</li>
+                  <li>Document translation (PDF, DOCX)</li>
+                  <li>Glossary feature for consistent terms</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Free tier has character limits</li>
+                  <li>No camera or voice translation</li>
+                  <li>European Portuguese stronger than Brazilian</li>
+                  <li>Fewer language pairs than Google</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 3 - ChatGPT */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">3. <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors">ChatGPT</a></h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free / $20/mo</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">ChatGPT is not a traditional translator, but it is one of the most flexible tools for Portuguese translation in 2026. You can ask it to translate text, explain why a phrase is translated a certain way, adapt translations for different audiences, and even specify whether you want Brazilian or European Portuguese. It handles slang, idioms, and cultural context better than rule-based systems because it understands meaning rather than just matching words.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Explains translation choices</li>
+                  <li>Handles slang and cultural context</li>
+                  <li>Can specify BR vs PT variant</li>
+                  <li>Great for learning grammar rules</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Occasional hallucinated translations</li>
+                  <li>Slower than dedicated translators</li>
+                  <li>No built-in document upload (free tier)</li>
+                  <li>Requires clear prompting for accuracy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 4 - Microsoft Translator */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">4. <a href="https://www.microsoft.com/en-us/translator/" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors">Microsoft Translator</a></h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">Microsoft Translator integrates deeply into the Microsoft ecosystem &mdash; Edge browser, Office apps, Teams, and Windows. Its multi-person conversation mode lets up to 100 people join a live translation session from their phones, making it ideal for multilingual meetings and conferences. Portuguese translation quality is solid for business communication.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Free with no character limits</li>
+                  <li>Live multi-person conversation mode</li>
+                  <li>Built into Office and Edge</li>
+                  <li>Offline translation on mobile</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Less natural than DeepL for long texts</li>
+                  <li>Limited outside Microsoft ecosystem</li>
+                  <li>No glossary or memory features</li>
+                  <li>Weaker on idiomatic expressions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 5 - Reverso */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">5. <a href="https://www.reverso.net" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors">Reverso</a></h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free / $9.99/mo</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">Reverso Context stands out by showing your translated word or phrase used in real sentences extracted from movies, books, legal documents, and websites. This context-driven approach is invaluable for understanding how Portuguese words function in practice, not just what they mean in isolation. It also offers verb conjugation tables and a flashcard-based vocabulary trainer.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Real-world sentence examples</li>
+                  <li>Verb conjugation tables</li>
+                  <li>Built-in vocabulary trainer</li>
+                  <li>Browser extension available</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Not suited for full documents</li>
+                  <li>Ads on free tier</li>
+                  <li>Context examples sometimes outdated</li>
+                  <li>Limited to phrases and short texts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 6 - PONS */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">6. PONS</h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">PONS is a respected European dictionary publisher that offers a high-quality online Portuguese-English dictionary. It provides detailed definitions, usage examples, audio pronunciations, and part-of-speech information. PONS is particularly strong for European Portuguese and is trusted by language students and professionals across Europe.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Reliable dictionary-quality definitions</li>
+                  <li>Audio pronunciation included</li>
+                  <li>Strong for European Portuguese</li>
+                  <li>Free to use</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Dictionary only, not a sentence translator</li>
+                  <li>Smaller Portuguese database than competitors</li>
+                  <li>Interface feels dated</li>
+                  <li>Limited Brazilian Portuguese coverage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 7 - Linguee */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">7. <a href="https://www.linguee.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors">Linguee</a></h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">Built by the same team behind DeepL, Linguee searches billions of bilingual texts to show you how words and phrases have been translated in real documents &mdash; EU publications, company websites, and professional texts. This makes it exceptional for finding the &quot;accepted&quot; translation of technical, legal, or business terms in Portuguese.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Real bilingual document examples</li>
+                  <li>Excellent for technical terminology</li>
+                  <li>Completely free</li>
+                  <li>Reliable for professional translation</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Not a sentence-level translator</li>
+                  <li>No voice or camera features</li>
+                  <li>Limited to available bilingual sources</li>
+                  <li>Casual language underrepresented</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 8 - Yandex Translate */}
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-[var(--text)]">8. <a href="https://translate.yandex.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text)] hover:text-[#C81FD4] transition-colors">Yandex Translate</a></h3>
+              <span className="text-xs text-[var(--text-dim2)] bg-[var(--surface)] px-2 py-1 rounded">Free</span>
+            </div>
+            <p className="text-[var(--text-dim)] mb-4">Yandex Translate is a free translation service from the Russian tech company Yandex. It supports Portuguese and offers website translation, image translation, and a predictive typing feature. While less polished than Google or DeepL for Portuguese, it serves as a useful alternative and handles straightforward translations adequately.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <div>
+                <p className="text-green-400 font-semibold mb-2 flex items-center gap-1"><Check className="w-4 h-4" /> Pros</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Free with no account required</li>
+                  <li>Website translation feature</li>
+                  <li>Image-based translation</li>
+                  <li>Supports 100+ languages</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-red-400 font-semibold mb-2 flex items-center gap-1"><X className="w-4 h-4" /> Cons</p>
+                <ul className="space-y-1 text-[var(--text-dim)]">
+                  <li>Portuguese quality below Google/DeepL</li>
+                  <li>Limited availability in some regions</li>
+                  <li>No Brazilian vs European distinction</li>
+                  <li>Fewer features for Portuguese specifically</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-[var(--text-dim)] mb-6">For a broader comparison of AI-powered translation tools, see our roundup of the <a href="/blog/best-ai-translator-tools" className="text-[#C81FD4] hover:underline">best AI translator tools</a>.</p>
+
+          <hr className="border-[var(--border)] my-12" />
+
+          {/* ==================== BR vs PT ==================== */}
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6"><Globe className="w-6 h-6 inline mr-2 text-[#C81FD4]" />Brazilian vs European Portuguese: Key Differences</h2>
+          <p className="text-[var(--text-dim)] mb-6">One of the biggest challenges in Portuguese translation is the split between Brazilian Portuguese (PT-BR) and European Portuguese (PT-PT). They are mutually intelligible, but the differences are significant enough that using the wrong variant can sound awkward or even cause misunderstandings. Here is a breakdown of the major differences.</p>
+
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border border-[var(--border)] rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-[var(--surface-2)] text-[var(--text)]">
+                  <th className="text-left p-3 font-semibold">Category</th>
+                  <th className="text-left p-3 font-semibold">Brazilian Portuguese</th>
+                  <th className="text-left p-3 font-semibold">European Portuguese</th>
+                </tr>
+              </thead>
+              <tbody className="text-[var(--text-dim)]">
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">Speakers</td>
+                  <td className="p-3">~215 million</td>
+                  <td className="p-3">~10 million</td>
+                </tr>
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">Pronunciation</td>
+                  <td className="p-3">Open vowels, clearer syllables, sing-song intonation</td>
+                  <td className="p-3">Closed vowels, reduced unstressed syllables, more clipped</td>
+                </tr>
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">&quot;You&quot; (informal)</td>
+                  <td className="p-3">Voc&ecirc;</td>
+                  <td className="p-3">Tu</td>
+                </tr>
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">Gerund usage</td>
+                  <td className="p-3">Estou fazendo (I am doing)</td>
+                  <td className="p-3">Estou a fazer (I am doing)</td>
+                </tr>
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">&quot;Bus&quot;</td>
+                  <td className="p-3">&Ocirc;nibus</td>
+                  <td className="p-3">Autocarro</td>
+                </tr>
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">&quot;Train&quot;</td>
+                  <td className="p-3">Trem</td>
+                  <td className="p-3">Comboio</td>
+                </tr>
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">&quot;Cell phone&quot;</td>
+                  <td className="p-3">Celular</td>
+                  <td className="p-3">Telem&oacute;vel</td>
+                </tr>
+                <tr className="border-b border-[var(--border)]">
+                  <td className="p-3 text-[var(--text)] font-medium">&quot;Breakfast&quot;</td>
+                  <td className="p-3">Caf&eacute; da manh&atilde;</td>
+                  <td className="p-3">Pequeno-almo&ccedil;o</td>
+                </tr>
+                <tr>
+                  <td className="p-3 text-[var(--text)] font-medium">Spelling reform</td>
+                  <td className="p-3">Adopted 2009 agreement</td>
+                  <td className="p-3">Adopted 2009 agreement (with differences)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-[var(--text-dim)] mb-6">When using any translator, always check whether it defaults to Brazilian or European Portuguese. Google Translate typically defaults to Brazilian Portuguese due to higher search volume, while DeepL and PONS tend toward European Portuguese. For the most accurate results, specify which variant you need.</p>
+
+          <hr className="border-[var(--border)] my-12" />
+
+          {/* ==================== COMMON PHRASES ==================== */}
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6"><Star className="w-6 h-6 inline mr-2 text-[#C81FD4]" />25+ Essential Portuguese Phrases with English Translations</h2>
+          <p className="text-[var(--text-dim)] mb-6">Memorizing key phrases is the fastest way to start communicating in Portuguese. These are organized by category and use Brazilian Portuguese as the default, with European Portuguese alternatives noted where they differ significantly.</p>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8">
+            <h3 className="text-xl font-bold text-[var(--text)] mb-4">Greetings &amp; Basics</h3>
+            <div className="space-y-3">
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Ol&aacute;</span><span className="text-[var(--text-dim)]">Hello</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Bom dia</span><span className="text-[var(--text-dim)]">Good morning</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Boa tarde</span><span className="text-[var(--text-dim)]">Good afternoon</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Boa noite</span><span className="text-[var(--text-dim)]">Good evening / Good night</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Como vai voc&ecirc;?</span><span className="text-[var(--text-dim)]">How are you?</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Tudo bem?</span><span className="text-[var(--text-dim)]">Everything good? (casual)</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Obrigado / Obrigada</span><span className="text-[var(--text-dim)]">Thank you (male / female speaker)</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Por favor</span><span className="text-[var(--text-dim)]">Please</span></div>
+              <div className="flex justify-between"><span className="text-[var(--text)] font-medium">Tchau</span><span className="text-[var(--text-dim)]">Bye</span></div>
+            </div>
+          </div>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8">
+            <h3 className="text-xl font-bold text-[var(--text)] mb-4"><Globe className="w-5 h-5 inline mr-2 text-[#C81FD4]" />Travel &amp; Getting Around</h3>
+            <div className="space-y-3">
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Onde fica...?</span><span className="text-[var(--text-dim)]">Where is...?</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Quanto custa?</span><span className="text-[var(--text-dim)]">How much does it cost?</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Com licen&ccedil;a</span><span className="text-[var(--text-dim)]">Excuse me</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Voc&ecirc; fala ingl&ecirc;s?</span><span className="text-[var(--text-dim)]">Do you speak English?</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Eu n&atilde;o entendo</span><span className="text-[var(--text-dim)]">I don&apos;t understand</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Pode me ajudar?</span><span className="text-[var(--text-dim)]">Can you help me?</span></div>
+              <div className="flex justify-between"><span className="text-[var(--text)] font-medium">Eu quero ir para...</span><span className="text-[var(--text-dim)]">I want to go to...</span></div>
+            </div>
+          </div>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8">
+            <h3 className="text-xl font-bold text-[var(--text)] mb-4"><DollarSign className="w-5 h-5 inline mr-2 text-[#C81FD4]" />Food, Shopping &amp; Daily Life</h3>
+            <div className="space-y-3">
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Uma mesa para dois, por favor</span><span className="text-[var(--text-dim)]">A table for two, please</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">A conta, por favor</span><span className="text-[var(--text-dim)]">The check, please</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Eu gostaria de...</span><span className="text-[var(--text-dim)]">I would like...</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Que horas s&atilde;o?</span><span className="text-[var(--text-dim)]">What time is it?</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Aceita cart&atilde;o?</span><span className="text-[var(--text-dim)]">Do you accept card?</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Estava delicioso!</span><span className="text-[var(--text-dim)]">It was delicious!</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Eu moro em...</span><span className="text-[var(--text-dim)]">I live in...</span></div>
+              <div className="flex justify-between border-b border-[var(--border)] pb-2"><span className="text-[var(--text)] font-medium">Eu estou aprendendo portugu&ecirc;s</span><span className="text-[var(--text-dim)]">I am learning Portuguese</span></div>
+              <div className="flex justify-between"><span className="text-[var(--text)] font-medium">Muito prazer</span><span className="text-[var(--text-dim)]">Nice to meet you</span></div>
+            </div>
+          </div>
+
+          <hr className="border-[var(--border)] my-12" />
+
+          {/* ==================== FUNLINGO SECTION ==================== */}
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6"><Languages className="w-6 h-6 inline mr-2 text-[#C81FD4]" />How Funlingo Helps You Learn Portuguese with Dual Subtitles</h2>
+          <p className="text-[var(--text-dim)] mb-6">Translation tools are essential for quick lookups and document translation, but they do not teach you how Portuguese actually sounds, flows, and works in real conversation. That is where immersive learning comes in &mdash; and it is where Funlingo fills a gap that no standalone translator can.</p>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[#C81FD4]/30 mb-6">
+            <h3 className="text-xl font-bold text-[var(--text)] mb-3">What Funlingo Does</h3>
+            <p className="text-[var(--text-dim)] mb-4">Funlingo is a free Chrome extension that displays dual subtitles &mdash; Portuguese and English simultaneously &mdash; while you watch content on Netflix, YouTube, and Prime Video. You hear native Portuguese speakers in real contexts, see the original Portuguese text, and read the English translation side by side. This is contextual immersion: you learn vocabulary, grammar patterns, pronunciation, and cultural nuances all at once without leaving your streaming platform.</p>
+            <ul className="space-y-3 text-[var(--text-dim)]">
+              <li><strong className="text-[var(--text)]">Dual subtitles on Netflix, YouTube, and Prime Video</strong> &mdash; watch any Portuguese content with both languages displayed simultaneously.</li>
+              <li><strong className="text-[var(--text)]">Click any word for instant translation</strong> &mdash; tap a word in the subtitle to see its definition, pronunciation, and usage without pausing the video.</li>
+              <li><strong className="text-[var(--text)]">Works with Brazilian and European Portuguese</strong> &mdash; whatever content you choose, Funlingo displays the available subtitles in both your target and native language.</li>
+              <li><strong className="text-[var(--text)]">Completely free</strong> &mdash; no subscription, no trial period, no hidden fees. Install it and start watching immediately.</li>
+            </ul>
+          </div>
+
+          <p className="text-[var(--text-dim)] mb-6">The key advantage of learning through video content is that you absorb language in context. You do not just memorize that &quot;saudade&quot; means &quot;a deep longing or nostalgia&quot; &mdash; you hear a character use it in a moment of genuine emotion, and the meaning becomes something you feel rather than something you translated. Over weeks and months, this builds an intuitive understanding of Portuguese that no flashcard app or translation tool can replicate.</p>
+
+          <hr className="border-[var(--border)] my-12" />
+
+          {/* ==================== SHOWS TO WATCH ==================== */}
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Best Portuguese Shows and Content to Watch</h2>
+          <p className="text-[var(--text-dim)] mb-6">Here are top recommendations for learning Portuguese through video, organized by platform and difficulty level. Use Funlingo to enable dual subtitles on any of these.</p>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <h3 className="text-lg font-bold text-[var(--text)] mb-3">Netflix &mdash; Brazilian Portuguese</h3>
+            <ul className="space-y-3 text-[var(--text-dim)]">
+              <li><strong className="text-[var(--text)]">3% (Tr&ecirc;s Por Cento)</strong> &mdash; Sci-fi thriller set in a dystopian S&atilde;o Paulo. Clear dialogue, modern vocabulary, and intense plot keep you engaged.</li>
+              <li><strong className="text-[var(--text)]">Sintonia</strong> &mdash; Drama about three friends navigating music, crime, and religion in S&atilde;o Paulo. Authentic Brazilian slang and street-level dialogue.</li>
+              <li><strong className="text-[var(--text)]">Bem-vinda a Quixeramobim</strong> &mdash; Comedy with northeastern Brazilian Portuguese, giving you exposure to regional accents and expressions.</li>
+              <li><strong className="text-[var(--text)]">Cidade Invisivel (Invisible City)</strong> &mdash; Fantasy detective series rooted in Brazilian folklore. Accessible dialogue with cultural depth.</li>
+            </ul>
+          </div>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <h3 className="text-lg font-bold text-[var(--text)] mb-3">Netflix &mdash; European Portuguese</h3>
+            <ul className="space-y-3 text-[var(--text-dim)]">
+              <li><strong className="text-[var(--text)]">Glitch</strong> &mdash; Portuguese thriller series with clear European Portuguese dialogue. Great for hearing the PT-PT accent.</li>
+              <li><strong className="text-[var(--text)]">Rabo de Peixe</strong> &mdash; Crime drama set in the Azores. Exposes you to both standard and Azorean Portuguese.</li>
+            </ul>
+          </div>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <h3 className="text-lg font-bold text-[var(--text)] mb-3">YouTube &mdash; Portuguese Learning Content</h3>
+            <ul className="space-y-3 text-[var(--text-dim)]">
+              <li><strong className="text-[var(--text)]">Brazilian Portuguese vloggers</strong> &mdash; Channels like Porta dos Fundos (comedy sketches) and Manual do Mundo (science and DIY) offer natural conversational Portuguese.</li>
+              <li><strong className="text-[var(--text)]">Portuguese cooking channels</strong> &mdash; Learn food vocabulary while watching chefs prepare traditional dishes like feijoada and bacalhau.</li>
+              <li><strong className="text-[var(--text)]">Brazilian music videos</strong> &mdash; Sertanejo, MPB, and funk carioca offer exposure to different registers and regional dialects.</li>
+              <li><strong className="text-[var(--text)]">Travel vlogs from Portugal</strong> &mdash; Hear European Portuguese in real-world contexts while learning about Lisbon, Porto, and the Algarve.</li>
+            </ul>
+          </div>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-6">
+            <h3 className="text-lg font-bold text-[var(--text)] mb-3">Prime Video</h3>
+            <ul className="space-y-3 text-[var(--text-dim)]">
+              <li><strong className="text-[var(--text)]">Dom</strong> &mdash; Brazilian crime drama based on a true story. Intense dialogue and fast-paced conversation build listening skills.</li>
+              <li><strong className="text-[var(--text)]">El Presidente</strong> &mdash; While primarily Spanish, features significant Portuguese dialogue sections related to Brazilian football corruption.</li>
+            </ul>
+          </div>
+
+          <p className="text-[var(--text-dim)] mb-6">For more recommendations on language learning through streaming, check out our guide on <a href="/blog/learn-spanish-watching-netflix" className="text-[#C81FD4] hover:underline">learning languages by watching Netflix</a>.</p>
+
+          <hr className="border-[var(--border)] my-12" />
+
+          {/* ==================== TIPS SECTION ==================== */}
+
+          <Callout variant="warning" title="Watch for false cognates">Portuguese shares words with English and Spanish but meanings can differ. 'Puxe' on a door means pull, not push. 'Pretender' means to intend, not to pretend. 'Exquisito' means weird, not exquisite.</Callout>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-6">Tips for More Accurate Portuguese Translation</h2>
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-8">
+            <ul className="space-y-4 text-[var(--text-dim)]">
+              <li><strong className="text-[var(--text)]">Always specify BR or PT.</strong> When using any translation tool, check whether it defaults to Brazilian or European Portuguese. The vocabulary, spelling, and grammar conventions differ enough to matter in professional and academic contexts.</li>
+              <li><strong className="text-[var(--text)]">Use multiple tools together.</strong> Run a sentence through DeepL for natural phrasing, check individual words on Reverso for context examples, and verify technical terms on Linguee. No single tool covers every need.</li>
+              <li><strong className="text-[var(--text)]">Be careful with gendered language.</strong> Portuguese nouns, adjectives, and even &quot;thank you&quot; (obrigado vs. obrigada) change based on gender. Machine translators sometimes default to the masculine form when the feminine is correct.</li>
+              <li><strong className="text-[var(--text)]">Watch out for false cognates.</strong> Portuguese shares many words with Spanish and English, but meanings can differ. &quot;Puxe&quot; on a door means &quot;pull,&quot; not &quot;push.&quot; &quot;Pretender&quot; means &quot;to intend,&quot; not &quot;to pretend.&quot; &quot;Exquisito&quot; means &quot;weird,&quot; not &quot;exquisite.&quot;</li>
+              <li><strong className="text-[var(--text)]">Immerse yourself in Portuguese content.</strong> Translation accuracy improves dramatically when you have an intuitive feel for how Portuguese works. Watching Portuguese shows with dual subtitles through Funlingo builds this intuition naturally and enjoyably.</li>
+            </ul>
+          </div>
+
+          <hr className="border-[var(--border)] my-12" />
+
+          {/* ==================== FAQ ==================== */}
+
+          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] mb-12">
+            <h3 className="text-xl font-bold text-[var(--text)] mb-4">Frequently Asked Questions</h3>
+            <div className="space-y-4">
+              <div>
+                <strong className="text-[var(--text)] block mb-1">What is the most accurate Portuguese to English translator?</strong>
+                <p className="text-[var(--text-dim)] text-sm">DeepL is widely considered the most accurate for European Portuguese, producing natural-sounding translations that preserve tone and register. Google Translate handles Brazilian Portuguese well for everyday use. For learning Portuguese through real content, Funlingo provides free dual subtitles on Netflix, YouTube, and Prime Video so you can see Portuguese and English side by side.</p>
+              </div>
+              <div>
+                <strong className="text-[var(--text)] block mb-1">Is Brazilian Portuguese different from European Portuguese?</strong>
+                <p className="text-[var(--text-dim)] text-sm">Yes, they differ in pronunciation (Brazilian is more open and melodic, European is more clipped), vocabulary (different words for bus, train, cell phone, breakfast, and many everyday items), grammar (gerund usage, pronoun placement), and spelling. They are mutually intelligible but distinct enough that translation tools should specify which variant they use.</p>
+              </div>
+              <div>
+                <strong className="text-[var(--text)] block mb-1">Can I use Google Translate for Portuguese documents?</strong>
+                <p className="text-[var(--text-dim)] text-sm">Google Translate works for getting the gist of a Portuguese document, but it often produces awkward phrasing and may miss nuances in formal or technical writing. For professional documents, DeepL or a combination of DeepL and Linguee will produce more reliable results. Always have a native speaker review important translations.</p>
+              </div>
+              <div>
+                <strong className="text-[var(--text)] block mb-1">How can I learn Portuguese for free?</strong>
+                <p className="text-[var(--text-dim)] text-sm">Watching Portuguese content with dual subtitles using Funlingo is one of the most effective free methods. Combine it with Duolingo or Anki flashcards for structured vocabulary practice, Reverso for contextual word lookups, and Brazilian YouTube channels for authentic listening practice. Consistency matters more than the specific tools you use.</p>
+              </div>
+              <div>
+                <strong className="text-[var(--text)] block mb-1">Is Portuguese hard to learn for English speakers?</strong>
+                <p className="text-[var(--text-dim)] text-sm">Portuguese is classified as a Category I language by the US Foreign Service Institute, meaning it is among the easiest for English speakers. It requires roughly 600 to 750 hours of study to reach professional proficiency. Portuguese shares many Latin-based cognates with English, has relatively regular verb conjugation patterns, and phonetic spelling makes pronunciation more predictable than English.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* ==================== FINAL CTA ==================== */}
+
+          <div className="mt-20 text-center py-12 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
+            <h2 className="text-3xl font-bold text-[var(--text)] mb-4">Start Learning Portuguese with Dual Subtitles</h2>
+            <p className="text-lg text-[var(--text-dim)] mb-8 max-w-xl mx-auto">Watch Brazilian and Portuguese shows on Netflix, YouTube, and Prime Video with Portuguese and English subtitles side by side. Click any word for instant translation. Completely free.</p>
+            <a href="https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en" target="_blank" rel="noopener noreferrer" className="no-underline">
+              <Button className="bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-14 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-lg shadow-purple-500/20">Get Funlingo Free <ArrowRight className="ml-2 w-5 h-5" /></Button>
+            </a>
+          </div>
+        </div>
+      </main>
+      <FooterSection />
+    </div>
+  );
+}

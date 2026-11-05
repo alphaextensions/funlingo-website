@@ -1,8 +1,10 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { useT } from "@/app/i18n/I18nProvider";
 import { navHref } from "@/app/i18n/config";
+import { PLATFORM_LINKS, platformPath } from "@/sections/platform/platformLinks";
 
 const logo = "/assets/logo.png";
 
@@ -49,7 +51,7 @@ export const FooterSection = (): React.JSX.Element => {
       className="w-full border-t"
       style={{ background: "var(--bg2)", borderColor: "var(--border)" }}
     >
-      <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] pt-[60px] pb-9 grid grid-cols-1 min-[560px]:grid-cols-2 min-[860px]:grid-cols-[1.6fr_1fr_1fr_1fr] gap-7 min-[860px]:gap-[34px]">
+      <div className="max-w-[1240px] mx-auto px-5 sm:px-[34px] pt-[60px] pb-9 grid grid-cols-1 min-[560px]:grid-cols-2 min-[860px]:grid-cols-[1.3fr_1fr_1fr_1fr_1.6fr] gap-7 min-[860px]:gap-[34px]">
         {/* Brand */}
         <div>
           <img
@@ -70,9 +72,9 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.product")}</div>
           <div className="flex flex-col gap-3">
             {product.map((l, i) => (
-              <a key={i} href={l.href} style={linkStyle} className="fnl-footlink">
+              <Link key={i} href={l.href} prefetch={false} style={linkStyle} className="fnl-footlink">
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -82,9 +84,9 @@ export const FooterSection = (): React.JSX.Element => {
           <div style={colTitle}>{t("footer.company")}</div>
           <div className="flex flex-col gap-3">
             {company.map((l, i) => (
-              <a key={i} href={l.href} style={linkStyle} className="fnl-footlink">
+              <Link key={i} href={l.href} prefetch={false} style={linkStyle} className="fnl-footlink">
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -93,18 +95,28 @@ export const FooterSection = (): React.JSX.Element => {
         <div>
           <div style={colTitle}>{t("footer.follow")}</div>
           <div className="flex flex-col gap-3">
-            {follow.map((l, i) => (
-              <a
-                key={i}
-                href={l.href}
-                style={linkStyle}
-                className="fnl-footlink"
-                {...(l.href.startsWith("http")
-                  ? { target: "_blank", rel: "noopener noreferrer" }
-                  : {})}
-              >
-                {l.label}
-              </a>
+            {follow.map((l, i) =>
+              l.href.startsWith("http") ? (
+                <a key={i} href={l.href} style={linkStyle} className="fnl-footlink" target="_blank" rel="noopener noreferrer">
+                  {l.label}
+                </a>
+              ) : (
+                <Link key={i} href={l.href} prefetch={false} style={linkStyle} className="fnl-footlink">
+                  {l.label}
+                </Link>
+              ),
+            )}
+          </div>
+        </div>
+
+        {/* Platform pages */}
+        <div>
+          <div style={colTitle}>{t("footer.worksOn")}</div>
+          <div className="grid grid-cols-2 gap-x-5 gap-y-3">
+            {PLATFORM_LINKS.map((p) => (
+              <Link key={p.slug} href={navHref(platformPath(p.slug), locale)} prefetch={false} style={linkStyle} className="fnl-footlink">
+                {p.name}
+              </Link>
             ))}
           </div>
         </div>
@@ -125,19 +137,21 @@ export const FooterSection = (): React.JSX.Element => {
           className="text-sm font-medium"
           style={{ color: "var(--text-dim2)" }}
         >
-          <a
+          <Link
             href={navHref("/privacy-policy", locale)}
+            prefetch={false}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             {t("footer.privacy")}
-          </a>{" "}
+          </Link>{" "}
           ·{" "}
-          <a
+          <Link
             href={navHref("/support", locale)}
+            prefetch={false}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             {t("footer.support")}
-          </a>
+          </Link>
         </span>
       </div>
     </footer>
