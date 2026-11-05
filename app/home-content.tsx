@@ -126,7 +126,7 @@ export default function HomeContent() {
 
   return (
     <HighlightProvider learn={learn}>
-    <div className="fnl-root overflow-x-hidden">
+    <div className="fnl-root overflow-x-clip">
       <Navbar currentPage="/" />
 
       {/* ============ HERO ============ */}

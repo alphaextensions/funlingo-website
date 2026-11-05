@@ -48,7 +48,7 @@ export default function BlogContent({ meta }: { meta: BlogMeta }) {
   };
 
   return (
-    <div className="fnl-root flex flex-col min-h-screen overflow-x-hidden">
+    <div className="fnl-root flex flex-col min-h-screen overflow-x-clip">
       <Navbar currentPage="/blog" />
 
       <main className="flex-1 w-full max-w-[1240px] mx-auto px-5 sm:px-[34px] py-16 sm:py-24">

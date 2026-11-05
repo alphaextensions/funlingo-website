@@ -30,7 +30,7 @@ export default function AboutContent() {
   }));
 
   return (
-    <div className="fnl-root overflow-x-hidden">
+    <div className="fnl-root overflow-x-clip">
       <Navbar currentPage="/about" />
 
       {/* HERO */}
