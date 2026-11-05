@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/postbuild-locale-html.mjs",
+    "build": "next build && node scripts/check-html-lang.mjs",
     "start": "next start",
     "lint": "next lint",
     "gen:game-audio": "node scripts/generate-game-audio.mjs"

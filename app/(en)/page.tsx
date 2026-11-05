@@ -1,0 +1,140 @@
+import type { Metadata } from "next";
+import HomeContent from "@/app/home-content";
+import { alternateLanguages } from "@/app/i18n/config";
+import { schemaData } from "@/app/softwareSchema";
+
+export const metadata: Metadata = {
+  title: "Funlingo - Free Dual Subtitles for Netflix, YouTube, Prime, Hotstar & More",
+  description: "Free dual subtitle Chrome extension for Netflix, YouTube, Prime, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy & Coursera. AI-powered bilingual subtitles, vocabulary building, and instant translations.",
+  keywords: "free dual subtitle chrome extension, learn languages while watching videos, bilingual subtitles netflix, dual subtitles youtube, dual subtitles hotstar, dual subtitles apple tv, dual subtitles crunchyroll, dual subtitles udemy, dual subtitles coursera, ai powered language learning, best free subtitle tool, papaoutai afro soul song translation, lion king song translation",
+  alternates: {
+    canonical: "/",
+    languages: alternateLanguages("/"),
+  },
+  openGraph: {
+    images: ["/og-image.jpg"],
+    title: "Funlingo - Free Dual Subtitles for Netflix, YouTube, Prime, Hotstar & More",
+    description: "Free dual subtitle Chrome extension for Netflix, YouTube, Prime, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy & Coursera. AI-powered bilingual subtitles, vocabulary building, and instant translations.",
+    url: "/",
+  },
+  twitter: {
+    images: ["/og-image.jpg"],
+    title: "Funlingo - Free Dual Subtitles for Netflix, YouTube, Prime, Hotstar & More",
+    description: "Free dual subtitle Chrome extension for Netflix, YouTube, Prime, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy & Coursera. AI-powered bilingual subtitles, vocabulary building, and instant translations.",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is dual subtitle learning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dual subtitle learning is a language acquisition method where two subtitle tracks are displayed simultaneously — one in the target language and one in your native language. This lets learners instantly compare vocabulary, grammar, and sentence structure in real conversational context without pausing the video. Research in second language acquisition suggests that contextual exposure through authentic media improves vocabulary retention by up to 50% compared to traditional flashcard-based methods, making dual subtitles one of the most effective passive learning techniques available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Funlingo really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Funlingo is completely free with no hidden costs, premium tiers, or paywalls. You get full access to dual subtitles, AI-powered word definitions, pronunciation guides, and the vocabulary builder at no charge. Unlike competitors like Trancy or Language Reactor that require paid subscriptions for advanced features, Funlingo provides its entire feature set for free. The extension is available on the Chrome Web Store and works immediately after installation — no account creation required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does AI help with language learning in Funlingo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Funlingo's integrated AI provides instant, context-aware translations and grammar explanations for any subtitle word you hover over. Unlike basic dictionary lookups, the AI considers the full sentence context to deliver accurate meanings, usage notes, and example phrases. You can select 1, 2, 3, or all available translations per word for deeper comprehension. The AI also powers pronunciation guides with spelled-out phonetic cues and audio playback, helping learners connect written words with their spoken forms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which streaming platforms does Funlingo support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Funlingo supports dual subtitles across 10 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera — covering the world's largest streaming services and top online learning platforms with millions of videos across every genre and language. The extension supports over 100 languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Arabic, and Hindi. The subtitles integrate directly into the video player for a seamless viewing experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save vocabulary while watching?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Funlingo includes a built-in vocabulary builder that lets you save any word or phrase with a single click while watching. Saved items include the original word, its translation, and the sentence context where you encountered it. You can review your vocabulary list later, track how many words you've learned over time, and export your list for use with other study tools. This contextual saving approach means every word comes with a real usage example."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Funlingo good for beginners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Dual subtitles are especially effective for beginners because they can follow the story in their native language while simultaneously seeing and hearing the target language. This builds familiarity with pronunciation, common phrases, and sentence structure without the frustration of not understanding the content. Funlingo's hover-for-definition feature means beginners never need to leave the video to look up a word, keeping the learning experience seamless and enjoyable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Funlingo different from Trancy and Language Reactor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Funlingo differentiates itself in three key ways. First, it is completely free — no premium tier or paywall for any feature. Second, it offers unique UX features like inline bracketed native meanings for difficult words and a multi-translation selector (choose 1, 2, 3, or all translations per word). Third, it includes per-word pronunciation with spelled-out phonetic cues and audio playback, which most competitors either lack or lock behind paid plans. Funlingo is rated 4.8/5 stars on the Chrome Web Store."
+      }
+    }
+  ]
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Funlingo",
+  "url": "https://getfunlingo.com",
+  "logo": "https://getfunlingo.com/figmaAssets/logo.png",
+  "description": "Funlingo builds free AI-powered language learning tools. Our Chrome extension provides dual subtitles for Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Udemy, and Coursera, helping users learn 100+ languages through immersive video content.",
+  "sameAs": [
+    "https://www.linkedin.com/company/getfunlingo/",
+    "https://www.instagram.com/getfunlingo",
+    "https://www.producthunt.com/products/funlingo",
+    "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj"
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getfunlingo.com"
+    }
+  ]
+};
+
+export default function HomePage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <HomeContent />
+    </>
+  );
+}
