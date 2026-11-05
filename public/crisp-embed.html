@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>FunLingo Support</title>
+<!--
+  =========================================================================
+  FunLingo · self-hosted Crisp chatbox host
+  -------------------------------------------------------------------------
+  WHY THIS PAGE EXISTS
+
+  The extension used to frame Crisp's own hosted chatbox
+  (https://go.crisp.chat/chat/embed/) directly. That works, but a cross-origin
+  page we do not own is a black box: we cannot configure it, cannot suppress
+  its native alert() dialogs, and cannot turn off features that are broken in
+  our context. Two shipped bugs came from exactly that:
+
+    1. Crisp renders an "Audio message" (voice note) button. Its recorder calls
+       getUserMedia() — which, inside the extension's iframe, is rejected by
+       Permissions Policy before any prompt can appear, because the frame is
+       not delegated `microphone`. Crisp then falls back to a blocking native
+       alert ("An embedded page at go.crisp.chat says: Could not record audio
+       from your microphone. Did you allow access?"). The user could never fix
+       this by granting permission — the prompt never existed.
+
+    2. When Crisp's server rejects an upload (daily chatbox-file quota spent,
+       or a disallowed extension) it reports that through the same blocking
+       native alert, branded with a third-party domain.
+
+  Crisp's client runs INSIDE the document it is loaded into, so hosting it on
+  our own origin puts both of those back under our control. This page is that
+  host. It is loaded only inside an iframe by the extension's support surfaces.
+
+  WHAT IT CHANGES vs. go.crisp.chat/chat/embed/
+    • MediaRecorder is removed before the client boots, so Crisp's own
+      capability probe concludes audio recording is unsupported and never
+      renders the button. No dead control, no alert, no microphone permission,
+      and therefore no "Use your microphone" install warning on the extension.
+    • alert() is replaced by a non-blocking in-page toast, so a server-side
+      refusal (upload quota, bad extension, connection failure) reads as a
+      FunLingo message instead of a modal from a domain the user never visited.
+    • It reports the unread count to the parent, which is what lights the red
+      dot on the popup's Chat Support card. That feature was written long ago
+      but has never worked, because this page did not exist.
+    • It accepts a locale, so the chatbox matches the extension's interface
+      language instead of always rendering in English under a translated header.
+
+  PARAMETERS arrive in the URL FRAGMENT, never the query string, so the
+  per-install session token stays out of server access logs and Referer
+  headers:  #token_id=…&locale=…&mode=chat|reporter
+  The website id is NOT read from the fragment — it is pinned below, so this
+  public page can only ever open OUR workspace's chatbox.
+  =========================================================================
+-->
+<style>
+  html, body { margin: 0; height: 100%; background: #fff; }
+  body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+
+  /* Reporter mode loads the client purely to read the unread count; the
+     chatbox must never become visible in that hidden off-screen iframe. */
+  html[data-mode="reporter"] .crisp-client { display: none !important; }
+
+  /* Non-blocking replacement for the native alert() Crisp falls back to.
+     Sits above the chatbox (Crisp uses z-index in the 10^7 range). */
+  #fl-toast {
+    /* Clears the composer: these messages are almost always about something the
+       user just tried to send, so the input they will retry in must stay visible
+       underneath. pointer-events:none keeps it from ever swallowing a click. */
+    position: fixed; left: 12px; right: 12px; bottom: 74px; z-index: 2147483647;
+    margin: 0 auto; max-width: 420px; padding: 11px 13px;
+    border-radius: 10px; background: #17131f; color: #fff;
+    font-size: 13px; line-height: 1.45; text-align: left;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, .28);
+    opacity: 0; transform: translateY(8px); pointer-events: none;
+    transition: opacity .18s ease, transform .18s ease;
+  }
+  #fl-toast.fl-show { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { #fl-toast { transition: none; } }
+</style>
+</head>
+<body>
+<div id="fl-toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  "use strict";
+
+  /* Pinned, not read from the fragment: this page is publicly reachable, and a
+     caller-supplied website id would let anyone render a stranger's chatbox on
+     a getfunlingo.com URL. The token IS caller-supplied, exactly as Crisp's own
+     hosted embed accepts it — it identifies the visitor's own conversation and
+     grants no more access than Crisp's embed URL already does. */
+  var WEBSITE_ID = "1aa3f434-80cf-4d5e-b1f4-28cf8936dbea";
+
+  /* Locales Crisp's chatbox actually ships (read off the client bundle). An
+     unsupported value is dropped rather than forced, so Crisp falls back to its
+     own default instead of rendering a half-translated UI. Note `mr` is absent
+     upstream — Marathi users get Crisp's default, not a wrong language. */
+  var CRISP_LOCALES = {
+    ar: 1, az: 1, bg: 1, bn: 1, ca: 1, ckb: 1, cs: 1, da: 1, de: 1, el: 1,
+    en: 1, eo: 1, es: 1, et: 1, eu: 1, fa: 1, fi: 1, fo: 1, fr: 1, ga: 1,
+    gu: 1, he: 1, hi: 1, hr: 1, hu: 1, hy: 1, id: 1, is: 1, it: 1, ja: 1,
+    ka: 1, ko: 1, lt: 1, lv: 1, ml: 1, mn: 1, ms: 1, nl: 1, no: 1, pl: 1,
+    ps: 1, ro: 1, ru: 1, sk: 1, sl: 1, sr: 1, sv: 1, ta: 1, th: 1, tr: 1,
+    uk: 1, uz: 1, vi: 1, pt: 1, "pt-br": 1, "nl-be": 1, "zh": 1,
+    "zh-tw": 1, "zh-hk": 1, "sr-cyrl-cs": 1, "uz-cyrl": 1
+  };
+
+  function params() {
+    var out = {};
+    try {
+      var raw = (window.location.hash || "").replace(/^#/, "");
+      if (!raw) raw = (window.location.search || "").replace(/^\?/, "");
+      raw.split("&").forEach(function (pair) {
+        if (!pair) return;
+        var i = pair.indexOf("=");
+        var k = i < 0 ? pair : pair.slice(0, i);
+        var v = i < 0 ? "" : pair.slice(i + 1);
+        try { out[decodeURIComponent(k)] = decodeURIComponent(v); } catch (e) {}
+      });
+    } catch (e) {}
+    return out;
+  }
+
+  var P = params();
+  var MODE = P.mode === "reporter" ? "reporter" : "chat";
+  document.documentElement.setAttribute("data-mode", MODE);
+
+  /* ---- post to the parent -------------------------------------------------
+     targetOrigin is "*" because the parent is a chrome-extension:// origin whose
+     id this static page cannot know. Nothing sensitive is ever sent: only a
+     ready flag and an integer unread count. The parent independently verifies
+     e.source and e.origin before trusting either. */
+  function post(msg) {
+    try { if (window.parent && window.parent !== window) window.parent.postMessage(msg, "*"); } catch (e) {}
+  }
+
+  /* ---- non-blocking toast in place of alert() ---------------------------- */
+  var toastTimer = null;
+  function toast(text) {
+    var el = document.getElementById("fl-toast");
+    if (!el) return;
+    el.textContent = String(text == null ? "" : text);
+    el.classList.add("fl-show");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove("fl-show"); }, 6000);
+  }
+  try {
+    /* Crisp reaches for alert() on upload refusals and connection failures. In a
+       side panel that modal blocks the whole surface and is branded with a
+       domain the user never opened, so it is downgraded to a toast. Keeping the
+       text verbatim preserves Crisp's own localisation of the message. */
+    window.alert = function (message) { toast(message); };
+  } catch (e) {}
+
+  /* ---- disable the voice-note button ------------------------------------
+     Crisp gates it on a capability probe that begins:
+         window.MediaRecorder && window.File && navigator.mediaDevices && …
+     Removing MediaRecorder short-circuits that probe, so has_audio_recording
+     stays false and the button is never rendered. This is deliberately done
+     through Crisp's own feature detection rather than by hiding a CSS class:
+     the class names are minified and change between client releases, the
+     capability check does not. Audio PLAYBACK of an operator's voice note is a
+     separate flag (has_html_audio, backed by <audio>) and is untouched. */
+  try {
+    delete window.MediaRecorder;
+    if (window.MediaRecorder) {
+      Object.defineProperty(window, "MediaRecorder", {
+        value: undefined, writable: true, configurable: true
+      });
+    }
+  } catch (e) {}
+
+  /* ---- unread count relay ----------------------------------------------- */
+  var lastUnread = -1;
+  function reportUnread() {
+    try {
+      var n = window.$crisp && window.$crisp.get ? window.$crisp.get("chat:unread:count") : null;
+      if (typeof n !== "number" || n < 0) return;
+      if (n === lastUnread) return;
+      lastUnread = n;
+      post({ type: "flcs:unread", count: n });
+    } catch (e) {}
+  }
+
+  /* ---- boot Crisp -------------------------------------------------------- */
+  window.$crisp = [];
+  window.CRISP_WEBSITE_ID = WEBSITE_ID;
+  if (P.token_id) window.CRISP_TOKEN_ID = P.token_id;
+
+  /* Mirrors the runtime config Crisp's own hosted embed applies, so the chatbox
+     fills the frame instead of rendering as a floating bubble, and keeps working
+     with partitioned third-party storage. */
+  window.CRISP_RUNTIME_CONFIG = {
+    lock_maximized: true,
+    lock_full_view: true,
+    cross_origin_cookies: true
+  };
+  /* The extension passes its own interface-language code (en, ja, pt_BR, zh_CN,
+     mr, …). Normalise to Crisp's spelling, then fall back to the base language
+     before giving up, which is what maps zh_CN → zh and pt_PT → pt. An
+     unsupported code (mr) resolves to null and the key is simply omitted, so
+     Crisp picks its own default rather than rendering the wrong language. */
+  function crispLocale(raw) {
+    var code = String(raw || "").toLowerCase().replace(/_/g, "-");
+    if (!code) return null;
+    if (CRISP_LOCALES[code]) return code;
+    var base = code.split("-")[0];
+    return CRISP_LOCALES[base] ? base : null;
+  }
+  var locale = crispLocale(P.locale);
+  if (locale) window.CRISP_RUNTIME_CONFIG.locale = locale;
+
+  window.CRISP_READY_TRIGGER = function () {
+    /* The handshake the extension waits for. A missing or misdeployed file would
+       still fire the iframe's load event (static hosts answer 404s with HTML),
+       so the parent treats "no ready message" — not "no load" — as the signal to
+       fall back to Crisp's hosted embed. */
+    post({ type: "flcs:ready", mode: MODE });
+
+    try {
+      ["message:received", "message:sent", "chat:opened", "chat:closed", "session:loaded"]
+        .forEach(function (evt) {
+          window.$crisp.push(["on", evt, reportUnread]);
+        });
+    } catch (e) {}
+    reportUnread();
+    /* Cheap safety net: some unread transitions (a reply arriving while the
+       panel is closed) do not fire a client event we can hook. */
+    setInterval(reportUnread, 15000);
+  };
+
+  var s = document.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  document.getElementsByTagName("head")[0].appendChild(s);
+})();
+</script>
+</body>
+</html>
