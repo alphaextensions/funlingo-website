@@ -43,6 +43,7 @@ export default function LearnJapaneseWithAnimeContent() {
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Anime is one of the most accessible windows into spoken Japanese. Unlike textbook audio, anime gives you emotionally rich, context-heavy dialogue. You hear how pitch, tone, and formality shift between characters — something no flashcard deck can teach.</p>
           <p className="lead text-xl leading-relaxed text-[var(--text)] mb-6">The catch? Watching anime passively will not teach you Japanese. You need a method. This guide gives you one: a structured, daily approach that turns anime episodes into focused language lessons using dual subtitles, shadowing, and active recall.</p>
           <p className="text-[var(--text-dim)] mb-6">If you are new to learning through media, start with our overview on <a href="/blog/how-to-learn-a-language-by-watching" className="text-[#C81FD4] hover:underline">how to learn a language by watching</a> for the general principles.</p>
+          <p className="text-[var(--text-dim)] mb-6">Watching on Crunchyroll? See <a href="/crunchyroll" className="text-[#C81FD4] hover:underline">Crunchyroll dual subtitles</a> for setup and anime picked by level.</p>
 
           <div className="mt-8 text-center py-8 px-6 rounded-2xl bg-[rgba(200,31,212,0.05)] border border-[#C81FD4]/20">
             <p className="text-lg text-[var(--text)] mb-6">Watch anime with dual subtitles for free using Funlingo on YouTube.</p>

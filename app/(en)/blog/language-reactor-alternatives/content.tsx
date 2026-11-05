@@ -65,6 +65,7 @@ export default function LanguageReactorAlternativesContent() {
                 Netflix language learning extensions
               </a>, this comparison will help you make an informed choice.
             </p>
+            <p className="text-[var(--text-dim)] mb-6">Funlingo’s own setup guides: <a href="/netflix" className="text-[#C81FD4] hover:underline">Netflix dual subtitles</a>, <a href="/youtube" className="text-[#C81FD4] hover:underline">YouTube dual subtitles</a> and <a href="/prime-video" className="text-[#C81FD4] hover:underline">Prime Video dual subtitles</a>.</p>
           </section>
 
           {/* Why Switch */}

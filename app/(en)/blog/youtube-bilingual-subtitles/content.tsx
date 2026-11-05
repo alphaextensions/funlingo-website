@@ -39,6 +39,7 @@ export default function YoutubeBilingualSubtitlesContent() {
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">Bilingual subtitles display two languages on screen at the same time while you watch a YouTube video. Your target language appears alongside your native language, so you can follow foreign-language content without guessing or pausing to translate.</p>
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">YouTube has the largest library of free video content in the world, covering virtually every language. News broadcasts, vlogs, educational channels, interviews, music videos, and documentaries are all available. Bilingual subtitles unlock all of this content as language learning material.</p>
           <p className="leading-relaxed text-[var(--text-dim)] mb-6">The concept is simple: instead of choosing between reading subtitles in the language you are learning or in your native language, you see both at once. This lets your brain connect the foreign words to their meanings in real time while you listen to natural speech.</p>
+          <p className="text-[var(--text-dim)] mb-6">For setup, caption support and the best channels to learn with, see <a href="/youtube" className="text-[#C81FD4] hover:underline">YouTube dual subtitles</a>.</p>
 
           <hr className="border-[var(--border)] my-12" />
 

@@ -34,6 +34,7 @@ export default function NetflixLanguageLearningExtensionsContent() {
           <p>We tested and compared the five most popular Netflix language learning extensions available in 2026. Below you will find detailed reviews, a side-by-side comparison table, and guidance on choosing the right tool for your learning style. If you are also interested in how <a href="/blog/best-dual-subtitle-extension" className="text-[#C81FD4] hover:underline">dual subtitle extensions</a> work across platforms, or want broader tips on <a href="/blog/netflix-language-learning" className="text-[#C81FD4] hover:underline">learning languages with Netflix</a>, check out our dedicated guides.</p>
 
           <p className="text-[var(--text-dim)] mb-6">Before we dive into the extensions, make sure you understand how to set up <a href="/blog/netflix-dual-subtitles" className="text-[#C81FD4] hover:underline">dual subtitles on Netflix</a> — it takes under 30 seconds.</p>
+          <p className="text-[var(--text-dim)] mb-6">Or go straight to <a href="/netflix" className="text-[#C81FD4] hover:underline">Netflix dual subtitles</a> with Funlingo: free, with no account.</p>
 
           <hr className="border-[var(--border)] my-10" />
 

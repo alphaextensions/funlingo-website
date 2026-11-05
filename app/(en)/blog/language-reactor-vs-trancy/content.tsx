@@ -35,6 +35,7 @@ export default function LanguageReactorVsTrancyContent() {
             "Funlingo is a free alternative covering Netflix, YouTube, and Prime Video with a 4.8/5 Chrome Web Store rating.",
           ]} />
           <p className="lead text-xl leading-relaxed">If you learn languages by watching movies and TV shows, you have probably come across Language Reactor and Trancy. Both are popular Chrome extensions that add dual subtitles, vocabulary tools, and translation features to streaming platforms. But which one actually deserves a spot in your browser? We put them head to head across pricing, platform support, features, ease of use, and language coverage to help you decide.</p>
+          <p className="text-[var(--text-dim)] mb-6">If you just want the free option, see <a href="/netflix" className="text-[#C81FD4] hover:underline">Netflix dual subtitles</a> and <a href="/youtube" className="text-[#C81FD4] hover:underline">YouTube dual subtitles</a> with Funlingo.</p>
 
           <p>If you want a broader overview of all the tools available, check out our guide to the <a href="/blog/best-dual-subtitle-extension" className="text-[#C81FD4] hover:underline">best dual subtitle extensions</a> or our deep dive into <a href="/blog/netflix-language-learning-extensions" className="text-[#C81FD4] hover:underline">Netflix language learning extensions</a>. Looking for more options beyond these two? Check our roundup of <a href="/blog/language-reactor-alternatives" className="text-[#C81FD4] hover:underline">Language Reactor alternatives</a>.</p>
 
