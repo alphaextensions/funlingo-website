@@ -119,26 +119,23 @@ const HOW_LONG = ["Less than a day", "Less than a week", "1-3 weeks", "1-3 month
 
 type Snapshot = { reasonKey: string | null; detail: string; howLong: string | null; email: string };
 
-// URL-encoded body for the Google Form. `full=false` sends the reason only —
-// used when the user leaves without pressing Send.
-function buildBody(s: Snapshot, full: boolean): string {
+// URL-encoded body for the Google Form. Empty optional fields are left out.
+function buildBody(s: Snapshot): string {
   const r = REASONS.find((x) => x.key === s.reasonKey);
   if (!r) return "";
   const p = new URLSearchParams();
-  const detail = full ? s.detail.trim() : "";
+  const detail = s.detail.trim();
   if (typeof r.value === "string") {
     p.append(ENTRY.reason, r.value);
   } else {
     p.append(ENTRY.reason, "__other_option__");
     p.append(`${ENTRY.reason}.other_option_response`, detail ? `${r.value.other}: ${detail}` : r.value.other);
   }
-  if (full) {
-    if (detail && r.followup === "bug") p.append(ENTRY.bug, detail);
-    if (detail && r.followup === "feature") p.append(ENTRY.feature, detail);
-    if (detail && r.followup === "platform") p.append(ENTRY.feature, `Platform request: ${detail}`);
-    if (s.howLong) p.append(ENTRY.howLong, s.howLong);
-    if (s.email.trim()) p.append(ENTRY.email, s.email.trim());
-  }
+  if (detail && r.followup === "bug") p.append(ENTRY.bug, detail);
+  if (detail && r.followup === "feature") p.append(ENTRY.feature, detail);
+  if (detail && r.followup === "platform") p.append(ENTRY.feature, `Platform request: ${detail}`);
+  if (s.howLong) p.append(ENTRY.howLong, s.howLong);
+  if (s.email.trim()) p.append(ENTRY.email, s.email.trim());
   return p.toString();
 }
 
@@ -211,17 +208,22 @@ export default function UninstallContent() {
     };
   }, []);
 
-  // Page-exit safety net: if a reason was picked but never sent, flush it as
-  // the tab closes. `submittedRef` guarantees we never write two rows.
+  // Page-exit safety net: if a reason was picked but never sent, save what the
+  // user filled in as the tab closes. The email is left out: they never
+  // pressed Send, so they didn't agree to be contacted (and it may be
+  // half-typed). `submittedRef` guarantees we never write two rows.
   // (pagehide only — a visibilitychange flush would fire when the user merely
-  // switches tabs, e.g. to copy a video link, and drop their full answer.)
+  // switches tabs, e.g. to copy a video link, and cut their answer short.)
   useEffect(() => {
     const flush = () => {
       if (submittedRef.current || !snap.current.reasonKey) return;
       submittedRef.current = true;
-      const body = new Blob([buildBody(snap.current, false)], { type: "application/x-www-form-urlencoded" });
+      const body = new Blob([buildBody({ ...snap.current, email: "" })], { type: "application/x-www-form-urlencoded" });
       navigator.sendBeacon(FORM_ACTION, body);
-      track("uninstall_reason_only", { reason: snap.current.reasonKey });
+      track("uninstall_feedback_unsent", {
+        reason: snap.current.reasonKey,
+        has_detail: snap.current.detail.trim().length > 0,
+      });
     };
     window.addEventListener("pagehide", flush);
     return () => window.removeEventListener("pagehide", flush);
@@ -235,7 +237,13 @@ export default function UninstallContent() {
   }
 
   function submit() {
-    if (!reasonKey || submittedRef.current) return;
+    if (!reasonKey) return;
+    // Already saved on leave (the user came back via Back): don't write a
+    // second row, just show the thank-you state.
+    if (submittedRef.current) {
+      setSubmitted(true);
+      return;
+    }
     submittedRef.current = true;
     // no-cors fire-and-forget: the response is opaque and there's nothing to
     // read back. keepalive lets it finish even if the tab closes right after.
@@ -243,7 +251,7 @@ export default function UninstallContent() {
       method: "POST",
       mode: "no-cors",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: buildBody(snap.current, true),
+      body: buildBody(snap.current),
       keepalive: true,
     }).catch(() => {
       /* nothing to recover; the user already sees the thank-you state */
