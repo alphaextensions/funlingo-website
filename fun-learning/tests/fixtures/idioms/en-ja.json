@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Same old, same old.",
+    "expected_patterns": ["いつも通り", "相変わらず", "いつもと同じ"],
+    "acceptable_patterns": ["変わらず"]
+  },
+  {
+    "input": "How have you been?",
+    "expected_patterns": ["元気にしてた", "元気だった", "最近どう", "どうしてた"],
+    "acceptable_patterns": ["お元気でしたか"]
+  },
+  {
+    "input": "I've been better, honestly.",
+    "expected_patterns": ["正直.*あまり", "正直.*もっと元気", "正直.*調子は良くない", "本音を言うと.*あまり"],
+    "acceptable_patterns": ["あまり良くない", "元気な時もあった"]
+  },
+  {
+    "input": "Hey, how's it going?",
+    "expected_patterns": ["調子どう", "調子はどう", "元気", "どう"],
+    "acceptable_patterns": ["やあ"]
+  },
+  {
+    "input": "Let's carry out the plan.",
+    "expected_patterns": ["計画を実行", "プランを実行", "計画を遂行"],
+    "acceptable_patterns": ["計画どおりに"]
+  },
+  {
+    "input": "She broke the ice at the party.",
+    "expected_patterns": ["打ち解け", "場を和ませ", "緊張をほぐし"],
+    "acceptable_patterns": ["盛り上げ"]
+  }
+]

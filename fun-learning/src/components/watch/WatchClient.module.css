@@ -1,0 +1,423 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  padding: var(--s-4);
+  min-height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+}
+.titleBlock { min-width: 0; flex: 1 1 300px; }
+.title {
+  margin: 0 0 2px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--fl-text);
+}
+.sub {
+  margin: 0;
+  color: var(--fl-text-3);
+  font-size: 13px;
+}
+.translating { color: var(--fl-accent); margin-left: 6px; }
+
+.modeArea { display: flex; align-items: center; gap: var(--s-3); }
+.help {
+  all: unset;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--fl-surface-2);
+  color: var(--fl-text-2);
+  font-weight: 700;
+  transition: background var(--d-fast) var(--ease), color var(--d-fast) var(--ease);
+}
+.help:hover,
+.help:focus-visible { background: var(--fl-surface-3); color: var(--fl-text); }
+.help:focus-visible { outline: 2px solid var(--fl-accent); outline-offset: 2px; }
+
+/* ---- Grid layouts per mode ---- */
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: var(--s-4);
+  align-items: start;
+}
+.default .grid {
+  /* Player | Subtitles | Culture */
+}
+.focus .grid {
+  /* Subtitles become the main stage — player shrinks into right col */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 0.9fr);
+}
+.focus .playerCol { order: 2; }
+.focus .subCol { order: 1; }
+.focus .panelCol { order: 3; }
+.cinema .grid {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.noSidebar .grid {
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+}
+.noSidebar .panelCol { display: none; }
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .focus .grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+.playerCol { display: flex; flex-direction: column; gap: var(--s-3); min-width: 0; }
+.subCol { min-width: 0; }
+.panelCol { min-width: 0; }
+
+.noPlayer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  background: var(--fl-bg-2);
+  border: 1px dashed var(--fl-border-2);
+  border-radius: var(--r-md);
+  color: var(--fl-text-2);
+  padding: var(--s-5);
+  text-align: center;
+}
+.noPlayerText { margin: 0; font-size: 14px; line-height: 1.55; }
+
+/* ---- Demo mode stage — no YouTube iframe, local-timer playback. ----
+   Branded placeholder so /watch/demo doesn't need (or imply) ownership
+   of any third-party video. Captions auto-advance from a local timer. */
+.demoStage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background:
+    radial-gradient(130% 110% at 72% 6%, color-mix(in srgb, var(--fl-primary) 35%, transparent) 0%, transparent 60%),
+    linear-gradient(135deg, var(--fl-bg-2) 0%, var(--fl-bg) 100%);
+  color: var(--fl-text);
+  display: grid;
+  place-items: center;
+  padding: var(--s-6);
+  text-align: center;
+  box-shadow: var(--el-2);
+}
+.demoBrand {
+  position: absolute;
+  top: var(--s-4);
+  left: var(--s-4);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fl-text-2);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.demoDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--fl-accent);
+  box-shadow: 0 0 10px var(--fl-accent);
+}
+.demoCaption {
+  max-width: 32ch;
+  font-size: clamp(20px, 2.6vw, 28px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.demoPlayBtn {
+  position: absolute;
+  bottom: var(--s-5);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--fl-accent);
+  color: var(--fl-on-accent);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -10px color-mix(in srgb, var(--fl-magenta) 70%, transparent);
+  display: inline-grid;
+  place-items: center;
+  transition: transform var(--d-fast) var(--ease-out);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .demoPlayBtn:hover { transform: translateX(-50%) scale(1.06); }
+}
+.demoPlayBtn:focus-visible { outline: 2px solid var(--fl-accent); outline-offset: 3px; }
+.demoProgress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: var(--pct, 0%);
+  background: linear-gradient(90deg, var(--fl-accent), var(--fl-secondary));
+  transition: width 240ms linear;
+}
+
+/* Mobile: the 16:9 stage is short, so the centered caption and the
+   bottom-anchored play button collided (QA/Design 2026-10-25: ~11px overlap,
+   obscuring "…any word." at 375px). Reserve the button's zone with extra
+   bottom padding so the caption always centers above it, and ease the caption
+   size so it never runs long enough to reach the button. */
+@media (max-width: 560px) {
+  .demoStage {
+    padding-bottom: calc(var(--s-5) + 48px + var(--s-4));
+  }
+  .demoCaption {
+    font-size: clamp(16px, 4.6vw, 22px);
+    max-width: 26ch;
+  }
+}
+
+/* Wave 13 B-16 / B-17 — demo-mode banner. Sits ABOVE the player (never
+   over it) and explains: (a) the clip is in English, (b) saves still
+   count toward the viewer's active language. */
+.demoBanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding: 10px 14px;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  color: var(--fl-text-2);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.demoBannerCopy { margin: 0; }
+.demoBannerCopy strong { color: var(--fl-text); font-weight: 600; }
+.demoBannerCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--fl-accent);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--fl-accent) 15%, transparent);
+}
+.demoBannerCta:hover { text-decoration: underline; }
+
+/* ---- Controls strip — SITS BELOW the player, never on it. ---- */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 10px 12px;
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  box-shadow: var(--el-1);
+}
+.counter {
+  min-width: 68px;
+  color: var(--fl-text-3);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.ctrlBtn {
+  all: unset;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-1);
+  color: var(--fl-text-2);
+  font-size: 13px;
+  border: 1px solid transparent;
+  transition: background var(--d-fast) var(--ease),
+    color var(--d-fast) var(--ease),
+    border-color var(--d-fast) var(--ease);
+}
+.ctrlBtn:hover { background: var(--fl-surface-2); color: var(--fl-text); }
+.ctrlBtn:focus-visible { outline: 2px solid var(--fl-accent); outline-offset: 2px; }
+/* aria-pressed=true gets a bordered pill — non-color signal. */
+.ctrlBtn[aria-pressed="true"] {
+  background: var(--fl-surface-3);
+  color: var(--fl-text);
+  border-color: var(--fl-accent);
+  font-weight: 600;
+}
+
+/* ---- PM-polish fix 2: end-of-video CTA card. Sits BELOW the player strip
+   in `.playerCol` — never over the YouTube iframe (LEGAL #3). ---- */
+.endCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding: var(--s-4) var(--s-5);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border-2);
+  border-radius: var(--r-md);
+  box-shadow: var(--el-2);
+}
+.endCardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.endCardEyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fl-accent);
+}
+.endCardText {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--fl-text);
+}
+.endCardActions {
+  display: inline-flex;
+  gap: var(--s-2);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.endCardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: var(--r-pill);
+  background: linear-gradient(100deg, var(--fl-accent), var(--fl-secondary) 60%, var(--fl-accent-2));
+  color: var(--fl-on-accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: var(--glow);
+  transition: filter var(--d-fast);
+}
+.endCardCta:hover { filter: brightness(1.07); }
+.endCardCta:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+.endCardDismiss {
+  all: unset;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: var(--r-pill);
+  color: var(--fl-text-2);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: background var(--d-fast), color var(--d-fast);
+}
+.endCardDismiss:hover {
+  background: var(--fl-surface-2);
+  color: var(--fl-text);
+}
+.endCardDismiss:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+/* ---- Cinema band ---- */
+.cinemaBand {
+  min-width: 0;
+}
+
+/* ---- Toast ---- */
+.toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border-2);
+  border-radius: var(--r-pill);
+  color: var(--fl-text);
+  font-size: 13px;
+  z-index: 60;
+  box-shadow: var(--el-2);
+  backdrop-filter: blur(10px);
+}
+.toastLink {
+  color: var(--fl-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.toastLink:hover { text-decoration: underline; }
+.toastLink:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+/* ---- Wave 16 — one-time hints (saved-word tooltip, hover-pause toast).
+   Inline below the strip or fixed at the viewport bottom — never over the
+   YouTube iframe. ---- */
+.hintNote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  background: var(--fl-surface-1);
+  border: 1px dashed var(--fl-accent);
+  color: var(--fl-text);
+  font-size: 14px;
+}
+.hintDismiss {
+  all: unset;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: var(--r-sm);
+  color: var(--fl-text-2);
+  font-size: 13px;
+  font-weight: 600;
+}
+.hintDismiss:hover { background: var(--fl-surface-2); color: var(--fl-text); }
+.hintDismiss:focus-visible { outline: 2px solid var(--fl-accent); outline-offset: 2px; }
+.hoverToast {
+  position: fixed;
+  bottom: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(340px, calc(100vw - 32px));
+  padding: 12px 14px;
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border-2);
+  border-radius: var(--r-md);
+  box-shadow: var(--el-2);
+  backdrop-filter: blur(10px);
+  z-index: 61;
+  color: var(--fl-text);
+}
+.hoverToastTitle { margin: 0; font-size: 14px; font-weight: 600; }
+.hoverToastBody { margin: 4px 0 0; font-size: 14px; color: var(--fl-text-2); line-height: 1.45; }
+.hoverToastActions { display: flex; justify-content: flex-end; gap: 4px; margin-top: 6px; }

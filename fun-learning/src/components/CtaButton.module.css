@@ -1,0 +1,75 @@
+/* CtaButton — the signature pill call-to-action.
+   Promoted from EmptyState's primary button + Home's hero CTA so every route
+   that needs the gradient pill shares the same base, instead of inlining a
+   style object. Design HIGH-D7 / MED. */
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter var(--d-fast), background var(--d-fast), transform var(--d-fast);
+  border: 0;
+  white-space: nowrap;
+}
+
+/* Sizes --- */
+.sizeMd {
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  font-size: 14px;
+}
+.sizeLg {
+  padding: 12px 22px;
+  border-radius: var(--r-pill);
+  font-size: 15px;
+}
+
+/* Variants --- */
+.primary {
+  background: linear-gradient(100deg, var(--fl-accent), var(--fl-secondary) 60%, var(--fl-accent-2));
+  color: var(--fl-on-accent);
+  box-shadow: var(--glow);
+}
+.primary:hover {
+  filter: brightness(1.07);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .primary:hover { transform: translateY(-1px); }
+}
+
+.secondary {
+  background: transparent;
+  color: var(--fl-text);
+  border: 1px solid var(--fl-border-2);
+  font-weight: 600;
+}
+.secondary:hover {
+  background: var(--fl-surface-1);
+}
+
+/* Danger variant — a secondary pill in the danger token. */
+.danger {
+  background: transparent;
+  color: var(--fl-danger);
+  border: 1px solid var(--fl-danger-edge);
+  font-weight: 600;
+}
+.danger:hover {
+  background: var(--fl-danger-soft);
+}
+
+/* Disabled --- */
+.cta:disabled,
+.cta[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  filter: none;
+  transform: none;
+}
+
+/* Focus ring — relies on globals.css :focus-visible for the outline. */
