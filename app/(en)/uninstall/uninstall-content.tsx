@@ -266,7 +266,7 @@ export default function UninstallContent() {
           {!submitted ? (
             <>
               <div className="flex flex-col items-center gap-3 text-center">
-                <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[var(--text)] text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-[var(--heading-h1-letter-spacing)]">
+                <h1 className="font-bold text-[var(--text)] text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-[var(--heading-h1-letter-spacing)]">
                   What made you uninstall?
                 </h1>
                 <p className="text-[var(--text-dim)] text-lg sm:text-xl">
@@ -374,7 +374,7 @@ export default function UninstallContent() {
               <div className="w-16 h-16 rounded-full bg-[var(--pink-soft)] border border-[var(--magenta)] flex items-center justify-center text-3xl text-[var(--magenta)]">
                 ✓
               </div>
-              <h1 className="font-heading-h1 text-[var(--text)] text-3xl sm:text-4xl font-bold">Thanks, we got it.</h1>
+              <h1 className="text-[var(--text)] text-3xl sm:text-4xl font-bold">Thanks, we got it.</h1>
               <p className="text-[var(--text-dim)] text-lg max-w-md">
                 {selected?.recoverable
                   ? "We ship fixes and new features every week. If you give Funlingo another try, this might already be sorted."
