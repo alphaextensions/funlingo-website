@@ -29,6 +29,8 @@ type Followup = "bug" | "feature" | "platform" | "other";
 
 // `value` is the exact checkbox option string the Google Form expects, or
 // `{ other: "…" }` to send it through Forms' "Other" option with that text.
+// To give an `other` reason its own option, add it to the form first, then
+// switch `value` to that exact string — Forms drops values it doesn't list.
 type Reason = {
   key: string;
   label: string;
@@ -52,6 +54,26 @@ const REASONS: Reason[] = [
     recoverable: true,
   },
   {
+    key: "translations",
+    label: "Translations weren't good enough",
+    emoji: "🔤",
+    value: { other: "Poor translations" },
+    followup: "other",
+    prompt: "Which language pair, and which site?",
+    placeholder: "e.g. English → Spanish on Netflix, translations were too literal…",
+    recoverable: true,
+  },
+  {
+    key: "platform",
+    label: "My streaming site isn't supported",
+    emoji: "🧩",
+    value: "Not present on my preferred platform (please mention which so that we can add it for you)",
+    followup: "platform",
+    prompt: "Which site or browser?",
+    placeholder: "e.g. Safari, Firefox, a specific streaming site…",
+    recoverable: true,
+  },
+  {
     key: "missing",
     label: "Missing a feature I needed",
     emoji: "✨",
@@ -62,18 +84,18 @@ const REASONS: Reason[] = [
     recoverable: true,
   },
   {
-    key: "platform",
-    label: "Doesn't work where I watch",
-    emoji: "🧩",
-    value: "Not present on my preferred platform (please mention which so that we can add it for you)",
-    followup: "platform",
-    prompt: "Where do you want to use it?",
-    placeholder: "e.g. Safari, Firefox, a specific streaming site…",
-    recoverable: true,
+    key: "switched",
+    label: "I switched to another tool",
+    emoji: "🔁",
+    value: { other: "Switched to another tool" },
+    followup: "other",
+    prompt: "Which one?",
+    placeholder: "e.g. Language Reactor, Trancy…",
+    recoverable: false,
   },
   {
     key: "trying",
-    label: "I was just trying it out",
+    label: "Just trying it out / don't need it now",
     emoji: "👋",
     value: { other: "Just trying it out" },
     followup: "other",
@@ -253,8 +275,10 @@ export default function UninstallContent() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full" role="radiogroup" aria-label="Reason for uninstalling">
-                {REASONS.map((r) => {
+                {REASONS.map((r, i) => {
                   const active = reasonKey === r.key;
+                  // An odd last button spans both columns instead of sitting alone.
+                  const span = i === REASONS.length - 1 && REASONS.length % 2 === 1 ? "sm:col-span-2" : "";
                   return (
                     <button
                       key={r.key}
@@ -262,7 +286,7 @@ export default function UninstallContent() {
                       role="radio"
                       aria-checked={active}
                       onClick={() => pickReason(r.key)}
-                      className={`flex items-center gap-3 text-left rounded-2xl border px-5 py-4 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--magenta)] ${
+                      className={`${span} flex items-center gap-3 text-left rounded-2xl border px-5 py-4 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--magenta)] ${
                         active
                           ? "border-[var(--magenta)] bg-[var(--pink-soft)] shadow-lg shadow-purple-500/15"
                           : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--pink)] hover:bg-[var(--chip)]"
