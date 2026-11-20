@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Adatvédelmi irányelvek",
+    "description": "A Funlingo adatvédelmi irányelvei. Tudd meg, hogyan kezeljük az adataidat, amikor a Funlingo Chrome-bővítményt és a weboldalunkat használod."
+  },
+  "translationNotice": "Ezt a fordítást a kényelmed érdekében biztosítjuk. Bármilyen eltérés esetén ezen irányelvek angol nyelvű változata az irányadó.",
+  "englishLinkText": "Az angol változat elolvasása",
+  "hero": {
+    "badge": "Fontos számunkra az adatvédelem",
+    "title": "Adatvédelmi irányelvek",
+    "intro": "Üdvözlünk a Funlingónál. Fontos számunkra a magánszférád védelme. Ezek az Adatvédelmi irányelvek elmagyarázzák, hogyan kezeljük az adataidat, amikor a Funlingo Chrome-bővítményt és a weboldalunkat használod."
+  },
+  "effectiveDate": "Hatálybalépés dátuma: 2025. november",
+  "sections": [
+    {
+      "title": "Milyen adatokat nem gyűjtünk",
+      "content": "A Funlingót azért hoztuk létre, hogy a felhasználók a magánszférájuk feláldozása nélkül élvezhessék a kétnyelvű feliratokat és tanulhassanak nyelveket streamelés közben. Nem használunk sütiket vagy harmadik féltől származó analitikát a tevékenységed nyomon követésére. Az adataidat senkinek nem adjuk el és nem adjuk bérbe."
+    },
+    {
+      "title": "Használt engedélyek",
+      "content": "A Funlingónak bizonyos Chrome-engedélyekre kizárólag a megfelelő működéshez van szüksége: hozzáférés a streamingoldalak lapjaihoz (pl. Netflix, YouTube), hogy a kétnyelvű feliratokat a videólejátszóban jeleníthesse meg; ActiveTab engedély a feliratok beillesztéséhez és az interaktivitás biztosításához (szüneteltetés egérmutató fölé vitelekor, fordítások stb.). Ezeket az engedélyeket kizárólag helyben, a saját eszközödön használjuk. A Funlingo soha nem küld oldaladatokat vagy videótartalmat semmilyen külső szerverre."
+    },
+    {
+      "title": "Adatkezelés",
+      "content": "A feliratok megjelenítése, a fordítások és az egérmutató fölé vitelekor történő interakciók mind helyben, a böngésződben zajlanak. Ha a jövőbeni funkciók API-kat használnak fordításhoz vagy szótári kereséshez, a kérések névtelenül, felhasználói azonosítók tárolása nélkül történnek majd."
+    },
+    {
+      "title": "Harmadik féltől származó szolgáltatások",
+      "content": "A Funlingo csatlakozhat nyilvános fordító- vagy szótár-API-khoz (például a Google Translate API-hoz vagy hasonlókhoz). Ezeket kizárólag szójelentések vagy fordítások lekérésére használjuk, és nem továbbítanak semmilyen felhasználói azonosságra vagy böngészési adatra vonatkozó információt."
+    },
+    {
+      "title": "Gyermekek adatainak védelme",
+      "content": "A Funlingo minden korosztály számára biztonságos, és tudatosan nem gyűjt adatokat 13 év alatti gyermekektől."
+    },
+    {
+      "title": "Biztonság",
+      "content": "Mivel nem tárolunk személyes adatokat, az adataid a saját eszközödön maradnak. A bevált gyakorlatokat követjük annak érdekében, hogy a bővítmény szkriptjei biztonságosak legyenek, és csak a szükséges domainekre korlátozódjanak."
+    },
+    {
+      "title": "Az irányelvek módosítása",
+      "content": "Ezeket az Adatvédelmi irányelveket időnként frissíthetjük. Jelentős változás esetén frissítjük a hatálybalépés dátumát, és közzétesszük az új változatot a weboldalunkon."
+    }
+  ],
+  "contact": {
+    "badge": "Lépj kapcsolatba velünk",
+    "title": "Kapcsolat",
+    "text": "Ha kérdésed vagy aggályod van ezekkel az Adatvédelmi irányelvekkel kapcsolatban, itt érhetsz el minket:"
+  },
+  "commitment": "A Funlingo elkötelezett amellett, hogy a streamingen keresztüli nyelvtanulás biztonságos, privát és könnyed legyen."
+}

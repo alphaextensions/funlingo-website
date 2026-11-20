@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Hjälp och support",
+    "description": "Få hjälp och support från Funlingo-teamet. Rapportera problem, föreslå funktioner eller ställ frågor om vårt språktillägg."
+  },
+  "header": {
+    "title": "Hjälp och support",
+    "subtitle": "Vårt team finns här för att hjälpa dig att lyckas med Funlingo. Hör av dig när som helst."
+  },
+  "supportTypes": [
+    {
+      "title": "Teknisk support",
+      "description": "Problem med appen, buggar eller tekniska fel",
+      "responseTime": "2–4 timmar"
+    },
+    {
+      "title": "Önskemål om funktion",
+      "description": "Föreslå nya funktioner eller förbättringar",
+      "responseTime": "1–2 dagar"
+    },
+    {
+      "title": "Allmän fråga",
+      "description": "Andra frågor eller önskemål om information",
+      "responseTime": "1–2 dagar"
+    }
+  ],
+  "responseLabel": "Svarstid: {time}",
+  "successMessage": "Tack för att du kontaktade oss! Vi återkommer så snart vi kan.",
+  "form": {
+    "nameLabel": "Namn",
+    "namePlaceholder": "Ditt fullständiga namn",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "din.epost@example.com",
+    "issueTypeLabel": "Typ av ärende",
+    "issueTypes": {
+      "technical": "Teknisk support",
+      "billing": "Betalning och konto",
+      "feature": "Önskemål om funktion",
+      "general": "Allmän fråga",
+      "bug": "Felrapport"
+    },
+    "priorityLabel": "Prioritet",
+    "priorities": {
+      "low": "Låg",
+      "medium": "Medel",
+      "high": "Hög",
+      "urgent": "Brådskande"
+    },
+    "subjectLabel": "Ämne",
+    "subjectPlaceholder": "Kort beskrivning av ditt problem",
+    "messageLabel": "Meddelande",
+    "messagePlaceholder": "Beskriv ditt problem så detaljerat som möjligt...",
+    "attachmentsLabel": "Bilagor (valfritt)",
+    "removeAttachment": "x",
+    "submit": "Skicka supportärende"
+  },
+  "contact": {
+    "title": "Kontaktuppgifter",
+    "emailTitle": "Support via e-post",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord-community",
+    "discordText": "Gå med och få hjälp i realtid",
+    "responseTitle": "Svarstid",
+    "responseText": "2–48 timmar beroende på prioritet"
+  },
+  "beforeContact": {
+    "title": "Innan du kontaktar oss",
+    "tips": [
+      "Kolla vår FAQ för snabba svar",
+      "Bifoga relevanta skärmbilder om möjligt",
+      "Beskriv stegen för att återskapa problemet",
+      "Ange din enhet och appversion"
+    ]
+  }
+}

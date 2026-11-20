@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Gizlilik Politikası",
+    "description": "Funlingo Gizlilik Politikası. Funlingo Chrome Uzantısı'nı ve web sitemizi kullandığınızda bilgilerinizi nasıl ele aldığımızı öğrenin."
+  },
+  "translationNotice": "Bu çeviri kolaylık sağlamak amacıyla sunulmuştur. Herhangi bir farklılık olması durumunda bu politikanın İngilizce sürümü geçerlidir.",
+  "englishLinkText": "İngilizce sürümü okuyun",
+  "hero": {
+    "badge": "Gizliliğiniz Önemlidir",
+    "title": "Gizlilik Politikası",
+    "intro": "Funlingo'ya hoş geldiniz. Gizliliğiniz bizim için önemlidir. Bu Gizlilik Politikası, Funlingo Chrome Uzantısı'nı ve web sitemizi kullandığınızda bilgilerinizi nasıl ele aldığımızı açıklar."
+  },
+  "effectiveDate": "Yürürlük Tarihi: Kasım 2025",
+  "sections": [
+    {
+      "title": "Toplamadığımız Bilgiler",
+      "content": "Funlingo'yu, kullanıcıların gizliliklerinden ödün vermeden yayın izlerken çift altyazının keyfini çıkarmaları ve dil öğrenmeleri için geliştirdik. Etkinliğinizi izlemek için çerezler veya üçüncü taraf analiz araçları kullanmıyoruz. Bilgilerinizi hiç kimseye satmıyor veya kiralamıyoruz."
+    },
+    {
+      "title": "Kullanılan İzinler",
+      "content": "Funlingo yalnızca düzgün çalışabilmek için belirli Chrome izinlerine ihtiyaç duyar: Video oynatıcıda çift altyazı göstermek için yayın sitesi sayfalarına (ör. Netflix, YouTube) erişim. Altyazı eklemek ve etkileşimi sağlamak (üzerine gelince duraklatma, çeviriler vb.) için ActiveTab izni. Bu izinler yalnızca cihazınızda yerel olarak kullanılır. Funlingo hiçbir zaman sayfa verilerini veya video içeriğini herhangi bir harici sunucuya göndermez."
+    },
+    {
+      "title": "Veri İşleme",
+      "content": "Tüm altyazı görüntüleme, çeviri ve üzerine gelme etkileşimleri tarayıcınızda yerel olarak gerçekleşir. Gelecekteki özellikler çeviri veya sözlük sorguları için API'ler kullanırsa, istekler anonim olarak ve kullanıcı tanımlayıcıları saklanmadan yapılacaktır."
+    },
+    {
+      "title": "Üçüncü Taraf Hizmetler",
+      "content": "Funlingo, herkese açık çeviri veya sözlük API'lerine (örneğin Google Translate API veya benzerleri) bağlanabilir. Bunlar yalnızca kelime anlamlarını veya çevirileri almak için kullanılır ve hiçbir kullanıcı kimliği veya tarama verisi iletmez."
+    },
+    {
+      "title": "Çocukların Gizliliği",
+      "content": "Funlingo her yaştan kullanıcı için güvenlidir ve 13 yaşın altındaki çocuklardan bilerek veri toplamaz."
+    },
+    {
+      "title": "Güvenlik",
+      "content": "Kişisel veri saklamadığımız için bilgileriniz cihazınızda kalır. Uzantının betiklerinin güvenli olmasını ve yalnızca gerekli alan adlarıyla sınırlı kalmasını sağlamak için en iyi uygulamaları takip ediyoruz."
+    },
+    {
+      "title": "Bu Politikadaki Güncellemeler",
+      "content": "Bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Önemli değişiklikler olması durumunda Yürürlük Tarihi'ni güncelleyecek ve yeni sürümü web sitemizde yayınlayacağız."
+    }
+  ],
+  "contact": {
+    "badge": "Bize Ulaşın",
+    "title": "İletişim",
+    "text": "Bu Gizlilik Politikası hakkında sorularınız veya endişeleriniz varsa lütfen bizimle şu adresten iletişime geçin:"
+  },
+  "commitment": "Funlingo, yayınlar aracılığıyla dil öğrenmeyi güvenli, gizli ve zahmetsiz hale getirmeye kendini adamıştır."
+}

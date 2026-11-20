@@ -51,7 +51,7 @@ function isObject(v: unknown): v is Record<string, unknown> {
   return typeof v === "object" && v !== null && !Array.isArray(v);
 }
 
-function deepMerge<T>(base: T, override: unknown): T {
+export function deepMerge<T>(base: T, override: unknown): T {
   if (!isObject(base) || !isObject(override)) {
     return (override === undefined ? base : (override as T));
   }

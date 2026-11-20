@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Quina llàstima que te'n vagis",
+    "description": "Explica'ns per què has desinstal·lat Funlingo. La teva opinió ens ajuda a crear una experiència millor per aprendre idiomes."
+  },
+  "form": {
+    "title": "Per què has desinstal·lat Funlingo?",
+    "subtitle": "Amb un toc n'hi ha prou. La resposta arriba directament a l'equip.",
+    "reasonsAriaLabel": "Motiu de la desinstal·lació",
+    "optional": "(opcional)",
+    "howLongLabel": "Quant de temps has fet servir Funlingo? (opcional)",
+    "emailLabel": "Correu electrònic (opcional), per avisar-te quan estigui solucionat",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Envia els comentaris"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Alguna cosa no funcionava",
+      "prompt": "Què ha fallat?",
+      "placeholder": "En quin lloc web, i què va passar? Fins i tot una línia ens ajuda."
+    },
+    "translations": {
+      "label": "Les traduccions no eren prou bones",
+      "prompt": "Quin parell d'idiomes, i en quin lloc web?",
+      "placeholder": "p. ex. anglès → castellà a Netflix, les traduccions eren massa literals…"
+    },
+    "platform": {
+      "label": "La meva plataforma de streaming no és compatible",
+      "prompt": "Quin lloc web o navegador?",
+      "placeholder": "p. ex. Safari, Firefox, una plataforma de streaming concreta…"
+    },
+    "missing": {
+      "label": "Hi faltava una funció que necessitava",
+      "prompt": "Què hi trobaves a faltar?",
+      "placeholder": "p. ex. un idioma, un servei de streaming, una llista de paraules…"
+    },
+    "switched": {
+      "label": "He canviat a una altra eina",
+      "prompt": "Quina?",
+      "placeholder": "p. ex. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Només el provava / ara no el necessito",
+      "prompt": "Què t'hauria fet quedar-te'l?",
+      "placeholder": "Explica-ho amb les teves paraules."
+    },
+    "other": {
+      "label": "Un altre motiu",
+      "prompt": "Per què has desinstal·lat Funlingo?",
+      "placeholder": "Explica-ho amb les teves paraules."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Menys d'un dia",
+    "lessThanWeek": "Menys d'una setmana",
+    "oneToThreeWeeks": "1-3 setmanes",
+    "oneToThreeMonths": "1-3 mesos"
+  },
+  "thanks": {
+    "title": "Gràcies, ho hem rebut.",
+    "recoverable": "Publiquem correccions i funcions noves cada setmana. Si dones una altra oportunitat a Funlingo, potser ja està resolt.",
+    "notRecoverable": "La teva opinió arriba directament a l'equip. Gràcies per dedicar-nos el teu temps.",
+    "emailNote": "T'escriurem a {email} quan hi hagi novetats.",
+    "reinstall": "Dona una altra oportunitat a Funlingo",
+    "backHome": "Torna a l'inici"
+  }
+}

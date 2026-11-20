@@ -1,26 +1,15 @@
 import type { Metadata } from "next";
 import SupportContent from "./support-content";
+import { en } from "@/app/i18n/pages/support";
+import { pageMetadata } from "@/app/i18n/page-metadata";
 
-export const metadata: Metadata = {
-  title: "Get Help & Support",
-  description: "Get help and support from the Funlingo team. Report issues, request features, or ask questions about our language learning extension.",
+export const metadata: Metadata = pageMetadata({
+  path: "/support",
+  locale: "en",
+  ...en.meta,
   keywords: "funlingo support, language learning help, technical support, feature request, bug report",
-  alternates: {
-    canonical: "/support",
-  },
-  openGraph: {
-    images: ["/og-image.jpg"],
-    title: "Get Help & Support",
-    description: "Get help and support from the Funlingo team. Report issues, request features, or ask questions about our language learning extension.",
-    url: "/support",
-  },
-  twitter: {
-    images: ["/og-image.jpg"],
-    title: "Get Help & Support",
-    description: "Get help and support from the Funlingo team. Report issues, request features, or ask questions about our language learning extension.",
-  },
-};
+});
 
 export default function SupportPage() {
-  return <SupportContent />;
+  return <SupportContent s={en} />;
 }

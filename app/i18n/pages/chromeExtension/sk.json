@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Rozšírenie Funlingo pre Chrome — Dvojité titulky a preklad s AI",
+    "description": "Bezplatné rozšírenie Funlingo pre Chrome: dvojité titulky a preklad s AI na Netflixe, YouTube, Prime a ďalších v 100+ jazykoch. Učte sa pri pozeraní."
+  },
+  "hero": {
+    "badge": "Bezplatné rozšírenie pre Chrome · Hodnotenie 4.8/5",
+    "title": "Rozšírenie Funlingo pre Chrome",
+    "subtitle": "Bezplatné dvojité titulky a preklad s AI na Netflixe, YouTube, Prime Video a 7 ďalších platformách. Učte sa ktorýkoľvek zo 100+ jazykov pri pozeraní.",
+    "addToChrome": "Pridať do Chrome — je to zadarmo",
+    "seeHowItWorks": "Pozrite sa, ako to funguje",
+    "note": "Bez potreby účtu · Inštalácia za menej ako minútu"
+  },
+  "features": {
+    "title": "Všetko, čo potrebujete, aby ste sa učili pri pozeraní",
+    "subtitle": "Jedno bezplatné rozšírenie premení vaše obľúbené streamovacie a vzdelávacie weby na pútavú jazykovú učebňu.",
+    "items": [
+      {
+        "title": "Dvojité titulky",
+        "description": "Sledujte dve stopy titulkov naraz — v jazyku, ktorý sa učíte, a vo svojom rodnom jazyku — priamo vo videoprehrávači."
+      },
+      {
+        "title": "Preklad a definície s AI",
+        "description": "Prejdite myšou na ľubovoľné slovo a okamžite uvidíte preklad s AI podľa kontextu, gramatické poznámky a skutočné príklady použitia."
+      },
+      {
+        "title": "Budovanie slovnej zásoby",
+        "description": "Uložte si akékoľvek slovo alebo frázu jedným kliknutím. Každá položka si zachová preklad aj vetu, v ktorej ste ju našli."
+      },
+      {
+        "title": "100+ jazykov",
+        "description": "Od španielčiny a japončiny po kórejčinu, nemčinu, arabčinu a hindčinu — jazyky si nastavíte nezávisle od seba."
+      },
+      {
+        "title": "10 platforiem",
+        "description": "Funguje na Netflixe, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy a Coursera."
+      },
+      {
+        "title": "100 % zadarmo",
+        "description": "Žiadne paywally, žiadna prémiová verzia, žiadny účet. Všetky funkcie sú zadarmo."
+      }
+    ]
+  },
+  "install": {
+    "title": "Inštalácia za menej ako minútu",
+    "subtitle": "Žiadne zložité nastavovanie. Pridajte Funlingo do Chrome a začnite sa hneď učiť.",
+    "steps": [
+      {
+        "title": "Otvorte Chrome Web Store",
+        "description": "Pomocou tlačidla vyššie prejdite na stránku Funlingo v Chrome Web Store."
+      },
+      {
+        "title": "Kliknite na Pridať do Chrome",
+        "description": "Kliknite na Pridať do Chrome a potvrďte tlačidlom Pridať rozšírenie. Inštalácia trvá len pár sekúnd."
+      },
+      {
+        "title": "Pripnite Funlingo",
+        "description": "Pripnite Funlingo na panel s nástrojmi, aby ste ho mali pri pozeraní vždy na jedno kliknutie."
+      },
+      {
+        "title": "Spustite video a učte sa",
+        "description": "Otvorte Netflix, YouTube alebo inú podporovanú platformu a dvojité titulky sa zobrazia automaticky."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Časté otázky",
+    "subtitle": "Všetko o rozšírení Funlingo pre Chrome.",
+    "items": [
+      {
+        "question": "Je rozšírenie Funlingo pre Chrome zadarmo?",
+        "answer": "Áno. Rozšírenie Funlingo pre Chrome je 100 % zadarmo, bez skrytých poplatkov, prémiových verzií či paywallov. Dvojité titulky, preklad s AI, definície slov s AI aj budovanie slovnej zásoby získate bez akýchkoľvek poplatkov. Stačí ho pridať do Chrome a hneď začať používať všetky funkcie, bez potreby účtu."
+      },
+      {
+        "question": "Na ktorých platformách rozšírenie Funlingo funguje?",
+        "answer": "Funlingo funguje na 10 platformách: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy a Coursera. Dvojité titulky a preklad s AI sa integrujú priamo do prehrávača každej z nich, takže sa môžete učiť jazyky pri pozeraní filmov, seriálov, anime aj online kurzov."
+      },
+      {
+        "question": "Ako nainštalujem rozšírenie Funlingo pre Chrome?",
+        "answer": "Otvorte stránku Funlingo v Chrome Web Store, kliknite na Pridať do Chrome a potvrďte kliknutím na Pridať rozšírenie. Pripnite Funlingo na panel s nástrojmi, otvorte ľubovoľnú podporovanú platformu, napríklad Netflix alebo YouTube, a dvojité titulky sa zobrazia automaticky. Celý postup trvá menej ako minútu."
+      },
+      {
+        "question": "Podporuje rozšírenie Funlingo môj jazyk?",
+        "answer": "Takmer určite. Funlingo podporuje 100+ jazykov na preklad titulkov vrátane španielčiny, francúzštiny, japončiny, kórejčiny, mandarínčiny, nemčiny, portugalčiny, taliančiny, arabčiny, hindčiny a mnohých ďalších. Jazyk, ktorý sa učíte, aj svoj rodný jazyk si nastavíte nezávisle, takže sa môžete naozaj učiť s dvojitými titulkami."
+      },
+      {
+        "question": "Je Funlingo bezpečné rozšírenie pre Chrome?",
+        "answer": "Áno. Funlingo je zverejnené v oficiálnom Chrome Web Store, kde ho kontroluje Google, a má hodnotenie 4.8 z 5 hviezdičiek. Na zobrazovanie titulkov beží lokálne vo vašom prehliadači a na začatie učenia nevyžaduje vytvorenie účtu."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Začnite sa učiť jazyky pri pozeraní",
+    "subtitle": "Pridajte sa k tisíckam ľudí, ktorí používajú Funlingo na bezplatné dvojité titulky a preklad s AI na 10 platformách.",
+    "addToChrome": "Pridať do Chrome — je to zadarmo",
+    "note": "Zadarmo · Hodnotenie 4.8/5 v Chrome Web Store"
+  }
+}

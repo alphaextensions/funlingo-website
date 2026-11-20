@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Je nám ľúto, že odchádzate",
+    "description": "Povedzte nám, prečo ste Funlingo odinštalovali. Vaša spätná väzba nám pomáha vylepšovať učenie jazykov."
+  },
+  "form": {
+    "title": "Prečo ste Funlingo odinštalovali?",
+    "subtitle": "Stačí jedno ťuknutie. Odpoveď ide priamo k tímu.",
+    "reasonsAriaLabel": "Dôvod odinštalovania",
+    "optional": "(nepovinné)",
+    "howLongLabel": "Ako dlho ste Funlingo používali? (nepovinné)",
+    "emailLabel": "E-mail (nepovinné), aby sme vám dali vedieť, keď to opravíme",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Odoslať spätnú väzbu"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Niečo nefungovalo",
+      "prompt": "Čo sa pokazilo?",
+      "placeholder": "Na akej stránke a čo sa stalo? Pomôže aj jeden riadok."
+    },
+    "translations": {
+      "label": "Preklady neboli dosť dobré",
+      "prompt": "Aká jazyková dvojica a na akej stránke?",
+      "placeholder": "napr. angličtina → španielčina na Netflixe, preklady boli príliš doslovné…"
+    },
+    "platform": {
+      "label": "Moja streamovacia stránka nie je podporovaná",
+      "prompt": "Aká stránka alebo prehliadač?",
+      "placeholder": "napr. Safari, Firefox, konkrétna streamovacia stránka…"
+    },
+    "missing": {
+      "label": "Chýbala mi potrebná funkcia",
+      "prompt": "Čo vám chýbalo?",
+      "placeholder": "napr. jazyk, streamovacia služba, zoznam slovíčok…"
+    },
+    "switched": {
+      "label": "Prešiel/prešla som na iný nástroj",
+      "prompt": "Na aký?",
+      "placeholder": "napr. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Len som to skúšal/a / teraz to nepotrebujem",
+      "prompt": "Čo by vás presvedčilo si ho nechať?",
+      "placeholder": "Opíšte to vlastnými slovami."
+    },
+    "other": {
+      "label": "Niečo iné",
+      "prompt": "Prečo ste Funlingo odinštalovali?",
+      "placeholder": "Opíšte to vlastnými slovami."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Menej ako deň",
+    "lessThanWeek": "Menej ako týždeň",
+    "oneToThreeWeeks": "1 – 3 týždne",
+    "oneToThreeMonths": "1 – 3 mesiace"
+  },
+  "thanks": {
+    "title": "Ďakujeme, máme to.",
+    "recoverable": "Opravy a nové funkcie vydávame každý týždeň. Ak dáte Funlingo ešte šancu, možno to už bude vyriešené.",
+    "notRecoverable": "Vaša spätná väzba ide priamo k tímu. Ďakujeme, že ste si našli čas.",
+    "emailNote": "Keď budú novinky, napíšeme vám na {email}.",
+    "reinstall": "Dať Funlingo ešte šancu",
+    "backHome": "Späť na úvod"
+  }
+}

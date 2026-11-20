@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo Chrome-extensie – Dubbele ondertiteling & AI-vertaling",
+    "description": "Gratis Chrome-extensie: dubbele ondertiteling & AI-vertaling op Netflix, YouTube, Prime en meer in 100+ talen. Voeg toe aan Chrome en leer terwijl je kijkt."
+  },
+  "hero": {
+    "badge": "Gratis Chrome-extensie · Beoordeeld met 4.8/5",
+    "title": "Funlingo Chrome-extensie",
+    "subtitle": "Gratis dubbele ondertiteling en AI-vertaling op Netflix, YouTube, Prime Video en 7 andere platforms. Leer uit 100+ talen terwijl je kijkt.",
+    "addToChrome": "Toevoegen aan Chrome — het is gratis",
+    "seeHowItWorks": "Bekijk hoe het werkt",
+    "note": "Geen account nodig · Binnen een minuut geïnstalleerd"
+  },
+  "features": {
+    "title": "Alles wat je nodig hebt om te leren tijdens het kijken",
+    "subtitle": "Eén gratis extensie maakt van je favoriete streaming- en leersites een meeslepend taallokaal.",
+    "items": [
+      {
+        "title": "Dubbele ondertiteling",
+        "description": "Zie twee ondertitelsporen tegelijk — je doeltaal en je moedertaal — direct in de videospeler."
+      },
+      {
+        "title": "AI-vertaling & definities",
+        "description": "Beweeg over een woord voor directe AI-vertalingen in context, grammaticatips en echte voorbeeldzinnen."
+      },
+      {
+        "title": "Woordenschatbouwer",
+        "description": "Sla elk woord of elke uitdrukking op met één klik. Elke vermelding bewaart de vertaling en de zin waarin je het vond."
+      },
+      {
+        "title": "100+ talen",
+        "description": "Van Spaans en Japans tot Koreaans, Duits, Arabisch en Hindi — stel je talen los van elkaar in."
+      },
+      {
+        "title": "10 platforms",
+        "description": "Werkt op Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy en Coursera."
+      },
+      {
+        "title": "100% gratis",
+        "description": "Geen betaalmuren, geen premiumabonnement, geen account nodig. Alle functies zijn gratis."
+      }
+    ]
+  },
+  "install": {
+    "title": "Binnen een minuut geïnstalleerd",
+    "subtitle": "Geen gedoe met instellen. Voeg Funlingo toe aan Chrome en begin meteen met leren.",
+    "steps": [
+      {
+        "title": "Open de Chrome Web Store",
+        "description": "Ga met de knop hierboven naar de pagina van Funlingo in de Chrome Web Store."
+      },
+      {
+        "title": "Klik op Toevoegen aan Chrome",
+        "description": "Klik op Toevoegen aan Chrome en bevestig met Extensie toevoegen. De installatie duurt maar een paar seconden."
+      },
+      {
+        "title": "Zet Funlingo vast",
+        "description": "Zet Funlingo vast in je werkbalk, zodat het tijdens het kijken altijd één klik verwijderd is."
+      },
+      {
+        "title": "Druk op play & leer",
+        "description": "Open Netflix, YouTube of een ander ondersteund platform en de dubbele ondertiteling verschijnt automatisch."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "subtitle": "Alles over de Funlingo Chrome-extensie.",
+    "items": [
+      {
+        "question": "Is de Funlingo Chrome-extensie gratis?",
+        "answer": "Ja. De Funlingo Chrome-extensie is 100% gratis, zonder verborgen kosten, premiumniveaus of betaalmuren. Je krijgt dubbele ondertiteling, AI-vertaling, AI-woorddefinities en de woordenschatbouwer zonder kosten. Voeg hem gewoon toe aan Chrome en gebruik meteen alle functies, zonder account."
+      },
+      {
+        "question": "Op welke platforms werkt de Funlingo-extensie?",
+        "answer": "Funlingo werkt op 10 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy en Coursera. Dubbele ondertiteling en AI-vertaling zijn direct in elke videospeler geïntegreerd, zodat je talen leert terwijl je films, series, anime en online cursussen kijkt."
+      },
+      {
+        "question": "Hoe installeer ik de Funlingo Chrome-extensie?",
+        "answer": "Open de pagina van Funlingo in de Chrome Web Store, klik op Toevoegen aan Chrome en bevestig door op Extensie toevoegen te klikken. Zet Funlingo vast in je werkbalk, open een ondersteund platform zoals Netflix of YouTube en de dubbele ondertiteling verschijnt automatisch. Het hele proces duurt minder dan een minuut."
+      },
+      {
+        "question": "Ondersteunt de Funlingo-extensie mijn taal?",
+        "answer": "Vrijwel zeker. Funlingo ondersteunt 100+ talen voor het vertalen van ondertitels, waaronder Spaans, Frans, Japans, Koreaans, Mandarijn, Duits, Portugees, Italiaans, Arabisch, Hindi en nog veel meer. Je stelt je doeltaal en je moedertaal los van elkaar in, voor echt leren met dubbele ondertiteling."
+      },
+      {
+        "question": "Is Funlingo een veilige Chrome-extensie?",
+        "answer": "Ja. Funlingo staat in de officiële Chrome Web Store, waar het door Google wordt gecontroleerd, en is beoordeeld met 4.8 van de 5 sterren. De extensie draait lokaal in je browser om ondertitels te tonen en je hoeft geen account aan te maken om te beginnen met leren."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Leer talen terwijl je kijkt",
+    "subtitle": "Sluit je aan bij duizenden leerlingen die Funlingo gebruiken voor gratis dubbele ondertiteling en AI-vertaling op 10 platforms.",
+    "addToChrome": "Toevoegen aan Chrome — het is gratis",
+    "note": "Gratis · Beoordeeld met 4.8/5 in de Chrome Web Store"
+  }
+}

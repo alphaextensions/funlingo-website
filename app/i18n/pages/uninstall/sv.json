@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Tråkigt att du lämnar oss",
+    "description": "Berätta varför du avinstallerade Funlingo. Din feedback hjälper oss att skapa en bättre upplevelse för språkinlärning."
+  },
+  "form": {
+    "title": "Varför avinstallerade du Funlingo?",
+    "subtitle": "Ett tryck räcker. Svaret går direkt till teamet.",
+    "reasonsAriaLabel": "Anledning till avinstallationen",
+    "optional": "(valfritt)",
+    "howLongLabel": "Hur länge använde du Funlingo? (valfritt)",
+    "emailLabel": "E-post (valfritt), så att vi kan meddela dig när det är åtgärdat",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Skicka feedback"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Något fungerade inte",
+      "prompt": "Vad gick fel?",
+      "placeholder": "Vilken webbplats, och vad hände? Även en rad hjälper."
+    },
+    "translations": {
+      "label": "Översättningarna var inte tillräckligt bra",
+      "prompt": "Vilket språkpar, och vilken webbplats?",
+      "placeholder": "t.ex. engelska → spanska på Netflix, översättningarna var för ordagranna…"
+    },
+    "platform": {
+      "label": "Min streamingtjänst stöds inte",
+      "prompt": "Vilken webbplats eller webbläsare?",
+      "placeholder": "t.ex. Safari, Firefox, en viss streamingsajt…"
+    },
+    "missing": {
+      "label": "Det saknades en funktion jag behövde",
+      "prompt": "Vad saknade du?",
+      "placeholder": "t.ex. ett språk, en streamingtjänst, en ordlista…"
+    },
+    "switched": {
+      "label": "Jag bytte till ett annat verktyg",
+      "prompt": "Vilket?",
+      "placeholder": "t.ex. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Testade bara / behöver det inte just nu",
+      "prompt": "Vad hade fått dig att behålla det?",
+      "placeholder": "Berätta med egna ord."
+    },
+    "other": {
+      "label": "Något annat",
+      "prompt": "Varför avinstallerade du Funlingo?",
+      "placeholder": "Berätta med egna ord."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Mindre än en dag",
+    "lessThanWeek": "Mindre än en vecka",
+    "oneToThreeWeeks": "1–3 veckor",
+    "oneToThreeMonths": "1–3 månader"
+  },
+  "thanks": {
+    "title": "Tack, vi har fått det.",
+    "recoverable": "Vi släpper rättningar och nya funktioner varje vecka. Om du ger Funlingo en ny chans kan det redan vara löst.",
+    "notRecoverable": "Din feedback går direkt till teamet. Tack för att du tog dig tid.",
+    "emailNote": "Vi mejlar dig på {email} när det finns nyheter.",
+    "reinstall": "Ge Funlingo en ny chans",
+    "backHome": "Tillbaka till startsidan"
+  }
+}

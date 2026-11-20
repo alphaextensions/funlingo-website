@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Rozszerzenie Funlingo do Chrome — Podwójne napisy i tłumaczenie AI",
+    "description": "Darmowe rozszerzenie Funlingo do Chrome: podwójne napisy i tłumaczenie AI na Netflix, YouTube, Prime i innych, w 100+ językach. Ucz się podczas oglądania."
+  },
+  "hero": {
+    "badge": "Darmowe rozszerzenie do Chrome · Ocena 4.8/5",
+    "title": "Rozszerzenie Funlingo do Chrome",
+    "subtitle": "Darmowe podwójne napisy i tłumaczenie AI na Netflix, YouTube, Prime Video i 7 innych platformach. Ucz się dowolnego ze 100+ języków podczas oglądania.",
+    "addToChrome": "Dodaj do Chrome — to za darmo",
+    "seeHowItWorks": "Zobacz, jak to działa",
+    "note": "Bez zakładania konta · Instalacja w niecałą minutę"
+  },
+  "features": {
+    "title": "Wszystko, czego potrzebujesz, by uczyć się podczas oglądania",
+    "subtitle": "Jedno darmowe rozszerzenie zamienia Twoje ulubione serwisy streamingowe i edukacyjne w wciągającą klasę językową.",
+    "items": [
+      {
+        "title": "Podwójne napisy",
+        "description": "Oglądaj dwie ścieżki napisów jednocześnie — w języku, którego się uczysz, i w swoim ojczystym — bezpośrednio w odtwarzaczu wideo."
+      },
+      {
+        "title": "Tłumaczenie i definicje AI",
+        "description": "Najedź na dowolne słowo, aby od razu zobaczyć tłumaczenie AI uwzględniające kontekst, uwagi gramatyczne i prawdziwe przykłady użycia."
+      },
+      {
+        "title": "Budowanie słownictwa",
+        "description": "Zapisuj dowolne słowo lub wyrażenie jednym kliknięciem. Każdy wpis zachowuje tłumaczenie i zdanie, w którym je znalazłeś."
+      },
+      {
+        "title": "100+ języków",
+        "description": "Od hiszpańskiego i japońskiego po koreański, niemiecki, arabski i hindi — ustawiasz języki niezależnie od siebie."
+      },
+      {
+        "title": "10 platform",
+        "description": "Działa na Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy i Coursera."
+      },
+      {
+        "title": "100% za darmo",
+        "description": "Bez paywalli, bez wersji premium, bez zakładania konta. Wszystkie funkcje są darmowe."
+      }
+    ]
+  },
+  "install": {
+    "title": "Instalacja w niecałą minutę",
+    "subtitle": "Bez kłopotliwej konfiguracji. Dodaj Funlingo do Chrome i od razu zacznij się uczyć.",
+    "steps": [
+      {
+        "title": "Otwórz Chrome Web Store",
+        "description": "Przejdź do strony Funlingo w Chrome Web Store za pomocą przycisku powyżej."
+      },
+      {
+        "title": "Kliknij Dodaj do Chrome",
+        "description": "Kliknij Dodaj do Chrome, a następnie potwierdź przyciskiem Dodaj rozszerzenie. Instalacja trwa kilka sekund."
+      },
+      {
+        "title": "Przypnij Funlingo",
+        "description": "Przypnij Funlingo do paska narzędzi, aby podczas oglądania mieć je zawsze pod ręką."
+      },
+      {
+        "title": "Włącz odtwarzanie i ucz się",
+        "description": "Otwórz Netflix, YouTube lub inną obsługiwaną platformę, a podwójne napisy pojawią się automatycznie."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "subtitle": "Wszystko o rozszerzeniu Funlingo do Chrome.",
+    "items": [
+      {
+        "question": "Czy rozszerzenie Funlingo do Chrome jest darmowe?",
+        "answer": "Tak. Rozszerzenie Funlingo do Chrome jest w 100% darmowe, bez ukrytych kosztów, wersji premium czy paywalli. Podwójne napisy, tłumaczenie AI, definicje słów AI i budowanie słownictwa dostajesz bez żadnych opłat. Wystarczy dodać je do Chrome i od razu korzystać ze wszystkich funkcji, bez zakładania konta."
+      },
+      {
+        "question": "Na jakich platformach działa rozszerzenie Funlingo?",
+        "answer": "Funlingo działa na 10 platformach: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy i Coursera. Podwójne napisy i tłumaczenie AI są wbudowane bezpośrednio w odtwarzacz każdej z nich, więc możesz uczyć się języków, oglądając filmy, seriale, anime i kursy online."
+      },
+      {
+        "question": "Jak zainstalować rozszerzenie Funlingo do Chrome?",
+        "answer": "Otwórz stronę Funlingo w Chrome Web Store, kliknij Dodaj do Chrome, a następnie potwierdź, klikając Dodaj rozszerzenie. Przypnij Funlingo do paska narzędzi, otwórz dowolną obsługiwaną platformę, np. Netflix lub YouTube, a podwójne napisy pojawią się automatycznie. Cały proces zajmuje mniej niż minutę."
+      },
+      {
+        "question": "Czy rozszerzenie Funlingo obsługuje mój język?",
+        "answer": "Prawie na pewno. Funlingo obsługuje 100+ języków w tłumaczeniu napisów, w tym hiszpański, francuski, japoński, koreański, mandaryński, niemiecki, portugalski, włoski, arabski, hindi i wiele innych. Język, którego się uczysz, i język ojczysty ustawiasz niezależnie, co pozwala na prawdziwą naukę z podwójnymi napisami."
+      },
+      {
+        "question": "Czy Funlingo to bezpieczne rozszerzenie do Chrome?",
+        "answer": "Tak. Funlingo jest opublikowane w oficjalnym Chrome Web Store, gdzie jest weryfikowane przez Google, i ma ocenę 4.8 na 5 gwiazdek. Działa lokalnie w Twojej przeglądarce, aby wyświetlać napisy, i nie wymaga zakładania konta, żeby zacząć naukę."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Zacznij uczyć się języków podczas oglądania",
+    "subtitle": "Dołącz do tysięcy osób, które korzystają z Funlingo, by mieć darmowe podwójne napisy i tłumaczenie AI na 10 platformach.",
+    "addToChrome": "Dodaj do Chrome — to za darmo",
+    "note": "Za darmo · Ocena 4.8/5 w Chrome Web Store"
+  }
+}

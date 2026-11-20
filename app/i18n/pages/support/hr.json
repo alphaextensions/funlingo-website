@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Pomoć i podrška",
+    "description": "Zatražite pomoć i podršku tima Funlinga. Prijavite probleme, predložite značajke ili postavite pitanja o našem proširenju za učenje jezika."
+  },
+  "header": {
+    "title": "Pomoć i podrška",
+    "subtitle": "Naš tim tu je da vam pomogne uspjeti s Funlingom. Javite nam se kad god želite."
+  },
+  "supportTypes": [
+    {
+      "title": "Tehnička podrška",
+      "description": "Problemi s aplikacijom, pogreške ili tehničke poteškoće",
+      "responseTime": "2–4 sata"
+    },
+    {
+      "title": "Zahtjev za značajku",
+      "description": "Predložite nove značajke ili poboljšanja",
+      "responseTime": "1–2 dana"
+    },
+    {
+      "title": "Opći upit",
+      "description": "Ostala pitanja ili zahtjevi za informacije",
+      "responseTime": "1–2 dana"
+    }
+  ],
+  "responseLabel": "Odgovor: {time}",
+  "successMessage": "Hvala što ste nam se javili! Odgovorit ćemo vam što je prije moguće.",
+  "form": {
+    "nameLabel": "Ime",
+    "namePlaceholder": "Vaše puno ime",
+    "emailLabel": "E-pošta",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "Vrsta problema",
+    "issueTypes": {
+      "technical": "Tehnička podrška",
+      "billing": "Naplata i račun",
+      "feature": "Zahtjev za značajku",
+      "general": "Opći upit",
+      "bug": "Prijava pogreške"
+    },
+    "priorityLabel": "Prioritet",
+    "priorities": {
+      "low": "Nizak",
+      "medium": "Srednji",
+      "high": "Visok",
+      "urgent": "Hitno"
+    },
+    "subjectLabel": "Predmet",
+    "subjectPlaceholder": "Kratak opis problema",
+    "messageLabel": "Poruka",
+    "messagePlaceholder": "Detaljno opišite svoj problem...",
+    "attachmentsLabel": "Privici (neobavezno)",
+    "removeAttachment": "x",
+    "submit": "Pošalji zahtjev za podršku"
+  },
+  "contact": {
+    "title": "Kontakt podaci",
+    "emailTitle": "Podrška e-poštom",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord zajednica",
+    "discordText": "Pridružite se za pomoć u stvarnom vremenu",
+    "responseTitle": "Vrijeme odgovora",
+    "responseText": "2–48 sati, ovisno o prioritetu"
+  },
+  "beforeContact": {
+    "title": "Prije nego što nam se obratite",
+    "tips": [
+      "Pogledajte odjeljak FAQ za brze odgovore",
+      "Ako je moguće, priložite relevantne snimke zaslona",
+      "Opišite korake za reproduciranje problema",
+      "Navedite svoj uređaj i verziju aplikacije"
+    ]
+  }
+}

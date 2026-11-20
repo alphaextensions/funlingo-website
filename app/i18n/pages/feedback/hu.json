@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Visszajelzés – oszd meg a véleményed",
+    "description": "Oszd meg visszajelzésedet a Funlingo csapatával. Segíts, hogy mindenki számára jobb nyelvtanulási élményt építsünk."
+  },
+  "header": {
+    "title": "Kíváncsiak vagyunk a véleményedre",
+    "subtitle": "A visszajelzésed segít, hogy mindenki számára jobb nyelvtanulási élményt építsünk"
+  },
+  "validation": {
+    "name": "Add meg a neved.",
+    "email": "Add meg az e-mail-címed.",
+    "message": "Írd meg a visszajelzésed.",
+    "uninstallReason": "Válassz legalább egy okot az eltávolításra."
+  },
+  "submitError": "Hiba történt. Kérjük, próbáld újra.",
+  "success": "Köszönjük a visszajelzést! Alaposan átnézzük.",
+  "form": {
+    "nameLabel": "Név",
+    "namePlaceholder": "A neved",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Kategória",
+    "categories": {
+      "feature": "Funkciókérés",
+      "bug": "Hibajelentés",
+      "improvement": "Fejlesztési javaslat",
+      "uninstall": "Az eltávolítás oka",
+      "other": "Egyéb"
+    },
+    "satisfactionLabel": "Általános elégedettség",
+    "satisfactionLevels": {
+      "1": "Nagyon elégedetlen",
+      "2": "Elégedetlen",
+      "3": "Semleges",
+      "4": "Elégedett",
+      "5": "Nagyon elégedett"
+    },
+    "uninstall": {
+      "heading": "Miért gondolkodsz az eltávolításon?",
+      "missingFeatures": "Hiányoznak a szükséges funkciók",
+      "notWorking": "Nem működik megfelelően",
+      "otherReasons": "Egyéb okok",
+      "otherPlaceholder": "Kérjük, add meg az egyéb okokat..."
+    },
+    "featureDetailsLabel": "A funkció részletei",
+    "desiredFeatureLabel": "Van olyan funkció, amit szívesen látnál?",
+    "featureDetailsPlaceholder": "Írd le a funkciót, amit szeretnél...",
+    "desiredFeaturePlaceholder": "Milyen funkció miatt gondolnád meg magad?",
+    "recommendLabel": "Ajánlanád a Funlingót másoknak?",
+    "recommendOptions": {
+      "none": "Válassz egy lehetőséget",
+      "definitely": "Egészen biztosan",
+      "probably": "Valószínűleg igen",
+      "unsure": "Nem vagyok biztos benne",
+      "probablyNot": "Valószínűleg nem",
+      "definitelyNot": "Biztosan nem"
+    },
+    "commentsLabel": "További megjegyzések",
+    "commentsPlaceholder": "Oszd meg további gondolataidat, javaslataidat vagy részleteket...",
+    "submitting": "Küldés...",
+    "submit": "Visszajelzés küldése"
+  },
+  "contact": {
+    "email": {
+      "title": "Írj nekünk",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Kövesd az oldalunkat"
+    }
+  }
+}

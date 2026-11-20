@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Zpětná vazba - Podělte se o svůj názor",
+    "description": "Podělte se o zpětnou vazbu s týmem Funlingo. Pomozte nám vytvořit lepší zážitek z výuky jazyků pro všechny."
+  },
+  "header": {
+    "title": "Rádi uslyšíme váš názor",
+    "subtitle": "Vaše postřehy nám pomáhají vytvářet lepší zážitek z výuky jazyků pro všechny"
+  },
+  "validation": {
+    "name": "Zadejte prosím své jméno.",
+    "email": "Zadejte prosím svůj e-mail.",
+    "message": "Napište prosím svou zpětnou vazbu.",
+    "uninstallReason": "Vyberte prosím alespoň jeden důvod odinstalace."
+  },
+  "submitError": "Něco se pokazilo. Zkuste to prosím znovu.",
+  "success": "Děkujeme za zpětnou vazbu! Pečlivě si ji projdeme.",
+  "form": {
+    "nameLabel": "Jméno",
+    "namePlaceholder": "Vaše jméno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vas.email@priklad.cz",
+    "categoryLabel": "Kategorie",
+    "categories": {
+      "feature": "Návrh funkce",
+      "bug": "Nahlášení chyby",
+      "improvement": "Návrh na vylepšení",
+      "uninstall": "Důvod odinstalace",
+      "other": "Jiné"
+    },
+    "satisfactionLabel": "Celková spokojenost",
+    "satisfactionLevels": {
+      "1": "Velmi nespokojen/a",
+      "2": "Nespokojen/a",
+      "3": "Neutrální",
+      "4": "Spokojen/a",
+      "5": "Velmi spokojen/a"
+    },
+    "uninstall": {
+      "heading": "Proč zvažujete odinstalaci?",
+      "missingFeatures": "Chybí mi potřebné funkce",
+      "notWorking": "Nefunguje správně",
+      "otherReasons": "Jiné důvody",
+      "otherPlaceholder": "Uveďte prosím jiné důvody..."
+    },
+    "featureDetailsLabel": "Podrobnosti o funkci",
+    "desiredFeatureLabel": "Jakou funkci byste si přáli, abychom vytvořili?",
+    "featureDetailsPlaceholder": "Popište funkci, kterou byste chtěli vidět...",
+    "desiredFeaturePlaceholder": "Jaká funkce by vás přiměla to přehodnotit?",
+    "recommendLabel": "Doporučili byste Funlingo ostatním?",
+    "recommendOptions": {
+      "none": "Vyberte možnost",
+      "definitely": "Určitě ano",
+      "probably": "Spíše ano",
+      "unsure": "Nevím",
+      "probablyNot": "Spíše ne",
+      "definitelyNot": "Určitě ne"
+    },
+    "commentsLabel": "Další komentáře",
+    "commentsPlaceholder": "Podělte se o další myšlenky, návrhy nebo podrobnosti...",
+    "submitting": "Odesílání...",
+    "submit": "Odeslat zpětnou vazbu"
+  },
+  "contact": {
+    "email": {
+      "title": "Napište nám",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Sledujte naši stránku"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Privacybeleid",
+    "description": "Privacybeleid van Funlingo. Lees hoe we met je gegevens omgaan wanneer je de Funlingo Chrome-extensie en onze website gebruikt."
+  },
+  "translationNotice": "Deze vertaling is uitsluitend bedoeld voor het gemak. Bij eventuele verschillen is de Engelse versie van dit beleid leidend.",
+  "englishLinkText": "Lees de Engelse versie",
+  "hero": {
+    "badge": "Jouw privacy telt",
+    "title": "Privacybeleid",
+    "intro": "Welkom bij Funlingo. Je privacy is belangrijk voor ons. Dit privacybeleid legt uit hoe we met je gegevens omgaan wanneer je de Funlingo Chrome-extensie en onze website gebruikt."
+  },
+  "effectiveDate": "Ingangsdatum: november 2025",
+  "sections": [
+    {
+      "title": "Gegevens die we niet verzamelen",
+      "content": "We hebben Funlingo gebouwd zodat gebruikers tijdens het streamen kunnen genieten van dubbele ondertiteling en talen kunnen leren zonder hun privacy op te geven. We gebruiken geen cookies of analysediensten van derden om je activiteit te volgen. We verkopen of verhuren je gegevens aan niemand."
+    },
+    {
+      "title": "Gebruikte machtigingen",
+      "content": "Funlingo heeft bepaalde Chrome-machtigingen uitsluitend nodig om goed te werken: toegang tot pagina's van streamingsites (bijv. Netflix, YouTube) om dubbele ondertiteling in de videospeler te tonen, en de ActiveTab-machtiging om ondertitels in te voegen en interactiviteit mogelijk te maken (pauzeren bij aanwijzen, vertalingen, enz.). Deze machtigingen worden alleen lokaal op je apparaat gebruikt. Funlingo stuurt nooit paginagegevens of videocontent naar een externe server."
+    },
+    {
+      "title": "Gegevensverwerking",
+      "content": "Alle weergave van ondertitels, vertalingen en interacties bij aanwijzen vinden lokaal in je browser plaats. Als toekomstige functies API's gebruiken voor vertalingen of woordenboekopzoekingen, worden verzoeken anoniem gedaan en zonder gebruikers-ID's op te slaan."
+    },
+    {
+      "title": "Diensten van derden",
+      "content": "Funlingo kan verbinding maken met openbare vertaal- of woordenboek-API's (bijvoorbeeld de Google Translate API of vergelijkbare diensten). Deze worden alleen gebruikt om woordbetekenissen of vertalingen op te halen en verzenden geen identiteits- of browsegegevens van gebruikers."
+    },
+    {
+      "title": "Privacy van kinderen",
+      "content": "Funlingo is veilig voor alle leeftijden en verzamelt niet bewust gegevens van kinderen jonger dan 13 jaar."
+    },
+    {
+      "title": "Beveiliging",
+      "content": "Omdat we geen persoonsgegevens opslaan, blijven je gegevens op je apparaat. We volgen best practices om ervoor te zorgen dat de scripts van de extensie veilig zijn en beperkt blijven tot de noodzakelijke domeinen."
+    },
+    {
+      "title": "Wijzigingen in dit beleid",
+      "content": "We kunnen dit privacybeleid af en toe bijwerken. Bij belangrijke wijzigingen passen we de ingangsdatum aan en publiceren we de nieuwe versie op onze website."
+    }
+  ],
+  "contact": {
+    "badge": "Neem contact op",
+    "title": "Contact",
+    "text": "Heb je vragen of zorgen over dit privacybeleid? Neem dan contact met ons op via:"
+  },
+  "commitment": "Funlingo zet zich in om talen leren via streaming veilig, privé en moeiteloos te maken."
+}

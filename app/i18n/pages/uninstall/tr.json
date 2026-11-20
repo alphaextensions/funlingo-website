@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Gitmenize üzüldük",
+    "description": "Funlingo'yu neden kaldırdığınızı bize söyleyin. Geri bildiriminiz daha iyi bir dil öğrenme deneyimi oluşturmamıza yardımcı olur."
+  },
+  "form": {
+    "title": "Funlingo'yu neden kaldırdınız?",
+    "subtitle": "Tek dokunuş yeterli. Yanıtınız doğrudan ekibe ulaşır.",
+    "reasonsAriaLabel": "Kaldırma nedeni",
+    "optional": "(isteğe bağlı)",
+    "howLongLabel": "Funlingo'yu ne kadar süre kullandınız? (isteğe bağlı)",
+    "emailLabel": "E-posta (isteğe bağlı), düzeltildiğinde size haber verebilmemiz için",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Geri bildirim gönder"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Bir şey çalışmıyordu",
+      "prompt": "Ne ters gitti?",
+      "placeholder": "Hangi sitede ve ne oldu? Tek bir satır bile yardımcı olur."
+    },
+    "translations": {
+      "label": "Çeviriler yeterince iyi değildi",
+      "prompt": "Hangi dil çifti ve hangi site?",
+      "placeholder": "ör. Netflix'te İngilizce → İspanyolca, çeviriler fazla kelimesi kelimesineydi…"
+    },
+    "platform": {
+      "label": "Kullandığım yayın sitesi desteklenmiyor",
+      "prompt": "Hangi site veya tarayıcı?",
+      "placeholder": "ör. Safari, Firefox, belirli bir yayın sitesi…"
+    },
+    "missing": {
+      "label": "İhtiyacım olan bir özellik eksikti",
+      "prompt": "Neyi eksik buldunuz?",
+      "placeholder": "ör. bir dil, bir yayın hizmeti, bir kelime listesi…"
+    },
+    "switched": {
+      "label": "Başka bir araca geçtim",
+      "prompt": "Hangisine?",
+      "placeholder": "ör. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Sadece deniyordum / şu an ihtiyacım yok",
+      "prompt": "Onu tutmanızı ne sağlardı?",
+      "placeholder": "Kendi kelimelerinizle anlatın."
+    },
+    "other": {
+      "label": "Başka bir şey",
+      "prompt": "Funlingo'yu neden kaldırdınız?",
+      "placeholder": "Kendi kelimelerinizle anlatın."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Bir günden az",
+    "lessThanWeek": "Bir haftadan az",
+    "oneToThreeWeeks": "1-3 hafta",
+    "oneToThreeMonths": "1-3 ay"
+  },
+  "thanks": {
+    "title": "Teşekkürler, aldık.",
+    "recoverable": "Her hafta düzeltmeler ve yeni özellikler yayınlıyoruz. Funlingo'ya bir şans daha verirseniz bu sorun çoktan çözülmüş olabilir.",
+    "notRecoverable": "Geri bildiriminiz doğrudan ekibe ulaşır. Zaman ayırdığınız için teşekkürler.",
+    "emailNote": "Yenilik olduğunda size {email} adresinden yazacağız.",
+    "reinstall": "Funlingo'ya bir şans daha verin",
+    "backHome": "Ana sayfaya dön"
+  }
+}

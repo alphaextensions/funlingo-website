@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate: So sánh công cụ phụ đề kép",
+    "description": "So sánh chi tiết tính năng của Funlingo, Trancy và Immersive Translate. Xem vì sao Funlingo là lựa chọn miễn phí tốt nhất cho phụ đề kép trên Netflix & YouTube."
+  },
+  "hero": {
+    "badge": "So sánh chi tiết",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Chưa biết tiện ích học ngôn ngữ nào phù hợp với bạn? Chúng tôi phân tích tính năng, giá cả và khả năng của các công cụ hàng đầu năm 2026."
+  },
+  "table": {
+    "ariaLabel": "So sánh tính năng giữa Funlingo, Trancy và Immersive Translate",
+    "featureHeader": "Tính năng",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Popup theo từng từ",
+        "sub": "Nghĩa tiếng mẹ đẻ + \"Xem ví dụ\" (Độc quyền)",
+        "fun": "Popup có nghĩa tiếng mẹ đẻ + Xem ví dụ (UX độc đáo).",
+        "trancy": "Không có Xem ví dụ trong popup.",
+        "immersive": "Không có."
+      },
+      {
+        "feature": "Nghĩa tiếng mẹ đẻ ngay trong dòng",
+        "sub": "Trong ngoặc cho từ khó (Độc quyền)",
+        "fun": "Hiển thị nghĩa tiếng mẹ đẻ trong ngoặc ngay trong dòng cho từ được chọn/từ khó.",
+        "trancy": "Không có.",
+        "immersive": "Không có."
+      },
+      {
+        "feature": "Phát âm từng từ",
+        "sub": "(đánh vần + âm thanh)",
+        "fun": "Phát âm từng từ (gợi ý đánh vần + âm thanh + phát chậm).",
+        "trancy": "Hạn chế / có tính năng TTS; giao diện đánh vần từng từ chưa được mô tả rõ.",
+        "immersive": "TTS hạn chế; không có tài liệu về giao diện đánh vần từng từ."
+      },
+      {
+        "feature": "AI giải thích ngữ cảnh khi nhấp",
+        "sub": "Giải thích (cụm từ & cách dùng)",
+        "fun": "Tích hợp khối AI nhấp để giải thích (ngữ cảnh cấp cụm từ).",
+        "trancy": "Có công cụ ngữ pháp/phân tích; có luồng giải thích theo ngữ cảnh.",
+        "immersive": "Có một số tính năng dịch theo ngữ cảnh; trải nghiệm trong trình phát không giống."
+      },
+      {
+        "feature": "Lưu từ vựng & Ôn tập",
+        "sub": "Bộ thẻ",
+        "fun": "Lưu vào sổ từ vựng + danh sách ôn tập / xuất dữ liệu; có sẵn trải nghiệm ôn tập.",
+        "trancy": "Có lưu/đánh dấu nhưng tính năng bộ thẻ ôn tập đầy đủ còn hạn chế hoặc thiên về chế độ học.",
+        "immersive": "Không có tài liệu công khai về bộ thẻ ôn tập tích hợp."
+      },
+      {
+        "feature": "Quyền riêng tư & Tiện ích",
+        "sub": "Dấu hiệu an toàn",
+        "fun": "Quyền truy cập & hướng dẫn quyền riêng tư rõ ràng; tiện ích gọn nhẹ.",
+        "trancy": "Có thông tin quyền riêng tư; tính năng doanh nghiệp có thể khác.",
+        "immersive": "Tùy trường hợp; tài liệu công khai hạn chế."
+      }
+    ],
+    "legend": {
+      "core": "Có sẵn như tính năng cốt lõi",
+      "available": "Có tính năng",
+      "limited": "Hạn chế / Không phải chính"
+    }
+  },
+  "why": {
+    "title": "Vì sao chọn Funlingo?",
+    "items": [
+      "Hoàn toàn miễn phí: Không khóa tính năng cốt lõi sau gói trả phí.",
+      "Tương thích rộng rãi: Hoạt động mượt mà trên Netflix, YouTube và Prime.",
+      "Ứng dụng AI: Giải thích theo ngữ cảnh, không chỉ dịch trực tiếp.",
+      "Không gây phiền: Thiết kế nhẹ nhàng, không làm phiền khi bạn xem."
+    ]
+  },
+  "cta": {
+    "title": "Sẵn sàng chuyển đổi?",
+    "body": "Cài đặt Funlingo ngay hôm nay và cảm nhận sự khác biệt. Chỉ mất chưa đến 30 giây để bắt đầu.",
+    "button": "Tải Funlingo cho Chrome"
+  }
+}

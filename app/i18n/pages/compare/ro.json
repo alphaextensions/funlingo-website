@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate: subtitrări duble",
+    "description": "Comparație între Funlingo, Trancy și Immersive Translate. Află de ce Funlingo e cea mai bună alternativă gratuită cu subtitrări duble pe Netflix și YouTube."
+  },
+  "hero": {
+    "badge": "Comparație detaliată",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Nu știi ce extensie de învățare a limbilor ți se potrivește? Analizăm funcțiile, prețurile și capabilitățile celor mai bune instrumente din 2026."
+  },
+  "table": {
+    "ariaLabel": "Comparație de funcții între Funlingo, Trancy și Immersive Translate",
+    "featureHeader": "Funcție",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Pop-up la nivel de cuvânt",
+        "sub": "Sens în limba maternă + „Vezi exemplu” (unic)",
+        "fun": "Pop-up-ul include sensul în limba maternă + Vezi exemplu (UX unic).",
+        "trancy": "Fără Vezi exemplu în pop-up.",
+        "immersive": "Indisponibil."
+      },
+      {
+        "feature": "Sens nativ în text",
+        "sub": "Între paranteze pentru cuvintele dificile (unic)",
+        "fun": "Sensul în limba maternă, între paranteze, direct în text, pentru cuvintele selectate/dificile.",
+        "trancy": "Indisponibil.",
+        "immersive": "Indisponibil."
+      },
+      {
+        "feature": "Pronunție pe cuvânt",
+        "sub": "(transcriere + audio)",
+        "fun": "Pronunția fiecărui cuvânt (transcriere fonetică + audio + redare lentă).",
+        "trancy": "Funcții TTS limitate; interfața de transcriere pe cuvânt nu e documentată clar.",
+        "immersive": "TTS limitat; interfața de transcriere pe cuvânt nu e documentată."
+      },
+      {
+        "feature": "AI cu clic pentru context",
+        "sub": "Explicații (expresii și note de utilizare)",
+        "fun": "Blocuri AI integrate care explică la un clic (context la nivel de expresie).",
+        "trancy": "Oferă instrumente de gramatică/analiză; există un flux de explicații contextuale.",
+        "immersive": "Unele funcții de traducere contextuală; experiența în player nu e echivalentă."
+      },
+      {
+        "feature": "Salvare în vocabular și recapitulare",
+        "sub": "Pachet",
+        "fun": "Salvare în vocabular + listă de recapitulare / export; UX de recapitulare integrat.",
+        "trancy": "Există salvare/marcaje, dar funcțiile de pachet de recapitulare sunt limitate sau orientate spre modul de studiu.",
+        "immersive": "Nu este documentat public un pachet de recapitulare integrat."
+      },
+      {
+        "feature": "Confidențialitate și extensie",
+        "sub": "Semnale de siguranță",
+        "fun": "Permisiuni explicite și ghid de confidențialitate; model de extensie ușor.",
+        "trancy": "Informații de confidențialitate disponibile; funcțiile enterprise pot diferi.",
+        "immersive": "Variază; documentație publică limitată."
+      }
+    ],
+    "legend": {
+      "core": "Funcție principală prezentă",
+      "available": "Funcție disponibilă",
+      "limited": "Limitat / Nu e principal"
+    }
+  },
+  "why": {
+    "title": "De ce să alegi Funlingo?",
+    "items": [
+      "Complet gratuit: nicio funcție de bază blocată în spatele unui abonament premium.",
+      "Compatibilitate universală: funcționează impecabil pe Netflix, YouTube și Prime.",
+      "Bazat pe AI: explicații contextuale, nu doar traduceri directe.",
+      "Zero bătăi de cap: gândit să fie discret și să nu te deranjeze în timp ce te uiți."
+    ]
+  },
+  "cta": {
+    "title": "Gata de schimbare?",
+    "body": "Instalează Funlingo azi și simte diferența. Durează mai puțin de 30 de secunde să începi.",
+    "button": "Obține Funlingo pentru Chrome"
+  }
+}

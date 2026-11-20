@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "עזרה ותמיכה",
+    "description": "קבלו עזרה ותמיכה מצוות Funlingo. דווחו על בעיות, בקשו פיצ'רים או שאלו שאלות על תוסף לימוד השפות שלנו."
+  },
+  "header": {
+    "title": "עזרה ותמיכה",
+    "subtitle": "הצוות שלנו כאן כדי לעזור לכם להצליח עם Funlingo. פנו אלינו בכל עת."
+  },
+  "supportTypes": [
+    {
+      "title": "תמיכה טכנית",
+      "description": "בעיות באפליקציה, באגים או תקלות טכניות",
+      "responseTime": "2-4 שעות"
+    },
+    {
+      "title": "בקשת פיצ'ר",
+      "description": "הציעו פיצ'רים חדשים או שיפורים",
+      "responseTime": "1-2 ימים"
+    },
+    {
+      "title": "פנייה כללית",
+      "description": "שאלות אחרות או בקשות למידע",
+      "responseTime": "1-2 ימים"
+    }
+  ],
+  "responseLabel": "זמן מענה: {time}",
+  "successMessage": "תודה שפניתם אלינו! נחזור אליכם בהקדם האפשרי.",
+  "form": {
+    "nameLabel": "שם",
+    "namePlaceholder": "השם המלא שלכם",
+    "emailLabel": "אימייל",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "סוג הפנייה",
+    "issueTypes": {
+      "technical": "תמיכה טכנית",
+      "billing": "חיוב וחשבון",
+      "feature": "בקשת פיצ'ר",
+      "general": "פנייה כללית",
+      "bug": "דיווח על באג"
+    },
+    "priorityLabel": "עדיפות",
+    "priorities": {
+      "low": "נמוכה",
+      "medium": "בינונית",
+      "high": "גבוהה",
+      "urgent": "דחופה"
+    },
+    "subjectLabel": "נושא",
+    "subjectPlaceholder": "תיאור קצר של הבעיה",
+    "messageLabel": "הודעה",
+    "messagePlaceholder": "נא לתאר את הבעיה בפירוט...",
+    "attachmentsLabel": "קבצים מצורפים (אופציונלי)",
+    "removeAttachment": "x",
+    "submit": "שליחת בקשת תמיכה"
+  },
+  "contact": {
+    "title": "פרטי התקשרות",
+    "emailTitle": "תמיכה באימייל",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "קהילת Discord",
+    "discordText": "הצטרפו לעזרה בזמן אמת",
+    "responseTitle": "זמן מענה",
+    "responseText": "2-48 שעות, בהתאם לעדיפות"
+  },
+  "beforeContact": {
+    "title": "לפני שפונים אלינו",
+    "tips": [
+      "עיינו בשאלות הנפוצות לתשובות מהירות",
+      "צרפו צילומי מסך רלוונטיים אם אפשר",
+      "תארו את השלבים לשחזור הבעיה",
+      "ציינו את המכשיר ואת גרסת האפליקציה"
+    ]
+  }
+}

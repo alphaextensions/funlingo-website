@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Обратна връзка - сподели мнението си",
+    "description": "Сподели мнението си с екипа на Funlingo. Помогни ни да изградим по-добро изживяване при ученето на езици за всички."
+  },
+  "header": {
+    "title": "Ще се радваме на мнението ти",
+    "subtitle": "Мнението ти ни помага да изградим по-добро изживяване при ученето на езици за всички"
+  },
+  "validation": {
+    "name": "Въведи името си.",
+    "email": "Въведи имейла си.",
+    "message": "Напиши мнението си.",
+    "uninstallReason": "Избери поне една причина за деинсталиране."
+  },
+  "submitError": "Нещо се обърка. Опитай отново.",
+  "success": "Благодарим за обратната връзка! Ще я прегледаме внимателно.",
+  "form": {
+    "nameLabel": "Име",
+    "namePlaceholder": "Твоето име",
+    "emailLabel": "Имейл",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Категория",
+    "categories": {
+      "feature": "Заявка за функция",
+      "bug": "Доклад за грешка",
+      "improvement": "Предложение за подобрение",
+      "uninstall": "Причина за деинсталиране",
+      "other": "Друго"
+    },
+    "satisfactionLabel": "Обща удовлетвореност",
+    "satisfactionLevels": {
+      "1": "Много неудовлетворен/а",
+      "2": "Неудовлетворен/а",
+      "3": "Неутрален/а",
+      "4": "Удовлетворен/а",
+      "5": "Много удовлетворен/а"
+    },
+    "uninstall": {
+      "heading": "Защо обмисляш да деинсталираш?",
+      "missingFeatures": "Липсват функции, от които се нуждая",
+      "notWorking": "Не работи правилно",
+      "otherReasons": "Други причини",
+      "otherPlaceholder": "Посочи други причини..."
+    },
+    "featureDetailsLabel": "Подробности за функцията",
+    "desiredFeatureLabel": "Има ли функция, която искаш да създадем?",
+    "featureDetailsPlaceholder": "Опиши функцията, която би искал да видиш...",
+    "desiredFeaturePlaceholder": "Коя функция би те накарала да размислиш?",
+    "recommendLabel": "Би ли препоръчал Funlingo на други?",
+    "recommendOptions": {
+      "none": "Избери опция",
+      "definitely": "Определено да",
+      "probably": "Вероятно да",
+      "unsure": "Не съм сигурен/на",
+      "probablyNot": "Вероятно не",
+      "definitelyNot": "Определено не"
+    },
+    "commentsLabel": "Допълнителни коментари",
+    "commentsPlaceholder": "Сподели допълнителни мисли, предложения или подробности...",
+    "submitting": "Изпращане...",
+    "submit": "Изпрати обратна връзка"
+  },
+  "contact": {
+    "email": {
+      "title": "Пиши ни",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Последвай страницата ни"
+    }
+  }
+}

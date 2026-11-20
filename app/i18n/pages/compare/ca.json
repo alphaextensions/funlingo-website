@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate: comparativa",
+    "description": "Comparativa detallada de Funlingo, Trancy i Immersive Translate. Descobreix per què Funlingo és la millor alternativa gratuïta de subtítols dobles."
+  },
+  "hero": {
+    "badge": "Comparativa detallada",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "No saps quina extensió per aprendre idiomes et convé? Analitzem les funcions, els preus i les capacitats de les millors eines del 2026."
+  },
+  "table": {
+    "ariaLabel": "Comparativa de funcions entre Funlingo, Trancy i Immersive Translate",
+    "featureHeader": "Funció",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Finestra emergent per paraula",
+        "sub": "Significat en el teu idioma + «Mostra un exemple» (exclusiu)",
+        "fun": "La finestra mostra el significat en el teu idioma + Mostra un exemple (UX exclusiva).",
+        "trancy": "Sense «Mostra un exemple» a la finestra emergent.",
+        "immersive": "No disponible."
+      },
+      {
+        "feature": "Significat en línia",
+        "sub": "Entre claudàtors per a paraules difícils (exclusiu)",
+        "fun": "Significat en el teu idioma entre claudàtors per a paraules seleccionades o difícils.",
+        "trancy": "No disponible.",
+        "immersive": "No disponible."
+      },
+      {
+        "feature": "Pronunciació per paraula",
+        "sub": "(transcripció + àudio)",
+        "fun": "Pronunciació de cada paraula (transcripció + àudio + reproducció lenta).",
+        "trancy": "Limitada / hi ha funcions TTS; la transcripció per paraula no està clarament documentada.",
+        "immersive": "TTS limitat; transcripció per paraula no documentada."
+      },
+      {
+        "feature": "IA contextual amb un clic",
+        "sub": "Explicacions (frases i notes d'ús)",
+        "fun": "Blocs d'explicació amb IA integrats amb un clic (context a nivell de frase).",
+        "trancy": "Ofereix eines de gramàtica i anàlisi; inclou explicacions contextuals.",
+        "immersive": "Algunes funcions de traducció contextual; l'experiència al reproductor no és la mateixa."
+      },
+      {
+        "feature": "Desar vocabulari i repassar",
+        "sub": "Baralla",
+        "fun": "Desar vocabulari + llista de repàs / exportació; repàs integrat.",
+        "trancy": "Permet desar / marcar, però el repàs és limitat o orientat al mode d'estudi.",
+        "immersive": "No hi ha cap baralla de repàs integrada documentada públicament."
+      },
+      {
+        "feature": "Privadesa i seguretat",
+        "sub": "de l'extensió",
+        "fun": "Permisos explícits i pautes de privadesa clares; extensió lleugera.",
+        "trancy": "Informació de privadesa disponible; les funcions empresarials poden variar.",
+        "immersive": "Variable; documentació pública limitada."
+      }
+    ],
+    "legend": {
+      "core": "Funció principal inclosa",
+      "available": "Funció disponible",
+      "limited": "Limitada / no principal"
+    }
+  },
+  "why": {
+    "title": "Per què triar Funlingo?",
+    "items": [
+      "Totalment gratuït: sense bloquejos prèmium a les funcions principals.",
+      "Compatibilitat universal: funciona perfectament a Netflix, YouTube i Prime.",
+      "Amb IA: explicacions en context, no només traduccions literals.",
+      "Zero fricció: dissenyat per passar desapercebut mentre mires."
+    ]
+  },
+  "cta": {
+    "title": "A punt per canviar?",
+    "body": "Instal·la Funlingo avui i nota la diferència. Començar et costarà menys de 30 segons.",
+    "button": "Aconsegueix Funlingo per a Chrome"
+  }
+}

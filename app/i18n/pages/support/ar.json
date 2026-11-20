@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "المساعدة والدعم",
+    "description": "احصل على المساعدة والدعم من فريق Funlingo. أبلغ عن مشكلة أو اطلب ميزة أو اطرح أسئلتك حول إضافتنا لتعلّم اللغات."
+  },
+  "header": {
+    "title": "المساعدة والدعم",
+    "subtitle": "فريقنا هنا ليساعدك على النجاح مع Funlingo. تواصل معنا في أي وقت."
+  },
+  "supportTypes": [
+    {
+      "title": "الدعم الفني",
+      "description": "مشكلات في التطبيق أو أخطاء أو أعطال تقنية",
+      "responseTime": "2-4 ساعات"
+    },
+    {
+      "title": "طلب ميزة",
+      "description": "اقترح ميزات جديدة أو تحسينات",
+      "responseTime": "1-2 يوم"
+    },
+    {
+      "title": "استفسار عام",
+      "description": "أسئلة أخرى أو طلبات معلومات",
+      "responseTime": "1-2 يوم"
+    }
+  ],
+  "responseLabel": "الرد: {time}",
+  "successMessage": "شكرًا لتواصلك معنا! سنرد عليك في أقرب وقت ممكن.",
+  "form": {
+    "nameLabel": "الاسم",
+    "namePlaceholder": "اسمك الكامل",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "نوع المشكلة",
+    "issueTypes": {
+      "technical": "الدعم الفني",
+      "billing": "الفوترة والحساب",
+      "feature": "طلب ميزة",
+      "general": "استفسار عام",
+      "bug": "الإبلاغ عن خطأ"
+    },
+    "priorityLabel": "الأولوية",
+    "priorities": {
+      "low": "منخفضة",
+      "medium": "متوسطة",
+      "high": "عالية",
+      "urgent": "عاجلة"
+    },
+    "subjectLabel": "الموضوع",
+    "subjectPlaceholder": "وصف موجز لمشكلتك",
+    "messageLabel": "الرسالة",
+    "messagePlaceholder": "يُرجى وصف مشكلتك بالتفصيل...",
+    "attachmentsLabel": "المرفقات (اختياري)",
+    "removeAttachment": "x",
+    "submit": "إرسال طلب الدعم"
+  },
+  "contact": {
+    "title": "معلومات التواصل",
+    "emailTitle": "الدعم عبر البريد",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "مجتمع Discord",
+    "discordText": "انضم للحصول على مساعدة فورية",
+    "responseTitle": "وقت الرد",
+    "responseText": "من 2 إلى 48 ساعة حسب الأولوية"
+  },
+  "beforeContact": {
+    "title": "قبل أن تتواصل معنا",
+    "tips": [
+      "راجع قسم الأسئلة الشائعة للحصول على إجابات سريعة",
+      "أرفق لقطات شاشة ذات صلة إن أمكن",
+      "صِف خطوات إعادة إنتاج المشكلة",
+      "اذكر جهازك وإصدار التطبيق"
+    ]
+  }
+}

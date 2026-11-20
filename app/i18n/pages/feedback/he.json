@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "משוב — שתפו אותנו במחשבות שלכם",
+    "description": "שתפו את צוות Funlingo במשוב שלכם ועזרו לנו לבנות חוויית לימוד שפות טובה יותר לכולם."
+  },
+  "header": {
+    "title": "נשמח לשמוע מכם",
+    "subtitle": "המשוב שלכם עוזר לנו לבנות חוויית לימוד שפות טובה יותר לכולם"
+  },
+  "validation": {
+    "name": "נא להזין את שמכם.",
+    "email": "נא להזין את כתובת האימייל שלכם.",
+    "message": "נא לכתוב את המשוב שלכם.",
+    "uninstallReason": "נא לבחור לפחות סיבה אחת להסרה."
+  },
+  "submitError": "משהו השתבש. נא לנסות שוב.",
+  "success": "תודה על המשוב! נעבור עליו בעיון.",
+  "form": {
+    "nameLabel": "שם",
+    "namePlaceholder": "השם שלכם",
+    "emailLabel": "אימייל",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "קטגוריה",
+    "categories": {
+      "feature": "בקשת פיצ'ר",
+      "bug": "דיווח על באג",
+      "improvement": "הצעה לשיפור",
+      "uninstall": "סיבת ההסרה",
+      "other": "אחר"
+    },
+    "satisfactionLabel": "שביעות רצון כללית",
+    "satisfactionLevels": {
+      "1": "לא מרוצה בכלל",
+      "2": "לא מרוצה",
+      "3": "ניטרלי",
+      "4": "מרוצה",
+      "5": "מרוצה מאוד"
+    },
+    "uninstall": {
+      "heading": "למה אתם שוקלים להסיר את התוסף?",
+      "missingFeatures": "חסרים פיצ'רים שאני צריך/ה",
+      "notWorking": "לא עובד כמו שצריך",
+      "otherReasons": "סיבות אחרות",
+      "otherPlaceholder": "נא לפרט סיבות אחרות..."
+    },
+    "featureDetailsLabel": "פרטי הפיצ'ר",
+    "desiredFeatureLabel": "יש פיצ'ר שהייתם רוצים שנבנה?",
+    "featureDetailsPlaceholder": "תארו את הפיצ'ר שהייתם רוצים לראות...",
+    "desiredFeaturePlaceholder": "איזה פיצ'ר היה גורם לכם לשקול מחדש?",
+    "recommendLabel": "הייתם ממליצים על Funlingo לאחרים?",
+    "recommendOptions": {
+      "none": "בחרו אפשרות",
+      "definitely": "בהחלט כן",
+      "probably": "כנראה שכן",
+      "unsure": "לא בטוח/ה",
+      "probablyNot": "כנראה שלא",
+      "definitelyNot": "בהחלט לא"
+    },
+    "commentsLabel": "הערות נוספות",
+    "commentsPlaceholder": "שתפו מחשבות, הצעות או פרטים נוספים...",
+    "submitting": "שולח...",
+    "submit": "שליחת משוב"
+  },
+  "contact": {
+    "email": {
+      "title": "כתבו לנו",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "עקבו אחרי הדף שלנו"
+    }
+  }
+}

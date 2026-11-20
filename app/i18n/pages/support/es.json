@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Ayuda y soporte",
+    "description": "Recibe ayuda del equipo de Funlingo. Informa de problemas, solicita funciones o haz preguntas sobre nuestra extensión para aprender idiomas."
+  },
+  "header": {
+    "title": "Ayuda y soporte",
+    "subtitle": "Nuestro equipo está aquí para ayudarte a sacar el máximo partido a Funlingo. Escríbenos cuando quieras."
+  },
+  "supportTypes": [
+    {
+      "title": "Soporte técnico",
+      "description": "Problemas con la app, errores o fallos técnicos",
+      "responseTime": "2-4 horas"
+    },
+    {
+      "title": "Solicitud de función",
+      "description": "Sugiere nuevas funciones o mejoras",
+      "responseTime": "1-2 días"
+    },
+    {
+      "title": "Consulta general",
+      "description": "Otras preguntas o solicitudes de información",
+      "responseTime": "1-2 días"
+    }
+  ],
+  "responseLabel": "Respuesta: {time}",
+  "successMessage": "¡Gracias por contactarnos! Te responderemos lo antes posible.",
+  "form": {
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre completo",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "tu.correo@example.com",
+    "issueTypeLabel": "Tipo de incidencia",
+    "issueTypes": {
+      "technical": "Soporte técnico",
+      "billing": "Facturación y cuenta",
+      "feature": "Solicitud de función",
+      "general": "Consulta general",
+      "bug": "Informe de error"
+    },
+    "priorityLabel": "Prioridad",
+    "priorities": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "subjectLabel": "Asunto",
+    "subjectPlaceholder": "Breve descripción de tu problema",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Describe tu problema con detalle...",
+    "attachmentsLabel": "Archivos adjuntos (opcional)",
+    "removeAttachment": "x",
+    "submit": "Enviar solicitud de soporte"
+  },
+  "contact": {
+    "title": "Información de contacto",
+    "emailTitle": "Soporte por correo",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Comunidad de Discord",
+    "discordText": "Únete para recibir ayuda en tiempo real",
+    "responseTitle": "Tiempo de respuesta",
+    "responseText": "2-48 horas según la prioridad"
+  },
+  "beforeContact": {
+    "title": "Antes de contactarnos",
+    "tips": [
+      "Consulta nuestras preguntas frecuentes para obtener respuestas rápidas",
+      "Incluye capturas de pantalla relevantes si es posible",
+      "Describe los pasos para reproducir el problema",
+      "Indica tu dispositivo y la versión de la app"
+    ]
+  }
+}

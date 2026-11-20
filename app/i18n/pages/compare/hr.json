@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate – usporedba alata",
+    "description": "Detaljna usporedba značajki Funlinga, Trancyja i Immersive Translatea. Saznajte zašto je Funlingo najbolja besplatna opcija za dvostruke titlove na Netflixu i YouTubeu."
+  },
+  "hero": {
+    "badge": "Detaljna usporedba",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Niste sigurni koje je proširenje za učenje jezika pravo za vas? Usporedili smo značajke, cijene i mogućnosti vodećih alata u 2026."
+  },
+  "table": {
+    "ariaLabel": "Usporedba značajki Funlinga, Trancyja i Immersive Translatea",
+    "featureHeader": "Značajka",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Skočni prozor za riječ",
+        "sub": "Značenje na materinskom + „Prikaži primjer” (jedinstveno)",
+        "fun": "Skočni prozor sadrži značenje na materinskom jeziku + Prikaži primjer (jedinstveni UX).",
+        "trancy": "Nema opcije Prikaži primjer u skočnom prozoru.",
+        "immersive": "Nije dostupno."
+      },
+      {
+        "feature": "Značenje u retku",
+        "sub": "U zagradama za teške riječi (jedinstveno)",
+        "fun": "Značenje na materinskom jeziku u zagradama, u retku, za odabrane/teške riječi.",
+        "trancy": "Nije dostupno.",
+        "immersive": "Nije dostupno."
+      },
+      {
+        "feature": "Izgovor svake riječi",
+        "sub": "(zapis + zvuk)",
+        "fun": "Izgovor za svaku riječ (zapis izgovora + zvuk + usporena reprodukcija).",
+        "trancy": "Ograničeno / postoje TTS značajke; sučelje sa zapisom izgovora po riječi nije jasno dokumentirano.",
+        "immersive": "Ograničen TTS; sučelje sa zapisom izgovora po riječi nije dokumentirano."
+      },
+      {
+        "feature": "AI objašnjenja na klik",
+        "sub": "Objašnjenja (fraze i napomene o uporabi)",
+        "fun": "Integrirani AI blokovi s objašnjenjem na klik (kontekst na razini fraze).",
+        "trancy": "Nudi alate za gramatiku/analizu; postoji tijek kontekstualnih objašnjenja.",
+        "immersive": "Neke značajke kontekstualnog prijevoda; iskustvo u playeru nije isto."
+      },
+      {
+        "feature": "Spremanje u vokabular i ponavljanje",
+        "sub": "Špil",
+        "fun": "Spremanje u vokabular + popis za ponavljanje / izvoz; ugrađeno sučelje za ponavljanje.",
+        "trancy": "Spremanje/oznake postoje, ali su značajke špila za ponavljanje ograničene ili vezane uz način učenja.",
+        "immersive": "Integrirani špil za ponavljanje nije javno dokumentiran."
+      },
+      {
+        "feature": "Privatnost i proširenje",
+        "sub": "Signali sigurnosti",
+        "fun": "Jasna dopuštenja i smjernice o privatnosti; lagan model proširenja.",
+        "trancy": "Informacije o privatnosti su dostupne; poslovne značajke mogu se razlikovati.",
+        "immersive": "Razlikuje se; javna dokumentacija je ograničena."
+      }
+    ],
+    "legend": {
+      "core": "Ključna značajka",
+      "available": "Značajka dostupna",
+      "limited": "Ograničeno / nije primarno"
+    }
+  },
+  "why": {
+    "title": "Zašto odabrati Funlingo?",
+    "items": [
+      "Potpuno besplatno: bez premium ograničenja na osnovnim značajkama.",
+      "Univerzalna kompatibilnost: besprijekorno radi na Netflixu, YouTubeu i Primeu.",
+      "Pokreće ga AI: kontekstualna objašnjenja, a ne samo doslovni prijevodi.",
+      "Bez trzavica: osmišljen da bude nenametljiv dok gledate."
+    ]
+  },
+  "cta": {
+    "title": "Spremni za promjenu?",
+    "body": "Instalirajte Funlingo već danas i osjetite razliku. Za početak vam treba manje od 30 sekundi.",
+    "button": "Preuzmite Funlingo za Chrome"
+  }
+}

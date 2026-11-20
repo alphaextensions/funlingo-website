@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "도움말 및 지원",
+    "description": "Funlingo 팀의 도움과 지원을 받아보세요. 문제를 신고하고, 기능을 요청하거나, 언어 학습 확장 프로그램에 대해 질문하세요."
+  },
+  "header": {
+    "title": "도움말 및 지원",
+    "subtitle": "Funlingo를 잘 활용하실 수 있도록 저희 팀이 도와드립니다. 언제든지 연락 주세요."
+  },
+  "supportTypes": [
+    {
+      "title": "기술 지원",
+      "description": "앱 문제, 버그 또는 기술적 문제",
+      "responseTime": "2~4시간"
+    },
+    {
+      "title": "기능 요청",
+      "description": "새로운 기능이나 개선 사항 제안",
+      "responseTime": "1~2일"
+    },
+    {
+      "title": "일반 문의",
+      "description": "기타 질문 또는 정보 요청",
+      "responseTime": "1~2일"
+    }
+  ],
+  "responseLabel": "응답: {time}",
+  "successMessage": "문의해 주셔서 감사합니다! 최대한 빨리 답변드리겠습니다.",
+  "form": {
+    "nameLabel": "이름",
+    "namePlaceholder": "성함을 입력하세요",
+    "emailLabel": "이메일",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "문의 유형",
+    "issueTypes": {
+      "technical": "기술 지원",
+      "billing": "결제 및 계정",
+      "feature": "기능 요청",
+      "general": "일반 문의",
+      "bug": "버그 신고"
+    },
+    "priorityLabel": "우선순위",
+    "priorities": {
+      "low": "낮음",
+      "medium": "보통",
+      "high": "높음",
+      "urgent": "긴급"
+    },
+    "subjectLabel": "제목",
+    "subjectPlaceholder": "문제를 간단히 설명해 주세요",
+    "messageLabel": "메시지",
+    "messagePlaceholder": "문제를 자세히 설명해 주세요...",
+    "attachmentsLabel": "첨부 파일 (선택)",
+    "removeAttachment": "x",
+    "submit": "지원 요청 보내기"
+  },
+  "contact": {
+    "title": "연락처 정보",
+    "emailTitle": "이메일 지원",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord 커뮤니티",
+    "discordText": "참여하고 실시간으로 도움 받기",
+    "responseTitle": "응답 시간",
+    "responseText": "우선순위에 따라 2~48시간"
+  },
+  "beforeContact": {
+    "title": "문의하기 전에",
+    "tips": [
+      "자주 묻는 질문에서 빠르게 답을 찾아보세요",
+      "가능하면 관련 스크린샷을 첨부해 주세요",
+      "문제를 재현하는 단계를 설명해 주세요",
+      "사용 중인 기기와 앱 버전을 알려 주세요"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Feedback – dela dina tankar",
+    "description": "Dela din feedback med Funlingo-teamet. Hjälp oss att skapa en bättre upplevelse för språkinlärning för alla."
+  },
+  "header": {
+    "title": "Vi vill gärna höra vad du tycker",
+    "subtitle": "Dina synpunkter hjälper oss att skapa en bättre upplevelse för språkinlärning för alla"
+  },
+  "validation": {
+    "name": "Ange ditt namn.",
+    "email": "Ange din e-postadress.",
+    "message": "Skriv din feedback.",
+    "uninstallReason": "Välj minst en anledning till avinstallationen."
+  },
+  "submitError": "Något gick fel. Försök igen.",
+  "success": "Tack för din feedback! Vi går igenom den noggrant.",
+  "form": {
+    "nameLabel": "Namn",
+    "namePlaceholder": "Ditt namn",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "din.epost@example.com",
+    "categoryLabel": "Kategori",
+    "categories": {
+      "feature": "Önskemål om funktion",
+      "bug": "Felrapport",
+      "improvement": "Förbättringsförslag",
+      "uninstall": "Anledning till avinstallation",
+      "other": "Övrigt"
+    },
+    "satisfactionLabel": "Övergripande nöjdhet",
+    "satisfactionLevels": {
+      "1": "Mycket missnöjd",
+      "2": "Missnöjd",
+      "3": "Neutral",
+      "4": "Nöjd",
+      "5": "Mycket nöjd"
+    },
+    "uninstall": {
+      "heading": "Varför funderar du på att avinstallera?",
+      "missingFeatures": "Saknar funktioner jag behöver",
+      "notWorking": "Fungerar inte som det ska",
+      "otherReasons": "Andra anledningar",
+      "otherPlaceholder": "Beskriv andra anledningar..."
+    },
+    "featureDetailsLabel": "Detaljer om funktionen",
+    "desiredFeatureLabel": "Finns det någon funktion du vill att vi bygger?",
+    "featureDetailsPlaceholder": "Beskriv funktionen du vill se...",
+    "desiredFeaturePlaceholder": "Vilken funktion skulle få dig att ändra dig?",
+    "recommendLabel": "Skulle du rekommendera Funlingo till andra?",
+    "recommendOptions": {
+      "none": "Välj ett alternativ",
+      "definitely": "Absolut",
+      "probably": "Troligen",
+      "unsure": "Vet inte",
+      "probablyNot": "Troligen inte",
+      "definitelyNot": "Absolut inte"
+    },
+    "commentsLabel": "Övriga kommentarer",
+    "commentsPlaceholder": "Dela andra tankar, förslag eller detaljer...",
+    "submitting": "Skickar...",
+    "submit": "Skicka feedback"
+  },
+  "contact": {
+    "email": {
+      "title": "Mejla oss",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Följ vår sida"
+    }
+  }
+}

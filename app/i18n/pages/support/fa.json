@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "راهنما و پشتیبانی",
+    "description": "از تیم Funlingo راهنمایی و پشتیبانی بگیرید. مشکلات را گزارش کنید، قابلیت جدید درخواست کنید یا درباره افزونه یادگیری زبان ما بپرسید."
+  },
+  "header": {
+    "title": "راهنما و پشتیبانی",
+    "subtitle": "تیم ما اینجاست تا به شما در استفاده موفق از Funlingo کمک کند. هر زمان خواستید با ما تماس بگیرید."
+  },
+  "supportTypes": [
+    {
+      "title": "پشتیبانی فنی",
+      "description": "مشکلات برنامه، باگ‌ها یا ایرادهای فنی",
+      "responseTime": "2 تا 4 ساعت"
+    },
+    {
+      "title": "درخواست قابلیت",
+      "description": "پیشنهاد قابلیت‌های جدید یا بهبودها",
+      "responseTime": "1 تا 2 روز"
+    },
+    {
+      "title": "پرسش عمومی",
+      "description": "سؤال‌های دیگر یا درخواست اطلاعات",
+      "responseTime": "1 تا 2 روز"
+    }
+  ],
+  "responseLabel": "زمان پاسخ: {time}",
+  "successMessage": "از تماس شما سپاسگزاریم! در اسرع وقت به شما پاسخ می‌دهیم.",
+  "form": {
+    "nameLabel": "نام",
+    "namePlaceholder": "نام و نام خانوادگی",
+    "emailLabel": "ایمیل",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "نوع مشکل",
+    "issueTypes": {
+      "technical": "پشتیبانی فنی",
+      "billing": "صورت‌حساب و حساب کاربری",
+      "feature": "درخواست قابلیت",
+      "general": "پرسش عمومی",
+      "bug": "گزارش باگ"
+    },
+    "priorityLabel": "اولویت",
+    "priorities": {
+      "low": "کم",
+      "medium": "متوسط",
+      "high": "زیاد",
+      "urgent": "فوری"
+    },
+    "subjectLabel": "موضوع",
+    "subjectPlaceholder": "توضیح کوتاهی از مشکل شما",
+    "messageLabel": "پیام",
+    "messagePlaceholder": "لطفاً مشکل خود را با جزئیات شرح دهید...",
+    "attachmentsLabel": "پیوست‌ها (اختیاری)",
+    "removeAttachment": "x",
+    "submit": "ارسال درخواست پشتیبانی"
+  },
+  "contact": {
+    "title": "اطلاعات تماس",
+    "emailTitle": "پشتیبانی ایمیلی",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "انجمن Discord",
+    "discordText": "برای کمک هم‌زمان بپیوندید",
+    "responseTitle": "زمان پاسخ",
+    "responseText": "2 تا 48 ساعت بسته به اولویت"
+  },
+  "beforeContact": {
+    "title": "پیش از تماس با ما",
+    "tips": [
+      "برای پاسخ‌های سریع، بخش پرسش‌های متداول را ببینید",
+      "در صورت امکان، اسکرین‌شات‌های مرتبط را پیوست کنید",
+      "مراحل بازتولید مشکل را شرح دهید",
+      "دستگاه و نسخه برنامه خود را ذکر کنید"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate: legendas duplas",
+    "description": "Comparação do Funlingo, Trancy e Immersive Translate. Descubra porque o Funlingo é a melhor alternativa gratuita de legendas duplas no Netflix e YouTube."
+  },
+  "hero": {
+    "badge": "Comparação detalhada",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Não sabe qual a extensão para aprender línguas mais indicada para si? Analisamos as funcionalidades, os preços e as capacidades das principais ferramentas de 2026."
+  },
+  "table": {
+    "ariaLabel": "Comparação de funcionalidades entre Funlingo, Trancy e Immersive Translate",
+    "featureHeader": "Funcionalidade",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Pop-up por palavra",
+        "sub": "Significado nativo + \"Ver exemplo\" (exclusivo)",
+        "fun": "O pop-up inclui o significado na sua língua + Ver exemplo (UX exclusiva).",
+        "trancy": "Sem Ver exemplo dentro do pop-up.",
+        "immersive": "Não disponível."
+      },
+      {
+        "feature": "Significado nativo em linha",
+        "sub": "Entre parênteses retos para palavras difíceis (exclusivo)",
+        "fun": "Significado na sua língua entre parênteses retos, em linha, para palavras selecionadas/difíceis.",
+        "trancy": "Não disponível.",
+        "immersive": "Não disponível."
+      },
+      {
+        "feature": "Pronúncia por palavra",
+        "sub": "(soletrada + áudio)",
+        "fun": "Pronúncia de cada palavra (indicação soletrada + áudio + reprodução lenta).",
+        "trancy": "Funcionalidades de TTS limitadas; a interface de soletração por palavra não está claramente documentada.",
+        "immersive": "TTS limitado; interface de soletração por palavra não documentada."
+      },
+      {
+        "feature": "IA com clique para contexto",
+        "sub": "Explicações (expressões e notas de uso)",
+        "fun": "Blocos de IA integrados que explicam com um clique (contexto ao nível da expressão).",
+        "trancy": "Oferece ferramentas de gramática/análise; existe um fluxo de explicação contextual.",
+        "immersive": "Algumas funcionalidades de tradução contextual; a experiência no leitor não é equivalente."
+      },
+      {
+        "feature": "Guardar no vocabulário e rever",
+        "sub": "Baralho",
+        "fun": "Guardar no vocabulário + lista de revisão / exportação; UX de revisão integrada.",
+        "trancy": "Permite guardar/marcar, mas as funcionalidades de baralho de revisão são limitadas ou orientadas para o modo de estudo.",
+        "immersive": "Não existe documentação pública de um baralho de revisão integrado."
+      },
+      {
+        "feature": "Privacidade e extensão",
+        "sub": "Sinais de segurança",
+        "fun": "Permissões explícitas e orientações de privacidade; modelo de extensão leve.",
+        "trancy": "Informações de privacidade disponíveis; as funcionalidades empresariais podem variar.",
+        "immersive": "Varia; documentação pública limitada."
+      }
+    ],
+    "legend": {
+      "core": "Funcionalidade principal presente",
+      "available": "Funcionalidade disponível",
+      "limited": "Limitada / Não é o foco"
+    }
+  },
+  "why": {
+    "title": "Porquê escolher o Funlingo?",
+    "items": [
+      "Totalmente gratuito: nenhuma funcionalidade principal bloqueada por um plano premium.",
+      "Compatibilidade universal: funciona na perfeição no Netflix, YouTube e Prime.",
+      "Com IA: explicações contextuais, não apenas traduções diretas.",
+      "Zero atrito: concebido para ser passivo e discreto enquanto vê."
+    ]
+  },
+  "cta": {
+    "title": "Pronto para mudar?",
+    "body": "Instale o Funlingo hoje e sinta a diferença. Demora menos de 30 segundos a começar.",
+    "button": "Obter o Funlingo para Chrome"
+  }
+}

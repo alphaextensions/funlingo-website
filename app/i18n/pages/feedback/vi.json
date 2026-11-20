@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Phản hồi - Chia sẻ suy nghĩ của bạn",
+    "description": "Chia sẻ phản hồi của bạn với đội ngũ Funlingo. Giúp chúng tôi xây dựng trải nghiệm học ngôn ngữ tốt hơn cho mọi người."
+  },
+  "header": {
+    "title": "Chúng tôi rất muốn nghe ý kiến của bạn",
+    "subtitle": "Ý kiến của bạn giúp chúng tôi xây dựng trải nghiệm học ngôn ngữ tốt hơn cho mọi người"
+  },
+  "validation": {
+    "name": "Vui lòng nhập tên của bạn.",
+    "email": "Vui lòng nhập email của bạn.",
+    "message": "Vui lòng nhập phản hồi của bạn.",
+    "uninstallReason": "Vui lòng chọn ít nhất một lý do gỡ cài đặt."
+  },
+  "submitError": "Đã xảy ra lỗi. Vui lòng thử lại.",
+  "success": "Cảm ơn phản hồi của bạn! Chúng tôi sẽ xem xét kỹ lưỡng.",
+  "form": {
+    "nameLabel": "Họ tên",
+    "namePlaceholder": "Tên của bạn",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Danh mục",
+    "categories": {
+      "feature": "Đề xuất tính năng",
+      "bug": "Báo lỗi",
+      "improvement": "Góp ý cải tiến",
+      "uninstall": "Lý do gỡ cài đặt",
+      "other": "Khác"
+    },
+    "satisfactionLabel": "Mức độ hài lòng chung",
+    "satisfactionLevels": {
+      "1": "Rất không hài lòng",
+      "2": "Không hài lòng",
+      "3": "Bình thường",
+      "4": "Hài lòng",
+      "5": "Rất hài lòng"
+    },
+    "uninstall": {
+      "heading": "Vì sao bạn đang cân nhắc gỡ cài đặt?",
+      "missingFeatures": "Thiếu tính năng tôi cần",
+      "notWorking": "Hoạt động không đúng",
+      "otherReasons": "Lý do khác",
+      "otherPlaceholder": "Vui lòng nêu rõ lý do khác..."
+    },
+    "featureDetailsLabel": "Chi tiết tính năng",
+    "desiredFeatureLabel": "Bạn muốn chúng tôi phát triển tính năng nào?",
+    "featureDetailsPlaceholder": "Mô tả tính năng bạn muốn có...",
+    "desiredFeaturePlaceholder": "Tính năng nào sẽ khiến bạn suy nghĩ lại?",
+    "recommendLabel": "Bạn có giới thiệu Funlingo cho người khác không?",
+    "recommendOptions": {
+      "none": "Chọn một tùy chọn",
+      "definitely": "Chắc chắn có",
+      "probably": "Có lẽ có",
+      "unsure": "Không chắc",
+      "probablyNot": "Có lẽ không",
+      "definitelyNot": "Chắc chắn không"
+    },
+    "commentsLabel": "Ý kiến bổ sung",
+    "commentsPlaceholder": "Chia sẻ thêm suy nghĩ, góp ý hoặc chi tiết...",
+    "submitting": "Đang gửi...",
+    "submit": "Gửi phản hồi"
+  },
+  "contact": {
+    "email": {
+      "title": "Gửi email cho chúng tôi",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Theo dõi trang của chúng tôi"
+    }
+  }
+}

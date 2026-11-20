@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Yardım ve Destek",
+    "description": "Funlingo ekibinden yardım ve destek alın. Sorun bildirin, özellik isteyin veya dil öğrenme uzantımız hakkında soru sorun."
+  },
+  "header": {
+    "title": "Yardım ve Destek",
+    "subtitle": "Ekibimiz Funlingo ile başarılı olmanıza yardımcı olmak için burada. Dilediğiniz zaman bize ulaşın."
+  },
+  "supportTypes": [
+    {
+      "title": "Teknik Destek",
+      "description": "Uygulama sorunları, hatalar veya teknik problemler",
+      "responseTime": "2-4 saat"
+    },
+    {
+      "title": "Özellik İsteği",
+      "description": "Yeni özellikler veya iyileştirmeler önerin",
+      "responseTime": "1-2 gün"
+    },
+    {
+      "title": "Genel Soru",
+      "description": "Diğer sorular veya bilgi talepleri",
+      "responseTime": "1-2 gün"
+    }
+  ],
+  "responseLabel": "Yanıt: {time}",
+  "successMessage": "Bizimle iletişime geçtiğiniz için teşekkürler! En kısa sürede size dönüş yapacağız.",
+  "form": {
+    "nameLabel": "Ad",
+    "namePlaceholder": "Adınız ve soyadınız",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "Sorun Türü",
+    "issueTypes": {
+      "technical": "Teknik Destek",
+      "billing": "Fatura ve Hesap",
+      "feature": "Özellik İsteği",
+      "general": "Genel Soru",
+      "bug": "Hata Bildirimi"
+    },
+    "priorityLabel": "Öncelik",
+    "priorities": {
+      "low": "Düşük",
+      "medium": "Orta",
+      "high": "Yüksek",
+      "urgent": "Acil"
+    },
+    "subjectLabel": "Konu",
+    "subjectPlaceholder": "Sorununuzun kısa açıklaması",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Lütfen sorununuzu ayrıntılı olarak açıklayın...",
+    "attachmentsLabel": "Ekler (İsteğe bağlı)",
+    "removeAttachment": "x",
+    "submit": "Destek Talebi Gönder"
+  },
+  "contact": {
+    "title": "İletişim Bilgileri",
+    "emailTitle": "E-posta Desteği",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord Topluluğu",
+    "discordText": "Anında yardım için katılın",
+    "responseTitle": "Yanıt Süresi",
+    "responseText": "Önceliğe göre 2-48 saat"
+  },
+  "beforeContact": {
+    "title": "İletişime Geçmeden Önce",
+    "tips": [
+      "Hızlı yanıtlar için SSS bölümümüze göz atın",
+      "Mümkünse ilgili ekran görüntülerini ekleyin",
+      "Sorunu yeniden oluşturma adımlarını açıklayın",
+      "Cihazınızı ve uygulama sürümünüzü belirtin"
+    ]
+  }
+}

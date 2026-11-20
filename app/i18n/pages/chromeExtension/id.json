@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Ekstensi Chrome Funlingo — Subtitle Ganda & Terjemahan AI Gratis",
+    "description": "Ekstensi Chrome Funlingo gratis: subtitle ganda & terjemahan AI di Netflix, YouTube, Prime & lainnya dalam 100+ bahasa. Tambahkan ke Chrome, belajar sambil menonton."
+  },
+  "hero": {
+    "badge": "Ekstensi Chrome gratis · Rating 4.8/5",
+    "title": "Ekstensi Chrome Funlingo",
+    "subtitle": "Subtitle ganda dan terjemahan AI gratis di Netflix, YouTube, Prime Video, dan 7 platform lainnya. Pelajari 100+ bahasa sambil menonton.",
+    "addToChrome": "Tambahkan ke Chrome — Gratis",
+    "seeHowItWorks": "Lihat cara kerjanya",
+    "note": "Tanpa akun · Terpasang dalam kurang dari semenit"
+  },
+  "features": {
+    "title": "Semua yang kamu butuhkan untuk belajar sambil menonton",
+    "subtitle": "Satu ekstensi gratis mengubah situs streaming dan belajar favoritmu menjadi kelas bahasa yang imersif.",
+    "items": [
+      {
+        "title": "Subtitle Ganda",
+        "description": "Lihat dua trek subtitle sekaligus — bahasa target dan bahasa ibumu — langsung di dalam pemutar video."
+      },
+      {
+        "title": "Terjemahan & Definisi AI",
+        "description": "Arahkan kursor ke kata mana pun untuk mendapatkan terjemahan AI instan yang sesuai konteks, catatan tata bahasa, dan contoh frasa nyata."
+      },
+      {
+        "title": "Pembangun Kosakata",
+        "description": "Simpan kata atau frasa apa pun dengan sekali klik. Setiap entri menyimpan terjemahannya dan kalimat tempat kamu menemukannya."
+      },
+      {
+        "title": "100+ Bahasa",
+        "description": "Dari Spanyol dan Jepang hingga Korea, Jerman, Arab, dan Hindi — atur bahasamu secara terpisah."
+      },
+      {
+        "title": "10 Platform",
+        "description": "Berfungsi di Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, dan Coursera."
+      },
+      {
+        "title": "100% Gratis",
+        "description": "Tanpa paywall, tanpa paket premium, tanpa perlu akun. Semua fitur gratis."
+      }
+    ]
+  },
+  "install": {
+    "title": "Pasang dalam kurang dari semenit",
+    "subtitle": "Tanpa repot pengaturan. Tambahkan Funlingo ke Chrome dan langsung mulai belajar.",
+    "steps": [
+      {
+        "title": "Buka Chrome Web Store",
+        "description": "Kunjungi halaman Funlingo di Chrome Web Store melalui tombol di atas."
+      },
+      {
+        "title": "Klik Tambahkan ke Chrome",
+        "description": "Klik Tambahkan ke Chrome, lalu konfirmasi dengan Tambahkan ekstensi. Pemasangan hanya butuh beberapa detik."
+      },
+      {
+        "title": "Sematkan Funlingo",
+        "description": "Sematkan Funlingo ke toolbar agar selalu bisa diakses dengan sekali klik saat menonton."
+      },
+      {
+        "title": "Tekan Putar & Belajar",
+        "description": "Buka Netflix, YouTube, atau platform lain yang didukung, dan subtitle ganda akan muncul otomatis."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Pertanyaan yang sering diajukan",
+    "subtitle": "Semua tentang ekstensi Chrome Funlingo.",
+    "items": [
+      {
+        "question": "Apakah ekstensi Chrome Funlingo gratis?",
+        "answer": "Ya. Ekstensi Chrome Funlingo 100% gratis tanpa biaya tersembunyi, paket premium, atau paywall. Kamu mendapatkan subtitle ganda, terjemahan AI, definisi kata AI, dan pembangun kosakata tanpa biaya. Cukup tambahkan ke Chrome dan langsung gunakan semua fiturnya, tanpa perlu akun."
+      },
+      {
+        "question": "Di platform apa saja ekstensi Funlingo berfungsi?",
+        "answer": "Funlingo berfungsi di 10 platform: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, dan Coursera. Subtitle ganda dan terjemahan AI terintegrasi langsung di setiap pemutar video, jadi kamu bisa belajar bahasa sambil menonton film, serial, anime, dan kursus online."
+      },
+      {
+        "question": "Bagaimana cara memasang ekstensi Chrome Funlingo?",
+        "answer": "Buka halaman Funlingo di Chrome Web Store, klik Tambahkan ke Chrome, lalu konfirmasi dengan mengklik Tambahkan ekstensi. Sematkan Funlingo ke toolbar, buka platform yang didukung seperti Netflix atau YouTube, dan subtitle ganda akan muncul otomatis. Seluruh prosesnya kurang dari semenit."
+      },
+      {
+        "question": "Apakah ekstensi Funlingo mendukung bahasaku?",
+        "answer": "Hampir pasti. Funlingo mendukung terjemahan subtitle dalam 100+ bahasa, termasuk Spanyol, Prancis, Jepang, Korea, Mandarin, Jerman, Portugis, Italia, Arab, Hindi, dan masih banyak lagi. Kamu bisa mengatur bahasa target dan bahasa ibumu secara terpisah untuk belajar dengan subtitle ganda yang sesungguhnya."
+      },
+      {
+        "question": "Apakah Funlingo ekstensi Chrome yang aman?",
+        "answer": "Ya. Funlingo diterbitkan di Chrome Web Store resmi, tempat ekstensi ditinjau oleh Google, dan memiliki rating 4.8 dari 5 bintang. Funlingo berjalan secara lokal di browser-mu untuk menampilkan subtitle dan tidak mengharuskanmu membuat akun untuk mulai belajar."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Mulai belajar bahasa sambil menonton",
+    "subtitle": "Bergabunglah dengan ribuan pelajar yang menggunakan Funlingo untuk subtitle ganda dan terjemahan AI gratis di 10 platform.",
+    "addToChrome": "Tambahkan ke Chrome — Gratis",
+    "note": "Gratis · Rating 4.8/5 di Chrome Web Store"
+  }
+}

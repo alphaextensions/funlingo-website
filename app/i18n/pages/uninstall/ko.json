@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "떠나신다니 아쉬워요",
+    "description": "Funlingo를 제거한 이유를 알려 주세요. 보내 주신 의견은 더 나은 언어 학습 경험을 만드는 데 도움이 됩니다."
+  },
+  "form": {
+    "title": "Funlingo를 제거한 이유가 무엇인가요?",
+    "subtitle": "한 번만 탭하면 됩니다. 답변은 팀에 바로 전달돼요.",
+    "reasonsAriaLabel": "제거 이유",
+    "optional": "(선택)",
+    "howLongLabel": "Funlingo를 얼마나 사용하셨나요? (선택)",
+    "emailLabel": "이메일 (선택) - 문제가 해결되면 알려 드릴게요",
+    "emailPlaceholder": "you@example.com",
+    "submit": "의견 보내기"
+  },
+  "reasons": {
+    "broken": {
+      "label": "제대로 작동하지 않았어요",
+      "prompt": "어떤 문제가 있었나요?",
+      "placeholder": "어느 사이트에서 무슨 일이 있었나요? 한 줄만 써 주셔도 도움이 돼요."
+    },
+    "translations": {
+      "label": "번역 품질이 부족했어요",
+      "prompt": "어떤 언어 조합이고, 어느 사이트였나요?",
+      "placeholder": "예: Netflix에서 영어 → 스페인어, 번역이 너무 직역이었어요…"
+    },
+    "platform": {
+      "label": "사용하는 스트리밍 사이트가 지원되지 않아요",
+      "prompt": "어떤 사이트 또는 브라우저인가요?",
+      "placeholder": "예: Safari, Firefox, 특정 스트리밍 사이트…"
+    },
+    "missing": {
+      "label": "필요한 기능이 없었어요",
+      "prompt": "어떤 기능이 아쉬웠나요?",
+      "placeholder": "예: 특정 언어, 스트리밍 서비스, 단어장…"
+    },
+    "switched": {
+      "label": "다른 도구로 바꿨어요",
+      "prompt": "어떤 도구인가요?",
+      "placeholder": "예: Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "잠깐 써 본 거예요 / 지금은 필요 없어요",
+      "prompt": "무엇이 있었다면 계속 사용하셨을까요?",
+      "placeholder": "자유롭게 적어 주세요."
+    },
+    "other": {
+      "label": "기타",
+      "prompt": "Funlingo를 제거한 이유가 무엇인가요?",
+      "placeholder": "자유롭게 적어 주세요."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "하루 미만",
+    "lessThanWeek": "일주일 미만",
+    "oneToThreeWeeks": "1~3주",
+    "oneToThreeMonths": "1~3개월"
+  },
+  "thanks": {
+    "title": "감사합니다. 잘 받았어요.",
+    "recoverable": "저희는 매주 수정 사항과 새 기능을 배포합니다. Funlingo를 다시 사용해 보시면 이미 해결되어 있을지도 몰라요.",
+    "notRecoverable": "보내 주신 의견은 팀에 바로 전달됩니다. 시간 내 주셔서 감사합니다.",
+    "emailNote": "새 소식이 있으면 {email}(으)로 알려 드릴게요.",
+    "reinstall": "Funlingo 다시 사용해 보기",
+    "backHome": "홈으로 돌아가기"
+  }
+}

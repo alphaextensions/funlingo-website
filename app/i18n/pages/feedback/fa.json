@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "بازخورد — نظرتان را با ما در میان بگذارید",
+    "description": "بازخورد خود را با تیم Funlingo در میان بگذارید و به ما کمک کنید تجربه یادگیری زبان بهتری برای همه بسازیم."
+  },
+  "header": {
+    "title": "مشتاق شنیدن نظر شما هستیم",
+    "subtitle": "نظر شما به ما کمک می‌کند تجربه یادگیری زبان بهتری برای همه بسازیم"
+  },
+  "validation": {
+    "name": "لطفاً نام خود را وارد کنید.",
+    "email": "لطفاً ایمیل خود را وارد کنید.",
+    "message": "لطفاً بازخورد خود را بنویسید.",
+    "uninstallReason": "لطفاً دست‌کم یک دلیل برای حذف انتخاب کنید."
+  },
+  "submitError": "مشکلی پیش آمد. لطفاً دوباره تلاش کنید.",
+  "success": "از بازخورد شما سپاسگزاریم! آن را با دقت بررسی می‌کنیم.",
+  "form": {
+    "nameLabel": "نام",
+    "namePlaceholder": "نام شما",
+    "emailLabel": "ایمیل",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "دسته‌بندی",
+    "categories": {
+      "feature": "درخواست قابلیت",
+      "bug": "گزارش باگ",
+      "improvement": "پیشنهاد بهبود",
+      "uninstall": "دلیل حذف",
+      "other": "سایر"
+    },
+    "satisfactionLabel": "رضایت کلی",
+    "satisfactionLevels": {
+      "1": "بسیار ناراضی",
+      "2": "ناراضی",
+      "3": "بی‌نظر",
+      "4": "راضی",
+      "5": "بسیار راضی"
+    },
+    "uninstall": {
+      "heading": "چرا به حذف افزونه فکر می‌کنید؟",
+      "missingFeatures": "قابلیت‌هایی که نیاز دارم را ندارد",
+      "notWorking": "درست کار نمی‌کند",
+      "otherReasons": "دلایل دیگر",
+      "otherPlaceholder": "لطفاً دلایل دیگر را بنویسید..."
+    },
+    "featureDetailsLabel": "جزئیات قابلیت",
+    "desiredFeatureLabel": "قابلیتی هست که دوست دارید بسازیم؟",
+    "featureDetailsPlaceholder": "قابلیتی را که دوست دارید ببینید شرح دهید...",
+    "desiredFeaturePlaceholder": "چه قابلیتی باعث می‌شود تصمیمتان را عوض کنید؟",
+    "recommendLabel": "آیا Funlingo را به دیگران پیشنهاد می‌کنید؟",
+    "recommendOptions": {
+      "none": "یک گزینه انتخاب کنید",
+      "definitely": "قطعاً بله",
+      "probably": "احتمالاً بله",
+      "unsure": "مطمئن نیستم",
+      "probablyNot": "احتمالاً نه",
+      "definitelyNot": "قطعاً نه"
+    },
+    "commentsLabel": "توضیحات بیشتر",
+    "commentsPlaceholder": "هر فکر، پیشنهاد یا جزئیات دیگری را با ما در میان بگذارید...",
+    "submitting": "در حال ارسال...",
+    "submit": "ارسال بازخورد"
+  },
+  "contact": {
+    "email": {
+      "title": "به ما ایمیل بزنید",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "صفحه ما را دنبال کنید"
+    }
+  }
+}

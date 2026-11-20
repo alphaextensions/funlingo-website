@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "获取帮助与支持",
+    "description": "获取 Funlingo 团队的帮助与支持。反馈问题、提出功能需求，或咨询有关我们语言学习扩展的任何问题。"
+  },
+  "header": {
+    "title": "获取帮助与支持",
+    "subtitle": "我们的团队随时帮助你用好 Funlingo。有问题随时联系我们。"
+  },
+  "supportTypes": [
+    {
+      "title": "技术支持",
+      "description": "应用问题、错误或技术故障",
+      "responseTime": "2-4 小时"
+    },
+    {
+      "title": "功能需求",
+      "description": "建议新功能或改进",
+      "responseTime": "1-2 天"
+    },
+    {
+      "title": "一般咨询",
+      "description": "其他问题或信息咨询",
+      "responseTime": "1-2 天"
+    }
+  ],
+  "responseLabel": "响应时间：{time}",
+  "successMessage": "感谢你联系我们！我们会尽快回复你。",
+  "form": {
+    "nameLabel": "姓名",
+    "namePlaceholder": "你的全名",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "问题类型",
+    "issueTypes": {
+      "technical": "技术支持",
+      "billing": "账单与账户",
+      "feature": "功能需求",
+      "general": "一般咨询",
+      "bug": "错误报告"
+    },
+    "priorityLabel": "优先级",
+    "priorities": {
+      "low": "低",
+      "medium": "中",
+      "high": "高",
+      "urgent": "紧急"
+    },
+    "subjectLabel": "主题",
+    "subjectPlaceholder": "简要描述你的问题",
+    "messageLabel": "留言",
+    "messagePlaceholder": "请详细描述你遇到的问题……",
+    "attachmentsLabel": "附件（可选）",
+    "removeAttachment": "x",
+    "submit": "发送支持请求"
+  },
+  "contact": {
+    "title": "联系方式",
+    "emailTitle": "邮件支持",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord 社区",
+    "discordText": "加入社区，获取实时帮助",
+    "responseTitle": "响应时间",
+    "responseText": "视优先级而定，2-48 小时"
+  },
+  "beforeContact": {
+    "title": "联系我们之前",
+    "tips": [
+      "先查看常见问题，快速找到答案",
+      "如有可能，请附上相关截图",
+      "描述重现问题的步骤",
+      "注明你的设备和应用版本"
+    ]
+  }
+}
