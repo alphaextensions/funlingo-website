@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Feedback – Deel je mening",
+    "description": "Deel je feedback met het Funlingo-team. Help ons een betere leerervaring voor talen te bouwen, voor iedereen."
+  },
+  "header": {
+    "title": "We horen graag je feedback",
+    "subtitle": "Jouw input helpt ons een betere leerervaring voor talen te bouwen, voor iedereen"
+  },
+  "validation": {
+    "name": "Vul je naam in.",
+    "email": "Vul je e-mailadres in.",
+    "message": "Vul je feedback in.",
+    "uninstallReason": "Selecteer minstens één reden voor het verwijderen."
+  },
+  "submitError": "Er ging iets mis. Probeer het opnieuw.",
+  "success": "Bedankt voor je feedback! We bekijken het zorgvuldig.",
+  "form": {
+    "nameLabel": "Naam",
+    "namePlaceholder": "Je naam",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "jouw.email@example.com",
+    "categoryLabel": "Categorie",
+    "categories": {
+      "feature": "Functieverzoek",
+      "bug": "Bug melden",
+      "improvement": "Suggestie voor verbetering",
+      "uninstall": "Reden voor verwijderen",
+      "other": "Overig"
+    },
+    "satisfactionLabel": "Algemene tevredenheid",
+    "satisfactionLevels": {
+      "1": "Zeer ontevreden",
+      "2": "Ontevreden",
+      "3": "Neutraal",
+      "4": "Tevreden",
+      "5": "Zeer tevreden"
+    },
+    "uninstall": {
+      "heading": "Waarom overweeg je Funlingo te verwijderen?",
+      "missingFeatures": "Er ontbreken functies die ik nodig heb",
+      "notWorking": "Werkt niet goed",
+      "otherReasons": "Andere redenen",
+      "otherPlaceholder": "Geef andere redenen op..."
+    },
+    "featureDetailsLabel": "Details van de functie",
+    "desiredFeatureLabel": "Is er een functie die we moeten bouwen?",
+    "featureDetailsPlaceholder": "Beschrijf de functie die je graag zou zien...",
+    "desiredFeaturePlaceholder": "Welke functie zou je van gedachten doen veranderen?",
+    "recommendLabel": "Zou je Funlingo aanbevelen aan anderen?",
+    "recommendOptions": {
+      "none": "Kies een optie",
+      "definitely": "Zeker wel",
+      "probably": "Waarschijnlijk wel",
+      "unsure": "Weet ik niet",
+      "probablyNot": "Waarschijnlijk niet",
+      "definitelyNot": "Zeker niet"
+    },
+    "commentsLabel": "Aanvullende opmerkingen",
+    "commentsPlaceholder": "Deel andere gedachten, suggesties of details...",
+    "submitting": "Verzenden...",
+    "submit": "Feedback versturen"
+  },
+  "contact": {
+    "email": {
+      "title": "Mail ons",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Volg onze pagina"
+    }
+  }
+}

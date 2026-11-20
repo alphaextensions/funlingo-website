@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Datenschutzerklärung",
+    "description": "Datenschutzerklärung von Funlingo. Erfahre, wie wir mit deinen Informationen umgehen, wenn du die Funlingo Chrome-Erweiterung und unsere Website nutzt."
+  },
+  "translationNotice": "Diese Übersetzung dient nur der Orientierung. Bei Abweichungen ist die englische Fassung dieser Erklärung maßgeblich.",
+  "englishLinkText": "Englische Fassung lesen",
+  "hero": {
+    "badge": "Deine Privatsphäre ist uns wichtig",
+    "title": "Datenschutzerklärung",
+    "intro": "Willkommen bei Funlingo. Deine Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, wie wir mit deinen Informationen umgehen, wenn du die Funlingo Chrome-Erweiterung und unsere Website nutzt."
+  },
+  "effectiveDate": "Gültig ab: November 2025",
+  "sections": [
+    {
+      "title": "Informationen, die wir nicht erfassen",
+      "content": "Wir haben Funlingo entwickelt, damit Nutzer beim Streamen zweisprachige Untertitel genießen und Sprachen lernen können, ohne ihre Privatsphäre zu gefährden. Wir verwenden keine Cookies oder Analysetools von Drittanbietern, um deine Aktivitäten zu überwachen. Wir verkaufen oder vermieten deine Informationen an niemanden."
+    },
+    {
+      "title": "Verwendete Berechtigungen",
+      "content": "Funlingo benötigt bestimmte Chrome-Berechtigungen ausschließlich, um ordnungsgemäß zu funktionieren: Zugriff auf Seiten von Streaming-Diensten (z. B. Netflix, YouTube), um zweisprachige Untertitel im Videoplayer anzuzeigen, sowie die ActiveTab-Berechtigung, um Untertitel einzufügen und Interaktivität zu ermöglichen (Pause beim Überfahren mit der Maus, Übersetzungen usw.). Diese Berechtigungen werden ausschließlich lokal auf deinem Gerät verwendet. Funlingo sendet niemals Seitendaten oder Videoinhalte an einen externen Server."
+    },
+    {
+      "title": "Datenverarbeitung",
+      "content": "Die gesamte Darstellung der Untertitel, die Übersetzungen und die Interaktionen beim Überfahren mit der Maus erfolgen lokal in deinem Browser. Falls künftige Funktionen APIs für Übersetzungen oder Wörterbuchabfragen nutzen, werden die Anfragen anonym und ohne Speicherung von Nutzerkennungen gestellt."
+    },
+    {
+      "title": "Dienste von Drittanbietern",
+      "content": "Funlingo kann sich mit öffentlichen Übersetzungs- oder Wörterbuch-APIs verbinden (zum Beispiel der Google Translate API oder ähnlichen). Diese werden ausschließlich verwendet, um Wortbedeutungen oder Übersetzungen abzurufen, und übermitteln keinerlei Identitäts- oder Browsingdaten der Nutzer."
+    },
+    {
+      "title": "Privatsphäre von Kindern",
+      "content": "Funlingo ist für alle Altersgruppen geeignet und erfasst wissentlich keine Daten von Kindern unter 13 Jahren."
+    },
+    {
+      "title": "Sicherheit",
+      "content": "Da wir keine personenbezogenen Daten speichern, bleiben deine Informationen auf deinem Gerät. Wir befolgen bewährte Verfahren, um sicherzustellen, dass die Skripte der Erweiterung sicher sind und auf die notwendigen Domains beschränkt bleiben."
+    },
+    {
+      "title": "Änderungen dieser Erklärung",
+      "content": "Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Bei wesentlichen Änderungen aktualisieren wir das Gültigkeitsdatum und veröffentlichen die neue Fassung auf unserer Website."
+    }
+  ],
+  "contact": {
+    "badge": "Kontakt aufnehmen",
+    "title": "Kontakt",
+    "text": "Wenn du Fragen oder Bedenken zu dieser Datenschutzerklärung hast, kontaktiere uns bitte unter:"
+  },
+  "commitment": "Funlingo setzt sich dafür ein, Sprachenlernen beim Streamen sicher, privat und mühelos zu machen."
+}

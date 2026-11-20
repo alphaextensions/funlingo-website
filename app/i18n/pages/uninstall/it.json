@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Ci dispiace vederti andare via",
+    "description": "Dicci perché hai disinstallato Funlingo. Il tuo feedback ci aiuta a creare un'esperienza migliore per imparare le lingue."
+  },
+  "form": {
+    "title": "Perché hai disinstallato Funlingo?",
+    "subtitle": "Basta un tocco. La tua risposta arriva direttamente al team.",
+    "reasonsAriaLabel": "Motivo della disinstallazione",
+    "optional": "(facoltativo)",
+    "howLongLabel": "Per quanto tempo hai usato Funlingo? (facoltativo)",
+    "emailLabel": "Email (facoltativa), così ti avvisiamo quando sarà risolto",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Invia feedback"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Qualcosa non funzionava",
+      "prompt": "Cosa è andato storto?",
+      "placeholder": "Su quale sito, e cosa è successo? Anche una riga ci aiuta."
+    },
+    "translations": {
+      "label": "Le traduzioni non erano abbastanza buone",
+      "prompt": "Quale coppia di lingue e su quale sito?",
+      "placeholder": "es. inglese → spagnolo su Netflix, traduzioni troppo letterali…"
+    },
+    "platform": {
+      "label": "Il mio sito di streaming non è supportato",
+      "prompt": "Quale sito o browser?",
+      "placeholder": "es. Safari, Firefox, un sito di streaming specifico…"
+    },
+    "missing": {
+      "label": "Mancava una funzione di cui avevo bisogno",
+      "prompt": "Cosa ti mancava?",
+      "placeholder": "es. una lingua, un servizio di streaming, un elenco di parole…"
+    },
+    "switched": {
+      "label": "Sono passato a un altro strumento",
+      "prompt": "Quale?",
+      "placeholder": "es. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Lo stavo solo provando / non mi serve ora",
+      "prompt": "Cosa ti avrebbe convinto a tenerlo?",
+      "placeholder": "Raccontacelo con parole tue."
+    },
+    "other": {
+      "label": "Altro",
+      "prompt": "Perché hai disinstallato Funlingo?",
+      "placeholder": "Raccontacelo con parole tue."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Meno di un giorno",
+    "lessThanWeek": "Meno di una settimana",
+    "oneToThreeWeeks": "1-3 settimane",
+    "oneToThreeMonths": "1-3 mesi"
+  },
+  "thanks": {
+    "title": "Grazie, l'abbiamo ricevuto.",
+    "recoverable": "Rilasciamo correzioni e nuove funzioni ogni settimana. Se dai un'altra possibilità a Funlingo, potrebbe essere già tutto risolto.",
+    "notRecoverable": "Il tuo feedback arriva direttamente al team. Grazie per il tempo che ci hai dedicato.",
+    "emailNote": "Ti scriveremo a {email} quando ci saranno novità.",
+    "reinstall": "Dai un'altra possibilità a Funlingo",
+    "backHome": "Torna alla home"
+  }
+}

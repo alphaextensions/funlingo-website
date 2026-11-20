@@ -16,105 +16,26 @@ import {
   Pin,
   Play,
 } from "lucide-react";
+import type { Strings } from "@/app/i18n/pages/chromeExtension";
 
 const CHROME_STORE_URL =
   "https://chromewebstore.google.com/detail/funlingo-dual-subtitles-f/gjdpaicenfffjkgofmcjikilokigkonj?authuser=3&hl=en";
 
-const features = [
-  {
-    icon: Languages,
-    title: "Dual Subtitles",
-    description:
-      "See two subtitle tracks at once — your target language and your native language — directly inside the video player.",
-  },
-  {
-    icon: Sparkles,
-    title: "AI Translation & Definitions",
-    description:
-      "Hover any word for instant, context-aware AI translations, grammar notes, and real example phrases.",
-  },
-  {
-    icon: BookMarked,
-    title: "Vocabulary Builder",
-    description:
-      "Save any word or phrase with one click. Every entry keeps its translation and the sentence you found it in.",
-  },
-  {
-    icon: Globe,
-    title: "100+ Languages",
-    description:
-      "From Spanish and Japanese to Korean, German, Arabic, and Hindi — set your languages independently.",
-  },
-  {
-    icon: MonitorPlay,
-    title: "10 Platforms",
-    description:
-      "Works on Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera.",
-  },
-  {
-    icon: Gift,
-    title: "100% Free",
-    description:
-      "No paywalls, no premium tier, no account required. Every feature is free.",
-  },
-];
+const featureIcons = [Languages, Sparkles, BookMarked, Globe, MonitorPlay, Gift];
 
-const steps = [
-  {
-    icon: Download,
-    title: "Open the Chrome Web Store",
-    description:
-      "Visit the Funlingo listing on the Chrome Web Store using the button above.",
-  },
-  {
-    icon: MousePointerClick,
-    title: "Click Add to Chrome",
-    description:
-      "Click Add to Chrome, then confirm with Add extension. It installs in seconds.",
-  },
-  {
-    icon: Pin,
-    title: "Pin Funlingo",
-    description:
-      "Pin Funlingo to your toolbar so it is always one click away while you watch.",
-  },
-  {
-    icon: Play,
-    title: "Press Play & Learn",
-    description:
-      "Open Netflix, YouTube, or any supported platform and dual subtitles appear automatically.",
-  },
-];
+const stepIcons = [Download, MousePointerClick, Pin, Play];
 
-const faqs = [
-  {
-    question: "Is the Funlingo Chrome extension free?",
-    answer:
-      "Yes. The Funlingo Chrome extension is 100% free with no hidden costs, premium tiers, or paywalls. You get dual subtitles, AI translation, AI word definitions, and the vocabulary builder at no charge. Just add it to Chrome and start using every feature immediately, no account required.",
-  },
-  {
-    question: "What platforms does the Funlingo extension work on?",
-    answer:
-      "Funlingo works on 10 platforms: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy, and Coursera. Dual subtitles and AI translation integrate directly into each video player, so you can learn languages while watching movies, shows, anime, and online courses.",
-  },
-  {
-    question: "How do I install the Funlingo Chrome extension?",
-    answer:
-      "Open the Funlingo listing on the Chrome Web Store, click Add to Chrome, then confirm by clicking Add extension. Pin Funlingo to your toolbar, open any supported platform like Netflix or YouTube, and the dual subtitles will appear automatically. The whole process takes under a minute.",
-  },
-  {
-    question: "Does the Funlingo extension support my language?",
-    answer:
-      "Almost certainly. Funlingo supports 100+ languages for subtitle translation, including Spanish, French, Japanese, Korean, Mandarin, German, Portuguese, Italian, Arabic, Hindi, and many more. You can set your target language and your native language independently for true dual-subtitle learning.",
-  },
-  {
-    question: "Is Funlingo a safe Chrome extension?",
-    answer:
-      "Yes. Funlingo is published on the official Chrome Web Store, where it is reviewed by Google, and is rated 4.8 out of 5 stars. It runs locally in your browser to display subtitles and does not require you to create an account to start learning.",
-  },
-];
+const ChromeExtensionContent = ({ s }: { s: Strings }): React.JSX.Element => {
+  const features = s.features.items.map((item, i) => ({
+    ...item,
+    icon: featureIcons[i] ?? Sparkles,
+  }));
+  const steps = s.install.steps.map((item, i) => ({
+    ...item,
+    icon: stepIcons[i] ?? Play,
+  }));
+  const faqs = s.faq.items;
 
-const ChromeExtensionContent = (): React.JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-[var(--bg)]">
       <Navbar currentPage="/" />
@@ -127,17 +48,15 @@ const ChromeExtensionContent = (): React.JSX.Element => {
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center gap-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-1.5 text-sm text-[var(--text-dim)]">
             <Sparkles className="w-4 h-4 text-[#C81FD4]" />
-            Free Chrome extension · Rated 4.8/5
+            {s.hero.badge}
           </span>
 
           <h1 className="text-[var(--text)] font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight">
-            Funlingo Chrome Extension
+            {s.hero.title}
           </h1>
 
           <p className="text-[var(--text-dim)] text-lg sm:text-xl md:text-2xl max-w-2xl leading-relaxed">
-            Free dual subtitles and AI translation on Netflix, YouTube, Prime
-            Video and 7 more platforms. Learn languages in 100+ tongues while you
-            watch.
+            {s.hero.subtitle}
           </p>
 
           <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-2">
@@ -149,7 +68,7 @@ const ChromeExtensionContent = (): React.JSX.Element => {
               <Button className="relative bg-[linear-gradient(135deg,#C81FD4_0%,#9A1C8E_100%)] h-12 px-7 rounded-lg overflow-hidden border-0 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 group w-full sm:w-auto">
                 <span className="relative z-10 flex items-center justify-center gap-2 text-[var(--text)] font-medium text-base whitespace-nowrap">
                   <Download className="w-5 h-5" />
-                  Add to Chrome — It&apos;s Free
+                  {s.hero.addToChrome}
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#9A1C8E] to-[#C81FD4] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
               </Button>
@@ -158,14 +77,14 @@ const ChromeExtensionContent = (): React.JSX.Element => {
             <a href="#how-it-works">
               <Button className="relative bg-[var(--surface)] h-12 px-7 rounded-lg overflow-hidden border border-white/15 hover:bg-[var(--surface)] transition-all duration-300 hover:scale-105 group w-full sm:w-auto">
                 <span className="relative z-10 flex items-center justify-center text-[var(--text)] font-medium text-base whitespace-nowrap">
-                  See how it works
+                  {s.hero.seeHowItWorks}
                 </span>
               </Button>
             </a>
           </div>
 
           <p className="text-[var(--text-dim2)] text-sm mt-1">
-            No account needed · Installs in under a minute
+            {s.hero.note}
           </p>
         </div>
       </section>
@@ -175,11 +94,10 @@ const ChromeExtensionContent = (): React.JSX.Element => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
             <h2 className="text-[var(--text)] font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight">
-              Everything you need to learn while watching
+              {s.features.title}
             </h2>
             <p className="text-[var(--text-dim)] text-lg mt-4">
-              One free extension turns your favorite streaming and learning sites
-              into an immersive language classroom.
+              {s.features.subtitle}
             </p>
           </div>
 
@@ -215,11 +133,10 @@ const ChromeExtensionContent = (): React.JSX.Element => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
             <h2 className="text-[var(--text)] font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight">
-              Install in under a minute
+              {s.install.title}
             </h2>
             <p className="text-[var(--text-dim)] text-lg mt-4">
-              No setup headaches. Add Funlingo to Chrome and start learning right
-              away.
+              {s.install.subtitle}
             </p>
           </div>
 
@@ -255,10 +172,10 @@ const ChromeExtensionContent = (): React.JSX.Element => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-[var(--text)] font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight">
-              Frequently asked questions
+              {s.faq.title}
             </h2>
             <p className="text-[var(--text-dim)] text-lg mt-4">
-              Everything about the Funlingo Chrome extension.
+              {s.faq.subtitle}
             </p>
           </div>
 
@@ -284,11 +201,10 @@ const ChromeExtensionContent = (): React.JSX.Element => {
           <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-80 h-80 bg-[#C81FD4]/30 rounded-full blur-3xl" />
           <div className="relative z-10 flex flex-col items-center gap-6">
             <h2 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight max-w-2xl">
-              Start learning languages while you watch
+              {s.cta.title}
             </h2>
             <p className="text-white/90 text-lg max-w-xl">
-              Join thousands of learners using Funlingo for free dual subtitles
-              and AI translation across 10 platforms.
+              {s.cta.subtitle}
             </p>
             <a
               href={CHROME_STORE_URL}
@@ -298,12 +214,12 @@ const ChromeExtensionContent = (): React.JSX.Element => {
               <Button className="relative bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(229,229,232,1)_100%)] h-12 px-8 rounded-lg overflow-hidden border-0 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <span className="relative z-10 flex items-center justify-center gap-2 text-black font-medium text-base whitespace-nowrap">
                   <Download className="w-5 h-5" />
-                  Add to Chrome — It&apos;s Free
+                  {s.cta.addToChrome}
                 </span>
               </Button>
             </a>
             <p className="text-white/70 text-sm">
-              Free · Rated 4.8/5 on the Chrome Web Store
+              {s.cta.note}
             </p>
           </div>
         </div>

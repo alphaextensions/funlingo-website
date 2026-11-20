@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate：デュアル字幕ツール比較",
+    "description": "Funlingo、Trancy、Immersive Translateの機能を徹底比較。NetflixやYouTubeのデュアル字幕に、Funlingoが最適な無料の選択肢である理由をご紹介します。"
+  },
+  "hero": {
+    "badge": "徹底比較",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "どの語学学習拡張機能が自分に合っているか迷っていませんか？2026年の主要ツールの機能、料金、できることを詳しく比較します。"
+  },
+  "table": {
+    "ariaLabel": "Funlingo、Trancy、Immersive Translateの機能比較",
+    "featureHeader": "機能",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "単語ポップアップ",
+        "sub": "母語での意味＋「例文を見る」（独自機能）",
+        "fun": "ポップアップに母語での意味＋例文を見る機能を搭載（独自のUX）。",
+        "trancy": "ポップアップ内に例文表示はなし。",
+        "immersive": "非対応。"
+      },
+      {
+        "feature": "インラインの母語訳",
+        "sub": "難しい単語にカッコ書き（独自機能）",
+        "fun": "選択した単語や難しい単語に、母語での意味をカッコ書きでインライン表示。",
+        "trancy": "非対応。",
+        "immersive": "非対応。"
+      },
+      {
+        "feature": "単語ごとの発音",
+        "sub": "（つづり＋音声）",
+        "fun": "単語ごとの発音（つづりのヒント＋音声＋スロー再生）。",
+        "trancy": "限定的／TTS機能あり。単語ごとのつづり表示UIについては明確な記載なし。",
+        "immersive": "TTSは限定的。単語ごとのつづり表示UIについては記載なし。"
+      },
+      {
+        "feature": "クリックで文脈AI",
+        "sub": "解説（フレーズと用法のメモ）",
+        "fun": "クリックで解説するAIブロックを内蔵（フレーズ単位の文脈）。",
+        "trancy": "文法・分析ツールあり。文脈解説の流れも用意。",
+        "immersive": "文脈翻訳機能の一部あり。プレーヤー内の体験は異なる。"
+      },
+      {
+        "feature": "単語保存と復習",
+        "sub": "デッキ",
+        "fun": "単語帳に保存＋復習リスト／エクスポート。復習UXを内蔵。",
+        "trancy": "保存・ブックマークは可能だが、本格的な復習デッキ機能は限定的、または学習モード向け。",
+        "immersive": "統合された復習デッキについての公開情報なし。"
+      },
+      {
+        "feature": "プライバシーと拡張機能の",
+        "sub": "安全性",
+        "fun": "権限とプライバシーについて明示。軽量な拡張機能設計。",
+        "trancy": "プライバシー情報あり。法人向け機能は異なる場合あり。",
+        "immersive": "場合による。公開ドキュメントは限定的。"
+      }
+    ],
+    "legend": {
+      "core": "コア機能として搭載",
+      "available": "機能あり",
+      "limited": "限定的／主要機能ではない"
+    }
+  },
+  "why": {
+    "title": "Funlingoを選ぶ理由",
+    "items": [
+      "完全無料：コア機能に有料の制限は一切ありません。",
+      "幅広い互換性：Netflix、YouTube、Primeでスムーズに動作します。",
+      "AI搭載：単なる直訳ではなく、文脈に沿った解説を提供します。",
+      "ストレスゼロ：視聴の邪魔にならない、さりげない設計です。"
+    ]
+  },
+  "cta": {
+    "title": "乗り換えてみませんか？",
+    "body": "今すぐFunlingoをインストールして、違いを体感してください。30秒もかからずに始められます。",
+    "button": "Chrome版Funlingoを入手"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Politica de confidențialitate",
+    "description": "Politica de confidențialitate Funlingo. Află cum gestionăm informațiile tale atunci când folosești extensia Funlingo pentru Chrome și site-ul nostru."
+  },
+  "translationNotice": "Această traducere este oferită pentru comoditate. În caz de neconcordanță, prevalează versiunea în limba engleză a acestei politici.",
+  "englishLinkText": "Citește versiunea în engleză",
+  "hero": {
+    "badge": "Confidențialitatea ta contează",
+    "title": "Politica de confidențialitate",
+    "intro": "Bine ai venit la Funlingo. Confidențialitatea ta este importantă pentru noi. Această Politică de confidențialitate explică modul în care gestionăm informațiile tale atunci când folosești extensia Funlingo pentru Chrome și site-ul nostru."
+  },
+  "effectiveDate": "Data intrării în vigoare: noiembrie 2025",
+  "sections": [
+    {
+      "title": "Informații pe care nu le colectăm",
+      "content": "Am creat Funlingo pentru a-i ajuta pe utilizatori să se bucure de subtitrări duble și să învețe limbi străine în timpul streamingului, fără a le compromite confidențialitatea. Nu folosim cookie-uri sau instrumente de analiză terțe pentru a-ți monitoriza activitatea. Nu vindem și nu închiriem informațiile tale nimănui."
+    },
+    {
+      "title": "Permisiuni utilizate",
+      "content": "Funlingo necesită anumite permisiuni Chrome doar pentru a funcționa corect: acces la paginile site-urilor de streaming (de exemplu, Netflix, YouTube) pentru a afișa subtitrări duble în playerul video; permisiunea ActiveTab pentru a insera subtitrări și a permite interactivitatea (pauză la trecerea cu mouse-ul, traduceri etc.). Aceste permisiuni sunt folosite doar local, pe dispozitivul tău. Funlingo nu trimite niciodată date din pagini sau conținut video către vreun server extern."
+    },
+    {
+      "title": "Prelucrarea datelor",
+      "content": "Toată afișarea subtitrărilor, traducerile și interacțiunile la trecerea cu mouse-ul au loc local, în browserul tău. Dacă funcții viitoare vor folosi API-uri pentru traduceri sau căutări în dicționar, cererile vor fi făcute anonim și fără stocarea identificatorilor de utilizator."
+    },
+    {
+      "title": "Servicii terțe",
+      "content": "Funlingo se poate conecta la API-uri publice de traducere sau de dicționar (de exemplu, Google Translate API sau similare). Acestea sunt folosite doar pentru a obține sensuri de cuvinte sau traduceri și nu transmit nicio identitate a utilizatorului și nicio dată de navigare."
+    },
+    {
+      "title": "Confidențialitatea copiilor",
+      "content": "Funlingo este sigur pentru toate categoriile de public și nu colectează în mod intenționat date de la copii sub 13 ani."
+    },
+    {
+      "title": "Securitate",
+      "content": "Deoarece nu stocăm date personale, informațiile tale rămân pe dispozitivul tău. Urmăm cele mai bune practici pentru a ne asigura că scripturile extensiei sunt sigure și limitate la domeniile necesare."
+    },
+    {
+      "title": "Actualizări ale acestei politici",
+      "content": "Este posibil să actualizăm ocazional această Politică de confidențialitate. Dacă apar modificări semnificative, vom actualiza Data intrării în vigoare și vom publica noua versiune pe site-ul nostru."
+    }
+  ],
+  "contact": {
+    "badge": "Ia legătura cu noi",
+    "title": "Contactează-ne",
+    "text": "Dacă ai întrebări sau nelămuriri cu privire la această Politică de confidențialitate, contactează-ne la:"
+  },
+  "commitment": "Funlingo se angajează să facă învățarea limbilor străine prin streaming sigură, privată și fără efort."
+}

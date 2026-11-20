@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "取得協助與支援",
+    "description": "取得 Funlingo 團隊的協助與支援。回報問題、提出功能需求，或詢問關於我們語言學習擴充功能的任何問題。"
+  },
+  "header": {
+    "title": "取得協助與支援",
+    "subtitle": "我們的團隊隨時協助你充分運用 Funlingo。有任何問題都歡迎聯絡我們。"
+  },
+  "supportTypes": [
+    {
+      "title": "技術支援",
+      "description": "應用程式問題、錯誤或技術故障",
+      "responseTime": "2-4 小時"
+    },
+    {
+      "title": "功能需求",
+      "description": "建議新功能或改進",
+      "responseTime": "1-2 天"
+    },
+    {
+      "title": "一般詢問",
+      "description": "其他問題或資訊需求",
+      "responseTime": "1-2 天"
+    }
+  ],
+  "responseLabel": "回覆時間：{time}",
+  "successMessage": "感謝你與我們聯絡！我們會盡快回覆你。",
+  "form": {
+    "nameLabel": "姓名",
+    "namePlaceholder": "你的全名",
+    "emailLabel": "電子郵件",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "問題類型",
+    "issueTypes": {
+      "technical": "技術支援",
+      "billing": "帳單與帳號",
+      "feature": "功能需求",
+      "general": "一般詢問",
+      "bug": "錯誤回報"
+    },
+    "priorityLabel": "優先順序",
+    "priorities": {
+      "low": "低",
+      "medium": "中",
+      "high": "高",
+      "urgent": "緊急"
+    },
+    "subjectLabel": "主旨",
+    "subjectPlaceholder": "簡短描述你的問題",
+    "messageLabel": "訊息",
+    "messagePlaceholder": "請詳細描述你遇到的問題……",
+    "attachmentsLabel": "附件（選填）",
+    "removeAttachment": "x",
+    "submit": "送出支援請求"
+  },
+  "contact": {
+    "title": "聯絡資訊",
+    "emailTitle": "電子郵件支援",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord 社群",
+    "discordText": "加入社群，取得即時協助",
+    "responseTitle": "回覆時間",
+    "responseText": "依優先順序而定，2-48 小時"
+  },
+  "beforeContact": {
+    "title": "聯絡我們之前",
+    "tips": [
+      "先看看常見問題，快速找到解答",
+      "如果可以，請附上相關螢幕截圖",
+      "描述重現問題的步驟",
+      "註明你的裝置與應用程式版本"
+    ]
+  }
+}

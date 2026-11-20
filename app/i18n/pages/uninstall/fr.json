@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Dommage de vous voir partir",
+    "description": "Dites-nous pourquoi vous avez désinstallé Funlingo. Vos retours nous aident à créer une meilleure expérience d'apprentissage des langues."
+  },
+  "form": {
+    "title": "Pourquoi avez-vous désinstallé Funlingo ?",
+    "subtitle": "Un seul clic suffit. Votre réponse arrive directement à l'équipe.",
+    "reasonsAriaLabel": "Raison de la désinstallation",
+    "optional": "(facultatif)",
+    "howLongLabel": "Pendant combien de temps avez-vous utilisé Funlingo ? (facultatif)",
+    "emailLabel": "E-mail (facultatif), pour vous prévenir quand ce sera corrigé",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Envoyer"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Quelque chose ne fonctionnait pas",
+      "prompt": "Qu'est-ce qui n'a pas marché ?",
+      "placeholder": "Sur quel site, et que s'est-il passé ? Une seule ligne nous aide déjà."
+    },
+    "translations": {
+      "label": "Les traductions n'étaient pas assez bonnes",
+      "prompt": "Quelle paire de langues, et sur quel site ?",
+      "placeholder": "ex. anglais → espagnol sur Netflix, traductions trop littérales…"
+    },
+    "platform": {
+      "label": "Mon site de streaming n'est pas pris en charge",
+      "prompt": "Quel site ou quel navigateur ?",
+      "placeholder": "ex. Safari, Firefox, un site de streaming précis…"
+    },
+    "missing": {
+      "label": "Il manquait une fonctionnalité dont j'avais besoin",
+      "prompt": "Que vous manquait-il ?",
+      "placeholder": "ex. une langue, un service de streaming, une liste de mots…"
+    },
+    "switched": {
+      "label": "Je suis passé à un autre outil",
+      "prompt": "Lequel ?",
+      "placeholder": "ex. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Je testais juste / je n'en ai pas besoin pour l'instant",
+      "prompt": "Qu'est-ce qui vous aurait donné envie de le garder ?",
+      "placeholder": "Dites-le-nous avec vos propres mots."
+    },
+    "other": {
+      "label": "Autre chose",
+      "prompt": "Pourquoi avez-vous désinstallé Funlingo ?",
+      "placeholder": "Dites-le-nous avec vos propres mots."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Moins d'un jour",
+    "lessThanWeek": "Moins d'une semaine",
+    "oneToThreeWeeks": "1 à 3 semaines",
+    "oneToThreeMonths": "1 à 3 mois"
+  },
+  "thanks": {
+    "title": "Merci, c'est bien reçu.",
+    "recoverable": "Nous publions des correctifs et de nouvelles fonctionnalités chaque semaine. Si vous redonnez sa chance à Funlingo, le problème est peut-être déjà réglé.",
+    "notRecoverable": "Vos retours arrivent directement à l'équipe. Merci d'avoir pris le temps.",
+    "emailNote": "Nous vous écrirons à {email} dès qu'il y aura du nouveau.",
+    "reinstall": "Redonner sa chance à Funlingo",
+    "backHome": "Retour à l'accueil"
+  }
+}

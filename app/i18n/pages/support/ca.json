@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Ajuda i suport",
+    "description": "Obtén ajuda de l'equip de Funlingo. Informa de problemes, demana funcions o fes preguntes sobre la nostra extensió per aprendre idiomes."
+  },
+  "header": {
+    "title": "Ajuda i suport",
+    "subtitle": "El nostre equip és aquí per ajudar-te a treure el màxim profit de Funlingo. Escriu-nos quan vulguis."
+  },
+  "supportTypes": [
+    {
+      "title": "Suport tècnic",
+      "description": "Problemes amb l'aplicació, errors o incidències tècniques",
+      "responseTime": "2-4 hores"
+    },
+    {
+      "title": "Sol·licitud de funció",
+      "description": "Suggereix noves funcions o millores",
+      "responseTime": "1-2 dies"
+    },
+    {
+      "title": "Consulta general",
+      "description": "Altres preguntes o sol·licituds d'informació",
+      "responseTime": "1-2 dies"
+    }
+  ],
+  "responseLabel": "Resposta: {time}",
+  "successMessage": "Gràcies per contactar amb nosaltres! Et respondrem al més aviat possible.",
+  "form": {
+    "nameLabel": "Nom",
+    "namePlaceholder": "El teu nom complet",
+    "emailLabel": "Correu electrònic",
+    "emailPlaceholder": "el.teu.correu@example.com",
+    "issueTypeLabel": "Tipus d'incidència",
+    "issueTypes": {
+      "technical": "Suport tècnic",
+      "billing": "Facturació i compte",
+      "feature": "Sol·licitud de funció",
+      "general": "Consulta general",
+      "bug": "Informe d'error"
+    },
+    "priorityLabel": "Prioritat",
+    "priorities": {
+      "low": "Baixa",
+      "medium": "Mitjana",
+      "high": "Alta",
+      "urgent": "Urgent"
+    },
+    "subjectLabel": "Assumpte",
+    "subjectPlaceholder": "Breu descripció del problema",
+    "messageLabel": "Missatge",
+    "messagePlaceholder": "Descriu el problema amb detall...",
+    "attachmentsLabel": "Fitxers adjunts (opcional)",
+    "removeAttachment": "x",
+    "submit": "Envia la sol·licitud de suport"
+  },
+  "contact": {
+    "title": "Informació de contacte",
+    "emailTitle": "Suport per correu",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Comunitat de Discord",
+    "discordText": "Uneix-t'hi per rebre ajuda en temps real",
+    "responseTitle": "Temps de resposta",
+    "responseText": "2-48 hores segons la prioritat"
+  },
+  "beforeContact": {
+    "title": "Abans de contactar-nos",
+    "tips": [
+      "Consulta les preguntes freqüents per obtenir respostes ràpides",
+      "Inclou captures de pantalla rellevants si és possible",
+      "Descriu els passos per reproduir el problema",
+      "Indica el teu dispositiu i la versió de l'aplicació"
+    ]
+  }
+}

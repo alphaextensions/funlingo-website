@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Get Help & Support",
+    "description": "Get help and support from the Funlingo team. Report issues, request features, or ask questions about our language learning extension."
+  },
+  "header": {
+    "title": "Get Help & Support",
+    "subtitle": "Our team is here to help you succeed with Funlingo. Reach out anytime."
+  },
+  "supportTypes": [
+    {
+      "title": "Technical Support",
+      "description": "App issues, bugs, or technical problems",
+      "responseTime": "2-4 hours"
+    },
+    {
+      "title": "Feature Request",
+      "description": "Suggest new features or improvements",
+      "responseTime": "1-2 days"
+    },
+    {
+      "title": "General Enquiry",
+      "description": "Other questions or information requests",
+      "responseTime": "1-2 days"
+    }
+  ],
+  "responseLabel": "Response: {time}",
+  "successMessage": "Thank you for contacting us! We'll get back to you as soon as possible.",
+  "form": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "Issue Type",
+    "issueTypes": {
+      "technical": "Technical Support",
+      "billing": "Billing & Account",
+      "feature": "Feature Request",
+      "general": "General Enquiry",
+      "bug": "Bug Report"
+    },
+    "priorityLabel": "Priority",
+    "priorities": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Brief description of your issue",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Please describe your issue in detail...",
+    "attachmentsLabel": "Attachments (Optional)",
+    "removeAttachment": "x",
+    "submit": "Send Support Request"
+  },
+  "contact": {
+    "title": "Contact Information",
+    "emailTitle": "Email Support",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord Community",
+    "discordText": "Join for real-time help",
+    "responseTitle": "Response Time",
+    "responseText": "2-48 hours depending on priority"
+  },
+  "beforeContact": {
+    "title": "Before You Contact",
+    "tips": [
+      "Check our FAQ section for quick answers",
+      "Include relevant screenshots if possible",
+      "Describe the steps to reproduce the issue",
+      "Mention your device and app version"
+    ]
+  }
+}

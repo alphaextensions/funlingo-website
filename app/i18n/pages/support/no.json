@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Hjelp og støtte",
+    "description": "Få hjelp og støtte fra Funlingo-teamet. Meld fra om problemer, foreslå funksjoner eller still spørsmål om språkutvidelsen vår."
+  },
+  "header": {
+    "title": "Hjelp og støtte",
+    "subtitle": "Teamet vårt er her for å hjelpe deg med å lykkes med Funlingo. Ta kontakt når som helst."
+  },
+  "supportTypes": [
+    {
+      "title": "Teknisk støtte",
+      "description": "Problemer med appen, feil eller tekniske utfordringer",
+      "responseTime": "2–4 timer"
+    },
+    {
+      "title": "Funksjonsønske",
+      "description": "Foreslå nye funksjoner eller forbedringer",
+      "responseTime": "1–2 dager"
+    },
+    {
+      "title": "Generell henvendelse",
+      "description": "Andre spørsmål eller forespørsler om informasjon",
+      "responseTime": "1–2 dager"
+    }
+  ],
+  "responseLabel": "Svartid: {time}",
+  "successMessage": "Takk for at du kontaktet oss! Vi svarer deg så snart som mulig.",
+  "form": {
+    "nameLabel": "Navn",
+    "namePlaceholder": "Fullt navn",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "din.epost@example.com",
+    "issueTypeLabel": "Type henvendelse",
+    "issueTypes": {
+      "technical": "Teknisk støtte",
+      "billing": "Betaling og konto",
+      "feature": "Funksjonsønske",
+      "general": "Generell henvendelse",
+      "bug": "Feilrapport"
+    },
+    "priorityLabel": "Prioritet",
+    "priorities": {
+      "low": "Lav",
+      "medium": "Middels",
+      "high": "Høy",
+      "urgent": "Haster"
+    },
+    "subjectLabel": "Emne",
+    "subjectPlaceholder": "Kort beskrivelse av problemet",
+    "messageLabel": "Melding",
+    "messagePlaceholder": "Beskriv problemet så detaljert som mulig...",
+    "attachmentsLabel": "Vedlegg (valgfritt)",
+    "removeAttachment": "x",
+    "submit": "Send henvendelse"
+  },
+  "contact": {
+    "title": "Kontaktinformasjon",
+    "emailTitle": "Støtte på e-post",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord-fellesskap",
+    "discordText": "Bli med og få hjelp i sanntid",
+    "responseTitle": "Svartid",
+    "responseText": "2–48 timer avhengig av prioritet"
+  },
+  "beforeContact": {
+    "title": "Før du tar kontakt",
+    "tips": [
+      "Sjekk FAQ-en vår for raske svar",
+      "Legg ved relevante skjermbilder hvis mulig",
+      "Beskriv hvordan problemet kan gjenskapes",
+      "Oppgi enheten din og appversjonen"
+    ]
+  }
+}

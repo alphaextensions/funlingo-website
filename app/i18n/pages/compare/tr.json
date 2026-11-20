@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate - Çift Altyazı Karşılaştırması",
+    "description": "Funlingo, Trancy ve Immersive Translate'in ayrıntılı karşılaştırması. Netflix ve YouTube'da çift altyazı için en iyi ücretsiz alternatif neden Funlingo?"
+  },
+  "hero": {
+    "badge": "Ayrıntılı Karşılaştırma",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Hangi dil öğrenme uzantısının size uygun olduğundan emin değil misiniz? 2026'nın en iyi araçlarının özelliklerini, fiyatlarını ve yeteneklerini inceliyoruz."
+  },
+  "table": {
+    "ariaLabel": "Funlingo, Trancy ve Immersive Translate arasındaki özellik karşılaştırması",
+    "featureHeader": "Özellik",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Kelime Düzeyinde Açılır Pencere",
+        "sub": "Ana Dilde Anlam + \"Örnek Göster\" (Benzersiz)",
+        "fun": "Açılır pencere ana dilde anlam + Örnek Göster içerir (benzersiz kullanıcı deneyimi).",
+        "trancy": "Açılır pencerede Örnek Göster yok.",
+        "immersive": "Mevcut değil."
+      },
+      {
+        "feature": "Satır İçi Ana Dilde Anlam",
+        "sub": "Zor Kelimeler İçin Parantez İçinde (Benzersiz)",
+        "fun": "Seçili/zor kelimeler için satır içinde parantez içinde ana dilde anlam.",
+        "trancy": "Mevcut değil.",
+        "immersive": "Mevcut değil."
+      },
+      {
+        "feature": "Kelime Bazında Telaffuz",
+        "sub": "(heceleme + ses)",
+        "fun": "Her kelime için telaffuz (heceleme ipucu + ses + yavaş oynatma).",
+        "trancy": "Sınırlı / TTS özellikleri var; kelime bazında heceleme arayüzü açıkça belgelenmemiş.",
+        "immersive": "Sınırlı TTS; kelime bazında heceleme arayüzü belgelenmemiş."
+      },
+      {
+        "feature": "Tıkla-Bağlamı-Gör Yapay Zekâ",
+        "sub": "Açıklamaları (ifade ve kullanım notları)",
+        "fun": "Entegre, tıklayınca açıklayan yapay zekâ blokları (ifade düzeyinde bağlam).",
+        "trancy": "Dil bilgisi/analiz araçları sunar; bağlamsal açıklama akışı mevcut.",
+        "immersive": "Bazı bağlamsal çeviri özellikleri var; oynatıcı içi deneyim aynı değil."
+      },
+      {
+        "feature": "Kelime Kaydetme ve Tekrar",
+        "sub": "Destesi",
+        "fun": "Kelime listesine kaydetme + tekrar listesi / dışa aktarma; yerleşik tekrar deneyimi.",
+        "trancy": "Kaydetme/yer imi var ancak tam tekrar destesi özellikleri sınırlı veya çalışma moduna yönelik.",
+        "immersive": "Entegre bir tekrar destesi olarak herkese açık şekilde belgelenmemiş."
+      },
+      {
+        "feature": "Gizlilik ve Uzantı",
+        "sub": "Güvenlik Göstergeleri",
+        "fun": "Açık izinler ve gizlilik rehberi; hafif uzantı yapısı.",
+        "trancy": "Gizlilik bilgisi mevcut; kurumsal özellikler farklılık gösterebilir.",
+        "immersive": "Değişken; herkese açık belgeler sınırlı."
+      }
+    ],
+    "legend": {
+      "core": "Temel özellik mevcut",
+      "available": "Özellik mevcut",
+      "limited": "Sınırlı / Öncelikli değil"
+    }
+  },
+  "why": {
+    "title": "Neden Funlingo?",
+    "items": [
+      "Tamamen Ücretsiz: Temel özelliklerde premium kilit yok.",
+      "Evrensel Uyumluluk: Netflix, YouTube ve Prime'da sorunsuz çalışır.",
+      "Yapay Zekâ Destekli: Sadece birebir çeviri değil, bağlamsal açıklamalar.",
+      "Sıfır Zahmet: İzlerken arka planda, sizi rahatsız etmeden çalışacak şekilde tasarlandı."
+    ]
+  },
+  "cta": {
+    "title": "Geçmeye hazır mısınız?",
+    "body": "Funlingo'yu bugün yükleyin ve farkı yaşayın. Başlamak 30 saniyeden kısa sürer.",
+    "button": "Chrome için Funlingo'yu Edinin"
+  }
+}

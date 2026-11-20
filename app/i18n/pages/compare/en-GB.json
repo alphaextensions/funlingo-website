@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate - Best Dual Subtitle Tool Comparison",
+    "description": "Detailed feature comparison of Funlingo, Trancy, and Immersive Translate. Discover why Funlingo is the best free alternative for dual subtitles on Netflix & YouTube."
+  },
+  "hero": {
+    "badge": "Detailed Comparison",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Unsure which language learning extension is right for you? We break down the features, pricing, and capabilities of the top tools in 2026."
+  },
+  "table": {
+    "ariaLabel": "Feature comparison between Funlingo, Trancy, and Immersive Translate",
+    "featureHeader": "Feature",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Word-level Popup",
+        "sub": "Native Meaning + \"View Example\" (Unique)",
+        "fun": "Popup includes native meaning + View Example (unique UX).",
+        "trancy": "No View Example inside popup.",
+        "immersive": "Not available."
+      },
+      {
+        "feature": "Inline Native Meaning",
+        "sub": "Bracketed for Hard Words (Unique)",
+        "fun": "Inline bracketed native meaning for selected/difficult words.",
+        "trancy": "Not available.",
+        "immersive": "Not available."
+      },
+      {
+        "feature": "Per-Word Pronunciation",
+        "sub": "(spelled + audio)",
+        "fun": "Pronunciation per word (spelled-out cue + audio + slow play).",
+        "trancy": "Limited / TTS features exist; per-word spelled-out UI not clearly documented.",
+        "immersive": "Limited TTS; per-word spelled UI not documented."
+      },
+      {
+        "feature": "Click-for-Context AI",
+        "sub": "Explanations (phrase & usage notes)",
+        "fun": "Integrated click-for-explain AI blocks (phrase-level context).",
+        "trancy": "Offers grammar/analysis tools; contextual explanation flow present.",
+        "immersive": "Some contextual translation features; not identical in-player experience."
+      },
+      {
+        "feature": "Save-to-Vocab & Review",
+        "sub": "Deck",
+        "fun": "Save-to-vocab + review list / export; built-in review UX.",
+        "trancy": "Save/bookmark exists but full review deck features limited or study-mode oriented.",
+        "immersive": "Not publicly documented as an integrated review deck."
+      },
+      {
+        "feature": "Privacy & Extension",
+        "sub": "Safety Signals",
+        "fun": "Explicit permissions & privacy guidance; lightweight extension model.",
+        "trancy": "Privacy info available; enterprise features may differ.",
+        "immersive": "Varies; public documentation limited."
+      }
+    ],
+    "legend": {
+      "core": "Core feature present",
+      "available": "Feature available",
+      "limited": "Limited / Not primary"
+    }
+  },
+  "why": {
+    "title": "Why choose Funlingo?",
+    "items": [
+      "Completely Free: No premium locks on core features.",
+      "Universal Compatibility: Works seamlessly on Netflix, YouTube, and Prime.",
+      "AI-Powered: Contextual explanations, not just direct translations.",
+      "Zero Friction: Designed to be passive and unobtrusive while you watch."
+    ]
+  },
+  "cta": {
+    "title": "Ready to switch?",
+    "body": "Install Funlingo today and experience the difference. It takes less than 30 seconds to get started.",
+    "button": "Get Funlingo for Chrome"
+  }
+}

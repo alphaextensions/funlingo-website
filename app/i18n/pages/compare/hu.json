@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs. Trancy vs. Immersive Translate – összehasonlítás",
+    "description": "A Funlingo, a Trancy és az Immersive Translate funkcióinak részletes összehasonlítása. Tudd meg, miért a Funlingo a legjobb ingyenes kétnyelvű feliratos választás."
+  },
+  "hero": {
+    "badge": "Részletes összehasonlítás",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Nem tudod, melyik nyelvtanuló bővítmény illik hozzád? Összevetettük 2026 legjobb eszközeinek funkcióit, árait és képességeit."
+  },
+  "table": {
+    "ariaLabel": "A Funlingo, a Trancy és az Immersive Translate funkcióinak összehasonlítása",
+    "featureHeader": "Funkció",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Szószintű felugró ablak",
+        "sub": "Anyanyelvi jelentés + „Példa megtekintése” (egyedi)",
+        "fun": "A felugró ablakban anyanyelvi jelentés + Példa megtekintése (egyedi UX).",
+        "trancy": "Nincs Példa megtekintése a felugró ablakban.",
+        "immersive": "Nem érhető el."
+      },
+      {
+        "feature": "Soron belüli anyanyelvi jelentés",
+        "sub": "Zárójelben a nehéz szavaknál (egyedi)",
+        "fun": "Soron belüli, zárójeles anyanyelvi jelentés a kiválasztott/nehéz szavaknál.",
+        "trancy": "Nem érhető el.",
+        "immersive": "Nem érhető el."
+      },
+      {
+        "feature": "Szavankénti kiejtés",
+        "sub": "(leírva + hanggal)",
+        "fun": "Kiejtés szavanként (leírt kiejtési segítség + hang + lassított lejátszás).",
+        "trancy": "Korlátozott / vannak TTS-funkciók; a szavankénti leírt kiejtés felülete nincs egyértelműen dokumentálva.",
+        "immersive": "Korlátozott TTS; a szavankénti leírt kiejtés felülete nincs dokumentálva."
+      },
+      {
+        "feature": "Kattintásra elérhető AI",
+        "sub": "Magyarázatok (kifejezések és használati megjegyzések)",
+        "fun": "Beépített, kattintásra megjelenő AI-magyarázatok (kifejezésszintű kontextus).",
+        "trancy": "Nyelvtani/elemző eszközöket kínál; van kontextuális magyarázat.",
+        "immersive": "Néhány kontextuális fordítási funkció; a lejátszón belüli élmény nem ugyanaz."
+      },
+      {
+        "feature": "Mentés a szókincsbe és ismétlés",
+        "sub": "Pakli",
+        "fun": "Mentés a szókincsbe + ismétlőlista / exportálás; beépített ismétlőfelület.",
+        "trancy": "Van mentés/könyvjelző, de a teljes ismétlőpakli funkciói korlátozottak vagy tanulómódhoz kötöttek.",
+        "immersive": "Beépített ismétlőpakli nincs nyilvánosan dokumentálva."
+      },
+      {
+        "feature": "Adatvédelem és bővítmény",
+        "sub": "Biztonsági jelzések",
+        "fun": "Egyértelmű engedélyek és adatvédelmi útmutatás; könnyűsúlyú bővítménymodell.",
+        "trancy": "Adatvédelmi információk elérhetők; a vállalati funkciók eltérhetnek.",
+        "immersive": "Változó; a nyilvános dokumentáció korlátozott."
+      }
+    ],
+    "legend": {
+      "core": "Alapfunkció",
+      "available": "Elérhető funkció",
+      "limited": "Korlátozott / nem elsődleges"
+    }
+  },
+  "why": {
+    "title": "Miért a Funlingo?",
+    "items": [
+      "Teljesen ingyenes: az alapfunkciók nincsenek prémium mögé zárva.",
+      "Univerzális kompatibilitás: zökkenőmentesen működik a Netflixen, a YouTube-on és a Prime-on.",
+      "AI-alapú: kontextuális magyarázatok, nem csak szó szerinti fordítások.",
+      "Nulla súrlódás: úgy terveztük, hogy nézés közben észrevétlenül, zavarás nélkül működjön."
+    ]
+  },
+  "cta": {
+    "title": "Készen állsz a váltásra?",
+    "body": "Telepítsd a Funlingót még ma, és tapasztald meg a különbséget. Kevesebb mint 30 másodperc alatt elkezdheted.",
+    "button": "Szerezd meg a Funlingót Chrome-ra"
+  }
+}

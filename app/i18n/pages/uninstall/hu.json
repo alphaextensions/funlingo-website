@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Sajnáljuk, hogy elmész",
+    "description": "Mondd el, miért távolítottad el a Funlingót. A visszajelzésed segít, hogy még jobbá tegyük a nyelvtanulást."
+  },
+  "form": {
+    "title": "Miért távolítottad el a Funlingót?",
+    "subtitle": "Egy koppintás elég. A válaszod egyenesen a csapathoz kerül.",
+    "reasonsAriaLabel": "Az eltávolítás oka",
+    "optional": "(nem kötelező)",
+    "howLongLabel": "Mennyi ideig használtad a Funlingót? (nem kötelező)",
+    "emailLabel": "E-mail (nem kötelező), hogy szólhassunk, ha kijavítottuk",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Visszajelzés küldése"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Valami nem működött",
+      "prompt": "Mi romlott el?",
+      "placeholder": "Melyik oldalon, és mi történt? Már egy sor is sokat segít."
+    },
+    "translations": {
+      "label": "A fordítások nem voltak elég jók",
+      "prompt": "Melyik nyelvpár, és melyik oldal?",
+      "placeholder": "pl. angol → spanyol a Netflixen, túl szó szerintiek voltak a fordítások…"
+    },
+    "platform": {
+      "label": "A streamingoldalam nem támogatott",
+      "prompt": "Melyik oldal vagy böngésző?",
+      "placeholder": "pl. Safari, Firefox, egy adott streamingoldal…"
+    },
+    "missing": {
+      "label": "Hiányzott egy funkció, amire szükségem volt",
+      "prompt": "Mi hiányzott?",
+      "placeholder": "pl. egy nyelv, egy streamingszolgáltatás, egy szólista…"
+    },
+    "switched": {
+      "label": "Áttértem egy másik eszközre",
+      "prompt": "Melyikre?",
+      "placeholder": "pl. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Csak kipróbáltam / most nincs rá szükségem",
+      "prompt": "Mi vett volna rá, hogy megtartsd?",
+      "placeholder": "Írd le a saját szavaiddal."
+    },
+    "other": {
+      "label": "Valami más",
+      "prompt": "Miért távolítottad el a Funlingót?",
+      "placeholder": "Írd le a saját szavaiddal."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Kevesebb mint egy napig",
+    "lessThanWeek": "Kevesebb mint egy hétig",
+    "oneToThreeWeeks": "1–3 hétig",
+    "oneToThreeMonths": "1–3 hónapig"
+  },
+  "thanks": {
+    "title": "Köszönjük, megkaptuk.",
+    "recoverable": "Minden héten adunk ki javításokat és új funkciókat. Ha adsz még egy esélyt a Funlingónak, lehet, hogy ez már meg is oldódott.",
+    "notRecoverable": "A visszajelzésed egyenesen a csapathoz kerül. Köszönjük, hogy időt szántál rá.",
+    "emailNote": "Írunk a(z) {email} címre, ha van újdonság.",
+    "reinstall": "Adj még egy esélyt a Funlingónak",
+    "backHome": "Vissza a főoldalra"
+  }
+}

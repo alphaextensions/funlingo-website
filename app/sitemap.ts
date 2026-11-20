@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/` },
     ...LOCALE_CODES.map((code) => ({ url: `${BASE}/${code}` })),
     ...PAGES.map((path) => ({ url: `${BASE}${path}` })),
+    ...LOCALE_CODES.flatMap((code) => PAGES.map((path) => ({ url: `${BASE}${localizedHref(path, code)}` }))),
     ...PLATFORM_PAGES.map((p) => ({ url: `${BASE}${platformPath(p.slug)}` })),
     ...LOCALE_CODES.flatMap((code) =>
       PLATFORM_PAGES.map((p) => ({ url: `${BASE}${localizedHref(platformPath(p.slug), code)}` })),

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate：雙語字幕工具比較",
+    "description": "Funlingo、Trancy 與 Immersive Translate 功能詳細比較。了解為什麼 Funlingo 是在 Netflix 和 YouTube 上使用雙語字幕的最佳免費選擇。"
+  },
+  "hero": {
+    "badge": "詳細比較",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "不確定哪款語言學習擴充功能最適合你？我們為你剖析 2026 年熱門工具的功能、價格與能力。"
+  },
+  "table": {
+    "ariaLabel": "Funlingo、Trancy 與 Immersive Translate 的功能比較",
+    "featureHeader": "功能",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "單字彈出視窗",
+        "sub": "母語釋義 +「查看例句」（獨家）",
+        "fun": "彈出視窗包含母語釋義 + 查看例句（獨特體驗）。",
+        "trancy": "彈出視窗內沒有查看例句。",
+        "immersive": "不支援。"
+      },
+      {
+        "feature": "行內母語釋義",
+        "sub": "難字以括號標註（獨家）",
+        "fun": "為選取或較難的單字在行內以括號標註母語釋義。",
+        "trancy": "不支援。",
+        "immersive": "不支援。"
+      },
+      {
+        "feature": "逐字發音",
+        "sub": "（拼讀 + 音訊）",
+        "fun": "逐字發音（拼讀提示 + 音訊 + 慢速播放）。",
+        "trancy": "有限／具備 TTS 功能；逐字拼讀介面沒有明確說明。",
+        "immersive": "TTS 有限；沒有逐字拼讀介面的說明。"
+      },
+      {
+        "feature": "點擊查看語境 AI",
+        "sub": "解說（片語與用法說明）",
+        "fun": "內建點擊即解說的 AI 區塊（片語層級的語境）。",
+        "trancy": "提供文法／分析工具；具備語境解說流程。",
+        "immersive": "有部分語境翻譯功能；播放器內的體驗不同。"
+      },
+      {
+        "feature": "儲存生字與複習",
+        "sub": "字卡組",
+        "fun": "儲存到生字本 + 複習清單／匯出；內建複習體驗。",
+        "trancy": "可儲存／加入書籤，但完整字卡複習功能有限或偏向學習模式。",
+        "immersive": "未公開說明有整合式的複習字卡組。"
+      },
+      {
+        "feature": "隱私與擴充功能",
+        "sub": "安全指標",
+        "fun": "明確的權限與隱私說明；輕量化的擴充功能架構。",
+        "trancy": "提供隱私資訊；企業版功能可能不同。",
+        "immersive": "視情況而定；公開文件有限。"
+      }
+    ],
+    "legend": {
+      "core": "核心功能",
+      "available": "支援此功能",
+      "limited": "有限／非主要功能"
+    }
+  },
+  "why": {
+    "title": "為什麼選擇 Funlingo？",
+    "items": [
+      "完全免費：核心功能沒有任何付費限制。",
+      "廣泛相容：在 Netflix、YouTube 和 Prime 上順暢運作。",
+      "AI 驅動：提供語境解說，而不只是直譯。",
+      "零干擾：專為觀看時被動、不打擾的體驗而設計。"
+    ]
+  },
+  "cta": {
+    "title": "準備好換一個了嗎？",
+    "body": "立即安裝 Funlingo，親身體驗不同。不到 30 秒就能開始。",
+    "button": "取得 Funlingo Chrome 版"
+  }
+}

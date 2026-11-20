@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Kebijakan Privasi",
+    "description": "Kebijakan Privasi Funlingo. Pelajari cara kami menangani informasimu saat kamu menggunakan Ekstensi Chrome Funlingo dan situs web kami."
+  },
+  "translationNotice": "Terjemahan ini disediakan untuk kemudahan. Jika terdapat perbedaan, versi bahasa Inggris dari kebijakan ini yang berlaku.",
+  "englishLinkText": "Baca versi bahasa Inggris",
+  "hero": {
+    "badge": "Privasimu Penting",
+    "title": "Kebijakan Privasi",
+    "intro": "Selamat datang di Funlingo. Privasimu penting bagi kami. Kebijakan Privasi ini menjelaskan cara kami menangani informasimu saat kamu menggunakan Ekstensi Chrome Funlingo dan situs web kami."
+  },
+  "effectiveDate": "Tanggal Berlaku: November 2025",
+  "sections": [
+    {
+      "title": "Informasi yang Tidak Kami Kumpulkan",
+      "content": "Kami membangun Funlingo untuk membantu pengguna menikmati subtitle ganda dan belajar bahasa saat streaming tanpa mengorbankan privasi. Kami tidak menggunakan cookie atau analitik pihak ketiga untuk memantau aktivitasmu. Kami tidak menjual atau menyewakan informasimu kepada siapa pun."
+    },
+    {
+      "title": "Izin yang Digunakan",
+      "content": "Funlingo memerlukan izin Chrome tertentu semata-mata agar dapat berfungsi dengan benar: Akses ke halaman situs streaming (misalnya Netflix, YouTube) untuk menampilkan subtitle ganda di dalam pemutar video. Izin ActiveTab untuk menyisipkan subtitle dan memungkinkan interaktivitas (jeda saat kursor diarahkan, terjemahan, dll.). Izin ini hanya digunakan secara lokal di perangkatmu. Funlingo tidak pernah mengirimkan data halaman atau konten video ke server eksternal mana pun."
+    },
+    {
+      "title": "Pemrosesan Data",
+      "content": "Seluruh proses penampilan subtitle, terjemahan, dan interaksi saat kursor diarahkan terjadi secara lokal di browser-mu. Jika fitur di masa mendatang menggunakan API untuk terjemahan atau pencarian kamus, permintaan akan dilakukan secara anonim dan tanpa menyimpan pengenal pengguna."
+    },
+    {
+      "title": "Layanan Pihak Ketiga",
+      "content": "Funlingo dapat terhubung ke API terjemahan atau kamus publik (misalnya Google Translate API atau yang serupa). API ini hanya digunakan untuk mengambil arti kata atau terjemahan dan tidak mengirimkan identitas pengguna maupun data penjelajahan apa pun."
+    },
+    {
+      "title": "Privasi Anak",
+      "content": "Funlingo aman untuk semua kalangan dan tidak secara sengaja mengumpulkan data dari anak-anak di bawah usia 13 tahun."
+    },
+    {
+      "title": "Keamanan",
+      "content": "Karena kami tidak menyimpan data pribadi, informasimu tetap berada di perangkatmu. Kami mengikuti praktik terbaik untuk memastikan skrip ekstensi aman dan terbatas pada domain yang diperlukan."
+    },
+    {
+      "title": "Pembaruan Kebijakan Ini",
+      "content": "Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu. Jika terjadi perubahan signifikan, kami akan memperbarui Tanggal Berlaku dan memublikasikan versi baru di situs web kami."
+    }
+  ],
+  "contact": {
+    "badge": "Hubungi Kami",
+    "title": "Kontak Kami",
+    "text": "Jika kamu memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi ini, silakan hubungi kami di:"
+  },
+  "commitment": "Funlingo berkomitmen menjadikan belajar bahasa melalui streaming aman, privat, dan mudah."
+}

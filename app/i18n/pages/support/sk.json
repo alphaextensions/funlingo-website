@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Pomoc a podpora",
+    "description": "Získajte pomoc a podporu od tímu Funlingo. Nahláste problém, navrhnite funkciu alebo sa opýtajte na naše rozšírenie na výučbu jazykov."
+  },
+  "header": {
+    "title": "Pomoc a podpora",
+    "subtitle": "Náš tím vám rád pomôže, aby vám Funlingo fungovalo čo najlepšie. Ozvite sa kedykoľvek."
+  },
+  "supportTypes": [
+    {
+      "title": "Technická podpora",
+      "description": "Problémy s aplikáciou, chyby alebo technické ťažkosti",
+      "responseTime": "2-4 hodiny"
+    },
+    {
+      "title": "Návrh funkcie",
+      "description": "Navrhnite nové funkcie alebo vylepšenia",
+      "responseTime": "1-2 dni"
+    },
+    {
+      "title": "Všeobecný dotaz",
+      "description": "Ďalšie otázky alebo žiadosti o informácie",
+      "responseTime": "1-2 dni"
+    }
+  ],
+  "responseLabel": "Odpoveď: {time}",
+  "successMessage": "Ďakujeme, že ste nás kontaktovali! Ozveme sa vám čo najskôr.",
+  "form": {
+    "nameLabel": "Meno",
+    "namePlaceholder": "Vaše celé meno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vas.email@priklad.sk",
+    "issueTypeLabel": "Typ požiadavky",
+    "issueTypes": {
+      "technical": "Technická podpora",
+      "billing": "Platby a účet",
+      "feature": "Návrh funkcie",
+      "general": "Všeobecný dotaz",
+      "bug": "Nahlásenie chyby"
+    },
+    "priorityLabel": "Priorita",
+    "priorities": {
+      "low": "Nízka",
+      "medium": "Stredná",
+      "high": "Vysoká",
+      "urgent": "Naliehavá"
+    },
+    "subjectLabel": "Predmet",
+    "subjectPlaceholder": "Stručný popis problému",
+    "messageLabel": "Správa",
+    "messagePlaceholder": "Opíšte, prosím, problém podrobne...",
+    "attachmentsLabel": "Prílohy (nepovinné)",
+    "removeAttachment": "x",
+    "submit": "Odoslať žiadosť o podporu"
+  },
+  "contact": {
+    "title": "Kontaktné údaje",
+    "emailTitle": "Podpora e-mailom",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Komunita na Discorde",
+    "discordText": "Pridajte sa a získajte pomoc v reálnom čase",
+    "responseTitle": "Čas odozvy",
+    "responseText": "2-48 hodín podľa priority"
+  },
+  "beforeContact": {
+    "title": "Skôr než nás kontaktujete",
+    "tips": [
+      "Rýchle odpovede nájdete v sekcii častých otázok",
+      "Ak je to možné, priložte relevantné snímky obrazovky",
+      "Opíšte kroky, ktoré vedú k problému",
+      "Uveďte svoje zariadenie a verziu aplikácie"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Tilbakemelding – del tankene dine",
+    "description": "Del tilbakemeldingen din med Funlingo-teamet. Hjelp oss å lage en bedre språklæringsopplevelse for alle."
+  },
+  "header": {
+    "title": "Vi vil gjerne høre fra deg",
+    "subtitle": "Innspillene dine hjelper oss å lage en bedre språklæringsopplevelse for alle"
+  },
+  "validation": {
+    "name": "Skriv inn navnet ditt.",
+    "email": "Skriv inn e-postadressen din.",
+    "message": "Skriv inn tilbakemeldingen din.",
+    "uninstallReason": "Velg minst én grunn til avinstallering."
+  },
+  "submitError": "Noe gikk galt. Prøv igjen.",
+  "success": "Takk for tilbakemeldingen! Vi går nøye gjennom den.",
+  "form": {
+    "nameLabel": "Navn",
+    "namePlaceholder": "Navnet ditt",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "din.epost@example.com",
+    "categoryLabel": "Kategori",
+    "categories": {
+      "feature": "Funksjonsønske",
+      "bug": "Feilrapport",
+      "improvement": "Forslag til forbedring",
+      "uninstall": "Grunn til avinstallering",
+      "other": "Annet"
+    },
+    "satisfactionLabel": "Generell tilfredshet",
+    "satisfactionLevels": {
+      "1": "Svært misfornøyd",
+      "2": "Misfornøyd",
+      "3": "Nøytral",
+      "4": "Fornøyd",
+      "5": "Svært fornøyd"
+    },
+    "uninstall": {
+      "heading": "Hvorfor vurderer du å avinstallere?",
+      "missingFeatures": "Mangler funksjoner jeg trenger",
+      "notWorking": "Fungerer ikke som det skal",
+      "otherReasons": "Andre grunner",
+      "otherPlaceholder": "Beskriv andre grunner..."
+    },
+    "featureDetailsLabel": "Detaljer om funksjonen",
+    "desiredFeatureLabel": "Er det en funksjon du vil at vi skal lage?",
+    "featureDetailsPlaceholder": "Beskriv funksjonen du ønsker deg...",
+    "desiredFeaturePlaceholder": "Hvilken funksjon ville fått deg til å ombestemme deg?",
+    "recommendLabel": "Vil du anbefale Funlingo til andre?",
+    "recommendOptions": {
+      "none": "Velg et alternativ",
+      "definitely": "Absolutt",
+      "probably": "Sannsynligvis",
+      "unsure": "Usikker",
+      "probablyNot": "Sannsynligvis ikke",
+      "definitelyNot": "Absolutt ikke"
+    },
+    "commentsLabel": "Andre kommentarer",
+    "commentsPlaceholder": "Del andre tanker, forslag eller detaljer...",
+    "submitting": "Sender...",
+    "submit": "Send tilbakemelding"
+  },
+  "contact": {
+    "email": {
+      "title": "Send oss en e-post",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Følg siden vår"
+    }
+  }
+}

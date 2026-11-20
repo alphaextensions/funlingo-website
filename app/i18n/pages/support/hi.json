@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "मदद और सपोर्ट पाएँ",
+    "description": "Funlingo टीम से मदद और सपोर्ट पाएँ। समस्याएँ रिपोर्ट करें, फ़ीचर का अनुरोध करें या हमारे भाषा सीखने वाले एक्सटेंशन के बारे में सवाल पूछें।"
+  },
+  "header": {
+    "title": "मदद और सपोर्ट पाएँ",
+    "subtitle": "हमारी टीम Funlingo के साथ आपकी सफलता में मदद के लिए यहाँ है। कभी भी संपर्क करें।"
+  },
+  "supportTypes": [
+    {
+      "title": "तकनीकी सपोर्ट",
+      "description": "ऐप की समस्याएँ, बग या तकनीकी दिक्कतें",
+      "responseTime": "2-4 घंटे"
+    },
+    {
+      "title": "फ़ीचर अनुरोध",
+      "description": "नए फ़ीचर या सुधार सुझाएँ",
+      "responseTime": "1-2 दिन"
+    },
+    {
+      "title": "सामान्य पूछताछ",
+      "description": "अन्य सवाल या जानकारी के अनुरोध",
+      "responseTime": "1-2 दिन"
+    }
+  ],
+  "responseLabel": "जवाब: {time}",
+  "successMessage": "हमसे संपर्क करने के लिए धन्यवाद! हम जल्द से जल्द आपको जवाब देंगे।",
+  "form": {
+    "nameLabel": "नाम",
+    "namePlaceholder": "आपका पूरा नाम",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "समस्या का प्रकार",
+    "issueTypes": {
+      "technical": "तकनीकी सपोर्ट",
+      "billing": "बिलिंग और अकाउंट",
+      "feature": "फ़ीचर अनुरोध",
+      "general": "सामान्य पूछताछ",
+      "bug": "बग रिपोर्ट"
+    },
+    "priorityLabel": "प्राथमिकता",
+    "priorities": {
+      "low": "कम",
+      "medium": "मध्यम",
+      "high": "उच्च",
+      "urgent": "अत्यावश्यक"
+    },
+    "subjectLabel": "विषय",
+    "subjectPlaceholder": "अपनी समस्या का संक्षिप्त विवरण",
+    "messageLabel": "संदेश",
+    "messagePlaceholder": "कृपया अपनी समस्या का विस्तार से वर्णन करें...",
+    "attachmentsLabel": "अटैचमेंट (वैकल्पिक)",
+    "removeAttachment": "x",
+    "submit": "सपोर्ट अनुरोध भेजें"
+  },
+  "contact": {
+    "title": "संपर्क जानकारी",
+    "emailTitle": "ईमेल सपोर्ट",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord कम्युनिटी",
+    "discordText": "रियल-टाइम मदद के लिए जुड़ें",
+    "responseTitle": "जवाब का समय",
+    "responseText": "प्राथमिकता के अनुसार 2-48 घंटे"
+  },
+  "beforeContact": {
+    "title": "संपर्क करने से पहले",
+    "tips": [
+      "जल्दी जवाब के लिए हमारा FAQ सेक्शन देखें",
+      "हो सके तो संबंधित स्क्रीनशॉट शामिल करें",
+      "समस्या दोबारा होने के चरण बताएँ",
+      "अपने डिवाइस और ऐप वर्ज़न का उल्लेख करें"
+    ]
+  }
+}

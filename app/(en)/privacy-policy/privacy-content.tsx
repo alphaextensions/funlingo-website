@@ -6,8 +6,21 @@ import { useState, useEffect, useRef } from "react";
 import { Shield, Lock, Eye, Globe, Mail } from "lucide-react";
 import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
+import { useT } from "@/app/i18n/I18nProvider";
+import type { Strings } from "@/app/i18n/pages/privacy";
 
-export default function PrivacyContent() {
+const sectionIcons = [
+  <Eye key="eye" className="w-6 h-6" />,
+  <Lock key="lock" className="w-6 h-6" />,
+  <Shield key="shield" className="w-6 h-6" />,
+  <Globe key="globe" className="w-6 h-6" />,
+  <Lock key="lock2" className="w-6 h-6" />,
+  <Shield key="shield2" className="w-6 h-6" />,
+  <Eye key="eye2" className="w-6 h-6" />,
+];
+
+export default function PrivacyContent({ s }: { s: Strings }) {
+  const { locale } = useT();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -32,50 +45,10 @@ export default function PrivacyContent() {
     };
   }, []);
 
-  const policySections = [
-    {
-      icon: <Eye className="w-6 h-6" />,
-      title: "Information We Do Not Collect",
-      content:
-        "We built Funlingo to help users enjoy dual subtitles and learn languages while streaming without compromising privacy. We do not use cookies or third-party analytics to monitor your activity. We do not sell or rent your information to anyone.",
-    },
-    {
-      icon: <Lock className="w-6 h-6" />,
-      title: "Permissions Used",
-      content:
-        "Funlingo requires certain Chrome permissions only to function properly: Access to streaming site pages (e.g., Netflix, YouTube) to display dual subtitles within the video player. ActiveTab permission to inject subtitles and allow interactivity (pause on hover, translations, etc.). These permissions are used locally on your device only. Funlingo never sends page data or video content to any external server.",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Data Processing",
-      content:
-        "All subtitle rendering, translations, and hover interactions occur locally in your browser. If future features use APIs for translations or dictionary lookups, requests will be made anonymously and without storing user identifiers.",
-    },
-    {
-      icon: <Globe className="w-6 h-6" />,
-      title: "Third-Party Services",
-      content:
-        "Funlingo may connect to public translation or dictionary APIs (for example, Google Translate API or similar). These are used only to fetch word meanings or translations and do not transmit any user identity or browsing data.",
-    },
-    {
-      icon: <Lock className="w-6 h-6" />,
-      title: "Children's Privacy",
-      content:
-        "Funlingo is safe for all audiences and does not knowingly collect data from children under 13.",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security",
-      content:
-        "Because we do not store personal data, your information stays on your device. We follow best practices to ensure the extension's scripts are secure and limited to necessary domains.",
-    },
-    {
-      icon: <Eye className="w-6 h-6" />,
-      title: "Updates to This Policy",
-      content:
-        "We may update this Privacy Policy occasionally. If significant changes occur, we will update the Effective Date and post the new version on our website.",
-    },
-  ];
+  const policySections = s.sections.map((section, i) => ({
+    ...section,
+    icon: sectionIcons[i] ?? <Shield className="w-6 h-6" />,
+  }));
 
   return (
     <div className="flex flex-col items-start relative fnl-root min-h-screen">
@@ -98,21 +71,32 @@ export default function PrivacyContent() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(200,31,212,0.1)] border border-[#C81FD4]/20 text-[#C81FD4] text-sm font-medium mb-2 animate-fade-in-up">
               <Shield className="w-4 h-4" />
-              Your Privacy Matters
+              {s.hero.badge}
             </div>
 
             <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-textwhite text-3xl sm:text-4xl lg:text-5xl xl:text-[length:var(--heading-h1-font-size)] tracking-[var(--heading-h1-letter-spacing)] leading-tight sm:leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] animate-fade-in-up">
-              Privacy Policy
+              {s.hero.title}
             </h1>
 
             <p
               className="font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl lg:text-[length:var(--body-large-regular-font-size)] tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-3xl animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
-              Welcome to Funlingo. Your privacy is important to us. This Privacy
-              Policy explains how we handle your information when you use the
-              Funlingo Chrome Extension and our website.
+              {s.hero.intro}
             </p>
+
+            {locale !== "en" && (
+              <p className="text-textbody text-sm opacity-80 max-w-2xl">
+                {s.translationNotice}{" "}
+                <a
+                  href="/privacy-policy"
+                  hrefLang="en"
+                  className="underline hover:text-textwhite"
+                >
+                  {s.englishLinkText}
+                </a>
+              </p>
+            )}
           </div>
 
           {/* Last Updated */}
@@ -124,7 +108,7 @@ export default function PrivacyContent() {
             }`}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(122,28,172,0.2)] border border-[#9A1C8E]/30 text-textbody text-sm">
-              Effective Date: November 2025
+              {s.effectiveDate}
             </div>
           </div>
 
@@ -167,17 +151,16 @@ export default function PrivacyContent() {
               <div className="space-y-6 animate-fade-in-up">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(200,31,212,0.2)] border border-[#C81FD4]/30 text-[#C81FD4] text-sm font-medium">
                   <Mail className="w-4 h-4" />
-                  Get In Touch
+                  {s.contact.badge}
                 </div>
 
                 <h3 className="font-heading-h3 font-[number:var(--heading-h3-font-weight)] text-textwhite text-2xl sm:text-3xl">
-                  Contact Us
+                  {s.contact.title}
                 </h3>
 
                 <div className="space-y-4 font-body-normal-regular text-textbody text-[length:var(--body-normal-regular-font-size)] leading-relaxed max-w-2xl mx-auto">
                   <p>
-                    If you have questions or concerns about this Privacy Policy,
-                    please contact us at:
+                    {s.contact.text}
                   </p>
 
                   <div className="flex justify-center">
@@ -202,8 +185,7 @@ export default function PrivacyContent() {
             <div className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl bg-[rgba(200,31,212,0.1)] border border-[#C81FD4]/20">
               <Shield className="w-5 h-5 text-[#C81FD4]" />
               <p className="font-body-normal-medium text-textwhite">
-                Funlingo is committed to making language learning through
-                streaming safe, private, and effortless.
+                {s.commitment}
               </p>
             </div>
           </div>

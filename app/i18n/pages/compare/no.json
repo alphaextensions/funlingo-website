@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate – sammenligning",
+    "description": "Detaljert sammenligning av Funlingo, Trancy og Immersive Translate. Se hvorfor Funlingo er det beste gratisvalget for doble undertekster på Netflix og YouTube."
+  },
+  "hero": {
+    "badge": "Detaljert sammenligning",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Usikker på hvilken språkutvidelse som passer deg? Vi går gjennom funksjoner, priser og muligheter i de beste verktøyene i 2026."
+  },
+  "table": {
+    "ariaLabel": "Sammenligning av funksjoner i Funlingo, Trancy og Immersive Translate",
+    "featureHeader": "Funksjon",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Popup på ordnivå",
+        "sub": "Betydning på morsmålet + «Se eksempel» (unik)",
+        "fun": "Popupen viser betydningen på morsmålet + Se eksempel (unik UX).",
+        "trancy": "Ingen Se eksempel i popupen.",
+        "immersive": "Ikke tilgjengelig."
+      },
+      {
+        "feature": "Betydning rett i teksten",
+        "sub": "I parentes ved vanskelige ord (unik)",
+        "fun": "Betydningen på morsmålet vises i parentes ved valgte/vanskelige ord.",
+        "trancy": "Ikke tilgjengelig.",
+        "immersive": "Ikke tilgjengelig."
+      },
+      {
+        "feature": "Uttale for hvert ord",
+        "sub": "(stavet + lyd)",
+        "fun": "Uttale for hvert ord (stavet uttalehjelp + lyd + sakte avspilling).",
+        "trancy": "Begrenset / TTS-funksjoner finnes; stavet uttale per ord er ikke tydelig dokumentert.",
+        "immersive": "Begrenset TTS; stavet uttale per ord er ikke dokumentert."
+      },
+      {
+        "feature": "Klikk for AI-kontekst",
+        "sub": "Forklaringer (uttrykk og bruk)",
+        "fun": "Innebygde AI-forklaringer med ett klikk (kontekst på uttrykksnivå).",
+        "trancy": "Har grammatikk- og analyseverktøy; kontekstuelle forklaringer finnes.",
+        "immersive": "Noen kontekstuelle oversettelsesfunksjoner; ikke samme opplevelse i avspilleren."
+      },
+      {
+        "feature": "Lagre ord og repetisjon",
+        "sub": "Kortstokk",
+        "fun": "Lagre i ordforrådet + repetisjonsliste / eksport; innebygd repetisjon.",
+        "trancy": "Lagring/bokmerker finnes, men fullstendige repetisjonsfunksjoner er begrenset eller rettet mot studiemodus.",
+        "immersive": "Ikke offentlig dokumentert som innebygd repetisjonskortstokk."
+      },
+      {
+        "feature": "Personvern og utvidelsens",
+        "sub": "sikkerhet",
+        "fun": "Tydelige tillatelser og veiledning om personvern; lett utvidelse.",
+        "trancy": "Informasjon om personvern finnes; bedriftsfunksjoner kan være annerledes.",
+        "immersive": "Varierer; begrenset offentlig dokumentasjon."
+      }
+    ],
+    "legend": {
+      "core": "Kjernefunksjon tilgjengelig",
+      "available": "Funksjon tilgjengelig",
+      "limited": "Begrenset / ikke primær"
+    }
+  },
+  "why": {
+    "title": "Hvorfor velge Funlingo?",
+    "items": [
+      "Helt gratis: Ingen betalingsmur på kjernefunksjonene.",
+      "Fungerer overalt: Sømløst på Netflix, YouTube og Prime.",
+      "AI-drevet: Forklaringer i kontekst, ikke bare direkte oversettelser.",
+      "Null friksjon: Laget for å være diskret og ikke forstyrre mens du ser."
+    ]
+  },
+  "cta": {
+    "title": "Klar til å bytte?",
+    "body": "Installer Funlingo i dag og merk forskjellen. Det tar under 30 sekunder å komme i gang.",
+    "button": "Hent Funlingo for Chrome"
+  }
+}

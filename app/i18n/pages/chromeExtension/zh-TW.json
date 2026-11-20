@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo Chrome 擴充功能 — 免費雙語字幕與 AI 翻譯",
+    "description": "免費的 Funlingo Chrome 擴充功能：在 Netflix、YouTube、Prime 等平台提供 100+ 種語言的雙語字幕與 AI 翻譯。加到 Chrome，邊看邊學。"
+  },
+  "hero": {
+    "badge": "免費 Chrome 擴充功能 · 評分 4.8/5",
+    "title": "Funlingo Chrome 擴充功能",
+    "subtitle": "在 Netflix、YouTube、Prime Video 及另外 7 個平台上免費使用雙語字幕與 AI 翻譯。邊看邊學，支援 100+ 種語言。",
+    "addToChrome": "加到 Chrome — 免費",
+    "seeHowItWorks": "了解運作方式",
+    "note": "免帳號 · 一分鐘內完成安裝"
+  },
+  "features": {
+    "title": "邊看邊學需要的一切",
+    "subtitle": "一款免費擴充功能，把你喜愛的串流與學習網站變成身歷其境的語言課堂。",
+    "items": [
+      {
+        "title": "雙語字幕",
+        "description": "直接在影片播放器中同時顯示兩條字幕——你的目標語言和母語。"
+      },
+      {
+        "title": "AI 翻譯與釋義",
+        "description": "將滑鼠移到任何單字上，即可取得結合語境的即時 AI 翻譯、文法說明和真實例句。"
+      },
+      {
+        "title": "生字本",
+        "description": "一鍵儲存任何單字或片語。每個詞條都會保留譯文，以及你遇到它的原句。"
+      },
+      {
+        "title": "100+ 種語言",
+        "description": "從西班牙文、日文到韓文、德文、阿拉伯文和印地文——兩種語言可各自獨立設定。"
+      },
+      {
+        "title": "10 大平台",
+        "description": "支援 Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Tubi、bilibili、Udemy 和 Coursera。"
+      },
+      {
+        "title": "100% 免費",
+        "description": "沒有付費牆、沒有進階方案、免帳號。所有功能免費。"
+      }
+    ]
+  },
+  "install": {
+    "title": "一分鐘內完成安裝",
+    "subtitle": "不用繁瑣設定。把 Funlingo 加到 Chrome，馬上開始學習。",
+    "steps": [
+      {
+        "title": "開啟 Chrome Web Store",
+        "description": "點擊上方按鈕，前往 Chrome Web Store 上的 Funlingo 頁面。"
+      },
+      {
+        "title": "點擊「加到 Chrome」",
+        "description": "點擊「加到 Chrome」，再點擊「新增擴充功能」確認。幾秒鐘就能安裝完成。"
+      },
+      {
+        "title": "釘選 Funlingo",
+        "description": "把 Funlingo 釘選到工具列，看影片時隨時一鍵開啟。"
+      },
+      {
+        "title": "按下播放，開始學習",
+        "description": "開啟 Netflix、YouTube 或任何支援的平台，雙語字幕會自動出現。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常見問題",
+    "subtitle": "關於 Funlingo Chrome 擴充功能的一切。",
+    "items": [
+      {
+        "question": "Funlingo Chrome 擴充功能免費嗎？",
+        "answer": "是的。Funlingo Chrome 擴充功能 100% 免費，沒有隱藏費用、進階方案或付費牆。雙語字幕、AI 翻譯、AI 單字釋義和生字本全部免費提供。只要加到 Chrome，就能立即使用所有功能，免帳號。"
+      },
+      {
+        "question": "Funlingo 擴充功能支援哪些平台？",
+        "answer": "Funlingo 支援 10 個平台：Netflix、YouTube、Amazon Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Tubi、bilibili、Udemy 和 Coursera。雙語字幕和 AI 翻譯直接整合在各平台的影片播放器中，讓你在看電影、影集、動畫和線上課程時學習語言。"
+      },
+      {
+        "question": "如何安裝 Funlingo Chrome 擴充功能？",
+        "answer": "在 Chrome Web Store 開啟 Funlingo 頁面，點擊「加到 Chrome」，再點擊「新增擴充功能」確認。將 Funlingo 釘選到工具列，開啟 Netflix 或 YouTube 等任一支援的平台，雙語字幕就會自動出現。整個過程不到一分鐘。"
+      },
+      {
+        "question": "Funlingo 擴充功能支援我的語言嗎？",
+        "answer": "幾乎可以肯定。Funlingo 支援 100+ 種語言的字幕翻譯，包括西班牙文、法文、日文、韓文、華語、德文、葡萄牙文、義大利文、阿拉伯文、印地文等等。你可以分別設定目標語言和母語，真正實現雙語字幕學習。"
+      },
+      {
+        "question": "Funlingo 是安全的 Chrome 擴充功能嗎？",
+        "answer": "是的。Funlingo 發布於官方 Chrome Web Store，經過 Google 審核，評分為 4.8 顆星（滿分 5 顆星）。它在你的瀏覽器本機執行以顯示字幕，不需要建立帳號就能開始學習。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "邊看邊學語言，現在就開始",
+    "subtitle": "成千上萬的學習者正在 10 大平台上使用 Funlingo 的免費雙語字幕與 AI 翻譯，一起加入吧。",
+    "addToChrome": "加到 Chrome — 免費",
+    "note": "免費 · Chrome Web Store 評分 4.8/5"
+  }
+}

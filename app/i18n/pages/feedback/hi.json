@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "फ़ीडबैक - अपने विचार साझा करें",
+    "description": "Funlingo टीम के साथ अपना फ़ीडबैक साझा करें। सभी के लिए बेहतर भाषा सीखने का अनुभव बनाने में हमारी मदद करें।"
+  },
+  "header": {
+    "title": "हम आपका फ़ीडबैक जानना चाहेंगे",
+    "subtitle": "आपकी राय सभी के लिए बेहतर भाषा सीखने का अनुभव बनाने में हमारी मदद करती है"
+  },
+  "validation": {
+    "name": "कृपया अपना नाम दर्ज करें।",
+    "email": "कृपया अपना ईमेल दर्ज करें।",
+    "message": "कृपया अपना फ़ीडबैक दर्ज करें।",
+    "uninstallReason": "कृपया अनइंस्टॉल करने का कम से कम एक कारण चुनें।"
+  },
+  "submitError": "कुछ गड़बड़ हो गई। कृपया फिर से कोशिश करें।",
+  "success": "आपके फ़ीडबैक के लिए धन्यवाद! हम इसे ध्यान से देखेंगे।",
+  "form": {
+    "nameLabel": "नाम",
+    "namePlaceholder": "आपका नाम",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "श्रेणी",
+    "categories": {
+      "feature": "फ़ीचर अनुरोध",
+      "bug": "बग रिपोर्ट",
+      "improvement": "सुधार का सुझाव",
+      "uninstall": "अनइंस्टॉल करने का कारण",
+      "other": "अन्य"
+    },
+    "satisfactionLabel": "कुल संतुष्टि",
+    "satisfactionLevels": {
+      "1": "बहुत असंतुष्ट",
+      "2": "असंतुष्ट",
+      "3": "तटस्थ",
+      "4": "संतुष्ट",
+      "5": "बहुत संतुष्ट"
+    },
+    "uninstall": {
+      "heading": "आप अनइंस्टॉल करने के बारे में क्यों सोच रहे हैं?",
+      "missingFeatures": "मुझे जिन सुविधाओं की ज़रूरत है वे नहीं हैं",
+      "notWorking": "ठीक से काम नहीं कर रहा",
+      "otherReasons": "अन्य कारण",
+      "otherPlaceholder": "कृपया अन्य कारण बताएँ..."
+    },
+    "featureDetailsLabel": "फ़ीचर का विवरण",
+    "desiredFeatureLabel": "कोई फ़ीचर जो आप चाहते हैं कि हम बनाएँ?",
+    "featureDetailsPlaceholder": "जो फ़ीचर आप देखना चाहते हैं, उसका वर्णन करें...",
+    "desiredFeaturePlaceholder": "कौन-सा फ़ीचर आपको फिर से सोचने पर मजबूर करेगा?",
+    "recommendLabel": "क्या आप दूसरों को Funlingo की सलाह देंगे?",
+    "recommendOptions": {
+      "none": "एक विकल्प चुनें",
+      "definitely": "बिल्कुल हाँ",
+      "probably": "शायद हाँ",
+      "unsure": "पक्का नहीं",
+      "probablyNot": "शायद नहीं",
+      "definitelyNot": "बिल्कुल नहीं"
+    },
+    "commentsLabel": "अतिरिक्त टिप्पणियाँ",
+    "commentsPlaceholder": "कोई भी अतिरिक्त विचार, सुझाव या विवरण साझा करें...",
+    "submitting": "भेजा जा रहा है...",
+    "submit": "फ़ीडबैक भेजें"
+  },
+  "contact": {
+    "email": {
+      "title": "हमें ईमेल करें",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "हमारा पेज फ़ॉलो करें"
+    }
+  }
+}

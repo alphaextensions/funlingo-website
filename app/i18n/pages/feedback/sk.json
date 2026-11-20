@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Spätná väzba - Podeľte sa o svoj názor",
+    "description": "Podeľte sa o spätnú väzbu s tímom Funlingo. Pomôžte nám vytvoriť lepší zážitok z učenia sa jazykov pre všetkých."
+  },
+  "header": {
+    "title": "Radi si vypočujeme váš názor",
+    "subtitle": "Vaše postrehy nám pomáhajú vytvárať lepší zážitok z učenia sa jazykov pre všetkých"
+  },
+  "validation": {
+    "name": "Zadajte, prosím, svoje meno.",
+    "email": "Zadajte, prosím, svoj e-mail.",
+    "message": "Napíšte, prosím, svoju spätnú väzbu.",
+    "uninstallReason": "Vyberte, prosím, aspoň jeden dôvod odinštalovania."
+  },
+  "submitError": "Niečo sa pokazilo. Skúste to, prosím, znova.",
+  "success": "Ďakujeme za spätnú väzbu! Starostlivo si ju prejdeme.",
+  "form": {
+    "nameLabel": "Meno",
+    "namePlaceholder": "Vaše meno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vas.email@priklad.sk",
+    "categoryLabel": "Kategória",
+    "categories": {
+      "feature": "Návrh funkcie",
+      "bug": "Nahlásenie chyby",
+      "improvement": "Návrh na zlepšenie",
+      "uninstall": "Dôvod odinštalovania",
+      "other": "Iné"
+    },
+    "satisfactionLabel": "Celková spokojnosť",
+    "satisfactionLevels": {
+      "1": "Veľmi nespokojný/á",
+      "2": "Nespokojný/á",
+      "3": "Neutrálny/a",
+      "4": "Spokojný/á",
+      "5": "Veľmi spokojný/á"
+    },
+    "uninstall": {
+      "heading": "Prečo zvažujete odinštalovanie?",
+      "missingFeatures": "Chýbajú mi potrebné funkcie",
+      "notWorking": "Nefunguje správne",
+      "otherReasons": "Iné dôvody",
+      "otherPlaceholder": "Uveďte, prosím, iné dôvody..."
+    },
+    "featureDetailsLabel": "Podrobnosti o funkcii",
+    "desiredFeatureLabel": "Akú funkciu by ste chceli, aby sme vytvorili?",
+    "featureDetailsPlaceholder": "Opíšte funkciu, ktorú by ste chceli vidieť...",
+    "desiredFeaturePlaceholder": "Aká funkcia by vás prinútila to prehodnotiť?",
+    "recommendLabel": "Odporučili by ste Funlingo ostatným?",
+    "recommendOptions": {
+      "none": "Vyberte možnosť",
+      "definitely": "Určite áno",
+      "probably": "Skôr áno",
+      "unsure": "Neviem",
+      "probablyNot": "Skôr nie",
+      "definitelyNot": "Určite nie"
+    },
+    "commentsLabel": "Ďalšie komentáre",
+    "commentsPlaceholder": "Podeľte sa o ďalšie myšlienky, návrhy alebo podrobnosti...",
+    "submitting": "Odosiela sa...",
+    "submit": "Odoslať spätnú väzbu"
+  },
+  "contact": {
+    "email": {
+      "title": "Napíšte nám",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Sledujte našu stránku"
+    }
+  }
+}

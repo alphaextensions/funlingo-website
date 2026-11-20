@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Política de privadesa",
+    "description": "Política de privadesa de Funlingo. Descobreix com tractem la teva informació quan fas servir l'extensió de Chrome Funlingo i el nostre lloc web."
+  },
+  "translationNotice": "Aquesta traducció s'ofereix per comoditat. En cas de discrepància, prevaldrà la versió en anglès d'aquesta política.",
+  "englishLinkText": "Llegeix la versió en anglès",
+  "hero": {
+    "badge": "La teva privadesa importa",
+    "title": "Política de privadesa",
+    "intro": "Et donem la benvinguda a Funlingo. La teva privadesa és important per a nosaltres. Aquesta Política de privadesa explica com tractem la teva informació quan fas servir l'extensió de Chrome Funlingo i el nostre lloc web."
+  },
+  "effectiveDate": "Data d'entrada en vigor: novembre de 2025",
+  "sections": [
+    {
+      "title": "Informació que no recopilem",
+      "content": "Vam crear Funlingo perquè els usuaris puguin gaudir de subtítols dobles i aprendre idiomes mentre miren contingut en streaming sense comprometre la seva privadesa. No fem servir galetes ni eines d'anàlisi de tercers per supervisar la teva activitat. No venem ni lloguem la teva informació a ningú."
+    },
+    {
+      "title": "Permisos utilitzats",
+      "content": "Funlingo necessita determinats permisos de Chrome únicament per funcionar correctament: accés a les pàgines de llocs de streaming (p. ex., Netflix, YouTube) per mostrar subtítols dobles dins del reproductor de vídeo, i el permís ActiveTab per inserir subtítols i permetre la interactivitat (pausa en passar el cursor, traduccions, etc.). Aquests permisos s'utilitzen únicament de manera local al teu dispositiu. Funlingo mai no envia dades de les pàgines ni contingut de vídeo a cap servidor extern."
+    },
+    {
+      "title": "Tractament de dades",
+      "content": "Tota la representació de subtítols, les traduccions i les interaccions en passar el cursor es produeixen localment al teu navegador. Si en el futur alguna funció utilitza API per a traduccions o cerques en diccionaris, les sol·licituds es faran de manera anònima i sense emmagatzemar identificadors d'usuari."
+    },
+    {
+      "title": "Serveis de tercers",
+      "content": "Funlingo es pot connectar a API públiques de traducció o de diccionari (per exemple, l'API de Google Translate o similars). Aquestes s'utilitzen únicament per obtenir significats de paraules o traduccions i no transmeten cap dada d'identitat ni de navegació de l'usuari."
+    },
+    {
+      "title": "Privadesa dels infants",
+      "content": "Funlingo és segur per a tots els públics i no recopila conscientment dades d'infants menors de 13 anys."
+    },
+    {
+      "title": "Seguretat",
+      "content": "Com que no emmagatzemem dades personals, la teva informació es queda al teu dispositiu. Seguim les millors pràctiques per garantir que els scripts de l'extensió siguin segurs i es limitin als dominis necessaris."
+    },
+    {
+      "title": "Actualitzacions d'aquesta política",
+      "content": "És possible que actualitzem aquesta Política de privadesa de tant en tant. Si es produeixen canvis significatius, actualitzarem la data d'entrada en vigor i publicarem la nova versió al nostre lloc web."
+    }
+  ],
+  "contact": {
+    "badge": "Posa't en contacte",
+    "title": "Contacta amb nosaltres",
+    "text": "Si tens preguntes o inquietuds sobre aquesta Política de privadesa, contacta amb nosaltres a:"
+  },
+  "commitment": "Funlingo es compromet a fer que aprendre idiomes amb el streaming sigui segur, privat i senzill."
+}

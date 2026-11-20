@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Ajutor și asistență",
+    "description": "Primește ajutor și asistență de la echipa Funlingo. Raportează probleme, cere funcții noi sau pune întrebări despre extensia noastră de învățare a limbilor."
+  },
+  "header": {
+    "title": "Ajutor și asistență",
+    "subtitle": "Echipa noastră e aici să te ajute să reușești cu Funlingo. Scrie-ne oricând."
+  },
+  "supportTypes": [
+    {
+      "title": "Asistență tehnică",
+      "description": "Probleme cu aplicația, erori sau probleme tehnice",
+      "responseTime": "2-4 ore"
+    },
+    {
+      "title": "Solicitare de funcție",
+      "description": "Propune funcții noi sau îmbunătățiri",
+      "responseTime": "1-2 zile"
+    },
+    {
+      "title": "Întrebare generală",
+      "description": "Alte întrebări sau solicitări de informații",
+      "responseTime": "1-2 zile"
+    }
+  ],
+  "responseLabel": "Răspuns: {time}",
+  "successMessage": "Mulțumim că ne-ai contactat! Îți vom răspunde cât mai curând posibil.",
+  "form": {
+    "nameLabel": "Nume",
+    "namePlaceholder": "Numele tău complet",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "emailul.tau@exemplu.com",
+    "issueTypeLabel": "Tipul problemei",
+    "issueTypes": {
+      "technical": "Asistență tehnică",
+      "billing": "Facturare și cont",
+      "feature": "Solicitare de funcție",
+      "general": "Întrebare generală",
+      "bug": "Raportare eroare"
+    },
+    "priorityLabel": "Prioritate",
+    "priorities": {
+      "low": "Scăzută",
+      "medium": "Medie",
+      "high": "Ridicată",
+      "urgent": "Urgentă"
+    },
+    "subjectLabel": "Subiect",
+    "subjectPlaceholder": "Scurtă descriere a problemei",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Descrie problema în detaliu...",
+    "attachmentsLabel": "Atașamente (opțional)",
+    "removeAttachment": "x",
+    "submit": "Trimite solicitarea de asistență"
+  },
+  "contact": {
+    "title": "Informații de contact",
+    "emailTitle": "Asistență prin e-mail",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Comunitatea Discord",
+    "discordText": "Alătură-te pentru ajutor în timp real",
+    "responseTitle": "Timp de răspuns",
+    "responseText": "2-48 de ore, în funcție de prioritate"
+  },
+  "beforeContact": {
+    "title": "Înainte să ne contactezi",
+    "tips": [
+      "Verifică secțiunea de întrebări frecvente pentru răspunsuri rapide",
+      "Include capturi de ecran relevante, dacă se poate",
+      "Descrie pașii pentru a reproduce problema",
+      "Menționează dispozitivul și versiunea aplicației"
+    ]
+  }
+}

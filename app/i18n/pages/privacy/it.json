@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Informativa sulla privacy",
+    "description": "Informativa sulla privacy di Funlingo. Scopri come gestiamo le tue informazioni quando usi l'estensione Chrome di Funlingo e il nostro sito web."
+  },
+  "translationNotice": "Questa traduzione è fornita per comodità. In caso di discrepanze, prevale la versione inglese della presente informativa.",
+  "englishLinkText": "Leggi la versione inglese",
+  "hero": {
+    "badge": "La tua privacy conta",
+    "title": "Informativa sulla privacy",
+    "intro": "Benvenuto in Funlingo. La tua privacy è importante per noi. La presente Informativa sulla privacy spiega come gestiamo le tue informazioni quando usi l'estensione Chrome di Funlingo e il nostro sito web."
+  },
+  "effectiveDate": "Data di entrata in vigore: novembre 2025",
+  "sections": [
+    {
+      "title": "Informazioni che non raccogliamo",
+      "content": "Abbiamo creato Funlingo per aiutare gli utenti a usare i sottotitoli doppi e imparare le lingue durante lo streaming senza compromettere la loro privacy. Non utilizziamo cookie né strumenti di analisi di terze parti per monitorare la tua attività. Non vendiamo né cediamo in locazione le tue informazioni a nessuno."
+    },
+    {
+      "title": "Autorizzazioni utilizzate",
+      "content": "Funlingo richiede alcune autorizzazioni di Chrome solo per funzionare correttamente: accesso alle pagine dei siti di streaming (ad es. Netflix, YouTube) per mostrare i sottotitoli doppi nel player video, e l'autorizzazione ActiveTab per inserire i sottotitoli e consentire l'interattività (pausa al passaggio del mouse, traduzioni, ecc.). Queste autorizzazioni vengono utilizzate esclusivamente in locale sul tuo dispositivo. Funlingo non invia mai dati delle pagine o contenuti video a server esterni."
+    },
+    {
+      "title": "Trattamento dei dati",
+      "content": "La visualizzazione dei sottotitoli, le traduzioni e le interazioni al passaggio del mouse avvengono interamente in locale nel tuo browser. Se in futuro alcune funzionalità utilizzeranno API per traduzioni o ricerche nel dizionario, le richieste verranno effettuate in forma anonima e senza memorizzare identificativi degli utenti."
+    },
+    {
+      "title": "Servizi di terze parti",
+      "content": "Funlingo può collegarsi ad API pubbliche di traduzione o dizionario (ad esempio Google Translate API o servizi simili). Queste vengono utilizzate solo per recuperare significati di parole o traduzioni e non trasmettono alcun dato sull'identità o sulla navigazione degli utenti."
+    },
+    {
+      "title": "Privacy dei minori",
+      "content": "Funlingo è adatto a tutti i pubblici e non raccoglie consapevolmente dati di bambini di età inferiore a 13 anni."
+    },
+    {
+      "title": "Sicurezza",
+      "content": "Poiché non memorizziamo dati personali, le tue informazioni restano sul tuo dispositivo. Seguiamo le migliori pratiche per garantire che gli script dell'estensione siano sicuri e limitati ai domini necessari."
+    },
+    {
+      "title": "Aggiornamenti della presente informativa",
+      "content": "Potremmo aggiornare occasionalmente la presente Informativa sulla privacy. In caso di modifiche significative, aggiorneremo la data di entrata in vigore e pubblicheremo la nuova versione sul nostro sito web."
+    }
+  ],
+  "contact": {
+    "badge": "Mettiti in contatto",
+    "title": "Contattaci",
+    "text": "Per domande o dubbi sulla presente Informativa sulla privacy, contattaci all'indirizzo:"
+  },
+  "commitment": "Funlingo si impegna a rendere l'apprendimento delle lingue tramite lo streaming sicuro, riservato e senza sforzo."
+}

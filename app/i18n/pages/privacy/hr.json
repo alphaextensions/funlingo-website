@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Pravila o privatnosti",
+    "description": "Pravila o privatnosti Funlinga. Saznajte kako postupamo s vašim podacima kada koristite Funlingo proširenje za Chrome i našu web-stranicu."
+  },
+  "translationNotice": "Ovaj prijevod pruža se radi praktičnosti. U slučaju bilo kakve razlike, mjerodavna je engleska verzija ovih pravila.",
+  "englishLinkText": "Pročitajte englesku verziju",
+  "hero": {
+    "badge": "Vaša privatnost je važna",
+    "title": "Pravila o privatnosti",
+    "intro": "Dobro došli u Funlingo. Vaša privatnost nam je važna. Ova Pravila o privatnosti objašnjavaju kako postupamo s vašim podacima kada koristite Funlingo proširenje za Chrome i našu web-stranicu."
+  },
+  "effectiveDate": "Datum stupanja na snagu: studeni 2025.",
+  "sections": [
+    {
+      "title": "Podaci koje ne prikupljamo",
+      "content": "Funlingo smo izradili kako bismo korisnicima omogućili uživanje u dvostrukim titlovima i učenje jezika tijekom streaminga bez ugrožavanja privatnosti. Ne koristimo kolačiće ni analitiku trećih strana za praćenje vaših aktivnosti. Vaše podatke ne prodajemo niti iznajmljujemo nikome."
+    },
+    {
+      "title": "Korištena dopuštenja",
+      "content": "Funlingo zahtijeva određena dopuštenja u Chromeu isključivo kako bi ispravno radio: pristup stranicama streaming servisa (npr. Netflix, YouTube) radi prikaza dvostrukih titlova u video playeru te dopuštenje ActiveTab radi umetanja titlova i omogućavanja interaktivnosti (pauza pri zadržavanju pokazivača, prijevodi itd.). Ta se dopuštenja koriste isključivo lokalno na vašem uređaju. Funlingo nikada ne šalje podatke sa stranica ni video sadržaj na bilo koji vanjski poslužitelj."
+    },
+    {
+      "title": "Obrada podataka",
+      "content": "Sav prikaz titlova, prijevodi i interakcije pri zadržavanju pokazivača odvijaju se lokalno u vašem pregledniku. Ako buduće značajke budu koristile API-je za prijevode ili pretraživanje rječnika, zahtjevi će se slati anonimno i bez pohrane identifikatora korisnika."
+    },
+    {
+      "title": "Usluge trećih strana",
+      "content": "Funlingo se može povezivati s javnim API-jima za prijevod ili rječnike (na primjer Google Translate API ili slično). Oni se koriste samo za dohvaćanje značenja riječi ili prijevoda i ne prenose nikakve podatke o identitetu korisnika ni o pregledavanju."
+    },
+    {
+      "title": "Privatnost djece",
+      "content": "Funlingo je siguran za svu publiku i svjesno ne prikuplja podatke djece mlađe od 13 godina."
+    },
+    {
+      "title": "Sigurnost",
+      "content": "Budući da ne pohranjujemo osobne podatke, vaši podaci ostaju na vašem uređaju. Slijedimo najbolje prakse kako bismo osigurali da su skripte proširenja sigurne i ograničene na nužne domene."
+    },
+    {
+      "title": "Izmjene ovih pravila",
+      "content": "Ova Pravila o privatnosti možemo povremeno ažurirati. U slučaju značajnih promjena ažurirat ćemo datum stupanja na snagu i objaviti novu verziju na našoj web-stranici."
+    }
+  ],
+  "contact": {
+    "badge": "Javite nam se",
+    "title": "Kontaktirajte nas",
+    "text": "Ako imate pitanja ili nedoumica u vezi s ovim Pravilima o privatnosti, obratite nam se na:"
+  },
+  "commitment": "Funlingo je posvećen tome da učenje jezika uz streaming bude sigurno, privatno i lako."
+}

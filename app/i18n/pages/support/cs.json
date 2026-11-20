@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Nápověda a podpora",
+    "description": "Získejte pomoc a podporu od týmu Funlingo. Nahlaste problém, navrhněte funkci nebo se zeptejte na naše rozšíření pro výuku jazyků."
+  },
+  "header": {
+    "title": "Nápověda a podpora",
+    "subtitle": "Náš tým vám rád pomůže, aby vám Funlingo fungovalo co nejlépe. Ozvěte se kdykoli."
+  },
+  "supportTypes": [
+    {
+      "title": "Technická podpora",
+      "description": "Problémy s aplikací, chyby nebo technické potíže",
+      "responseTime": "2-4 hodiny"
+    },
+    {
+      "title": "Návrh funkce",
+      "description": "Navrhněte nové funkce nebo vylepšení",
+      "responseTime": "1-2 dny"
+    },
+    {
+      "title": "Obecný dotaz",
+      "description": "Další otázky nebo žádosti o informace",
+      "responseTime": "1-2 dny"
+    }
+  ],
+  "responseLabel": "Odpověď: {time}",
+  "successMessage": "Děkujeme, že jste nás kontaktovali! Ozveme se vám co nejdříve.",
+  "form": {
+    "nameLabel": "Jméno",
+    "namePlaceholder": "Vaše celé jméno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vas.email@priklad.cz",
+    "issueTypeLabel": "Typ požadavku",
+    "issueTypes": {
+      "technical": "Technická podpora",
+      "billing": "Platby a účet",
+      "feature": "Návrh funkce",
+      "general": "Obecný dotaz",
+      "bug": "Nahlášení chyby"
+    },
+    "priorityLabel": "Priorita",
+    "priorities": {
+      "low": "Nízká",
+      "medium": "Střední",
+      "high": "Vysoká",
+      "urgent": "Naléhavá"
+    },
+    "subjectLabel": "Předmět",
+    "subjectPlaceholder": "Stručný popis problému",
+    "messageLabel": "Zpráva",
+    "messagePlaceholder": "Popište prosím problém podrobně...",
+    "attachmentsLabel": "Přílohy (nepovinné)",
+    "removeAttachment": "x",
+    "submit": "Odeslat žádost o podporu"
+  },
+  "contact": {
+    "title": "Kontaktní údaje",
+    "emailTitle": "Podpora e-mailem",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Komunita na Discordu",
+    "discordText": "Připojte se a získejte pomoc v reálném čase",
+    "responseTitle": "Doba odezvy",
+    "responseText": "2-48 hodin podle priority"
+  },
+  "beforeContact": {
+    "title": "Než nás kontaktujete",
+    "tips": [
+      "Rychlé odpovědi najdete v sekci častých dotazů",
+      "Pokud je to možné, přiložte relevantní snímky obrazovky",
+      "Popište kroky, které vedou k problému",
+      "Uveďte své zařízení a verzi aplikace"
+    ]
+  }
+}

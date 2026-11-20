@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "很遺憾看到你離開",
+    "description": "告訴我們你解除安裝 Funlingo 的原因。你的意見能幫助我們打造更好的語言學習體驗。"
+  },
+  "form": {
+    "title": "你為什麼解除安裝 Funlingo？",
+    "subtitle": "點一下就夠了。你的回答會直接送到團隊手上。",
+    "reasonsAriaLabel": "解除安裝的原因",
+    "optional": "（選填）",
+    "howLongLabel": "你使用 Funlingo 多久了？（選填）",
+    "emailLabel": "電子郵件（選填），問題修好後我們會通知你",
+    "emailPlaceholder": "you@example.com",
+    "submit": "送出意見"
+  },
+  "reasons": {
+    "broken": {
+      "label": "有功能無法正常運作",
+      "prompt": "發生了什麼問題？",
+      "placeholder": "在哪個網站，發生了什麼事？就算一句話也很有幫助。"
+    },
+    "translations": {
+      "label": "翻譯品質不夠好",
+      "prompt": "哪種語言組合，在哪個網站？",
+      "placeholder": "例如：Netflix 上英文 → 西班牙文，翻譯太過直譯……"
+    },
+    "platform": {
+      "label": "不支援我使用的影音網站",
+      "prompt": "哪個網站或瀏覽器？",
+      "placeholder": "例如：Safari、Firefox、某個影音串流網站……"
+    },
+    "missing": {
+      "label": "缺少我需要的功能",
+      "prompt": "你缺少什麼功能？",
+      "placeholder": "例如：某種語言、某個串流平台、單字表……"
+    },
+    "switched": {
+      "label": "我改用其他工具了",
+      "prompt": "哪一個？",
+      "placeholder": "例如：Language Reactor、Trancy……"
+    },
+    "trying": {
+      "label": "只是試用看看 / 暫時不需要",
+      "prompt": "怎樣才會讓你繼續使用？",
+      "placeholder": "用你自己的話告訴我們。"
+    },
+    "other": {
+      "label": "其他原因",
+      "prompt": "你為什麼解除安裝 Funlingo？",
+      "placeholder": "用你自己的話告訴我們。"
+    }
+  },
+  "howLong": {
+    "lessThanDay": "不到一天",
+    "lessThanWeek": "不到一週",
+    "oneToThreeWeeks": "1-3 週",
+    "oneToThreeMonths": "1-3 個月"
+  },
+  "thanks": {
+    "title": "謝謝，我們收到了。",
+    "recoverable": "我們每週都會推出修正和新功能。如果你再給 Funlingo 一次機會，這個問題可能已經解決了。",
+    "notRecoverable": "你的意見會直接送到團隊手上。感謝你撥空填寫。",
+    "emailNote": "有新消息時，我們會寄信到 {email}。",
+    "reinstall": "再給 Funlingo 一次機會",
+    "backHome": "返回首頁"
+  }
+}

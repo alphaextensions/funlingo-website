@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Povratne informacije – podijelite svoje mišljenje",
+    "description": "Podijelite povratne informacije s timom Funlinga. Pomozite nam da učenje jezika učinimo boljim za sve."
+  },
+  "header": {
+    "title": "Rado ćemo čuti vaše mišljenje",
+    "subtitle": "Vaše mišljenje pomaže nam da učenje jezika učinimo boljim za sve"
+  },
+  "validation": {
+    "name": "Unesite svoje ime.",
+    "email": "Unesite svoju e-poštu.",
+    "message": "Unesite svoje povratne informacije.",
+    "uninstallReason": "Odaberite barem jedan razlog deinstalacije."
+  },
+  "submitError": "Nešto je pošlo po zlu. Pokušajte ponovno.",
+  "success": "Hvala na povratnim informacijama! Pažljivo ćemo ih pregledati.",
+  "form": {
+    "nameLabel": "Ime",
+    "namePlaceholder": "Vaše ime",
+    "emailLabel": "E-pošta",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Kategorija",
+    "categories": {
+      "feature": "Zahtjev za značajku",
+      "bug": "Prijava pogreške",
+      "improvement": "Prijedlog za poboljšanje",
+      "uninstall": "Razlog deinstalacije",
+      "other": "Ostalo"
+    },
+    "satisfactionLabel": "Ukupno zadovoljstvo",
+    "satisfactionLevels": {
+      "1": "Vrlo nezadovoljan",
+      "2": "Nezadovoljan",
+      "3": "Neutralno",
+      "4": "Zadovoljan",
+      "5": "Vrlo zadovoljan"
+    },
+    "uninstall": {
+      "heading": "Zašto razmišljate o deinstalaciji?",
+      "missingFeatures": "Nedostaju mi potrebne značajke",
+      "notWorking": "Ne radi kako treba",
+      "otherReasons": "Drugi razlozi",
+      "otherPlaceholder": "Navedite druge razloge..."
+    },
+    "featureDetailsLabel": "Detalji značajke",
+    "desiredFeatureLabel": "Koju značajku biste voljeli da izradimo?",
+    "featureDetailsPlaceholder": "Opišite značajku koju biste željeli vidjeti...",
+    "desiredFeaturePlaceholder": "Koja bi vas značajka natjerala da se predomislite?",
+    "recommendLabel": "Biste li preporučili Funlingo drugima?",
+    "recommendOptions": {
+      "none": "Odaberite opciju",
+      "definitely": "Definitivno da",
+      "probably": "Vjerojatno da",
+      "unsure": "Nisam siguran/sigurna",
+      "probablyNot": "Vjerojatno ne",
+      "definitelyNot": "Definitivno ne"
+    },
+    "commentsLabel": "Dodatni komentari",
+    "commentsPlaceholder": "Podijelite dodatna razmišljanja, prijedloge ili pojedinosti...",
+    "submitting": "Slanje...",
+    "submit": "Pošalji povratne informacije"
+  },
+  "contact": {
+    "email": {
+      "title": "Pišite nam",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Pratite našu stranicu"
+    }
+  }
+}

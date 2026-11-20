@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo Chrome拡張機能 — 無料のデュアル字幕とAI翻訳",
+    "description": "無料のFunlingo Chrome拡張機能：Netflix、YouTube、Primeなどで100以上の言語のデュアル字幕とAI翻訳。Chromeに追加して、観ながら学ぼう。"
+  },
+  "hero": {
+    "badge": "無料のChrome拡張機能 · 評価4.8/5",
+    "title": "Funlingo Chrome拡張機能",
+    "subtitle": "Netflix、YouTube、Prime Videoほか7つのプラットフォームで、デュアル字幕とAI翻訳を無料で。100以上の言語を、観ながら学べます。",
+    "addToChrome": "Chromeに追加 — 無料",
+    "seeHowItWorks": "使い方を見る",
+    "note": "アカウント不要 · 1分以内にインストール完了"
+  },
+  "features": {
+    "title": "観ながら学ぶために必要なすべてを",
+    "subtitle": "無料の拡張機能ひとつで、お気に入りの動画配信サービスや学習サイトが没入型の語学教室に変わります。",
+    "items": [
+      {
+        "title": "デュアル字幕",
+        "description": "学びたい言語と母語、2つの字幕を動画プレーヤー内に同時に表示します。"
+      },
+      {
+        "title": "AI翻訳と意味",
+        "description": "単語にカーソルを合わせるだけで、文脈に合ったAI翻訳、文法メモ、実際の例文がすぐに表示されます。"
+      },
+      {
+        "title": "単語帳",
+        "description": "単語やフレーズをワンクリックで保存。訳と、その単語に出会った文もあわせて記録されます。"
+      },
+      {
+        "title": "100以上の言語",
+        "description": "スペイン語や日本語から、韓国語、ドイツ語、アラビア語、ヒンディー語まで。2つの言語はそれぞれ自由に設定できます。"
+      },
+      {
+        "title": "10のプラットフォーム",
+        "description": "Netflix、YouTube、Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Tubi、bilibili、Udemy、Courseraに対応。"
+      },
+      {
+        "title": "100%無料",
+        "description": "有料の壁も、プレミアムプランも、アカウント登録もなし。すべての機能が無料です。"
+      }
+    ]
+  },
+  "install": {
+    "title": "1分以内にインストール",
+    "subtitle": "面倒な設定は不要。FunlingoをChromeに追加して、すぐに学習を始めましょう。",
+    "steps": [
+      {
+        "title": "Chrome Web Storeを開く",
+        "description": "上のボタンから、Chrome Web StoreのFunlingoのページにアクセスします。"
+      },
+      {
+        "title": "「Chromeに追加」をクリック",
+        "description": "「Chromeに追加」をクリックし、「拡張機能を追加」で確定します。数秒でインストールが完了します。"
+      },
+      {
+        "title": "Funlingoを固定する",
+        "description": "Funlingoをツールバーに固定すれば、視聴中いつでもワンクリックで使えます。"
+      },
+      {
+        "title": "再生して学ぼう",
+        "description": "Netflix、YouTubeなど対応プラットフォームを開くと、デュアル字幕が自動で表示されます。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "Funlingo Chrome拡張機能についてのすべて。",
+    "items": [
+      {
+        "question": "Funlingo Chrome拡張機能は無料ですか？",
+        "answer": "はい。Funlingo Chrome拡張機能は100%無料で、隠れた費用、プレミアムプラン、有料の壁は一切ありません。デュアル字幕、AI翻訳、AIによる単語の意味、単語帳をすべて無料でご利用いただけます。Chromeに追加するだけで、アカウント不要ですぐにすべての機能を使えます。"
+      },
+      {
+        "question": "Funlingo拡張機能はどのプラットフォームで使えますか？",
+        "answer": "Funlingoは10のプラットフォームに対応しています：Netflix、YouTube、Amazon Prime Video、Disney+ Hotstar、Apple TV、Crunchyroll、Tubi、bilibili、Udemy、Coursera。デュアル字幕とAI翻訳が各動画プレーヤーに直接組み込まれるので、映画、ドラマ、アニメ、オンライン講座を観ながら語学を学べます。"
+      },
+      {
+        "question": "Funlingo Chrome拡張機能はどうやってインストールしますか？",
+        "answer": "Chrome Web StoreでFunlingoのページを開き、「Chromeに追加」をクリックしてから「拡張機能を追加」をクリックして確定します。Funlingoをツールバーに固定し、NetflixやYouTubeなどの対応プラットフォームを開くと、デュアル字幕が自動で表示されます。すべて1分以内で完了します。"
+      },
+      {
+        "question": "Funlingo拡張機能は私の言語に対応していますか？",
+        "answer": "ほぼ間違いなく対応しています。Funlingoは字幕翻訳で100以上の言語をサポートしており、スペイン語、フランス語、日本語、韓国語、中国語（普通話）、ドイツ語、ポルトガル語、イタリア語、アラビア語、ヒンディー語などに対応しています。学びたい言語と母語をそれぞれ設定でき、本格的なデュアル字幕学習が可能です。"
+      },
+      {
+        "question": "Funlingoは安全なChrome拡張機能ですか？",
+        "answer": "はい。Funlingoは公式のChrome Web Storeで公開されており、Googleの審査を受けています。評価は5つ星中4.8です。字幕を表示するためにブラウザ内でローカルに動作し、学習を始めるのにアカウントを作成する必要はありません。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "観ながら語学を学び始めよう",
+    "subtitle": "10のプラットフォームで、Funlingoの無料デュアル字幕とAI翻訳を使っている数千人の学習者の仲間に加わりましょう。",
+    "addToChrome": "Chromeに追加 — 無料",
+    "note": "無料 · Chrome Web Storeで評価4.8/5"
+  }
+}

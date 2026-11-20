@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Bantuan & Dukungan",
+    "description": "Dapatkan bantuan dan dukungan dari tim Funlingo. Laporkan masalah, minta fitur, atau ajukan pertanyaan tentang ekstensi belajar bahasa kami."
+  },
+  "header": {
+    "title": "Bantuan & Dukungan",
+    "subtitle": "Tim kami siap membantumu sukses bersama Funlingo. Hubungi kami kapan saja."
+  },
+  "supportTypes": [
+    {
+      "title": "Dukungan Teknis",
+      "description": "Masalah aplikasi, bug, atau kendala teknis",
+      "responseTime": "2-4 jam"
+    },
+    {
+      "title": "Permintaan Fitur",
+      "description": "Usulkan fitur baru atau perbaikan",
+      "responseTime": "1-2 hari"
+    },
+    {
+      "title": "Pertanyaan Umum",
+      "description": "Pertanyaan lain atau permintaan informasi",
+      "responseTime": "1-2 hari"
+    }
+  ],
+  "responseLabel": "Respons: {time}",
+  "successMessage": "Terima kasih telah menghubungi kami! Kami akan segera membalas.",
+  "form": {
+    "nameLabel": "Nama",
+    "namePlaceholder": "Nama lengkapmu",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "Jenis Masalah",
+    "issueTypes": {
+      "technical": "Dukungan Teknis",
+      "billing": "Tagihan & Akun",
+      "feature": "Permintaan Fitur",
+      "general": "Pertanyaan Umum",
+      "bug": "Laporan Bug"
+    },
+    "priorityLabel": "Prioritas",
+    "priorities": {
+      "low": "Rendah",
+      "medium": "Sedang",
+      "high": "Tinggi",
+      "urgent": "Mendesak"
+    },
+    "subjectLabel": "Subjek",
+    "subjectPlaceholder": "Deskripsi singkat masalahmu",
+    "messageLabel": "Pesan",
+    "messagePlaceholder": "Jelaskan masalahmu secara detail...",
+    "attachmentsLabel": "Lampiran (Opsional)",
+    "removeAttachment": "x",
+    "submit": "Kirim Permintaan Dukungan"
+  },
+  "contact": {
+    "title": "Informasi Kontak",
+    "emailTitle": "Dukungan Email",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Komunitas Discord",
+    "discordText": "Bergabung untuk bantuan real-time",
+    "responseTitle": "Waktu Respons",
+    "responseText": "2-48 jam tergantung prioritas"
+  },
+  "beforeContact": {
+    "title": "Sebelum Menghubungi Kami",
+    "tips": [
+      "Cek bagian FAQ kami untuk jawaban cepat",
+      "Sertakan tangkapan layar yang relevan jika memungkinkan",
+      "Jelaskan langkah-langkah untuk mereproduksi masalah",
+      "Sebutkan perangkat dan versi aplikasimu"
+    ]
+  }
+}

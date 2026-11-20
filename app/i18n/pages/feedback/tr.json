@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Geri Bildirim - Düşüncelerinizi Paylaşın",
+    "description": "Geri bildiriminizi Funlingo ekibiyle paylaşın. Herkes için daha iyi bir dil öğrenme deneyimi oluşturmamıza yardımcı olun."
+  },
+  "header": {
+    "title": "Geri Bildiriminizi Duymak İsteriz",
+    "subtitle": "Görüşleriniz herkes için daha iyi bir dil öğrenme deneyimi oluşturmamıza yardımcı olur"
+  },
+  "validation": {
+    "name": "Lütfen adınızı girin.",
+    "email": "Lütfen e-posta adresinizi girin.",
+    "message": "Lütfen geri bildiriminizi yazın.",
+    "uninstallReason": "Lütfen en az bir kaldırma nedeni seçin."
+  },
+  "submitError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+  "success": "Geri bildiriminiz için teşekkürler! Dikkatle inceleyeceğiz.",
+  "form": {
+    "nameLabel": "Ad",
+    "namePlaceholder": "Adınız",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Kategori",
+    "categories": {
+      "feature": "Özellik İsteği",
+      "bug": "Hata Bildirimi",
+      "improvement": "İyileştirme Önerisi",
+      "uninstall": "Kaldırma Nedeni",
+      "other": "Diğer"
+    },
+    "satisfactionLabel": "Genel Memnuniyet",
+    "satisfactionLevels": {
+      "1": "Hiç Memnun Değilim",
+      "2": "Memnun Değilim",
+      "3": "Kararsızım",
+      "4": "Memnunum",
+      "5": "Çok Memnunum"
+    },
+    "uninstall": {
+      "heading": "Neden kaldırmayı düşünüyorsunuz?",
+      "missingFeatures": "İhtiyacım olan özellikler eksik",
+      "notWorking": "Düzgün çalışmıyor",
+      "otherReasons": "Diğer nedenler",
+      "otherPlaceholder": "Lütfen diğer nedenleri belirtin..."
+    },
+    "featureDetailsLabel": "Özellik Ayrıntıları",
+    "desiredFeatureLabel": "Geliştirmemizi İstediğiniz Bir Özellik Var mı?",
+    "featureDetailsPlaceholder": "Görmek istediğiniz özelliği açıklayın...",
+    "desiredFeaturePlaceholder": "Hangi özellik kararınızı yeniden düşünmenizi sağlardı?",
+    "recommendLabel": "Funlingo'yu başkalarına önerir misiniz?",
+    "recommendOptions": {
+      "none": "Bir seçenek belirleyin",
+      "definitely": "Kesinlikle evet",
+      "probably": "Muhtemelen evet",
+      "unsure": "Emin değilim",
+      "probablyNot": "Muhtemelen hayır",
+      "definitelyNot": "Kesinlikle hayır"
+    },
+    "commentsLabel": "Ek Yorumlar",
+    "commentsPlaceholder": "Ek düşüncelerinizi, önerilerinizi veya ayrıntıları paylaşın...",
+    "submitting": "Gönderiliyor...",
+    "submit": "Geri Bildirim Gönder"
+  },
+  "contact": {
+    "email": {
+      "title": "Bize E-posta Gönderin",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Sayfamızı takip edin"
+    }
+  }
+}
