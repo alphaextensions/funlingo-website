@@ -46,7 +46,7 @@
       },
       {
         "feature": "Zapis do słownika i powtórki",
-        "sub": "Talia",
+        "sub": "(talia powtórek)",
         "fun": "Zapis do słownika + lista powtórek / eksport; wbudowany UX powtórek.",
         "trancy": "Można zapisywać/dodawać zakładki, ale funkcje talii powtórek są ograniczone lub nastawione na tryb nauki.",
         "immersive": "Brak publicznej dokumentacji zintegrowanej talii powtórek."
@@ -62,7 +62,7 @@
     "legend": {
       "core": "Kluczowa funkcja dostępna",
       "available": "Funkcja dostępna",
-      "limited": "Ograniczone / Nie główne"
+      "limited": "Ograniczone / niepriorytetowe"
     }
   },
   "why": {
@@ -71,11 +71,11 @@
       "Całkowicie za darmo: żadnych blokad premium w kluczowych funkcjach.",
       "Uniwersalna zgodność: działa bezproblemowo na Netflix, YouTube i Prime.",
       "Napędzane przez AI: wyjaśnienia w kontekście, a nie tylko dosłowne tłumaczenia.",
-      "Zero tarcia: zaprojektowane tak, by działać w tle i nie przeszkadzać podczas oglądania."
+      "Bez wysiłku: zaprojektowane tak, by działać w tle i nie przeszkadzać podczas oglądania."
     ]
   },
   "cta": {
-    "title": "Gotowy na zmianę?",
+    "title": "Czas na zmianę?",
     "body": "Zainstaluj Funlingo już dziś i poczuj różnicę. Start zajmuje mniej niż 30 sekund.",
     "button": "Pobierz Funlingo do Chrome"
   }

@@ -38,7 +38,7 @@
     },
     "uninstall": {
       "heading": "למה אתם שוקלים להסיר את התוסף?",
-      "missingFeatures": "חסרים פיצ'רים שאני צריך/ה",
+      "missingFeatures": "חסרים פיצ'רים שנחוצים לי",
       "notWorking": "לא עובד כמו שצריך",
       "otherReasons": "סיבות אחרות",
       "otherPlaceholder": "נא לפרט סיבות אחרות..."
@@ -52,13 +52,13 @@
       "none": "בחרו אפשרות",
       "definitely": "בהחלט כן",
       "probably": "כנראה שכן",
-      "unsure": "לא בטוח/ה",
+      "unsure": "קשה לומר",
       "probablyNot": "כנראה שלא",
       "definitelyNot": "בהחלט לא"
     },
     "commentsLabel": "הערות נוספות",
     "commentsPlaceholder": "שתפו מחשבות, הצעות או פרטים נוספים...",
-    "submitting": "שולח...",
+    "submitting": "בשליחה...",
     "submit": "שליחת משוב"
   },
   "contact": {

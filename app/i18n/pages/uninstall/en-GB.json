@@ -57,7 +57,7 @@
     "oneToThreeMonths": "1-3 months"
   },
   "thanks": {
-    "title": "Thanks, we got it.",
+    "title": "Thanks, we've got it.",
     "recoverable": "We ship fixes and new features every week. If you give Funlingo another try, this might already be sorted.",
     "notRecoverable": "Your feedback goes straight to the team. Thanks for taking the time.",
     "emailNote": "We'll email you at {email} when there's news.",

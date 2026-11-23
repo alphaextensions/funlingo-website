@@ -51,10 +51,10 @@
     "recommendOptions": {
       "none": "選択してください",
       "definitely": "ぜひすすめたい",
-      "probably": "たぶんすすめる",
+      "probably": "おそらくすすめる",
       "unsure": "わからない",
-      "probablyNot": "たぶんすすめない",
-      "definitelyNot": "すすめない"
+      "probablyNot": "おそらくすすめない",
+      "definitelyNot": "絶対にすすめない"
     },
     "commentsLabel": "その他のコメント",
     "commentsPlaceholder": "その他のご意見、ご提案、詳細などをお聞かせください…",
@@ -63,7 +63,7 @@
   },
   "contact": {
     "email": {
-      "title": "メールで問い合わせる",
+      "title": "メールでお問い合わせ",
       "description": "getfunlingo@gmail.com"
     },
     "instagram": {

@@ -3,7 +3,7 @@
     "title": "Privacybeleid",
     "description": "Privacybeleid van Funlingo. Lees hoe we met je gegevens omgaan wanneer je de Funlingo Chrome-extensie en onze website gebruikt."
   },
-  "translationNotice": "Deze vertaling is uitsluitend bedoeld voor het gemak. Bij eventuele verschillen is de Engelse versie van dit beleid leidend.",
+  "translationNotice": "Deze vertaling wordt aangeboden voor het gemak. Bij eventuele verschillen is de Engelse versie van dit beleid leidend.",
   "englishLinkText": "Lees de Engelse versie",
   "hero": {
     "badge": "Jouw privacy telt",
@@ -22,7 +22,7 @@
     },
     {
       "title": "Gegevensverwerking",
-      "content": "Alle weergave van ondertitels, vertalingen en interacties bij aanwijzen vinden lokaal in je browser plaats. Als toekomstige functies API's gebruiken voor vertalingen of woordenboekopzoekingen, worden verzoeken anoniem gedaan en zonder gebruikers-ID's op te slaan."
+      "content": "Alle ondertitelweergave, vertalingen en interacties bij aanwijzen vinden lokaal in je browser plaats. Als toekomstige functies API's gebruiken voor vertalingen of woordenboekopzoekingen, worden verzoeken anoniem gedaan en zonder gebruikers-ID's op te slaan."
     },
     {
       "title": "Diensten van derden",

@@ -35,13 +35,13 @@
       "placeholder": "p. ex. un idioma, un servei de streaming, una llista de paraules…"
     },
     "switched": {
-      "label": "He canviat a una altra eina",
+      "label": "He passat a una altra eina",
       "prompt": "Quina?",
       "placeholder": "p. ex. Language Reactor, Trancy…"
     },
     "trying": {
       "label": "Només el provava / ara no el necessito",
-      "prompt": "Què t'hauria fet quedar-te'l?",
+      "prompt": "Què t'hauria fet continuar fent-lo servir?",
       "placeholder": "Explica-ho amb les teves paraules."
     },
     "other": {

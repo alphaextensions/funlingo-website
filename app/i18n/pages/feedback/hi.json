@@ -28,7 +28,7 @@
       "uninstall": "अनइंस्टॉल करने का कारण",
       "other": "अन्य"
     },
-    "satisfactionLabel": "कुल संतुष्टि",
+    "satisfactionLabel": "कुल मिलाकर संतुष्टि",
     "satisfactionLevels": {
       "1": "बहुत असंतुष्ट",
       "2": "असंतुष्ट",
@@ -46,7 +46,7 @@
     "featureDetailsLabel": "फ़ीचर का विवरण",
     "desiredFeatureLabel": "कोई फ़ीचर जो आप चाहते हैं कि हम बनाएँ?",
     "featureDetailsPlaceholder": "जो फ़ीचर आप देखना चाहते हैं, उसका वर्णन करें...",
-    "desiredFeaturePlaceholder": "कौन-सा फ़ीचर आपको फिर से सोचने पर मजबूर करेगा?",
+    "desiredFeaturePlaceholder": "किस फ़ीचर के आने पर आप फिर से सोचेंगे?",
     "recommendLabel": "क्या आप दूसरों को Funlingo की सलाह देंगे?",
     "recommendOptions": {
       "none": "एक विकल्प चुनें",

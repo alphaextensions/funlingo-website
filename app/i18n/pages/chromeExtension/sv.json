@@ -4,9 +4,9 @@
     "description": "Gratis Chrome-tillägg: dubbla undertexter och AI-översättning på Netflix, YouTube, Prime m.fl. på 100+ språk. Lägg till i Chrome och lär dig medan du tittar."
   },
   "hero": {
-    "badge": "Gratis Chrome-tillägg · Betyg 4.8/5",
+    "badge": "Gratis Chrome-tillägg · Betyg 4,8/5",
     "title": "Funlingo Chrome-tillägg",
-    "subtitle": "Gratis dubbla undertexter och AI-översättning på Netflix, YouTube, Prime Video och 7 plattformar till. Lär dig språk på 100+ språk medan du tittar.",
+    "subtitle": "Gratis dubbla undertexter och AI-översättning på Netflix, YouTube, Prime Video och 7 plattformar till. Välj bland 100+ språk och lär dig medan du tittar.",
     "addToChrome": "Lägg till i Chrome – det är gratis",
     "seeHowItWorks": "Se hur det fungerar",
     "note": "Inget konto behövs · Installerat på under en minut"
@@ -21,7 +21,7 @@
       },
       {
         "title": "AI-översättning och definitioner",
-        "description": "Håll muspekaren över ett ord för direkta AI-översättningar i sitt sammanhang, grammatikanteckningar och riktiga exempelfraser."
+        "description": "Håll muspekaren över ett ord för att direkt få AI-översättningar anpassade efter sammanhanget, grammatikanteckningar och riktiga exempelfraser."
       },
       {
         "title": "Ordförrådsbyggare",
@@ -81,11 +81,11 @@
       },
       {
         "question": "Stöder Funlingo-tillägget mitt språk?",
-        "answer": "Nästan helt säkert. Funlingo stöder 100+ språk för översättning av undertexter, bland annat spanska, franska, japanska, koreanska, mandarin, tyska, portugisiska, italienska, arabiska, hindi och många fler. Du kan välja målspråk och modersmål oberoende av varandra för äkta inlärning med dubbla undertexter."
+        "answer": "Med största sannolikhet. Funlingo stöder 100+ språk för översättning av undertexter, bland annat spanska, franska, japanska, koreanska, mandarin, tyska, portugisiska, italienska, arabiska, hindi och många fler. Du kan välja målspråk och modersmål oberoende av varandra för äkta inlärning med dubbla undertexter."
       },
       {
         "question": "Är Funlingo ett säkert Chrome-tillägg?",
-        "answer": "Ja. Funlingo är publicerat i den officiella Chrome Web Store, där det granskas av Google, och har betyget 4.8 av 5 stjärnor. Det körs lokalt i din webbläsare för att visa undertexter och kräver inte att du skapar ett konto för att börja lära dig."
+        "answer": "Ja. Funlingo är publicerat i den officiella Chrome Web Store, där det granskas av Google, och har betyget 4,8 av 5 stjärnor. Det körs lokalt i din webbläsare för att visa undertexter och kräver inte att du skapar ett konto för att börja lära dig."
       }
     ]
   },
@@ -93,6 +93,6 @@
     "title": "Börja lära dig språk medan du tittar",
     "subtitle": "Gör som tusentals elever som använder Funlingo för gratis dubbla undertexter och AI-översättning på 10 plattformar.",
     "addToChrome": "Lägg till i Chrome – det är gratis",
-    "note": "Gratis · Betyg 4.8/5 i Chrome Web Store"
+    "note": "Gratis · Betyg 4,8/5 i Chrome Web Store"
   }
 }

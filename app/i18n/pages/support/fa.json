@@ -11,17 +11,17 @@
     {
       "title": "پشتیبانی فنی",
       "description": "مشکلات برنامه، باگ‌ها یا ایرادهای فنی",
-      "responseTime": "2 تا 4 ساعت"
+      "responseTime": "۲ تا ۴ ساعت"
     },
     {
       "title": "درخواست قابلیت",
       "description": "پیشنهاد قابلیت‌های جدید یا بهبودها",
-      "responseTime": "1 تا 2 روز"
+      "responseTime": "۱ تا ۲ روز"
     },
     {
       "title": "پرسش عمومی",
       "description": "سؤال‌های دیگر یا درخواست اطلاعات",
-      "responseTime": "1 تا 2 روز"
+      "responseTime": "۱ تا ۲ روز"
     }
   ],
   "responseLabel": "زمان پاسخ: {time}",
@@ -59,9 +59,9 @@
     "emailTitle": "پشتیبانی ایمیلی",
     "emailValue": "getfunlingo@gmail.com",
     "discordTitle": "انجمن Discord",
-    "discordText": "برای کمک هم‌زمان بپیوندید",
+    "discordText": "برای دریافت کمک آنی بپیوندید",
     "responseTitle": "زمان پاسخ",
-    "responseText": "2 تا 48 ساعت بسته به اولویت"
+    "responseText": "۲ تا ۴۸ ساعت بسته به اولویت"
   },
   "beforeContact": {
     "title": "پیش از تماس با ما",

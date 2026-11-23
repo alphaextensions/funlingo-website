@@ -1,19 +1,19 @@
 {
   "meta": {
     "title": "Extension Chrome Funlingo — Doubles sous-titres et traduction IA",
-    "description": "Extension Chrome gratuite : doubles sous-titres et traduction IA sur Netflix, YouTube, Prime et plus, en 100+ langues. Apprenez en regardant."
+    "description": "Extension Chrome gratuite : doubles sous-titres et traduction IA sur Netflix, YouTube, Prime et plus, dans plus de 100 langues. Apprenez en regardant."
   },
   "hero": {
-    "badge": "Extension Chrome gratuite · Noté 4.8/5",
+    "badge": "Extension Chrome gratuite · Notée 4,8/5",
     "title": "Extension Chrome Funlingo",
-    "subtitle": "Doubles sous-titres et traduction IA gratuits sur Netflix, YouTube, Prime Video et 7 autres plateformes. Apprenez parmi 100+ langues en regardant vos vidéos.",
+    "subtitle": "Doubles sous-titres et traduction IA gratuits sur Netflix, YouTube, Prime Video et 7 autres plateformes. Plus de 100 langues au choix pour apprendre en regardant vos vidéos.",
     "addToChrome": "Ajouter à Chrome — C'est gratuit",
     "seeHowItWorks": "Voir comment ça marche",
     "note": "Aucun compte requis · Installation en moins d'une minute"
   },
   "features": {
     "title": "Tout ce qu'il faut pour apprendre en regardant",
-    "subtitle": "Une seule extension gratuite transforme vos sites de streaming et d'apprentissage préférés en salle de classe immersive.",
+    "subtitle": "Une seule extension gratuite transforme vos sites de streaming et d'apprentissage préférés en véritable salle de classe immersive.",
     "items": [
       {
         "title": "Doubles sous-titres",
@@ -24,7 +24,7 @@
         "description": "Survolez n'importe quel mot pour obtenir instantanément une traduction IA contextuelle, des notes de grammaire et de vrais exemples."
       },
       {
-        "title": "Constructeur de vocabulaire",
+        "title": "Carnet de vocabulaire",
         "description": "Enregistrez un mot ou une expression en un clic. Chaque entrée conserve sa traduction et la phrase où vous l'avez trouvée."
       },
       {
@@ -69,7 +69,7 @@
     "items": [
       {
         "question": "L'extension Chrome Funlingo est-elle gratuite ?",
-        "answer": "Oui. L'extension Chrome Funlingo est 100 % gratuite, sans frais cachés, offre premium ni paywall. Doubles sous-titres, traduction IA, définitions IA et constructeur de vocabulaire sont offerts. Ajoutez-la simplement à Chrome et profitez immédiatement de toutes les fonctionnalités, sans créer de compte."
+        "answer": "Oui. L'extension Chrome Funlingo est 100 % gratuite, sans frais cachés, offre premium ni paywall. Doubles sous-titres, traduction IA, définitions IA et carnet de vocabulaire sont offerts. Ajoutez-la simplement à Chrome et profitez immédiatement de toutes les fonctionnalités, sans créer de compte."
       },
       {
         "question": "Sur quelles plateformes l'extension Funlingo fonctionne-t-elle ?",
@@ -81,11 +81,11 @@
       },
       {
         "question": "L'extension Funlingo prend-elle en charge ma langue ?",
-        "answer": "Très probablement. Funlingo prend en charge 100+ langues pour la traduction des sous-titres, dont l'espagnol, le français, le japonais, le coréen, le mandarin, l'allemand, le portugais, l'italien, l'arabe, l'hindi et bien d'autres. Vous choisissez séparément la langue que vous apprenez et votre langue maternelle pour un véritable apprentissage avec doubles sous-titres."
+        "answer": "Très probablement. Funlingo prend en charge plus de 100 langues pour la traduction des sous-titres, dont l'espagnol, le français, le japonais, le coréen, le mandarin, l'allemand, le portugais, l'italien, l'arabe, l'hindi et bien d'autres. Vous choisissez séparément la langue que vous apprenez et votre langue maternelle pour un véritable apprentissage avec doubles sous-titres."
       },
       {
         "question": "Funlingo est-elle une extension Chrome sûre ?",
-        "answer": "Oui. Funlingo est publiée sur le Chrome Web Store officiel, où elle est vérifiée par Google, et elle est notée 4.8 sur 5 étoiles. Elle fonctionne localement dans votre navigateur pour afficher les sous-titres et ne vous demande pas de créer un compte pour commencer à apprendre."
+        "answer": "Oui. Funlingo est publiée sur le Chrome Web Store officiel, où elle est vérifiée par Google, et elle est notée 4,8 sur 5 étoiles. Elle fonctionne localement dans votre navigateur pour afficher les sous-titres et ne vous demande pas de créer un compte pour commencer à apprendre."
       }
     ]
   },
@@ -93,6 +93,6 @@
     "title": "Apprenez les langues en regardant vos vidéos",
     "subtitle": "Rejoignez des milliers d'apprenants qui utilisent Funlingo pour des doubles sous-titres et une traduction IA gratuits sur 10 plateformes.",
     "addToChrome": "Ajouter à Chrome — C'est gratuit",
-    "note": "Gratuit · Noté 4.8/5 sur le Chrome Web Store"
+    "note": "Gratuite · Notée 4,8/5 sur le Chrome Web Store"
   }
 }

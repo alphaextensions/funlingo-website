@@ -35,12 +35,12 @@
       "placeholder": "např. jazyk, streamovací služba, seznam slovíček…"
     },
     "switched": {
-      "label": "Přešel/a jsem na jiný nástroj",
+      "label": "Přechod na jiný nástroj",
       "prompt": "Na jaký?",
       "placeholder": "např. Language Reactor, Trancy…"
     },
     "trying": {
-      "label": "Jen jsem to zkoušel/a / teď to nepotřebuji",
+      "label": "Jen vyzkoušení / teď to není potřeba",
       "prompt": "Co by vás přimělo si ho nechat?",
       "placeholder": "Popište to vlastními slovy."
     },

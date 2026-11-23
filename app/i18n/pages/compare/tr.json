@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Funlingo vs Trancy vs Immersive Translate - Çift Altyazı Karşılaştırması",
+    "title": "Funlingo vs Trancy vs Immersive Translate Karşılaştırması",
     "description": "Funlingo, Trancy ve Immersive Translate'in ayrıntılı karşılaştırması. Netflix ve YouTube'da çift altyazı için en iyi ücretsiz alternatif neden Funlingo?"
   },
   "hero": {
@@ -18,7 +18,7 @@
     "rows": [
       {
         "feature": "Kelime Düzeyinde Açılır Pencere",
-        "sub": "Ana Dilde Anlam + \"Örnek Göster\" (Benzersiz)",
+        "sub": "Ana Dilde Anlam + “Örnek Göster” (Benzersiz)",
         "fun": "Açılır pencere ana dilde anlam + Örnek Göster içerir (benzersiz kullanıcı deneyimi).",
         "trancy": "Açılır pencerede Örnek Göster yok.",
         "immersive": "Mevcut değil."

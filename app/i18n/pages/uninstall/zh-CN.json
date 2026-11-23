@@ -8,7 +8,7 @@
     "subtitle": "点一下就够了。你的回答会直接送达团队。",
     "reasonsAriaLabel": "卸载原因",
     "optional": "（选填）",
-    "howLongLabel": "你使用 Funlingo 多长时间了？（选填）",
+    "howLongLabel": "你用了 Funlingo 多长时间？（选填）",
     "emailLabel": "邮箱（选填），问题修复后我们会通知你",
     "emailPlaceholder": "you@example.com",
     "submit": "发送反馈"
@@ -22,7 +22,7 @@
     "translations": {
       "label": "翻译质量不够好",
       "prompt": "哪种语言组合，在哪个网站？",
-      "placeholder": "例如：Netflix 上英语 → 西班牙语，翻译太生硬直译……"
+      "placeholder": "例如：Netflix 上英语 → 西班牙语，翻译太过直译……"
     },
     "platform": {
       "label": "不支持我用的视频网站",
@@ -41,7 +41,7 @@
     },
     "trying": {
       "label": "只是试用一下 / 暂时不需要",
-      "prompt": "怎样才会让你继续使用？",
+      "prompt": "有什么能让你继续使用吗？",
       "placeholder": "用你自己的话告诉我们。"
     },
     "other": {

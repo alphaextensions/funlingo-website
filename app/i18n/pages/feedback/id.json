@@ -9,9 +9,9 @@
   },
   "validation": {
     "name": "Silakan masukkan namamu.",
-    "email": "Silakan masukkan email-mu.",
+    "email": "Silakan masukkan emailmu.",
     "message": "Silakan masukkan masukanmu.",
-    "uninstallReason": "Silakan pilih setidaknya satu alasan uninstall."
+    "uninstallReason": "Silakan pilih setidaknya satu alasan menghapus Funlingo."
   },
   "submitError": "Terjadi kesalahan. Silakan coba lagi.",
   "success": "Terima kasih atas masukanmu! Kami akan meninjaunya dengan saksama.",
@@ -25,7 +25,7 @@
       "feature": "Permintaan Fitur",
       "bug": "Laporan Bug",
       "improvement": "Saran Perbaikan",
-      "uninstall": "Alasan Uninstall",
+      "uninstall": "Alasan Menghapus",
       "other": "Lainnya"
     },
     "satisfactionLabel": "Kepuasan Keseluruhan",
@@ -37,7 +37,7 @@
       "5": "Sangat Puas"
     },
     "uninstall": {
-      "heading": "Mengapa kamu mempertimbangkan untuk uninstall?",
+      "heading": "Mengapa kamu mempertimbangkan untuk menghapus Funlingo?",
       "missingFeatures": "Fitur yang saya butuhkan tidak ada",
       "notWorking": "Tidak berfungsi dengan baik",
       "otherReasons": "Alasan lain",

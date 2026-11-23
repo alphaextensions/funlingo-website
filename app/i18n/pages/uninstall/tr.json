@@ -41,13 +41,13 @@
     },
     "trying": {
       "label": "Sadece deniyordum / şu an ihtiyacım yok",
-      "prompt": "Onu tutmanızı ne sağlardı?",
-      "placeholder": "Kendi kelimelerinizle anlatın."
+      "prompt": "Uzantıyı tutmanız için ne gerekirdi?",
+      "placeholder": "Kendi cümlelerinizle anlatın."
     },
     "other": {
       "label": "Başka bir şey",
       "prompt": "Funlingo'yu neden kaldırdınız?",
-      "placeholder": "Kendi kelimelerinizle anlatın."
+      "placeholder": "Kendi cümlelerinizle anlatın."
     }
   },
   "howLong": {
@@ -60,7 +60,7 @@
     "title": "Teşekkürler, aldık.",
     "recoverable": "Her hafta düzeltmeler ve yeni özellikler yayınlıyoruz. Funlingo'ya bir şans daha verirseniz bu sorun çoktan çözülmüş olabilir.",
     "notRecoverable": "Geri bildiriminiz doğrudan ekibe ulaşır. Zaman ayırdığınız için teşekkürler.",
-    "emailNote": "Yenilik olduğunda size {email} adresinden yazacağız.",
+    "emailNote": "Yenilik olduğunda size {email} adresine yazacağız.",
     "reinstall": "Funlingo'ya bir şans daha verin",
     "backHome": "Ana sayfaya dön"
   }

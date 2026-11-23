@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Rất tiếc khi bạn rời đi",
-    "description": "Hãy cho chúng tôi biết lý do bạn gỡ cài đặt Funlingo. Góp ý của bạn giúp chúng tôi xây dựng trải nghiệm học ngôn ngữ tốt hơn."
+    "description": "Hãy cho chúng tôi biết lý do bạn gỡ cài đặt Funlingo. Phản hồi của bạn giúp chúng tôi xây dựng trải nghiệm học ngôn ngữ tốt hơn."
   },
   "form": {
     "title": "Vì sao bạn gỡ cài đặt Funlingo?",
@@ -11,7 +11,7 @@
     "howLongLabel": "Bạn đã dùng Funlingo bao lâu? (không bắt buộc)",
     "emailLabel": "Email (không bắt buộc), để chúng tôi báo bạn khi lỗi được sửa",
     "emailPlaceholder": "you@example.com",
-    "submit": "Gửi góp ý"
+    "submit": "Gửi phản hồi"
   },
   "reasons": {
     "broken": {
@@ -25,7 +25,7 @@
       "placeholder": "VD: tiếng Anh → tiếng Tây Ban Nha trên Netflix, bản dịch quá sát nghĩa đen…"
     },
     "platform": {
-      "label": "Trang xem phim của tôi chưa được hỗ trợ",
+      "label": "Trang streaming tôi dùng chưa được hỗ trợ",
       "prompt": "Trang web hoặc trình duyệt nào?",
       "placeholder": "VD: Safari, Firefox, một trang streaming cụ thể…"
     },
@@ -59,7 +59,7 @@
   "thanks": {
     "title": "Cảm ơn, chúng tôi đã nhận được.",
     "recoverable": "Chúng tôi phát hành bản sửa lỗi và tính năng mới mỗi tuần. Nếu bạn cho Funlingo thêm một cơ hội, có thể vấn đề đã được giải quyết.",
-    "notRecoverable": "Góp ý của bạn được gửi thẳng đến đội ngũ. Cảm ơn bạn đã dành thời gian.",
+    "notRecoverable": "Phản hồi của bạn được gửi thẳng đến đội ngũ. Cảm ơn bạn đã dành thời gian.",
     "emailNote": "Chúng tôi sẽ gửi email đến {email} khi có tin mới.",
     "reinstall": "Cho Funlingo thêm một cơ hội",
     "backHome": "Về trang chủ"

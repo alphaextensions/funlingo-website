@@ -24,7 +24,7 @@
         "immersive": "Indisponibil."
       },
       {
-        "feature": "Sens nativ în text",
+        "feature": "Sens în limba maternă, în text",
         "sub": "Între paranteze pentru cuvintele dificile (unic)",
         "fun": "Sensul în limba maternă, între paranteze, direct în text, pentru cuvintele selectate/dificile.",
         "trancy": "Indisponibil.",
@@ -34,8 +34,8 @@
         "feature": "Pronunție pe cuvânt",
         "sub": "(transcriere + audio)",
         "fun": "Pronunția fiecărui cuvânt (transcriere fonetică + audio + redare lentă).",
-        "trancy": "Funcții TTS limitate; interfața de transcriere pe cuvânt nu e documentată clar.",
-        "immersive": "TTS limitat; interfața de transcriere pe cuvânt nu e documentată."
+        "trancy": "Funcții de sinteză vocală limitate; interfața de transcriere pe cuvânt nu e documentată clar.",
+        "immersive": "Sinteză vocală limitată; interfața de transcriere pe cuvânt nu e documentată."
       },
       {
         "feature": "AI cu clic pentru context",
@@ -52,10 +52,10 @@
         "immersive": "Nu este documentat public un pachet de recapitulare integrat."
       },
       {
-        "feature": "Confidențialitate și extensie",
-        "sub": "Semnale de siguranță",
+        "feature": "Confidențialitate și siguranță",
+        "sub": "a extensiei",
         "fun": "Permisiuni explicite și ghid de confidențialitate; model de extensie ușor.",
-        "trancy": "Informații de confidențialitate disponibile; funcțiile enterprise pot diferi.",
+        "trancy": "Informații de confidențialitate disponibile; funcțiile pentru companii pot diferi.",
         "immersive": "Variază; documentație publică limitată."
       }
     ],

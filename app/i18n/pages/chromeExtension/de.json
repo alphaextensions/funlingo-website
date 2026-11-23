@@ -4,7 +4,7 @@
     "description": "Kostenlose Chrome-Erweiterung: zweisprachige Untertitel & KI-Übersetzung auf Netflix, YouTube, Prime & mehr in 100+ Sprachen. Lernen beim Schauen."
   },
   "hero": {
-    "badge": "Kostenlose Chrome-Erweiterung · Bewertet mit 4.8/5",
+    "badge": "Kostenlose Chrome-Erweiterung · Bewertet mit 4,8/5",
     "title": "Funlingo Chrome-Erweiterung",
     "subtitle": "Kostenlose zweisprachige Untertitel und KI-Übersetzung auf Netflix, YouTube, Prime Video und 7 weiteren Plattformen. Lerne beim Schauen – in 100+ Sprachen.",
     "addToChrome": "Zu Chrome hinzufügen – es ist kostenlos",
@@ -85,7 +85,7 @@
       },
       {
         "question": "Ist Funlingo eine sichere Chrome-Erweiterung?",
-        "answer": "Ja. Funlingo ist im offiziellen Chrome Web Store veröffentlicht, wo es von Google geprüft wird, und mit 4.8 von 5 Sternen bewertet. Die Erweiterung läuft lokal in deinem Browser, um Untertitel anzuzeigen, und du musst kein Konto erstellen, um mit dem Lernen zu beginnen."
+        "answer": "Ja. Funlingo ist im offiziellen Chrome Web Store veröffentlicht, wo es von Google geprüft wird, und mit 4,8 von 5 Sternen bewertet. Die Erweiterung läuft lokal in deinem Browser, um Untertitel anzuzeigen, und du musst kein Konto erstellen, um mit dem Lernen zu beginnen."
       }
     ]
   },
@@ -93,6 +93,6 @@
     "title": "Lerne Sprachen, während du schaust",
     "subtitle": "Schließ dich Tausenden von Lernenden an, die Funlingo für kostenlose zweisprachige Untertitel und KI-Übersetzung auf 10 Plattformen nutzen.",
     "addToChrome": "Zu Chrome hinzufügen – es ist kostenlos",
-    "note": "Kostenlos · Bewertet mit 4.8/5 im Chrome Web Store"
+    "note": "Kostenlos · Bewertet mit 4,8/5 im Chrome Web Store"
   }
 }

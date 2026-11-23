@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "Feedback – Deel je mening",
-    "description": "Deel je feedback met het Funlingo-team. Help ons een betere leerervaring voor talen te bouwen, voor iedereen."
+    "description": "Deel je feedback met het Funlingo-team. Help ons om talen leren voor iedereen nog beter te maken."
   },
   "header": {
     "title": "We horen graag je feedback",
-    "subtitle": "Jouw input helpt ons een betere leerervaring voor talen te bouwen, voor iedereen"
+    "subtitle": "Jouw input helpt ons om talen leren voor iedereen nog beter te maken"
   },
   "validation": {
     "name": "Vul je naam in.",
@@ -47,7 +47,7 @@
     "desiredFeatureLabel": "Is er een functie die we moeten bouwen?",
     "featureDetailsPlaceholder": "Beschrijf de functie die je graag zou zien...",
     "desiredFeaturePlaceholder": "Welke functie zou je van gedachten doen veranderen?",
-    "recommendLabel": "Zou je Funlingo aanbevelen aan anderen?",
+    "recommendLabel": "Zou je Funlingo aan anderen aanbevelen?",
     "recommendOptions": {
       "none": "Kies een optie",
       "definitely": "Zeker wel",

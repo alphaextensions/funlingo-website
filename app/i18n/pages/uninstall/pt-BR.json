@@ -60,7 +60,7 @@
     "title": "Obrigado, recebemos.",
     "recoverable": "Lançamos correções e novos recursos toda semana. Se você der outra chance ao Funlingo, isso talvez já esteja resolvido.",
     "notRecoverable": "Seu feedback vai direto para a equipe. Obrigado por dedicar seu tempo.",
-    "emailNote": "Vamos te escrever em {email} quando houver novidades.",
+    "emailNote": "Vamos escrever para você em {email} quando houver novidades.",
     "reinstall": "Dar outra chance ao Funlingo",
     "backHome": "Voltar para o início"
   }

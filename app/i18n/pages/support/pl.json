@@ -11,17 +11,17 @@
     {
       "title": "Wsparcie techniczne",
       "description": "Problemy z aplikacją, błędy lub kwestie techniczne",
-      "responseTime": "2-4 godziny"
+      "responseTime": "2–4 godziny"
     },
     {
       "title": "Propozycja funkcji",
       "description": "Zaproponuj nowe funkcje lub ulepszenia",
-      "responseTime": "1-2 dni"
+      "responseTime": "1–2 dni"
     },
     {
       "title": "Pytanie ogólne",
       "description": "Inne pytania lub prośby o informacje",
-      "responseTime": "1-2 dni"
+      "responseTime": "1–2 dni"
     }
   ],
   "responseLabel": "Odpowiedź: {time}",
@@ -30,7 +30,7 @@
     "nameLabel": "Imię i nazwisko",
     "namePlaceholder": "Twoje imię i nazwisko",
     "emailLabel": "E-mail",
-    "emailPlaceholder": "twoj.email@przyklad.com",
+    "emailPlaceholder": "twoj.email@example.com",
     "issueTypeLabel": "Rodzaj zgłoszenia",
     "issueTypes": {
       "technical": "Wsparcie techniczne",
@@ -61,7 +61,7 @@
     "discordTitle": "Społeczność na Discordzie",
     "discordText": "Dołącz, aby uzyskać pomoc na bieżąco",
     "responseTitle": "Czas odpowiedzi",
-    "responseText": "2-48 godzin w zależności od priorytetu"
+    "responseText": "2–48 godzin w zależności od priorytetu"
   },
   "beforeContact": {
     "title": "Zanim się skontaktujesz",

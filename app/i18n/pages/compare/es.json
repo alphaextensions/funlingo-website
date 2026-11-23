@@ -24,7 +24,7 @@
         "immersive": "No disponible."
       },
       {
-        "feature": "Significado en línea",
+        "feature": "Significado integrado en el texto",
         "sub": "Entre corchetes para palabras difíciles (exclusivo)",
         "fun": "Significado en tu idioma entre corchetes para palabras seleccionadas o difíciles.",
         "trancy": "No disponible.",
@@ -34,8 +34,8 @@
         "feature": "Pronunciación por palabra",
         "sub": "(transcripción + audio)",
         "fun": "Pronunciación de cada palabra (transcripción + audio + reproducción lenta).",
-        "trancy": "Limitada / hay funciones TTS; la transcripción por palabra no está claramente documentada.",
-        "immersive": "TTS limitado; transcripción por palabra no documentada."
+        "trancy": "Limitada / hay funciones de texto a voz; la transcripción por palabra no está claramente documentada.",
+        "immersive": "Texto a voz limitado; transcripción por palabra no documentada."
       },
       {
         "feature": "IA contextual con un clic",
@@ -75,7 +75,7 @@
     ]
   },
   "cta": {
-    "title": "¿Listo para cambiar?",
+    "title": "¿Te animas a cambiar?",
     "body": "Instala Funlingo hoy y nota la diferencia. Empezar te llevará menos de 30 segundos.",
     "button": "Consigue Funlingo para Chrome"
   }

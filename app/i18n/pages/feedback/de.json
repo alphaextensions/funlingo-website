@@ -22,8 +22,8 @@
     "emailPlaceholder": "deine.email@example.com",
     "categoryLabel": "Kategorie",
     "categories": {
-      "feature": "Feature-Wunsch",
-      "bug": "Fehlermeldung",
+      "feature": "Funktionswunsch",
+      "bug": "Fehlerbericht",
       "improvement": "Verbesserungsvorschlag",
       "uninstall": "Grund für die Deinstallation",
       "other": "Sonstiges"
@@ -43,10 +43,10 @@
       "otherReasons": "Andere Gründe",
       "otherPlaceholder": "Bitte nenne andere Gründe..."
     },
-    "featureDetailsLabel": "Details zum Feature",
-    "desiredFeatureLabel": "Gibt es ein Feature, das wir bauen sollen?",
-    "featureDetailsPlaceholder": "Beschreib das Feature, das du dir wünschst...",
-    "desiredFeaturePlaceholder": "Welches Feature würde dich umstimmen?",
+    "featureDetailsLabel": "Details zur Funktion",
+    "desiredFeatureLabel": "Gibt es eine Funktion, die wir entwickeln sollen?",
+    "featureDetailsPlaceholder": "Beschreib die Funktion, die du dir wünschst...",
+    "desiredFeaturePlaceholder": "Welche Funktion würde dich umstimmen?",
     "recommendLabel": "Würdest du Funlingo weiterempfehlen?",
     "recommendOptions": {
       "none": "Option auswählen",

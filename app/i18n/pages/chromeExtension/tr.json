@@ -4,7 +4,7 @@
     "description": "Ücretsiz Funlingo Chrome uzantısı: Netflix, YouTube, Prime ve fazlasında 100+ dilde çift altyazı ve yapay zekâ çevirisi. Chrome'a ekleyin, izlerken öğrenin."
   },
   "hero": {
-    "badge": "Ücretsiz Chrome uzantısı · 4.8/5 puan",
+    "badge": "Ücretsiz Chrome uzantısı · 4,8/5 puan",
     "title": "Funlingo Chrome Uzantısı",
     "subtitle": "Netflix, YouTube, Prime Video ve 7 platformda daha ücretsiz çift altyazı ve yapay zekâ çevirisi. İzlerken 100+ dil arasından istediğinizi öğrenin.",
     "addToChrome": "Chrome'a Ekle — Ücretsiz",
@@ -50,8 +50,8 @@
         "description": "Yukarıdaki düğmeyi kullanarak Chrome Web Store'daki Funlingo sayfasını ziyaret edin."
       },
       {
-        "title": "Chrome'a Ekle'ye tıklayın",
-        "description": "Chrome'a Ekle'ye tıklayın, ardından Uzantı ekle ile onaylayın. Saniyeler içinde kurulur."
+        "title": "“Chrome'a ekle” düğmesine tıklayın",
+        "description": "“Chrome'a ekle” düğmesine tıklayın, ardından “Uzantı ekle” ile onaylayın. Saniyeler içinde kurulur."
       },
       {
         "title": "Funlingo'yu sabitleyin",
@@ -77,7 +77,7 @@
       },
       {
         "question": "Funlingo Chrome uzantısını nasıl kurarım?",
-        "answer": "Chrome Web Store'daki Funlingo sayfasını açın, Chrome'a Ekle'ye tıklayın ve ardından Uzantı ekle'ye tıklayarak onaylayın. Funlingo'yu araç çubuğunuza sabitleyin, Netflix veya YouTube gibi desteklenen bir platformu açın; çift altyazı otomatik olarak görünecektir. Tüm süreç bir dakikadan kısa sürer."
+        "answer": "Chrome Web Store'daki Funlingo sayfasını açın, “Chrome'a ekle” düğmesine tıklayın ve ardından “Uzantı ekle”ye tıklayarak onaylayın. Funlingo'yu araç çubuğunuza sabitleyin, Netflix veya YouTube gibi desteklenen bir platformu açın; çift altyazı otomatik olarak görünecektir. Tüm süreç bir dakikadan kısa sürer."
       },
       {
         "question": "Funlingo uzantısı benim dilimi destekliyor mu?",
@@ -85,7 +85,7 @@
       },
       {
         "question": "Funlingo güvenli bir Chrome uzantısı mı?",
-        "answer": "Evet. Funlingo, Google tarafından incelendiği resmi Chrome Web Store'da yayınlanmaktadır ve 5 üzerinden 4.8 yıldız puana sahiptir. Altyazıları göstermek için tarayıcınızda yerel olarak çalışır ve öğrenmeye başlamak için hesap oluşturmanızı gerektirmez."
+        "answer": "Evet. Funlingo, Google tarafından incelendiği resmi Chrome Web Store'da yayınlanmaktadır ve 5 üzerinden 4,8 yıldız puana sahiptir. Altyazıları göstermek için tarayıcınızda yerel olarak çalışır ve öğrenmeye başlamak için hesap oluşturmanızı gerektirmez."
       }
     ]
   },
@@ -93,6 +93,6 @@
     "title": "İzlerken dil öğrenmeye başlayın",
     "subtitle": "10 platformda ücretsiz çift altyazı ve yapay zekâ çevirisi için Funlingo'yu kullanan binlerce öğrenciye katılın.",
     "addToChrome": "Chrome'a Ekle — Ücretsiz",
-    "note": "Ücretsiz · Chrome Web Store'da 4.8/5 puan"
+    "note": "Ücretsiz · Chrome Web Store'da 4,8/5 puan"
   }
 }

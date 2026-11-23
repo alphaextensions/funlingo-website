@@ -30,12 +30,12 @@
       "placeholder": "es. Safari, Firefox, un sito di streaming specifico…"
     },
     "missing": {
-      "label": "Mancava una funzione di cui avevo bisogno",
+      "label": "Mancava una funzionalità di cui avevo bisogno",
       "prompt": "Cosa ti mancava?",
       "placeholder": "es. una lingua, un servizio di streaming, un elenco di parole…"
     },
     "switched": {
-      "label": "Sono passato a un altro strumento",
+      "label": "Ora uso un altro strumento",
       "prompt": "Quale?",
       "placeholder": "es. Language Reactor, Trancy…"
     },
@@ -58,7 +58,7 @@
   },
   "thanks": {
     "title": "Grazie, l'abbiamo ricevuto.",
-    "recoverable": "Rilasciamo correzioni e nuove funzioni ogni settimana. Se dai un'altra possibilità a Funlingo, potrebbe essere già tutto risolto.",
+    "recoverable": "Rilasciamo correzioni e nuove funzionalità ogni settimana. Se dai un'altra possibilità a Funlingo, potrebbe essere già tutto risolto.",
     "notRecoverable": "Il tuo feedback arriva direttamente al team. Grazie per il tempo che ci hai dedicato.",
     "emailNote": "Ti scriveremo a {email} quando ci saranno novità.",
     "reinstall": "Dai un'altra possibilità a Funlingo",

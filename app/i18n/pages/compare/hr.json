@@ -42,11 +42,11 @@
         "sub": "Objašnjenja (fraze i napomene o uporabi)",
         "fun": "Integrirani AI blokovi s objašnjenjem na klik (kontekst na razini fraze).",
         "trancy": "Nudi alate za gramatiku/analizu; postoji tijek kontekstualnih objašnjenja.",
-        "immersive": "Neke značajke kontekstualnog prijevoda; iskustvo u playeru nije isto."
+        "immersive": "Neke značajke kontekstualnog prijevoda; u playeru radi drukčije."
       },
       {
         "feature": "Spremanje u vokabular i ponavljanje",
-        "sub": "Špil",
+        "sub": "(špil za ponavljanje)",
         "fun": "Spremanje u vokabular + popis za ponavljanje / izvoz; ugrađeno sučelje za ponavljanje.",
         "trancy": "Spremanje/oznake postoje, ali su značajke špila za ponavljanje ograničene ili vezane uz način učenja.",
         "immersive": "Integrirani špil za ponavljanje nije javno dokumentiran."

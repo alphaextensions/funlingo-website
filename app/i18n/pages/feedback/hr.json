@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Ukupno zadovoljstvo",
     "satisfactionLevels": {
-      "1": "Vrlo nezadovoljan",
-      "2": "Nezadovoljan",
-      "3": "Neutralno",
-      "4": "Zadovoljan",
-      "5": "Vrlo zadovoljan"
+      "1": "Vrlo nisko",
+      "2": "Nisko",
+      "3": "Srednje",
+      "4": "Visoko",
+      "5": "Vrlo visoko"
     },
     "uninstall": {
       "heading": "Zašto razmišljate o deinstalaciji?",
@@ -52,7 +52,7 @@
       "none": "Odaberite opciju",
       "definitely": "Definitivno da",
       "probably": "Vjerojatno da",
-      "unsure": "Nisam siguran/sigurna",
+      "unsure": "Teško je reći",
       "probablyNot": "Vjerojatno ne",
       "definitelyNot": "Definitivno ne"
     },

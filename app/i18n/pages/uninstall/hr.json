@@ -35,12 +35,12 @@
       "placeholder": "npr. jezik, streaming usluga, popis riječi…"
     },
     "switched": {
-      "label": "Prešao/la sam na drugi alat",
+      "label": "Prelazak na drugi alat",
       "prompt": "Na koji?",
       "placeholder": "npr. Language Reactor, Trancy…"
     },
     "trying": {
-      "label": "Samo sam isprobavao/la / sad mi ne treba",
+      "label": "Samo isprobavanje / sad mi ne treba",
       "prompt": "Što bi vas navelo da ga zadržite?",
       "placeholder": "Recite nam svojim riječima."
     },
@@ -53,8 +53,8 @@
   "howLong": {
     "lessThanDay": "Manje od jednog dana",
     "lessThanWeek": "Manje od tjedan dana",
-    "oneToThreeWeeks": "1 – 3 tjedna",
-    "oneToThreeMonths": "1 – 3 mjeseca"
+    "oneToThreeWeeks": "1–3 tjedna",
+    "oneToThreeMonths": "1–3 mjeseca"
   },
   "thanks": {
     "title": "Hvala, zaprimili smo.",

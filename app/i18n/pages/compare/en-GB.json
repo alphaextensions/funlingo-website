@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Funlingo vs Trancy vs Immersive Translate - Best Dual Subtitle Tool Comparison",
+    "title": "Funlingo vs Trancy vs Immersive Translate: Comparison",
     "description": "Detailed feature comparison of Funlingo, Trancy, and Immersive Translate. Discover why Funlingo is the best free alternative for dual subtitles on Netflix & YouTube."
   },
   "hero": {
@@ -18,7 +18,7 @@
     "rows": [
       {
         "feature": "Word-level Popup",
-        "sub": "Native Meaning + \"View Example\" (Unique)",
+        "sub": "Native Meaning + ‘View Example’ (Unique)",
         "fun": "Popup includes native meaning + View Example (unique UX).",
         "trancy": "No View Example inside popup.",
         "immersive": "Not available."

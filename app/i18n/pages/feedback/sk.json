@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Spätná väzba - Podeľte sa o svoj názor",
+    "title": "Spätná väzba – podeľte sa o svoj názor",
     "description": "Podeľte sa o spätnú väzbu s tímom Funlingo. Pomôžte nám vytvoriť lepší zážitok z učenia sa jazykov pre všetkých."
   },
   "header": {
@@ -19,7 +19,7 @@
     "nameLabel": "Meno",
     "namePlaceholder": "Vaše meno",
     "emailLabel": "E-mail",
-    "emailPlaceholder": "vas.email@priklad.sk",
+    "emailPlaceholder": "vas.email@example.com",
     "categoryLabel": "Kategória",
     "categories": {
       "feature": "Návrh funkcie",
@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Celková spokojnosť",
     "satisfactionLevels": {
-      "1": "Veľmi nespokojný/á",
-      "2": "Nespokojný/á",
-      "3": "Neutrálny/a",
-      "4": "Spokojný/á",
-      "5": "Veľmi spokojný/á"
+      "1": "Veľmi nízka",
+      "2": "Nízka",
+      "3": "Stredná",
+      "4": "Vysoká",
+      "5": "Veľmi vysoká"
     },
     "uninstall": {
       "heading": "Prečo zvažujete odinštalovanie?",
@@ -44,7 +44,7 @@
       "otherPlaceholder": "Uveďte, prosím, iné dôvody..."
     },
     "featureDetailsLabel": "Podrobnosti o funkcii",
-    "desiredFeatureLabel": "Akú funkciu by ste chceli, aby sme vytvorili?",
+    "desiredFeatureLabel": "Akú funkciu by sme mali pridať?",
     "featureDetailsPlaceholder": "Opíšte funkciu, ktorú by ste chceli vidieť...",
     "desiredFeaturePlaceholder": "Aká funkcia by vás prinútila to prehodnotiť?",
     "recommendLabel": "Odporučili by ste Funlingo ostatným?",

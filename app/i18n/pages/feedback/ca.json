@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Satisfacció general",
     "satisfactionLevels": {
-      "1": "Molt insatisfet",
-      "2": "Insatisfet",
+      "1": "Molt insatisfactori",
+      "2": "Insatisfactori",
       "3": "Neutral",
-      "4": "Satisfet",
-      "5": "Molt satisfet"
+      "4": "Satisfactori",
+      "5": "Molt satisfactori"
     },
     "uninstall": {
       "heading": "Per què estàs pensant a desinstal·lar-lo?",
@@ -52,13 +52,13 @@
       "none": "Selecciona una opció",
       "definitely": "Sí, sens dubte",
       "probably": "Probablement sí",
-      "unsure": "No n'estic segur",
+      "unsure": "No ho sé",
       "probablyNot": "Probablement no",
       "definitelyNot": "De cap manera"
     },
     "commentsLabel": "Comentaris addicionals",
     "commentsPlaceholder": "Comparteix qualsevol altra idea, suggeriment o detall...",
-    "submitting": "Enviant...",
+    "submitting": "S'està enviant...",
     "submit": "Envia l'opinió"
   },
   "contact": {

@@ -38,7 +38,7 @@
         "immersive": "Beperkte TTS; uitgeschreven uitspraak per woord niet gedocumenteerd."
       },
       {
-        "feature": "AI-uitleg met één klik",
+        "feature": "AI-context met één klik",
         "sub": "Uitleg (zinsdelen & gebruiksnotities)",
         "fun": "Geïntegreerde AI-uitlegblokken met één klik (context op zinsniveau).",
         "trancy": "Biedt grammatica- en analysetools; contextuele uitleg aanwezig.",
@@ -49,13 +49,13 @@
         "sub": "Kaartenset",
         "fun": "Woorden opslaan + herhaallijst / export; ingebouwde herhaalfunctie.",
         "trancy": "Opslaan / bladwijzers mogelijk, maar herhaalfuncties beperkt of gericht op studiemodus.",
-        "immersive": "Geen geïntegreerde herhaalset publiekelijk gedocumenteerd."
+        "immersive": "Geen geïntegreerde herhaalset openbaar gedocumenteerd."
       },
       {
         "feature": "Privacy & veiligheid",
         "sub": "van de extensie",
         "fun": "Duidelijke machtigingen & privacyrichtlijnen; lichte extensie.",
-        "trancy": "Privacyinformatie beschikbaar; zakelijke functies kunnen afwijken.",
+        "trancy": "Privacy-informatie beschikbaar; zakelijke functies kunnen afwijken.",
         "immersive": "Wisselend; beperkte openbare documentatie."
       }
     ],
@@ -68,9 +68,9 @@
   "why": {
     "title": "Waarom kiezen voor Funlingo?",
     "items": [
-      "Helemaal gratis: geen premiumslot op kernfuncties.",
+      "Helemaal gratis: geen premiumbeperkingen op kernfuncties.",
       "Werkt overal: naadloos op Netflix, YouTube en Prime.",
-      "Aangedreven door AI: uitleg in context, niet alleen letterlijke vertalingen.",
+      "AI-gestuurd: uitleg in context, niet alleen letterlijke vertalingen.",
       "Geen gedoe: ontworpen om onopvallend op de achtergrond te blijven terwijl je kijkt."
     ]
   },

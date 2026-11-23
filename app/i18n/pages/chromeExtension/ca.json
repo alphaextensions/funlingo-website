@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Extensió de Chrome Funlingo: subtítols dobles i traducció IA",
-    "description": "Extensió de Chrome gratuïta: subtítols dobles i traducció amb IA a Netflix, YouTube, Prime i més, en 100+ idiomes. Afegeix-la a Chrome i aprèn mirant."
+    "description": "Extensió de Chrome gratuïta: subtítols dobles i traducció amb IA a Netflix, YouTube, Prime i més, en més de 100 idiomes. Afegeix-la a Chrome i aprèn mirant."
   },
   "hero": {
-    "badge": "Extensió de Chrome gratuïta · Valorada amb 4.8/5",
+    "badge": "Extensió de Chrome gratuïta · Valorada amb 4,8/5",
     "title": "Extensió de Chrome Funlingo",
-    "subtitle": "Subtítols dobles i traducció amb IA gratuïts a Netflix, YouTube, Prime Video i 7 plataformes més. Aprèn entre 100+ idiomes mentre mires.",
+    "subtitle": "Subtítols dobles i traducció amb IA gratuïts a Netflix, YouTube, Prime Video i 7 plataformes més. Més de 100 idiomes per aprendre mentre mires.",
     "addToChrome": "Afegeix a Chrome — És gratis",
     "seeHowItWorks": "Mira com funciona",
     "note": "Sense compte · S'instal·la en menys d'un minut"
@@ -24,7 +24,7 @@
         "description": "Passa el cursor per sobre de qualsevol paraula per obtenir a l'instant traduccions amb IA segons el context, notes gramaticals i exemples reals."
       },
       {
-        "title": "Creador de vocabulari",
+        "title": "Quadern de vocabulari",
         "description": "Desa qualsevol paraula o expressió amb un clic. Cada entrada conserva la traducció i la frase on la vas trobar."
       },
       {
@@ -69,7 +69,7 @@
     "items": [
       {
         "question": "L'extensió de Chrome Funlingo és gratuïta?",
-        "answer": "Sí. L'extensió de Chrome Funlingo és 100% gratuïta, sense costos ocults, plans prèmium ni murs de pagament. Tens subtítols dobles, traducció amb IA, definicions de paraules amb IA i el creador de vocabulari sense pagar res. Només cal que l'afegeixis a Chrome i comencis a fer servir totes les funcions de seguida, sense necessitat de compte."
+        "answer": "Sí. L'extensió de Chrome Funlingo és 100% gratuïta, sense costos ocults, plans prèmium ni murs de pagament. Tens subtítols dobles, traducció amb IA, definicions de paraules amb IA i el quadern de vocabulari sense pagar res. Només cal que l'afegeixis a Chrome i comencis a fer servir totes les funcions de seguida, sense necessitat de compte."
       },
       {
         "question": "En quines plataformes funciona l'extensió Funlingo?",
@@ -81,11 +81,11 @@
       },
       {
         "question": "L'extensió Funlingo és compatible amb el meu idioma?",
-        "answer": "Gairebé segur que sí. Funlingo admet 100+ idiomes per traduir subtítols, com ara el castellà, el francès, el japonès, el coreà, el xinès mandarí, l'alemany, el portuguès, l'italià, l'àrab, l'hindi i molts més. Pots configurar l'idioma que aprens i la teva llengua materna per separat per aprendre de debò amb subtítols dobles."
+        "answer": "Gairebé segur que sí. Funlingo admet més de 100 idiomes per traduir subtítols, com ara el castellà, el francès, el japonès, el coreà, el xinès mandarí, l'alemany, el portuguès, l'italià, l'àrab, l'hindi i molts més. Pots configurar l'idioma que aprens i la teva llengua materna per separat per aprendre de debò amb subtítols dobles."
       },
       {
         "question": "Funlingo és una extensió de Chrome segura?",
-        "answer": "Sí. Funlingo està publicada a la Chrome Web Store oficial, on Google la revisa, i té una valoració de 4.8 sobre 5 estrelles. S'executa localment al teu navegador per mostrar els subtítols i no cal que creïs cap compte per començar a aprendre."
+        "answer": "Sí. Funlingo està publicada a la Chrome Web Store oficial, on Google la revisa, i té una valoració de 4,8 sobre 5 estrelles. S'executa localment al teu navegador per mostrar els subtítols i no cal que creïs cap compte per començar a aprendre."
       }
     ]
   },
@@ -93,6 +93,6 @@
     "title": "Comença a aprendre idiomes mentre mires",
     "subtitle": "Uneix-te als milers d'estudiants que fan servir Funlingo per tenir subtítols dobles i traducció amb IA gratuïts en 10 plataformes.",
     "addToChrome": "Afegeix a Chrome — És gratis",
-    "note": "Gratis · Valorada amb 4.8/5 a la Chrome Web Store"
+    "note": "Gratis · Valorada amb 4,8/5 a la Chrome Web Store"
   }
 }

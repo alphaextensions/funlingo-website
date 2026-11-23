@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Szkoda, że odchodzisz",
-    "description": "Powiedz nam, dlaczego odinstalowałeś Funlingo. Twoja opinia pomaga nam tworzyć lepsze narzędzie do nauki języków."
+    "description": "Podaj powód odinstalowania Funlingo. Twoja opinia pomaga nam tworzyć lepsze narzędzie do nauki języków."
   },
   "form": {
-    "title": "Dlaczego odinstalowałeś Funlingo?",
+    "title": "Co skłoniło Cię do odinstalowania?",
     "subtitle": "Wystarczy jedno kliknięcie. Odpowiedź trafia prosto do zespołu.",
     "reasonsAriaLabel": "Powód odinstalowania",
     "optional": "(opcjonalnie)",
-    "howLongLabel": "Jak długo korzystałeś z Funlingo? (opcjonalnie)",
+    "howLongLabel": "Czas korzystania z Funlingo (opcjonalnie)",
     "emailLabel": "E-mail (opcjonalnie), żebyśmy mogli dać Ci znać, gdy to naprawimy",
     "emailPlaceholder": "you@example.com",
     "submit": "Wyślij opinię"
@@ -30,23 +30,23 @@
       "placeholder": "np. Safari, Firefox, konkretny serwis streamingowy…"
     },
     "missing": {
-      "label": "Brakowało funkcji, której potrzebowałem",
+      "label": "Brakowało potrzebnej funkcji",
       "prompt": "Czego Ci brakowało?",
       "placeholder": "np. języka, serwisu streamingowego, listy słówek…"
     },
     "switched": {
-      "label": "Przeszedłem na inne narzędzie",
+      "label": "Przejście na inne narzędzie",
       "prompt": "Na jakie?",
       "placeholder": "np. Language Reactor, Trancy…"
     },
     "trying": {
-      "label": "Tylko testowałem / teraz nie potrzebuję",
-      "prompt": "Co sprawiłoby, że byś je zatrzymał?",
+      "label": "Tylko próba / na razie niepotrzebne",
+      "prompt": "Co sprawiłoby, że Funlingo zostałoby w przeglądarce?",
       "placeholder": "Opisz to własnymi słowami."
     },
     "other": {
       "label": "Coś innego",
-      "prompt": "Dlaczego odinstalowałeś Funlingo?",
+      "prompt": "Co skłoniło Cię do odinstalowania?",
       "placeholder": "Opisz to własnymi słowami."
     }
   },
@@ -57,9 +57,9 @@
     "oneToThreeMonths": "1–3 miesiące"
   },
   "thanks": {
-    "title": "Dzięki, otrzymaliśmy.",
+    "title": "Dzięki, dotarło.",
     "recoverable": "Co tydzień wydajemy poprawki i nowe funkcje. Jeśli dasz Funlingo kolejną szansę, problem może być już rozwiązany.",
-    "notRecoverable": "Twoja opinia trafia prosto do zespołu. Dziękujemy, że poświęciłeś nam czas.",
+    "notRecoverable": "Twoja opinia trafia prosto do zespołu. Dziękujemy za poświęcony czas.",
     "emailNote": "Napiszemy do Ciebie na {email}, gdy będą nowości.",
     "reinstall": "Daj Funlingo kolejną szansę",
     "backHome": "Wróć na stronę główną"

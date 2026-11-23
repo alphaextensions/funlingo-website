@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hilfe & Support",
-    "description": "Hol dir Hilfe vom Funlingo-Team. Melde Probleme, wünsch dir Features oder stell Fragen zu unserer Erweiterung zum Sprachenlernen."
+    "description": "Hol dir Hilfe vom Funlingo-Team. Melde Probleme, wünsch dir neue Funktionen oder stell Fragen zu unserer Erweiterung zum Sprachenlernen."
   },
   "header": {
     "title": "Hilfe & Support",
@@ -14,8 +14,8 @@
       "responseTime": "2–4 Stunden"
     },
     {
-      "title": "Feature-Wunsch",
-      "description": "Schlag neue Features oder Verbesserungen vor",
+      "title": "Funktionswunsch",
+      "description": "Schlag neue Funktionen oder Verbesserungen vor",
       "responseTime": "1–2 Tage"
     },
     {
@@ -35,9 +35,9 @@
     "issueTypes": {
       "technical": "Technischer Support",
       "billing": "Abrechnung & Konto",
-      "feature": "Feature-Wunsch",
+      "feature": "Funktionswunsch",
       "general": "Allgemeine Anfrage",
-      "bug": "Fehlermeldung"
+      "bug": "Fehlerbericht"
     },
     "priorityLabel": "Priorität",
     "priorities": {
@@ -59,7 +59,7 @@
     "emailTitle": "E-Mail-Support",
     "emailValue": "getfunlingo@gmail.com",
     "discordTitle": "Discord-Community",
-    "discordText": "Tritt bei für Hilfe in Echtzeit",
+    "discordText": "Tritt bei und erhalte Hilfe in Echtzeit",
     "responseTitle": "Antwortzeit",
     "responseText": "2–48 Stunden, je nach Priorität"
   },

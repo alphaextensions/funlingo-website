@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Satisfacție generală",
     "satisfactionLevels": {
-      "1": "Foarte nemulțumit",
-      "2": "Nemulțumit",
+      "1": "Foarte nesatisfăcător",
+      "2": "Nesatisfăcător",
       "3": "Neutru",
-      "4": "Mulțumit",
-      "5": "Foarte mulțumit"
+      "4": "Satisfăcător",
+      "5": "Foarte satisfăcător"
     },
     "uninstall": {
       "heading": "De ce te gândești să dezinstalezi?",
@@ -52,7 +52,7 @@
       "none": "Selectează o opțiune",
       "definitely": "Cu siguranță da",
       "probably": "Probabil da",
-      "unsure": "Nu sunt sigur",
+      "unsure": "Nu știu",
       "probablyNot": "Probabil nu",
       "definitelyNot": "Cu siguranță nu"
     },

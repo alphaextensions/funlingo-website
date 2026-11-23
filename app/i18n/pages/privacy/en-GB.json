@@ -18,7 +18,7 @@
     },
     {
       "title": "Permissions Used",
-      "content": "Funlingo requires certain Chrome permissions only to function properly: Access to streaming site pages (e.g., Netflix, YouTube) to display dual subtitles within the video player. ActiveTab permission to inject subtitles and allow interactivity (pause on hover, translations, etc.). These permissions are used locally on your device only. Funlingo never sends page data or video content to any external server."
+      "content": "Funlingo requires certain Chrome permissions only to function properly: Access to streaming site pages (e.g. Netflix, YouTube) to display dual subtitles within the video player. ActiveTab permission to inject subtitles and allow interactivity (pause on hover, translations, etc.). These permissions are used locally on your device only. Funlingo never sends page data or video content to any external server."
     },
     {
       "title": "Data Processing",

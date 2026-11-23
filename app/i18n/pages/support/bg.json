@@ -11,17 +11,17 @@
     {
       "title": "Техническа поддръжка",
       "description": "Проблеми с приложението, грешки или технически неизправности",
-      "responseTime": "2-4 часа"
+      "responseTime": "2–4 часа"
     },
     {
       "title": "Заявка за функция",
       "description": "Предложи нови функции или подобрения",
-      "responseTime": "1-2 дни"
+      "responseTime": "1–2 дни"
     },
     {
       "title": "Общо запитване",
       "description": "Други въпроси или искания за информация",
-      "responseTime": "1-2 дни"
+      "responseTime": "1–2 дни"
     }
   ],
   "responseLabel": "Отговор: {time}",
@@ -61,7 +61,7 @@
     "discordTitle": "Общност в Discord",
     "discordText": "Присъедини се за помощ в реално време",
     "responseTitle": "Време за отговор",
-    "responseText": "2-48 часа според приоритета"
+    "responseText": "2–48 часа според приоритета"
   },
   "beforeContact": {
     "title": "Преди да се свържеш с нас",

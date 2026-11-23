@@ -35,7 +35,7 @@
       "placeholder": "ex. une langue, un service de streaming, une liste de mots…"
     },
     "switched": {
-      "label": "Je suis passé à un autre outil",
+      "label": "J'utilise maintenant un autre outil",
       "prompt": "Lequel ?",
       "placeholder": "ex. Language Reactor, Trancy…"
     },

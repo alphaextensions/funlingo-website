@@ -8,7 +8,7 @@
     "subtitle": "點一下就夠了。你的回答會直接送到團隊手上。",
     "reasonsAriaLabel": "解除安裝的原因",
     "optional": "（選填）",
-    "howLongLabel": "你使用 Funlingo 多久了？（選填）",
+    "howLongLabel": "你用了 Funlingo 多久？（選填）",
     "emailLabel": "電子郵件（選填），問題修好後我們會通知你",
     "emailPlaceholder": "you@example.com",
     "submit": "送出意見"
@@ -41,7 +41,7 @@
     },
     "trying": {
       "label": "只是試用看看 / 暫時不需要",
-      "prompt": "怎樣才會讓你繼續使用？",
+      "prompt": "有什麼能讓你繼續使用嗎？",
       "placeholder": "用你自己的話告訴我們。"
     },
     "other": {

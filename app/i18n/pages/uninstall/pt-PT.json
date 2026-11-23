@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Lamentamos vê-lo partir",
+    "title": "Lamentamos a sua partida",
     "description": "Diga-nos porque desinstalou o Funlingo. O seu feedback ajuda-nos a criar uma melhor experiência de aprendizagem de línguas."
   },
   "form": {
@@ -9,7 +9,7 @@
     "reasonsAriaLabel": "Motivo da desinstalação",
     "optional": "(opcional)",
     "howLongLabel": "Durante quanto tempo utilizou o Funlingo? (opcional)",
-    "emailLabel": "E-mail (opcional), para o avisarmos quando estiver resolvido",
+    "emailLabel": "E-mail (opcional), para lhe darmos notícias quando estiver resolvido",
     "emailPlaceholder": "you@example.com",
     "submit": "Enviar feedback"
   },
@@ -41,7 +41,7 @@
     },
     "trying": {
       "label": "Estava só a experimentar / não preciso agora",
-      "prompt": "O que o teria feito ficar com ele?",
+      "prompt": "O que teria feito com que continuasse a usá-lo?",
       "placeholder": "Conte-nos por palavras suas."
     },
     "other": {

@@ -11,17 +11,17 @@
     {
       "title": "الدعم الفني",
       "description": "مشكلات في التطبيق أو أخطاء أو أعطال تقنية",
-      "responseTime": "2-4 ساعات"
+      "responseTime": "من 2 إلى 4 ساعات"
     },
     {
       "title": "طلب ميزة",
       "description": "اقترح ميزات جديدة أو تحسينات",
-      "responseTime": "1-2 يوم"
+      "responseTime": "من يوم إلى يومين"
     },
     {
       "title": "استفسار عام",
       "description": "أسئلة أخرى أو طلبات معلومات",
-      "responseTime": "1-2 يوم"
+      "responseTime": "من يوم إلى يومين"
     }
   ],
   "responseLabel": "الرد: {time}",

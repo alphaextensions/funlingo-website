@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Satisfacción general",
     "satisfactionLevels": {
-      "1": "Muy insatisfecho",
-      "2": "Insatisfecho",
+      "1": "Muy insatisfactoria",
+      "2": "Insatisfactoria",
       "3": "Neutral",
-      "4": "Satisfecho",
-      "5": "Muy satisfecho"
+      "4": "Satisfactoria",
+      "5": "Muy satisfactoria"
     },
     "uninstall": {
       "heading": "¿Por qué estás pensando en desinstalarlo?",
@@ -52,7 +52,7 @@
       "none": "Selecciona una opción",
       "definitely": "Sí, sin duda",
       "probably": "Probablemente sí",
-      "unsure": "No estoy seguro",
+      "unsure": "No lo sé",
       "probablyNot": "Probablemente no",
       "definitelyNot": "Definitivamente no"
     },

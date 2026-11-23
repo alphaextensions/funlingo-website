@@ -4,9 +4,9 @@
     "description": "Gratis Chrome-udvidelse: dobbelte undertekster og AI-oversættelse på Netflix, YouTube, Prime m.fl. på 100+ sprog. Føj til Chrome, og lær, mens du ser."
   },
   "hero": {
-    "badge": "Gratis Chrome-udvidelse · Bedømt 4.8/5",
+    "badge": "Gratis Chrome-udvidelse · Bedømt 4,8/5",
     "title": "Funlingo Chrome-udvidelse",
-    "subtitle": "Gratis dobbelte undertekster og AI-oversættelse på Netflix, YouTube, Prime Video og 7 andre platforme. Lær sprog på 100+ sprog, mens du ser.",
+    "subtitle": "Gratis dobbelte undertekster og AI-oversættelse på Netflix, YouTube, Prime Video og 7 andre platforme. Vælg mellem 100+ sprog, og lær, mens du ser.",
     "addToChrome": "Føj til Chrome — det er gratis",
     "seeHowItWorks": "Se, hvordan det virker",
     "note": "Ingen konto nødvendig · Installeret på under et minut"
@@ -81,11 +81,11 @@
       },
       {
         "question": "Understøtter Funlingo-udvidelsen mit sprog?",
-        "answer": "Næsten helt sikkert. Funlingo understøtter 100+ sprog til oversættelse af undertekster, bl.a. spansk, fransk, japansk, koreansk, mandarin, tysk, portugisisk, italiensk, arabisk, hindi og mange flere. Du kan vælge dit målsprog og dit modersmål uafhængigt af hinanden for ægte læring med dobbelte undertekster."
+        "answer": "Med stor sandsynlighed. Funlingo understøtter 100+ sprog til oversættelse af undertekster, bl.a. spansk, fransk, japansk, koreansk, mandarin, tysk, portugisisk, italiensk, arabisk, hindi og mange flere. Du kan vælge dit målsprog og dit modersmål uafhængigt af hinanden for ægte læring med dobbelte undertekster."
       },
       {
         "question": "Er Funlingo en sikker Chrome-udvidelse?",
-        "answer": "Ja. Funlingo er udgivet i den officielle Chrome Web Store, hvor den gennemgås af Google, og er bedømt til 4.8 ud af 5 stjerner. Den kører lokalt i din browser for at vise undertekster og kræver ikke, at du opretter en konto for at begynde at lære."
+        "answer": "Ja. Funlingo er udgivet i den officielle Chrome Web Store, hvor den gennemgås af Google, og er bedømt til 4,8 ud af 5 stjerner. Den kører lokalt i din browser for at vise undertekster og kræver ikke, at du opretter en konto for at begynde at lære."
       }
     ]
   },
@@ -93,6 +93,6 @@
     "title": "Begynd at lære sprog, mens du ser",
     "subtitle": "Slut dig til tusindvis af elever, der bruger Funlingo til gratis dobbelte undertekster og AI-oversættelse på 10 platforme.",
     "addToChrome": "Føj til Chrome — det er gratis",
-    "note": "Gratis · Bedømt 4.8/5 i Chrome Web Store"
+    "note": "Gratis · Bedømt 4,8/5 i Chrome Web Store"
   }
 }

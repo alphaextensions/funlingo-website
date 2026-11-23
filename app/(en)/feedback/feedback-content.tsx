@@ -482,7 +482,7 @@ export default function FeedbackContent({ s }: { s: Strings }) {
                 <h4 className="font-heading-h6 text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                   {item.title}
                 </h4>
-                <p className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
+                <p dir="auto" className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
                   {item.description}
                 </p>
               </a>

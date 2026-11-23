@@ -18,7 +18,7 @@
     },
     {
       "title": "Các quyền được sử dụng",
-      "content": "Funlingo chỉ yêu cầu một số quyền nhất định của Chrome để hoạt động đúng cách: Quyền truy cập các trang web streaming (ví dụ: Netflix, YouTube) để hiển thị phụ đề kép trong trình phát video. Quyền ActiveTab để chèn phụ đề và cho phép tương tác (tạm dừng khi di chuột, dịch, v.v.). Các quyền này chỉ được sử dụng cục bộ trên thiết bị của bạn. Funlingo không bao giờ gửi dữ liệu trang hoặc nội dung video đến bất kỳ máy chủ bên ngoài nào."
+      "content": "Funlingo yêu cầu một số quyền nhất định của Chrome chỉ để hoạt động đúng cách: Quyền truy cập các trang web streaming (ví dụ: Netflix, YouTube) để hiển thị phụ đề kép trong trình phát video. Quyền ActiveTab để chèn phụ đề và cho phép tương tác (tạm dừng khi di chuột, dịch, v.v.). Các quyền này chỉ được sử dụng cục bộ trên thiết bị của bạn. Funlingo không bao giờ gửi dữ liệu trang hoặc nội dung video đến bất kỳ máy chủ bên ngoài nào."
     },
     {
       "title": "Xử lý dữ liệu",
@@ -34,7 +34,7 @@
     },
     {
       "title": "Bảo mật",
-      "content": "Vì chúng tôi không lưu trữ dữ liệu cá nhân, thông tin của bạn luôn nằm trên thiết bị của bạn. Chúng tôi tuân thủ các thực tiễn tốt nhất để đảm bảo các tập lệnh của tiện ích an toàn và chỉ giới hạn trong các tên miền cần thiết."
+      "content": "Vì chúng tôi không lưu trữ dữ liệu cá nhân, thông tin của bạn vẫn ở trên thiết bị của bạn. Chúng tôi tuân thủ các thực tiễn tốt nhất để đảm bảo các tập lệnh của tiện ích an toàn và chỉ giới hạn trong các tên miền cần thiết."
     },
     {
       "title": "Cập nhật chính sách này",

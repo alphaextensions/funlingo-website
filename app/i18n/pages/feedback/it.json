@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Soddisfazione generale",
     "satisfactionLevels": {
-      "1": "Molto insoddisfatto",
-      "2": "Insoddisfatto",
+      "1": "Molto insoddisfacente",
+      "2": "Insoddisfacente",
       "3": "Neutrale",
-      "4": "Soddisfatto",
-      "5": "Molto soddisfatto"
+      "4": "Soddisfacente",
+      "5": "Molto soddisfacente"
     },
     "uninstall": {
       "heading": "Perché stai pensando di disinstallare?",

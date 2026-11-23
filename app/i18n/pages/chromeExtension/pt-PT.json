@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Extensão Funlingo para Chrome — Legendas duplas e tradução com IA",
-    "description": "Extensão gratuita Funlingo para Chrome: legendas duplas e tradução com IA no Netflix, YouTube, Prime e mais, em 100+ línguas. Aprenda enquanto vê."
+    "title": "Funlingo para Chrome — Legendas duplas e tradução com IA",
+    "description": "Extensão gratuita Funlingo para Chrome: legendas duplas e tradução com IA na Netflix, no YouTube, no Prime e mais, em mais de 100 línguas. Aprenda enquanto vê."
   },
   "hero": {
-    "badge": "Extensão gratuita para Chrome · Classificação 4.8/5",
+    "badge": "Extensão gratuita para Chrome · Classificação 4,8/5",
     "title": "Extensão Funlingo para Chrome",
-    "subtitle": "Legendas duplas e tradução com IA gratuitas no Netflix, YouTube, Prime Video e mais 7 plataformas. Aprenda entre 100+ línguas enquanto vê.",
-    "addToChrome": "Adicionar ao Chrome — É Grátis",
+    "subtitle": "Legendas duplas e tradução com IA gratuitas na Netflix, no YouTube, no Prime Video e em mais 7 plataformas. Mais de 100 línguas para aprender enquanto vê.",
+    "addToChrome": "Adicionar ao Chrome — É grátis",
     "seeHowItWorks": "Veja como funciona",
     "note": "Não precisa de conta · Instala-se em menos de um minuto"
   },
@@ -24,7 +24,7 @@
         "description": "Passe o rato sobre qualquer palavra para obter de imediato traduções com IA adaptadas ao contexto, notas de gramática e frases de exemplo reais."
       },
       {
-        "title": "Construtor de vocabulário",
+        "title": "Caderno de vocabulário",
         "description": "Guarde qualquer palavra ou expressão com um clique. Cada entrada mantém a tradução e a frase onde a encontrou."
       },
       {
@@ -33,7 +33,7 @@
       },
       {
         "title": "10 plataformas",
-        "description": "Funciona no Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy e Coursera."
+        "description": "Compatível com Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy e Coursera."
       },
       {
         "title": "100% gratuito",
@@ -59,7 +59,7 @@
       },
       {
         "title": "Carregue em Play e aprenda",
-        "description": "Abra o Netflix, o YouTube ou qualquer plataforma compatível e as legendas duplas aparecem automaticamente."
+        "description": "Abra a Netflix, o YouTube ou qualquer plataforma compatível e as legendas duplas aparecem automaticamente."
       }
     ]
   },
@@ -69,7 +69,7 @@
     "items": [
       {
         "question": "A extensão Funlingo para Chrome é gratuita?",
-        "answer": "Sim. A extensão Funlingo para Chrome é 100% gratuita, sem custos ocultos, planos premium ou paywalls. Tem acesso a legendas duplas, tradução com IA, definições de palavras com IA e ao construtor de vocabulário sem pagar nada. Basta adicioná-la ao Chrome e começar a usar todas as funcionalidades de imediato, sem precisar de conta."
+        "answer": "Sim. A extensão Funlingo para Chrome é 100% gratuita, sem custos ocultos, planos premium ou paywalls. Tem acesso a legendas duplas, tradução com IA, definições de palavras com IA e ao caderno de vocabulário sem pagar nada. Basta adicioná-la ao Chrome e começar a usar todas as funcionalidades de imediato, sem precisar de conta."
       },
       {
         "question": "Em que plataformas funciona a extensão Funlingo?",
@@ -77,22 +77,22 @@
       },
       {
         "question": "Como instalo a extensão Funlingo para Chrome?",
-        "answer": "Abra a página do Funlingo na Chrome Web Store, clique em Adicionar ao Chrome e confirme clicando em Adicionar extensão. Afixe o Funlingo na barra de ferramentas, abra qualquer plataforma compatível, como o Netflix ou o YouTube, e as legendas duplas aparecem automaticamente. Todo o processo demora menos de um minuto."
+        "answer": "Abra a página do Funlingo na Chrome Web Store, clique em Adicionar ao Chrome e confirme clicando em Adicionar extensão. Afixe o Funlingo na barra de ferramentas, abra qualquer plataforma compatível, como a Netflix ou o YouTube, e as legendas duplas aparecem automaticamente. Todo o processo demora menos de um minuto."
       },
       {
         "question": "A extensão Funlingo suporta a minha língua?",
-        "answer": "Quase de certeza. O Funlingo suporta 100+ línguas para tradução de legendas, incluindo espanhol, francês, japonês, coreano, mandarim, alemão, português, italiano, árabe, hindi e muitas mais. Pode definir a língua que está a aprender e a sua língua materna de forma independente, para uma verdadeira aprendizagem com legendas duplas."
+        "answer": "Quase de certeza. O Funlingo suporta mais de 100 línguas para tradução de legendas, incluindo espanhol, francês, japonês, coreano, mandarim, alemão, português, italiano, árabe, hindi e muitas mais. Pode definir a língua que está a aprender e a sua língua materna de forma independente, para uma verdadeira aprendizagem com legendas duplas."
       },
       {
         "question": "O Funlingo é uma extensão segura para Chrome?",
-        "answer": "Sim. O Funlingo está publicado na Chrome Web Store oficial, onde é analisado pela Google, e tem uma classificação de 4.8 em 5 estrelas. Funciona localmente no seu navegador para apresentar as legendas e não exige que crie uma conta para começar a aprender."
+        "answer": "Sim. O Funlingo está publicado na Chrome Web Store oficial, onde é analisado pela Google, e tem uma classificação de 4,8 em 5 estrelas. Funciona localmente no seu navegador para apresentar as legendas e não exige que crie uma conta para começar a aprender."
       }
     ]
   },
   "cta": {
     "title": "Comece a aprender línguas enquanto vê",
     "subtitle": "Junte-se a milhares de pessoas que usam o Funlingo para ter legendas duplas e tradução com IA gratuitas em 10 plataformas.",
-    "addToChrome": "Adicionar ao Chrome — É Grátis",
-    "note": "Gratuito · Classificação 4.8/5 na Chrome Web Store"
+    "addToChrome": "Adicionar ao Chrome — É grátis",
+    "note": "Gratuito · Classificação 4,8/5 na Chrome Web Store"
   }
 }

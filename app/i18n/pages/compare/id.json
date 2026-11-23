@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Funlingo vs Trancy vs Immersive Translate - Perbandingan Lengkap",
+    "title": "Funlingo vs Trancy vs Immersive Translate - Perbandingan",
     "description": "Perbandingan fitur Funlingo, Trancy, dan Immersive Translate secara detail. Temukan alasan Funlingo jadi alternatif gratis terbaik untuk subtitle ganda di Netflix & YouTube."
   },
   "hero": {
@@ -20,7 +20,7 @@
         "feature": "Popup per Kata",
         "sub": "Arti dalam Bahasa Ibu + \"Lihat Contoh\" (Unik)",
         "fun": "Popup berisi arti dalam bahasa ibu + Lihat Contoh (UX unik).",
-        "trancy": "Tidak ada Lihat Contoh di dalam popup.",
+        "trancy": "Tidak ada \"Lihat Contoh\" di dalam popup.",
         "immersive": "Tidak tersedia."
       },
       {
@@ -38,18 +38,18 @@
         "immersive": "TTS terbatas; UI ejaan per kata tidak terdokumentasi."
       },
       {
-        "feature": "AI Klik untuk Konteks",
+        "feature": "AI Konteks Sekali Klik",
         "sub": "Penjelasan (frasa & catatan penggunaan)",
-        "fun": "Blok penjelasan AI klik-untuk-jelaskan yang terintegrasi (konteks tingkat frasa).",
+        "fun": "Blok penjelasan AI bawaan, cukup klik (konteks tingkat frasa).",
         "trancy": "Menyediakan alat tata bahasa/analisis; ada alur penjelasan kontekstual.",
         "immersive": "Ada beberapa fitur terjemahan kontekstual; pengalaman di dalam pemutar tidak sama."
       },
       {
-        "feature": "Simpan ke Kosakata & Ulasan",
+        "feature": "Simpan ke Kosakata & Tinjauan",
         "sub": "Dek",
-        "fun": "Simpan ke kosakata + daftar ulasan / ekspor; UX ulasan bawaan.",
-        "trancy": "Ada fitur simpan/bookmark, tetapi fitur dek ulasan lengkap terbatas atau berorientasi mode belajar.",
-        "immersive": "Tidak terdokumentasi secara publik sebagai dek ulasan terintegrasi."
+        "fun": "Simpan ke kosakata + daftar tinjauan / ekspor; UX tinjauan bawaan.",
+        "trancy": "Ada fitur simpan/bookmark, tetapi fitur dek tinjauan lengkap terbatas atau berorientasi mode belajar.",
+        "immersive": "Tidak terdokumentasi secara publik sebagai dek tinjauan terintegrasi."
       },
       {
         "feature": "Privasi & Ekstensi",

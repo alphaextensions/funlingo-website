@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funlingo vs. Trancy vs. Immersive Translate – összehasonlítás",
-    "description": "A Funlingo, a Trancy és az Immersive Translate funkcióinak részletes összehasonlítása. Tudd meg, miért a Funlingo a legjobb ingyenes kétnyelvű feliratos választás."
+    "description": "A Funlingo, a Trancy és az Immersive Translate funkcióinak részletes összehasonlítása. Tudd meg, miért a Funlingo a legjobb ingyenes választás kétnyelvű feliratokhoz a Netflixen és a YouTube-on."
   },
   "hero": {
     "badge": "Részletes összehasonlítás",
@@ -19,7 +19,7 @@
       {
         "feature": "Szószintű felugró ablak",
         "sub": "Anyanyelvi jelentés + „Példa megtekintése” (egyedi)",
-        "fun": "A felugró ablakban anyanyelvi jelentés + Példa megtekintése (egyedi UX).",
+        "fun": "A felugró ablakban anyanyelvi jelentés + Példa megtekintése (egyedi felhasználói élmény).",
         "trancy": "Nincs Példa megtekintése a felugró ablakban.",
         "immersive": "Nem érhető el."
       },
@@ -39,21 +39,21 @@
       },
       {
         "feature": "Kattintásra elérhető AI",
-        "sub": "Magyarázatok (kifejezések és használati megjegyzések)",
+        "sub": "magyarázatok (kifejezések és használati megjegyzések)",
         "fun": "Beépített, kattintásra megjelenő AI-magyarázatok (kifejezésszintű kontextus).",
         "trancy": "Nyelvtani/elemző eszközöket kínál; van kontextuális magyarázat.",
         "immersive": "Néhány kontextuális fordítási funkció; a lejátszón belüli élmény nem ugyanaz."
       },
       {
         "feature": "Mentés a szókincsbe és ismétlés",
-        "sub": "Pakli",
+        "sub": "(ismétlőpakli)",
         "fun": "Mentés a szókincsbe + ismétlőlista / exportálás; beépített ismétlőfelület.",
         "trancy": "Van mentés/könyvjelző, de a teljes ismétlőpakli funkciói korlátozottak vagy tanulómódhoz kötöttek.",
         "immersive": "Beépített ismétlőpakli nincs nyilvánosan dokumentálva."
       },
       {
         "feature": "Adatvédelem és bővítmény",
-        "sub": "Biztonsági jelzések",
+        "sub": "biztonsági jelzések",
         "fun": "Egyértelmű engedélyek és adatvédelmi útmutatás; könnyűsúlyú bővítménymodell.",
         "trancy": "Adatvédelmi információk elérhetők; a vállalati funkciók eltérhetnek.",
         "immersive": "Változó; a nyilvános dokumentáció korlátozott."

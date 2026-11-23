@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Funlingo vs Trancy vs Immersive Translate: เทียบเครื่องมือซับไตเติลคู่",
+    "title": "Funlingo vs Trancy vs Immersive Translate: เปรียบเทียบ",
     "description": "เปรียบเทียบฟีเจอร์ของ Funlingo, Trancy และ Immersive Translate อย่างละเอียด ดูว่าทำไม Funlingo จึงเป็นทางเลือกฟรีที่ดีที่สุดสำหรับซับไตเติลคู่บน Netflix และ YouTube"
   },
   "hero": {
@@ -20,7 +20,7 @@
         "feature": "ป๊อปอัประดับคำ",
         "sub": "ความหมายภาษาแม่ + \"ดูตัวอย่าง\" (มีเฉพาะที่นี่)",
         "fun": "ป๊อปอัปมีความหมายภาษาแม่ + ดูตัวอย่าง (UX ที่ไม่เหมือนใคร)",
-        "trancy": "ไม่มีดูตัวอย่างในป๊อปอัป",
+        "trancy": "ไม่มี \"ดูตัวอย่าง\" ในป๊อปอัป",
         "immersive": "ไม่มี"
       },
       {

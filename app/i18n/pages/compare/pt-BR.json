@@ -18,24 +18,24 @@
     "rows": [
       {
         "feature": "Pop-up por palavra",
-        "sub": "Significado nativo + \"Ver exemplo\" (exclusivo)",
+        "sub": "Significado no seu idioma + \"Ver exemplo\" (exclusivo)",
         "fun": "O pop-up traz o significado no seu idioma + Ver exemplo (UX exclusiva).",
         "trancy": "Sem Ver exemplo dentro do pop-up.",
         "immersive": "Não disponível."
       },
       {
-        "feature": "Significado nativo inline",
+        "feature": "Significado integrado ao texto",
         "sub": "Entre colchetes para palavras difíceis (exclusivo)",
-        "fun": "Significado no seu idioma entre colchetes, inline, para palavras selecionadas/difíceis.",
+        "fun": "Significado no seu idioma entre colchetes, no próprio texto, para palavras selecionadas/difíceis.",
         "trancy": "Não disponível.",
         "immersive": "Não disponível."
       },
       {
         "feature": "Pronúncia por palavra",
-        "sub": "(soletrada + áudio)",
-        "fun": "Pronúncia de cada palavra (guia soletrado + áudio + reprodução lenta).",
-        "trancy": "Recursos de TTS limitados; interface de soletração por palavra não está claramente documentada.",
-        "immersive": "TTS limitado; interface de soletração por palavra não documentada."
+        "sub": "(transcrição + áudio)",
+        "fun": "Pronúncia de cada palavra (guia de pronúncia escrito + áudio + reprodução lenta).",
+        "trancy": "Recursos de síntese de voz limitados; interface de transcrição por palavra não está claramente documentada.",
+        "immersive": "Síntese de voz limitada; interface de transcrição por palavra não documentada."
       },
       {
         "feature": "IA com clique para contexto",
@@ -52,8 +52,8 @@
         "immersive": "Não há documentação pública de um deck de revisão integrado."
       },
       {
-        "feature": "Privacidade e extensão",
-        "sub": "Sinais de segurança",
+        "feature": "Privacidade e segurança",
+        "sub": "da extensão",
         "fun": "Permissões explícitas e orientações de privacidade; modelo de extensão leve.",
         "trancy": "Informações de privacidade disponíveis; recursos empresariais podem variar.",
         "immersive": "Varia; documentação pública limitada."
@@ -75,7 +75,7 @@
     ]
   },
   "cta": {
-    "title": "Pronto para mudar?",
+    "title": "Que tal mudar?",
     "body": "Instale o Funlingo hoje e sinta a diferença. Leva menos de 30 segundos para começar.",
     "button": "Baixar o Funlingo para Chrome"
   }

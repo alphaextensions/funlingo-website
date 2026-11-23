@@ -34,8 +34,8 @@
         "feature": "Pronuncia parola per parola",
         "sub": "(trascrizione + audio)",
         "fun": "Pronuncia di ogni parola (trascrizione fonetica + audio + riproduzione lenta).",
-        "trancy": "Limitata / funzioni TTS presenti; interfaccia di trascrizione per parola non chiaramente documentata.",
-        "immersive": "TTS limitata; interfaccia di trascrizione per parola non documentata."
+        "trancy": "Limitata / funzioni di sintesi vocale presenti; interfaccia di trascrizione per parola non chiaramente documentata.",
+        "immersive": "Sintesi vocale limitata; interfaccia di trascrizione per parola non documentata."
       },
       {
         "feature": "AI contestuale con un clic",
@@ -75,7 +75,7 @@
     ]
   },
   "cta": {
-    "title": "Pronto a cambiare?",
+    "title": "È il momento di cambiare?",
     "body": "Installa Funlingo oggi stesso e scopri la differenza. Bastano meno di 30 secondi per iniziare.",
     "button": "Scarica Funlingo per Chrome"
   }

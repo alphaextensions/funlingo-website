@@ -42,11 +42,11 @@
         "sub": "Vysvetlenia (frázy a poznámky k použitiu)",
         "fun": "Integrované bloky AI, ktoré vysvetlia na kliknutie (kontext na úrovni frázy).",
         "trancy": "Ponúka nástroje na gramatiku/analýzu; kontextové vysvetlenie je k dispozícii.",
-        "immersive": "Niektoré funkcie kontextového prekladu; zážitok v prehrávači nie je rovnaký."
+        "immersive": "Niektoré funkcie kontextového prekladu; v prehrávači to funguje inak."
       },
       {
         "feature": "Ukladanie slovíčok a opakovanie",
-        "sub": "Balíček",
+        "sub": "(balíček na opakovanie)",
         "fun": "Ukladanie slovíčok + zoznam na opakovanie / export; vstavané rozhranie na opakovanie.",
         "trancy": "Ukladanie/záložky existujú, ale funkcie balíčka na opakovanie sú obmedzené alebo zamerané na študijný režim.",
         "immersive": "Integrovaný balíček na opakovanie nie je verejne zdokumentovaný."
@@ -62,7 +62,7 @@
     "legend": {
       "core": "Kľúčová funkcia k dispozícii",
       "available": "Funkcia k dispozícii",
-      "limited": "Obmedzené / Nie je hlavné"
+      "limited": "Obmedzené / vedľajšie"
     }
   },
   "why": {

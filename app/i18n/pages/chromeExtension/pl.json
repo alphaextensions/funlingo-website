@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Rozszerzenie Funlingo do Chrome — Podwójne napisy i tłumaczenie AI",
+    "title": "Funlingo do Chrome – podwójne napisy i tłumaczenie AI",
     "description": "Darmowe rozszerzenie Funlingo do Chrome: podwójne napisy i tłumaczenie AI na Netflix, YouTube, Prime i innych, w 100+ językach. Ucz się podczas oglądania."
   },
   "hero": {
@@ -13,7 +13,7 @@
   },
   "features": {
     "title": "Wszystko, czego potrzebujesz, by uczyć się podczas oglądania",
-    "subtitle": "Jedno darmowe rozszerzenie zamienia Twoje ulubione serwisy streamingowe i edukacyjne w wciągającą klasę językową.",
+    "subtitle": "Jedno darmowe rozszerzenie zamienia Twoje ulubione serwisy streamingowe i edukacyjne w klasę z pełnym zanurzeniem w języku.",
     "items": [
       {
         "title": "Podwójne napisy",
@@ -25,7 +25,7 @@
       },
       {
         "title": "Budowanie słownictwa",
-        "description": "Zapisuj dowolne słowo lub wyrażenie jednym kliknięciem. Każdy wpis zachowuje tłumaczenie i zdanie, w którym je znalazłeś."
+        "description": "Zapisuj dowolne słowo lub wyrażenie jednym kliknięciem. Każdy wpis zachowuje tłumaczenie i zdanie, w którym się pojawiło."
       },
       {
         "title": "100+ języków",

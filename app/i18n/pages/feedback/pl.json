@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Opinie - Podziel się swoim zdaniem",
+    "title": "Opinie – podziel się swoim zdaniem",
     "description": "Podziel się opinią z zespołem Funlingo. Pomóż nam tworzyć lepsze doświadczenie nauki języków dla wszystkich."
   },
   "header": {
@@ -19,7 +19,7 @@
     "nameLabel": "Imię",
     "namePlaceholder": "Twoje imię",
     "emailLabel": "E-mail",
-    "emailPlaceholder": "twoj.email@przyklad.com",
+    "emailPlaceholder": "twoj.email@example.com",
     "categoryLabel": "Kategoria",
     "categories": {
       "feature": "Propozycja funkcji",
@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Ogólne zadowolenie",
     "satisfactionLevels": {
-      "1": "Bardzo niezadowolony",
-      "2": "Niezadowolony",
-      "3": "Neutralnie",
-      "4": "Zadowolony",
-      "5": "Bardzo zadowolony"
+      "1": "Bardzo niskie",
+      "2": "Niskie",
+      "3": "Średnie",
+      "4": "Wysokie",
+      "5": "Bardzo wysokie"
     },
     "uninstall": {
       "heading": "Dlaczego rozważasz odinstalowanie?",
@@ -44,10 +44,10 @@
       "otherPlaceholder": "Opisz inne powody..."
     },
     "featureDetailsLabel": "Szczegóły funkcji",
-    "desiredFeatureLabel": "Jaką funkcję chciałbyś, żebyśmy stworzyli?",
-    "featureDetailsPlaceholder": "Opisz funkcję, którą chciałbyś zobaczyć...",
+    "desiredFeatureLabel": "Jaką funkcję powinniśmy dodać?",
+    "featureDetailsPlaceholder": "Opisz funkcję, która by Ci się przydała...",
     "desiredFeaturePlaceholder": "Jaka funkcja skłoniłaby Cię do zmiany zdania?",
-    "recommendLabel": "Czy poleciłbyś Funlingo innym?",
+    "recommendLabel": "Czy polecisz Funlingo innym?",
     "recommendOptions": {
       "none": "Wybierz opcję",
       "definitely": "Zdecydowanie tak",

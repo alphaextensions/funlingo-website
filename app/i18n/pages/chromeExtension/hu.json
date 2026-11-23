@@ -4,9 +4,9 @@
     "description": "Ingyenes Funlingo Chrome-bővítmény: kétnyelvű feliratok és AI-fordítás Netflixen, YouTube-on, Prime-on és máshol, 100+ nyelven. Tanulj, miközben nézed!"
   },
   "hero": {
-    "badge": "Ingyenes Chrome-bővítmény · 4.8/5 értékelés",
+    "badge": "Ingyenes Chrome-bővítmény · 4,8/5 értékelés",
     "title": "Funlingo Chrome-bővítmény",
-    "subtitle": "Ingyenes kétnyelvű feliratok és AI-fordítás Netflixen, YouTube-on, Prime Videón és további 7 platformon. Tanulj a 100+ nyelv bármelyikén, miközben nézed.",
+    "subtitle": "Ingyenes kétnyelvű feliratok és AI-fordítás Netflixen, YouTube-on, Prime Videón és további 7 platformon. Több mint 100 nyelv közül választhatsz, és nézés közben tanulsz.",
     "addToChrome": "Hozzáadás a Chrome-hoz – Ingyenes",
     "seeHowItWorks": "Nézd meg, hogyan működik",
     "note": "Nem kell fiók · Kevesebb mint egy perc alatt telepíthető"
@@ -50,15 +50,15 @@
         "description": "A fenti gombbal nyisd meg a Funlingo oldalát a Chrome Web Store-ban."
       },
       {
-        "title": "Kattints a Hozzáadás a Chrome-hoz gombra",
-        "description": "Kattints a Hozzáadás a Chrome-hoz gombra, majd erősítsd meg a Bővítmény hozzáadása gombbal. Másodpercek alatt települ."
+        "title": "Kattints a „Hozzáadás a Chrome-hoz” gombra",
+        "description": "Kattints a „Hozzáadás a Chrome-hoz” gombra, majd erősítsd meg a „Bővítmény hozzáadása” gombbal. Másodpercek alatt települ."
       },
       {
         "title": "Rögzítsd a Funlingót",
         "description": "Rögzítsd a Funlingót az eszköztáron, hogy nézés közben mindig egy kattintásnyira legyen."
       },
       {
-        "title": "Indítsd el és tanulj",
+        "title": "Indítsd a lejátszást, és tanulj",
         "description": "Nyisd meg a Netflixet, a YouTube-ot vagy bármely támogatott platformot, és a kétnyelvű feliratok automatikusan megjelennek."
       }
     ]
@@ -77,7 +77,7 @@
       },
       {
         "question": "Hogyan telepíthetem a Funlingo Chrome-bővítményt?",
-        "answer": "Nyisd meg a Funlingo oldalát a Chrome Web Store-ban, kattints a Hozzáadás a Chrome-hoz gombra, majd erősítsd meg a Bővítmény hozzáadása gombbal. Rögzítsd a Funlingót az eszköztáron, nyiss meg egy támogatott platformot, például a Netflixet vagy a YouTube-ot, és a kétnyelvű feliratok automatikusan megjelennek. Az egész kevesebb mint egy percig tart."
+        "answer": "Nyisd meg a Funlingo oldalát a Chrome Web Store-ban, kattints a „Hozzáadás a Chrome-hoz” gombra, majd erősítsd meg a „Bővítmény hozzáadása” gombbal. Rögzítsd a Funlingót az eszköztáron, nyiss meg egy támogatott platformot, például a Netflixet vagy a YouTube-ot, és a kétnyelvű feliratok automatikusan megjelennek. Az egész kevesebb mint egy percig tart."
       },
       {
         "question": "Támogatja a Funlingo az én nyelvemet?",
@@ -85,7 +85,7 @@
       },
       {
         "question": "Biztonságos Chrome-bővítmény a Funlingo?",
-        "answer": "Igen. A Funlingo a hivatalos Chrome Web Store-ban érhető el, ahol a Google ellenőrzi, és 4.8 csillagos értékelést kapott az 5-ből. Helyben, a böngésződben fut a feliratok megjelenítéséhez, és a tanulás megkezdéséhez nem kell fiókot létrehoznod."
+        "answer": "Igen. A Funlingo a hivatalos Chrome Web Store-ban érhető el, ahol a Google ellenőrzi, és 5-ből 4,8 csillagos értékelést kapott. Helyben, a böngésződben fut a feliratok megjelenítéséhez, és a tanulás megkezdéséhez nem kell fiókot létrehoznod."
       }
     ]
   },
@@ -93,6 +93,6 @@
     "title": "Kezdj el nyelveket tanulni, miközben nézed",
     "subtitle": "Csatlakozz a több ezer tanulóhoz, akik a Funlingót használják ingyenes kétnyelvű feliratokhoz és AI-fordításhoz 10 platformon.",
     "addToChrome": "Hozzáadás a Chrome-hoz – Ingyenes",
-    "note": "Ingyenes · 4.8/5 értékelés a Chrome Web Store-ban"
+    "note": "Ingyenes · 4,8/5 értékelés a Chrome Web Store-ban"
   }
 }

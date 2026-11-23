@@ -11,17 +11,17 @@
     {
       "title": "Technická podpora",
       "description": "Problémy s aplikáciou, chyby alebo technické ťažkosti",
-      "responseTime": "2-4 hodiny"
+      "responseTime": "2 – 4 hodiny"
     },
     {
       "title": "Návrh funkcie",
       "description": "Navrhnite nové funkcie alebo vylepšenia",
-      "responseTime": "1-2 dni"
+      "responseTime": "1 – 2 dni"
     },
     {
       "title": "Všeobecný dotaz",
       "description": "Ďalšie otázky alebo žiadosti o informácie",
-      "responseTime": "1-2 dni"
+      "responseTime": "1 – 2 dni"
     }
   ],
   "responseLabel": "Odpoveď: {time}",
@@ -30,7 +30,7 @@
     "nameLabel": "Meno",
     "namePlaceholder": "Vaše celé meno",
     "emailLabel": "E-mail",
-    "emailPlaceholder": "vas.email@priklad.sk",
+    "emailPlaceholder": "vas.email@example.com",
     "issueTypeLabel": "Typ požiadavky",
     "issueTypes": {
       "technical": "Technická podpora",
@@ -61,7 +61,7 @@
     "discordTitle": "Komunita na Discorde",
     "discordText": "Pridajte sa a získajte pomoc v reálnom čase",
     "responseTitle": "Čas odozvy",
-    "responseText": "2-48 hodín podľa priority"
+    "responseText": "2 – 48 hodín podľa priority"
   },
   "beforeContact": {
     "title": "Skôr než nás kontaktujete",

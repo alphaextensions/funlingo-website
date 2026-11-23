@@ -30,11 +30,11 @@
     },
     "satisfactionLabel": "Satisfação geral",
     "satisfactionLevels": {
-      "1": "Muito insatisfeito",
-      "2": "Insatisfeito",
+      "1": "Muito insatisfatório",
+      "2": "Insatisfatório",
       "3": "Neutro",
-      "4": "Satisfeito",
-      "5": "Muito satisfeito"
+      "4": "Satisfatório",
+      "5": "Muito satisfatório"
     },
     "uninstall": {
       "heading": "Porque está a pensar desinstalar?",
@@ -46,7 +46,7 @@
     "featureDetailsLabel": "Detalhes da funcionalidade",
     "desiredFeatureLabel": "Há alguma funcionalidade que gostaria que criássemos?",
     "featureDetailsPlaceholder": "Descreva a funcionalidade que gostaria de ver...",
-    "desiredFeaturePlaceholder": "Que funcionalidade o faria reconsiderar?",
+    "desiredFeaturePlaceholder": "Que funcionalidade faria com que reconsiderasse?",
     "recommendLabel": "Recomendaria o Funlingo a outras pessoas?",
     "recommendOptions": {
       "none": "Selecione uma opção",

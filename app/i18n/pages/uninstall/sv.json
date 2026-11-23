@@ -58,7 +58,7 @@
   },
   "thanks": {
     "title": "Tack, vi har fått det.",
-    "recoverable": "Vi släpper rättningar och nya funktioner varje vecka. Om du ger Funlingo en ny chans kan det redan vara löst.",
+    "recoverable": "Vi släpper buggfixar och nya funktioner varje vecka. Om du ger Funlingo en ny chans kan det redan vara löst.",
     "notRecoverable": "Din feedback går direkt till teamet. Tack för att du tog dig tid.",
     "emailNote": "Vi mejlar dig på {email} när det finns nyheter.",
     "reinstall": "Ge Funlingo en ny chans",

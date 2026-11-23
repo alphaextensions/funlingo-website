@@ -24,11 +24,11 @@
       "responseTime": "1~2일"
     }
   ],
-  "responseLabel": "응답: {time}",
+  "responseLabel": "응답 시간: {time}",
   "successMessage": "문의해 주셔서 감사합니다! 최대한 빨리 답변드리겠습니다.",
   "form": {
     "nameLabel": "이름",
-    "namePlaceholder": "성함을 입력하세요",
+    "namePlaceholder": "이름을 입력해 주세요",
     "emailLabel": "이메일",
     "emailPlaceholder": "your.email@example.com",
     "issueTypeLabel": "문의 유형",

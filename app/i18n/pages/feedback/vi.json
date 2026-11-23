@@ -51,7 +51,7 @@
     "recommendOptions": {
       "none": "Chọn một tùy chọn",
       "definitely": "Chắc chắn có",
-      "probably": "Có lẽ có",
+      "probably": "Có thể có",
       "unsure": "Không chắc",
       "probablyNot": "Có lẽ không",
       "definitelyNot": "Chắc chắn không"

@@ -24,7 +24,7 @@
         "immersive": "No disponible."
       },
       {
-        "feature": "Significat en línia",
+        "feature": "Significat integrat al text",
         "sub": "Entre claudàtors per a paraules difícils (exclusiu)",
         "fun": "Significat en el teu idioma entre claudàtors per a paraules seleccionades o difícils.",
         "trancy": "No disponible.",
@@ -34,8 +34,8 @@
         "feature": "Pronunciació per paraula",
         "sub": "(transcripció + àudio)",
         "fun": "Pronunciació de cada paraula (transcripció + àudio + reproducció lenta).",
-        "trancy": "Limitada / hi ha funcions TTS; la transcripció per paraula no està clarament documentada.",
-        "immersive": "TTS limitat; transcripció per paraula no documentada."
+        "trancy": "Limitada / hi ha funcions de síntesi de veu; la transcripció per paraula no està clarament documentada.",
+        "immersive": "Síntesi de veu limitada; transcripció per paraula no documentada."
       },
       {
         "feature": "IA contextual amb un clic",

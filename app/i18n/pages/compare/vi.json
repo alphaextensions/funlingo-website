@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Funlingo vs Trancy vs Immersive Translate: So sánh công cụ phụ đề kép",
+    "title": "Funlingo vs Trancy vs Immersive Translate: So sánh",
     "description": "So sánh chi tiết tính năng của Funlingo, Trancy và Immersive Translate. Xem vì sao Funlingo là lựa chọn miễn phí tốt nhất cho phụ đề kép trên Netflix & YouTube."
   },
   "hero": {
@@ -18,14 +18,14 @@
     "rows": [
       {
         "feature": "Popup theo từng từ",
-        "sub": "Nghĩa tiếng mẹ đẻ + \"Xem ví dụ\" (Độc quyền)",
+        "sub": "Nghĩa tiếng mẹ đẻ + \"Xem ví dụ\" (Chỉ có ở Funlingo)",
         "fun": "Popup có nghĩa tiếng mẹ đẻ + Xem ví dụ (UX độc đáo).",
-        "trancy": "Không có Xem ví dụ trong popup.",
+        "trancy": "Popup không có \"Xem ví dụ\".",
         "immersive": "Không có."
       },
       {
         "feature": "Nghĩa tiếng mẹ đẻ ngay trong dòng",
-        "sub": "Trong ngoặc cho từ khó (Độc quyền)",
+        "sub": "Trong ngoặc cho từ khó (Chỉ có ở Funlingo)",
         "fun": "Hiển thị nghĩa tiếng mẹ đẻ trong ngoặc ngay trong dòng cho từ được chọn/từ khó.",
         "trancy": "Không có.",
         "immersive": "Không có."
@@ -40,9 +40,9 @@
       {
         "feature": "AI giải thích ngữ cảnh khi nhấp",
         "sub": "Giải thích (cụm từ & cách dùng)",
-        "fun": "Tích hợp khối AI nhấp để giải thích (ngữ cảnh cấp cụm từ).",
+        "fun": "Khối AI giải thích ngay khi nhấp, tích hợp sẵn (ngữ cảnh cấp cụm từ).",
         "trancy": "Có công cụ ngữ pháp/phân tích; có luồng giải thích theo ngữ cảnh.",
-        "immersive": "Có một số tính năng dịch theo ngữ cảnh; trải nghiệm trong trình phát không giống."
+        "immersive": "Có một số tính năng dịch theo ngữ cảnh; không tương đương trải nghiệm ngay trong trình phát."
       },
       {
         "feature": "Lưu từ vựng & Ôn tập",
@@ -62,7 +62,7 @@
     "legend": {
       "core": "Có sẵn như tính năng cốt lõi",
       "available": "Có tính năng",
-      "limited": "Hạn chế / Không phải chính"
+      "limited": "Hạn chế / Không phải trọng tâm"
     }
   },
   "why": {
@@ -70,8 +70,8 @@
     "items": [
       "Hoàn toàn miễn phí: Không khóa tính năng cốt lõi sau gói trả phí.",
       "Tương thích rộng rãi: Hoạt động mượt mà trên Netflix, YouTube và Prime.",
-      "Ứng dụng AI: Giải thích theo ngữ cảnh, không chỉ dịch trực tiếp.",
-      "Không gây phiền: Thiết kế nhẹ nhàng, không làm phiền khi bạn xem."
+      "Hỗ trợ bởi AI: Giải thích theo ngữ cảnh, không chỉ dịch trực tiếp.",
+      "Không vướng víu: Được thiết kế để hoạt động thầm lặng, không làm phiền khi bạn xem."
     ]
   },
   "cta": {
