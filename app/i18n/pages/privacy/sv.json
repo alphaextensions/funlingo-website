@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Integritetspolicy",
+    "description": "Funlingos integritetspolicy. Läs hur vi hanterar din information när du använder Funlingos Chrome-tillägg och vår webbplats."
+  },
+  "translationNotice": "Denna översättning tillhandahålls för att underlätta. Vid eventuella skillnader gäller den engelska versionen av denna policy.",
+  "englishLinkText": "Läs den engelska versionen",
+  "hero": {
+    "badge": "Din integritet är viktig",
+    "title": "Integritetspolicy",
+    "intro": "Välkommen till Funlingo. Din integritet är viktig för oss. Denna integritetspolicy förklarar hur vi hanterar din information när du använder Funlingos Chrome-tillägg och vår webbplats."
+  },
+  "effectiveDate": "Gäller från: november 2025",
+  "sections": [
+    {
+      "title": "Information vi inte samlar in",
+      "content": "Vi skapade Funlingo för att hjälpa användare att njuta av dubbla undertexter och lära sig språk medan de streamar, utan att kompromissa med integriteten. Vi använder inte cookies eller analysverktyg från tredje part för att övervaka din aktivitet. Vi säljer eller hyr inte ut din information till någon."
+    },
+    {
+      "title": "Behörigheter som används",
+      "content": "Funlingo kräver vissa Chrome-behörigheter enbart för att fungera korrekt: Åtkomst till sidor på streamingtjänster (t.ex. Netflix, YouTube) för att visa dubbla undertexter i videospelaren. Behörigheten ActiveTab för att infoga undertexter och möjliggöra interaktivitet (paus när du hovrar, översättningar osv.). Dessa behörigheter används enbart lokalt på din enhet. Funlingo skickar aldrig siddata eller videoinnehåll till någon extern server."
+    },
+    {
+      "title": "Databehandling",
+      "content": "All rendering av undertexter, översättningar och hovringsinteraktioner sker lokalt i din webbläsare. Om framtida funktioner använder API:er för översättningar eller ordboksuppslag kommer förfrågningarna att göras anonymt och utan att användaridentifierare lagras."
+    },
+    {
+      "title": "Tredjepartstjänster",
+      "content": "Funlingo kan ansluta till offentliga API:er för översättning eller ordböcker (till exempel Google Translate API eller liknande). Dessa används enbart för att hämta ordbetydelser eller översättningar och överför ingen användaridentitet eller surfdata."
+    },
+    {
+      "title": "Barns integritet",
+      "content": "Funlingo är säkert för alla åldrar och samlar inte medvetet in data från barn under 13 år."
+    },
+    {
+      "title": "Säkerhet",
+      "content": "Eftersom vi inte lagrar personuppgifter stannar din information på din enhet. Vi följer bästa praxis för att säkerställa att tilläggets skript är säkra och begränsade till nödvändiga domäner."
+    },
+    {
+      "title": "Ändringar av denna policy",
+      "content": "Vi kan uppdatera denna integritetspolicy då och då. Om betydande ändringar görs uppdaterar vi ikraftträdandedatumet och publicerar den nya versionen på vår webbplats."
+    }
+  ],
+  "contact": {
+    "badge": "Hör av dig",
+    "title": "Kontakta oss",
+    "text": "Om du har frågor eller funderingar om denna integritetspolicy är du välkommen att kontakta oss på:"
+  },
+  "commitment": "Funlingo arbetar för att göra språkinlärning via streaming säker, privat och enkel."
+}

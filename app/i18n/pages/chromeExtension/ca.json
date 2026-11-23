@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Extensió de Chrome Funlingo: subtítols dobles i traducció IA",
+    "description": "Extensió de Chrome gratuïta: subtítols dobles i traducció amb IA a Netflix, YouTube, Prime i més, en més de 100 idiomes. Afegeix-la a Chrome i aprèn mirant."
+  },
+  "hero": {
+    "badge": "Extensió de Chrome gratuïta · Valorada amb 4,8/5",
+    "title": "Extensió de Chrome Funlingo",
+    "subtitle": "Subtítols dobles i traducció amb IA gratuïts a Netflix, YouTube, Prime Video i 7 plataformes més. Més de 100 idiomes per aprendre mentre mires.",
+    "addToChrome": "Afegeix a Chrome — És gratis",
+    "seeHowItWorks": "Mira com funciona",
+    "note": "Sense compte · S'instal·la en menys d'un minut"
+  },
+  "features": {
+    "title": "Tot el que necessites per aprendre mentre mires",
+    "subtitle": "Una sola extensió gratuïta converteix els teus llocs preferits de streaming i aprenentatge en una aula d'idiomes immersiva.",
+    "items": [
+      {
+        "title": "Subtítols dobles",
+        "description": "Mira dues pistes de subtítols alhora —l'idioma que aprens i la teva llengua materna— directament al reproductor de vídeo."
+      },
+      {
+        "title": "Traducció i definicions amb IA",
+        "description": "Passa el cursor per sobre de qualsevol paraula per obtenir a l'instant traduccions amb IA segons el context, notes gramaticals i exemples reals."
+      },
+      {
+        "title": "Quadern de vocabulari",
+        "description": "Desa qualsevol paraula o expressió amb un clic. Cada entrada conserva la traducció i la frase on la vas trobar."
+      },
+      {
+        "title": "100+ idiomes",
+        "description": "Del castellà i el japonès al coreà, l'alemany, l'àrab i l'hindi: configura els teus idiomes de manera independent."
+      },
+      {
+        "title": "10 plataformes",
+        "description": "Funciona a Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy i Coursera."
+      },
+      {
+        "title": "100% gratis",
+        "description": "Sense murs de pagament, sense pla prèmium i sense compte. Totes les funcions són gratuïtes."
+      }
+    ]
+  },
+  "install": {
+    "title": "S'instal·la en menys d'un minut",
+    "subtitle": "Sense complicacions. Afegeix Funlingo a Chrome i comença a aprendre de seguida.",
+    "steps": [
+      {
+        "title": "Obre la Chrome Web Store",
+        "description": "Ves a la fitxa de Funlingo a la Chrome Web Store amb el botó de dalt."
+      },
+      {
+        "title": "Fes clic a Afegeix a Chrome",
+        "description": "Fes clic a Afegeix a Chrome i confirma amb Afegeix l'extensió. S'instal·la en segons."
+      },
+      {
+        "title": "Fixa Funlingo",
+        "description": "Fixa Funlingo a la barra d'eines per tenir-lo sempre a un clic mentre mires."
+      },
+      {
+        "title": "Prem el play i aprèn",
+        "description": "Obre Netflix, YouTube o qualsevol plataforma compatible i els subtítols dobles apareixeran automàticament."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntes freqüents",
+    "subtitle": "Tot sobre l'extensió de Chrome Funlingo.",
+    "items": [
+      {
+        "question": "L'extensió de Chrome Funlingo és gratuïta?",
+        "answer": "Sí. L'extensió de Chrome Funlingo és 100% gratuïta, sense costos ocults, plans prèmium ni murs de pagament. Tens subtítols dobles, traducció amb IA, definicions de paraules amb IA i el quadern de vocabulari sense pagar res. Només cal que l'afegeixis a Chrome i comencis a fer servir totes les funcions de seguida, sense necessitat de compte."
+      },
+      {
+        "question": "En quines plataformes funciona l'extensió Funlingo?",
+        "answer": "Funlingo funciona en 10 plataformes: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy i Coursera. Els subtítols dobles i la traducció amb IA s'integren directament a cada reproductor de vídeo, perquè aprenguis idiomes mentre mires pel·lícules, sèries, anime i cursos en línia."
+      },
+      {
+        "question": "Com instal·lo l'extensió de Chrome Funlingo?",
+        "answer": "Obre la fitxa de Funlingo a la Chrome Web Store, fes clic a Afegeix a Chrome i confirma amb Afegeix l'extensió. Fixa Funlingo a la barra d'eines, obre qualsevol plataforma compatible com Netflix o YouTube i els subtítols dobles apareixeran automàticament. Tot el procés dura menys d'un minut."
+      },
+      {
+        "question": "L'extensió Funlingo és compatible amb el meu idioma?",
+        "answer": "Gairebé segur que sí. Funlingo admet més de 100 idiomes per traduir subtítols, com ara el castellà, el francès, el japonès, el coreà, el xinès mandarí, l'alemany, el portuguès, l'italià, l'àrab, l'hindi i molts més. Pots configurar l'idioma que aprens i la teva llengua materna per separat per aprendre de debò amb subtítols dobles."
+      },
+      {
+        "question": "Funlingo és una extensió de Chrome segura?",
+        "answer": "Sí. Funlingo està publicada a la Chrome Web Store oficial, on Google la revisa, i té una valoració de 4,8 sobre 5 estrelles. S'executa localment al teu navegador per mostrar els subtítols i no cal que creïs cap compte per començar a aprendre."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Comença a aprendre idiomes mentre mires",
+    "subtitle": "Uneix-te als milers d'estudiants que fan servir Funlingo per tenir subtítols dobles i traducció amb IA gratuïts en 10 plataformes.",
+    "addToChrome": "Afegeix a Chrome — És gratis",
+    "note": "Gratis · Valorada amb 4,8/5 a la Chrome Web Store"
+  }
+}

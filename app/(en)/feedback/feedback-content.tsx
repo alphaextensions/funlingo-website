@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
+import type { Strings } from "@/app/i18n/pages/feedback";
 
 // Define types for our form data
 interface FeedbackFormData {
@@ -22,7 +23,8 @@ interface FeedbackFormData {
   recommend: string;
 }
 
-export default function FeedbackContent() {
+export default function FeedbackContent({ s }: { s: Strings }) {
+  const f = s.form;
   const [formData, setFormData] = useState<FeedbackFormData>({
     name: "",
     email: "",
@@ -64,9 +66,9 @@ export default function FeedbackContent() {
   }, []);
 
   const validateForm = () => {
-    if (!formData.name.trim()) return "Please enter your name.";
-    if (!formData.email.trim()) return "Please enter your email.";
-    if (!formData.message.trim()) return "Please enter your feedback.";
+    if (!formData.name.trim()) return s.validation.name;
+    if (!formData.email.trim()) return s.validation.email;
+    if (!formData.message.trim()) return s.validation.message;
 
     if (
       formData.category === "uninstall" &&
@@ -74,7 +76,7 @@ export default function FeedbackContent() {
       !formData.notWorkingProperly &&
       !formData.otherReason.trim()
     ) {
-      return "Please select at least one uninstall reason.";
+      return s.validation.uninstallReason;
     }
     return null;
   };
@@ -120,7 +122,7 @@ export default function FeedbackContent() {
 
       setTimeout(() => setSubmitted(false), 3000);
     } catch {
-      setError("Something went wrong. Please try again.");
+      setError(s.submitError);
     } finally {
       setLoading(false);
     }
@@ -136,13 +138,7 @@ export default function FeedbackContent() {
     }));
   };
 
-  const satisfactionLabels: { [key: number]: string } = {
-    1: "Very Dissatisfied",
-    2: "Dissatisfied",
-    3: "Neutral",
-    4: "Satisfied",
-    5: "Very Satisfied"
-  };
+  const satisfactionLabels: { [key: number]: string } = f.satisfactionLevels;
 
   return (
     <div className="flex flex-col items-start relative fnl-root min-h-screen">
@@ -164,13 +160,13 @@ export default function FeedbackContent() {
             }`}
           >
             <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-textwhite text-3xl sm:text-4xl lg:text-5xl xl:text-[length:var(--heading-h1-font-size)] tracking-[var(--heading-h1-letter-spacing)] leading-tight sm:leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] animate-fade-in-up">
-              We&apos;d Love Your Feedback
+              {s.header.title}
             </h1>
             <p
               className="font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl lg:text-[length:var(--body-large-regular-font-size)] tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
-              Your input helps us build a better language learning experience for everyone
+              {s.header.subtitle}
             </p>
           </div>
 
@@ -192,7 +188,7 @@ export default function FeedbackContent() {
               style={{ animationDelay: "300ms" }}
             >
               <p className="font-body-normal-medium text-[var(--text)] text-center">
-                Thank you for your feedback! We&apos;ll review it carefully.
+                {s.success}
               </p>
             </div>
           )}
@@ -211,7 +207,7 @@ export default function FeedbackContent() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col gap-2">
                 <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                  Name
+                  {f.nameLabel}
                 </label>
                 <Input
                   type="text"
@@ -221,13 +217,13 @@ export default function FeedbackContent() {
                   }
                   required
                   className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
-                  placeholder="Your name"
+                  placeholder={f.namePlaceholder}
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                  Email
+                  {f.emailLabel}
                 </label>
                 <Input
                   type="email"
@@ -237,14 +233,14 @@ export default function FeedbackContent() {
                   }
                   required
                   className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
-                  placeholder="your.email@example.com"
+                  placeholder={f.emailPlaceholder}
                 />
               </div>
             </div>
 
             <div className="flex flex-col gap-2">
               <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                Category
+                {f.categoryLabel}
               </label>
               <select
                 value={formData.category}
@@ -253,18 +249,18 @@ export default function FeedbackContent() {
                 }
                 className="h-10 px-3 py-2 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
               >
-                <option value="feature">Feature Request</option>
-                <option value="bug">Bug Report</option>
-                <option value="improvement">Improvement Suggestion</option>
-                <option value="uninstall">Reason for Uninstalling</option>
-                <option value="other">Other</option>
+                <option value="feature">{f.categories.feature}</option>
+                <option value="bug">{f.categories.bug}</option>
+                <option value="improvement">{f.categories.improvement}</option>
+                <option value="uninstall">{f.categories.uninstall}</option>
+                <option value="other">{f.categories.other}</option>
               </select>
             </div>
 
             {/* Satisfaction Rating */}
             <div className="flex flex-col gap-3">
               <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                Overall Satisfaction
+                {f.satisfactionLabel}
               </label>
               <div className="flex flex-col gap-2">
                 <input
@@ -276,11 +272,11 @@ export default function FeedbackContent() {
                   className="w-full h-2 bg-[var(--surface-2)] rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-gradient-to-r [&::-webkit-slider-thumb]:from-[#C81FD4] [&::-webkit-slider-thumb]:to-[#9A1C8E]"
                 />
                 <div className="flex justify-between text-xs text-textbody">
-                  <span>1 - Very Dissatisfied</span>
+                  <span>1 - {f.satisfactionLevels[1]}</span>
                   <span className="text-textwhite font-medium">
                     {formData.satisfaction} - {satisfactionLabels[formData.satisfaction]}
                   </span>
-                  <span>5 - Very Satisfied</span>
+                  <span>5 - {f.satisfactionLevels[5]}</span>
                 </div>
               </div>
             </div>
@@ -289,7 +285,7 @@ export default function FeedbackContent() {
             {formData.category === 'uninstall' && (
               <div className="space-y-4 p-4 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] animate-fade-in-up">
                 <h4 className="font-body-normal-medium text-textwhite mb-3">
-                  Why are you considering uninstalling?
+                  {f.uninstall.heading}
                 </h4>
 
                 <div className="space-y-3">
@@ -302,7 +298,7 @@ export default function FeedbackContent() {
                       className="w-4 h-4 rounded border-[var(--border)] bg-[var(--surface-2)] text-[#C81FD4] focus:ring-[#C81FD4] focus:ring-2"
                     />
                     <label htmlFor="missing-features" className="font-body-normal-regular text-textwhite cursor-pointer">
-                      Missing features I need
+                      {f.uninstall.missingFeatures}
                     </label>
                   </div>
 
@@ -315,7 +311,7 @@ export default function FeedbackContent() {
                       className="w-4 h-4 rounded border-[var(--border)] bg-[var(--surface-2)] text-[#C81FD4] focus:ring-[#C81FD4] focus:ring-2"
                     />
                     <label htmlFor="not-working" className="font-body-normal-regular text-textwhite cursor-pointer">
-                      Not working properly
+                      {f.uninstall.notWorking}
                     </label>
                   </div>
 
@@ -328,7 +324,7 @@ export default function FeedbackContent() {
                       className="w-4 h-4 rounded border-[var(--border)] bg-[var(--surface-2)] text-[#C81FD4] focus:ring-[#C81FD4] focus:ring-2"
                     />
                     <label htmlFor="other-reason" className="font-body-normal-regular text-textwhite cursor-pointer">
-                      Other reasons
+                      {f.uninstall.otherReasons}
                     </label>
                   </div>
 
@@ -339,7 +335,7 @@ export default function FeedbackContent() {
                         value={formData.otherReason}
                         onChange={(e) => setFormData({ ...formData, otherReason: e.target.value })}
                         className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
-                        placeholder="Please specify other reasons..."
+                        placeholder={f.uninstall.otherPlaceholder}
                       />
                     </div>
                   )}
@@ -350,7 +346,7 @@ export default function FeedbackContent() {
             {/* Feature Request Section */}
             <div className="flex flex-col gap-2">
               <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                {formData.category === 'feature' ? 'Feature Details' : 'Any Feature You\'d Like Us to Build?'}
+                {formData.category === 'feature' ? f.featureDetailsLabel : f.desiredFeatureLabel}
               </label>
               <Input
                 type="text"
@@ -359,8 +355,8 @@ export default function FeedbackContent() {
                 className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                 placeholder={
                   formData.category === 'feature'
-                    ? "Describe the feature you'd like to see..."
-                    : "What feature would make you reconsider?"
+                    ? f.featureDetailsPlaceholder
+                    : f.desiredFeaturePlaceholder
                 }
               />
             </div>
@@ -368,26 +364,26 @@ export default function FeedbackContent() {
             {/* Recommendation */}
             <div className="flex flex-col gap-2">
               <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                Would you recommend Funlingo to others?
+                {f.recommendLabel}
               </label>
               <select
                 value={formData.recommend}
                 onChange={(e) => setFormData({ ...formData, recommend: e.target.value })}
                 className="h-10 px-3 py-2 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
               >
-                <option value="">Select an option</option>
-                <option value="definitely">Definitely yes</option>
-                <option value="probably">Probably yes</option>
-                <option value="unsure">Not sure</option>
-                <option value="probably-not">Probably not</option>
-                <option value="definitely-not">Definitely not</option>
+                <option value="">{f.recommendOptions.none}</option>
+                <option value="definitely">{f.recommendOptions.definitely}</option>
+                <option value="probably">{f.recommendOptions.probably}</option>
+                <option value="unsure">{f.recommendOptions.unsure}</option>
+                <option value="probably-not">{f.recommendOptions.probablyNot}</option>
+                <option value="definitely-not">{f.recommendOptions.definitelyNot}</option>
               </select>
             </div>
 
             {/* Main Message */}
             <div className="flex flex-col gap-2">
               <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                Additional Comments
+                {f.commentsLabel}
               </label>
               <Textarea
                 value={formData.message}
@@ -396,7 +392,7 @@ export default function FeedbackContent() {
                 }
                 required
                 className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300 min-h-[120px] resize-vertical"
-                placeholder="Share any additional thoughts, suggestions, or details..."
+                placeholder={f.commentsPlaceholder}
               />
             </div>
 
@@ -410,7 +406,7 @@ export default function FeedbackContent() {
               }`}
             >
               <span className="relative z-10 font-body-normal-medium text-textwhite">
-                {loading ? "Submitting..." : "Submit Feedback"}
+                {loading ? f.submitting : f.submit}
               </span>
             </Button>
           </form>
@@ -433,8 +429,8 @@ export default function FeedbackContent() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 ),
-                title: "Email Us",
-                description: "getfunlingo@gmail.com",
+                title: s.contact.email.title,
+                description: s.contact.email.description,
                 delay: "700ms",
                 link: "mailto:getfunlingo@gmail.com"
               },
@@ -446,8 +442,8 @@ export default function FeedbackContent() {
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                   </>
                 ),
-                title: "Instagram",
-                description: "@getfunlingo",
+                title: s.contact.instagram.title,
+                description: s.contact.instagram.description,
                 delay: "800ms",
                 link: "https://www.instagram.com/getfunlingo?igsh=MWVkcWQ5Nmh0YmZqdA=="
               },
@@ -459,8 +455,8 @@ export default function FeedbackContent() {
                     <circle cx="4" cy="4" r="2" />
                   </>
                 ),
-                title: "LinkedIn",
-                description: "Follow our page",
+                title: s.contact.linkedin.title,
+                description: s.contact.linkedin.description,
                 delay: "900ms",
                 link: "https://www.linkedin.com/company/getfunlingo/"
               },
@@ -486,7 +482,7 @@ export default function FeedbackContent() {
                 <h4 className="font-heading-h6 text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
                   {item.title}
                 </h4>
-                <p className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
+                <p dir="auto" className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
                   {item.description}
                 </p>
               </a>

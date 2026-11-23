@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate – Vergelijking",
+    "description": "Uitgebreide vergelijking van Funlingo, Trancy en Immersive Translate. Ontdek waarom Funlingo het beste gratis alternatief is voor dubbele ondertiteling."
+  },
+  "hero": {
+    "badge": "Uitgebreide vergelijking",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Twijfel je welke extensie om talen te leren bij je past? We zetten de functies, prijzen en mogelijkheden van de beste tools van 2026 op een rij."
+  },
+  "table": {
+    "ariaLabel": "Vergelijking van functies tussen Funlingo, Trancy en Immersive Translate",
+    "featureHeader": "Functie",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Pop-up per woord",
+        "sub": "Betekenis in je eigen taal + ‘Voorbeeld bekijken’ (uniek)",
+        "fun": "Pop-up met betekenis in je eigen taal + Voorbeeld bekijken (unieke UX).",
+        "trancy": "Geen ‘Voorbeeld bekijken’ in de pop-up.",
+        "immersive": "Niet beschikbaar."
+      },
+      {
+        "feature": "Betekenis in de tekst",
+        "sub": "Tussen haakjes bij moeilijke woorden (uniek)",
+        "fun": "Betekenis in je eigen taal tussen haakjes bij geselecteerde of moeilijke woorden.",
+        "trancy": "Niet beschikbaar.",
+        "immersive": "Niet beschikbaar."
+      },
+      {
+        "feature": "Uitspraak per woord",
+        "sub": "(uitgeschreven + audio)",
+        "fun": "Uitspraak per woord (uitgeschreven klank + audio + langzaam afspelen).",
+        "trancy": "Beperkt / TTS-functies aanwezig; uitgeschreven uitspraak per woord niet duidelijk gedocumenteerd.",
+        "immersive": "Beperkte TTS; uitgeschreven uitspraak per woord niet gedocumenteerd."
+      },
+      {
+        "feature": "AI-context met één klik",
+        "sub": "Uitleg (zinsdelen & gebruiksnotities)",
+        "fun": "Geïntegreerde AI-uitlegblokken met één klik (context op zinsniveau).",
+        "trancy": "Biedt grammatica- en analysetools; contextuele uitleg aanwezig.",
+        "immersive": "Enkele contextuele vertaalfuncties; niet dezelfde ervaring in de speler."
+      },
+      {
+        "feature": "Woorden opslaan & herhalen",
+        "sub": "Kaartenset",
+        "fun": "Woorden opslaan + herhaallijst / export; ingebouwde herhaalfunctie.",
+        "trancy": "Opslaan / bladwijzers mogelijk, maar herhaalfuncties beperkt of gericht op studiemodus.",
+        "immersive": "Geen geïntegreerde herhaalset openbaar gedocumenteerd."
+      },
+      {
+        "feature": "Privacy & veiligheid",
+        "sub": "van de extensie",
+        "fun": "Duidelijke machtigingen & privacyrichtlijnen; lichte extensie.",
+        "trancy": "Privacy-informatie beschikbaar; zakelijke functies kunnen afwijken.",
+        "immersive": "Wisselend; beperkte openbare documentatie."
+      }
+    ],
+    "legend": {
+      "core": "Kernfunctie aanwezig",
+      "available": "Functie beschikbaar",
+      "limited": "Beperkt / niet primair"
+    }
+  },
+  "why": {
+    "title": "Waarom kiezen voor Funlingo?",
+    "items": [
+      "Helemaal gratis: geen premiumbeperkingen op kernfuncties.",
+      "Werkt overal: naadloos op Netflix, YouTube en Prime.",
+      "AI-gestuurd: uitleg in context, niet alleen letterlijke vertalingen.",
+      "Geen gedoe: ontworpen om onopvallend op de achtergrond te blijven terwijl je kijkt."
+    ]
+  },
+  "cta": {
+    "title": "Klaar om over te stappen?",
+    "body": "Installeer Funlingo vandaag nog en ervaar het verschil. Binnen 30 seconden ben je aan de slag.",
+    "button": "Funlingo voor Chrome downloaden"
+  }
+}

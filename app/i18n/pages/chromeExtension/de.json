@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo Chrome-Erweiterung – Zweisprachige Untertitel & KI",
+    "description": "Kostenlose Chrome-Erweiterung: zweisprachige Untertitel & KI-Übersetzung auf Netflix, YouTube, Prime & mehr in 100+ Sprachen. Lernen beim Schauen."
+  },
+  "hero": {
+    "badge": "Kostenlose Chrome-Erweiterung · Bewertet mit 4,8/5",
+    "title": "Funlingo Chrome-Erweiterung",
+    "subtitle": "Kostenlose zweisprachige Untertitel und KI-Übersetzung auf Netflix, YouTube, Prime Video und 7 weiteren Plattformen. Lerne beim Schauen – in 100+ Sprachen.",
+    "addToChrome": "Zu Chrome hinzufügen – es ist kostenlos",
+    "seeHowItWorks": "So funktioniert's",
+    "note": "Kein Konto nötig · In unter einer Minute installiert"
+  },
+  "features": {
+    "title": "Alles, was du zum Lernen beim Schauen brauchst",
+    "subtitle": "Eine kostenlose Erweiterung macht deine liebsten Streaming- und Lernseiten zum immersiven Sprachklassenzimmer.",
+    "items": [
+      {
+        "title": "Zweisprachige Untertitel",
+        "description": "Sieh zwei Untertitelspuren gleichzeitig – deine Zielsprache und deine Muttersprache – direkt im Videoplayer."
+      },
+      {
+        "title": "KI-Übersetzung & Definitionen",
+        "description": "Fahr mit der Maus über ein Wort und erhalte sofort kontextbezogene KI-Übersetzungen, Grammatikhinweise und echte Beispielsätze."
+      },
+      {
+        "title": "Wortschatztrainer",
+        "description": "Speichere Wörter oder Wendungen mit einem Klick. Jeder Eintrag behält seine Übersetzung und den Satz, in dem du ihn gefunden hast."
+      },
+      {
+        "title": "100+ Sprachen",
+        "description": "Von Spanisch und Japanisch bis Koreanisch, Deutsch, Arabisch und Hindi – stell deine Sprachen unabhängig voneinander ein."
+      },
+      {
+        "title": "10 Plattformen",
+        "description": "Funktioniert auf Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy und Coursera."
+      },
+      {
+        "title": "100 % kostenlos",
+        "description": "Keine Paywalls, kein Premium-Abo, kein Konto nötig. Alle Funktionen sind kostenlos."
+      }
+    ]
+  },
+  "install": {
+    "title": "In unter einer Minute installiert",
+    "subtitle": "Kein Einrichtungsstress. Füge Funlingo zu Chrome hinzu und leg sofort los.",
+    "steps": [
+      {
+        "title": "Chrome Web Store öffnen",
+        "description": "Öffne über den Button oben die Funlingo-Seite im Chrome Web Store."
+      },
+      {
+        "title": "Auf „Hinzufügen“ klicken",
+        "description": "Klick auf „Zu Chrome hinzufügen“ und bestätige mit „Erweiterung hinzufügen“. Die Installation dauert nur Sekunden."
+      },
+      {
+        "title": "Funlingo anpinnen",
+        "description": "Pinne Funlingo an deine Symbolleiste, damit es beim Schauen immer nur einen Klick entfernt ist."
+      },
+      {
+        "title": "Play drücken & lernen",
+        "description": "Öffne Netflix, YouTube oder eine andere unterstützte Plattform – die zweisprachigen Untertitel erscheinen automatisch."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles rund um die Funlingo Chrome-Erweiterung.",
+    "items": [
+      {
+        "question": "Ist die Funlingo Chrome-Erweiterung kostenlos?",
+        "answer": "Ja. Die Funlingo Chrome-Erweiterung ist zu 100 % kostenlos – ohne versteckte Kosten, Premium-Stufen oder Paywalls. Zweisprachige Untertitel, KI-Übersetzung, KI-Wortdefinitionen und der Wortschatztrainer kosten dich nichts. Füge sie einfach zu Chrome hinzu und nutze sofort alle Funktionen, ganz ohne Konto."
+      },
+      {
+        "question": "Auf welchen Plattformen funktioniert die Funlingo-Erweiterung?",
+        "answer": "Funlingo funktioniert auf 10 Plattformen: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy und Coursera. Zweisprachige Untertitel und KI-Übersetzung sind direkt in den jeweiligen Videoplayer integriert, sodass du beim Schauen von Filmen, Serien, Anime und Onlinekursen Sprachen lernen kannst."
+      },
+      {
+        "question": "Wie installiere ich die Funlingo Chrome-Erweiterung?",
+        "answer": "Öffne die Funlingo-Seite im Chrome Web Store, klick auf „Zu Chrome hinzufügen“ und bestätige mit „Erweiterung hinzufügen“. Pinne Funlingo an deine Symbolleiste, öffne eine unterstützte Plattform wie Netflix oder YouTube, und die zweisprachigen Untertitel erscheinen automatisch. Das Ganze dauert weniger als eine Minute."
+      },
+      {
+        "question": "Unterstützt die Funlingo-Erweiterung meine Sprache?",
+        "answer": "Höchstwahrscheinlich. Funlingo unterstützt 100+ Sprachen für die Untertitelübersetzung, darunter Spanisch, Französisch, Japanisch, Koreanisch, Mandarin, Deutsch, Portugiesisch, Italienisch, Arabisch, Hindi und viele mehr. Du kannst deine Zielsprache und deine Muttersprache unabhängig voneinander einstellen – für echtes Lernen mit zweisprachigen Untertiteln."
+      },
+      {
+        "question": "Ist Funlingo eine sichere Chrome-Erweiterung?",
+        "answer": "Ja. Funlingo ist im offiziellen Chrome Web Store veröffentlicht, wo es von Google geprüft wird, und mit 4,8 von 5 Sternen bewertet. Die Erweiterung läuft lokal in deinem Browser, um Untertitel anzuzeigen, und du musst kein Konto erstellen, um mit dem Lernen zu beginnen."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Lerne Sprachen, während du schaust",
+    "subtitle": "Schließ dich Tausenden von Lernenden an, die Funlingo für kostenlose zweisprachige Untertitel und KI-Übersetzung auf 10 Plattformen nutzen.",
+    "addToChrome": "Zu Chrome hinzufügen – es ist kostenlos",
+    "note": "Kostenlos · Bewertet mit 4,8/5 im Chrome Web Store"
+  }
+}

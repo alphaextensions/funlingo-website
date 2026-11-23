@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "ملاحظاتك — شاركنا رأيك",
+    "description": "شارك ملاحظاتك مع فريق Funlingo وساعدنا على بناء تجربة أفضل لتعلّم اللغات للجميع."
+  },
+  "header": {
+    "title": "يسعدنا سماع رأيك",
+    "subtitle": "رأيك يساعدنا على بناء تجربة أفضل لتعلّم اللغات للجميع"
+  },
+  "validation": {
+    "name": "يُرجى إدخال اسمك.",
+    "email": "يُرجى إدخال بريدك الإلكتروني.",
+    "message": "يُرجى كتابة ملاحظاتك.",
+    "uninstallReason": "يُرجى اختيار سبب واحد على الأقل لإلغاء التثبيت."
+  },
+  "submitError": "حدث خطأ ما. يُرجى المحاولة مرة أخرى.",
+  "success": "شكرًا على ملاحظاتك! سنراجعها بعناية.",
+  "form": {
+    "nameLabel": "الاسم",
+    "namePlaceholder": "اسمك",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "الفئة",
+    "categories": {
+      "feature": "طلب ميزة",
+      "bug": "الإبلاغ عن خطأ",
+      "improvement": "اقتراح تحسين",
+      "uninstall": "سبب إلغاء التثبيت",
+      "other": "أخرى"
+    },
+    "satisfactionLabel": "الرضا العام",
+    "satisfactionLevels": {
+      "1": "غير راضٍ إطلاقًا",
+      "2": "غير راضٍ",
+      "3": "محايد",
+      "4": "راضٍ",
+      "5": "راضٍ جدًا"
+    },
+    "uninstall": {
+      "heading": "لماذا تفكر في إلغاء التثبيت؟",
+      "missingFeatures": "تنقصه ميزات أحتاجها",
+      "notWorking": "لا يعمل بشكل صحيح",
+      "otherReasons": "أسباب أخرى",
+      "otherPlaceholder": "يُرجى توضيح الأسباب الأخرى..."
+    },
+    "featureDetailsLabel": "تفاصيل الميزة",
+    "desiredFeatureLabel": "هل هناك ميزة تودّ أن نبنيها؟",
+    "featureDetailsPlaceholder": "صِف الميزة التي تودّ رؤيتها...",
+    "desiredFeaturePlaceholder": "ما الميزة التي قد تجعلك تعيد النظر؟",
+    "recommendLabel": "هل توصي الآخرين باستخدام Funlingo؟",
+    "recommendOptions": {
+      "none": "اختر خيارًا",
+      "definitely": "نعم بالتأكيد",
+      "probably": "على الأرجح نعم",
+      "unsure": "لست متأكدًا",
+      "probablyNot": "على الأرجح لا",
+      "definitelyNot": "لا بالتأكيد"
+    },
+    "commentsLabel": "تعليقات إضافية",
+    "commentsPlaceholder": "شاركنا أي أفكار أو اقتراحات أو تفاصيل إضافية...",
+    "submitting": "جارٍ الإرسال...",
+    "submit": "إرسال الملاحظات"
+  },
+  "contact": {
+    "email": {
+      "title": "راسلنا",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "تابع صفحتنا"
+    }
+  }
+}

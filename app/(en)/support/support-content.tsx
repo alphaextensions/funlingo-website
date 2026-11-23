@@ -6,8 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import Navbar from "@/sections/navbar";
 import { FooterSection } from "@/sections/FooterSection";
+import type { Strings } from "@/app/i18n/pages/support";
 
-export default function SupportContent() {
+export default function SupportContent({ s }: { s: Strings }) {
   const [formData, setFormData] = useState<{
     name: string;
     email: string;
@@ -91,9 +92,7 @@ export default function SupportContent() {
           d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
         />
       ),
-      title: "Technical Support",
-      description: "App issues, bugs, or technical problems",
-      responseTime: "2-4 hours"
+      ...s.supportTypes[0],
     },
     {
       icon: (
@@ -104,9 +103,7 @@ export default function SupportContent() {
           d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
         />
       ),
-      title: "Feature Request",
-      description: "Suggest new features or improvements",
-      responseTime: "1-2 days"
+      ...s.supportTypes[1],
     },
     {
       icon: (
@@ -117,17 +114,15 @@ export default function SupportContent() {
           d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
         />
       ),
-      title: "General Inquiry",
-      description: "Other questions or information requests",
-      responseTime: "1-2 days"
+      ...s.supportTypes[2],
     }
   ];
 
   const priorityOptions = [
-    { value: "low", label: "Low", color: "text-green-400" },
-    { value: "medium", label: "Medium", color: "text-yellow-400" },
-    { value: "high", label: "High", color: "text-orange-400" },
-    { value: "urgent", label: "Urgent", color: "text-red-400" }
+    { value: "low", label: s.form.priorities.low, color: "text-green-400" },
+    { value: "medium", label: s.form.priorities.medium, color: "text-yellow-400" },
+    { value: "high", label: s.form.priorities.high, color: "text-orange-400" },
+    { value: "urgent", label: s.form.priorities.urgent, color: "text-red-400" }
   ];
 
   return (
@@ -150,13 +145,13 @@ export default function SupportContent() {
             }`}
           >
             <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-textwhite text-3xl sm:text-4xl lg:text-5xl xl:text-[length:var(--heading-h1-font-size)] tracking-[var(--heading-h1-letter-spacing)] leading-tight sm:leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] animate-fade-in-up">
-              Get Help & Support
+              {s.header.title}
             </h1>
             <p
               className="font-body-large-regular font-[number:var(--body-large-regular-font-weight)] text-textbody text-lg sm:text-xl lg:text-[length:var(--body-large-regular-font-size)] tracking-[var(--body-large-regular-letter-spacing)] leading-relaxed sm:leading-[var(--body-large-regular-line-height)] [font-style:var(--body-large-regular-font-style)] max-w-2xl animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
-              Our team is here to help you succeed with Funlingo. Reach out anytime.
+              {s.header.subtitle}
             </p>
           </div>
 
@@ -190,7 +185,7 @@ export default function SupportContent() {
                       {type.title}
                     </h4>
                     <p className="font-body-small-regular text-textbody text-xs">
-                      Response: {type.responseTime}
+                      {s.responseLabel.replace("{time}", type.responseTime)}
                     </p>
                   </div>
                 </div>
@@ -210,7 +205,7 @@ export default function SupportContent() {
               style={{ animationDelay: "300ms" }}
             >
               <p className="font-body-normal-medium text-[var(--text)] text-center">
-                Thank you for contacting us! We&apos;ll get back to you as soon as possible.
+                {s.successMessage}
               </p>
             </div>
           )}
@@ -230,7 +225,7 @@ export default function SupportContent() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                      Name
+                      {s.form.nameLabel}
                     </label>
                     <Input
                       type="text"
@@ -240,13 +235,13 @@ export default function SupportContent() {
                       }
                       required
                       className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
-                      placeholder="Your full name"
+                      placeholder={s.form.namePlaceholder}
                     />
                   </div>
 
                   <div className="flex flex-col gap-2">
                     <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                      Email
+                      {s.form.emailLabel}
                     </label>
                     <Input
                       type="email"
@@ -256,7 +251,7 @@ export default function SupportContent() {
                       }
                       required
                       className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
-                      placeholder="your.email@example.com"
+                      placeholder={s.form.emailPlaceholder}
                     />
                   </div>
                 </div>
@@ -264,7 +259,7 @@ export default function SupportContent() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                      Issue Type
+                      {s.form.issueTypeLabel}
                     </label>
                     <select
                       value={formData.issueType}
@@ -273,17 +268,17 @@ export default function SupportContent() {
                       }
                       className="h-10 px-3 py-2 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] text-textwhite font-body-normal-regular hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
                     >
-                      <option value="technical">Technical Support</option>
-                      <option value="billing">Billing & Account</option>
-                      <option value="feature">Feature Request</option>
-                      <option value="general">General Inquiry</option>
-                      <option value="bug">Bug Report</option>
+                      <option value="technical">{s.form.issueTypes.technical}</option>
+                      <option value="billing">{s.form.issueTypes.billing}</option>
+                      <option value="feature">{s.form.issueTypes.feature}</option>
+                      <option value="general">{s.form.issueTypes.general}</option>
+                      <option value="bug">{s.form.issueTypes.bug}</option>
                     </select>
                   </div>
 
                   <div className="flex flex-col gap-2">
                     <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                      Priority
+                      {s.form.priorityLabel}
                     </label>
                     <select
                       value={formData.priority}
@@ -303,7 +298,7 @@ export default function SupportContent() {
 
                 <div className="flex flex-col gap-2">
                   <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                    Subject
+                    {s.form.subjectLabel}
                   </label>
                   <Input
                     type="text"
@@ -313,13 +308,13 @@ export default function SupportContent() {
                     }
                     required
                     className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300"
-                    placeholder="Brief description of your issue"
+                    placeholder={s.form.subjectPlaceholder}
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
                   <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                    Message
+                    {s.form.messageLabel}
                   </label>
                   <Textarea
                     value={formData.message}
@@ -328,13 +323,13 @@ export default function SupportContent() {
                     }
                     required
                     className="bg-[var(--surface-2)] border-[var(--border)] text-textwhite placeholder:text-textbody hover:border-[#ffffff40] focus:border-[#C81FD4] transition-all duration-300 min-h-[150px] resize-vertical"
-                    placeholder="Please describe your issue in detail..."
+                    placeholder={s.form.messagePlaceholder}
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
                   <label className="font-body-normal-medium text-textwhite group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                    Attachments (Optional)
+                    {s.form.attachmentsLabel}
                   </label>
                   <div className="flex flex-col gap-3">
                     <input
@@ -358,7 +353,7 @@ export default function SupportContent() {
                               onClick={() => removeAttachment(index)}
                               className="w-4 h-4 rounded-full bg-red-500 text-[var(--text)] flex items-center justify-center text-xs hover:bg-red-600 transition-colors duration-200"
                             >
-                              x
+                              {s.form.removeAttachment}
                             </button>
                           </div>
                         ))}
@@ -372,7 +367,7 @@ export default function SupportContent() {
                   className="w-full bg-[linear-gradient(135deg,#9A1C8E_0%,#C81FD4_100%)] h-12 px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 group/btn overflow-hidden relative mt-2"
                 >
                   <span className="relative z-10 font-body-normal-medium text-textwhite group-hover/btn:scale-105 transition-transform duration-300">
-                    Send Support Request
+                    {s.form.submit}
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#C81FD4] to-[#9A1C8E] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
                 </Button>
@@ -389,7 +384,7 @@ export default function SupportContent() {
             >
               <div className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm hover:bg-[var(--surface-2)] hover:border-[#ffffff40] transition-all duration-300 animate-fade-in-up">
                 <h3 className="font-heading-h4 text-textwhite mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#C81FD4] group-hover:to-[#9A1C8E] transition-all duration-300">
-                  Contact Information
+                  {s.contact.title}
                 </h3>
 
                 <div className="space-y-4">
@@ -400,9 +395,9 @@ export default function SupportContent() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-body-normal-medium text-textwhite">Email Support</p>
+                      <p className="font-body-normal-medium text-textwhite">{s.contact.emailTitle}</p>
                       <p className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
-                        getfunlingo@gmail.com
+                        {s.contact.emailValue}
                       </p>
                     </div>
                   </div>
@@ -414,9 +409,9 @@ export default function SupportContent() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-body-normal-medium text-textwhite">Discord Community</p>
+                      <p className="font-body-normal-medium text-textwhite">{s.contact.discordTitle}</p>
                       <p className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
-                        Join for real-time help
+                        {s.contact.discordText}
                       </p>
                     </div>
                   </div>
@@ -428,9 +423,9 @@ export default function SupportContent() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-body-normal-medium text-textwhite">Response Time</p>
+                      <p className="font-body-normal-medium text-textwhite">{s.contact.responseTitle}</p>
                       <p className="font-body-small-regular text-textbody group-hover:text-textwhite transition-colors duration-300">
-                        2-48 hours depending on priority
+                        {s.contact.responseText}
                       </p>
                     </div>
                   </div>
@@ -438,14 +433,9 @@ export default function SupportContent() {
               </div>
 
               <div className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] backdrop-blur-sm hover:bg-[var(--surface-2)] hover:border-[#ffffff40] transition-all duration-300 animate-fade-in-up">
-                <h3 className="font-heading-h4 text-textwhite mb-4">Before You Contact</h3>
+                <h3 className="font-heading-h4 text-textwhite mb-4">{s.beforeContact.title}</h3>
                 <ul className="space-y-2">
-                  {[
-                    "Check our FAQ section for quick answers",
-                    "Include relevant screenshots if possible",
-                    "Describe the steps to reproduce the issue",
-                    "Mention your device and app version"
-                  ].map((tip, index) => (
+                  {s.beforeContact.tips.map((tip, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-gradient-to-r from-[#C81FD4] to-[#9A1C8E] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="font-body-small-regular text-textbody">{tip}</span>

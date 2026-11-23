@@ -1,25 +1,14 @@
 import type { Metadata } from "next";
 import AboutContent from "./about-content";
+import { en } from "@/app/i18n/pages/about";
+import { pageMetadata } from "@/app/i18n/page-metadata";
 
-export const metadata: Metadata = {
-  title: "About Funlingo - Our Mission in Free Language Learning",
-  description: "Learn about Funlingo's mission to provide a free dual subtitle alternative for language learners. We make immersive learning accessible to everyone.",
+export const metadata: Metadata = pageMetadata({
+  path: "/about",
+  locale: "en",
+  ...en.meta,
   keywords: "about funlingo, free language learning mission, dual subtitles technology, language education, free alternative",
-  alternates: {
-    canonical: "/about",
-  },
-  openGraph: {
-    images: ["/og-image.jpg"],
-    title: "About Funlingo - Our Mission in Free Language Learning",
-    description: "Learn about Funlingo's mission to provide a free dual subtitle alternative for language learners. We make immersive learning accessible to everyone.",
-    url: "/about",
-  },
-  twitter: {
-    images: ["/og-image.jpg"],
-    title: "About Funlingo - Our Mission in Free Language Learning",
-    description: "Learn about Funlingo's mission to provide a free dual subtitle alternative for language learners. We make immersive learning accessible to everyone.",
-  },
-};
+});
 
 export default function AboutPage() {
   return <AboutContent />;

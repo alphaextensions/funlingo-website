@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo proširenje za Chrome – dvostruki titlovi i AI prijevod",
+    "description": "Besplatno Funlingo proširenje: dvostruki titlovi i AI prijevod na Netflixu, YouTubeu, Primeu i drugdje na 100+ jezika. Dodajte ga u Chrome i učite uz gledanje."
+  },
+  "hero": {
+    "badge": "Besplatno proširenje za Chrome · Ocjena 4.8/5",
+    "title": "Funlingo proširenje za Chrome",
+    "subtitle": "Besplatni dvostruki titlovi i AI prijevod na Netflixu, YouTubeu, Prime Videu i još 7 platformi. Učite bilo koji od 100+ jezika dok gledate.",
+    "addToChrome": "Dodaj u Chrome – besplatno je",
+    "seeHowItWorks": "Pogledajte kako radi",
+    "note": "Bez računa · Instalacija za manje od minute"
+  },
+  "features": {
+    "title": "Sve što vam treba za učenje uz gledanje",
+    "subtitle": "Jedno besplatno proširenje pretvara vaše omiljene streaming i obrazovne stranice u učionicu za učenje jezika uranjanjem.",
+    "items": [
+      {
+        "title": "Dvostruki titlovi",
+        "description": "Gledajte dva titla odjednom – na jeziku koji učite i na materinskom jeziku – izravno u video playeru."
+      },
+      {
+        "title": "AI prijevod i definicije",
+        "description": "Zadržite pokazivač iznad bilo koje riječi za trenutačan AI prijevod u kontekstu, gramatičke napomene i stvarne primjere fraza."
+      },
+      {
+        "title": "Izgradnja vokabulara",
+        "description": "Spremite bilo koju riječ ili frazu jednim klikom. Svaki unos čuva prijevod i rečenicu u kojoj ste ga pronašli."
+      },
+      {
+        "title": "100+ jezika",
+        "description": "Od španjolskog i japanskog do korejskog, njemačkog, arapskog i hindskog – jezike birate neovisno jedan o drugome."
+      },
+      {
+        "title": "10 platformi",
+        "description": "Radi na Netflixu, YouTubeu, Prime Videu, Disney+ Hotstaru, Apple TV-u, Crunchyrollu, Tubiju, bilibiliju, Udemyju i Courseri."
+      },
+      {
+        "title": "100 % besplatno",
+        "description": "Bez zaključanih značajki, bez premium paketa, bez računa. Sve značajke su besplatne."
+      }
+    ]
+  },
+  "install": {
+    "title": "Instalacija za manje od minute",
+    "subtitle": "Bez muke s postavljanjem. Dodajte Funlingo u Chrome i odmah počnite učiti.",
+    "steps": [
+      {
+        "title": "Otvorite Chrome Web Store",
+        "description": "Gumbom iznad otvorite stranicu Funlinga u Chrome Web Storeu."
+      },
+      {
+        "title": "Kliknite Dodaj u Chrome",
+        "description": "Kliknite Dodaj u Chrome, a zatim potvrdite s Dodaj proširenje. Instalacija traje nekoliko sekundi."
+      },
+      {
+        "title": "Prikvačite Funlingo",
+        "description": "Prikvačite Funlingo na alatnu traku kako bi vam uvijek bio na klik dok gledate."
+      },
+      {
+        "title": "Pritisnite play i učite",
+        "description": "Otvorite Netflix, YouTube ili bilo koju podržanu platformu i dvostruki titlovi pojavit će se automatski."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Često postavljana pitanja",
+    "subtitle": "Sve o Funlingo proširenju za Chrome.",
+    "items": [
+      {
+        "question": "Je li Funlingo proširenje za Chrome besplatno?",
+        "answer": "Da. Funlingo proširenje za Chrome 100 % je besplatno, bez skrivenih troškova, premium paketa ili zaključanih značajki. Dvostruke titlove, AI prijevod, AI definicije riječi i izgradnju vokabulara dobivate bez naknade. Samo ga dodajte u Chrome i odmah koristite sve značajke, bez računa."
+      },
+      {
+        "question": "Na kojim platformama radi Funlingo?",
+        "answer": "Funlingo radi na 10 platformi: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy i Coursera. Dvostruki titlovi i AI prijevod integriraju se izravno u video player svake platforme, pa jezike možete učiti uz filmove, serije, anime i online tečajeve."
+      },
+      {
+        "question": "Kako instalirati Funlingo proširenje za Chrome?",
+        "answer": "Otvorite stranicu Funlinga u Chrome Web Storeu, kliknite Dodaj u Chrome, a zatim potvrdite klikom na Dodaj proširenje. Prikvačite Funlingo na alatnu traku, otvorite bilo koju podržanu platformu poput Netflixa ili YouTubea i dvostruki titlovi pojavit će se automatski. Cijeli postupak traje manje od minute."
+      },
+      {
+        "question": "Podržava li Funlingo moj jezik?",
+        "answer": "Gotovo sigurno. Funlingo podržava prijevod titlova na 100+ jezika, uključujući španjolski, francuski, japanski, korejski, mandarinski, njemački, portugalski, talijanski, arapski, hindski i mnoge druge. Jezik koji učite i materinski jezik postavljate neovisno, za pravo učenje s dvostrukim titlovima."
+      },
+      {
+        "question": "Je li Funlingo sigurno proširenje za Chrome?",
+        "answer": "Da. Funlingo je objavljen u službenom Chrome Web Storeu, gdje ga pregledava Google, i ima ocjenu 4.8 od 5 zvjezdica. Radi lokalno u vašem pregledniku kako bi prikazivao titlove i ne traži izradu računa da biste počeli učiti."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Počnite učiti jezike uz gledanje",
+    "subtitle": "Pridružite se tisućama učenika koji koriste Funlingo za besplatne dvostruke titlove i AI prijevod na 10 platformi.",
+    "addToChrome": "Dodaj u Chrome – besplatno je",
+    "note": "Besplatno · Ocjena 4.8/5 u Chrome Web Storeu"
+  }
+}

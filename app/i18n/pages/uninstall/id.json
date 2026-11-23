@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Sayang sekali kamu pergi",
+    "description": "Beri tahu kami kenapa kamu menghapus Funlingo. Masukanmu membantu kami membangun pengalaman belajar bahasa yang lebih baik."
+  },
+  "form": {
+    "title": "Kenapa kamu menghapus Funlingo?",
+    "subtitle": "Cukup satu ketukan. Jawabanmu langsung sampai ke tim.",
+    "reasonsAriaLabel": "Alasan menghapus",
+    "optional": "(opsional)",
+    "howLongLabel": "Berapa lama kamu memakai Funlingo? (opsional)",
+    "emailLabel": "Email (opsional), agar kami bisa mengabarimu saat sudah diperbaiki",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Kirim masukan"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Ada yang tidak berfungsi",
+      "prompt": "Apa yang salah?",
+      "placeholder": "Di situs mana, dan apa yang terjadi? Satu baris pun sangat membantu."
+    },
+    "translations": {
+      "label": "Terjemahannya kurang bagus",
+      "prompt": "Pasangan bahasa apa, dan di situs mana?",
+      "placeholder": "mis. Inggris → Spanyol di Netflix, terjemahannya terlalu harfiah…"
+    },
+    "platform": {
+      "label": "Situs streaming saya tidak didukung",
+      "prompt": "Situs atau browser apa?",
+      "placeholder": "mis. Safari, Firefox, situs streaming tertentu…"
+    },
+    "missing": {
+      "label": "Tidak ada fitur yang saya butuhkan",
+      "prompt": "Apa yang kurang?",
+      "placeholder": "mis. sebuah bahasa, layanan streaming, daftar kata…"
+    },
+    "switched": {
+      "label": "Saya beralih ke alat lain",
+      "prompt": "Yang mana?",
+      "placeholder": "mis. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Cuma mencoba / belum butuh sekarang",
+      "prompt": "Apa yang akan membuatmu tetap memakainya?",
+      "placeholder": "Ceritakan dengan kata-katamu sendiri."
+    },
+    "other": {
+      "label": "Alasan lain",
+      "prompt": "Kenapa kamu menghapus Funlingo?",
+      "placeholder": "Ceritakan dengan kata-katamu sendiri."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Kurang dari sehari",
+    "lessThanWeek": "Kurang dari seminggu",
+    "oneToThreeWeeks": "1-3 minggu",
+    "oneToThreeMonths": "1-3 bulan"
+  },
+  "thanks": {
+    "title": "Terima kasih, sudah kami terima.",
+    "recoverable": "Kami merilis perbaikan dan fitur baru setiap minggu. Kalau kamu memberi Funlingo kesempatan lagi, mungkin masalah ini sudah beres.",
+    "notRecoverable": "Masukanmu langsung sampai ke tim. Terima kasih sudah meluangkan waktu.",
+    "emailNote": "Kami akan mengirim email ke {email} kalau ada kabar baru.",
+    "reinstall": "Beri Funlingo kesempatan lagi",
+    "backHome": "Kembali ke beranda"
+  }
+}

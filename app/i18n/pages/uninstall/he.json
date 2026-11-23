@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "חבל שאתם עוזבים",
+    "description": "ספרו לנו למה הסרתם את Funlingo. המשוב שלכם עוזר לנו לבנות חוויה טובה יותר ללימוד שפות."
+  },
+  "form": {
+    "title": "למה הסרתם את Funlingo?",
+    "subtitle": "הקשה אחת מספיקה. התשובה מגיעה ישירות לצוות.",
+    "reasonsAriaLabel": "סיבת ההסרה",
+    "optional": "(לא חובה)",
+    "howLongLabel": "כמה זמן השתמשתם ב-Funlingo? (לא חובה)",
+    "emailLabel": "אימייל (לא חובה), כדי שנוכל לעדכן אתכם כשזה יתוקן",
+    "emailPlaceholder": "you@example.com",
+    "submit": "שליחת משוב"
+  },
+  "reasons": {
+    "broken": {
+      "label": "משהו לא עבד",
+      "prompt": "מה השתבש?",
+      "placeholder": "באיזה אתר, ומה קרה? גם שורה אחת עוזרת."
+    },
+    "translations": {
+      "label": "התרגומים לא היו טובים מספיק",
+      "prompt": "איזה צמד שפות, ובאיזה אתר?",
+      "placeholder": "למשל אנגלית ← ספרדית ב-Netflix, התרגומים היו מילוליים מדי…"
+    },
+    "platform": {
+      "label": "אתר הסטרימינג שלי לא נתמך",
+      "prompt": "איזה אתר או דפדפן?",
+      "placeholder": "למשל Safari, Firefox, אתר סטרימינג מסוים…"
+    },
+    "missing": {
+      "label": "חסר פיצ'ר שהיה נחוץ לי",
+      "prompt": "מה היה חסר לכם?",
+      "placeholder": "למשל שפה, שירות סטרימינג, רשימת מילים…"
+    },
+    "switched": {
+      "label": "עברתי לכלי אחר",
+      "prompt": "לאיזה?",
+      "placeholder": "למשל Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "רק ניסיתי / אין לי צורך בזה כרגע",
+      "prompt": "מה היה גורם לכם להשאיר אותו?",
+      "placeholder": "ספרו לנו במילים שלכם."
+    },
+    "other": {
+      "label": "משהו אחר",
+      "prompt": "למה הסרתם את Funlingo?",
+      "placeholder": "ספרו לנו במילים שלכם."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "פחות מיום",
+    "lessThanWeek": "פחות משבוע",
+    "oneToThreeWeeks": "1–3 שבועות",
+    "oneToThreeMonths": "1–3 חודשים"
+  },
+  "thanks": {
+    "title": "תודה, קיבלנו.",
+    "recoverable": "אנחנו משחררים תיקונים ופיצ'רים חדשים כל שבוע. אם תתנו ל-Funlingo עוד הזדמנות, ייתכן שהבעיה כבר נפתרה.",
+    "notRecoverable": "המשוב שלכם מגיע ישירות לצוות. תודה שהקדשתם מזמנכם.",
+    "emailNote": "נכתוב לכם לכתובת {email} כשיהיו חדשות.",
+    "reinstall": "תנו ל-Funlingo עוד הזדמנות",
+    "backHome": "חזרה לדף הבית"
+  }
+}

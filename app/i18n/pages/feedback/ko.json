@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "피드백 - 의견을 들려주세요",
+    "description": "Funlingo 팀에 피드백을 보내 주세요. 모두를 위한 더 나은 언어 학습 경험을 만드는 데 도움이 됩니다."
+  },
+  "header": {
+    "title": "여러분의 피드백을 기다립니다",
+    "subtitle": "여러분의 의견은 모두를 위한 더 나은 언어 학습 경험을 만드는 데 도움이 됩니다"
+  },
+  "validation": {
+    "name": "이름을 입력해 주세요.",
+    "email": "이메일을 입력해 주세요.",
+    "message": "피드백을 입력해 주세요.",
+    "uninstallReason": "제거 이유를 하나 이상 선택해 주세요."
+  },
+  "submitError": "문제가 발생했습니다. 다시 시도해 주세요.",
+  "success": "피드백 감사합니다! 꼼꼼히 검토하겠습니다.",
+  "form": {
+    "nameLabel": "이름",
+    "namePlaceholder": "이름",
+    "emailLabel": "이메일",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "카테고리",
+    "categories": {
+      "feature": "기능 요청",
+      "bug": "버그 신고",
+      "improvement": "개선 제안",
+      "uninstall": "제거 이유",
+      "other": "기타"
+    },
+    "satisfactionLabel": "전반적인 만족도",
+    "satisfactionLevels": {
+      "1": "매우 불만족",
+      "2": "불만족",
+      "3": "보통",
+      "4": "만족",
+      "5": "매우 만족"
+    },
+    "uninstall": {
+      "heading": "제거를 고려하시는 이유가 무엇인가요?",
+      "missingFeatures": "필요한 기능이 없음",
+      "notWorking": "제대로 작동하지 않음",
+      "otherReasons": "기타 이유",
+      "otherPlaceholder": "기타 이유를 적어 주세요..."
+    },
+    "featureDetailsLabel": "기능 상세",
+    "desiredFeatureLabel": "추가되었으면 하는 기능이 있나요?",
+    "featureDetailsPlaceholder": "원하시는 기능을 설명해 주세요...",
+    "desiredFeaturePlaceholder": "어떤 기능이 있으면 다시 생각해 보시겠어요?",
+    "recommendLabel": "Funlingo를 다른 사람에게 추천하시겠어요?",
+    "recommendOptions": {
+      "none": "선택해 주세요",
+      "definitely": "꼭 추천하겠다",
+      "probably": "아마 추천하겠다",
+      "unsure": "잘 모르겠다",
+      "probablyNot": "아마 추천하지 않겠다",
+      "definitelyNot": "절대 추천하지 않겠다"
+    },
+    "commentsLabel": "추가 의견",
+    "commentsPlaceholder": "그 밖의 생각, 제안 또는 세부 사항을 들려주세요...",
+    "submitting": "제출 중...",
+    "submit": "피드백 제출"
+  },
+  "contact": {
+    "email": {
+      "title": "이메일 보내기",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "페이지 팔로우하기"
+    }
+  }
+}

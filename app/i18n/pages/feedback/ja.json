@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "フィードバック - ご意見をお聞かせください",
+    "description": "Funlingoチームにフィードバックをお寄せください。すべての人にとってより良い語学学習体験をつくるために役立てます。"
+  },
+  "header": {
+    "title": "ぜひご意見をお聞かせください",
+    "subtitle": "いただいたご意見は、すべての人にとってより良い語学学習体験づくりに役立てます"
+  },
+  "validation": {
+    "name": "お名前を入力してください。",
+    "email": "メールアドレスを入力してください。",
+    "message": "フィードバックを入力してください。",
+    "uninstallReason": "アンインストールの理由を1つ以上選択してください。"
+  },
+  "submitError": "問題が発生しました。もう一度お試しください。",
+  "success": "フィードバックをありがとうございます！しっかりと確認させていただきます。",
+  "form": {
+    "nameLabel": "お名前",
+    "namePlaceholder": "お名前",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "カテゴリ",
+    "categories": {
+      "feature": "機能リクエスト",
+      "bug": "バグ報告",
+      "improvement": "改善のご提案",
+      "uninstall": "アンインストールの理由",
+      "other": "その他"
+    },
+    "satisfactionLabel": "総合満足度",
+    "satisfactionLevels": {
+      "1": "とても不満",
+      "2": "不満",
+      "3": "どちらでもない",
+      "4": "満足",
+      "5": "とても満足"
+    },
+    "uninstall": {
+      "heading": "アンインストールを検討している理由は？",
+      "missingFeatures": "必要な機能がない",
+      "notWorking": "正しく動作しない",
+      "otherReasons": "その他の理由",
+      "otherPlaceholder": "その他の理由をご記入ください…"
+    },
+    "featureDetailsLabel": "機能の詳細",
+    "desiredFeatureLabel": "追加してほしい機能はありますか？",
+    "featureDetailsPlaceholder": "欲しい機能について教えてください…",
+    "desiredFeaturePlaceholder": "どんな機能があれば考え直していただけますか？",
+    "recommendLabel": "Funlingoを他の人にすすめたいと思いますか？",
+    "recommendOptions": {
+      "none": "選択してください",
+      "definitely": "ぜひすすめたい",
+      "probably": "おそらくすすめる",
+      "unsure": "わからない",
+      "probablyNot": "おそらくすすめない",
+      "definitelyNot": "絶対にすすめない"
+    },
+    "commentsLabel": "その他のコメント",
+    "commentsPlaceholder": "その他のご意見、ご提案、詳細などをお聞かせください…",
+    "submitting": "送信中…",
+    "submit": "フィードバックを送信"
+  },
+  "contact": {
+    "email": {
+      "title": "メールでお問い合わせ",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "ページをフォロー"
+    }
+  }
+}

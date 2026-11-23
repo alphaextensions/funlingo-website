@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo Chrome-utvidelse – gratis doble undertekster og AI",
+    "description": "Gratis Chrome-utvidelse: doble undertekster og AI-oversettelse på Netflix, YouTube, Prime m.m. på 100+ språk. Legg til i Chrome og lær mens du ser."
+  },
+  "hero": {
+    "badge": "Gratis Chrome-utvidelse · Vurdert 4,8/5",
+    "title": "Funlingo Chrome-utvidelse",
+    "subtitle": "Gratis doble undertekster og AI-oversettelse på Netflix, YouTube, Prime Video og 7 andre plattformer. Velg blant over 100 språk og lær mens du ser.",
+    "addToChrome": "Legg til i Chrome — det er gratis",
+    "seeHowItWorks": "Se hvordan det fungerer",
+    "note": "Ingen konto nødvendig · Installert på under ett minutt"
+  },
+  "features": {
+    "title": "Alt du trenger for å lære mens du ser",
+    "subtitle": "Én gratis utvidelse gjør favorittsidene dine for strømming og læring om til et oppslukende språkklasserom.",
+    "items": [
+      {
+        "title": "Doble undertekster",
+        "description": "Se to undertekstspor samtidig — målspråket og morsmålet ditt — rett i videospilleren."
+      },
+      {
+        "title": "AI-oversettelse og definisjoner",
+        "description": "Hold musepekeren over et ord for umiddelbare AI-oversettelser i kontekst, grammatikknotater og ekte eksempelfraser."
+      },
+      {
+        "title": "Ordforrådsbygger",
+        "description": "Lagre ord og uttrykk med ett klikk. Hver oppføring tar vare på oversettelsen og setningen du fant den i."
+      },
+      {
+        "title": "100+ språk",
+        "description": "Fra spansk og japansk til koreansk, tysk, arabisk og hindi — velg språkene dine uavhengig av hverandre."
+      },
+      {
+        "title": "10 plattformer",
+        "description": "Fungerer på Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy og Coursera."
+      },
+      {
+        "title": "100 % gratis",
+        "description": "Ingen betalingsmur, ikke noe premiumnivå, ingen konto nødvendig. Alle funksjoner er gratis."
+      }
+    ]
+  },
+  "install": {
+    "title": "Installert på under ett minutt",
+    "subtitle": "Ikke noe knotete oppsett. Legg Funlingo til i Chrome og begynn å lære med en gang.",
+    "steps": [
+      {
+        "title": "Åpne Chrome Web Store",
+        "description": "Gå til Funlingo i Chrome Web Store med knappen ovenfor."
+      },
+      {
+        "title": "Klikk på Legg til i Chrome",
+        "description": "Klikk på Legg til i Chrome og bekreft med Legg til utvidelse. Den installeres på sekunder."
+      },
+      {
+        "title": "Fest Funlingo",
+        "description": "Fest Funlingo til verktøylinjen, så er den alltid ett klikk unna mens du ser."
+      },
+      {
+        "title": "Trykk play og lær",
+        "description": "Åpne Netflix, YouTube eller en annen støttet plattform, så vises doble undertekster automatisk."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Vanlige spørsmål",
+    "subtitle": "Alt om Funlingos Chrome-utvidelse.",
+    "items": [
+      {
+        "question": "Er Funlingos Chrome-utvidelse gratis?",
+        "answer": "Ja. Funlingos Chrome-utvidelse er 100 % gratis, uten skjulte kostnader, premiumnivåer eller betalingsmurer. Du får doble undertekster, AI-oversettelse, AI-ordforklaringer og ordforrådsbyggeren uten å betale noe. Legg den til i Chrome og bruk alle funksjonene med en gang — uten konto."
+      },
+      {
+        "question": "Hvilke plattformer fungerer Funlingo-utvidelsen på?",
+        "answer": "Funlingo fungerer på 10 plattformer: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy og Coursera. Doble undertekster og AI-oversettelse er integrert direkte i hver videospiller, så du kan lære språk mens du ser filmer, serier, anime og nettkurs."
+      },
+      {
+        "question": "Hvordan installerer jeg Funlingos Chrome-utvidelse?",
+        "answer": "Åpne Funlingo i Chrome Web Store, klikk på Legg til i Chrome og bekreft ved å klikke på Legg til utvidelse. Fest Funlingo til verktøylinjen, åpne en støttet plattform som Netflix eller YouTube, så vises de doble undertekstene automatisk. Hele prosessen tar under ett minutt."
+      },
+      {
+        "question": "Støtter Funlingo-utvidelsen språket mitt?",
+        "answer": "Mest sannsynlig. Funlingo støtter over 100 språk for oversettelse av undertekster, blant annet spansk, fransk, japansk, koreansk, mandarin, tysk, portugisisk, italiensk, arabisk, hindi og mange flere. Du kan velge målspråk og morsmål uavhengig av hverandre for ekte læring med doble undertekster."
+      },
+      {
+        "question": "Er Funlingo en trygg Chrome-utvidelse?",
+        "answer": "Ja. Funlingo er publisert i den offisielle Chrome Web Store, der den gjennomgås av Google, og er vurdert til 4,8 av 5 stjerner. Den kjører lokalt i nettleseren din for å vise undertekster, og du trenger ikke å opprette en konto for å begynne å lære."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Begynn å lære språk mens du ser",
+    "subtitle": "Bli med tusenvis av elever som bruker Funlingo for gratis doble undertekster og AI-oversettelse på 10 plattformer.",
+    "addToChrome": "Legg til i Chrome — det er gratis",
+    "note": "Gratis · Vurdert 4,8/5 på Chrome Web Store"
+  }
+}

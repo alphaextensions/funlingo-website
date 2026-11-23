@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate: duální titulky",
+    "description": "Srovnání Funlingo, Trancy a Immersive Translate. Zjistěte, proč je Funlingo nejlepší bezplatnou alternativou pro duální titulky na Netflixu a YouTube."
+  },
+  "hero": {
+    "badge": "Podrobné srovnání",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Nevíte, které rozšíření pro výuku jazyků je pro vás to pravé? Rozebíráme funkce, ceny a možnosti nejlepších nástrojů roku 2026."
+  },
+  "table": {
+    "ariaLabel": "Srovnání funkcí Funlingo, Trancy a Immersive Translate",
+    "featureHeader": "Funkce",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Vyskakovací okno pro slova",
+        "sub": "Význam v rodném jazyce + „Zobrazit příklad“ (unikátní)",
+        "fun": "Okno obsahuje význam v rodném jazyce + Zobrazit příklad (unikátní UX).",
+        "trancy": "V okně chybí Zobrazit příklad.",
+        "immersive": "Není k dispozici."
+      },
+      {
+        "feature": "Význam přímo v textu",
+        "sub": "V závorkách u těžkých slov (unikátní)",
+        "fun": "Význam v rodném jazyce v závorkách přímo v textu u vybraných/těžkých slov.",
+        "trancy": "Není k dispozici.",
+        "immersive": "Není k dispozici."
+      },
+      {
+        "feature": "Výslovnost každého slova",
+        "sub": "(přepis + zvuk)",
+        "fun": "Výslovnost každého slova (fonetický přepis + zvuk + pomalé přehrávání).",
+        "trancy": "Omezené funkce TTS; rozhraní s přepisem výslovnosti u slov není jasně zdokumentováno.",
+        "immersive": "Omezené TTS; rozhraní s přepisem výslovnosti u slov není zdokumentováno."
+      },
+      {
+        "feature": "AI s kontextem na kliknutí",
+        "sub": "Vysvětlení (fráze a poznámky k použití)",
+        "fun": "Integrované bloky AI, které vysvětlí na kliknutí (kontext na úrovni fráze).",
+        "trancy": "Nabízí nástroje pro gramatiku/analýzu; kontextové vysvětlení je k dispozici.",
+        "immersive": "Některé funkce kontextového překladu; v přehrávači to funguje jinak."
+      },
+      {
+        "feature": "Ukládání slovíček a opakování",
+        "sub": "(balíček k opakování)",
+        "fun": "Ukládání slovíček + seznam k opakování / export; vestavěné rozhraní pro opakování.",
+        "trancy": "Ukládání/záložky existují, ale funkce balíčku k opakování jsou omezené nebo zaměřené na studijní režim.",
+        "immersive": "Integrovaný balíček k opakování není veřejně zdokumentován."
+      },
+      {
+        "feature": "Soukromí a rozšíření",
+        "sub": "Signály bezpečnosti",
+        "fun": "Jasná oprávnění a pokyny k ochraně soukromí; nenáročné rozšíření.",
+        "trancy": "Informace o soukromí jsou k dispozici; firemní funkce se mohou lišit.",
+        "immersive": "Liší se; omezená veřejná dokumentace."
+      }
+    ],
+    "legend": {
+      "core": "Klíčová funkce k dispozici",
+      "available": "Funkce k dispozici",
+      "limited": "Omezené / vedlejší"
+    }
+  },
+  "why": {
+    "title": "Proč si vybrat Funlingo?",
+    "items": [
+      "Zcela zdarma: žádné prémiové zámky u klíčových funkcí.",
+      "Univerzální kompatibilita: bezproblémově funguje na Netflixu, YouTube a Prime.",
+      "Poháněno AI: vysvětlení v kontextu, ne jen doslovné překlady.",
+      "Žádné vyrušování: navrženo tak, aby při sledování nenápadně běželo na pozadí."
+    ]
+  },
+  "cta": {
+    "title": "Připraveni na změnu?",
+    "body": "Nainstalujte si Funlingo ještě dnes a poznejte ten rozdíl. Začít zabere méně než 30 sekund.",
+    "button": "Získat Funlingo pro Chrome"
+  }
+}

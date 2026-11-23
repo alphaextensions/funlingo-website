@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Відгук — поділіться думкою",
+    "description": "Поділіться відгуком із командою Funlingo. Допоможіть нам зробити вивчення мов кращим для всіх."
+  },
+  "header": {
+    "title": "Нам важлива ваша думка",
+    "subtitle": "Ваші відгуки допомагають нам зробити вивчення мов кращим для всіх"
+  },
+  "validation": {
+    "name": "Будь ласка, вкажіть ім'я.",
+    "email": "Будь ласка, вкажіть email.",
+    "message": "Будь ласка, напишіть відгук.",
+    "uninstallReason": "Будь ласка, виберіть принаймні одну причину видалення."
+  },
+  "submitError": "Щось пішло не так. Спробуйте ще раз.",
+  "success": "Дякуємо за відгук! Ми уважно його розглянемо.",
+  "form": {
+    "nameLabel": "Ім'я",
+    "namePlaceholder": "Ваше ім'я",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Категорія",
+    "categories": {
+      "feature": "Пропозиція функції",
+      "bug": "Повідомлення про помилку",
+      "improvement": "Ідея щодо покращення",
+      "uninstall": "Причина видалення",
+      "other": "Інше"
+    },
+    "satisfactionLabel": "Загальна задоволеність",
+    "satisfactionLevels": {
+      "1": "Зовсім не влаштовує",
+      "2": "Не влаштовує",
+      "3": "Нейтрально",
+      "4": "Влаштовує",
+      "5": "Повністю влаштовує"
+    },
+    "uninstall": {
+      "heading": "Чому ви хочете видалити розширення?",
+      "missingFeatures": "Бракує потрібних функцій",
+      "notWorking": "Працює некоректно",
+      "otherReasons": "Інші причини",
+      "otherPlaceholder": "Будь ласка, вкажіть інші причини..."
+    },
+    "featureDetailsLabel": "Опис функції",
+    "desiredFeatureLabel": "Яку функцію нам варто додати?",
+    "featureDetailsPlaceholder": "Опишіть функцію, яку хотіли б бачити...",
+    "desiredFeaturePlaceholder": "Яка функція змусила б вас передумати?",
+    "recommendLabel": "Чи порекомендуєте ви Funlingo іншим?",
+    "recommendOptions": {
+      "none": "Виберіть варіант",
+      "definitely": "Безумовно так",
+      "probably": "Радше так",
+      "unsure": "Важко сказати",
+      "probablyNot": "Радше ні",
+      "definitelyNot": "Безумовно ні"
+    },
+    "commentsLabel": "Додаткові коментарі",
+    "commentsPlaceholder": "Поділіться будь-якими думками, пропозиціями чи подробицями...",
+    "submitting": "Надсилання...",
+    "submit": "Надіслати відгук"
+  },
+  "contact": {
+    "email": {
+      "title": "Напишіть нам",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Підпишіться на нашу сторінку"
+    }
+  }
+}

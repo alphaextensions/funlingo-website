@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Ajuda e suporte",
+    "description": "Receba ajuda e suporte da equipe do Funlingo. Relate problemas, peça recursos ou tire dúvidas sobre nossa extensão de aprendizado de idiomas."
+  },
+  "header": {
+    "title": "Ajuda e suporte",
+    "subtitle": "Nossa equipe está aqui para ajudar você a ter sucesso com o Funlingo. Fale com a gente quando quiser."
+  },
+  "supportTypes": [
+    {
+      "title": "Suporte técnico",
+      "description": "Problemas no app, bugs ou questões técnicas",
+      "responseTime": "2-4 horas"
+    },
+    {
+      "title": "Sugestão de recurso",
+      "description": "Sugira novos recursos ou melhorias",
+      "responseTime": "1-2 dias"
+    },
+    {
+      "title": "Dúvida geral",
+      "description": "Outras perguntas ou pedidos de informação",
+      "responseTime": "1-2 dias"
+    }
+  ],
+  "responseLabel": "Resposta: {time}",
+  "successMessage": "Obrigado pelo contato! Vamos responder o mais rápido possível.",
+  "form": {
+    "nameLabel": "Nome",
+    "namePlaceholder": "Seu nome completo",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "seu.email@exemplo.com",
+    "issueTypeLabel": "Tipo de problema",
+    "issueTypes": {
+      "technical": "Suporte técnico",
+      "billing": "Cobrança e conta",
+      "feature": "Sugestão de recurso",
+      "general": "Dúvida geral",
+      "bug": "Relatar bug"
+    },
+    "priorityLabel": "Prioridade",
+    "priorities": {
+      "low": "Baixa",
+      "medium": "Média",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "subjectLabel": "Assunto",
+    "subjectPlaceholder": "Breve descrição do seu problema",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Descreva seu problema em detalhes...",
+    "attachmentsLabel": "Anexos (opcional)",
+    "removeAttachment": "x",
+    "submit": "Enviar pedido de suporte"
+  },
+  "contact": {
+    "title": "Informações de contato",
+    "emailTitle": "Suporte por e-mail",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Comunidade no Discord",
+    "discordText": "Entre para receber ajuda em tempo real",
+    "responseTitle": "Tempo de resposta",
+    "responseText": "2-48 horas, dependendo da prioridade"
+  },
+  "beforeContact": {
+    "title": "Antes de entrar em contato",
+    "tips": [
+      "Confira nossa seção de perguntas frequentes para respostas rápidas",
+      "Inclua capturas de tela relevantes, se possível",
+      "Descreva os passos para reproduzir o problema",
+      "Informe seu dispositivo e a versão do app"
+    ]
+  }
+}

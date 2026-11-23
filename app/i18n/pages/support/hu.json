@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Segítség és támogatás",
+    "description": "Kérj segítséget és támogatást a Funlingo csapatától. Jelents hibát, kérj új funkciót, vagy tedd fel kérdéseidet nyelvtanuló bővítményünkről."
+  },
+  "header": {
+    "title": "Segítség és támogatás",
+    "subtitle": "Csapatunk azért van, hogy segítsen sikeresen használni a Funlingót. Írj nekünk bármikor."
+  },
+  "supportTypes": [
+    {
+      "title": "Technikai támogatás",
+      "description": "Alkalmazásproblémák, hibák vagy technikai gondok",
+      "responseTime": "2–4 óra"
+    },
+    {
+      "title": "Funkciókérés",
+      "description": "Javasolj új funkciókat vagy fejlesztéseket",
+      "responseTime": "1–2 nap"
+    },
+    {
+      "title": "Általános érdeklődés",
+      "description": "Egyéb kérdések vagy információkérés",
+      "responseTime": "1–2 nap"
+    }
+  ],
+  "responseLabel": "Válaszidő: {time}",
+  "successMessage": "Köszönjük, hogy felvetted velünk a kapcsolatot! A lehető leghamarabb válaszolunk.",
+  "form": {
+    "nameLabel": "Név",
+    "namePlaceholder": "A teljes neved",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "A probléma típusa",
+    "issueTypes": {
+      "technical": "Technikai támogatás",
+      "billing": "Számlázás és fiók",
+      "feature": "Funkciókérés",
+      "general": "Általános érdeklődés",
+      "bug": "Hibajelentés"
+    },
+    "priorityLabel": "Prioritás",
+    "priorities": {
+      "low": "Alacsony",
+      "medium": "Közepes",
+      "high": "Magas",
+      "urgent": "Sürgős"
+    },
+    "subjectLabel": "Tárgy",
+    "subjectPlaceholder": "A probléma rövid leírása",
+    "messageLabel": "Üzenet",
+    "messagePlaceholder": "Kérjük, írd le részletesen a problémát...",
+    "attachmentsLabel": "Mellékletek (nem kötelező)",
+    "removeAttachment": "x",
+    "submit": "Támogatási kérés küldése"
+  },
+  "contact": {
+    "title": "Elérhetőségek",
+    "emailTitle": "E-mailes támogatás",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord-közösség",
+    "discordText": "Csatlakozz, és kapj valós idejű segítséget",
+    "responseTitle": "Válaszidő",
+    "responseText": "2–48 óra a prioritástól függően"
+  },
+  "beforeContact": {
+    "title": "Mielőtt írnál nekünk",
+    "tips": [
+      "Nézd meg a GYIK részt a gyors válaszokért",
+      "Ha lehet, csatolj releváns képernyőképeket",
+      "Írd le a probléma előidézésének lépéseit",
+      "Add meg az eszközöd és az alkalmazás verzióját"
+    ]
+  }
+}

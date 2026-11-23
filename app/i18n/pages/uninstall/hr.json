@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Žao nam je što odlazite",
+    "description": "Recite nam zašto ste deinstalirali Funlingo. Vaše povratne informacije pomažu nam stvoriti bolje iskustvo učenja jezika."
+  },
+  "form": {
+    "title": "Zašto ste deinstalirali Funlingo?",
+    "subtitle": "Dovoljan je jedan dodir. Odgovor ide izravno timu.",
+    "reasonsAriaLabel": "Razlog deinstalacije",
+    "optional": "(neobavezno)",
+    "howLongLabel": "Koliko ste dugo koristili Funlingo? (neobavezno)",
+    "emailLabel": "E-pošta (neobavezno), da vam javimo kad bude popravljeno",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Pošalji povratne informacije"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Nešto nije radilo",
+      "prompt": "Što je pošlo po zlu?",
+      "placeholder": "Na kojoj stranici i što se dogodilo? Pomaže i jedan redak."
+    },
+    "translations": {
+      "label": "Prijevodi nisu bili dovoljno dobri",
+      "prompt": "Koji jezični par i na kojoj stranici?",
+      "placeholder": "npr. engleski → španjolski na Netflixu, prijevodi su bili previše doslovni…"
+    },
+    "platform": {
+      "label": "Moja streaming stranica nije podržana",
+      "prompt": "Koja stranica ili preglednik?",
+      "placeholder": "npr. Safari, Firefox, određena streaming stranica…"
+    },
+    "missing": {
+      "label": "Nedostajala mi je potrebna značajka",
+      "prompt": "Što vam je nedostajalo?",
+      "placeholder": "npr. jezik, streaming usluga, popis riječi…"
+    },
+    "switched": {
+      "label": "Prelazak na drugi alat",
+      "prompt": "Na koji?",
+      "placeholder": "npr. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Samo isprobavanje / sad mi ne treba",
+      "prompt": "Što bi vas navelo da ga zadržite?",
+      "placeholder": "Recite nam svojim riječima."
+    },
+    "other": {
+      "label": "Nešto drugo",
+      "prompt": "Zašto ste deinstalirali Funlingo?",
+      "placeholder": "Recite nam svojim riječima."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Manje od jednog dana",
+    "lessThanWeek": "Manje od tjedan dana",
+    "oneToThreeWeeks": "1–3 tjedna",
+    "oneToThreeMonths": "1–3 mjeseca"
+  },
+  "thanks": {
+    "title": "Hvala, zaprimili smo.",
+    "recoverable": "Svaki tjedan objavljujemo ispravke i nove značajke. Ako Funlingu date još jednu priliku, ovo je možda već riješeno.",
+    "notRecoverable": "Vaše povratne informacije idu izravno timu. Hvala što ste odvojili vrijeme.",
+    "emailNote": "Javit ćemo vam se na {email} kad bude novosti.",
+    "reinstall": "Dajte Funlingu još jednu priliku",
+    "backHome": "Natrag na početnu"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Rất tiếc khi bạn rời đi",
+    "description": "Hãy cho chúng tôi biết lý do bạn gỡ cài đặt Funlingo. Phản hồi của bạn giúp chúng tôi xây dựng trải nghiệm học ngôn ngữ tốt hơn."
+  },
+  "form": {
+    "title": "Vì sao bạn gỡ cài đặt Funlingo?",
+    "subtitle": "Chỉ cần một chạm. Câu trả lời sẽ được gửi thẳng đến đội ngũ.",
+    "reasonsAriaLabel": "Lý do gỡ cài đặt",
+    "optional": "(không bắt buộc)",
+    "howLongLabel": "Bạn đã dùng Funlingo bao lâu? (không bắt buộc)",
+    "emailLabel": "Email (không bắt buộc), để chúng tôi báo bạn khi lỗi được sửa",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Gửi phản hồi"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Có gì đó không hoạt động",
+      "prompt": "Đã xảy ra vấn đề gì?",
+      "placeholder": "Trang web nào, và chuyện gì đã xảy ra? Chỉ một dòng cũng rất hữu ích."
+    },
+    "translations": {
+      "label": "Bản dịch chưa đủ tốt",
+      "prompt": "Cặp ngôn ngữ nào, và trên trang web nào?",
+      "placeholder": "VD: tiếng Anh → tiếng Tây Ban Nha trên Netflix, bản dịch quá sát nghĩa đen…"
+    },
+    "platform": {
+      "label": "Trang streaming tôi dùng chưa được hỗ trợ",
+      "prompt": "Trang web hoặc trình duyệt nào?",
+      "placeholder": "VD: Safari, Firefox, một trang streaming cụ thể…"
+    },
+    "missing": {
+      "label": "Thiếu tính năng tôi cần",
+      "prompt": "Bạn còn thiếu gì?",
+      "placeholder": "VD: một ngôn ngữ, một dịch vụ streaming, danh sách từ vựng…"
+    },
+    "switched": {
+      "label": "Tôi đã chuyển sang công cụ khác",
+      "prompt": "Công cụ nào?",
+      "placeholder": "VD: Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Chỉ dùng thử / hiện chưa cần",
+      "prompt": "Điều gì sẽ khiến bạn giữ lại nó?",
+      "placeholder": "Hãy chia sẻ bằng lời của bạn."
+    },
+    "other": {
+      "label": "Lý do khác",
+      "prompt": "Vì sao bạn gỡ cài đặt Funlingo?",
+      "placeholder": "Hãy chia sẻ bằng lời của bạn."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Chưa đến một ngày",
+    "lessThanWeek": "Chưa đến một tuần",
+    "oneToThreeWeeks": "1-3 tuần",
+    "oneToThreeMonths": "1-3 tháng"
+  },
+  "thanks": {
+    "title": "Cảm ơn, chúng tôi đã nhận được.",
+    "recoverable": "Chúng tôi phát hành bản sửa lỗi và tính năng mới mỗi tuần. Nếu bạn cho Funlingo thêm một cơ hội, có thể vấn đề đã được giải quyết.",
+    "notRecoverable": "Phản hồi của bạn được gửi thẳng đến đội ngũ. Cảm ơn bạn đã dành thời gian.",
+    "emailNote": "Chúng tôi sẽ gửi email đến {email} khi có tin mới.",
+    "reinstall": "Cho Funlingo thêm một cơ hội",
+    "backHome": "Về trang chủ"
+  }
+}

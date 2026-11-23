@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs. Trancy vs. Immersive Translate – Vergleich",
+    "description": "Detaillierter Funktionsvergleich von Funlingo, Trancy und Immersive Translate. Darum ist Funlingo die beste kostenlose Alternative für zweisprachige Untertitel."
+  },
+  "hero": {
+    "badge": "Detaillierter Vergleich",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Unsicher, welche Erweiterung zum Sprachenlernen die richtige für dich ist? Wir vergleichen Funktionen, Preise und Möglichkeiten der Top-Tools 2026."
+  },
+  "table": {
+    "ariaLabel": "Funktionsvergleich zwischen Funlingo, Trancy und Immersive Translate",
+    "featureHeader": "Funktion",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Popup auf Wortebene",
+        "sub": "Bedeutung in deiner Sprache + „Beispiel ansehen“ (einzigartig)",
+        "fun": "Popup mit Bedeutung in deiner Sprache + Beispiel ansehen (einzigartige UX).",
+        "trancy": "Kein „Beispiel ansehen“ im Popup.",
+        "immersive": "Nicht verfügbar."
+      },
+      {
+        "feature": "Bedeutung direkt im Text",
+        "sub": "In Klammern bei schwierigen Wörtern (einzigartig)",
+        "fun": "Bedeutung in deiner Sprache in Klammern bei ausgewählten oder schwierigen Wörtern.",
+        "trancy": "Nicht verfügbar.",
+        "immersive": "Nicht verfügbar."
+      },
+      {
+        "feature": "Aussprache pro Wort",
+        "sub": "(Lautschrift + Audio)",
+        "fun": "Aussprache für jedes Wort (Lautschrift + Audio + langsame Wiedergabe).",
+        "trancy": "Eingeschränkt / TTS vorhanden; Lautschrift pro Wort nicht klar dokumentiert.",
+        "immersive": "Eingeschränktes TTS; Lautschrift pro Wort nicht dokumentiert."
+      },
+      {
+        "feature": "KI-Kontext per Klick",
+        "sub": "Erklärungen (Wendungen & Hinweise zur Verwendung)",
+        "fun": "Integrierte KI-Erklärblöcke per Klick (Kontext auf Satzebene).",
+        "trancy": "Bietet Grammatik- und Analysetools; kontextbezogene Erklärungen vorhanden.",
+        "immersive": "Einige kontextbezogene Übersetzungsfunktionen; kein vergleichbares Erlebnis im Player."
+      },
+      {
+        "feature": "Vokabeln speichern & wiederholen",
+        "sub": "Kartenstapel",
+        "fun": "Vokabeln speichern + Wiederholungsliste / Export; integrierte Wiederholung.",
+        "trancy": "Speichern / Lesezeichen möglich, aber Wiederholung eingeschränkt oder auf Lernmodus ausgerichtet.",
+        "immersive": "Kein integrierter Wiederholungsstapel öffentlich dokumentiert."
+      },
+      {
+        "feature": "Datenschutz & Sicherheit",
+        "sub": "der Erweiterung",
+        "fun": "Klare Berechtigungen & Datenschutzhinweise; schlanke Erweiterung.",
+        "trancy": "Datenschutzinfos verfügbar; Enterprise-Funktionen können abweichen.",
+        "immersive": "Unterschiedlich; öffentliche Dokumentation begrenzt."
+      }
+    ],
+    "legend": {
+      "core": "Kernfunktion vorhanden",
+      "available": "Funktion verfügbar",
+      "limited": "Eingeschränkt / nicht zentral"
+    }
+  },
+  "why": {
+    "title": "Warum Funlingo?",
+    "items": [
+      "Komplett kostenlos: Keine Premium-Sperren bei den Kernfunktionen.",
+      "Überall kompatibel: Funktioniert reibungslos auf Netflix, YouTube und Prime.",
+      "KI-gestützt: Erklärungen im Kontext statt nur wörtlicher Übersetzungen.",
+      "Kein Aufwand: Bleibt unauffällig im Hintergrund, während du schaust."
+    ]
+  },
+  "cta": {
+    "title": "Bereit für den Wechsel?",
+    "body": "Installiere Funlingo noch heute und erlebe den Unterschied. Der Einstieg dauert weniger als 30 Sekunden.",
+    "button": "Funlingo für Chrome holen"
+  }
+}

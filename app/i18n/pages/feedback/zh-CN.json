@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "反馈 - 分享你的想法",
+    "description": "向 Funlingo 团队分享你的反馈，帮助我们为每个人打造更好的语言学习体验。"
+  },
+  "header": {
+    "title": "期待听到你的反馈",
+    "subtitle": "你的意见能帮助我们为每个人打造更好的语言学习体验"
+  },
+  "validation": {
+    "name": "请输入你的姓名。",
+    "email": "请输入你的邮箱。",
+    "message": "请输入你的反馈。",
+    "uninstallReason": "请至少选择一个卸载原因。"
+  },
+  "submitError": "出了点问题，请重试。",
+  "success": "感谢你的反馈！我们会认真查看。",
+  "form": {
+    "nameLabel": "姓名",
+    "namePlaceholder": "你的姓名",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "类别",
+    "categories": {
+      "feature": "功能需求",
+      "bug": "错误报告",
+      "improvement": "改进建议",
+      "uninstall": "卸载原因",
+      "other": "其他"
+    },
+    "satisfactionLabel": "总体满意度",
+    "satisfactionLevels": {
+      "1": "非常不满意",
+      "2": "不满意",
+      "3": "一般",
+      "4": "满意",
+      "5": "非常满意"
+    },
+    "uninstall": {
+      "heading": "你为什么考虑卸载？",
+      "missingFeatures": "缺少我需要的功能",
+      "notWorking": "无法正常工作",
+      "otherReasons": "其他原因",
+      "otherPlaceholder": "请说明其他原因……"
+    },
+    "featureDetailsLabel": "功能详情",
+    "desiredFeatureLabel": "希望我们开发什么功能？",
+    "featureDetailsPlaceholder": "描述你希望看到的功能……",
+    "desiredFeaturePlaceholder": "什么功能会让你重新考虑？",
+    "recommendLabel": "你会向他人推荐 Funlingo 吗？",
+    "recommendOptions": {
+      "none": "请选择",
+      "definitely": "一定会",
+      "probably": "可能会",
+      "unsure": "不确定",
+      "probablyNot": "可能不会",
+      "definitelyNot": "一定不会"
+    },
+    "commentsLabel": "其他意见",
+    "commentsPlaceholder": "分享你的其他想法、建议或细节……",
+    "submitting": "提交中……",
+    "submit": "提交反馈"
+  },
+  "contact": {
+    "email": {
+      "title": "给我们发邮件",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "关注我们的主页"
+    }
+  }
+}

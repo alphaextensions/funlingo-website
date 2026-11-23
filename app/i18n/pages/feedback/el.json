@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Σχόλια - Μοιράσου τη γνώμη σου",
+    "description": "Μοιράσου τα σχόλιά σου με την ομάδα του Funlingo. Βοήθησέ μας να φτιάξουμε μια καλύτερη εμπειρία εκμάθησης γλωσσών για όλους."
+  },
+  "header": {
+    "title": "Θέλουμε να ακούσουμε τη γνώμη σου",
+    "subtitle": "Τα σχόλιά σου μας βοηθούν να φτιάξουμε μια καλύτερη εμπειρία εκμάθησης γλωσσών για όλους"
+  },
+  "validation": {
+    "name": "Συμπλήρωσε το όνομά σου.",
+    "email": "Συμπλήρωσε το email σου.",
+    "message": "Γράψε τα σχόλιά σου.",
+    "uninstallReason": "Επίλεξε τουλάχιστον έναν λόγο απεγκατάστασης."
+  },
+  "submitError": "Κάτι πήγε στραβά. Δοκίμασε ξανά.",
+  "success": "Ευχαριστούμε για τα σχόλιά σου! Θα τα εξετάσουμε προσεκτικά.",
+  "form": {
+    "nameLabel": "Όνομα",
+    "namePlaceholder": "Το όνομά σου",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Κατηγορία",
+    "categories": {
+      "feature": "Αίτημα λειτουργίας",
+      "bug": "Αναφορά σφάλματος",
+      "improvement": "Πρόταση βελτίωσης",
+      "uninstall": "Λόγος απεγκατάστασης",
+      "other": "Άλλο"
+    },
+    "satisfactionLabel": "Συνολική ικανοποίηση",
+    "satisfactionLevels": {
+      "1": "Πολύ χαμηλή",
+      "2": "Χαμηλή",
+      "3": "Ουδέτερη",
+      "4": "Υψηλή",
+      "5": "Πολύ υψηλή"
+    },
+    "uninstall": {
+      "heading": "Γιατί σκέφτεσαι να το απεγκαταστήσεις;",
+      "missingFeatures": "Λείπουν λειτουργίες που χρειάζομαι",
+      "notWorking": "Δεν λειτουργεί σωστά",
+      "otherReasons": "Άλλοι λόγοι",
+      "otherPlaceholder": "Προσδιόρισε άλλους λόγους..."
+    },
+    "featureDetailsLabel": "Λεπτομέρειες λειτουργίας",
+    "desiredFeatureLabel": "Υπάρχει κάποια λειτουργία που θα ήθελες να φτιάξουμε;",
+    "featureDetailsPlaceholder": "Περίγραψε τη λειτουργία που θα ήθελες να δεις...",
+    "desiredFeaturePlaceholder": "Ποια λειτουργία θα σε έκανε να το ξανασκεφτείς;",
+    "recommendLabel": "Θα πρότεινες το Funlingo σε άλλους;",
+    "recommendOptions": {
+      "none": "Επίλεξε μια απάντηση",
+      "definitely": "Σίγουρα ναι",
+      "probably": "Μάλλον ναι",
+      "unsure": "Δεν ξέρω",
+      "probablyNot": "Μάλλον όχι",
+      "definitelyNot": "Σίγουρα όχι"
+    },
+    "commentsLabel": "Επιπλέον σχόλια",
+    "commentsPlaceholder": "Μοιράσου επιπλέον σκέψεις, προτάσεις ή λεπτομέρειες...",
+    "submitting": "Υποβολή...",
+    "submit": "Υποβολή σχολίων"
+  },
+  "contact": {
+    "email": {
+      "title": "Στείλε μας email",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Ακολούθησε τη σελίδα μας"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Comentarios: comparte tu opinión",
+    "description": "Comparte tus comentarios con el equipo de Funlingo. Ayúdanos a crear una mejor experiencia para aprender idiomas para todos."
+  },
+  "header": {
+    "title": "Nos encantaría conocer tu opinión",
+    "subtitle": "Tus aportaciones nos ayudan a crear una mejor experiencia para aprender idiomas para todos"
+  },
+  "validation": {
+    "name": "Introduce tu nombre.",
+    "email": "Introduce tu correo electrónico.",
+    "message": "Escribe tus comentarios.",
+    "uninstallReason": "Selecciona al menos un motivo de desinstalación."
+  },
+  "submitError": "Algo salió mal. Inténtalo de nuevo.",
+  "success": "¡Gracias por tus comentarios! Los revisaremos con atención.",
+  "form": {
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "tu.correo@example.com",
+    "categoryLabel": "Categoría",
+    "categories": {
+      "feature": "Solicitud de función",
+      "bug": "Informe de error",
+      "improvement": "Sugerencia de mejora",
+      "uninstall": "Motivo de la desinstalación",
+      "other": "Otro"
+    },
+    "satisfactionLabel": "Satisfacción general",
+    "satisfactionLevels": {
+      "1": "Muy insatisfactoria",
+      "2": "Insatisfactoria",
+      "3": "Neutral",
+      "4": "Satisfactoria",
+      "5": "Muy satisfactoria"
+    },
+    "uninstall": {
+      "heading": "¿Por qué estás pensando en desinstalarlo?",
+      "missingFeatures": "Faltan funciones que necesito",
+      "notWorking": "No funciona correctamente",
+      "otherReasons": "Otros motivos",
+      "otherPlaceholder": "Especifica otros motivos..."
+    },
+    "featureDetailsLabel": "Detalles de la función",
+    "desiredFeatureLabel": "¿Qué función te gustaría que creáramos?",
+    "featureDetailsPlaceholder": "Describe la función que te gustaría ver...",
+    "desiredFeaturePlaceholder": "¿Qué función te haría cambiar de opinión?",
+    "recommendLabel": "¿Recomendarías Funlingo a otras personas?",
+    "recommendOptions": {
+      "none": "Selecciona una opción",
+      "definitely": "Sí, sin duda",
+      "probably": "Probablemente sí",
+      "unsure": "No lo sé",
+      "probablyNot": "Probablemente no",
+      "definitelyNot": "Definitivamente no"
+    },
+    "commentsLabel": "Comentarios adicionales",
+    "commentsPlaceholder": "Comparte cualquier otra idea, sugerencia o detalle...",
+    "submitting": "Enviando...",
+    "submit": "Enviar comentarios"
+  },
+  "contact": {
+    "email": {
+      "title": "Escríbenos",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Sigue nuestra página"
+    }
+  }
+}

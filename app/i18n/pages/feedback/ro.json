@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Feedback - Spune-ne părerea ta",
+    "description": "Trimite-ți feedbackul echipei Funlingo. Ajută-ne să creăm o experiență mai bună de învățare a limbilor pentru toată lumea."
+  },
+  "header": {
+    "title": "Ne-ar plăcea să aflăm părerea ta",
+    "subtitle": "Părerea ta ne ajută să creăm o experiență mai bună de învățare a limbilor pentru toată lumea"
+  },
+  "validation": {
+    "name": "Introdu numele tău.",
+    "email": "Introdu adresa de e-mail.",
+    "message": "Scrie feedbackul tău.",
+    "uninstallReason": "Selectează cel puțin un motiv de dezinstalare."
+  },
+  "submitError": "Ceva n-a mers bine. Încearcă din nou.",
+  "success": "Mulțumim pentru feedback! Îl vom analiza cu atenție.",
+  "form": {
+    "nameLabel": "Nume",
+    "namePlaceholder": "Numele tău",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "emailul.tau@exemplu.com",
+    "categoryLabel": "Categorie",
+    "categories": {
+      "feature": "Solicitare de funcție",
+      "bug": "Raportare eroare",
+      "improvement": "Sugestie de îmbunătățire",
+      "uninstall": "Motivul dezinstalării",
+      "other": "Altceva"
+    },
+    "satisfactionLabel": "Satisfacție generală",
+    "satisfactionLevels": {
+      "1": "Foarte nesatisfăcător",
+      "2": "Nesatisfăcător",
+      "3": "Neutru",
+      "4": "Satisfăcător",
+      "5": "Foarte satisfăcător"
+    },
+    "uninstall": {
+      "heading": "De ce te gândești să dezinstalezi?",
+      "missingFeatures": "Lipsesc funcții de care am nevoie",
+      "notWorking": "Nu funcționează cum trebuie",
+      "otherReasons": "Alte motive",
+      "otherPlaceholder": "Precizează alte motive..."
+    },
+    "featureDetailsLabel": "Detaliile funcției",
+    "desiredFeatureLabel": "Ce funcție ți-ar plăcea să construim?",
+    "featureDetailsPlaceholder": "Descrie funcția pe care ți-ai dori s-o vezi...",
+    "desiredFeaturePlaceholder": "Ce funcție te-ar face să te răzgândești?",
+    "recommendLabel": "Ai recomanda Funlingo altora?",
+    "recommendOptions": {
+      "none": "Selectează o opțiune",
+      "definitely": "Cu siguranță da",
+      "probably": "Probabil da",
+      "unsure": "Nu știu",
+      "probablyNot": "Probabil nu",
+      "definitelyNot": "Cu siguranță nu"
+    },
+    "commentsLabel": "Comentarii suplimentare",
+    "commentsPlaceholder": "Împărtășește alte gânduri, sugestii sau detalii...",
+    "submitting": "Se trimite...",
+    "submit": "Trimite feedbackul"
+  },
+  "contact": {
+    "email": {
+      "title": "Scrie-ne pe e-mail",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Urmărește pagina noastră"
+    }
+  }
+}

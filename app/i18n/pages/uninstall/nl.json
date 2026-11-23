@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Jammer dat je vertrekt",
+    "description": "Laat ons weten waarom je Funlingo hebt verwijderd. Met jouw feedback maken we talen leren nog beter."
+  },
+  "form": {
+    "title": "Waarom heb je Funlingo verwijderd?",
+    "subtitle": "Eén tik is genoeg. Je antwoord gaat rechtstreeks naar het team.",
+    "reasonsAriaLabel": "Reden voor verwijderen",
+    "optional": "(optioneel)",
+    "howLongLabel": "Hoe lang heb je Funlingo gebruikt? (optioneel)",
+    "emailLabel": "E-mail (optioneel), zodat we je kunnen laten weten wanneer het is opgelost",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Feedback versturen"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Er werkte iets niet",
+      "prompt": "Wat ging er mis?",
+      "placeholder": "Welke site, en wat gebeurde er? Eén regel helpt al."
+    },
+    "translations": {
+      "label": "De vertalingen waren niet goed genoeg",
+      "prompt": "Welk taalpaar, en welke site?",
+      "placeholder": "bijv. Engels → Spaans op Netflix, vertalingen waren te letterlijk…"
+    },
+    "platform": {
+      "label": "Mijn streamingsite wordt niet ondersteund",
+      "prompt": "Welke site of browser?",
+      "placeholder": "bijv. Safari, Firefox, een specifieke streamingsite…"
+    },
+    "missing": {
+      "label": "Ik miste een functie die ik nodig had",
+      "prompt": "Wat miste je?",
+      "placeholder": "bijv. een taal, een streamingdienst, een woordenlijst…"
+    },
+    "switched": {
+      "label": "Ik ben overgestapt op een andere tool",
+      "prompt": "Welke?",
+      "placeholder": "bijv. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Ik probeerde het alleen uit / heb het nu niet nodig",
+      "prompt": "Wat had ervoor gezorgd dat je het had gehouden?",
+      "placeholder": "Vertel het ons in je eigen woorden."
+    },
+    "other": {
+      "label": "Iets anders",
+      "prompt": "Waarom heb je Funlingo verwijderd?",
+      "placeholder": "Vertel het ons in je eigen woorden."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Minder dan een dag",
+    "lessThanWeek": "Minder dan een week",
+    "oneToThreeWeeks": "1-3 weken",
+    "oneToThreeMonths": "1-3 maanden"
+  },
+  "thanks": {
+    "title": "Bedankt, we hebben het ontvangen.",
+    "recoverable": "We brengen elke week verbeteringen en nieuwe functies uit. Als je Funlingo nog een kans geeft, is dit misschien al opgelost.",
+    "notRecoverable": "Je feedback gaat rechtstreeks naar het team. Bedankt dat je de tijd hebt genomen.",
+    "emailNote": "We mailen je op {email} zodra er nieuws is.",
+    "reinstall": "Geef Funlingo nog een kans",
+    "backHome": "Terug naar de startpagina"
+  }
+}

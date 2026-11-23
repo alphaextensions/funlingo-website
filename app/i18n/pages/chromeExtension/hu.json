@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo Chrome-bővítmény – kétnyelvű feliratok és AI-fordítás",
+    "description": "Ingyenes Funlingo Chrome-bővítmény: kétnyelvű feliratok és AI-fordítás Netflixen, YouTube-on, Prime-on és máshol, 100+ nyelven. Tanulj, miközben nézed!"
+  },
+  "hero": {
+    "badge": "Ingyenes Chrome-bővítmény · 4,8/5 értékelés",
+    "title": "Funlingo Chrome-bővítmény",
+    "subtitle": "Ingyenes kétnyelvű feliratok és AI-fordítás Netflixen, YouTube-on, Prime Videón és további 7 platformon. Több mint 100 nyelv közül választhatsz, és nézés közben tanulsz.",
+    "addToChrome": "Hozzáadás a Chrome-hoz – Ingyenes",
+    "seeHowItWorks": "Nézd meg, hogyan működik",
+    "note": "Nem kell fiók · Kevesebb mint egy perc alatt telepíthető"
+  },
+  "features": {
+    "title": "Minden, ami a nézés közbeni tanuláshoz kell",
+    "subtitle": "Egyetlen ingyenes bővítmény a kedvenc streaming- és tanulóoldalaidat magával ragadó nyelvi tanteremmé alakítja.",
+    "items": [
+      {
+        "title": "Kétnyelvű feliratok",
+        "description": "Láss két feliratsávot egyszerre – a tanult nyelven és az anyanyelveden – közvetlenül a videólejátszóban."
+      },
+      {
+        "title": "AI-fordítás és definíciók",
+        "description": "Vidd az egeret bármelyik szó fölé, és azonnal kapsz szövegkörnyezethez igazított AI-fordítást, nyelvtani megjegyzéseket és valódi példamondatokat."
+      },
+      {
+        "title": "Szókincsépítő",
+        "description": "Ments el bármilyen szót vagy kifejezést egyetlen kattintással. Minden bejegyzés megőrzi a fordítást és a mondatot, amelyben rátaláltál."
+      },
+      {
+        "title": "100+ nyelv",
+        "description": "A spanyoltól és japántól a koreaiig, németig, arabig és hindiig – a nyelveidet egymástól függetlenül állíthatod be."
+      },
+      {
+        "title": "10 platform",
+        "description": "Működik a Netflixen, a YouTube-on, a Prime Videón, a Disney+ Hotstaron, az Apple TV-n, a Crunchyrollon, a Tubin, a bilibilin, az Udemyn és a Courserán."
+      },
+      {
+        "title": "100%-ban ingyenes",
+        "description": "Nincs fizetőfal, nincs prémium csomag, nem kell fiók. Minden funkció ingyenes."
+      }
+    ]
+  },
+  "install": {
+    "title": "Telepítés kevesebb mint egy perc alatt",
+    "subtitle": "Semmi bonyodalom a beállítással. Add hozzá a Funlingót a Chrome-hoz, és már tanulhatsz is.",
+    "steps": [
+      {
+        "title": "Nyisd meg a Chrome Web Store-t",
+        "description": "A fenti gombbal nyisd meg a Funlingo oldalát a Chrome Web Store-ban."
+      },
+      {
+        "title": "Kattints a „Hozzáadás a Chrome-hoz” gombra",
+        "description": "Kattints a „Hozzáadás a Chrome-hoz” gombra, majd erősítsd meg a „Bővítmény hozzáadása” gombbal. Másodpercek alatt települ."
+      },
+      {
+        "title": "Rögzítsd a Funlingót",
+        "description": "Rögzítsd a Funlingót az eszköztáron, hogy nézés közben mindig egy kattintásnyira legyen."
+      },
+      {
+        "title": "Indítsd a lejátszást, és tanulj",
+        "description": "Nyisd meg a Netflixet, a YouTube-ot vagy bármely támogatott platformot, és a kétnyelvű feliratok automatikusan megjelennek."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Gyakori kérdések",
+    "subtitle": "Minden a Funlingo Chrome-bővítményről.",
+    "items": [
+      {
+        "question": "Ingyenes a Funlingo Chrome-bővítmény?",
+        "answer": "Igen. A Funlingo Chrome-bővítmény 100%-ban ingyenes, rejtett költségek, prémium csomagok és fizetőfalak nélkül. A kétnyelvű feliratokat, az AI-fordítást, az AI-szódefiníciókat és a szókincsépítőt díjmentesen kapod. Csak add hozzá a Chrome-hoz, és azonnal használhatod az összes funkciót, fiók nélkül."
+      },
+      {
+        "question": "Milyen platformokon működik a Funlingo?",
+        "answer": "A Funlingo 10 platformon működik: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy és Coursera. A kétnyelvű feliratok és az AI-fordítás közvetlenül beépülnek az egyes videólejátszókba, így filmek, sorozatok, animék és online kurzusok nézése közben tanulhatsz nyelveket."
+      },
+      {
+        "question": "Hogyan telepíthetem a Funlingo Chrome-bővítményt?",
+        "answer": "Nyisd meg a Funlingo oldalát a Chrome Web Store-ban, kattints a „Hozzáadás a Chrome-hoz” gombra, majd erősítsd meg a „Bővítmény hozzáadása” gombbal. Rögzítsd a Funlingót az eszköztáron, nyiss meg egy támogatott platformot, például a Netflixet vagy a YouTube-ot, és a kétnyelvű feliratok automatikusan megjelennek. Az egész kevesebb mint egy percig tart."
+      },
+      {
+        "question": "Támogatja a Funlingo az én nyelvemet?",
+        "answer": "Szinte biztosan. A Funlingo 100+ nyelven támogatja a feliratok fordítását, többek között spanyolul, franciául, japánul, koreaiul, mandarin kínaiul, németül, portugálul, olaszul, arabul, hindiül és még sok más nyelven. A tanult nyelvet és az anyanyelvedet egymástól függetlenül állíthatod be a valódi kétnyelvű feliratos tanuláshoz."
+      },
+      {
+        "question": "Biztonságos Chrome-bővítmény a Funlingo?",
+        "answer": "Igen. A Funlingo a hivatalos Chrome Web Store-ban érhető el, ahol a Google ellenőrzi, és 5-ből 4,8 csillagos értékelést kapott. Helyben, a böngésződben fut a feliratok megjelenítéséhez, és a tanulás megkezdéséhez nem kell fiókot létrehoznod."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Kezdj el nyelveket tanulni, miközben nézed",
+    "subtitle": "Csatlakozz a több ezer tanulóhoz, akik a Funlingót használják ingyenes kétnyelvű feliratokhoz és AI-fordításhoz 10 platformon.",
+    "addToChrome": "Hozzáadás a Chrome-hoz – Ingyenes",
+    "note": "Ingyenes · 4,8/5 értékelés a Chrome Web Store-ban"
+  }
+}

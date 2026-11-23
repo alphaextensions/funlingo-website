@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import Navbar from "@/sections/navbar";
 import { STORE_URL } from "@/app/_components/cta";
 import { track } from "@/app/_components/track";
+import { useT } from "@/app/i18n/I18nProvider";
+import { navHref } from "@/app/i18n/config";
+import type { Strings } from "@/app/i18n/pages/uninstall";
 
 // Native uninstall feedback form. Posts to the existing Google Form's
 // `formResponse` endpoint, so responses still land in the same Google Sheet —
@@ -31,91 +34,76 @@ type Followup = "bug" | "feature" | "platform" | "other";
 // `{ other: "…" }` to send it through Forms' "Other" option with that text.
 // To give an `other` reason its own option, add it to the form first, then
 // switch `value` to that exact string — Forms drops values it doesn't list.
+// Displayed text (label, prompt, placeholder) comes from `s.reasons[key]`;
+// `key` and `value` are what gets submitted and stay English.
 type Reason = {
-  key: string;
-  label: string;
+  key: keyof Strings["reasons"];
   emoji: string;
   value: string | { other: string };
   followup: Followup;
-  prompt: string;
-  placeholder: string;
   recoverable: boolean;
 };
 
 const REASONS: Reason[] = [
   {
     key: "broken",
-    label: "Something wasn't working",
     emoji: "🐞",
     value: "Not working properly",
     followup: "bug",
-    prompt: "What went wrong?",
-    placeholder: "Which site, and what happened? Even one line helps.",
     recoverable: true,
   },
   {
     key: "translations",
-    label: "Translations weren't good enough",
     emoji: "🔤",
     value: { other: "Poor translations" },
     followup: "other",
-    prompt: "Which language pair, and which site?",
-    placeholder: "e.g. English → Spanish on Netflix, translations were too literal…",
     recoverable: true,
   },
   {
     key: "platform",
-    label: "My streaming site isn't supported",
     emoji: "🧩",
     value: "Not present on my preferred platform (please mention which so that we can add it for you)",
     followup: "platform",
-    prompt: "Which site or browser?",
-    placeholder: "e.g. Safari, Firefox, a specific streaming site…",
     recoverable: true,
   },
   {
     key: "missing",
-    label: "Missing a feature I needed",
     emoji: "✨",
     value: "Missing features",
     followup: "feature",
-    prompt: "What were you missing?",
-    placeholder: "e.g. a language, a streaming service, a word list…",
     recoverable: true,
   },
   {
     key: "switched",
-    label: "I switched to another tool",
     emoji: "🔁",
     value: { other: "Switched to another tool" },
     followup: "other",
-    prompt: "Which one?",
-    placeholder: "e.g. Language Reactor, Trancy…",
     recoverable: false,
   },
   {
     key: "trying",
-    label: "Just trying it out / don't need it now",
     emoji: "👋",
     value: { other: "Just trying it out" },
     followup: "other",
-    prompt: "Anything that would have made you keep it?",
-    placeholder: "Tell us in your own words.",
     recoverable: false,
   },
   {
     key: "other",
-    label: "Something else",
     emoji: "💬",
     value: { other: "Something else" },
     followup: "other",
-    prompt: "What made you uninstall?",
-    placeholder: "Tell us in your own words.",
     recoverable: false,
   },
 ];
 
-const HOW_LONG = ["Less than a day", "Less than a week", "1-3 weeks", "1-3 months"];
+// `value` is the exact answer string the Google Form expects (submitted as-is);
+// the displayed label comes from `s.howLong[key]`.
+const HOW_LONG: { key: keyof Strings["howLong"]; value: string }[] = [
+  { key: "lessThanDay", value: "Less than a day" },
+  { key: "lessThanWeek", value: "Less than a week" },
+  { key: "oneToThreeWeeks", value: "1-3 weeks" },
+  { key: "oneToThreeMonths", value: "1-3 months" },
+];
 
 type Snapshot = { reasonKey: string | null; detail: string; howLong: string | null; email: string };
 
@@ -173,7 +161,8 @@ const fieldClass =
 const primaryButton =
   "rounded-full text-white font-medium h-12 px-8 inline-flex items-center justify-center hover:scale-[1.03] transition-transform duration-200 shadow-lg shadow-purple-500/20";
 
-export default function UninstallContent() {
+export default function UninstallContent({ s }: { s: Strings }) {
+  const { locale } = useT();
   const [reasonKey, setReasonKey] = useState<string | null>(null);
   const [detail, setDetail] = useState("");
   const [howLong, setHowLong] = useState<string | null>(null);
@@ -275,14 +264,14 @@ export default function UninstallContent() {
             <>
               <div className="flex flex-col items-center gap-3 text-center">
                 <h1 className="font-bold text-[var(--text)] text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-[var(--heading-h1-letter-spacing)]">
-                  What made you uninstall?
+                  {s.form.title}
                 </h1>
                 <p className="text-[var(--text-dim)] text-lg sm:text-xl">
-                  One tap is enough. It goes straight to the team.
+                  {s.form.subtitle}
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full" role="radiogroup" aria-label="Reason for uninstalling">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full" role="radiogroup" aria-label={s.form.reasonsAriaLabel}>
                 {REASONS.map((r, i) => {
                   const active = reasonKey === r.key;
                   // An odd last button spans both columns instead of sitting alone.
@@ -303,7 +292,7 @@ export default function UninstallContent() {
                       <span className="text-2xl leading-none" aria-hidden>
                         {r.emoji}
                       </span>
-                      <span className="text-[var(--text)] font-medium text-base">{r.label}</span>
+                      <span className="text-[var(--text)] font-medium text-base">{s.reasons[r.key].label}</span>
                     </button>
                   );
                 })}
@@ -313,14 +302,14 @@ export default function UninstallContent() {
                 <div className="w-full flex flex-col gap-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6 animate-slide-in">
                   <div className="flex flex-col gap-2">
                     <label htmlFor="detail" className="text-[var(--text)] font-medium">
-                      {selected.prompt} <span className="text-[var(--text-dim)] font-normal">(optional)</span>
+                      {s.reasons[selected.key].prompt} <span className="text-[var(--text-dim)] font-normal">{s.form.optional}</span>
                     </label>
                     {selected.followup === "platform" ? (
                       <input
                         id="detail"
                         value={detail}
                         onChange={(e) => setDetail(e.target.value)}
-                        placeholder={selected.placeholder}
+                        placeholder={s.reasons[selected.key].placeholder}
                         className={fieldClass}
                       />
                     ) : (
@@ -328,7 +317,7 @@ export default function UninstallContent() {
                         id="detail"
                         value={detail}
                         onChange={(e) => setDetail(e.target.value)}
-                        placeholder={selected.placeholder}
+                        placeholder={s.reasons[selected.key].placeholder}
                         rows={3}
                         className={`${fieldClass} resize-none`}
                       />
@@ -336,11 +325,11 @@ export default function UninstallContent() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <span className="text-[var(--text-dim)] text-sm">How long did you use Funlingo? (optional)</span>
+                    <span className="text-[var(--text-dim)] text-sm">{s.form.howLongLabel}</span>
                     <div className="flex flex-wrap gap-2">
-                      {HOW_LONG.map((h) => (
+                      {HOW_LONG.map(({ key, value: h }) => (
                         <button
-                          key={h}
+                          key={key}
                           type="button"
                           aria-pressed={howLong === h}
                           onClick={() => setHowLong(howLong === h ? null : h)}
@@ -350,7 +339,7 @@ export default function UninstallContent() {
                               : "border-[var(--border)] text-[var(--text-dim)] hover:border-[var(--pink)]"
                           }`}
                         >
-                          {h}
+                          {s.howLong[key]}
                         </button>
                       ))}
                     </div>
@@ -358,7 +347,7 @@ export default function UninstallContent() {
 
                   <div className="flex flex-col gap-2">
                     <label htmlFor="email" className="text-[var(--text-dim)] text-sm">
-                      Email (optional), so we can tell you when it&apos;s fixed
+                      {s.form.emailLabel}
                     </label>
                     <input
                       id="email"
@@ -366,13 +355,13 @@ export default function UninstallContent() {
                       autoComplete="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="you@example.com"
+                      placeholder={s.form.emailPlaceholder}
                       className={fieldClass}
                     />
                   </div>
 
                   <button type="button" onClick={submit} className={`${primaryButton} self-start`} style={{ background: "var(--grad)" }}>
-                    Send feedback
+                    {s.form.submit}
                   </button>
                 </div>
               )}
@@ -382,14 +371,14 @@ export default function UninstallContent() {
               <div className="w-16 h-16 rounded-full bg-[var(--pink-soft)] border border-[var(--magenta)] flex items-center justify-center text-3xl text-[var(--magenta)]">
                 ✓
               </div>
-              <h1 className="text-[var(--text)] text-3xl sm:text-4xl font-bold">Thanks, we got it.</h1>
+              <h1 className="text-[var(--text)] text-3xl sm:text-4xl font-bold">{s.thanks.title}</h1>
               <p className="text-[var(--text-dim)] text-lg max-w-md">
                 {selected?.recoverable
-                  ? "We ship fixes and new features every week. If you give Funlingo another try, this might already be sorted."
-                  : "Your feedback goes straight to the team. Thanks for taking the time."}
+                  ? s.thanks.recoverable
+                  : s.thanks.notRecoverable}
               </p>
               {email.trim() && (
-                <p className="text-[var(--text-dim)] text-sm">We&apos;ll email you at {email.trim()} when there&apos;s news.</p>
+                <p className="text-[var(--text-dim)] text-sm">{s.thanks.emailNote.replace("{email}", email.trim())}</p>
               )}
               {selected?.recoverable && (
                 <a
@@ -400,11 +389,11 @@ export default function UninstallContent() {
                   className={primaryButton}
                   style={{ background: "var(--grad)" }}
                 >
-                  Give Funlingo another try
+                  {s.thanks.reinstall}
                 </a>
               )}
-              <a href="/" className="text-[var(--text-dim)] hover:text-[var(--text)] text-sm transition-colors underline underline-offset-4">
-                Back to home
+              <a href={navHref("/", locale)} className="text-[var(--text-dim)] hover:text-[var(--text)] text-sm transition-colors underline underline-offset-4">
+                {s.thanks.backHome}
               </a>
             </div>
           )}

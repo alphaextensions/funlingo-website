@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "ご利用ありがとうございました",
+    "description": "Funlingoをアンインストールした理由を教えてください。いただいたご意見は、より良い語学学習体験づくりに役立てます。"
+  },
+  "form": {
+    "title": "アンインストールした理由は何ですか？",
+    "subtitle": "ワンタップで完了します。回答はチームに直接届きます。",
+    "reasonsAriaLabel": "アンインストールの理由",
+    "optional": "（任意）",
+    "howLongLabel": "Funlingoをどのくらいの期間使いましたか？（任意）",
+    "emailLabel": "メールアドレス（任意）：修正されたらお知らせします",
+    "emailPlaceholder": "you@example.com",
+    "submit": "フィードバックを送信"
+  },
+  "reasons": {
+    "broken": {
+      "label": "正しく動作しなかった",
+      "prompt": "どんな問題がありましたか？",
+      "placeholder": "どのサイトで、何が起きましたか？一言でも助かります。"
+    },
+    "translations": {
+      "label": "翻訳の質が十分でなかった",
+      "prompt": "どの言語の組み合わせで、どのサイトですか？",
+      "placeholder": "例：Netflixで英語 → スペイン語、翻訳が直訳すぎた…"
+    },
+    "platform": {
+      "label": "使っている動画サイトに対応していない",
+      "prompt": "どのサイトまたはブラウザですか？",
+      "placeholder": "例：Safari、Firefox、特定の動画配信サイト…"
+    },
+    "missing": {
+      "label": "必要な機能がなかった",
+      "prompt": "何が足りませんでしたか？",
+      "placeholder": "例：言語、動画配信サービス、単語リスト…"
+    },
+    "switched": {
+      "label": "別のツールに乗り換えた",
+      "prompt": "どのツールですか？",
+      "placeholder": "例：Language Reactor、Trancy…"
+    },
+    "trying": {
+      "label": "試してみただけ／今は必要ない",
+      "prompt": "どうなっていれば使い続けていましたか？",
+      "placeholder": "ご自由にお書きください。"
+    },
+    "other": {
+      "label": "その他",
+      "prompt": "アンインストールした理由は何ですか？",
+      "placeholder": "ご自由にお書きください。"
+    }
+  },
+  "howLong": {
+    "lessThanDay": "1日未満",
+    "lessThanWeek": "1週間未満",
+    "oneToThreeWeeks": "1〜3週間",
+    "oneToThreeMonths": "1〜3か月"
+  },
+  "thanks": {
+    "title": "ありがとうございます。受け付けました。",
+    "recoverable": "修正や新機能は毎週リリースしています。もう一度Funlingoをお試しいただければ、すでに解決しているかもしれません。",
+    "notRecoverable": "いただいたご意見はチームに直接届きます。お時間をいただきありがとうございました。",
+    "emailNote": "新しいお知らせがあれば {email} にご連絡します。",
+    "reinstall": "もう一度Funlingoを試す",
+    "backHome": "ホームに戻る"
+  }
+}

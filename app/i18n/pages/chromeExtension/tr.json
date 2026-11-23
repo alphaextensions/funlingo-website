@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo Chrome Uzantısı — Ücretsiz Çift Altyazı ve AI Çeviri",
+    "description": "Ücretsiz Funlingo Chrome uzantısı: Netflix, YouTube, Prime ve fazlasında 100+ dilde çift altyazı ve yapay zekâ çevirisi. Chrome'a ekleyin, izlerken öğrenin."
+  },
+  "hero": {
+    "badge": "Ücretsiz Chrome uzantısı · 4,8/5 puan",
+    "title": "Funlingo Chrome Uzantısı",
+    "subtitle": "Netflix, YouTube, Prime Video ve 7 platformda daha ücretsiz çift altyazı ve yapay zekâ çevirisi. İzlerken 100+ dil arasından istediğinizi öğrenin.",
+    "addToChrome": "Chrome'a Ekle — Ücretsiz",
+    "seeHowItWorks": "Nasıl çalıştığını görün",
+    "note": "Hesap gerekmez · Bir dakikadan kısa sürede kurulur"
+  },
+  "features": {
+    "title": "İzlerken öğrenmek için ihtiyacınız olan her şey",
+    "subtitle": "Tek bir ücretsiz uzantı, en sevdiğiniz yayın ve eğitim sitelerini sürükleyici bir dil sınıfına dönüştürür.",
+    "items": [
+      {
+        "title": "Çift Altyazı",
+        "description": "İki altyazıyı aynı anda görün — öğrendiğiniz dil ve ana diliniz — doğrudan video oynatıcının içinde."
+      },
+      {
+        "title": "Yapay Zekâ Çevirisi ve Tanımları",
+        "description": "Herhangi bir kelimenin üzerine gelin; anında, bağlama duyarlı yapay zekâ çevirileri, dil bilgisi notları ve gerçek örnek ifadeler görün."
+      },
+      {
+        "title": "Kelime Defteri",
+        "description": "Herhangi bir kelimeyi veya ifadeyi tek tıkla kaydedin. Her kayıt, çevirisini ve bulunduğu cümleyi saklar."
+      },
+      {
+        "title": "100+ Dil",
+        "description": "İspanyolca ve Japoncadan Korece, Almanca, Arapça ve Hintçeye — dillerinizi birbirinden bağımsız ayarlayın."
+      },
+      {
+        "title": "10 Platform",
+        "description": "Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy ve Coursera'da çalışır."
+      },
+      {
+        "title": "%100 Ücretsiz",
+        "description": "Ödeme duvarı yok, premium paket yok, hesap gerekmez. Tüm özellikler ücretsiz."
+      }
+    ]
+  },
+  "install": {
+    "title": "Bir dakikadan kısa sürede kurun",
+    "subtitle": "Kurulum derdi yok. Funlingo'yu Chrome'a ekleyin ve hemen öğrenmeye başlayın.",
+    "steps": [
+      {
+        "title": "Chrome Web Store'u açın",
+        "description": "Yukarıdaki düğmeyi kullanarak Chrome Web Store'daki Funlingo sayfasını ziyaret edin."
+      },
+      {
+        "title": "“Chrome'a ekle” düğmesine tıklayın",
+        "description": "“Chrome'a ekle” düğmesine tıklayın, ardından “Uzantı ekle” ile onaylayın. Saniyeler içinde kurulur."
+      },
+      {
+        "title": "Funlingo'yu sabitleyin",
+        "description": "İzlerken her zaman bir tık uzağınızda olması için Funlingo'yu araç çubuğunuza sabitleyin."
+      },
+      {
+        "title": "Oynat'a Basın ve Öğrenin",
+        "description": "Netflix, YouTube veya desteklenen herhangi bir platformu açın; çift altyazı otomatik olarak görünür."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Sıkça sorulan sorular",
+    "subtitle": "Funlingo Chrome uzantısı hakkında her şey.",
+    "items": [
+      {
+        "question": "Funlingo Chrome uzantısı ücretsiz mi?",
+        "answer": "Evet. Funlingo Chrome uzantısı gizli ücret, premium paket veya ödeme duvarı olmadan %100 ücretsizdir. Çift altyazı, yapay zekâ çevirisi, yapay zekâ kelime tanımları ve kelime defterini hiçbir ücret ödemeden kullanırsınız. Chrome'a eklemeniz yeterli; hesap gerekmeden tüm özellikleri hemen kullanmaya başlayın."
+      },
+      {
+        "question": "Funlingo uzantısı hangi platformlarda çalışır?",
+        "answer": "Funlingo 10 platformda çalışır: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy ve Coursera. Çift altyazı ve yapay zekâ çevirisi her platformun video oynatıcısına doğrudan entegre olur; böylece film, dizi, anime ve online kurs izlerken dil öğrenebilirsiniz."
+      },
+      {
+        "question": "Funlingo Chrome uzantısını nasıl kurarım?",
+        "answer": "Chrome Web Store'daki Funlingo sayfasını açın, “Chrome'a ekle” düğmesine tıklayın ve ardından “Uzantı ekle”ye tıklayarak onaylayın. Funlingo'yu araç çubuğunuza sabitleyin, Netflix veya YouTube gibi desteklenen bir platformu açın; çift altyazı otomatik olarak görünecektir. Tüm süreç bir dakikadan kısa sürer."
+      },
+      {
+        "question": "Funlingo uzantısı benim dilimi destekliyor mu?",
+        "answer": "Neredeyse kesinlikle. Funlingo altyazı çevirisi için İspanyolca, Fransızca, Japonca, Korece, Mandarin Çincesi, Almanca, Portekizce, İtalyanca, Arapça, Hintçe ve çok daha fazlası dahil 100+ dili destekler. Gerçek bir çift altyazılı öğrenme için hedef dilinizi ve ana dilinizi birbirinden bağımsız olarak ayarlayabilirsiniz."
+      },
+      {
+        "question": "Funlingo güvenli bir Chrome uzantısı mı?",
+        "answer": "Evet. Funlingo, Google tarafından incelendiği resmi Chrome Web Store'da yayınlanmaktadır ve 5 üzerinden 4,8 yıldız puana sahiptir. Altyazıları göstermek için tarayıcınızda yerel olarak çalışır ve öğrenmeye başlamak için hesap oluşturmanızı gerektirmez."
+      }
+    ]
+  },
+  "cta": {
+    "title": "İzlerken dil öğrenmeye başlayın",
+    "subtitle": "10 platformda ücretsiz çift altyazı ve yapay zekâ çevirisi için Funlingo'yu kullanan binlerce öğrenciye katılın.",
+    "addToChrome": "Chrome'a Ekle — Ücretsiz",
+    "note": "Ücretsiz · Chrome Web Store'da 4,8/5 puan"
+  }
+}

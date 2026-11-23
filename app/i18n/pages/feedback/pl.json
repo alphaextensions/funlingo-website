@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Opinie – podziel się swoim zdaniem",
+    "description": "Podziel się opinią z zespołem Funlingo. Pomóż nam tworzyć lepsze doświadczenie nauki języków dla wszystkich."
+  },
+  "header": {
+    "title": "Chętnie poznamy Twoją opinię",
+    "subtitle": "Twoje uwagi pomagają nam tworzyć lepsze doświadczenie nauki języków dla wszystkich"
+  },
+  "validation": {
+    "name": "Podaj swoje imię.",
+    "email": "Podaj swój e-mail.",
+    "message": "Wpisz swoją opinię.",
+    "uninstallReason": "Wybierz co najmniej jeden powód odinstalowania."
+  },
+  "submitError": "Coś poszło nie tak. Spróbuj ponownie.",
+  "success": "Dziękujemy za opinię! Uważnie się z nią zapoznamy.",
+  "form": {
+    "nameLabel": "Imię",
+    "namePlaceholder": "Twoje imię",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "twoj.email@example.com",
+    "categoryLabel": "Kategoria",
+    "categories": {
+      "feature": "Propozycja funkcji",
+      "bug": "Zgłoszenie błędu",
+      "improvement": "Sugestia ulepszenia",
+      "uninstall": "Powód odinstalowania",
+      "other": "Inne"
+    },
+    "satisfactionLabel": "Ogólne zadowolenie",
+    "satisfactionLevels": {
+      "1": "Bardzo niskie",
+      "2": "Niskie",
+      "3": "Średnie",
+      "4": "Wysokie",
+      "5": "Bardzo wysokie"
+    },
+    "uninstall": {
+      "heading": "Dlaczego rozważasz odinstalowanie?",
+      "missingFeatures": "Brakuje funkcji, których potrzebuję",
+      "notWorking": "Nie działa poprawnie",
+      "otherReasons": "Inne powody",
+      "otherPlaceholder": "Opisz inne powody..."
+    },
+    "featureDetailsLabel": "Szczegóły funkcji",
+    "desiredFeatureLabel": "Jaką funkcję powinniśmy dodać?",
+    "featureDetailsPlaceholder": "Opisz funkcję, która by Ci się przydała...",
+    "desiredFeaturePlaceholder": "Jaka funkcja skłoniłaby Cię do zmiany zdania?",
+    "recommendLabel": "Czy polecisz Funlingo innym?",
+    "recommendOptions": {
+      "none": "Wybierz opcję",
+      "definitely": "Zdecydowanie tak",
+      "probably": "Raczej tak",
+      "unsure": "Nie wiem",
+      "probablyNot": "Raczej nie",
+      "definitelyNot": "Zdecydowanie nie"
+    },
+    "commentsLabel": "Dodatkowe uwagi",
+    "commentsPlaceholder": "Podziel się innymi przemyśleniami, sugestiami lub szczegółami...",
+    "submitting": "Wysyłanie...",
+    "submit": "Wyślij opinię"
+  },
+  "contact": {
+    "email": {
+      "title": "Napisz do nas",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Obserwuj naszą stronę"
+    }
+  }
+}

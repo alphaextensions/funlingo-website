@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Trợ giúp & Hỗ trợ",
+    "description": "Nhận trợ giúp từ đội ngũ Funlingo. Báo lỗi, đề xuất tính năng hoặc đặt câu hỏi về tiện ích học ngôn ngữ của chúng tôi."
+  },
+  "header": {
+    "title": "Trợ giúp & Hỗ trợ",
+    "subtitle": "Đội ngũ của chúng tôi luôn sẵn sàng giúp bạn tận dụng tối đa Funlingo. Hãy liên hệ bất cứ lúc nào."
+  },
+  "supportTypes": [
+    {
+      "title": "Hỗ trợ kỹ thuật",
+      "description": "Sự cố ứng dụng, lỗi hoặc vấn đề kỹ thuật",
+      "responseTime": "2-4 giờ"
+    },
+    {
+      "title": "Đề xuất tính năng",
+      "description": "Gợi ý tính năng mới hoặc cải tiến",
+      "responseTime": "1-2 ngày"
+    },
+    {
+      "title": "Câu hỏi chung",
+      "description": "Câu hỏi khác hoặc yêu cầu thông tin",
+      "responseTime": "1-2 ngày"
+    }
+  ],
+  "responseLabel": "Phản hồi: {time}",
+  "successMessage": "Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.",
+  "form": {
+    "nameLabel": "Họ tên",
+    "namePlaceholder": "Họ và tên của bạn",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "Loại vấn đề",
+    "issueTypes": {
+      "technical": "Hỗ trợ kỹ thuật",
+      "billing": "Thanh toán & Tài khoản",
+      "feature": "Đề xuất tính năng",
+      "general": "Câu hỏi chung",
+      "bug": "Báo lỗi"
+    },
+    "priorityLabel": "Mức độ ưu tiên",
+    "priorities": {
+      "low": "Thấp",
+      "medium": "Trung bình",
+      "high": "Cao",
+      "urgent": "Khẩn cấp"
+    },
+    "subjectLabel": "Tiêu đề",
+    "subjectPlaceholder": "Mô tả ngắn gọn vấn đề của bạn",
+    "messageLabel": "Nội dung",
+    "messagePlaceholder": "Vui lòng mô tả chi tiết vấn đề của bạn...",
+    "attachmentsLabel": "Tệp đính kèm (Không bắt buộc)",
+    "removeAttachment": "x",
+    "submit": "Gửi yêu cầu hỗ trợ"
+  },
+  "contact": {
+    "title": "Thông tin liên hệ",
+    "emailTitle": "Hỗ trợ qua email",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Cộng đồng Discord",
+    "discordText": "Tham gia để được hỗ trợ theo thời gian thực",
+    "responseTitle": "Thời gian phản hồi",
+    "responseText": "2-48 giờ tùy mức độ ưu tiên"
+  },
+  "beforeContact": {
+    "title": "Trước khi liên hệ",
+    "tips": [
+      "Xem mục Câu hỏi thường gặp để có câu trả lời nhanh",
+      "Đính kèm ảnh chụp màn hình liên quan nếu có thể",
+      "Mô tả các bước để tái hiện sự cố",
+      "Cho biết thiết bị và phiên bản ứng dụng bạn đang dùng"
+    ]
+  }
+}

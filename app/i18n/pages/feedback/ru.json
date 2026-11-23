@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Отзыв — поделитесь мнением",
+    "description": "Поделитесь отзывом с командой Funlingo. Помогите нам сделать изучение языков лучше для всех."
+  },
+  "header": {
+    "title": "Нам важно ваше мнение",
+    "subtitle": "Ваши отзывы помогают нам сделать изучение языков лучше для всех"
+  },
+  "validation": {
+    "name": "Пожалуйста, укажите имя.",
+    "email": "Пожалуйста, укажите email.",
+    "message": "Пожалуйста, напишите отзыв.",
+    "uninstallReason": "Пожалуйста, выберите хотя бы одну причину удаления."
+  },
+  "submitError": "Что-то пошло не так. Попробуйте ещё раз.",
+  "success": "Спасибо за отзыв! Мы внимательно его изучим.",
+  "form": {
+    "nameLabel": "Имя",
+    "namePlaceholder": "Ваше имя",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Категория",
+    "categories": {
+      "feature": "Предложение функции",
+      "bug": "Сообщение об ошибке",
+      "improvement": "Идея по улучшению",
+      "uninstall": "Причина удаления",
+      "other": "Другое"
+    },
+    "satisfactionLabel": "Общая удовлетворённость",
+    "satisfactionLevels": {
+      "1": "Совсем не устраивает",
+      "2": "Не устраивает",
+      "3": "Нейтрально",
+      "4": "Устраивает",
+      "5": "Полностью устраивает"
+    },
+    "uninstall": {
+      "heading": "Почему вы хотите удалить расширение?",
+      "missingFeatures": "Не хватает нужных функций",
+      "notWorking": "Работает некорректно",
+      "otherReasons": "Другие причины",
+      "otherPlaceholder": "Пожалуйста, укажите другие причины..."
+    },
+    "featureDetailsLabel": "Описание функции",
+    "desiredFeatureLabel": "Какую функцию нам стоит добавить?",
+    "featureDetailsPlaceholder": "Опишите функцию, которую хотели бы видеть...",
+    "desiredFeaturePlaceholder": "Какая функция заставила бы вас передумать?",
+    "recommendLabel": "Порекомендуете ли вы Funlingo другим?",
+    "recommendOptions": {
+      "none": "Выберите вариант",
+      "definitely": "Определённо да",
+      "probably": "Скорее да",
+      "unsure": "Затрудняюсь ответить",
+      "probablyNot": "Скорее нет",
+      "definitelyNot": "Определённо нет"
+    },
+    "commentsLabel": "Дополнительные комментарии",
+    "commentsPlaceholder": "Поделитесь любыми мыслями, предложениями или подробностями...",
+    "submitting": "Отправка...",
+    "submit": "Отправить отзыв"
+  },
+  "contact": {
+    "email": {
+      "title": "Напишите нам",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Подпишитесь на нашу страницу"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Ne pare rău că pleci",
+    "description": "Spune-ne de ce ai dezinstalat Funlingo. Feedbackul tău ne ajută să creăm o experiență mai bună de învățare a limbilor."
+  },
+  "form": {
+    "title": "De ce ai dezinstalat Funlingo?",
+    "subtitle": "Un singur clic e suficient. Răspunsul ajunge direct la echipă.",
+    "reasonsAriaLabel": "Motivul dezinstalării",
+    "optional": "(opțional)",
+    "howLongLabel": "Cât timp ai folosit Funlingo? (opțional)",
+    "emailLabel": "E-mail (opțional), ca să te anunțăm când e rezolvat",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Trimite feedbackul"
+  },
+  "reasons": {
+    "broken": {
+      "label": "Ceva nu funcționa",
+      "prompt": "Ce n-a mers?",
+      "placeholder": "Pe ce site și ce s-a întâmplat? Chiar și un rând ne ajută."
+    },
+    "translations": {
+      "label": "Traducerile nu erau destul de bune",
+      "prompt": "Ce pereche de limbi și pe ce site?",
+      "placeholder": "ex. engleză → spaniolă pe Netflix, traducerile erau prea literale…"
+    },
+    "platform": {
+      "label": "Site-ul meu de streaming nu este acceptat",
+      "prompt": "Ce site sau browser?",
+      "placeholder": "ex. Safari, Firefox, un anumit site de streaming…"
+    },
+    "missing": {
+      "label": "Lipsea o funcție de care aveam nevoie",
+      "prompt": "Ce ți-a lipsit?",
+      "placeholder": "ex. o limbă, un serviciu de streaming, o listă de cuvinte…"
+    },
+    "switched": {
+      "label": "Am trecut la alt instrument",
+      "prompt": "La care?",
+      "placeholder": "ex. Language Reactor, Trancy…"
+    },
+    "trying": {
+      "label": "Doar îl încercam / nu am nevoie acum",
+      "prompt": "Ce te-ar fi făcut să-l păstrezi?",
+      "placeholder": "Spune-ne cu cuvintele tale."
+    },
+    "other": {
+      "label": "Altceva",
+      "prompt": "De ce ai dezinstalat Funlingo?",
+      "placeholder": "Spune-ne cu cuvintele tale."
+    }
+  },
+  "howLong": {
+    "lessThanDay": "Mai puțin de o zi",
+    "lessThanWeek": "Mai puțin de o săptămână",
+    "oneToThreeWeeks": "1-3 săptămâni",
+    "oneToThreeMonths": "1-3 luni"
+  },
+  "thanks": {
+    "title": "Mulțumim, am primit.",
+    "recoverable": "Lansăm remedieri și funcții noi în fiecare săptămână. Dacă îi mai dai o șansă lui Funlingo, s-ar putea ca problema să fie deja rezolvată.",
+    "notRecoverable": "Feedbackul tău ajunge direct la echipă. Mulțumim că ți-ai făcut timp.",
+    "emailNote": "Îți scriem la {email} când avem noutăți.",
+    "reinstall": "Mai dă-i o șansă lui Funlingo",
+    "backHome": "Înapoi la pagina principală"
+  }
+}

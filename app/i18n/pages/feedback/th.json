@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "ความคิดเห็น - แบ่งปันความคิดของคุณ",
+    "description": "แบ่งปันความคิดเห็นกับทีม Funlingo ช่วยเราสร้างประสบการณ์การเรียนภาษาที่ดียิ่งขึ้นสำหรับทุกคน"
+  },
+  "header": {
+    "title": "เราอยากฟังความคิดเห็นของคุณ",
+    "subtitle": "ความคิดเห็นของคุณช่วยให้เราสร้างประสบการณ์การเรียนภาษาที่ดียิ่งขึ้นสำหรับทุกคน"
+  },
+  "validation": {
+    "name": "โปรดกรอกชื่อของคุณ",
+    "email": "โปรดกรอกอีเมลของคุณ",
+    "message": "โปรดกรอกความคิดเห็นของคุณ",
+    "uninstallReason": "โปรดเลือกเหตุผลในการถอนการติดตั้งอย่างน้อยหนึ่งข้อ"
+  },
+  "submitError": "เกิดข้อผิดพลาด โปรดลองอีกครั้ง",
+  "success": "ขอบคุณสำหรับความคิดเห็น! เราจะพิจารณาอย่างละเอียด",
+  "form": {
+    "nameLabel": "ชื่อ",
+    "namePlaceholder": "ชื่อของคุณ",
+    "emailLabel": "อีเมล",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "หมวดหมู่",
+    "categories": {
+      "feature": "ขอฟีเจอร์",
+      "bug": "แจ้งบั๊ก",
+      "improvement": "ข้อเสนอแนะเพื่อการปรับปรุง",
+      "uninstall": "เหตุผลที่ถอนการติดตั้ง",
+      "other": "อื่น ๆ"
+    },
+    "satisfactionLabel": "ความพึงพอใจโดยรวม",
+    "satisfactionLevels": {
+      "1": "ไม่พอใจมาก",
+      "2": "ไม่พอใจ",
+      "3": "เฉย ๆ",
+      "4": "พอใจ",
+      "5": "พอใจมาก"
+    },
+    "uninstall": {
+      "heading": "ทำไมคุณถึงคิดจะถอนการติดตั้ง?",
+      "missingFeatures": "ไม่มีฟีเจอร์ที่ฉันต้องการ",
+      "notWorking": "ทำงานไม่ถูกต้อง",
+      "otherReasons": "เหตุผลอื่น ๆ",
+      "otherPlaceholder": "โปรดระบุเหตุผลอื่น ๆ..."
+    },
+    "featureDetailsLabel": "รายละเอียดฟีเจอร์",
+    "desiredFeatureLabel": "มีฟีเจอร์ไหนที่อยากให้เราสร้างไหม?",
+    "featureDetailsPlaceholder": "อธิบายฟีเจอร์ที่คุณอยากเห็น...",
+    "desiredFeaturePlaceholder": "ฟีเจอร์ใดที่จะทำให้คุณเปลี่ยนใจ?",
+    "recommendLabel": "คุณจะแนะนำ Funlingo ให้คนอื่นไหม?",
+    "recommendOptions": {
+      "none": "เลือกตัวเลือก",
+      "definitely": "แนะนำแน่นอน",
+      "probably": "น่าจะแนะนำ",
+      "unsure": "ไม่แน่ใจ",
+      "probablyNot": "น่าจะไม่แนะนำ",
+      "definitelyNot": "ไม่แนะนำแน่นอน"
+    },
+    "commentsLabel": "ความคิดเห็นเพิ่มเติม",
+    "commentsPlaceholder": "แบ่งปันความคิด ข้อเสนอแนะ หรือรายละเอียดเพิ่มเติม...",
+    "submitting": "กำลังส่ง...",
+    "submit": "ส่งความคิดเห็น"
+  },
+  "contact": {
+    "email": {
+      "title": "ส่งอีเมลถึงเรา",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "ติดตามเพจของเรา"
+    }
+  }
+}

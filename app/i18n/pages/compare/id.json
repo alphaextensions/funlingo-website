@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate - Perbandingan",
+    "description": "Perbandingan fitur Funlingo, Trancy, dan Immersive Translate secara detail. Temukan alasan Funlingo jadi alternatif gratis terbaik untuk subtitle ganda di Netflix & YouTube."
+  },
+  "hero": {
+    "badge": "Perbandingan Detail",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "Bingung memilih ekstensi belajar bahasa yang tepat? Kami mengulas fitur, harga, dan kemampuan alat-alat terbaik di tahun 2026."
+  },
+  "table": {
+    "ariaLabel": "Perbandingan fitur Funlingo, Trancy, dan Immersive Translate",
+    "featureHeader": "Fitur",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "Popup per Kata",
+        "sub": "Arti dalam Bahasa Ibu + \"Lihat Contoh\" (Unik)",
+        "fun": "Popup berisi arti dalam bahasa ibu + Lihat Contoh (UX unik).",
+        "trancy": "Tidak ada \"Lihat Contoh\" di dalam popup.",
+        "immersive": "Tidak tersedia."
+      },
+      {
+        "feature": "Arti Bahasa Ibu Sebaris",
+        "sub": "Dalam Kurung untuk Kata Sulit (Unik)",
+        "fun": "Arti dalam bahasa ibu di dalam kurung, sebaris, untuk kata yang dipilih/sulit.",
+        "trancy": "Tidak tersedia.",
+        "immersive": "Tidak tersedia."
+      },
+      {
+        "feature": "Pelafalan per Kata",
+        "sub": "(ejaan + audio)",
+        "fun": "Pelafalan tiap kata (panduan ejaan + audio + putar lambat).",
+        "trancy": "Terbatas / ada fitur TTS; UI ejaan per kata tidak terdokumentasi dengan jelas.",
+        "immersive": "TTS terbatas; UI ejaan per kata tidak terdokumentasi."
+      },
+      {
+        "feature": "AI Konteks Sekali Klik",
+        "sub": "Penjelasan (frasa & catatan penggunaan)",
+        "fun": "Blok penjelasan AI bawaan, cukup klik (konteks tingkat frasa).",
+        "trancy": "Menyediakan alat tata bahasa/analisis; ada alur penjelasan kontekstual.",
+        "immersive": "Ada beberapa fitur terjemahan kontekstual; pengalaman di dalam pemutar tidak sama."
+      },
+      {
+        "feature": "Simpan ke Kosakata & Tinjauan",
+        "sub": "Dek",
+        "fun": "Simpan ke kosakata + daftar tinjauan / ekspor; UX tinjauan bawaan.",
+        "trancy": "Ada fitur simpan/bookmark, tetapi fitur dek tinjauan lengkap terbatas atau berorientasi mode belajar.",
+        "immersive": "Tidak terdokumentasi secara publik sebagai dek tinjauan terintegrasi."
+      },
+      {
+        "feature": "Privasi & Ekstensi",
+        "sub": "Sinyal Keamanan",
+        "fun": "Izin & panduan privasi yang jelas; model ekstensi yang ringan.",
+        "trancy": "Info privasi tersedia; fitur enterprise mungkin berbeda.",
+        "immersive": "Bervariasi; dokumentasi publik terbatas."
+      }
+    ],
+    "legend": {
+      "core": "Fitur inti tersedia",
+      "available": "Fitur tersedia",
+      "limited": "Terbatas / Bukan fitur utama"
+    }
+  },
+  "why": {
+    "title": "Mengapa memilih Funlingo?",
+    "items": [
+      "Sepenuhnya Gratis: Tidak ada fitur inti yang dikunci premium.",
+      "Kompatibel di Mana Saja: Berjalan mulus di Netflix, YouTube, dan Prime.",
+      "Didukung AI: Penjelasan kontekstual, bukan sekadar terjemahan langsung.",
+      "Tanpa Hambatan: Dirancang agar tidak mengganggu saat kamu menonton."
+    ]
+  },
+  "cta": {
+    "title": "Siap beralih?",
+    "body": "Pasang Funlingo hari ini dan rasakan bedanya. Hanya butuh kurang dari 30 detik untuk memulai.",
+    "button": "Dapatkan Funlingo untuk Chrome"
+  }
+}

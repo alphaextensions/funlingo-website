@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "ヘルプとサポート",
+    "description": "Funlingoチームのヘルプとサポート。不具合の報告、機能のリクエスト、語学学習拡張機能に関するご質問はこちらから。"
+  },
+  "header": {
+    "title": "ヘルプとサポート",
+    "subtitle": "Funlingoを快適に使っていただけるよう、私たちのチームがサポートします。いつでもお気軽にご連絡ください。"
+  },
+  "supportTypes": [
+    {
+      "title": "技術サポート",
+      "description": "アプリの不具合、バグ、技術的な問題",
+      "responseTime": "2〜4時間"
+    },
+    {
+      "title": "機能リクエスト",
+      "description": "新機能や改善のご提案",
+      "responseTime": "1〜2日"
+    },
+    {
+      "title": "一般的なお問い合わせ",
+      "description": "その他のご質問や情報のご依頼",
+      "responseTime": "1〜2日"
+    }
+  ],
+  "responseLabel": "返信目安：{time}",
+  "successMessage": "お問い合わせありがとうございます！できるだけ早くご返信します。",
+  "form": {
+    "nameLabel": "お名前",
+    "namePlaceholder": "フルネーム",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "your.email@example.com",
+    "issueTypeLabel": "お問い合わせの種類",
+    "issueTypes": {
+      "technical": "技術サポート",
+      "billing": "請求とアカウント",
+      "feature": "機能リクエスト",
+      "general": "一般的なお問い合わせ",
+      "bug": "バグ報告"
+    },
+    "priorityLabel": "優先度",
+    "priorities": {
+      "low": "低",
+      "medium": "中",
+      "high": "高",
+      "urgent": "緊急"
+    },
+    "subjectLabel": "件名",
+    "subjectPlaceholder": "問題の概要",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "問題について詳しくご記入ください…",
+    "attachmentsLabel": "添付ファイル（任意）",
+    "removeAttachment": "x",
+    "submit": "サポートを依頼する"
+  },
+  "contact": {
+    "title": "連絡先",
+    "emailTitle": "メールサポート",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discordコミュニティ",
+    "discordText": "参加すると、リアルタイムでサポートを受けられます",
+    "responseTitle": "返信までの目安",
+    "responseText": "優先度に応じて2〜48時間"
+  },
+  "beforeContact": {
+    "title": "お問い合わせの前に",
+    "tips": [
+      "よくある質問ですぐに答えが見つかるかもしれません",
+      "可能であれば関連するスクリーンショットを添付してください",
+      "問題を再現する手順を記載してください",
+      "お使いのデバイスとアプリのバージョンをお知らせください"
+    ]
+  }
+}

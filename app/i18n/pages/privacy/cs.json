@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Zásady ochrany osobních údajů",
+    "description": "Zásady ochrany osobních údajů Funlingo. Zjistěte, jak nakládáme s vašimi informacemi při používání rozšíření Funlingo pro Chrome a našeho webu."
+  },
+  "translationNotice": "Tento překlad je poskytován pro vaše pohodlí. V případě jakéhokoli rozporu má přednost anglická verze těchto zásad.",
+  "englishLinkText": "Přečíst anglickou verzi",
+  "hero": {
+    "badge": "Na vašem soukromí záleží",
+    "title": "Zásady ochrany osobních údajů",
+    "intro": "Vítejte ve Funlingo. Vaše soukromí je pro nás důležité. Tyto Zásady ochrany osobních údajů vysvětlují, jak nakládáme s vašimi informacemi, když používáte rozšíření Funlingo pro Chrome a náš web."
+  },
+  "effectiveDate": "Datum účinnosti: listopad 2025",
+  "sections": [
+    {
+      "title": "Informace, které neshromažďujeme",
+      "content": "Funlingo jsme vytvořili, abychom uživatelům pomohli užívat si duální titulky a učit se jazyky při streamování, aniž by bylo ohroženo jejich soukromí. K monitorování vaší aktivity nepoužíváme soubory cookie ani analytické nástroje třetích stran. Vaše informace nikomu neprodáváme ani nepronajímáme."
+    },
+    {
+      "title": "Používaná oprávnění",
+      "content": "Funlingo vyžaduje určitá oprávnění Chromu pouze ke svému správnému fungování: přístup ke stránkám streamovacích webů (např. Netflix, YouTube) za účelem zobrazení duálních titulků ve videopřehrávači; oprávnění ActiveTab za účelem vkládání titulků a umožnění interaktivity (pozastavení při najetí myší, překlady atd.). Tato oprávnění se používají pouze lokálně ve vašem zařízení. Funlingo nikdy neodesílá data ze stránek ani obsah videí na žádný externí server."
+    },
+    {
+      "title": "Zpracování dat",
+      "content": "Veškeré vykreslování titulků, překlady i interakce při najetí myší probíhají lokálně ve vašem prohlížeči. Pokud budoucí funkce budou využívat API pro překlady nebo vyhledávání ve slovnících, požadavky budou odesílány anonymně a bez ukládání identifikátorů uživatele."
+    },
+    {
+      "title": "Služby třetích stran",
+      "content": "Funlingo se může připojovat k veřejným překladovým nebo slovníkovým API (například Google Translate API nebo podobným). Ty se používají pouze k získání významů slov nebo překladů a nepřenášejí žádnou identitu uživatele ani údaje o procházení."
+    },
+    {
+      "title": "Soukromí dětí",
+      "content": "Funlingo je bezpečné pro všechny věkové skupiny a vědomě neshromažďuje údaje od dětí mladších 13 let."
+    },
+    {
+      "title": "Zabezpečení",
+      "content": "Protože neukládáme osobní údaje, vaše informace zůstávají ve vašem zařízení. Dodržujeme osvědčené postupy, abychom zajistili, že skripty rozšíření jsou bezpečné a omezené na nezbytné domény."
+    },
+    {
+      "title": "Změny těchto zásad",
+      "content": "Tyto Zásady ochrany osobních údajů můžeme příležitostně aktualizovat. Pokud dojde k podstatným změnám, aktualizujeme Datum účinnosti a novou verzi zveřejníme na našem webu."
+    }
+  ],
+  "contact": {
+    "badge": "Ozvěte se nám",
+    "title": "Kontaktujte nás",
+    "text": "Máte-li otázky nebo obavy týkající se těchto Zásad ochrany osobních údajů, kontaktujte nás na adrese:"
+  },
+  "commitment": "Funlingo se zavazuje, že výuka jazyků prostřednictvím streamování bude bezpečná, soukromá a snadná."
+}

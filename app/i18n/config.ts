@@ -108,13 +108,24 @@ export function alternateLanguages(path = "/"): Record<string, string> {
 }
 
 /**
- * Paths that actually have a localized (`/[locale]/…`) page: the home page and
- * the platform pages (/fr/netflix …). Static export with dynamicParams=false,
+ * Paths that actually have a localized (`/[locale]/…`) page: the home page,
+ * the platform pages (/fr/netflix …) and the site pages (/fr/about …). Static export with dynamicParams=false,
  * so every other link must stay un-prefixed — otherwise nav/footer links on a
  * localized page (e.g. /fr/roadmap) would 404. Add paths here as more routes
  * get localized.
  */
-export const LOCALIZED_PATHS = new Set<string>(["/", ...PLATFORM_LINKS.map((p) => platformPath(p.slug))]);
+export const LOCALIZED_PATHS = new Set<string>([
+  "/",
+  ...PLATFORM_LINKS.map((p) => platformPath(p.slug)),
+  "/about",
+  "/roadmap",
+  "/chrome-extension",
+  "/support",
+  "/feedback",
+  "/uninstall",
+  "/privacy-policy",
+  "/compare/funlingo-vs-trancy-vs-immersive-translate",
+]);
 
 /**
  * Href for nav/footer links: localized only when a localized version of that

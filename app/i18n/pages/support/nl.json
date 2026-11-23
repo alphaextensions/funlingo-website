@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Hulp & support",
+    "description": "Krijg hulp van het Funlingo-team. Meld problemen, vraag functies aan of stel vragen over onze extensie om talen te leren."
+  },
+  "header": {
+    "title": "Hulp & support",
+    "subtitle": "Ons team helpt je graag om alles uit Funlingo te halen. Je kunt altijd contact opnemen."
+  },
+  "supportTypes": [
+    {
+      "title": "Technische support",
+      "description": "Problemen met de app, bugs of technische storingen",
+      "responseTime": "2-4 uur"
+    },
+    {
+      "title": "Functieverzoek",
+      "description": "Stel nieuwe functies of verbeteringen voor",
+      "responseTime": "1-2 dagen"
+    },
+    {
+      "title": "Algemene vraag",
+      "description": "Andere vragen of verzoeken om informatie",
+      "responseTime": "1-2 dagen"
+    }
+  ],
+  "responseLabel": "Reactie: {time}",
+  "successMessage": "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.",
+  "form": {
+    "nameLabel": "Naam",
+    "namePlaceholder": "Je volledige naam",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "jouw.email@example.com",
+    "issueTypeLabel": "Soort probleem",
+    "issueTypes": {
+      "technical": "Technische support",
+      "billing": "Facturering & account",
+      "feature": "Functieverzoek",
+      "general": "Algemene vraag",
+      "bug": "Bug melden"
+    },
+    "priorityLabel": "Prioriteit",
+    "priorities": {
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "high": "Hoog",
+      "urgent": "Dringend"
+    },
+    "subjectLabel": "Onderwerp",
+    "subjectPlaceholder": "Korte omschrijving van je probleem",
+    "messageLabel": "Bericht",
+    "messagePlaceholder": "Beschrijf je probleem zo gedetailleerd mogelijk...",
+    "attachmentsLabel": "Bijlagen (optioneel)",
+    "removeAttachment": "x",
+    "submit": "Supportverzoek versturen"
+  },
+  "contact": {
+    "title": "Contactgegevens",
+    "emailTitle": "Support via e-mail",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Discord-community",
+    "discordText": "Word lid voor directe hulp",
+    "responseTitle": "Reactietijd",
+    "responseText": "2-48 uur, afhankelijk van de prioriteit"
+  },
+  "beforeContact": {
+    "title": "Voordat je contact opneemt",
+    "tips": [
+      "Bekijk onze FAQ voor snelle antwoorden",
+      "Voeg indien mogelijk relevante screenshots toe",
+      "Beschrijf de stappen om het probleem te reproduceren",
+      "Vermeld je apparaat en app-versie"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Masukan - Bagikan Pendapatmu",
+    "description": "Bagikan masukanmu kepada tim Funlingo. Bantu kami membangun pengalaman belajar bahasa yang lebih baik untuk semua orang."
+  },
+  "header": {
+    "title": "Kami Ingin Mendengar Masukanmu",
+    "subtitle": "Masukanmu membantu kami membangun pengalaman belajar bahasa yang lebih baik untuk semua orang"
+  },
+  "validation": {
+    "name": "Silakan masukkan namamu.",
+    "email": "Silakan masukkan emailmu.",
+    "message": "Silakan masukkan masukanmu.",
+    "uninstallReason": "Silakan pilih setidaknya satu alasan menghapus Funlingo."
+  },
+  "submitError": "Terjadi kesalahan. Silakan coba lagi.",
+  "success": "Terima kasih atas masukanmu! Kami akan meninjaunya dengan saksama.",
+  "form": {
+    "nameLabel": "Nama",
+    "namePlaceholder": "Namamu",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "categoryLabel": "Kategori",
+    "categories": {
+      "feature": "Permintaan Fitur",
+      "bug": "Laporan Bug",
+      "improvement": "Saran Perbaikan",
+      "uninstall": "Alasan Menghapus",
+      "other": "Lainnya"
+    },
+    "satisfactionLabel": "Kepuasan Keseluruhan",
+    "satisfactionLevels": {
+      "1": "Sangat Tidak Puas",
+      "2": "Tidak Puas",
+      "3": "Netral",
+      "4": "Puas",
+      "5": "Sangat Puas"
+    },
+    "uninstall": {
+      "heading": "Mengapa kamu mempertimbangkan untuk menghapus Funlingo?",
+      "missingFeatures": "Fitur yang saya butuhkan tidak ada",
+      "notWorking": "Tidak berfungsi dengan baik",
+      "otherReasons": "Alasan lain",
+      "otherPlaceholder": "Sebutkan alasan lainnya..."
+    },
+    "featureDetailsLabel": "Detail Fitur",
+    "desiredFeatureLabel": "Ada Fitur yang Ingin Kami Buat?",
+    "featureDetailsPlaceholder": "Jelaskan fitur yang ingin kamu lihat...",
+    "desiredFeaturePlaceholder": "Fitur apa yang akan membuatmu berubah pikiran?",
+    "recommendLabel": "Apakah kamu akan merekomendasikan Funlingo kepada orang lain?",
+    "recommendOptions": {
+      "none": "Pilih opsi",
+      "definitely": "Pasti ya",
+      "probably": "Mungkin ya",
+      "unsure": "Tidak yakin",
+      "probablyNot": "Mungkin tidak",
+      "definitelyNot": "Pasti tidak"
+    },
+    "commentsLabel": "Komentar Tambahan",
+    "commentsPlaceholder": "Bagikan pemikiran, saran, atau detail tambahan...",
+    "submitting": "Mengirim...",
+    "submit": "Kirim Masukan"
+  },
+  "contact": {
+    "email": {
+      "title": "Kirim Email",
+      "description": "getfunlingo@gmail.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "@getfunlingo"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Ikuti halaman kami"
+    }
+  }
+}

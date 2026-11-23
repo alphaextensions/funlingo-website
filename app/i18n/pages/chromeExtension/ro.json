@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo pentru Chrome — Subtitrări duble și traducere AI",
+    "description": "Extensia gratuită Funlingo pentru Chrome: subtitrări duble și traducere AI pe Netflix, YouTube, Prime și altele, în peste 100 de limbi. Învață în timp ce te uiți."
+  },
+  "hero": {
+    "badge": "Extensie Chrome gratuită · Notă 4,8/5",
+    "title": "Extensia Funlingo pentru Chrome",
+    "subtitle": "Subtitrări duble și traducere AI gratuite pe Netflix, YouTube, Prime Video și încă 7 platforme. Învață oricare dintre peste 100 de limbi în timp ce te uiți.",
+    "addToChrome": "Adaugă în Chrome — Este gratuit",
+    "seeHowItWorks": "Vezi cum funcționează",
+    "note": "Nu e nevoie de cont · Se instalează în mai puțin de un minut"
+  },
+  "features": {
+    "title": "Tot ce-ți trebuie ca să înveți în timp ce te uiți",
+    "subtitle": "O singură extensie gratuită îți transformă site-urile preferate de streaming și învățare într-o sală de clasă pentru învățarea limbilor prin imersiune.",
+    "items": [
+      {
+        "title": "Subtitrări duble",
+        "description": "Vezi două piste de subtitrare deodată — în limba pe care o înveți și în limba ta maternă — direct în playerul video."
+      },
+      {
+        "title": "Traducere și definiții AI",
+        "description": "Treci cu mouse-ul peste orice cuvânt pentru traduceri AI instant, adaptate contextului, note de gramatică și exemple reale."
+      },
+      {
+        "title": "Caiet de vocabular",
+        "description": "Salvează orice cuvânt sau expresie cu un clic. Fiecare intrare păstrează traducerea și propoziția în care ai găsit-o."
+      },
+      {
+        "title": "100+ limbi",
+        "description": "De la spaniolă și japoneză la coreeană, germană, arabă și hindi — îți setezi limbile independent."
+      },
+      {
+        "title": "10 platforme",
+        "description": "Funcționează pe Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy și Coursera."
+      },
+      {
+        "title": "100% gratuit",
+        "description": "Fără paywall-uri, fără abonament premium, fără cont obligatoriu. Toate funcțiile sunt gratuite."
+      }
+    ]
+  },
+  "install": {
+    "title": "Instalare în mai puțin de un minut",
+    "subtitle": "Fără bătăi de cap la configurare. Adaugă Funlingo în Chrome și începe să înveți imediat.",
+    "steps": [
+      {
+        "title": "Deschide Chrome Web Store",
+        "description": "Accesează pagina Funlingo din Chrome Web Store folosind butonul de mai sus."
+      },
+      {
+        "title": "Dă clic pe Adaugă în Chrome",
+        "description": "Dă clic pe Adaugă în Chrome, apoi confirmă cu Adaugă extensia. Se instalează în câteva secunde."
+      },
+      {
+        "title": "Fixează Funlingo",
+        "description": "Fixează Funlingo în bara de instrumente, ca să fie mereu la un clic distanță în timp ce te uiți."
+      },
+      {
+        "title": "Apasă Play și învață",
+        "description": "Deschide Netflix, YouTube sau orice platformă compatibilă, iar subtitrările duble apar automat."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "subtitle": "Tot ce trebuie să știi despre extensia Funlingo pentru Chrome.",
+    "items": [
+      {
+        "question": "Extensia Funlingo pentru Chrome este gratuită?",
+        "answer": "Da. Extensia Funlingo pentru Chrome este 100% gratuită, fără costuri ascunse, abonamente premium sau paywall-uri. Primești subtitrări duble, traducere AI, definiții AI pentru cuvinte și caietul de vocabular fără niciun cost. Adaug-o în Chrome și începe să folosești imediat toate funcțiile, fără cont."
+      },
+      {
+        "question": "Pe ce platforme funcționează extensia Funlingo?",
+        "answer": "Funlingo funcționează pe 10 platforme: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy și Coursera. Subtitrările duble și traducerea AI se integrează direct în playerul video al fiecăreia, ca să poți învăța limbi străine în timp ce te uiți la filme, seriale, anime și cursuri online."
+      },
+      {
+        "question": "Cum instalez extensia Funlingo pentru Chrome?",
+        "answer": "Deschide pagina Funlingo din Chrome Web Store, dă clic pe Adaugă în Chrome, apoi confirmă cu clic pe Adaugă extensia. Fixează Funlingo în bara de instrumente, deschide orice platformă compatibilă, cum ar fi Netflix sau YouTube, iar subtitrările duble vor apărea automat. Totul durează mai puțin de un minut."
+      },
+      {
+        "question": "Extensia Funlingo acceptă limba mea?",
+        "answer": "Aproape sigur. Funlingo acceptă peste 100 de limbi pentru traducerea subtitrărilor, inclusiv spaniolă, franceză, japoneză, coreeană, mandarină, germană, portugheză, italiană, arabă, hindi și multe altele. Poți seta independent limba pe care o înveți și limba ta maternă, pentru o învățare reală cu subtitrări duble."
+      },
+      {
+        "question": "Este Funlingo o extensie Chrome sigură?",
+        "answer": "Da. Funlingo este publicat în Chrome Web Store oficial, unde este verificat de Google, și are nota 4,8 din 5 stele. Rulează local în browserul tău pentru a afișa subtitrările și nu îți cere să creezi un cont ca să începi să înveți."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Începe să înveți limbi străine în timp ce te uiți",
+    "subtitle": "Alătură-te miilor de cursanți care folosesc Funlingo pentru subtitrări duble și traducere AI gratuite pe 10 platforme.",
+    "addToChrome": "Adaugă în Chrome — Este gratuit",
+    "note": "Gratuit · Notă 4,8/5 în Chrome Web Store"
+  }
+}

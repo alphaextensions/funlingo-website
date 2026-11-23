@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Pomoc i wsparcie",
+    "description": "Uzyskaj pomoc i wsparcie od zespołu Funlingo. Zgłaszaj problemy, proponuj funkcje lub zadawaj pytania o nasze rozszerzenie do nauki języków."
+  },
+  "header": {
+    "title": "Pomoc i wsparcie",
+    "subtitle": "Nasz zespół pomoże Ci w pełni korzystać z Funlingo. Napisz do nas w dowolnej chwili."
+  },
+  "supportTypes": [
+    {
+      "title": "Wsparcie techniczne",
+      "description": "Problemy z aplikacją, błędy lub kwestie techniczne",
+      "responseTime": "2–4 godziny"
+    },
+    {
+      "title": "Propozycja funkcji",
+      "description": "Zaproponuj nowe funkcje lub ulepszenia",
+      "responseTime": "1–2 dni"
+    },
+    {
+      "title": "Pytanie ogólne",
+      "description": "Inne pytania lub prośby o informacje",
+      "responseTime": "1–2 dni"
+    }
+  ],
+  "responseLabel": "Odpowiedź: {time}",
+  "successMessage": "Dziękujemy za kontakt! Odpowiemy najszybciej, jak to możliwe.",
+  "form": {
+    "nameLabel": "Imię i nazwisko",
+    "namePlaceholder": "Twoje imię i nazwisko",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "twoj.email@example.com",
+    "issueTypeLabel": "Rodzaj zgłoszenia",
+    "issueTypes": {
+      "technical": "Wsparcie techniczne",
+      "billing": "Płatności i konto",
+      "feature": "Propozycja funkcji",
+      "general": "Pytanie ogólne",
+      "bug": "Zgłoszenie błędu"
+    },
+    "priorityLabel": "Priorytet",
+    "priorities": {
+      "low": "Niski",
+      "medium": "Średni",
+      "high": "Wysoki",
+      "urgent": "Pilny"
+    },
+    "subjectLabel": "Temat",
+    "subjectPlaceholder": "Krótki opis problemu",
+    "messageLabel": "Wiadomość",
+    "messagePlaceholder": "Opisz szczegółowo swój problem...",
+    "attachmentsLabel": "Załączniki (opcjonalnie)",
+    "removeAttachment": "x",
+    "submit": "Wyślij zgłoszenie"
+  },
+  "contact": {
+    "title": "Dane kontaktowe",
+    "emailTitle": "Wsparcie e-mailowe",
+    "emailValue": "getfunlingo@gmail.com",
+    "discordTitle": "Społeczność na Discordzie",
+    "discordText": "Dołącz, aby uzyskać pomoc na bieżąco",
+    "responseTitle": "Czas odpowiedzi",
+    "responseText": "2–48 godzin w zależności od priorytetu"
+  },
+  "beforeContact": {
+    "title": "Zanim się skontaktujesz",
+    "tips": [
+      "Zajrzyj do sekcji FAQ, aby szybko znaleźć odpowiedź",
+      "Jeśli to możliwe, dołącz odpowiednie zrzuty ekranu",
+      "Opisz kroki, które prowadzą do problemu",
+      "Podaj swoje urządzenie i wersję aplikacji"
+    ]
+  }
+}

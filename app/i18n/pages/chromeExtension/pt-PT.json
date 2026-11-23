@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Funlingo para Chrome — Legendas duplas e tradução com IA",
+    "description": "Extensão gratuita Funlingo para Chrome: legendas duplas e tradução com IA na Netflix, no YouTube, no Prime e mais, em mais de 100 línguas. Aprenda enquanto vê."
+  },
+  "hero": {
+    "badge": "Extensão gratuita para Chrome · Classificação 4,8/5",
+    "title": "Extensão Funlingo para Chrome",
+    "subtitle": "Legendas duplas e tradução com IA gratuitas na Netflix, no YouTube, no Prime Video e em mais 7 plataformas. Mais de 100 línguas para aprender enquanto vê.",
+    "addToChrome": "Adicionar ao Chrome — É grátis",
+    "seeHowItWorks": "Veja como funciona",
+    "note": "Não precisa de conta · Instala-se em menos de um minuto"
+  },
+  "features": {
+    "title": "Tudo o que precisa para aprender enquanto vê",
+    "subtitle": "Uma única extensão gratuita transforma os seus sites favoritos de streaming e aprendizagem numa sala de aula de línguas imersiva.",
+    "items": [
+      {
+        "title": "Legendas duplas",
+        "description": "Veja duas faixas de legendas ao mesmo tempo — na língua que está a aprender e na sua língua materna — diretamente no leitor de vídeo."
+      },
+      {
+        "title": "Tradução e definições com IA",
+        "description": "Passe o rato sobre qualquer palavra para obter de imediato traduções com IA adaptadas ao contexto, notas de gramática e frases de exemplo reais."
+      },
+      {
+        "title": "Caderno de vocabulário",
+        "description": "Guarde qualquer palavra ou expressão com um clique. Cada entrada mantém a tradução e a frase onde a encontrou."
+      },
+      {
+        "title": "100+ línguas",
+        "description": "Do espanhol e japonês ao coreano, alemão, árabe e hindi — defina as suas línguas de forma independente."
+      },
+      {
+        "title": "10 plataformas",
+        "description": "Compatível com Netflix, YouTube, Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy e Coursera."
+      },
+      {
+        "title": "100% gratuito",
+        "description": "Sem paywalls, sem plano premium, sem necessidade de conta. Todas as funcionalidades são gratuitas."
+      }
+    ]
+  },
+  "install": {
+    "title": "Instale em menos de um minuto",
+    "subtitle": "Sem complicações na configuração. Adicione o Funlingo ao Chrome e comece a aprender de imediato.",
+    "steps": [
+      {
+        "title": "Abra a Chrome Web Store",
+        "description": "Visite a página do Funlingo na Chrome Web Store através do botão acima."
+      },
+      {
+        "title": "Clique em Adicionar ao Chrome",
+        "description": "Clique em Adicionar ao Chrome e confirme com Adicionar extensão. A instalação demora segundos."
+      },
+      {
+        "title": "Afixe o Funlingo",
+        "description": "Afixe o Funlingo na barra de ferramentas para o ter sempre à distância de um clique enquanto vê."
+      },
+      {
+        "title": "Carregue em Play e aprenda",
+        "description": "Abra a Netflix, o YouTube ou qualquer plataforma compatível e as legendas duplas aparecem automaticamente."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "subtitle": "Tudo sobre a extensão Funlingo para Chrome.",
+    "items": [
+      {
+        "question": "A extensão Funlingo para Chrome é gratuita?",
+        "answer": "Sim. A extensão Funlingo para Chrome é 100% gratuita, sem custos ocultos, planos premium ou paywalls. Tem acesso a legendas duplas, tradução com IA, definições de palavras com IA e ao caderno de vocabulário sem pagar nada. Basta adicioná-la ao Chrome e começar a usar todas as funcionalidades de imediato, sem precisar de conta."
+      },
+      {
+        "question": "Em que plataformas funciona a extensão Funlingo?",
+        "answer": "O Funlingo funciona em 10 plataformas: Netflix, YouTube, Amazon Prime Video, Disney+ Hotstar, Apple TV, Crunchyroll, Tubi, bilibili, Udemy e Coursera. As legendas duplas e a tradução com IA integram-se diretamente no leitor de vídeo de cada uma, para que possa aprender línguas enquanto vê filmes, séries, anime e cursos online."
+      },
+      {
+        "question": "Como instalo a extensão Funlingo para Chrome?",
+        "answer": "Abra a página do Funlingo na Chrome Web Store, clique em Adicionar ao Chrome e confirme clicando em Adicionar extensão. Afixe o Funlingo na barra de ferramentas, abra qualquer plataforma compatível, como a Netflix ou o YouTube, e as legendas duplas aparecem automaticamente. Todo o processo demora menos de um minuto."
+      },
+      {
+        "question": "A extensão Funlingo suporta a minha língua?",
+        "answer": "Quase de certeza. O Funlingo suporta mais de 100 línguas para tradução de legendas, incluindo espanhol, francês, japonês, coreano, mandarim, alemão, português, italiano, árabe, hindi e muitas mais. Pode definir a língua que está a aprender e a sua língua materna de forma independente, para uma verdadeira aprendizagem com legendas duplas."
+      },
+      {
+        "question": "O Funlingo é uma extensão segura para Chrome?",
+        "answer": "Sim. O Funlingo está publicado na Chrome Web Store oficial, onde é analisado pela Google, e tem uma classificação de 4,8 em 5 estrelas. Funciona localmente no seu navegador para apresentar as legendas e não exige que crie uma conta para começar a aprender."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Comece a aprender línguas enquanto vê",
+    "subtitle": "Junte-se a milhares de pessoas que usam o Funlingo para ter legendas duplas e tradução com IA gratuitas em 10 plataformas.",
+    "addToChrome": "Adicionar ao Chrome — É grátis",
+    "note": "Gratuito · Classificação 4,8/5 na Chrome Web Store"
+  }
+}

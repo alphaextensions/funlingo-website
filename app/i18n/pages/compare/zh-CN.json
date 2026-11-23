@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Funlingo vs Trancy vs Immersive Translate：双语字幕工具对比",
+    "description": "Funlingo、Trancy 与 Immersive Translate 功能详细对比。了解为什么 Funlingo 是在 Netflix 和 YouTube 上使用双语字幕的最佳免费选择。"
+  },
+  "hero": {
+    "badge": "详细对比",
+    "titleLine1": "Funlingo vs. Trancy vs.",
+    "titleLine2": "Immersive Translate",
+    "subtitle": "不确定哪款语言学习扩展最适合你？我们为你拆解 2026 年主流工具的功能、价格和能力。"
+  },
+  "table": {
+    "ariaLabel": "Funlingo、Trancy 与 Immersive Translate 的功能对比",
+    "featureHeader": "功能",
+    "funlingoHeader": "Funlingo",
+    "trancyHeader": "Trancy",
+    "immersiveHeader": "Immersive Translate",
+    "rows": [
+      {
+        "feature": "单词弹窗",
+        "sub": "母语释义 +“查看例句”（独有）",
+        "fun": "弹窗包含母语释义 + 查看例句（独特体验）。",
+        "trancy": "弹窗内没有查看例句。",
+        "immersive": "不支持。"
+      },
+      {
+        "feature": "行内母语释义",
+        "sub": "难词括号标注（独有）",
+        "fun": "为选中词或难词在行内以括号标注母语释义。",
+        "trancy": "不支持。",
+        "immersive": "不支持。"
+      },
+      {
+        "feature": "逐词发音",
+        "sub": "（拼读 + 音频）",
+        "fun": "逐词发音（拼读提示 + 音频 + 慢速播放）。",
+        "trancy": "有限 / 具备 TTS 功能；逐词拼读界面无明确说明。",
+        "immersive": "TTS 有限；无逐词拼读界面的说明。"
+      },
+      {
+        "feature": "点击查看语境 AI",
+        "sub": "解释（短语与用法说明）",
+        "fun": "内置点击即解释的 AI 模块（短语级语境）。",
+        "trancy": "提供语法/分析工具；具备语境解释流程。",
+        "immersive": "有部分语境翻译功能；播放器内体验不同。"
+      },
+      {
+        "feature": "保存生词与复习",
+        "sub": "卡组",
+        "fun": "保存到生词本 + 复习列表 / 导出；内置复习体验。",
+        "trancy": "可保存/收藏，但完整复习卡组功能有限或偏向学习模式。",
+        "immersive": "未公开说明有集成的复习卡组。"
+      },
+      {
+        "feature": "隐私与扩展",
+        "sub": "安全指标",
+        "fun": "明确的权限与隐私说明；轻量级扩展模式。",
+        "trancy": "提供隐私信息；企业版功能可能不同。",
+        "immersive": "因情况而异；公开文档有限。"
+      }
+    ],
+    "legend": {
+      "core": "核心功能",
+      "available": "支持该功能",
+      "limited": "有限 / 非主要功能"
+    }
+  },
+  "why": {
+    "title": "为什么选择 Funlingo？",
+    "items": [
+      "完全免费：核心功能没有任何付费限制。",
+      "广泛兼容：在 Netflix、YouTube 和 Prime 上流畅运行。",
+      "AI 驱动：提供语境解释，而不只是直译。",
+      "零打扰：在后台安静运行，观看时毫不干扰。"
+    ]
+  },
+  "cta": {
+    "title": "准备好换用 Funlingo 了吗？",
+    "body": "立即安装 Funlingo，亲自感受不同。不到 30 秒即可开始。",
+    "button": "获取 Funlingo Chrome 版"
+  }
+}

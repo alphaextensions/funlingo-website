@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Chính sách quyền riêng tư",
+    "description": "Chính sách quyền riêng tư của Funlingo. Tìm hiểu cách chúng tôi xử lý thông tin của bạn khi bạn sử dụng Tiện ích Chrome Funlingo và trang web của chúng tôi."
+  },
+  "translationNotice": "Bản dịch này được cung cấp để thuận tiện cho bạn. Nếu có bất kỳ khác biệt nào, phiên bản tiếng Anh của chính sách này sẽ được ưu tiên áp dụng.",
+  "englishLinkText": "Đọc phiên bản tiếng Anh",
+  "hero": {
+    "badge": "Quyền riêng tư của bạn rất quan trọng",
+    "title": "Chính sách quyền riêng tư",
+    "intro": "Chào mừng bạn đến với Funlingo. Quyền riêng tư của bạn rất quan trọng với chúng tôi. Chính sách quyền riêng tư này giải thích cách chúng tôi xử lý thông tin của bạn khi bạn sử dụng Tiện ích Chrome Funlingo và trang web của chúng tôi."
+  },
+  "effectiveDate": "Ngày hiệu lực: Tháng 11 năm 2025",
+  "sections": [
+    {
+      "title": "Thông tin chúng tôi không thu thập",
+      "content": "Chúng tôi xây dựng Funlingo để giúp người dùng tận hưởng phụ đề kép và học ngôn ngữ khi xem streaming mà không phải đánh đổi quyền riêng tư. Chúng tôi không sử dụng cookie hoặc công cụ phân tích của bên thứ ba để theo dõi hoạt động của bạn. Chúng tôi không bán hoặc cho thuê thông tin của bạn cho bất kỳ ai."
+    },
+    {
+      "title": "Các quyền được sử dụng",
+      "content": "Funlingo yêu cầu một số quyền nhất định của Chrome chỉ để hoạt động đúng cách: Quyền truy cập các trang web streaming (ví dụ: Netflix, YouTube) để hiển thị phụ đề kép trong trình phát video. Quyền ActiveTab để chèn phụ đề và cho phép tương tác (tạm dừng khi di chuột, dịch, v.v.). Các quyền này chỉ được sử dụng cục bộ trên thiết bị của bạn. Funlingo không bao giờ gửi dữ liệu trang hoặc nội dung video đến bất kỳ máy chủ bên ngoài nào."
+    },
+    {
+      "title": "Xử lý dữ liệu",
+      "content": "Mọi hoạt động hiển thị phụ đề, dịch thuật và tương tác khi di chuột đều diễn ra cục bộ trong trình duyệt của bạn. Nếu các tính năng trong tương lai sử dụng API để dịch hoặc tra từ điển, các yêu cầu sẽ được gửi ẩn danh và không lưu trữ mã định danh người dùng."
+    },
+    {
+      "title": "Dịch vụ của bên thứ ba",
+      "content": "Funlingo có thể kết nối với các API dịch thuật hoặc từ điển công khai (ví dụ: Google Translate API hoặc dịch vụ tương tự). Các API này chỉ được dùng để lấy nghĩa của từ hoặc bản dịch và không truyền bất kỳ thông tin danh tính người dùng hay dữ liệu duyệt web nào."
+    },
+    {
+      "title": "Quyền riêng tư của trẻ em",
+      "content": "Funlingo an toàn cho mọi đối tượng và không cố ý thu thập dữ liệu từ trẻ em dưới 13 tuổi."
+    },
+    {
+      "title": "Bảo mật",
+      "content": "Vì chúng tôi không lưu trữ dữ liệu cá nhân, thông tin của bạn vẫn ở trên thiết bị của bạn. Chúng tôi tuân thủ các thực tiễn tốt nhất để đảm bảo các tập lệnh của tiện ích an toàn và chỉ giới hạn trong các tên miền cần thiết."
+    },
+    {
+      "title": "Cập nhật chính sách này",
+      "content": "Chúng tôi có thể cập nhật Chính sách quyền riêng tư này theo thời gian. Nếu có thay đổi quan trọng, chúng tôi sẽ cập nhật Ngày hiệu lực và đăng phiên bản mới trên trang web của chúng tôi."
+    }
+  ],
+  "contact": {
+    "badge": "Liên hệ",
+    "title": "Liên hệ với chúng tôi",
+    "text": "Nếu bạn có câu hỏi hoặc thắc mắc về Chính sách quyền riêng tư này, vui lòng liên hệ với chúng tôi tại:"
+  },
+  "commitment": "Funlingo cam kết giúp việc học ngôn ngữ qua streaming trở nên an toàn, riêng tư và dễ dàng."
+}
