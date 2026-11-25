@@ -1,0 +1,61 @@
+.btn {
+  flex: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  color: var(--fl-on-accent, #ffffff);
+  padding: 0;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--fl-secondary), var(--fl-accent));
+  box-shadow: 0 6px 16px -6px var(--fl-secondary-glow, rgba(154, 28, 142, 0.6));
+  transition: transform var(--d-fast) cubic-bezier(0.22, 1, 0.36, 1), box-shadow var(--d-fast);
+}
+
+.btn svg { width: 13px; height: 13px; }
+
+/* Large variant — mirrors the extension's `.listen-btn.lg` used on the
+   front face of the slang / tiny-lesson deck. 52×52 button, 22×22 glyph.
+   See `extension-fun-learning.css` lines 529–530. Wave 12B. */
+.btn.sizeLg {
+  width: 52px;
+  height: 52px;
+}
+
+.btn.sizeLg svg { width: 22px; height: 22px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn:hover { transform: scale(1.08); }
+  .btn:active { transform: scale(0.92); }
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.btn[disabled],
+.btn.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn.loading { cursor: progress; opacity: 0.75; }
+
+/* Pulse ring when speaking — reduced-motion gated. */
+.btn.playing {
+  box-shadow: 0 6px 16px -6px var(--fl-secondary-glow, rgba(154, 28, 142, 0.6));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn.playing { animation: slangPulse 0.9s ease-in-out infinite; }
+}
+
+@keyframes slangPulse {
+  0%, 100% { box-shadow: 0 6px 16px -6px var(--fl-secondary-glow, rgba(154, 28, 142, 0.6)), 0 0 0 0 var(--fl-accent-glow, rgba(224, 49, 158, 0.4)); }
+  50% { box-shadow: 0 6px 16px -6px var(--fl-secondary-glow, rgba(154, 28, 142, 0.6)), 0 0 0 10px color-mix(in oklab, var(--fl-accent) 14%, transparent); }
+}

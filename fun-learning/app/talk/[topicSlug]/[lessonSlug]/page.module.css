@@ -1,0 +1,112 @@
+.wrap {
+  padding: var(--s-6) 0 var(--s-16);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  color: var(--fl-text-3);
+  font-size: 13px;
+  padding: 0 var(--s-2) var(--s-5);
+}
+.breadcrumbs a {
+  color: var(--fl-text-2);
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  color: var(--fl-text);
+}
+.breadCurrent {
+  color: var(--fl-text);
+}
+
+.header {
+  display: grid;
+  gap: var(--s-6);
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+@media (min-width: 960px) {
+  .header {
+    grid-template-columns: minmax(0, 1fr) minmax(380px, 480px);
+  }
+}
+
+.headSide {
+  padding: var(--s-6);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fl-accent);
+  margin-bottom: 10px;
+}
+
+.title {
+  margin: 0 0 var(--s-3);
+  font-size: clamp(22px, 2.8vw, 32px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.scene {
+  margin: 0 0 var(--s-5);
+  color: var(--fl-text-2);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.roles {
+  display: grid;
+  gap: var(--s-3);
+  margin: 0 0 var(--s-5);
+  padding: var(--s-4);
+  background: var(--fl-surface-2);
+  border-radius: var(--r-md);
+  border: 1px solid var(--fl-border);
+}
+.roles > div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: var(--s-3);
+}
+.roles dt {
+  color: var(--fl-text-3);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.roles dd {
+  margin: 0;
+  color: var(--fl-text);
+  font-size: 14px;
+}
+
+.tasks {
+  margin: 0;
+}
+.tasksHead {
+  margin: 0 0 var(--s-2);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--fl-text-2);
+  text-transform: uppercase;
+}
+.tasks ul {
+  margin: 0;
+  padding-left: var(--s-5);
+  color: var(--fl-text);
+  font-size: 14px;
+  line-height: 1.7;
+}

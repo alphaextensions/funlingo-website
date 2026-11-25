@@ -1,0 +1,14 @@
+/* Shared drill-label chip for Review drills — Dictation, Shadowing, Speaking.
+   Dedup of three identical rules in app/review/drills/*.module.css.
+   One contract: tiny uppercase tag on the drill accent. */
+
+.chip {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: var(--r-pill);
+  background: var(--fl-accent);
+  color: var(--fl-bg);
+  font-weight: 700;
+}

@@ -1,0 +1,451 @@
+{
+  "category": "emotions",
+  "label": "Emotions & Small Talk",
+  "chapters": [],
+  "packs": {
+    "en": {
+      "title": "English feelings & small talk — 25 natural lines",
+      "blurb": "Expressing how you feel, agreeing, pushing back, cheering someone up — in the register friends actually use.",
+      "level": "A2",
+      "items": [
+        { "text": "I'm absolutely over the moon about this.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0, "meta": { "emotion": "joy", "register": "casual" } },
+        { "text": "I'm really grateful you noticed.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1, "meta": { "emotion": "gratitude", "register": "neutral" } },
+        { "text": "That's such a weight off my mind.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2, "meta": { "emotion": "relief", "register": "neutral" } },
+        { "text": "Honestly, I'm a bit nervous about it.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3, "meta": { "emotion": "worry", "register": "casual" } },
+        { "text": "I've been feeling a bit flat lately.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4, "meta": { "emotion": "sadness", "register": "casual" } },
+
+        { "text": "Yeah, 100% — that's exactly how I see it.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5, "meta": { "emotion": "agree", "register": "casual" } },
+        { "text": "I'd second that, actually.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6, "meta": { "emotion": "agree", "register": "neutral" } },
+        { "text": "Couldn't have put it better myself.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7, "meta": { "emotion": "agree", "register": "neutral" } },
+
+        { "text": "Hmm, I see it a bit differently.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8, "meta": { "emotion": "disagree", "register": "polite" } },
+        { "text": "I'd push back on that gently.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9, "meta": { "emotion": "disagree", "register": "polite" } },
+        { "text": "I hear you, but I'm not sold.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10, "meta": { "emotion": "disagree", "register": "casual" } },
+        { "text": "Can I offer a different take?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11, "meta": { "emotion": "disagree", "register": "polite" } },
+
+        { "text": "You've got this — I believe in you.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12, "meta": { "emotion": "encourage", "register": "casual" } },
+        { "text": "One step at a time.", "translation": "One step at a time.", "chapter": 0, "order": 13, "meta": { "emotion": "encourage", "register": "neutral" } },
+        { "text": "Don't be too hard on yourself.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14, "meta": { "emotion": "encourage", "register": "neutral" } },
+        { "text": "Progress, not perfection.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15, "meta": { "emotion": "encourage", "register": "neutral" } },
+
+        { "text": "I'm so sorry — that's really tough.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16, "meta": { "emotion": "condole", "register": "polite" } },
+        { "text": "I can only imagine how hard that must be.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17, "meta": { "emotion": "condole", "register": "polite" } },
+        { "text": "Please let me know if there's anything I can do.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18, "meta": { "emotion": "condole", "register": "polite" } },
+
+        { "text": "How's everything been with you?", "translation": "How's everything been with you?", "chapter": 0, "order": 19, "meta": { "emotion": "smalltalk", "register": "casual" } },
+        { "text": "Up to anything fun this weekend?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20, "meta": { "emotion": "smalltalk", "register": "casual" } },
+        { "text": "Oh, that sounds amazing — tell me more.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21, "meta": { "emotion": "smalltalk", "register": "casual" } },
+        { "text": "I was just going to say the same thing.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22, "meta": { "emotion": "smalltalk", "register": "neutral" } },
+        { "text": "Right? That's wild.", "translation": "Right? That's wild.", "chapter": 0, "order": 23, "meta": { "emotion": "smalltalk", "register": "casual" } },
+        { "text": "I should get going, but let's catch up soon.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24, "meta": { "emotion": "smalltalk", "register": "casual" } }
+      ]
+    },
+    "es": {
+      "title": "Español — sentimientos y charla ligera (25 frases)",
+      "blurb": "Expresar cómo te sientes, estar de acuerdo, discrepar, animar — con el tono que usas con amigos.",
+      "level": "A2",
+      "items": [
+        { "text": "Estoy súper feliz con esto.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "Te agradezco mucho que lo hayas notado.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "Qué peso me quito de encima.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "La verdad, estoy un poco nervioso con esto.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "Últimamente me siento un poco apagado.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "Sí, totalmente — lo veo exactamente así.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "Yo también lo veo así, la verdad.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "No lo habría dicho mejor.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "Mmm, yo lo veo un poco distinto.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "Discrepo con cariño.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "Te entiendo, pero no me convence.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "¿Te puedo dar otro punto de vista?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "Tú puedes — confío en ti.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "Un paso a la vez.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "No seas tan duro contigo mismo.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "Avanzar, no ser perfecto.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "Lo siento mucho — tiene que ser muy duro.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "No puedo ni imaginarme lo difícil que debe ser.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "Avísame si puedo ayudarte en algo.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "¿Qué tal te va todo?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "¿Haces algo divertido este finde?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "Qué pasada — cuéntame más.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "Iba a decir lo mismo.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "¿A que sí? Qué locura.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "Me tengo que ir, pero quedamos pronto.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "fr": {
+      "title": "Français — émotions et small talk (25 phrases)",
+      "blurb": "Dire ce que tu ressens, acquiescer, nuancer, encourager — dans le ton qu'on prend entre amis.",
+      "level": "A2",
+      "items": [
+        { "text": "Je suis aux anges là-dessus.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "Je te remercie vraiment de l'avoir remarqué.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "Ça m'enlève un sacré poids.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "Honnêtement, je stresse un peu.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "Je me sens un peu à plat ces derniers temps.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "Oui, carrément — c'est exactement ce que je pense.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "Je suis complètement d'accord, en fait.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "Je n'aurais pas mieux dit.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "Hmm, moi je vois ça un peu différemment.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "Je nuancerais ça gentiment.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "Je t'entends, mais tu ne m'as pas convaincu.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "Je peux proposer une autre lecture ?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "Tu vas y arriver — je crois en toi.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "Un pas à la fois.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "Ne sois pas trop dur avec toi-même.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "Le progrès, pas la perfection.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "Je suis vraiment désolé — c'est très dur.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "Je n'imagine pas à quel point ça doit être difficile.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "Dis-moi si je peux faire quelque chose.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "Comment ça va, toi, en ce moment ?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "Tu fais quelque chose de sympa ce week-end ?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "Oh, c'est génial — raconte-moi.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "J'allais justement dire la même chose.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "T'as vu, non ? C'est dingue.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "Je file, mais on se refait ça bientôt.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "de": {
+      "title": "Deutsch — Gefühle und Small Talk (25 Sätze)",
+      "blurb": "Sagen, wie du dich fühlst, zustimmen, widersprechen, aufmuntern — im Ton, den Freund:innen untereinander haben.",
+      "level": "A2",
+      "items": [
+        { "text": "Ich bin total aus dem Häuschen deswegen.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "Ich bin dir echt dankbar, dass du es gemerkt hast.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "Mir fällt ein echter Stein vom Herzen.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "Ehrlich gesagt, ich bin ein bisschen nervös.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "In letzter Zeit fühle ich mich etwas ausgelaugt.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "Ja, zu 100 % — genau so sehe ich das auch.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "Dem schließe ich mich an.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "Besser hätte ich's nicht sagen können.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "Hmm, ich sehe das ein bisschen anders.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "Da würde ich sanft widersprechen.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "Ich verstehe dich, aber überzeugt bin ich nicht.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "Darf ich eine andere Sicht einbringen?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "Du schaffst das — ich glaube an dich.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "Schritt für Schritt.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "Sei nicht so hart zu dir selbst.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "Fortschritt, nicht Perfektion.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "Das tut mir sehr leid — das ist richtig hart.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "Ich kann mir nur vorstellen, wie schwer das sein muss.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "Sag Bescheid, wenn ich irgendwas tun kann.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "Wie läuft's bei dir sonst?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "Hast du am Wochenende was Schönes vor?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "Oh, klingt super — erzähl mehr.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "Wollte ich gerade genau dasselbe sagen.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "Oder? Verrückt.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "Ich muss los, aber wir müssen uns bald wiedersehen.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "it": {
+      "title": "Italiano — emozioni e small talk (25 frasi)",
+      "blurb": "Dire come stai, essere d'accordo, non esserlo, dare coraggio — nel tono che usi con gli amici.",
+      "level": "A2",
+      "items": [
+        { "text": "Sono al settimo cielo per questa cosa.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "Ti ringrazio davvero di averlo notato.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "Mi hai tolto un peso dallo stomaco.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "A dire il vero sono un po' nervoso.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "Ultimamente mi sento un po' sotto tono.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "Sì, assolutamente — la vedo esattamente così.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "Confermo quello che hai detto.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "Non avrei saputo dirlo meglio.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "Mmm, io la vedo un po' diversa.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "Dissento con delicatezza.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "Ti capisco, ma non mi convince.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "Posso proporre un altro punto di vista?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "Ce la fai — credo in te.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "Un passo alla volta.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "Non essere troppo duro con te stesso.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "Progresso, non perfezione.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "Mi dispiace tantissimo — è davvero dura.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "Non riesco a immaginare quanto sia difficile.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "Fammi sapere se posso fare qualcosa.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "Come va, tutto bene da te?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "Fai qualcosa di divertente nel weekend?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "Oh, che bello — raccontami tutto.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "Stavo per dire la stessa cosa.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "Vero? Pazzesco.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "Devo scappare, ma ci risentiamo presto.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "pt": {
+      "title": "Português — sentimentos e small talk (25 frases)",
+      "blurb": "Dizer como você se sente, concordar, discordar, incentivar — no tom de amigos de verdade.",
+      "level": "A2",
+      "items": [
+        { "text": "Estou nas nuvens com isso.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "Fico muito grato que você percebeu.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "Tirou um peso enorme das minhas costas.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "Sinceramente, estou meio nervoso com isso.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "Ultimamente eu tenho me sentido meio pra baixo.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "Pô, 100% — é exatamente o que eu acho.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "Também acho isso, com certeza.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "Eu não teria dito melhor.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "Hmm, eu enxergo de um jeito um pouco diferente.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "Eu discordaria com carinho.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "Entendo seu ponto, mas não me convenceu.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "Posso oferecer outra visão?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "Você consegue — eu acredito em você.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "Um passo de cada vez.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "Não seja tão duro com você mesmo.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "Progresso, não perfeição.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "Sinto muito mesmo — isso é bem difícil.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "Eu nem consigo imaginar o quanto é difícil.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "Me avise se tem algo que eu possa fazer.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "Como anda tudo com você?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "Vai fazer algo divertido no fim de semana?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "Nossa, que legal — conta mais.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "Eu ia falar exatamente isso.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "Né? Que loucura.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "Vou indo, mas vamos marcar algo em breve.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "ja": {
+      "title": "日本語 — 気持ちと雑談(25フレーズ)",
+      "blurb": "うれしい、心配、同意、反論、励まし — 友達や同僚と本当に使う言い回し。",
+      "level": "A2",
+      "items": [
+        { "text": "本当にうれしくて飛び跳ねたい気分です。", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "気づいてくれて本当にありがとう。", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "肩の荷が下りました。", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "正直、ちょっと緊張してるんです。", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "最近ちょっと気分が落ちてるんです。", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "うん、ほんとそれ — 全く同感。", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "それ、賛成です。", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "それ以上うまく言えません。", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "うーん、ちょっと違う見方なんです。", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "やんわり反対したいです。", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "言いたいことはわかるけど、納得しきれないです。", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "別の見方を話してもいいですか?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "大丈夫、やれるよ。信じてる。", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "一歩ずつでいいから。", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "自分に厳しくしすぎないで。", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "完璧じゃなくて、前に進むことが大事。", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "本当に残念です — それは辛いですね。", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "どれだけ大変か、想像もつきません。", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "何かできることがあれば言ってください。", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "最近はどうですか?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "週末、何か楽しい予定ありますか?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "へぇ、すごい — もっと聞かせて。", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "ちょうど同じこと言おうとしてた。", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "だよね?信じられない。", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "そろそろ行くね、また近いうちに会おう。", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "ko": {
+      "title": "한국어 — 감정과 스몰 토크 (25 문장)",
+      "blurb": "기분 표현, 동의, 반박, 격려, 위로 — 친구들이 실제 쓰는 톤으로.",
+      "level": "A2",
+      "items": [
+        { "text": "이거 때문에 완전 날아갈 것 같아요.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "알아봐 주셔서 정말 감사해요.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "마음의 짐을 덜었어요.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "솔직히 좀 긴장돼요.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "요즘 좀 기운이 없어요.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "완전 공감 — 저도 똑같이 생각해요.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "그 말에 동의해요.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "저도 그보다 더 잘 말 못 했을 거예요.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "음, 저는 조금 다르게 봐요.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "조심스럽게 다른 의견이에요.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "말씀은 이해하는데 아직 설득되진 않았어요.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "다른 관점 하나 드려도 될까요?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "할 수 있어요 — 저는 믿어요.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "한 걸음씩 가면 돼요.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "너무 자책하지 마세요.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "완벽이 아니라 성장이 중요해요.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "정말 유감이에요 — 많이 힘드시겠어요.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "얼마나 힘든지 상상도 안 돼요.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "제가 도울 수 있는 거 있으면 말씀 주세요.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "요즘 어떻게 지내요?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "주말에 뭐 재밌는 거 해요?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "와, 대박이네요 — 더 얘기해 봐요.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "저도 방금 똑같은 말 하려 했어요.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "그치? 진짜 신기해요.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "저 이만 가봐야 하는데 조만간 또 봐요.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "zh": {
+      "title": "中文 — 情绪与闲聊 (25 句)",
+      "blurb": "表达感受、同意、反驳、鼓励、安慰 — 用朋友之间真实的语气。",
+      "level": "A2",
+      "items": [
+        { "text": "我真的开心得飞起来。", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "你能注意到真的太感谢了。", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "一下子轻松多了。", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "说实话,我有点紧张。", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "最近感觉有点没劲。", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "完全同意 — 我也这么想。", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "我也这么觉得。", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "我没法说得比这更好。", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "嗯,我看法有点不太一样。", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "我想温和地提个不同意见。", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "我听到了,但我还没被说服。", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "可以让我说另一种看法吗?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "你一定可以的 — 我相信你。", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "一步一步来就好。", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "别对自己太苛刻。", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "进步,不是完美。", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "真的很遗憾 — 这事太难了。", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "我都没法想象这有多难。", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "如果有什么我能帮的,告诉我。", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "你最近怎么样?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "周末有什么好玩的安排吗?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "哇,太棒了 — 再说说。", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "我刚也正要说这个。", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "对吧?太夸张了。", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "我得走了,改天再聊。", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "hi": {
+      "title": "हिंदी — भावनाएं और हल्की-फुल्की बातचीत (25 जुमले)",
+      "blurb": "ख़ुशी, घबराहट, सहमति, असहमति, हौसला — वही अंदाज़ जो दोस्तों के बीच इस्तेमाल होता है।",
+      "level": "A2",
+      "items": [
+        { "text": "मैं इस बात से बेहद ख़ुश हूं।", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "शुक्रिया कि आपने ध्यान दिया।", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "कितना बड़ा बोझ कम हो गया।", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "सच कहूं तो थोड़ा घबराया हुआ हूं।", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "कुछ दिनों से थोड़ा सुस्त महसूस कर रहा हूं।", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "हां, बिल्कुल — मेरा भी यही सोचना है।", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "मुझे भी यही लगता है, सच में।", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "इससे बेहतर मैं भी नहीं कह सकता था।", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "हम्म, मैं इसे थोड़ा अलग तरीके से देखता हूं।", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "मैं नरमी से असहमत होना चाहूंगा।", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "आपकी बात समझ रहा हूं, पर पूरी तरह सहमत नहीं हूं।", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "क्या मैं एक अलग नज़रिया रख सकता हूं?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "तुम कर लोगे — मुझे यक़ीन है।", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "एक-एक क़दम करके।", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "अपने आप पर इतना सख़्त मत बनो।", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "कामयाबी नहीं, आगे बढ़ना मायने रखता है।", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "मुझे बहुत अफ़सोस है — यह सचमुच मुश्किल है।", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "अंदाज़ा लगा सकता हूं कि यह कितना कठिन होगा।", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "अगर मैं कुछ कर सकता हूं तो ज़रूर बताइए।", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "और सब कैसा चल रहा है?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "इस वीकेंड कुछ मज़ेदार कर रहे हो?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "वाह, मस्त है — और बताओ।", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "मैं भी बस यही कहने वाला था।", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "है ना? पागलपन है।", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "मुझे अब निकलना है, पर जल्दी फिर मिलते हैं।", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "tr": {
+      "title": "Türkçe — duygular ve küçük sohbet (25 cümle)",
+      "blurb": "Hislerini anlatma, onaylama, nazikçe karşı çıkma, moral verme — arkadaşlarla kullandığın tonla.",
+      "level": "A2",
+      "items": [
+        { "text": "Bu konuda eteklerim zil çalıyor.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "Fark ettiğin için gerçekten teşekkürler.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "İçimden koca bir yük kalktı.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "Açıkçası biraz heyecanlıyım.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "Son zamanlarda biraz keyifsizim.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "Evet, kesinlikle — ben de aynen öyle görüyorum.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "Buna katılıyorum aslında.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "Ben daha iyi anlatamazdım.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "Hmm, ben biraz farklı görüyorum.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "Buna nazikçe itiraz ederim.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "Seni anlıyorum ama ikna olmuş değilim.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "Farklı bir bakış açısı sunabilir miyim?", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "Yapabilirsin — sana inanıyorum.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "Adım adım gidelim.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "Kendine fazla yüklenme.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "Mükemmellik değil, ilerleme.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "Çok üzüldüm — gerçekten zor bir durum.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "Ne kadar zor olduğunu tahmin bile edemiyorum.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "Yapabileceğim bir şey varsa lütfen söyle.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "Bu aralar senden ne haber?", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "Hafta sonu güzel bir planın var mı?", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "Vay, harika — daha anlat.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "Ben de tam aynısını söyleyecektim.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "Değil mi? Çılgın bir şey.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "Ben kaçmalıyım ama yakında tekrar görüşelim.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    },
+    "ar": {
+      "title": "العربية — المشاعر والحديث الخفيف (25 جملة)",
+      "blurb": "التعبير عن شعورك، الموافقة، الاعتراض، التشجيع، المواساة — بالأسلوب الذي يستعمله الأصدقاء.",
+      "level": "A2",
+      "items": [
+        { "text": "أنا سعيد جداً لدرجة أنني أطير فرحاً.", "translation": "I'm absolutely over the moon about this.", "chapter": 0, "order": 0 },
+        { "text": "ممتن حقاً أنك لاحظت.", "translation": "I'm really grateful you noticed.", "chapter": 0, "order": 1 },
+        { "text": "ارتاح بالي كثيراً.", "translation": "That's such a weight off my mind.", "chapter": 0, "order": 2 },
+        { "text": "بصراحة أنا متوتر قليلاً.", "translation": "Honestly, I'm a bit nervous about it.", "chapter": 0, "order": 3 },
+        { "text": "في الفترة الأخيرة أشعر بالخمول قليلاً.", "translation": "I've been feeling a bit flat lately.", "chapter": 0, "order": 4 },
+
+        { "text": "نعم، تماماً — هذا بالضبط ما أراه.", "translation": "Yeah, 100% — that's exactly how I see it.", "chapter": 0, "order": 5 },
+        { "text": "أؤيّد ذلك فعلاً.", "translation": "I'd second that, actually.", "chapter": 0, "order": 6 },
+        { "text": "لم أكن لأقولها أفضل من ذلك.", "translation": "Couldn't have put it better myself.", "chapter": 0, "order": 7 },
+
+        { "text": "ممم، أنا أراها بشكل مختلف قليلاً.", "translation": "Hmm, I see it a bit differently.", "chapter": 0, "order": 8 },
+        { "text": "أختلف معك بلطف.", "translation": "I'd push back on that gently.", "chapter": 0, "order": 9 },
+        { "text": "أفهمك، لكنني لم أقتنع بعد.", "translation": "I hear you, but I'm not sold.", "chapter": 0, "order": 10 },
+        { "text": "هل أستطيع تقديم وجهة نظر أخرى؟", "translation": "Can I offer a different take?", "chapter": 0, "order": 11 },
+
+        { "text": "ستنجح — أنا أثق بك.", "translation": "You've got this — I believe in you.", "chapter": 0, "order": 12 },
+        { "text": "خطوة بخطوة.", "translation": "One step at a time.", "chapter": 0, "order": 13 },
+        { "text": "لا تكن قاسياً على نفسك.", "translation": "Don't be too hard on yourself.", "chapter": 0, "order": 14 },
+        { "text": "التقدم أهم من الكمال.", "translation": "Progress, not perfection.", "chapter": 0, "order": 15 },
+
+        { "text": "آسف جداً — هذا أمر صعب فعلاً.", "translation": "I'm so sorry — that's really tough.", "chapter": 0, "order": 16 },
+        { "text": "لا أستطيع تخيّل كم هو صعب.", "translation": "I can only imagine how hard that must be.", "chapter": 0, "order": 17 },
+        { "text": "من فضلك قل لي إن كان بإمكاني فعل شيء.", "translation": "Please let me know if there's anything I can do.", "chapter": 0, "order": 18 },
+
+        { "text": "كيف الأحوال عندك عموماً؟", "translation": "How's everything been with you?", "chapter": 0, "order": 19 },
+        { "text": "عندك خطط ممتعة لعطلة نهاية الأسبوع؟", "translation": "Up to anything fun this weekend?", "chapter": 0, "order": 20 },
+        { "text": "واو، رائع — أخبرني أكثر.", "translation": "Oh, that sounds amazing — tell me more.", "chapter": 0, "order": 21 },
+        { "text": "كنت على وشك قول الشيء نفسه.", "translation": "I was just going to say the same thing.", "chapter": 0, "order": 22 },
+        { "text": "صحيح؟ شيء جنوني.", "translation": "Right? That's wild.", "chapter": 0, "order": 23 },
+        { "text": "عليّ الذهاب، لكن لنلتقي قريباً.", "translation": "I should get going, but let's catch up soon.", "chapter": 0, "order": 24 }
+      ]
+    }
+  }
+}

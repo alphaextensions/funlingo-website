@@ -1,0 +1,69 @@
+/* EmptyState — warm first-use card used across every list page.
+   Ported from app/page.module.css empty-state style.
+
+   Wave 4 design-polish: the gradient-pill button rules used to live here
+   as `.primary` + `.secondary`. They are now owned by `CtaButton.module.css`
+   so a single source of truth governs the hover-lift, the glow, and the
+   `prefers-reduced-motion` gate. The `.actions` row still owns layout. */
+
+.wrap {
+  margin: var(--s-6) auto;
+  max-width: 720px;
+  padding: var(--s-10) var(--s-6);
+  text-align: center;
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--el-2);
+}
+
+.inline {
+  margin: var(--s-4) 0;
+  padding: var(--s-6) var(--s-5);
+  box-shadow: none;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fl-accent);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+}
+
+.body {
+  color: var(--fl-text-2);
+  margin: 0 auto var(--s-5);
+  max-width: 48ch;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.illustration {
+  margin: 0 auto var(--s-4);
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-accent);
+}
+.illustration svg { width: 32px; height: 32px; }

@@ -1,0 +1,66 @@
+{
+  "_about": "Wave 6 curated podcast feeds. We only store feed metadata — users play audio in their podcast client of choice (we don't download episodes, per LEGAL rule 4). All feeds are public RSS. `verified` marks entries whose feed URL has been inspected manually.",
+  "categories": [
+    { "slug": "news", "label": "News" },
+    { "slug": "society-culture", "label": "Society & Culture" },
+    { "slug": "comedy", "label": "Comedy" },
+    { "slug": "education", "label": "Education" },
+    { "slug": "language-learning", "label": "Language learning" },
+    { "slug": "tech", "label": "Tech" },
+    { "slug": "business", "label": "Business" }
+  ],
+  "entries": [
+    { "lang": "en", "categorySlug": "news", "title": "The Daily", "feedUrl": "https://feeds.simplecast.com/54nAGcIl", "coverUrl": null, "description": "The New York Times' 20-minute daily news podcast.", "verified": true },
+    { "lang": "en", "categorySlug": "society-culture", "title": "This American Life", "feedUrl": "https://feed.thisamericanlife.org/talpodcast", "coverUrl": null, "description": "Weekly radio essays on American life.", "verified": true },
+    { "lang": "en", "categorySlug": "society-culture", "title": "Radiolab", "feedUrl": "https://feeds.simplecast.com/EmVW7VGp", "coverUrl": null, "description": "Science, philosophy, and sound-rich reporting.", "verified": true },
+    { "lang": "en", "categorySlug": "education", "title": "6 Minute English (BBC)", "feedUrl": "https://podcasts.files.bbci.co.uk/p02pc9tn.rss", "coverUrl": null, "description": "BBC Learning English — six minutes a day for new vocabulary.", "verified": true },
+    { "lang": "en", "categorySlug": "language-learning", "title": "The English We Speak", "feedUrl": "https://podcasts.files.bbci.co.uk/p02pc9zn.rss", "coverUrl": null, "description": "Idioms and slang from BBC Learning English.", "verified": true },
+    { "lang": "en", "categorySlug": "comedy", "title": "No Such Thing As A Fish", "feedUrl": "https://audioboom.com/channels/4947340.rss", "coverUrl": null, "description": "The QI elves share their favourite facts of the week.", "verified": true },
+    { "lang": "en", "categorySlug": "tech", "title": "Hard Fork", "feedUrl": "https://feeds.simplecast.com/l2i9YnTd", "coverUrl": null, "description": "The New York Times tech show.", "verified": true },
+    { "lang": "en", "categorySlug": "business", "title": "Planet Money", "feedUrl": "https://feeds.npr.org/510289/podcast.xml", "coverUrl": null, "description": "Economic stories from NPR.", "verified": true },
+
+    { "lang": "es", "categorySlug": "news", "title": "El Washington Post", "feedUrl": "https://feeds.washingtonpost.com/rss/el-washington-post", "coverUrl": null, "description": "Noticias en español del Washington Post.", "verified": false },
+    { "lang": "es", "categorySlug": "language-learning", "title": "Notes in Spanish", "feedUrl": "https://feeds.feedburner.com/NotesInSpanishIntermediate", "coverUrl": null, "description": "Conversations in Spanish at every level (intermediate feed shown).", "verified": true },
+    { "lang": "es", "categorySlug": "language-learning", "title": "Españolistos", "feedUrl": "https://anchor.fm/s/118f8dec/podcast/rss", "coverUrl": null, "description": "Colombian Spanish for intermediate learners.", "verified": false },
+    { "lang": "es", "categorySlug": "society-culture", "title": "Radio Ambulante", "feedUrl": "https://feeds.npr.org/510311/podcast.xml", "coverUrl": null, "description": "NPR's Spanish-language narrative podcast about Latin America.", "verified": true },
+    { "lang": "es", "categorySlug": "news", "title": "El Hilo", "feedUrl": "https://feeds.simplecast.com/CKpu8xWh", "coverUrl": null, "description": "Weekly news from Latin America, in Spanish.", "verified": true },
+    { "lang": "es", "categorySlug": "comedy", "title": "Nadie Sabe Nada", "feedUrl": "https://feeds.cadenaser.com/mrss/pages/pdf/nadie-sabe-nada/current/current.xml", "coverUrl": null, "description": "Spain's hit improv comedy radio show.", "verified": false },
+
+    { "lang": "fr", "categorySlug": "language-learning", "title": "Coffee Break French", "feedUrl": "https://omny.fm/shows/coffee-break-french/playlists/podcast.rss", "coverUrl": null, "description": "Beginner-to-intermediate French with Mark and Anna.", "verified": true },
+    { "lang": "fr", "categorySlug": "language-learning", "title": "Inner French", "feedUrl": "https://innerfrench.libsyn.com/rss", "coverUrl": null, "description": "Hugo's slow French for B1-B2 learners.", "verified": true },
+    { "lang": "fr", "categorySlug": "news", "title": "Journal en français facile", "feedUrl": "https://aod-rfi.akamaized.net/rfi/francais/audio/jff/journalfrancaisfacile.xml", "coverUrl": null, "description": "RFI's 10-minute news bulletin in slow French.", "verified": true },
+    { "lang": "fr", "categorySlug": "society-culture", "title": "Les Pieds sur Terre", "feedUrl": "https://radiofrance-podcast.net/podcast09/rss_10492.xml", "coverUrl": null, "description": "France Culture — slice-of-life reporting.", "verified": true },
+    { "lang": "fr", "categorySlug": "comedy", "title": "Les Grosses Têtes", "feedUrl": "https://feeds.audiomeans.fr/feed/0edff23c-16a3-4ba0-bdfb-82d5c40fe5f6.xml", "coverUrl": null, "description": "France's long-running comedy quiz show.", "verified": false },
+
+    { "lang": "de", "categorySlug": "language-learning", "title": "Slow German", "feedUrl": "https://slowgerman.libsyn.com/rss", "coverUrl": null, "description": "Annik's slow German for all levels.", "verified": true },
+    { "lang": "de", "categorySlug": "language-learning", "title": "Coffee Break German", "feedUrl": "https://omny.fm/shows/coffee-break-german/playlists/podcast.rss", "coverUrl": null, "description": "Beginner-to-intermediate German lessons.", "verified": true },
+    { "lang": "de", "categorySlug": "news", "title": "Nachrichtenpodcast — DW Deutsch lernen", "feedUrl": "https://partner.dw.com/xml/rss-de-podcast-nachrichtentop", "coverUrl": null, "description": "Deutsche Welle — slow news in German for learners.", "verified": true },
+    { "lang": "de", "categorySlug": "society-culture", "title": "Alles gesagt?", "feedUrl": "https://zeit.de/podcast/alles-gesagt/index", "coverUrl": null, "description": "Zeit — unendlich lange interviews.", "verified": false },
+    { "lang": "de", "categorySlug": "news", "title": "11KM — der tagesschau-Podcast", "feedUrl": "https://feeds.br.de/11km-der-tagesschau-podcast/feed.xml", "coverUrl": null, "description": "ARD's flagship daily news podcast.", "verified": true },
+
+    { "lang": "it", "categorySlug": "language-learning", "title": "Coffee Break Italian", "feedUrl": "https://omny.fm/shows/coffee-break-italian/playlists/podcast.rss", "coverUrl": null, "description": "Beginner-to-intermediate Italian lessons.", "verified": true },
+    { "lang": "it", "categorySlug": "language-learning", "title": "News in Slow Italian", "feedUrl": "https://feeds.feedburner.com/newsinslowitalian/intermediate", "coverUrl": null, "description": "Weekly news read slowly in Italian.", "verified": false },
+    { "lang": "it", "categorySlug": "news", "title": "Il Mondo (Internazionale)", "feedUrl": "https://www.internazionale.it/podcast/il-mondo.rss", "coverUrl": null, "description": "Internazionale's daily news in Italian.", "verified": true },
+    { "lang": "it", "categorySlug": "society-culture", "title": "Morning (Il Post)", "feedUrl": "https://feeds.ilpost.it/morning", "coverUrl": null, "description": "Il Post's morning news podcast in Italian.", "verified": true },
+
+    { "lang": "pt", "categorySlug": "language-learning", "title": "News in Slow Portuguese", "feedUrl": "https://feeds.feedburner.com/newsinslowportuguese", "coverUrl": null, "description": "News read slowly in Portuguese for intermediate learners.", "verified": false },
+    { "lang": "pt", "categorySlug": "news", "title": "Café da Manhã (Folha)", "feedUrl": "https://feed.pod.link/1352320737.rss", "coverUrl": null, "description": "Folha de S.Paulo's daily news podcast.", "verified": false },
+    { "lang": "pt", "categorySlug": "society-culture", "title": "Mamilos", "feedUrl": "https://anchor.fm/s/aa5f7f0/podcast/rss", "coverUrl": null, "description": "Brazilian current affairs talk show.", "verified": false },
+
+    { "lang": "ja", "categorySlug": "language-learning", "title": "Nihongo con Teppei", "feedUrl": "https://anchor.fm/s/18b40ac/podcast/rss", "coverUrl": null, "description": "Teppei's beginner-to-intermediate Japanese chats.", "verified": true },
+    { "lang": "ja", "categorySlug": "language-learning", "title": "Japanese with Noriko", "feedUrl": "https://anchor.fm/s/5be43b14/podcast/rss", "coverUrl": null, "description": "Natural-speed Japanese for intermediate learners.", "verified": false },
+    { "lang": "ja", "categorySlug": "society-culture", "title": "ゆる言語学ラジオ (Yuru-Gengogaku Radio)", "feedUrl": "https://anchor.fm/s/4a3ef66c/podcast/rss", "coverUrl": null, "description": "A relaxed linguistics podcast in Japanese.", "verified": false },
+
+    { "lang": "ko", "categorySlug": "language-learning", "title": "Talk To Me In Korean", "feedUrl": "https://feeds.simplecast.com/8M9iqkRk", "coverUrl": null, "description": "TTMIK's long-running Korean lessons.", "verified": true },
+    { "lang": "ko", "categorySlug": "language-learning", "title": "Easy Korean Listening", "feedUrl": "https://anchor.fm/s/2d8f6318/podcast/rss", "coverUrl": null, "description": "Slow-spoken Korean for intermediate learners.", "verified": false },
+    { "lang": "ko", "categorySlug": "society-culture", "title": "지대넓얕", "feedUrl": "https://feeds.feedburner.com/didacy", "coverUrl": null, "description": "A wide-ranging Korean conversation show.", "verified": false },
+
+    { "lang": "zh", "categorySlug": "language-learning", "title": "Slow Chinese", "feedUrl": "https://slow-chinese.com/feed/podcast/", "coverUrl": null, "description": "Mandarin spoken slowly for intermediate learners.", "verified": true },
+    { "lang": "zh", "categorySlug": "language-learning", "title": "The Mandarin Companion", "feedUrl": "https://mandarincompanion.com/feed/podcast/", "coverUrl": null, "description": "Graded Mandarin audio stories.", "verified": false },
+    { "lang": "zh", "categorySlug": "society-culture", "title": "Sinica Podcast", "feedUrl": "https://sinicapodcast.libsyn.com/rss", "coverUrl": null, "description": "China-focused interviews (in English, but useful China context).", "verified": true },
+
+    { "lang": "ru", "categorySlug": "language-learning", "title": "RussianPod101", "feedUrl": "https://www.russianpod101.com/feed/podcast/", "coverUrl": null, "description": "Russian lessons at every level.", "verified": false },
+    { "lang": "ru", "categorySlug": "language-learning", "title": "Russian Progress", "feedUrl": "https://anchor.fm/s/16b43cf0/podcast/rss", "coverUrl": null, "description": "Natural Russian for intermediate learners.", "verified": false },
+    { "lang": "ru", "categorySlug": "news", "title": "Эхо Москвы — Утренний Разворот", "feedUrl": "https://echo.msk.ru/sounds/radio.rss", "coverUrl": null, "description": "Russian morning news and talk.", "verified": false }
+  ]
+}

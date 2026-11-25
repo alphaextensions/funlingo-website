@@ -1,0 +1,86 @@
+/* ============================================================
+   Card — the universal glass surface. Ported from
+   docs/design-reference/extension-fun-learning.css (card patterns).
+   ============================================================ */
+
+.card {
+  position: relative;
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  padding: var(--s-6);
+  box-shadow: var(--el-1);
+  transition: border-color var(--d-fast) var(--ease),
+              transform var(--d-fast) var(--ease),
+              box-shadow var(--d-base) var(--ease);
+  color: var(--fl-text);
+}
+
+/* `interactive` adds hover glow + lift. Also auto-applied when the card
+   is rendered via <a>, <button>, or has role="button". */
+.interactive {
+  cursor: pointer;
+}
+.interactive:hover,
+.card[role="button"]:hover,
+a.card:hover,
+button.card:hover {
+  border-color: var(--fl-border-2);
+  box-shadow: var(--el-2), var(--glow);
+}
+
+/* Wave 12F fix: gate the hover-lift transform so users with
+   prefers-reduced-motion: reduce don't get a bounce on every card. The
+   border + glow still fire (non-motion feedback is preserved). */
+@media (prefers-reduced-motion: no-preference) {
+  .interactive:hover,
+  .card[role="button"]:hover,
+  a.card:hover,
+  button.card:hover {
+    transform: translateY(-1px);
+  }
+  .interactive:active,
+  a.card:active,
+  button.card:active {
+    transform: translateY(0);
+  }
+}
+
+.flat {
+  background: var(--fl-surface-1);
+  box-shadow: none;
+}
+
+.compact {
+  padding: var(--s-4);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.cardEyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+  margin-bottom: 6px;
+}
+
+.cardBody {
+  color: var(--fl-text-2);
+  font-size: 14px;
+  line-height: 1.55;
+}

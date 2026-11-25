@@ -1,0 +1,507 @@
+{
+  "category": "travel",
+  "label": "Travel Essentials",
+  "chapters": [
+    { "id": 1, "name": "Airport" },
+    { "id": 2, "name": "Hotel" },
+    { "id": 3, "name": "Taxi & transport" },
+    { "id": 4, "name": "Restaurant" },
+    { "id": 5, "name": "Directions" },
+    { "id": 6, "name": "Shopping abroad" },
+    { "id": 7, "name": "Emergencies" }
+  ],
+  "packs": {
+    "en": {
+      "title": "English for travel — 28 lines you'll actually use",
+      "blurb": "From check-in to the pharmacy — the exact lines you'll say abroad, in order.",
+      "level": "A2",
+      "items": [
+        { "text": "I'd like a window seat if there's one free.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "Is my flight on time?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "I only have hand luggage.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "Where's the gate for flight BA 112?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "I have a reservation under Smith.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "What time is check-out?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "Could I get a wake-up call at 7?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "The Wi-Fi password, please?", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "Could you take me to this address?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "How much is it to the airport?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "Does this bus go to the old town?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "Where do I buy tickets?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "A table for two, please.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "Is this dish spicy?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "I'm allergic to nuts.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "Could we split the bill?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "Excuse me, how do I get to the station?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "Is it walking distance from here?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "Turn right at the next corner.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "Could you show me on the map?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "Could I try this on?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "Do you have a smaller size?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "Is there tax-free for tourists?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "Could I pay in euros?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "I've lost my passport.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "I need a pharmacy nearby.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "Please call the police.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "Could you help me — I don't speak the language.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "es": {
+      "title": "Español para viajar — 28 frases que sí vas a usar",
+      "blurb": "Del check-in a la farmacia — las frases exactas que dirás en el viaje, en orden.",
+      "level": "A2",
+      "items": [
+        { "text": "Quería un asiento de ventana si hay alguno libre.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "¿Mi vuelo sale a la hora?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "Solo llevo equipaje de mano.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "¿Dónde está la puerta de embarque del vuelo BA 112?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "Tengo una reserva a nombre de Smith.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "¿A qué hora es el check-out?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "¿Me pueden despertar a las 7?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "La contraseña del wifi, por favor.", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "¿Me puede llevar a esta dirección?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "¿Cuánto cuesta hasta el aeropuerto?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "¿Este autobús va al casco antiguo?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "¿Dónde se compran los billetes?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "Una mesa para dos, por favor.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "¿Este plato pica?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "Soy alérgico a los frutos secos.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "¿Podemos dividir la cuenta?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "Perdone, ¿cómo se va a la estación?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "¿Se puede ir andando desde aquí?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "Gira a la derecha en la próxima esquina.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "¿Me lo puede enseñar en el mapa?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "¿Me lo puedo probar?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "¿Tiene una talla más pequeña?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "¿Hay tax-free para turistas?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "¿Puedo pagar en euros?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "He perdido el pasaporte.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "Necesito una farmacia cerca.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "Por favor, llame a la policía.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "¿Me puede ayudar? No hablo el idioma.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "fr": {
+      "title": "Français pour voyager — 28 phrases vraiment utiles",
+      "blurb": "De l'enregistrement à la pharmacie — ce que tu vas dire en voyage, dans l'ordre.",
+      "level": "A2",
+      "items": [
+        { "text": "Je voudrais une place côté hublot s'il en reste.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "Mon vol est à l'heure ?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "Je n'ai qu'un bagage à main.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "C'est où, la porte d'embarquement pour le vol BA 112 ?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "J'ai une réservation au nom de Smith.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "C'est à quelle heure le check-out ?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "Vous pouvez me réveiller à 7 h ?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "Le mot de passe wifi, s'il vous plaît ?", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "Vous pouvez m'emmener à cette adresse ?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "C'est combien pour aller à l'aéroport ?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "Ce bus va à la vieille ville ?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "On achète les tickets où ?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "Une table pour deux, s'il vous plaît.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "C'est épicé, ce plat ?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "Je suis allergique aux fruits à coque.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "On peut partager l'addition ?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "Excusez-moi, comment je vais à la gare ?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "C'est à pied d'ici ?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "Tournez à droite au prochain coin.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "Vous pouvez me montrer sur la carte ?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "Je peux l'essayer ?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "Vous avez une taille plus petite ?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "Il y a la détaxe pour les touristes ?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "Je peux payer en euros ?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "J'ai perdu mon passeport.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "J'ai besoin d'une pharmacie près d'ici.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "S'il vous plaît, appelez la police.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "Vous pouvez m'aider ? Je ne parle pas la langue.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "de": {
+      "title": "Deutsch für die Reise — 28 Sätze, die du wirklich brauchst",
+      "blurb": "Vom Check-in bis zur Apotheke — die genauen Sätze für deine Reise, der Reihe nach.",
+      "level": "A2",
+      "items": [
+        { "text": "Ich hätte gern einen Fensterplatz, wenn noch einer frei ist.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "Ist mein Flug pünktlich?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "Ich habe nur Handgepäck.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "Wo ist das Gate für Flug BA 112?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "Ich habe eine Reservierung auf den Namen Smith.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "Um wie viel Uhr ist das Check-out?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "Könnten Sie mich um 7 wecken?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "Das WLAN-Passwort, bitte?", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "Könnten Sie mich zu dieser Adresse bringen?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "Wie viel kostet es zum Flughafen?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "Fährt dieser Bus in die Altstadt?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "Wo kann ich Fahrkarten kaufen?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "Einen Tisch für zwei, bitte.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "Ist dieses Gericht scharf?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "Ich bin allergisch gegen Nüsse.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "Können wir die Rechnung teilen?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "Entschuldigung, wie komme ich zum Bahnhof?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "Kann man von hier zu Fuß gehen?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "An der nächsten Ecke rechts abbiegen.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "Könnten Sie mir das auf der Karte zeigen?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "Kann ich das anprobieren?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "Haben Sie das eine Nummer kleiner?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "Gibt es Tax-Free für Touristen?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "Kann ich in Euro zahlen?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "Ich habe meinen Pass verloren.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "Ich brauche eine Apotheke in der Nähe.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "Bitte rufen Sie die Polizei.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "Können Sie mir helfen? Ich spreche die Sprache nicht.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "it": {
+      "title": "Italiano in viaggio — 28 frasi davvero utili",
+      "blurb": "Dal check-in alla farmacia — le frasi esatte per il tuo viaggio, in ordine.",
+      "level": "A2",
+      "items": [
+        { "text": "Vorrei un posto vicino al finestrino, se ce n'è uno libero.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "Il mio volo è in orario?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "Ho solo il bagaglio a mano.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "Dov'è l'uscita del volo BA 112?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "Ho una prenotazione a nome Smith.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "A che ora è il check-out?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "Potete svegliarmi alle 7?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "La password del wifi, per favore?", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "Mi può portare a questo indirizzo?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "Quant'è per andare in aeroporto?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "Questo autobus va al centro storico?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "Dove si comprano i biglietti?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "Un tavolo per due, per favore.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "È piccante questo piatto?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "Sono allergico alla frutta secca.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "Possiamo dividere il conto?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "Mi scusi, come arrivo alla stazione?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "Si può andare a piedi da qui?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "Giri a destra al prossimo angolo.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "Me lo può mostrare sulla mappa?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "Posso provarlo?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "Avete una taglia più piccola?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "C'è il tax-free per i turisti?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "Posso pagare in euro?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "Ho perso il passaporto.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "Mi serve una farmacia qui vicino.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "Per favore, chiamate la polizia.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "Mi può aiutare? Non parlo la lingua.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "pt": {
+      "title": "Português em viagem — 28 frases que você vai usar",
+      "blurb": "Do check-in à farmácia — as frases exatas pra sua viagem, em ordem.",
+      "level": "A2",
+      "items": [
+        { "text": "Eu queria uma poltrona na janela, se tiver.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "Meu voo está no horário?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "Só tenho bagagem de mão.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "Qual é o portão do voo BA 112?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "Tenho uma reserva no nome Smith.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "Que horas é o check-out?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "Pode me chamar às 7?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "A senha do wi-fi, por favor?", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "Pode me levar neste endereço?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "Quanto é até o aeroporto?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "Este ônibus vai pro centro histórico?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "Onde compro as passagens?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "Uma mesa para dois, por favor.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "Este prato é apimentado?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "Sou alérgico a castanhas.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "Dá pra dividir a conta?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "Com licença, como chego à estação?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "Dá pra ir a pé daqui?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "Vire à direita na próxima esquina.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "Pode me mostrar no mapa?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "Posso experimentar?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "Tem um tamanho menor?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "Tem tax-free para turistas?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "Posso pagar em euros?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "Perdi meu passaporte.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "Preciso de uma farmácia aqui perto.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "Por favor, chamem a polícia.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "Pode me ajudar? Eu não falo o idioma.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "ja": {
+      "title": "旅行の日本語 — 本当に使う28フレーズ",
+      "blurb": "チェックインから薬局まで — 旅行で実際に言うフレーズを順番に。",
+      "level": "A2",
+      "items": [
+        { "text": "空いていれば窓側の席がいいです。", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "私のフライトは定刻ですか?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "手荷物だけです。", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "BA112便のゲートはどこですか?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "スミスの名前で予約しています。", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "チェックアウトは何時ですか?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "7時にモーニングコールをお願いできますか?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "Wi-Fiのパスワードを教えてください。", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "この住所までお願いします。", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "空港までいくらですか?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "このバスは旧市街まで行きますか?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "切符はどこで買えますか?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "2名でお願いします。", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "この料理は辛いですか?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "ナッツアレルギーがあります。", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "お会計は別々にできますか?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "すみません、駅までどう行けばいいですか?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "ここから歩いて行けますか?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "次の角を右に曲がってください。", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "地図で見せていただけますか?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "試着してもいいですか?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "もう少し小さいサイズはありますか?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "観光客用の免税はありますか?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "ユーロで払えますか?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "パスポートをなくしました。", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "近くの薬局が必要です。", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "警察を呼んでください。", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "助けていただけますか — 言葉が話せないんです。", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "ko": {
+      "title": "여행 한국어 — 꼭 쓰는 28 문장",
+      "blurb": "체크인부터 약국까지 — 여행에서 실제로 하는 말, 순서대로.",
+      "level": "A2",
+      "items": [
+        { "text": "창가 자리로 부탁해요, 있다면요.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "제 비행기 정시 출발이에요?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "기내 수하물만 있어요.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "BA112편 게이트는 어디예요?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "스미스 이름으로 예약했어요.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "체크아웃은 몇 시예요?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "7시에 모닝콜 부탁드려요.", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "와이파이 비밀번호 좀 알려 주세요.", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "이 주소로 가 주시겠어요?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "공항까지 얼마예요?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "이 버스 구시가지로 가요?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "표는 어디서 사요?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "두 명 자리 부탁해요.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "이 음식 매워요?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "저 견과류 알레르기 있어요.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "따로 계산할 수 있을까요?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "실례지만, 역까지 어떻게 가요?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "여기서 걸어갈 수 있어요?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "다음 모퉁이에서 오른쪽으로 꺾으세요.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "지도로 보여 주실 수 있어요?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "입어 봐도 돼요?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "더 작은 사이즈 있어요?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "관광객용 택스프리 있어요?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "유로로 결제돼요?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "여권을 잃어버렸어요.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "근처 약국이 필요해요.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "경찰 좀 불러 주세요.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "도와주실 수 있어요? 이 나라 말을 못 해요.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "zh": {
+      "title": "旅行中文 — 真的会用的28句",
+      "blurb": "从值机到药店 — 旅行里真的会说的,按顺序学。",
+      "level": "A2",
+      "items": [
+        { "text": "有的话,我想要靠窗的位置。", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "我的航班正点吗?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "我只有手提行李。", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "BA112 航班的登机口在哪里?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "我用 Smith 的名字订的房。", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "退房是几点?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "能麻烦七点叫我起床吗?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "wifi 密码是多少?", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "麻烦带我去这个地址。", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "到机场多少钱?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "这班车去老城吗?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "车票在哪里买?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "两位,麻烦了。", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "这道菜辣吗?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "我对坚果过敏。", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "可以分开结吗?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "请问去火车站怎么走?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "从这里走路能到吗?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "下一个路口右转。", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "能在地图上指给我看吗?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "可以试穿吗?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "有小一号的吗?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "游客有免税吗?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "可以用欧元付吗?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "我的护照丢了。", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "附近哪里有药店?", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "请叫警察。", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "能帮我一下吗?我不会这里的语言。", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "hi": {
+      "title": "सफ़र की हिंदी — वाकई काम आने वाली 28 बातें",
+      "blurb": "चेक-इन से दवाख़ाने तक — सफ़र में सचमुच कही जाने वाली बातें, क्रम में।",
+      "level": "A2",
+      "items": [
+        { "text": "अगर खाली हो तो विंडो सीट चाहिए थी।", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "क्या मेरी फ़्लाइट समय पर है?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "मेरे पास सिर्फ़ हैंड लगेज है।", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "BA112 फ़्लाइट का गेट कहां है?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "मेरी बुकिंग स्मिथ के नाम से है।", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "चेक-आउट कितने बजे है?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "क्या 7 बजे वेक-अप कॉल मिल सकती है?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "वाई-फ़ाई का पासवर्ड बता दीजिए प्लीज़।", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "क्या आप मुझे इस पते पर ले जा सकते हैं?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "एयरपोर्ट तक कितना होगा?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "क्या यह बस पुराने शहर जाती है?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "टिकट कहां से मिलते हैं?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "दो लोगों के लिए टेबल, प्लीज़।", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "क्या यह डिश तीखी है?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "मुझे ड्राई फ़्रूट्स से एलर्जी है।", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "क्या बिल आधा-आधा कर सकते हैं?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "माफ़ कीजिए, स्टेशन कैसे जाऊं?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "क्या यहां से पैदल जा सकते हैं?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "अगले मोड़ पर दाएं मुड़िए।", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "क्या आप मुझे नक्शे पर दिखा सकते हैं?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "क्या मैं इसे पहन कर देख सकता हूं?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "क्या छोटा साइज़ है?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "क्या पर्यटकों के लिए टैक्स-फ़्री है?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "क्या मैं यूरो में दे सकता हूं?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "मेरा पासपोर्ट खो गया है।", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "मुझे पास में एक दवाख़ाना चाहिए।", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "कृपया पुलिस को बुलाइए।", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "क्या आप मदद कर सकते हैं? मुझे यहां की भाषा नहीं आती।", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "tr": {
+      "title": "Seyahat Türkçesi — Gerçekten kullanacağın 28 cümle",
+      "blurb": "Check-in'den eczaneye — seyahatte söyleyeceğin cümleler, sırasıyla.",
+      "level": "A2",
+      "items": [
+        { "text": "Boş varsa pencere kenarı istiyorum.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "Uçağım zamanında mı?", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "Yalnızca el bagajım var.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "BA112 uçuşunun kapısı nerede?", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "Smith adına rezervasyonum var.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "Check-out saat kaçta?", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "Beni 7'de uyandırabilir misiniz?", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "Wi-Fi şifresini alabilir miyim?", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "Beni bu adrese götürebilir misiniz?", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "Havalimanına ne kadar tutar?", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "Bu otobüs tarihi merkeze gider mi?", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "Bilet nereden alabilirim?", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "İki kişilik bir masa, lütfen.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "Bu yemek acı mı?", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "Kuruyemiş alerjim var.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "Hesabı bölüşebilir miyiz?", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "Pardon, istasyona nasıl giderim?", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "Buradan yürüme mesafesinde mi?", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "Bir sonraki köşeden sağa dönün.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "Haritada gösterebilir misiniz?", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "Deneyebilir miyim?", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "Daha küçük bedeni var mı?", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "Turistlere tax-free var mı?", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "Euro ile ödeyebilir miyim?", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "Pasaportumu kaybettim.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "Yakında bir eczaneye ihtiyacım var.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "Lütfen polisi arayın.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "Bana yardım edebilir misiniz? Dili bilmiyorum.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    },
+    "ar": {
+      "title": "عربية السفر — 28 جملة ستحتاجها فعلاً",
+      "blurb": "من تسجيل الوصول إلى الصيدلية — الجمل التي ستقولها في السفر، بالترتيب.",
+      "level": "A2",
+      "items": [
+        { "text": "أريد مقعداً بجانب النافذة إن كان متاحاً.", "translation": "I'd like a window seat if there's one free.", "chapter": 1, "order": 0 },
+        { "text": "هل رحلتي في موعدها؟", "translation": "Is my flight on time?", "chapter": 1, "order": 1 },
+        { "text": "معي حقيبة يد فقط.", "translation": "I only have hand luggage.", "chapter": 1, "order": 2 },
+        { "text": "أين بوابة رحلة BA 112؟", "translation": "Where's the gate for flight BA 112?", "chapter": 1, "order": 3 },
+
+        { "text": "لدي حجز باسم سميث.", "translation": "I have a reservation under Smith.", "chapter": 2, "order": 0 },
+        { "text": "في أي ساعة الخروج؟", "translation": "What time is check-out?", "chapter": 2, "order": 1 },
+        { "text": "هل يمكن أن توقظوني الساعة السابعة؟", "translation": "Could I get a wake-up call at 7?", "chapter": 2, "order": 2 },
+        { "text": "كلمة سر الواي فاي من فضلك؟", "translation": "The Wi-Fi password, please?", "chapter": 2, "order": 3 },
+
+        { "text": "هل يمكن أن توصلني إلى هذا العنوان؟", "translation": "Could you take me to this address?", "chapter": 3, "order": 0 },
+        { "text": "كم السعر إلى المطار؟", "translation": "How much is it to the airport?", "chapter": 3, "order": 1 },
+        { "text": "هل يذهب هذا الباص إلى المدينة القديمة؟", "translation": "Does this bus go to the old town?", "chapter": 3, "order": 2 },
+        { "text": "من أين أشتري التذاكر؟", "translation": "Where do I buy tickets?", "chapter": 3, "order": 3 },
+
+        { "text": "طاولة لشخصين من فضلك.", "translation": "A table for two, please.", "chapter": 4, "order": 0 },
+        { "text": "هل هذا الطبق حار؟", "translation": "Is this dish spicy?", "chapter": 4, "order": 1 },
+        { "text": "لدي حساسية من المكسرات.", "translation": "I'm allergic to nuts.", "chapter": 4, "order": 2 },
+        { "text": "هل يمكن أن نقسم الحساب؟", "translation": "Could we split the bill?", "chapter": 4, "order": 3 },
+
+        { "text": "عفواً، كيف أصل إلى المحطة؟", "translation": "Excuse me, how do I get to the station?", "chapter": 5, "order": 0 },
+        { "text": "هل يمكن المشي إليها من هنا؟", "translation": "Is it walking distance from here?", "chapter": 5, "order": 1 },
+        { "text": "انعطف يميناً عند الزاوية القادمة.", "translation": "Turn right at the next corner.", "chapter": 5, "order": 2 },
+        { "text": "هل يمكن أن تريني على الخريطة؟", "translation": "Could you show me on the map?", "chapter": 5, "order": 3 },
+
+        { "text": "هل يمكن أن أجربه؟", "translation": "Could I try this on?", "chapter": 6, "order": 0 },
+        { "text": "هل عندكم مقاس أصغر؟", "translation": "Do you have a smaller size?", "chapter": 6, "order": 1 },
+        { "text": "هل يوجد إعفاء ضريبي للسياح؟", "translation": "Is there tax-free for tourists?", "chapter": 6, "order": 2 },
+        { "text": "هل يمكن أن أدفع باليورو؟", "translation": "Could I pay in euros?", "chapter": 6, "order": 3 },
+
+        { "text": "فقدت جواز سفري.", "translation": "I've lost my passport.", "chapter": 7, "order": 0 },
+        { "text": "أحتاج إلى صيدلية قريبة.", "translation": "I need a pharmacy nearby.", "chapter": 7, "order": 1 },
+        { "text": "من فضلك اتصل بالشرطة.", "translation": "Please call the police.", "chapter": 7, "order": 2 },
+        { "text": "هل يمكن أن تساعدني؟ لا أتكلم اللغة.", "translation": "Could you help me — I don't speak the language.", "chapter": 7, "order": 3 }
+      ]
+    }
+  }
+}

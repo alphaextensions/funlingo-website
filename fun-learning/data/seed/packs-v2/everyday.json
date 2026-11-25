@@ -1,0 +1,810 @@
+{
+  "category": "everyday",
+  "label": "Everyday Essentials",
+  "chapters": [
+    { "id": 1, "name": "Introductions" },
+    { "id": 2, "name": "Shopping" },
+    { "id": 3, "name": "Food & drink" },
+    { "id": 4, "name": "Travel" },
+    { "id": 5, "name": "Work" },
+    { "id": 6, "name": "Family" },
+    { "id": 7, "name": "Emotions" },
+    { "id": 8, "name": "Weather" },
+    { "id": 9, "name": "Money" },
+    { "id": 10, "name": "Help & emergencies" }
+  ],
+  "packs": {
+    "en": {
+      "title": "Daily English — 50 everyday lines",
+      "blurb": "Hello, thanks, see you — the lines you use every day. A1 to B1, chapter by chapter.",
+      "level": "A2",
+      "items": [
+        { "text": "Hi, I'm Sam. Nice to meet you.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "How are you doing today?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "Where are you from originally?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "What do you do for a living?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "I don't think we've met — I'm Alex.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "How much does this cost?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "Do you have this in a different colour?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "I'm just looking, thanks.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "Can I pay by card?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "Could I get a receipt, please?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "Could I see the menu, please?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "What do you recommend?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "I'll have the same, please.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "Could we get the bill when you have a moment?", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "A glass of water, no ice, please.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "What time does the next train leave?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "Is this seat taken?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "How far is it from here?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "Could you take a photo of us, please?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "I think I'm a bit lost.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "Can we move the meeting to tomorrow?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "I'll send it over by the end of the day.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "Do you have five minutes?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "I'm running a bit late, sorry.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "Thanks for your patience with this.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "I have one older brother and a younger sister.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "My parents live about an hour away.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "We're pretty close as a family.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "Say hi to your mum for me.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "The kids are keeping us busy.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "I'm really happy for you.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "That's such a relief, honestly.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "I'm sorry, I didn't mean it that way.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "I've just been a bit tired lately.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "No worries at all.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "It looks like rain this afternoon.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "It's a lot colder than yesterday.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "What a beautiful day.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "I didn't realise it was so windy out.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "Grab a jacket — it's chilly.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "Could you split the bill with me?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "I'll pay you back on Friday.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "Do you take cash?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "That's a bit out of my budget.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "Keep the change.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "Could you help me for a second?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "Please call an ambulance.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "I don't feel well — I need to sit down.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "Does anyone here speak English?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "I've lost my phone.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "es": {
+      "title": "Español cotidiano — 50 frases para cada día",
+      "blurb": "Hola, gracias, nos vemos — las frases que usas todos los días. De A1 a B1, por capítulos.",
+      "level": "A2",
+      "items": [
+        { "text": "Hola, soy Sam. Encantado de conocerte.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "¿Qué tal te va hoy?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "¿De dónde eres originalmente?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "¿A qué te dedicas?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "Creo que no nos conocemos — soy Alex.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "¿Cuánto cuesta esto?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "¿Lo tienes en otro color?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "Solo estoy mirando, gracias.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "¿Puedo pagar con tarjeta?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "¿Me da el recibo, por favor?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "¿Me trae la carta, por favor?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "¿Qué me recomienda?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "Lo mismo para mí, por favor.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "La cuenta, cuando pueda.", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "Un vaso de agua sin hielo, por favor.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "¿A qué hora sale el próximo tren?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "¿Está ocupado este asiento?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "¿Está lejos de aquí?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "¿Nos haces una foto, por favor?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "Creo que me he perdido un poco.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "¿Podemos pasar la reunión a mañana?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "Te lo envío antes de que acabe el día.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "¿Tienes cinco minutos?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "Voy un poco tarde, perdona.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "Gracias por tu paciencia con esto.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "Tengo un hermano mayor y una hermana menor.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "Mis padres viven a una hora de aquí.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "En familia estamos muy unidos.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "Dale recuerdos a tu madre.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "Los niños nos tienen ocupados.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "Me alegro mucho por ti.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "Qué alivio, de verdad.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "Perdona, no lo decía por eso.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "Últimamente he estado un poco cansado.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "Tranquilo, no pasa nada.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "Parece que va a llover esta tarde.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "Hace mucho más frío que ayer.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "Qué día tan bonito.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "No me había dado cuenta de que hacía tanto viento.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "Coge una chaqueta — hace fresco.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "¿Podemos dividir la cuenta?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "Te lo devuelvo el viernes.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "¿Aceptan efectivo?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "Se me va un poco del presupuesto.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "Quédate con el cambio.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "¿Me ayudas un momento?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "Por favor, llame a una ambulancia.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "No me encuentro bien — necesito sentarme.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "¿Alguien aquí habla inglés?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "He perdido el móvil.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "fr": {
+      "title": "Français du quotidien — 50 phrases de tous les jours",
+      "blurb": "Bonjour, merci, à bientôt — les phrases dont tu te sers tous les jours. De A1 à B1, chapitre par chapitre.",
+      "level": "A2",
+      "items": [
+        { "text": "Salut, moi c'est Sam. Enchanté.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "Comment tu vas aujourd'hui ?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "Tu viens d'où à la base ?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "Tu fais quoi dans la vie ?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "Je ne crois pas qu'on se soit déjà vus — moi c'est Alex.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "Ça coûte combien ?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "Vous l'avez dans une autre couleur ?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "Je regarde juste, merci.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "Je peux payer par carte ?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "Vous pouvez me donner le reçu, s'il vous plaît ?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "Je peux avoir la carte, s'il vous plaît ?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "Qu'est-ce que vous me conseillez ?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "La même chose pour moi, s'il vous plaît.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "L'addition quand vous pouvez, s'il vous plaît.", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "Un verre d'eau sans glaçons, s'il vous plaît.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "À quelle heure part le prochain train ?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "La place est libre ?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "C'est loin d'ici ?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "Vous pouvez nous prendre en photo, s'il vous plaît ?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "Je crois que je me suis un peu perdu.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "On peut déplacer la réunion à demain ?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "Je te l'envoie avant la fin de la journée.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "Tu as cinq minutes ?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "Je suis un peu en retard, désolé.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "Merci pour ta patience là-dessus.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "J'ai un grand frère et une petite sœur.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "Mes parents habitent à une heure d'ici.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "On est plutôt proches en famille.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "Passe le bonjour à ta mère pour moi.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "Les enfants nous occupent bien.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "Je suis vraiment content pour toi.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "Quel soulagement, franchement.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "Désolé, ce n'est pas ce que je voulais dire.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "Je suis juste un peu fatigué ces temps-ci.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "Pas de souci.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "On dirait qu'il va pleuvoir cet après-midi.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "Il fait beaucoup plus froid qu'hier.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "Quelle belle journée.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "Je n'avais pas vu qu'il y avait autant de vent.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "Prends une veste — il fait frais.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "On peut partager l'addition ?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "Je te rembourse vendredi.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "Vous prenez les espèces ?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "C'est un peu au-dessus de mon budget.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "Gardez la monnaie.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "Tu peux m'aider une seconde ?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "S'il vous plaît, appelez une ambulance.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "Je ne me sens pas bien — il faut que je m'assoie.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "Il y a quelqu'un qui parle anglais ici ?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "J'ai perdu mon téléphone.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "de": {
+      "title": "Alltagsdeutsch — 50 Sätze für jeden Tag",
+      "blurb": "Hallo, danke, bis bald — die Sätze, die du jeden Tag brauchst. A1 bis B1, Kapitel für Kapitel.",
+      "level": "A2",
+      "items": [
+        { "text": "Hi, ich bin Sam. Freut mich.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "Wie geht's dir heute?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "Wo kommst du ursprünglich her?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "Was machst du beruflich?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "Ich glaube, wir kennen uns noch nicht — ich bin Alex.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "Was kostet das?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "Haben Sie das in einer anderen Farbe?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "Ich schaue mich nur um, danke.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "Kann ich mit Karte zahlen?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "Könnte ich einen Beleg bekommen, bitte?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "Könnte ich bitte die Karte sehen?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "Was empfehlen Sie?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "Für mich das Gleiche, bitte.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "Können wir zahlen, wenn Sie Zeit haben?", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "Ein Glas Wasser ohne Eis, bitte.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "Wann fährt der nächste Zug?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "Ist dieser Platz frei?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "Wie weit ist es von hier?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "Könnten Sie bitte ein Foto von uns machen?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "Ich glaube, ich habe mich etwas verlaufen.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "Können wir das Meeting auf morgen verschieben?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "Ich schicke es dir bis Ende des Tages.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "Hast du fünf Minuten?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "Ich komme etwas später, sorry.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "Danke für deine Geduld damit.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "Ich habe einen älteren Bruder und eine jüngere Schwester.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "Meine Eltern wohnen etwa eine Stunde entfernt.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "Wir sind als Familie ziemlich eng.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "Grüß deine Mutter von mir.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "Die Kinder halten uns ganz schön auf Trab.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "Ich freue mich wirklich für dich.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "Was für eine Erleichterung, ehrlich.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "Entschuldige, so war das nicht gemeint.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "In letzter Zeit bin ich einfach etwas müde.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "Kein Problem.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "Es sieht nach Regen aus heute Nachmittag.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "Es ist deutlich kälter als gestern.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "Was für ein schöner Tag.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "Ich habe gar nicht gemerkt, wie windig es draußen ist.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "Nimm eine Jacke mit — es ist kühl.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "Können wir die Rechnung teilen?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "Ich gebe es dir Freitag zurück.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "Nehmen Sie Bargeld?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "Das sprengt ein bisschen mein Budget.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "Stimmt so.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "Könntest du mir kurz helfen?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "Bitte rufen Sie einen Krankenwagen.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "Mir ist nicht gut — ich muss mich setzen.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "Spricht hier jemand Englisch?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "Ich habe mein Handy verloren.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "it": {
+      "title": "Italiano di tutti i giorni — 50 frasi quotidiane",
+      "blurb": "Ciao, grazie, a presto — le frasi che usi ogni giorno. Da A1 a B1, capitolo per capitolo.",
+      "level": "A2",
+      "items": [
+        { "text": "Ciao, sono Sam. Piacere di conoscerti.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "Come va oggi?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "Di dove sei originariamente?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "Che lavoro fai?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "Credo che non ci siamo mai conosciuti — io sono Alex.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "Quanto costa?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "Ce l'ha in un altro colore?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "Sto solo guardando, grazie.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "Posso pagare con la carta?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "Mi dà lo scontrino, per favore?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "Mi porta il menù, per favore?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "Cosa mi consiglia?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "Lo stesso anche per me, grazie.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "Il conto, quando può.", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "Un bicchiere d'acqua senza ghiaccio, grazie.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "A che ora parte il prossimo treno?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "È libero questo posto?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "È lontano da qui?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "Ci fa una foto, per favore?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "Credo di essermi perso un po'.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "Possiamo spostare la riunione a domani?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "Te lo mando entro fine giornata.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "Hai cinque minuti?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "Sono un po' in ritardo, scusa.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "Grazie per la pazienza con questa cosa.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "Ho un fratello maggiore e una sorella minore.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "I miei genitori vivono a circa un'ora da qui.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "In famiglia siamo abbastanza uniti.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "Saluta tua madre da parte mia.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "I bambini ci tengono impegnati.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "Sono davvero felice per te.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "Che sollievo, davvero.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "Scusa, non intendevo in quel senso.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "Ultimamente sono un po' stanco.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "Figurati, nessun problema.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "Sembra che pioverà questo pomeriggio.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "Fa molto più freddo di ieri.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "Che bella giornata.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "Non mi ero reso conto di quanto vento ci fosse.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "Prendi una giacca — fa freschetto.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "Possiamo dividere il conto?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "Te li restituisco venerdì.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "Accettate contanti?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "È un po' fuori budget per me.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "Tenga il resto.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "Mi aiuti un attimo?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "Per favore, chiamate un'ambulanza.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "Non mi sento bene — devo sedermi.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "Qui qualcuno parla inglese?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "Ho perso il telefono.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "pt": {
+      "title": "Português do dia a dia — 50 frases para todos os dias",
+      "blurb": "Olá, obrigado, até breve — as frases que você usa todo dia. Do A1 ao B1, capítulo a capítulo.",
+      "level": "A2",
+      "items": [
+        { "text": "Oi, eu sou o Sam. Prazer em conhecer.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "Como você está hoje?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "De onde você é originalmente?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "O que você faz da vida?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "Acho que a gente nunca se conheceu — eu sou o Alex.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "Quanto é isso?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "Você tem em outra cor?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "Estou só olhando, obrigado.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "Posso pagar no cartão?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "Pode me dar o recibo, por favor?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "Pode me trazer o cardápio, por favor?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "O que você recomenda?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "O mesmo pra mim, por favor.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "A conta, quando puder.", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "Um copo de água sem gelo, por favor.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "A que horas sai o próximo trem?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "Este assento está ocupado?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "É longe daqui?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "Você pode tirar uma foto da gente, por favor?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "Acho que me perdi um pouco.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "Podemos passar a reunião pra amanhã?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "Te mando até o fim do dia.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "Você tem cinco minutos?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "Estou um pouco atrasado, desculpa.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "Valeu pela paciência com isso.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "Tenho um irmão mais velho e uma irmã mais nova.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "Meus pais moram a uma hora daqui.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "A gente é bem unido como família.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "Manda um abraço pra sua mãe.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "As crianças estão nos deixando ocupados.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "Fico muito feliz por você.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "Que alívio, sério.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "Desculpa, não quis dizer dessa forma.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "Ultimamente eu só estou meio cansado.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "Imagina, tranquilo.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "Parece que vai chover à tarde.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "Está bem mais frio do que ontem.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "Que dia lindo.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "Não tinha percebido que estava tão ventando.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "Pega um casaco — está frio.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "Dá pra dividir a conta?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "Te pago na sexta.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "Aceitam dinheiro?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "Está um pouco fora do meu orçamento.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "Fique com o troco.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "Pode me ajudar um segundo?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "Por favor, chamem uma ambulância.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "Não estou me sentindo bem — preciso sentar.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "Alguém aqui fala inglês?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "Perdi meu celular.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "ja": {
+      "title": "毎日の日本語 — 日常の50フレーズ",
+      "blurb": "こんにちは、ありがとう、またね — 毎日使う日本語の表現を10章で学ぼう。A1からB1まで。",
+      "level": "A2",
+      "items": [
+        { "text": "はじめまして、サムです。よろしくお願いします。", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "今日はどうですか?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "ご出身はどちらですか?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "お仕事は何をされていますか?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "初めてですよね — アレックスです。", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "これはいくらですか?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "別の色はありますか?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "見ているだけです、ありがとう。", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "カードで払えますか?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "領収書をお願いします。", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "メニューをお願いします。", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "おすすめは何ですか?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "私も同じものをお願いします。", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "お会計、お願いできますか?", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "お水を一杯、氷なしでお願いします。", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "次の電車は何時ですか?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "この席、空いていますか?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "ここからどのくらいですか?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "写真を撮っていただけますか?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "ちょっと道に迷ったみたいです。", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "会議を明日に変更できますか?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "今日中に送ります。", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "5分お時間ありますか?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "少し遅れています、すみません。", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "ご理解いただきありがとうございます。", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "兄が一人と、妹が一人います。", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "両親はここから1時間くらいのところに住んでいます。", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "家族の仲はけっこう良いです。", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "お母さんによろしく伝えてください。", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "子どもたちで忙しいんです。", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "本当によかったですね。", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "本当にほっとしました。", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "ごめんなさい、そういう意味じゃなかったんです。", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "最近ちょっと疲れているんです。", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "気にしないでください。", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "午後は雨になりそうですね。", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "昨日よりずっと寒いですね。", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "いい天気ですね。", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "外がこんなに風が強いとは思いませんでした。", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "上着を持っていって — ちょっと肌寒いよ。", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "お会計、割り勘にできますか?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "金曜日に返しますね。", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "現金でも大丈夫ですか?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "ちょっと予算オーバーですね。", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "お釣りは取っておいてください。", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "ちょっと手伝ってもらえますか?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "救急車を呼んでください。", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "気分が悪くて — 座らせてください。", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "どなたか英語を話せますか?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "携帯をなくしました。", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "ko": {
+      "title": "매일 한국어 — 일상 50 문장",
+      "blurb": "안녕, 고마워, 또 봐 — 매일 쓰는 표현을 10개 챕터로. A1부터 B1까지.",
+      "level": "A2",
+      "items": [
+        { "text": "안녕하세요, 저는 샘이에요. 만나서 반가워요.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "오늘 어떻게 지내세요?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "원래 어디 출신이세요?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "무슨 일 하세요?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "우리 처음 뵙는 것 같아요 — 저는 알렉스예요.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "이거 얼마예요?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "다른 색상도 있어요?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "그냥 보는 거예요, 감사합니다.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "카드로 결제해도 될까요?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "영수증 주시겠어요?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "메뉴 좀 볼 수 있을까요?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "뭐가 맛있어요?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "저도 같은 걸로 주세요.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "시간 되실 때 계산서 주세요.", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "얼음 없이 물 한 잔 주세요.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "다음 기차는 몇 시에 출발해요?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "이 자리 비어 있나요?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "여기서 얼마나 멀어요?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "사진 좀 찍어 주시겠어요?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "제가 좀 길을 잃은 것 같아요.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "회의를 내일로 옮길 수 있을까요?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "오늘 안에 보내 드릴게요.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "5분만 시간 되세요?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "조금 늦고 있어요, 죄송해요.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "기다려 주셔서 감사합니다.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "형 한 명, 여동생 한 명 있어요.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "부모님은 여기서 한 시간 정도 떨어져 사세요.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "저희 가족은 사이가 꽤 좋아요.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "어머님께 안부 전해 주세요.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "애들 보느라 정신없어요.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "정말 잘됐네요.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "정말 다행이에요.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "미안해요, 그런 뜻은 아니었어요.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "요즘 좀 피곤해서요.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "괜찮아요, 신경 쓰지 마세요.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "오후에 비가 올 것 같아요.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "어제보다 훨씬 추워요.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "날씨 정말 좋네요.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "밖에 바람이 이렇게 센 줄 몰랐어요.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "재킷 챙겨요 — 쌀쌀해요.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "같이 나눠 내도 될까요?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "금요일에 갚을게요.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "현금 받으세요?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "제 예산보다 조금 비싸네요.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "거스름돈은 괜찮아요.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "잠깐만 도와주실 수 있어요?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "구급차 좀 불러 주세요.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "몸이 안 좋아요 — 좀 앉아야겠어요.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "여기 영어 하시는 분 계세요?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "휴대폰을 잃어버렸어요.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "zh": {
+      "title": "日常中文 — 每天都用的50句",
+      "blurb": "你好、谢谢、再见 — 每天都用得上的中文,十章一步步学。A1 到 B1。",
+      "level": "A2",
+      "items": [
+        { "text": "你好,我是 Sam,很高兴认识你。", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "你今天过得怎么样?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "你原来是哪里人?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "你是做什么工作的?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "我们应该还没见过 — 我是 Alex。", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "这个多少钱?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "有别的颜色吗?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "我随便看看,谢谢。", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "可以刷卡吗?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "麻烦给我一张收据。", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "请给我看一下菜单。", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "你推荐什么?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "我也要一样的,谢谢。", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "方便的时候麻烦结账。", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "一杯水,不要冰,谢谢。", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "下一班火车几点开?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "这个座位有人吗?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "离这里远吗?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "麻烦帮我们拍张照好吗?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "我好像有点迷路了。", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "会议能改到明天吗?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "我今天之内发给你。", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "你有五分钟吗?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "我有点迟到,抱歉。", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "谢谢你对这件事的耐心。", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "我有一个哥哥和一个妹妹。", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "我爸妈住在离这里一小时左右的地方。", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "我们一家人关系挺近的。", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "替我向你妈妈问好。", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "孩子们让我们忙得团团转。", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "我真为你高兴。", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "真的松了一口气。", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "对不起,我不是那个意思。", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "我最近就是有点累。", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "完全没关系。", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "下午好像要下雨。", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "今天比昨天冷多了。", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "今天天气真好。", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "没想到外面风这么大。", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "带件外套 — 外面有点凉。", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "我们可以分一下账单吗?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "我周五还你。", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "你们收现金吗?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "这有点超出我的预算了。", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "不用找了。", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "能帮我一下吗?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "请叫一辆救护车。", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "我不舒服 — 需要坐一下。", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "这里有人会说英语吗?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "我手机丢了。", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "hi": {
+      "title": "रोज़मर्रा की हिंदी — हर दिन की 50 बातें",
+      "blurb": "नमस्ते, शुक्रिया, फिर मिलते हैं — हर दिन काम आने वाली बातें, दस अध्यायों में। A1 से B1 तक।",
+      "level": "A2",
+      "items": [
+        { "text": "नमस्ते, मैं सैम हूं। आपसे मिलकर अच्छा लगा।", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "आज कैसे हैं आप?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "आप मूल रूप से कहां से हैं?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "आप क्या काम करते हैं?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "शायद हम पहले नहीं मिले — मैं एलेक्स हूं।", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "यह कितने का है?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "क्या यह किसी और रंग में भी है?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "मैं बस देख रहा हूं, शुक्रिया।", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "क्या मैं कार्ड से दे सकता हूं?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "रसीद मिल सकती है, प्लीज़?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "मेन्यू दिखा दीजिए, प्लीज़।", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "आप क्या सुझाते हैं?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "मेरे लिए भी वही, प्लीज़।", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "जब मौका मिले, बिल ले आइए।", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "एक गिलास पानी बिना बर्फ के, प्लीज़।", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "अगली ट्रेन कितने बजे जाती है?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "क्या यह सीट खाली है?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "यहां से कितनी दूर है?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "हमारी एक फ़ोटो ले लेंगे, प्लीज़?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "लगता है मैं थोड़ा खो गया हूं।", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "क्या मीटिंग कल कर सकते हैं?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "मैं दिन खत्म होने से पहले भेज दूंगा।", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "क्या आपके पास पांच मिनट हैं?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "थोड़ी देर हो रही है, माफ़ करना।", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "आपके धैर्य के लिए शुक्रिया।", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "मेरा एक बड़ा भाई और एक छोटी बहन है।", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "मेरे माता-पिता यहां से करीब एक घंटे की दूरी पर रहते हैं।", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "हम परिवार में काफ़ी नज़दीक हैं।", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "अपनी मां को मेरी तरफ से नमस्ते कहना।", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "बच्चों में ही बहुत वक़्त जा रहा है।", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "तुम्हारे लिए बहुत ख़ुश हूं।", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "सच में बड़ी राहत मिली।", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "माफ़ करना, मेरा वो मतलब नहीं था।", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "बस कुछ दिनों से थोड़ा थका हुआ हूं।", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "कोई बात नहीं, बिल्कुल।", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "लगता है दोपहर में बारिश होगी।", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "कल से काफ़ी ज़्यादा ठंड है।", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "कितना अच्छा दिन है।", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "मुझे पता नहीं था बाहर इतनी हवा चल रही है।", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "जैकेट ले लो — ठंड है।", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "क्या बिल आधा-आधा कर लें?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "शुक्रवार को लौटा दूंगा।", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "क्या आप नकद लेते हैं?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "यह मेरे बजट से थोड़ा बाहर है।", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "बचे हुए पैसे रख लीजिए।", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "ज़रा मदद कर दीजिए एक सेकंड?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "कृपया एम्बुलेंस बुलाइए।", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "तबियत ठीक नहीं है — मुझे बैठना है।", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "क्या यहां कोई अंग्रेज़ी बोलता है?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "मेरा फ़ोन खो गया है।", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "tr": {
+      "title": "Günlük Türkçe — Her gün 50 cümle",
+      "blurb": "Merhaba, teşekkürler, görüşürüz — her gün kullanacağın cümleler. A1'den B1'e, bölüm bölüm.",
+      "level": "A2",
+      "items": [
+        { "text": "Merhaba, ben Sam. Tanıştığımıza memnun oldum.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "Nasıl gidiyor bugün?", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "Aslen nerelisin?", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "Ne iş yapıyorsun?", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "Sanırım daha önce tanışmadık — ben Alex.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "Bu ne kadar?", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "Başka renk var mı?", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "Sadece bakıyorum, teşekkürler.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "Kartla ödeyebilir miyim?", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "Fişi alabilir miyim lütfen?", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "Menüyü alabilir miyim lütfen?", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "Siz ne tavsiye edersiniz?", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "Bana da aynısından, lütfen.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "Müsait olduğunuzda hesabı alabilir miyiz?", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "Bir bardak su, buzsuz, lütfen.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "Bir sonraki tren saat kaçta kalkıyor?", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "Bu koltuk boş mu?", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "Buradan ne kadar uzakta?", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "Bize bir fotoğraf çeker misiniz lütfen?", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "Sanırım biraz kayboldum.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "Toplantıyı yarına alabilir miyiz?", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "Gün bitmeden gönderirim.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "Beş dakikan var mı?", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "Biraz geç kaldım, kusura bakma.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "Bu konudaki sabrın için teşekkürler.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "Bir ağabeyim ve bir küçük kız kardeşim var.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "Ailem buradan bir saat uzakta oturuyor.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "Ailecek oldukça yakınız.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "Annene benden selam söyle.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "Çocuklar bizi epey meşgul ediyor.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "Senin adına çok sevindim.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "Gerçekten çok rahatladım.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "Özür dilerim, öyle demek istemedim.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "Son zamanlarda biraz yorgunum sadece.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "Hiç dert değil.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "Öğleden sonra yağmur yağacak gibi.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "Dünden çok daha soğuk.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "Ne güzel bir gün.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "Dışarıda bu kadar rüzgar olduğunu fark etmemiştim.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "Yanına bir ceket al — hava serin.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "Hesabı bölüşelim mi?", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "Cuma günü sana geri öderim.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "Nakit kabul ediyor musunuz?", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "Bu benim bütçemi biraz aşıyor.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "Üstü kalsın.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "Bir saniye yardım eder misin?", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "Lütfen bir ambulans çağırın.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "Kendimi iyi hissetmiyorum — oturmam lazım.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "Burada İngilizce konuşan var mı?", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "Telefonumu kaybettim.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    },
+    "ar": {
+      "title": "عربية كل يوم — 50 جملة يومية",
+      "blurb": "مرحبا، شكراً، إلى اللقاء — جمل تحتاجها كل يوم. من A1 إلى B1، فصلاً بعد فصل.",
+      "level": "A2",
+      "items": [
+        { "text": "مرحبا، أنا سام. تشرفت بمعرفتك.", "translation": "Hi, I'm Sam. Nice to meet you.", "chapter": 1, "order": 0 },
+        { "text": "كيف حالك اليوم؟", "translation": "How are you doing today?", "chapter": 1, "order": 1 },
+        { "text": "من أين أنت أصلاً؟", "translation": "Where are you from originally?", "chapter": 1, "order": 2 },
+        { "text": "ما هو عملك؟", "translation": "What do you do for a living?", "chapter": 1, "order": 3 },
+        { "text": "أظن أننا لم نتقابل من قبل — أنا أليكس.", "translation": "I don't think we've met — I'm Alex.", "chapter": 1, "order": 4 },
+
+        { "text": "بكم هذا؟", "translation": "How much does this cost?", "chapter": 2, "order": 0 },
+        { "text": "هل لديك هذا بلون آخر؟", "translation": "Do you have this in a different colour?", "chapter": 2, "order": 1 },
+        { "text": "أنا فقط أتفرج، شكراً.", "translation": "I'm just looking, thanks.", "chapter": 2, "order": 2 },
+        { "text": "هل يمكنني الدفع بالبطاقة؟", "translation": "Can I pay by card?", "chapter": 2, "order": 3 },
+        { "text": "ممكن الفاتورة من فضلك؟", "translation": "Could I get a receipt, please?", "chapter": 2, "order": 4 },
+
+        { "text": "ممكن قائمة الطعام من فضلك؟", "translation": "Could I see the menu, please?", "chapter": 3, "order": 0 },
+        { "text": "ماذا تنصح؟", "translation": "What do you recommend?", "chapter": 3, "order": 1 },
+        { "text": "نفس الطلب لي، من فضلك.", "translation": "I'll have the same, please.", "chapter": 3, "order": 2 },
+        { "text": "الحساب حين تتفرغ من فضلك.", "translation": "Could we get the bill when you have a moment?", "chapter": 3, "order": 3 },
+        { "text": "كوب ماء بدون ثلج من فضلك.", "translation": "A glass of water, no ice, please.", "chapter": 3, "order": 4 },
+
+        { "text": "في أي ساعة يغادر القطار التالي؟", "translation": "What time does the next train leave?", "chapter": 4, "order": 0 },
+        { "text": "هل هذا المقعد مشغول؟", "translation": "Is this seat taken?", "chapter": 4, "order": 1 },
+        { "text": "كم تبعد عن هنا؟", "translation": "How far is it from here?", "chapter": 4, "order": 2 },
+        { "text": "ممكن تلتقط لنا صورة من فضلك؟", "translation": "Could you take a photo of us, please?", "chapter": 4, "order": 3 },
+        { "text": "أعتقد أنني تهت قليلاً.", "translation": "I think I'm a bit lost.", "chapter": 4, "order": 4 },
+
+        { "text": "هل يمكننا تأجيل الاجتماع إلى الغد؟", "translation": "Can we move the meeting to tomorrow?", "chapter": 5, "order": 0 },
+        { "text": "سأرسله قبل نهاية اليوم.", "translation": "I'll send it over by the end of the day.", "chapter": 5, "order": 1 },
+        { "text": "هل لديك خمس دقائق؟", "translation": "Do you have five minutes?", "chapter": 5, "order": 2 },
+        { "text": "متأخر قليلاً، آسف.", "translation": "I'm running a bit late, sorry.", "chapter": 5, "order": 3 },
+        { "text": "شكراً على صبرك في هذا الأمر.", "translation": "Thanks for your patience with this.", "chapter": 5, "order": 4 },
+
+        { "text": "لدي أخ أكبر وأخت أصغر.", "translation": "I have one older brother and a younger sister.", "chapter": 6, "order": 0 },
+        { "text": "والداي يعيشان على بُعد ساعة تقريباً.", "translation": "My parents live about an hour away.", "chapter": 6, "order": 1 },
+        { "text": "نحن عائلة قريبة جداً من بعضها.", "translation": "We're pretty close as a family.", "chapter": 6, "order": 2 },
+        { "text": "سلم لي على والدتك.", "translation": "Say hi to your mum for me.", "chapter": 6, "order": 3 },
+        { "text": "الأولاد يُشغلوننا طوال الوقت.", "translation": "The kids are keeping us busy.", "chapter": 6, "order": 4 },
+
+        { "text": "أنا سعيد جداً من أجلك.", "translation": "I'm really happy for you.", "chapter": 7, "order": 0 },
+        { "text": "يا لها من راحة، صدقاً.", "translation": "That's such a relief, honestly.", "chapter": 7, "order": 1 },
+        { "text": "آسف، لم أقصد ذلك بهذا الشكل.", "translation": "I'm sorry, I didn't mean it that way.", "chapter": 7, "order": 2 },
+        { "text": "فقط متعب قليلاً هذه الأيام.", "translation": "I've just been a bit tired lately.", "chapter": 7, "order": 3 },
+        { "text": "لا تقلق أبداً.", "translation": "No worries at all.", "chapter": 7, "order": 4 },
+
+        { "text": "يبدو أنها ستمطر بعد الظهر.", "translation": "It looks like rain this afternoon.", "chapter": 8, "order": 0 },
+        { "text": "الجو أبرد بكثير من أمس.", "translation": "It's a lot colder than yesterday.", "chapter": 8, "order": 1 },
+        { "text": "يا له من يوم جميل.", "translation": "What a beautiful day.", "chapter": 8, "order": 2 },
+        { "text": "لم أدرك أن الرياح شديدة إلى هذه الدرجة في الخارج.", "translation": "I didn't realise it was so windy out.", "chapter": 8, "order": 3 },
+        { "text": "خذ جاكيت — الجو بارد.", "translation": "Grab a jacket — it's chilly.", "chapter": 8, "order": 4 },
+
+        { "text": "هل نقسم الحساب؟", "translation": "Could you split the bill with me?", "chapter": 9, "order": 0 },
+        { "text": "سأرد لك المبلغ يوم الجمعة.", "translation": "I'll pay you back on Friday.", "chapter": 9, "order": 1 },
+        { "text": "هل تقبلون النقد؟", "translation": "Do you take cash?", "chapter": 9, "order": 2 },
+        { "text": "هذا يفوق ميزانيتي قليلاً.", "translation": "That's a bit out of my budget.", "chapter": 9, "order": 3 },
+        { "text": "احتفظ بالباقي.", "translation": "Keep the change.", "chapter": 9, "order": 4 },
+
+        { "text": "ممكن تساعدني ثانية واحدة؟", "translation": "Could you help me for a second?", "chapter": 10, "order": 0 },
+        { "text": "من فضلك اتصل بسيارة إسعاف.", "translation": "Please call an ambulance.", "chapter": 10, "order": 1 },
+        { "text": "لا أشعر بأنني بخير — أحتاج أن أجلس.", "translation": "I don't feel well — I need to sit down.", "chapter": 10, "order": 2 },
+        { "text": "هل يوجد هنا من يتحدث الإنجليزية؟", "translation": "Does anyone here speak English?", "chapter": 10, "order": 3 },
+        { "text": "فقدت هاتفي.", "translation": "I've lost my phone.", "chapter": 10, "order": 4 }
+      ]
+    }
+  }
+}

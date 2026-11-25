@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Same old, same old.",
+    "expected_patterns": ["(?i)lo de siempre", "(?i)lo mismo de siempre", "(?i)nada nuevo"],
+    "acceptable_patterns": ["(?i)como siempre"]
+  },
+  {
+    "input": "How have you been?",
+    "expected_patterns": ["(?i)qué tal has estado", "(?i)cómo has estado", "(?i)qué ha sido de tu vida"],
+    "acceptable_patterns": ["(?i)cómo estás"]
+  },
+  {
+    "input": "I've been better, honestly.",
+    "expected_patterns": ["(?i)he estado mejor", "(?i)la verdad.*podr(í|i)a estar mejor", "(?i)he tenido d(í|i)as mejores"],
+    "acceptable_patterns": ["(?i)no muy bien"]
+  },
+  {
+    "input": "Hey, how's it going?",
+    "expected_patterns": ["(?i)¿?qué tal", "(?i)¿?cómo (te )?va", "(?i)¿?cómo andas"],
+    "acceptable_patterns": ["(?i)hola.*cómo"]
+  },
+  {
+    "input": "Let's carry out the plan.",
+    "expected_patterns": ["(?i)llev(ar|emos|amos|arlo) a cabo", "(?i)ejecut(ar|emos|amos|arlo)", "(?i)realic(emos|ar)"],
+    "acceptable_patterns": ["(?i)poner.*en marcha"]
+  },
+  {
+    "input": "She broke the ice at the party.",
+    "expected_patterns": ["(?i)rompi(ó|o) el hielo"],
+    "acceptable_patterns": ["(?i)anim(ó|o) la fiesta"]
+  }
+]

@@ -1,0 +1,394 @@
+.panel {
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  padding: var(--s-5);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--el-2);
+  min-height: 540px;
+  max-height: calc(100vh - 120px);
+}
+
+.panelTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+}
+
+.panelHead {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.panelHeadMuted {
+  color: var(--fl-text-3);
+  font-weight: 500;
+}
+
+/* PM-polish fix 6: soft eyebrow chip that counts turns down for the learner.
+   Matches the eyebrow-chip visual language (same color + letter-spacing),
+   but on a surface tile so it reads as live state, not a section label. */
+.turnChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-2);
+}
+.turnChipDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--fl-accent);
+}
+.panelLede {
+  margin: 0;
+  color: var(--fl-text-2);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.diffBox {
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  padding: var(--s-3);
+  display: flex;
+  gap: var(--s-2);
+  flex-wrap: wrap;
+}
+.diffBox legend {
+  color: var(--fl-text-3);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0 6px;
+}
+.diffOption {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+}
+.diffOption input {
+  accent-color: var(--fl-accent);
+}
+
+.shadowBox {
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  padding: var(--s-3);
+}
+.shadowBox summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+.shadowBox ol {
+  margin: var(--s-3) 0 0;
+  padding-left: var(--s-5);
+  color: var(--fl-text-2);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--s-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  min-height: 240px;
+}
+
+.aiTurn,
+.userTurn {
+  max-width: 90%;
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-md);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.aiTurn {
+  align-self: flex-start;
+  background: var(--fl-surface-3);
+  border: 1px solid var(--fl-border);
+}
+
+.userTurn {
+  align-self: flex-end;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border-2);
+}
+
+.turnText {
+  color: var(--fl-text);
+}
+.turnTranslation {
+  margin-top: 4px;
+  color: var(--fl-text-3);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.correction {
+  margin-top: var(--s-2);
+  padding: var(--s-2) var(--s-3);
+  background: var(--fl-surface-1);
+  border-left: 2px solid var(--fl-accent);
+  border-radius: var(--r-sm);
+  font-size: 13px;
+}
+.correctionBadge {
+  color: var(--fl-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+.correctionText {
+  color: var(--fl-text);
+  font-weight: 500;
+}
+.correctionWhy {
+  margin-top: 4px;
+  color: var(--fl-text-3);
+  font-size: 12px;
+}
+
+/* Wire 3: "Save for drill" button under a correction. */
+.correctionActions {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-2);
+  flex-wrap: wrap;
+}
+.correctionSaveBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border-2);
+  color: var(--fl-text);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background var(--d-fast) var(--ease),
+    border-color var(--d-fast) var(--ease);
+}
+.correctionSaveBtn:hover {
+  background: var(--fl-surface-3);
+  /* PM-polish fix 7: lift the border to --fl-accent on hover so the chip
+     reads as actionable. Color-pop is the hover affordance (shape stays). */
+  border-color: var(--fl-accent);
+}
+.correctionSaveGlyph {
+  display: inline-flex;
+  align-items: center;
+  color: var(--fl-accent);
+  font-size: 12px;
+  line-height: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .correctionSaveBtn,
+  .correctionSaveBtn:hover {
+    transition: none;
+  }
+}
+.correctionSaveBtn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.correctionSaveBtn:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+.correctionSaved {
+  font-size: 12px;
+  color: var(--fl-success);
+  font-weight: 600;
+}
+.correctionSavedLink {
+  color: var(--fl-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.correctionSavedLink:hover { text-decoration: underline; }
+.correctionSaveErr {
+  font-size: 12px;
+  color: var(--fl-danger);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.correctionSaveRetry {
+  background: transparent;
+  color: var(--fl-danger);
+  border: 1px solid var(--fl-danger);
+  border-radius: var(--r-pill);
+  padding: 2px 10px;
+  font: inherit;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.correctionSaveRetry:hover { background: color-mix(in oklab, var(--fl-danger) 15%, transparent); }
+.correctionSaveRetry:disabled { opacity: 0.6; cursor: not-allowed; }
+.correctionSaveRetry:focus-visible {
+  outline: 2px solid var(--fl-danger);
+  outline-offset: 2px;
+}
+
+.score {
+  margin-top: 6px;
+  color: var(--fl-text-3);
+  font-size: 12px;
+}
+
+.helpCard {
+  padding: var(--s-3) var(--s-4);
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.helpCard p {
+  margin: 4px 0 0;
+  color: var(--fl-text);
+}
+.helpCard small {
+  display: block;
+  margin-top: 6px;
+  color: var(--fl-text-3);
+}
+.helpTitle {
+  color: var(--fl-accent);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.inputRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.inputRow textarea {
+  width: 100%;
+  resize: vertical;
+  padding: var(--s-3);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  color: var(--fl-text);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.inputRow textarea:focus-visible {
+  border-color: var(--fl-accent);
+}
+
+.inputActions {
+  display: flex;
+  gap: var(--s-2);
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.ghostBtn {
+  padding: 10px 16px;
+  border-radius: var(--r-md);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--d-fast), transform var(--d-fast);
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, var(--fl-primary), var(--fl-secondary));
+  border: 1px solid var(--fl-border-2);
+  color: var(--fl-text);
+}
+.primaryBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ghostBtn {
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+  color: var(--fl-text);
+}
+.ghostBtn:hover {
+  background: var(--fl-surface-3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .primaryBtn:active {
+    transform: scale(0.97);
+  }
+}
+
+.err {
+  color: var(--fl-danger);
+  font-size: 13px;
+  margin: 0;
+}
+
+.reportBlock {
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  padding: var(--s-3) var(--s-4);
+}
+.reportBlock h3 {
+  margin: 0 0 var(--s-2);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fl-text-2);
+}
+.reportBlock p,
+.reportBlock li {
+  color: var(--fl-text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.reportBlock ul,
+.reportBlock ol {
+  margin: 0;
+  padding-left: var(--s-5);
+}

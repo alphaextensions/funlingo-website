@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Same old, same old.",
+    "expected_patterns": ["वही पुरानी बातें", "वही सब कुछ", "कुछ नया नहीं"],
+    "acceptable_patterns": ["हमेशा की तरह"]
+  },
+  {
+    "input": "How have you been?",
+    "expected_patterns": ["(?i)कैसे हो", "क्या हाल है", "क्या चल रहा है"],
+    "acceptable_patterns": ["सब ठीक"]
+  },
+  {
+    "input": "I've been better, honestly.",
+    "expected_patterns": ["सच कहूँ.*पहले बेहतर", "सच बताऊं.*अच्छा नहीं", "सच कहूं.*ठीक नहीं"],
+    "acceptable_patterns": ["पहले बेहतर था"]
+  },
+  {
+    "input": "Hey, how's it going?",
+    "expected_patterns": ["(?i)कैसा चल रहा", "(?i)क्या हाल", "(?i)कैसे हो"],
+    "acceptable_patterns": ["सब बढ़िया"]
+  },
+  {
+    "input": "Let's carry out the plan.",
+    "expected_patterns": ["योजना को लागू", "योजना पर अमल", "योजना को पूरा"],
+    "acceptable_patterns": ["योजना बनाएं"]
+  },
+  {
+    "input": "She broke the ice at the party.",
+    "expected_patterns": ["माहौल को हल्का", "सहजता लाई", "झिझक दूर"],
+    "acceptable_patterns": ["बातचीत शुरू"]
+  }
+]

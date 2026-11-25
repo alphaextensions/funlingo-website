@@ -1,0 +1,173 @@
+/* Progress — stats cards + 5-month activity heatmap. */
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--s-3);
+  margin-bottom: var(--s-6);
+}
+
+.statCard {
+  padding: var(--s-4);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+}
+.statValue {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.statDelta {
+  font-size: 12px;
+  color: var(--fl-text-2);
+}
+
+.heatmapWrap {
+  padding: var(--s-5);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  margin-bottom: var(--s-6);
+  overflow-x: auto;
+}
+
+.heatHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+.heatTitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.heatLegend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--fl-text-3);
+}
+.heatLegend span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+.lv0 { background: var(--fl-surface-2); border: 1px solid var(--fl-border); }
+.lv1 { background: color-mix(in srgb, var(--fl-accent) 30%, transparent); }
+.lv2 { background: color-mix(in srgb, var(--fl-accent) 55%, transparent); }
+.lv3 { background: linear-gradient(135deg, var(--fl-accent), var(--fl-secondary)); }
+.lv4 { background: linear-gradient(135deg, var(--fl-secondary), var(--fl-primary)); }
+
+.heatGrid {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: start;
+  min-width: 760px;
+}
+
+.dayLabels {
+  display: grid;
+  grid-template-rows: repeat(7, 14px);
+  gap: 3px;
+  color: var(--fl-text-3);
+  font-size: 10px;
+  padding-top: 20px;
+}
+
+.weeks {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 14px;
+  gap: 3px;
+  overflow: visible;
+}
+
+.monthRow {
+  display: grid;
+  grid-template-rows: 14px repeat(7, 14px);
+  gap: 3px;
+  position: relative;
+}
+
+.monthLabel {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  font-size: 10px;
+  color: var(--fl-text-3);
+  white-space: nowrap;
+}
+
+.cell {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: var(--fl-surface-2);
+  border: 1px solid var(--fl-border);
+}
+.cellLv1 { background: color-mix(in srgb, var(--fl-accent) 30%, transparent); border-color: transparent; }
+.cellLv2 { background: color-mix(in srgb, var(--fl-accent) 55%, transparent); border-color: transparent; }
+.cellLv3 { background: linear-gradient(135deg, var(--fl-accent), var(--fl-secondary)); border-color: transparent; }
+.cellLv4 { background: linear-gradient(135deg, var(--fl-secondary), var(--fl-primary)); border-color: transparent; }
+
+.langBreak {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--s-3);
+}
+
+.langCard {
+  padding: var(--s-4);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.langRow {
+  display: flex;
+  justify-content: space-between;
+  color: var(--fl-text-2);
+  font-size: 13px;
+}
+.langRow span:last-child { font-weight: 700; color: var(--fl-text); }
+
+.freezeChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--fl-accent) 8%, transparent);
+  border: 1px solid var(--fl-border-2);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fl-text);
+}
+
+.sectionTitle {
+  margin: var(--s-5) 0 var(--s-3);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,128 @@
+/* /learn/tiny-lessons — Picker grid (Wave 11 extension parity, Wave 10 moved
+   the detail-route deck into FlashcardDeck.module.css).
+ * Mirrors the Funlingo extension's `.sit-grid` + `.sit-tile` block:
+ *   emoji on top (50px, bounce on hover),
+ *   bold title, sub-text (native title / fallback), phrase count.
+ *   Grid: 4-col default, 2-col @ 880px, 1-col @ 480px.
+ */
+
+.sitGrid {
+  display: grid;
+  gap: var(--s-4);
+  padding-bottom: var(--s-20);
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: var(--s-6);
+}
+
+.sitTile {
+  position: relative;
+  cursor: pointer;
+  border-radius: var(--r-md);
+  padding: var(--s-6) var(--s-5);
+  background:
+    radial-gradient(110% 90% at 50% 0%, color-mix(in oklab, var(--fl-accent) 14%, transparent), transparent 65%),
+    var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  text-align: center;
+  color: var(--fl-text);
+  text-decoration: none;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-height: 172px;
+  justify-content: center;
+  transition: border-color var(--d-base), box-shadow var(--d-base);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sitTile {
+    transition:
+      transform var(--d-base) var(--ease-out),
+      border-color var(--d-base),
+      box-shadow var(--d-base);
+  }
+  .sitTile:hover {
+    transform: translateY(-4px);
+    border-color: var(--fl-border-2);
+    box-shadow: var(--el-2);
+  }
+  .sitTile:active {
+    transform: translateY(-1px) scale(0.99);
+  }
+  .sitTile:hover .sitEmoji {
+    transform: scale(1.14) translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sitTile:hover {
+    border-color: var(--fl-border-2);
+    box-shadow: var(--el-2);
+  }
+}
+
+.sitTile:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 3px;
+}
+
+.sitEmoji {
+  font-size: 50px;
+  line-height: 1;
+  transition: transform var(--d-slow) var(--ease-bounce);
+}
+
+.sitTitle {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--fl-text);
+}
+
+.sitSub {
+  font-size: 11.5px;
+  color: var(--fl-text-3);
+  font-weight: 500;
+  margin-top: -4px;
+}
+
+.sitCount {
+  font-size: 12px;
+  color: var(--fl-text-2);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 880px) {
+  .sitGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .sitGrid { grid-template-columns: 1fr; }
+}
+
+/* ------- Phrase hero (above the deck) ------- */
+
+.phraseHero {
+  margin-top: var(--s-6);
+  margin-bottom: var(--s-6);
+  display: flex;
+  gap: var(--s-4);
+  align-items: center;
+}
+
+.phraseHeroIcon {
+  font-size: 40px;
+  line-height: 1;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-md);
+  background: var(--fl-surface-2);
+}

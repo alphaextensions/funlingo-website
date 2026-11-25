@@ -1,0 +1,32 @@
+[
+  {
+    "input": "いつも通り。",
+    "expected_patterns": ["(?i)same old", "(?i)as (usual|always)", "(?i)nothing new"],
+    "acceptable_patterns": ["(?i)the usual"]
+  },
+  {
+    "input": "元気にしてた？",
+    "expected_patterns": ["(?i)how (have|'ve) you been", "(?i)how are you"],
+    "acceptable_patterns": ["(?i)you doing (ok|alright)"]
+  },
+  {
+    "input": "正直、あまり元気じゃない。",
+    "expected_patterns": ["(?i)(not great|not doing great|been better)", "(?i)honestly.*not"],
+    "acceptable_patterns": ["(?i)could be better"]
+  },
+  {
+    "input": "やあ、調子どう？",
+    "expected_patterns": ["(?i)how(')?s it going", "(?i)hey.*how are", "(?i)what(')?s up"],
+    "acceptable_patterns": ["(?i)how are you"]
+  },
+  {
+    "input": "計画を実行しよう。",
+    "expected_patterns": ["(?i)carry out the plan", "(?i)execute the plan", "(?i)go ahead with the plan"],
+    "acceptable_patterns": ["(?i)put the plan"]
+  },
+  {
+    "input": "彼女はパーティーで場を和ませた。",
+    "expected_patterns": ["(?i)broke the ice", "(?i)warmed up the room"],
+    "acceptable_patterns": ["(?i)lightened the mood"]
+  }
+]

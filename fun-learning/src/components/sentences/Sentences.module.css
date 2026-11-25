@@ -1,0 +1,192 @@
+/* Sentences — list + card patterns.
+ *
+ * Wave 17: restored as its own module. /sentences used to borrow these
+ * classes from Words.module.css; the Wave 11 /words rewrite deleted them
+ * and the page rendered unstyled. Owned here now so /words can change
+ * freely.
+ */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  align-items: center;
+  margin-bottom: var(--s-4);
+}
+
+.toolbarSpacer { flex: 1; min-width: 20px; }
+
+.wrap,
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--s-3);
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 96px) minmax(0, 1fr) auto;
+  gap: var(--s-3);
+  align-items: center;
+  padding: var(--s-3);
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  transition: background var(--d-fast), border-color var(--d-fast);
+}
+.row:hover {
+  background: var(--fl-surface-2);
+  border-color: var(--fl-border-2);
+}
+
+@media (max-width: 540px) {
+  .row {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+  .rowActions { grid-column: 2 / 3; }
+}
+
+.rowThumb {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--r-sm);
+  background: linear-gradient(135deg, var(--fl-primary), var(--fl-secondary));
+  overflow: hidden;
+}
+.rowThumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.rowBody {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.gloss {
+  color: var(--fl-text-2);
+  font-size: 14px;
+  line-height: 1.4;
+}
+.gloss[data-hidden="true"] { color: transparent; background: var(--fl-surface-3); border-radius: 4px; }
+
+.scene {
+  color: var(--fl-text);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.scene mark {
+  background: var(--fl-pink-soft);
+  color: var(--fl-text);
+  padding: 0 3px;
+  border-radius: 4px;
+  text-decoration: underline;
+  text-decoration-color: var(--fl-accent);
+  text-decoration-style: dashed;
+  text-underline-offset: 2px;
+}
+
+.sourceLine {
+  font-size: 11px;
+  color: var(--fl-text-3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.rowActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-4);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  transition: transform var(--d-fast) var(--ease), border-color var(--d-fast);
+}
+.card:hover {
+  border-color: var(--fl-border-2);
+  box-shadow: var(--el-2);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card:hover { transform: translateY(-1px); }
+}
+
+.cardThumb {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--r-md);
+  background: linear-gradient(135deg, var(--fl-primary), var(--fl-secondary));
+  overflow: hidden;
+}
+.cardThumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.searchInput {
+  flex: 1;
+  min-width: 180px;
+  padding: 8px 14px;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-pill);
+  color: var(--fl-text);
+  font-size: 14px;
+  font-family: inherit;
+}
+.searchInput:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.iconBtn {
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: 999px;
+  color: var(--fl-text-2);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background var(--d-fast), color var(--d-fast);
+}
+.iconBtn:hover {
+  background: var(--fl-surface-2);
+  color: var(--fl-text);
+}
+.iconBtn[aria-pressed="true"] {
+  background: var(--fl-surface-3);
+  color: var(--fl-accent);
+  box-shadow: inset 0 0 0 1px var(--fl-border-2);
+}
+.iconBtn svg { width: 16px; height: 16px; }
+
+.countNote {
+  color: var(--fl-text-3);
+  font-size: 12px;
+}

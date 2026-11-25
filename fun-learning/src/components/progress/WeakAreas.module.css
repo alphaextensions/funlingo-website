@@ -1,0 +1,197 @@
+/* Wave 4 design-polish: "Could use another pass" on Progress → Review.
+   Tone softened — no danger red, no left border. */
+
+.wrap {
+  margin-top: var(--s-10);
+  padding: var(--s-5) var(--s-6);
+  background: var(--fl-glass);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--el-2);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--s-4);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-text-3);
+  margin-bottom: var(--s-1);
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--fl-text);
+}
+
+.empty {
+  margin: 0;
+  color: var(--fl-text-2);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.primaryLink {
+  padding: 8px 16px;
+  border-radius: var(--r-pill);
+  background: linear-gradient(135deg, var(--fl-secondary), var(--fl-primary));
+  color: var(--fl-on-accent);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--el-1);
+  transition: box-shadow var(--d-fast) var(--ease);
+  white-space: nowrap;
+}
+.primaryLink:hover { box-shadow: var(--glow); }
+@media (prefers-reduced-motion: no-preference) {
+  .primaryLink {
+    transition: transform var(--d-fast) var(--ease), box-shadow var(--d-fast) var(--ease);
+  }
+  .primaryLink:hover { transform: translateY(-1px); }
+}
+.primaryLink:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 3px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.row {
+  margin: 0;
+}
+
+.rowLink {
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  align-items: center;
+  gap: var(--s-3);
+  padding: 10px 12px;
+  background: var(--fl-surface-1);
+  border: 1px solid var(--fl-border);
+  border-radius: var(--r-md);
+  color: var(--fl-text);
+  text-decoration: none;
+  transition: background var(--d-fast) var(--ease);
+}
+.rowLink:hover {
+  background: var(--fl-surface-2);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rowLink {
+    transition: background var(--d-fast) var(--ease), transform var(--d-fast) var(--ease);
+  }
+  .rowLink:hover { transform: translateX(2px); }
+}
+.rowLink:focus-visible {
+  outline: 2px solid var(--fl-accent);
+  outline-offset: 2px;
+}
+
+.rowBullet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--fl-surface-3);
+  color: var(--fl-text-2);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.rowBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.rowLabel {
+  color: var(--fl-text);
+  font-size: 15px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rowSublabel {
+  color: var(--fl-text-3);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rowCount {
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+  background: color-mix(in oklab, var(--fl-warning) 20%, transparent);
+  color: var(--fl-text);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* --- Skeleton (streaming fallback) --- */
+
+.rowGhost {
+  cursor: default;
+}
+
+.ghostBar,
+.ghostBarShort,
+.ghostChip {
+  display: inline-block;
+  background: var(--fl-surface-3);
+  border-radius: var(--r-sm);
+  color: transparent;
+}
+.ghostBar {
+  width: 60%;
+  height: 14px;
+}
+.ghostBarShort {
+  width: 35%;
+  height: 11px;
+}
+.ghostChip {
+  width: 56px;
+  height: 16px;
+  border-radius: var(--r-pill);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ghostBar,
+  .ghostBarShort,
+  .ghostChip,
+  .rowGhost .rowBullet {
+    animation: weak-pulse 1.4s var(--ease-out) infinite;
+  }
+}
+@keyframes weak-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
