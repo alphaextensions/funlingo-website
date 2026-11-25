@@ -3,11 +3,13 @@
     "title": "떠나신다니 아쉬워요",
     "description": "Funlingo를 제거한 이유를 알려 주세요. 보내 주신 의견은 더 나은 언어 학습 경험을 만드는 데 도움이 됩니다."
   },
+  "header": {
+    "reinstall": "Funlingo 다시 설치"
+  },
   "form": {
     "title": "Funlingo를 제거한 이유가 무엇인가요?",
-    "subtitle": "한 번만 탭하면 됩니다. 답변은 팀에 바로 전달돼요.",
+    "subtitle": "이유를 고르고 한두 줄 덧붙여 주세요. 팀에 바로 전달됩니다.",
     "reasonsAriaLabel": "제거 이유",
-    "optional": "(선택)",
     "howLongLabel": "Funlingo를 얼마나 사용하셨나요? (선택)",
     "emailLabel": "이메일 (선택) - 문제가 해결되면 알려 드릴게요",
     "emailPlaceholder": "you@example.com",

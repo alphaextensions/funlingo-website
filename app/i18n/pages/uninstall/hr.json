@@ -3,11 +3,13 @@
     "title": "Žao nam je što odlazite",
     "description": "Recite nam zašto ste deinstalirali Funlingo. Vaše povratne informacije pomažu nam stvoriti bolje iskustvo učenja jezika."
   },
+  "header": {
+    "reinstall": "Ponovno instaliraj Funlingo"
+  },
   "form": {
     "title": "Zašto ste deinstalirali Funlingo?",
-    "subtitle": "Dovoljan je jedan dodir. Odgovor ide izravno timu.",
+    "subtitle": "Odaberite razlog i dodajte redak ili dva. Stiže izravno timu.",
     "reasonsAriaLabel": "Razlog deinstalacije",
-    "optional": "(neobavezno)",
     "howLongLabel": "Koliko ste dugo koristili Funlingo? (neobavezno)",
     "emailLabel": "E-pošta (neobavezno), da vam javimo kad bude popravljeno",
     "emailPlaceholder": "you@example.com",

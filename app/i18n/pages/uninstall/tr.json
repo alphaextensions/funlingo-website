@@ -3,11 +3,13 @@
     "title": "Gitmenize üzüldük",
     "description": "Funlingo'yu neden kaldırdığınızı bize söyleyin. Geri bildiriminiz daha iyi bir dil öğrenme deneyimi oluşturmamıza yardımcı olur."
   },
+  "header": {
+    "reinstall": "Funlingo'yu yeniden yükle"
+  },
   "form": {
     "title": "Funlingo'yu neden kaldırdınız?",
-    "subtitle": "Tek dokunuş yeterli. Yanıtınız doğrudan ekibe ulaşır.",
+    "subtitle": "Bir neden seçin, ardından bir iki satır ekleyin. Doğrudan ekibe ulaşır.",
     "reasonsAriaLabel": "Kaldırma nedeni",
-    "optional": "(isteğe bağlı)",
     "howLongLabel": "Funlingo'yu ne kadar süre kullandınız? (isteğe bağlı)",
     "emailLabel": "E-posta (isteğe bağlı), düzeltildiğinde size haber verebilmemiz için",
     "emailPlaceholder": "you@example.com",

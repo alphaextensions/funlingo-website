@@ -3,11 +3,13 @@
     "title": "Szkoda, że odchodzisz",
     "description": "Podaj powód odinstalowania Funlingo. Twoja opinia pomaga nam tworzyć lepsze narzędzie do nauki języków."
   },
+  "header": {
+    "reinstall": "Zainstaluj Funlingo ponownie"
+  },
   "form": {
     "title": "Co skłoniło Cię do odinstalowania?",
-    "subtitle": "Wystarczy jedno kliknięcie. Odpowiedź trafia prosto do zespołu.",
+    "subtitle": "Wybierz powód i dopisz zdanie lub dwa. Trafi to prosto do zespołu.",
     "reasonsAriaLabel": "Powód odinstalowania",
-    "optional": "(opcjonalnie)",
     "howLongLabel": "Czas korzystania z Funlingo (opcjonalnie)",
     "emailLabel": "E-mail (opcjonalnie), żebyśmy mogli dać Ci znać, gdy to naprawimy",
     "emailPlaceholder": "you@example.com",

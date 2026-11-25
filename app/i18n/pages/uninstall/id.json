@@ -3,11 +3,13 @@
     "title": "Sayang sekali kamu pergi",
     "description": "Beri tahu kami kenapa kamu menghapus Funlingo. Masukanmu membantu kami membangun pengalaman belajar bahasa yang lebih baik."
   },
+  "header": {
+    "reinstall": "Pasang ulang Funlingo"
+  },
   "form": {
     "title": "Kenapa kamu menghapus Funlingo?",
-    "subtitle": "Cukup satu ketukan. Jawabanmu langsung sampai ke tim.",
+    "subtitle": "Pilih alasan, lalu tambahkan satu atau dua kalimat. Langsung sampai ke tim kami.",
     "reasonsAriaLabel": "Alasan menghapus",
-    "optional": "(opsional)",
     "howLongLabel": "Berapa lama kamu memakai Funlingo? (opsional)",
     "emailLabel": "Email (opsional), agar kami bisa mengabarimu saat sudah diperbaiki",
     "emailPlaceholder": "you@example.com",

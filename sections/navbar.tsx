@@ -12,24 +12,31 @@ import { ChromeCTA } from "@/app/_components/cta";
 
 interface NavbarProps {
   currentPage?: string; // Optional prop to indicate current page
-  minimal?: boolean; // Logo-only header (e.g. uninstall page) — no nav links or CTA
+  minimal?: boolean; // Logo-only header (e.g. uninstall page) — no nav links
+  action?: React.ReactNode; // Minimal mode only: one control pinned to the right
 }
 
-const Navbar = ({ currentPage = "/", minimal = false }: NavbarProps) => {
+const Navbar = ({ currentPage = "/", minimal = false, action }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t, locale } = useT();
 
-  // Minimal mode: just the logo, centered. Used on focused pages (uninstall).
+  // Minimal mode: just the logo (centered, or left of `action`). Used on
+  // focused pages (uninstall).
   if (minimal) {
     return (
       <header
         className="sticky top-0 z-50 w-full backdrop-blur-[16px] border-b"
         style={{ background: "var(--nav)", borderColor: "var(--border)" }}
       >
-        <div className="flex items-center justify-center max-w-[1240px] mx-auto px-[34px] py-[15px]">
-          <Link href={navHref("/", locale)} prefetch={false}>
-            <img src={logo} alt="Funlingo" className="h-12 sm:h-14 w-auto block" />
+        <div
+          className={`flex items-center gap-3 max-w-[1240px] mx-auto px-4 sm:px-[34px] py-3 sm:py-[15px] ${
+            action ? "justify-between" : "justify-center"
+          }`}
+        >
+          <Link href={navHref("/", locale)} prefetch={false} className="shrink-0">
+            <img src={logo} alt="Funlingo" className={`${action ? "h-9" : "h-12"} sm:h-14 w-auto block`} />
           </Link>
+          {action}
         </div>
       </header>
     );
