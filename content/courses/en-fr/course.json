@@ -1,0 +1,675 @@
+{
+  "_note": "DRAFT — needs native-speaker review before indexing. Standard (France) French.",
+  "id": "en-fr",
+  "native": "en",
+  "target": "fr",
+  "version": 1,
+  "words": {
+    "bonjour": { "term": "bonjour", "gloss": "hello" },
+    "ca-va": { "term": "ça va ?", "gloss": "how are you?" },
+    "merci": { "term": "merci", "gloss": "thank you" },
+    "tres-bien": { "term": "très bien", "gloss": "very well" },
+    "a-plus-tard": { "term": "à plus tard", "gloss": "see you later" },
+    "comment-tu-tappelles": { "term": "comment tu t'appelles ?", "gloss": "what's your name?" },
+    "je-mappelle": { "term": "je m'appelle…", "gloss": "my name is…" },
+    "moi-cest": { "term": "moi, c'est…", "gloss": "I'm… (casual)" },
+    "enchante": { "term": "enchanté", "gloss": "nice to meet you" },
+    "et-toi": { "term": "et toi ?", "gloss": "and you?" },
+    "tu-viens-dou": { "term": "tu viens d'où ?", "gloss": "where are you from?" },
+    "je-viens-de": { "term": "je viens de…", "gloss": "I come from…" },
+    "je-suis": { "term": "je suis…", "gloss": "I am…" },
+    "cest-super": { "term": "c'est super !", "gloss": "that's great!" },
+    "je-vous-sers": { "term": "qu'est-ce que je vous sers ?", "gloss": "what can I get you?" },
+    "un-cafe": { "term": "un café", "gloss": "a coffee" },
+    "sil-vous-plait": { "term": "s'il vous plaît", "gloss": "please" },
+    "et-avec-ca": { "term": "et avec ça ?", "gloss": "anything else?" },
+    "un-croissant": { "term": "un croissant", "gloss": "a croissant" },
+    "aussi": { "term": "aussi", "gloss": "too, as well" },
+    "cest-combien": { "term": "c'est combien ?", "gloss": "how much is it?" },
+    "ca-fait": { "term": "ça fait cinq euros", "gloss": "that's five euros" },
+    "payer-par-carte": { "term": "je peux payer par carte ?", "gloss": "can I pay by card?" },
+    "bien-sur": { "term": "bien sûr", "gloss": "of course" },
+    "voila": { "term": "voilà", "gloss": "here you go" },
+    "merci-beaucoup": { "term": "merci beaucoup", "gloss": "thank you very much" },
+    "je-vous-en-prie": { "term": "je vous en prie", "gloss": "you're welcome (polite)" },
+    "bonne-journee": { "term": "bonne journée !", "gloss": "have a nice day!" },
+    "vous-aussi": { "term": "vous aussi", "gloss": "you too" },
+    "excusez-moi": { "term": "excusez-moi", "gloss": "excuse me" },
+    "ou-sont": { "term": "où sont… ?", "gloss": "where are…?" },
+    "les-toilettes": { "term": "les toilettes", "gloss": "the toilets" },
+    "a-droite": { "term": "à droite", "gloss": "on the right" },
+    "a-gauche": { "term": "à gauche", "gloss": "on the left" },
+    "la-sortie": { "term": "la sortie", "gloss": "the exit" },
+    "ou-est": { "term": "où est… ?", "gloss": "where is…?" },
+    "la-gare": { "term": "la gare", "gloss": "the train station" },
+    "tout-droit": { "term": "tout droit", "gloss": "straight ahead" },
+    "cest-loin": { "term": "c'est loin ?", "gloss": "is it far?" },
+    "tout-pres": { "term": "tout près", "gloss": "very close" },
+    "a-pied": { "term": "à pied", "gloss": "on foot" },
+    "un-ticket": { "term": "un ticket", "gloss": "a ticket" },
+    "aller-simple": { "term": "un aller simple", "gloss": "a one-way ticket" },
+    "aller-retour": { "term": "un aller-retour", "gloss": "a return ticket" },
+    "le-prochain": { "term": "le prochain", "gloss": "the next one" },
+    "arrive": { "term": "arrive", "gloss": "arrives" },
+    "je-peux-vous-aider": { "term": "je peux vous aider ?", "gloss": "can I help you?" },
+    "je-regarde": { "term": "je regarde", "gloss": "I'm just looking" },
+    "daccord": { "term": "d'accord", "gloss": "OK, all right" },
+    "ce-pull": { "term": "ce pull", "gloss": "this sweater" },
+    "bleu": { "term": "bleu", "gloss": "blue" },
+    "quelle-taille": { "term": "vous faites quelle taille ?", "gloss": "what size are you?" },
+    "noir": { "term": "noir", "gloss": "black" },
+    "essayer": { "term": "je peux l'essayer ?", "gloss": "can I try it on?" },
+    "la-cabine": { "term": "la cabine", "gloss": "the fitting room" },
+    "au-fond": { "term": "au fond", "gloss": "at the back" },
+    "je-le-prends": { "term": "je le prends", "gloss": "I'll take it" },
+    "vous-payez-comment": { "term": "vous payez comment ?", "gloss": "how are you paying?" },
+    "en-especes": { "term": "en espèces", "gloss": "in cash" },
+    "le-recu": { "term": "le reçu", "gloss": "the receipt" },
+    "freres-et-soeurs": { "term": "tu as des frères et sœurs ?", "gloss": "do you have siblings?" },
+    "jai": { "term": "j'ai…", "gloss": "I have…" },
+    "un-frere": { "term": "un frère", "gloss": "a brother" },
+    "une-soeur": { "term": "une sœur", "gloss": "a sister" },
+    "plus-age": { "term": "plus âgé", "gloss": "older" },
+    "plus-jeune": { "term": "plus jeune", "gloss": "younger" },
+    "cest-qui": { "term": "c'est qui ?", "gloss": "who is it?" },
+    "ma-mere": { "term": "ma mère", "gloss": "my mother" },
+    "mon-pere": { "term": "mon père", "gloss": "my father" },
+    "les-enfants": { "term": "les enfants", "gloss": "the children" },
+    "mon-neveu": { "term": "mon neveu", "gloss": "my nephew" },
+    "ma-niece": { "term": "ma nièce", "gloss": "my niece" },
+    "bienvenue": { "term": "bienvenue !", "gloss": "welcome!" },
+    "entre": { "term": "entre", "gloss": "come in" },
+    "elle-est-belle": { "term": "elle est belle !", "gloss": "it's lovely!" },
+    "la-cuisine": { "term": "la cuisine", "gloss": "the kitchen" },
+    "tu-habites-ici": { "term": "tu habites ici ?", "gloss": "do you live here?" },
+    "mes-parents": { "term": "mes parents", "gloss": "my parents" },
+    "tu-fais-quoi": { "term": "tu fais quoi dans la vie ?", "gloss": "what do you do for a living?" },
+    "professeur": { "term": "professeur", "gloss": "teacher" },
+    "je-travaille": { "term": "je travaille dans…", "gloss": "I work in…" },
+    "infirmiere": { "term": "infirmière", "gloss": "nurse" },
+    "cest-interessant": { "term": "c'est intéressant !", "gloss": "that's interesting!" },
+    "travailles-ou-etudies": { "term": "tu travailles ou tu étudies ?", "gloss": "do you work or study?" },
+    "luniversite": { "term": "l'université", "gloss": "the university" },
+    "tu-etudies-quoi": { "term": "tu étudies quoi ?", "gloss": "what are you studying?" },
+    "difficile": { "term": "difficile", "gloss": "difficult" },
+    "jadore": { "term": "j'adore", "gloss": "I love it" },
+    "desole": { "term": "désolé", "gloss": "sorry" },
+    "en-retard": { "term": "je suis en retard", "gloss": "I'm late" },
+    "pas-grave": { "term": "ce n'est pas grave", "gloss": "it's not a big deal" },
+    "la-reunion": { "term": "la réunion", "gloss": "the meeting" },
+    "a-dix-heures": { "term": "à dix heures", "gloss": "at ten o'clock" },
+    "deuxieme-etage": { "term": "au deuxième étage", "gloss": "on the second floor" },
+    "quelle-heure": { "term": "quelle heure est-il ?", "gloss": "what time is it?" },
+    "il-est": { "term": "il est… heures", "gloss": "it's … o'clock" },
+    "et-demie": { "term": "et demie", "gloss": "half past" },
+    "de-rien": { "term": "de rien", "gloss": "don't mention it" },
+    "tu-es-libre": { "term": "tu es libre ?", "gloss": "are you free?" },
+    "samedi": { "term": "samedi", "gloss": "Saturday" },
+    "dimanche": { "term": "dimanche", "gloss": "Sunday" },
+    "parfait": { "term": "parfait", "gloss": "perfect" },
+    "tu-veux-aller": { "term": "tu veux aller… ?", "gloss": "do you want to go…?" },
+    "au-cinema": { "term": "au cinéma", "gloss": "to the cinema" },
+    "avec-plaisir": { "term": "avec plaisir", "gloss": "with pleasure" },
+    "a-quelle-heure": { "term": "à quelle heure ?", "gloss": "at what time?" },
+    "plutot": { "term": "plutôt", "gloss": "rather" },
+    "pas-trop": { "term": "pas trop", "gloss": "not really" },
+    "jai-mal": { "term": "j'ai mal à…", "gloss": "my … hurts" },
+    "la-tete": { "term": "la tête", "gloss": "the head" },
+    "fievre": { "term": "de la fièvre", "gloss": "a fever" },
+    "fatigue": { "term": "fatigué", "gloss": "tired" },
+    "quelque-chose-contre": { "term": "vous avez quelque chose contre… ?", "gloss": "do you have something for…?" },
+    "le-medicament": { "term": "le médicament", "gloss": "the medicine" },
+    "un-comprime": { "term": "un comprimé", "gloss": "a tablet" },
+    "toutes-les-huit-heures": { "term": "toutes les huit heures", "gloss": "every eight hours" },
+    "pendant-le-repas": { "term": "pendant le repas", "gloss": "with a meal" },
+    "au-secours": { "term": "au secours !", "gloss": "help!" },
+    "quest-ce-qui-se-passe": { "term": "qu'est-ce qui se passe ?", "gloss": "what's going on?" },
+    "jai-perdu": { "term": "j'ai perdu…", "gloss": "I've lost…" },
+    "mon-passeport": { "term": "mon passeport", "gloss": "my passport" },
+    "calmez-vous": { "term": "calmez-vous", "gloss": "stay calm" },
+    "la-police": { "term": "la police", "gloss": "the police" }
+  },
+  "seasons": [
+    {
+      "id": "season-1",
+      "cefr": "A1",
+      "title": "First steps",
+      "canDo": [
+        "Greet people and introduce yourself",
+        "Order at a café and pay",
+        "Ask for and follow simple directions",
+        "Shop for clothes and check out",
+        "Talk about your family and home",
+        "Say what you do for work or study",
+        "Tell the time and make plans",
+        "Say what hurts and ask for help"
+      ],
+      "episodes": [
+        {
+          "id": "bonjour",
+          "theme": "greetings",
+          "title": "Bonjour ! Meeting people",
+          "scenes": [
+            {
+              "id": "bonjour-salut",
+              "title": "Saying hello",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Camille", "target": "Bonjour ! Ça va ?", "native": "Hello! How are you?" },
+                  { "speaker": "Hugo", "target": "Ça va bien, merci. Et toi ?", "native": "I'm fine, thanks. And you?" },
+                  { "speaker": "Camille", "target": "Très bien, merci.", "native": "Very well, thanks." },
+                  { "speaker": "Hugo", "target": "À plus tard !", "native": "See you later!" }
+                ]
+              },
+              "words": ["bonjour", "ca-va", "merci", "et-toi", "tres-bien", "a-plus-tard"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "bonjour-nom",
+              "title": "What's your name?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Hugo", "target": "Comment tu t'appelles ?", "native": "What's your name?" },
+                  { "speaker": "Léa", "target": "Je m'appelle Léa. Et toi ?", "native": "My name is Léa. And you?" },
+                  { "speaker": "Hugo", "target": "Moi, c'est Hugo. Enchanté !", "native": "I'm Hugo. Nice to meet you!" },
+                  { "speaker": "Léa", "target": "Enchantée !", "native": "Nice to meet you!" }
+                ]
+              },
+              "words": ["comment-tu-tappelles", "je-mappelle", "moi-cest", "enchante"],
+              "pattern": {
+                "title": "Enchanté or enchantée?",
+                "tip": "A man writes “enchanté” and a woman writes “enchantée”; they sound exactly the same. Many French words change their spelling like this for gender."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "bonjour-origine",
+              "title": "Where are you from?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Léa", "target": "Tu viens d'où ?", "native": "Where are you from?" },
+                  { "speaker": "Hugo", "target": "Je viens de Lyon. Et toi ?", "native": "I'm from Lyon. And you?" },
+                  { "speaker": "Léa", "target": "Je suis canadienne, de Montréal.", "native": "I'm Canadian, from Montreal." },
+                  { "speaker": "Hugo", "target": "C'est super !", "native": "That's great!" }
+                ]
+              },
+              "words": ["tu-viens-dou", "je-viens-de", "je-suis", "cest-super"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "How do you say “nice to meet you”?", "options": ["Enchanté", "À plus tard", "Bonjour"], "answer": 0 },
+              { "prompt": "Hugo says “Je viens de Lyon.” Where is he from?", "options": ["Montreal", "Lyon", "Paris"], "answer": 1 },
+              { "prompt": "What does “Ça va ?” mean?", "options": ["What's your name?", "How are you?", "Where are you from?"], "answer": 1 },
+              { "prompt": "After answering, Léa asks “Et toi ?” What does she mean?", "options": ["And you?", "Who are you?", "Where are you?"], "answer": 0 },
+              { "prompt": "Which one means “see you later”?", "options": ["Très bien", "Bonjour", "À plus tard"], "answer": 2 }
+            ]
+          }
+        },
+        {
+          "id": "cafe",
+          "theme": "food",
+          "title": "Un café, s'il vous plaît",
+          "scenes": [
+            {
+              "id": "cafe-commander",
+              "title": "Ordering",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Serveur", "target": "Bonjour, qu'est-ce que je vous sers ?", "native": "Hello, what can I get you?" },
+                  { "speaker": "Camille", "target": "Un café, s'il vous plaît.", "native": "A coffee, please." },
+                  { "speaker": "Serveur", "target": "Et avec ça ?", "native": "Anything else?" },
+                  { "speaker": "Camille", "target": "Un croissant aussi.", "native": "A croissant as well." }
+                ]
+              },
+              "words": ["je-vous-sers", "un-cafe", "sil-vous-plait", "et-avec-ca", "un-croissant", "aussi"],
+              "pattern": {
+                "title": "“Tu” and “vous”",
+                "tip": "Say “vous” to people you don't know, like a waiter, and “tu” to friends. That's why the polite please is “s'il vous plaît”; friends say “s'il te plaît”."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "cafe-prix",
+              "title": "How much is it?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Camille", "target": "C'est combien ?", "native": "How much is it?" },
+                  { "speaker": "Serveur", "target": "Ça fait cinq euros.", "native": "That's five euros." },
+                  { "speaker": "Camille", "target": "Je peux payer par carte ?", "native": "Can I pay by card?" },
+                  { "speaker": "Serveur", "target": "Oui, bien sûr.", "native": "Yes, of course." }
+                ]
+              },
+              "words": ["cest-combien", "ca-fait", "payer-par-carte", "bien-sur"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "cafe-merci",
+              "title": "Paying and saying thanks",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Serveur", "target": "Voilà votre monnaie.", "native": "Here's your change." },
+                  { "speaker": "Camille", "target": "Merci beaucoup.", "native": "Thank you very much." },
+                  { "speaker": "Serveur", "target": "Je vous en prie. Bonne journée !", "native": "You're welcome. Have a nice day!" },
+                  { "speaker": "Camille", "target": "Merci, vous aussi !", "native": "Thanks, you too!" }
+                ]
+              },
+              "words": ["voila", "merci-beaucoup", "je-vous-en-prie", "bonne-journee", "vous-aussi"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "How do you ask “how much is it?”", "options": ["Et avec ça ?", "C'est combien ?", "Tu viens d'où ?"], "answer": 1 },
+              { "prompt": "The waiter asks “Et avec ça ?” What does that mean?", "options": ["Anything else?", "How are you?", "Here you go."], "answer": 0 },
+              { "prompt": "What does Camille order with her coffee?", "options": ["A croissant", "A glass of water", "A tea"], "answer": 0 },
+              { "prompt": "Someone says “Merci beaucoup.” A polite reply is:", "options": ["Ça fait cinq euros.", "Je vous en prie.", "Et avec ça ?"], "answer": 1 },
+              { "prompt": "Who would you call “vous”?", "options": ["Your best friend", "Your little brother", "A waiter you don't know"], "answer": 2 }
+            ]
+          }
+        },
+        {
+          "id": "chemin",
+          "theme": "directions",
+          "title": "Où est… ? Finding your way",
+          "scenes": [
+            {
+              "id": "chemin-toilettes",
+              "title": "Where is it?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Malik", "target": "Excusez-moi, où sont les toilettes ?", "native": "Excuse me, where are the toilets?" },
+                  { "speaker": "Serveuse", "target": "Au fond, à droite.", "native": "At the back, on the right." },
+                  { "speaker": "Malik", "target": "Et la sortie ?", "native": "And the exit?" },
+                  { "speaker": "Serveuse", "target": "À gauche.", "native": "On the left." },
+                  { "speaker": "Malik", "target": "Merci !", "native": "Thanks!" }
+                ]
+              },
+              "words": ["excusez-moi", "ou-sont", "les-toilettes", "a-droite", "a-gauche", "la-sortie"],
+              "pattern": {
+                "title": "“Où est… ?” and “Où sont… ?”",
+                "tip": "Ask “Où est… ?” for one thing and “Où sont… ?” for more than one: Où est la gare ? Où sont les toilettes ? (“Toilettes” is always plural in French.)"
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "chemin-gare",
+              "title": "Straight ahead",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Camille", "target": "Pardon, où est la gare ?", "native": "Excuse me, where's the train station?" },
+                  { "speaker": "Monsieur", "target": "Allez tout droit, puis tournez à gauche.", "native": "Go straight ahead, then turn left." },
+                  { "speaker": "Camille", "target": "C'est loin ?", "native": "Is it far?" },
+                  { "speaker": "Monsieur", "target": "Non, c'est tout près. Cinq minutes à pied.", "native": "No, it's very close. Five minutes on foot." }
+                ]
+              },
+              "words": ["ou-est", "la-gare", "tout-droit", "cest-loin", "tout-pres", "a-pied"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "chemin-metro",
+              "title": "Taking the metro",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Malik", "target": "Un ticket, s'il vous plaît.", "native": "One ticket, please." },
+                  { "speaker": "Agente", "target": "Un aller simple ?", "native": "One way?" },
+                  { "speaker": "Malik", "target": "Non, un aller-retour.", "native": "No, a return." },
+                  { "speaker": "Agente", "target": "Le prochain métro arrive dans trois minutes.", "native": "The next train arrives in three minutes." }
+                ]
+              },
+              "words": ["un-ticket", "aller-simple", "aller-retour", "le-prochain", "arrive"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "“À droite” means…", "options": ["on the left", "on the right", "straight ahead"], "answer": 1 },
+              { "prompt": "How do you ask where the toilets are?", "options": ["Où sont les toilettes ?", "C'est combien, les toilettes ?", "Comment tu t'appelles ?"], "answer": 0 },
+              { "prompt": "Is the station far?", "options": ["Yes, it's far", "No — five minutes on foot", "It's next to the café"], "answer": 1 },
+              { "prompt": "What kind of ticket does Malik buy?", "options": ["One way", "A return", "None"], "answer": 1 },
+              { "prompt": "Which one means “straight ahead”?", "options": ["tout près", "tout droit", "à gauche"], "answer": 1 }
+            ]
+          }
+        },
+        {
+          "id": "boutique",
+          "theme": "shopping",
+          "title": "En boutique: Shopping",
+          "scenes": [
+            {
+              "id": "boutique-regarder",
+              "title": "Just looking",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Vendeuse", "target": "Bonjour, je peux vous aider ?", "native": "Hello, can I help you?" },
+                  { "speaker": "Léa", "target": "Non merci, je regarde.", "native": "No thanks, I'm just looking." },
+                  { "speaker": "Vendeuse", "target": "D'accord. N'hésitez pas !", "native": "All right. Just ask!" },
+                  { "speaker": "Léa", "target": "Vous avez ce pull en bleu ?", "native": "Do you have this sweater in blue?" }
+                ]
+              },
+              "words": ["je-peux-vous-aider", "je-regarde", "daccord", "ce-pull", "bleu"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "boutique-taille",
+              "title": "Size and colour",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Vendeuse", "target": "Vous faites quelle taille ?", "native": "What size are you?" },
+                  { "speaker": "Léa", "target": "Du M.", "native": "A medium." },
+                  { "speaker": "Vendeuse", "target": "Voilà, en bleu et en noir.", "native": "Here you go, in blue and in black." },
+                  { "speaker": "Léa", "target": "Je peux l'essayer ?", "native": "Can I try it on?" },
+                  { "speaker": "Vendeuse", "target": "Oui, la cabine est au fond.", "native": "Yes, the fitting room is at the back." }
+                ]
+              },
+              "words": ["quelle-taille", "noir", "essayer", "la-cabine", "au-fond"],
+              "pattern": {
+                "title": "Colours come after the thing",
+                "tip": "In French the colour usually follows the noun: un pull bleu (a blue sweater), une robe noire (a black dress)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "boutique-caisse",
+              "title": "At the till",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Léa", "target": "Je le prends.", "native": "I'll take it." },
+                  { "speaker": "Caissier", "target": "Ça fait quarante euros. Vous payez comment ?", "native": "That's forty euros. How are you paying?" },
+                  { "speaker": "Léa", "target": "En espèces.", "native": "In cash." },
+                  { "speaker": "Caissier", "target": "Voici votre reçu.", "native": "Here's your receipt." }
+                ]
+              },
+              "words": ["je-le-prends", "vous-payez-comment", "en-especes", "le-recu"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "“Je regarde” in a shop means…", "options": ["I'll take it", "I'm just looking", "Can I try it on?"], "answer": 1 },
+              { "prompt": "What size does Léa ask for?", "options": ["Small", "Medium", "Large"], "answer": 1 },
+              { "prompt": "Where is the fitting room?", "options": ["At the back", "Upstairs", "Next to the till"], "answer": 0 },
+              { "prompt": "How do you say “I'll take it”?", "options": ["Je m'appelle.", "Je le prends.", "Je regarde."], "answer": 1 },
+              { "prompt": "Which is natural French for “a blue sweater”?", "options": ["un bleu pull", "bleu un pull", "un pull bleu"], "answer": 2 }
+            ]
+          }
+        },
+        {
+          "id": "famille",
+          "theme": "family",
+          "title": "Ma famille: Family and home",
+          "scenes": [
+            {
+              "id": "famille-freres",
+              "title": "Brothers and sisters",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Hugo", "target": "Tu as des frères et sœurs ?", "native": "Do you have any brothers or sisters?" },
+                  { "speaker": "Léa", "target": "Oui, j'ai un frère et une sœur.", "native": "Yes, I have a brother and a sister." },
+                  { "speaker": "Hugo", "target": "Ils sont plus âgés ?", "native": "Are they older?" },
+                  { "speaker": "Léa", "target": "Mon frère est plus âgé, ma sœur est plus jeune.", "native": "My brother is older, my sister is younger." }
+                ]
+              },
+              "words": ["freres-et-soeurs", "jai", "un-frere", "une-soeur", "plus-age", "plus-jeune"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "famille-photos",
+              "title": "Family photos",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Camille", "target": "C'est qui, sur la photo ?", "native": "Who's in the photo?" },
+                  { "speaker": "Malik", "target": "C'est ma mère. Et là, c'est mon père.", "native": "That's my mother. And there, that's my father." },
+                  { "speaker": "Camille", "target": "Et les enfants ?", "native": "And the children?" },
+                  { "speaker": "Malik", "target": "C'est mon neveu, Noah, et ma nièce, Inès.", "native": "That's my nephew Noah and my niece Inès." }
+                ]
+              },
+              "words": ["cest-qui", "ma-mere", "mon-pere", "les-enfants", "mon-neveu", "ma-niece"],
+              "pattern": {
+                "title": "Mon, ma, mes",
+                "tip": "“My” changes with the word: mon père (masculine), ma mère (feminine), mes parents (plural)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "famille-maison",
+              "title": "Welcome home",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Léa", "target": "Bienvenue ! Entre, entre.", "native": "Welcome! Come in, come in." },
+                  { "speaker": "Hugo", "target": "Merci. Elle est belle, ta maison !", "native": "Thanks. Your house is lovely!" },
+                  { "speaker": "Léa", "target": "Merci. La cuisine est ici, la salle de bains est là-bas.", "native": "Thanks. The kitchen is here, and the bathroom is over there." },
+                  { "speaker": "Hugo", "target": "Tu habites ici avec ta famille ?", "native": "Do you live here with your family?" },
+                  { "speaker": "Léa", "target": "Oui, avec mes parents.", "native": "Yes, with my parents." }
+                ]
+              },
+              "words": ["bienvenue", "entre", "elle-est-belle", "la-cuisine", "tu-habites-ici", "mes-parents"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "“J'ai une sœur” means…", "options": ["I am a sister", "I have a sister", "I want a sister"], "answer": 1 },
+              { "prompt": "Léa's brother is…", "options": ["younger than her", "older than her", "her twin"], "answer": 1 },
+              { "prompt": "How do you ask “who is it?”", "options": ["C'est qui ?", "Ça va ?", "C'est combien ?"], "answer": 0 },
+              { "prompt": "Which one means “my parents”?", "options": ["mon père", "ma mère", "mes parents"], "answer": 2 },
+              { "prompt": "Who does Léa live with?", "options": ["Her parents", "Her brother", "On her own"], "answer": 0 }
+            ]
+          }
+        },
+        {
+          "id": "travail",
+          "theme": "work",
+          "title": "Travail et études: Work and study",
+          "scenes": [
+            {
+              "id": "travail-metier",
+              "title": "What do you do?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Camille", "target": "Tu fais quoi dans la vie ?", "native": "What do you do for a living?" },
+                  { "speaker": "Malik", "target": "Je suis professeur. Et toi ?", "native": "I'm a teacher. And you?" },
+                  { "speaker": "Camille", "target": "Je travaille dans un hôpital. Je suis infirmière.", "native": "I work in a hospital. I'm a nurse." },
+                  { "speaker": "Malik", "target": "C'est intéressant !", "native": "That's interesting!" }
+                ]
+              },
+              "words": ["tu-fais-quoi", "professeur", "je-travaille", "infirmiere", "cest-interessant"],
+              "pattern": {
+                "title": "No “a” before a job",
+                "tip": "French leaves out the article when you say what someone does: Je suis professeur (I'm a teacher), Elle est infirmière (she's a nurse)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "travail-etudes",
+              "title": "At university",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Hugo", "target": "Tu travailles ou tu étudies ?", "native": "Do you work or study?" },
+                  { "speaker": "Léa", "target": "J'étudie à l'université.", "native": "I study at the university." },
+                  { "speaker": "Hugo", "target": "Tu étudies quoi ?", "native": "What are you studying?" },
+                  { "speaker": "Léa", "target": "La médecine. C'est difficile, mais j'adore !", "native": "Medicine. It's hard, but I love it!" }
+                ]
+              },
+              "words": ["travailles-ou-etudies", "luniversite", "tu-etudies-quoi", "difficile", "jadore"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "travail-reunion",
+              "title": "Running late",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Malik", "target": "Désolé, je suis en retard.", "native": "Sorry, I'm late." },
+                  { "speaker": "Cheffe", "target": "Ce n'est pas grave. La réunion commence à dix heures.", "native": "It's not a big deal. The meeting starts at ten." },
+                  { "speaker": "Malik", "target": "Dans quelle salle ?", "native": "Which room?" },
+                  { "speaker": "Cheffe", "target": "Salle deux, au deuxième étage.", "native": "Room two, on the second floor." }
+                ]
+              },
+              "words": ["desole", "en-retard", "pas-grave", "la-reunion", "a-dix-heures", "deuxieme-etage"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "How do you ask what someone does for a living?", "options": ["Tu étudies quoi ?", "Tu fais quoi dans la vie ?", "C'est combien ?"], "answer": 1 },
+              { "prompt": "What is Camille's job?", "options": ["Teacher", "Nurse", "Student"], "answer": 1 },
+              { "prompt": "“J'adore” means…", "options": ["I love it", "I need it", "I have it"], "answer": 0 },
+              { "prompt": "When does the meeting start?", "options": ["At two", "At twelve", "At ten"], "answer": 2 },
+              { "prompt": "Which is the natural way to say “I'm a teacher”?", "options": ["Je suis professeur.", "J'ai professeur.", "Je fais professeur."], "answer": 0 }
+            ]
+          }
+        },
+        {
+          "id": "heure",
+          "theme": "time",
+          "title": "Quelle heure est-il ? Time and plans",
+          "scenes": [
+            {
+              "id": "heure-quelle",
+              "title": "What time is it?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Camille", "target": "Excusez-moi, quelle heure est-il ?", "native": "Excuse me, what time is it?" },
+                  { "speaker": "Madame", "target": "Il est trois heures et demie.", "native": "It's half past three." },
+                  { "speaker": "Camille", "target": "Oh, je suis en retard ! Merci.", "native": "Oh, I'm late! Thanks." },
+                  { "speaker": "Madame", "target": "De rien.", "native": "Don't mention it." }
+                ]
+              },
+              "words": ["quelle-heure", "il-est", "et-demie", "de-rien"],
+              "pattern": {
+                "title": "Telling the time",
+                "tip": "French uses “Il est… heures”: il est une heure (1:00), il est trois heures et demie (3:30), il est midi (noon)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "heure-libre",
+              "title": "Are you free?",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Hugo", "target": "Tu es libre samedi ?", "native": "Are you free on Saturday?" },
+                  { "speaker": "Léa", "target": "Samedi, non, je travaille. Dimanche ?", "native": "Not Saturday, I'm working. Sunday?" },
+                  { "speaker": "Hugo", "target": "Parfait, dimanche.", "native": "Perfect, Sunday." },
+                  { "speaker": "Léa", "target": "À dimanche !", "native": "See you on Sunday!" }
+                ]
+              },
+              "words": ["tu-es-libre", "samedi", "dimanche", "parfait"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "heure-cinema",
+              "title": "Movie night",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Hugo", "target": "Tu veux aller au cinéma ?", "native": "Do you want to go to the cinema?" },
+                  { "speaker": "Léa", "target": "Oui, avec plaisir ! À quelle heure ?", "native": "Yes, I'd love to! What time?" },
+                  { "speaker": "Hugo", "target": "À sept heures, au centre-ville.", "native": "At seven, in the town centre." },
+                  { "speaker": "Léa", "target": "Plutôt à huit heures.", "native": "Eight would be better." },
+                  { "speaker": "Hugo", "target": "D'accord, à huit heures.", "native": "OK, eight it is." }
+                ]
+              },
+              "words": ["tu-veux-aller", "au-cinema", "avec-plaisir", "a-quelle-heure", "plutot"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "How do you ask what time it is?", "options": ["À quelle heure ?", "Quelle heure est-il ?", "C'est combien ?"], "answer": 1 },
+              { "prompt": "“Il est trois heures et demie” means it's…", "options": ["3:30", "3:15", "2:30"], "answer": 0 },
+              { "prompt": "Why can't Léa meet on Saturday?", "options": ["She's working", "She's sick", "She's travelling"], "answer": 0 },
+              { "prompt": "What time do they agree to meet?", "options": ["At seven", "At three", "At eight"], "answer": 2 },
+              { "prompt": "“Avec plaisir” means…", "options": ["I'm tired", "With pleasure", "I'm late"], "answer": 1 }
+            ]
+          }
+        },
+        {
+          "id": "sante",
+          "theme": "health",
+          "title": "À la pharmacie: Health and help",
+          "scenes": [
+            {
+              "id": "sante-tete",
+              "title": "I don't feel well",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Camille", "target": "Ça va ? Tu as l'air fatigué.", "native": "Are you OK? You look tired." },
+                  { "speaker": "Malik", "target": "Pas trop. J'ai mal à la tête.", "native": "Not really. I have a headache." },
+                  { "speaker": "Camille", "target": "Tu as de la fièvre ?", "native": "Do you have a fever?" },
+                  { "speaker": "Malik", "target": "Je ne crois pas, mais je suis très fatigué.", "native": "I don't think so, but I'm really tired." }
+                ]
+              },
+              "words": ["pas-trop", "jai-mal", "la-tete", "fievre", "fatigue"],
+              "pattern": {
+                "title": "Saying what hurts",
+                "tip": "Use “j'ai mal à” and the body part: j'ai mal à la tête (my head hurts), j'ai mal au ventre (my stomach hurts)."
+              },
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "pattern" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "sante-pharmacie",
+              "title": "At the pharmacy",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Malik", "target": "Bonjour. Vous avez quelque chose contre le mal de tête ?", "native": "Hello. Do you have something for a headache?" },
+                  { "speaker": "Pharmacienne", "target": "Oui, ce médicament. Un comprimé toutes les huit heures.", "native": "Yes, this medicine. One tablet every eight hours." },
+                  { "speaker": "Malik", "target": "Pendant le repas ?", "native": "With a meal?" },
+                  { "speaker": "Pharmacienne", "target": "Oui, c'est mieux pendant le repas.", "native": "Yes, it's better with a meal." }
+                ]
+              },
+              "words": ["quelque-chose-contre", "le-medicament", "un-comprime", "toutes-les-huit-heures", "pendant-le-repas"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            },
+            {
+              "id": "sante-aide",
+              "title": "Asking for help",
+              "coldOpen": {
+                "kind": "dialogue",
+                "lines": [
+                  { "speaker": "Léa", "target": "Au secours !", "native": "Help!" },
+                  { "speaker": "Monsieur", "target": "Qu'est-ce qui se passe ?", "native": "What's going on?" },
+                  { "speaker": "Léa", "target": "J'ai perdu mon passeport.", "native": "I've lost my passport." },
+                  { "speaker": "Monsieur", "target": "Calmez-vous. On va appeler la police.", "native": "Stay calm. We'll call the police." }
+                ]
+              },
+              "words": ["au-secours", "quest-ce-qui-se-passe", "jai-perdu", "mon-passeport", "calmez-vous", "la-police"],
+              "takes": [{ "kind": "watch" }, { "kind": "wordlab" }, { "kind": "guess" }, { "kind": "listen" }, { "kind": "shadow" }]
+            }
+          ],
+          "finale": {
+            "questions": [
+              { "prompt": "“J'ai mal à la tête” means…", "options": ["My head hurts", "I'm hungry", "I'm cold"], "answer": 0 },
+              { "prompt": "How often should Malik take the tablet?", "options": ["Once a day", "Every eight hours", "Every hour"], "answer": 1 },
+              { "prompt": "Which one do you shout when you need help?", "options": ["Au revoir !", "C'est super !", "Au secours !"], "answer": 2 },
+              { "prompt": "What did Léa lose?", "options": ["Her phone", "Her passport", "Her keys"], "answer": 1 },
+              { "prompt": "“Fatigué” means…", "options": ["tired", "sick", "late"], "answer": 0 }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
