@@ -81,6 +81,20 @@ const HIDDEN: Record<string, [string, string][]> = {
   hu: [["nézel", "watch"], ["szeretsz", "love"], ["nyelv", "language"], ["tanulás", "studying"], ["leckéd", "lesson"]],
   bg: [["гледаш", "watch"], ["обичаш", "love"], ["езика", "language"], ["учене", "studying"], ["урок", "lesson"]],
   hi: [["सीखें", "learn"], ["पसंद", "love"], ["भाषा", "language"], ["पढ़ाई", "studying"], ["पाठ", "lesson"]],
+  ca: [["mires", "watch"], ["agrada", "love"], ["idioma", "language"], ["estudiar", "studying"], ["lliçó", "lesson"]],
+  cs: [["sledujete", "watch"], ["rádi", "love"], ["jazyk", "language"], ["učení", "studying"], ["lekci", "lesson"]],
+  da: [["ser", "watch"], ["elsker", "love"], ["sproget", "language"], ["lektielæsning", "studying"], ["lektion", "lesson"]],
+  el: [["βλέπεις", "watch"], ["αγαπάς", "love"], ["γλώσσα", "language"], ["διάβασμα", "studying"], ["μάθημά", "lesson"]],
+  fa: [["یاد بگیرید", "learn"], ["دوست داری", "love"], ["زبان", "language"], ["یادگیری", "studying"], ["درس", "lesson"]],
+  he: [["צפייה", "watch"], ["אוהבים", "love"], ["השפה", "language"], ["הלימוד", "studying"], ["לשיעור", "lesson"]],
+  hr: [["gledaš", "watch"], ["voliš", "love"], ["jezik", "language"], ["učenje", "studying"], ["lekciju", "lesson"]],
+  id: [["menonton", "watch"], ["suka", "love"], ["bahasanya", "language"], ["belajar", "studying"], ["pelajaran", "lesson"]],
+  no: [["ser på", "watch"], ["elsker", "love"], ["språket", "language"], ["studieformen", "studying"], ["leksjon", "lesson"]],
+  pl: [["oglądasz", "watch"], ["kochasz", "love"], ["język", "language"], ["nauka", "studying"], ["lekcję", "lesson"]],
+  ro: [["te uiți", "watch"], ["place", "love"], ["limba", "language"], ["studiu", "studying"], ["lecție", "lesson"]],
+  sk: [["pozerania", "watch"], ["radi", "love"], ["jazyk", "language"], ["učenie", "studying"], ["lekciu", "lesson"]],
+  sv: [["tittar", "watch"], ["älskar", "love"], ["språket", "language"], ["pluggandet", "studying"], ["lektion", "lesson"]],
+  th: [["การดู", "watch"], ["รัก", "love"], ["ภาษา", "language"], ["การเรียน", "studying"], ["บทเรียน", "lesson"]],
 };
 
 // A visitor learning English sees these English forms for the hidden concepts.
@@ -99,6 +113,8 @@ const DELICIOUS_NATIVE: Record<string, string> = {
   "zh-CN": "美味的", "zh-TW": "美味的", tr: "lezzetli", "pt-BR": "delicioso", "pt-PT": "delicioso",
   es: "delicioso", ru: "вкусный", ko: "맛있는", ja: "おいしい", fr: "délicieux", vi: "ngon",
   it: "delizioso", de: "lecker", ar: "لذيذ", uk: "смачний", nl: "heerlijk", hu: "finom", bg: "вкусен", hi: "स्वादिष्ट",
+  ca: "deliciós", cs: "lahodný", da: "lækker", el: "νόστιμος", fa: "خوشمزه", he: "טעים", hr: "ukusan",
+  id: "lezat", no: "deilig", pl: "pyszny", ro: "delicios", sk: "chutný", sv: "läcker", th: "อร่อย",
 };
 
 /** The page locale as HIDDEN / DELICIOUS_NATIVE key it, or "en". */
