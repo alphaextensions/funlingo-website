@@ -8,11 +8,13 @@ export const en = {
     description:
       "Tell us why you uninstalled Funlingo. Your feedback helps us build a better language learning experience.",
   },
+  header: {
+    reinstall: "Reinstall Funlingo",
+  },
   form: {
     title: "What made you uninstall?",
-    subtitle: "One tap is enough. It goes straight to the team.",
+    subtitle: "Pick a reason, then add a line or two. It goes straight to the team.",
     reasonsAriaLabel: "Reason for uninstalling",
-    optional: "(optional)",
     howLongLabel: "How long did you use Funlingo? (optional)",
     emailLabel: "Email (optional), so we can tell you when it's fixed",
     emailPlaceholder: "you@example.com",

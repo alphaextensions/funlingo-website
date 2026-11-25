@@ -3,11 +3,13 @@
     "title": "ご利用ありがとうございました",
     "description": "Funlingoをアンインストールした理由を教えてください。いただいたご意見は、より良い語学学習体験づくりに役立てます。"
   },
+  "header": {
+    "reinstall": "Funlingoを再インストール"
+  },
   "form": {
     "title": "アンインストールした理由は何ですか？",
-    "subtitle": "ワンタップで完了します。回答はチームに直接届きます。",
+    "subtitle": "理由を選んで、一言二言添えてください。チームに直接届きます。",
     "reasonsAriaLabel": "アンインストールの理由",
-    "optional": "（任意）",
     "howLongLabel": "Funlingoをどのくらいの期間使いましたか？（任意）",
     "emailLabel": "メールアドレス（任意）：修正されたらお知らせします",
     "emailPlaceholder": "you@example.com",

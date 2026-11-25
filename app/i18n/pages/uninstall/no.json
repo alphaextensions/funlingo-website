@@ -3,11 +3,13 @@
     "title": "Synd at du drar",
     "description": "Fortell oss hvorfor du avinstallerte Funlingo. Tilbakemeldingen din hjelper oss å lage en bedre opplevelse for språklæring."
   },
+  "header": {
+    "reinstall": "Installer Funlingo på nytt"
+  },
   "form": {
     "title": "Hvorfor avinstallerte du Funlingo?",
-    "subtitle": "Ett trykk er nok. Svaret går rett til teamet.",
+    "subtitle": "Velg en grunn, og skriv en linje eller to. Det går rett til teamet.",
     "reasonsAriaLabel": "Årsak til avinstallering",
-    "optional": "(valgfritt)",
     "howLongLabel": "Hvor lenge brukte du Funlingo? (valgfritt)",
     "emailLabel": "E-post (valgfritt), så vi kan si fra når det er fikset",
     "emailPlaceholder": "you@example.com",

@@ -3,11 +3,13 @@
     "title": "Que pena que você vai embora",
     "description": "Conte para a gente por que você desinstalou o Funlingo. Seu feedback nos ajuda a criar uma experiência melhor para aprender idiomas."
   },
+  "header": {
+    "reinstall": "Reinstalar o Funlingo"
+  },
   "form": {
     "title": "Por que você desinstalou o Funlingo?",
-    "subtitle": "Um toque já basta. Sua resposta vai direto para a equipe.",
+    "subtitle": "Escolha um motivo e escreva uma ou duas linhas. Vai direto para a equipe.",
     "reasonsAriaLabel": "Motivo da desinstalação",
-    "optional": "(opcional)",
     "howLongLabel": "Por quanto tempo você usou o Funlingo? (opcional)",
     "emailLabel": "E-mail (opcional), para avisarmos você quando for corrigido",
     "emailPlaceholder": "you@example.com",

@@ -3,11 +3,13 @@
     "title": "חבל שאתם עוזבים",
     "description": "ספרו לנו למה הסרתם את Funlingo. המשוב שלכם עוזר לנו לבנות חוויה טובה יותר ללימוד שפות."
   },
+  "header": {
+    "reinstall": "התקנה מחדש של Funlingo"
+  },
   "form": {
     "title": "למה הסרתם את Funlingo?",
-    "subtitle": "הקשה אחת מספיקה. התשובה מגיעה ישירות לצוות.",
+    "subtitle": "בחרו סיבה והוסיפו שורה או שתיים. זה מגיע ישירות לצוות.",
     "reasonsAriaLabel": "סיבת ההסרה",
-    "optional": "(לא חובה)",
     "howLongLabel": "כמה זמן השתמשתם ב-Funlingo? (לא חובה)",
     "emailLabel": "אימייל (לא חובה), כדי שנוכל לעדכן אתכם כשזה יתוקן",
     "emailPlaceholder": "you@example.com",

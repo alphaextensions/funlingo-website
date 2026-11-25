@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Navbar from "@/sections/navbar";
-import { STORE_URL } from "@/app/_components/cta";
+import { ChromeCTA, STORE_URL } from "@/app/_components/cta";
 import { track } from "@/app/_components/track";
 import { useT } from "@/app/i18n/I18nProvider";
 import { navHref } from "@/app/i18n/config";
@@ -168,6 +168,10 @@ export default function UninstallContent({ s }: { s: Strings }) {
   const [howLong, setHowLong] = useState<string | null>(null);
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  // Bumped on every reason tap so the follow-up scrolls into view and takes focus.
+  const [focusTick, setFocusTick] = useState(0);
+  const followupRef = useRef<HTMLDivElement>(null);
+  const detailRef = useRef<HTMLTextAreaElement & HTMLInputElement>(null);
 
   const uninstallLogSentRef = useRef(false);
   const submittedRef = useRef(false);
@@ -218,12 +222,40 @@ export default function UninstallContent({ s }: { s: Strings }) {
     return () => window.removeEventListener("pagehide", flush);
   }, []);
 
+  // After a reason tap, bring the text box into view and put the cursor in it:
+  // most people tapped a reason and never noticed the follow-up below the fold.
+  useEffect(() => {
+    if (!focusTick) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    followupRef.current?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "nearest" });
+    detailRef.current?.focus({ preventScroll: true });
+  }, [focusTick]);
+
   function pickReason(key: string) {
+    setFocusTick((n) => n + 1);
     if (key === reasonKey) return;
+    // Keep anything already typed: switching reason shouldn't throw it away.
     setReasonKey(key);
-    setDetail("");
     track("uninstall_reason_select", { reason: key });
   }
+
+  const reinstallCta = (
+    // ChromeCTA links to the store (which also fires the global install_click);
+    // this records that it came from the uninstall page header.
+    <span
+      className="min-w-0"
+      onClick={() => track("uninstall_reinstall_click", { placement: "header", reason: reasonKey ?? undefined })}
+    >
+      {/* On phones a long label (e.g. Czech) wraps to two lines instead of
+          pushing the page wider; `!` beats ChromeCTA's inline styles. */}
+      <ChromeCTA
+        label={s.header.reinstall}
+        variant="navPill"
+        glyphSize={16}
+        className="max-sm:whitespace-normal! max-sm:leading-tight! max-sm:text-[13px]! max-sm:px-3.5! max-sm:py-2.5! max-sm:gap-2!"
+      />
+    </span>
+  );
 
   function submit() {
     if (!reasonKey) return;
@@ -256,7 +288,7 @@ export default function UninstallContent({ s }: { s: Strings }) {
 
   return (
     <div className="flex flex-col items-start relative fnl-root min-h-screen">
-      <Navbar minimal />
+      <Navbar minimal action={reinstallCta} />
 
       <main className="flex flex-col w-full items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col max-w-2xl w-full items-center gap-8">
@@ -299,32 +331,37 @@ export default function UninstallContent({ s }: { s: Strings }) {
               </div>
 
               {selected && (
-                <div className="w-full flex flex-col gap-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6 animate-slide-in">
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="detail" className="text-[var(--text)] font-medium">
-                      {s.reasons[selected.key].prompt} <span className="text-[var(--text-dim)] font-normal">{s.form.optional}</span>
+                <div
+                  ref={followupRef}
+                  className="w-full flex flex-col gap-5 rounded-2xl border-2 border-[var(--magenta)] bg-[var(--surface)] p-5 sm:p-6 shadow-xl shadow-purple-500/10 scroll-mt-24 scroll-mb-6 animate-slide-in"
+                >
+                  <div className="flex flex-col gap-3">
+                    <label htmlFor="detail" className="text-[var(--text)] text-lg sm:text-xl font-semibold">
+                      {s.reasons[selected.key].prompt}
                     </label>
                     {selected.followup === "platform" ? (
                       <input
                         id="detail"
+                        ref={detailRef}
                         value={detail}
                         onChange={(e) => setDetail(e.target.value)}
                         placeholder={s.reasons[selected.key].placeholder}
-                        className={fieldClass}
+                        className={`${fieldClass} text-base sm:text-lg py-4`}
                       />
                     ) : (
                       <textarea
                         id="detail"
+                        ref={detailRef}
                         value={detail}
                         onChange={(e) => setDetail(e.target.value)}
                         placeholder={s.reasons[selected.key].placeholder}
-                        rows={3}
-                        className={`${fieldClass} resize-none`}
+                        rows={4}
+                        className={`${fieldClass} text-base sm:text-lg resize-y min-h-[120px]`}
                       />
                     )}
                   </div>
 
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 border-t border-[var(--border)] pt-5">
                     <span className="text-[var(--text-dim)] text-sm">{s.form.howLongLabel}</span>
                     <div className="flex flex-wrap gap-2">
                       {HOW_LONG.map(({ key, value: h }) => (
@@ -385,7 +422,7 @@ export default function UninstallContent({ s }: { s: Strings }) {
                   href={STORE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => track("uninstall_reinstall_click", { reason: reasonKey })}
+                  onClick={() => track("uninstall_reinstall_click", { placement: "thanks", reason: reasonKey })}
                   className={primaryButton}
                   style={{ background: "var(--grad)" }}
                 >

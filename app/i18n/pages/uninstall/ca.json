@@ -3,11 +3,13 @@
     "title": "Quina llàstima que te'n vagis",
     "description": "Explica'ns per què has desinstal·lat Funlingo. La teva opinió ens ajuda a crear una experiència millor per aprendre idiomes."
   },
+  "header": {
+    "reinstall": "Reinstal·la Funlingo"
+  },
   "form": {
     "title": "Per què has desinstal·lat Funlingo?",
-    "subtitle": "Amb un toc n'hi ha prou. La resposta arriba directament a l'equip.",
+    "subtitle": "Tria un motiu i afegeix-hi una o dues línies. Arriba directament a l'equip.",
     "reasonsAriaLabel": "Motiu de la desinstal·lació",
-    "optional": "(opcional)",
     "howLongLabel": "Quant de temps has fet servir Funlingo? (opcional)",
     "emailLabel": "Correu electrònic (opcional), per avisar-te quan estigui solucionat",
     "emailPlaceholder": "you@example.com",

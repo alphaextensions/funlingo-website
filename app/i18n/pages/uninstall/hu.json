@@ -3,11 +3,13 @@
     "title": "Sajnáljuk, hogy elmész",
     "description": "Mondd el, miért távolítottad el a Funlingót. A visszajelzésed segít, hogy még jobbá tegyük a nyelvtanulást."
   },
+  "header": {
+    "reinstall": "Funlingo újratelepítése"
+  },
   "form": {
     "title": "Miért távolítottad el a Funlingót?",
-    "subtitle": "Egy koppintás elég. A válaszod egyenesen a csapathoz kerül.",
+    "subtitle": "Válassz egy okot, és írj hozzá egy-két sort. Egyenesen a csapathoz kerül.",
     "reasonsAriaLabel": "Az eltávolítás oka",
-    "optional": "(nem kötelező)",
     "howLongLabel": "Mennyi ideig használtad a Funlingót? (nem kötelező)",
     "emailLabel": "E-mail (nem kötelező), hogy szólhassunk, ha kijavítottuk",
     "emailPlaceholder": "you@example.com",

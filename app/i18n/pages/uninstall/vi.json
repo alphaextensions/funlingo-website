@@ -3,11 +3,13 @@
     "title": "Rất tiếc khi bạn rời đi",
     "description": "Hãy cho chúng tôi biết lý do bạn gỡ cài đặt Funlingo. Phản hồi của bạn giúp chúng tôi xây dựng trải nghiệm học ngôn ngữ tốt hơn."
   },
+  "header": {
+    "reinstall": "Cài lại Funlingo"
+  },
   "form": {
     "title": "Vì sao bạn gỡ cài đặt Funlingo?",
-    "subtitle": "Chỉ cần một chạm. Câu trả lời sẽ được gửi thẳng đến đội ngũ.",
+    "subtitle": "Chọn một lý do, rồi viết thêm một hai dòng. Phản hồi sẽ đến thẳng đội ngũ.",
     "reasonsAriaLabel": "Lý do gỡ cài đặt",
-    "optional": "(không bắt buộc)",
     "howLongLabel": "Bạn đã dùng Funlingo bao lâu? (không bắt buộc)",
     "emailLabel": "Email (không bắt buộc), để chúng tôi báo bạn khi lỗi được sửa",
     "emailPlaceholder": "you@example.com",

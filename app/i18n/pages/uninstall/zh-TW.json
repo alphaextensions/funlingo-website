@@ -3,11 +3,13 @@
     "title": "很遺憾看到你離開",
     "description": "告訴我們你解除安裝 Funlingo 的原因。你的意見能幫助我們打造更好的語言學習體驗。"
   },
+  "header": {
+    "reinstall": "重新安裝 Funlingo"
+  },
   "form": {
     "title": "你為什麼解除安裝 Funlingo？",
-    "subtitle": "點一下就夠了。你的回答會直接送到團隊手上。",
+    "subtitle": "選一個原因，再寫一兩句。會直接送到團隊手上。",
     "reasonsAriaLabel": "解除安裝的原因",
-    "optional": "（選填）",
     "howLongLabel": "你用了 Funlingo 多久？（選填）",
     "emailLabel": "電子郵件（選填），問題修好後我們會通知你",
     "emailPlaceholder": "you@example.com",

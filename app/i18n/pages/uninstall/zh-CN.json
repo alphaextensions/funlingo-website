@@ -3,11 +3,13 @@
     "title": "很遗憾看到你离开",
     "description": "告诉我们你卸载 Funlingo 的原因。你的反馈能帮助我们打造更好的语言学习体验。"
   },
+  "header": {
+    "reinstall": "重新安装 Funlingo"
+  },
   "form": {
     "title": "你为什么卸载了 Funlingo？",
-    "subtitle": "点一下就够了。你的回答会直接送达团队。",
+    "subtitle": "选一个原因，再写一两句。会直接送到团队手中。",
     "reasonsAriaLabel": "卸载原因",
-    "optional": "（选填）",
     "howLongLabel": "你用了 Funlingo 多长时间？（选填）",
     "emailLabel": "邮箱（选填），问题修复后我们会通知你",
     "emailPlaceholder": "you@example.com",

@@ -3,11 +3,13 @@
     "title": "Je nám ľúto, že odchádzate",
     "description": "Povedzte nám, prečo ste Funlingo odinštalovali. Vaša spätná väzba nám pomáha vylepšovať učenie jazykov."
   },
+  "header": {
+    "reinstall": "Znova nainštalovať Funlingo"
+  },
   "form": {
     "title": "Prečo ste Funlingo odinštalovali?",
-    "subtitle": "Stačí jedno ťuknutie. Odpoveď ide priamo k tímu.",
+    "subtitle": "Vyberte dôvod a pripíšte riadok alebo dva. Ide to priamo k tímu.",
     "reasonsAriaLabel": "Dôvod odinštalovania",
-    "optional": "(nepovinné)",
     "howLongLabel": "Ako dlho ste Funlingo používali? (nepovinné)",
     "emailLabel": "E-mail (nepovinné), aby sme vám dali vedieť, keď to opravíme",
     "emailPlaceholder": "you@example.com",

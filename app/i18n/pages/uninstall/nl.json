@@ -3,11 +3,13 @@
     "title": "Jammer dat je vertrekt",
     "description": "Laat ons weten waarom je Funlingo hebt verwijderd. Met jouw feedback maken we talen leren nog beter."
   },
+  "header": {
+    "reinstall": "Funlingo opnieuw installeren"
+  },
   "form": {
     "title": "Waarom heb je Funlingo verwijderd?",
-    "subtitle": "Eén tik is genoeg. Je antwoord gaat rechtstreeks naar het team.",
+    "subtitle": "Kies een reden en schrijf er een regel of twee bij. Het gaat rechtstreeks naar het team.",
     "reasonsAriaLabel": "Reden voor verwijderen",
-    "optional": "(optioneel)",
     "howLongLabel": "Hoe lang heb je Funlingo gebruikt? (optioneel)",
     "emailLabel": "E-mail (optioneel), zodat we je kunnen laten weten wanneer het is opgelost",
     "emailPlaceholder": "you@example.com",
